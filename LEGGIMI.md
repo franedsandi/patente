@@ -70,14 +70,18 @@ Durante il quiz:
 | `p` | salta la domanda (non nell'esame) |
 | `q` | esci (non nel `--forzato`) |
 | `i` | apre l'immagine della domanda |
-| `r1` | prima di rispondere: evidenzia le parole chiave (sempre, solo, non, numeri…); non nel `--forzato` |
-| `r2` | prima di rispondere: riassunto della domanda (vedi sezione 8); non nel `--forzato` |
+| `r1` | prima di rispondere: evidenzia le parole chiave (sempre, solo, non, numeri…) e mostra una stima statistica % VERO / % FALSO (indicativa, spesso vicina al 50%); non nel `--forzato` |
+| `r2` | prima di rispondere: la domanda con la parola trabocchetto evidenziata; non nel `--forzato` |
+| `r3` | prima di rispondere: riassunto della domanda (vedi sezione 8); non nel `--forzato` |
 | `?` | dopo un errore: mostra la regola breve |
 
 Nel terminale di VS Code puoi anche aprire l'immagine con **Ctrl+click** sul percorso.
 
-I tuoi progressi sono in `errori.json` e `padronanza.json`, nella cartella del progetto.
+I tuoi progressi sono in `errori.json`, `padronanza.json` e `ripasso.json`, nella cartella del progetto.
 **Non sono in git**: se cambi PC e vuoi tenerli, copiali a mano.
+
+`patente --review` ti ripropone le domande sbagliate. Una domanda esce dal ripasso quando
+la indovini 2 volte di fila (in qualsiasi modalità); se la sbagli di nuovo, ci rientra.
 
 ## 5. Quiz automatici a orari fissi
 
@@ -143,7 +147,7 @@ python3 patente.py --controlla
 Le domande, le risposte e le immagini sono quelle ufficiali.
 Spiegazioni, regole brevi e trabocchetti sono generati con AI: aiutano a capire, ma non sono ufficiali.
 
-## 8. Riassunti delle domande (tasto r2)
+## 8. Riassunti delle domande (tasto r3)
 
 I riassunti sono nel campo `"riassunto"` di ogni domanda e il quiz li usa senza internet.
 `importa.py` li conserva quando riscarica le domande. Sono già generati; `riassumi.py`

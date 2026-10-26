@@ -9,7 +9,7 @@ Ogni file ha:
 Campi di ogni domanda (solo i primi due sono obbligatori):
     "domanda":      il testo
     "risposta":     True = VERO, False = FALSO
-    "riassunto":    la domanda in breve, mostrata col tasto r2
+    "riassunto":    la domanda in breve, mostrata col tasto r3
     "spiegazione":  spiegazione lunga, mostrata quando sbagli
     "regola":       regola breve, mostrata premendo ? dopo la spiegazione
     "trabocchetti": parole della domanda da evidenziare quando sbagli

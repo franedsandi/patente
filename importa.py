@@ -39,7 +39,7 @@ Ogni file ha:
 Campi di ogni domanda (solo i primi due sono obbligatori):
     "domanda":      il testo
     "risposta":     True = VERO, False = FALSO
-    "riassunto":    la domanda in breve, mostrata col tasto r2
+    "riassunto":    la domanda in breve, mostrata col tasto r3
     "spiegazione":  spiegazione lunga, mostrata quando sbagli
     "regola":       regola breve, mostrata premendo ? dopo la spiegazione
     "trabocchetti": parole della domanda da evidenziare quando sbagli
@@ -219,7 +219,7 @@ def main():
             "immagine": image,
         })
 
-    # i riassunti (tasto r2) non arrivano dal download: li tengo da quelli che ci sono già
+    # i riassunti (tasto r3) non arrivano dal download: li tengo da quelli che ci sono già
     old_summaries = current_summaries()
     for qs in by_chapter.values():
         for q in qs:

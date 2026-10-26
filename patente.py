@@ -9,10 +9,11 @@ Uso (patente = python3 patente.py):
   patente --libero [N]        modalità libera: N domande (default: tutte)
   patente --categoria         elenca le categorie
   patente --categoria NOME [N]  solo una categoria (es. sorpasso, segnali)
-  patente --review            ripassa le domande sbagliate
+  patente --review            ripassa le domande sbagliate (escono dopo 2
+                              risposte giuste di fila)
   patente --padronanza        i tuoi progressi, in totale e per categoria
   patente --stats             errori per categoria
-  patente --reset             cancella gli errori (errori.json)
+  patente --reset             cancella gli errori (errori.json, ripasso.json)
   patente --reset-padronanza  cancella i progressi (padronanza.json)
   patente --count             quante domande ci sono
   patente --controlla         controlla i file delle domande
@@ -25,7 +26,7 @@ Quiz automatici (Windows Task Scheduler, orari in pianificazione.json):
 Risposte:  VERO = y / v / t / s       FALSO = n / f
            p = salta   q = esci   i = apri immagine
 Aiuti prima di rispondere (non nel --forzato):
-           r1 = parole chiave evidenziate   r2 = riassunto della domanda
+           r1 = parole chiave   r2 = trabocchetto evidenziato   r3 = riassunto
   (nell'esame non puoi saltare; nel --forzato non puoi uscire)
 
 Quando sbagli: vedi la spiegazione; premi ? per la regola breve,
@@ -40,6 +41,7 @@ Nuovo listato pubblicato?  python3 importa.py
 """
 
 import json
+import math
 import random
 import re
 import signal
@@ -59,6 +61,11 @@ EXAM_TIME_LIMIT_MIN = 20    # solo indicativo, non viene forzato
 # Quando TUTTE le domande superano la soglia, scatta l'alert.
 MASTERY_FILE = Path(__file__).resolve().parent / "padronanza.json"
 MASTERY_THRESHOLD = 5
+
+# Ripasso: risposte giuste di fila dopo l'ultimo errore, per ogni domanda sbagliata.
+# Quando arrivano a REVIEW_DONE la domanda esce da --review (errori.json resta lo storico).
+REVIEW_FILE = Path(__file__).resolve().parent / "ripasso.json"
+REVIEW_DONE = 2
 
 QUESTIONS_DIR = Path(__file__).resolve().parent / "domande"
 IMAGES_DIR = QUESTIONS_DIR / "immagini"
@@ -104,6 +111,34 @@ def mark_correct(key, mastery):
     """Incrementa il contatore di risposte corrette per questa domanda."""
     mastery[key] = mastery.get(key, 0) + 1
     save_mastery(mastery)
+
+# ---- ripasso (domande sbagliate ancora da recuperare) -----------------------
+def load_review():
+    if REVIEW_FILE.exists():
+        try:
+            return json.loads(REVIEW_FILE.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            return {}
+    return {}
+
+def save_review(r):
+    REVIEW_FILE.write_text(json.dumps(r, ensure_ascii=False, indent=2), encoding="utf-8")
+
+def review_correct(key):
+    """Risposta giusta: se la domanda era da ripassare conta +1.
+    Ritorna True se proprio ora esce dal ripasso."""
+    r = load_review()
+    if key not in r or r[key] >= REVIEW_DONE:
+        return False
+    r[key] += 1
+    save_review(r)
+    return r[key] == REVIEW_DONE
+
+def review_wrong(key):
+    """Risposta sbagliata: la domanda (ri)entra nel ripasso e riparte da zero."""
+    r = load_review()
+    r[key] = 0
+    save_review(r)
 
 def mastery_summary(mastery):
     """(dominate, totale, viste almeno una volta) rispetto alla banca attuale."""
@@ -213,13 +248,14 @@ def record_error(q, user_answer, all_errors):
     }
     all_errors.append(rec)
     save_errors(all_errors)
+    review_wrong(q["chiave"])
     return label_c
 
 # ---- lettura risposta -------------------------------------------------------
 # Tasti equivalenti: tutti diventano "y" (VERO) o "n" (FALSO).
 TRUE_KEYS = ("y", "v", "t", "s")    # yes, vero, true, sì
 FALSE_KEYS = ("n", "f")             # no, falso/false
-OTHER_KEYS = {"r1": "parole chiave", "r2": "riassunto",
+OTHER_KEYS = {"r1": "parole chiave", "r2": "trabocchetto", "r3": "riassunto",
               "p": "salta", "q": "esci", "i": "immagine"}
 
 def read_answer(prompt, allowed, forzato=False):
@@ -263,7 +299,7 @@ def show_rule_on_request(rule):
     if ans == "?":
         print(f"       {B}{rule}{X}")
 
-# ---- aiuti prima di rispondere (r1, r2) -------------------------------------
+# ---- aiuti prima di rispondere (r1, r2, r3) ---------------------------------
 # r1: parole che spesso decidono la risposta (assoluti, negazioni, obblighi, numeri)
 KEY_WORDS = re.compile(
     r"\b(sempre|mai|solo|soltanto|solamente|unicamente|esclusivamente|"
@@ -275,14 +311,74 @@ KEY_WORDS = re.compile(
     re.IGNORECASE,
 )
 
-def show_key_words(text):
-    marked, count = KEY_WORDS.subn(lambda m: f"{U}{Y}{m.group(0)}{X}", text)
+def key_words_of(text):
+    """Le parole chiave (non i numeri) presenti nel testo, in minuscolo."""
+    return {m.group(1).lower() for m in KEY_WORDS.finditer(text) if m.group(1)}
+
+_word_stats = None
+
+def word_stats():
+    """Conteggi su tutta la banca: per parola chiave e per categoria,
+    quante domande la contengono e quante di queste sono VERE. Calcolati una volta sola."""
+    global _word_stats
+    if _word_stats is None:
+        words, words_true = Counter(), Counter()
+        cats, cats_true = Counter(), Counter()
+        for q in QUESTIONS:
+            cats[q["categoria"]] += 1
+            cats_true[q["categoria"]] += q["risposta"]
+            for w in key_words_of(q["domanda"]):
+                words[w] += 1
+                words_true[w] += q["risposta"]
+        _word_stats = (words, words_true, cats, cats_true)
+    return _word_stats
+
+def true_probability(q):
+    """Stima statistica (non una certezza!) che la domanda sia VERA.
+    Parte dalla % di domande VERE della categoria e la corregge con ogni parola chiave
+    (es. le domande con "sempre" sono VERE meno spesso della media).
+    La domanda stessa non viene contata, altrimenti la stima "conoscerebbe" la risposta.
+    Ritorna (probabilità, % VERE della categoria, [(parola, % VERE, numero domande)])."""
+    words, words_true, cats, cats_true = word_stats()
+    own = 1 if q["risposta"] else 0
+
+    def rate(true, total):   # +1/+2: evita 0% e 100% quando ci sono poche domande
+        return (true + 1) / (total + 2)
+
+    def logit(p):
+        return math.log(p / (1 - p))
+
+    p_all = rate(sum(cats_true.values()) - own, len(QUESTIONS) - 1)
+    p_cat = rate(cats_true[q["categoria"]] - own, cats[q["categoria"]] - 1)
+    score = logit(p_cat)
+    details = []
+    for w in sorted(key_words_of(q["domanda"])):
+        p_w = rate(words_true[w] - own, words[w] - 1)
+        score += logit(p_w) - logit(p_all)   # quanto la parola sposta rispetto alla media
+        details.append((w, p_w, words[w] - 1))
+    p = 1 / (1 + math.exp(-score))
+    return min(max(p, 0.03), 0.97), p_cat, details
+
+def show_key_words(q):
+    marked, count = KEY_WORDS.subn(lambda m: f"{U}{Y}{m.group(0)}{X}", q["domanda"])
     if count:
         print(f"       {D}parole chiave:{X} {marked}")
     else:
-        print(f"       {D}nessuna parola chiave trovata: prova r2{X}")
+        print(f"       {D}nessuna parola chiave trovata: prova r2 o r3{X}")
+    p, p_cat, details = true_probability(q)
+    for w, p_w, n in details:
+        print(f"       {D}  «{w}»: VERA nel {p_w:.0%} delle {n} domande che la contengono{X}")
+    print(f"       {D}stima:{X} {B}{p:.0%} VERO · {1 - p:.0%} FALSO{X} "
+          f"{D}(categoria: {p_cat:.0%} VERO · solo statistica, non una certezza){X}")
 
-# r2: riassunto scritto dall'AI, nel campo "riassunto" della domanda
+# r2: la domanda con le parole trabocchetto evidenziate (come dopo un errore)
+def show_traps(q):
+    if q.get("trabocchetti"):
+        print(f"       {D}trabocchetto:{X} {highlight(q['domanda'], q['trabocchetti'])}")
+    else:
+        print(f"       {D}nessun trabocchetto segnalato per questa domanda: prova r1 o r3{X}")
+
+# r3: riassunto scritto dall'AI, nel campo "riassunto" della domanda
 def show_summary(q):
     if q.get("riassunto"):
         print(f"       {D}riassunto:{X} {B}{q['riassunto']}{X}")
@@ -296,16 +392,18 @@ def ask_question(q, header, allowed, all_errors, mastery, hint="", forzato=False
     print(f"{B}[{header}]{X} {D}({q['categoria']}){X}")
     print(f"       {q['domanda']}")
     if not forzato:   # nel --forzato niente aiuti prima di rispondere
-        allowed = allowed + ["r1", "r2"]
+        allowed = allowed + ["r1", "r2", "r3"]
     if q.get("immagine"):
         print(f"       {D}immagine: {image_link(q['immagine'])}  (i = apri){X}")
         allowed = allowed + ["i"]
     ans = read_answer(f"       {Y}▸ {hint}{X} ", allowed, forzato=forzato)
-    while ans in ("i", "r1", "r2"):   # aiuti: si possono usare più volte, poi si risponde
+    while ans in ("i", "r1", "r2", "r3"):   # aiuti: si possono usare più volte, poi si risponde
         if ans == "i":
             open_image(q["immagine"])
         elif ans == "r1":
-            show_key_words(q["domanda"])
+            show_key_words(q)
+        elif ans == "r2":
+            show_traps(q)
         else:
             show_summary(q)
         ans = read_answer(f"       {Y}▸ {hint}{X} ", allowed, forzato=forzato)
@@ -317,7 +415,10 @@ def ask_question(q, header, allowed, all_errors, mastery, hint="", forzato=False
     user_answer = (ans == "y")
     if user_answer == q["risposta"]:
         mark_correct(q["chiave"], mastery)
-        print(f"       {G}✓ corretto{X}\n")
+        if review_correct(q["chiave"]):
+            print(f"       {G}✓ corretto{X} {D}— giusta {REVIEW_DONE} volte di fila: tolta dal ripasso{X}\n")
+        else:
+            print(f"       {G}✓ corretto{X}\n")
         return "corretta"
     label_c = record_error(q, user_answer, all_errors)
     print(f"       {R}✗ errato{X} {D}— risposta corretta: {label_c}{X}")
@@ -363,7 +464,7 @@ def exam_session(forzato=False):
         print(f"{B}{C}┌─ Esame Patente B simulato — {datetime.now().strftime('%d/%m/%Y %H:%M')}{X}")
         print(f"{D}│  {EXAM_QUESTIONS} domande casuali · promosso con max {EXAM_MAX_ERRORS} errori · tempo esame reale: {EXAM_TIME_LIMIT_MIN} min{X}")
         print(f"{D}│  y/v/t/s = VERO · n/f = FALSO · q = esci{X}")
-        print(f"{D}│  aiuti: r1 = parole chiave · r2 = riassunto · i = immagine{X}")
+        print(f"{D}│  aiuti: r1 = parole chiave · r2 = trabocchetto · r3 = riassunto · i = immagine{X}")
         print(f"{D}└──────────────────────────────────────────────────────────────{X}\n")
 
     hint = "(VERO: y/v/t/s · FALSO: n/f)" if forzato else "(VERO/FALSO, q=esci)"
@@ -414,7 +515,7 @@ def practice_session(pool, title):
 
     print(f"{B}{C}┌─ {title} — {total} domande{X}")
     print(f"{D}│  y/v/t/s = VERO · n/f = FALSO · p = salta · q = esci{X}")
-    print(f"{D}│  aiuti: r1 = parole chiave · r2 = riassunto · i = immagine{X}")
+    print(f"{D}│  aiuti: r1 = parole chiave · r2 = trabocchetto · r3 = riassunto · i = immagine{X}")
     print(f"{D}└──────────────────────────────────────────────────────────────{X}\n")
 
     for i, q in enumerate(pool, 1):
@@ -474,17 +575,22 @@ def category_quiz(search, n=None):
 # ---- ripasso errori ---------------------------------------------------------
 def review():
     errors = load_errors()
-    if not errors:
+    progress = load_review()
+    # Escono dal ripasso le domande già risposte giuste REVIEW_DONE volte di fila dopo l'errore.
+    # Gli errori più vecchi di ripasso.json (senza contatore) contano come 0.
+    pending = [e for e in errors if progress.get(e["chiave"], 0) < REVIEW_DONE]
+    if not pending:
         print(f"{D}nessun errore da ripassare — bella!{X}")
         return
     # Usa la versione attuale della domanda (con immagine, spiegazione aggiornata...).
     # Se nel frattempo è stata tolta dalla banca, la ricostruisce da errori.json.
     by_key = {q["chiave"]: q for q in QUESTIONS}
     seen = set(); pool = []
-    for e in errors:
+    for e in pending:
         if e["chiave"] in seen:
             continue
         seen.add(e["chiave"])
+        progress.setdefault(e["chiave"], 0)   # così review_correct le riconosce
         pool.append(by_key.get(e["chiave"]) or {
             "categoria": e["categoria"],
             "chiave": e["chiave"],
@@ -493,6 +599,7 @@ def review():
             "risposta": e["risposta_corretta"] == "VERO",
             "spiegazione": e.get("spiegazione", ""),
         })
+    save_review(progress)
     practice_session(weighted_order(pool), "Ripasso errori")
 
 def show_stats():
@@ -511,7 +618,8 @@ def show_stats():
 def reset_errors():
     if ERRORS_FILE.exists():
         ERRORS_FILE.unlink()
-        print(f"{D}{ERRORS_FILE.name} cancellato.{X}")
+        REVIEW_FILE.unlink(missing_ok=True)
+        print(f"{D}{ERRORS_FILE.name} e {REVIEW_FILE.name} cancellati.{X}")
     else:
         print(f"{D}nessun archivio da cancellare.{X}")
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-riassumi.py — Genera con Claude i riassunti delle domande (tasto r2 nel quiz).
+riassumi.py — Genera con Claude i riassunti delle domande (tasto r3 nel quiz).
 
 Si fa UNA volta sola; i riassunti finiscono nel campo "riassunto" delle domande
 e poi il quiz li usa senza internet. Serve una API key di Anthropic (si paga a consumo).
