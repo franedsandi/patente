@@ -1,7 +1,7 @@
 """Domande — Segnali complementari, temporanei e di cantiere.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Segnali complementari, temporanei e di cantiere"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la chiusura della corsia di destra per lavori in corso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → corsia destra chiusa per lavori?",
         "spiegazione": "VERO. Questo segnale ti avvisa che la corsia di destra sta per chiudersi. Di solito succede per lavori sulla strada, quindi devi prepararti a spostarti sulla corsia di sinistra.",
         "regola": "Freccia a destra che si 'spegne' = corsia destra chiusa.",
         "trabocchetti": ["chiusura della corsia di destra", "Per lavori in corso"],
@@ -18,6 +19,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una diminuzione da due a una corsia di marcia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → da due a una corsia?",
         "spiegazione": "VERO. Il segnale mostra due frecce che vanno avanti, ma quella di destra si unisce a quella di sinistra. Questo significa che da due corsie di marcia ne rimane solo una.",
         "regola": "Due frecce diventano una = meno corsie.",
         "immagine": "a2252c4a2b8f99e745a8.jpg",
@@ -25,6 +27,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in vicinanza di un cantiere stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vicino a un cantiere?",
         "spiegazione": "VERO. Questo tipo di segnale, con sfondo giallo, è spesso usato per avvisare di situazioni temporanee, come un cantiere stradale, dove una corsia viene chiusa o ridotta.",
         "regola": "Segnale giallo + corsia chiusa = probabile cantiere.",
         "trabocchetti": ["cantiere stradale"],
@@ -33,6 +36,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere completato con pannello che indica la distanza dal punto di chiusura della corsia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con distanza dalla chiusura?",
         "spiegazione": "VERO. Sotto questo segnale, a volte trovi un altro pannello con scritto, ad esempio, '300 m'. Questo ti dice quanto manca al punto esatto dove la corsia si chiude, dandoti il tempo di prepararti.",
         "regola": "Segnali di pericolo possono avere la distanza sotto.",
         "trabocchetti": ["pannello che indica la distanza"],
@@ -41,6 +45,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica restringimento della carreggiata per lavori in corso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → restringimento per lavori?",
         "spiegazione": "VERO. Quando una corsia si chiude, la strada diventa più stretta, cioè si 'restringe'. I lavori in corso sono una causa frequente di questo restringimento della carreggiata.",
         "regola": "Meno corsie = strada più stretta (restringimento).",
         "trabocchetti": ["restringimento della carreggiata"],
@@ -49,6 +54,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la possibilità di sorpassare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso a destra?",
         "spiegazione": "FALSO. Questo segnale ti avvisa di una corsia che si chiude e ti chiede di spostarti. Non ha nulla a che fare con il sorpasso a destra, che di solito è vietato o permesso solo in casi molto specifici.",
         "regola": "Segnale di restringimento non è segnale di sorpasso.",
         "trabocchetti": ["possibilità di sorpassare a destra"],
@@ -57,6 +63,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia uno svincolo che consente l'inversione di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svincolo per inversione?",
         "spiegazione": "FALSO. Il segnale mostra che una corsia finisce, non che c'è uno svincolo per girare indietro (fare un'inversione di marcia). Sono due informazioni completamente diverse.",
         "regola": "Corsia che si chiude non è svincolo.",
         "trabocchetti": ["svincolo", "inversione di marcia"],
@@ -65,6 +72,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova in vicinanza di un incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vicino a un incrocio?",
         "spiegazione": "FALSO. Questo segnale ti avvisa della chiusura di una corsia, non di un incrocio. Per gli incroci ci sono altri segnali specifici che indicano la loro presenza e le regole di precedenza.",
         "regola": "Chiusura corsia non è incrocio.",
         "trabocchetti": ["incrocio"],
@@ -73,6 +81,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una piazzola per la fermata degli autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → piazzola autobus?",
         "spiegazione": "FALSO. Questo segnale non indica una fermata per gli autobus. Indica che una corsia si chiude. I segnali per le fermate degli autobus sono diversi e specifici.",
         "regola": "Non è una fermata bus.",
         "trabocchetti": ["piazzola per la fermata degli autobus"],
@@ -81,6 +90,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la chiusura della corsia per i veicoli lenti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → chiusa corsia veicoli lenti?",
         "spiegazione": "FALSO. Il segnale indica la chiusura della corsia di destra, ma non specifica che sia solo per i veicoli lenti. Potrebbe essere una corsia normale. Non si può dedurre il tipo di veicolo dalla chiusura della corsia.",
         "regola": "Chiusura corsia, non 'solo' per veicoli lenti.",
         "trabocchetti": ["per i veicoli lenti"],
@@ -89,6 +99,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a dare la precedenza ai veicoli provenienti da destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza a destra?",
         "spiegazione": "FALSO. Questo segnale ti avvisa di un restringimento della strada, non ti dice di dare la precedenza a chi viene da destra. Per la precedenza ci sono altri segnali specifici (es. 'Dare precedenza' o 'Stop').",
         "regola": "Restringimento non è precedenza.",
         "immagine": "a2252c4a2b8f99e745a8.jpg",
@@ -96,6 +107,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica ai veicoli di massa effettiva superiore a 7 tonnellate diretti a Lucca di cambiare strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → oltre 7 t per Lucca cambiano strada?",
         "spiegazione": "Il segnale mostra che per andare a Lucca dritto c'è un divieto per i veicoli che pesano più di 7 tonnellate. Questi veicoli devono seguire la freccia che devia a destra per raggiungere Lucca, quindi devono cambiare strada.",
         "regola": "Più di 7t? Devia per Lucca!",
         "trabocchetti": ["massa effettiva superiore a 7 tonnellate"],
@@ -104,6 +116,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente agli autocarri di massa a pieno carico inferiore a 7 tonnellate di proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarri sotto 7 t a pieno carico diritto?",
         "spiegazione": "Il divieto è solo per i veicoli che superano le 7 tonnellate. Se un autocarro pesa meno di 7 tonnellate (o esattamente 7 tonnellate), non è soggetto al divieto e può proseguire dritto verso Lucca.",
         "regola": "Sotto 7t? Dritto si va!",
         "trabocchetti": ["inferiore a 7 tonnellate"],
@@ -112,6 +125,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente ai veicoli di massa effettiva superiore a 7 tonnellate diretti a Lucca di proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → oltre 7 t effettive non diritto per Lucca?",
         "spiegazione": "Esatto, il segnale circolare rosso con '7t' sulla freccia dritta per Lucca significa proprio questo: i veicoli che pesano più di 7 tonnellate non possono andare dritto. Devono seguire la deviazione.",
         "regola": "Oltre 7t? Dritto no!",
         "trabocchetti": ["non consente", "Massa effettiva superiore a 7 tonnellate"],
@@ -120,6 +134,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una limitazione di transito su un tratto di strada per i veicoli di massa effettiva superiore a 7 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → limitazione per oltre 7 t effettive?",
         "spiegazione": "Il segnale giallo è un preavviso di deviazione. Il simbolo rosso con '7t' indica una limitazione di peso. Quindi, c'è una limitazione per i veicoli pesanti su quel tratto di strada che porta a Lucca.",
         "regola": "7t = limite di peso.",
         "trabocchetti": ["limitazione di transito"],
@@ -128,6 +143,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato viene posto in vicinanza di un incrocio che anticipa un cantiere stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio prima di un cantiere?",
         "spiegazione": "I segnali a fondo giallo sono segnali temporanei, spesso usati per cantieri o lavori in corso. Questo segnale preavvisa una deviazione, che è comune quando un cantiere blocca o limita una strada.",
         "regola": "Giallo = cantiere o temporaneo.",
         "immagine": "e1964ced930fae677a0c.jpg",
@@ -135,6 +151,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato fa parte dei segnali temporanei per cantieri di lavoro sulla strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → temporaneo per cantieri?",
         "spiegazione": "Il colore giallo del segnale indica che è un segnale temporaneo, tipicamente usato per segnalare lavori stradali o situazioni provvisorie come un cantiere.",
         "regola": "Giallo = temporaneo.",
         "trabocchetti": ["segnali temporanei"],
@@ -143,6 +160,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica, a tutti i veicoli, che non è possibile proseguire diritto per Lucca",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → nessuno può andare diritto per Lucca?",
         "spiegazione": "Non è vero che 'tutti' i veicoli non possono andare dritto. Solo i veicoli che superano le 7 tonnellate non possono. Quelli più leggeri possono proseguire dritto per Lucca.",
         "regola": "Attenzione a 'tutti'!",
         "trabocchetti": ["tutti"],
@@ -151,6 +169,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga tutti i veicoli a svoltare a destra al bivio seguente",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tutti a destra al bivio?",
         "spiegazione": "Anche qui, la parola 'tutti' rende la frase falsa. Solo i veicoli con massa superiore a 7 tonnellate sono obbligati a seguire la deviazione a destra per Lucca. Gli altri possono andare dritto.",
         "regola": "Non è per tutti!",
         "trabocchetti": ["obbliga tutti i veicoli"],
@@ -159,6 +178,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il sorpasso agli autoveicoli di massa totale superiore a 7 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso vietato oltre 7 t?",
         "spiegazione": "Il segnale indica un divieto di transito per veicoli pesanti, non un divieto di sorpasso. Il divieto di sorpasso ha un altro simbolo (due auto affiancate, una rossa e una nera, o un camion e un'auto).",
         "regola": "7t = peso, non sorpasso.",
         "trabocchetti": ["vieta il sorpasso"],
@@ -167,6 +187,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che superano 7 metri di lunghezza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato oltre 7 m?",
         "spiegazione": "Il numero '7t' si riferisce alla massa (peso) in tonnellate, non alla lunghezza in metri. Il segnale per la lunghezza ha un simbolo diverso (un camion con una freccia orizzontale e un numero in metri).",
         "regola": "7t = tonnellate, non metri.",
         "trabocchetti": ["7 metri di lunghezza"],
@@ -175,6 +196,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, posto in presenza di lavori stradali, indica alle categorie di veicoli quali corsie possono occupare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato con lavori → corsie per categoria?",
         "spiegazione": "Il segnale è giallo, quindi è un segnale temporaneo, spesso usato in presenza di lavori stradali. Mostra chiaramente che le auto possono usare entrambe le corsie, mentre i camion (autocarri) devono stare nella corsia di destra. Quindi, indica a diverse categorie di veicoli quali corsie possono occupare.",
         "regola": "Giallo = lavori. Indica chi va dove.",
         "trabocchetti": ["categorie di veicoli", "Possono occupare"],
@@ -183,6 +205,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato viene utilizzato per indicare l'uso delle corsie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → uso delle corsie?",
         "spiegazione": "Sì, questo segnale serve proprio a dire come usare le corsie, cioè quali veicoli (auto o camion) possono stare in quale corsia. Le frecce e i disegni dei veicoli lo mostrano chiaramente.",
         "regola": "Segnale = istruzioni per le corsie.",
         "trabocchetti": ["uso delle corsie"],
@@ -191,6 +214,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica ai veicoli su quali corsie debbono circolare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su quali corsie circolare?",
         "spiegazione": "Questo segnale indica ai veicoli la corsia corretta da utilizzare. Per esempio, mostra che le auto possono stare a sinistra o a destra, mentre i camion devono stare a destra. Quindi, dice ai veicoli dove devono circolare.",
         "regola": "Dice ai veicoli la loro corsia.",
         "trabocchetti": ["debbono"],
@@ -199,6 +223,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che gli autocarri di massa complessiva superiore a 3,5 tonnellate possono percorrere solo la corsia di destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarri oltre 3,5 t solo a destra?",
         "spiegazione": "Guardando il segnale, il camion è disegnato solo nella corsia di destra. Questo significa che gli autocarri di massa complessiva superiore a 3,5 tonnellate devono usare solo quella corsia. Le auto, invece, possono usare entrambe.",
         "regola": "Camion solo a destra.",
         "trabocchetti": ["solo"],
@@ -207,6 +232,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'avvicinarsi di un casello autostradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → casello vicino?",
         "spiegazione": "Questo segnale non ha nulla a che fare con i caselli autostradali. I caselli sono indicati da altri segnali, spesso con il simbolo del pedaggio. Questo segnale serve per indicare l'uso delle corsie.",
         "regola": "Non è un casello.",
         "trabocchetti": ["casello autostradale"],
@@ -215,6 +241,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga gli autocarri a circolare per file parallele",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarri in file parallele?",
         "spiegazione": "Il segnale indica quale corsia devono usare i veicoli, non come devono circolare all'interno della corsia. Non obbliga a circolare 'per file parallele' in generale, ma assegna una corsia specifica. L'obbligo di circolare per file parallele è un concetto diverso, legato alla circolazione in colonna.",
         "regola": "Assegna corsia, non impone 'file parallele'.",
         "immagine": "b15b307b01980b8919c4.jpg",
@@ -222,6 +249,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che gli autocarri debbono solo sorpassare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarri sorpassano solo a destra?",
         "spiegazione": "Il segnale mostra che i camion devono stare nella corsia di destra. Non parla di sorpassi, né a destra né a sinistra. Il sorpasso a destra è permesso solo in casi specifici (es. veicolo che svolta a sinistra). Questo segnale non dà indicazioni sui sorpassi.",
         "regola": "Non parla di sorpassi.",
         "trabocchetti": ["solo sorpassare a destra"],
@@ -230,6 +258,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta ai motocicli di circolare sulla corsia di sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → moto vietate a sinistra?",
         "spiegazione": "Il segnale mostra auto e camion. Le auto (e in questo contesto anche i motocicli, a meno di indicazioni specifiche) possono usare entrambe le corsie. Non c'è nessun divieto per i motocicli di circolare sulla corsia di sinistra.",
         "regola": "Nessun divieto per moto a sinistra.",
         "immagine": "b15b307b01980b8919c4.jpg",
@@ -237,6 +266,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è posto ai lati delle gallerie a senso unico",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → ai lati delle gallerie a senso unico?",
         "spiegazione": "Questo delineatore giallo è usato per mostrare i bordi della strada nelle gallerie, specialmente quelle dove si va in una sola direzione. Aiuta i conducenti a vedere bene dove finisce la strada, rendendo la guida più sicura.",
         "regola": "Giallo in galleria = bordo strada.",
         "trabocchetti": ["ai lati delle gallerie a senso unico"],
@@ -245,6 +275,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è un segnale complementare posto nelle gallerie a senso unico",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → complementare nelle gallerie a senso unico?",
         "spiegazione": "Sì, è un 'segnale complementare' perché non dà un ordine o un'indicazione principale, ma 'completa' le informazioni, aiutando a vedere meglio la strada. È usato nelle gallerie a senso unico per guidare il conducente e migliorare la visibilità.",
         "regola": "Complementare = aiuta a vedere.",
         "trabocchetti": ["segnale complementare"],
@@ -253,6 +284,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato si può trovare anche per evidenziare deviazioni o strettoie della carreggiata",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → anche per deviazioni o strettoie?",
         "spiegazione": "Questo delineatore giallo non serve solo nelle gallerie. Può essere usato anche per segnalare che la strada cambia direzione (deviazione) o diventa più stretta (strettoia), per avvisare i guidatori e guidarli in sicurezza.",
         "regola": "Giallo = attenzione, cambia qualcosa.",
         "trabocchetti": ["anche"],
@@ -261,6 +293,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è un segnale complementare",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → complementare?",
         "spiegazione": "Come detto prima, è un segnale che 'completa' le informazioni sulla strada, rendendo più chiari i bordi o gli ostacoli. Non è un segnale di pericolo, obbligo o indicazione principale, ma serve a migliorare la percezione della strada.",
         "regola": "Complementare = aggiunge visibilità.",
         "trabocchetti": ["segnale complementare"],
@@ -269,6 +302,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è usato per indicare un incrocio a senso unico",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → incrocio a senso unico?",
         "spiegazione": "Questo delineatore non serve per gli incroci. Serve per i bordi della strada, le gallerie, le deviazioni o gli ostacoli. Gli incroci sono segnalati in altri modi, con segnali specifici di pericolo o indicazione.",
         "regola": "Giallo non è incrocio.",
         "trabocchetti": ["incrocio a senso unico"],
@@ -277,6 +311,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica una strada chiusa",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → strada chiusa?",
         "spiegazione": "Questo delineatore non significa che la strada è chiusa. Serve per guidare il traffico o segnalare i bordi della strada. Una strada chiusa è indicata con altri segnali, come il segnale di divieto di accesso o pannelli rossi e bianchi.",
         "regola": "Giallo non è chiusura.",
         "immagine": "c87f411ba2ff5f1d749e.jpg",
@@ -284,6 +319,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è posto al centro della carreggiata per indicare un ostacolo",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → al centro per un ostacolo?",
         "spiegazione": "Questo tipo di delineatore è posto ai lati della strada o per evidenziare i bordi. Se c'è un ostacolo al centro della strada, si usano altri tipi di segnali o delineatori, spesso con strisce bianche e rosse o luci, per renderlo ben visibile.",
         "regola": "Giallo ai lati, non al centro.",
         "trabocchetti": ["al centro della carreggiata"],
@@ -292,6 +328,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato divide la carreggiata in corsie",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → divide in corsie?",
         "spiegazione": "Questo delineatore non serve a dividere la strada in corsie. Le corsie sono divise dalle strisce bianche dipinte sull'asfalto. Questo segnale serve a indicare i bordi o le deviazioni, non a creare corsie.",
         "regola": "Giallo non divide corsie.",
         "immagine": "c87f411ba2ff5f1d749e.jpg",
@@ -299,6 +336,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è un pannello distanziometrico posto vicino ad un passaggio a livello",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → pannello distanziometrico del passaggio a livello?",
         "spiegazione": "I pannelli distanziometrici vicino ai passaggi a livello sono diversi: hanno strisce rosse e bianche e indicano la distanza dal passaggio a livello. Questo delineatore giallo non ha quella funzione e non è usato per i passaggi a livello.",
         "regola": "Giallo non è passaggio a livello.",
         "trabocchetti": ["pannello distanziometrico", "passaggio a livello"],
@@ -307,6 +345,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato ha luce propria",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → luce propria?",
         "spiegazione": "Questo delineatore è un pannello riflettente, cioè riflette la luce dei fari delle auto, rendendosi visibile al buio. Non ha una luce interna che si accende da sola, come un lampione o un semaforo.",
         "regola": "Giallo riflette, non illumina.",
         "trabocchetti": ["ha luce propria"],
@@ -315,6 +354,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica di svoltare a destra o a sinistra",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → svoltare a destra o sinistra?",
         "spiegazione": "Il segnale mostra frecce che vanno sia a destra che a sinistra. Questo significa che non puoi andare dritto e devi scegliere una delle due direzioni possibili.",
         "regola": "Frecce a destra e sinistra = Scegli la direzione.",
         "trabocchetti": ["Svoltare a destra o a sinistra"],
@@ -323,6 +363,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato ha le punte delle frecce che segnalano le direzioni possibili",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → punte delle frecce = direzioni possibili?",
         "spiegazione": "Le 'punte delle frecce' sono proprio le parti a forma di V che vedi sul segnale. Indicano chiaramente che puoi andare a destra o a sinistra.",
         "regola": "Le punte indicano dove puoi andare.",
         "trabocchetti": ["Punte delle frecce"],
@@ -331,6 +372,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è installato ad un incrocio a forma di \"T\"",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → incrocio a T?",
         "spiegazione": "Questo segnale si trova spesso dove una strada finisce e devi girare a destra o a sinistra, proprio come in un incrocio a 'T' dove non puoi proseguire dritto.",
         "regola": "Incrocio a T = Gira a destra o sinistra.",
         "trabocchetti": ["Incrocio a forma di"],
@@ -339,6 +381,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è posto in un incrocio dove non è possibile proseguire diritto",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → incrocio senza diritto?",
         "spiegazione": "Le frecce che indicano solo destra e sinistra significano che la strada davanti è chiusa o non esiste. Quindi, non puoi andare dritto.",
         "regola": "Solo frecce laterali = Dritto è chiuso.",
         "trabocchetti": ["Non è possibile proseguire diritto"],
@@ -347,6 +390,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica un passaggio a livello",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → passaggio a livello?",
         "spiegazione": "Un passaggio a livello è dove la strada incrocia i binari del treno. Questo segnale non ha nulla a che fare con i treni. I segnali di passaggio a livello sono diversi (ad esempio, la croce di Sant'Andrea o le barriere).",
         "regola": "Niente treni, niente passaggio a livello.",
         "trabocchetti": ["Passaggio a livello"],
@@ -355,6 +399,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica un ponte mobile",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → ponte mobile?",
         "spiegazione": "Un ponte mobile è un ponte che si apre per far passare le navi. Il segnale per un ponte mobile è un triangolo con un'immagine di un ponte che si alza. Questo segnale non lo indica.",
         "regola": "Niente ponte, niente ponte mobile.",
         "trabocchetti": ["Ponte mobile"],
@@ -363,6 +408,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica una strada chiusa per lavori in corso",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → strada chiusa per lavori?",
         "spiegazione": "Questo segnale indica solo che devi girare a destra o a sinistra. Non specifica il motivo per cui non puoi andare dritto. Potrebbe essere per lavori, ma anche solo la fine della strada. I segnali di lavori in corso sono diversi (ad esempio, un triangolo con un operaio o cartelli gialli).",
         "regola": "Indica solo la direzione, non il motivo.",
         "trabocchetti": ["Per lavori in corso"],
@@ -371,6 +417,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica un aumento del numero di corsie della strada",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → aumento delle corsie?",
         "spiegazione": "Questo segnale indica che la strada finisce dritto e devi girare. Non ha nulla a che fare con l'aumento o la diminuzione delle corsie.",
         "regola": "Frecce laterali = Fine strada, non più corsie.",
         "trabocchetti": ["Aumento del numero di corsie"],
@@ -379,6 +426,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica una curva a senso unico",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → curva a senso unico?",
         "spiegazione": "Questo segnale non indica una curva, ma un punto dove la strada finisce e devi scegliere tra due direzioni (destra o sinistra). Una curva a senso unico sarebbe un segnale diverso, con una sola freccia curva.",
         "regola": "Non è una curva, ma un bivio.",
         "trabocchetti": ["Curva a senso unico"],
@@ -387,6 +435,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica l'ingresso di una galleria",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → ingresso galleria?",
         "spiegazione": "L'ingresso di una galleria è segnalato da un cartello specifico (un triangolo con l'immagine di una galleria). Questo segnale non c'entra nulla con le gallerie.",
         "regola": "Niente galleria, niente tunnel.",
         "trabocchetti": ["Galleria"],
@@ -395,6 +444,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un cantiere mobile con strettoia a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → cantiere mobile con strettoia a sinistra?",
         "spiegazione": "Il segnale giallo a sinistra mostra che la strada si restringe sul lato sinistro, con una corsia che finisce. Il segnale a destra con l'operaio indica un cantiere. Le luci gialle e la natura del segnale (spesso usato per lavori che si spostano) indicano che si tratta di un cantiere mobile con una diminuzione delle corsie a sinistra.",
         "regola": "Cantiere + restringimento a sinistra = lavori con meno spazio a sinistra.",
         "trabocchetti": ["cantiere mobile", "strettoia a sinistra"],
@@ -403,6 +453,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere installato su un veicolo per preavvisare un cantiere stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su un veicolo per preavvisare un cantiere?",
         "spiegazione": "Sì, i segnali di cantiere, specialmente quelli con le luci lampeggianti come in questo caso, sono spesso montati su veicoli speciali (come furgoni o camion) che si trovano sul posto dei lavori. Questo serve per avvisare gli altri guidatori in modo chiaro e visibile, soprattutto per cantieri temporanei o mobili.",
         "regola": "Segnali di cantiere con luci = spesso su veicoli.",
         "trabocchetti": ["installato su un veicolo"],
@@ -411,6 +462,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica le corsie disponibili per la circolazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → corsie disponibili?",
         "spiegazione": "Il segnale giallo a sinistra mostra chiaramente le corsie che si possono usare per guidare. All'inizio ci sono tre frecce (tre corsie), poi una si unisce e ne rimangono due. Le frecce indicano proprio le corsie disponibili per il traffico.",
         "regola": "Frecce sul segnale giallo = corsie che puoi usare.",
         "trabocchetti": ["corsie disponibili per la circolazione"],
@@ -419,6 +471,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una diminuzione da tre a due corsie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → da tre a due corsie?",
         "spiegazione": "Guarda attentamente il segnale giallo: all'inizio ci sono tre frecce che indicano tre corsie. Poi, la corsia più a sinistra si unisce alle altre, e rimangono solo due frecce, cioè due corsie. Quindi, il numero di corsie diminuisce da tre a due.",
         "regola": "Conta le frecce: 3 diventano 2.",
         "trabocchetti": ["diminuzione da tre a due corsie"],
@@ -427,6 +480,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere completato con luci gialle lampeggianti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → luci gialle lampeggianti?",
         "spiegazione": "L'immagine stessa mostra due luci gialle lampeggianti sopra il segnale di cantiere. Queste luci servono a rendere il segnale più visibile, soprattutto di notte o in condizioni di scarsa visibilità, aumentando la sicurezza.",
         "regola": "Le luci gialle sono già lì!",
         "trabocchetti": ["può essere completato"],
@@ -435,6 +489,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica quanti veicoli possono transitare contemporaneamente",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → veicoli contemporanei?",
         "spiegazione": "Il segnale indica il numero di corsie disponibili sulla strada, non il numero di veicoli che possono passare nello stesso momento. In una singola corsia possono esserci molti veicoli, uno dietro l'altro.",
         "regola": "Corsie non veicoli.",
         "immagine": "ebb64d02ae7a1d21be57.jpg",
@@ -442,6 +497,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una piazzola di sosta sul lato sinistro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → piazzola a sinistra?",
         "spiegazione": "Il segnale giallo mostra un restringimento della carreggiata (la strada diventa più stretta), non una piazzola di sosta. Una piazzola di sosta ha un simbolo diverso, di solito una 'P' su sfondo blu, e serve per fermarsi o parcheggiare.",
         "regola": "Non è una P, non è una sosta.",
         "trabocchetti": ["piazzola di sosta"],
@@ -450,6 +506,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto sui veicoli per lavori stradali, fermi o in lento movimento",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su veicoli di lavori fermi o lenti?",
         "spiegazione": "Questo segnale è usato proprio per indicare la presenza di veicoli che stanno facendo lavori sulla strada, sia che siano fermi sia che si muovano lentamente. Serve a segnalare un pericolo e a dire agli altri automobilisti come comportarsi.",
         "regola": "Lavori in corso? Segnale sul veicolo!",
         "trabocchetti": ["può essere posto"],
@@ -458,6 +515,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il lato dal quale il veicolo su cui è posto deve essere sorpassato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → lato da cui sorpassare il veicolo?",
         "spiegazione": "Esatto! La freccia sul segnale indica chiaramente da quale lato devi passare (sorpassare) il veicolo o l'ostacolo su cui è montato. In questo caso, la freccia punta a destra, quindi devi passare a destra.",
         "regola": "Freccia = lato di sorpasso.",
         "immagine": "d6305a0f00ae5814e947.jpg",
@@ -465,6 +523,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto sui veicoli per la manutenzione stradale in sosta sulla carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su veicoli di manutenzione in sosta?",
         "spiegazione": "Sì, questo segnale è utilizzato anche quando i veicoli per la manutenzione stradale sono fermi (in sosta) sulla strada. Serve a segnalare la loro presenza e a indicare agli altri conducenti come aggirarli in sicurezza.",
         "regola": "Veicolo fermo per lavori? Segnale per aggirarlo.",
         "trabocchetti": ["sosta"],
@@ -473,6 +532,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto su alcuni veicoli per lavori stradali, che procedono a bassa velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su veicoli di lavori lenti?",
         "spiegazione": "Corretto. Non solo i veicoli fermi, ma anche quelli che si muovono a bassa velocità per eseguire lavori sulla strada usano questo segnale. Aiuta gli altri automobilisti a capire come superarli in sicurezza.",
         "regola": "Lento o fermo, il segnale ti guida.",
         "trabocchetti": ["procedono a bassa velocità"],
@@ -481,6 +541,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita i conducenti a diminuire la velocità per la possibile presenza di veicoli fermi o in lento movimento",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare per veicoli fermi o lenti?",
         "spiegazione": "Vero. La presenza di questo segnale, che indica lavori o ostacoli sulla strada, è un chiaro invito a rallentare. È una misura di sicurezza per evitare incidenti, dato che ci sono veicoli fermi o che si muovono lentamente.",
         "regola": "Segnale lavori = rallenta e fai attenzione.",
         "trabocchetti": ["invita"],
@@ -489,6 +550,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica di sorpassare l'ostacolo sulla sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → superare l'ostacolo a sinistra?",
         "spiegazione": "Falso! Guarda bene la freccia sul segnale: punta in basso a destra. Questo significa che devi sorpassare l'ostacolo (il veicolo o il cantiere) sulla destra, non sulla sinistra.",
         "regola": "Segui la freccia! Destra = destra, Sinistra = sinistra.",
         "trabocchetti": ["sinistra"],
@@ -497,6 +559,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica di svoltare subito a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svoltare subito a destra?",
         "spiegazione": "Falso. Questo segnale non ti dice di svoltare a destra in una strada o un incrocio. Ti dice di passare a destra di un ostacolo che si trova sulla tua carreggiata. È una manovra di aggiramento, non una svolta.",
         "regola": "Non è una svolta, è un aggiramento.",
         "trabocchetti": ["svoltare"],
@@ -505,6 +568,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica corsia di destra chiusa per manutenzione stradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia destra chiusa?",
         "spiegazione": "Falso. Il segnale non indica che la corsia di destra è chiusa. Al contrario, la freccia indica che devi usare la corsia di destra per superare l'ostacolo. Se la corsia di destra fosse chiusa, la freccia indicherebbe di andare a sinistra.",
         "regola": "Freccia a destra = passa a destra, non è chiusa.",
         "trabocchetti": ["corsia di destra chiusa"],
@@ -513,6 +577,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a sostare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta a destra obbligatoria?",
         "spiegazione": "Falso. Questo segnale non ha nulla a che fare con la sosta (il fermarsi). Ti dice solo di passare a destra di un ostacolo. Non ti obbliga a fermarti o a parcheggiare da nessuna parte.",
         "regola": "Non è un segnale di sosta, è un segnale di direzione.",
         "trabocchetti": ["sostare"],
@@ -521,6 +586,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la direzione consigliata per gli autocarri di massa complessiva a pieno carico superiore a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → direzione consigliata ad autocarri oltre 3,5 t?",
         "spiegazione": "Il segnale giallo con la freccia e il camion indica una direzione che è 'consigliata' per i camion più grandi, quelli che pesano più di 3,5 tonnellate. Non è un obbligo, ma un suggerimento per un percorso migliore, magari per evitare un tratto di strada difficile o un cantiere.",
         "regola": "Giallo + Camion + Freccia = Percorso consigliato per camion pesanti.",
         "trabocchetti": ["consigliata", "superiore a 3,5 tonnellate"],
@@ -529,6 +595,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la categoria di veicoli a cui è consigliata la svolta",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → categoria a cui è consigliata la svolta?",
         "spiegazione": "Sì, il disegno del camion sul segnale serve proprio a identificare la 'categoria di veicoli' (gli autocarri) a cui è rivolto il consiglio di seguire la direzione indicata dalla freccia.",
         "regola": "Il camion disegnato indica 'chi' deve seguire il consiglio.",
         "trabocchetti": ["categoria di veicoli", "consigliata la svolta"],
@@ -537,6 +604,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è installato nel punto della deviazione consigliata per autocarri che superano 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → punto della deviazione per autocarri?",
         "spiegazione": "Questo tipo di segnale temporaneo viene posizionato proprio nel punto in cui i camion devono girare (deviare) per seguire il percorso alternativo consigliato. Serve per indicare la svolta esatta.",
         "regola": "Il segnale è 'qui e ora' per la svolta.",
         "trabocchetti": ["nel punto della deviazione", "consigliata"],
@@ -545,6 +613,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere preceduto da un segnale di preavviso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → preceduto da preavviso?",
         "spiegazione": "Spesso, prima di un segnale come questo, si trova un altro segnale uguale ma con un pannello aggiuntivo che indica la distanza (ad esempio, 'tra 300 metri'). Questo serve per avvisare i conducenti in anticipo della deviazione.",
         "regola": "Prima di girare, spesso c'è un 'avviso'.",
         "trabocchetti": ["può essere preceduto", "segnale di preavviso"],
@@ -553,6 +622,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova in vicinanza di un incrocio che precede un cantiere stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio prima del cantiere?",
         "spiegazione": "Questi segnali gialli sono temporanei e vengono usati spesso per deviare il traffico, specialmente quello pesante, quando c'è un cantiere stradale che blocca o rallenta la strada principale. Si trovano vicino all'incrocio dove inizia la deviazione.",
         "regola": "Giallo = Temporaneo, spesso per cantieri.",
         "trabocchetti": ["in vicinanza di un incrocio", "precede un cantiere stradale"],
@@ -561,6 +631,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è vietato svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato svoltare a sinistra?",
         "spiegazione": "FALSO. Il segnale indica una direzione 'consigliata' a destra per i camion. Non dice assolutamente che è 'vietato' svoltare a sinistra. Potrebbe essere permesso, semplicemente non è il percorso consigliato per i camion.",
         "regola": "Consiglio non è divieto.",
         "trabocchetti": ["vietato"],
@@ -569,6 +640,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area di sosta per gli autocarri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta autocarri?",
         "spiegazione": "FALSO. Il segnale mostra una freccia che indica una direzione da seguire, non un'area dove fermarsi o 'sostare'. Per le aree di sosta ci sono altri segnali specifici, solitamente con il simbolo 'P' o un'immagine di un veicolo fermo.",
         "regola": "Freccia = Direzione, non sosta.",
         "trabocchetti": ["area di sosta"],
@@ -577,6 +649,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la direzione da seguire per arrivare in una discarica",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → discarica?",
         "spiegazione": "FALSO. Il segnale indica una direzione consigliata per gli autocarri, ma non specifica la destinazione finale, come una 'discarica'. Potrebbe essere per qualsiasi motivo (un cantiere, una strada migliore, ecc.). Il segnale è generico per la categoria di veicoli.",
         "regola": "Il segnale non dice 'dove' si va, solo 'come' si devia.",
         "trabocchetti": ["discarica"],
@@ -585,6 +658,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada a senso unico sulla destra, riservata solo agli autocarri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico a destra solo autocarri?",
         "spiegazione": "FALSO. Il segnale indica una direzione 'consigliata' per gli autocarri, non che la strada sia 'riservata solo' a loro o che sia un 'senso unico'. Altri veicoli potrebbero comunque usarla, ma per i camion è il percorso preferito.",
         "regola": "Consiglio non è esclusività.",
         "trabocchetti": ["riservata solo", "senso unico"],
@@ -593,6 +667,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga gli autocarri a svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarri obbligati a destra?",
         "spiegazione": "FALSO. La parola chiave è 'consigliata'. Questo segnale non 'obbliga' nessuno a svoltare. Indica solo un percorso preferibile per i camion. I segnali di obbligo sono rotondi e di colore blu.",
         "regola": "Giallo = Consiglio, non obbligo. Obligo è blu e rotondo.",
         "trabocchetti": ["obbliga"],
@@ -601,6 +676,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa lavori in corso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → lavori in corso?",
         "spiegazione": "Il segnale con l'omino che scava ti avvisa che più avanti sulla strada ci sono dei lavori in corso. È un segnale di pericolo, quindi ti prepara a trovare una situazione diversa dal solito.",
         "regola": "Uomo che scava = Lavori in corso.",
         "trabocchetti": ["preavvisa"],
@@ -609,6 +685,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa cantieri di lavoro",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → cantieri?",
         "spiegazione": "Un cantiere di lavoro è il luogo dove si svolgono i lavori. Quindi, se il segnale preavvisa lavori, significa che ti stai avvicinando a un cantiere.",
         "regola": "Lavori = Cantiere.",
         "trabocchetti": ["Cantieri di lavoro"],
@@ -617,6 +694,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa eventuali depositi temporanei di materiali o macchinari",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → depositi di materiali o macchinari?",
         "spiegazione": "Nei cantieri, è comune trovare materiali (come sabbia o pietre) o macchinari (come escavatori) lasciati temporaneamente sulla strada o ai suoi lati. Il segnale ti avvisa anche di questa possibile presenza, che può essere un pericolo.",
         "regola": "Cantiere = Materiali e macchinari.",
         "trabocchetti": ["Eventuali", "Temporanei"],
@@ -625,6 +703,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa la eventuale presenza di uomini che lavorano presso o sulla carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → operai al lavoro?",
         "spiegazione": "Il disegno del segnale mostra un uomo che lavora. Questo ti avvisa che potresti trovare operai sulla strada (carreggiata) o molto vicini ad essa, e quindi devi fare molta attenzione e rallentare.",
         "regola": "Uomo che scava = Operai in strada.",
         "trabocchetti": ["Eventuale presenza", "Presso o sulla carreggiata"],
@@ -633,6 +712,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere integrato da pannello che indica la lunghezza del cantiere",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con lunghezza del cantiere?",
         "spiegazione": "Sotto il segnale di 'Lavori' puoi trovare un altro pannello (un cartello aggiuntivo) che ti dice per quanti metri o chilometri si estende il cantiere, così sai per quanto tempo dovrai fare attenzione.",
         "regola": "Segnale + Pannello = Lunghezza cantiere.",
         "trabocchetti": ["Può essere integrato"],
@@ -641,6 +721,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di dare la precedenza ai veicoli che escono dal cantiere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza a chi esce dal cantiere?",
         "spiegazione": "Questo segnale è di pericolo, ti avvisa dei lavori. Non ti dà un obbligo specifico di dare la precedenza ai veicoli che escono dal cantiere. La precedenza è regolata da altri segnali o dalle regole generali della strada.",
         "regola": "Pericolo, non precedenza.",
         "trabocchetti": ["impone"],
@@ -649,6 +730,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa l'obbligo di dare la precedenza ai veicoli che provengono in senso opposto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza agli opposti?",
         "spiegazione": "Il segnale di 'Lavori' ti avvisa di un pericolo, ma non ti obbliga a dare la precedenza ai veicoli che vengono dall'altra direzione. Per questo tipo di obbligo ci sono altri segnali specifici (come il segnale di 'dare precedenza ai veicoli provenienti in senso inverso').",
         "regola": "Pericolo, non precedenza.",
         "trabocchetti": ["obbligo di dare la precedenza"],
@@ -657,6 +739,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a invertire il senso di marcia nelle ore di lavoro degli operai",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inversione nelle ore di lavoro?",
         "spiegazione": "Questo segnale non ti obbliga assolutamente a tornare indietro o a invertire il senso di marcia. Ti avvisa solo della presenza di lavori, quindi devi rallentare e fare attenzione, ma non cambiare direzione in quel modo.",
         "regola": "Pericolo, non inversione.",
         "trabocchetti": ["obbliga a invertire il senso di marcia"],
@@ -665,6 +748,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a dare la precedenza agli addetti ai lavori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza agli operai?",
         "spiegazione": "Il segnale ti avvisa che ci sono operai, quindi devi guidare con molta prudenza e rallentare per la loro sicurezza. Tuttavia, non c'è un obbligo legale di 'dare la precedenza' agli operai come se fossero veicoli. Devi fare attenzione, ma non è una precedenza in senso stretto.",
         "regola": "Attenzione, non precedenza.",
         "trabocchetti": ["obbliga a dare la precedenza"],
@@ -673,6 +757,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un senso unico alternato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico alternato?",
         "spiegazione": "Il senso unico alternato è una situazione in cui il traffico passa a turno in una direzione e poi nell'altra, di solito per una strada stretta. Il segnale di 'Lavori' non indica questo tipo di regolazione del traffico. Se c'è un senso unico alternato, ci saranno altri segnali specifici per quello.",
         "regola": "Lavori, non senso alternato.",
         "trabocchetti": ["Senso unico alternato"],
@@ -681,6 +766,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un impianto semaforico in presenza di un cantiere stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → semaforo per cantiere?",
         "spiegazione": "Questo segnale ti avvisa che più avanti c'è un semaforo. È molto comune trovare semafori temporanei nei cantieri stradali per regolare il traffico, quindi è vero che può preavvisare un semaforo in questa situazione.",
         "regola": "Semaforo + Cantiere = Possibile.",
         "trabocchetti": ["in presenza di un cantiere stradale"],
@@ -689,6 +775,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare sia su strade urbane che extraurbane",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → urbane ed extraurbane?",
         "spiegazione": "I segnali di pericolo, come questo che preavvisa un semaforo, sono usati sia nelle città (strade urbane) sia fuori dalle città (strade extraurbane) per avvisare i guidatori in anticipo.",
         "regola": "Pericolo = Ovunque.",
         "immagine": "d00c6dbbfd44441f766b.jpg",
@@ -696,6 +783,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto prima del restringimento di carreggiata per lavori in corso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima del restringimento per lavori?",
         "spiegazione": "Quando la strada si restringe per lavori, spesso si usa un semaforo per far passare le auto a senso unico alternato. Quindi, questo segnale ti avvisa che c'è un semaforo prima del punto in cui la strada si restringe.",
         "regola": "Semaforo + Restringimento = Sì.",
         "trabocchetti": ["può essere posto"],
@@ -704,6 +792,7 @@ QUESTIONS = [
     {
         "domanda": "Nel segnale raffigurato il disco al centro è a luce gialla lampeggiante",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → disco centrale a luce gialla lampeggiante?",
         "spiegazione": "Il segnale di preavviso di semaforo, quando è installato sulla strada, ha spesso la luce gialla (quella centrale) che lampeggia. Questo serve per attirare di più l'attenzione dei guidatori e segnalare un pericolo imminente.",
         "regola": "Preavviso semaforo = Giallo lampeggiante.",
         "immagine": "d00c6dbbfd44441f766b.jpg",
@@ -711,6 +800,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un semaforo che regola il traffico in transito su ponti mobili o girevoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → semaforo per ponti mobili?",
         "spiegazione": "Questo segnale avvisa solo di un semaforo generico. Per i ponti mobili o girevoli, c'è un segnale di pericolo specifico (un triangolo con l'immagine di un ponte che si apre).",
         "regola": "Ponte mobile = Segnale specifico (non questo).",
         "trabocchetti": ["ponti mobili o girevoli"],
@@ -719,6 +809,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa la presenza di un segnale di STOP",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → STOP?",
         "spiegazione": "Questo segnale ti avvisa che più avanti c'è un semaforo. Non avvisa di un segnale di STOP. Per preavvisare lo STOP, c'è un altro segnale di pericolo (un triangolo con il simbolo dello STOP all'interno).",
         "regola": "Semaforo ≠ STOP.",
         "trabocchetti": ["segnale di STOP"],
@@ -727,6 +818,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa l'accesso al pontile d'imbarco delle navi traghetto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → imbarco traghetti?",
         "spiegazione": "Questo segnale non ha nulla a che fare con i traghetti o i pontili d'imbarco. Il suo unico scopo è preavvisare la presenza di un semaforo.",
         "regola": "Semaforo ≠ Traghetti.",
         "trabocchetti": ["pontile d"],
@@ -735,6 +827,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un attraversamento ferroviario senza barriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ferrovia senza barriere?",
         "spiegazione": "Questo segnale avvisa di un semaforo. Per gli attraversamenti ferroviari (passaggi a livello), ci sono segnali specifici, come la croce di Sant'Andrea o il segnale con l'immagine del treno.",
         "regola": "Semaforo ≠ Treno.",
         "immagine": "d00c6dbbfd44441f766b.jpg",
@@ -742,6 +835,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è posto nelle curve strette e con mancanza di visibilità",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → curve strette senza visibilità?",
         "spiegazione": "Questo tipo di delineatore serve a rendere più visibili le curve che sono strette o dove non si vede bene la strada, aiutando il conducente a capire meglio il percorso.",
         "regola": "Curva stretta o poco visibile? Il delineatore ti guida!",
         "trabocchetti": ["strette", "mancanza di visibilità"],
@@ -750,6 +844,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato si trova, di norma, dopo il segnale CURVA PERICOLOSA A SINISTRA",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → dopo CURVA PERICOLOSA A SINISTRA?",
         "spiegazione": "Il delineatore raffigurato (o uno dello stesso tipo, ma con frecce a sinistra) si trova sempre dopo il segnale triangolare che avvisa di una curva pericolosa. Anche se quello nell'immagine indica una curva a destra, il principio di posizionamento dopo il segnale di pericolo è corretto per questo tipo di delineatori.",
         "regola": "Delineatore = dopo il segnale di curva.",
         "trabocchetti": ["di norma", "dopo il segnale CURVA PERICOLOSA", "a sinistra"],
@@ -758,6 +853,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato, se di colore bianco e rosso, indica una curva provvisoria a sinistra",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato bianco-rosso → curva provvisoria a sinistra?",
         "spiegazione": "Il delineatore nell'immagine è bianco e nero, quindi indica una curva permanente. Se fosse bianco e rosso, indicherebbe una curva temporanea, spesso per lavori in corso. Se le frecce fossero a sinistra, indicherebbe una curva provvisoria a sinistra.",
         "regola": "Bianco/rosso = provvisorio.",
         "trabocchetti": ["se di colore bianco e rosso", "provvisoria"],
@@ -766,6 +862,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è usato per segnalare una curva pericolosa",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → curva pericolosa?",
         "spiegazione": "Sì, la funzione principale di questo delineatore è proprio quella di segnalare e rendere più evidente una curva che può essere pericolosa per la sua conformazione.",
         "regola": "Frecce nere/bianche = curva pericolosa.",
         "immagine": "a0534b6599f9cbda5c1d.jpg",
@@ -773,6 +870,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato invita il conducente a fare attenzione nel percorrere una curva",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → attenzione in curva?",
         "spiegazione": "Rendendo la curva più visibile e indicandone la direzione, il delineatore aiuta il conducente a capire meglio la strada e quindi lo 'invita' a guidare con maggiore attenzione.",
         "regola": "Segnale di curva = attenzione!",
         "trabocchetti": ["invita il conducente a fare attenzione"],
@@ -781,6 +879,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica un cantiere stradale",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → cantiere?",
         "spiegazione": "Questo delineatore serve per le curve. I cantieri stradali sono segnalati con cartelli specifici, spesso di colore giallo o arancione, o con delineatori bianchi e rossi se si tratta di deviazioni temporanee.",
         "regola": "Cantiere = arancione/giallo, non nero/bianco.",
         "trabocchetti": ["cantiere stradale"],
@@ -789,6 +888,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato segnala una strada dove si trovano salite e discese",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → salite e discese?",
         "spiegazione": "Questo delineatore è specifico per le curve. Le salite e le discese sono indicate da altri segnali di pericolo, come quelli che mostrano la pendenza della strada.",
         "regola": "Frecce orizzontali = curva, non pendenza.",
         "trabocchetti": ["salite e discese"],
@@ -797,6 +897,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica gli ostacoli sporgenti sulla carreggiata",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → ostacoli sporgenti?",
         "spiegazione": "Il delineatore serve a indicare il percorso di una curva. Gli ostacoli sulla carreggiata sono segnalati in altri modi, ad esempio con coni, barriere o altri segnali specifici.",
         "regola": "Curva, non ostacolo.",
         "trabocchetti": ["ostacoli sporgenti sulla carreggiata"],
@@ -805,6 +906,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato segnala una curva pericolosa a destra",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → curva pericolosa a destra?",
         "spiegazione": "Il delineatore raffigurato, con le frecce che puntano verso destra, indica la direzione della curva, che è appunto a destra. Tuttavia, questo è un 'delineatore', che serve a rendere visibile e guidare nella curva, ma non è il 'segnale' principale di pericolo. Il segnale principale di 'curva pericolosa a destra' è il cartello triangolare. Quindi, il delineatore 'aiuta' a percorrere la curva, ma non la 'segnala' come un cartello di pericolo.",
         "regola": "Il delineatore guida, il triangolo avvisa.",
         "trabocchetti": ["segnala", "delinea"],
@@ -813,6 +915,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica che si è vicini ad un passaggio a livello",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → passaggio a livello?",
         "spiegazione": "Questo delineatore è per le curve. I passaggi a livello (dove passa il treno) sono segnalati da cartelli specifici, come la croce di Sant'Andrea o i segnali di barriere.",
         "regola": "Curva, non treno.",
         "trabocchetti": ["passaggio a livello"],
@@ -821,6 +924,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato viene posto solo su strade extraurbane principali",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → solo su extraurbane principali?",
         "spiegazione": "Questi delineatori possono essere usati su diversi tipi di strade, non solo sulle strade extraurbane principali. La parola 'solo' rende spesso false le affermazioni nei quiz, perché limita troppo le possibilità.",
         "regola": "'Solo' è quasi sempre FALSO.",
         "trabocchetti": ["solo"],
@@ -829,6 +933,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato si trova in serie di più elementi per evidenziare una curva pericolosa",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → in serie per la curva?",
         "spiegazione": "Questo tipo di segnale, chiamato delineatore, non si trova mai da solo. Viene messo in fila (in serie) con altri simili per mostrare bene come si sviluppa una curva pericolosa, aiutando il conducente a seguirne il percorso.",
         "regola": "Delineatore = tanti, non uno solo.",
         "trabocchetti": ["in serie di più elementi"],
@@ -837,6 +942,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è un segnale complementare",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → complementare?",
         "spiegazione": "I segnali complementari sono quelli che 'aiutano' gli altri segnali (come i segnali di pericolo) a dare informazioni più precise o a rafforzare un avviso. Questo delineatore serve proprio a completare l'informazione di una curva pericolosa.",
         "regola": "Delineatore = completa l'informazione.",
         "trabocchetti": ["complementare"],
@@ -845,6 +951,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica una curva pericolosa a destra",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → curva pericolosa a destra?",
         "spiegazione": "Guarda la freccia bianca sul segnale: punta chiaramente verso destra. Questo significa che la curva che stai per affrontare va a destra ed è considerata pericolosa.",
         "regola": "Freccia a destra = curva a destra.",
         "immagine": "3364d91fe2eb853d9c38.jpg",
@@ -852,6 +959,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica una curva pericolosa a sinistra",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → curva pericolosa a sinistra?",
         "spiegazione": "Come abbiamo visto, la freccia bianca sul segnale punta a destra. Quindi, questo segnale indica una curva pericolosa a destra, non a sinistra. Se indicasse una curva a sinistra, la freccia punterebbe in quella direzione.",
         "regola": "Freccia a destra, non a sinistra!",
         "trabocchetti": ["sinistra"],
@@ -860,6 +968,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato si trova 150 metri prima di una curva",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → 150 m prima della curva?",
         "spiegazione": "I delineatori non sono segnali di preavviso che si trovano molto prima. Questi segnali si trovano all'inizio e lungo la curva stessa, proprio per guidarti mentre la percorri, non 150 metri prima.",
         "regola": "Delineatore = nella curva, non prima.",
         "trabocchetti": ["150 metri prima"],
@@ -868,6 +977,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è posto all'ingresso di una galleria",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → ingresso galleria?",
         "spiegazione": "Questo segnale serve per indicare le curve pericolose. Non ha alcuna relazione con l'ingresso delle gallerie, per le quali esistono altri segnali specifici.",
         "regola": "Curva, non galleria.",
         "trabocchetti": ["all"],
@@ -876,6 +986,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato viene usato nei passaggi a livello, quando le barriere sono guaste",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → barriere guaste?",
         "spiegazione": "Questa affermazione è sbagliata. Il delineatore serve solo per le curve pericolose. Per i passaggi a livello, specialmente se le barriere sono guaste, si usano altri segnali di pericolo specifici e si interviene con personale.",
         "regola": "Curva, non passaggio a livello.",
         "trabocchetti": ["passaggi a livello", "barriere sono guaste"],
@@ -884,6 +995,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato si trova solo se la curva è su strada a senso unico",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → solo su curva a senso unico?",
         "spiegazione": "Questi delineatori si usano per evidenziare curve pericolose sia su strade a senso unico che su strade a doppio senso di circolazione. La direzione del traffico non limita il loro utilizzo.",
         "regola": "'Solo se' = attenzione, spesso è FALSO.",
         "trabocchetti": ["solo"],
@@ -892,6 +1004,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato indica la vicinanza di una curva stretta",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → curva stretta?",
         "spiegazione": "Un 'tornante' è una curva molto stretta, quasi a gomito, che spesso si trova in montagna. Questo pannello ti avvisa che stai per incontrare una di queste curve difficili.",
         "regola": "Tornante = curva stretta.",
         "trabocchetti": ["curva stretta"],
@@ -900,6 +1013,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato indica il numero progressivo di una curva pericolosa",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → numero progressivo della curva?",
         "spiegazione": "Il numero '1°' indica che è il primo tornante di una serie. I tornanti sono considerati curve pericolose per la loro forma molto stretta, che richiede attenzione e una velocità ridotta.",
         "regola": "1° = primo di tanti tornanti.",
         "trabocchetti": ["numero progressivo"],
@@ -908,6 +1022,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato indica il primo di una serie di tornanti (curve a raggio ridotto)",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → primo di una serie di tornanti?",
         "spiegazione": "Esatto, '1°' significa che è il primo. Un 'tornante' è una curva con un 'raggio ridotto', cioè molto stretta, che ti fa cambiare direzione di quasi 180 gradi.",
         "regola": "1° tornante = primo di curve strette.",
         "trabocchetti": ["Primo di una serie", "curve a raggio ridotto"],
@@ -916,6 +1031,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato, in una serie di tornanti, ne indica il numero progressivo",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → numero progressivo del tornante?",
         "spiegazione": "Questo pannello serve proprio a contare i tornanti. Se vedi '1° tornante', sai che è il primo. Poi potresti vedere '2° tornante' e così via, per farti capire quanti ne mancano o quanti ne hai già superati.",
         "regola": "Il numero indica l'ordine.",
         "trabocchetti": ["progressivo"],
@@ -924,6 +1040,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato indica una zona a circolazione rotatoria",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → rotatoria?",
         "spiegazione": "Falso. Una 'circolazione rotatoria' (o rotonda) ha un segnale specifico (un cerchio blu con frecce bianche). Questo pannello parla di 'tornante', che è una curva stretta, non una rotonda.",
         "regola": "Tornante NON è rotonda.",
         "trabocchetti": ["circolazione rotatoria"],
@@ -932,6 +1049,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato indica che fra un chilometro troveremo un tornante",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → tornante fra 1 km?",
         "spiegazione": "Falso. Il '1°' indica il numero del tornante (il primo), non la distanza in chilometri. Per indicare una distanza, ci sarebbe un altro pannello con scritto, ad esempio, '1 km' o 'tra 1 km'.",
         "regola": "1° = ordine, non distanza.",
         "trabocchetti": ["fra un chilometro"],
@@ -940,6 +1058,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato indica i chilometri da fare per poter tornare indietro",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → km per tornare indietro?",
         "spiegazione": "Falso. Questo pannello non ha nulla a che fare con la possibilità di tornare indietro o con i chilometri. Indica solo il numero di un tornante.",
         "regola": "Tornante = curva, non ritorno.",
         "immagine": "00268ea344b8ff290658.jpg",
@@ -947,6 +1066,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato indica il numero di incroci superati",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → incroci superati?",
         "spiegazione": "Falso. Il pannello si riferisce ai 'tornanti', che sono curve strette. Gli 'incroci' sono punti dove due o più strade si incontrano. Sono due cose diverse.",
         "regola": "Tornante NON è incrocio.",
         "trabocchetti": ["incroci"],
@@ -955,6 +1075,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato indica a quanti chilometri di distanza si trova il prossimo tornante",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → km al prossimo tornante?",
         "spiegazione": "Falso. Come per la domanda 21831, il '1°' indica l'ordine del tornante (il primo), non la distanza. Non ci dice quanto manca al prossimo tornante.",
         "regola": "1° = ordine, non distanza.",
         "trabocchetti": ["a quanti chilometri di distanza"],
@@ -963,6 +1084,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato indica il numero del cavalcavia",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → numero del cavalcavia?",
         "spiegazione": "Falso. Il pannello parla di 'tornante', che è una curva stretta sulla strada. Un 'cavalcavia' è un ponte che passa sopra un'altra strada o una ferrovia. Sono cose diverse.",
         "regola": "Tornante NON è cavalcavia.",
         "trabocchetti": ["cavalcavia"],
@@ -971,6 +1093,7 @@ QUESTIONS = [
     {
         "domanda": "La barriera raffigurata segnala un'area occupata da un cantiere stradale",
         "risposta": True,
+        "riassunto": "Barriera raffigurata → area di cantiere?",
         "spiegazione": "Questa barriera, con le sue strisce rosse e bianche, è usata per indicare che c'è un'area dove si stanno facendo dei lavori sulla strada, cioè un cantiere stradale. Serve a proteggere i lavoratori e ad avvisare gli automobilisti.",
         "regola": "Strisce rosse e bianche = lavori in corso.",
         "trabocchetti": ["occupata da un cantiere stradale"],
@@ -979,6 +1102,7 @@ QUESTIONS = [
     {
         "domanda": "La barriera raffigurata delimita un'area dove si stanno svolgendo lavori stradali",
         "risposta": True,
+        "riassunto": "Barriera raffigurata → delimita lavori?",
         "spiegazione": "Sì, è vero. 'Delimitare' significa segnare i confini di un'area. Questa barriera serve proprio a questo: a separare la zona dove si lavora dal resto della strada, per la sicurezza di tutti.",
         "regola": "Delimita = segna i confini dei lavori.",
         "trabocchetti": ["delimita"],
@@ -987,6 +1111,7 @@ QUESTIONS = [
     {
         "domanda": "La barriera raffigurata è posta ai bordi di un cantiere stradale",
         "risposta": True,
+        "riassunto": "Barriera raffigurata → bordi del cantiere?",
         "spiegazione": "Esatto, è vero. Le barriere come questa vengono messe ai lati o intorno al cantiere stradale. Servono a proteggere chi lavora e a indicare agli automobilisti dove non devono andare o dove devono fare attenzione.",
         "regola": "Bordi = protezione cantiere.",
         "trabocchetti": ["ai bordi"],
@@ -995,6 +1120,7 @@ QUESTIONS = [
     {
         "domanda": "La barriera raffigurata può utilizzarsi nei passaggi a livello quando le sbarre sono guaste",
         "risposta": True,
+        "riassunto": "Barriera raffigurata → passaggi a livello con sbarre guaste?",
         "spiegazione": "Sì, è vero. Se le sbarre di un passaggio a livello (dove la strada incrocia i binari del treno) non funzionano, si possono usare queste barriere temporanee per bloccare il passaggio e avvisare del pericolo, in attesa che le sbarre vengano riparate.",
         "regola": "Emergenza passaggio a livello = barriera temporanea.",
         "trabocchetti": ["può utilizzarsi", "Guaste"],
@@ -1003,6 +1129,7 @@ QUESTIONS = [
     {
         "domanda": "La barriera raffigurata può essere integrata da lanterna a luce rossa fissa in caso di scarsa visibilità",
         "risposta": True,
+        "riassunto": "Barriera raffigurata → lanterna rossa fissa con scarsa visibilità?",
         "spiegazione": "Sì, è vero. Per rendere la barriera più visibile di notte, con la nebbia o in caso di pioggia forte, si possono aggiungere delle luci rosse fisse. Questo aumenta la sicurezza, perché gli automobilisti vedono meglio l'ostacolo.",
         "regola": "Notte/nebbia = luce rossa aggiunta.",
         "trabocchetti": ["integrata da", "Scarsa visibilità"],
@@ -1011,6 +1138,7 @@ QUESTIONS = [
     {
         "domanda": "La barriera raffigurata si trova all'ingresso di un'autorimessa",
         "risposta": False,
+        "riassunto": "Barriera raffigurata → ingresso autorimessa?",
         "spiegazione": "No, è falso. All'ingresso di un'autorimessa (un garage) di solito ci sono sbarre automatiche o cancelli per controllare l'accesso, non queste barriere da cantiere che segnalano lavori o pericoli sulla strada.",
         "regola": "Non è un garage.",
         "trabocchetti": ["autorimessa"],
@@ -1019,6 +1147,7 @@ QUESTIONS = [
     {
         "domanda": "La barriera raffigurata segnala un parcheggio riservato ai veicoli per lavori stradali",
         "risposta": False,
+        "riassunto": "Barriera raffigurata → parcheggio veicoli da lavoro?",
         "spiegazione": "No, è falso. Questa barriera serve a segnalare un'area di lavoro, un pericolo o un ostacolo, non un parcheggio. I parcheggi sono indicati con altri tipi di segnali stradali, come quelli con la lettera 'P'.",
         "regola": "Non è un parcheggio.",
         "trabocchetti": ["parcheggio riservato"],
@@ -1027,6 +1156,7 @@ QUESTIONS = [
     {
         "domanda": "La barriera raffigurata si trova nei caselli autostradali per delimitare le corsie",
         "risposta": False,
+        "riassunto": "Barriera raffigurata → corsie ai caselli?",
         "spiegazione": "No, è falso. Ai caselli autostradali ci sono barriere diverse, spesso automatiche, che si alzano e si abbassano per permettere il passaggio dopo il pagamento del pedaggio. Non si usano queste barriere da cantiere.",
         "regola": "Non è un casello.",
         "trabocchetti": ["caselli autostradali"],
@@ -1035,6 +1165,7 @@ QUESTIONS = [
     {
         "domanda": "La barriera raffigurata segnala una curva pericolosa",
         "risposta": False,
+        "riassunto": "Barriera raffigurata → curva pericolosa?",
         "spiegazione": "No, è falso. Le curve pericolose sono segnalate da appositi cartelli stradali, che sono di forma triangolare con un bordo rosso e una freccia che indica la direzione della curva. Questa barriera ha un altro scopo.",
         "regola": "Non è per le curve.",
         "trabocchetti": ["curva pericolosa"],
@@ -1043,6 +1174,7 @@ QUESTIONS = [
     {
         "domanda": "La barriere segnalano un percorso ciclabile",
         "risposta": False,
+        "riassunto": "Barriere → percorso ciclabile?",
         "spiegazione": "No, è falso. I percorsi ciclabili (le piste per le biciclette) sono segnalati da cartelli rotondi di colore blu con il simbolo di una bicicletta bianca. Questa barriera non ha questa funzione.",
         "regola": "Non è per le bici.",
         "trabocchetti": ["percorso ciclabile"],
@@ -1051,6 +1183,7 @@ QUESTIONS = [
     {
         "domanda": "Il cono raffigurato può delimitare zone di lavoro di breve durata",
         "risposta": True,
+        "riassunto": "Cono raffigurato → lavori di breve durata?",
         "spiegazione": "Il cono è un segnale temporaneo, molto utile per indicare lavori che durano poco tempo sulla strada, avvisando i guidatori di fare attenzione.",
         "regola": "Cono = Lavoro veloce, attenzione!",
         "trabocchetti": ["breve durata"],
@@ -1059,6 +1192,7 @@ QUESTIONS = [
     {
         "domanda": "Il cono raffigurato si può usare per segnalare deviazioni provvisorie",
         "risposta": True,
+        "riassunto": "Cono raffigurato → deviazioni provvisorie?",
         "spiegazione": "Sì, il cono è perfetto per mostrare ai guidatori una strada alternativa da prendere per un breve periodo, magari per un ostacolo o un lavoro.",
         "regola": "Cono = Cambiamento temporaneo di strada.",
         "trabocchetti": ["provvisorie"],
@@ -1067,6 +1201,7 @@ QUESTIONS = [
     {
         "domanda": "Il cono raffigurato si può usare per indicare aree interessate da incidenti",
         "risposta": True,
+        "riassunto": "Cono raffigurato → aree con incidenti?",
         "spiegazione": "Dopo un incidente, i coni aiutano a delimitare la zona, proteggendo le persone e i veicoli coinvolti e avvisando gli altri automobilisti del pericolo.",
         "regola": "Cono = Zona incidente, pericolo!",
         "immagine": "d76073cd59adacc33f3a.jpg",
@@ -1074,6 +1209,7 @@ QUESTIONS = [
     {
         "domanda": "Il cono raffigurato può indicare separazione provvisoria dei sensi di marcia",
         "risposta": True,
+        "riassunto": "Cono raffigurato → separare provvisoriamente i sensi di marcia?",
         "spiegazione": "In alcuni casi, come durante i lavori, i coni possono dividere le corsie per separare il traffico che va in direzioni diverse, ma solo per un periodo limitato.",
         "regola": "Cono = Corsie divise (per poco).",
         "trabocchetti": ["separazione provvisoria"],
@@ -1082,6 +1218,7 @@ QUESTIONS = [
     {
         "domanda": "Il cono raffigurato si usa per indicare un parcheggio riservato",
         "risposta": False,
+        "riassunto": "Cono raffigurato → parcheggio riservato?",
         "spiegazione": "No, per indicare un parcheggio riservato si usano cartelli specifici, non i coni. I coni servono per segnalare pericoli o deviazioni temporanee sulla strada.",
         "regola": "Cono NON è parcheggio.",
         "trabocchetti": ["parcheggio riservato"],
@@ -1090,6 +1227,7 @@ QUESTIONS = [
     {
         "domanda": "Il cono raffigurato si può usare in presenza di lavori stradali superiori a 10 giorni",
         "risposta": False,
+        "riassunto": "Cono raffigurato → lavori oltre 10 giorni?",
         "spiegazione": "Falso. I coni sono per lavori di 'breve durata'. Se i lavori durano più di 10 giorni, si devono usare segnali più stabili e robusti, come barriere o cartelli fissi.",
         "regola": "Cono = Lavoro BREVE (max 10 giorni).",
         "trabocchetti": ["superiori a 10 giorni"],
@@ -1098,6 +1236,7 @@ QUESTIONS = [
     {
         "domanda": "Il cono raffigurato si usa su strade dove avvengono abbondanti nevicate",
         "risposta": False,
+        "riassunto": "Cono raffigurato → strade con nevicate?",
         "spiegazione": "No, in caso di neve abbondante si usano paletti o segnali specifici per la neve, che sono più visibili e resistenti. I coni potrebbero essere coperti dalla neve o spostati facilmente.",
         "regola": "Cono NON è per la neve.",
         "immagine": "d76073cd59adacc33f3a.jpg",
@@ -1105,6 +1244,7 @@ QUESTIONS = [
     {
         "domanda": "Il cono raffigurato separa la carreggiata dalla pista ciclabile",
         "risposta": False,
+        "riassunto": "Cono raffigurato → separa la pista ciclabile?",
         "spiegazione": "Falso. La separazione tra la strada e la pista ciclabile è fatta con linee sull'asfalto o elementi fissi (come cordoli). I coni sono temporanei e non adatti a una separazione permanente.",
         "regola": "Cono NON è separazione fissa.",
         "immagine": "d76073cd59adacc33f3a.jpg",
@@ -1112,6 +1252,7 @@ QUESTIONS = [
     {
         "domanda": "Il cono raffigurato indica un ostacolo posto fuori della carreggiata",
         "risposta": False,
+        "riassunto": "Cono raffigurato → ostacolo fuori carreggiata?",
         "spiegazione": "No, il cono serve a segnalare ostacoli o pericoli *sulla* strada o *molto vicino* ad essa. Se l'ostacolo è 'fuori' dalla carreggiata, non è un pericolo diretto per il traffico e non serve il cono.",
         "regola": "Cono = Pericolo SULLA strada.",
         "trabocchetti": ["fuori"],
@@ -1120,6 +1261,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono usati ai lati della carreggiata di strade a senso unico",
         "risposta": True,
+        "riassunto": "Delineatori raffigurati → strade a senso unico?",
         "spiegazione": "Questi delineatori, con elementi gialli, sono usati proprio per indicare i bordi delle strade o delle carreggiate dove si può andare solo in una direzione (senso unico). Aiutano a vedere bene dove finisce la strada.",
         "regola": "Giallo = senso unico ai lati.",
         "trabocchetti": ["senso unico"],
@@ -1128,6 +1270,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono dei segnali complementari",
         "risposta": True,
+        "riassunto": "Delineatori raffigurati → complementari?",
         "spiegazione": "Sì, i delineatori sono considerati 'segnali complementari' perché non danno un ordine o un'indicazione principale, ma aiutano a capire meglio la strada, specialmente quando c'è poca luce o nebbia. Completano le altre informazioni.",
         "regola": "Delineatori = aiutanti della strada.",
         "trabocchetti": ["complementari"],
@@ -1136,6 +1279,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono posti ai margini di una strada o di una carreggiata a senso unico",
         "risposta": True,
+        "riassunto": "Delineatori raffigurati → margini di strada a senso unico?",
         "spiegazione": "Esatto, 'margini' significa i bordi, i lati della strada. Questi delineatori sono messi proprio lì per far vedere bene dove finisce la carreggiata, e sono usati sulle strade a senso unico.",
         "regola": "Margini gialli = senso unico.",
         "trabocchetti": ["Margini", "senso unico"],
@@ -1144,6 +1288,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati servono a visualizzare meglio l'andamento della strada",
         "risposta": True,
+        "riassunto": "Delineatori raffigurati → andamento della strada?",
         "spiegazione": "Questa è la loro funzione principale! Servono proprio a far capire meglio come curva la strada o se è dritta, specialmente di notte o con il brutto tempo, grazie ai loro elementi riflettenti.",
         "regola": "Delineatori = occhi nella notte.",
         "immagine": "b2aa10fe0ed6edf1b249.jpg",
@@ -1151,6 +1296,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono posti su strada a doppio senso",
         "risposta": False,
+        "riassunto": "Delineatori raffigurati → doppio senso?",
         "spiegazione": "Falso! Questi delineatori con elementi gialli sono usati solo sulle strade a senso unico. Sulle strade a doppio senso di circolazione (dove le auto vanno in due direzioni opposte) si usano altri tipi di delineatori, di solito con elementi bianchi e rossi.",
         "regola": "Giallo = solo avanti, non avanti e indietro.",
         "trabocchetti": ["doppio senso"],
@@ -1159,6 +1305,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati si trovano prima di un attraversamento pedonale",
         "risposta": False,
+        "riassunto": "Delineatori raffigurati → prima delle strisce pedonali?",
         "spiegazione": "Falso. Questi delineatori servono a indicare i bordi della strada. Gli attraversamenti pedonali sono segnalati con strisce bianche sull'asfalto e specifici cartelli stradali.",
         "regola": "Delineatori = bordo strada, non strisce pedonali.",
         "trabocchetti": ["attraversamento pedonale"],
@@ -1167,6 +1314,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono posti al centro della carreggiata",
         "risposta": False,
+        "riassunto": "Delineatori raffigurati → al centro?",
         "spiegazione": "Falso. I delineatori sono posti ai lati, cioè ai bordi della carreggiata, non al centro. Al centro della carreggiata di solito ci sono le linee che dividono le corsie o i sensi di marcia.",
         "regola": "Delineatori = ai lati, non in mezzo.",
         "trabocchetti": ["centro"],
@@ -1175,6 +1323,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati dividono la carreggiata in corsie",
         "risposta": False,
+        "riassunto": "Delineatori raffigurati → dividono in corsie?",
         "spiegazione": "Falso. A dividere la carreggiata in corsie ci pensano le strisce bianche disegnate sull'asfalto. I delineatori servono a indicare il bordo esterno della strada, non a creare le corsie.",
         "regola": "Delineatori = bordo, non linee di corsia.",
         "trabocchetti": ["dividono la carreggiata in corsie"],
@@ -1183,6 +1332,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono posti per indicare un'area di sosta riservata",
         "risposta": False,
+        "riassunto": "Delineatori raffigurati → sosta riservata?",
         "spiegazione": "Falso. Questi delineatori non indicano aree di sosta. Le aree di sosta sono segnalate da appositi cartelli con la lettera 'P' e, a volte, da linee sull'asfalto che delimitano gli spazi.",
         "regola": "Delineatori = guida, non parcheggio.",
         "trabocchetti": ["area di sosta riservata"],
@@ -1191,6 +1341,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono visibili solo di notte",
         "risposta": False,
+        "riassunto": "Delineatori raffigurati → visibili solo di notte?",
         "spiegazione": "Falso. Anche se sono molto utili di notte perché riflettono la luce dei fari, sono comunque visibili anche di giorno. La loro funzione è sempre quella di indicare il bordo della strada, sia con il sole che con il buio.",
         "regola": "Delineatori = sempre lì, sempre visibili.",
         "trabocchetti": ["solo"],
@@ -1199,6 +1350,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono utili soprattutto nei casi di scarsa visibilità",
         "risposta": True,
+        "riassunto": "Delineatori raffigurati → utili con scarsa visibilità?",
         "spiegazione": "VERO. I delineatori hanno delle parti riflettenti (bianche e rosse) che si illuminano con i fari delle auto. Questo li rende molto utili quando c'è poca luce, nebbia o pioggia, aiutando il conducente a vedere dove finisce la strada.",
         "regola": "Riflettono la luce, guidano nella scarsa visibilità.",
         "trabocchetti": ["soprattutto"],
@@ -1207,6 +1359,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono dei segnali complementari",
         "risposta": True,
+        "riassunto": "Delineatori raffigurati → complementari?",
         "spiegazione": "VERO. I segnali complementari sono quelli che aiutano a capire meglio la strada o a segnalare pericoli, completando le informazioni date dagli altri segnali. I delineatori fanno proprio questo, indicando l'andamento del bordo stradale.",
         "regola": "Aiutano a 'completare' la visione della strada.",
         "trabocchetti": ["complementari"],
@@ -1215,6 +1368,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono posti ai margini di una strada a doppio senso",
         "risposta": True,
+        "riassunto": "Delineatori raffigurati → margini di strada a doppio senso?",
         "spiegazione": "VERO. Su una strada a doppio senso, i delineatori con il riflettore bianco si trovano sul lato destro della carreggiata (nella direzione di marcia), mentre quelli con il riflettore rosso si trovano sul lato sinistro (che è il lato destro per chi viene in senso opposto). L'immagine mostra entrambi i colori, quindi è una strada a doppio senso.",
         "regola": "Bianco a destra, rosso a sinistra: strada a doppio senso.",
         "immagine": "e6e03c596434784d56a0.jpg",
@@ -1222,6 +1376,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati servono a visualizzare meglio l'andamento della strada",
         "risposta": True,
+        "riassunto": "Delineatori raffigurati → andamento della strada?",
         "spiegazione": "VERO. Seguendo la fila di delineatori, il conducente può capire se la strada è dritta, se sta per curvare o se c'è una curva stretta, anche da lontano. Aiutano a 'delineare' il percorso.",
         "regola": "Mostrano la forma della strada, anche in curva.",
         "trabocchetti": ["meglio"],
@@ -1230,6 +1385,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono utili solo nelle ore notturne",
         "risposta": False,
+        "riassunto": "Delineatori raffigurati → utili solo di notte?",
         "spiegazione": "FALSO. Anche se sono molto utili di notte, i delineatori servono anche di giorno in caso di nebbia, pioggia forte o semplicemente per definire meglio il bordo della strada e le curve, anche con buona luce. La parola 'solo' rende la frase falsa.",
         "regola": "Non 'solo' di notte, ma anche di giorno con brutto tempo.",
         "trabocchetti": ["solo"],
@@ -1238,6 +1394,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati vengono posti a distanza di almeno 100 metri l'uno dall'altro",
         "risposta": False,
+        "riassunto": "Delineatori raffigurati → almeno 100 m l'uno dall'altro?",
         "spiegazione": "FALSO. La distanza tra i delineatori dipende dal tipo di strada e dalla curva. Su tratti rettilinei sono posti di solito ogni 50 metri. Nelle curve, la distanza è minore (ad esempio 25 metri o meno) per dare una guida migliore. 'Almeno 100 metri' è una distanza troppo grande per essere efficace.",
         "regola": "100 metri è troppo, sono più vicini (50m o meno in curva).",
         "trabocchetti": ["almeno 100 metri"],
@@ -1246,6 +1403,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono posti al centro della carreggiata",
         "risposta": False,
+        "riassunto": "Delineatori raffigurati → al centro?",
         "spiegazione": "FALSO. I delineatori sono sempre posti ai 'margini' o ai 'bordi' della carreggiata, per indicare dove finisce la strada. Non si trovano mai al centro, dove passano i veicoli.",
         "regola": "Margini sì, centro no!",
         "trabocchetti": ["al centro della carreggiata"],
@@ -1254,6 +1412,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati dividono la carreggiata in corsie",
         "risposta": False,
+        "riassunto": "Delineatori raffigurati → dividono in corsie?",
         "spiegazione": "FALSO. I delineatori servono a indicare i 'margini' della strada. Le corsie sono divise dalle strisce sull'asfalto (segnaletica orizzontale) o da altri elementi specifici, non dai delineatori.",
         "regola": "Non dividono corsie, ma segnano i bordi.",
         "immagine": "e6e03c596434784d56a0.jpg",
@@ -1261,6 +1420,7 @@ QUESTIONS = [
     {
         "domanda": "I delineatori raffigurati sono posti ai lati della carreggiata nelle strade a senso unico",
         "risposta": False,
+        "riassunto": "Delineatori raffigurati → su strade a senso unico?",
         "spiegazione": "FALSO. Se fosse una strada a senso unico, tutti i delineatori avrebbero il riflettore bianco (o giallo/arancione in casi speciali), perché il traffico va in una sola direzione. L'immagine mostra delineatori sia bianchi che rossi, il che indica una strada a doppio senso.",
         "regola": "Rosso e bianco = doppio senso. Solo bianco = senso unico.",
         "immagine": "e6e03c596434784d56a0.jpg",
@@ -1268,6 +1428,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è posto ai lati della carreggiata nelle strade di montagna soggette ad innevamento",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → strade di montagna innevate?",
         "spiegazione": "Questo delineatore, con le sue strisce gialle e nere, è progettato per essere molto visibile. Viene posizionato ai lati delle strade, specialmente quelle di montagna dove nevica spesso, per aiutare i guidatori a vedere bene dove finisce la strada anche quando c'è molta neve.",
         "regola": "Giallo/nero = visibilità neve.",
         "trabocchetti": ["soggette ad innevamento"],
@@ -1276,6 +1437,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è un segnale complementare",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → complementare?",
         "spiegazione": "I segnali complementari sono quelli che 'aiutano' o 'completano' le informazioni sulla strada o la visibilità di altri segnali. Questo delineatore serve a rendere più chiari i bordi della strada, quindi è un segnale che completa la sicurezza e la visibilità.",
         "regola": "Delineatore = completa la visibilità.",
         "trabocchetti": ["complementare"],
@@ -1284,6 +1446,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è posto ai lati della carreggiata su strade di montagna",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → strade di montagna?",
         "spiegazione": "Come detto prima, questi delineatori sono molto utili sulle strade di montagna. Le strade di montagna possono essere strette, avere curve pericolose e, spesso, sono soggette a neve o nebbia. Metterli ai lati aiuta a capire dove finisce la carreggiata.",
         "regola": "Montagna = bordi strada chiari.",
         "trabocchetti": ["strade di montagna"],
@@ -1292,6 +1455,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato viene utilizzato per rendere meglio visibili i bordi della carreggiata di una strada innevata",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → bordi visibili su strada innevata?",
         "spiegazione": "Esatto! Il colore giallo brillante e il nero creano un forte contrasto, che è facile da vedere anche in condizioni di scarsa visibilità, come quando c'è neve o nebbia. Serve proprio a 'delineare', cioè a disegnare i bordi della strada.",
         "regola": "Giallo/nero = visibilità neve.",
         "trabocchetti": ["meglio visibili i bordi", "strada innevata"],
@@ -1300,6 +1464,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è posto alla fermata degli autobus",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → fermata autobus?",
         "spiegazione": "Questo delineatore non ha nulla a che fare con le fermate degli autobus. Le fermate degli autobus sono indicate da segnali specifici, di solito con il simbolo di un autobus, e non da questi paletti.",
         "regola": "Non è un palo per bus.",
         "trabocchetti": ["fermata degli autobus"],
@@ -1308,6 +1473,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è posto al centro della carreggiata",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → al centro?",
         "spiegazione": "Falso! I delineatori sono sempre posti ai lati della carreggiata per indicarne i bordi. Al centro della carreggiata ci sono le strisce che dividono le corsie o, in alcuni casi, spartitraffico o isole di traffico, ma non questi paletti.",
         "regola": "Delineatore = bordi, non centro.",
         "trabocchetti": ["al centro della carreggiata"],
@@ -1316,6 +1482,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato si trova in vicinanza di un attraversamento pedonale",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → vicino alle strisce?",
         "spiegazione": "Questo delineatore non è usato per gli attraversamenti pedonali. Gli attraversamenti pedonali sono segnalati da strisce bianche sulla strada e, a volte, da segnali verticali blu con il simbolo del pedone.",
         "regola": "Non è per pedoni.",
         "trabocchetti": ["attraversamento pedonale"],
@@ -1324,6 +1491,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è usato come paletto di ancoraggio per lasciare in sosta le biciclette",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → paletto per bici?",
         "spiegazione": "Assolutamente falso! Questo è un segnale stradale per la sicurezza e la visibilità, non un supporto per parcheggiare le biciclette. Le rastrelliere per biciclette sono diverse e hanno una funzione specifica per l'ancoraggio.",
         "regola": "Non è un parcheggio bici.",
         "immagine": "d5c5163677114df11b10.jpg",
@@ -1331,6 +1499,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è usato sulle strade sprovviste di barriere laterali (guardrails)",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → strade senza guardrail?",
         "spiegazione": "Falso. Questi delineatori servono a rendere visibili i bordi della strada, specialmente con la neve. Non sono un sostituto delle barriere laterali (guardrail), che hanno la funzione di impedire ai veicoli di uscire dalla strada. Possono esserci sia i delineatori che i guardrail, o solo uno dei due, a seconda delle necessità.",
         "regola": "Non sostituisce il guardrail.",
         "trabocchetti": ["sprovviste di barriere laterali"],
@@ -1339,6 +1508,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato indica un divieto di sosta",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → divieto di sosta?",
         "spiegazione": "Falso. Questo delineatore non indica nessun divieto. I divieti di sosta sono indicati da segnali rotondi, blu con bordo rosso e una barra diagonale rossa. Questo paletto serve solo a indicare i bordi della strada.",
         "regola": "Non è un divieto.",
         "trabocchetti": ["divieto di sosta"],
@@ -1347,6 +1517,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato viene utilizzato per segnalare un ostacolo",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → ostacolo?",
         "spiegazione": "Questo tipo di delineatore, con la freccia, serve proprio a indicare la presenza di un ostacolo sulla strada, come un cantiere o uno spartitraffico, e a mostrare la direzione da seguire per evitarlo. Quindi, la risposta è VERO.",
         "regola": "Freccia = ostacolo da aggirare.",
         "trabocchetti": ["ostacolo"],
@@ -1355,6 +1526,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato viene posto all'interno della carreggiata, in presenza di un ostacolo",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → in carreggiata presso un ostacolo?",
         "spiegazione": "Se il delineatore segnala un ostacolo, deve essere posizionato dove l'ostacolo si trova, cioè 'all'interno della carreggiata' (sulla strada stessa) per essere visibile e utile ai conducenti. Quindi, la risposta è VERO.",
         "regola": "Ostacolo in strada = delineatore in strada.",
         "trabocchetti": ["all"],
@@ -1363,6 +1535,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è rifrangente, per una migliore visibilità nelle ore notturne",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → rifrangente per la notte?",
         "spiegazione": "La parte gialla del delineatore è fatta di materiale 'rifrangente'. Questo significa che riflette la luce dei fari delle auto, rendendolo ben visibile anche di notte o in condizioni di scarsa luce. Quindi, la risposta è VERO.",
         "regola": "Giallo = riflette = visibile di notte.",
         "trabocchetti": ["rifrangente"],
@@ -1371,6 +1544,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato può segnalare l'inizio di un'isola di traffico",
         "risposta": True,
+        "riassunto": "Delineatore raffigurato → inizio isola di traffico?",
         "spiegazione": "Un'isola di traffico è un tipo di ostacolo che si trova sulla carreggiata e serve a separare i flussi di traffico o a proteggere i pedoni. Il delineatore con la freccia è perfetto per indicare l'inizio di queste isole e la direzione in cui i veicoli devono andare. Quindi, la risposta è VERO.",
         "regola": "Isola di traffico = ostacolo = delineatore.",
         "trabocchetti": ["isola di traffico"],
@@ -1379,6 +1553,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è dotato di luce propria",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → luce propria?",
         "spiegazione": "Il delineatore è 'rifrangente', come abbiamo detto, cioè riflette la luce. Non ha una 'luce propria' (non è una lampada o un faro che si accende da solo). Quindi, la risposta è FALSO.",
         "regola": "Rifrangente NON è luce propria.",
         "trabocchetti": ["luce propria"],
@@ -1387,6 +1562,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato è posto ai lati della strada",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → ai lati della strada?",
         "spiegazione": "Questo delineatore è usato per segnalare ostacoli 'all'interno della carreggiata', non 'ai lati della strada'. Se fosse ai lati, non servirebbe a indicare un ostacolo nel percorso delle auto. Quindi, la risposta è FALSO.",
         "regola": "Ostacolo = in mezzo, non ai lati.",
         "trabocchetti": ["ai lati della strada"],
@@ -1395,6 +1571,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato divide la carreggiata da una pista ciclabile",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → separa dalla pista ciclabile?",
         "spiegazione": "Questo delineatore serve a segnalare ostacoli e a dirigere il traffico, non a 'dividere la carreggiata da una pista ciclabile'. Per le piste ciclabili ci sono altri tipi di segnaletica o barriere. Quindi, la risposta è FALSO.",
         "regola": "Non per ciclabili, ma per ostacoli.",
         "immagine": "e2f9a8633e39e2e78d94.jpg",
@@ -1402,6 +1579,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato presegnala una corsia riservata agli autobus o taxi",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → corsia bus o taxi?",
         "spiegazione": "Questo delineatore non serve a 'presegnalare una corsia riservata agli autobus o taxi'. Le corsie riservate sono indicate da cartelli specifici e da strisce gialle sull'asfalto. Il delineatore serve per gli ostacoli. Quindi, la risposta è FALSO.",
         "regola": "Non per corsie speciali, ma per ostacoli.",
         "trabocchetti": ["corsia riservata"],
@@ -1410,6 +1588,7 @@ QUESTIONS = [
     {
         "domanda": "Il delineatore raffigurato si trova fuori della carreggiata",
         "risposta": False,
+        "riassunto": "Delineatore raffigurato → fuori dalla carreggiata?",
         "spiegazione": "Come abbiamo già detto, il delineatore è posto 'all'interno della carreggiata' per segnalare un ostacolo. Se fosse 'fuori della carreggiata', non avrebbe senso per guidare il traffico attorno a un pericolo sulla strada. Quindi, la risposta è FALSO.",
         "regola": "Ostacolo = dentro, non fuori.",
         "trabocchetti": ["fuori della carreggiata"],

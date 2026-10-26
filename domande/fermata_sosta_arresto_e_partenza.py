@@ -1,7 +1,7 @@
 """Domande — Fermata, sosta, arresto e partenza.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Fermata, sosta, arresto e partenza"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Se si parcheggia in una zona regolamentata con parchimetro, occorre esporre l'apposito tagliando, in modo che sia ben visibile",
         "risposta": True,
+        "riassunto": "Parchimetro → tagliando ben visibile?",
         "spiegazione": "Se parcheggi in un'area dove c'è il parchimetro, devi pagare e poi mettere il biglietto (il tagliando) sul cruscotto, in modo che sia facile vederlo. Così dimostri di aver pagato.",
         "regola": "Parchimetro? Biglietto in vista!",
         "trabocchetti": ["occorre esporre l"],
@@ -17,6 +18,7 @@ QUESTIONS = [
     {
         "domanda": "Per parcheggiare in una zona regolamentata mediante disco orario, bisogna esporre in modo ben visibile l'orario di arrivo",
         "risposta": True,
+        "riassunto": "Disco orario → orario di arrivo visibile?",
         "spiegazione": "Quando parcheggi in una zona con il disco orario, devi mettere il disco sul cruscotto e indicare l'ora esatta in cui sei arrivato. Questo serve per controllare quanto tempo rimani parcheggiato.",
         "regola": "Disco orario? Segna l'arrivo!",
         "trabocchetti": ["ben visibile", "orario di arrivo"],
@@ -24,6 +26,7 @@ QUESTIONS = [
     {
         "domanda": "In una zona in cui la sosta è regolamentata con parchimetro, non occorre utilizzarlo se ci si ferma soltanto per far salire o scendere un passeggero",
         "risposta": True,
+        "riassunto": "Parchimetro → non serve solo per far salire o scendere?",
         "spiegazione": "Se ti fermi solo per un attimo, giusto il tempo di far scendere o salire qualcuno dall'auto (questa si chiama 'fermata'), non devi pagare il parchimetro. Il parchimetro serve per la 'sosta', cioè quando lasci il veicolo fermo per più tempo.",
         "regola": "Fermata breve? Niente parchimetro!",
         "trabocchetti": ["sosta"],
@@ -31,12 +34,14 @@ QUESTIONS = [
     {
         "domanda": "Nelle aree di parcheggio a tempo limitato, i veicoli al servizio di persone diversamente abili non sono obbligati a rispettare il limite di tempo stabilito per la sosta.",
         "risposta": True,
+        "riassunto": "Parcheggio a tempo → veicoli per disabili senza limite?",
         "spiegazione": "Le persone con disabilità, che hanno l'apposito contrassegno, hanno un permesso speciale. Nelle aree dove il parcheggio è a tempo limitato, non devono rispettare quel limite di tempo e possono parcheggiare più a lungo.",
         "regola": "Disabili? Più tempo per parcheggiare!",
     },
     {
         "domanda": "Per parcheggiare in una zona regolamentata mediante disco orario, bisogna indicare sul disco l'orario di fine della sosta, oppure trascriverlo su un foglio di carta",
         "risposta": False,
+        "riassunto": "Disco orario → orario di fine sosta?",
         "spiegazione": "Questa affermazione è FALSA. Con il disco orario devi sempre indicare l'ora in cui sei ARRIVATO, non l'ora in cui pensi di andare via. E devi usare il disco apposito, non un foglio di carta.",
         "regola": "Disco orario? Solo l'inizio, solo il disco!",
         "trabocchetti": ["orario di fine della sosta"],
@@ -44,6 +49,7 @@ QUESTIONS = [
     {
         "domanda": "In una zona in cui la sosta è regolamentata mediante disco orario, prima che scada il tempo di validità della sosta è consentito aggiornare l'orario, senza che il veicolo venga spostato",
         "risposta": False,
+        "riassunto": "Disco orario → aggiornarlo senza spostare l'auto?",
         "spiegazione": "Questa affermazione è FALSA. Non puoi semplicemente cambiare l'orario sul disco per prolungare la sosta senza spostare l'auto. Se vuoi stare di più, devi muovere il veicolo e poi riparcheggiare, mettendo un nuovo orario.",
         "regola": "Disco orario? Non barare, sposta l'auto!",
         "trabocchetti": ["aggiornare l"],
@@ -51,6 +57,7 @@ QUESTIONS = [
     {
         "domanda": "In una zona in cui la sosta è regolamentata con parchimetro, non occorre utilizzare il parchimetro se si effettua una breve sosta",
         "risposta": False,
+        "riassunto": "Parchimetro → non serve per breve sosta?",
         "spiegazione": "Questa affermazione è FALSA. Se si tratta di una 'sosta', anche se breve, devi sempre pagare il parchimetro. La regola del non pagare vale solo per la 'fermata', cioè quando ti fermi solo per far salire o scendere qualcuno.",
         "regola": "Sosta? Paga sempre!",
         "trabocchetti": ["breve sosta"],
@@ -58,6 +65,7 @@ QUESTIONS = [
     {
         "domanda": "Se si parcheggia in una zona regolamentata mediante disco orario, bisogna trascrivere su un foglio di carta l'ora di arrivo, senza indicare i minuti",
         "risposta": False,
+        "riassunto": "Disco orario → ora senza minuti su un foglio?",
         "spiegazione": "Questa affermazione è FALSA. Devi usare l'apposito disco orario, non un foglio di carta. E devi indicare l'ora e i minuti precisi di arrivo, non solo l'ora.",
         "regola": "Disco orario? Usa il disco, metti ora e minuti!",
         "trabocchetti": ["trascrivere su un foglio di carta", "senza indicare i minuti"],
@@ -65,6 +73,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un autoveicolo in sosta sul lato destro di una strada urbana, prima di aprire la portiera, deve fare particolare attenzione ai veicoli che sopraggiungono",
         "risposta": True,
+        "riassunto": "Sosta a destra in città → attenzione ai veicoli prima di aprire?",
         "spiegazione": "Quando apri la portiera di un veicolo fermo, devi sempre guardare se arrivano altri veicoli. Questo serve per evitare incidenti e garantire la sicurezza di tutti.",
         "regola": "Portiera aperta = occhi aperti!",
         "trabocchetti": ["particolare attenzione"],
@@ -72,6 +81,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un autoveicolo in sosta su una strada stretta, prima di scendere deve controllare che non sopraggiungano veicoli",
         "risposta": True,
+        "riassunto": "Sosta su strada stretta → controllare prima di scendere?",
         "spiegazione": "Su una strada stretta c'è meno spazio. Per questo, prima di scendere dall'auto, è ancora più importante controllare bene che non stiano arrivando altri veicoli, per non causare pericoli.",
         "regola": "Strada stretta, doppia attenzione.",
         "trabocchetti": ["strada stretta"],
@@ -79,6 +89,7 @@ QUESTIONS = [
     {
         "domanda": "E' opportuno che il conducente di un autoveicolo in sosta sul lato sinistro in una strada urbana a senso unico, ricordi al passeggero di prestare particolare attenzione ai veicoli che sopraggiungono, prima di aprire la portiera",
         "risposta": True,
+        "riassunto": "Sosta a sinistra su senso unico → avvisare il passeggero?",
         "spiegazione": "Anche se la strada è a senso unico e sei sul lato sinistro, i veicoli possono comunque arrivare da dietro. È buona norma che il conducente ricordi al passeggero di fare attenzione, perché la sicurezza è responsabilità di tutti.",
         "regola": "Passeggero? Ricorda tu la sicurezza!",
         "trabocchetti": ["lato sinistro", "senso unico"],
@@ -86,6 +97,7 @@ QUESTIONS = [
     {
         "domanda": "E' opportuno che il conducente di un autoveicolo, in sosta sul lato destro di una strada urbana, ricordi al passeggero che apre la portiera di destra di fare attenzione ai pedoni in transito",
         "risposta": True,
+        "riassunto": "Sosta a destra → passeggero attento ai pedoni?",
         "spiegazione": "Quando un passeggero apre la portiera sul lato destro, specialmente in città, deve fare attenzione ai pedoni che camminano sul marciapiede. Il conducente deve ricordarglielo per evitare di colpire qualcuno.",
         "regola": "Portiera destra? Occhio al pedone!",
         "trabocchetti": ["pedoni in transito"],
@@ -93,6 +105,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un autoveicolo può lasciare il motore acceso se sosta per poco tempo",
         "risposta": False,
+        "riassunto": "Sosta breve → motore acceso?",
         "spiegazione": "Lasciare il motore acceso quando si è fermi, anche per poco tempo, è sbagliato. Inquina l'aria, fa rumore e consuma carburante inutilmente. Il motore va spento.",
         "regola": "Sosta = motore spento, sempre!",
         "trabocchetti": ["per poco tempo"],
@@ -100,6 +113,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un autoveicolo in sosta su una strada stretta, prima di scendere deve preoccuparsi dei veicoli che sopraggiungono da dietro, ma non di quelli di fronte",
         "risposta": False,
+        "riassunto": "Strada stretta → solo veicoli da dietro?",
         "spiegazione": "Quando scendi dall'auto, devi sempre controllare in entrambe le direzioni: sia i veicoli che arrivano da dietro, sia quelli che arrivano di fronte. Non puoi ignorare una direzione, specialmente su una strada stretta.",
         "regola": "Scendi? Guarda avanti e indietro!",
         "trabocchetti": ["ma non di quelli di fronte"],
@@ -107,6 +121,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a guidare un autoveicolo è opportuno regolare il sedile e il poggiatesta, secondo la propria statura",
         "risposta": True,
+        "riassunto": "Prima di guidare → sedile e poggiatesta?",
         "spiegazione": "È molto importante regolare il sedile e il poggiatesta prima di partire. Questo ti permette di guidare in modo comodo e sicuro, avendo il controllo del veicolo e proteggendo il collo in caso di incidente.",
         "regola": "Sedile e poggiatesta: comfort e sicurezza prima di partire.",
         "trabocchetti": ["opportuno"],
@@ -114,6 +129,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a guidare un autoveicolo è opportuno regolare gli specchi retrovisori interni ed esterni",
         "risposta": True,
+        "riassunto": "Prima di guidare → specchietti?",
         "spiegazione": "Regolare bene gli specchietti (quello interno e quelli esterni) è essenziale. Ti permette di vedere cosa succede dietro e ai lati del tuo veicolo, evitando pericoli e manovrando in sicurezza.",
         "regola": "Specchietti: vedi tutto, guidi sicuro.",
         "trabocchetti": ["opportuno"],
@@ -121,6 +137,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a guidare un motociclo è opportuno regolare gli specchi secondo la propria statura",
         "risposta": True,
+        "riassunto": "Moto → regolare gli specchi?",
         "spiegazione": "Anche quando guidi un motociclo, gli specchietti sono fondamentali. Regolarli bene ti aiuta a controllare il traffico dietro di te e a fare manovre in sicurezza.",
         "regola": "Moto o auto, specchietti sempre a posto.",
         "trabocchetti": ["opportuno"],
@@ -128,6 +145,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si guida un veicolo a motore, bisogna avere con sé tutti i documenti necessari per la guida (carta di circolazione, certificato di assicurazione, patente ecc.), e in corso di validità",
         "risposta": True,
+        "riassunto": "Guidando → documenti validi con sé?",
         "spiegazione": "È un obbligo di legge avere sempre con te tutti i documenti del veicolo e la tua patente, e devono essere validi (non scaduti). Se ti fermano per un controllo, devi mostrarli.",
         "regola": "Documenti validi: sempre con te, sempre in regola.",
         "trabocchetti": ["bisogna", "In corso di validità"],
@@ -135,6 +153,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a guidare un veicolo a motore bisogna essere certi che la categoria di patente posseduta ne consenta la guida",
         "risposta": True,
+        "riassunto": "Prima di guidare → patente della categoria giusta?",
         "spiegazione": "Non puoi guidare qualsiasi veicolo. Devi essere sicuro che la patente che possiedi ti permetta di guidare quel tipo specifico di veicolo (ad esempio, con la patente B non puoi guidare un camion).",
         "regola": "Patente giusta = veicolo giusto.",
         "trabocchetti": ["bisogna essere certi"],
@@ -142,6 +161,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a guidare un veicolo, bisogna essere certi del perfetto stato di efficienza del mezzo",
         "risposta": True,
+        "riassunto": "Prima di guidare → veicolo efficiente?",
         "spiegazione": "Prima di partire, devi assicurarti che il veicolo funzioni bene. Questo include freni, luci, pneumatici, ecc. Un veicolo non efficiente è pericoloso per te e per gli altri.",
         "regola": "Veicolo efficiente = guida sicura.",
         "trabocchetti": ["perfetto stato di efficienza"],
@@ -149,6 +169,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a guidare un veicolo bisogna accertarsi che gli oggetti trasportati siano sistemati in modo da evitarne la caduta o dispersione",
         "risposta": True,
+        "riassunto": "Prima di guidare → oggetti sistemati?",
         "spiegazione": "Se trasporti oggetti (ad esempio nel bagagliaio o sul sedile posteriore), devi sistemarli bene. Se cadono o si muovono, possono distrarti, bloccare i pedali o causare incidenti.",
         "regola": "Carico sicuro = nessun pericolo in viaggio.",
         "trabocchetti": ["Accertarsi"],
@@ -156,6 +177,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a guidare un veicolo, bisogna controllare che non sia compromessa la visibilità posteriore e laterale, per la presenza di passeggeri o per il carico mal posizionato",
         "risposta": True,
+        "riassunto": "Prima di guidare → visibilità non coperta da passeggeri o carico?",
         "spiegazione": "È fondamentale che tu possa vedere bene dietro e ai lati del veicolo. Se i passeggeri o il carico bloccano la vista, non puoi guidare in sicurezza e rischi incidenti.",
         "regola": "Vedere bene = sempre, senza ostacoli.",
         "trabocchetti": ["Compromessa la visibilità"],
@@ -163,6 +185,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a guidare un autoveicolo, bisogna individuare i comandi (leve e pulsanti) necessari per la guida e comprenderne bene il funzionamento",
         "risposta": True,
+        "riassunto": "Prima di guidare → conoscere i comandi?",
         "spiegazione": "Se guidi un veicolo che non conosci, devi prima capire dove sono i comandi (come le frecce, i fari, il clacson) e come funzionano. Questo ti permette di reagire velocemente e in sicurezza.",
         "regola": "Conosci i comandi = guida sicura e senza sorprese.",
         "trabocchetti": ["Individuare", "comprenderne bene il funzionamento"],
@@ -170,6 +193,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a guidare un'autovettura, bisogna controllare che i passeggeri abbiano regolarmente allacciato le cinture di sicurezza",
         "risposta": True,
+        "riassunto": "Prima di guidare → cinture dei passeggeri allacciate?",
         "spiegazione": "Prima di partire, devi controllare che tutti i passeggeri (anche quelli dietro) abbiano allacciato correttamente le cinture di sicurezza. Le cinture salvano la vita in caso di incidente.",
         "regola": "Cinture = tutti allacciati, sempre.",
         "trabocchetti": ["Regolarmente allacciato"],
@@ -177,6 +201,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a guidare un veicolo a motore bisogna regolare il contachilometri parziale",
         "risposta": False,
+        "riassunto": "Prima di guidare → azzerare il contachilometri parziale?",
         "spiegazione": "Il contachilometri parziale serve solo per misurare i chilometri di un singolo viaggio, se vuoi. Non è una regolazione obbligatoria o necessaria per iniziare a guidare in sicurezza.",
         "regola": "Contachilometri parziale: non è obbligatorio regolarlo.",
         "trabocchetti": ["bisogna"],
@@ -184,6 +209,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a guidare un veicolo a motore bisogna disinserire l'airbag del lato conducente",
         "risposta": False,
+        "riassunto": "Prima di guidare → disattivare l'airbag del conducente?",
         "spiegazione": "L'airbag del conducente è un sistema di sicurezza molto importante che si attiva in caso di incidente. Non deve mai essere disattivato, perché ti protegge.",
         "regola": "Airbag conducente: mai disattivare, è sicurezza.",
         "trabocchetti": ["Disinserire"],
@@ -191,12 +217,14 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a guidare un autoveicolo, bisogna verificare che le cinture di sicurezza siano dotate di pretensionatore",
         "risposta": False,
+        "riassunto": "Prima di guidare → cinture con pretensionatore?",
         "spiegazione": "Il pretensionatore è un sistema che stringe le cinture in caso di urto, ma non tutte le cinture lo hanno. L'importante è che le cinture ci siano e funzionino bene, non è obbligatorio verificare la presenza del pretensionatore prima di ogni viaggio.",
         "regola": "Cinture funzionanti: sì; pretensionatore: non è un controllo obbligatorio.",
     },
     {
         "domanda": "Prima di iniziare a guidare un veicolo, bisogna verificarne lo stato di efficienza solo se si deve intraprendere un lungo viaggio",
         "risposta": False,
+        "riassunto": "Efficienza del veicolo → solo per lunghi viaggi?",
         "spiegazione": "Devi controllare che il veicolo sia efficiente (freni, luci, pneumatici) sempre, prima di ogni viaggio, anche se è breve. La sicurezza non dipende dalla lunghezza del percorso.",
         "regola": "Efficienza veicolo: sempre, non 'solo se'.",
         "trabocchetti": ["solo se"],
@@ -204,6 +232,7 @@ QUESTIONS = [
     {
         "domanda": "L'arresto è l'interruzione della marcia del veicolo dovuta ad esigenze della circolazione, come ad esempio ad un semaforo rosso",
         "risposta": True,
+        "riassunto": "Arresto → per esigenze della circolazione?",
         "spiegazione": "VERO. L'arresto è quando ti fermi per un motivo legato alla circolazione stradale, come un semaforo rosso, un segnale di stop o il traffico. Non è una tua scelta, ma un obbligo.",
         "regola": "Arresto = Obbligo della strada.",
         "trabocchetti": ["esigenze della circolazione"],
@@ -211,6 +240,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata di un veicolo è la temporanea sospensione della marcia per consentire la salita o la discesa delle persone",
         "risposta": True,
+        "riassunto": "Fermata → per far salire o scendere persone?",
         "spiegazione": "VERO. La fermata è una sosta molto breve che fai per far salire o scendere qualcuno dal veicolo. Il conducente deve rimanere vicino al veicolo e pronto a ripartire subito.",
         "regola": "Fermata = Persone salgono/scendono.",
         "trabocchetti": ["temporanea sospensione"],
@@ -218,6 +248,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata di un veicolo è la temporanea sospensione della marcia per esigenze di brevissima durata, come ad esempio per chiedere informazioni agli agenti del traffico",
         "risposta": True,
+        "riassunto": "Fermata → brevissima, es. chiedere informazioni agli agenti?",
         "spiegazione": "VERO. La fermata può essere anche una brevissima pausa per altre necessità, come chiedere informazioni, ma sempre per un tempo molto limitato e senza creare intralcio al traffico.",
         "regola": "Fermata = Breve e veloce.",
         "trabocchetti": ["esigenze di brevissima durata"],
@@ -225,6 +256,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata di un veicolo è la temporanea sospensione della marcia per esigenze di brevissima durata.",
         "risposta": True,
+        "riassunto": "Fermata → sospensione brevissima?",
         "spiegazione": "VERO. Questa è la definizione generale di fermata: una pausa molto corta della marcia del veicolo per una necessità immediata. L'importante è che sia 'temporanea' e di 'brevissima durata'.",
         "regola": "Fermata = Pausa lampo.",
         "trabocchetti": ["temporanea sospensione", "brevissima durata"],
@@ -232,6 +264,7 @@ QUESTIONS = [
     {
         "domanda": "L'arresto è la temporanea sospensione della marcia per esigenze del conducente o dei passeggeri di un veicolo",
         "risposta": False,
+        "riassunto": "Arresto → per esigenze del conducente?",
         "spiegazione": "FALSO. Questa descrizione non è dell'arresto, ma della fermata (o della sosta se la durata è maggiore). L'arresto è sempre legato a un obbligo della circolazione, non a esigenze personali del conducente o dei passeggeri.",
         "regola": "Arresto = Obbligo, non scelta.",
         "trabocchetti": ["esigenze del conducente o dei passeggeri"],
@@ -239,6 +272,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è l'interruzione della marcia del veicolo dovuta ad esigenze della circolazione",
         "risposta": False,
+        "riassunto": "Fermata → per esigenze della circolazione?",
         "spiegazione": "FALSO. Questa è la definizione di 'arresto', non di 'fermata'. La fermata è per esigenze personali e brevi, mentre l'arresto è imposto dalle regole o dalle condizioni del traffico.",
         "regola": "Fermata = Personale; Arresto = Circolazione.",
         "trabocchetti": ["esigenze della circolazione"],
@@ -246,6 +280,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata per esigenze del conducente può avere la durata massima di dieci minuti",
         "risposta": False,
+        "riassunto": "Fermata → massimo dieci minuti?",
         "spiegazione": "FALSO. La legge non stabilisce una durata massima in minuti per la fermata. Deve essere di 'brevissima durata' e il conducente deve essere sempre pronto a ripartire. Dieci minuti sono considerati troppo lunghi per una fermata e rientrerebbero nella definizione di 'sosta'.",
         "regola": "Fermata = Brevissima, non 10 minuti.",
         "trabocchetti": ["dieci minuti"],
@@ -253,6 +288,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata di un veicolo è vietata se i passeggeri che scendono sono più di uno",
         "risposta": False,
+        "riassunto": "Fermata → vietata se scende più di un passeggero?",
         "spiegazione": "FALSO. Il numero di passeggeri che salgono o scendono non rende la fermata vietata. L'importante è che la fermata sia fatta in sicurezza, per un tempo brevissimo e senza creare pericolo o intralcio alla circolazione.",
         "regola": "Numero passeggeri non vieta la fermata.",
         "trabocchetti": ["più di uno"],
@@ -260,6 +296,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata non deve arrecare intralcio alla circolazione",
         "risposta": True,
+        "riassunto": "Fermata → senza intralcio?",
         "spiegazione": "Quando ti fermi con la macchina, non devi bloccare la strada o rendere difficile il passaggio per gli altri veicoli. Devi sempre permettere al traffico di muoversi liberamente.",
         "regola": "Fermata = mai bloccare!",
         "trabocchetti": ["arrecare intralcio"],
@@ -267,6 +304,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la fermata il conducente non deve impedire con il proprio autoveicolo il normale flusso del traffico",
         "risposta": True,
+        "riassunto": "Fermata → non bloccare il traffico?",
         "spiegazione": "È simile alla domanda precedente. Quando ti fermi, la tua auto non deve fermare o rallentare il traffico normale. Devi scegliere un posto dove non dai fastidio.",
         "regola": "Flusso libero, sempre!",
         "trabocchetti": ["normale flusso del traffico"],
@@ -274,6 +312,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la fermata il conducente deve comportarsi in modo da non costituire pericolo agli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Fermata → senza pericolo?",
         "spiegazione": "Quando ti fermi, devi stare attento a non creare situazioni pericolose per pedoni, ciclisti o altre auto. Per esempio, non devi aprire la portiera senza guardare.",
         "regola": "Sicurezza prima di tutto!",
         "trabocchetti": ["costituire pericolo", "utenti della strada"],
@@ -281,12 +320,14 @@ QUESTIONS = [
     {
         "domanda": "Durante la fermata il conducente deve essere sempre presente e pronto a riprendere la marcia",
         "risposta": True,
+        "riassunto": "Fermata → conducente presente e pronto a ripartire?",
         "spiegazione": "La fermata è una sosta molto breve. Questo significa che devi rimanere al volante o molto vicino all'auto, pronto a ripartire subito se serve. Non puoi allontanarti.",
         "regola": "Fermata = al volante!",
     },
     {
         "domanda": "Durante la fermata il conducente deve sempre adottare le opportune cautele atte ad evitare incidenti",
         "risposta": True,
+        "riassunto": "Fermata → cautele contro incidenti?",
         "spiegazione": "Devi sempre prendere tutte le precauzioni necessarie per non causare incidenti. Ad esempio, guardare nello specchietto prima di accostare, segnalare con la freccia.",
         "regola": "Attenzione massima!",
         "trabocchetti": ["opportune cautele", "Atte ad evitare"],
@@ -294,6 +335,7 @@ QUESTIONS = [
     {
         "domanda": "Non è consentito fermarsi per chiedere informazioni agli agenti del traffico, quando ciò possa causare intralcio o rallentamento alla circolazione",
         "risposta": True,
+        "riassunto": "Fermarsi a chiedere agli agenti → non se si intralcia?",
         "spiegazione": "Anche se vuoi chiedere informazioni a un poliziotto, non puoi fermarti se questo blocca il traffico o lo rallenta. Devi trovare un posto dove fermarti senza dare fastidio.",
         "regola": "Informazioni sì, intralcio no!",
         "trabocchetti": ["Non è consentito"],
@@ -301,6 +343,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la fermata il conducente può allontanarsi per brevissimo tempo prima di riprendere la marcia",
         "risposta": False,
+        "riassunto": "Fermata → allontanarsi brevemente?",
         "spiegazione": "Questa è una domanda 'trappola' sulla definizione di fermata. La fermata è una sosta brevissima dove il conducente NON si allontana dal veicolo e rimane pronto a ripartire. Se ti allontani, anche per poco, non è più una fermata ma una sosta.",
         "regola": "Fermata = mai via!",
         "trabocchetti": ["allontanarsi"],
@@ -308,6 +351,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata di un veicolo è sempre consentita per chiedere informazioni agli agenti del traffico",
         "risposta": False,
+        "riassunto": "Fermata per chiedere agli agenti → sempre consentita?",
         "spiegazione": "Non è *sempre* consentita. Come abbiamo visto nella domanda 23655, se la fermata per chiedere informazioni causa intralcio o rallentamento, allora non è permessa. La parola 'sempre' è la chiave.",
         "regola": "'Sempre' è spesso FALSO!",
         "trabocchetti": ["sempre"],
@@ -315,6 +359,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la fermata il conducente, se si allontana, deve lasciare il veicolo con il motore acceso",
         "risposta": False,
+        "riassunto": "Fermata → allontanarsi col motore acceso?",
         "spiegazione": "Ci sono due errori qui. Primo, durante la fermata il conducente NON si allontana. Secondo, anche se fosse una sosta (dove ci si può allontanare), non si deve mai lasciare il motore acceso quando si lascia il veicolo, sia per sicurezza che per inquinamento.",
         "regola": "Motore spento, sempre!",
         "trabocchetti": ["se si allontana"],
@@ -322,6 +367,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di fermata, ove non esista marciapiede rialzato, il conducente deve lasciare uno spazio non inferiore ad un metro per il transito dei pedoni",
         "risposta": True,
+        "riassunto": "Fermata senza marciapiede → un metro per i pedoni?",
         "spiegazione": "Quando ti fermi e non c'è un marciapiede rialzato, devi lasciare almeno un metro di spazio tra il tuo veicolo e il bordo della strada. Questo spazio serve per far camminare i pedoni in sicurezza.",
         "regola": "No marciapiede = 1 metro per i pedoni.",
         "trabocchetti": ["non inferiore ad un metro"],
@@ -329,6 +375,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, il conducente, in caso di fermata, deve collocare, se possibile, il veicolo fuori della carreggiata",
         "risposta": True,
+        "riassunto": "Fuori città → fermata fuori carreggiata se possibile?",
         "spiegazione": "Fuori dalle città, quando ti fermi, la regola generale è mettere il tuo veicolo fuori dalla strada (carreggiata), se c'è lo spazio. Questo aiuta a mantenere la strada libera e sicura per gli altri veicoli.",
         "regola": "Fuori città, fermata = fuori carreggiata (se puoi).",
         "trabocchetti": ["se possibile"],
@@ -336,6 +383,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, il conducente, in caso di fermata, deve collocare il veicolo fuori della carreggiata, ma non sulle piste ciclabili",
         "risposta": True,
+        "riassunto": "Fuori città → fermata fuori carreggiata ma non su piste ciclabili?",
         "spiegazione": "Anche fuori dalle città, devi mettere il veicolo fuori dalla carreggiata quando ti fermi. Ma ricorda, non puoi mai fermarti o parcheggiare sulle piste ciclabili, perché sono riservate solo alle biciclette.",
         "regola": "Fuori carreggiata sì, pista ciclabile no!",
         "trabocchetti": ["ma non sulle piste ciclabili"],
@@ -343,12 +391,14 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, se non è possibile collocare il veicolo fuori della carreggiata, il conducente deve effettuare la fermata il più vicino possibile al margine destro della carreggiata",
         "risposta": True,
+        "riassunto": "Fuori città → altrimenti vicino al margine destro?",
         "spiegazione": "Se fuori città non puoi proprio mettere il veicolo fuori dalla strada (magari non c'è spazio o una banchina), allora devi fermarti sul bordo destro della strada, il più vicino possibile. Così non ostacoli il traffico.",
         "regola": "Fuori carreggiata no? Allora margine destro, attaccato!",
     },
     {
         "domanda": "In caso di fermata su strada urbana in cui non esiste il marciapiede rialzato, il conducente deve collocare il veicolo il più vicino possibile al margine destro della carreggiata",
         "risposta": False,
+        "riassunto": "Città senza marciapiede → fermata vicino al margine destro?",
         "spiegazione": "Questa domanda è FALSA. Nelle strade urbane (in città) senza marciapiede rialzato, non devi stare 'il più vicino possibile' al margine. Devi lasciare almeno un metro di spazio per i pedoni, come abbiamo visto nella domanda 23659.",
         "regola": "Città, no marciapiede = 1 metro per pedoni, non attaccato!",
         "trabocchetti": ["il più vicino possibile"],
@@ -356,6 +406,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, il conducente, in caso di fermata ha l'obbligo di collocare il veicolo fuori della carreggiata, eventualmente su una pista ciclabile",
         "risposta": False,
+        "riassunto": "Fuori città → fermata anche su pista ciclabile?",
         "spiegazione": "Questa domanda è FALSA. È vero che fuori città, se possibile, devi mettere il veicolo fuori dalla carreggiata. Ma la parte 'eventualmente su una pista ciclabile' è assolutamente sbagliata! Non si può mai fermarsi o parcheggiare su una pista ciclabile.",
         "regola": "Pista ciclabile = mai! (nemmeno per fermata).",
         "trabocchetti": ["eventualmente su una pista ciclabile"],
@@ -363,6 +414,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata in corrispondenza o in prossimità dei passaggi a livello",
         "risposta": True,
+        "riassunto": "Fermata → vietata vicino ai passaggi a livello?",
         "spiegazione": "È vero. Fermarsi vicino ai passaggi a livello è molto pericoloso perché potresti non vedere il treno o bloccare il suo passaggio. La sicurezza è la cosa più importante.",
         "regola": "Passaggio a livello = pericolo, non fermarti mai.",
         "trabocchetti": ["in corrispondenza o in prossimità"],
@@ -370,6 +422,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata sui binari di linee ferroviarie o tranviarie o così vicino ad essi da intralciare la marcia dei veicoli su rotaia",
         "risposta": True,
+        "riassunto": "Fermata → vietata sui binari o vicino?",
         "spiegazione": "È vero. Non puoi fermarti sui binari del treno o del tram, né così vicino da bloccare il passaggio di questi veicoli. È estremamente pericoloso e può causare incidenti gravi.",
         "regola": "Binari = via libera per treni/tram, non per te.",
         "trabocchetti": ["intralciare la marcia"],
@@ -377,6 +430,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata nelle gallerie, salvo diversa segnalazione.",
         "risposta": True,
+        "riassunto": "Fermata → vietata in galleria?",
         "spiegazione": "È vero. Nelle gallerie la visibilità è ridotta e lo spazio è limitato. Fermarsi è pericoloso perché potresti causare un incidente. Puoi fermarti solo se c'è un cartello specifico che lo permette.",
         "regola": "Galleria = buio, non fermarti (a meno di cartello).",
         "trabocchetti": ["salvo diversa segnalazione"],
@@ -384,6 +438,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici, salvo diversa segnalazione.",
         "risposta": True,
+        "riassunto": "Fermata → vietata nei sottovia e sotto i portici?",
         "spiegazione": "È vero. Questi luoghi (sottopassaggi, sotto i ponti, sotto archi o portici) sono spesso stretti o con visibilità limitata. Fermarsi lì può essere pericoloso e creare intralcio. Anche qui, puoi fermarti solo se c'è un segnale che lo permette.",
         "regola": "Sotto strutture = spazio limitato, non fermarti (a meno di cartello).",
         "trabocchetti": ["Salvo diversa segnalazione"],
@@ -391,6 +446,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata sui dossi.",
         "risposta": True,
+        "riassunto": "Fermata → vietata sui dossi?",
         "spiegazione": "È vero. Sui dossi (le gobbe della strada) la visibilità è molto ridotta. Se ti fermi lì, chi arriva dall'altra parte non ti vede in tempo e c'è un alto rischio di incidente.",
         "regola": "Dosso = non si vede, non fermarti.",
         "trabocchetti": ["dossi"],
@@ -398,6 +454,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dai centri abitati e sulle strade urbane di scorrimento la fermata è vietata in prossimità dei dossi.",
         "risposta": True,
+        "riassunto": "Fuori città → fermata vietata vicino ai dossi?",
         "spiegazione": "È vero. Fuori città e sulle strade veloci, le auto vanno più forte. Se ti fermi vicino a un dosso, anche se non proprio sopra, chi arriva non ha il tempo di vederti e frenare. Per questo, il divieto si estende anche alla 'prossimità'.",
         "regola": "Dosso + alta velocità = anche vicino è pericoloso.",
         "trabocchetti": ["in prossimità"],
@@ -405,6 +462,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata nelle curve e, fuori dei centri abitati e sulle strade urbane di scorrimento, anche in loro prossimità",
         "risposta": True,
+        "riassunto": "Fermata → vietata in curva e vicino fuori città?",
         "spiegazione": "È vero. Nelle curve la visibilità è limitata. Se ti fermi, chi arriva non ti vede. Fuori città o sulle strade veloci, dove si va più forte, è vietato fermarsi anche vicino alla curva, proprio per la sicurezza.",
         "regola": "Curva = non si vede, non fermarti (e fuori città, neanche vicino).",
         "trabocchetti": ["nelle curve"],
@@ -412,6 +470,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata sul margine destro della carreggiata",
         "risposta": False,
+        "riassunto": "Fermata → vietata sul margine destro?",
         "spiegazione": "È falso. La fermata è normalmente consentita sul margine destro della carreggiata, purché non ci siano divieti specifici (come strisce gialle, segnali di divieto, ecc.) e non si crei intralcio. Anzi, è il posto più comune e sicuro per fermarsi.",
         "regola": "Margine destro = di solito si può fermare.",
         "trabocchetti": ["vietata"],
@@ -419,6 +478,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata lungo il margine sinistro di una carreggiata a senso unico di circolazione",
         "risposta": False,
+        "riassunto": "Fermata → vietata a sinistra su senso unico?",
         "spiegazione": "È falso. In una strada a senso unico, se non ci sono divieti specifici (come strisce gialle o segnali), puoi fermarti anche sul margine sinistro, purché non intralci il traffico e lasci spazio per il passaggio.",
         "regola": "Senso unico = anche a sinistra si può (se non vietato).",
         "trabocchetti": ["vietata"],
@@ -426,6 +486,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata di breve durata è consentita anche in curva.",
         "risposta": False,
+        "riassunto": "Fermata breve → consentita in curva?",
         "spiegazione": "È falso. La fermata è sempre vietata in curva, anche se dura poco. La visibilità è troppo ridotta e c'è sempre il rischio di un incidente, non importa quanto sia breve la fermata.",
         "regola": "Curva = mai fermarsi, neanche un secondo.",
         "trabocchetti": ["anche in curva", "di breve durata"],
@@ -433,6 +494,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata allo sbocco dei passi carrabili",
         "risposta": False,
+        "riassunto": "Fermata → vietata allo sbocco dei passi carrabili?",
         "spiegazione": "È falso. La fermata è consentita allo sbocco dei passi carrabili, purché non si intralci l'accesso o l'uscita dei veicoli. È la sosta (lasciare il veicolo e allontanarsi) che è vietata, non la fermata (breve e con il conducente presente).",
         "regola": "Passo carrabile: fermata OK, sosta NO.",
         "trabocchetti": ["vietata", "fermata"],
@@ -440,6 +502,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata sulle aree destinate al mercato o al carico e allo scarico delle merci",
         "risposta": False,
+        "riassunto": "Fermata → vietata su mercato o carico/scarico?",
         "spiegazione": "È falso. La fermata è consentita in queste aree, ma solo per il tempo strettamente necessario e senza intralciare le operazioni di mercato o di carico/scarico. È la sosta (lasciare il veicolo per un tempo non breve) che è vietata, non la fermata.",
         "regola": "Aree speciali: fermata OK, sosta NO.",
         "trabocchetti": ["vietata", "fermata"],
@@ -447,6 +510,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata in prossimità e in corrispondenza di segnali stradali verticali in modo da occultarne la vista",
         "risposta": True,
+        "riassunto": "Fermata → vietata se nasconde segnali verticali?",
         "spiegazione": "È vietato fermarsi vicino a un segnale stradale verticale se il tuo veicolo lo copre, perché gli altri automobilisti non lo vedrebbero. La sicurezza stradale dipende dalla chiara visibilità dei segnali.",
         "regola": "Non coprire i segnali!",
         "trabocchetti": ["in modo da occultarne la vista"],
@@ -454,6 +518,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata in prossimità e in corrispondenza di segnali semaforici in modo da occultarne la vista",
         "risposta": True,
+        "riassunto": "Fermata → vietata se nasconde semafori?",
         "spiegazione": "Come per i segnali verticali, non puoi fermarti dove il tuo veicolo nasconde un semaforo. È fondamentale che tutti vedano le luci del semaforo per capire quando fermarsi o partire, evitando incidenti.",
         "regola": "Non coprire i semafori!",
         "trabocchetti": ["in modo da occultarne la vista"],
@@ -461,6 +526,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata in corrispondenza dei segnali orizzontali di preselezione e lungo le corsie di canalizzazione",
         "risposta": True,
+        "riassunto": "Fermata → vietata su preselezione e canalizzazione?",
         "spiegazione": "I segnali di preselezione (le frecce disegnate sull'asfalto che indicano la direzione) e le corsie di canalizzazione (quelle che ti guidano in una direzione specifica) servono a organizzare il traffico. Fermarsi lì blocca il flusso e crea confusione e pericolo.",
         "regola": "Non bloccare le frecce a terra e le corsie speciali.",
         "trabocchetti": ["Segnali orizzontali di preselezione", "corsie di canalizzazione"],
@@ -468,6 +534,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, la fermata è vietata in corrispondenza e in prossimità delle aree di intersezione",
         "risposta": True,
+        "riassunto": "Fuori città → fermata vietata vicino agli incroci?",
         "spiegazione": "Fuori dalle città, gli incroci sono spesso più pericolosi perché le velocità sono più alte. Fermarsi vicino a un incrocio è molto pericoloso perché riduce la visibilità per tutti e può causare incidenti gravi.",
         "regola": "Lontano dagli incroci fuori città.",
         "trabocchetti": ["Fuori dei centri abitati"],
@@ -475,6 +542,7 @@ QUESTIONS = [
     {
         "domanda": "Nei centri abitati, la fermata e la sosta sono vietate in corrispondenza delle aree di intersezione e in prossimità di esse a meno di 5 metri, salvo diversa segnalazione.",
         "risposta": True,
+        "riassunto": "Città → fermata e sosta vietate a meno di 5 m dagli incroci?",
         "spiegazione": "Nelle città, vicino agli incroci, non puoi fermarti o parcheggiare a meno di 5 metri dall'incrocio. Questo serve a garantire la visibilità e la sicurezza per tutti. Se c'è un segnale diverso (ad esempio, un parcheggio consentito), allora puoi.",
         "regola": "In città, 5 metri dagli incroci, a meno che non sia permesso.",
         "trabocchetti": ["A meno di 5 metri", "Salvo diversa segnalazione"],
@@ -482,6 +550,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata limitatamente alle ore di esercizio, in corrispondenza dei distributori di carburante",
         "risposta": False,
+        "riassunto": "Fermata → vietata ai distributori in orario di apertura?",
         "spiegazione": "La fermata è vietata *sempre* in corrispondenza dei distributori di carburante, non solo quando sono aperti. Questo perché le aree dei distributori devono essere libere per il rifornimento e per la sicurezza, in qualsiasi momento.",
         "regola": "Distributore = sempre libero.",
         "trabocchetti": ["Limitatamente alle ore di esercizio"],
@@ -489,6 +558,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata dopo il segnale DIVIETO DI SOSTA",
         "risposta": False,
+        "riassunto": "Fermata → vietata dopo DIVIETO DI SOSTA?",
         "spiegazione": "Il segnale 'DIVIETO DI SOSTA' vieta solo la sosta (cioè il parcheggio prolungato), ma non la fermata (una breve interruzione per far salire/scendere qualcuno o per un'esigenza momentanea, con il conducente vicino al veicolo).",
         "regola": "Divieto di Sosta = puoi fermarti, non parcheggiare.",
         "trabocchetti": ["sosta", "fermata"],
@@ -497,12 +567,14 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata in prossimità dei segnali stradali, anche se il veicolo non ne occulta la vista",
         "risposta": False,
+        "riassunto": "Fermata → vietata vicino ai segnali anche senza coprirli?",
         "spiegazione": "La fermata è vietata vicino ai segnali stradali *solo se* il tuo veicolo li copre e impedisce agli altri di vederli. Se non li copri e non crei pericolo, puoi fermarti.",
         "regola": "Se non copri, puoi fermarti.",
     },
     {
         "domanda": "La fermata è vietata lungo le autostrade, anche in caso di emergenza",
         "risposta": False,
+        "riassunto": "Fermata in autostrada → vietata anche in emergenza?",
         "spiegazione": "Sulle autostrade la fermata è vietata, ma ci sono eccezioni per le emergenze (ad esempio, un guasto al veicolo o un malore). In questi casi, devi fermarti sulla corsia di emergenza o in una piazzola di sosta, se presenti.",
         "regola": "Emergenza in autostrada = corsia d'emergenza.",
         "trabocchetti": ["Anche in caso di emergenza"],
@@ -510,6 +582,7 @@ QUESTIONS = [
     {
         "domanda": "Nei centri abitati la fermata è vietata in prossimità delle aree di intersezione, a più di 5 metri",
         "risposta": False,
+        "riassunto": "Città → fermata vietata oltre 5 m dagli incroci?",
         "spiegazione": "Nelle città, la fermata è vietata *a meno di 5 metri* dagli incroci. Se sei a *più di 5 metri*, la fermata è generalmente consentita (a meno di altri divieti specifici, come un divieto di fermata o sosta).",
         "regola": "In città, oltre i 5 metri dall'incrocio puoi.",
         "trabocchetti": ["A più di 5 metri"],
@@ -517,6 +590,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è consentita sulle corsie di accelerazione, purché brevissima",
         "risposta": False,
+        "riassunto": "Fermata brevissima → consentita in corsia di accelerazione?",
         "spiegazione": "Le corsie di accelerazione servono per entrare in autostrada o su strade a scorrimento veloce, prendendo la giusta velocità. Fermarsi lì è estremamente pericoloso perché blocca il traffico e impedisce agli altri veicoli di accelerare in sicurezza. Non è mai consentita, nemmeno per pochissimo tempo.",
         "regola": "Corsia di accelerazione = mai fermarsi.",
         "trabocchetti": ["Purché brevissima"],
@@ -524,6 +598,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta e la fermata sono sempre vietate sugli attraversamenti pedonali",
         "risposta": True,
+        "riassunto": "Sosta e fermata → sempre vietate sulle strisce pedonali?",
         "spiegazione": "Gli attraversamenti pedonali sono spazi dedicati ai pedoni per attraversare la strada in sicurezza. Se un veicolo si ferma o sosta lì, blocca il passaggio e può essere molto pericoloso per chi cammina. Per questo motivo, è sempre vietato fermarsi o sostare.",
         "regola": "Attraversamento pedonale: MAI fermarsi o sostare.",
         "trabocchetti": ["sempre"],
@@ -531,6 +606,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta e la fermata sono vietate in ogni caso sulle piste ciclabili e agli sbocchi di esse",
         "risposta": True,
+        "riassunto": "Sosta e fermata → vietate su piste ciclabili e sbocchi?",
         "spiegazione": "Le piste ciclabili sono riservate alle biciclette. Se un veicolo si ferma o sosta su di esse, impedisce ai ciclisti di passare e li mette in pericolo. Anche agli 'sbocchi' (cioè dove la pista inizia o finisce) è vietato per non bloccare l'accesso o l'uscita dei ciclisti.",
         "regola": "Pista ciclabile e sbocchi: zona sacra per le bici, tutto vietato.",
         "trabocchetti": ["in ogni caso"],
@@ -538,6 +614,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta e la fermata sono vietate sui marciapiedi, salvo diversa segnalazione",
         "risposta": True,
+        "riassunto": "Sosta e fermata → vietate sui marciapiedi?",
         "spiegazione": "I marciapiedi sono fatti per i pedoni. Di solito, non si può fermare o sostare su di essi. Tuttavia, a volte ci sono dei cartelli o delle strisce che indicano che è permesso, ad esempio per scaricare merci in certi orari. Quindi, il divieto vale 'salvo diversa segnalazione'.",
         "regola": "Marciapiede = pedoni. Solo se c'è un cartello puoi.",
         "trabocchetti": ["salvo diversa segnalazione"],
@@ -545,6 +622,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è consentita allo sbocco dei passi carrabili",
         "risposta": True,
+        "riassunto": "Fermata → consentita allo sbocco dei passi carrabili?",
         "spiegazione": "Il passo carrabile è l'ingresso di un garage o di un cortile. La sosta è vietata perché bloccherebbe l'accesso. Ma la fermata, che è per un tempo molto breve e con il conducente vicino e pronto a ripartire, è consentita, perché non impedisce il passaggio.",
         "regola": "Passo carrabile: sosta NO, fermata SÌ (se non blocchi).",
         "trabocchetti": ["fermata"],
@@ -552,6 +630,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è consentita davanti ai cassonetti dei rifiuti urbani",
         "risposta": True,
+        "riassunto": "Fermata → consentita davanti ai cassonetti?",
         "spiegazione": "I cassonetti servono per buttare la spazzatura. La sosta è vietata per non impedire lo svuotamento da parte degli operatori. Ma la fermata, per un tempo molto breve (ad esempio per buttare la spazzatura o far scendere un passeggero), è consentita, purché non si blocchi il servizio di raccolta.",
         "regola": "Cassonetto: sosta NO, fermata SÌ (se non blocchi).",
         "trabocchetti": ["fermata"],
@@ -559,12 +638,14 @@ QUESTIONS = [
     {
         "domanda": "La fermata è consentita sugli attraversamenti pedonali per far scendere un passeggero",
         "risposta": False,
+        "riassunto": "Fermata → sulle strisce per far scendere?",
         "spiegazione": "Come abbiamo visto, gli attraversamenti pedonali devono essere sempre liberi per i pedoni. Non si può né sostare né fermarsi, nemmeno per un attimo, nemmeno per far scendere un passeggero. È troppo pericoloso e impedisce il passaggio sicuro dei pedoni.",
         "regola": "Attraversamento pedonale = MAI fermarsi.",
     },
     {
         "domanda": "La fermata per esigenze di brevissima durata è vietata sulle piste ciclabili ma non agli sbocchi di esse",
         "risposta": False,
+        "riassunto": "Fermata brevissima → vietata su piste ciclabili ma non agli sbocchi?",
         "spiegazione": "Abbiamo imparato che sia la sosta che la fermata sono vietate sia sulle piste ciclabili che ai loro sbocchi. La frase dice 'ma non agli sbocchi di esse', il che è sbagliato. È vietata anche agli sbocchi per garantire la sicurezza dei ciclisti.",
         "regola": "Pista ciclabile e sbocchi: tutto vietato!",
         "trabocchetti": ["ma non agli sbocchi di esse"],
@@ -572,6 +653,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è sempre vietata in seconda fila",
         "risposta": False,
+        "riassunto": "Fermata in seconda fila → sempre vietata?",
         "spiegazione": "Di solito, la fermata in seconda fila è vietata perché blocca il traffico e può essere pericolosa. Tuttavia, ci sono delle rare eccezioni, ad esempio se non c'è spazio per fermarsi al bordo della strada e non si crea nessun intralcio al traffico. La parola 'sempre' rende la frase FALSO, perché non è un divieto assoluto.",
         "regola": "Seconda fila: di solito NO, ma 'sempre' è troppo.",
         "trabocchetti": ["sempre"],
@@ -579,6 +661,7 @@ QUESTIONS = [
     {
         "domanda": "La fermata è vietata in ogni caso nelle ore notturne",
         "risposta": False,
+        "riassunto": "Fermata → vietata di notte?",
         "spiegazione": "Non esiste nessuna regola nel Codice della Strada che vieta la fermata solo perché è notte. Si può fermare anche di notte, purché si rispettino tutte le altre regole (non bloccare il traffico, non essere in divieto di sosta, ecc.).",
         "regola": "La notte non cambia le regole di fermata.",
         "trabocchetti": ["in ogni caso nelle ore notturne"],
@@ -586,6 +669,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è la sospensione della marcia del veicolo protratta nel tempo, con possibilità del conducente di allontanarsi",
         "risposta": True,
+        "riassunto": "Sosta → prolungata, conducente può allontanarsi?",
         "spiegazione": "La sosta è quando fermi il veicolo per un tempo prolungato e puoi allontanarti. È la differenza principale con la 'fermata', dove devi rimanere vicino al veicolo.",
         "regola": "Sosta = tempo + via.",
         "trabocchetti": ["protratta nel tempo"],
@@ -593,6 +677,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la sosta il conducente può allontanarsi dal veicolo",
         "risposta": True,
+        "riassunto": "Sosta → conducente può allontanarsi?",
         "spiegazione": "Sì, questa è proprio la caratteristica che distingue la sosta dalla fermata. Se fai una sosta, puoi lasciare il veicolo e andare via per un po'.",
         "regola": "Sosta = scendi e vai.",
         "trabocchetti": ["può allontanarsi"],
@@ -600,6 +685,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la sosta il conducente deve adottare le opportune cautele atte ad evitare incidenti",
         "risposta": True,
+        "riassunto": "Sosta → cautele contro incidenti?",
         "spiegazione": "Anche se ti allontani dal veicolo, devi sempre assicurarti che sia parcheggiato in sicurezza. Ad esempio, devi mettere il freno a mano, spegnere il motore e, se in pendenza, girare le ruote verso il marciapiede.",
         "regola": "Sosta = sicurezza prima di tutto.",
         "trabocchetti": ["deve adottare le opportune cautele"],
@@ -607,6 +693,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la sosta il conducente deve impedire l'uso del veicolo senza il suo consenso",
         "risposta": True,
+        "riassunto": "Sosta → impedire l'uso senza consenso?",
         "spiegazione": "Quando lasci il veicolo, devi fare in modo che nessuno possa usarlo senza il tuo permesso. Questo significa togliere le chiavi, chiudere le portiere e, se possibile, attivare l'antifurto.",
         "regola": "Sosta = chiavi via, auto chiusa.",
         "trabocchetti": ["impedire l"],
@@ -614,6 +701,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la sosta nelle ore notturne il conducente deve lasciare in ogni caso accese le luci di posizione",
         "risposta": False,
+        "riassunto": "Sosta notturna → sempre luci di posizione?",
         "spiegazione": "Non 'in ogni caso'. Se il veicolo è parcheggiato in una strada ben illuminata, non è obbligatorio lasciare le luci di posizione accese. Le luci servono per rendere visibile il veicolo, ma se la strada è già chiara, non servono.",
         "regola": "'In ogni caso' = attenzione, spesso è FALSO.",
         "trabocchetti": ["in ogni caso"],
@@ -621,12 +709,14 @@ QUESTIONS = [
     {
         "domanda": "Durante la sosta il conducente non può allontanarsi dal veicolo per più di tre ore",
         "risposta": False,
+        "riassunto": "Sosta → non più di tre ore lontani?",
         "spiegazione": "Non c'è un limite di tempo massimo per la sosta, a meno che non ci siano segnali specifici (come un disco orario o un parcheggio a pagamento con limite). La sosta può durare anche giorni, se consentito.",
         "regola": "Sosta = nessun limite di tempo (se non indicato).",
     },
     {
         "domanda": "Durante la sosta è opportuno che il conducente azioni il freno di stazionamento ed inserisca il rapporto più basso del cambio di velocità",
         "risposta": True,
+        "riassunto": "Sosta → freno di stazionamento e marcia bassa?",
         "spiegazione": "Quando ti fermi per una sosta, è sempre una buona pratica usare il freno a mano (freno di stazionamento) per bloccare l'auto. Inoltre, mettere la prima marcia (il rapporto più basso) aiuta a tenere ferma l'auto, specialmente se la strada è un po' in pendenza, aggiungendo un blocco meccanico al motore.",
         "regola": "Sosta = Freno a mano + 1ª marcia (o retromarcia in discesa).",
         "trabocchetti": ["opportuno"],
@@ -634,12 +724,14 @@ QUESTIONS = [
     {
         "domanda": "Durante la sosta il conducente deve adottare accorgimenti atti a garantire l'immobilità del veicolo, indipendentemente dal grado di pendenza della strada",
         "risposta": True,
+        "riassunto": "Sosta → veicolo immobile qualunque pendenza?",
         "spiegazione": "Quando parcheggi, devi sempre assicurarti che la tua auto non si muova da sola. Questo vale sempre, sia che la strada sia piatta, in salita o in discesa. Devi usare tutti i mezzi necessari (freno a mano, marcia inserita) per bloccarla in modo sicuro.",
         "regola": "Sosta = Auto ferma SEMPRE, ovunque.",
     },
     {
         "domanda": "Durante la sosta nelle strade a forte pendenza, è opportuno che il conducente azioni il freno di stazionamento, inserisca il rapporto più basso del cambio di velocità e lasci il veicolo con le ruote sterzate verso il marciapiede",
         "risposta": True,
+        "riassunto": "Sosta in forte pendenza → freno, marcia bassa, ruote verso il marciapiede?",
         "spiegazione": "Se la strada è molto in pendenza, devi fare più cose per garantire la sicurezza. Oltre al freno a mano e alla prima marcia (o retromarcia in discesa), devi girare le ruote verso il marciapiede. Così, se l'auto si muovesse, si bloccherebbe contro il marciapiede e non andrebbe in mezzo alla strada, causando pericoli.",
         "regola": "Forte pendenza = Freno a mano + Marcia + Ruote al marciapiede.",
         "trabocchetti": ["nelle strade a forte pendenza", "Verso il marciapiede"],
@@ -647,6 +739,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la sosta il conducente deve lasciare il veicolo con il motore spento",
         "risposta": True,
+        "riassunto": "Sosta → motore spento?",
         "spiegazione": "Quando fai una sosta, devi sempre spegnere il motore. Lasciare il motore acceso non è permesso, inquina l'ambiente e consuma carburante inutilmente. È una questione di rispetto delle norme e dell'ambiente.",
         "regola": "Sosta = Motore SPENTO, sempre.",
         "trabocchetti": ["deve"],
@@ -654,6 +747,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la sosta il conducente che lascia il veicolo su strada in salita, deve avere cura di inserire la quarta marcia",
         "risposta": False,
+        "riassunto": "Sosta in salita → quarta marcia?",
         "spiegazione": "Se la strada è in salita, devi inserire la PRIMA marcia, non la quarta. La prima marcia è quella che blocca meglio il motore e impedisce all'auto di scendere. La quarta marcia, essendo un rapporto più 'lungo', non ha lo stesso effetto frenante e non garantisce l'immobilità del veicolo.",
         "regola": "Salita = 1ª marcia (MAI la 4ª!).",
         "trabocchetti": ["quarta marcia"],
@@ -661,6 +755,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la sosta il conducente deve posizionare il cambio di velocità dell'autovettura in folle",
         "risposta": False,
+        "riassunto": "Sosta → cambio in folle?",
         "spiegazione": "Mettere il cambio in folle significa che nessuna marcia è inserita. In questo modo, il motore non aiuta a tenere ferma l'auto e il veicolo potrebbe muoversi più facilmente. Devi sempre inserire una marcia (la prima in salita, la retromarcia in discesa) oltre al freno a mano per maggiore sicurezza.",
         "regola": "Sosta = MAI in folle. Sempre una marcia inserita.",
         "trabocchetti": ["in folle"],
@@ -668,6 +763,7 @@ QUESTIONS = [
     {
         "domanda": "Salvo diversa segnalazione il conducente, in caso di sosta nei centri abitati, deve collocare il veicolo il più vicino possibile al margine destro della carreggiata, parallelamente ad esso e secondo il senso di marcia, purché esista il marciapiede rialzato",
         "risposta": True,
+        "riassunto": "Sosta in città con marciapiede → a destra, parallela, nel senso di marcia?",
         "spiegazione": "Nei centri abitati, se c'è un marciapiede rialzato, devi parcheggiare la tua auto il più vicino possibile al bordo destro della strada, nella stessa direzione del traffico. Questo aiuta a mantenere la strada libera e sicura per tutti.",
         "regola": "Centro abitato + Marciapiede = Vicino a destra.",
         "trabocchetti": ["purché esista il marciapiede rialzato"],
@@ -675,6 +771,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di sosta ove non esista marciapiede rialzato, il conducente deve lasciare uno spazio non inferiore ad un metro per il transito dei pedoni",
         "risposta": True,
+        "riassunto": "Sosta senza marciapiede → un metro per i pedoni?",
         "spiegazione": "Se parcheggi in un luogo dove non c'è un marciapiede rialzato, devi lasciare almeno un metro di spazio tra la tua auto e il bordo della strada. Questo spazio è fondamentale per permettere ai pedoni di camminare in sicurezza.",
         "regola": "No marciapiede = 1 metro per pedoni.",
         "trabocchetti": ["non inferiore ad un metro"],
@@ -682,6 +779,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, il conducente che deve sostare ha l'obbligo di collocare il veicolo, ove possibile, fuori della carreggiata",
         "risposta": True,
+        "riassunto": "Fuori città → sosta fuori carreggiata se possibile?",
         "spiegazione": "Quando sei fuori dai centri abitati e devi parcheggiare, hai l'obbligo di mettere il veicolo fuori dalla strada principale (la carreggiata), se c'è spazio. Questo rende la strada più sicura per chi guida.",
         "regola": "Fuori città = Parcheggia fuori strada.",
         "trabocchetti": ["ove possibile"],
@@ -689,6 +787,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, il conducente che deve sostare ha l'obbligo di collocare il veicolo fuori della carreggiata, ma non sulle piste ciclabili",
         "risposta": True,
+        "riassunto": "Fuori città → sosta fuori carreggiata ma non su piste ciclabili?",
         "spiegazione": "Fuori dai centri abitati, devi parcheggiare l'auto fuori dalla strada, ma non puoi mai parcheggiare sulle piste ciclabili. Le piste ciclabili sono riservate solo alle biciclette.",
         "regola": "Fuori strada sì, pista ciclabile no!",
         "trabocchetti": ["ma non sulle piste ciclabili"],
@@ -696,12 +795,14 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati il conducente deve collocare il veicolo in sosta fuori della carreggiata, ma non sulle banchine, salvo diversa segnalazione",
         "risposta": True,
+        "riassunto": "Fuori città → sosta fuori carreggiata ma non sulle banchine?",
         "spiegazione": "Fuori dai centri abitati, devi parcheggiare il veicolo fuori dalla strada. Di solito non puoi parcheggiare sulle banchine (la parte laterale della strada, spesso non asfaltata o meno resistente), a meno che un cartello stradale non ti indichi diversamente.",
         "regola": "Fuori strada sì, banchina no (salvo cartello).",
     },
     {
         "domanda": "Fuori dei centri abitati, in caso di impossibilità a collocare il veicolo fuori della carreggiata, il conducente deve sostare il più vicino possibile al margine destro della carreggiata",
         "risposta": True,
+        "riassunto": "Fuori città → altrimenti vicino al margine destro?",
         "spiegazione": "Se ti trovi fuori dai centri abitati e non puoi proprio parcheggiare l'auto fuori dalla strada, allora devi metterla il più vicino possibile al bordo destro della strada. È una soluzione alternativa quando non c'è altro spazio.",
         "regola": "Fuori strada impossibile = Vicino a destra.",
         "trabocchetti": ["in caso di impossibilità"],
@@ -709,12 +810,14 @@ QUESTIONS = [
     {
         "domanda": "In caso di sosta in un centro abitato, il conducente deve collocare il veicolo il più vicino possibile al margine destro della carreggiata, anche dove non esiste il marciapiede rialzato",
         "risposta": False,
+        "riassunto": "Città → sosta a destra anche senza marciapiede?",
         "spiegazione": "Questa affermazione è falsa. Nei centri abitati, se non c'è il marciapiede rialzato, non basta solo parcheggiare vicino al bordo destro. Devi anche lasciare almeno un metro di spazio per il passaggio dei pedoni. La domanda non menziona questo spazio, rendendola incompleta e quindi sbagliata.",
         "regola": "No marciapiede = 1 metro per pedoni (non solo vicino).",
     },
     {
         "domanda": "Fuori dei centri abitati, il conducente in caso di sosta deve collocare il veicolo fuori della carreggiata, eventualmente anche sulle piste ciclabili",
         "risposta": False,
+        "riassunto": "Fuori città → sosta anche su pista ciclabile?",
         "spiegazione": "Questa affermazione è falsa. Non si può mai parcheggiare sulle piste ciclabili, né dentro né fuori i centri abitati. Le piste ciclabili sono spazi riservati esclusivamente alle biciclette per la loro sicurezza.",
         "regola": "Pista ciclabile = MAI parcheggiare.",
         "trabocchetti": ["eventualmente", "anche sulle piste ciclabili"],
@@ -722,6 +825,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, in caso di impossibilità di collocare il veicolo fuori della carreggiata, il conducente non deve effettuare la sosta",
         "risposta": False,
+        "riassunto": "Fuori città → niente sosta se non si esce dalla carreggiata?",
         "spiegazione": "Questa affermazione è falsa. Se fuori città non puoi parcheggiare l'auto fuori dalla strada, non significa che non puoi proprio sostare. In questo caso, devi parcheggiare il più vicino possibile al bordo destro della strada. C'è un'alternativa, non un divieto assoluto.",
         "regola": "Impossibile fuori strada = Parcheggia vicino a destra (non vietato).",
         "trabocchetti": ["non deve effettuare la sosta"],
@@ -729,6 +833,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle strade urbane a senso unico di marcia, la sosta è consentita anche lungo il margine sinistro della carreggiata, purché rimanga uno spazio sufficiente al transito almeno di una fila di veicoli",
         "risposta": True,
+        "riassunto": "Senso unico urbano → sosta a sinistra se resta una fila?",
         "spiegazione": "In una strada dove si va solo in una direzione (senso unico), puoi parcheggiare anche sul lato sinistro della strada. L'importante è lasciare abbastanza spazio perché le altre auto possano passare senza problemi.",
         "regola": "Senso unico + spazio = sosta a sinistra OK.",
         "trabocchetti": ["purché"],
@@ -736,6 +841,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle strade urbane a senso unico di marcia, la sosta è consentita anche lungo il margine sinistro della carreggiata, purché rimanga uno spazio non inferiore a tre metri di larghezza per il transito dei veicoli",
         "risposta": True,
+        "riassunto": "Senso unico urbano → sosta a sinistra se restano 3 m?",
         "spiegazione": "Questa domanda specifica la quantità di spazio da lasciare. Nelle strade a senso unico, se parcheggi a sinistra, devi lasciare almeno 3 metri liberi per il passaggio degli altri veicoli. Questo garantisce la sicurezza e la fluidità del traffico.",
         "regola": "Senso unico, sosta a sinistra, minimo 3 metri.",
         "trabocchetti": ["non inferiore a tre metri"],
@@ -743,18 +849,21 @@ QUESTIONS = [
     {
         "domanda": "Nelle zone predisposte per la sosta, il conducente deve collocare il veicolo nel modo prescritto dalla segnaletica",
         "risposta": True,
+        "riassunto": "Zone di sosta → come prescrive la segnaletica?",
         "spiegazione": "Quando trovi un'area dedicata al parcheggio, devi sempre seguire le indicazioni che ti danno i cartelli stradali o le linee disegnate sull'asfalto. Non puoi parcheggiare come vuoi, ma devi rispettare le regole indicate.",
         "regola": "Parcheggio = Segui la segnaletica.",
     },
     {
         "domanda": "Nelle zone nelle quali gli spazi di sosta sono delimitati da segnaletica orizzontale, il conducente deve sempre sistemare il proprio veicolo entro uno degli appositi spazi(stalli), senza invadere quelli contigui",
         "risposta": True,
+        "riassunto": "Stalli segnati → sempre dentro senza invadere gli altri?",
         "spiegazione": "Se ci sono le linee bianche o blu che disegnano i posti auto (chiamati 'stalli'), devi parcheggiare la tua auto esattamente dentro queste linee. Non devi andare negli spazi degli altri veicoli, per non occupare più posti del dovuto.",
         "regola": "Stalli = Stai dentro le linee.",
     },
     {
         "domanda": "Nelle strade urbane a senso unico di marcia, la sosta è sempre consentita anche lungo il margine sinistro della carreggiata",
         "risposta": False,
+        "riassunto": "Senso unico urbano → sosta a sinistra sempre?",
         "spiegazione": "Questa affermazione è falsa. Anche se è una strada a senso unico, non puoi parcheggiare a sinistra 'sempre'. Devi sempre lasciare spazio per il passaggio degli altri veicoli (ricordi, almeno 3 metri). Se non c'è spazio sufficiente, non puoi parcheggiare lì.",
         "regola": "'Sempre' è quasi sempre FALSO.",
         "trabocchetti": ["sempre"],
@@ -762,12 +871,14 @@ QUESTIONS = [
     {
         "domanda": "E' vietato sostare con autoveicoli o motocicli nei centri abitati, quando non esistano le apposite strisce",
         "risposta": False,
+        "riassunto": "Città → sosta vietata senza strisce?",
         "spiegazione": "Questa affermazione è falsa. Non è vero che è vietato parcheggiare nei centri abitati se non ci sono le strisce. Puoi parcheggiare anche senza strisce, purché non ci siano cartelli di divieto specifici e tu rispetti le regole generali (ad esempio, non bloccare il traffico, non parcheggiare su marciapiedi, ecc.). Le strisce indicano solo i posti 'ufficiali' e organizzati.",
         "regola": "No strisce = Non per forza vietato.",
     },
     {
         "domanda": "Nelle zone nelle quali gli spazi di sosta sono delimitati da segnaletica orizzontale, il conducente può sistemare il proprio veicolo anche fuori dall'apposito spazio (stallo) ad esso destinato, a condizione che la sosta sia di brevissima durata",
         "risposta": False,
+        "riassunto": "Stalli → fuori stallo se brevissima?",
         "spiegazione": "Questa affermazione è falsa. Se ci sono gli stalli (le linee per parcheggiare), devi parcheggiare la tua auto dentro lo stallo. Non puoi parcheggiare fuori, nemmeno se ti fermi per pochissimo tempo. La durata della sosta non ti permette di non rispettare gli spazi delimitati.",
         "regola": "Stalli = Stai dentro, sempre!",
         "trabocchetti": ["anche fuori dall"],
@@ -775,12 +886,14 @@ QUESTIONS = [
     {
         "domanda": "In una zona in cui la sosta è regolata con parchimetro, non occorre utilizzarlo se la sosta è di breve durata",
         "risposta": False,
+        "riassunto": "Parchimetro → non serve per breve sosta?",
         "spiegazione": "Questa affermazione è falsa. Se in una zona c'è un parchimetro, significa che devi pagare per parcheggiare, non importa quanto tempo ti fermi. Anche per pochi minuti, devi pagare o mettere il disco orario se previsto, a meno che non sia specificato diversamente (es. primi 15 minuti gratuiti, ma comunque con obbligo di ticket).",
         "regola": "Parchimetro = Paga sempre.",
     },
     {
         "domanda": "La sosta è vietata in corrispondenza o in prossimità dei passaggi a livello",
         "risposta": True,
+        "riassunto": "Sosta → vietata vicino ai passaggi a livello?",
         "spiegazione": "È vietato fermarsi con l'auto vicino ai binari del treno (passaggi a livello) per non creare pericoli o bloccare il traffico. Questa regola vale sia proprio sul passaggio a livello (in corrispondenza) sia molto vicino ad esso (in prossimità).",
         "regola": "Passaggio a livello = pericolo, non sostare mai vicino.",
         "trabocchetti": ["in corrispondenza o in prossimità"],
@@ -788,12 +901,14 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata sui binari di linee ferroviarie o tranviarie o così vicino ad essi da intralciare la marcia dei veicoli su rotaia",
         "risposta": True,
+        "riassunto": "Sosta → vietata sui binari o vicino?",
         "spiegazione": "Non si può parcheggiare l'auto sui binari del treno o del tram, né così vicino da impedire il passaggio dei treni o dei tram. I binari devono essere sempre liberi per i veicoli su rotaia.",
         "regola": "Binari = via libera per treni/tram, non per auto.",
     },
     {
         "domanda": "La sosta è vietata nelle gallerie, salvo diversa segnalazione",
         "risposta": True,
+        "riassunto": "Sosta → vietata in galleria?",
         "spiegazione": "Non si può parcheggiare dentro le gallerie perché è pericoloso, riduce la visibilità e può bloccare il traffico in caso di emergenza. Questo divieto vale a meno che non ci sia un cartello specifico che indichi il contrario, ma è molto raro.",
         "regola": "Galleria = buio e stretto, non sostare.",
         "trabocchetti": ["salvo diversa segnalazione"],
@@ -801,6 +916,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici, salvo diversa segnalazione",
         "risposta": True,
+        "riassunto": "Sosta → vietata nei sottovia e sotto i portici?",
         "spiegazione": "Non si può parcheggiare sotto ponti (sovrapassaggi), sottopassaggi (sottovia), archi (fornici) o portici. Anche qui, è pericoloso e può creare problemi di visibilità o spazio, a meno che non ci sia un cartello che lo permetta.",
         "regola": "Sotto strutture = no sosta, per sicurezza e spazio.",
         "trabocchetti": ["salvo diversa segnalazione"],
@@ -808,6 +924,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata sui dossi.",
         "risposta": True,
+        "riassunto": "Sosta → vietata sui dossi?",
         "spiegazione": "Non si può parcheggiare proprio sopra un dosso (una salita o discesa ripida) perché chi arriva non vede bene l'auto e potrebbe non avere il tempo di reagire. Questo crea un pericolo.",
         "regola": "Dosso = poca visibilità, no sosta.",
         "trabocchetti": ["sui dossi"],
@@ -815,6 +932,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dai centri abitati e sulle strade urbane di scorrimento, la sosta è vietata in prossimità dei dossi",
         "risposta": True,
+        "riassunto": "Fuori città → sosta vietata vicino ai dossi?",
         "spiegazione": "Fuori dalle città e sulle strade veloci (strade urbane di scorrimento), non si può parcheggiare nemmeno vicino ai dossi. Questo perché le auto vanno più veloci e c'è bisogno di più spazio per vedere ed evitare ostacoli in sicurezza.",
         "regola": "Fuori città + dosso = vietato anche vicino.",
         "trabocchetti": ["in prossimità dei dossi"],
@@ -822,6 +940,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata in corrispondenza dei passaggi a livello ma non in loro prossimità",
         "risposta": False,
+        "riassunto": "Sosta → vietata sul passaggio a livello ma non vicino?",
         "spiegazione": "Questa affermazione è falsa. La sosta è vietata sia proprio sui passaggi a livello (in corrispondenza) sia molto vicino ad essi (in prossimità). È pericoloso in entrambi i casi e la legge lo vieta per la sicurezza di tutti.",
         "regola": "Passaggio a livello = mai vicino, mai sopra.",
         "trabocchetti": ["ma non in loro prossimità"],
@@ -829,6 +948,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata sui binari delle linee ferroviarie ma non di quelle tranviarie",
         "risposta": False,
+        "riassunto": "Sosta → vietata sui binari del treno ma non del tram?",
         "spiegazione": "Questa affermazione è falsa. La sosta è vietata sia sui binari dei treni (ferroviarie) sia sui binari dei tram (tranviarie). Tutti i binari devono essere liberi per il passaggio dei veicoli su rotaia.",
         "regola": "Binari (tutti) = no sosta.",
         "trabocchetti": ["ma non di quelle tranviarie"],
@@ -836,6 +956,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è consentita nelle gallerie illuminate",
         "risposta": False,
+        "riassunto": "Sosta → consentita in gallerie illuminate?",
         "spiegazione": "Questa affermazione è falsa. Anche se una galleria è illuminata, la sosta è comunque vietata per motivi di sicurezza, per non creare intralcio e per facilitare il flusso del traffico, a meno che non ci sia un cartello specifico che lo permetta (cosa rara).",
         "regola": "Galleria = vietato, luce non cambia la regola.",
         "trabocchetti": ["consentita", "illuminate"],
@@ -843,6 +964,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta, ma non la fermata, è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici",
         "risposta": False,
+        "riassunto": "Sottovia e portici → sosta vietata ma fermata no?",
         "spiegazione": "Questa affermazione è falsa. In questi luoghi (sottopassaggi, sotto i ponti, ecc.), è vietata sia la sosta (parcheggio lungo) sia la fermata (breve stop con il conducente a bordo). Sono luoghi pericolosi per qualsiasi tipo di arresto del veicolo.",
         "regola": "Sotto strutture = no sosta, no fermata.",
         "trabocchetti": ["ma non la fermata"],
@@ -850,6 +972,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati e sulle strade urbane di scorrimento, è consentita la sosta in prossimità dei dossi.",
         "risposta": False,
+        "riassunto": "Fuori città → sosta vicino ai dossi?",
         "spiegazione": "Questa affermazione è falsa. Come abbiamo visto, fuori dai centri abitati e sulle strade urbane di scorrimento, la sosta è vietata anche in prossimità dei dossi. Questo per garantire la massima sicurezza, data la velocità dei veicoli.",
         "regola": "Fuori città + dosso = vietato anche vicino.",
         "trabocchetti": ["è consentita la sosta"],
@@ -857,6 +980,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta e la fermata sono vietate nelle curve e, fuori dei centri abitati e sulle strade urbane di scorrimento, anche in loro prossimità",
         "risposta": True,
+        "riassunto": "Sosta e fermata → vietate in curva e vicino fuori città?",
         "spiegazione": "È vietato fermarsi o parcheggiare nelle curve perché riducono la visibilità e sono pericolose. Fuori dai centri abitati e sulle strade urbane di scorrimento (strade veloci), il divieto si estende anche vicino alle curve per la stessa ragione di sicurezza.",
         "regola": "Curve = pericolo. Non fermarti né parcheggiare, neanche vicino (fuori città)!",
         "trabocchetti": ["anche in loro prossimità"],
@@ -864,6 +988,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta e la fermata sono vietate in prossimità e in corrispondenza di segnali stradali verticali in modo da occultarne la vista",
         "risposta": True,
+        "riassunto": "Sosta e fermata → vietate se coprono segnali?",
         "spiegazione": "Non si può fermare o parcheggiare dove si copre un segnale stradale verticale. Se lo fai, gli altri guidatori non vedono il segnale e potrebbero non capire le regole, creando situazioni pericolose.",
         "regola": "Segnale coperto = pericolo. Non nascondere i segnali!",
         "trabocchetti": ["in modo da occultarne la vista"],
@@ -871,6 +996,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta e la fermata sono vietate in prossimità e in corrispondenza di segnali semaforici in modo da occultarne la vista",
         "risposta": True,
+        "riassunto": "Sosta e fermata → vietate se coprono semafori?",
         "spiegazione": "Come per i segnali verticali, non si può fermare o parcheggiare dove si copre un semaforo. Se un guidatore non vede il semaforo, può non rispettare la luce e causare un incidente grave.",
         "regola": "Semaforo coperto = incidente. Non nascondere i semafori!",
         "trabocchetti": ["in modo da occultarne la vista"],
@@ -878,12 +1004,14 @@ QUESTIONS = [
     {
         "domanda": "La sosta e la fermata sono vietate in corrispondenza dei segnali orizzontali di preselezione e lungo le corsie di canalizzazione",
         "risposta": True,
+        "riassunto": "Sosta e fermata → vietate su preselezione e canalizzazione?",
         "spiegazione": "I segnali di preselezione (le frecce disegnate sull'asfalto che indicano la direzione) e le corsie di canalizzazione (quelle che ti guidano a destra, sinistra o dritto) servono a organizzare il traffico. Se ti fermi lì, impedisci agli altri di mettersi nella corsia giusta e crei confusione o pericolo.",
         "regola": "Segnali a terra e corsie speciali = non bloccare il flusso.",
     },
     {
         "domanda": "Fuori dei centri abitati, la sosta e la fermata sono vietate in corrispondenza e in prossimità delle aree di intersezione",
         "risposta": True,
+        "riassunto": "Fuori città → sosta e fermata vietate vicino agli incroci?",
         "spiegazione": "Le intersezioni (gli incroci) sono punti dove il rischio di incidenti è più alto. Fuori dai centri abitati, dove le velocità sono maggiori, è ancora più importante non fermarsi o parcheggiare vicino agli incroci per non ostacolare la visibilità e il passaggio degli altri veicoli.",
         "regola": "Incroci = pericolo. Lontano dagli incroci, soprattutto fuori città!",
         "trabocchetti": ["in corrispondenza e in prossimità", "Fuori dei centri abitati"],
@@ -891,6 +1019,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata nelle curve ma, fuori dei centri abitati e sulle strade di scorrimento, non è vietata in loro prossimità",
         "risposta": False,
+        "riassunto": "Sosta → vietata in curva ma non vicino fuori città?",
         "spiegazione": "Questa affermazione è falsa. La sosta è sempre vietata nelle curve. Inoltre, fuori dai centri abitati e sulle strade di scorrimento, è vietata anche *in prossimità* delle curve, non solo *nelle* curve. Questo per garantire la massima sicurezza e visibilità.",
         "regola": "Curve = pericolo. Sempre vietato, anche vicino (fuori città)!",
         "trabocchetti": ["non è vietata in loro prossimità"],
@@ -898,6 +1027,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta, ma non la fermata, è vietata in prossimità e in corrispondenza di segnali semaforici in modo da occultarne la vista",
         "risposta": False,
+        "riassunto": "Semafori coperti → sosta vietata ma fermata no?",
         "spiegazione": "Questa affermazione è falsa. Se un veicolo copre un semaforo, sia la sosta (parcheggio prolungato) che la fermata (sosta breve) sono vietate. Entrambe le azioni impedirebbero agli altri di vedere il semaforo, creando pericolo.",
         "regola": "Semaforo coperto = divieto per sosta E fermata.",
         "trabocchetti": ["ma non la fermata"],
@@ -905,6 +1035,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata in corrispondenza dei segnali orizzontali di preselezione ma non lungo le corsie di canalizzazione",
         "risposta": False,
+        "riassunto": "Sosta → vietata su preselezione ma non su canalizzazione?",
         "spiegazione": "Questa affermazione è falsa. La sosta è vietata sia in corrispondenza dei segnali orizzontali di preselezione (le frecce sull'asfalto) sia lungo le corsie di canalizzazione. Entrambi servono a guidare il traffico e non devono essere ostruiti.",
         "regola": "Segnali a terra E corsie speciali = divieto.",
         "trabocchetti": ["ma non lungo le corsie di canalizzazione"],
@@ -912,6 +1043,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, la sosta è vietata in corrispondenza delle aree di intersezione ma non in loro prossimità",
         "risposta": False,
+        "riassunto": "Fuori città → sosta vietata sull'incrocio ma non vicino?",
         "spiegazione": "Questa affermazione è falsa. Fuori dai centri abitati, la sosta è vietata sia *in corrispondenza* delle aree di intersezione (cioè proprio sull'incrocio) sia *in loro prossimità* (cioè vicino all'incrocio). Questo per garantire la sicurezza e la visibilità in punti critici.",
         "regola": "Incroci = pericolo. Vietato sia sull'incrocio che vicino (fuori città)!",
         "trabocchetti": ["ma non in loro prossimità"],
@@ -919,6 +1051,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata allo sbocco dei passi carrabili",
         "risposta": True,
+        "riassunto": "Sosta → vietata allo sbocco dei passi carrabili?",
         "spiegazione": "La sosta è sempre vietata allo sbocco dei passi carrabili. Questo significa che non puoi parcheggiare davanti a un cancello o un ingresso dove le auto entrano ed escono, perché bloccheresti il passaggio.",
         "regola": "Passo carrabile: mai bloccare!",
         "trabocchetti": ["vietata"],
@@ -926,6 +1059,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta ma non la fermata è vietata sugli attraversamenti pedonali",
         "risposta": False,
+        "riassunto": "Strisce pedonali → sosta vietata ma fermata no?",
         "spiegazione": "Questa affermazione è falsa. Sia la sosta (parcheggio lungo) che la fermata (sosta breve per far scendere qualcuno) sono vietate sugli attraversamenti pedonali. Le strisce pedonali devono essere sempre libere per i pedoni.",
         "regola": "Strisce pedonali: né sosta né fermata!",
         "trabocchetti": ["ma non la fermata"],
@@ -933,6 +1067,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata sulle piste ciclabili, ma non agli sbocchi di esse nel caso sia di breve durata",
         "risposta": False,
+        "riassunto": "Sosta breve → consentita agli sbocchi delle piste ciclabili?",
         "spiegazione": "Questa affermazione è falsa. La sosta è vietata sia sulle piste ciclabili che ai loro sbocchi (cioè dove finiscono o iniziano e si collegano alla strada). Non importa se la sosta è di breve durata, non si deve mai bloccare il passaggio delle biciclette.",
         "regola": "Pista ciclabile: sempre libera!",
         "trabocchetti": ["ma non agli sbocchi di esse", "nel caso sia di breve durata"],
@@ -940,6 +1075,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è consentita sui marciapiedi, solo se di breve durata",
         "risposta": False,
+        "riassunto": "Sosta → sui marciapiedi se breve?",
         "spiegazione": "Questa affermazione è falsa. La sosta sui marciapiedi è generalmente vietata perché i marciapiedi sono spazi dedicati ai pedoni. Non è consentita nemmeno per breve durata, a meno che non ci siano appositi segnali che lo permettono in casi specifici.",
         "regola": "Marciapiede: solo per i pedoni!",
         "trabocchetti": ["consentita", "solo se di breve durata"],
@@ -947,6 +1083,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata se si impedisce l'accesso ad altro veicolo già regolarmente in sosta",
         "risposta": True,
+        "riassunto": "Sosta → vietata se blocca un altro in sosta?",
         "spiegazione": "Se parcheggi la tua auto in modo da bloccare un altro veicolo che è già parcheggiato correttamente, la tua sosta è vietata. Non puoi impedire a un altro veicolo di uscire o entrare nel suo parcheggio.",
         "regola": "Non bloccare chi è già parcheggiato!",
         "trabocchetti": ["impedisce l"],
@@ -954,6 +1091,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata dovunque venga impedito lo spostamento di veicoli in sosta",
         "risposta": True,
+        "riassunto": "Sosta → vietata dove impedisce di spostare veicoli?",
         "spiegazione": "Non puoi parcheggiare in un modo che impedisca a un altro veicolo, già parcheggiato, di muoversi o uscire. Questo vale in qualsiasi luogo.",
         "regola": "Mai bloccare il movimento di altri veicoli.",
         "trabocchetti": ["dovunque", "Impedito lo spostamento"],
@@ -961,12 +1099,14 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata in seconda fila, salvo che si tratti di veicoli a due ruote",
         "risposta": True,
+        "riassunto": "Seconda fila → vietata tranne due ruote?",
         "spiegazione": "Parcheggiare in seconda fila (cioè accanto a un altro veicolo già parcheggiato, occupando la corsia) è sempre vietato per le auto. L'unica eccezione sono i veicoli a due ruote (moto, scooter) che possono parcheggiare in seconda fila se non creano intralcio alla circolazione.",
         "regola": "Auto: mai in doppia fila. Moto: sì, se non intralcia.",
     },
     {
         "domanda": "La sosta è vietata negli spazi riservati allo stazionamento e alla fermata degli autobus, dei filobus e dei veicoli circolanti su rotaia",
         "risposta": True,
+        "riassunto": "Sosta → vietata negli spazi di autobus, filobus, tram?",
         "spiegazione": "Gli spazi dove si fermano autobus, filobus o tram sono riservati solo a loro. Non puoi parcheggiare lì perché impediresti il servizio pubblico e la fermata dei mezzi.",
         "regola": "Spazi bus/tram = solo per bus/tram.",
         "trabocchetti": ["riservati"],
@@ -974,6 +1114,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata a meno di 15 metri dal segnale di fermata di autobus, filobus e veicoli circolanti su rotaia, qualora gli spazi di stazionamento non siano delimitati",
         "risposta": True,
+        "riassunto": "Sosta → vietata a meno di 15 m dalla fermata bus senza delimitazione?",
         "spiegazione": "Se non ci sono linee o segni a terra che indicano chiaramente l'area di fermata dell'autobus, devi lasciare almeno 15 metri liberi prima e dopo il segnale di fermata. Questo serve per permettere all'autobus di accostare e ripartire in sicurezza.",
         "regola": "Segnale bus senza linee? 15 metri di rispetto!",
         "trabocchetti": ["a meno di 15 metri"],
@@ -981,6 +1122,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta degli autoveicoli in doppia fila è consentita per pochi minuti, azionando le luci di emergenza",
         "risposta": False,
+        "riassunto": "Doppia fila → pochi minuti con quattro frecce?",
         "spiegazione": "La sosta in doppia fila è sempre vietata per gli autoveicoli, non importa per quanto tempo o se accendi le luci di emergenza. Le luci di emergenza non rendono legale una sosta vietata.",
         "regola": "Doppia fila = sempre NO per auto, anche per un minuto!",
         "trabocchetti": ["consentita per pochi minuti", "azionando le luci di emergenza"],
@@ -988,18 +1130,21 @@ QUESTIONS = [
     {
         "domanda": "La sosta degli autoveicoli in doppia fila è consentita purché rimanga spazio sufficiente per la circolazione di due file di veicoli",
         "risposta": False,
+        "riassunto": "Doppia fila → se restano due file libere?",
         "spiegazione": "Anche se lasci molto spazio per il passaggio di altri veicoli, la sosta in doppia fila per gli autoveicoli è comunque vietata. Non è una questione di spazio disponibile, ma di una regola generale di divieto.",
         "regola": "Doppia fila = sempre NO per auto, anche con spazio!",
     },
     {
         "domanda": "La sosta è consentita negli spazi riservati allo stazionamento e alla fermata degli autobus, dei filobus e dei veicoli circolanti su rotaia purché sia di breve durata",
         "risposta": False,
+        "riassunto": "Spazi di bus e tram → sosta breve consentita?",
         "spiegazione": "Gli spazi riservati agli autobus e ai tram sono solo per loro. Non puoi sostare lì, nemmeno per poco tempo. La durata della sosta non cambia il divieto in un'area riservata.",
         "regola": "Aree riservate = mai sosta, nemmeno breve!",
     },
     {
         "domanda": "La sosta è vietata negli spazi riservati allo stazionamento dei veicoli in servizio di piazza",
         "risposta": True,
+        "riassunto": "Sosta → vietata negli spazi per veicoli di piazza?",
         "spiegazione": "Gli spazi riservati allo stazionamento dei veicoli in servizio di piazza (come i taxi) sono solo per loro. Se sosti lì, impedisci a questi veicoli di lavorare e di essere disponibili per i clienti.",
         "regola": "Spazi riservati = non puoi sostare.",
         "trabocchetti": ["riservati"],
@@ -1007,6 +1152,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata sulle aree destinate al mercato e ai veicoli per il carico e lo scarico di cose, nelle ore stabilite",
         "risposta": True,
+        "riassunto": "Sosta → vietata su mercato e carico/scarico negli orari?",
         "spiegazione": "Se un'area è usata per il mercato o per caricare e scaricare merci in orari specifici, non puoi sostare lì. La tua auto intralcerebbe le attività e il passaggio degli altri veicoli.",
         "regola": "Mercato/Carico-scarico in orario = vietato sostare.",
         "trabocchetti": ["nelle ore stabilite"],
@@ -1014,6 +1160,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata sulle banchine, salvo diversa segnalazione",
         "risposta": True,
+        "riassunto": "Sosta → vietata sulle banchine?",
         "spiegazione": "Le banchine sono le parti laterali della strada. Di solito, non sono fatte per la sosta e quindi è vietato fermarsi lì. Puoi sostare solo se c'è un segnale specifico che lo permette.",
         "regola": "Banchina = no sosta, a meno che non ci sia un cartello.",
         "trabocchetti": ["salvo diversa segnalazione"],
@@ -1021,6 +1168,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata negli spazi riservati alla fermata o alla sosta dei veicoli per persone invalide",
         "risposta": True,
+        "riassunto": "Sosta → vietata negli spazi per invalidi?",
         "spiegazione": "Questi spazi sono creati apposta per le persone con disabilità. Sostare lì è un comportamento scorretto e impedisce a chi ne ha davvero bisogno di usare il proprio posto.",
         "regola": "Posto disabili = mai sostare.",
         "trabocchetti": ["riservati"],
@@ -1028,6 +1176,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata in corrispondenza degli scivoli o dei raccordi tra i marciapiedi e la carreggiata utilizzati dai veicoli per persone invalide",
         "risposta": True,
+        "riassunto": "Sosta → vietata sugli scivoli per invalidi?",
         "spiegazione": "Gli scivoli e i raccordi servono alle persone con disabilità per salire e scendere dai marciapiedi. Sostare lì blocca il loro passaggio e rende difficile o impossibile muoversi.",
         "regola": "Scivoli disabili = mai bloccare.",
         "trabocchetti": ["in corrispondenza"],
@@ -1035,6 +1184,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è consentita negli spazi riservati allo stazionamento dei taxi solo se non si protrae per lungo tempo",
         "risposta": False,
+        "riassunto": "Spazi taxi → sosta se non prolungata?",
         "spiegazione": "Gli spazi per i taxi sono 'riservati' solo ai taxi. Non puoi sostare lì, nemmeno per un minuto. La durata della sosta non cambia il divieto.",
         "regola": "Spazi taxi = solo taxi, mai tu.",
         "trabocchetti": ["consentita", "solo se non si protrae per lungo tempo"],
@@ -1042,6 +1192,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è consentita sulle aree destinate ai veicoli per il carico e lo scarico di cose, nelle ore stabilite, soltanto se di breve durata",
         "risposta": False,
+        "riassunto": "Aree carico/scarico negli orari → sosta breve consentita?",
         "spiegazione": "Se un'area è destinata al carico e scarico merci in orari specifici, è solo per quello scopo. Non puoi sostare lì, nemmeno per poco tempo, perché intralceresti le operazioni.",
         "regola": "Carico/scarico in orario = solo per quello, mai tu.",
         "trabocchetti": ["consentita", "soltanto se di breve durata"],
@@ -1049,6 +1200,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è consentita negli spazi riservati alla fermata o alla sosta dei veicoli per persone invalide purché di breve durata",
         "risposta": False,
+        "riassunto": "Spazi invalidi → sosta breve consentita?",
         "spiegazione": "Gli spazi per le persone invalide sono 'riservati' e non puoi mai sostare lì. Non importa se la sosta è di breve durata, il divieto è assoluto per chi non ha il permesso.",
         "regola": "Posto disabili = mai, nemmeno un minuto.",
         "trabocchetti": ["consentita", "purché di breve durata"],
@@ -1056,6 +1208,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata nelle corsie o carreggiate riservate ai mezzi pubblici",
         "risposta": True,
+        "riassunto": "Sosta → vietata nelle corsie dei mezzi pubblici?",
         "spiegazione": "È vero. Le corsie o carreggiate riservate ai mezzi pubblici (come autobus o tram) devono essere sempre libere. Sostare lì impedirebbe il passaggio e il regolare funzionamento del trasporto pubblico.",
         "regola": "Corsia bus = sempre libera.",
         "trabocchetti": ["riservate"],
@@ -1063,6 +1216,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata nelle aree pedonali urbane",
         "risposta": True,
+        "riassunto": "Sosta → vietata nelle aree pedonali?",
         "spiegazione": "È vero. Le aree pedonali urbane sono spazi dedicati esclusivamente ai pedoni. Sostare con un veicolo in queste zone è vietato per garantire la sicurezza e la libertà di movimento delle persone a piedi.",
         "regola": "Area pedonale = solo piedi.",
         "trabocchetti": ["aree pedonali"],
@@ -1070,6 +1224,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata nelle zone a traffico limitato per i veicoli non autorizzati",
         "risposta": True,
+        "riassunto": "ZTL → sosta vietata ai non autorizzati?",
         "spiegazione": "È vero. Le Zone a Traffico Limitato (ZTL) sono aree dove l'accesso e la sosta sono permessi solo a veicoli autorizzati (ad esempio, residenti o mezzi di servizio). Se non hai un permesso specifico, non puoi sostare.",
         "regola": "ZTL senza permesso = no sosta.",
         "trabocchetti": ["per i veicoli non autorizzati"],
@@ -1077,6 +1232,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata negli spazi destinati a servizi di emergenza o di igiene pubblica indicati dalla apposita segnaletica",
         "risposta": True,
+        "riassunto": "Sosta → vietata negli spazi per emergenza e igiene?",
         "spiegazione": "È vero. Questi spazi sono vitali per i mezzi di soccorso (ambulanze, polizia, vigili del fuoco) o per i mezzi che si occupano della pulizia della città. Devono essere sempre liberi per permettere loro di intervenire rapidamente. La segnaletica specifica conferma questo divieto.",
         "regola": "Emergenza/Igiene = spazio libero.",
         "trabocchetti": ["e"],
@@ -1084,6 +1240,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata davanti ai cassonetti dei rifiuti urbani",
         "risposta": True,
+        "riassunto": "Sosta → vietata davanti ai cassonetti?",
         "spiegazione": "È vero. Sostare davanti ai cassonetti dei rifiuti impedisce ai mezzi della nettezza urbana di svuotarli. Questo può causare problemi di igiene e disagi per la comunità.",
         "regola": "Cassonetto = no sosta (non bloccare).",
         "trabocchetti": ["davanti ai cassonetti"],
@@ -1091,6 +1248,7 @@ QUESTIONS = [
     {
         "domanda": "Brevi soste sono consentite nelle aree pedonali urbane",
         "risposta": False,
+        "riassunto": "Aree pedonali → brevi soste consentite?",
         "spiegazione": "È falso. Nelle aree pedonali urbane non è consentita né la sosta né la fermata, nemmeno per un breve periodo. Sono zone esclusive per i pedoni e devono essere sempre sgombre da veicoli.",
         "regola": "Area pedonale = mai sosta/fermata.",
         "trabocchetti": ["consentite"],
@@ -1098,6 +1256,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta, ed anche la fermata, sono vietate negli spazi destinati a servizi di emergenza o di igiene pubblica indicati dalla apposita segnaletica",
         "risposta": False,
+        "riassunto": "Spazi emergenza e igiene → vietate sosta e fermata?",
         "spiegazione": "È falso. Negli spazi destinati a servizi di emergenza o igiene pubblica è vietata la sosta (lasciare il veicolo per un certo tempo), ma la fermata (una sosta brevissima, con il conducente a bordo e pronto a ripartire) è generalmente consentita, a meno che non ci sia un segnale specifico che vieti anche la fermata. La domanda dice che 'anche la fermata' è vietata, il che non è sempre vero.",
         "regola": "Emergenza/Igiene: sosta NO, fermata SÌ (se non c'è divieto specifico).",
         "trabocchetti": ["ed anche la fermata"],
@@ -1105,6 +1264,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta così come la fermata sono vietate davanti ai cassonetti dei rifiuti urbani",
         "risposta": False,
+        "riassunto": "Davanti ai cassonetti → vietate sosta e fermata?",
         "spiegazione": "È falso. Davanti ai cassonetti dei rifiuti urbani è vietata la sosta, perché impedisce la raccolta. Tuttavia, la fermata (una sosta brevissima, con il conducente a bordo e pronto a ripartire) è consentita, a patto che non ostacoli il servizio di raccolta. Se ti fermi un attimo e riparti subito, non crei un problema.",
         "regola": "Cassonetto: sosta NO, fermata SÌ (se non ostacola).",
         "trabocchetti": ["così come la fermata"],
@@ -1112,6 +1272,7 @@ QUESTIONS = [
     {
         "domanda": "Nei centri abitati il conducente non deve lasciare in sosta un rimorchio staccato dalla motrice, salvo diversa segnalazione",
         "risposta": True,
+        "riassunto": "Città → vietato lasciare il rimorchio staccato?",
         "spiegazione": "Nei centri abitati, non puoi lasciare un rimorchio da solo, staccato dalla macchina che lo traina. Questo serve per non creare pericoli o intralci alla circolazione. Puoi farlo solo se c'è un cartello specifico che lo permette.",
         "regola": "Rimorchio staccato in città? No, a meno che non ci sia un cartello che lo permette.",
         "trabocchetti": ["salvo diversa segnalazione"],
@@ -1119,6 +1280,7 @@ QUESTIONS = [
     {
         "domanda": "Nel caso in cui la sosta è espressamente vietata da una norma del codice stradale, l'osservanza di tale divieto non è condizionata dalla presenza di cartelli segnaletici",
         "risposta": True,
+        "riassunto": "Divieto di sosta per legge → valido anche senza cartelli?",
         "spiegazione": "Se il Codice della Strada (la legge) dice chiaramente che non puoi parcheggiare in un certo posto (ad esempio, in curva o in galleria), allora quel divieto vale sempre. Non è necessario che ci sia anche un cartello che lo ripeta, perché la legge è già chiara.",
         "regola": "La legge è la legge! Se il Codice vieta, non serve il cartello.",
         "trabocchetti": ["e"],
@@ -1126,6 +1288,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta è vietata in corrispondenza dei distributori di carburante, sino a 5 metri prima e dopo, anche quando i distributori sono chiusi",
         "risposta": False,
+        "riassunto": "Distributori → sosta vietata 5 m prima e dopo anche da chiusi?",
         "spiegazione": "È vero che non si può sostare vicino ai distributori di carburante per non intralciare, ma la regola dei '5 metri prima e dopo' non è corretta per i distributori. Inoltre, il divieto è principalmente per quando sono aperti e in funzione. Se sono chiusi, spesso la sosta non è vietata, a meno che non ci siano altri divieti specifici.",
         "regola": "Distributore: non 5 metri, e se è chiuso, spesso si può.",
         "trabocchetti": ["sino a 5 metri prima e dopo", "anche quando i distributori sono chiusi"],
@@ -1133,12 +1296,14 @@ QUESTIONS = [
     {
         "domanda": "Nel caso in cui la sosta è espressamente vietata da una norma del codice della strada, l'osservanza di tale divieto è comunque condizionata dalla presenza di cartelli segnaletici",
         "risposta": False,
+        "riassunto": "Divieto di sosta per legge → solo con cartelli?",
         "spiegazione": "Questa domanda è l'opposto della 23777. Se il Codice della Strada (la legge) dice chiaramente che non puoi parcheggiare in un certo posto, devi rispettare quel divieto. Non è vero che il divieto vale solo se c'è anche un cartello. La legge è sempre valida, con o senza cartello.",
         "regola": "La legge è la legge! Se il Codice vieta, non serve il cartello.",
     },
     {
         "domanda": "La sosta negli spazi riservati allo stazionamento e alla fermata di autobus, filobus e veicoli circolanti su rotaia comporta, tra l'altro, la sottrazione di punti dalla patente.",
         "risposta": True,
+        "riassunto": "Sosta nelle fermate bus e tram → perdita di punti?",
         "spiegazione": "Sostare negli spazi riservati ai mezzi pubblici (autobus, filobus, tram) è molto pericoloso e impedisce il loro regolare servizio. Per questo, è una violazione grave che comporta la sottrazione di punti dalla patente.",
         "regola": "Spazi mezzi pubblici = intoccabili, punti via.",
         "trabocchetti": ["tra l"],
@@ -1146,6 +1311,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta, a meno di 15 metri dal segnale di fermata degli autobus, qualora gli spazi di fermata non siano delimitati, comporta tra l'altro, la sottrazione di punti dalla patente",
         "risposta": True,
+        "riassunto": "Sosta a meno di 15 m dalla fermata bus → perdita di punti?",
         "spiegazione": "Anche se non ci sono linee a terra, la legge stabilisce una distanza minima di 15 metri dal segnale di fermata dell'autobus dove non si può sostare. Questo serve a garantire che l'autobus possa fermarsi e ripartire senza ostacoli. Violando questa regola, si perdono punti.",
         "regola": "15 metri bus = zona vietata, punti via.",
         "trabocchetti": ["A meno di 15 metri"],
@@ -1153,6 +1319,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta negli spazi riservati alla fermata e alla sosta dei veicoli per persone invalide, comporta, tra l'altro, la sottrazione di punti dalla patente",
         "risposta": True,
+        "riassunto": "Sosta negli spazi invalidi → perdita di punti?",
         "spiegazione": "Occupare un parcheggio riservato alle persone invalide è una violazione molto grave perché impedisce a chi ha difficoltà di movimento di accedere a servizi essenziali. Per questo, oltre alla multa, si perdono anche punti dalla patente.",
         "regola": "Posti invalidi = mai, punti via.",
         "trabocchetti": ["tra l"],
@@ -1160,6 +1327,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta in corrispondenza degli scivoli o dei raccordi tra i marciapiedi e la carreggiata utilizzati dai veicoli per persone invalide comporta, tra l'altro, la sottrazione di punti dalla patente",
         "risposta": True,
+        "riassunto": "Sosta sugli scivoli per invalidi → perdita di punti?",
         "spiegazione": "Gli scivoli e i raccordi tra marciapiede e strada sono fondamentali per le persone invalide, ad esempio per chi usa la sedia a rotelle. Bloccarli con la sosta è un impedimento grave e comporta la sottrazione di punti dalla patente.",
         "regola": "Scivoli invalidi = via libera, punti via.",
         "trabocchetti": ["In corrispondenza"],
@@ -1167,6 +1335,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta nelle corsie o carreggiate riservate ai mezzi pubblici comporta, tra l'altro, la sottrazione di punti dalla patente",
         "risposta": True,
+        "riassunto": "Sosta nelle corsie dei mezzi pubblici → perdita di punti?",
         "spiegazione": "Le corsie riservate sono create per permettere ai mezzi pubblici di viaggiare più velocemente e senza ostacoli. Sostare in queste corsie blocca il traffico pubblico e crea pericolo, per questo è una violazione grave con sottrazione di punti.",
         "regola": "Corsie bus = solo bus, punti via.",
         "trabocchetti": ["Riservate"],
@@ -1174,18 +1343,21 @@ QUESTIONS = [
     {
         "domanda": "La sosta negli spazi riservati allo stazionamento e alla fermata di autobus, filobus e veicoli circolanti su rotaia, è consentita se si utilizza il disco orario",
         "risposta": False,
+        "riassunto": "Fermate bus e tram → sosta col disco orario?",
         "spiegazione": "Gli spazi riservati ai mezzi pubblici sono sempre vietati alla sosta per i veicoli privati. Il disco orario serve solo dove la sosta è permessa ma limitata nel tempo, non rende legale una sosta vietata.",
         "regola": "Spazi mezzi pubblici = mai, disco orario inutile.",
     },
     {
         "domanda": "La sosta a meno di 15 metri dal segnale di fermata autobus, qualora gli spazi di stazionamento non siano delimitati, è consentita azionando la segnalazione luminosa di pericolo (quattro frecce lampeggianti simultaneamente)",
         "risposta": False,
+        "riassunto": "Vicino alla fermata bus → sosta con quattro frecce?",
         "spiegazione": "Le quattro frecce (segnalazione luminosa di pericolo) si usano per segnalare un'emergenza o un pericolo, non per rendere legale una sosta vietata. Sostare vicino alla fermata del bus è sempre vietato, a prescindere dalle frecce.",
         "regola": "Quattro frecce = emergenza, non permesso.",
     },
     {
         "domanda": "La sosta negli spazi riservati alla fermata e alla sosta dei veicoli per persone invalide comporta una sanzione pecuniaria, ma non la sottrazione di punti dalla patente del conducente",
         "risposta": False,
+        "riassunto": "Spazi invalidi → solo multa, niente punti?",
         "spiegazione": "Sostare negli spazi riservati alle persone invalide è una violazione molto grave. Comporta sia una multa (sanzione pecuniaria) sia la sottrazione di punti dalla patente. La frase è FALSO perché dice 'ma non la sottrazione di punti'.",
         "regola": "Posti invalidi = multa E punti.",
         "trabocchetti": ["ma non la sottrazione di punti"],
@@ -1193,6 +1365,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta in corrispondenza degli scivoli o dei raccordi tra i marciapiedi e la carreggiata utilizzati dai veicoli per persone invalide, comporta la sospensione della patente",
         "risposta": False,
+        "riassunto": "Scivoli per invalidi → sospensione della patente?",
         "spiegazione": "Sostare sugli scivoli per disabili è una violazione grave che comporta la sottrazione di punti e una multa, ma non la sospensione della patente. La sospensione è una sanzione per violazioni ancora più gravi.",
         "regola": "Scivoli invalidi = punti, non sospensione.",
         "trabocchetti": ["comporta la sospensione della patente"],
@@ -1200,12 +1373,14 @@ QUESTIONS = [
     {
         "domanda": "La sosta nelle corsie o carreggiate riservate ai mezzi pubblici, è consentita, nei centri abitati, dalle ore 22.00 alle ore 8.00",
         "risposta": False,
+        "riassunto": "Corsie mezzi pubblici → sosta dalle 22 alle 8?",
         "spiegazione": "Le corsie riservate ai mezzi pubblici sono tali 24 ore su 24, a meno che non ci sia un segnale specifico che indichi orari diversi. Non è un divieto che vale solo di giorno o in certi orari.",
         "regola": "Corsie bus = sempre vietato, non a orari.",
     },
     {
         "domanda": "La sosta di emergenza è l'interruzione della marcia nel caso in cui il veicolo è inutilizzabile per avaria",
         "risposta": True,
+        "riassunto": "Sosta di emergenza → veicolo in avaria?",
         "spiegazione": "La sosta di emergenza avviene quando il tuo veicolo non può più muoversi a causa di un guasto improvviso (avaria). Non puoi continuare a guidare, quindi devi fermarti per forza.",
         "regola": "Avaria = Sosta di emergenza.",
         "trabocchetti": ["avaria"],
@@ -1213,6 +1388,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta di emergenza è l'interruzione della marcia nel caso in cui il veicolo deve arrestarsi per malessere fisico del conducente o di un passeggero",
         "risposta": True,
+        "riassunto": "Sosta di emergenza → malessere del conducente o passeggero?",
         "spiegazione": "Se tu che guidi o un passeggero vi sentite male improvvisamente e non potete continuare il viaggio in sicurezza, dovete fermarvi. Questa è una situazione di emergenza che richiede una sosta.",
         "regola": "Malessere = Sosta di emergenza.",
         "trabocchetti": ["malessere fisico"],
@@ -1220,6 +1396,7 @@ QUESTIONS = [
     {
         "domanda": "La sosta di emergenza è l'interruzione della marcia dovuta ad esigenze della circolazione",
         "risposta": False,
+        "riassunto": "Sosta di emergenza → esigenze della circolazione?",
         "spiegazione": "Le 'esigenze della circolazione' sono le normali situazioni del traffico, come fermarsi al semaforo rosso, in coda o per dare la precedenza. Queste non sono emergenze, ma normali interruzioni della marcia (fermate o arresti).",
         "regola": "Traffico non è emergenza.",
         "trabocchetti": ["esigenze della circolazione"],
@@ -1227,18 +1404,21 @@ QUESTIONS = [
     {
         "domanda": "La sosta di emergenza è la temporanea sospensione della marcia per consentire la discesa di persona invalida",
         "risposta": False,
+        "riassunto": "Sosta di emergenza → far scendere un invalido?",
         "spiegazione": "Far scendere una persona, anche se invalida, è una 'fermata'. La fermata è una breve sospensione della marcia per far salire o scendere persone o caricare/scaricare cose. Non è una situazione di emergenza improvvisa.",
         "regola": "Scendere/Salire = Fermata, non Emergenza.",
     },
     {
         "domanda": "La sosta di emergenza è la temporanea sospensione della marcia per consentire ad una persona invalida di salire sul veicolo",
         "risposta": False,
+        "riassunto": "Sosta di emergenza → far salire un invalido?",
         "spiegazione": "Anche far salire una persona invalida sul veicolo è una 'fermata'. Non è un evento improvviso e inaspettato che ti costringe a fermarti per un pericolo, quindi non è una sosta di emergenza.",
         "regola": "Scendere/Salire = Fermata, non Emergenza.",
     },
     {
         "domanda": "Quando si aprono le porte di un veicolo, bisogna assicurarsi che ciò non costituisca pericolo o intralcio per gli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Aprire le porte → senza pericolo o intralcio?",
         "spiegazione": "Quando apri le porte del tuo veicolo, devi sempre fare attenzione a non creare problemi o pericoli per chi sta passando, come altre auto, moto o pedoni. La sicurezza è la cosa più importante.",
         "regola": "Apri la porta? Guarda sempre!",
         "trabocchetti": ["pericolo o intralcio"],
@@ -1246,6 +1426,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di aprire lo sportello di un veicolo dal lato rivolto verso il centro della strada bisogna assicurarsi che non sopraggiungano altri veicoli",
         "risposta": True,
+        "riassunto": "Sportello verso il centro → nessun veicolo in arrivo?",
         "spiegazione": "Se devi aprire la portiera dal lato della strada (quello dove passano le macchine), è fondamentale guardare bene nello specchietto e girarti per assicurarti che non stia arrivando nessun altro veicolo. È molto pericoloso aprire la porta all'improvviso.",
         "regola": "Lato strada: occhio al traffico!",
         "trabocchetti": ["centro della strada", "non sopraggiungano altri veicoli"],
@@ -1253,6 +1434,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di aprire lo sportello di un veicolo dal lato rivolto verso il marciapiede bisogna assicurarsi che non sopraggiungano pedoni",
         "risposta": True,
+        "riassunto": "Sportello verso il marciapiede → nessun pedone in arrivo?",
         "spiegazione": "Anche se apri la portiera dal lato del marciapiede, devi fare attenzione. Potrebbero esserci pedoni, ciclisti o bambini che passano proprio in quel momento. Non dare per scontato che sia sempre libero.",
         "regola": "Lato marciapiede: occhio ai pedoni!",
         "trabocchetti": ["lato rivolto verso il marciapiede", "non sopraggiungano pedoni"],
@@ -1260,6 +1442,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si scende da un veicolo bisogna assicurarsi che ciò non costituisca pericolo o intralcio per gli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Scendere dal veicolo → senza pericolo?",
         "spiegazione": "Quando scendi dalla macchina, devi fare attenzione a non creare problemi o pericoli per gli altri. Questo include sia l'apertura della porta sia il modo in cui ti muovi subito dopo essere sceso.",
         "regola": "Scendi? Guarda chi c'è!",
         "trabocchetti": ["pericolo o intralcio"],
@@ -1267,12 +1450,14 @@ QUESTIONS = [
     {
         "domanda": "Allorché si accinge a scendere dall'autoveicolo, il conducente deve assicurarsi, anche mediante lo specchietto retrovisore, che non sopraggiungano altri veicoli",
         "risposta": True,
+        "riassunto": "Prima di scendere → controllare anche nello specchietto?",
         "spiegazione": "Prima di scendere dalla macchina, il conducente deve sempre controllare che non stiano arrivando altri veicoli. È utile usare lo specchietto retrovisore per vedere bene cosa succede dietro e di lato alla macchina.",
         "regola": "Scendi? Specchietto prima!",
     },
     {
         "domanda": "Prima di scendere dal veicolo in sosta, il conducente deve assicurarsi di avere spento il motore",
         "risposta": True,
+        "riassunto": "Prima di scendere → motore spento?",
         "spiegazione": "Quando parcheggi e scendi dalla macchina, devi sempre spegnere il motore. Lasciare il motore acceso non è permesso, inquina e non è sicuro.",
         "regola": "Spegni il motore, poi scendi!",
         "trabocchetti": ["spento il motore"],
@@ -1280,6 +1465,7 @@ QUESTIONS = [
     {
         "domanda": "L'apertura di uno sportello del veicolo dal lato del marciapiede comporta l'obbligo di attivare l'indicatore di direzione da quel lato",
         "risposta": False,
+        "riassunto": "Aprire lo sportello → freccia da quel lato?",
         "spiegazione": "Aprire la portiera non è come girare o fermarsi. Non devi mettere la freccia (indicatore di direzione) quando apri la porta, perché potrebbe confondere gli altri utenti della strada. La freccia serve per segnalare un cambio di direzione o una manovra.",
         "regola": "Porta aperta non è freccia!",
         "trabocchetti": ["obbligo"],
@@ -1287,6 +1473,7 @@ QUESTIONS = [
     {
         "domanda": "L'apertura degli sportelli del veicolo dal lato rivolto verso il centro della strada è vietato",
         "risposta": False,
+        "riassunto": "Sportelli verso il centro → apertura vietata?",
         "spiegazione": "Non è vero che è sempre vietato aprire la portiera dal lato della strada. A volte è necessario, ad esempio se sei il conducente e sei parcheggiato sul lato destro. L'importante è farlo con estrema attenzione e solo se non c'è nessun pericolo.",
         "regola": "Vietato? No, ma con cautela!",
         "trabocchetti": ["vietato"],
@@ -1294,6 +1481,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente può lasciare il veicolo in sosta con il motore acceso per consentire il funzionamento dell'aria condizionata",
         "risposta": False,
+        "riassunto": "Sosta → motore acceso per l'aria condizionata?",
         "spiegazione": "Non puoi lasciare il motore acceso quando sei in sosta, nemmeno per tenere l'aria condizionata. È una regola per ridurre l'inquinamento e il rumore. Il motore va spento.",
         "regola": "Motore acceso in sosta? No!",
         "trabocchetti": ["per consentire il funzionamento dell"],
@@ -1301,6 +1489,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di scendere dal veicolo in sosta, il conducente deve azionare il freno a mano del veicolo, su tutte le strade in discesa ma non in quelle in salita",
         "risposta": False,
+        "riassunto": "Freno a mano → in discesa ma non in salita?",
         "spiegazione": "Il freno a mano deve essere sempre azionato quando parcheggi, sia in salita che in discesa, e anche in piano. Serve a bloccare il veicolo e impedire che si muova da solo. Non è solo per le discese.",
         "regola": "Freno a mano? Sempre, ovunque!",
         "trabocchetti": ["ma non in quelle in salita"],

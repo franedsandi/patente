@@ -1,7 +1,7 @@
 """Domande — Segnali di obbligo.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Segnali di obbligo"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una svolta obbligatoria a destra per gli autocarri di massa superiore a 3,5 t",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta obbligatoria a destra per autocarri oltre 3,5 t?",
         "spiegazione": "Il segnale raffigurato è un segnale di obbligo (il cerchio blu con la freccia bianca) e indica di svoltare a destra. Il pannello sotto, con il simbolo del camion, specifica che questo obbligo vale solo per gli autocarri, in particolare quelli con massa superiore a 3,5 tonnellate. Quindi, la frase è VERA.",
         "regola": "Freccia blu + camion = Camion deve girare a destra.",
         "trabocchetti": ["preannuncia", "Obbligatoria"],
@@ -18,6 +19,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta agli autocarri di massa superiore a 3,5 t di proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarri oltre 3,5 t non vanno diritto?",
         "spiegazione": "Se per gli autocarri è obbligatorio svoltare a destra, significa che non possono proseguire dritto. Quindi, proseguire diritto è vietato per loro. La frase è VERA.",
         "regola": "Obbligo a destra = Divieto di dritto.",
         "trabocchetti": ["vieta"],
@@ -26,6 +28,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'obbligo di svoltare a destra per i veicoli rappresentati nel segnale stesso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → obbligo di svolta a destra per i veicoli in figura?",
         "spiegazione": "Il veicolo rappresentato nel segnale stesso è l'autocarro. La freccia blu indica l'obbligo di svoltare a destra. Quindi, l'obbligo di svoltare a destra è per gli autocarri. La frase è VERA.",
         "regola": "Simbolo veicolo + freccia blu = Obbligo per quel veicolo.",
         "trabocchetti": ["Veicoli rappresentati nel segnale stesso"],
@@ -34,6 +37,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un divieto di svolta a sinistra per gli autocarri di massa superiore a 3,5 t",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → divieto di svolta a sinistra per autocarri?",
         "spiegazione": "Se per gli autocarri è obbligatorio svoltare a destra, allora non possono svoltare a sinistra. È una conseguenza logica. La frase è VERA.",
         "regola": "Obbligo a destra = No sinistra, no dritto.",
         "trabocchetti": ["Divieto di svolta a sinistra"],
@@ -42,6 +46,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una svolta obbligatoria per i veicoli rappresentati nel segnale stesso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta obbligatoria per i veicoli in figura?",
         "spiegazione": "Il segnale blu con la freccia indica una svolta obbligatoria, e il simbolo del camion specifica che questo obbligo è per gli autocarri. La frase è VERA.",
         "regola": "Freccia blu = Obbligo di direzione.",
         "trabocchetti": ["Svolta obbligatoria"],
@@ -50,6 +55,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che gli autocarri oltre 3,5 t devono svoltare nella direzione della freccia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarri oltre 3,5 t svoltano come la freccia?",
         "spiegazione": "La freccia indica a destra, e il simbolo del camion indica che l'obbligo è per gli autocarri. 'Devono svoltare' è un modo per dire che è obbligatorio. La frase è VERA.",
         "regola": "Freccia blu + camion = Camion deve seguire la freccia.",
         "trabocchetti": ["Devono svoltare"],
@@ -58,6 +64,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un posto di rifornimento per autocarri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → rifornimento autocarri?",
         "spiegazione": "Questo segnale non indica un posto di rifornimento. I segnali di rifornimento hanno il simbolo di una pompa di benzina. Questo è un segnale di obbligo di direzione. La frase è FALSA.",
         "regola": "Non c'è la pompa = Non è rifornimento.",
         "trabocchetti": ["Posto di rifornimento"],
@@ -66,6 +73,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che per gli autocarri è consigliato svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svolta a destra consigliata?",
         "spiegazione": "Il segnale blu con la freccia indica un obbligo, non un consiglio. Non è una scelta, ma una regola da seguire. La frase è FALSA.",
         "regola": "Segnale blu = Obbligo, non consiglio.",
         "trabocchetti": ["consigliato"],
@@ -74,6 +82,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il divieto di svoltare a destra per i veicoli rappresentati in figura",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di svolta a destra?",
         "spiegazione": "È l'esatto contrario! Il segnale obbliga a svoltare a destra, non lo vieta. La frase è FALSA.",
         "regola": "Freccia a destra = Obbligo a destra, non divieto.",
         "trabocchetti": ["Divieto di svoltare a destra"],
@@ -82,6 +91,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un'area di parcheggio riservata agli autocarri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio autocarri?",
         "spiegazione": "Questo segnale non indica un'area di parcheggio. I segnali di parcheggio sono quadrati blu con una 'P' bianca. Questo è un segnale di obbligo di direzione. La frase è FALSA.",
         "regola": "Non c'è la P = Non è parcheggio.",
         "trabocchetti": ["Area di parcheggio"],
@@ -90,6 +100,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un segnale di obbligo di svoltare a sinistra per tutti gli autocarri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo a sinistra per tutti gli autocarri?",
         "spiegazione": "La freccia nel segnale indica chiaramente a destra, non a sinistra. Quindi, non può essere un obbligo di svoltare a sinistra. La frase è FALSA.",
         "regola": "Freccia a destra = Obbligo a destra.",
         "trabocchetti": ["a sinistra"],
@@ -98,6 +109,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una curva pericolosa a destra per gli autocarri in transito",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → curva pericolosa per autocarri?",
         "spiegazione": "Questo segnale non indica una curva pericolosa. I segnali di curva pericolosa sono triangolari con bordo rosso e una freccia nera curva. Questo è un segnale di obbligo di direzione. La frase è FALSA.",
         "regola": "Non è un triangolo rosso = Non è curva pericolosa.",
         "trabocchetti": ["Curva pericolosa"],
@@ -106,6 +118,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che non è consentito proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non si può andare diritto?",
         "spiegazione": "Questo segnale ti dice che devi obbligatoriamente svoltare a sinistra. Se devi svoltare a sinistra, significa che non puoi continuare ad andare dritto. Quindi, la risposta è VERO.",
         "regola": "Obbligo di svolta = no dritto.",
         "trabocchetti": ["non è consentito"],
@@ -114,6 +127,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che non è consentito svoltare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non si può svoltare a destra?",
         "spiegazione": "Il segnale ti obbliga a svoltare a sinistra. Questo significa che non puoi svoltare a destra. Quindi, la risposta è VERO.",
         "regola": "Obbligo a sinistra = no destra.",
         "trabocchetti": ["non è consentito"],
@@ -122,6 +136,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto prima di un incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima di un incrocio?",
         "spiegazione": "I segnali di direzione obbligatoria come questo sono sempre posti prima di un incrocio. Servono a dirti in anticipo quale direzione devi prendere, così hai il tempo di prepararti. Quindi, la risposta è VERO.",
         "regola": "Segnale di direzione = prima dell'incrocio.",
         "trabocchetti": ["posto prima di un incrocio"],
@@ -130,6 +145,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato precede un segnale di DIREZIONE OBBLIGATORIA A SINISTRA",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precede DIREZIONE OBBLIGATORIA A SINISTRA?",
         "spiegazione": "Questo segnale è proprio un 'segnale di direzione obbligatoria a sinistra'. Di solito, questi segnali sono posti un po' prima dell'incrocio per avvisarti, quindi 'precede' il punto esatto in cui devi svoltare. La domanda intende che il segnale ti avvisa della direzione obbligatoria prima che tu la esegua. Quindi, la risposta è VERO.",
         "regola": "Segnale d'obbligo = posto prima dell'azione.",
         "immagine": "7330ac9a2b71c48d4535.jpg",
@@ -137,6 +153,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale d'obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → d'obbligo?",
         "spiegazione": "I segnali rotondi e blu con una freccia bianca sono sempre segnali d'obbligo. Ti dicono che devi fare una certa cosa, in questo caso svoltare a sinistra. Quindi, la risposta è VERO.",
         "regola": "Rotondo blu = obbligo.",
         "trabocchetti": ["obbligo"],
@@ -145,6 +162,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "I segnali d'obbligo, come quello raffigurato, fanno parte di una categoria più ampia chiamata 'segnali di prescrizione'. I segnali di prescrizione includono obblighi, divieti e precedenze, cioè tutte le regole che devi seguire. Quindi, la risposta è VERO.",
         "regola": "Obbligo = prescrizione.",
         "trabocchetti": ["prescrizione"],
@@ -153,6 +171,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico?",
         "spiegazione": "Questo segnale ti obbliga a svoltare a sinistra, ma non ti dà nessuna informazione sul fatto che la strada in cui stai per entrare sia a senso unico. Per il senso unico ci sono altri segnali specifici (un quadrato blu con una freccia bianca dritta). Quindi, la risposta è FALSO.",
         "regola": "Obbligo di svolta non è senso unico.",
         "trabocchetti": ["preannuncia un senso unico"],
@@ -161,6 +180,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "I segnali di indicazione sono di solito rettangolari o quadrati e servono a darti informazioni (come nomi di località, direzioni per servizi, ecc.). Questo segnale, essendo rotondo e blu, è un segnale d'obbligo, non di indicazione. Quindi, la risposta è FALSO.",
         "regola": "Rotondo blu = obbligo, non indicazione.",
         "trabocchetti": ["indicazione", "indica"],
@@ -169,6 +189,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è obbligatorio passare a sinistra dell'ostacolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passare a sinistra dell'ostacolo?",
         "spiegazione": "Il segnale che indica l'obbligo di passare a sinistra di un ostacolo ha una freccia curva che aggira un punto centrale. Il segnale raffigurato, invece, ha una freccia che indica una svolta a sinistra a un incrocio. Sono due segnali diversi. Quindi, la risposta è FALSO.",
         "regola": "Svolta a sinistra, non aggira ostacolo.",
         "trabocchetti": ["passare a sinistra dell"],
@@ -177,6 +198,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto all'inizio di una strada in pendenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio strada in pendenza?",
         "spiegazione": "Questo segnale non ha nulla a che fare con la pendenza della strada. I segnali che indicano una strada in pendenza sono triangolari con un bordo rosso e mostrano una percentuale (es. 10%). Questo segnale indica una direzione obbligatoria. Quindi, la risposta è FALSO.",
         "regola": "Freccia = svolta, non pendenza.",
         "trabocchetti": ["strada in pendenza"],
@@ -185,6 +207,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'obbligo di cambiare corsia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di cambiare corsia?",
         "spiegazione": "Questo segnale ti obbliga a svoltare a sinistra all'incrocio. Non ti dice di cambiare corsia all'interno della stessa strada. I segnali per il cambio corsia sono diversi e di solito si trovano sopra le corsie. Quindi, la risposta è FALSO.",
         "regola": "Svolta = direzione, non corsia.",
         "trabocchetti": ["cambiare corsia"],
@@ -193,6 +216,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato presegnala una curva pericolosa a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → curva pericolosa a sinistra?",
         "spiegazione": "I segnali che presegnalano una curva pericolosa sono triangolari con bordo rosso e una freccia nera. Questo segnale, invece, è rotondo e blu e indica un obbligo di svolta, non una curva pericolosa. Quindi, la risposta è FALSO.",
         "regola": "Rotondo blu = obbligo di svolta, non curva pericolosa.",
         "trabocchetti": ["curva pericolosa"],
@@ -201,6 +225,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è preavviso dell'obbligo di svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → preavviso di svolta obbligatoria a sinistra?",
         "spiegazione": "Il segnale ti dice che devi svoltare a sinistra. Spesso è messo un po' prima dell'incrocio per darti il tempo di prepararti, quindi è un 'preavviso'.",
         "regola": "Freccia blu curva a sinistra = obbligo di girare a sinistra.",
         "trabocchetti": ["preavviso"],
@@ -209,6 +234,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato precede un incrocio in cui non è consentito proseguire diritto o girare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → né diritto né a destra?",
         "spiegazione": "Se sei obbligato a svoltare solo a sinistra, significa che non puoi andare dritto e non puoi girare a destra. È l'unica direzione permessa.",
         "regola": "Obbligo a sinistra = no dritto, no destra.",
         "trabocchetti": ["non è consentito"],
@@ -217,6 +243,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'obbligo di svoltare a sinistra al prossimo incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → obbligo a sinistra al prossimo incrocio?",
         "spiegazione": "Questo segnale ti avvisa che all'incrocio che sta per arrivare, devi girare a sinistra. Ti prepara per la manovra.",
         "regola": "Preannuncia obbligo = preparati a girare.",
         "trabocchetti": ["preannuncia"],
@@ -225,6 +252,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato precede un incrocio ove è obbligatorio svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio con svolta obbligatoria a sinistra?",
         "spiegazione": "Il segnale è messo prima di un incrocio e ti dice che lì devi per forza girare a sinistra. È un obbligo chiaro.",
         "regola": "Prima dell'incrocio = obbligo di svolta.",
         "trabocchetti": ["precede", "ove è obbligatorio"],
@@ -233,6 +261,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di preavviso di direzione obbligatoria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → preavviso di direzione obbligatoria?",
         "spiegazione": "Sì, è un segnale che ti avvisa in anticipo di una direzione che sei obbligato a prendere. Ti indica la direzione da seguire.",
         "regola": "Blu e freccia = direzione obbligatoria.",
         "trabocchetti": ["preavviso", "direzione obbligatoria"],
@@ -241,6 +270,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'unica direzione consentita",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → unica direzione consentita?",
         "spiegazione": "Se sei obbligato a svoltare a sinistra, significa che quella è l'unica cosa che puoi fare. Non puoi andare dritto o a destra.",
         "regola": "Obbligo = solo quella direzione.",
         "trabocchetti": ["unica direzione consentita"],
@@ -249,6 +279,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere integrato con pannello che indica la distanza dal punto in cui vige l'obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con distanza dall'obbligo?",
         "spiegazione": "Spesso, sotto questo segnale, trovi un pannello con un numero (ad esempio '150 m'). Questo numero ti dice quanti metri mancano all'incrocio dove devi girare a sinistra.",
         "regola": "Pannello sotto = distanza all'obbligo.",
         "trabocchetti": ["integrato con pannello"],
@@ -257,6 +288,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è consentito svoltare a sinistra al prossimo incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato svoltare a sinistra?",
         "spiegazione": "FALSO. Questo segnale ti OBBLIGA a svoltare a sinistra, non ti vieta di farlo. È il contrario! Ti indica cosa devi fare.",
         "regola": "Blu con freccia = obbligo, non divieto.",
         "trabocchetti": ["non è consentito"],
@@ -265,6 +297,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad andare diritto o a svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → diritto o a sinistra?",
         "spiegazione": "FALSO. Il segnale mostra solo una freccia che gira a sinistra. Ti obbliga SOLO a svoltare a sinistra, non anche ad andare dritto. Se potessi andare dritto, la freccia sarebbe diversa.",
         "regola": "Una freccia = una sola direzione obbligatoria.",
         "trabocchetti": ["obbliga ad andare diritto"],
@@ -273,6 +306,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia di andare diritto ma non di svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → diritto sì, destra no?",
         "spiegazione": "FALSO. Il segnale non ti dice di andare dritto. Ti dice di svoltare a sinistra. Quindi, questa affermazione è completamente sbagliata.",
         "regola": "Guarda la freccia: solo a sinistra.",
         "trabocchetti": ["andare diritto"],
@@ -281,6 +315,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato presegnala il senso unico di circolazione nella svolta a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico svoltando a sinistra?",
         "spiegazione": "FALSO. Questo segnale ti obbliga a svoltare a sinistra. Non ti dice che la strada in cui entri è a senso unico. Il segnale di senso unico è diverso (rettangolare blu con freccia bianca dritta verso l'alto).",
         "regola": "Obbligo di svolta ≠ senso unico.",
         "trabocchetti": ["senso unico di circolazione"],
@@ -289,6 +324,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di divieto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di divieto?",
         "spiegazione": "FALSO. I segnali di divieto sono rotondi con bordo rosso. Questo è rotondo e blu, quindi è un segnale di OBBLIGO, ti dice cosa devi fare.",
         "regola": "Blu rotondo = obbligo. Rosso rotondo = divieto.",
         "trabocchetti": ["divieto"],
@@ -297,6 +333,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una corsia di accelerazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia di accelerazione?",
         "spiegazione": "FALSO. Una corsia di accelerazione serve per entrare in autostrada o in una strada a scorrimento veloce. Questo segnale non ha nulla a che fare con le corsie di accelerazione, ma indica una svolta obbligatoria.",
         "regola": "Non è una corsia, è una svolta.",
         "trabocchetti": ["corsia di accelerazione"],
@@ -305,6 +342,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una direzione consigliata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → direzione consigliata?",
         "spiegazione": "FALSO. Il segnale blu rotondo con la freccia indica un OBBLIGO, non un consiglio. Devi per forza andare in quella direzione, non è una scelta.",
         "regola": "Blu rotondo = obbligo, non consiglio.",
         "trabocchetti": ["consigliata"],
@@ -313,6 +351,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato presegnala un incrocio regolato con circolazione rotatoria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rotatoria?",
         "spiegazione": "Questo segnale, di forma circolare e colore blu con frecce bianche, serve proprio a dirti che stai per arrivare a un incrocio dove la circolazione avviene a rotatoria. Ti avvisa prima che tu ci sia dentro.",
         "regola": "Rotatoria = Avviso prima di entrare.",
         "trabocchetti": ["presegnala"],
@@ -321,6 +360,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, in corrispondenza di una piazza, prescrive l'obbligo di circolazione secondo il verso indicato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → obbligo di girare nella piazza nel verso indicato?",
         "spiegazione": "Sì, è vero. Quando vedi questo segnale, devi seguire la direzione indicata dalle frecce, cioè girare in tondo. Non puoi andare dritto o in un'altra direzione se non seguendo il giro.",
         "regola": "Frecce = Obbligo di girare come indicato.",
         "trabocchetti": ["Prescrive l", "Secondo il verso indicato"],
@@ -329,6 +369,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto prima dello sbocco su un'area in cui è prescritta la circolazione rotatoria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima di area con circolazione rotatoria?",
         "spiegazione": "Esatto, questo segnale è messo un po' prima del punto in cui entri nella rotatoria. Serve a prepararti e a farti sapere che dovrai seguire la circolazione rotatoria.",
         "regola": "Rotatoria = Si vede prima di entrare.",
         "trabocchetti": ["Prima dello sbocco"],
@@ -337,6 +378,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "Sì, è vero. I segnali blu e rotondi, come questo, sono segnali di obbligo. I segnali di obbligo fanno parte di una categoria più grande chiamata 'segnali di prescrizione', che includono anche i divieti e le precedenze.",
         "regola": "Blu e tondo = Obbligo (quindi prescrizione).",
         "trabocchetti": ["prescrizione"],
@@ -345,6 +387,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di divieto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di divieto?",
         "spiegazione": "No, è falso. Questo non è un segnale di divieto. I segnali di divieto sono di solito rotondi e rossi (ad esempio, il divieto di sosta). Questo è un segnale di obbligo, ti dice cosa devi fare, non cosa non devi fare.",
         "regola": "Rosso = Divieto. Blu = Obbligo.",
         "trabocchetti": ["divieto"],
@@ -353,6 +396,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una direzione obbligatoria a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → direzione obbligatoria a sinistra?",
         "spiegazione": "No, è falso. Questo segnale non ti dice che devi girare obbligatoriamente a sinistra. Ti dice che devi entrare in una rotatoria e seguire il giro. Poi, dalla rotatoria, potrai scegliere di andare a sinistra, dritto o a destra, ma sempre dopo aver fatto il giro.",
         "regola": "Rotatoria = Giro, non solo sinistra.",
         "trabocchetti": ["Direzione obbligatoria a sinistra"],
@@ -361,6 +405,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è collocato sulla colonnina luminosa posta al centro di una rotatoria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sulla colonnina al centro della rotatoria?",
         "spiegazione": "No, è falso. Questo segnale si trova prima della rotatoria, per avvisarti. Al centro della rotatoria, sulla colonnina, di solito ci sono altri tipi di segnali, come quelli di 'passaggio obbligatorio' (una freccia singola blu).",
         "regola": "Rotatoria = Si vede prima, non al centro.",
         "trabocchetti": ["Al centro di una rotatoria"],
@@ -369,6 +414,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è integrato con un segnale di PASSAGGIO OBBLIGATORIO A SINISTRA",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → con PASSAGGIO OBBLIGATORIO A SINISTRA?",
         "spiegazione": "No, è falso. Sono due segnali diversi. Il 'passaggio obbligatorio a sinistra' è un segnale blu con una sola freccia che punta a sinistra, e ti dice di passare a sinistra di un ostacolo. Questo segnale, invece, indica una rotatoria. Non sono integrati, ma sono distinti.",
         "regola": "Rotatoria = Giro. Passaggio obbligatorio = Evita ostacolo. Sono diversi.",
         "trabocchetti": ["Integrato con"],
@@ -377,6 +423,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "No, è falso. Questo non è un segnale di indicazione. I segnali di indicazione sono di solito rettangolari (blu o verdi) e ti danno informazioni, come le direzioni o i servizi. Questo segnale, essendo blu e rotondo, è un segnale di obbligo (quindi di prescrizione).",
         "regola": "Blu e tondo = Obbligo. Rettangolare = Indicazione.",
         "trabocchetti": ["Indicazione", "indica"],
@@ -385,6 +432,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto prima dello sbocco in una piazza con circolazione rotatoria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima di piazza con rotatoria?",
         "spiegazione": "Questo segnale ti avvisa che stai per arrivare a una piazza o un incrocio dove la circolazione è organizzata a rotatoria. È messo prima, per darti il tempo di capire come comportarti.",
         "regola": "Rotatoria: avviso prima di entrare.",
         "trabocchetti": ["prima dello sbocco"],
@@ -393,6 +441,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di un incrocio nel quale la circolazione è regolata a rotatoria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio a rotatoria?",
         "spiegazione": "Esatto, il segnale ti dice che l'incrocio che stai per affrontare non è un incrocio normale, ma uno dove le auto girano in tondo, seguendo le frecce, per poi uscire nella direzione desiderata.",
         "regola": "Rotatoria: incrocio con giro obbligatorio.",
         "trabocchetti": ["circolazione è regolata a rotatoria"],
@@ -401,6 +450,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di obbligo?",
         "spiegazione": "Sì, è un segnale di obbligo. I segnali rotondi e blu, come questo, indicano sempre qualcosa che devi fare, un comportamento obbligatorio per tutti i conducenti.",
         "regola": "Segnale blu tondo = obbligo profondo.",
         "trabocchetti": ["obbligo"],
@@ -409,6 +459,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i conducenti a circolare secondo il verso indicato dalle frecce",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → circolare nel verso delle frecce?",
         "spiegazione": "Questo segnale ti obbliga a seguire la direzione indicata dalle frecce bianche. Non puoi andare dritto o girare in un altro modo, devi girare in tondo nel senso delle frecce.",
         "regola": "Frecce = direzione da seguire, sempre.",
         "immagine": "350d9474b116c6649004.jpg",
@@ -416,6 +467,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale di figura (A) su strade extraurbane è preceduto dal segnale di pericolo di CIRCOLAZIONE ROTATORIA in figura (B)",
         "risposta": True,
+        "riassunto": "Segnale (A) extraurbano → preceduto dal pericolo ROTATORIA (B)?",
         "spiegazione": "Sulle strade fuori città (extraurbane), dove si va più veloci, è comune trovare prima un segnale di pericolo (triangolare, rosso) che ti avvisa della rotatoria, e poi, più vicino, il segnale di obbligo (quello blu rotondo). Questo ti dà più tempo per prepararti.",
         "regola": "Fuori città: prima pericolo, poi obbligo.",
         "trabocchetti": ["Su strade extraurbane"],
@@ -424,6 +476,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive un obbligo di ROTATORIA solo per le autovetture",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → rotatoria solo per autovetture?",
         "spiegazione": "Falso! Questo segnale vale per TUTTI i veicoli che circolano su strada, non solo per le autovetture. Ciclomotori, moto, camion, tutti devono rispettare la rotatoria.",
         "regola": "'Solo' = quasi sempre FALSO.",
         "trabocchetti": ["solo"],
@@ -432,6 +485,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su colonnina al centro dell'incrocio intorno alla quale bisogna girare secondo le frecce",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → su colonnina al centro, girare secondo le frecce?",
         "spiegazione": "Falso. Il segnale raffigurato è posto PRIMA dell'incrocio, sul lato della strada, per avvisarti. Al centro dell'incrocio, nella rotatoria, di solito c'è un'isola spartitraffico o, a volte, un altro tipo di segnale (come 'passaggio obbligatorio'), ma non questo.",
         "regola": "Segnale Rotatoria: prima di entrare, non al centro.",
         "trabocchetti": ["su colonnina al centro dell"],
@@ -440,6 +494,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto all'inizio di una strada senza uscita",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio strada senza uscita?",
         "spiegazione": "Falso. Questo segnale indica una rotatoria, cioè un incrocio dove si gira in tondo. Una strada senza uscita è un'altra cosa, ha un segnale diverso (un quadrato blu con una 'T' rossa).",
         "regola": "Rotatoria = si gira, non si ferma.",
         "trabocchetti": ["Strada senza uscita"],
@@ -448,6 +503,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'obbligo di tornare indietro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di tornare indietro?",
         "spiegazione": "Falso. Il segnale ti obbliga a girare in tondo per poi scegliere l'uscita che ti serve. Non ti obbliga a tornare indietro da dove sei venuto. Per tornare indietro (fare inversione di marcia) ci sono altre regole o segnali.",
         "regola": "Rotatoria: si prosegue in cerchio, non si torna indietro.",
         "trabocchetti": ["Tornare indietro"],
@@ -456,6 +512,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non vale per i ciclomotori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non vale per i ciclomotori?",
         "spiegazione": "Falso! Come per la domanda sulle autovetture, i segnali stradali valgono per TUTTI i veicoli, a meno che non sia specificato diversamente. Anche i ciclomotori devono rispettare la rotatoria.",
         "regola": "Segnali = per tutti, salvo eccezioni chiare.",
         "trabocchetti": ["non vale per i ciclomotori"],
@@ -464,6 +521,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito marciare alla velocità di 40 km/h",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → si può andare a 40 km/h?",
         "spiegazione": "Il segnale blu con il numero 30 indica che devi andare ad una velocità di ALMENO 30 km/h. Questo significa che puoi andare a 30 km/h o più veloce. Quindi, 40 km/h è una velocità consentita perché è maggiore di 30 km/h.",
         "regola": "Minimo 30, quindi 40 va bene!",
         "trabocchetti": ["consentito"],
@@ -472,6 +530,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il limite di velocità al di sotto del quale è vietato circolare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità sotto cui è vietato circolare?",
         "spiegazione": "Questo segnale stabilisce una velocità minima. Non puoi andare più lento di 30 km/h. Quindi, è vietato circolare al di sotto di questa velocità.",
         "regola": "Sotto 30? No, vietato!",
         "immagine": "f3cca1f4c3bca61ae2d7.jpg",
@@ -479,6 +538,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di obbligo?",
         "spiegazione": "I segnali rotondi di colore blu, come quello raffigurato, sono sempre segnali di obbligo. Ti dicono cosa devi fare.",
         "regola": "Cerchio blu = Obbligo tu!",
         "immagine": "f3cca1f4c3bca61ae2d7.jpg",
@@ -486,6 +546,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di circolare ad una velocità di almeno 30 km/h",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → almeno 30 km/h?",
         "spiegazione": "Il segnale ti obbliga a mantenere una velocità che sia uguale o superiore a 30 km/h. La parola 'almeno' è fondamentale per capire il significato.",
         "regola": "Almeno 30, non meno!",
         "trabocchetti": ["almeno"],
@@ -494,6 +555,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i veicoli a mantenere almeno la velocità indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → mantenere almeno la velocità indicata?",
         "spiegazione": "Esatto, il segnale ti impone di non scendere sotto i 30 km/h. Devi mantenere una velocità di 30 km/h o superiore.",
         "regola": "Obbligo minimo!",
         "trabocchetti": ["almeno"],
@@ -502,6 +564,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che non siano in grado di osservare la prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a chi non può rispettarlo?",
         "spiegazione": "Se un veicolo non riesce a raggiungere i 30 km/h (ad esempio, un mezzo molto lento), non può circolare dove c'è questo segnale, perché non rispetterebbe l'obbligo minimo.",
         "regola": "Troppo lento? Non puoi entrare!",
         "immagine": "f3cca1f4c3bca61ae2d7.jpg",
@@ -509,6 +572,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di marciare alla velocità di 20 km/h",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → si può andare a 20 km/h?",
         "spiegazione": "Il segnale indica una velocità minima di 30 km/h. Andare a 20 km/h significa andare più lentamente del minimo richiesto, quindi non è consentito.",
         "regola": "20 è troppo poco, FALSO!",
         "trabocchetti": ["consente"],
@@ -517,6 +581,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del limite massimo di velocità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine limite massimo?",
         "spiegazione": "Questo segnale indica un limite MINIMO di velocità, non la fine di un limite MASSIMO. La fine di un limite massimo è un segnale diverso (bianco con una barra diagonale nera).",
         "regola": "Non è un 'fine', è un 'inizio minimo'!",
         "trabocchetti": ["fine", "massimo"],
@@ -525,6 +590,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta di superare la velocità indicata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato superare la velocità indicata?",
         "spiegazione": "Questo segnale non vieta di superare i 30 km/h. Anzi, ti permette di andare più veloce, purché tu rispetti i limiti massimi generali della strada. Vieta solo di andare SOTTO i 30 km/h.",
         "regola": "Non è un 'massimo', è un 'minimo'!",
         "trabocchetti": ["vieta di superare"],
@@ -533,6 +599,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di marciare ad una velocità superiore a 30 km/h, senza alcun limite",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → oltre 30 km/h senza limiti?",
         "spiegazione": "È vero che puoi andare a una velocità superiore a 30 km/h, ma non 'senza alcun limite'. Devi sempre rispettare i limiti massimi di velocità previsti per quel tipo di strada (ad esempio, 50 km/h in città, 90 km/h fuori città, ecc.).",
         "regola": "Senza limite? Mai! Ci sono sempre le regole generali.",
         "trabocchetti": ["senza alcun limite"],
@@ -541,6 +608,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive di marciare alla velocità costante di 30 km/h",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → velocità costante di 30 km/h?",
         "spiegazione": "Il segnale ti obbliga a una velocità di ALMENO 30 km/h, non a una velocità 'costante' o esattamente di 30 km/h. Puoi variare la tua velocità, purché sia sempre uguale o superiore a 30 km/h.",
         "regola": "Non 'costante', ma 'almeno'!",
         "trabocchetti": ["costante"],
@@ -549,6 +617,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "I segnali di indicazione sono solitamente rettangolari o quadrati (ad esempio, quelli che indicano direzioni o servizi). I segnali rotondi blu sono segnali di obbligo.",
         "regola": "Cerchio blu = Obbligo, non indicazione!",
         "trabocchetti": ["indicazione"],
@@ -557,6 +626,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la circolazione ai veicoli che non sono in grado di marciare almeno a 30 km/h",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a chi non arriva a 30 km/h?",
         "spiegazione": "Questo segnale blu con il numero 30 indica una velocità minima obbligatoria. Questo significa che devi andare almeno a 30 km/h. Quindi, se un veicolo non riesce a raggiungere i 30 km/h, non può circolare su quella strada. La risposta è VERO.",
         "regola": "Minimo 30? Chi va più lento non entra!",
         "immagine": "f3cca1f4c3bca61ae2d7.jpg",
@@ -564,6 +634,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive un limite minimo di velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → limite minimo?",
         "spiegazione": "I segnali rotondi e blu con un numero bianco indicano sempre un 'limite minimo di velocità'. Non è un limite massimo, ma la velocità più bassa a cui puoi andare. La risposta è VERO.",
         "regola": "Blu e numero = minimo!",
         "immagine": "f3cca1f4c3bca61ae2d7.jpg",
@@ -571,6 +642,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a mantenere una velocità non inferiore a 30 km/h",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non sotto 30 km/h?",
         "spiegazione": "Il segnale ti obbliga a mantenere una velocità che sia 'non inferiore a 30 km/h'. Questo significa che devi andare a 30 km/h o più veloce. La risposta è VERO.",
         "regola": "Non inferiore = almeno!",
         "trabocchetti": ["non inferiore a"],
@@ -579,6 +651,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito circolare entro i limiti massimi di velocità vigenti per quella strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → entro i limiti massimi della strada?",
         "spiegazione": "Il segnale impone una velocità minima di 30 km/h. Questo non significa che non puoi andare più veloce! Puoi circolare anche a 50 o 70 km/h, purché tu rispetti i limiti massimi di velocità generali della strada su cui ti trovi. La risposta è VERO.",
         "regola": "Minimo 30, ma non esagerare!",
         "immagine": "f3cca1f4c3bca61ae2d7.jpg",
@@ -586,6 +659,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la circolazione ai veicoli che procedono a velocità uguale o superiore a quella indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito a chi va almeno alla velocità indicata?",
         "spiegazione": "Se il segnale indica una velocità minima di 30 km/h, significa che puoi andare a 30 km/h o a una velocità superiore. L'importante è non andare sotto i 30 km/h. La risposta è VERO.",
         "regola": "Uguale o più = ok!",
         "trabocchetti": ["uguale o superiore a quella indicata"],
@@ -594,6 +668,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il limite massimo di velocità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → limite massimo?",
         "spiegazione": "Questo segnale non indica un limite massimo di velocità. I limiti massimi sono segnali rotondi con bordo rosso e sfondo bianco. Questo è un segnale di limite minimo. La risposta è FALSO.",
         "regola": "Blu = minimo, Rosso = massimo!",
         "trabocchetti": ["massimo"],
@@ -602,6 +677,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la circolazione è riservata ai veicoli con velocità massima inferiore a quella indicata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → riservato a veicoli più lenti?",
         "spiegazione": "Questo segnale non riserva la strada ai veicoli lenti. Al contrario, vieta la circolazione ai veicoli che non riescono a raggiungere la velocità minima di 30 km/h. La risposta è FALSO.",
         "regola": "Non è per i lenti, è per chi va almeno a 30!",
         "immagine": "f3cca1f4c3bca61ae2d7.jpg",
@@ -609,6 +685,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta di marciare a velocità superiore a quella indicata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato superare la velocità?",
         "spiegazione": "Il segnale indica una velocità minima, non massima. Quindi, non ti vieta di andare più veloce di 30 km/h (purché rispetti i limiti massimi della strada). Ti vieta solo di andare più lento. La risposta è FALSO.",
         "regola": "Non vieta il più, vieta il meno!",
         "trabocchetti": ["vieta di marciare a velocità superiore"],
@@ -617,6 +694,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di marciare alla velocità di 25 km/h",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → si può andare a 25 km/h?",
         "spiegazione": "Il segnale obbliga a mantenere una velocità di almeno 30 km/h. Andare a 25 km/h significa andare più lento del minimo consentito. Quindi non è permesso. La risposta è FALSO.",
         "regola": "Sotto 30? No!",
         "trabocchetti": ["25 km/h"],
@@ -625,6 +703,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a mantenere la distanza minima di sicurezza di 30 metri dal veicolo che precede",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanza minima di 30 m?",
         "spiegazione": "Il numero 30 su questo segnale si riferisce alla velocità in km/h, non alla distanza di sicurezza in metri. I segnali di distanza di sicurezza sono diversi. La risposta è FALSO.",
         "regola": "30 km/h, non 30 metri!",
         "trabocchetti": ["distanza minima di sicurezza di 30 metri"],
@@ -633,6 +712,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il divieto di transito ai veicoli con massa complessiva superiore a 30 t",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato oltre 30 t?",
         "spiegazione": "Il numero 30 su questo segnale si riferisce alla velocità in km/h, non alla massa dei veicoli in tonnellate (t). I segnali di divieto per la massa sono diversi. La risposta è FALSO.",
         "regola": "30 km/h, non 30 tonnellate!",
         "trabocchetti": ["massa complessiva superiore a 30 t"],
@@ -641,6 +721,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di circolare a velocità inferiore a quella indicata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → si può andare più piano?",
         "spiegazione": "Questo segnale impone una velocità minima. Questo significa che non puoi circolare a una velocità inferiore a quella indicata (30 km/h). La risposta è FALSO.",
         "regola": "Inferiore? No, mai!",
         "immagine": "f3cca1f4c3bca61ae2d7.jpg",
@@ -648,6 +729,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la velocità consigliata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → velocità consigliata?",
         "spiegazione": "Questo segnale non indica una velocità consigliata, ma una velocità minima obbligatoria. I segnali di velocità consigliata sono quadrati e blu. La risposta è FALSO.",
         "regola": "Blu tondo = obbligo, Blu quadrato = consiglio!",
         "trabocchetti": ["consigliata"],
@@ -656,6 +738,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive di arrestarsi al varco doganale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi al varco doganale?",
         "spiegazione": "Il segnale con la scritta 'DOGANA' e il cerchio rosso significa che devi fermarti obbligatoriamente al punto dove si trova la dogana. 'Prescrive' significa che ti dà un ordine, un obbligo.",
         "regola": "Cerchio rosso + DOGANA = STOP obbligatorio.",
         "trabocchetti": ["prescrive"],
@@ -664,6 +747,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi alla frontiera per il controllo doganale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi in frontiera per la dogana?",
         "spiegazione": "Questo segnale si trova proprio dove c'è la dogana, che di solito è alla frontiera tra due paesi. L'obbligo di fermarsi serve per i controlli che fa la dogana su persone e merci.",
         "regola": "DOGANA = Controllo alla frontiera, quindi STOP.",
         "trabocchetti": ["obbliga"],
@@ -672,6 +756,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che bisogna rallentare e fermarsi alla dogana",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare e fermarsi alla dogana?",
         "spiegazione": "Prima di fermarsi completamente, è sempre necessario rallentare per sicurezza. Il segnale ti dice che devi fermarti alla dogana, e per farlo devi prima ridurre la velocità in modo graduale.",
         "regola": "Per fermarsi in sicurezza, prima si rallenta.",
         "trabocchetti": ["rallentare e fermarsi"],
@@ -680,6 +765,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato segnala un varco doganale al quale è obbligatorio fermarsi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → varco doganale con obbligo di fermata?",
         "spiegazione": "Il segnale ti mostra che lì c'è una dogana ('varco doganale') e, come abbiamo detto, il cerchio rosso e la scritta 'DOGANA' significano che devi fermarti per forza, è un obbligo.",
         "regola": "DOGANA = STOP obbligatorio.",
         "trabocchetti": ["obbligatorio fermarsi"],
@@ -688,6 +774,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di un commissariato di polizia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → commissariato di polizia?",
         "spiegazione": "Il segnale dice chiaramente 'DOGANA', non 'POLIZIA' o 'COMMISSARIATO'. La dogana è un ufficio che controlla le merci e le persone che entrano ed escono da un paese, non è una stazione di polizia normale.",
         "regola": "Leggi la scritta: DOGANA non POLIZIA.",
         "trabocchetti": ["commissariato di polizia"],
@@ -696,6 +783,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a rallentare fermandosi al varco doganale solo se si hanno oggetti o merci da dichiarare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi solo con merci da dichiarare?",
         "spiegazione": "L'obbligo di fermarsi alla dogana vale per tutti i veicoli, non solo per chi ha qualcosa da dichiarare. Anche se non hai nulla, devi fermarti per un eventuale controllo. La dogana decide chi controllare.",
         "regola": "STOP alla DOGANA è per TUTTI, non 'solo se'.",
         "trabocchetti": ["solo se"],
@@ -704,6 +792,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di un comando stazione carabinieri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → stazione carabinieri?",
         "spiegazione": "Anche qui, il segnale indica 'DOGANA', non 'CARABINIERI'. Sono due enti diversi con funzioni diverse. I Carabinieri sono una forza di polizia, la dogana si occupa di controlli di frontiera e merci.",
         "regola": "Leggi la scritta: DOGANA non CARABINIERI.",
         "trabocchetti": ["comando stazione carabinieri"],
@@ -712,6 +801,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova solo alla frontiera con un paese della Comunità Europea",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo al confine con paese UE?",
         "spiegazione": "Questo segnale si trova alle frontiere dove ci sono controlli doganali. All'interno dell'Unione Europea (ex Comunità Europea) i controlli doganali sono stati quasi eliminati per la libera circolazione. Quindi, questo segnale lo trovi soprattutto alle frontiere con paesi che NON fanno parte dell'Unione Europea o in casi particolari.",
         "regola": "DOGANA = Fuori UE (di solito). 'Solo' è quasi sempre FALSO.",
         "trabocchetti": ["solo"],
@@ -720,6 +810,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di un posto di blocco stradale istituito da organi di polizia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → posto di blocco di polizia?",
         "spiegazione": "Questo segnale, con la scritta 'ALT POLIZIA', ti avvisa che più avanti c'è un posto di blocco della polizia. 'Preannuncia' significa che ti informa prima di arrivare.",
         "regola": "ALT POLIZIA = Avviso di posto di blocco.",
         "trabocchetti": ["preannuncia"],
@@ -728,6 +819,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi in prossimità di blocco stradale istituito da organi di polizia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi al posto di blocco?",
         "spiegazione": "Il segnale 'ALT POLIZIA' ti dice chiaramente che devi fermarti. 'Obbliga ad arrestarsi' significa che è un tuo dovere fermare il veicolo quando arrivi vicino al posto di blocco.",
         "regola": "ALT = Obbligo di fermarsi.",
         "trabocchetti": ["obbliga", "In prossimità"],
@@ -736,6 +828,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'obbligo di arresto ad un posto di blocco stradale istituito dagli organi di polizia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → obbligo di arresto al posto di blocco?",
         "spiegazione": "Questo segnale ti dà l'ordine di fermarti. 'Obbligo di arresto' è la stessa cosa di 'obbliga ad arrestarsi'. Devi fermare la macchina al posto di blocco della polizia.",
         "regola": "ALT = Fermata obbligatoria.",
         "trabocchetti": ["obbligo di arresto"],
@@ -744,6 +837,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato segnala posto di blocco stradale istituito da organi di polizia al quale è obbligatorio fermarsi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → posto di blocco con obbligo di fermata?",
         "spiegazione": "Il segnale ti informa che c'è un posto di blocco della polizia e che è obbligatorio, cioè devi assolutamente, fermarti lì.",
         "regola": "ALT POLIZIA = Posto di blocco con stop.",
         "trabocchetti": ["obbligatorio fermarsi"],
@@ -752,6 +846,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, situato a distanza opportuna dal posto di blocco, è ripetuto all'altezza del punto di arresto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → ripetuto al punto di arresto?",
         "spiegazione": "Questo segnale viene messo due volte: una prima, per avvisarti che c'è un posto di blocco, e poi un'altra volta proprio nel punto esatto dove devi fermarti. Così sei sicuro di non sbagliare.",
         "regola": "Doppio segnale: prima avviso, poi punto di stop.",
         "trabocchetti": ["è ripetuto all"],
@@ -760,6 +855,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a rallentare per essere pronti a fermarsi in caso di segnalazione da parte degli agenti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo rallentare, fermarsi se segnalato?",
         "spiegazione": "FALSO. Il segnale 'ALT' non ti dice solo di rallentare, ma ti ordina di fermarti. Non devi aspettare un segnale dagli agenti per fermarti, il segnale stradale è già un ordine di stop.",
         "regola": "ALT = STOP, non solo rallenta.",
         "trabocchetti": ["obbliga a rallentare", "in caso di segnalazione"],
@@ -768,6 +864,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato presegnala un confine di Stato con obbligo di arrestarsi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → confine di Stato con arresto?",
         "spiegazione": "FALSO. Questo segnale è specifico per un posto di blocco della 'POLIZIA'. Non indica un confine di Stato, per quello ci sono altri segnali.",
         "regola": "Non è confine, è POLIZIA.",
         "trabocchetti": ["confine di Stato"],
@@ -776,6 +873,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato segnala una stazione autostradale alla quale è obbligatorio fermarsi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → stazione autostradale con obbligo di fermata?",
         "spiegazione": "FALSO. Questo segnale non ha niente a che fare con le stazioni autostradali (come i caselli o le aree di servizio). È solo per i posti di blocco della polizia.",
         "regola": "Non è autostrada, è POLIZIA.",
         "trabocchetti": ["stazione autostradale"],
@@ -784,6 +882,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di fermarsi e dare precedenza ai mezzi della polizia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi e dare precedenza alla polizia?",
         "spiegazione": "FALSO. Il segnale ti impone di fermarti al posto di blocco. Non ti chiede di dare precedenza ai mezzi della polizia che magari passano o arrivano. La precedenza si dà in altre situazioni, non per questo segnale.",
         "regola": "Fermati TU, non dare precedenza a LORO.",
         "trabocchetti": ["dare precedenza ai mezzi della polizia"],
@@ -792,6 +891,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato segnala la vicinanza di un controllo doganale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → controllo doganale vicino?",
         "spiegazione": "FALSO. Il segnale dice 'POLIZIA', non 'DOGANA'. La dogana è un controllo per le merci o le persone che passano un confine, e ha segnali specifici. Questo è un controllo generico della polizia.",
         "regola": "Non è dogana, è POLIZIA.",
         "trabocchetti": ["controllo doganale"],
@@ -800,6 +900,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi all'accesso autostradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi all'accesso autostradale?",
         "spiegazione": "Questo segnale, con la scritta 'ALT STAZIONE', ti dice che devi fermarti. Lo trovi all'ingresso dell'autostrada, dove spesso c'è un casello o un controllo, e quindi è obbligatorio arrestarsi.",
         "regola": "ALT STAZIONE = Stop in autostrada.",
         "trabocchetti": ["obbliga ad arrestarsi"],
@@ -808,6 +909,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone l'obbligo di rallentare e fermarsi per le operazioni di pedaggio autostradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi per il pedaggio?",
         "spiegazione": "Il segnale 'ALT STAZIONE' è tipico dei caselli autostradali. Qui devi fermarti per pagare il pedaggio. Per fermarti in sicurezza, devi prima rallentare e poi arrestare il veicolo.",
         "regola": "ALT STAZIONE = Pedaggio, rallenta e ferma.",
         "trabocchetti": ["impone l"],
@@ -816,6 +918,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato segnala una stazione autostradale alla quale è obbligatorio fermarsi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → stazione autostradale con fermata obbligatoria?",
         "spiegazione": "Il segnale indica una 'stazione autostradale', che è un punto di controllo o di pedaggio. La parola 'ALT' significa che è obbligatorio fermarsi in quel punto.",
         "regola": "ALT STAZIONE = Fermata obbligatoria in autostrada.",
         "trabocchetti": ["obbligatorio fermarsi"],
@@ -824,6 +927,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive di arrestarsi al casello autostradale per le operazioni di pedaggio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi al casello?",
         "spiegazione": "Questo segnale ti ordina di fermarti ('prescrive di arrestarsi') al casello autostradale. La fermata è necessaria per pagare il pedaggio e poter continuare il viaggio in autostrada.",
         "regola": "ALT STAZIONE = Casello, fermati e paga.",
         "trabocchetti": ["prescrive di arrestarsi"],
@@ -832,6 +936,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza degli accessi autostradali controllati dove è obbligatorio fermarsi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → accessi autostradali controllati?",
         "spiegazione": "Il segnale 'ALT STAZIONE' è posizionato proprio dove si entra in autostrada, in punti dove c'è un controllo (come il pagamento del pedaggio) e dove è necessario fermarsi prima di proseguire.",
         "regola": "ALT STAZIONE = Ingresso autostrada, stop controllato.",
         "trabocchetti": ["accessi autostradali controllati"],
@@ -840,6 +945,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato segnala la presenza di un comando stazione carabinieri, con posto di blocco",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → carabinieri con posto di blocco?",
         "spiegazione": "Il segnale 'ALT STAZIONE' si riferisce a una stazione autostradale (come un casello), non a una stazione dei Carabinieri o a un posto di blocco. Per le forze dell'ordine ci sono altri segnali o la loro presenza fisica.",
         "regola": "ALT STAZIONE non è Carabinieri.",
         "trabocchetti": ["comando stazione carabinieri", "posto di blocco"],
@@ -848,6 +954,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una stazione ferroviaria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → stazione ferroviaria?",
         "spiegazione": "La parola 'STAZIONE' in questo segnale si riferisce a una stazione autostradale (un casello), non a una stazione dei treni. I segnali per le stazioni ferroviarie sono diversi.",
         "regola": "ALT STAZIONE = Autostrada, non treno.",
         "trabocchetti": ["ferroviaria", "Stazione"],
@@ -856,6 +963,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta l'accesso ad un'area riservata ai mezzi della società autostradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area riservata alla società autostradale?",
         "spiegazione": "Questo segnale ti dice di fermarti per accedere all'autostrada, non di non entrare in un'area riservata. Anzi, dopo la fermata e il pedaggio, puoi accedere all'autostrada.",
         "regola": "ALT STAZIONE = Fermati per entrare, non vietato.",
         "trabocchetti": ["vieta l", "e"],
@@ -864,6 +972,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il punto ove occorre fermarsi per caricare l'autovettura sul treno",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → carico auto sul treno?",
         "spiegazione": "Questo segnale non ha nulla a che fare con i treni o con il carico di auto sui treni. È un segnale specifico per le autostrade e i loro accessi.",
         "regola": "ALT STAZIONE = Autostrada, non treno-auto.",
         "trabocchetti": ["caricare l"],
@@ -872,6 +981,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può indicare il punto di arresto nei pontili d'imbarco di navi traghetto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → arresto al pontile del traghetto?",
         "spiegazione": "Anche se nei pontili d'imbarco dei traghetti ci si deve fermare, questo segnale è specifico per le stazioni autostradali (caselli). Per i traghetti ci sono altri tipi di segnaletica.",
         "regola": "ALT STAZIONE = Autostrada, non traghetto.",
         "trabocchetti": ["pontili d"],
@@ -880,6 +990,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'obbligo di proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → obbligo di proseguire diritto?",
         "spiegazione": "Il segnale raffigurato è blu e ha una freccia che punta dritta. Questo tipo di segnale ti dice che devi andare solo avanti, non puoi girare.",
         "regola": "Freccia dritta = Vai solo dritto!",
         "trabocchetti": ["obbligo"],
@@ -888,6 +999,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente la svolta a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a sinistra vietata?",
         "spiegazione": "Se il segnale ti obbliga ad andare dritto, significa che non puoi girare né a sinistra né a destra. Quindi, la svolta a sinistra non è permessa.",
         "regola": "Dritto obbligatorio = Niente curve!",
         "trabocchetti": ["non consente"],
@@ -896,6 +1008,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, posto prima di un incrocio, obbliga a proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato prima dell'incrocio → obbligo diritto?",
         "spiegazione": "Questo segnale, quando lo vedi prima di un incrocio, ti dice chiaramente che devi continuare ad andare dritto e non puoi cambiare direzione.",
         "regola": "Prima dell'incrocio, freccia dritta = Solo avanti!",
         "trabocchetti": ["prima di un incrocio"],
@@ -904,6 +1017,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, in corrispondenza di un incrocio, non consente la svolta a destra o a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato all'incrocio → niente svolte a destra o sinistra?",
         "spiegazione": "Se il segnale ti dice di andare dritto, allora non puoi girare né a destra né a sinistra, sia che tu lo veda prima o proprio all'incrocio.",
         "regola": "Freccia dritta = Stop a destra e sinistra!",
         "trabocchetti": ["in corrispondenza di un incrocio"],
@@ -912,6 +1026,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'unica direzione consentita",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → unica direzione consentita?",
         "spiegazione": "Sì, la freccia dritta ti mostra l'unica strada che puoi prendere. Tutte le altre direzioni sono vietate.",
         "regola": "Una freccia = Una sola via!",
         "trabocchetti": ["unica direzione consentita"],
@@ -920,6 +1035,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "I segnali blu e rotondi con una freccia sono segnali di obbligo. I segnali di obbligo fanno parte della categoria più grande dei 'segnali di prescrizione', che includono anche divieti e precedenze.",
         "regola": "Blu e tondo = Prescrizione (obbligo)!",
         "trabocchetti": ["prescrizione"],
@@ -928,6 +1044,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di direzione obbligatoria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → direzione obbligatoria?",
         "spiegazione": "Esatto, questo segnale ti obbliga a seguire una direzione specifica, in questo caso, dritto. Per questo si chiama 'direzione obbligatoria'.",
         "regola": "Freccia blu = Direzione obbligatoria!",
         "trabocchetti": ["direzione obbligatoria"],
@@ -936,6 +1053,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di obbligo?",
         "spiegazione": "I segnali rotondi e blu sono sempre segnali di obbligo, cioè ti dicono cosa devi fare per legge.",
         "regola": "Blu e rotondo = Obbligo!",
         "trabocchetti": ["obbligo"],
@@ -944,6 +1062,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente la svolta a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a destra vietata?",
         "spiegazione": "Se devi andare dritto, non puoi girare né a destra né a sinistra. Quindi, la svolta a destra non è permessa.",
         "regola": "Dritto obbligatorio = Niente curve!",
         "trabocchetti": ["non consente"],
@@ -952,6 +1071,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di svoltare a destra o a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → si può svoltare a destra o sinistra?",
         "spiegazione": "No, è il contrario! Questo segnale ti obbliga ad andare dritto, quindi non puoi assolutamente svoltare né a destra né a sinistra.",
         "regola": "Freccia dritta = Solo dritto, mai girare!",
         "trabocchetti": ["consente"],
@@ -960,6 +1080,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di svoltare all'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → si può svoltare all'incrocio?",
         "spiegazione": "Questo segnale ti dice che devi andare dritto. Svoltare significa girare, e questo è proprio quello che non puoi fare all'incrocio con questo segnale.",
         "regola": "Dritto obbligatorio = Niente svolte!",
         "trabocchetti": ["consente di svoltare"],
@@ -968,6 +1089,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio del senso unico di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio senso unico?",
         "spiegazione": "No, il segnale di inizio senso unico è un rettangolo blu con una freccia bianca che punta in alto. Questo è un segnale di direzione obbligatoria, non di senso unico.",
         "regola": "Rotondo blu = Obbligo di direzione, non senso unico!",
         "trabocchetti": ["inizio del senso unico"],
@@ -976,6 +1098,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine doppio senso?",
         "spiegazione": "No, questo segnale non ha nulla a che fare con la fine del doppio senso. Quel segnale è diverso, è un quadrato blu con due frecce, una in alto e una in basso, e una barra rossa sopra.",
         "regola": "Freccia dritta = Obbligo, non fine doppio senso!",
         "trabocchetti": ["fine del doppio senso"],
@@ -984,6 +1107,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone la marcia in unica fila",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → marcia in fila unica?",
         "spiegazione": "No, questo segnale ti dice solo di andare dritto. Non ti dà indicazioni su come devi guidare rispetto agli altri veicoli (ad esempio, in fila indiana).",
         "regola": "Freccia dritta = Direzione, non formazione!",
         "trabocchetti": ["unica fila"],
@@ -992,6 +1116,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "No, i segnali di indicazione sono di solito quadrati o rettangolari e danno informazioni. Questo è un segnale di obbligo, ti dice cosa devi fare.",
         "regola": "Blu e rotondo = Obbligo, non indicazione!",
         "trabocchetti": ["indicazione"],
@@ -1000,6 +1125,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di divieto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di divieto?",
         "spiegazione": "No, i segnali di divieto sono rotondi con bordo rosso. Questo è un segnale di obbligo (rotondo e blu).",
         "regola": "Blu = Obbligo; Rosso = Divieto!",
         "trabocchetti": ["divieto"],
@@ -1008,6 +1134,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di corsia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di corsia?",
         "spiegazione": "No, questo segnale indica una direzione obbligatoria per tutti i veicoli che passano di lì, non è specifico per una singola corsia. I segnali di corsia di solito sono sopra le corsie e mostrano frecce diverse per ogni corsia.",
         "regola": "Freccia singola = Obbligo generale, non di corsia!",
         "trabocchetti": ["corsia"],
@@ -1016,6 +1143,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una direzione consigliata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → direzione consigliata?",
         "spiegazione": "No, non è un consiglio, è un obbligo! Devi andare dritto, non è una scelta che puoi fare o meno.",
         "regola": "Blu e rotondo = Obbligo, non consiglio!",
         "trabocchetti": ["consigliata"],
@@ -1024,6 +1152,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a svoltare a destra o a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di svoltare?",
         "spiegazione": "È il contrario! Questo segnale ti obbliga ad andare dritto, quindi ti *vieta* di svoltare a destra o a sinistra.",
         "regola": "Freccia dritta = Dritto, mai girare!",
         "trabocchetti": ["obbliga a svoltare"],
@@ -1032,6 +1161,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato esclude la possibilità che provengano veicoli di fronte",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → nessun veicolo di fronte?",
         "spiegazione": "No, questo segnale ti dice solo che tu devi andare dritto. Non ti dà informazioni sul traffico che viene dall'altra parte. Potrebbe essere una strada a doppio senso dove tu hai l'obbligo di andare dritto.",
         "regola": "Obbligo per te = Non per gli altri!",
         "trabocchetti": ["esclude la possibilità"],
@@ -1040,6 +1170,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un senso unico frontale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico frontale?",
         "spiegazione": "No, il segnale di 'senso unico' è un rettangolo blu con una freccia bianca. Questo è un segnale di 'direzione obbligatoria diritto'. Non significa che tutta la strada è a senso unico.",
         "regola": "Rotondo blu = Obbligo di direzione, non senso unico!",
         "trabocchetti": ["senso unico frontale"],
@@ -1048,6 +1179,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'obbligo di svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → obbligo di svoltare a sinistra?",
         "spiegazione": "Il segnale blu e rotondo con una freccia bianca indica una direzione che devi seguire per forza. In questo caso, la freccia punta a sinistra, quindi sei obbligato a svoltare a sinistra.",
         "regola": "Freccia blu rotonda = devi andare lì.",
         "trabocchetti": ["obbligo"],
@@ -1056,6 +1188,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente di svoltare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a destra vietata?",
         "spiegazione": "Se il segnale ti obbliga ad andare a sinistra, significa che non puoi andare in altre direzioni, come a destra. È l'unica direzione permessa.",
         "regola": "Obbligo a sinistra = no altre direzioni.",
         "trabocchetti": ["non consente"],
@@ -1064,6 +1197,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, posto prima di un incrocio, obbliga a svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato prima dell'incrocio → obbligo a sinistra?",
         "spiegazione": "Quando vedi questo segnale prima di un incrocio, ti sta dicendo che quando arrivi all'incrocio devi girare per forza a sinistra.",
         "regola": "Prima dell'incrocio, la freccia ti guida.",
         "trabocchetti": ["posto prima di un incrocio"],
@@ -1072,6 +1206,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, in corrispondenza di un incrocio, non consente di proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato all'incrocio → diritto vietato?",
         "spiegazione": "Se il segnale ti obbliga a svoltare a sinistra, non puoi continuare dritto. Devi seguire la direzione indicata dalla freccia.",
         "regola": "Freccia a sinistra = dritto è vietato.",
         "trabocchetti": ["in corrispondenza di un incrocio", "Non consente di proseguire diritto"],
@@ -1080,6 +1215,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'unica direzione consentita",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → unica direzione consentita?",
         "spiegazione": "Questo segnale ti mostra l'unica strada che puoi prendere. Non ci sono altre opzioni, devi andare a sinistra.",
         "regola": "Una freccia blu = una sola via.",
         "trabocchetti": ["unica direzione consentita"],
@@ -1088,6 +1224,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "I segnali di prescrizione sono quelli che danno ordini o regole, come gli obblighi, i divieti o le precedenze. Questo segnale ti obbliga a fare qualcosa, quindi è un segnale di prescrizione.",
         "regola": "Blu rotondo = prescrizione (obbligo).",
         "trabocchetti": ["prescrizione"],
@@ -1096,6 +1233,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di direzione obbligatoria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → direzione obbligatoria?",
         "spiegazione": "Sì, questo segnale ti obbliga a seguire una direzione specifica, che è a sinistra. Per questo si chiama 'direzione obbligatoria'.",
         "regola": "Freccia blu = direzione obbligatoria.",
         "trabocchetti": ["direzione obbligatoria"],
@@ -1104,6 +1242,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di obbligo?",
         "spiegazione": "I segnali blu e rotondi con un simbolo bianco sono sempre segnali di obbligo. Ti dicono cosa devi fare per legge.",
         "regola": "Blu rotondo = obbligo.",
         "trabocchetti": ["obbligo"],
@@ -1112,6 +1251,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di andare diritto all'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → si può andare diritto?",
         "spiegazione": "No, è falso. Se il segnale ti obbliga a svoltare a sinistra, non puoi andare dritto all'incrocio. Devi seguire la freccia.",
         "regola": "Obbligo a sinistra = dritto vietato.",
         "trabocchetti": ["consente"],
@@ -1120,6 +1260,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di svoltare a destra all'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → si può svoltare a destra?",
         "spiegazione": "No, è falso. Se il segnale ti obbliga a svoltare a sinistra, non puoi svoltare a destra all'incrocio. Devi seguire la freccia.",
         "regola": "Obbligo a sinistra = destra vietata.",
         "trabocchetti": ["consente"],
@@ -1128,6 +1269,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio del senso unico di circolazione dopo una svolta a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico dopo svolta a sinistra?",
         "spiegazione": "No, è falso. Questo segnale ti dice solo di svoltare a sinistra. Non ti dà informazioni sul fatto che la strada dopo la svolta sia a senso unico. Per il senso unico ci sono altri segnali.",
         "regola": "Freccia blu rotonda = solo direzione, non senso unico.",
         "trabocchetti": ["inizio del senso unico di circolazione"],
@@ -1136,6 +1278,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del doppio senso di circolazione dopo una svolta a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine doppio senso dopo svolta a destra?",
         "spiegazione": "No, è falso. Questo segnale non ha nulla a che fare con la fine del doppio senso di circolazione. Ti obbliga solo a girare a sinistra. La fine del doppio senso è indicata da un altro tipo di segnale.",
         "regola": "Freccia blu rotonda = solo direzione, non fine doppio senso.",
         "trabocchetti": ["fine del doppio senso di circolazione"],
@@ -1144,6 +1287,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è obbligatorio passare a sinistra di un ostacolo posto sulla carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passare a sinistra dell'ostacolo?",
         "spiegazione": "No, è falso. Questo segnale indica una direzione obbligatoria da prendere a un incrocio. Il segnale per passare a sinistra di un ostacolo è simile ma di solito è posizionato proprio sull'ostacolo e la freccia può essere leggermente curva.",
         "regola": "Freccia dritta = svolta. Freccia curva/laterale = ostacolo.",
         "trabocchetti": ["passare a sinistra di un ostacolo"],
@@ -1152,6 +1296,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "No, è falso. I segnali di indicazione sono di solito quadrati o rettangolari e servono a dare informazioni (come nomi di città o servizi). Questo è un segnale di obbligo, quindi è di prescrizione.",
         "regola": "Blu rotondo = obbligo, non indicazione.",
         "trabocchetti": ["indicazione"],
@@ -1160,6 +1305,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di divieto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di divieto?",
         "spiegazione": "No, è falso. I segnali di divieto sono rotondi con un bordo rosso e un simbolo nero (es. 'Divieto di accesso'). Questo è un segnale di obbligo, è blu con un simbolo bianco.",
         "regola": "Blu rotondo = obbligo. Rosso rotondo = divieto.",
         "trabocchetti": ["divieto"],
@@ -1168,6 +1314,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada che si incrocia è a senso unico verso sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada incrociata a senso unico verso sinistra?",
         "spiegazione": "No, è falso. Questo segnale ti obbliga a svoltare a sinistra *nella tua direzione*. Non ti dà informazioni sulla strada che incroci, se è a senso unico o meno.",
         "regola": "Freccia blu rotonda = la tua svolta, non la strada che incroci.",
         "immagine": "c994b2708bf09df37156.jpg",
@@ -1175,6 +1322,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un senso unico parallelo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico parallelo?",
         "spiegazione": "No, è falso. Questo segnale non indica un senso unico parallelo. Indica solo che devi svoltare a sinistra. I segnali di senso unico sono diversi (sono quadrati blu con una freccia dritta).",
         "regola": "Freccia blu rotonda = svolta, non senso unico parallelo.",
         "trabocchetti": ["senso unico parallelo"],
@@ -1183,6 +1331,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si può svoltare soltanto a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → solo a sinistra?",
         "spiegazione": "Il segnale blu con la freccia a sinistra indica che sei obbligato a svoltare in quella direzione. Non puoi andare dritto o a destra, l'unica scelta è svoltare a sinistra.",
         "regola": "Freccia blu a sinistra = Solo a sinistra!",
         "trabocchetti": ["soltanto"],
@@ -1191,6 +1340,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è consentito proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto vietato?",
         "spiegazione": "Se il segnale ti obbliga a svoltare a sinistra, significa che non puoi continuare ad andare dritto. La direzione 'dritto' è vietata in questo punto.",
         "regola": "Obbligo a sinistra = Dritto vietato.",
         "trabocchetti": ["non è consentito"],
@@ -1199,6 +1349,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il divieto di svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di svolta a sinistra?",
         "spiegazione": "Questo segnale è blu e indica un OBBLIGO, non un divieto. Ti obbliga a svoltare a sinistra. Un divieto di svoltare a sinistra sarebbe un segnale rotondo con bordo rosso e una freccia barrata.",
         "regola": "Blu = Obbligo. Rosso = Divieto.",
         "trabocchetti": ["divieto"],
@@ -1207,6 +1358,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che ci si può fermare sulla sinistra della strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata sul lato sinistro?",
         "spiegazione": "Questo segnale riguarda la direzione che devi prendere con il tuo veicolo (svoltare a sinistra). Non ha nulla a che fare con dove puoi fermarti o parcheggiare sulla strada.",
         "regola": "Segnale di direzione, non di sosta.",
         "trabocchetti": ["fermare"],
@@ -1215,6 +1367,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'obbligo di proseguire diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di proseguire diritto?",
         "spiegazione": "La freccia nel segnale punta chiaramente a sinistra. Questo significa che l'obbligo è di svoltare a sinistra, non di proseguire dritto.",
         "regola": "La freccia indica la direzione obbligatoria.",
         "trabocchetti": ["proseguire diritto"],
@@ -1223,6 +1376,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato significa che bisogna aggirare l'ostacolo a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → aggirare l'ostacolo a sinistra?",
         "spiegazione": "Questo segnale indica una svolta obbligatoria a sinistra, tipicamente in un incrocio. Il segnale per 'aggirare l'ostacolo' ha una funzione leggermente diversa e spesso la freccia è più curva o indica un passaggio laterale.",
         "regola": "Freccia orizzontale = Svolta obbligatoria.",
         "trabocchetti": ["aggirare l"],
@@ -1231,6 +1385,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato significa preavviso di curva a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preavviso di curva a sinistra?",
         "spiegazione": "Questo è un segnale di obbligo che ti dice cosa fare SUBITO. Un 'preavviso di curva a sinistra' è un segnale di pericolo (triangolare con bordo rosso) che avvisa di una curva più avanti, non un obbligo immediato.",
         "regola": "Blu = Obbligo ora. Triangolo = Pericolo dopo.",
         "trabocchetti": ["preavviso"],
@@ -1239,6 +1394,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'obbligo di svoltare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → obbligo di svoltare a destra?",
         "spiegazione": "Questo segnale, essendo blu e rotondo con una freccia bianca, indica un obbligo. La freccia punta a destra, quindi ti obbliga a svoltare a destra.",
         "regola": "Freccia blu a destra? Svolta a destra!",
         "trabocchetti": ["obbligo"],
@@ -1247,6 +1403,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente di svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a sinistra vietata?",
         "spiegazione": "Se sei obbligato a svoltare a destra, significa che non puoi andare in nessun'altra direzione, inclusa la svolta a sinistra.",
         "regola": "Destra obbligatoria = sinistra vietata.",
         "trabocchetti": ["non consente"],
@@ -1255,6 +1412,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, in corrispondenza di un incrocio, obbliga a svoltare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato all'incrocio → obbligo a destra?",
         "spiegazione": "Questo segnale viene messo proprio prima o in corrispondenza di un incrocio per dirti che devi svoltare a destra. È la sua funzione principale.",
         "regola": "All'incrocio, la freccia blu comanda.",
         "trabocchetti": ["In corrispondenza di un incrocio"],
@@ -1263,6 +1421,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, posto prima di un incrocio, non consente di proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato prima dell'incrocio → diritto vietato?",
         "spiegazione": "Se il segnale ti obbliga a svoltare a destra, non puoi proseguire dritto. Devi seguire la direzione indicata dalla freccia.",
         "regola": "Destra obbligatoria, dritto no.",
         "trabocchetti": ["Non consente di proseguire diritto"],
@@ -1271,6 +1430,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "I segnali di obbligo, divieto e precedenza sono tutti 'segnali di prescrizione'. Prescrivere significa dare una regola o un ordine da seguire.",
         "regola": "Obbligo = Prescrizione.",
         "trabocchetti": ["Prescrizione"],
@@ -1279,6 +1439,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di obbligo?",
         "spiegazione": "I segnali blu e rotondi con simboli bianchi sono sempre segnali di obbligo. Ti dicono cosa devi fare.",
         "regola": "Blu e tondo, è un obbligo profondo.",
         "trabocchetti": ["Obbligo"],
@@ -1287,6 +1448,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di direzione obbligatoria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → direzione obbligatoria?",
         "spiegazione": "Questo segnale ti indica una direzione specifica (a destra) che sei obbligato a prendere. Per questo si chiama 'direzione obbligatoria'.",
         "regola": "Freccia blu, direzione obbligatoria.",
         "trabocchetti": ["Direzione obbligatoria"],
@@ -1295,6 +1457,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'unica direzione consentita",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → unica direzione consentita?",
         "spiegazione": "Se sei obbligato a svoltare a destra, significa che quella è l'unica direzione che ti è permesso prendere. Non puoi scegliere altre strade.",
         "regola": "Una freccia, una via.",
         "trabocchetti": ["Unica direzione consentita"],
@@ -1303,6 +1466,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è pericoloso svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pericoloso svoltare a destra?",
         "spiegazione": "Questo segnale non indica un pericolo. I segnali di pericolo sono triangolari con bordo rosso. Questo è un segnale di obbligo.",
         "regola": "Blu non è pericolo, è dovere.",
         "trabocchetti": ["pericoloso"],
@@ -1311,6 +1475,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive di proseguire diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → proseguire diritto?",
         "spiegazione": "La freccia del segnale punta chiaramente a destra, non dritto. C'è un altro segnale per l'obbligo di proseguire dritto.",
         "regola": "Freccia a destra, non dritto.",
         "trabocchetti": ["Proseguire diritto"],
@@ -1319,6 +1484,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio del senso unico di circolazione nella svolta a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico svoltando a destra?",
         "spiegazione": "Questo segnale ti obbliga a svoltare a destra, ma non ti dice se la strada che imbocchi è a senso unico. Per il senso unico c'è un altro segnale (rettangolare blu con freccia bianca).",
         "regola": "Obbligo di svolta, non senso unico.",
         "trabocchetti": ["Senso unico di circolazione"],
@@ -1327,6 +1493,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del doppio senso di circolazione nella svolta a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine doppio senso svoltando a sinistra?",
         "spiegazione": "Questo segnale non ha nulla a che fare con la fine del doppio senso di circolazione o con la svolta a sinistra. Indica solo l'obbligo di svoltare a destra.",
         "regola": "Non è fine, è inizio obbligo.",
         "trabocchetti": ["fine del doppio senso di circolazione", "svolta a sinistra"],
@@ -1335,6 +1502,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "I segnali di indicazione sono solitamente rettangolari (blu o verdi) e danno informazioni. Questo è un segnale di obbligo.",
         "regola": "Blu tondo = obbligo, non indicazione.",
         "trabocchetti": ["Indicazione", "indica"],
@@ -1343,6 +1511,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di divieto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di divieto?",
         "spiegazione": "I segnali di divieto sono rotondi con bordo rosso e un simbolo nero. Questo è un segnale di obbligo, che ha forma e colori diversi.",
         "regola": "Blu tondo = obbligo, rosso tondo = divieto.",
         "trabocchetti": ["Divieto"],
@@ -1351,6 +1520,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada che si incrocia è a senso unico verso destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada incrociata a senso unico verso destra?",
         "spiegazione": "Questo segnale si riferisce a te e al tuo veicolo, obbligandoti a svoltare a destra. Non descrive la strada che incroci.",
         "regola": "Riguarda te, non l'altra strada.",
         "immagine": "4c196ce7d220821c3fc7.jpg",
@@ -1358,6 +1528,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un senso unico parallelo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico parallelo?",
         "spiegazione": "Questo segnale indica una direzione obbligatoria, non un 'senso unico parallelo'. Sono concetti diversi.",
         "regola": "Obbligo di svolta, non senso unico.",
         "trabocchetti": ["Senso unico parallelo"],
@@ -1366,6 +1537,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica direzione obbligatoria a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → direzione obbligatoria a destra?",
         "spiegazione": "Il segnale blu con la freccia bianca a destra significa che devi andare per forza a destra. Non puoi scegliere di andare dritto o a sinistra.",
         "regola": "Freccia blu = Obbligo!",
         "trabocchetti": ["obbligatoria"],
@@ -1374,6 +1546,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si può svoltare soltanto a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → solo a destra?",
         "spiegazione": "Sì, è vero. 'Soltanto a destra' significa che l'unica direzione permessa è a destra. È lo stesso concetto di 'direzione obbligatoria a destra'.",
         "regola": "Soltanto a destra = Obbligo a destra.",
         "trabocchetti": ["soltanto"],
@@ -1382,6 +1555,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è consentito proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto vietato?",
         "spiegazione": "Se sei obbligato ad andare a destra, significa che non puoi andare dritto. È una conseguenza logica dell'obbligo.",
         "regola": "Obbligo a destra = Dritto vietato.",
         "trabocchetti": ["non è consentito"],
@@ -1390,6 +1564,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si deve svoltare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → si deve svoltare a destra?",
         "spiegazione": "La frase 'si deve' è un sinonimo di 'è obbligatorio'. Quindi, devi svoltare a destra, non è una scelta.",
         "regola": "Si deve = Obbligo.",
         "trabocchetti": ["si deve"],
@@ -1398,6 +1573,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il divieto di svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di svolta a destra?",
         "spiegazione": "No, è il contrario! Il segnale blu con la freccia indica un obbligo, non un divieto. Se fosse un divieto, il segnale sarebbe un cerchio rosso con una barra.",
         "regola": "Blu = Obbligo, non divieto.",
         "trabocchetti": ["divieto"],
@@ -1406,6 +1582,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area di parcheggio a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio a destra?",
         "spiegazione": "Questo segnale non c'entra niente con il parcheggio. I segnali di parcheggio sono diversi, di solito quadrati con la lettera P. Questo è un segnale di direzione.",
         "regola": "Freccia blu = Direzione, non parcheggio.",
         "trabocchetti": ["area di parcheggio"],
@@ -1414,6 +1591,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'obbligo di proseguire diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di proseguire diritto?",
         "spiegazione": "La freccia punta a destra, non dritto. Quindi, l'obbligo è di andare a destra, non di proseguire dritto.",
         "regola": "Segui la freccia!",
         "trabocchetti": ["proseguire diritto"],
@@ -1422,6 +1600,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica di passare a destra dell'ostacolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passare a destra dell'ostacolo?",
         "spiegazione": "Questo segnale non indica un ostacolo. Il segnale per 'passare a destra dell'ostacolo' è simile ma ha una freccia curva che aggira un ostacolo immaginario. Questo è un obbligo di direzione.",
         "regola": "Freccia dritta = Direzione, non ostacolo.",
         "trabocchetti": ["ostacolo"],
@@ -1430,6 +1609,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica preavviso di curva a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preavviso di curva a destra?",
         "spiegazione": "I segnali di preavviso di curva sono triangolari con bordo rosso e una freccia curva. Questo è un segnale di obbligo di direzione, non un avviso di curva.",
         "regola": "Blu tondo = Obbligo, non pericolo.",
         "trabocchetti": ["preavviso di curva"],
@@ -1438,6 +1618,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un preavviso di obbligo di svoltare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → preavviso di obbligo a destra?",
         "spiegazione": "Questo segnale è blu e rotondo, il che significa che è un segnale di obbligo. La freccia indica di svoltare a destra. Di solito, questi segnali sono messi un po' prima dell'incrocio, per darti il tempo di prepararti. Quindi, è un 'preavviso' dell'obbligo di svoltare a destra.",
         "regola": "Blu = Obbligo. Preavviso = Prima.",
         "trabocchetti": ["preavviso"],
@@ -1446,6 +1627,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che non è consentito proseguire diritto o svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → né diritto né a sinistra?",
         "spiegazione": "Se il segnale ti obbliga a svoltare a destra, significa che non puoi fare altre cose, come andare dritto o girare a sinistra. C'è solo una direzione permessa.",
         "regola": "Obbligo a destra = Dritto e sinistra vietati.",
         "trabocchetti": ["non è consentito"],
@@ -1454,6 +1636,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato precede un incrocio con obbligo di svoltare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio con obbligo a destra?",
         "spiegazione": "Come detto prima, i segnali d'obbligo come questo sono messi prima dell'incrocio dove devi svoltare. 'Precede' significa che viene prima.",
         "regola": "Segnale blu = Obbligo all'incrocio successivo.",
         "trabocchetti": ["precede"],
@@ -1462,6 +1645,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio ove non è consentito proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio dove non si va diritto?",
         "spiegazione": "Se sei obbligato a svoltare a destra, non puoi andare dritto. Quindi, il segnale ti dice che all'incrocio non potrai proseguire diritto.",
         "regola": "Obbligo a destra = Diritto no.",
         "trabocchetti": ["non è consentito"],
@@ -1470,6 +1654,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che non è consentito girare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato girare a sinistra?",
         "spiegazione": "Se devi svoltare a destra, non puoi girare a sinistra. È una conseguenza dell'obbligo.",
         "regola": "Obbligo a destra = Sinistra no.",
         "trabocchetti": ["non è consentito"],
@@ -1478,6 +1663,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "I segnali d'obbligo (come questo, blu e rotondo) e i segnali di divieto (rossi e rotondi) fanno parte di una categoria più grande chiamata 'segnali di prescrizione'. Questi segnali 'prescrivono' (cioè, ordinano) un comportamento.",
         "regola": "Blu o Rosso = Prescrizione.",
         "trabocchetti": ["prescrizione"],
@@ -1486,6 +1672,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'unica direzione consentita",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → unica direzione consentita?",
         "spiegazione": "Quando un segnale d'obbligo ti indica una direzione specifica (come 'svoltare a destra'), significa che quella è l'unica cosa che puoi fare. Tutte le altre direzioni sono vietate.",
         "regola": "Freccia blu = Solo quella direzione.",
         "trabocchetti": ["unica"],
@@ -1494,6 +1681,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale d'obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → d'obbligo?",
         "spiegazione": "Questo è un segnale d'obbligo. Lo riconosci dal colore blu e dalla forma rotonda. Ti dice cosa devi fare.",
         "regola": "Cerchio blu = Obbligo.",
         "immagine": "c8c22b91a240f7dc61cb.jpg",
@@ -1501,6 +1689,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere integrato con un pannello che indica la distanza dal punto in cui vige l'obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con distanza dall'obbligo?",
         "spiegazione": "Sì, è possibile trovare sotto questo segnale un piccolo pannello aggiuntivo (rettangolare) che ti dice, ad esempio, '300 m'. Questo significa che l'obbligo di svoltare a destra sarà valido tra 300 metri.",
         "regola": "Segnale + pannello = Distanza.",
         "trabocchetti": ["può essere integrato", "Pannello"],
@@ -1509,6 +1698,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è consentito svoltare a destra al prossimo incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato svoltare a destra?",
         "spiegazione": "Questo segnale ti obbliga a svoltare a destra, non te lo vieta! La freccia indica la direzione che devi prendere.",
         "regola": "Blu freccia destra = DEVI andare a destra.",
         "trabocchetti": ["non è consentito"],
@@ -1517,6 +1707,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad andare diritto o svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → diritto o a destra?",
         "spiegazione": "Questo segnale ti obbliga SOLO a svoltare a destra. Non ti permette di andare dritto. Andare dritto è vietato.",
         "regola": "Una freccia = Una sola direzione obbligatoria.",
         "immagine": "c8c22b91a240f7dc61cb.jpg",
@@ -1524,6 +1715,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive l'obbligo di passare a destra di un ostacolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passare a destra dell'ostacolo?",
         "spiegazione": "Questo segnale non c'entra con gli ostacoli. Il segnale che ti obbliga a passare a destra di un ostacolo ha una freccia che gira intorno a un punto centrale, non una freccia che indica una svolta a un incrocio.",
         "regola": "Freccia curva = Svolta. Freccia attorno = Ostacolo.",
         "trabocchetti": ["passare a destra di un ostacolo"],
@@ -1532,6 +1724,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una curva pericolosa a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → curva pericolosa a destra?",
         "spiegazione": "Le curve pericolose sono indicate da segnali di pericolo, che sono triangolari con bordo rosso. Questo è un segnale d'obbligo, blu e rotondo, e indica una svolta a un incrocio.",
         "regola": "Triangolo = Pericolo. Cerchio blu = Obbligo.",
         "trabocchetti": ["curva pericolosa"],
@@ -1540,6 +1733,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato presegnala una confluenza a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → confluenza a destra?",
         "spiegazione": "Una 'confluenza' è quando due strade si uniscono. Questo è indicato da un segnale di pericolo (triangolare) con due strade che si uniscono. Il segnale raffigurato indica un obbligo di svolta a un incrocio.",
         "regola": "Confluenza = Triangolo. Svolta = Cerchio blu.",
         "trabocchetti": ["confluenza"],
@@ -1548,6 +1742,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga gli autocarri ed i veicoli lenti ad incolonnarsi sulla corsia di destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarri e lenti incolonnati a destra?",
         "spiegazione": "Questo segnale vale per tutti i veicoli, non solo per autocarri o veicoli lenti. E ti obbliga a svoltare, non a incolonnarti in una corsia specifica.",
         "regola": "Obbligo di svolta = Per tutti.",
         "trabocchetti": ["autocarri", "veicoli lenti", "incolonnarsi"],
@@ -1556,6 +1751,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di divieto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di divieto?",
         "spiegazione": "I segnali di divieto sono rotondi con bordo rosso (ad esempio, 'divieto di sosta'). Questo è un segnale d'obbligo, rotondo e blu.",
         "regola": "Rosso = Divieto. Blu = Obbligo.",
         "trabocchetti": ["divieto"],
@@ -1564,6 +1760,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "I segnali di indicazione sono solitamente rettangolari (blu o verdi) e danno informazioni (ad esempio, 'autostrada', 'ospedale'). Questo è un segnale d'obbligo, rotondo e blu.",
         "regola": "Rettangolo = Indicazione. Cerchio = Obbligo/Divieto.",
         "trabocchetti": ["indicazione", "indica"],
@@ -1572,6 +1769,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di preavviso di pericolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preavviso di pericolo?",
         "spiegazione": "I segnali di pericolo sono triangolari con bordo rosso (ad esempio, 'curva pericolosa'). Questo è un segnale d'obbligo, rotondo e blu.",
         "regola": "Triangolo = Pericolo. Cerchio blu = Obbligo.",
         "trabocchetti": ["pericolo"],
@@ -1580,6 +1778,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una corsia di decelerazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia di decelerazione?",
         "spiegazione": "Una corsia di decelerazione è una corsia che serve per rallentare e uscire da una strada veloce (come un'autostrada). Questo segnale indica un obbligo di svoltare a un incrocio, non una corsia di decelerazione.",
         "regola": "Corsia di decelerazione = Per uscire. Questo = Per svoltare.",
         "trabocchetti": ["corsia di decelerazione"],
@@ -1588,6 +1787,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato precede il segnale di DIREZIONE OBBLIGATORIA A DESTRA",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precede DIREZIONE OBBLIGATORIA A DESTRA?",
         "spiegazione": "Questo segnale è un 'preavviso', cioè ti avvisa in anticipo. Significa che più avanti, all'incrocio, troverai il segnale di 'Direzione obbligatoria a destra'. Quindi, questo segnale viene prima dell'obbligo vero e proprio.",
         "regola": "Preavviso = prima dell'obbligo.",
         "trabocchetti": ["precede"],
@@ -1596,6 +1796,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che non è consentito proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto vietato?",
         "spiegazione": "Se sei obbligato a svoltare a destra all'incrocio, significa che non puoi andare dritto. Questo segnale ti avvisa proprio di questa limitazione.",
         "regola": "Obbligo a destra = no dritto.",
         "trabocchetti": ["non è consentito"],
@@ -1604,6 +1805,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che non è consentito svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a sinistra vietata?",
         "spiegazione": "Come per il proseguire dritto, se l'unica direzione consentita è a destra, allora non puoi svoltare a sinistra. Il segnale ti avvisa di questa unica possibilità.",
         "regola": "Obbligo a destra = no sinistra.",
         "trabocchetti": ["non è consentito"],
@@ -1612,6 +1814,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto prima di un incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima di un incrocio?",
         "spiegazione": "Essendo un segnale di 'preavviso', viene sempre posizionato prima del punto in cui devi effettivamente svoltare, che di solito è un incrocio.",
         "regola": "Preavviso = prima dell'incrocio.",
         "trabocchetti": ["prima"],
@@ -1620,6 +1823,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di obbligo?",
         "spiegazione": "Tutti i segnali rotondi di colore blu con simboli bianchi sono segnali di obbligo. Questo ti obbliga a svoltare a destra all'incrocio successivo.",
         "regola": "Cerchio blu = obbligo.",
         "trabocchetti": ["obbligo"],
@@ -1628,6 +1832,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico?",
         "spiegazione": "Questo segnale ti dice che devi svoltare a destra all'incrocio. Non ha nulla a che fare con il 'senso unico', che è un'altra indicazione (strada percorribile in una sola direzione).",
         "regola": "Non è senso unico, è obbligo di svolta.",
         "trabocchetti": ["senso unico"],
@@ -1636,6 +1841,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a svoltare subito a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svoltare subito a destra?",
         "spiegazione": "Questo è un segnale di 'preavviso', quindi ti avvisa dell'obbligo che troverai più avanti, all'incrocio. Non devi svoltare subito dove vedi il segnale.",
         "regola": "Preavviso = non subito.",
         "trabocchetti": ["subito"],
@@ -1644,6 +1850,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente la svolta a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svolta a destra vietata?",
         "spiegazione": "È il contrario! Questo segnale ti obbliga a svoltare a destra. Quindi, non solo la consente, ma la rende l'unica scelta possibile.",
         "regola": "Freccia a destra = svolta a destra.",
         "trabocchetti": ["non consente"],
@@ -1652,6 +1859,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è obbligatorio passare a destra dell'ostacolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passare a destra dell'ostacolo?",
         "spiegazione": "Questo segnale non indica un ostacolo. Il segnale di 'Passaggio obbligatorio a destra' ha una freccia che aggira un ostacolo. Questo, invece, indica una svolta obbligatoria a un incrocio.",
         "regola": "Non è ostacolo, è incrocio.",
         "immagine": "c8c22b91a240f7dc61cb.jpg",
@@ -1659,6 +1867,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'obbligo di svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di svoltare a sinistra?",
         "spiegazione": "La freccia nel segnale punta chiaramente verso destra. Quindi, preannuncia l'obbligo di svoltare a destra, non a sinistra.",
         "regola": "Freccia a destra = obbligo a destra.",
         "trabocchetti": ["A sinistra"],
@@ -1667,6 +1876,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica le direzioni consentite a destra e a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → direzioni consentite destra e sinistra?",
         "spiegazione": "Questo segnale ti dice che, arrivato all'incrocio, puoi scegliere di andare solo a destra o solo a sinistra. Non puoi andare dritto.",
         "regola": "Frecce divise = solo destra o sinistra.",
         "trabocchetti": ["direzioni consentite"],
@@ -1675,6 +1885,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a svoltare a destra o a sinistra al prossimo incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → al prossimo incrocio a destra o sinistra?",
         "spiegazione": "Sì, è un segnale di obbligo. Ti dice che devi per forza girare a destra o a sinistra quando arrivi all'incrocio. Non è una scelta, ma un dovere.",
         "regola": "Segnale blu = obbligo.",
         "trabocchetti": ["obbliga"],
@@ -1683,6 +1894,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è consentito proseguire diritto all'incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto vietato all'incrocio?",
         "spiegazione": "Esatto. Se il segnale ti obbliga a svoltare a destra o a sinistra, significa che non puoi assolutamente proseguire dritto. Quella direzione è vietata.",
         "regola": "Frecce laterali = dritto è bloccato.",
         "trabocchetti": ["Non è consentito"],
@@ -1691,6 +1903,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di obbligo?",
         "spiegazione": "Sì, è vero. Tutti i segnali rotondi di colore blu con simboli bianchi sono segnali di obbligo. Ti dicono cosa devi fare.",
         "regola": "Rotondo blu = obbligo.",
         "trabocchetti": ["obbligo"],
@@ -1699,6 +1912,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'impossibilità di proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → impossibile proseguire diritto?",
         "spiegazione": "È vero. Le frecce indicano solo le direzioni a destra e a sinistra, quindi non c'è la possibilità di andare dritto. È proprio impossibile.",
         "regola": "Frecce laterali = dritto no.",
         "trabocchetti": ["Impossibilità"],
@@ -1707,6 +1921,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica le uniche direzioni consentite",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → uniche direzioni consentite?",
         "spiegazione": "Sì, questo segnale ti mostra le sole direzioni che puoi prendere: destra o sinistra. Non ci sono altre opzioni per proseguire.",
         "regola": "Frecce divise = solo quelle direzioni.",
         "trabocchetti": ["uniche"],
@@ -1715,6 +1930,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "Sì, è vero. I segnali di prescrizione sono una categoria più ampia che include i segnali di obbligo, di divieto e di precedenza. Questo è un segnale di obbligo, quindi è anche di prescrizione.",
         "regola": "Obbligo = prescrizione.",
         "trabocchetti": ["Prescrizione"],
@@ -1723,6 +1939,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica di disporsi su due file per proseguire diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → due file per andare diritto?",
         "spiegazione": "Falso. Questo segnale non parla di come disporsi in strada o di quante file fare. E soprattutto, non ti permette di andare dritto, ma ti obbliga a svoltare.",
         "regola": "Frecce divise = mai dritto.",
         "trabocchetti": ["Proseguire diritto"],
@@ -1731,6 +1948,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che il sorpasso è consentito sia a destra che a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso a destra e sinistra?",
         "spiegazione": "Falso. Questo segnale non ha nulla a che fare con il sorpasso. Indica solo le direzioni che puoi prendere all'incrocio, non come superare altri veicoli.",
         "regola": "Frecce direzionali = non sorpasso.",
         "trabocchetti": ["sorpasso"],
@@ -1739,6 +1957,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio del doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio doppio senso?",
         "spiegazione": "Falso. Il segnale di 'doppio senso di circolazione' è diverso: è un quadrato blu con due frecce verticali, una in su e una in giù. Questo segnale indica solo le direzioni all'incrocio.",
         "regola": "Frecce laterali = non doppio senso.",
         "trabocchetti": ["Doppio senso di circolazione"],
@@ -1747,6 +1966,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la facoltà di passare a destra o a sinistra di un'isola spartitraffico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passare a destra o sinistra dell'isola spartitraffico?",
         "spiegazione": "Falso. Questo segnale ti obbliga a svoltare a un incrocio. Il segnale che indica la 'facoltà' di passare a destra o sinistra di un'isola spartitraffico è simile, ma le frecce aggirano un ostacolo e non è posto prima di un incrocio per indicare le direzioni.",
         "regola": "Obbligo = non facoltà.",
         "trabocchetti": ["Facoltà"],
@@ -1755,6 +1975,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica passaggio consentito alla destra ed alla sinistra di un ostacolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passaggio ai due lati dell'ostacolo?",
         "spiegazione": "Falso. Questo segnale non indica un ostacolo da aggirare. Indica le direzioni obbligatorie che devi prendere a un incrocio, non un passaggio intorno a qualcosa.",
         "regola": "Frecce divise = incrocio, non ostacolo.",
         "immagine": "65b82685e3c723a61a4a.jpg",
@@ -1762,6 +1983,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di divieto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di divieto?",
         "spiegazione": "Falso. I segnali di divieto sono rotondi con il bordo rosso e lo sfondo bianco (o a volte blu con una barra rossa). Questo è un segnale di obbligo, che è rotondo e blu con simboli bianchi.",
         "regola": "Blu = obbligo, Rosso = divieto.",
         "trabocchetti": ["Divieto"],
@@ -1770,6 +1992,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "Falso. I segnali di indicazione sono di solito quadrati o rettangolari e servono a dare informazioni, non a imporre un obbligo. Questo è un segnale di obbligo.",
         "regola": "Rotondo blu = obbligo, non indicazione.",
         "trabocchetti": ["indicazione"],
@@ -1778,6 +2001,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio della circolazione per file parallele",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio file parallele?",
         "spiegazione": "Falso. Questo segnale non ha nulla a che fare con la 'circolazione per file parallele'. Indica solo le direzioni obbligatorie che puoi prendere all'incrocio.",
         "regola": "Frecce direzionali = non file parallele.",
         "trabocchetti": ["Circolazione per file parallele"],
@@ -1786,6 +2010,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è consentito svoltare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a destra consentita?",
         "spiegazione": "Il segnale mostra una freccia che va a destra. Questo significa che è permesso, cioè consentito, svoltare a destra.",
         "regola": "Freccia a destra = puoi andare a destra.",
         "trabocchetti": ["consentito"],
@@ -1794,6 +2019,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è consentito svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a sinistra consentita?",
         "spiegazione": "Il segnale mostra anche una freccia che va a sinistra. Questo significa che è permesso, cioè consentito, svoltare a sinistra.",
         "regola": "Freccia a sinistra = puoi andare a sinistra.",
         "trabocchetti": ["consentito"],
@@ -1802,6 +2028,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è consentito proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto vietato?",
         "spiegazione": "Il segnale ha solo frecce per destra e sinistra. Non c'è una freccia che va dritto. Questo significa che non puoi proseguire diritto, sei obbligato a svoltare.",
         "regola": "Niente freccia dritto = non puoi andare dritto.",
         "trabocchetti": ["non è consentito"],
@@ -1810,6 +2037,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si può scegliere fra le due direzioni consentite",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → scelta tra le due direzioni consentite?",
         "spiegazione": "Il segnale ha due frecce, una a destra e una a sinistra. Questo ti dice che puoi scegliere quale delle due direzioni prendere.",
         "regola": "Due frecce = due scelte possibili.",
         "immagine": "65b82685e3c723a61a4a.jpg",
@@ -1817,6 +2045,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che nelle immediate vicinanze c'è una biforcazione pericolosa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → biforcazione pericolosa vicina?",
         "spiegazione": "Questo segnale è blu e rotondo, è un segnale di obbligo. I segnali di pericolo sono triangolari e con bordo rosso. Questo segnale indica solo le direzioni che puoi prendere, non che c'è un pericolo.",
         "regola": "Blu e rotondo = obbligo, non pericolo.",
         "trabocchetti": ["pericolosa"],
@@ -1825,6 +2054,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che bisogna disporsi su due file per proseguire diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → due file per andare diritto?",
         "spiegazione": "Questo segnale non parla di come disporsi in strada (su una o due file) e, come abbiamo visto, non permette di proseguire diritto. Indica solo le direzioni di svolta.",
         "regola": "Niente freccia dritto, niente file.",
         "trabocchetti": ["disporsi su due file", "proseguire diritto"],
@@ -1833,6 +2063,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è consentito passare sia a destra che a sinistra della striscia continua",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passare ai due lati della striscia continua?",
         "spiegazione": "Questo segnale indica le direzioni che puoi prendere con il tuo veicolo. Non ha niente a che fare con le strisce sull'asfalto, come la striscia continua.",
         "regola": "Segnale di direzione, non di striscia.",
         "trabocchetti": ["striscia continua"],
@@ -1841,6 +2072,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica due sensi unici paralleli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → due sensi unici paralleli?",
         "spiegazione": "Questo segnale indica che la strada si divide e tu puoi scegliere se andare a destra o a sinistra. Non indica due strade separate che vanno nella stessa direzione (sensi unici paralleli).",
         "regola": "Non sono strade parallele, è una scelta di direzione.",
         "immagine": "65b82685e3c723a61a4a.jpg",
@@ -1848,6 +2080,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a proseguire diritto o svoltare a destra all'incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto o a destra all'incrocio?",
         "spiegazione": "Questo segnale, essendo blu e rotondo, indica un obbligo. Le frecce mostrano le direzioni che puoi prendere: dritto o a destra. Quindi, sei obbligato a scegliere una di queste due direzioni all'incrocio.",
         "regola": "Cerchio blu = Obbligo. Frecce = Direzioni da seguire.",
         "trabocchetti": ["obbliga"],
@@ -1856,6 +2089,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente solo di proseguire diritto o svoltare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → solo diritto o a destra?",
         "spiegazione": "Esatto! Il segnale ti dice che le uniche possibilità sono andare dritto o girare a destra. Non puoi fare altro, come girare a sinistra o tornare indietro.",
         "regola": "Solo le frecce indicate sono permesse.",
         "trabocchetti": ["solo"],
@@ -1864,6 +2098,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente la svolta a sinistra all'incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a sinistra vietata?",
         "spiegazione": "Corretto. Poiché le frecce indicano solo dritto e a destra, significa che la svolta a sinistra non è permessa. Se non è indicata, è vietata.",
         "regola": "Se non c'è la freccia, non si può andare.",
         "trabocchetti": ["non consente"],
@@ -1872,6 +2107,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'impossibilità di svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → impossibile svoltare a sinistra?",
         "spiegazione": "Sì, è vero. Questo segnale ti dice che non puoi girare a sinistra. Le uniche direzioni possibili sono quelle mostrate dalle frecce: dritto o a destra.",
         "regola": "Frecce blu = solo quelle direzioni.",
         "trabocchetti": ["impossibilità"],
@@ -1880,6 +2116,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica le uniche direzioni consentite",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → uniche direzioni consentite?",
         "spiegazione": "Questo segnale è molto chiaro: ti mostra tutte le direzioni che puoi prendere. Non ce ne sono altre. Quindi, dritto o a destra sono le tue uniche scelte.",
         "regola": "Le frecce sono le tue sole scelte.",
         "trabocchetti": ["uniche"],
@@ -1888,6 +2125,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "Sì, è un segnale di prescrizione. I segnali di prescrizione sono quelli che impongono un comportamento (obbligo), lo vietano (divieto) o danno una precedenza. Questo è un obbligo.",
         "regola": "Cerchio blu = Prescrizione (Obbligo).",
         "trabocchetti": ["prescrizione"],
@@ -1896,6 +2134,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di obbligo?",
         "spiegazione": "Esatto! I segnali rotondi con sfondo blu e simboli bianchi sono sempre segnali di obbligo. Ti dicono cosa devi fare.",
         "regola": "Cerchio blu = Obbligo.",
         "trabocchetti": ["obbligo"],
@@ -1904,6 +2143,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente solo di proseguire diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo diritto?",
         "spiegazione": "Falso! Il segnale mostra due frecce: una per andare dritto e una per girare a destra. Quindi, non puoi 'solo' andare dritto, ma anche girare a destra.",
         "regola": "Guarda tutte le frecce, non solo una!",
         "trabocchetti": ["solo"],
@@ -1912,6 +2152,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è consentito soltanto svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo a destra?",
         "spiegazione": "Falso! Il segnale mostra chiaramente due direzioni permesse: dritto e a destra. Dire che è consentito 'soltanto' svoltare a destra è sbagliato perché puoi anche andare dritto.",
         "regola": "Non è 'soltanto' una direzione, ma due!",
         "trabocchetti": ["soltanto"],
@@ -1920,6 +2161,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a passare a destra di un cantiere stradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passare a destra del cantiere?",
         "spiegazione": "Falso. Questo segnale indica le direzioni che puoi prendere a un incrocio. Non ha nulla a che fare con i cantieri stradali o l'obbligo di passare a destra di un ostacolo.",
         "regola": "Questo segnale è per gli incroci, non per i cantieri.",
         "trabocchetti": ["cantiere stradale", "passare a destra"],
@@ -1928,6 +2170,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "Falso. Questo è un segnale di obbligo. I segnali di indicazione di solito sono rettangolari (blu per strade normali, verdi per autostrade) e danno informazioni, non obblighi.",
         "regola": "Cerchio blu = Obbligo, non Indicazione.",
         "trabocchetti": ["indicazione"],
@@ -1936,6 +2179,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Falso. Questo non è un segnale di pericolo. I segnali di pericolo sono triangolari con bordo rosso e ti avvisano di un pericolo imminente.",
         "regola": "Triangolo rosso = Pericolo. Cerchio blu = Obbligo.",
         "trabocchetti": ["pericolo"],
@@ -1944,6 +2188,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il prossimo inizio di una corsia supplementare riservata ai veicoli lenti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia per veicoli lenti?",
         "spiegazione": "Falso. Questo segnale indica le direzioni obbligatorie a un incrocio. Non ha nulla a che fare con corsie speciali per veicoli lenti, che sono indicate da altri tipi di segnali.",
         "regola": "Le frecce indicano direzioni, non corsie speciali.",
         "immagine": "db2b9046e04ea3a74979.jpg",
@@ -1951,6 +2196,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è consentito svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a sinistra vietata?",
         "spiegazione": "Questo segnale ti dice che puoi andare solo dritto o a destra. Non c'è la freccia per andare a sinistra, quindi non puoi svoltare a sinistra. Per questo, l'affermazione è VERA.",
         "regola": "Solo le frecce indicate sono permesse!",
         "trabocchetti": ["non è consentito"],
@@ -1959,6 +2205,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è consentito svoltare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a destra consentita?",
         "spiegazione": "Una delle frecce nel segnale punta a destra, quindi puoi svoltare a destra. L'affermazione è VERA.",
         "regola": "Freccia a destra = puoi andare a destra.",
         "trabocchetti": ["è consentito"],
@@ -1967,6 +2214,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è consentito proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto consentito?",
         "spiegazione": "Una delle frecce nel segnale punta dritto, quindi puoi proseguire diritto. L'affermazione è VERA.",
         "regola": "Freccia dritta = puoi andare dritto.",
         "trabocchetti": ["proseguire diritto"],
@@ -1975,6 +2223,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si può scegliere fra le due direzioni consentite",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → scelta tra le due direzioni?",
         "spiegazione": "Il segnale ti mostra due frecce: una dritta e una a destra. Questo significa che puoi scegliere se andare dritto o svoltare a destra. L'affermazione è VERA.",
         "regola": "Due frecce = due scelte possibili.",
         "trabocchetti": ["si può scegliere"],
@@ -1983,6 +2232,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è obbligatorio svoltare unicamente a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo solo a destra?",
         "spiegazione": "Non è vero che devi andare *solo* a destra. Il segnale ti permette anche di andare dritto. Hai due scelte, non una sola. Per questo, l'affermazione è FALSA.",
         "regola": "\"Unicamente\" o \"solo\" con più frecce = FALSO.",
         "trabocchetti": ["unicamente"],
@@ -1991,6 +2241,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è obbligatorio proseguire solo diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo solo diritto?",
         "spiegazione": "Non è vero che devi andare *solo* dritto. Il segnale ti permette anche di svoltare a destra. Hai due scelte, non una sola. Per questo, l'affermazione è FALSA.",
         "regola": "\"Solo\" o \"unicamente\" con più frecce = FALSO.",
         "trabocchetti": ["solo"],
@@ -1999,6 +2250,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è obbligatorio dare la precedenza a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza a sinistra?",
         "spiegazione": "Questo segnale ti dice dove puoi andare (dritto o a destra), non ti parla di precedenza. Per la precedenza ci sono altri segnali (ad esempio, il triangolo con bordo rosso e la X). Per questo, l'affermazione è FALSA.",
         "regola": "Segnale blu con frecce = direzioni, non precedenza.",
         "trabocchetti": ["dare la precedenza"],
@@ -2007,6 +2259,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che in ogni caso bisogna tenersi il più possibile sul margine destro della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sempre il più possibile a destra?",
         "spiegazione": "Il segnale ti dice le direzioni che puoi prendere. Non ti dà regole su dove posizionarti esattamente sulla strada, come \"tenersi sul margine destro\". Quella è una regola generale di guida, non l'indicazione di questo segnale. Per questo, l'affermazione è FALSA.",
         "regola": "Segnale di direzione = direzioni, non posizionamento.",
         "trabocchetti": ["in ogni caso"],
@@ -2015,6 +2268,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è prossima una biforcazione pericolosa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → biforcazione pericolosa?",
         "spiegazione": "Questo segnale è un segnale di obbligo, ti dice cosa devi fare (andare dritto o a destra). Non è un segnale di pericolo. I segnali di pericolo sono triangolari e con bordo rosso. Per questo, l'affermazione è FALSA.",
         "regola": "Segnale blu = obbligo, non pericolo. Pericolo = triangolo rosso.",
         "trabocchetti": ["pericolosa"],
@@ -2023,6 +2277,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente solo di proseguire diritto o svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → solo diritto o a sinistra?",
         "spiegazione": "Questo segnale stradale, essendo blu e rotondo, indica un obbligo. Le frecce bianche mostrano le uniche due direzioni che puoi prendere: dritto o a sinistra. Quindi, è vero che puoi solo proseguire diritto o svoltare a sinistra.",
         "regola": "Frecce = direzioni obbligatorie.",
         "trabocchetti": ["solo"],
@@ -2031,6 +2286,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente la svolta a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a destra vietata?",
         "spiegazione": "Se il segnale ti obbliga ad andare dritto o a sinistra, significa che non puoi svoltare a destra. Tutte le direzioni non indicate dalle frecce sono vietate.",
         "regola": "Solo le frecce sono permesse.",
         "trabocchetti": ["non consente", "consente"],
@@ -2039,6 +2295,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a svoltare a sinistra o a proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → a sinistra o diritto?",
         "spiegazione": "I segnali rotondi e blu con frecce sono segnali di obbligo. Ti obbligano a seguire le direzioni indicate dalle frecce, quindi a svoltare a sinistra o a proseguire diritto.",
         "regola": "Cerchio blu + frecce = OBBLIGO.",
         "trabocchetti": ["obbliga"],
@@ -2047,6 +2304,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non si deve svoltare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non svoltare a destra?",
         "spiegazione": "Come già detto, se il segnale ti permette solo di andare dritto o a sinistra, allora non puoi svoltare a destra. È un divieto implicito.",
         "regola": "Le frecce sono le uniche strade.",
         "trabocchetti": ["non si deve"],
@@ -2055,6 +2313,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "I segnali di obbligo, come questo, fanno parte della categoria più ampia dei 'segnali di prescrizione'. Questa categoria include tutti i segnali che impongono un comportamento (obblighi) o lo vietano (divieti).",
         "regola": "Blu rotondo = prescrizione (obbligo).",
         "trabocchetti": ["Prescrizione"],
@@ -2063,6 +2322,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova anche fuori dei centri abitati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → anche fuori dai centri abitati?",
         "spiegazione": "Questi segnali che regolano le direzioni del traffico possono essere posizionati in qualsiasi tipo di strada, sia dentro le città (centri abitati) che fuori, dove serve indicare una direzione obbligatoria.",
         "regola": "Regole di direzione = ovunque servano.",
         "trabocchetti": ["anche"],
@@ -2071,6 +2331,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente solo di proseguire diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo diritto?",
         "spiegazione": "Il segnale mostra due frecce: una per andare dritto E una per svoltare a sinistra. Quindi, non è vero che puoi andare 'solo' dritto, perché hai anche l'opzione di svoltare a sinistra.",
         "regola": "Guarda BENE tutte le frecce!",
         "trabocchetti": ["solo"],
@@ -2079,6 +2340,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è consentito soltanto svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo a sinistra?",
         "spiegazione": "Anche in questo caso, il segnale mostra due frecce: una per svoltare a sinistra E una per andare dritto. Non è vero che puoi andare 'soltanto' a sinistra, perché hai anche l'opzione di proseguire diritto.",
         "regola": "Non dimenticare nessuna freccia!",
         "trabocchetti": ["soltanto"],
@@ -2087,6 +2349,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a passare a sinistra di un cantiere stradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passare a sinistra del cantiere?",
         "spiegazione": "Questo segnale indica le direzioni obbligatorie a un incrocio o in un punto specifico della strada. Non ha nulla a che fare con i cantieri stradali o con l'obbligo di passare a sinistra di essi. Per i cantieri ci sono altri segnali specifici.",
         "regola": "Ogni segnale ha il suo scopo.",
         "trabocchetti": ["cantiere stradale"],
@@ -2095,6 +2358,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di sorpassare a sinistra lo spartitraffico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → superare lo spartitraffico a sinistra?",
         "spiegazione": "Questo segnale non riguarda il sorpasso o gli spartitraffico. Il suo unico scopo è indicare le direzioni obbligatorie da seguire. Non ti dà il permesso di sorpassare nulla.",
         "regola": "Non inventare significati.",
         "trabocchetti": ["sorpassare", "spartitraffico"],
@@ -2103,6 +2367,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "I segnali di indicazione di solito sono rettangolari (blu o verdi) e servono a dare informazioni (es. nomi di località, servizi). Questo segnale, essendo rotondo e blu, è un segnale di obbligo, che fa parte della categoria dei segnali di prescrizione.",
         "regola": "Forma e colore = categoria. (Cerchio blu = obbligo).",
         "trabocchetti": ["Indicazione"],
@@ -2111,6 +2376,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "I segnali di pericolo sono di forma triangolare con il bordo rosso e indicano un pericolo imminente (es. curva pericolosa, dosso). Questo segnale, essendo rotondo e blu, è un segnale di obbligo, non di pericolo.",
         "regola": "Forma e colore = categoria. (Triangolo rosso = pericolo).",
         "trabocchetti": ["Pericolo"],
@@ -2119,6 +2385,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è consentito proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto consentito?",
         "spiegazione": "Il segnale mostra una freccia che va dritta. Questo significa che puoi andare dritto. È una delle direzioni permesse.",
         "regola": "Freccia dritta = puoi andare dritto.",
         "trabocchetti": ["consentito"],
@@ -2127,6 +2394,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è consentito svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a sinistra consentita?",
         "spiegazione": "Il segnale mostra anche una freccia che va a sinistra. Questo significa che puoi svoltare a sinistra. È un'altra direzione permessa.",
         "regola": "Freccia sinistra = puoi girare a sinistra.",
         "trabocchetti": ["consentito"],
@@ -2135,6 +2403,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si può scegliere fra le due direzioni consentite",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → scelta tra le due direzioni?",
         "spiegazione": "Il segnale ha due frecce: una dritta e una a sinistra. Questo vuol dire che hai due opzioni e puoi scegliere quale prendere.",
         "regola": "Due frecce = due scelte.",
         "trabocchetti": ["si può scegliere fra le due direzioni"],
@@ -2143,6 +2412,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si deve dare la precedenza a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza a destra?",
         "spiegazione": "Questo segnale ti dice solo dove puoi andare (dritto o a sinistra). Non ti dà nessuna informazione sulla precedenza. I segnali di precedenza sono diversi (ad esempio, il triangolo con il bordo rosso).",
         "regola": "Frecce blu = direzioni, non precedenza.",
         "trabocchetti": ["dare la precedenza a destra"],
@@ -2151,6 +2421,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è obbligatorio proseguire solo diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo solo diritto?",
         "spiegazione": "Il segnale mostra due frecce, non una sola. Quindi non è obbligatorio andare 'solo' dritto, perché puoi anche svoltare a sinistra.",
         "regola": "'Solo' è spesso una trappola: guarda tutte le frecce!",
         "trabocchetti": ["solo"],
@@ -2159,6 +2430,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è obbligatorio svoltare unicamente a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo solo a sinistra?",
         "spiegazione": "Come per la domanda precedente, il segnale mostra due direzioni. Non è obbligatorio svoltare 'unicamente' a sinistra, perché puoi anche andare dritto.",
         "regola": "'Unicamente' è come 'solo': attenzione!",
         "trabocchetti": ["unicamente"],
@@ -2167,6 +2439,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si sta incrociando una biforcazione pericolosa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → biforcazione pericolosa?",
         "spiegazione": "Questo segnale è un segnale di obbligo che indica le direzioni permesse. Non indica un pericolo o una 'biforcazione pericolosa'. I segnali di pericolo sono triangolari con bordo rosso.",
         "regola": "Segnale blu = obbligo, non pericolo.",
         "trabocchetti": ["biforcazione pericolosa"],
@@ -2175,6 +2448,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che bisogna in ogni caso avvicinarsi il più possibile all'asse della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → avvicinarsi all'asse della carreggiata?",
         "spiegazione": "Questo segnale ti dice quali direzioni puoi prendere, ma non ti dà istruzioni su come posizionare la tua auto sulla strada. La regola di avvicinarsi all'asse della carreggiata vale per la svolta a sinistra, ma non è il significato diretto di questo segnale.",
         "regola": "Il segnale dice 'dove andare', non 'come posizionarsi'.",
         "trabocchetti": ["in ogni caso"],
@@ -2183,6 +2457,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che le corsie disponibili diventano due",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsie diventano due?",
         "spiegazione": "Il segnale indica le direzioni che puoi prendere (dritto o a sinistra), non quante corsie ci sono. Potrebbero esserci due corsie, ma il segnale non lo dice direttamente.",
         "regola": "Frecce = direzioni, non corsie.",
         "trabocchetti": ["le corsie disponibili diventano due"],
@@ -2191,6 +2466,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i conducenti a passare a sinistra di un ostacolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passare a sinistra dell'ostacolo?",
         "spiegazione": "Il segnale raffigurato è un segnale di obbligo. La freccia bianca che punta in basso a sinistra su sfondo blu significa che devi passare obbligatoriamente a sinistra di qualsiasi ostacolo tu trovi sulla strada, come un cantiere, un'isola di traffico o un salvagente.",
         "regola": "Freccia blu a sinistra = passa a sinistra dell'ostacolo.",
         "trabocchetti": ["obbliga"],
@@ -2199,6 +2475,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i conducenti a passare a sinistra di un'isola di traffico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passare a sinistra dell'isola di traffico?",
         "spiegazione": "Un'isola di traffico è una parte della strada rialzata o segnalata, che serve a separare i flussi di traffico. Questo segnale ti obbliga a girare intorno all'isola di traffico, passando sempre sul lato sinistro.",
         "regola": "Isola di traffico? Passa a sinistra!",
         "trabocchetti": ["Isola di traffico"],
@@ -2207,6 +2484,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i conducenti a passare a sinistra di un salvagente",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passare a sinistra del salvagente?",
         "spiegazione": "Il salvagente è una struttura, spesso rialzata, che si trova sulla strada per proteggere i pedoni, ad esempio vicino alle fermate del tram o agli attraversamenti pedonali. Il segnale ti dice che devi passare a sinistra di questo salvagente.",
         "regola": "Salvagente? Passa a sinistra!",
         "trabocchetti": ["Salvagente"],
@@ -2215,6 +2493,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i conducenti a passare a sinistra di un cantiere stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passare a sinistra del cantiere?",
         "spiegazione": "Un cantiere stradale è un'area dove si fanno lavori sulla strada. Se il segnale è posto vicino a un cantiere, significa che devi aggirare il cantiere passando sul suo lato sinistro.",
         "regola": "Cantiere? Passa a sinistra!",
         "trabocchetti": ["Cantiere stradale"],
@@ -2223,6 +2502,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i conducenti a passare a sinistra di uno spartitraffico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passare a sinistra dello spartitraffico?",
         "spiegazione": "Lo spartitraffico è una struttura che divide le corsie di marcia, spesso al centro della strada. Questo segnale ti obbliga a passare a sinistra dello spartitraffico.",
         "regola": "Spartitraffico? Passa a sinistra!",
         "trabocchetti": ["Spartitraffico"],
@@ -2231,6 +2511,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere preceduto dal segnale ROTATORIA",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preceduto da ROTATORIA?",
         "spiegazione": "Questo segnale ti obbliga a passare a sinistra di un ostacolo. Il segnale di 'Rotatoria' (che è un cerchio blu con tre frecce che girano) indica un incrocio dove si gira in tondo. Sono due segnali diversi con funzioni diverse e questo segnale non precede la rotatoria.",
         "regola": "Passaggio a sinistra non è rotatoria.",
         "trabocchetti": ["preceduto"],
@@ -2239,6 +2520,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una discesa pericolosa a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → discesa pericolosa a sinistra?",
         "spiegazione": "Questo segnale è blu e rotondo, quindi è un segnale di obbligo. I segnali che indicano una 'discesa pericolosa' sono triangolari con bordo rosso e un simbolo di pendenza. La freccia qui indica una direzione di passaggio, non una pendenza del terreno.",
         "regola": "Blu e rotondo = obbligo, non pericolo o pendenza.",
         "trabocchetti": ["discesa pericolosa"],
@@ -2247,6 +2529,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i conducenti a svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di svoltare a sinistra?",
         "spiegazione": "Questo segnale ti dice di 'passare' a sinistra di un ostacolo, cioè di aggirarlo. Non ti obbliga a 'svoltare' a sinistra a un incrocio. Sono due azioni diverse: passare significa andare oltre un ostacolo, svoltare significa cambiare direzione a un incrocio.",
         "regola": "Passare non è svoltare!",
         "trabocchetti": ["svoltare", "Svoltare a sinistra"],
@@ -2255,6 +2538,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'obbligo di svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preavviso di svolta a sinistra?",
         "spiegazione": "Questo segnale non 'preannuncia' nulla, ma indica un obbligo immediato. E l'obbligo è di 'passare' a sinistra di un ostacolo, non di 'svoltare' a sinistra a un incrocio. È un obbligo di comportamento sul momento.",
         "regola": "Obbligo immediato di passaggio, non preavviso di svolta.",
         "trabocchetti": ["preannuncia", "svoltare a sinistra"],
@@ -2263,6 +2547,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è obbligatorio svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di svoltare a destra?",
         "spiegazione": "La freccia nel segnale punta chiaramente verso sinistra. Quindi, non può mai indicare che è obbligatorio svoltare a destra. Fai attenzione alla direzione della freccia!",
         "regola": "Freccia a sinistra = mai a destra!",
         "trabocchetti": ["svoltare a destra"],
@@ -2271,6 +2556,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "Questo segnale è blu e rotondo, il che lo classifica come un 'segnale di obbligo'. I 'segnali di indicazione' di solito sono rettangolari o quadrati (spesso blu o verdi) e servono a dare informazioni, non a imporre un comportamento.",
         "regola": "Blu e rotondo = obbligo, non indicazione.",
         "trabocchetti": ["segnale di indicazione"],
@@ -2279,6 +2565,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica passaggio obbligatorio a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passaggio obbligatorio a sinistra?",
         "spiegazione": "Questo segnale ti dice che devi passare un ostacolo (come un'isola di traffico o un cantiere) lasciandolo alla tua sinistra. Quindi, la frase è VERA.",
         "regola": "Freccia diagonale in basso a sinistra = passa l'ostacolo a sinistra.",
         "trabocchetti": ["passaggio obbligatorio a sinistra"],
@@ -2287,6 +2574,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive di non superare l'ostacolo a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non superare l'ostacolo a destra?",
         "spiegazione": "Se sei obbligato a passare un ostacolo a sinistra, significa che non puoi superarlo dalla parte destra. Quindi, la frase è VERA.",
         "regola": "Se vai a sinistra, non puoi andare a destra.",
         "trabocchetti": ["non superare l"],
@@ -2295,6 +2583,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica obbligo di superare un cantiere stradale dalla parte sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → superare il cantiere a sinistra?",
         "spiegazione": "Un cantiere stradale è un tipo di ostacolo. Il segnale ti obbliga a superare qualsiasi ostacolo lasciandolo alla tua sinistra. Quindi, la frase è VERA.",
         "regola": "Il cantiere è un ostacolo: passa a sinistra.",
         "trabocchetti": ["cantiere stradale"],
@@ -2303,6 +2592,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica obbligo di lasciare l'ostacolo a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → lasciare l'ostacolo a destra?",
         "spiegazione": "Se tu passi a sinistra dell'ostacolo, significa che l'ostacolo si trova alla tua destra mentre lo superi. Quindi, lo 'lasci a destra'. La frase è VERA.",
         "regola": "Tu vai a sinistra, l'ostacolo resta alla tua destra.",
         "trabocchetti": ["lasciare l"],
@@ -2311,6 +2601,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica obbligo di svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di svoltare a sinistra?",
         "spiegazione": "Questo segnale non ti obbliga a svoltare a sinistra. Ti obbliga a passare un ostacolo a sinistra. Un segnale di 'svolta obbligatoria' ha una freccia dritta che punta a sinistra. Quindi, la frase è FALSA.",
         "regola": "Freccia diagonale = passaggio. Freccia dritta = svolta.",
         "trabocchetti": ["svoltare"],
@@ -2319,6 +2610,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che bisogna superare il salvagente lasciandolo alla propria sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → salvagente alla propria sinistra?",
         "spiegazione": "Il 'salvagente' è un ostacolo. Il segnale ti dice di passare a sinistra del salvagente, il che significa che il salvagente rimarrà alla tua destra. La frase dice 'lasciandolo alla propria sinistra', che è il contrario. Quindi, la frase è FALSA.",
         "regola": "Passi a sinistra dell'ostacolo, quindi l'ostacolo è alla tua destra.",
         "trabocchetti": ["lasciandolo alla propria sinistra"],
@@ -2327,6 +2619,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica direzione obbligatoria a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → direzione obbligatoria a sinistra?",
         "spiegazione": "Questo segnale non indica una 'direzione obbligatoria a sinistra' per la strada. Indica come superare un ostacolo. Un segnale di direzione obbligatoria ha una freccia dritta. Quindi, la frase è FALSA.",
         "regola": "Non è una direzione, è un passaggio.",
         "trabocchetti": ["direzione obbligatoria a sinistra"],
@@ -2335,6 +2628,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che siamo in prossimità di un incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vicino a un incrocio?",
         "spiegazione": "Questo segnale non ha nulla a che fare con gli incroci. Indica solo come superare un ostacolo sulla strada. I segnali di incrocio sono diversi. Quindi, la frase è FALSA.",
         "regola": "Non c'entra con gli incroci, solo con gli ostacoli.",
         "trabocchetti": ["in prossimità di un incrocio"],
@@ -2343,6 +2637,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è possibile proseguire su quella strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada non proseguibile?",
         "spiegazione": "Questo segnale non ti impedisce di proseguire sulla strada. Ti dice solo come aggirare un ostacolo che si trova sulla strada. Puoi continuare a guidare. Quindi, la frase è FALSA.",
         "regola": "Non blocca la strada, indica come aggirare l'ostacolo.",
         "trabocchetti": ["non è possibile proseguire"],
@@ -2351,6 +2646,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i conducenti a passare a destra di un ostacolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passare a destra dell'ostacolo?",
         "spiegazione": "Il segnale raffigurato è un segnale di obbligo (blu e tondo) e la freccia che punta in basso a destra indica che devi passare sul lato destro di un ostacolo che trovi sulla strada. Quindi, se c'è un ostacolo, sei obbligato a superarlo stando alla sua destra.",
         "regola": "Freccia diagonale a destra = passa a destra dell'ostacolo.",
         "trabocchetti": ["obbliga"],
@@ -2359,6 +2655,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, posto in presenza di un'isola di traffico, obbliga i conducenti a passare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato con isola di traffico → passare a destra?",
         "spiegazione": "Un'isola di traffico è una parte della strada rialzata o segnalata, che serve a separare i flussi di traffico. È un tipo di ostacolo. Il segnale ti dice che, quando incontri un'isola di traffico, devi passare sul suo lato destro.",
         "regola": "Isola di traffico? Passa a destra!",
         "trabocchetti": ["Isola di traffico"],
@@ -2367,6 +2664,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, posto in presenza di un salvagente, obbliga i conducenti a passare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato con salvagente → passare a destra?",
         "spiegazione": "Un salvagente è una struttura rialzata sulla strada, spesso usata dai pedoni che aspettano il tram o l'autobus. Anche il salvagente è un ostacolo. Il segnale ti obbliga a passare a destra di questa struttura.",
         "regola": "Salvagente? Passa a destra!",
         "trabocchetti": ["Salvagente"],
@@ -2375,6 +2673,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, posto in presenza di un cantiere stradale, obbliga i conducenti a passare a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato con cantiere → passare a destra?",
         "spiegazione": "Un cantiere stradale può occupare parte della carreggiata e quindi rappresenta un ostacolo temporaneo. Se trovi questo segnale vicino a un cantiere, significa che devi aggirare il cantiere passando sul suo lato destro.",
         "regola": "Cantiere? Passa a destra!",
         "trabocchetti": ["Cantiere stradale"],
@@ -2383,6 +2682,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i conducenti a passare a destra di uno spartitraffico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passare a destra dello spartitraffico?",
         "spiegazione": "Uno spartitraffico è una barriera fisica che separa le corsie di marcia o le direzioni opposte del traffico. È un ostacolo fisso. Il segnale ti obbliga a passare a destra di questo spartitraffico.",
         "regola": "Spartitraffico? Passa a destra!",
         "trabocchetti": ["Spartitraffico"],
@@ -2391,6 +2691,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato presegnala una curva pericolosa a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → curva pericolosa a destra?",
         "spiegazione": "FALSO. Questo segnale è di obbligo (blu e tondo), non di pericolo. I segnali di pericolo sono triangolari con bordo rosso e avvisano di situazioni pericolose come le curve. Questo segnale non ha nulla a che fare con le curve.",
         "regola": "Blu e tondo = obbligo, non pericolo.",
         "trabocchetti": ["presegnala", "curva pericolosa"],
@@ -2399,6 +2700,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada deformata a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada deformata a destra?",
         "spiegazione": "FALSO. Questo segnale non indica la condizione della strada. Non ti dice se la strada è deformata, dissestata o ha buche. È un segnale che ti dà un'indicazione su come superare un ostacolo.",
         "regola": "Non è un segnale di condizione stradale.",
         "trabocchetti": ["Strada deformata"],
@@ -2407,6 +2709,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i conducenti a svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di svoltare a destra?",
         "spiegazione": "FALSO. Questa è una trappola comune! Il segnale ti obbliga a 'passare a destra' di un ostacolo, cioè a superarlo tenendoti sul suo lato destro. Non ti obbliga a 'svoltare a destra', che significa cambiare direzione sulla strada. La freccia è diagonale, non curva.",
         "regola": "Freccia diagonale = passa a lato, non svoltare.",
         "trabocchetti": ["svoltare a destra"],
@@ -2415,6 +2718,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'obbligo di svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preavviso di svolta a destra?",
         "spiegazione": "FALSO. Come spiegato prima, il segnale non riguarda la svolta a destra. Inoltre, non 'preannuncia' un obbligo, ma indica un obbligo immediato di passare a destra di un ostacolo. I segnali di obbligo sono generalmente validi dal punto in cui sono posti.",
         "regola": "Non è una svolta, è un passaggio. L'obbligo è immediato.",
         "trabocchetti": ["Preannuncia", "svolta"],
@@ -2423,6 +2727,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica passaggio obbligatorio a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passaggio obbligatorio a destra?",
         "spiegazione": "Il segnale blu con la freccia bianca in diagonale verso destra indica proprio che devi passare a destra di un ostacolo che trovi sulla strada.",
         "regola": "Freccia in diagonale = passa a lato dell'ostacolo.",
         "trabocchetti": ["passaggio obbligatorio a destra"],
@@ -2431,6 +2736,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è consentito superare l'ostacolo a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non superare l'ostacolo a sinistra?",
         "spiegazione": "Se sei obbligato a passare a destra di un ostacolo, significa che non puoi passare a sinistra. È la stessa regola, detta in modo diverso.",
         "regola": "Obbligo a destra = divieto a sinistra.",
         "trabocchetti": ["Non è consentito"],
@@ -2439,6 +2745,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica obbligo di superare lo spartitraffico dalla parte destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → superare lo spartitraffico a destra?",
         "spiegazione": "Uno spartitraffico è un elemento che divide le corsie, quindi è un ostacolo. Il segnale ti dice di superarlo passando sulla sua destra.",
         "regola": "Spartitraffico = ostacolo. Passa a destra!",
         "trabocchetti": ["Spartitraffico"],
@@ -2447,6 +2754,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica obbligo di lasciare un'isola salvagente a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → salvagente lasciato a sinistra?",
         "spiegazione": "Un'isola salvagente è un altro tipo di ostacolo. Se la lasci alla tua sinistra, significa che tu stai passando alla sua destra, che è la direzione indicata dal segnale.",
         "regola": "Lascia l'ostacolo a sinistra = tu passi a destra.",
         "trabocchetti": ["Lasciare un"],
@@ -2455,6 +2763,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica obbligo di passare a destra di un cantiere stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passare a destra del cantiere?",
         "spiegazione": "Anche un cantiere stradale può essere un ostacolo temporaneo. Il segnale ti indica di aggirarlo passando sulla destra.",
         "regola": "Ostacolo (anche temporaneo) = passa a destra.",
         "trabocchetti": ["Cantiere stradale"],
@@ -2463,6 +2772,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica obbligo di svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di svoltare a destra?",
         "spiegazione": "Questo segnale non ti obbliga a 'svoltare' (cambiare direzione) a destra. Ti dice solo di passare a destra di un ostacolo, ma dopo puoi continuare dritto o svoltare, a seconda della strada.",
         "regola": "Passaggio non è svolta!",
         "trabocchetti": ["svoltare"],
@@ -2471,6 +2781,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica obbligo di superare l'ostacolo lasciandolo alla propria destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ostacolo lasciato alla propria destra?",
         "spiegazione": "Il segnale ti dice di passare a destra dell'ostacolo. Questo significa che l'ostacolo deve rimanere alla tua sinistra. Se lo lasci alla tua destra, tu stai passando a sinistra dell'ostacolo, che è sbagliato.",
         "regola": "L'ostacolo sta a sinistra, tu passi a destra.",
         "trabocchetti": ["Lasciandolo alla propria destra"],
@@ -2479,6 +2790,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica direzione obbligatoria a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → direzione obbligatoria a destra?",
         "spiegazione": "Questo segnale non indica una 'direzione obbligatoria' (come 'vai solo a destra'). Ti dice solo come superare un ostacolo. Dopo l'ostacolo, potresti anche andare dritto.",
         "regola": "Non è una direzione, è un passaggio!",
         "trabocchetti": ["Direzione obbligatoria"],
@@ -2487,6 +2799,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che siamo in prossimità di un incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vicino a un incrocio?",
         "spiegazione": "Questo segnale non ha nulla a che fare con gli incroci. Indica solo come superare un ostacolo sulla strada, non ti dà informazioni su intersezioni.",
         "regola": "Ostacolo, non incrocio!",
         "trabocchetti": ["incrocio"],
@@ -2495,6 +2808,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è possibile proseguire su quella strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada non proseguibile?",
         "spiegazione": "Il segnale non ti impedisce di proseguire. Ti dice *come* proseguire, cioè passando a destra dell'ostacolo. La strada non è bloccata.",
         "regola": "Si prosegue, ma a destra!",
         "trabocchetti": ["Non è possibile proseguire"],
@@ -2503,6 +2817,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica al conducente gli unici passaggi consentiti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → unici passaggi consentiti?",
         "spiegazione": "Il segnale ti mostra che, per superare l'ostacolo che trovi sulla strada, puoi passare solo da due parti: a destra o a sinistra. Non ci sono altre opzioni per aggirare quell'ostacolo specifico.",
         "regola": "Due frecce = due soli passaggi consentiti.",
         "trabocchetti": ["unici"],
@@ -2511,6 +2826,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica i passaggi consentiti a destra e a sinistra di un'isola di traffico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passaggi ai due lati dell'isola di traffico?",
         "spiegazione": "Sì, è vero. Questo segnale viene messo proprio davanti a un'isola di traffico (una struttura al centro della strada) per dirti che puoi superarla passando sia dal lato destro che dal lato sinistro.",
         "regola": "Isola di traffico? Passa ai lati!",
         "trabocchetti": ["Isola di traffico"],
@@ -2519,6 +2835,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente ai conducenti di passare sia a destra che a sinistra di un salvagente",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passare ai due lati del salvagente?",
         "spiegazione": "Sì, è vero. Un 'salvagente' è una piccola isola pedonale o una struttura che serve a proteggere i pedoni. Questo segnale ti dice che puoi passare sia a destra che a sinistra di questo ostacolo.",
         "regola": "Salvagente = ostacolo, passa ai lati.",
         "trabocchetti": ["salvagente"],
@@ -2527,6 +2844,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il passaggio a destra e a sinistra di un cantiere stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passare ai due lati del cantiere?",
         "spiegazione": "Sì, è vero. Se c'è un cantiere stradale che occupa parte della carreggiata, questo segnale ti indica che puoi superarlo passando sia a destra che a sinistra dell'area di lavoro.",
         "regola": "Cantiere? Passa ai lati.",
         "trabocchetti": ["Cantiere stradale"],
@@ -2535,6 +2853,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si può transitare a destra e a sinistra di uno spartitraffico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passare ai due lati dello spartitraffico?",
         "spiegazione": "Sì, è vero. Uno 'spartitraffico' è una barriera che divide le corsie. Se è corto e permette il passaggio su entrambi i lati, questo segnale ti indica che puoi transitare sia a destra che a sinistra.",
         "regola": "Spartitraffico? Passa ai lati.",
         "trabocchetti": ["Spartitraffico"],
@@ -2543,6 +2862,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il passaggio da ambedue i lati dell'ostacolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passaggio da ambedue i lati?",
         "spiegazione": "Sì, è vero. 'Ambedue i lati' significa 'entrambi i lati', cioè sia a destra che a sinistra. Il segnale ti permette di scegliere da quale parte superare l'ostacolo che trovi sulla strada.",
         "regola": "Due frecce = entrambi i lati.",
         "trabocchetti": ["da ambedue i lati"],
@@ -2551,6 +2871,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a svoltare a sinistra o a destra all'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di svoltare a destra o sinistra?",
         "spiegazione": "No, è falso. Questo segnale non ti obbliga a svoltare a un incrocio. Ti dice solo come superare un ostacolo che si trova *sulla* strada, permettendoti di passare a destra o a sinistra di esso, ma non ti impone una svolta.",
         "regola": "Non è una svolta, è un passaggio!",
         "trabocchetti": ["incrocio"],
@@ -2559,6 +2880,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta di proseguire in quella strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato proseguire?",
         "spiegazione": "No, è falso. Il segnale non ti vieta di proseguire. Al contrario, ti indica proprio *come* puoi proseguire, cioè passando a destra o a sinistra dell'ostacolo. È un segnale di obbligo, non di divieto.",
         "regola": "Non vieta, indica come passare.",
         "trabocchetti": ["vieta di proseguire"],
@@ -2567,6 +2889,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è, di norma, preceduto dal segnale ROTATORIA",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di norma preceduto da ROTATORIA?",
         "spiegazione": "No, è falso. Questo segnale non ha nulla a che fare con le rotatorie. Il segnale di rotatoria è diverso (ha una freccia che gira in cerchio). Questo segnale indica come superare un ostacolo, non una rotatoria.",
         "regola": "Non è rotatoria, è ostacolo.",
         "immagine": "86ebcb903dfc0dfc944c.jpg",
@@ -2574,6 +2897,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "No, è falso. I segnali di indicazione di solito sono rettangolari o quadrati e danno informazioni (come nomi di città o direzioni). Questo segnale è rotondo e blu, quindi è un segnale di obbligo (o prescrizione), perché ti dice cosa devi fare.",
         "regola": "Blu e tondo = obbligo, non indicazione.",
         "immagine": "86ebcb903dfc0dfc944c.jpg",
@@ -2581,6 +2905,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di divieto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di divieto?",
         "spiegazione": "No, è falso. I segnali di divieto sono rotondi con il bordo rosso e ti dicono cosa *non* puoi fare (es. divieto di sosta). Questo segnale è blu e ti dice cosa *puoi* fare (passare a destra o sinistra), quindi è un segnale di obbligo o prescrizione.",
         "regola": "Blu e tondo = obbligo, non divieto.",
         "trabocchetti": ["divieto"],
@@ -2589,6 +2914,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine di una prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine prescrizione?",
         "spiegazione": "Il segnale raffigurato è un segnale di fine obbligo. La barra rossa diagonale su un segnale blu indica sempre che una regola o un obbligo (una 'prescrizione') non è più valido. In questo caso, finisce l'obbligo di mantenere una velocità minima.",
         "regola": "Barra rossa = Fine di un obbligo.",
         "trabocchetti": ["prescrizione", "fine"],
@@ -2597,6 +2923,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del limite minimo di velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine limite minimo?",
         "spiegazione": "Esatto! Questo segnale indica la fine dell'obbligo di mantenere una velocità di almeno 30 km/h. Prima di questo segnale, dovevi andare ad almeno 30 km/h; dopo, non più.",
         "regola": "Blu + numero + barra = Fine velocità minima.",
         "trabocchetti": ["Limite minimo di velocità"],
@@ -2605,6 +2932,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non si ha più l'obbligo di circolare ad una velocità almeno pari a quella indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non più obbligo di velocità minima?",
         "spiegazione": "Questa domanda spiega la stessa cosa in modo diverso. Significa che non sei più costretto a guidare ad almeno 30 km/h. Puoi andare anche più lentamente, se le condizioni della strada lo permettono e sempre rispettando i limiti massimi.",
         "regola": "Non più obbligo = Libertà di velocità (ma con prudenza).",
         "trabocchetti": ["Non si ha più l", "Almeno pari a"],
@@ -2613,6 +2941,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di circolare entro i limiti massimi di velocità vigenti per quella strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → limiti massimi della strada?",
         "spiegazione": "Dopo questo segnale, non hai più il limite minimo di 30 km/h. Quindi puoi guidare alla velocità che vuoi, purché non superi il limite massimo consentito per quel tipo di strada (ad esempio, 50 km/h in città o 90 km/h fuori città).",
         "regola": "Fine minimo = Rispetta il massimo.",
         "trabocchetti": ["Entro i limiti massimi", "Vigenti"],
@@ -2621,6 +2950,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di circolare a velocità superiore a quella indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → oltre la velocità indicata?",
         "spiegazione": "Sì, è vero. Se prima dovevi andare almeno a 30 km/h, ora puoi andare anche a 40, 50 o più, sempre rispettando il limite massimo generale della strada. Il 30 non è più un limite minimo da rispettare.",
         "regola": "Il 30 non è più un 'pavimento', puoi andare più su (o più giù).",
         "trabocchetti": ["Superiore a quella indicata"],
@@ -2629,6 +2959,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del limite massimo di velocità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine limite massimo?",
         "spiegazione": "Falso! Questo segnale non ha nulla a che fare con il limite massimo di velocità. I limiti massimi sono indicati da segnali rotondi con bordo rosso (divieto) e vengono annullati da un segnale di 'fine limite massimo' (bianco con barra nera e numero). Questo è un segnale di fine limite *minimo*.",
         "regola": "Blu con barra = Fine MINIMO. Rosso con barra = Fine MASSIMO.",
         "trabocchetti": ["Limite massimo di velocità"],
@@ -2637,6 +2968,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del divieto di transito ai veicoli con massa complessiva superiore a 30 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine divieto oltre 30 t?",
         "spiegazione": "Falso! Questo segnale non parla di peso dei veicoli. I segnali di divieto o obbligo per la massa sono rotondi con bordo rosso e un numero seguito da 't' (tonnellate). Questo è un segnale di velocità.",
         "regola": "Il 30 senza 't' è velocità, non peso.",
         "immagine": "16076dbcff6d28d135ec.jpg",
@@ -2644,6 +2976,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la circolazione ai veicoli di massa superiore a 30 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato oltre 30 t?",
         "spiegazione": "Falso! Assolutamente no. Questo segnale non vieta nulla riguardo al peso dei veicoli. È un segnale di fine obbligo di velocità minima. Non c'entra con le tonnellate.",
         "regola": "Il 30 senza 't' è velocità, non peso.",
         "trabocchetti": ["Vieta la circolazione", "Massa superiore a 30 tonnellate"],
@@ -2652,6 +2985,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del limite di lunghezza massima dei complessi di veicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine limite di lunghezza?",
         "spiegazione": "Falso! Anche qui, il segnale non riguarda la lunghezza dei veicoli. I segnali di limite di lunghezza hanno un'immagine di un camion con una freccia orizzontale e un numero in metri. Questo è un segnale di velocità.",
         "regola": "Il 30 senza 'm' (metri) è velocità, non lunghezza.",
         "immagine": "16076dbcff6d28d135ec.jpg",
@@ -2659,6 +2993,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine dell'obbligo di mantenere la distanza di almeno 30 metri dal veicolo che precede",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine distanza minima di 30 m?",
         "spiegazione": "Falso! No, questo segnale non c'entra con la distanza di sicurezza. I segnali di distanza di sicurezza sono diversi, di solito con due auto e un numero in metri. Questo è un segnale di velocità.",
         "regola": "Il 30 senza 'm' (metri) è velocità, non distanza.",
         "trabocchetti": ["Distanza di almeno 30 metri"],
@@ -2667,6 +3002,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta di circolare alla velocità di 30 km/h",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato circolare a 30 km/h?",
         "spiegazione": "Falso! Questa è una trappola! Il segnale non vieta di andare a 30 km/h. Anzi, prima di questo segnale, 30 km/h era la velocità *minima* obbligatoria. Dopo il segnale, puoi andare a 30 km/h, ma anche più lentamente o più velocemente (sempre rispettando i limiti massimi). Non è un divieto, ma la fine di un obbligo.",
         "regola": "Non è un divieto, è una 'liberazione' dall'obbligo minimo.",
         "trabocchetti": ["Vieta di circolare"],
@@ -2675,6 +3011,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive di circolare con catene o pneumatici invernali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → catene o pneumatici invernali?",
         "spiegazione": "Il segnale blu e rotondo con la gomma e le catene significa che devi usare le catene da neve o i pneumatici invernali. 'Prescrive' significa che lo rende obbligatorio, non è un consiglio.",
         "regola": "Blu e rotondo = Obbligo. Gomma con catene = Catene o gomme invernali.",
         "trabocchetti": ["prescrive"],
@@ -2683,6 +3020,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la circolazione è consentita solo con catene o pneumatici invernali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → circolazione solo con catene o gomme invernali?",
         "spiegazione": "Questo segnale ti dice che per guidare su quella strada devi avere le catene da neve montate o i pneumatici invernali. Se non li hai, non puoi passare.",
         "regola": "Solo con catene/invernali.",
         "trabocchetti": ["solo"],
@@ -2691,6 +3029,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito solo ai veicoli muniti di catene o pneumatici invernali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito solo con catene o gomme invernali?",
         "spiegazione": "È come la domanda precedente. 'Consente il transito solo' significa che permette di passare solo a chi ha le catene o le gomme invernali. Gli altri veicoli non possono.",
         "regola": "Permesso solo a chi è attrezzato.",
         "trabocchetti": ["Consente il transito solo"],
@@ -2699,6 +3038,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito a veicoli sprovvisti di catene o pneumatici invernali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato senza catene o gomme invernali?",
         "spiegazione": "Se il segnale obbliga ad avere catene o pneumatici invernali, allora è logico che vieta il passaggio a chi non li ha. 'Sprovvisti' significa 'senza'.",
         "regola": "Senza catene/invernali = Non passi.",
         "trabocchetti": ["Vieta il transito a veicoli sprovvisti"],
@@ -2707,6 +3047,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato presegnala un tratto di strada ove occorre procedere con particolare prudenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → particolare prudenza?",
         "spiegazione": "Questo segnale si trova dove la strada può essere pericolosa per neve o ghiaccio. Quindi, anche se hai le catene, devi guidare con molta attenzione. 'Presegnala' significa che ti avvisa prima.",
         "regola": "Neve/ghiaccio = Prudenza sempre.",
         "trabocchetti": ["Particolare prudenza"],
@@ -2715,6 +3056,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova su strade che, in particolari condizioni, sono innevate o ghiacciate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strade a volte innevate o ghiacciate?",
         "spiegazione": "Questo segnale viene messo proprio dove c'è il rischio di neve o ghiaccio, per preparare i guidatori a queste condizioni difficili e obbligarli ad attrezzarsi.",
         "regola": "Segnale = Rischio neve/ghiaccio.",
         "trabocchetti": ["In particolari condizioni"],
@@ -2723,6 +3065,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la circolazione ai veicoli muniti di pneumatici con catene",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato con le catene?",
         "spiegazione": "Questa è una trappola! Il segnale NON vieta di circolare con le catene, al contrario, lo rende obbligatorio (o l'uso di pneumatici invernali).",
         "regola": "Il segnale VUOLE le catene, non le vieta!",
         "trabocchetti": ["vieta la circolazione ai veicoli muniti", "Muniti"],
@@ -2731,6 +3074,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato presegnala la progressiva chilometrica oltre la quale è obbligatorio l'uso delle catene",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → chilometro oltre cui servono le catene?",
         "spiegazione": "Il segnale non indica una 'progressiva chilometrica' (cioè un punto preciso sulla strada misurato in chilometri). Indica semplicemente che da quel punto in poi (o poco dopo, se è un preavviso) l'obbligo inizia.",
         "regola": "Non è un contachilometri.",
         "trabocchetti": ["Progressiva chilometrica"],
@@ -2739,6 +3083,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la circolazione a veicoli muniti di pneumatici con spessore del battistrada inferiore a 3 millimetri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato con battistrada sotto 3 mm?",
         "spiegazione": "Lo spessore del battistrada è importante per la sicurezza, ma non è questo segnale a indicarlo. Questo segnale riguarda solo l'obbligo di catene o pneumatici invernali.",
         "regola": "Battistrada non c'entra con questo segnale.",
         "immagine": "8eb534f87920985eb2c0.jpg",
@@ -2746,6 +3091,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a togliere le catene per non rovinare l'asfalto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → togliere le catene?",
         "spiegazione": "Al contrario! Questo segnale obbliga a METTERE le catene (o usare pneumatici invernali). L'obbligo di toglierle arriva quando finisce il tratto di strada con l'obbligo, segnalato da un altro cartello.",
         "regola": "Metti, non togliere!",
         "trabocchetti": ["obbliga a togliere"],
@@ -2754,6 +3100,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, con pannello integrativo, indica la distanza a cui si trova un'officina per montare le catene",
         "risposta": False,
+        "riassunto": "Segnale raffigurato con pannello → distanza da officina per catene?",
         "spiegazione": "Un pannello integrativo può indicare la distanza all'inizio dell'obbligo, ma non indica la distanza di un'officina. Non è la sua funzione.",
         "regola": "Non è un navigatore per officine.",
         "trabocchetti": ["officina per montare le catene"],
@@ -2762,6 +3109,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di un viale pedonale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio viale pedonale?",
         "spiegazione": "Questo segnale, rotondo e blu con il simbolo del pedone bianco, indica che inizia un'area o una strada dove possono camminare solo i pedoni. È un percorso riservato a loro.",
         "regola": "Pedone blu = Viale solo per pedoni.",
         "trabocchetti": ["inizio di un", "inizio di un viale pedonale"],
@@ -2770,6 +3118,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di obbligo?",
         "spiegazione": "I segnali stradali rotondi e di colore blu con simboli bianchi sono sempre segnali di obbligo. Indicano un comportamento che devi seguire o un percorso che devi usare.",
         "regola": "Cerchio blu = Obbligo.",
         "trabocchetti": ["segnale di obbligo"],
@@ -2778,6 +3127,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale anche di giorno",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vale anche di giorno?",
         "spiegazione": "Tutti i segnali stradali sono validi 24 ore su 24, ogni giorno, a meno che non ci sia un pannello aggiuntivo che indica orari specifici. Questo segnale non ha limitazioni di tempo.",
         "regola": "Segnali = Sempre validi (giorno e notte).",
         "trabocchetti": ["anche di giorno"],
@@ -2786,6 +3136,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un percorso pedonale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → percorso pedonale?",
         "spiegazione": "Il simbolo del pedone su sfondo blu indica chiaramente che quel percorso è stato creato e riservato per le persone che camminano.",
         "regola": "Pedone blu = Percorso per pedoni.",
         "trabocchetti": ["percorso pedonale"],
@@ -2794,6 +3145,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito anche ai veicoli, ma solo con particolare prudenza ed attenzione ai pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → veicoli ammessi con prudenza?",
         "spiegazione": "Questo segnale indica un percorso *riservato* ai pedoni. Questo significa che i veicoli non possono entrare in quest'area. Non è un luogo dove i veicoli possono passare con prudenza, ma un'area dove non sono ammessi.",
         "regola": "Pedone blu = Solo pedoni, veicoli NO.",
         "trabocchetti": ["consente"],
@@ -2802,6 +3154,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un divieto di transito per i pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto per i pedoni?",
         "spiegazione": "Al contrario, questo segnale *obbliga* i pedoni a usare quel percorso. Un divieto per i pedoni sarebbe un segnale rotondo con bordo rosso e il simbolo del pedone barrato.",
         "regola": "Pedone blu = Obbligo per pedoni, non divieto.",
         "trabocchetti": ["divieto di transito per i pedoni"],
@@ -2810,6 +3163,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un attraversamento pedonale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → attraversamento pedonale?",
         "spiegazione": "Questo segnale indica un intero percorso o un'area dove i pedoni possono camminare. Un attraversamento pedonale è un punto specifico della strada dove i pedoni possono attraversare, segnalato in modo diverso (strisce bianche e altri segnali).",
         "regola": "Pedone blu = Percorso, non attraversamento.",
         "trabocchetti": ["attraversamento"],
@@ -2818,6 +3172,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i conducenti di veicoli a dare la precedenza ai pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza ai pedoni?",
         "spiegazione": "Questo segnale indica un'area riservata ai pedoni, dove i veicoli non dovrebbero entrare. Se i veicoli non sono ammessi, non c'è la necessità di dare la precedenza ai pedoni all'interno di questo percorso.",
         "regola": "Pedone blu = Veicoli fuori, nessuna precedenza da dare.",
         "immagine": "48a74d99075696d23bf5.jpg",
@@ -2825,6 +3180,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un percorso pedonale e ciclabile",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → percorso pedonale e ciclabile?",
         "spiegazione": "Questo segnale mostra solo il simbolo del pedone. Se il percorso fosse anche per le biciclette, ci sarebbe anche il simbolo della bicicletta (o i due simboli affiancati).",
         "regola": "Pedone blu = Solo pedoni. Se c'è la bici, c'è anche il simbolo della bici.",
         "immagine": "48a74d99075696d23bf5.jpg",
@@ -2832,6 +3188,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine del percorso pedonale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine percorso pedonale?",
         "spiegazione": "Il segnale raffigurato è un segnale di fine obbligo. La barra rossa diagonale indica la 'fine' di qualcosa. Poiché il simbolo è un pedone, significa che è finita la parte di strada riservata solo ai pedoni. Quindi, è la fine del percorso pedonale.",
         "regola": "Blu + Pedone + Barra Rossa = Fine percorso pedonale.",
         "trabocchetti": ["fine"],
@@ -2840,6 +3197,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine del viale pedonale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine viale pedonale?",
         "spiegazione": "Un 'viale pedonale' è un tipo di percorso riservato ai pedoni. Quindi, se il segnale indica la fine del percorso pedonale, indica anche la fine di un viale pedonale.",
         "regola": "Viale pedonale = percorso pedonale.",
         "trabocchetti": ["Viale pedonale"],
@@ -2848,6 +3206,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che da lì in poi i pedoni non circolano più su un percorso riservato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pedoni non più su percorso riservato?",
         "spiegazione": "Se il percorso riservato ai pedoni è finito, significa che da quel punto in poi i pedoni non hanno più un'area esclusiva per camminare. Potrebbero trovarsi su un marciapiede normale o in un'area condivisa con altri veicoli.",
         "regola": "Fine percorso riservato = non più solo pedoni.",
         "immagine": "06d84f016b98c3d314dd.jpg",
@@ -2855,6 +3214,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un attraversamento pedonale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → attraversamento pedonale?",
         "spiegazione": "Questo segnale indica la fine di un percorso, non l'inizio o la presenza di un attraversamento pedonale. I segnali di attraversamento pedonale sono diversi (ad esempio, triangolari di pericolo o quadrati di indicazione).",
         "regola": "Fine percorso, non inizio attraversamento.",
         "trabocchetti": ["preannuncia"],
@@ -2863,6 +3223,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un divieto di transito per i pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto per i pedoni?",
         "spiegazione": "Il segnale non vieta ai pedoni di camminare. Indica solo che non c'è più un percorso *riservato* a loro. I pedoni possono continuare a camminare, ma non più su un'area esclusiva. Un divieto di transito per i pedoni è un altro segnale (rotondo rosso con pedone nero).",
         "regola": "Fine riservato, non divieto assoluto.",
         "trabocchetti": ["Divieto di transito per i pedoni"],
@@ -2871,6 +3232,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta ai pedoni di attraversare la strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai pedoni attraversare?",
         "spiegazione": "Questo segnale non ha nulla a che fare con l'attraversamento della strada. Indica solo la fine di un percorso dedicato ai pedoni. Attraversare la strada è una manovra diversa e regolata da altri segnali o regole.",
         "regola": "Fine percorso, non divieto di attraversamento.",
         "immagine": "06d84f016b98c3d314dd.jpg",
@@ -2878,6 +3240,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la fine di un'area vietata ai pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine area vietata ai pedoni?",
         "spiegazione": "Il segnale indica la fine di un'area *riservata* ai pedoni, non la fine di un'area *vietata* ai pedoni. Sono due concetti opposti. Se fosse la fine di un'area vietata, significherebbe che i pedoni possono entrare, ma questo segnale indica che il loro percorso esclusivo è terminato.",
         "regola": "Fine area *riservata*, non fine area *vietata*.",
         "trabocchetti": ["Fine di un"],
@@ -2886,6 +3249,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un percorso vietato alle autovetture e ai motocicli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → percorso vietato ad auto e moto?",
         "spiegazione": "Questo segnale blu con la bici indica una pista ciclabile, cioè un percorso che le biciclette DEVONO usare. Se è riservato alle biciclette, significa che altri veicoli come autovetture e motocicli NON possono entrare. Quindi, per loro è vietato.",
         "regola": "Blu con bici = Solo bici! Gli altri fuori.",
         "trabocchetti": ["vietato"],
@@ -2894,6 +3258,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un percorso riservato alle biciclette",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → percorso riservato alle biciclette?",
         "spiegazione": "Questo segnale blu con la bicicletta è il simbolo della 'pista ciclabile'. Una pista ciclabile è un 'percorso riservato' alle biciclette, dove le bici devono circolare e gli altri veicoli non possono entrare.",
         "regola": "Bici blu = Percorso obbligatorio per bici.",
         "trabocchetti": ["riservato"],
@@ -2902,6 +3267,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un attraversamento ciclabile regolato da semaforo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → attraversamento ciclabile con semaforo?",
         "spiegazione": "Il segnale indica una pista ciclabile, non un attraversamento ciclabile. Un attraversamento è un punto dove si attraversa una strada, e se fosse regolato da semaforo, ci sarebbero anche i semafori e un segnale diverso (o la segnaletica orizzontale). Questo segnale indica solo l'inizio di una pista.",
         "regola": "Bici blu = Pista. Non è un semaforo!",
         "trabocchetti": ["attraversamento ciclabile", "regolato da semaforo"],
@@ -2910,6 +3276,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito alle biciclette",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato alle biciclette?",
         "spiegazione": "Questo segnale è blu e rotondo, il che significa 'obbligo'. Indica che le biciclette DEVONO usare quel percorso. Se fosse vietato alle biciclette, il segnale sarebbe rosso con una barra diagonale.",
         "regola": "Blu = Obbligo. Rosso = Divieto.",
         "trabocchetti": ["vieta"],
@@ -2918,6 +3285,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un percorso per pedoni e biciclette",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → percorso pedoni e biciclette?",
         "spiegazione": "Il segnale mostra solo una bicicletta. Se fosse un percorso per pedoni e biciclette, il segnale dovrebbe mostrare sia il simbolo del pedone che quello della bicicletta (spesso separati da una linea verticale). Questo è solo per le bici.",
         "regola": "Una bici = Solo bici. Due simboli = Due utenti.",
         "trabocchetti": ["per pedoni e biciclette"],
@@ -2926,6 +3294,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di una pista riservata alle biciclette e ai ciclomotori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pista per bici e ciclomotori?",
         "spiegazione": "Questo segnale è per le biciclette, che vanno a pedali. I ciclomotori hanno un motore e non sono biciclette. Non possono circolare su una pista ciclabile semplice. Se fosse consentito anche ai ciclomotori, il segnale sarebbe diverso o ci sarebbe un'indicazione specifica.",
         "regola": "Bici = Pedali. Ciclomotore = Motore. Non sono uguali!",
         "trabocchetti": ["e ai ciclomotori"],
@@ -2934,6 +3303,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un percorso consentito al transito di pedoni e di biciclette",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → percorso per pedoni e bici?",
         "spiegazione": "Come per la domanda 20362, questo segnale è solo per le biciclette. Se fosse consentito anche ai pedoni, il segnale dovrebbe mostrare entrambi i simboli (pedone e bicicletta).",
         "regola": "Una bici = Solo bici. Non aggiungere altri!",
         "trabocchetti": ["pedoni e di biciclette"],
@@ -2942,6 +3312,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un'area vietata al transito delle biciclette",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area vietata alle biciclette?",
         "spiegazione": "Questo segnale è blu e rotondo, quindi è un segnale di obbligo. Indica che le biciclette DEVONO usare quel percorso, non che è vietato a loro. È l'esatto contrario di un divieto.",
         "regola": "Blu = Obbligo. Rosso = Divieto.",
         "trabocchetti": ["vietata al transito delle biciclette"],
@@ -2950,6 +3321,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine della pista ciclabile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine pista ciclabile?",
         "spiegazione": "Questo segnale, con la bicicletta barrata da una linea rossa, indica che la pista ciclabile, cioè la strada speciale per le biciclette, è finita. Dopo questo segnale, le biciclette devono seguire le regole della strada normale.",
         "regola": "Bici barrata = la pista per bici è finita.",
         "trabocchetti": ["fine"],
@@ -2958,6 +3330,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine di un itinerario percorribile solo con biciclette",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine itinerario solo bici?",
         "spiegazione": "Un 'itinerario percorribile solo con biciclette' è un altro modo per chiamare una pista ciclabile. Quindi, il segnale indica che questo percorso speciale, dove potevano andare solo le biciclette, è terminato.",
         "regola": "Fine percorso esclusivo per bici.",
         "trabocchetti": ["Solo"],
@@ -2966,6 +3339,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine di una pista riservata alle biciclette",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine pista per biciclette?",
         "spiegazione": "Questo segnale indica la fine di una 'pista riservata alle biciclette', che è la stessa cosa di una pista ciclabile. Quindi, dopo questo punto, le biciclette non hanno più un percorso dedicato.",
         "regola": "Pista bici finita.",
         "trabocchetti": ["pista riservata alle biciclette"],
@@ -2974,6 +3348,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un divieto di sosta per le biciclette",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di sosta per biciclette?",
         "spiegazione": "Questo segnale non c'entra con la sosta. Non dice che non puoi parcheggiare la bicicletta. Indica solo che la pista ciclabile è finita. Un divieto di sosta per le biciclette non esiste con questo segnale.",
         "regola": "Non è sosta, è fine pista.",
         "trabocchetti": ["divieto di sosta"],
@@ -2982,6 +3357,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito alle biciclette e ai ciclomotori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a bici e ciclomotori?",
         "spiegazione": "Il segnale non vieta il passaggio alle biciclette. Anzi, dopo questo segnale, le biciclette possono continuare a circolare sulla strada normale. Non riguarda nemmeno i ciclomotori (motorini).",
         "regola": "Non vieta, ma finisce la pista. No ciclomotori.",
         "trabocchetti": ["vieta il transito", "ciclomotori"],
@@ -2990,6 +3366,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine del percorso pedonale e ciclabile",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine percorso pedonale e ciclabile?",
         "spiegazione": "Il segnale mostra solo una bicicletta. Se fosse la fine di un percorso per pedoni e biciclette, ci sarebbero disegnati sia il pedone che la bicicletta. Quindi, questo segnale è solo per le biciclette.",
         "regola": "Solo bici, non pedoni.",
         "trabocchetti": ["pedonale"],
@@ -2998,6 +3375,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che non è più consentito il transito ai ciclisti e ai pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non più consentito a ciclisti e pedoni?",
         "spiegazione": "Questo segnale non 'preannuncia' un divieto. Indica che la pista ciclabile è finita. I ciclisti possono continuare a circolare sulla strada. Non riguarda i pedoni.",
         "regola": "Non è un divieto, è la fine della pista per bici.",
         "trabocchetti": ["preannuncia", "non è più consentito", "pedoni"],
@@ -3006,6 +3384,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto all'inizio di un'area vietata alle biciclette",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio area vietata alle bici?",
         "spiegazione": "Questo segnale indica la *fine* di un'area riservata alle biciclette, non l'*inizio* di un'area dove le biciclette sono vietate. Se fosse vietato, il segnale sarebbe diverso (un cerchio rosso con la bicicletta dentro, senza la barra diagonale).",
         "regola": "Fine, non inizio divieto.",
         "trabocchetti": ["inizio", "vietata"],
@@ -3014,6 +3393,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza dell'inizio di una pista ciclabile accanto al marciapiede",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pista ciclabile accanto al marciapiede?",
         "spiegazione": "Il segnale raffigurato indica l'inizio di due percorsi affiancati: uno per i pedoni (l'omino) e uno per le biciclette (la bici). La parte per i pedoni può essere considerata un marciapiede, e quella per le biciclette una pista ciclabile. Quindi, è corretto dire che c'è una pista ciclabile accanto a un marciapiede.",
         "regola": "Omino e bici separati = percorsi affiancati.",
         "trabocchetti": ["accanto al marciapiede"],
@@ -3022,6 +3402,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza dell'inizio di una pista riservata alle biciclette, affiancata da un viale pedonale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pista bici affiancata a viale pedonale?",
         "spiegazione": "Il segnale mostra chiaramente due aree separate da una linea verticale: una per le biciclette (pista riservata) e una per i pedoni (viale pedonale). La parola 'affiancata' è fondamentale perché indica che i due percorsi sono vicini ma distinti.",
         "regola": "Linea verticale = percorsi affiancati, non uniti.",
         "trabocchetti": ["affiancata"],
@@ -3030,6 +3411,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza dell'inizio di un percorso ciclabile accanto ad un percorso pedonale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → percorso ciclabile accanto a pedonale?",
         "spiegazione": "Questa è la descrizione più semplice e diretta del segnale. Indica l'inizio di un percorso per ciclisti e uno per pedoni, che si trovano uno accanto all'altro, ma separati.",
         "regola": "Omino e bici separati = percorsi affiancati.",
         "trabocchetti": ["accanto ad un percorso pedonale"],
@@ -3038,6 +3420,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un percorso unico per pedoni e ciclisti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → percorso unico pedoni e ciclisti?",
         "spiegazione": "FALSO. Il segnale mostra una linea verticale che divide l'omino dalla bicicletta. Questo significa che i percorsi sono SEPARATI, uno per i pedoni e uno per i ciclisti. Se fosse un 'percorso unico' o 'misto', non ci sarebbe la linea di divisione.",
         "regola": "Linea verticale = separazione, non unione.",
         "trabocchetti": ["unico"],
@@ -3046,6 +3429,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un viale misto, riservato sia ai pedoni che ai ciclisti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → viale misto pedoni e ciclisti?",
         "spiegazione": "FALSO. Un 'viale misto' significa che pedoni e ciclisti condividono lo stesso spazio senza divisione. Il segnale, invece, ha una linea verticale che divide i due simboli, indicando percorsi separati e non 'misti'.",
         "regola": "Linea verticale = separazione, non misto.",
         "trabocchetti": ["viale misto"],
@@ -3054,6 +3438,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine delle corsie riservate ai pedoni e alle biciclette",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine corsie per pedoni e bici?",
         "spiegazione": "FALSO. Questo segnale è blu e non ha una barra rossa diagonale. I segnali che indicano la 'fine' di un obbligo o di un divieto hanno sempre una barra rossa diagonale. Questo segnale, senza barra, indica l'INIZIO di un percorso obbligatorio.",
         "regola": "Nessuna barra rossa = inizio, non fine.",
         "trabocchetti": ["fine delle corsie"],
@@ -3062,6 +3447,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'obbligo di condurre a mano la bicicletta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di bici a mano?",
         "spiegazione": "FALSO. Il segnale mostra una bicicletta intera, il che significa che i ciclisti possono pedalare normalmente sulla loro parte di percorso. Non c'è nessun simbolo o indicazione che obblighi a scendere dalla bicicletta e portarla a mano.",
         "regola": "Bici intera = si pedala, non si porta a mano.",
         "trabocchetti": ["obbligo di condurre a mano la bicicletta"],
@@ -3070,6 +3456,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'obbligo di parcheggiare la bicicletta e proseguire a piedi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggiare la bici e andare a piedi?",
         "spiegazione": "FALSO. Il segnale indica un percorso obbligatorio per i ciclisti, non un'area dove parcheggiare la bicicletta. I ciclisti devono usare la loro parte di percorso per circolare, non per fermarsi e proseguire a piedi.",
         "regola": "Percorso bici = si usa la bici, non si parcheggia.",
         "immagine": "dcf6e2c9ed862ee5b826.jpg",
@@ -3077,6 +3464,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un percorso unico per pedoni e ciclisti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → percorso unico pedoni e ciclisti?",
         "spiegazione": "Questo segnale indica un percorso dove pedoni e ciclisti possono stare insieme, sullo stesso spazio. È un percorso 'unico' o 'misto' per entrambi.",
         "regola": "Simboli insieme = Stesso percorso.",
         "trabocchetti": ["unico"],
@@ -3085,6 +3473,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un viale misto, riservato sia ai pedoni che ai ciclisti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → viale misto pedoni e ciclisti?",
         "spiegazione": "Il segnale significa che la strada o il viale è per i pedoni E per i ciclisti. È 'misto' perché ci sono entrambi e condividono lo spazio.",
         "regola": "Misto = Pedoni + Bici.",
         "trabocchetti": ["viale misto", "riservato sia ai pedoni che ai ciclisti"],
@@ -3093,6 +3482,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un itinerario riservato solo al transito di pedoni e ciclisti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → itinerario solo pedoni e ciclisti?",
         "spiegazione": "Questo percorso è 'riservato' solo a pedoni e ciclisti. Questo significa che altri veicoli (come auto o moto) non possono entrare.",
         "regola": "Riservato SOLO a loro.",
         "trabocchetti": ["solo"],
@@ -3101,6 +3491,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di una pista ciclabile a fianco del marciapiede",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pista ciclabile a fianco del marciapiede?",
         "spiegazione": "Il segnale mostra i due simboli uno sopra l'altro, senza una linea in mezzo. Questo significa che pedoni e ciclisti usano lo STESSO spazio, non due spazi 'a fianco' separati.",
         "regola": "No linea = No separazione.",
         "immagine": "46fc4fbafcc46d7c7342.jpg",
@@ -3108,6 +3499,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di una pista ciclabile a fianco di un percorso riservato ai pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pista ciclabile a fianco di percorso pedonale?",
         "spiegazione": "Come nella domanda precedente, 'a fianco di' significa che ci sono due percorsi separati. Ma questo segnale indica un percorso UNICO, dove pedoni e ciclisti stanno insieme.",
         "regola": "Simboli uniti = Spazio unito.",
         "immagine": "46fc4fbafcc46d7c7342.jpg",
@@ -3115,6 +3507,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un'area pedonale accanto ad un percorso per ciclisti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area pedonale accanto a percorso ciclisti?",
         "spiegazione": "La frase 'accanto ad' significa che ci sono due zone diverse, una per i pedoni e una per i ciclisti. Il segnale, invece, indica che pedoni e ciclisti usano la STESSA area.",
         "regola": "Accanto = Separato. Questo segnale NON è separato.",
         "immagine": "46fc4fbafcc46d7c7342.jpg",
@@ -3122,6 +3515,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un percorso pedonale accanto ad un percorso per le biciclette, separati da spartitraffico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pedonale e ciclabile separati da spartitraffico?",
         "spiegazione": "Questa domanda parla di percorsi 'separati da spartitraffico'. Il nostro segnale, con i simboli uno sopra l'altro, indica un percorso UNICO e CONDIVISO, non separato da nulla.",
         "regola": "Spartitraffico = Divisione. Il nostro segnale è UNIONE.",
         "trabocchetti": ["separati da spartitraffico"],
@@ -3130,6 +3524,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un'area transitabile con biciclette soltanto se condotte a mano",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → bici solo condotte a mano?",
         "spiegazione": "Il segnale mostra una bicicletta, e questo significa che i ciclisti possono pedalare. Non devono per forza scendere e portare la bici a mano.",
         "regola": "Bici = Si pedala.",
         "trabocchetti": ["soltanto se condotte a mano"],
@@ -3138,6 +3533,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine della pista ciclabile accanto al marciapiede",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine pista ciclabile accanto al marciapiede?",
         "spiegazione": "Il segnale con la barra rossa significa 'fine'. Questo segnale indica che finisce la pista ciclabile (il simbolo della bicicletta) che si trovava accanto al marciapiede (dove camminano i pedoni).",
         "regola": "Barra rossa = Fine. Bici + Pedone.",
         "trabocchetti": ["fine"],
@@ -3146,6 +3542,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine della pista ciclabile accanto ad un percorso riservato ai pedoni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine pista ciclabile accanto a pedonale?",
         "spiegazione": "Esatto! Il segnale indica la fine della pista ciclabile (il simbolo della bicicletta) che era affiancata da un percorso dove potevano andare solo i pedoni (il simbolo del pedone).",
         "regola": "Fine pista bici, accanto a pedoni.",
         "trabocchetti": ["fine", "Riservato ai pedoni"],
@@ -3154,6 +3551,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine del percorso pedonale a fianco della pista ciclabile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine percorso pedonale a fianco della ciclabile?",
         "spiegazione": "Sì, è vero. Il segnale indica la fine di entrambi i percorsi che erano obbligatori e separati. Quindi, finisce anche il percorso per i pedoni (il simbolo del pedone) che era vicino alla pista ciclabile (il simbolo della bicicletta).",
         "regola": "Fine percorso pedonale, accanto a bici.",
         "trabocchetti": ["A fianco"],
@@ -3162,6 +3560,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine del percorso pedonale accanto ad un percorso ciclabile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine pedonale accanto a ciclabile?",
         "spiegazione": "Corretto! Questo segnale con la barra rossa indica che termina il percorso dove potevano andare solo i pedoni (il simbolo del pedone), che si trovava vicino al percorso per le biciclette (il simbolo della bicicletta).",
         "regola": "Fine di entrambi i percorsi.",
         "trabocchetti": ["fine"],
@@ -3170,6 +3569,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito a tutti i veicoli a due ruote",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a tutti i due ruote?",
         "spiegazione": "Falso! Questo segnale non vieta nulla. La barra rossa significa 'fine', quindi indica che finisce un percorso che prima era obbligatorio per pedoni e ciclisti. Non vieta il passaggio a tutti i veicoli a due ruote, come ad esempio le moto.",
         "regola": "Barra rossa = Fine, non divieto.",
         "trabocchetti": ["vieta", "tutti i veicoli a due ruote"],
@@ -3178,6 +3578,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito di biciclette condotte a mano",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a bici condotte a mano?",
         "spiegazione": "Falso! Il segnale indica la fine di un percorso obbligatorio per pedoni e ciclisti, non vieta nulla. Quando una bicicletta è condotta a mano, è considerata come un pedone, e questo segnale non vieta ai pedoni di transitare.",
         "regola": "Fine, non divieto. Bici a mano = pedone.",
         "trabocchetti": ["vieta"],
@@ -3186,6 +3587,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di una pista riservata in alcuni giorni ai pedoni e in altri alle biciclette",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pista a giorni alterni pedoni/bici?",
         "spiegazione": "Falso! Questo segnale indica la fine di un percorso dove pedoni e ciclisti avevano le loro corsie separate ma adiacenti. Non significa che il percorso cambia uso in giorni diversi. Non c'è un'indicazione di tempo sul segnale.",
         "regola": "Non cambia con i giorni.",
         "immagine": "d55036aae8c4f3565700.jpg",
@@ -3193,6 +3595,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta ai pedoni di entrare nelle ore notturne",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai pedoni di notte?",
         "spiegazione": "Falso! Il segnale non ha nulla a che fare con orari o divieti notturni. Indica solo la fine di un percorso obbligatorio per pedoni e ciclisti. Non c'è nessun riferimento all'orario.",
         "regola": "Fine, non orari.",
         "trabocchetti": ["vieta", "ore notturne"],
@@ -3201,6 +3604,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine del percorso unico pedonale e ciclabile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine percorso unico pedonale e ciclabile?",
         "spiegazione": "Il segnale mostra un pedone e una bicicletta, entrambi barrati da una linea rossa. Questo significa che finisce il tratto di strada dove pedoni e ciclisti potevano stare insieme, cioè il 'percorso unico pedonale e ciclabile'.",
         "regola": "Linea rossa = FINE. Pedone + Bici = Percorso insieme.",
         "trabocchetti": ["unico"],
@@ -3209,6 +3613,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine del percorso riservato alla circolazione mista di pedoni e di ciclisti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine percorso misto pedoni e ciclisti?",
         "spiegazione": "Questo segnale indica che termina la parte di strada dove pedoni e ciclisti potevano circolare insieme. 'Circolazione mista' significa proprio che pedoni e ciclisti usavano lo stesso percorso.",
         "regola": "Mista = insieme. Linea rossa = fine percorso insieme.",
         "trabocchetti": ["mista"],
@@ -3217,6 +3622,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un percorso riservato ai pedoni e alle biciclette",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → percorso per pedoni e bici?",
         "spiegazione": "ATTENZIONE! La linea rossa diagonale sul segnale significa 'FINE'. Questa domanda dice che il segnale è posto 'in corrispondenza di un percorso', come se indicasse l'inizio o la presenza del percorso, ma non la sua fine. È FALSO perché il segnale indica la conclusione, non l'esistenza.",
         "regola": "Linea rossa = STOP! Non è l'inizio, è la fine.",
         "immagine": "8f062514a099b1119bb3.jpg",
@@ -3224,6 +3630,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine della sola pista ciclabile",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine della sola pista ciclabile?",
         "spiegazione": "Il segnale mostra sia il simbolo del pedone che quello della bicicletta. Quindi, non può essere la fine 'solo' della pista ciclabile. È la fine del percorso che era per entrambi.",
         "regola": "Ci sono due simboli! Non può essere 'solo' uno.",
         "trabocchetti": ["sola"],
@@ -3232,6 +3639,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito delle biciclette condotte a mano",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a bici condotte a mano?",
         "spiegazione": "Questo segnale indica la fine di un percorso speciale. Non è un segnale di divieto. Inoltre, quando una bicicletta è condotta a mano, la persona che la spinge è considerata un pedone e può camminare dove camminano i pedoni, a meno di divieti specifici.",
         "regola": "Linea rossa = fine percorso, non 'vietato'. Bici a mano = pedone.",
         "trabocchetti": ["vieta", "condotte a mano"],
@@ -3240,6 +3648,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine del solo percorso pedonale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine del solo percorso pedonale?",
         "spiegazione": "Come per la domanda sulla pista ciclabile, il segnale mostra sia il pedone che la bicicletta. Quindi, non può essere la fine 'solo' del percorso pedonale. È la fine del percorso che era per entrambi.",
         "regola": "Due simboli = due cose. Non 'solo' una.",
         "trabocchetti": ["solo"],
@@ -3248,6 +3657,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente il transito ai veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito vietato ai veicoli?",
         "spiegazione": "Il segnale blu e tondo con il cavallo indica un percorso che è 'riservato' solo agli animali da sella. Questo significa che nessun altro tipo di veicolo (auto, moto, ecc.) può passare su questa strada.",
         "regola": "Blu tondo = obbligo. Cavallo = solo cavalli.",
         "trabocchetti": ["non consente il transito"],
@@ -3256,6 +3666,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente il transito alle biciclette",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito vietato alle bici?",
         "spiegazione": "Come per gli altri veicoli, anche le biciclette non sono animali da sella. Perciò, non possono usare il percorso indicato da questo segnale, che è 'riservato' solo ai cavalli.",
         "regola": "Blu tondo = obbligo. Cavallo = solo cavalli, non bici.",
         "trabocchetti": ["non consente il transito"],
@@ -3264,6 +3675,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente il transito ai veicoli con motore elettrico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai veicoli elettrici?",
         "spiegazione": "Un veicolo con motore elettrico è comunque un veicolo. Questo percorso è 'riservato' esclusivamente agli animali da sella, quindi nessun tipo di veicolo, nemmeno quelli elettrici, può passarci.",
         "regola": "Blu tondo = obbligo. Cavallo = solo cavalli, non veicoli.",
         "trabocchetti": ["con motore elettrico"],
@@ -3272,6 +3684,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto all'inizio di un percorso riservato agli animali da sella",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → percorso per animali da sella?",
         "spiegazione": "Questo è il significato esatto del segnale. Il cartello blu e tondo con il cavallo indica proprio l'inizio di una strada o un sentiero che può essere usato solo da persone a cavallo (animali da sella).",
         "regola": "Cavallo con persona = percorso per cavalli.",
         "trabocchetti": ["percorso riservato agli animali da sella"],
@@ -3280,6 +3693,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto all'inizio di un percorso riservato agli animali da soma",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → percorso per animali da soma?",
         "spiegazione": "Gli animali da soma sono animali usati per trasportare carichi (come asini o muli, o anche cavalli con un basto). Anche se il disegno mostra un cavallo con una persona, i percorsi riservati agli animali da sella sono generalmente intesi anche per gli animali da soma, che condividono lo stesso tipo di utilizzo del percorso.",
         "regola": "Cavallo = anche per chi porta pesi.",
         "trabocchetti": ["soma"],
@@ -3288,6 +3702,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto nelle vicinanze di una scuola di equitazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → scuola di equitazione?",
         "spiegazione": "Il segnale indica un 'percorso riservato', cioè una strada dove possono passare solo i cavalli. Non ci dice nulla su cosa c'è nelle vicinanze, come una scuola di equitazione. Il segnale riguarda la regola di transito su quella specifica strada.",
         "regola": "Blu tondo = obbligo di percorso, non di luogo.",
         "immagine": "1b6318948dd41a4d77dd.jpg",
@@ -3295,6 +3710,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "I segnali di pericolo sono di forma triangolare e hanno il bordo rosso. Questo segnale è circolare e blu, il che significa che è un segnale di 'obbligo' (indica cosa si deve fare o chi può passare), non di pericolo.",
         "regola": "Blu tondo = obbligo, non pericolo.",
         "trabocchetti": ["pericolo"],
@@ -3303,6 +3719,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il passaggio agli animali da soma e da sella",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ad animali da soma e sella?",
         "spiegazione": "Il segnale 'riserva' il percorso agli animali da soma e da sella, il che significa che 'consente' loro il passaggio, non lo 'vieta'. La domanda dice l'esatto contrario del significato del segnale.",
         "regola": "Blu tondo = obbligo, non divieto per chi è raffigurato.",
         "trabocchetti": ["vieta"],
@@ -3311,6 +3728,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di animali vaganti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → animali vaganti?",
         "spiegazione": "Un segnale che preannuncia animali vaganti (cioè animali liberi che possono attraversare la strada) è un segnale di pericolo, quindi triangolare con bordo rosso e l'immagine di un animale. Questo segnale, invece, indica un percorso specifico 'riservato' agli animali da sella.",
         "regola": "Blu tondo = percorso, non pericolo di animali liberi.",
         "immagine": "1b6318948dd41a4d77dd.jpg",
@@ -3318,6 +3736,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'obbligo di dare precedenza agli animali che attraversano",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza agli animali?",
         "spiegazione": "Questo segnale indica un 'percorso riservato' agli animali da sella. Non ha nulla a che fare con l'obbligo di dare precedenza agli animali che attraversano. L'obbligo di precedenza è indicato da altri tipi di segnali o dalle regole generali della strada.",
         "regola": "Blu tondo = percorso, non precedenza.",
         "trabocchetti": ["obbligo di dare precedenza"],
@@ -3326,6 +3745,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine di un percorso per gli animali da soma",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine percorso animali da soma?",
         "spiegazione": "Il segnale indica la fine di un percorso dove i cavalli devono obbligatoriamente passare. I cavalli possono essere usati per portare persone (da sella) o per trasportare cose (da soma). Quindi, se finisce il percorso per i cavalli, finisce anche per quelli 'da soma'.",
         "regola": "Cavallo = da sella o da soma. Fine obbligo per entrambi.",
         "trabocchetti": ["soma"],
@@ -3334,6 +3754,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine di un percorso per gli animali da sella",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine percorso animali da sella?",
         "spiegazione": "Il segnale mostra un cavallo con un cavaliere, che è un 'animale da sella'. La barra rossa significa 'fine'. Quindi, il segnale indica che finisce il percorso obbligatorio per i cavalli con cavaliere.",
         "regola": "Cavaliere sul cavallo = animale da sella. Barra rossa = fine.",
         "immagine": "475a85417a2c6b6db745.jpg",
@@ -3341,6 +3762,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine del percorso riservato agli animali da soma e da sella",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine percorso animali da soma e sella?",
         "spiegazione": "Questo segnale indica la fine del percorso dove i cavalli devono obbligatoriamente passare. I cavalli possono essere usati sia per portare persone (da sella) sia per trasportare oggetti (da soma). Quindi, il percorso era riservato a entrambi i tipi di cavalli.",
         "regola": "Fine obbligo per tutti i cavalli: con o senza carico.",
         "trabocchetti": ["da soma e da sella"],
@@ -3349,6 +3771,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in vicinanza di un ippodromo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ippodromo?",
         "spiegazione": "Un ippodromo è una pista dove si fanno le corse dei cavalli. Questo segnale, invece, indica la fine di un percorso obbligatorio per i cavalli, non ha nulla a che fare con un luogo specifico come un ippodromo.",
         "regola": "Segnale stradale, non sportivo.",
         "trabocchetti": ["ippodromo"],
@@ -3357,6 +3780,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli a trazione animale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a trazione animale?",
         "spiegazione": "Il segnale riguarda i cavalli con o senza cavaliere, non i 'veicoli a trazione animale' come i carri trainati da cavalli. Inoltre, il segnale indica la 'fine di un obbligo', non un 'divieto'.",
         "regola": "Fine obbligo, non divieto. Riguarda il cavallo, non il carro.",
         "trabocchetti": ["vieta", "veicoli a trazione animale"],
@@ -3365,6 +3789,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine di un tratto di strada vietato ai cavalli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine tratto vietato ai cavalli?",
         "spiegazione": "Il segnale significa 'fine del percorso obbligatorio per i cavalli'. Non significa che dopo questo punto i cavalli non possono più passare. Potrebbero semplicemente tornare sulla strada normale. Non è un divieto.",
         "regola": "Fine obbligo, non inizio divieto.",
         "trabocchetti": ["vietato"],
@@ -3373,6 +3798,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza della fine di un percorso riservato solo ai cavalli da corsa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine percorso cavalli da corsa?",
         "spiegazione": "Il percorso obbligatorio è per tutti i cavalli (da sella o da soma), non 'solo' per i cavalli da corsa. I cavalli da corsa sono una categoria molto specifica.",
         "regola": "Non 'solo' e non 'da corsa'. Riguarda tutti i cavalli.",
         "trabocchetti": ["solo", "cavalli da corsa"],

@@ -1,7 +1,7 @@
 """Domande — Veicolo fermo, autostrade e strade extraurbane.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Veicolo fermo, autostrade e strade extraurbane"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato deve essere messo all'estremità del carico che sporge dietro al veicolo",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → all'estremità del carico sporgente dietro?",
         "spiegazione": "Questo pannello serve proprio a segnalare che c'è un carico che esce dalla parte posteriore del veicolo. Va messo alla fine del carico, nel punto più lontano, per avvisare chi segue.",
         "regola": "Estremità = fine del carico.",
         "trabocchetti": ["all"],
@@ -18,6 +19,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato segnala dei carichi che sporgono dalla parte posteriore del veicolo",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → carichi sporgenti dietro?",
         "spiegazione": "Esatto! La funzione principale di questo pannello è proprio quella di indicare agli altri utenti della strada che il veicolo ha un carico che sporge dalla parte posteriore, rendendolo più lungo del normale.",
         "regola": "Strisce rosse e bianche = attenzione carico dietro.",
         "immagine": "2fa4fa1d78de1aa164bf.jpg",
@@ -25,6 +27,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato deve essere retroriflettente",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → retroriflettente?",
         "spiegazione": "Sì, è vero. Il pannello deve essere retroriflettente, cioè deve riflettere la luce dei fari degli altri veicoli. Questo è molto importante per essere visibile di notte o quando c'è poca luce, garantendo la sicurezza.",
         "regola": "Riflettente = visibile anche al buio.",
         "trabocchetti": ["retroriflettente"],
@@ -33,6 +36,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato va usato nel caso in cui il carico sporga dietro al veicolo, anche se di poco",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → anche per piccole sporgenze?",
         "spiegazione": "Vero. Non importa quanto il carico sporga. Anche se è solo di pochi centimetri, la legge dice che devi usare il pannello per segnalarlo. Non c'è una misura minima.",
         "regola": "Sporge? Metti il pannello, sempre!",
         "trabocchetti": ["anche se di poco"],
@@ -41,6 +45,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato può essere messo sui veicoli guasti, quando vengono trainati e non funzionano le luci di emergenza",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → su veicoli trainati senza luci di emergenza?",
         "spiegazione": "Sì, è un uso secondario ma consentito. Se un veicolo è in panne e viene trainato, e le sue luci di emergenza non funzionano, questo pannello può essere usato come segnale di pericolo aggiuntivo per avvisare gli altri.",
         "regola": "Guasto senza luci? Usa il pannello come avviso!",
         "trabocchetti": ["può"],
@@ -49,6 +54,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato deve essere sistemato all'estremità del carico sporgente dal veicolo, in modo che sia sempre ben visibile",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → ben visibile sull'estremità del carico?",
         "spiegazione": "Vero. Il pannello deve essere posizionato in modo che sia sempre ben visibile a chi arriva da dietro. Non deve essere coperto da altri oggetti o sporco, altrimenti non serve a nulla.",
         "regola": "Visibile = sicurezza.",
         "trabocchetti": ["sempre ben visibile"],
@@ -57,6 +63,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato invita i conducenti che stanno dietro al veicolo su cui è applicato, a circolare con particolare prudenza",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → prudenza per chi segue?",
         "spiegazione": "Vero. Il pannello è un segnale di pericolo. Vedendolo, gli altri conducenti capiscono che c'è un potenziale rischio (un carico sporgente) e sono invitati a guidare con maggiore attenzione e a mantenere una distanza di sicurezza.",
         "regola": "Pannello = attenzione, rallenta!",
         "trabocchetti": ["particolare prudenza"],
@@ -65,6 +72,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato si usa solo se il carico sporge di oltre tre decimi della lunghezza del veicolo",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → solo oltre 3/10 della lunghezza?",
         "spiegazione": "Falso. Questa è una trappola! Il pannello va usato per QUALSIASI sporgenza posteriore, anche piccola. La regola dei 'tre decimi' si riferisce alla LUNGHEZZA MASSIMA che un carico può sporgere, non a quando devi usare il pannello.",
         "regola": "Non c'è un 'solo se' per la sporgenza minima, basta che sporga!",
         "trabocchetti": ["solo se", "oltre tre decimi"],
@@ -73,6 +81,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato va messo anche di lato, quando il carico sporge oltre la larghezza del veicolo",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → anche di lato?",
         "spiegazione": "Falso. Questo pannello è specifico per i carichi che sporgono dalla PARTE POSTERIORE del veicolo. Se il carico sporge di lato, servono altri tipi di segnalazioni (ad esempio, luci o bandiere diverse), ma non questo pannello.",
         "regola": "Pannello a strisce = solo dietro, mai di lato!",
         "trabocchetti": ["anche di lato"],
@@ -81,6 +90,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato identifica gli autocarri specializzati per il trasporto di materiali da costruzione",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → autocarri per materiali edili?",
         "spiegazione": "Falso. Questo pannello non serve a identificare il tipo di veicolo o il tipo di merce che trasporta. Serve solo a segnalare un carico che sporge, indipendentemente dal fatto che sia un autocarro o meno, o che tipo di materiali trasporti.",
         "regola": "Non è un'etichetta per il tipo di camion, è per il carico che sporge!",
         "trabocchetti": ["identifica gli autocarri specializzati"],
@@ -89,6 +99,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato va messo sui veicoli che trasportano la spazzatura",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → camion della spazzatura?",
         "spiegazione": "Falso. I veicoli che trasportano la spazzatura (i camion della nettezza urbana) hanno le loro segnalazioni specifiche (luci arancioni, ecc.), ma questo pannello non è per loro, a meno che non abbiano un carico che sporge in modo anomalo.",
         "regola": "Non è per la spazzatura, è per il carico che esce!",
         "trabocchetti": ["veicoli che trasportano la spazzatura"],
@@ -97,6 +108,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato va messo sui veicoli, solo se il carico sporge di almeno 50 centimetri",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → solo con sporgenza di almeno 50 cm?",
         "spiegazione": "Falso. Come abbiamo detto prima, non c'è una misura minima. Il pannello va messo anche se il carico sporge di pochi centimetri, non solo se supera i 50 centimetri.",
         "regola": "Non c'è un minimo di centimetri, basta che sporga!",
         "trabocchetti": ["solo se", "almeno 50 centimetri"],
@@ -105,6 +117,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato va messo dietro a tutti gli autocarri",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → dietro tutti gli autocarri?",
         "spiegazione": "Falso. Il pannello va messo dietro agli autocarri (o a qualsiasi altro veicolo) SOLO SE hanno un carico che sporge dalla parte posteriore. Non tutti gli autocarri trasportano carichi sporgenti, quindi non tutti devono avere questo pannello.",
         "regola": "Non tutti i camion, solo quelli con carico sporgente!",
         "trabocchetti": ["tutti"],
@@ -113,6 +126,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato può essere sostituito da una bandiera di colore rosso, delle dimensioni di 50x50 centimetri",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → sostituibile con bandiera rossa 50x50?",
         "spiegazione": "Falso. La legge è chiara: deve essere usato questo specifico pannello retroriflettente. Una semplice bandiera rossa non è sufficiente, soprattutto di notte, perché non rifletterebbe la luce e non sarebbe visibile come il pannello.",
         "regola": "Solo il pannello a strisce, non una bandiera!",
         "trabocchetti": ["può essere sostituito"],
@@ -121,6 +135,7 @@ QUESTIONS = [
     {
         "domanda": "Nel caso di ingombro della carreggiata per caduta accidentale del carico il conducente deve provvedere a rimuovere il carico, se possibile",
         "risposta": True,
+        "riassunto": "Carico caduto → rimuoverlo se possibile?",
         "spiegazione": "Se qualcosa cade dal tuo veicolo e blocca la strada, devi cercare di toglierlo, ma solo se puoi farlo in sicurezza e senza rischi. L'obiettivo è liberare la strada per gli altri.",
         "regola": "Carico caduto? Rimuovi se puoi, in sicurezza!",
         "trabocchetti": ["se possibile"],
@@ -128,6 +143,7 @@ QUESTIONS = [
     {
         "domanda": "Su strada extraurbana, nel caso di ingombro della carreggiata per caduta accidentale del carico, il conducente deve presegnalare l'ostacolo mediante il segnale di veicolo fermo (triangolo)",
         "risposta": True,
+        "riassunto": "Extraurbana, carico caduto → presegnalare col triangolo?",
         "spiegazione": "Sulle strade fuori città (extraurbane), se un carico cade e blocca la strada, è obbligatorio usare il triangolo di pericolo per avvisare gli altri automobilisti. Questo è fondamentale per la sicurezza, perché le auto vanno più veloci.",
         "regola": "Extraurbana + ostacolo = Triangolo!",
         "trabocchetti": ["Su strada extraurbana", "Segnale di veicolo fermo (triangolo)"],
@@ -135,6 +151,7 @@ QUESTIONS = [
     {
         "domanda": "Nel caso di ingombro della carreggiata per caduta accidentale del carico il conducente deve rendere sollecitamente libero, per quanto possibile, il transito",
         "risposta": True,
+        "riassunto": "Carico caduto → liberare presto il transito?",
         "spiegazione": "Se un carico cade e blocca la strada, devi fare il possibile per liberare il passaggio il più velocemente possibile. Non devi aspettare, ma agire subito per permettere agli altri veicoli di passare.",
         "regola": "Carico caduto? Libera subito la strada!",
         "trabocchetti": ["sollecitamente", "per quanto possibile"],
@@ -142,6 +159,7 @@ QUESTIONS = [
     {
         "domanda": "Nel caso di ingombro della carreggiata per caduta accidentale del carico il conducente deve presegnalare l'ostacolo mediante il segnale di STOP",
         "risposta": False,
+        "riassunto": "Carico caduto → presegnalare con STOP?",
         "spiegazione": "Se un carico cade e blocca la strada, non devi usare il segnale di STOP. Il segnale di STOP serve per gli incroci dove devi fermarti. Per segnalare un ostacolo, si usano le luci di emergenza o il triangolo di pericolo (se fuori città).",
         "regola": "Ostacolo = Triangolo/Luci, non STOP!",
         "trabocchetti": ["STOP"],
@@ -149,12 +167,14 @@ QUESTIONS = [
     {
         "domanda": "Nel caso di ingombro della carreggiata per caduta accidentale del carico il conducente deve restare a bordo del veicolo in attesa dei soccorsi",
         "risposta": False,
+        "riassunto": "Carico caduto → restare a bordo ad aspettare?",
         "spiegazione": "Se un carico cade e blocca la strada, non devi rimanere seduto in macchina ad aspettare i soccorsi. Hai il dovere di agire: provare a rimuovere l'ostacolo (se sicuro), segnalarlo agli altri e rendere la strada il più sicura possibile.",
         "regola": "Carico caduto? Agisci, non aspettare in auto!",
     },
     {
         "domanda": "In caso di ingombro della carreggiata per avaria del veicolo, il conducente deve sollecitamente rendere libero il transito per il traffico sopraggiungente",
         "risposta": True,
+        "riassunto": "Avaria che ingombra → liberare il transito?",
         "spiegazione": "Se il tuo veicolo si ferma sulla strada e blocca il passaggio, devi fare subito il possibile per liberare la strada, in modo che le altre auto possano passare. È importante per la sicurezza di tutti.",
         "regola": "Ingombro = Libera subito!",
         "trabocchetti": ["sollecitamente"],
@@ -162,6 +182,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di ingombro della carreggiata per avaria del veicolo, il conducente deve spingere il veicolo stesso fuori della carreggiata o, se ciò non è possibile, collocarlo sul margine destro della carreggiata",
         "risposta": True,
+        "riassunto": "Avaria → spingere fuori o al margine destro?",
         "spiegazione": "Se la tua auto si rompe e blocca la strada, la prima cosa da fare è cercare di spostarla completamente fuori dalla strada. Se non ci riesci, mettila il più possibile a destra, sul bordo della strada, per lasciare spazio al traffico.",
         "regola": "Auto rotta? Fuori o a destra!",
         "trabocchetti": ["o, se ciò non è possibile"],
@@ -169,6 +190,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di ingombro della carreggiata per caduta del carico o per qualsiasi altra causa, il conducente deve rimuovere l'ingombro, per quanto possibile",
         "risposta": True,
+        "riassunto": "Ingombro per carico o altro → rimuoverlo se possibile?",
         "spiegazione": "Se qualcosa cade dal tuo veicolo e blocca la strada, o se c'è un altro ostacolo che hai causato, devi toglierlo dalla strada se puoi. Questo serve a non creare pericoli per gli altri utenti della strada.",
         "regola": "Ostacolo = Rimuovi se puoi!",
         "trabocchetti": ["per quanto possibile"],
@@ -176,6 +198,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di ingombro della carreggiata per avaria del veicolo, il conducente non è tenuto a spostarlo, in attesa dei soccorsi, se il traffico è scarso",
         "risposta": False,
+        "riassunto": "Avaria con traffico scarso → non spostare il veicolo?",
         "spiegazione": "Anche se ci sono poche auto in giro, se il tuo veicolo blocca la strada perché si è rotto, devi comunque cercare di spostarlo. La sicurezza è sempre importante, non solo quando c'è tanto traffico. Non puoi lasciare un veicolo in panne sulla carreggiata.",
         "regola": "Traffico scarso? Sposta lo stesso!",
         "trabocchetti": ["non è tenuto a spostarlo", "se il traffico è scarso"],
@@ -183,12 +206,14 @@ QUESTIONS = [
     {
         "domanda": "Nel caso di ingombro della carreggiata per caduta accidentale del carico il conducente deve evitare di spostarlo per consentire la ricostruzione corretta dell'accaduto",
         "risposta": False,
+        "riassunto": "Carico caduto → non spostarlo per ricostruire l'accaduto?",
         "spiegazione": "Se qualcosa cade dal tuo veicolo e blocca la strada, devi toglierlo subito. Non devi lasciarlo lì per far capire cosa è successo, perché creerebbe un pericolo per gli altri. La sicurezza e la fluidità del traffico vengono prima di tutto.",
         "regola": "Carico caduto? Rimuovi, non aspettare!",
     },
     {
         "domanda": "Su strada extraurbana, nel caso di incidente che provochi l'ingombro della carreggiata per la presenza di veicoli danneggiati che non è possibile rimuovere, il conducente o i passeggeri devono presegnalare la zona mediante il segnale triangolare mobile di pericolo",
         "risposta": True,
+        "riassunto": "Extraurbana, incidente con veicoli non rimovibili → triangolo?",
         "spiegazione": "Se c'è un incidente su una strada fuori città e i veicoli danneggiati bloccano la strada senza poter essere spostati, è obbligatorio per il conducente o i passeggeri mettere il segnale triangolare mobile di pericolo per avvisare gli altri. Questo è fondamentale per la sicurezza.",
         "regola": "Incidente + veicolo fermo = Triangolo OBBLIGATORIO.",
         "trabocchetti": ["devono presegnalare"],
@@ -196,18 +221,21 @@ QUESTIONS = [
     {
         "domanda": "Nel caso di ingombro della carreggiata per avaria del veicolo che non è possibile spostare , il conducente deve informare l'organo di polizia, senza dover opportunamente presegnalare la zona.",
         "risposta": False,
+        "riassunto": "Avaria non spostabile → avvisare la polizia senza presegnalare?",
         "spiegazione": "Se il tuo veicolo si rompe e blocca la strada, non è vero che devi solo informare la polizia 'senza dover opportunamente presegnalare la zona'. In realtà, devi SEMPRE presegnalare la zona con il triangolo di pericolo per avvisare gli altri veicoli, oltre a chiamare la polizia se la situazione è grave o il veicolo non può essere spostato.",
         "regola": "Avaria + strada bloccata = Triangolo SEMPRE.",
     },
     {
         "domanda": "Nel caso di ingombro della carreggiata per caduta del carico non removibile, il conducente può evitare di informare un organo di polizia se presegnala la zona con efficaci segnali manuali",
         "risposta": False,
+        "riassunto": "Carico non removibile → niente polizia se segnali manuali?",
         "spiegazione": "Se il carico cade dal veicolo e non si può rimuovere, bloccando la strada, non basta fare 'efficaci segnali manuali' per evitare di chiamare la polizia. In questi casi, devi sempre usare il triangolo di pericolo e, se la situazione è pericolosa o il carico non si può togliere, devi anche informare la polizia per gestire il traffico e la rimozione. I segnali manuali non sono sufficienti.",
         "regola": "Carico caduto + non rimovibile = Triangolo + Polizia (se grave). Mai solo segnali manuali.",
     },
     {
         "domanda": "Chiunque non abbia potuto evitare la caduta o lo spargimento di materie viscide, infiammabili o comunque pericolose, deve, tra l'altro, presegnalare la zona con il segnale mobile di pericolo anche in mezzo alla carreggiata",
         "risposta": True,
+        "riassunto": "Materie viscide o pericolose → triangolo anche in mezzo alla carreggiata?",
         "spiegazione": "Se cadono materie pericolose sulla strada, è tuo dovere segnalare il pericolo. Il segnale mobile di pericolo (il triangolo) serve proprio a questo e va messo dove serve, anche al centro della strada se il pericolo è lì, per avvisare gli altri conducenti.",
         "regola": "Pericolo in strada? Triangolo subito, dove serve!",
         "trabocchetti": ["anche in mezzo alla carreggiata"],
@@ -215,6 +243,7 @@ QUESTIONS = [
     {
         "domanda": "Su strada extraurbana, chiunque non abbia potuto evitare la caduta o lo spargimento di materie viscide, infiammabili o comunque pericolose deve, tra l'altro, presegnalare la zona con il segnale mobile di pericolo posto anche in mezzo alla carreggiata",
         "risposta": True,
+        "riassunto": "Extraurbana, materie pericolose → triangolo anche in mezzo?",
         "spiegazione": "Questa domanda è molto simile alla precedente. Su una strada extraurbana, dove le auto vanno più veloci, è ancora più importante segnalare bene un pericolo con il triangolo, anche al centro della strada se necessario, per dare tempo agli altri di reagire.",
         "regola": "Pericolo extraurbano? Segnala bene, anche al centro!",
         "trabocchetti": ["Su strada extraurbana", "anche in mezzo alla carreggiata"],
@@ -222,6 +251,7 @@ QUESTIONS = [
     {
         "domanda": "Chiunque non abbia potuto evitare la caduta o lo spargimento di materie pericolose, deve, tra l'altro, eseguire segnali manuali per impedire il transito dei veicoli dalla parte dove non è stato posto il segnale mobile di pericolo",
         "risposta": True,
+        "riassunto": "Materie pericolose → segnali manuali dal lato senza triangolo?",
         "spiegazione": "Se c'è un pericolo e hai messo il triangolo solo da una parte, devi comunque avvisare gli altri veicoli che arrivano dall'altra direzione, magari con gesti delle mani, per la loro sicurezza. Non tutti potrebbero vedere il triangolo subito.",
         "regola": "Triangolo da un lato? Segnala a mano dall'altro!",
         "trabocchetti": ["eseguire segnali manuali"],
@@ -229,6 +259,7 @@ QUESTIONS = [
     {
         "domanda": "Chiunque non abbia potuto evitare la caduta o lo spargimento di materie viscide, infiammabili o pericolose, deve, tra l'altro, rimuoverle o spargere sul terreno, se possibile, sabbia, terra, segatura o altro materiale idoneo a ripristinare l'aderenza",
         "risposta": True,
+        "riassunto": "Materie viscide → rimuoverle o spargere sabbia o segatura?",
         "spiegazione": "Non basta solo segnalare il pericolo! Se puoi farlo in sicurezza, devi anche cercare di eliminare il pericolo o renderlo meno grave. Per esempio, se c'è olio, puoi coprirlo con sabbia o segatura per non far scivolare le auto.",
         "regola": "Segnala e, se puoi, pulisci o copri!",
         "trabocchetti": ["se possibile"],
@@ -236,6 +267,7 @@ QUESTIONS = [
     {
         "domanda": "Chiunque non abbia potuto evitare la caduta o lo spargimento di materie pericolose deve, tra l'altro, eseguire segnali manuali atti a segnalare il pericolo, solo dalla parte dove è stato posto il segnale triangolare mobile di pericolo",
         "risposta": False,
+        "riassunto": "Materie pericolose → segnali manuali solo dal lato del triangolo?",
         "spiegazione": "Questa affermazione è FALSO. I segnali manuali servono proprio per avvisare dove il triangolo *non c'è* o non è ben visibile, o per rafforzare la segnalazione da ogni lato necessario. Non ha senso farli 'solo dalla parte dove è stato posto il segnale'.",
         "regola": "'Solo' è quasi sempre FALSO per la sicurezza!",
         "trabocchetti": ["solo dalla parte"],
@@ -243,12 +275,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un autoveicolo che non abbia potuto evitare lo spargimento di materie pericolose, può evitare di presegnalare la zona con il segnale mobile di pericolo se esegue segnali sonori per allontanare gli altri veicoli",
         "risposta": False,
+        "riassunto": "Materie pericolose → niente triangolo se si usano segnali sonori?",
         "spiegazione": "Questa affermazione è FALSO. Non puoi sostituire il triangolo di pericolo con i segnali sonori (il clacson). Il triangolo è obbligatorio per legge per segnalare un pericolo fermo sulla strada, specialmente di notte o in condizioni di scarsa visibilità. I segnali sonori sono solo un aiuto temporaneo, non un sostituto.",
         "regola": "Triangolo obbligatorio, il clacson non lo sostituisce!",
     },
     {
         "domanda": "Chiunque non abbia potuto evitare la caduta di materie viscide, deve deviare il traffico in attesa che l'ente proprietario della strada intervenga per ripristinare le condizioni ottimali",
         "risposta": False,
+        "riassunto": "Materie viscide → deviare il traffico in attesa dell'ente?",
         "spiegazione": "Questa affermazione è FALSO. Non è compito del conducente deviare il traffico. Questo è un compito della polizia o degli addetti alla strada. Tu devi segnalare il pericolo e, se possibile, ridurlo, ma non puoi gestire il traffico.",
         "regola": "Non sei un vigile! Segnala, non deviare il traffico.",
         "trabocchetti": ["deve deviare il traffico"],
@@ -256,6 +290,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, di notte, quando mancano o sono insufficienti le luci posteriori di posizione o di emergenza, è obbligatorio presegnalare il veicolo, fermo sulla carreggiata, con il segnale triangolare mobile di pericolo",
         "risposta": True,
+        "riassunto": "Fuori città, notte, luci insufficienti → triangolo obbligatorio?",
         "spiegazione": "È VERO. Fuori dai centri abitati, di notte, se le luci posteriori del veicolo non funzionano bene o non ci sono, è obbligatorio usare il triangolo per avvisare gli altri veicoli che c'è un pericolo.",
         "regola": "Notte + Fuori città + Luci rotte = Triangolo OBBLIGATORIO.",
         "trabocchetti": ["obbligatorio"],
@@ -263,6 +298,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, di notte, è obbligatorio presegnalare con il segnale triangolare mobile di pericolo ogni carico caduto accidentalmente dal veicolo sulla carreggiata",
         "risposta": True,
+        "riassunto": "Fuori città, notte → triangolo per ogni carico caduto?",
         "spiegazione": "È VERO. Se un carico cade dal veicolo sulla strada, diventa un ostacolo pericoloso. Fuori dai centri abitati e di notte, devi sempre segnalarlo con il triangolo.",
         "regola": "Carico caduto = Ostacolo. Notte + Fuori città = Triangolo OBBLIGATORIO.",
         "trabocchetti": ["obbligatorio", "Ogni carico caduto"],
@@ -270,6 +306,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, è obbligatorio anche di giorno presegnalare un veicolo fermo sulla carreggiata mediante il segnale triangolare di pericolo quando non può essere visto nettamente a 100 metri di distanza",
         "risposta": True,
+        "riassunto": "Fuori città, anche di giorno → triangolo se non visibile a 100 m?",
         "spiegazione": "È VERO. Anche di giorno, se ti trovi fuori dai centri abitati e il tuo veicolo fermo non si vede bene da almeno 100 metri di distanza, devi usare il triangolo per segnalarlo. La visibilità è la chiave.",
         "regola": "Giorno + Fuori città + Non visibile a 100m = Triangolo OBBLIGATORIO.",
         "trabocchetti": ["obbligatorio"],
@@ -277,6 +314,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati è obbligatorio, anche di giorno, presegnalare un carico accidentalmente caduto sulla carreggiata mediante il segnale triangolare mobile di pericolo, quando l'ingombro non può essere visto nettamente a 100 metri di distanza",
         "risposta": True,
+        "riassunto": "Fuori città, carico caduto → triangolo se non visibile a 100 m?",
         "spiegazione": "È VERO. Stessa regola del veicolo fermo, ma per un carico caduto. Se fuori dai centri abitati, di giorno, un carico caduto non è visibile da 100 metri, devi usare il triangolo.",
         "regola": "Carico caduto + Giorno + Fuori città + Non visibile a 100m = Triangolo OBBLIGATORIO.",
         "trabocchetti": ["obbligatorio", "quando l"],
@@ -284,6 +322,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale mobile triangolare di pericolo fa parte dell'equipaggiamento obbligatorio degli autoveicoli",
         "risposta": True,
+        "riassunto": "Triangolo → equipaggiamento obbligatorio?",
         "spiegazione": "È VERO. Il triangolo mobile di pericolo è un oggetto che devi sempre avere in macchina, fa parte dell'equipaggiamento obbligatorio di tutti gli autoveicoli.",
         "regola": "Triangolo = Equipaggiamento OBBLIGATORIO in auto.",
         "trabocchetti": ["obbligatorio"],
@@ -291,6 +330,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale mobile triangolare di pericolo deve essere posto dietro al veicolo o all'ostacolo da segnalare, ad almeno 50 metri",
         "risposta": True,
+        "riassunto": "Triangolo → almeno 50 m dietro?",
         "spiegazione": "È VERO. Quando usi il triangolo, devi metterlo sulla strada, dietro al veicolo o all'ostacolo che vuoi segnalare, a una distanza di almeno 50 metri.",
         "regola": "Triangolo = 50 metri DIETRO l'ostacolo.",
         "trabocchetti": ["dietro", "almeno 50 metri"],
@@ -298,6 +338,7 @@ QUESTIONS = [
     {
         "domanda": "Nel caso di intersezione a distanza inferiore a 50 metri, il segnale mobile triangolare di pericolo deve essere posto dietro al veicolo nella posizione più idonea ad essere avvistato",
         "risposta": True,
+        "riassunto": "Incrocio a meno di 50 m → triangolo dove si vede meglio?",
         "spiegazione": "È VERO. Se dietro al tuo veicolo c'è un incrocio a meno di 50 metri, non puoi mettere il triangolo a 50 metri. In questo caso speciale, lo metti dove si vede meglio, per garantire la massima visibilità.",
         "regola": "Intersezione vicina (<50m) = Triangolo dove si vede MEGLIO.",
         "trabocchetti": ["Posizione più idonea ad essere avvistato"],
@@ -305,12 +346,14 @@ QUESTIONS = [
     {
         "domanda": "Il segnale mobile triangolare di pericolo deve essere posto sulla carreggiata in modo che sia visibile ad una distanza di almeno 100 metri dai veicoli sopraggiungenti",
         "risposta": True,
+        "riassunto": "Triangolo → visibile da almeno 100 m?",
         "spiegazione": "È VERO. Il triangolo non solo deve essere a 50 metri dall'ostacolo, ma deve anche essere posizionato in modo che chi arriva con un altro veicolo lo possa vedere da almeno 100 metri di distanza.",
         "regola": "Triangolo = Visibile a 100 metri (per chi arriva).",
     },
     {
         "domanda": "Fuori dei centri abitati, di notte, quando mancano o sono insufficienti le luci posteriori di posizione o di emergenza, è consigliabile presegnalare il veicolo fermo sulla carreggiata, con il segnale triangolare mobile di pericolo",
         "risposta": False,
+        "riassunto": "Fuori città, notte, luci insufficienti → triangolo solo consigliato?",
         "spiegazione": "È FALSO. In quella situazione (fuori dai centri abitati, di notte, luci insufficienti), l'uso del triangolo non è solo 'consigliabile', ma 'obbligatorio' per legge. Non è una scelta.",
         "regola": "Triangolo = OBBLIGATORIO, non solo 'consigliabile'.",
         "trabocchetti": ["consigliabile"],
@@ -318,6 +361,7 @@ QUESTIONS = [
     {
         "domanda": "Il triangolo mobile di pericolo deve essere obbligatoriamente usato per segnalare il veicolo fermo per avaria di notte, se l'ostacolo non è visibile ad almeno 150 metri di distanza",
         "risposta": False,
+        "riassunto": "Triangolo di notte → se non visibile a 150 m?",
         "spiegazione": "È FALSO. La distanza di visibilità per cui è obbligatorio usare il triangolo (quando non è già obbligatorio per altre ragioni) è di 100 metri, non 150 metri. I 150 metri sono una distanza sbagliata.",
         "regola": "Visibilità per l'uso = 100 metri, non 150.",
         "trabocchetti": ["150 metri"],
@@ -325,6 +369,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, è facoltativo presegnalare, anche di giorno, un carico accidentalmente caduto sulla carreggiata mediante il segnale di pericolo, quando non può essere visto nettamente a 100 metri di distanza",
         "risposta": False,
+        "riassunto": "Fuori città, carico caduto → triangolo facoltativo?",
         "spiegazione": "È FALSO. Se un carico cade fuori dai centri abitati e non si vede bene da 100 metri, non è 'facoltativo' (cioè a tua scelta) segnalarlo. È 'obbligatorio' per la sicurezza.",
         "regola": "Non visibile a 100m = OBBLIGATORIO, non 'facoltativo'.",
         "trabocchetti": ["facoltativo"],
@@ -332,6 +377,7 @@ QUESTIONS = [
     {
         "domanda": "Di notte, quando mancano o sono insufficienti le luci posteriori di posizione o di emergenza, è obbligatorio presegnalare il veicolo fermo con il segnale triangolare mobile di pericolo anche nei centri abitati",
         "risposta": False,
+        "riassunto": "Notte, luci insufficienti → triangolo anche in città?",
         "spiegazione": "È FALSO. La regola del triangolo per luci insufficienti si applica 'fuori' dai centri abitati. Nei centri abitati, di solito, c'è l'illuminazione pubblica che rende il triangolo non necessario.",
         "regola": "Triangolo = FUORI città. Dentro città = NO (di solito).",
         "trabocchetti": ["anche nei centri abitati"],
@@ -339,6 +385,7 @@ QUESTIONS = [
     {
         "domanda": "Di notte, quando mancano o sono insufficienti le luci posteriori di posizione, è obbligatorio presegnalare velocipedi, ciclomotori e motocicli fermi con il segnale triangolare mobile di pericolo anche nei centri abitati",
         "risposta": False,
+        "riassunto": "Notte → triangolo anche per bici e moto in città?",
         "spiegazione": "È FALSO. Come per la domanda precedente, il triangolo non è obbligatorio nei centri abitati. Inoltre, per veicoli piccoli come biciclette, ciclomotori e motocicli, spesso si possono spostare o segnalare in altri modi, e il triangolo non è richiesto.",
         "regola": "Triangolo = FUORI città. Per mezzi piccoli = Spesso non serve o si sposta.",
         "trabocchetti": ["anche nei centri abitati", "velocipedi, ciclomotori e motocicli"],
@@ -346,6 +393,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale mobile triangolare di pericolo deve essere posto sul carico accidentalmente caduto sulla carreggiata",
         "risposta": False,
+        "riassunto": "Triangolo → sopra il carico caduto?",
         "spiegazione": "È FALSO. Il triangolo deve essere messo sulla carreggiata, 'dietro' al carico caduto, per avvisare chi arriva. Non si mette 'sul' carico, altrimenti non sarebbe visibile in tempo.",
         "regola": "Triangolo = DIETRO l'ostacolo, non SOPRA.",
         "trabocchetti": ["sul carico"],
@@ -353,12 +401,14 @@ QUESTIONS = [
     {
         "domanda": "Il segnale mobile triangolare di pericolo deve essere posto sulla carreggiata in modo che sia visibile ad una distanza di almeno 50 metri dai veicoli sopraggiungenti",
         "risposta": False,
+        "riassunto": "Triangolo → visibile da 50 m?",
         "spiegazione": "È FALSO. Il triangolo deve essere posizionato a 'almeno 50 metri' dall'ostacolo, ma deve essere 'visibile' da almeno '100 metri' per chi arriva. La domanda confonde le due distanze.",
         "regola": "Triangolo = Visibile a 100 metri (non 50). Posizionato a 50 metri.",
     },
     {
         "domanda": "Il segnale mobile triangolare di pericolo deve essere posto sulla corsia occupata dal veicolo fermo o dal carico caduto",
         "risposta": True,
+        "riassunto": "Triangolo → sulla corsia del veicolo fermo o del carico?",
         "spiegazione": "Il segnale mobile triangolare di pericolo serve per avvisare gli altri guidatori che c'è un pericolo. Per questo, deve essere messo proprio dove si trova il problema, cioè sulla stessa corsia dove il veicolo è fermo o dove è caduto qualcosa. Così, chi arriva vede subito il pericolo.",
         "regola": "Triangolo = dove c'è il pericolo.",
         "trabocchetti": ["sulla corsia occupata"],
@@ -366,6 +416,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale mobile triangolare di pericolo deve essere posto sulla carreggiata ad almeno un metro dal bordo esterno di essa",
         "risposta": True,
+        "riassunto": "Triangolo → almeno un metro dal bordo esterno?",
         "spiegazione": "È importante che il triangolo sia ben visibile e non troppo vicino al bordo della strada, dove potrebbe essere difficile da vedere o finire fuori. Per questo, la legge dice che deve stare ad almeno un metro dal bordo esterno della carreggiata. Così è più sicuro e visibile per tutti.",
         "regola": "1 metro dal bordo per sicurezza.",
         "trabocchetti": ["ad almeno un metro dal bordo esterno"],
@@ -373,6 +424,7 @@ QUESTIONS = [
     {
         "domanda": "Nel caso di carreggiata a più corsie, il segnale mobile triangolare di pericolo deve essere posto sulla corsia immediatamente a sinistra del veicolo fermo o del carico caduto",
         "risposta": False,
+        "riassunto": "Più corsie → triangolo nella corsia a sinistra del veicolo?",
         "spiegazione": "Se ci sono più corsie, il triangolo deve essere messo sulla corsia dove si trova il veicolo fermo o il carico caduto. Metterlo sulla corsia a sinistra non servirebbe a molto per chi arriva sulla corsia del pericolo e potrebbe confondere gli altri guidatori.",
         "regola": "Triangolo = sulla corsia del problema, non a lato.",
         "trabocchetti": ["immediatamente a sinistra"],
@@ -380,12 +432,14 @@ QUESTIONS = [
     {
         "domanda": "Il segnale mobile triangolare di pericolo deve essere posto sulla carreggiata ad almeno un metro dalla striscia di separazione dei sensi di marcia",
         "risposta": False,
+        "riassunto": "Triangolo → almeno un metro dalla mezzeria?",
         "spiegazione": "La regola di 'almeno un metro' si riferisce al bordo esterno della strada, non alla linea che separa i due sensi di marcia (la striscia centrale). Il triangolo deve avvisare chi arriva nella stessa direzione del pericolo, quindi la distanza dal bordo esterno è quella che conta per la visibilità.",
         "regola": "1 metro dal bordo, non dalla linea centrale.",
     },
     {
         "domanda": "Durante le operazioni di presegnalazione con il segnale mobile di pericolo il conducente deve rendersi visibile indossando il giubbotto o le bretelle retroriflettenti ad alta visibilità",
         "risposta": True,
+        "riassunto": "Mettendo il triangolo → giubbotto retroriflettente?",
         "spiegazione": "Quando devi mettere il triangolo di pericolo (segnale mobile) perché la tua auto è ferma, devi essere ben visibile per la tua sicurezza e quella degli altri. Il giubbotto o le bretelle retroriflettenti ti rendono visibile, specialmente al buio o in condizioni di scarsa visibilità.",
         "regola": "Triangolo = Giubbotto obbligatorio per la tua sicurezza.",
         "trabocchetti": ["deve rendersi visibile"],
@@ -393,6 +447,7 @@ QUESTIONS = [
     {
         "domanda": "Il giubbotto o le bretelle retroriflettenti ad alta visibilità da usare durante le operazioni di presegnalazione con il segnale mobile di pericolo devono essere di tipo approvato",
         "risposta": True,
+        "riassunto": "Giubbotto → di tipo approvato?",
         "spiegazione": "Non basta un giubbotto qualsiasi. Per garantire la massima sicurezza e visibilità, il giubbotto o le bretelle devono essere di un tipo speciale, che rispetta precise norme di sicurezza e riflette bene la luce. Questo tipo è chiamato 'approvato'.",
         "regola": "Giubbotto = Approvato per massima sicurezza.",
         "trabocchetti": ["approvato"],
@@ -400,6 +455,7 @@ QUESTIONS = [
     {
         "domanda": "Durante le operazioni di presegnalazione con il segnale mobile di pericolo il conducente deve indossare il giubbotto ad alta visibilità anche se si trova sulle corsie di emergenza o sulle piazzole di sosta",
         "risposta": True,
+        "riassunto": "Giubbotto → anche in corsia di emergenza o piazzola?",
         "spiegazione": "Anche se ti trovi in un'area che sembra più sicura, come la corsia di emergenza o una piazzola di sosta, c'è sempre il rischio di essere investiti da altri veicoli. Per questo motivo, il giubbotto è sempre obbligatorio in queste situazioni quando scendi dal veicolo.",
         "regola": "Emergenza/Sosta = Giubbotto SEMPRE obbligatorio.",
         "trabocchetti": ["anche se si trova"],
@@ -407,12 +463,14 @@ QUESTIONS = [
     {
         "domanda": "Per effettuare le operazioni di presegnalazione con il segnale mobile di pericolo è vietato al conducente scendere dal veicolo e circolare sulla strada senza indossare il giubbotto ad alta visibilità",
         "risposta": True,
+        "riassunto": "Senza giubbotto → vietato scendere a mettere il triangolo?",
         "spiegazione": "È proprio vietato scendere dall'auto e camminare sulla strada per mettere il triangolo senza indossare il giubbotto. È una regola di sicurezza fondamentale per evitare incidenti, perché senza il giubbotto saresti poco visibile e in grave pericolo.",
         "regola": "Scendi dall'auto = Metti il giubbotto, è un divieto non farlo.",
     },
     {
         "domanda": "Durante le operazioni di presegnalazione con il segnale mobile di pericolo è facoltativo l'uso del giubbotto o delle bretelle retroriflettenti ad alta visibilità",
         "risposta": False,
+        "riassunto": "Giubbotto → facoltativo?",
         "spiegazione": "L'uso del giubbotto non è una scelta personale, ma un obbligo di legge per la tua sicurezza e quella degli altri. 'Facoltativo' significa che puoi scegliere, ma in questo caso non è così: devi indossarlo per forza.",
         "regola": "Giubbotto = MAI facoltativo, è un obbligo.",
         "trabocchetti": ["facoltativo"],
@@ -420,6 +478,7 @@ QUESTIONS = [
     {
         "domanda": "Durante le operazioni di presegnalazione con il segnale mobile di pericolo il conducente non deve indossare il giubbotto ad alta visibilità se si trova sulle corsie di emergenza o sulle piazzole di sosta",
         "risposta": False,
+        "riassunto": "Giubbotto → non in corsia di emergenza o piazzola?",
         "spiegazione": "Questa domanda è l'opposto della 23847. Come abbiamo già detto, anche in corsia di emergenza o in una piazzola di sosta, il giubbotto è obbligatorio per la tua sicurezza quando scendi dal veicolo. Non ci sono eccezioni in queste aree.",
         "regola": "Emergenza/Sosta = Giubbotto SEMPRE (ricorda la domanda 23847).",
         "trabocchetti": ["non deve indossare"],
@@ -427,6 +486,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve indossare il giubbotto ad alta visibilità di notte, anche nei centri abitati, qualora debba fermarsi sulla carreggiata perché il suo veicolo ha un guasto",
         "risposta": False,
+        "riassunto": "Guasto di notte in città → giubbotto?",
         "spiegazione": "L'obbligo di indossare il giubbotto ad alta visibilità vale solo fuori dai centri abitati (sulle strade extraurbane e in autostrada). Nei centri abitati, anche di notte e in caso di guasto, non è obbligatorio indossarlo se scendi dal veicolo.",
         "regola": "Giubbotto in città = NO obbligo. Solo fuori città e autostrade.",
         "trabocchetti": ["anche nei centri abitati"],
@@ -434,6 +494,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e strade extraurbane principali è vietata la circolazione di autovetture che non sono in grado di sviluppare per costruzione la velocità in piano di almeno 80 km/h",
         "risposta": True,
+        "riassunto": "Autostrade ed extraurbane principali → vietate auto sotto 80 km/h?",
         "spiegazione": "Per poter circolare in autostrada o su strade extraurbane principali, un'autovettura deve essere in grado di raggiungere una velocità di almeno 80 km/h. Se un'auto è costruita per essere più lenta di così, non può entrare in queste strade.",
         "regola": "Auto in autostrada: minimo 80 km/h.",
         "trabocchetti": ["per costruzione", "almeno 80 km/h"],
@@ -441,6 +502,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e strade extraurbane principali è vietata la circolazione di macchine agricole",
         "risposta": True,
+        "riassunto": "Autostrade ed extraurbane principali → vietate macchine agricole?",
         "spiegazione": "Le macchine agricole, come i trattori, sono veicoli lenti e spesso ingombranti. Per questo motivo, non possono circolare sulle autostrade e sulle strade extraurbane principali, dove il traffico è veloce e intenso.",
         "regola": "Trattori e simili = vietati in autostrada.",
         "trabocchetti": ["macchine agricole"],
@@ -448,6 +510,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e strade extraurbane principali è vietata la circolazione di veicoli con carico disordinato e non solidamente assicurato o sporgente oltre i limiti consentiti",
         "risposta": True,
+        "riassunto": "Autostrade → vietati carichi disordinati o sporgenti?",
         "spiegazione": "È molto pericoloso circolare con un carico che non è ben sistemato, non è fissato saldamente o sporge troppo. Questo perché il carico potrebbe cadere, spostarsi e causare incidenti. Per la sicurezza di tutti, è vietato.",
         "regola": "Carico instabile o sporgente = pericolo = vietato.",
         "trabocchetti": ["disordinato e non solidamente assicurato", "sporgente oltre i limiti consentiti"],
@@ -455,6 +518,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e strade extraurbane principali è vietata la circolazione di veicoli a tenuta non stagna e con carico scoperto, se trasportano materiali che possono disperdersi",
         "risposta": True,
+        "riassunto": "Autostrade → vietati carichi scoperti che si disperdono?",
         "spiegazione": "Se un veicolo non è 'a tenuta stagna' (cioè perde liquidi) o ha un carico scoperto che può disperdersi (come sabbia, ghiaia, ecc.), è vietato circolare in autostrada. Questo perché i materiali dispersi possono sporcare la strada, renderla scivolosa e causare incidenti.",
         "regola": "Niente perdite o dispersioni in autostrada.",
         "trabocchetti": ["a tenuta non stagna", "carico scoperto", "materiali che possono disperdersi"],
@@ -462,12 +526,14 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e strade extraurbane principali è vietata la circolazione di veicoli le cui condizioni di uso, equipaggiamento e gommatura possono costituire pericolo per la circolazione",
         "risposta": True,
+        "riassunto": "Autostrade → vietati veicoli pericolosi per uso o gomme?",
         "spiegazione": "Un veicolo deve essere in perfette condizioni per circolare in autostrada. Se le sue condizioni generali, l'equipaggiamento (ad esempio, luci non funzionanti) o le gomme sono usurati e possono creare un pericolo, la circolazione è vietata.",
         "regola": "Veicolo insicuro = vietato.",
     },
     {
         "domanda": "Sulle autostrade e strade extraurbane principali è vietata la circolazione di autobus per trasporto di studenti",
         "risposta": False,
+        "riassunto": "Autostrade → vietati autobus di studenti?",
         "spiegazione": "Gli autobus, inclusi quelli usati per il trasporto di studenti, possono circolare sulle autostrade e sulle strade extraurbane principali. Non c'è un divieto specifico per loro, purché rispettino le norme di sicurezza e velocità.",
         "regola": "Autobus (anche scolastici) = ammessi.",
         "trabocchetti": ["autobus per trasporto di studenti"],
@@ -475,6 +541,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e strade extraurbane principali è consigliabile evitare la circolazione di veicoli a tenuta non stagna e con carico scoperto, se trasportano materiali che possono disperdersi",
         "risposta": False,
+        "riassunto": "Autostrade → carichi scoperti solo sconsigliati?",
         "spiegazione": "Non è solo 'consigliabile evitare' di circolare con veicoli che perdono materiali o con carico scoperto che può disperdersi; è proprio 'vietato' dalla legge. Queste situazioni sono considerate molto pericolose e non una semplice scelta.",
         "regola": "Pericolo = divieto, non consiglio.",
         "trabocchetti": ["consigliabile"],
@@ -482,6 +549,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e strade extraurbane principali è vietata la circolazione di veicoli che trasportano animali vivi.",
         "risposta": False,
+        "riassunto": "Autostrade → vietati veicoli con animali vivi?",
         "spiegazione": "I veicoli che trasportano animali vivi possono circolare sulle autostrade e sulle strade extraurbane principali. Devono ovviamente rispettare le norme specifiche per il benessere degli animali e la sicurezza del trasporto, ma non c'è un divieto generale.",
         "regola": "Trasporto animali = ammesso (con regole).",
         "trabocchetti": ["veicoli che trasportano animali vivi"],
@@ -489,6 +557,7 @@ QUESTIONS = [
     {
         "domanda": "Sono ammessi a circolare su autostrade e strade extraurbane principali i ciclomotori che sviluppano una velocità di almeno 50 km/h",
         "risposta": False,
+        "riassunto": "Autostrade → ciclomotori che fanno 50 km/h?",
         "spiegazione": "I ciclomotori sono sempre vietati in autostrada e sulle strade extraurbane principali, indipendentemente dalla loro velocità massima. Anche se un ciclomotore potesse raggiungere i 50 km/h, non sarebbe comunque ammesso.",
         "regola": "Ciclomotori = mai in autostrada.",
         "trabocchetti": ["ciclomotori", "almeno 50 km/h"],
@@ -496,6 +565,7 @@ QUESTIONS = [
     {
         "domanda": "Sono ammesse a circolare su autostrade e strade extraurbane principali le macchine agricole, non trainanti un rimorchio",
         "risposta": False,
+        "riassunto": "Autostrade → macchine agricole senza rimorchio?",
         "spiegazione": "Le macchine agricole sono sempre vietate in autostrada e sulle strade extraurbane principali. Non importa se trainano un rimorchio o meno; sono considerate troppo lente e ingombranti per queste strade.",
         "regola": "Macchine agricole = mai in autostrada (con o senza rimorchio).",
         "trabocchetti": ["macchine agricole", "non trainanti un rimorchio"],
@@ -503,6 +573,7 @@ QUESTIONS = [
     {
         "domanda": "Sono ammessi a circolare su autostrade e strade extraurbane principali i veicoli non muniti di pneumatici, se assicurati",
         "risposta": False,
+        "riassunto": "Autostrade → veicoli senza pneumatici se assicurati?",
         "spiegazione": "Tutti i veicoli che circolano su strada devono essere muniti di pneumatici in buone condizioni. Un veicolo senza pneumatici (ad esempio, con cingoli o ruote metalliche) non può circolare in autostrada, anche se ha l'assicurazione. L'assicurazione è obbligatoria, ma non rende un veicolo idoneo alla circolazione se non ha le caratteristiche tecniche necessarie.",
         "regola": "Senza pneumatici = vietato. Assicurazione = obbligatoria, ma non basta.",
         "trabocchetti": ["non muniti di pneumatici", "se assicurati"],
@@ -510,6 +581,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e strade extraurbane principali è vietata la circolazione di pedoni e animali, ad eccezione delle aree di servizio e delle aree di sosta",
         "risposta": True,
+        "riassunto": "Autostrade → pedoni e animali vietati tranne aree di servizio e sosta?",
         "spiegazione": "Sulle autostrade e sulle strade extraurbane principali, i pedoni e gli animali non possono camminare. L'unica eccezione a questa regola sono le aree di servizio e le aree di sosta, dove è permesso.",
         "regola": "Autostrada: no pedoni/animali, tranne aree di servizio.",
         "trabocchetti": ["ad eccezione delle"],
@@ -517,6 +589,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle aree di servizio e nelle aree di sosta delle autostrade e delle strade extraurbane principali gli animali possono circolare solo se debitamente custoditi",
         "risposta": True,
+        "riassunto": "Aree di servizio → animali solo se custoditi?",
         "spiegazione": "Nelle aree di servizio e di sosta, gli animali possono circolare, ma devono essere tenuti al guinzaglio o in un trasportino. Non possono essere lasciati liberi.",
         "regola": "Aree di servizio: animali sì, ma al guinzaglio.",
         "trabocchetti": ["solo se debitamente custoditi"],
@@ -524,6 +597,7 @@ QUESTIONS = [
     {
         "domanda": "Lungo le corsie di emergenza delle autostrade i pedoni possono transitare solo per raggiungere i punti per le richieste di soccorso",
         "risposta": True,
+        "riassunto": "Corsia di emergenza → pedoni solo per chiamare soccorso?",
         "spiegazione": "La corsia di emergenza è per le vere emergenze. Un pedone può usarla solo se ha bisogno di aiuto e deve raggiungere una colonnina SOS per chiedere soccorso. Non può usarla per passeggiare o per altri motivi.",
         "regola": "Corsia emergenza: pedone solo per SOS.",
         "trabocchetti": ["solo"],
@@ -531,6 +605,7 @@ QUESTIONS = [
     {
         "domanda": "In autostrada, il traino di veicoli in avaria su carreggiate, rampe, svincoli, aree di servizio o di parcheggio è consentito solo ai veicoli di soccorso autorizzati",
         "risposta": True,
+        "riassunto": "Autostrada → traino solo da soccorso autorizzato?",
         "spiegazione": "Se un veicolo si rompe in autostrada, non puoi trainarlo tu con la tua auto. Solo i mezzi speciali di soccorso, come i carri attrezzi, possono farlo. Questo è per la sicurezza di tutti.",
         "regola": "Traino in autostrada: solo carro attrezzi.",
         "trabocchetti": ["solo ai veicoli di soccorso autorizzati"],
@@ -538,6 +613,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e strade extraurbane principali è vietata la circolazione di pedoni e animali, anche nelle aree di servizio e nelle aree di sosta",
         "risposta": False,
+        "riassunto": "Autostrade → pedoni e animali vietati anche nelle aree di servizio?",
         "spiegazione": "Questa domanda è falsa perché contraddice la regola. Pedoni e animali sono vietati in autostrada, ma c'è un'eccezione: nelle aree di servizio e di sosta sono permessi. Dire 'anche nelle aree di servizio' significa che sono vietati anche lì, il che è sbagliato.",
         "regola": "Aree di servizio: pedoni/animali SÌ (con regole).",
         "trabocchetti": ["anche"],
@@ -545,12 +621,14 @@ QUESTIONS = [
     {
         "domanda": "Nelle aree di servizio e nelle aree di sosta delle autostrade e delle strade extraurbane principali gli animali non possono circolare neppure se debitamente custoditi",
         "risposta": False,
+        "riassunto": "Aree di servizio → animali vietati anche custoditi?",
         "spiegazione": "Questa domanda è falsa. Nelle aree di servizio e di sosta, gli animali possono circolare, ma devono essere tenuti al guinzaglio o in un trasportino. Dire che 'non possono circolare neppure se custoditi' è sbagliato.",
         "regola": "Aree di servizio: animali custoditi SÌ.",
     },
     {
         "domanda": "Sulle carreggiate, sulle rampe, sugli svincoli, sulle aree di servizio o di parcheggio e in ogni altra pertinenza autostradale è vietato richiedere o concedere passaggi",
         "risposta": True,
+        "riassunto": "Autostrada → vietato chiedere o dare passaggi?",
         "spiegazione": "In autostrada, per la sicurezza di tutti, non si possono chiedere o dare passaggi. Questo vale ovunque: sulla strada, sulle rampe, negli svincoli e anche nelle aree di servizio o parcheggio. È una regola molto importante per evitare pericoli.",
         "regola": "Autostrada = No passaggi, mai!",
         "trabocchetti": ["vietato"],
@@ -558,6 +636,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle aree di servizio o di parcheggio delle autostrade e in ogni altra pertinenza autostradale è possibile svolgere attività commerciali solo se autorizzate dall'ente proprietario della strada",
         "risposta": True,
+        "riassunto": "Aree autostradali → commercio solo se autorizzato?",
         "spiegazione": "Nelle aree di servizio o parcheggio in autostrada, puoi vendere cose o fare altre attività commerciali solo se hai un permesso speciale da chi gestisce l'autostrada. Non puoi farlo liberamente, serve sempre un'autorizzazione.",
         "regola": "Attività commerciali in autostrada? Solo con permesso!",
         "trabocchetti": ["solo se autorizzate"],
@@ -565,18 +644,21 @@ QUESTIONS = [
     {
         "domanda": "Sulle carreggiate, sulle rampe, sugli svincoli, sulle aree di servizio o di parcheggio e in ogni altra pertinenza autostradale è consentito campeggiare, solo nelle aree a ciò destinate e per il periodo stabilito dall'ente proprietario della strada",
         "risposta": True,
+        "riassunto": "Autostrada → campeggio solo nelle aree destinate?",
         "spiegazione": "In autostrada, di solito non si può campeggiare. Ma se ci sono delle aree speciali, fatte apposta per il campeggio, e solo per il tempo permesso da chi gestisce l'autostrada, allora è possibile. È una situazione molto specifica e controllata.",
         "regola": "Campeggio in autostrada? Solo in aree dedicate e con limiti di tempo.",
     },
     {
         "domanda": "Nelle aree di servizio delle autostrade, il conducente non deve lasciare in sosta il veicolo per più di 24 ore",
         "risposta": True,
+        "riassunto": "Aree di servizio → sosta non oltre 24 ore?",
         "spiegazione": "Nelle aree di servizio in autostrada, non puoi lasciare la tua auto parcheggiata per più di un giorno (24 ore). Dopo 24 ore, devi spostarla per permettere ad altri di usare lo spazio.",
         "regola": "Sosta in autostrada: max 24 ore.",
     },
     {
         "domanda": "Nelle autostrade è consentito concedere passaggi a persone invalide",
         "risposta": False,
+        "riassunto": "Autostrada → passaggi a persone invalide?",
         "spiegazione": "In autostrada, non si possono dare passaggi a nessuno, nemmeno a persone invalide. La regola è chiara e vale per tutti, senza eccezioni, per garantire la sicurezza.",
         "regola": "Autostrada = No passaggi, per nessuno.",
         "trabocchetti": ["persone invalide"],
@@ -584,6 +666,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle aree di servizio delle autostrade o di parcheggio è consentito chiedere e concedere passaggi.",
         "risposta": False,
+        "riassunto": "Aree di servizio → chiedere e dare passaggi?",
         "spiegazione": "Anche nelle aree di servizio o di parcheggio in autostrada, non è permesso chiedere o dare passaggi. Il divieto vale per tutta l'autostrada e le sue pertinenze, incluse queste aree.",
         "regola": "Aree di servizio = No passaggi.",
         "trabocchetti": ["consentito"],
@@ -591,6 +674,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle aree di servizio o di parcheggio delle autostrade e delle strade extraurbane principali è consentito campeggiare",
         "risposta": False,
+        "riassunto": "Aree di servizio → campeggiare?",
         "spiegazione": "Di solito, non si può campeggiare nelle aree di servizio o parcheggio delle autostrade e delle strade extraurbane principali. Il campeggio libero è vietato per motivi di sicurezza e regolamento, a meno di aree specifiche e autorizzate (ma la domanda non lo specifica).",
         "regola": "Campeggio in autostrada/extraurbana principale? No, salvo aree dedicate.",
         "trabocchetti": ["è consentito campeggiare"],
@@ -598,6 +682,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle aree di servizio e di parcheggio delle autostrade la durata massima per la sosta di un veicolo è di tre ore",
         "risposta": False,
+        "riassunto": "Aree di servizio → sosta massima tre ore?",
         "spiegazione": "La durata massima per la sosta nelle aree di servizio e parcheggio delle autostrade non è di tre ore, ma di 24 ore. Ricorda bene questo limite di tempo.",
         "regola": "Sosta in autostrada: 24 ore, non 3.",
         "trabocchetti": ["tre ore"],
@@ -605,6 +690,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la marcia sulle autostrade e strade extraurbane principali è obbligatorio l'uso dei proiettori anabbaglianti anche di giorno",
         "risposta": True,
+        "riassunto": "Autostrade ed extraurbane principali → anabbaglianti anche di giorno?",
         "spiegazione": "Sulle autostrade e sulle strade extraurbane principali, è sempre necessario accendere i fari anabbaglianti, anche quando c'è il sole e si vede bene. Questo serve per essere più visibili agli altri veicoli e aumentare la sicurezza.",
         "regola": "Autostrada/Extraurbana principale = Anabbaglianti SEMPRE, giorno e notte!",
         "trabocchetti": ["obbligatorio", "Anche di giorno"],
@@ -612,6 +698,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la marcia sulle autostrade e strade extraurbane principali l'uso dei proiettori anabbaglianti è facoltativo in condizioni di perfetta visibilità",
         "risposta": False,
+        "riassunto": "Autostrade → anabbaglianti facoltativi con ottima visibilità?",
         "spiegazione": "Questa affermazione è falsa. Come abbiamo visto, sulle autostrade e sulle strade extraurbane principali l'uso degli anabbaglianti è sempre obbligatorio, non è mai una scelta. Non importa se la visibilità è perfetta, i fari devono essere accesi.",
         "regola": "Su autostrada/extraurbana principale, gli anabbaglianti NON sono MAI facoltativi.",
         "trabocchetti": ["facoltativo", "In condizioni di perfetta visibilità"],
@@ -619,6 +706,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle carreggiate, sulle rampe e sugli svincoli di autostrade e strade extraurbane principali è vietato invertire il senso di marcia e attraversare lo spartitraffico, anche all'altezza dei varchi",
         "risposta": True,
+        "riassunto": "Autostrade → vietato invertire e attraversare lo spartitraffico?",
         "spiegazione": "In autostrada e sulle strade extraurbane principali, è estremamente pericoloso e quindi vietato cambiare direzione (invertire il senso di marcia) o attraversare la barriera centrale (spartitraffico). Questo divieto vale sempre, anche dove ci sono delle aperture (varchi), perché queste sono riservate solo ai mezzi di soccorso o di servizio, non agli automobilisti comuni.",
         "regola": "Autostrada = mai inversione o spartitraffico.",
         "trabocchetti": ["anche all"],
@@ -626,6 +714,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle carreggiate, sulle rampe e sugli svincoli di autostrade e strade extraurbane principali è vietato percorrere la carreggiata o parte di essa nel senso di marcia opposto a quello consentito",
         "risposta": True,
+        "riassunto": "Autostrade → vietato contromano?",
         "spiegazione": "Andare contromano (nel senso di marcia opposto) in autostrada o su strade extraurbane principali è una delle azioni più pericolose che si possano fare. È severamente vietato perché causa incidenti frontali gravissimi.",
         "regola": "Autostrada = mai contromano.",
         "trabocchetti": ["senso di marcia opposto"],
@@ -633,24 +722,28 @@ QUESTIONS = [
     {
         "domanda": "Sulle carreggiate, sulle rampe e sugli svincoli di autostrade e strade extraurbane principali è vietato effettuare la retromarcia",
         "risposta": True,
+        "riassunto": "Autostrade → retromarcia vietata?",
         "spiegazione": "Fare retromarcia in autostrada o su strade extraurbane principali è vietato. Le auto viaggiano a velocità elevate e una retromarcia improvvisa può causare incidenti molto gravi.",
         "regola": "Autostrada = mai retromarcia.",
     },
     {
         "domanda": "Sulle corsie per le soste di emergenza delle autostrade è vietato effettuare la retromarcia",
         "risposta": True,
+        "riassunto": "Corsia di emergenza → retromarcia vietata?",
         "spiegazione": "Anche se ti trovi sulla corsia di emergenza, non puoi fare retromarcia. È comunque una parte della strada dove le auto viaggiano ad alta velocità e fare retromarcia è sempre pericoloso.",
         "regola": "Anche in emergenza, mai retromarcia.",
     },
     {
         "domanda": "Sulle carreggiate, sulle rampe e sugli svincoli di autostrade e strade extraurbane principali il conducente può invertire il senso di marcia adottando tutti gli accorgimenti necessari",
         "risposta": False,
+        "riassunto": "Autostrade → inversione con accorgimenti?",
         "spiegazione": "È FALSO. Non importa quanto tu sia attento o quanti 'accorgimenti' tu prenda, invertire il senso di marcia in autostrada è sempre vietato e pericolosissimo. Non ci sono eccezioni per i normali automobilisti.",
         "regola": "Autostrada = mai inversione, punto.",
     },
     {
         "domanda": "Sulle carreggiate, sulle rampe e sugli svincoli di autostrade e strade extraurbane principali il conducente può invertire il senso di marcia in casi di particolare emergenza",
         "risposta": False,
+        "riassunto": "Autostrade → inversione in emergenza?",
         "spiegazione": "È FALSO. Anche in una situazione di 'particolare emergenza', non puoi invertire il senso di marcia in autostrada. È troppo pericoloso. Devi cercare un'area di sosta o aspettare i soccorsi, ma mai invertire la marcia.",
         "regola": "Autostrada = mai inversione, nemmeno per emergenza.",
         "trabocchetti": ["in casi di particolare emergenza"],
@@ -658,6 +751,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle carreggiate, sulle rampe e sugli svincoli di autostrade e strade extraurbane principali il conducente può procedere in senso contrario al normale flusso del traffico, per brevi tratti",
         "risposta": False,
+        "riassunto": "Autostrade → contromano per brevi tratti?",
         "spiegazione": "È FALSO. Andare contromano, anche per un 'breve tratto', è estremamente pericoloso e severamente vietato in autostrada. Non si può fare in nessun caso, nemmeno per pochi metri.",
         "regola": "Autostrada = mai contromano, nemmeno per poco.",
         "trabocchetti": ["per brevi tratti"],
@@ -665,6 +759,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e strade extraurbane principali il conducente può utilizzare la corsia di emergenza se il traffico è intenso",
         "risposta": False,
+        "riassunto": "Autostrade → corsia di emergenza col traffico intenso?",
         "spiegazione": "È FALSO. La corsia di emergenza non serve per superare il traffico o per andare più veloci quando c'è coda. Serve solo per vere emergenze, come un guasto al veicolo, un malore o per soccorrere qualcuno. Usarla per il traffico intenso è vietato e pericoloso.",
         "regola": "Corsia emergenza = solo per vera emergenza, non per traffico.",
         "trabocchetti": ["se il traffico è intenso"],
@@ -672,6 +767,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e sulle strade extraurbane principali il conducente che percorre la corsia di accelerazione deve dare la precedenza ai veicoli in circolazione sulle corsie di marcia",
         "risposta": True,
+        "riassunto": "Corsia di accelerazione → precedenza a chi è in carreggiata?",
         "spiegazione": "Quando entri in autostrada o su una strada extraurbana principale usando la corsia di accelerazione, devi sempre dare la precedenza ai veicoli che sono già sulla strada principale. Questo è fondamentale per la sicurezza e per non creare pericoli.",
         "regola": "Accelerazione = Precedenza sempre!",
         "trabocchetti": ["deve dare la precedenza", "Deve"],
@@ -679,6 +775,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e sulle strade extraurbane principali, per uscire dalla carreggiata il conducente deve impegnare per tempo la corsia di destra, e quindi immettersi nella corsia di decelerazione dal suo inizio",
         "risposta": True,
+        "riassunto": "Uscire → corsia di destra per tempo, poi decelerazione dall'inizio?",
         "spiegazione": "Per uscire correttamente dall'autostrada o da una strada extraurbana principale, devi spostarti per tempo nella corsia di destra e poi entrare nella corsia di decelerazione fin dal suo inizio. Questo ti permette di rallentare in sicurezza senza intralciare il traffico sulla carreggiata principale.",
         "regola": "Uscita = Decelerazione dal suo inizio.",
         "trabocchetti": ["per tempo", "dal suo inizio"],
@@ -686,6 +783,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e sulle strade extraurbane principali il conducente deve segnalare tempestivamente il cambiamento di corsia servendosi degli indicatori di direzione",
         "risposta": True,
+        "riassunto": "Autostrade → segnalare il cambio di corsia?",
         "spiegazione": "Sulle autostrade e sulle strade extraurbane principali, è obbligatorio segnalare ogni cambio di corsia usando gli indicatori di direzione (le frecce). Questo serve a informare gli altri conducenti delle tue intenzioni e a prevenire incidenti.",
         "regola": "Cambio corsia = Freccia sempre!",
         "trabocchetti": ["tempestivamente", "Deve segnalare"],
@@ -693,6 +791,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di ingorgo su strade extraurbane principali o autostrade, se la corsia di emergenza manca o non è sufficiente alla circolazione dei veicoli di polizia o di soccorso, il conducente del veicolo che occupa la prima corsia di destra deve disporsi il più vicino possibile alla striscia di sinistra",
         "risposta": True,
+        "riassunto": "Ingorgo senza corsia di emergenza → prima corsia verso la striscia sinistra?",
         "spiegazione": "In caso di ingorgo, se la corsia di emergenza non c'è o non basta, bisogna creare un 'corridoio di emergenza' per i veicoli di soccorso. La regola generale è che i veicoli nella corsia più a destra si spostano il più possibile a destra, mentre quelli nelle altre corsie si spostano il più possibile a sinistra. La domanda, sebbene formulata in modo un po' complesso ('striscia di sinistra'), intende che il veicolo nella corsia più a destra deve posizionarsi in modo da lasciare il massimo spazio possibile sulla destra per il passaggio dei mezzi di soccorso, anche spostandosi leggermente a sinistra all'interno della propria corsia per massimizzare lo spazio a destra.",
         "regola": "Ingorgo = Corridoio salva-vita. Spostati per far passare!",
         "trabocchetti": ["striscia di sinistra"],
@@ -700,6 +799,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di ingorgo il conducente può transitare sulla corsia per la sosta di emergenza solo per uscire dall'autostrada, a partire dal cartello di preavviso di uscita posto a 500 metri dallo svincolo",
         "risposta": True,
+        "riassunto": "Ingorgo → corsia di emergenza solo per uscire dai 500 m?",
         "spiegazione": "Normalmente non si può usare la corsia di emergenza. Tuttavia, in caso di ingorgo, puoi usarla per uscire dall'autostrada, ma solo a partire dal cartello che preavvisa l'uscita, che si trova a 500 metri dallo svincolo. Questo evita di bloccare le corsie di marcia mentre aspetti di uscire.",
         "regola": "Emergenza = Solo per Uscita (da 500m).",
         "trabocchetti": ["solo per uscire"],
@@ -707,12 +807,14 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e sulle strade extraurbane principali, per uscire dalla carreggiata il conducente può immettersi nella corsia di decelerazione anche nel tratto successivo al suo inizio",
         "risposta": False,
+        "riassunto": "Uscire → entrare nella decelerazione anche dopo l'inizio?",
         "spiegazione": "Per uscire in sicurezza dall'autostrada o da una strada extraurbana principale, devi entrare nella corsia di decelerazione fin dal suo inizio. Entrare più avanti, nel 'tratto successivo', è pericoloso perché ti costringe a rallentare bruscamente sulla carreggiata principale, creando un rischio per gli altri veicoli.",
         "regola": "Decelerazione = Dal suo Inizio (sempre!).",
     },
     {
         "domanda": "Sulle autostrade e sulle strade extraurbane principali se il traffico non è intenso il conducente non ha l'obbligo di servirsi degli indicatori di direzione per segnalare il cambiamento di corsia",
         "risposta": False,
+        "riassunto": "Traffico scarso → niente frecce per cambiare corsia?",
         "spiegazione": "È sempre obbligatorio usare gli indicatori di direzione (le frecce) quando cambi corsia, sia che il traffico sia intenso o meno. È una regola di base per la sicurezza, per comunicare le tue intenzioni agli altri conducenti.",
         "regola": "Freccia = Sempre Obbligatoria.",
         "trabocchetti": ["se il traffico non è intenso", "non ha l"],
@@ -720,6 +822,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e sulle strade extraurbane principali è consentita la marcia per file parallele anche in assenza di traffico",
         "risposta": False,
+        "riassunto": "Autostrade → file parallele anche senza traffico?",
         "spiegazione": "La marcia per file parallele (guidare affiancati su più corsie) è consentita solo in caso di traffico intenso o in situazioni specifiche (come agli incroci). Sulle autostrade e sulle strade extraurbane principali, in assenza di traffico, devi tenere la corsia più a destra e usare le altre solo per sorpassare.",
         "regola": "File parallele = Solo con traffico intenso.",
         "trabocchetti": ["anche in assenza di traffico"],
@@ -727,6 +830,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle carreggiate, sulle rampe e sugli svincoli delle autostrade è consentito sostare solo in situazioni di emergenza dovute a malessere del conducente o dei passeggeri oppure ad inefficienza del veicolo",
         "risposta": True,
+        "riassunto": "Autostrade → sosta solo per malessere o guasto?",
         "spiegazione": "Sulle autostrade, puoi fermarti (sostare) solo se c'è un'emergenza vera e propria. Questo include se tu o un passeggero vi sentite male, oppure se la macchina ha un problema e non funziona bene. Non puoi fermarti per altri motivi.",
         "regola": "Autostrada: sosta SOLO per emergenza (malore o guasto).",
         "trabocchetti": ["solo"],
@@ -734,6 +838,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle carreggiate, sulle rampe e sugli svincoli delle autostrade è consentito, nel caso di malessere di un passeggero, fermarsi sulla corsia per la sosta di emergenza",
         "risposta": True,
+        "riassunto": "Autostrade → malessere di un passeggero, fermarsi in emergenza?",
         "spiegazione": "Se un passeggero si sente male mentre siete in autostrada, è permesso fermarsi. Devi usare la corsia speciale che si chiama 'corsia per la sosta di emergenza'.",
         "regola": "Malessere passeggero = Sosta in corsia emergenza.",
         "trabocchetti": ["corsia per la sosta di emergenza"],
@@ -741,6 +846,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di malessere di un passeggero durante la circolazione sulla carreggiata autostradale, è consentito fermarsi sulla corsia per la sosta di emergenza",
         "risposta": True,
+        "riassunto": "Malessere di un passeggero → fermarsi in corsia di emergenza?",
         "spiegazione": "Questa domanda è molto simile alla precedente. Se un passeggero non sta bene mentre guidi in autostrada, puoi fermarti sulla corsia di emergenza. È una situazione di emergenza valida.",
         "regola": "Malessere = Sosta in corsia emergenza.",
         "trabocchetti": ["corsia per la sosta di emergenza"],
@@ -748,6 +854,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle carreggiate, sulle rampe e sugli svincoli delle autostrade la sosta di emergenza non deve superare il tempo strettamente necessario e non deve protrarsi comunque oltre tre ore",
         "risposta": True,
+        "riassunto": "Sosta di emergenza in autostrada → massimo tre ore?",
         "spiegazione": "Quando ti fermi per emergenza in autostrada, non puoi stare lì per troppo tempo. Devi stare solo il tempo necessario per risolvere il problema e, in ogni caso, non puoi stare più di tre ore.",
         "regola": "Sosta emergenza = Max 3 ore.",
         "trabocchetti": ["e"],
@@ -755,6 +862,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle carreggiate, sulle rampe e sugli svincoli delle autostrade è vietato sostare o fermarsi, in caso di malessere dei passeggeri",
         "risposta": False,
+        "riassunto": "Malessere in autostrada → vietato fermarsi?",
         "spiegazione": "Questa affermazione è falsa perché, come abbiamo visto, se un passeggero si sente male, è permesso fermarsi sulla corsia di emergenza. Non è vietato.",
         "regola": "Malessere = NON vietato fermarsi (in emergenza).",
         "trabocchetti": ["vietato"],
@@ -762,6 +870,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle carreggiate, sulle rampe e sugli svincoli delle autostrade la sosta di emergenza non deve superare il tempo strettamente necessario e può protrarsi fino a 24 ore",
         "risposta": False,
+        "riassunto": "Sosta di emergenza in autostrada → fino a 24 ore?",
         "spiegazione": "Questa affermazione è falsa. La sosta di emergenza non può durare fino a 24 ore. Il limite massimo è di tre ore, come abbiamo imparato prima.",
         "regola": "Sosta emergenza = NON 24 ore (ma 3).",
         "trabocchetti": ["può protrarsi fino a 24 ore"],
@@ -769,6 +878,7 @@ QUESTIONS = [
     {
         "domanda": "In autostrada è vietato dare un passaggio ad un automobilista fermo per avaria del veicolo sulla corsia di emergenza",
         "risposta": True,
+        "riassunto": "Autostrada → vietato dare passaggio a chi è in avaria?",
         "spiegazione": "In autostrada, la corsia di emergenza serve solo per vere emergenze e per il tempo strettamente necessario. Fermarsi per dare un passaggio è vietato perché è molto pericoloso e non è una situazione di emergenza che giustifichi la sosta.",
         "regola": "Autostrada: corsia d'emergenza = solo per vera emergenza, mai per passaggi.",
         "trabocchetti": ["vietato"],
@@ -776,6 +886,7 @@ QUESTIONS = [
     {
         "domanda": "Qualora il conducente veda un automobilista fermo con veicolo in avaria in autostrada, lo deve accompagnare fino alla stazione di servizio più vicina",
         "risposta": False,
+        "riassunto": "Automobilista in avaria → accompagnarlo alla stazione di servizio?",
         "spiegazione": "Non è un tuo obbligo accompagnare un automobilista in avaria. In autostrada, la cosa giusta da fare è segnalare l'emergenza (ad esempio, chiamando il soccorso stradale o il 112), non fermarsi o accompagnare qualcuno, perché è molto pericoloso.",
         "regola": "Autostrada: non sei un taxi, segnala l'emergenza.",
         "trabocchetti": ["lo deve accompagnare", "Deve"],
@@ -783,6 +894,7 @@ QUESTIONS = [
     {
         "domanda": "Qualora il conducente veda un automobilista fermo per avaria del veicolo in autostrada, si deve fermare a prestare soccorso",
         "risposta": False,
+        "riassunto": "Automobilista in avaria → fermarsi a soccorrere?",
         "spiegazione": "In autostrada è molto pericoloso fermarsi per prestare soccorso. La velocità dei veicoli è alta e fermarsi può causare incidenti. La regola è non fermarsi, ma segnalare l'emergenza alle autorità competenti (polizia, soccorso stradale).",
         "regola": "Autostrada: non fermarti, segnala e continua.",
         "trabocchetti": ["si deve fermare a prestare soccorso", "Deve"],
@@ -790,6 +902,7 @@ QUESTIONS = [
     {
         "domanda": "Qualora il conducente veda un automobilista fermo per avaria del veicolo in autostrada, se lo ha superato può retrocedere con prudenza per soccorrerlo",
         "risposta": False,
+        "riassunto": "Automobilista in avaria superato → retromarcia per soccorrerlo?",
         "spiegazione": "In autostrada è assolutamente vietato fare retromarcia o tornare indietro, anche se con prudenza. È una manovra estremamente pericolosa che può causare incidenti gravissimi.",
         "regola": "Autostrada: mai retromarcia, mai!",
         "trabocchetti": ["può retrocedere con prudenza", "Retrocedere"],
@@ -797,6 +910,7 @@ QUESTIONS = [
     {
         "domanda": "Qualora il conducente veda un automobilista fermo in autostrada per avaria del veicolo può trainare prudentemente il veicolo, fino al primo casello di uscita",
         "risposta": False,
+        "riassunto": "Automobilista in avaria → trainarlo fino al casello?",
         "spiegazione": "In autostrada è vietato trainare un altro veicolo con la tua auto. Solo i mezzi di soccorso stradale autorizzati possono farlo. Trainare un veicolo in autostrada è molto pericoloso e non è permesso.",
         "regola": "Autostrada: no traino fai-da-te, solo soccorso autorizzato.",
         "trabocchetti": ["può trainare prudentemente", "Può trainare"],
@@ -804,12 +918,14 @@ QUESTIONS = [
     {
         "domanda": "Tutti i passeggeri dei veicoli a motore devono prendere posto in modo da non limitare la libertà del conducente e da non impedirgli la visibilità",
         "risposta": True,
+        "riassunto": "Passeggeri → senza limitare libertà e visibilità del conducente?",
         "spiegazione": "È VERO. Per la sicurezza di tutti, i passeggeri devono sedersi in modo da non disturbare il conducente e da non coprire la sua visuale della strada. Immagina se un passeggero ti coprisse lo specchietto retrovisore!",
         "regola": "Passeggero = mai d'intralcio.",
     },
     {
         "domanda": "Il numero massimo di posti sulle autovetture è indicato sulla carta di circolazione",
         "risposta": True,
+        "riassunto": "Posti dell'auto → indicati in carta di circolazione?",
         "spiegazione": "È VERO. Ogni veicolo ha un documento chiamato 'carta di circolazione' (o libretto) dove sono scritte tutte le informazioni importanti, incluso il numero massimo di persone che possono viaggiare legalmente in quell'auto.",
         "regola": "Posti = libretto.",
         "trabocchetti": ["carta di circolazione"],
@@ -817,12 +933,14 @@ QUESTIONS = [
     {
         "domanda": "Sui veicoli è consentito il trasporto di un animale domestico, comunque in condizione da non costituire impedimento o pericolo per la guida",
         "risposta": True,
+        "riassunto": "Un animale domestico → senza intralciare la guida?",
         "spiegazione": "È VERO. Puoi portare il tuo animale domestico in auto, ma deve essere sistemato in modo sicuro. Non deve poterti distrarre o creare pericoli durante la guida, ad esempio saltando sul cruscotto o tra i sedili.",
         "regola": "Animale OK, se sicuro.",
     },
     {
         "domanda": "Sui veicoli è consentito il trasporto di animali domestici anche in numero superiore ad uno, purché custoditi in gabbia o nel vano posteriore, appositamente diviso da rete",
         "risposta": True,
+        "riassunto": "Più animali → in gabbia o vano diviso da rete?",
         "spiegazione": "È VERO. Se hai più di un animale domestico, puoi trasportarli, ma devono essere ben protetti. Questo significa metterli in una gabbia apposita o nel bagagliaio, separato dall'abitacolo con una rete speciale. Questo evita che si muovano liberamente e ti distraggano.",
         "regola": "Più animali = gabbia o rete.",
         "trabocchetti": ["anche in numero superiore ad uno"],
@@ -830,6 +948,7 @@ QUESTIONS = [
     {
         "domanda": "Il numero delle persone trasportabili sulle autovetture indicato sulla carta di circolazione non comprende il conducente",
         "risposta": False,
+        "riassunto": "Posti in carta di circolazione → escluso il conducente?",
         "spiegazione": "È FALSO. Il numero di persone indicato sulla carta di circolazione include SEMPRE il conducente. Se sul libretto c'è scritto '5 posti', significa che possono viaggiare 4 passeggeri + il conducente.",
         "regola": "Posti = conducente INCLUSO.",
         "trabocchetti": ["non comprende il conducente"],
@@ -837,6 +956,7 @@ QUESTIONS = [
     {
         "domanda": "Il numero delle persone trasportabili sulle autovetture può raggiungere il massimo di dieci",
         "risposta": False,
+        "riassunto": "Autovettura → fino a dieci persone?",
         "spiegazione": "È FALSO. Le autovetture (le normali auto che guidiamo) possono trasportare al massimo 9 persone (8 passeggeri + il conducente). Dieci persone sono troppe per un'autovettura standard.",
         "regola": "Auto = max 9 persone.",
         "trabocchetti": ["dieci"],
@@ -844,6 +964,7 @@ QUESTIONS = [
     {
         "domanda": "Sui veicoli è consentito il trasporto di cani anche in numero superiore ad uno, purché adeguatamente trattenuti al guinzaglio",
         "risposta": False,
+        "riassunto": "Più cani → al guinzaglio?",
         "spiegazione": "È FALSO. Trasportare più cani solo con il guinzaglio non è sufficiente per garantire la sicurezza. I cani, anche se al guinzaglio, potrebbero comunque muoversi, abbaiare, o saltare, distraendo il conducente. Devono essere in gabbia o separati da una rete, come visto nella domanda 23912.",
         "regola": "Guinzaglio NON basta per più cani.",
         "trabocchetti": ["adeguatamente trattenuti al guinzaglio"],
@@ -851,6 +972,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli è vietato il trasporto di minori di anni 5",
         "risposta": True,
+        "riassunto": "Motocicli → vietato trasportare minori di 5 anni?",
         "spiegazione": "La legge italiana stabilisce che non si possono trasportare bambini sui motocicli se hanno meno di 5 anni. Questa regola serve per la loro sicurezza, perché prima di quell'età non sono abbastanza grandi per viaggiare in moto in modo sicuro.",
         "regola": "Bambini < 5 anni = NO moto.",
         "trabocchetti": ["vietato"],
@@ -858,6 +980,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato ai conducenti di motocicli trainare e farsi trainare da altri veicoli",
         "risposta": True,
+        "riassunto": "Motocicli → vietato trainare o farsi trainare?",
         "spiegazione": "Un motociclo non può né tirare un altro veicolo (trainare) né farsi tirare da un altro veicolo (farsi trainare). È una manovra molto pericolosa per la stabilità del motociclo e per la sicurezza stradale in generale.",
         "regola": "Moto = MAI traino (attivo o passivo).",
         "trabocchetti": ["trainare e farsi trainare"],
@@ -865,6 +988,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli è vietato trasportare oggetti che non siano solidamente assicurati",
         "risposta": True,
+        "riassunto": "Motocicli → oggetti non fissati vietati?",
         "spiegazione": "Quando trasporti oggetti sul motociclo, devono essere legati molto bene, in modo 'solido'. Se non sono ben assicurati, possono cadere, spostarsi e causare pericoli per te e per gli altri utenti della strada.",
         "regola": "Oggetti in moto = SEMPRE legati bene.",
         "trabocchetti": ["che non siano solidamente assicurati"],
@@ -872,6 +996,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli è vietato trasportare oggetti che impediscano o limitino la visibilità al conducente",
         "risposta": True,
+        "riassunto": "Motocicli → oggetti che limitano la visibilità vietati?",
         "spiegazione": "È vietato trasportare oggetti che ti impediscono di vedere bene la strada, gli specchietti o i segnali. La tua visibilità è fondamentale per guidare in sicurezza e reagire in tempo a eventuali pericoli.",
         "regola": "Visibilità = MAI ostacolata.",
         "trabocchetti": ["impediscano o limitino la visibilità"],
@@ -879,6 +1004,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli è possibile trasportare un passeggero solo se quest'ultimo è maggiorenne",
         "risposta": False,
+        "riassunto": "Motocicli → passeggero solo maggiorenne?",
         "spiegazione": "Non è vero che il passeggero deve essere maggiorenne. L'unica condizione di età è che il passeggero abbia almeno 5 anni (come visto nella domanda 23917). Non c'è un limite di età massima o l'obbligo di essere maggiorenne.",
         "regola": "Passeggero moto = NO limite età massima, SÌ limite minimo (5 anni).",
         "trabocchetti": ["solo"],
@@ -886,6 +1012,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito ai motocicli farsi trainare, ma solo da autovetture",
         "risposta": False,
+        "riassunto": "Motocicli → trainati solo da auto?",
         "spiegazione": "Come già detto nella domanda 23918, è sempre vietato farsi trainare con un motociclo, da qualsiasi tipo di veicolo, non solo dalle autovetture. È una manovra pericolosa e non consentita dal Codice della Strada.",
         "regola": "Moto = MAI trainata, da NESSUNO.",
         "trabocchetti": ["consentito", "ma solo da autovetture"],
@@ -893,6 +1020,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli è vietato trasportare oggetti che sporgano longitudinalmente rispetto alla sagoma del veicolo",
         "risposta": False,
+        "riassunto": "Motocicli → oggetti sporgenti in lunghezza vietati?",
         "spiegazione": "Il divieto non è assoluto. Sui motocicli e sui ciclomotori a due ruote gli oggetti devono essere ben assicurati e non possono sporgere longitudinalmente oltre 50 cm rispetto alla sagoma del veicolo. Il quesito è falso perché vieta qualsiasi sporgenza, anche entro quel limite.",
         "regola": "Su motocicli e ciclomotori a due ruote: sporgenza longitudinale non oltre 50 cm; carico sempre ben assicurato.",
         "trabocchetti": ["vietato"],
@@ -900,6 +1028,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico dei veicoli deve essere sistemato in modo da evitarne la caduta o la dispersione",
         "risposta": True,
+        "riassunto": "Carico → evitare caduta o dispersione?",
         "spiegazione": "È fondamentale che il carico sia ben fissato per evitare che cada o si sparga sulla strada. Questo è importante per la sicurezza di tutti, perché un oggetto caduto può causare incidenti.",
         "regola": "Carico sicuro = strada pulita.",
         "trabocchetti": ["Evitarne"],
@@ -907,6 +1036,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico dei veicoli deve essere sistemato in modo da non diminuire la visibilità al conducente né impedirgli la libertà dei movimenti nella guida",
         "risposta": True,
+        "riassunto": "Carico → non ridurre visibilità e movimenti?",
         "spiegazione": "Il conducente deve sempre avere una buona visuale della strada e poter muovere liberamente le braccia e le gambe per guidare in sicurezza. Il carico non deve mai ostacolare queste azioni.",
         "regola": "Guida libera, vista chiara.",
         "trabocchetti": ["Né impedirgli"],
@@ -914,6 +1044,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico dei veicoli deve essere sistemato in modo da non compromettere la stabilità del veicolo",
         "risposta": True,
+        "riassunto": "Carico → non compromettere la stabilità?",
         "spiegazione": "Un carico posizionato male o troppo pesante da un lato può rendere il veicolo instabile, facendolo sbandare o addirittura ribaltare. È essenziale che il veicolo mantenga la sua stabilità.",
         "regola": "Stabilità è sicurezza.",
         "trabocchetti": ["Compromettere"],
@@ -921,6 +1052,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico dei veicoli deve essere sistemato in modo da non mascherare dispositivi di illuminazione e di segnalazione visiva né le targhe di riconoscimento e i segnali fatti col braccio",
         "risposta": True,
+        "riassunto": "Carico → non coprire luci, targhe e segnali col braccio?",
         "spiegazione": "Le luci, le frecce, la targa e i segnali fatti con il braccio sono essenziali per comunicare con gli altri utenti della strada. Il carico non deve mai coprirli, né di giorno né di notte.",
         "regola": "Tutto visibile, sempre.",
         "trabocchetti": ["Mascherare"],
@@ -928,6 +1060,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico del veicolo deve essere sistemato in modo da evitarne la caduta o la dispersione solo se il conducente deve condurre il veicolo su strada extraurbana",
         "risposta": False,
+        "riassunto": "Carico sistemato → solo su extraurbane?",
         "spiegazione": "Questa affermazione è FALSA. Il carico deve essere sempre sistemato in modo sicuro per evitare cadute o dispersioni, non solo sulle strade extraurbane. La sicurezza vale su ogni tipo di strada: in città, fuori città, in autostrada.",
         "regola": "Carico sicuro SEMPRE, non 'solo se'.",
         "trabocchetti": ["solo se"],
@@ -935,6 +1068,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico dei veicoli deve essere sistemato in modo da non mascherare dispositivi di illuminazione e di segnalazione visiva soltanto durante la circolazione notturna",
         "risposta": False,
+        "riassunto": "Carico → luci libere solo di notte?",
         "spiegazione": "Questa affermazione è FALSA. Le luci e i segnali devono essere sempre visibili, sia di giorno che di notte. È importante che gli altri vedano le tue intenzioni in ogni momento, non 'soltanto' quando è buio.",
         "regola": "Luci visibili SEMPRE, non 'soltanto' di notte.",
         "trabocchetti": ["soltanto"],
@@ -942,6 +1076,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico non deve superare il limite di sagoma stabilito per ogni tipo di veicolo",
         "risposta": True,
+        "riassunto": "Carico → entro la sagoma del veicolo?",
         "spiegazione": "Ogni veicolo ha una dimensione massima (chiamata 'sagoma'). Il carico che trasporti non può essere più grande di questa dimensione, a meno di eccezioni molto specifiche e ben segnalate. Quindi, in generale, il carico deve stare dentro i limiti del veicolo.",
         "regola": "Sagoma = Limite massimo.",
         "trabocchetti": ["non deve superare", "Limite di sagoma"],
@@ -949,6 +1084,7 @@ QUESTIONS = [
     {
         "domanda": "Sugli autoveicoli, il carico non può sporgere longitudinalmente dalla parte anteriore",
         "risposta": True,
+        "riassunto": "Autoveicoli → carico mai sporgente davanti?",
         "spiegazione": "Il carico non può mai uscire dalla parte anteriore (davanti) del veicolo. Questo è molto importante per la sicurezza, per non ostacolare la vista del conducente e per non creare pericoli in caso di frenata o incidente.",
         "regola": "Davanti = Mai sporgere.",
         "trabocchetti": ["non può"],
@@ -956,6 +1092,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico può sporgere longitudinalmente dalla parte posteriore, se costituito da cose indivisibili, fino ai 3/10 della lunghezza dell'autoveicolo",
         "risposta": True,
+        "riassunto": "Carico indivisibile → fino a 3/10 dietro?",
         "spiegazione": "Se il carico è una cosa che non si può dividere (ad esempio, un palo molto lungo), può sporgere dalla parte posteriore (dietro) del veicolo. Però c'è un limite: non più di 3 decimi (3/10) della lunghezza totale del veicolo. E, attenzione, deve essere sempre segnalato con l'apposito pannello!",
         "regola": "Dietro = 3/10 (se indivisibile e segnalato).",
         "trabocchetti": ["se costituito da cose indivisibili", "fino ai 3/10 della lunghezza"],
@@ -963,12 +1100,14 @@ QUESTIONS = [
     {
         "domanda": "Sugli autoveicoli possono essere trasportate cose che sporgono lateralmente fuori della loro sagoma non più di 30 centimetri dalle luci di posizione anteriori e posteriori (comunque entro i limiti massimi di sagoma)",
         "risposta": True,
+        "riassunto": "Sporgenza laterale → fino a 30 cm dalle luci di posizione?",
         "spiegazione": "Il carico può sporgere un po' di lato, ma non più di 30 centimetri dalle luci di posizione che si trovano ai lati del veicolo. L'importante è che la larghezza totale del veicolo con il carico non superi comunque i limiti massimi di larghezza stabiliti dalla legge per quel tipo di veicolo.",
         "regola": "Lato = 30 cm dalle luci (ma rispetta la larghezza massima).",
     },
     {
         "domanda": "E' vietato trasportare o trainare cose che strisciano sul terreno, anche se in parte sostenute da ruote",
         "risposta": True,
+        "riassunto": "Vietato → trascinare cose sul terreno?",
         "spiegazione": "È assolutamente vietato trasportare o trascinare cose che toccano e strisciano sul terreno. Questo vale anche se queste cose hanno delle ruote che le aiutano un po'. Strisciare sul terreno può rovinare la strada e creare pericoli.",
         "regola": "Strisciare = Sempre vietato.",
         "trabocchetti": ["vietato", "anche se in parte sostenute da ruote"],
@@ -976,6 +1115,7 @@ QUESTIONS = [
     {
         "domanda": "Se il carico sporge oltre la sagoma del veicolo, il conducente deve adottare tutte le cautele idonee ad evitare pericolo agli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Carico sporgente → cautele per gli altri?",
         "spiegazione": "Se il carico sporge dal veicolo (nei limiti consentiti dalla legge), tu che guidi devi fare molta attenzione. Devi prendere tutte le precauzioni necessarie per non mettere in pericolo gli altri utenti della strada, ad esempio segnalando bene la sporgenza.",
         "regola": "Sporgenza = Massima attenzione e cautela.",
         "trabocchetti": ["deve adottare tutte le cautele idonee"],
@@ -983,6 +1123,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico deve essere sistemato sul veicolo in modo da segnalarne la sporgenza posteriore con il pannello retroriflettente in figura",
         "risposta": False,
+        "riassunto": "Sporgenza posteriore → pannello in figura?",
         "spiegazione": "Questa affermazione è FALSO perché la sporgenza posteriore del carico deve essere segnalata con un pannello specifico, che è quadrato, a strisce bianche e rosse. La frase 'in figura' è la trappola: se la figura non mostra il pannello corretto (o se non c'è una figura), l'affermazione è sbagliata. Non si usa 'un' generico pannello retroriflettente, ma 'il' pannello specifico.",
         "regola": "Pannello = Quello specifico (bianco/rosso), non 'uno qualsiasi in figura'.",
         "immagine": "888b50664c678c9345dd.jpg",
@@ -990,6 +1131,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico può sporgere lateralmente, se costituito da cose indivisibili, fino ai 3/10 della larghezza del veicolo",
         "risposta": False,
+        "riassunto": "Carico indivisibile → sporgenza laterale fino a 3/10?",
         "spiegazione": "Questa affermazione è FALSO. La sporgenza laterale del carico è permessa solo entro i 30 cm dalle luci di posizione e comunque entro i limiti massimi di larghezza del veicolo. La regola dei '3/10' si applica solo alla sporgenza posteriore (della lunghezza del veicolo), non a quella laterale (della larghezza).",
         "regola": "3/10 = Solo dietro (lunghezza), non di lato (larghezza).",
         "trabocchetti": ["fino ai 3/10 della larghezza del veicolo"],
@@ -997,6 +1139,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito trasportare o trainare cose che strisciano sul terreno se in parte sostenute da ruote",
         "risposta": False,
+        "riassunto": "Cose che strisciano → consentite se su ruote?",
         "spiegazione": "Questa affermazione è FALSO. È l'opposto di quanto abbiamo visto prima. Non è mai consentito trasportare o trainare cose che strisciano sul terreno, nemmeno se hanno delle ruote che le sostengono in parte. È un divieto assoluto per la sicurezza e per non danneggiare la strada.",
         "regola": "Strisciare = Sempre vietato.",
         "trabocchetti": ["consentito", "se in parte sostenute da ruote"],
@@ -1004,6 +1147,7 @@ QUESTIONS = [
     {
         "domanda": "La sporgenza longitudinale del carico, fino ai 3/10 della lunghezza del veicolo, deve essere segnalata mediante uno o due pannelli quadrangolari in figura",
         "risposta": True,
+        "riassunto": "Sporgenza fino a 3/10 → uno o due pannelli quadrati?",
         "spiegazione": "Se il carico sporge dietro il veicolo, anche se non molto (fino a 3/10 della lunghezza totale del veicolo), è obbligatorio segnalarlo con questo pannello. Si usa uno o due pannelli a seconda di come sporge il carico.",
         "regola": "Carico sporgente dietro? Pannello sempre!",
         "trabocchetti": ["fino ai 3/10 della lunghezza del veicolo"],
@@ -1012,6 +1156,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello in figura deve essere applicato in ogni caso in cui il carico sporge posteriormente, anche se di poco",
         "risposta": True,
+        "riassunto": "Pannello in figura → anche per piccole sporgenze?",
         "spiegazione": "Non importa quanto poco il carico sporga dietro, deve sempre essere segnalato con il pannello. È una questione di sicurezza per gli altri utenti della strada, per rendere il carico ben visibile.",
         "regola": "Sporge? Segnala! (Sempre)",
         "trabocchetti": ["in ogni caso", "anche se di poco"],
@@ -1020,6 +1165,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello in figura segnala carichi indivisibili che sporgono dalla parte posteriore del veicolo",
         "risposta": True,
+        "riassunto": "Pannello in figura → carichi indivisibili sporgenti dietro?",
         "spiegazione": "Questo pannello serve proprio a segnalare i carichi che non possono essere divisi (indivisibili) e che escono dalla parte posteriore del veicolo, rendendoli più visibili e sicuri per tutti.",
         "regola": "Carico indivisibile dietro? Pannello visibile!",
         "trabocchetti": ["indivisibili"],
@@ -1028,6 +1174,7 @@ QUESTIONS = [
     {
         "domanda": "Se il carico sporge longitudinalmente per l'intera larghezza della parte posteriore del veicolo, i pannelli in figura devono essere due, posti trasversalmente alle due estremità del carico",
         "risposta": True,
+        "riassunto": "Sporgenza per tutta la larghezza → due pannelli alle estremità?",
         "spiegazione": "Se il carico che sporge dietro è molto largo, cioè occupa tutta la larghezza del veicolo, per essere ben visibile da tutti i lati, si usano due pannelli. Vanno messi ai lati esterni del carico, uno per ogni estremità.",
         "regola": "Carico largo dietro? Due pannelli ai lati!",
         "trabocchetti": ["e"],
@@ -1036,6 +1183,7 @@ QUESTIONS = [
     {
         "domanda": "La sporgenza longitudinale del carico, fino ai 3/10 della lunghezza del veicolo, deve essere segnalata mediante uno o due pannelli in figura",
         "risposta": False,
+        "riassunto": "Sporgenza fino a 3/10 → uno o due pannelli?",
         "spiegazione": "Anche se il pannello nell'immagine è quadrangolare, la legge specifica che i pannelli per segnalare i carichi sporgenti devono essere 'quadrangolari'. Se la domanda non include questa parola, potrebbe essere considerata incompleta o non abbastanza precisa rispetto alla norma.",
         "regola": "La legge vuole precisione: 'pannelli quadrangolari'.",
         "immagine": "888b50664c678c9345dd.jpg",
@@ -1043,6 +1191,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello in figura segnala carichi indivisibili che sporgono dalla parte posteriore destra",
         "risposta": False,
+        "riassunto": "Pannello in figura → sporgenza posteriore destra?",
         "spiegazione": "Questo pannello segnala carichi che sporgono dalla parte posteriore in generale, non solo dalla parte destra. Serve per rendere visibile il carico che esce dal veicolo, indipendentemente dal lato (destro, sinistro o centrale).",
         "regola": "Sporgenza dietro? Non importa il lato, il pannello c'è!",
         "immagine": "d6305a0f00ae5814e947.jpg",
@@ -1050,6 +1199,7 @@ QUESTIONS = [
     {
         "domanda": "Se il carico sporge longitudinalmente per l'intera larghezza della parte posteriore del veicolo, si devono applicare due pannelli retroriflettenti in figura",
         "risposta": False,
+        "riassunto": "Sporgenza per tutta la larghezza → due pannelli?",
         "spiegazione": "È vero che se il carico è molto largo e sporge, si usano due pannelli, e questi pannelli sono retroriflettenti. Però, la domanda non dice dove devono essere messi i due pannelli. Devono essere posizionati 'alle due estremità del carico' per segnalare bene la larghezza. Senza questa informazione, la frase è incompleta e quindi Falsa.",
         "regola": "Due pannelli? Sì, ma la posizione conta! (Alle estremità)",
         "immagine": "25e10f6e04171c1b0bf6.jpg",
@@ -1057,6 +1207,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello arancione retroriflettente in figura segnala veicoli che stanno trasportando merci pericolose",
         "risposta": True,
+        "riassunto": "Pannello arancione → merci pericolose?",
         "spiegazione": "VERO. Il pannello arancione con i numeri, come quello in figura, è un segnale internazionale che indica che il veicolo sta trasportando merci considerate pericolose (ad esempio benzina, gas infiammabili, ecc.). È retroriflettente per essere ben visibile anche di notte.",
         "regola": "Pannello arancione con numeri = Merci Pericolose.",
         "immagine": "15a4706fe56ee47eaf81.jpg",
@@ -1064,6 +1215,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello in figura facilita l'individuazione dalla parte posteriore di autocarri con massa a pieno carico superiore a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Pannello in figura → autocarri oltre 3,5 t?",
         "spiegazione": "VERO. Questo pannello, essendo di colore arancione vivo e retroriflettente, aiuta a rendere il veicolo più visibile, specialmente in condizioni di scarsa luce o di notte. Questo è particolarmente utile per veicoli grandi come gli autocarri che trasportano merci pericolose.",
         "regola": "Arancione e retroriflettente = Più visibile.",
         "trabocchetti": ["individuazione"],
@@ -1072,6 +1224,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello giallo in figura posto nella parte posteriore del rimorchio individua un autotreno o un autoarticolato",
         "risposta": True,
+        "riassunto": "Pannello giallo sul rimorchio → autotreno o autoarticolato?",
         "spiegazione": "VERO. Attenzione, la domanda è un po' ingannevole per il colore! Il pannello *in figura* è arancione e indica merci pericolose. Tuttavia, esistono altri pannelli, di colore giallo (spesso con bordi o strisce rosse), che vengono applicati posteriormente ai rimorchi per segnalare la presenza di un autotreno o un autoarticolato, rendendoli più visibili. La domanda fa riferimento a questa funzione dei pannelli gialli, anche se il pannello mostrato non è giallo.",
         "regola": "Pannello arancione = Merci pericolose. Pannello giallo/rosso = Autotreno/Autoarticolato. Non confondere i colori!",
         "trabocchetti": ["giallo in figura"],
@@ -1080,6 +1233,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello arancione retroriflettente riprodott0 in figura è collocato posteriormente per segnalare carichi sporgenti pericolosi",
         "risposta": False,
+        "riassunto": "Pannello arancione → carichi sporgenti pericolosi?",
         "spiegazione": "FALSO. Il pannello arancione con i numeri serve per segnalare il trasporto di *merci pericolose* (come benzina o gas). Per segnalare i *carichi sporgenti* (cioè che escono dal veicolo), si usa un pannello quadrato a strisce bianche e rosse.",
         "regola": "Arancione = Merci pericolose. Bianco/Rosso = Carico sporgente.",
         "trabocchetti": ["carichi sporgenti pericolosi"],
@@ -1088,6 +1242,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli in figura sono posti sulla carreggiata per segnalare un ostacolo",
         "risposta": False,
+        "riassunto": "Pannelli in figura → ostacolo in carreggiata?",
         "spiegazione": "FALSO. I pannelli come quello in figura sono applicati sui veicoli che trasportano merci pericolose. Non vengono mai posizionati sulla strada (carreggiata) per segnalare ostacoli. Per gli ostacoli sulla strada si usano altri segnali, come il triangolo di pericolo o i coni.",
         "regola": "Pannello ADR = Sul veicolo. Ostacolo = Sulla strada.",
         "trabocchetti": ["posti sulla carreggiata"],
@@ -1096,6 +1251,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello in figura deve essere applicato posteriormente agli autobus di massa totale superiore a 3,5 tonnellate",
         "risposta": False,
+        "riassunto": "Pannello in figura → dietro gli autobus oltre 3,5 t?",
         "spiegazione": "FALSO. Il pannello arancione con i numeri è obbligatorio solo per i veicoli che trasportano *merci pericolose*. Gli autobus, anche se di grandi dimensioni, non trasportano merci pericolose in questo senso, quindi non devono avere questo tipo di pannello.",
         "regola": "Pannello ADR = Solo per merci pericolose.",
         "immagine": "25e10f6e04171c1b0bf6.jpg",
@@ -1103,6 +1259,7 @@ QUESTIONS = [
     {
         "domanda": "Nessun veicolo può trainare o essere trainato da più di un veicolo (salvo il caso di trasporti eccezionali)",
         "risposta": True,
+        "riassunto": "Traino → non più di un veicolo?",
         "spiegazione": "La regola generale è che un veicolo può trainare o essere trainato da un solo altro veicolo alla volta. Non si possono formare 'trenini' di veicoli, a meno che non si tratti di trasporti eccezionali che hanno permessi speciali.",
         "regola": "Un veicolo alla volta, come un 'treno' normale.",
         "trabocchetti": ["(salvo il caso di trasporti eccezionali)"],
@@ -1110,6 +1267,7 @@ QUESTIONS = [
     {
         "domanda": "Un autoveicolo può trainare un veicolo che non sia un rimorchio se questo non può più circolare per avaria o per mancanza di organi essenziali",
         "risposta": True,
+        "riassunto": "Autoveicolo → trainare un veicolo in avaria?",
         "spiegazione": "Se un veicolo si rompe (avaria) o gli mancano parti essenziali per poter circolare, un altro autoveicolo può trainarlo per spostarlo dalla strada. Questo è un traino di emergenza.",
         "regola": "Traino d'emergenza solo per veicoli rotti o incompleti.",
         "trabocchetti": ["che non sia un rimorchio"],
@@ -1117,6 +1275,7 @@ QUESTIONS = [
     {
         "domanda": "Il traino per situazione di emergenza di un veicolo da parte di un altro deve avvenire attraverso un solido collegamento, come fune, catena, cavo, barra rigida, purché idoneamente segnalati",
         "risposta": True,
+        "riassunto": "Traino di emergenza → collegamento solido e segnalato?",
         "spiegazione": "Quando si traina un veicolo in emergenza, il collegamento tra i due veicoli deve essere forte e sicuro (solido), come una fune o una barra. È anche obbligatorio che questo collegamento sia ben visibile agli altri utenti della strada, per esempio con un panno rosso.",
         "regola": "Collegamento forte e ben visibile.",
         "trabocchetti": ["solido collegamento", "purché idoneamente segnalati"],
@@ -1124,6 +1283,7 @@ QUESTIONS = [
     {
         "domanda": "Il traino per incombente situazione di emergenza di un veicolo in avaria deve avvenire attraverso un solido collegamento, purché idoneamente segnalato per rendere i veicoli chiaramente avvistabili dagli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Traino di emergenza → collegamento solido e ben visibile?",
         "spiegazione": "Questa domanda ribadisce che il traino di emergenza di un veicolo in panne deve essere fatto con un collegamento robusto e che sia i veicoli che il collegamento devono essere segnalati bene, in modo che tutti li possano vedere chiaramente.",
         "regola": "Traino d'emergenza: forte e visibile.",
         "trabocchetti": ["incombente situazione di emergenza"],
@@ -1131,12 +1291,14 @@ QUESTIONS = [
     {
         "domanda": "Qualora, in situazione di emergenza, il conducente traini con il suo veicolo un altro veicolo senza rispettare le prescrizioni relative alla solidità del collegamento è punito con la sottrazione di 2 punti dalla patente",
         "risposta": True,
+        "riassunto": "Traino con collegamento non solido → meno 2 punti?",
         "spiegazione": "Se non si usa un collegamento forte e sicuro per trainare un veicolo in emergenza, si commette un'infrazione. La conseguenza è una multa e la perdita di 2 punti dalla patente, perché è una situazione pericolosa.",
         "regola": "Collegamento non solido = -2 punti.",
     },
     {
         "domanda": "In autostrada, un autoveicolo può trainare un veicolo che non sia un rimorchio, se questo non può più circolare per qualsiasi grave motivo",
         "risposta": False,
+        "riassunto": "Autostrada → trainare un veicolo non rimorchio per guasto grave?",
         "spiegazione": "In autostrada, il traino di veicoli in avaria non è permesso, se non per spostarli immediatamente sulla corsia di emergenza o in un'area di sosta vicina. Non si può trainare un veicolo per un lungo tratto in autostrada; per questo ci sono i carri attrezzi.",
         "regola": "In autostrada, no traino (solo carro attrezzi).",
         "trabocchetti": ["In autostrada", "per qualsiasi grave motivo"],
@@ -1144,6 +1306,7 @@ QUESTIONS = [
     {
         "domanda": "Il traino per incombente situazione di emergenza di un veicolo in avaria deve avvenire attraverso un solido collegamento, anche se non è possibile segnalarlo",
         "risposta": False,
+        "riassunto": "Traino di emergenza → anche senza poterlo segnalare?",
         "spiegazione": "È fondamentale che il collegamento per il traino sia solido E che sia anche segnalato. Non si può trainare un veicolo se il collegamento non è visibile, perché sarebbe troppo pericoloso per gli altri utenti della strada.",
         "regola": "Solido E segnalato, sempre!",
         "trabocchetti": ["anche se non è possibile segnalarlo"],
@@ -1151,12 +1314,14 @@ QUESTIONS = [
     {
         "domanda": "Durante le operazioni di traino di un veicolo in avaria, il veicolo trainato deve mantenere accese le luci posteriori in mancanza di altra idonea segnalazione",
         "risposta": False,
+        "riassunto": "Veicolo trainato → luci posteriori accese?",
         "spiegazione": "Il veicolo trainato, se in avaria, potrebbe non avere le luci funzionanti. La segnalazione principale per il veicolo trainato è il pannello quadrato con strisce rosse e bianche (o il triangolo mobile di pericolo). Le luci posteriori, se funzionanti, vanno accese, ma non sono l'unica o la principale segnalazione in caso di avaria.",
         "regola": "Trainato: pannello/triangolo, non solo luci.",
     },
     {
         "domanda": "Qualora, in situazione di emergenza, il conducente traini con il suo veicolo un altro veicolo senza rispettare le prescrizioni relative alla solidità del collegamento è punito con la sottrazione di 4 punti dalla patente",
         "risposta": False,
+        "riassunto": "Traino con collegamento non solido → meno 4 punti?",
         "spiegazione": "Questa domanda è una 'trappola' sul numero di punti. La sanzione per non aver rispettato la solidità del collegamento durante un traino di emergenza è la sottrazione di 2 punti dalla patente, non 4.",
         "regola": "Traino non solido = -2 punti (non 4!).",
         "trabocchetti": ["4 punti dalla patente"],
@@ -1164,12 +1329,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un'autovettura deve considerare i rischi che, sulla strada, sono legati alla presenza di velocipedi, mezzi dotati di massa modesta e caratterizzati da basse velocità e possibili oscillazioni trasversali",
         "risposta": True,
+        "riassunto": "Velocipedi → rischi per massa piccola, lentezza, oscillazioni?",
         "spiegazione": "È VERO. Le biciclette (velocipedi) sono veicoli leggeri e lenti. Possono anche oscillare, cioè muoversi un po' a destra e sinistra. Per questo, chi guida un'auto deve stare attento e considerare questi rischi, perché i ciclisti sono più vulnerabili.",
         "regola": "Bici = leggera, lenta, instabile. Attenzione!",
     },
     {
         "domanda": "Il conducente di un'autovettura o di un motociclo deve adattare la propria guida anche ai rischi legati alla presenza di velocipedi nel traffico",
         "risposta": True,
+        "riassunto": "Auto o moto → adattare la guida ai ciclisti?",
         "spiegazione": "È VERO. Tutti i conducenti, sia di auto che di moto, devono guidare in modo più attento quando ci sono biciclette nel traffico. Questo perché i ciclisti sono più esposti e meno protetti.",
         "regola": "Bici in strada? Guida con più attenzione.",
         "trabocchetti": ["Adattare la propria guida"],
@@ -1177,6 +1344,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un'autovettura deve prestare particolare attenzione per la presenza nel traffico di velocipedi utilizzati da conducenti giovanissimi e inesperti o da anziani",
         "risposta": True,
+        "riassunto": "Ciclisti giovanissimi o anziani → particolare attenzione?",
         "spiegazione": "È VERO. I ciclisti molto giovani o inesperti, così come gli anziani, possono avere reazioni più lente o fare errori. Per questo, chi guida un'auto deve essere ancora più prudente e prevedere possibili comportamenti inattesi.",
         "regola": "Giovani/Anziani in bici = massima attenzione.",
         "trabocchetti": ["Particolare attenzione"],
@@ -1184,6 +1352,7 @@ QUESTIONS = [
     {
         "domanda": "Per un ciclista che si accinge ad effettuare una manovra è molto difficile valutare la velocità di avvicinamento dei veicoli a motore presenti nel traffico",
         "risposta": True,
+        "riassunto": "Ciclista → difficile valutare la velocità dei veicoli?",
         "spiegazione": "È VERO. Per un ciclista, specialmente quando deve fare una manovra (come girare), è difficile capire quanto velocemente si sta avvicinando un'auto. Questo perché la percezione della velocità è diversa e il ciclista è più lento.",
         "regola": "Ciclista fatica a stimare velocità auto.",
         "trabocchetti": ["Molto difficile valutare"],
@@ -1191,6 +1360,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un'autovettura deve prevedere la difficoltà di valutazione della velocità del proprio veicolo da parte di un ciclista che, trovandosi sulla stessa corsia di marcia, si accinge a svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Ciclista che svolta a sinistra → difficile valutare la nostra velocità?",
         "spiegazione": "È VERO. Se un ciclista sta per girare a sinistra, deve attraversare la corsia. Chi guida l'auto deve immaginare che il ciclista potrebbe non aver calcolato bene la velocità dell'auto. Quindi, è necessario rallentare e dare spazio.",
         "regola": "Ciclista gira a sinistra? Rallenta, potrebbe sbagliare.",
         "trabocchetti": ["Prevedere la difficoltà di valutazione"],
@@ -1198,6 +1368,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve esercitare particolare prudenza guidando in presenza di ciclista anziano che, per ispezionare la strada alle proprie spalle, esegue con difficoltà e lentezza la torsione del busto a causa dell'età avanzata",
         "risposta": True,
+        "riassunto": "Ciclista anziano che si gira con fatica → prudenza?",
         "spiegazione": "È VERO. Un ciclista anziano potrebbe avere difficoltà a girare il busto per guardare dietro di sé. Questo significa che potrebbe non vedere un veicolo che si avvicina. Il conducente deve essere molto prudente e considerare questa limitazione.",
         "regola": "Anziano in bici non vede bene dietro? Massima prudenza.",
         "trabocchetti": ["Particolare prudenza", "difficoltà e lentezza"],
@@ -1205,6 +1376,7 @@ QUESTIONS = [
     {
         "domanda": "La presenza nel traffico extraurbano di bambini in bicicletta, anche se affiancati, non rappresenta un rischio per chi guida un autoveicolo, data la loro modesta velocità",
         "risposta": False,
+        "riassunto": "Bambini in bici fuori città → nessun rischio perché lenti?",
         "spiegazione": "È FALSO. La presenza di bambini in bicicletta, anche se lenti, rappresenta sempre un rischio, soprattutto fuori città dove le auto vanno più veloci. I bambini sono imprevedibili e possono cambiare direzione o cadere all'improvviso. La loro bassa velocità non elimina il pericolo.",
         "regola": "Bambini in bici = sempre rischio, velocità non conta.",
         "trabocchetti": ["Non rappresenta un rischio", "data la loro modesta velocità"],
@@ -1212,6 +1384,7 @@ QUESTIONS = [
     {
         "domanda": "I ciclisti possono viaggiare in tutta sicurezza nel traffico extraurbano perché i conducenti dei veicoli a motore sono sempre capaci di prevedere eventuali loro cadute o pericolosi sbandamenti dovuti ad irregolarità del fondo stradale",
         "risposta": False,
+        "riassunto": "Ciclisti fuori città → sicuri perché si prevedono le cadute?",
         "spiegazione": "È FALSO. I ciclisti non possono viaggiare 'in tutta sicurezza' nel traffico extraurbano. Nessun conducente può 'sempre' prevedere ogni caduta o sbandamento di un ciclista, specialmente a causa di buche o irregolarità della strada. I ciclisti sono molto vulnerabili.",
         "regola": "'Sempre' è quasi sempre FALSO. Non si può prevedere tutto.",
         "trabocchetti": ["In tutta sicurezza", "sono sempre capaci di prevedere", "Sempre"],
@@ -1219,6 +1392,7 @@ QUESTIONS = [
     {
         "domanda": "La velocità di avvicinamento di un'autovettura, soprattutto su strade extraurbane, è facilmente valutabile a distanza da parte di un ciclista che procede lentamente",
         "risposta": False,
+        "riassunto": "Ciclista → valuta facilmente la velocità dell'auto?",
         "spiegazione": "È FALSO. Questa affermazione contraddice quanto detto in altre domande vere. È difficile per un ciclista valutare la velocità di un'auto, specialmente fuori città dove le velocità sono maggiori. Un ciclista lento ha ancora più difficoltà a reagire o a giudicare correttamente.",
         "regola": "Ciclista lento + auto veloce = difficile valutare.",
         "trabocchetti": ["Facilmente valutabile"],
@@ -1226,6 +1400,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un'autovettura deve costantemente ricordare il rischio derivante dalla presenza nel traffico di ciclomotoristi dotati di limitata esperienza di guida a causa della giovane età",
         "risposta": True,
+        "riassunto": "Ciclomotoristi giovani inesperti → rischio da ricordare?",
         "spiegazione": "È vero. I ciclomotoristi, specialmente i più giovani, possono avere meno esperienza alla guida. Per questo, un conducente di autovettura deve essere sempre molto attento e considerare che potrebbero fare errori o manovre inaspettate.",
         "regola": "Giovani in motorino = meno esperienza, più attenzione!",
         "trabocchetti": ["costantemente ricordare"],
@@ -1233,6 +1408,7 @@ QUESTIONS = [
     {
         "domanda": "La manovra di svolta a sinistra è particolarmente pericolosa per un ciclomotore che deve interferire con la traiettoria di una o più colonne di veicoli più veloci sopraggiungenti nella stessa direzione",
         "risposta": True,
+        "riassunto": "Svolta a sinistra in ciclomotore → particolarmente pericolosa?",
         "spiegazione": "È vero. Svoltare a sinistra è una manovra rischiosa per tutti, ma ancora di più per un ciclomotore. Deve attraversare la strada dove arrivano veicoli più grandi e veloci, ed è meno visibile, aumentando il pericolo di incidenti.",
         "regola": "Svolta a sinistra in motorino? Attenzione doppia!",
         "trabocchetti": ["Particolarmente pericolosa", "Interferire con la traiettoria"],
@@ -1240,6 +1416,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di autoveicolo deve valutare con prudenza, in relazione alla propria velocità, la distanza che lo separa da un ciclomotorista che si accinge a svoltare",
         "risposta": True,
+        "riassunto": "Ciclomotorista che svolta → valutare con prudenza la distanza?",
         "spiegazione": "È vero. Se un ciclomotorista sta per svoltare, potrebbe rallentare o cambiare direzione. Tu, alla guida di un'auto, devi calcolare bene la distanza per non essere troppo vicino e avere il tempo di reagire in sicurezza, in base alla tua velocità.",
         "regola": "Motorino svolta? Calcola bene la distanza!",
         "trabocchetti": ["Valutare con prudenza", "In relazione alla propria velocità"],
@@ -1247,6 +1424,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di autoveicolo deve prevedere manovre improvvise altrui, come il procedere a zig-zag di un ciclomotore",
         "risposta": True,
+        "riassunto": "Ciclomotore a zig zag → prevedere manovre improvvise?",
         "spiegazione": "È vero. Un buon conducente deve sempre prevedere che gli altri utenti della strada, specialmente i ciclomotoristi che sono meno stabili, possano fare manovre improvvise o inaspettate, come procedere a zig-zag. Essere pronti a reagire è fondamentale per la sicurezza.",
         "regola": "Prevedi l'imprevisto, anche il motorino a zig-zag!",
         "trabocchetti": ["Prevedere manovre improvvise altrui", "A zig-zag"],
@@ -1254,6 +1432,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di autoveicolo o motoveicolo deve rispettare la distanza di sicurezza laterale da ciclisti o ciclomotoristi per evitare di metterne a repentaglio l'equilibrio nella guida",
         "risposta": True,
+        "riassunto": "Ciclisti e ciclomotoristi → distanza laterale di sicurezza?",
         "spiegazione": "È vero. Quando superi un ciclista o un ciclomotorista, devi lasciare una distanza di sicurezza non solo davanti, ma anche lateralmente. L'aria spostata dal tuo veicolo o la semplice vicinanza possono fargli perdere l'equilibrio e cadere.",
         "regola": "Distanza laterale: salva l'equilibrio di bici e motorini!",
         "trabocchetti": ["Distanza di sicurezza laterale", "Metterne a repentaglio l"],
@@ -1261,6 +1440,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di autoveicolo deve evitare deviazioni trasversali, anche modeste, del proprio veicolo soprattutto in presenza di ciclomotoristi o ciclisti per evitarne la possibile caduta a terra",
         "risposta": True,
+        "riassunto": "Vicino a ciclisti → evitare anche piccole deviazioni?",
         "spiegazione": "È vero. Anche un piccolo spostamento laterale del tuo veicolo (una 'deviazione trasversale') può essere molto pericoloso per ciclisti e ciclomotoristi. Sono meno stabili e un movimento improvviso della tua auto può farli cadere a terra.",
         "regola": "Non sbandare, anche poco: bici e motorini cadono!",
         "trabocchetti": ["Deviazioni trasversali, anche modeste", "Evitarne la possibile caduta a terra"],
@@ -1268,6 +1448,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di autoveicolo deve rispettare le norme della circolazione, ma non è tenuto a prevedere le possibili imprudenze del ciclomotorista che lo affianca sulla strada",
         "risposta": False,
+        "riassunto": "Ciclomotorista → non prevedere le sue imprudenze?",
         "spiegazione": "È falso. Un buon conducente non deve solo rispettare le regole, ma anche prevedere le possibili imprudenze o errori degli altri, specialmente di chi è più vulnerabile come i ciclomotoristi. La guida sicura significa essere sempre pronti a reagire a situazioni inaspettate.",
         "regola": "Prevedi sempre l'imprudenza altrui, è guida sicura!",
         "trabocchetti": ["ma non è tenuto a prevedere"],
@@ -1275,6 +1456,7 @@ QUESTIONS = [
     {
         "domanda": "Risulta facile al conducente di un autoveicolo valutare la distanza che lo separa da un ciclomotorista che rallenta bruscamente per svoltare in una strada non sufficientemente segnalata",
         "risposta": False,
+        "riassunto": "Ciclomotorista che frena per svoltare → distanza facile da valutare?",
         "spiegazione": "È falso. Se un ciclomotorista rallenta all'improvviso e la strada non è ben segnalata, è molto difficile per te, alla guida di un'auto, capire subito cosa farà e calcolare la distanza necessaria. È una situazione complessa e potenzialmente pericolosa, non facile da gestire.",
         "regola": "Rallentamento brusco + strada non segnalata = MAI facile!",
         "trabocchetti": ["facile"],
@@ -1282,6 +1464,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un'autovettura può superare a velocità sostenuta, pur rispettando i limiti, un ciclomotorista nonostante la scarsa distanza di sicurezza laterale",
         "risposta": False,
+        "riassunto": "Ciclomotorista → superarlo veloce con poca distanza laterale?",
         "spiegazione": "È falso. Anche se rispetti i limiti di velocità, non puoi superare un ciclomotorista se non c'è abbastanza spazio laterale. La distanza di sicurezza laterale è fondamentale per la sua incolumità e per evitare di metterlo in pericolo, indipendentemente dalla tua velocità.",
         "regola": "Superi un motorino? Distanza laterale SEMPRE ampia!",
         "trabocchetti": ["Velocità sostenuta"],
@@ -1289,6 +1472,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di autovettura deve conoscere i rischi derivanti dalla presenza, soprattutto su strade extraurbane, di mezzi particolarmente lenti, come ciclomotori a tre ruote",
         "risposta": True,
+        "riassunto": "Ciclomotori a tre ruote lenti → rischi fuori città?",
         "spiegazione": "È vero. Quando guidi un'auto, devi sempre fare attenzione ai veicoli che vanno molto più lentamente di te, specialmente fuori città. Questi veicoli, come i ciclomotori a tre ruote, possono creare situazioni inaspettate e devi essere pronto a reagire.",
         "regola": "Veicoli lenti = Attenzione doppia!",
         "trabocchetti": ["deve conoscere i rischi", "Soprattutto su strade extraurbane"],
@@ -1296,6 +1480,7 @@ QUESTIONS = [
     {
         "domanda": "Per un'autovettura che procede a velocità sostenuta, pur rispettando i limiti su strada extraurbana a due sole corsie, un ciclomotore a tre ruote costituisce un potenziale pericolo, soprattutto se effettua manovre improvvise",
         "risposta": True,
+        "riassunto": "Ciclomotore a tre ruote → pericolo per manovre improvvise?",
         "spiegazione": "È vero. Se la tua auto va veloce e incontri un ciclomotore a tre ruote che va molto più piano, c'è un grande rischio. Se il ciclomotore fa una mossa improvvisa, tu hai poco tempo per reagire e questo può causare un incidente.",
         "regola": "Grande differenza di velocità + mosse improvvise = Pericolo!",
         "trabocchetti": ["Velocità sostenuta", "Potenziale pericolo"],
@@ -1303,6 +1488,7 @@ QUESTIONS = [
     {
         "domanda": "Per il conducente di un'autovettura che procede a velocità regolare su strada extraurbana, può risultare difficoltosa la valutazione della velocità di una macchina agricola che, in genere, procede lentamente",
         "risposta": True,
+        "riassunto": "Macchina agricola lenta → velocità difficile da valutare?",
         "spiegazione": "È vero. Quando guidi la tua auto a velocità normale su una strada fuori città, è difficile capire bene quanto velocemente si muove un veicolo molto lento, come un trattore. Questo può farti sbagliare a calcolare la distanza o il tempo per superarlo.",
         "regola": "Lento vs. Veloce = Difficile da valutare.",
         "trabocchetti": ["Difficoltosa la valutazione", "In genere, procede lentamente"],
@@ -1310,6 +1496,7 @@ QUESTIONS = [
     {
         "domanda": "La presenza di veicoli che possono raggiungere velocità molto diverse tra loro, soprattutto su strada extraurbana, costituisce un fattore di sicurezza",
         "risposta": False,
+        "riassunto": "Velocità molto diverse → fattore di sicurezza?",
         "spiegazione": "È falso. Avere veicoli con velocità molto diverse sulla stessa strada, specialmente fuori città, non è un fattore di sicurezza, ma un fattore di rischio! Aumenta la possibilità di incidenti perché ci sono più situazioni pericolose (sorpassi, frenate improvvise, ecc.).",
         "regola": "Velocità diverse = Meno sicurezza, più rischio.",
         "trabocchetti": ["sicurezza"],
@@ -1317,6 +1504,7 @@ QUESTIONS = [
     {
         "domanda": "Risulta facile la valutazione dei tempi di avvicinamento ad un veicolo lento per un'autovettura che, specialmente su strada extraurbana, viaggia a velocità sostenuta pur rispettando i limiti",
         "risposta": False,
+        "riassunto": "Veicolo lento fuori città → tempi di avvicinamento facili?",
         "spiegazione": "È falso. Non è facile, ma difficile! Se la tua auto va veloce e ti avvicini a un veicolo molto lento, è complicato calcolare bene quanto tempo ci metterai ad raggiungerlo. La grande differenza di velocità inganna l'occhio e rende il calcolo difficile.",
         "regola": "Veicolo lento + tua velocità alta = Difficile calcolare.",
         "trabocchetti": ["Risulta facile la valutazione"],
@@ -1324,6 +1512,7 @@ QUESTIONS = [
     {
         "domanda": "Risulta maggiormente pericolosa la collisione tra veicoli dotati di masse molto diverse tra loro",
         "risposta": True,
+        "riassunto": "Masse molto diverse → collisione più pericolosa?",
         "spiegazione": "Quando due veicoli con pesi (masse) molto diversi si scontrano, il veicolo più leggero subisce danni maggiori e il rischio di lesioni è più alto. Per questo, la collisione è più pericolosa.",
         "regola": "Grande vs. Piccolo = Pericolo maggiore.",
         "trabocchetti": ["masse molto diverse"],
@@ -1331,6 +1520,7 @@ QUESTIONS = [
     {
         "domanda": "Guidando una piccola autovettura è necessario valutare i maggiori rischi derivanti da possibili tamponamenti o collisioni con autovettura di massa superiore",
         "risposta": True,
+        "riassunto": "Auto piccola → più rischi con auto pesanti?",
         "spiegazione": "Se guidi un'auto piccola, devi essere consapevole che in caso di incidente con un'auto più grande e pesante, i rischi per te e per la tua auto sono maggiori. Per questo è importante guidare con più attenzione.",
         "regola": "Piccolo + Grande = Attenzione doppia.",
         "trabocchetti": ["maggiori rischi", "massa superiore"],
@@ -1338,6 +1528,7 @@ QUESTIONS = [
     {
         "domanda": "Un'autovettura dotata di notevole massa costituisce, nella circolazione, una garanzia di sicurezza anche per gli altri veicoli di dimensioni e di massa inferiori",
         "risposta": False,
+        "riassunto": "Auto molto pesante → sicurezza anche per gli altri?",
         "spiegazione": "Un'auto pesante è più sicura per chi la guida in caso di incidente, ma non rende più sicuri gli altri veicoli più piccoli. Anzi, in uno scontro, un'auto pesante può causare danni maggiori a un veicolo leggero.",
         "regola": "La tua sicurezza non è la sicurezza degli altri.",
         "trabocchetti": ["garanzia"],
@@ -1345,12 +1536,14 @@ QUESTIONS = [
     {
         "domanda": "I veicoli sono tanto più sicuri, nella circolazione, quanto più le loro masse sono differenziate",
         "risposta": False,
+        "riassunto": "Masse molto diverse → più sicurezza?",
         "spiegazione": "Questa affermazione è falsa perché è il contrario. I veicoli sono più sicuri quando le loro masse (pesi) sono simili. Se le masse sono molto diverse, come un camion e una piccola auto, l'incidente è molto più pericoloso.",
         "regola": "Masse diverse = Meno sicurezza.",
     },
     {
         "domanda": "Le grandi differenze di prestazioni e di masse fra le autovetture facilitano una buona sicurezza stradale",
         "risposta": False,
+        "riassunto": "Grandi differenze di prestazioni e masse → più sicurezza?",
         "spiegazione": "Grandi differenze tra le auto (come una molto veloce e una molto lenta, o una molto pesante e una molto leggera) rendono la strada meno sicura, non più sicura. Queste differenze possono creare situazioni pericolose nel traffico e in caso di incidente.",
         "regola": "Differenze estreme = Meno sicurezza.",
         "trabocchetti": ["facilitano"],
@@ -1358,6 +1551,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un fuoristrada (Suv) deve guidare con la massima prudenza, consapevole che l'altezza e la massa del proprio veicolo costituiscono un potenziale pericolo per pedoni, ciclisti e autovetture di modeste dimensioni",
         "risposta": True,
+        "riassunto": "SUV → altezza e massa pericolose per gli altri?",
         "spiegazione": "È vero che il conducente di un SUV deve guidare con molta attenzione. I SUV sono veicoli grandi e pesanti, e questo li rende potenzialmente più pericolosi per pedoni, ciclisti e auto più piccole in caso di incidente. Quindi, è importante essere consapevoli di questa caratteristica e guidare con prudenza.",
         "regola": "SUV grande e pesante = più attenzione per gli altri.",
         "trabocchetti": ["potenziale pericolo"],
@@ -1365,6 +1559,7 @@ QUESTIONS = [
     {
         "domanda": "I conducenti dei fuoristrada (Suv) debbono considerare i gravi danni che i paraurti sporgenti e rafforzati del proprio mezzo possono determinare nel caso di impatto con veicoli più piccoli",
         "risposta": True,
+        "riassunto": "SUV → paraurti rinforzati dannosi per i più piccoli?",
         "spiegazione": "È vero che i conducenti di SUV devono pensare ai danni che i loro paraurti possono causare. Molti SUV hanno paraurti robusti e che sporgono, che sono fatti per proteggere il SUV, ma possono fare molti più danni a veicoli più piccoli in caso di scontro.",
         "regola": "Paraurti SUV robusti = più danni agli altri veicoli.",
         "trabocchetti": ["gravi danni", "paraurti sporgenti e rafforzati"],
@@ -1372,6 +1567,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di fuoristrada (Suv) deve ricordare che la guida di tale veicolo è particolarmente impegnativa in città e che richiede particolari cautele soprattutto nelle manovre di emergenza",
         "risposta": True,
+        "riassunto": "SUV in città → guida impegnativa con cautele?",
         "spiegazione": "È vero che guidare un SUV in città è più difficile e richiede molta attenzione, specialmente nelle situazioni di emergenza. I SUV sono grandi, meno agili e hanno un baricentro più alto rispetto alle auto normali, il che li rende più difficili da controllare in manovre improvvise come una frenata o una sterzata d'emergenza.",
         "regola": "SUV in città = più difficile, più attenzione nelle emergenze.",
         "trabocchetti": ["particolarmente impegnativa in città"],
@@ -1379,6 +1575,7 @@ QUESTIONS = [
     {
         "domanda": "La guida di un fuoristrada (Suv), dotato di massa notevole e di altezza superiore alle autovetture, garantisce la massima sicurezza per gli occupanti del veicolo stesso e per gli altri utenti della strada",
         "risposta": False,
+        "riassunto": "SUV → massima sicurezza per tutti?",
         "spiegazione": "È falso che un SUV garantisca la 'massima sicurezza' per tutti. Anche se può dare una sensazione di sicurezza agli occupanti per la sua dimensione, la sua massa e altezza elevate non garantiscono la massima sicurezza per gli altri utenti della strada (pedoni, ciclisti, auto più piccole), anzi, possono aumentare il pericolo per loro in caso di incidente.",
         "regola": "'Massima sicurezza' per tutti = quasi sempre FALSO.",
         "trabocchetti": ["massima", "altri utenti della strada"],
@@ -1386,6 +1583,7 @@ QUESTIONS = [
     {
         "domanda": "Nel caso di collisione o di tamponamento, i paraurti sporgenti e rafforzati (bull bars) rendono i fuoristrada meno pericolosi per gli altri veicoli",
         "risposta": False,
+        "riassunto": "Bull bar → meno pericolosi per gli altri?",
         "spiegazione": "È falso. I paraurti sporgenti e rafforzati (come i 'bull bars') non rendono i fuoristrada 'meno pericolosi' per gli altri veicoli. Al contrario, sono progettati per proteggere il SUV, ma in caso di collisione aumentano il rischio di danni gravi per gli altri veicoli e per i pedoni, perché sono più rigidi e meno deformabili.",
         "regola": "Bull bars = più pericolosi per gli altri, non meno.",
         "trabocchetti": ["meno pericolosi"],
@@ -1393,12 +1591,14 @@ QUESTIONS = [
     {
         "domanda": "La guida di un fuoristrada (Suv) risulta particolarmente indicata all'interno dei centri abitati",
         "risposta": False,
+        "riassunto": "SUV → particolarmente adatto in città?",
         "spiegazione": "È falso. La guida di un SUV non è 'particolarmente indicata' per i centri abitati. I SUV sono grandi, consumano di più e sono più difficili da parcheggiare e manovrare in spazi stretti tipici della città. Sono più adatti per strade extraurbane o per l'uso fuori strada.",
         "regola": "SUV in città = scomodo, non indicato.",
     },
     {
         "domanda": "Alla guida di un'autovettura è opportuno valutare costantemente la potenziale pericolosità dei veicoli industriali e degli autobus, a causa della loro massa notevolmente maggiore",
         "risposta": True,
+        "riassunto": "Veicoli industriali e autobus → pericolosi per la massa?",
         "spiegazione": "È vero che alla guida di un'autovettura dobbiamo fare molta attenzione ai veicoli grandi come camion e autobus. Questi veicoli sono molto più pesanti e, in caso di incidente, possono causare danni maggiori. Per questo, è importante valutarne la presenza e guidare con prudenza quando ci sono.",
         "regola": "Veicolo grande = attenzione maggiore.",
         "trabocchetti": ["opportuno valutare costantemente", "Potenziale pericolosità"],
@@ -1406,6 +1606,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di motociclo o di autovettura deve saper valutare nella guida gli alti rischi derivanti da autocarri, autotreni o autoarticolati che non rispettano i limiti di velocità",
         "risposta": True,
+        "riassunto": "Camion oltre i limiti → alti rischi?",
         "spiegazione": "È vero. Se un veicolo pesante come un autocarro o un autoarticolato non rispetta i limiti di velocità, diventa molto più pericoloso. La sua grande massa, unita all'alta velocità, rende più difficile fermarsi e aumenta enormemente la gravità di un possibile incidente. Chi guida un veicolo più piccolo deve essere consapevole di questo rischio elevato.",
         "regola": "Camion veloci = pericolo doppio.",
         "trabocchetti": ["alti rischi", "che non rispettano i limiti di velocità"],
@@ -1413,12 +1614,14 @@ QUESTIONS = [
     {
         "domanda": "Autocarri, autotreni e autoarticolati, per la loro massa notevole, non costituiscono, per un'autovettura o per un motociclo, rischi potenziali maggiori rispetto a qualsiasi altro veicolo",
         "risposta": False,
+        "riassunto": "Autocarri → nessun rischio maggiore?",
         "spiegazione": "Questa affermazione è falsa. Proprio a causa della loro 'massa notevole', autocarri, autotreni e autoarticolati costituiscono un rischio potenziale molto maggiore per un'autovettura o un motociclo rispetto a un veicolo più piccolo. In caso di scontro, la differenza di peso e dimensioni rende l'impatto molto più grave per il veicolo più leggero.",
         "regola": "Massa grande = rischio grande.",
     },
     {
         "domanda": "Nonostante le caratteristiche costruttive del veicolo rendano possibile un adeguato campo di visibilità, durante la guida il conducente deve attentamente visualizzare l'area antistante e limitrofa",
         "risposta": True,
+        "riassunto": "Guida → controllare bene l'area davanti e intorno?",
         "spiegazione": "Anche se la tua auto è costruita per darti una buona visibilità, tu devi sempre guardare con molta attenzione la strada davanti e ai lati. Non basta che la macchina sia fatta bene, devi essere tu a fare attenzione.",
         "regola": "Buona macchina non significa occhi chiusi.",
         "trabocchetti": ["Nonostante", "attentamente"],
@@ -1426,6 +1629,7 @@ QUESTIONS = [
     {
         "domanda": "Per il conducente il campo di visibilità può essere ridotto sia da uno dei poggiatesta sia da elementi della carrozzeria della propria autovettura che possono impedire accidentalmente l'avvistamento di altri utenti della strada",
         "risposta": True,
+        "riassunto": "Poggiatesta e carrozzeria → riducono la visibilità?",
         "spiegazione": "Sì, è vero. Anche parti della tua stessa auto, come i poggiatesta o i montanti della carrozzeria (i bordi del finestrino), possono coprire la vista e farti non vedere pedoni o altri veicoli, specialmente quelli più piccoli.",
         "regola": "Anche la tua auto ha angoli ciechi.",
         "trabocchetti": ["accidentalmente"],
@@ -1433,6 +1637,7 @@ QUESTIONS = [
     {
         "domanda": "Per consentire una adeguata visibilità è vietato applicare pellicole adesive sul parabrezza e sui vetri laterali anteriori dei veicoli",
         "risposta": True,
+        "riassunto": "Pellicole su parabrezza e vetri anteriori → vietate?",
         "spiegazione": "È vietato mettere pellicole adesive sul parabrezza (il vetro davanti) e sui vetri laterali anteriori (quelli del guidatore e del passeggero). Questo perché le pellicole riducono la visibilità e possono essere pericolose.",
         "regola": "Davanti e ai lati, vetri puliti e chiari.",
         "trabocchetti": ["vietato"],
@@ -1440,6 +1645,7 @@ QUESTIONS = [
     {
         "domanda": "I pedoni e soprattutto i bambini rischiano di rimanere fuori dal campo visivo del conducente di un veicolo fuoristrada (Suv) a causa delle dimensioni del mezzo",
         "risposta": True,
+        "riassunto": "SUV → pedoni e bambini fuori dal campo visivo?",
         "spiegazione": "I veicoli fuoristrada (come i SUV) sono grandi e alti. Per questo, è più difficile per il conducente vedere i pedoni, specialmente i bambini, che sono piccoli e vicini al veicolo, proprio davanti o ai lati bassi.",
         "regola": "SUV grande, attenzione ai piccoli.",
         "trabocchetti": ["a causa delle dimensioni del mezzo"],
@@ -1447,6 +1653,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente può limitarsi ad un controllo visivo affrettato dell'area immediatamente antistante il veicolo poiché il suo mezzo dispone per costruzione di un adeguato campo di visibilità",
         "risposta": False,
+        "riassunto": "Area davanti → basta un controllo veloce?",
         "spiegazione": "No, è falso. Non puoi mai fare un controllo veloce o 'affrettato'. Anche se la tua auto ha una buona visibilità, devi sempre guardare con molta attenzione e in modo completo l'area intorno al veicolo, specialmente quella più vicina.",
         "regola": "Mai fretta, sempre attenzione massima.",
         "trabocchetti": ["può limitarsi", "affrettato", "limita"],
@@ -1454,6 +1661,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito applicare sui vetri laterali anteriori e sul parabrezza pellicole adesive, a condizione che siano di materiale rimovibile",
         "risposta": False,
+        "riassunto": "Pellicole sui vetri anteriori → consentite se rimovibili?",
         "spiegazione": "No, è falso. Non è permesso mettere pellicole adesive sui vetri laterali anteriori e sul parabrezza, nemmeno se queste pellicole si possono togliere facilmente. La legge vuole che questi vetri siano sempre completamente trasparenti per la sicurezza.",
         "regola": "Rimovibile o no, davanti e ai lati no.",
         "trabocchetti": ["consentito"],
@@ -1461,12 +1669,14 @@ QUESTIONS = [
     {
         "domanda": "I veicoli fuoristrada presentano un'altezza tale da permettere al conducente una adeguata visibilità di tutti i possibili ostacoli in basso (ad esempio, bambini)",
         "risposta": False,
+        "riassunto": "SUV → vede bene anche i bambini in basso?",
         "spiegazione": "No, è falso. I veicoli fuoristrada (SUV) sono alti, e proprio per questo è più difficile per il conducente vedere gli ostacoli piccoli o i bambini che si trovano molto vicini al suolo, proprio davanti al veicolo. L'altezza del mezzo crea un 'angolo cieco' in basso.",
         "regola": "SUV alto, ostacoli bassi nascosti.",
     },
     {
         "domanda": "Prima di riprendere la marcia, il conducente di un autocarro deve prestare particolare attenzione alla possibile presenza di un pedone o di un ciclista nella zona immediatamente antistante il proprio veicolo fermo",
         "risposta": True,
+        "riassunto": "Autocarro che riparte → attenzione a pedoni e ciclisti davanti?",
         "spiegazione": "Gli autocarri sono veicoli grandi e alti. Questo significa che il conducente ha una visuale limitata, specialmente nella zona subito davanti al veicolo. Per questo motivo, è fondamentale fare molta attenzione a pedoni o ciclisti che potrebbero trovarsi lì prima di ripartire, perché sono difficili da vedere.",
         "regola": "Autocarro alto = punto cieco davanti. Attenzione massima prima di ripartire!",
         "trabocchetti": ["particolare attenzione"],
@@ -1474,6 +1684,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un autocarro fermo al semaforo deve prevedere la presenza di pedoni e ciclisti il cui avvistamento è precluso dalla sagoma del proprio veicolo",
         "risposta": True,
+        "riassunto": "Autocarro al semaforo → pedoni e ciclisti nascosti?",
         "spiegazione": "Quando un autocarro è fermo, la sua grande dimensione (la 'sagoma') può nascondere pedoni e ciclisti che si trovano molto vicini, soprattutto davanti o ai lati. Il conducente deve sempre 'prevedere', cioè immaginare, che ci possano essere persone in queste zone non visibili, anche se non le vede direttamente.",
         "regola": "Autocarro grande = vista bloccata. Prevedi sempre pedoni e ciclisti!",
         "trabocchetti": ["prevedere", "precluso dalla sagoma", "precluso"],
@@ -1481,6 +1692,7 @@ QUESTIONS = [
     {
         "domanda": "La limitata visuale offerta dal parabrezza degli autocarri nella zona immediatamente antistante il veicolo rende pericolosa la fermata di tali mezzi in colonna, qualora siano presenti pedoni o mezzi a due ruote",
         "risposta": True,
+        "riassunto": "Autocarri in colonna → visuale davanti limitata, pericolo?",
         "spiegazione": "Il parabrezza degli autocarri è posizionato in alto, il che crea una 'zona d'ombra' subito davanti al veicolo. Questa 'limitata visuale' rende molto pericoloso fermarsi in coda se ci sono pedoni o ciclisti in quella zona, perché il conducente non li vedrebbe facilmente al momento di ripartire.",
         "regola": "Visuale limitata davanti = fermata in colonna con autocarro = pericolo!",
         "trabocchetti": ["limitata visuale", "rende pericolosa"],
@@ -1488,6 +1700,7 @@ QUESTIONS = [
     {
         "domanda": "Il campo di visibilità degli autocarri permette il controllo sicuro di tutta la zona immediatamente antistante e laterale",
         "risposta": False,
+        "riassunto": "Autocarri → vedono tutta la zona davanti e laterale?",
         "spiegazione": "Questa affermazione è FALSO. Gli autocarri, a causa delle loro dimensioni e della posizione di guida elevata, hanno ampi 'punti ciechi' (zone non visibili) sia nella parte immediatamente antistante (davanti) che in quelle laterali. Non è possibile avere un 'controllo sicuro di tutta la zona'.",
         "regola": "Autocarro = molti punti ciechi. Mai 'tutta la zona sicura'.",
         "trabocchetti": ["tutta la zona", "controllo sicuro", "tutta"],
@@ -1495,6 +1708,7 @@ QUESTIONS = [
     {
         "domanda": "Un pedone può attraversare la strada in tutta sicurezza passando a distanza ravvicinata rispetto alla parte frontale di un autocarro fermo in colonna che sta per ripartire, in quanto sicuramente avvistabile dal conducente",
         "risposta": False,
+        "riassunto": "Pedone vicinissimo davanti a camion che riparte → sicuro?",
         "spiegazione": "Questa affermazione è FALSO. Un pedone non può attraversare 'in tutta sicurezza' davanti a un autocarro fermo che sta per ripartire. Come abbiamo visto, il conducente ha un punto cieco molto grande proprio lì e potrebbe non vedere il pedone. Affermare che è 'sicuramente avvistabile' è un errore grave.",
         "regola": "Davanti all'autocarro = mai sicuro. 'Sicuramente' è falso!",
         "trabocchetti": ["in tutta sicurezza", "sicuramente avvistabile"],
@@ -1502,6 +1716,7 @@ QUESTIONS = [
     {
         "domanda": "Quando stanno per riprendere la marcia dopo un arresto al semaforo, i conducenti di autocarri possono facilmente avvistare pedoni o ciclisti che affiancano e sfiorano la parte anteriore dei propri veicoli",
         "risposta": False,
+        "riassunto": "Camionista che riparte → vede facilmente chi gli sfiora il muso?",
         "spiegazione": "Questa affermazione è FALSO. I conducenti di autocarri NON possono 'facilmente avvistare' pedoni o ciclisti che si trovano molto vicini alla parte anteriore del veicolo. Questa è proprio la zona del 'punto cieco' dove la visibilità è minima o assente. È molto difficile vederli, non facile.",
         "regola": "Autocarro + vicino davanti = difficile vedere. Mai 'facilmente'.",
         "trabocchetti": ["facilmente"],
@@ -1509,6 +1724,7 @@ QUESTIONS = [
     {
         "domanda": "Il giubbotto o le bretelle retroriflettenti ad alta visibilità possono sostituire, in ogni caso, il triangolo mobile di pericolo",
         "risposta": False,
+        "riassunto": "Giubbotto → sostituisce il triangolo?",
         "spiegazione": "Il giubbotto o le bretelle retroriflettenti servono a rendere visibile la persona, mentre il triangolo mobile di pericolo serve a segnalare il veicolo fermo. Hanno scopi diversi e non possono sostituirsi a vicenda. In caso di emergenza, spesso si usano entrambi.",
         "regola": "Giubbotto per te, triangolo per l'auto. Non si sostituiscono!",
         "trabocchetti": ["in ogni caso"],
@@ -1516,6 +1732,7 @@ QUESTIONS = [
     {
         "domanda": "Il giubbotto o le bretelle retroriflettenti ad alta visibilità possono essere solo di colore giallo",
         "risposta": False,
+        "riassunto": "Giubbotto → solo giallo?",
         "spiegazione": "I giubbotti e le bretelle ad alta visibilità non sono solo di colore giallo. Possono essere anche arancione o rosso fluorescente. L'importante è che siano colori molto visibili per la sicurezza.",
         "regola": "Non solo giallo: anche arancione o rosso vanno bene.",
         "trabocchetti": ["solo"],
@@ -1523,18 +1740,21 @@ QUESTIONS = [
     {
         "domanda": "Il giubbotto retroriflettente ad alta visibilità protegge il conducente anche da rischi chimici, calore, fuoco ed elettricità",
         "risposta": False,
+        "riassunto": "Giubbotto → protegge da chimici, calore, fuoco?",
         "spiegazione": "Il giubbotto ad alta visibilità ha un solo scopo: renderti più visibile agli altri, specialmente di notte o con poca luce. Non è fatto per proteggerti da pericoli come sostanze chimiche, calore, fuoco o scosse elettriche.",
         "regola": "Giubbotto = visibilità, non protezione da pericoli.",
     },
     {
         "domanda": "All'interno del veicolo bisogna tenere giubbotti o bretelle retroriflettenti ad alta visibilità, in numero pari a quello dei posti disponibili",
         "risposta": False,
+        "riassunto": "Giubbotti → uno per ogni posto?",
         "spiegazione": "La legge richiede di avere almeno un giubbotto o un paio di bretelle retroriflettenti nel veicolo. Non è necessario averne uno per ogni posto disponibile, ma solo per la persona che scende dal veicolo in caso di emergenza.",
         "regola": "Basta uno per l'emergenza.",
     },
     {
         "domanda": "L'obbligo di indossare il giubbotto ad alta visibilità si ha quando si sosta fuori dai centri abitati, mentre le bretelle retroriflettenti vanno indossate nelle aree urbane",
         "risposta": False,
+        "riassunto": "Giubbotto fuori città, bretelle in città?",
         "spiegazione": "L'obbligo di indossare il giubbotto o le bretelle è lo stesso sia dentro che fuori dai centri abitati, quando si scende dal veicolo fermo sulla carreggiata o sulla corsia di emergenza, in situazioni di pericolo o scarsa visibilità. Non c'è una distinzione tra giubbotto e bretelle in base all'area.",
         "regola": "Giubbotto/bretelle = visibilità, ovunque serva.",
         "trabocchetti": ["fuori dai centri abitati", "nelle aree urbane"],
@@ -1542,6 +1762,7 @@ QUESTIONS = [
     {
         "domanda": "Il giubbotto retroriflettente ad alta visibilità serve per chiedere aiuto agli automobilisti in transito",
         "risposta": False,
+        "riassunto": "Giubbotto → per chiedere aiuto?",
         "spiegazione": "Il giubbotto retroriflettente serve a renderti visibile agli altri automobilisti, così che ti vedano e possano evitare incidenti. Non è un modo per chiedere aiuto, ma per aumentare la tua sicurezza passiva.",
         "regola": "Giubbotto = farsi vedere, non chiedere aiuto.",
         "trabocchetti": ["per chiedere aiuto"],
@@ -1549,6 +1770,7 @@ QUESTIONS = [
     {
         "domanda": "Il giubbotto retroriflettente ad alta visibilità è utile solo quando si deve sostituire una ruota forata",
         "risposta": False,
+        "riassunto": "Giubbotto → utile solo per cambiare ruota?",
         "spiegazione": "Il giubbotto è utile in tutte le situazioni in cui devi scendere dal veicolo fermo sulla carreggiata, fuori dai centri abitati, o in situazioni di scarsa visibilità. Non solo per cambiare una ruota, ma anche in caso di guasto, incidente o qualsiasi altra emergenza che ti costringa a scendere dall'auto.",
         "regola": "Giubbotto = visibilità in ogni emergenza fuori dall'auto.",
         "trabocchetti": ["solo"],
@@ -1556,6 +1778,7 @@ QUESTIONS = [
     {
         "domanda": "Circolando dietro ad un veicolo che trasporta un carico in pericolo di cadere, è opportuno aumentare la distanza di sicurezza, specie se si è in salita",
         "risposta": True,
+        "riassunto": "Dietro carico che può cadere → aumentare la distanza, specie in salita?",
         "spiegazione": "Se un veicolo davanti a te ha un carico che potrebbe cadere, è fondamentale aumentare la distanza di sicurezza. Questo ti dà più tempo per reagire se qualcosa cade. In salita, il rischio può aumentare a causa delle forze in gioco, quindi è ancora più importante mantenere una distanza maggiore.",
         "regola": "Carico instabile = più spazio, sempre!",
         "trabocchetti": ["specie se si è in salita"],
@@ -1563,6 +1786,7 @@ QUESTIONS = [
     {
         "domanda": "Circolando dietro ad un veicolo che ha un carico instabile, è opportuno aumentare la distanza di sicurezza e sorpassarlo appena possibile",
         "risposta": True,
+        "riassunto": "Dietro carico instabile → più distanza e sorpasso appena possibile?",
         "spiegazione": "Quando un veicolo ha un carico instabile, devi aumentare la distanza di sicurezza per proteggerti. Se le condizioni lo permettono e puoi farlo in sicurezza, è meglio sorpassarlo per allontanarti dal pericolo.",
         "regola": "Carico instabile = distanza + sorpasso sicuro.",
         "trabocchetti": ["appena possibile"],
@@ -1570,6 +1794,7 @@ QUESTIONS = [
     {
         "domanda": "Circolando dietro ad un veicolo che trasporta un carico che sta per cadere, è opportuno avvertire il conducente del potenziale pericolo",
         "risposta": True,
+        "riassunto": "Carico che sta per cadere → avvertire il conducente?",
         "spiegazione": "È una buona pratica civica e di sicurezza avvertire un altro conducente se noti un pericolo, come un carico che sta per cadere. Puoi farlo con segnali luminosi o acustici, se possibile e sicuro.",
         "regola": "Pericolo = avvisa il conducente.",
         "trabocchetti": ["opportuno"],
@@ -1577,6 +1802,7 @@ QUESTIONS = [
     {
         "domanda": "Circolando dietro ad un veicolo che ha un carico poco sicuro, conviene non stargli troppo vicino, così da riuscire a fermarsi in tempo, in caso di caduta della merce trasportata",
         "risposta": True,
+        "riassunto": "Carico poco sicuro → non stargli vicino?",
         "spiegazione": "Mantenere una distanza maggiore da un veicolo con un carico poco sicuro ti permette di avere il tempo necessario per frenare o fare una manovra evasiva se il carico dovesse cadere improvvisamente sulla strada.",
         "regola": "Distanza = tempo di reazione.",
         "trabocchetti": ["non stargli troppo vicino", "riuscire a fermarsi in tempo"],
@@ -1584,6 +1810,7 @@ QUESTIONS = [
     {
         "domanda": "Circolando dietro ad un veicolo che ha un carico instabile, bisogna stare attenti, soprattutto quando frena o svolta, per la possibile caduta della merce trasportata",
         "risposta": True,
+        "riassunto": "Carico instabile → attenzione quando frena o svolta?",
         "spiegazione": "Le manovre come frenare o svoltare possono causare spostamenti improvvisi del carico. Se il carico è instabile, queste azioni aumentano il rischio che cada. Per questo, devi essere ancora più attento in questi momenti.",
         "regola": "Frenata/Svolta + carico instabile = massima attenzione.",
         "trabocchetti": ["soprattutto"],
@@ -1591,6 +1818,7 @@ QUESTIONS = [
     {
         "domanda": "Circolando dietro ad un veicolo che ha un carico sporgente, può risultare difficile accorgersi che intende svoltare, se gli indicatori di direzione sono nascosti dalla merce penzolante",
         "risposta": True,
+        "riassunto": "Carico sporgente → frecce nascoste?",
         "spiegazione": "Un carico che sporge o penzola può coprire le luci posteriori del veicolo, inclusi gli indicatori di direzione. Questo rende difficile per te capire le intenzioni del conducente, aumentando il rischio di incidenti.",
         "regola": "Carico sporgente = segnali nascosti = attenzione extra.",
         "trabocchetti": ["può risultare difficile"],
@@ -1598,12 +1826,14 @@ QUESTIONS = [
     {
         "domanda": "Circolando dietro ad un veicolo che trasporta un carico che sta per cadere, conviene stringersi il più vicino possibile al margine sinistro della carreggiata",
         "risposta": False,
+        "riassunto": "Carico che sta per cadere → stringersi a sinistra?",
         "spiegazione": "Stringersi al margine sinistro della carreggiata non ti protegge da un carico che cade e potrebbe metterti in pericolo con il traffico in arrivo o con altri veicoli che sorpassano. La cosa giusta da fare è aumentare la distanza di sicurezza e, se possibile, sorpassare in sicurezza.",
         "regola": "Carico che cade = non avvicinarti al centro/sinistra.",
     },
     {
         "domanda": "Circolando dietro ad un veicolo che trasporta un carico poco sicuro, conviene spostarsi lungo il margine sinistro della carreggiata",
         "risposta": False,
+        "riassunto": "Carico poco sicuro → spostarsi a sinistra?",
         "spiegazione": "Spostarsi lungo il margine sinistro della carreggiata non è una soluzione sicura per un carico instabile. Devi mantenere la tua corsia, aumentare la distanza di sicurezza e, se le condizioni lo permettono, sorpassare in sicurezza.",
         "regola": "Carico pericoloso = non cambiare corsia senza motivo.",
         "trabocchetti": ["spostarsi lungo il margine sinistro"],
@@ -1611,6 +1841,7 @@ QUESTIONS = [
     {
         "domanda": "Circolando dietro ad un veicolo che trasporta un carico che sta per cadere, conviene sorpassarlo subito, anche se in curva",
         "risposta": False,
+        "riassunto": "Carico che sta per cadere → sorpassare subito anche in curva?",
         "spiegazione": "Sorpassare 'subito, anche se in curva' è estremamente pericoloso e vietato. Il sorpasso deve essere sempre effettuato solo quando è sicuro, c'è buona visibilità e le condizioni della strada lo permettono, mai in curva.",
         "regola": "Sorpasso = solo se sicuro, mai in curva.",
         "trabocchetti": ["subito", "anche se in curva"],
@@ -1618,6 +1849,7 @@ QUESTIONS = [
     {
         "domanda": "Circolando dietro ad un veicolo che trasporta un carico che sta per cadere, conviene arrestarsi bruscamente, ripartendo solo quando gli altri veicoli ci abbiano superato",
         "risposta": False,
+        "riassunto": "Carico che sta per cadere → fermarsi bruscamente?",
         "spiegazione": "Arrestarsi 'bruscamente' è molto pericoloso perché potresti causare un tamponamento con i veicoli che ti seguono. In caso di pericolo, devi reagire in modo graduale e sicuro, aumentando la distanza o, se necessario, deviando con cautela.",
         "regola": "Mai frenare bruscamente senza motivo.",
         "trabocchetti": ["bruscamente"],
@@ -1625,6 +1857,7 @@ QUESTIONS = [
     {
         "domanda": "Circolando dietro ad un veicolo che trasporta un carico instabile, bisogna diminuire la distanza di sicurezza, in modo che gli altri veicoli rinuncino al sorpasso, non essendovi spazio sufficiente",
         "risposta": False,
+        "riassunto": "Carico instabile → diminuire la distanza per scoraggiare sorpassi?",
         "spiegazione": "Diminuire la distanza di sicurezza è l'esatto contrario di ciò che dovresti fare. Aumentare la distanza è fondamentale per la tua sicurezza. La ragione data, cioè impedire agli altri di sorpassare, non è un motivo valido per mettere a rischio la propria sicurezza.",
         "regola": "Carico instabile = sempre più distanza, mai meno.",
         "trabocchetti": ["diminuire la distanza di sicurezza"],
@@ -1632,6 +1865,7 @@ QUESTIONS = [
     {
         "domanda": "Trainare un rimorchio su strade con forti salite fa aumentare la temperatura del liquido di raffreddamento del motore",
         "risposta": True,
+        "riassunto": "Rimorchio in forte salita → liquido di raffreddamento più caldo?",
         "spiegazione": "Trainare un rimorchio, specialmente in salita, richiede un maggiore sforzo al motore. Questo sforzo extra produce più calore, facendo aumentare la temperatura del liquido di raffreddamento.",
         "regola": "Più sforzo = più calore al motore.",
         "trabocchetti": ["forti salite"],
@@ -1639,6 +1873,7 @@ QUESTIONS = [
     {
         "domanda": "Se si traina un rimorchio aumenta lo spazio di frenatura",
         "risposta": True,
+        "riassunto": "Rimorchio → spazio di frenata più lungo?",
         "spiegazione": "Il rimorchio aggiunge peso al veicolo. Un peso maggiore significa che il sistema frenante deve lavorare di più per fermare il veicolo, e quindi ci vuole più spazio per frenare completamente.",
         "regola": "Più peso = più strada per frenare.",
         "trabocchetti": ["aumenta"],
@@ -1646,6 +1881,7 @@ QUESTIONS = [
     {
         "domanda": "Trainando un rimorchio leggero, bisogna considerare che è maggiore la forza ribaltante esercitata dal vento",
         "risposta": True,
+        "riassunto": "Rimorchio leggero → vento più ribaltante?",
         "spiegazione": "Anche un rimorchio leggero presenta una superficie laterale che può essere colpita dal vento. Questa forza del vento può sbilanciare il veicolo e il rimorchio, aumentando il rischio di ribaltamento, soprattutto in presenza di vento forte o raffiche laterali.",
         "regola": "Vento + rimorchio = rischio ribaltamento.",
         "trabocchetti": ["maggiore la forza ribaltante"],
@@ -1653,6 +1889,7 @@ QUESTIONS = [
     {
         "domanda": "Per una maggiore sicurezza, è consigliabile che nel rimorchio il carico venga sistemato in modo che gli oggetti pesanti si trovino il più vicino possibile al suo asse",
         "risposta": True,
+        "riassunto": "Rimorchio → oggetti pesanti vicino all'asse?",
         "spiegazione": "Sistemare gli oggetti pesanti vicino all'asse del rimorchio (cioè al centro) aiuta a mantenere il rimorchio più stabile e bilanciato. Questo riduce le oscillazioni e rende la guida più sicura.",
         "regola": "Peso al centro = più stabilità.",
         "trabocchetti": ["il più vicino possibile al suo asse"],
@@ -1660,12 +1897,14 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo con rimorchio, nello svoltare a destra, bisogna fare particolare attenzione a non salire con la ruota posteriore sul marciapiede",
         "risposta": True,
+        "riassunto": "Con rimorchio a destra → non salire sul marciapiede?",
         "spiegazione": "Quando si curva con un rimorchio, il rimorchio segue una traiettoria più interna rispetto al veicolo che lo traina (si dice che 'taglia' la curva). Per questo, bisogna allargare di più la curva per evitare che le ruote del rimorchio salgano sul marciapiede.",
         "regola": "Rimorchio 'taglia' la curva.",
     },
     {
         "domanda": "Quando un veicolo guasto, munito di servosterzo, viene trainato, può risultare faticoso manovrare lo sterzo",
         "risposta": True,
+        "riassunto": "Veicolo trainato con servosterzo → sterzo faticoso?",
         "spiegazione": "Il servosterzo è un sistema che rende lo sterzo più leggero e facile da girare. Funziona solo quando il motore è acceso. Se il veicolo è guasto e il motore è spento, il servosterzo non funziona, e quindi lo sterzo diventa molto più duro da manovrare.",
         "regola": "Motore spento = servosterzo spento = sterzo duro.",
         "trabocchetti": ["servosterzo", "veicolo guasto"],
@@ -1673,6 +1912,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di trainare un rimorchio, è opportuno accertarsi che gli impianti di illuminazione e di segnalazione funzionino regolarmente",
         "risposta": True,
+        "riassunto": "Prima di trainare → luci funzionanti?",
         "spiegazione": "È fondamentale che tutte le luci (fari, stop, indicatori di direzione) e i dispositivi di segnalazione del rimorchio funzionino correttamente. Questo garantisce la sicurezza sulla strada, rendendo il rimorchio visibile agli altri e segnalando le proprie intenzioni.",
         "regola": "Luci e frecce = sicurezza.",
         "trabocchetti": ["funzionino regolarmente"],
@@ -1680,6 +1920,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare a trainare un rimorchio, bisogna controllare dagli specchi retrovisori che la visibilità sia adeguata",
         "risposta": True,
+        "riassunto": "Prima di trainare → visibilità negli specchietti?",
         "spiegazione": "Il rimorchio può limitare la visibilità posteriore attraverso gli specchietti retrovisori. È essenziale controllare che la visibilità sia sufficiente per guidare in sicurezza, magari regolando gli specchi o usando specchi aggiuntivi se necessario.",
         "regola": "Controlla gli specchi, vedi bene.",
         "trabocchetti": ["adeguata"],
@@ -1687,6 +1928,7 @@ QUESTIONS = [
     {
         "domanda": "Quando i rimorchi sono staccati dalla motrice, devono avere una copertura assicurativa che vale anche per il rischio statico (da fermo)",
         "risposta": True,
+        "riassunto": "Rimorchi staccati → assicurati anche da fermi?",
         "spiegazione": "Un rimorchio, anche quando è fermo e staccato dal veicolo, può causare danni (ad esempio, se si muove accidentalmente). Per questo, deve avere una sua assicurazione specifica che copra il 'rischio statico', cioè i danni che può causare da fermo.",
         "regola": "Rimorchio fermo = assicurazione sua.",
         "trabocchetti": ["rischio statico (da fermo)"],
@@ -1694,6 +1936,7 @@ QUESTIONS = [
     {
         "domanda": "I rimorchi trainati da autovetture sono muniti, in genere, di freno ad inerzia",
         "risposta": True,
+        "riassunto": "Rimorchi di auto → freno a inerzia?",
         "spiegazione": "Il freno ad inerzia è un sistema dove il rimorchio frena automaticamente quando il veicolo che lo traina rallenta o frena. È il tipo di freno più comune e pratico per i rimorchi di piccole e medie dimensioni trainati da autovetture.",
         "regola": "Rimorchio auto = freno a inerzia.",
         "trabocchetti": ["freno ad inerzia"],
@@ -1701,6 +1944,7 @@ QUESTIONS = [
     {
         "domanda": "I rimorchi devono avere targa propria",
         "risposta": True,
+        "riassunto": "Rimorchi → targa propria?",
         "spiegazione": "In Italia, i rimorchi (esclusi i carrelli appendice) sono considerati veicoli a sé stanti e devono avere una propria targa di immatricolazione, diversa da quella del veicolo che li traina. Questo serve per la loro identificazione.",
         "regola": "Rimorchio = sua targa.",
         "trabocchetti": ["targa propria"],
@@ -1708,6 +1952,7 @@ QUESTIONS = [
     {
         "domanda": "Per garantire una maggiore sicurezza durante la guida di un veicolo con rimorchio, è consigliabile concentrare il carico massimo in corrispondenza del gancio di traino",
         "risposta": False,
+        "riassunto": "Rimorchio → carico massimo sul gancio?",
         "spiegazione": "FALSO. Concentrare il carico massimo in un punto estremo come il gancio di traino può rendere il rimorchio molto instabile e pericoloso. Il carico deve essere distribuito in modo equilibrato, con gli oggetti più pesanti posizionati vicino all'asse del rimorchio per garantire stabilità.",
         "regola": "Carico distribuito, non sul gancio.",
         "trabocchetti": ["concentrare"],
@@ -1715,12 +1960,14 @@ QUESTIONS = [
     {
         "domanda": "Per poter trainare un rimorchio non occorre effettuare il collegamento elettrico fra motrice e rimorchio",
         "risposta": False,
+        "riassunto": "Rimorchio → niente collegamento elettrico?",
         "spiegazione": "FALSO. Il collegamento elettrico tra motrice e rimorchio è sempre obbligatorio. Serve per far funzionare le luci posteriori, gli indicatori di direzione, le luci di stop e, in alcuni casi, i freni del rimorchio, garantendo la sicurezza e la visibilità.",
         "regola": "Collegamento elettrico = obbligatorio.",
     },
     {
         "domanda": "Per guidare un'autovettura che traina un veicolo guasto, con conducente a bordo, occorre la patente di guida della categoria E",
         "risposta": False,
+        "riassunto": "Trainare un'auto guasta con conducente → patente E?",
         "spiegazione": "FALSO. La patente di categoria E è necessaria per trainare rimorchi pesanti (non leggeri). Trainare un veicolo guasto non rientra in questa categoria e non richiede la patente E, ma solo la patente adeguata per il veicolo che traina (ad esempio, la patente B per un'autovettura).",
         "regola": "Veicolo guasto non è rimorchio E.",
         "trabocchetti": ["patente di guida della categoria E"],
@@ -1728,6 +1975,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente a bordo di un veicolo guasto, che viene trainato, può essere privo di patente di guida",
         "risposta": False,
+        "riassunto": "Conducente del veicolo trainato → senza patente?",
         "spiegazione": "FALSO. La persona che si trova al volante del veicolo guasto trainato deve essere in grado di controllare lo sterzo e i freni. Per fare ciò, deve essere in possesso di una patente di guida valida per quel tipo di veicolo.",
         "regola": "Al volante = patente.",
         "trabocchetti": ["privo di patente di guida"],
@@ -1735,6 +1983,7 @@ QUESTIONS = [
     {
         "domanda": "Se un veicolo guasto viene trainato con le quattro ruote al suolo, occorre inserire la quarta marcia del cambio di velocità",
         "risposta": False,
+        "riassunto": "Veicolo trainato su quattro ruote → quarta marcia?",
         "spiegazione": "FALSO. Quando un veicolo guasto viene trainato con le quattro ruote a terra, il cambio di velocità deve essere in posizione di folle (punto morto). Inserire una marcia potrebbe causare gravi danni alla trasmissione del veicolo trainato.",
         "regola": "Traino a terra = folle.",
         "trabocchetti": ["inserire la quarta marcia"],
@@ -1742,12 +1991,14 @@ QUESTIONS = [
     {
         "domanda": "Gli organi di traino di un veicolo non devono essere periodicamente lubrificati",
         "risposta": False,
+        "riassunto": "Organi di traino → non lubrificare?",
         "spiegazione": "FALSO. Gli organi di traino, come il gancio e le sue parti mobili, sono componenti meccanici soggetti a usura. Devono essere periodicamente lubrificati per garantire il loro corretto funzionamento, la sicurezza e per prevenire la corrosione.",
         "regola": "Gancio = lubrificare.",
     },
     {
         "domanda": "Gli organi di traino di un veicolo possono non essere omologati, purché vengano trainati rimorchi di massa inferiore a 750 chilogrammi",
         "risposta": False,
+        "riassunto": "Organi di traino → non omologati sotto 750 kg?",
         "spiegazione": "FALSO. Tutti gli organi di traino, indipendentemente dalla massa del rimorchio che devono trainare, devono essere omologati e installati secondo le normative vigenti. L'omologazione garantisce che siano sicuri e conformi agli standard.",
         "regola": "Omologazione = sempre.",
         "trabocchetti": ["possono non essere omologati"],
@@ -1755,6 +2006,7 @@ QUESTIONS = [
     {
         "domanda": "Se si traina un veicolo guasto, munito di servosterzo, lo sterzo risulterà sempre bloccato",
         "risposta": False,
+        "riassunto": "Veicolo trainato con servosterzo → sterzo bloccato?",
         "spiegazione": "FALSO. Se il servosterzo non funziona (perché il motore è spento), lo sterzo diventa molto più duro e faticoso da girare, ma non è bloccato. È comunque possibile manovrarlo, anche se con maggiore sforzo.",
         "regola": "Servosterzo spento = duro, non bloccato.",
         "trabocchetti": ["sempre bloccato"],
@@ -1762,6 +2014,7 @@ QUESTIONS = [
     {
         "domanda": "Trainando un rimorchio nelle forti discese, non occorre tener conto della forza di spinta esercitata dal rimorchio sulla motrice",
         "risposta": False,
+        "riassunto": "Rimorchio in discesa → ignorare la spinta?",
         "spiegazione": "FALSO. Nelle forti discese, il peso del rimorchio esercita una spinta aggiuntiva sul veicolo che lo traina. Questa forza aumenta la velocità e rende più difficile controllare il veicolo e frenare. È fondamentale tenerne conto e guidare con estrema prudenza.",
         "regola": "Discesa + rimorchio = spinta extra.",
         "trabocchetti": ["non occorre tener conto"],
@@ -1769,12 +2022,14 @@ QUESTIONS = [
     {
         "domanda": "Per trainare un rimorchio leggero non occorre effettuare il collegamento elettrico",
         "risposta": False,
+        "riassunto": "Rimorchio leggero → niente collegamento elettrico?",
         "spiegazione": "FALSO. Anche i rimorchi leggeri devono avere luci posteriori, indicatori di direzione e luci di stop funzionanti per essere visibili e segnalare le proprie intenzioni agli altri utenti della strada. Per questo, il collegamento elettrico è sempre obbligatorio, indipendentemente dal peso del rimorchio.",
         "regola": "Tutte le luci = collegamento elettrico.",
     },
     {
         "domanda": "Quando si traina un veicolo guasto, occorre che la distanza fra i due veicoli sia di almeno 3 metri",
         "risposta": False,
+        "riassunto": "Traino → almeno 3 m tra i veicoli?",
         "spiegazione": "FALSO. Quando si traina un veicolo guasto, la distanza massima consentita tra i due veicoli è di 2,5 metri, non 3 metri. Se si utilizza una fune, questa deve essere ben visibile (ad esempio, con un panno rosso).",
         "regola": "Traino guasto = max 2,5 metri.",
         "trabocchetti": ["3 metri"],
@@ -1782,6 +2037,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si traina un rimorchio, bisogna considerare che nelle curve strette la fascia di ingombro è minore",
         "risposta": False,
+        "riassunto": "Rimorchio in curva stretta → ingombro minore?",
         "spiegazione": "FALSO. Nelle curve strette, il rimorchio segue una traiettoria più interna rispetto alla motrice (taglia la curva). Questo significa che lo spazio totale occupato dal veicolo più il rimorchio, cioè la 'fascia di ingombro', è maggiore, non minore. Bisogna quindi allargare la curva per evitare ostacoli.",
         "regola": "Rimorchio in curva = più spazio.",
         "trabocchetti": ["fascia di ingombro è minore"],
@@ -1789,6 +2045,7 @@ QUESTIONS = [
     {
         "domanda": "Il numero di persone trasportabili sui veicoli è indicato sulla carta di circolazione",
         "risposta": True,
+        "riassunto": "Persone trasportabili → in carta di circolazione?",
         "spiegazione": "La carta di circolazione (oggi chiamata Documento Unico di Circolazione) è il documento ufficiale del veicolo. Su di essa sono scritte tutte le informazioni importanti, incluso il numero massimo di persone che possono essere trasportate. Quindi, questa affermazione è VERA.",
         "regola": "Quanti posti? Guarda la carta!",
         "trabocchetti": ["è indicato sulla carta di circolazione"],
@@ -1796,6 +2053,7 @@ QUESTIONS = [
     {
         "domanda": "Il numero dei posti di un veicolo è indicato sulla carta di circolazione",
         "risposta": True,
+        "riassunto": "Posti del veicolo → in carta di circolazione?",
         "spiegazione": "Esattamente come per la domanda precedente, il numero di posti a sedere disponibili in un veicolo è una delle informazioni fondamentali che trovi sulla carta di circolazione. È un dato obbligatorio. Quindi, questa affermazione è VERA.",
         "regola": "Posti totali = sulla carta.",
         "trabocchetti": ["è indicato sulla carta di circolazione"],
@@ -1803,6 +2061,7 @@ QUESTIONS = [
     {
         "domanda": "Il numero massimo di posti delle autovetture è pari a nove, compreso quello del conducente",
         "risposta": True,
+        "riassunto": "Autovetture → massimo nove posti col conducente?",
         "spiegazione": "Le autovetture sono veicoli destinati al trasporto di persone. La legge stabilisce che il numero massimo di persone che un'autovettura può trasportare è nove, e in questo conteggio è sempre incluso anche il conducente. Se fossero di più, il veicolo non sarebbe più un'autovettura. Quindi, questa affermazione è VERA.",
         "regola": "Auto = max 9 (con conducente).",
         "trabocchetti": ["compreso quello del conducente", "Massimo"],
@@ -1810,6 +2069,7 @@ QUESTIONS = [
     {
         "domanda": "Il numero di persone trasportabili sulle autovetture può essere al massimo di nove, compreso il conducente",
         "risposta": True,
+        "riassunto": "Autovetture → massimo nove persone col conducente?",
         "spiegazione": "Questa domanda ripete il concetto della precedente. Le autovetture possono trasportare un massimo di nove persone, e questo numero include sempre il guidatore. È il limite legale per questa categoria di veicoli. Quindi, questa affermazione è VERA.",
         "regola": "Autovettura = 9 persone (max, con conducente).",
         "trabocchetti": ["Al massimo"],
@@ -1817,6 +2077,7 @@ QUESTIONS = [
     {
         "domanda": "Il numero di persone trasportabili sui motocicli è sempre di due, oltre il conducente",
         "risposta": False,
+        "riassunto": "Motocicli → sempre due oltre il conducente?",
         "spiegazione": "Questa affermazione è FALSA. Non tutti i motocicli possono trasportare due persone oltre il conducente (cioè tre persone in totale). Molti motocicli sono omologati per una sola persona (il conducente) o per due persone in totale (conducente + un passeggero). Il numero esatto è sempre indicato sulla carta di circolazione del motociclo.",
         "regola": "Motociclo: non 'sempre' 3 persone! Controlla la carta.",
         "trabocchetti": ["sempre", "oltre il conducente"],
@@ -1824,6 +2085,7 @@ QUESTIONS = [
     {
         "domanda": "Il numero di persone trasportabili sulle autovetture è al massimo di quattro",
         "risposta": False,
+        "riassunto": "Autovetture → massimo quattro persone?",
         "spiegazione": "Questa affermazione è FALSA. Come abbiamo visto nelle domande precedenti, il numero massimo di persone trasportabili sulle autovetture è nove, compreso il conducente. Ci sono molte autovetture che possono trasportare 5, 7 o anche 9 persone, non solo quattro.",
         "regola": "Auto = max 9, non 4!",
         "trabocchetti": ["al massimo di quattro"],
@@ -1831,6 +2093,7 @@ QUESTIONS = [
     {
         "domanda": "Il numero di persone trasportabili sugli autocarri è sempre di cinque, compreso il conducente",
         "risposta": False,
+        "riassunto": "Autocarri → sempre cinque col conducente?",
         "spiegazione": "Questa affermazione è FALSA. Gli autocarri sono veicoli destinati principalmente al trasporto di merci. Il numero di persone che possono trasportare varia molto a seconda del modello e dell'omologazione del veicolo, e non è 'sempre' cinque. Alcuni autocarri possono trasportare solo due o tre persone. Il numero esatto è sulla carta di circolazione.",
         "regola": "Autocarro: non 'sempre' 5! Dipende dal modello.",
         "trabocchetti": ["sempre", "compreso il conducente", "cinque"],
@@ -1838,6 +2101,7 @@ QUESTIONS = [
     {
         "domanda": "Il numero di persone trasportabili su un veicolo, riportato sulla carta di circolazione, non comprende il conducente",
         "risposta": False,
+        "riassunto": "Persone in carta di circolazione → escluso il conducente?",
         "spiegazione": "Questa affermazione è FALSA. Il numero di persone trasportabili indicato sulla carta di circolazione di qualsiasi veicolo include sempre il conducente. Quando si parla di 'posti' o 'persone trasportabili', si intende il numero totale di occupanti, compreso chi guida il veicolo.",
         "regola": "Posti totali = conducente + passeggeri.",
         "trabocchetti": ["non comprende il conducente"],
@@ -1845,6 +2109,7 @@ QUESTIONS = [
     {
         "domanda": "Nei caravan, per ridurre il rischio di ribaltamento in curva, occorre sistemare il carico degli oggetti pesanti in modo da mantenere il baricentro il più basso possibile",
         "risposta": True,
+        "riassunto": "Caravan → carico pesante in basso?",
         "spiegazione": "È VERO. Per evitare che il caravan si ribalti in curva, devi mettere gli oggetti più pesanti il più in basso possibile. Questo rende il veicolo più stabile.",
         "regola": "Pesante in basso, stabile in curva.",
         "trabocchetti": ["baricentro il più basso possibile"],
@@ -1852,6 +2117,7 @@ QUESTIONS = [
     {
         "domanda": "Nei caravan, per ridurre il rischio di ribaltamento in curva, occorre sistemare il carico in modo il più possibile equilibrato tra lato destro e sinistro",
         "risposta": True,
+        "riassunto": "Caravan → carico equilibrato tra i lati?",
         "spiegazione": "È VERO. Per ridurre il rischio di ribaltamento, il peso deve essere distribuito in modo uguale tra il lato destro e sinistro del caravan. Così non pende da una parte.",
         "regola": "Peso uguale, curva sicura.",
         "trabocchetti": ["equilibrato"],
@@ -1859,6 +2125,7 @@ QUESTIONS = [
     {
         "domanda": "Il caravan non è considerato un rimorchio perché può essere adibito ad alloggio",
         "risposta": False,
+        "riassunto": "Caravan → non è un rimorchio?",
         "spiegazione": "È FALSO. Il caravan è sempre considerato un rimorchio, anche se lo usi per dormire. La sua funzione di 'alloggio' non cambia la sua classificazione legale come veicolo trainato.",
         "regola": "Caravan = Rimorchio, sempre!",
         "trabocchetti": ["non è considerato un rimorchio"],
@@ -1866,12 +2133,14 @@ QUESTIONS = [
     {
         "domanda": "E' possibile alloggiare nei caravan (roulotte) durante la circolazione, purché tutti i passeggeri allaccino le cinture di sicurezza",
         "risposta": False,
+        "riassunto": "Caravan → alloggiare in marcia con le cinture?",
         "spiegazione": "È FALSO. Non è mai permesso stare dentro il caravan mentre è in movimento, anche se ci fossero le cinture di sicurezza (che non ci sono per i passeggeri). Il caravan non è fatto per trasportare persone durante la circolazione.",
         "regola": "Caravan in movimento? Nessuno dentro!",
     },
     {
         "domanda": "Nel rimorchio è presente un dispositivo di sicurezza che, in caso di sganciamento accidentale, aziona automaticamente il freno di stazionamento",
         "risposta": True,
+        "riassunto": "Rimorchio sganciato → freno automatico?",
         "spiegazione": "È VERO. I rimorchi hanno un cavo di sicurezza. Se il rimorchio si stacca per sbaglio dalla macchina, questo cavo tira una leva che attiva i freni del rimorchio. Così il rimorchio si ferma da solo e non va in giro.",
         "regola": "Rimorchio staccato = freno attivato.",
         "trabocchetti": ["sganciamento accidentale", "Aziona automaticamente"],
@@ -1879,6 +2148,7 @@ QUESTIONS = [
     {
         "domanda": "Nei rimorchi con freno a inerzia, dopo un prolungato periodo di inattività, i freni potrebbero aver perso efficienza a causa della ruggine",
         "risposta": True,
+        "riassunto": "Freno a inerzia inattivo a lungo → ruggine?",
         "spiegazione": "È VERO. Se un rimorchio sta fermo per tanto tempo, specialmente all'aperto, l'acqua e l'umidità possono far arrugginire le parti metalliche dei freni. La ruggine rende i freni meno efficaci, cioè frenano meno bene.",
         "regola": "Fermo a lungo = ruggine ai freni.",
         "trabocchetti": ["prolungato periodo di inattività", "Perso efficienza"],
@@ -1886,6 +2156,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si lascia un rimorchio in sosta occorre azionare la leva del freno di stazionamento e, in caso di strada in pendenza, è opportuno applicare dei cunei di arresto alle ruote",
         "risposta": True,
+        "riassunto": "Rimorchio in sosta → freno e cunei in pendenza?",
         "spiegazione": "È VERO. Quando parcheggi un rimorchio, devi sempre mettere il freno a mano (freno di stazionamento) per sicurezza. Se la strada è in salita o in discesa, è ancora più importante usare anche dei cunei (pezzi di legno o plastica) sotto le ruote. Questo impedisce al rimorchio di muoversi da solo.",
         "regola": "Sosta rimorchio = freno + cunei in pendenza.",
         "trabocchetti": ["Occorre azionare", "È opportuno applicare"],
@@ -1893,6 +2164,7 @@ QUESTIONS = [
     {
         "domanda": "La frenatura del rimorchio dotato di freno a inerzia non avviene simultaneamente a quella della motrice, in quanto l'azionamento si ha solo dopo che il rimorchio ha esercitato una spinta sulla motrice",
         "risposta": True,
+        "riassunto": "Freno a inerzia → frena dopo la spinta sulla motrice?",
         "spiegazione": "È VERO. Il freno a inerzia funziona così: quando la macchina (motrice) frena, il rimorchio continua ad andare avanti per un attimo e spinge la macchina. Questa spinta attiva il freno del rimorchio. Quindi, il rimorchio frena un attimo dopo la macchina, non nello stesso preciso istante.",
         "regola": "Freno a inerzia = rimorchio spinge, poi frena.",
         "trabocchetti": ["Non avviene simultaneamente"],
@@ -1900,6 +2172,7 @@ QUESTIONS = [
     {
         "domanda": "In un rimorchio dotato di freno a inerzia l'effetto della frenata avviene quando il rimorchio si avvicina alla motrice",
         "risposta": True,
+        "riassunto": "Freno a inerzia → frena quando il rimorchio si avvicina?",
         "spiegazione": "È VERO. Quando la macchina frena, il rimorchio, per inerzia, tende a continuare la sua corsa e si 'avvicina' alla motrice (cioè spinge contro di essa). Questa spinta è quella che attiva il meccanismo del freno a inerzia.",
         "regola": "Freno a inerzia = avvicinamento attiva.",
         "trabocchetti": ["Si avvicina alla motrice"],
@@ -1907,6 +2180,7 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo con rimorchio, durante una frenata in marcia rettilinea, il carico trasportato tenderà a spostarsi all'indietro",
         "risposta": False,
+        "riassunto": "Frenata con rimorchio → carico va indietro?",
         "spiegazione": "È FALSO. Quando freni, tutto ciò che è dentro il rimorchio (il carico) tende a muoversi in avanti, verso la direzione di marcia, per via dell'inerzia. Pensa a quando freni in macchina: tu stesso vieni spinto in avanti.",
         "regola": "Frenata = carico avanti.",
         "trabocchetti": ["all"],
@@ -1914,6 +2188,7 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo con rimorchio, durante una brusca accelerazione in marcia rettilinea, il carico trasportato tenderà a spostarsi in avanti",
         "risposta": False,
+        "riassunto": "Accelerazione con rimorchio → carico va avanti?",
         "spiegazione": "È FALSO. Quando acceleri velocemente, il carico dentro il rimorchio tende a spostarsi all'indietro, cioè verso la parte posteriore del rimorchio. Pensa a quando acceleri in macchina: tu stesso vieni spinto all'indietro contro il sedile.",
         "regola": "Accelerazione = carico indietro.",
         "trabocchetti": ["in avanti"],
@@ -1921,6 +2196,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle autovetture dotate di A.B.S. non è possibile agganciare un rimorchio privo di impianto frenante",
         "risposta": False,
+        "riassunto": "Auto con ABS → niente rimorchi senza freni?",
         "spiegazione": "È FALSO. Il sistema ABS della macchina serve per la frenata della macchina stessa. Non c'entra con il tipo di freni che deve avere il rimorchio. Puoi agganciare un rimorchio senza freni (se il suo peso lo permette) anche se la tua auto ha l'ABS.",
         "regola": "ABS auto ≠ freni rimorchio.",
         "trabocchetti": ["non è possibile"],
@@ -1928,6 +2204,7 @@ QUESTIONS = [
     {
         "domanda": "Nei rimorchi dotati di freno a inerzia la frenatura del rimorchio avviene simultaneamente a quella della motrice",
         "risposta": False,
+        "riassunto": "Freno a inerzia → frena insieme alla motrice?",
         "spiegazione": "È FALSO. Come spiegato prima, il freno a inerzia non è istantaneo. Il rimorchio deve prima spingere la motrice per attivare il suo freno. Quindi, non frena nello stesso momento della motrice, ma un attimo dopo.",
         "regola": "Freno a inerzia = non simultaneo.",
         "trabocchetti": ["simultaneamente"],
@@ -1935,6 +2212,7 @@ QUESTIONS = [
     {
         "domanda": "Nei rimorchi dotati di freno a inerzia il rimorchio frena circa un secondo prima della motrice",
         "risposta": False,
+        "riassunto": "Freno a inerzia → frena un secondo prima?",
         "spiegazione": "È FALSO. Questa è l'opposto della realtà. Il rimorchio con freno a inerzia frena DOPO la motrice, non prima. Il meccanismo si attiva solo quando il rimorchio spinge la motrice.",
         "regola": "Freno a inerzia = rimorchio frena DOPO.",
         "trabocchetti": ["prima della motrice"],
@@ -1942,6 +2220,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la circolazione, i rimorchi devono essere assicurati con la stessa polizza della motrice",
         "risposta": True,
+        "riassunto": "Rimorchi in circolazione → stessa polizza della motrice?",
         "spiegazione": "Quando il rimorchio è attaccato alla macchina e sta circolando, è coperto dalla stessa assicurazione della macchina. Non serve una polizza separata per il rimorchio in quel momento.",
         "regola": "Rimorchio attaccato = stessa assicurazione della motrice.",
         "trabocchetti": ["Durante la circolazione"],
@@ -1949,6 +2228,7 @@ QUESTIONS = [
     {
         "domanda": "Gli specchietti esterni montati sulla motrice non devono sporgere oltre 20 centimetri dalla sagoma del veicolo (motrice o rimorchio), con riferimento al punto di maggiore larghezza",
         "risposta": True,
+        "riassunto": "Specchietti esterni → massimo 20 cm oltre la sagoma?",
         "spiegazione": "Gli specchietti aggiuntivi che metti sulla macchina per vedere bene il rimorchio non possono sporgere troppo. Il limite massimo è di 20 centimetri dalla parte più larga del veicolo (che sia la macchina o il rimorchio).",
         "regola": "Specchietti = max 20 cm di sporgenza.",
         "trabocchetti": ["non devono sporgere oltre 20 centimetri", "Punto di maggiore larghezza"],
@@ -1956,6 +2236,7 @@ QUESTIONS = [
     {
         "domanda": "Il rapporto di traino, entro i limiti di quello tecnicamente ammesso per il veicolo, non deve superare il valore di 1, nel caso di rimorchi muniti di freno di servizio e di massa fino a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Rapporto di traino → massimo 1 con freno fino a 3,5 t?",
         "spiegazione": "Il rapporto di traino è il rapporto tra la massa del rimorchio e la massa della motrice. Se il rimorchio ha i freni e pesa fino a 3,5 tonnellate, questo rapporto non può essere più grande di 1. In pratica, il rimorchio non può pesare più della motrice.",
         "regola": "Rimorchio con freni (fino 3.5t) = non più pesante della motrice (rapporto <= 1).",
         "trabocchetti": ["non deve superare il valore di 1", "Muniti di freno di servizio"],
@@ -1963,18 +2244,21 @@ QUESTIONS = [
     {
         "domanda": "Il massimo rapporto di traino per un rimorchio sprovvisto di qualsiasi dispositivo di frenatura è di 0,5",
         "risposta": True,
+        "riassunto": "Rimorchio senza freni → rapporto massimo 0,5?",
         "spiegazione": "Se un rimorchio non ha nessun tipo di freno, allora deve essere molto più leggero della macchina che lo traina. Il suo peso non può superare la metà del peso della motrice (il rapporto massimo è 0,5).",
         "regola": "Rimorchio senza freni = max metà peso della motrice (rapporto 0.5).",
     },
     {
         "domanda": "Quando il gancio di traino non viene utilizzato, perché non si sta trainando un rimorchio, la sua parte sporgente dalla sagoma posteriore del veicolo deve essere sfilata, smontata o ripiegata",
         "risposta": True,
+        "riassunto": "Gancio non usato → sfilato, smontato o ripiegato?",
         "spiegazione": "Se non stai usando il gancio di traino, la parte che sporge dalla macchina deve essere tolta, smontata o ripiegata. Questo serve per sicurezza, per non creare pericoli o ferire qualcuno.",
         "regola": "Gancio non usato = via! (sfilato/smontato/ripiegato).",
     },
     {
         "domanda": "I rimorchi T.A.T.S. sono destinati al trasporto di attrezzature che non devono costituire oggetto di commercio, ma essere impiegate solo per il tempo libero",
         "risposta": True,
+        "riassunto": "Rimorchi TATS → attrezzature per il tempo libero?",
         "spiegazione": "I rimorchi T.A.T.S. (Trasporto Attrezzature Turistiche e Sportive) sono fatti per portare cose come barche, moto d'acqua, attrezzature sportive, ecc., ma solo per il tuo tempo libero, non per venderle o usarle per lavoro.",
         "regola": "T.A.T.S. = tempo libero, non commercio.",
         "trabocchetti": ["e"],
@@ -1982,6 +2266,7 @@ QUESTIONS = [
     {
         "domanda": "I conducenti di autoveicoli trainanti un rimorchio, quando la massa complessiva a pieno carico del complesso veicolare è superiore a 3,5 tonnellate, sono considerati in stato di ebbrezza qualora sia stato accertato un valore corrispondente ad un tasso alcolemico superiore a zero grammi per litro",
         "risposta": True,
+        "riassunto": "Complesso oltre 3,5 t → alcol zero?",
         "spiegazione": "Se guidi un veicolo con rimorchio e il peso totale (macchina + rimorchio) supera le 3,5 tonnellate, la legge è molto severa sull'alcol. Non puoi avere alcol nel sangue, nemmeno un po' (tasso alcolemico superiore a zero).",
         "regola": "Complesso > 3.5t = alcol zero.",
         "trabocchetti": ["superiore a 3,5 tonnellate", "superiore a zero grammi per litro"],
@@ -1989,6 +2274,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle autostrade con carreggiate a tre o più corsie, ai conducenti di complessi di veicoli di lunghezza totale superiore a 7 metri, è vietato impegnare altre corsie all'infuori delle due più vicine al bordo destro della carreggiata",
         "risposta": True,
+        "riassunto": "Autostrade a tre corsie → complessi oltre 7 m solo nelle due di destra?",
         "spiegazione": "Se guidi un veicolo con rimorchio che è molto lungo (più di 7 metri) su un'autostrada con tante corsie (tre o più), puoi usare solo le due corsie più a destra. Non puoi andare nella corsia più a sinistra.",
         "regola": "Complesso > 7m (autostrada 3+ corsie) = solo le due corsie di destra.",
         "trabocchetti": ["lunghezza totale superiore a 7 metri", "carreggiate a tre o più corsie", "due più vicine al bordo destro"],
@@ -1996,6 +2282,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la circolazione, i rimorchi con massa massima a pieno carico fino a 3,5 tonnellate, devono essere segnalati con strisce posteriori e laterali retroriflettenti",
         "risposta": False,
+        "riassunto": "Rimorchi fino a 3,5 t → strisce retroriflettenti?",
         "spiegazione": "Non è vero che tutti i rimorchi fino a 3,5 tonnellate devono avere le strisce riflettenti. Questo obbligo riguarda solo i veicoli più pesanti (con massa superiore a 3,5 tonnellate) o di dimensioni particolari. I rimorchi leggeri non hanno questo obbligo.",
         "regola": "Strisce riflettenti = per veicoli pesanti (>3.5t), non per tutti i rimorchi leggeri.",
         "trabocchetti": ["fino a 3,5 tonnellate"],
@@ -2003,6 +2290,7 @@ QUESTIONS = [
     {
         "domanda": "E' possibile trainare rimorchi non immatricolati, se di massa inferiore ai 750 chilogrammi",
         "risposta": False,
+        "riassunto": "Rimorchi sotto 750 kg → non immatricolati?",
         "spiegazione": "Tutti i rimorchi, anche quelli molto leggeri (sotto i 750 kg), devono essere immatricolati e avere la loro targa. Non puoi trainare un rimorchio non immatricolato.",
         "regola": "Ogni rimorchio = immatricolato, sempre.",
         "trabocchetti": ["non immatricolati"],
@@ -2010,6 +2298,7 @@ QUESTIONS = [
     {
         "domanda": "Il rimorchio si considera parte integrante del veicolo se ha una massa fino a 3,5 tonnellate",
         "risposta": False,
+        "riassunto": "Rimorchio fino a 3,5 t → parte integrante del veicolo?",
         "spiegazione": "Il rimorchio è sempre un veicolo a sé stante, anche se leggero. Non è mai considerato 'parte integrante' della motrice. Ha la sua targa e la sua assicurazione (quando staccato).",
         "regola": "Rimorchio = veicolo a sé, mai parte integrante.",
         "trabocchetti": ["parte integrante del veicolo"],
@@ -2017,12 +2306,14 @@ QUESTIONS = [
     {
         "domanda": "La larghezza del rimorchio non deve superare quella del veicolo trainante",
         "risposta": False,
+        "riassunto": "Rimorchio → non più largo del trainante?",
         "spiegazione": "Non è vero. La larghezza del rimorchio può essere maggiore di quella della motrice, ma ci sono dei limiti massimi di larghezza stabiliti dalla legge per i veicoli in generale (ad esempio 2,55 metri). L'importante è che non superi questi limiti e che la motrice sia adatta a trainarlo.",
         "regola": "Larghezza rimorchio > motrice = possibile, ma entro limiti legali massimi.",
     },
     {
         "domanda": "Il rimorchio è parte integrante del veicolo a cui è stato abbinato in fase di collaudo e non può essere agganciato a un altro veicolo",
         "risposta": False,
+        "riassunto": "Rimorchio → agganciabile solo al veicolo del collaudo?",
         "spiegazione": "Questa affermazione è falsa per due motivi. Primo, il rimorchio non è parte integrante della motrice. Secondo, un rimorchio può essere agganciato a diverse motrici, purché queste siano omologate per trainarlo e abbiano il gancio di traino adatto.",
         "regola": "Rimorchio = indipendente, agganciabile a diverse motrici compatibili.",
         "trabocchetti": ["parte integrante del veicolo"],
@@ -2030,6 +2321,7 @@ QUESTIONS = [
     {
         "domanda": "Se si trainano caravan e rimorchi T.A.T.S. non è obbligatorio che il veicolo trainante sia munito di specchietto retrovisore destro",
         "risposta": False,
+        "riassunto": "Caravan e TATS → niente specchietto destro?",
         "spiegazione": "Quando traini un rimorchio, specialmente se è largo o lungo, è quasi sempre obbligatorio avere gli specchietti retrovisori esterni che ti permettano di vedere bene dietro e ai lati del rimorchio. Questo include spesso lo specchietto destro, soprattutto se il rimorchio è più largo della motrice.",
         "regola": "Rimorchio = specchietti extra spesso obbligatori per buona visibilità.",
         "trabocchetti": ["non è obbligatorio"],
@@ -2037,6 +2329,7 @@ QUESTIONS = [
     {
         "domanda": "Gli specchietti esterni montati sulla motrice possono sporgere fino a 50 centimetri dalla sagoma del veicolo di maggiore ingombro, qualora siano posizionati ad un'altezza da terra non superiore a 1 metro",
         "risposta": False,
+        "riassunto": "Specchietti → fino a 50 cm se sotto 1 m da terra?",
         "spiegazione": "Abbiamo visto prima che gli specchietti possono sporgere al massimo 20 centimetri dalla sagoma del veicolo più largo. 50 centimetri è troppo e non è corretto, indipendentemente dall'altezza da terra.",
         "regola": "Specchietti = max 20 cm di sporgenza, non 50 cm.",
         "trabocchetti": ["fino a 50 centimetri"],
@@ -2044,18 +2337,21 @@ QUESTIONS = [
     {
         "domanda": "Nel rispetto della larghezza massima stabilita per i rimorchi T.A.T.S., le imbarcazioni trasportate possono sporgere fino a 50 centimetri per ogni lato rispetto ai bordi esterni delle luci di posizione posteriori",
         "risposta": False,
+        "riassunto": "TATS → barche sporgenti 50 cm per lato?",
         "spiegazione": "Il carico non può sporgere lateralmente oltre la sagoma del veicolo. Le imbarcazioni trasportate su rimorchi T.A.T.S. devono rientrare nella larghezza massima consentita per il veicolo e non possono sporgere lateralmente.",
         "regola": "Carico = non sporge lateralmente, mai.",
     },
     {
         "domanda": "Il titolare di patente di guida della categoria BE che, successivamente, consegue la patente della categoria C, può guidare anche veicoli della categoria CE",
         "risposta": False,
+        "riassunto": "BE poi C → anche CE?",
         "spiegazione": "La patente BE serve per complessi di veicoli leggeri. La patente C serve per autocarri pesanti. Per guidare un autocarro pesante con rimorchio (categoria CE), devi prendere la patente CE specifica, non basta avere la C e la BE. Le categorie sono diverse.",
         "regola": "BE+C non è CE. Per CE serve esame CE.",
     },
     {
         "domanda": "Per i complessi di veicoli con rimorchi fino a 3,5 tonnellate di massa, non vige l'obbligo di apporre nella parte posteriore i contrassegni indicanti i limiti massimi di velocità specifici loro imposti",
         "risposta": False,
+        "riassunto": "Rimorchi fino a 3,5 t → niente contrassegni di velocità?",
         "spiegazione": "Anche i complessi di veicoli con rimorchio, anche se il rimorchio è leggero (fino a 3,5 tonnellate), hanno limiti di velocità specifici (ad esempio 80 km/h in autostrada, 70 km/h sulle strade extraurbane principali) e devono esporre i contrassegni che indicano questi limiti sulla parte posteriore del rimorchio.",
         "regola": "Complesso con rimorchio = sempre adesivi velocità.",
         "trabocchetti": ["non vige l"],
@@ -2063,24 +2359,28 @@ QUESTIONS = [
     {
         "domanda": "Quando si traina un rimorchio per trasporto di animali vivi occorre tenere in funzione la segnalazione luminosa di pericolo per segnalare agli altri conducenti di aumentare la distanza di sicurezza",
         "risposta": False,
+        "riassunto": "Rimorchio con animali → quattro frecce?",
         "spiegazione": "Le luci di emergenza (segnalazione luminosa di pericolo) si usano solo in caso di pericolo reale, guasto o rallentamento improvviso. Non si usano per segnalare un trasporto speciale o per chiedere agli altri di aumentare la distanza di sicurezza.",
         "regola": "Luci emergenza = solo per vero pericolo, non per trasporto animali.",
     },
     {
         "domanda": "Quando si traina un rimorchio occorre staccare la targa della motrice e applicarla nella parte posteriore del rimorchio",
         "risposta": False,
+        "riassunto": "Rimorchio → spostare la targa della motrice?",
         "spiegazione": "Questa è una vecchia regola che non vale più. Oggi, i rimorchi hanno una loro targa specifica (targa propria del rimorchio) e non si deve staccare la targa della motrice per applicarla al rimorchio.",
         "regola": "Rimorchio = targa propria, non si toglie quella della motrice.",
     },
     {
         "domanda": "Se nella carta di circolazione manca il valore della massa rimorchiabile, ciò significa che il veicolo è atto al traino di rimorchi di qualsiasi massa",
         "risposta": False,
+        "riassunto": "Massa rimorchiabile assente → qualsiasi rimorchio?",
         "spiegazione": "Se nella carta di circolazione non c'è scritto quanto può trainare il veicolo, significa che quel veicolo NON è omologato per trainare rimorchi. Non significa che può trainare qualsiasi cosa.",
         "regola": "Massa rimorchiabile mancante = NO traino.",
     },
     {
         "domanda": "I rimorchi devono essere sottoposti a revisione periodica insieme al veicolo trainante",
         "risposta": False,
+        "riassunto": "Rimorchi → revisione insieme al trainante?",
         "spiegazione": "I rimorchi devono fare la revisione periodica, ma la fanno per conto loro, non insieme alla motrice. Hanno le loro scadenze e la loro procedura di revisione separata.",
         "regola": "Revisione rimorchio = separata dalla motrice.",
         "trabocchetti": ["insieme al veicolo trainante"],
@@ -2088,6 +2388,7 @@ QUESTIONS = [
     {
         "domanda": "Sui rimorchi, il carico trasportato può sporgere dalla parte anteriore fino ai 3/10 della lunghezza del complesso dei veicoli",
         "risposta": False,
+        "riassunto": "Rimorchi → carico sporgente davanti fino a 3/10?",
         "spiegazione": "Il carico non può mai sporgere dalla parte anteriore del veicolo (o del complesso veicolare). Può sporgere solo posteriormente, entro certi limiti e con le dovute segnalazioni.",
         "regola": "Carico = mai sporgere davanti.",
         "trabocchetti": ["può sporgere dalla parte anteriore"],
@@ -2095,6 +2396,7 @@ QUESTIONS = [
     {
         "domanda": "Sui rimorchi leggeri, il carico trasportato può sporgere posteriormente senza obbligo di specifiche segnalazioni",
         "risposta": False,
+        "riassunto": "Rimorchi leggeri → sporgenza dietro senza segnalazione?",
         "spiegazione": "Se il carico sporge posteriormente, anche sui rimorchi leggeri, deve sempre essere segnalato con l'apposito pannello quadrato a strisce bianche e rosse. Non ci sono eccezioni per i rimorchi leggeri.",
         "regola": "Carico sporgente dietro = sempre pannello.",
         "trabocchetti": ["senza obbligo di specifiche segnalazioni"],
@@ -2102,6 +2404,7 @@ QUESTIONS = [
     {
         "domanda": "I rimorchi per il trasporto di cavalli (van) non possono circolare in autostrada",
         "risposta": False,
+        "riassunto": "Van per cavalli → vietati in autostrada?",
         "spiegazione": "I rimorchi per il trasporto di cavalli (van) possono circolare in autostrada, purché rispettino tutte le norme del Codice della Strada, come limiti di velocità, dimensioni, peso e siano trainati da un veicolo idoneo.",
         "regola": "Van cavalli = sì autostrada, con regole.",
         "trabocchetti": ["non possono circolare in autostrada"],
@@ -2109,6 +2412,7 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo con rimorchio, nello svoltare a destra, bisogna fare particolare attenzione a non investire, con la ruota posteriore destra, eventuali pedoni che si trovino vicino al marciapiede",
         "risposta": True,
+        "riassunto": "Con rimorchio a destra → non investire pedoni con la ruota?",
         "spiegazione": "Quando giri a destra con un veicolo che ha un rimorchio, il rimorchio 'taglia' la curva, cioè si avvicina di più al marciapiede rispetto alla macchina. Per questo, devi fare molta attenzione a non colpire pedoni o ostacoli con la ruota posteriore destra del rimorchio o della motrice.",
         "regola": "Rimorchio stringe in curva: occhio al marciapiede!",
         "trabocchetti": ["particolare attenzione", "Eventuali pedoni"],
@@ -2116,6 +2420,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si traina un rimorchio, bisogna considerare che nelle curve la fascia di ingombro è maggiore",
         "risposta": True,
+        "riassunto": "Rimorchio in curva → ingombro maggiore?",
         "spiegazione": "Il 'fascia di ingombro' è lo spazio totale che il tuo veicolo e il rimorchio occupano sulla strada. Poiché il rimorchio non segue esattamente la stessa traiettoria della macchina (tende a 'stringere' la curva), l'ingombro totale è maggiore, specialmente quando giri.",
         "regola": "Rimorchio = più spazio in curva.",
         "trabocchetti": ["maggiore"],
@@ -2123,6 +2428,7 @@ QUESTIONS = [
     {
         "domanda": "Trainando un rimorchio nelle forti discese, occorre tener conto della forza di spinta esercitata dal rimorchio sulla motrice",
         "risposta": True,
+        "riassunto": "Rimorchio in forte discesa → considerare la spinta?",
         "spiegazione": "In una discesa ripida, il peso del rimorchio spinge in avanti la macchina (motrice). Questa 'forza di spinta' rende più difficile frenare e può farti perdere il controllo del veicolo. Devi guidare con molta prudenza.",
         "regola": "Discesa + rimorchio = spinta extra, frena con cautela.",
         "trabocchetti": ["forza di spinta"],
@@ -2130,6 +2436,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si traina un rimorchio, specie se carico, si ha una sensibile riduzione della capacità di accelerazione (ripresa) del veicolo",
         "risposta": True,
+        "riassunto": "Rimorchio carico → meno ripresa?",
         "spiegazione": "Quando traini un rimorchio, aggiungi peso al tuo veicolo. Più peso significa che il motore deve fare più fatica per accelerare. Per questo, la tua macchina sarà più lenta a prendere velocità, soprattutto se il rimorchio è pieno.",
         "regola": "Rimorchio = meno sprint, più peso.",
         "trabocchetti": ["sensibile riduzione"],
@@ -2137,6 +2444,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di effettuare qualsiasi manovra con il rimorchio agganciato è bene accertarsi che non vi siano cose e/o persone nel raggio di manovra del complesso",
         "risposta": True,
+        "riassunto": "Manovra con rimorchio → nessuno nel raggio di manovra?",
         "spiegazione": "Con un rimorchio, il tuo veicolo è più lungo e più difficile da manovrare. È facile non vedere persone o oggetti che si trovano vicino al rimorchio. Per la tua sicurezza e quella degli altri, controlla sempre bene l'area intorno prima di muoverti.",
         "regola": "Rimorchio = occhi a 360 gradi prima di muovere.",
         "trabocchetti": ["Qualsiasi manovra", "Bene accertarsi"],
@@ -2144,6 +2452,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle curve il rimorchio tende a \"stringere\" perché percorre una traiettoria circolare con raggio inferiore alla motrice",
         "risposta": True,
+        "riassunto": "Rimorchio in curva → stringe?",
         "spiegazione": "Questo è un concetto fondamentale: quando la macchina gira, il rimorchio segue una traiettoria più stretta, come se 'tagliasse' l'angolo. Questo significa che il raggio della curva del rimorchio è più piccolo di quello della macchina.",
         "regola": "Il rimorchio stringe la curva.",
         "trabocchetti": ["stringere", "raggio inferiore"],
@@ -2151,6 +2460,7 @@ QUESTIONS = [
     {
         "domanda": "I movimenti del liquido che si verificano all'interno di un serbatoio vincolato ad un rimorchio durante i cambiamenti di direzione, in frenata e in accelerazione, sono le maggiori cause di instabilità dei complessi di veicoli",
         "risposta": True,
+        "riassunto": "Liquido nel serbatoio → instabilità del complesso?",
         "spiegazione": "Se un rimorchio trasporta liquidi (come un'autocisterna), il movimento del liquido all'interno del serbatoio (chiamato 'effetto slosh') può creare forze che rendono il veicolo molto instabile, specialmente quando giri, freni o acceleri. Questo è un grande pericolo.",
         "regola": "Liquido nel rimorchio = instabilità.",
         "trabocchetti": ["maggiori cause di instabilità"],
@@ -2158,6 +2468,7 @@ QUESTIONS = [
     {
         "domanda": "Trainando un rimorchio occorre verificare che il carico gravante sul gancio non alteri l'assetto del veicolo e l'inclinazione del fascio luminoso dei fari",
         "risposta": True,
+        "riassunto": "Carico sul gancio → non alterare assetto e fari?",
         "spiegazione": "Il peso del rimorchio che si appoggia sul gancio di traino della macchina è molto importante. Se il carico è troppo o troppo poco, può cambiare l'equilibrio della macchina (l'assetto) e far puntare i fari troppo in alto o troppo in basso, accecando gli altri o non illuminando bene la strada.",
         "regola": "Carico gancio = assetto e fari ok.",
         "trabocchetti": ["Non alteri"],
@@ -2165,6 +2476,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'affrontare una curva a velocità moderata il rimorchio compie sempre lo stesso percorso fatto dalla motrice",
         "risposta": False,
+        "riassunto": "Rimorchio in curva lenta → stesso percorso della motrice?",
         "spiegazione": "FALSO. Il rimorchio non segue mai esattamente lo stesso percorso della motrice in curva. Tende sempre a 'stringere', cioè a percorrere una traiettoria più interna, anche a bassa velocità. Questo è un principio fondamentale della guida con rimorchio.",
         "regola": "Rimorchio MAI stesso percorso della motrice.",
         "trabocchetti": ["sempre"],
@@ -2172,6 +2484,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la marcia, il rimorchio deve avere il ruotino pivottante di manovra abbassato (poggiato al suolo)",
         "risposta": False,
+        "riassunto": "Rimorchio in marcia → ruotino abbassato?",
         "spiegazione": "FALSO. Il ruotino pivottante (o ruotino di manovra) serve per spostare il rimorchio a mano quando è staccato dalla macchina o per parcheggiarlo. Quando guidi, deve essere sollevato e bloccato per evitare che tocchi terra, si danneggi o causi problemi durante la marcia.",
         "regola": "Ruotino in alto quando si guida.",
         "trabocchetti": ["deve"],
@@ -2179,6 +2492,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli dotati di sensori di parcheggio non è possibile agganciare un rimorchio",
         "risposta": False,
+        "riassunto": "Sensori di parcheggio → niente rimorchio?",
         "spiegazione": "FALSO. Molti veicoli moderni con sensori di parcheggio sono progettati per trainare rimorchi. Spesso, i sensori posteriori si disattivano automaticamente o si regolano quando agganci un rimorchio, oppure puoi disattivarli manualmente. Non c'è nessun impedimento.",
         "regola": "Sensori e rimorchio: sì, si può!",
         "trabocchetti": ["non è possibile"],
@@ -2186,6 +2500,7 @@ QUESTIONS = [
     {
         "domanda": "Trainare un rimorchio non comporta un aumento dei consumi di carburante se si marcia a velocità moderata",
         "risposta": False,
+        "riassunto": "Rimorchio → nessun aumento di consumi a velocità moderata?",
         "spiegazione": "FALSO. Trainare un rimorchio aggiunge peso e resistenza all'aria al tuo veicolo. Anche se guidi a velocità moderata, il motore deve lavorare di più per muovere il peso extra, e questo comporta sempre un aumento del consumo di carburante.",
         "regola": "Rimorchio = più benzina, sempre.",
         "trabocchetti": ["non comporta un aumento", "Se si marcia a velocità moderata"],
@@ -2193,12 +2508,14 @@ QUESTIONS = [
     {
         "domanda": "Le parti meccaniche in movimento degli organi di traino di un autoveicolo e di un rimorchio devono essere mantenute pulite e adeguatamente lubrificate",
         "risposta": True,
+        "riassunto": "Organi di traino → puliti e lubrificati?",
         "spiegazione": "Le parti meccaniche in movimento, come quelle del gancio di traino, devono essere sempre pulite e ben lubrificate. Questo serve a farle funzionare bene, a non farle rovinare troppo in fretta e a garantire la sicurezza.",
         "regola": "Pulito e lubrificato, il gancio è assicurato!",
     },
     {
         "domanda": "Gli organi di traino di un veicolo non devono presentare giochi, deformazioni o incrinature",
         "risposta": True,
+        "riassunto": "Organi di traino → senza giochi o crepe?",
         "spiegazione": "Il gancio di traino e le sue parti non devono avere 'giochi' (cioè movimenti eccessivi tra le parti), deformazioni (cambiamenti di forma) o incrinature (piccole rotture). Questi sono tutti segni di usura o danno che rendono il gancio insicuro e potrebbero causarne la rottura.",
         "regola": "Niente giochi, niente crepe: la sicurezza non si rompe!",
         "trabocchetti": ["non devono presentare"],
@@ -2206,18 +2523,21 @@ QUESTIONS = [
     {
         "domanda": "Gli organi di traino di un veicolo devono consentire sufficienti oscillazioni in senso verticale tra motrice e rimorchio, in modo da poter compensare le diverse inclinazioni dei veicoli dovute ai dislivelli stradali",
         "risposta": True,
+        "riassunto": "Organi di traino → oscillazioni verticali sufficienti?",
         "spiegazione": "Il gancio di traino deve permettere al rimorchio di muoversi un po' su e giù rispetto alla macchina (oscillazioni verticali). Questo è fondamentale quando la strada non è piatta (ad esempio, in salita, in discesa o su dossi) per evitare che il gancio si blocchi o si danneggi, garantendo una guida più stabile e sicura.",
         "regola": "Oscillazione verticale, sicurezza stradale!",
     },
     {
         "domanda": "Quando si traina un rimorchio occorre verificare che il carico verticale gravante sul gancio non ecceda il limite indicato dal costruttore",
         "risposta": True,
+        "riassunto": "Carico sul gancio → entro il limite del costruttore?",
         "spiegazione": "Ogni gancio di traino ha un limite massimo di peso che può sopportare in verticale (il carico verticale). È molto importante non superare questo limite, perché un peso eccessivo può compromettere la stabilità del veicolo e danneggiare il gancio, rendendo la guida pericolosa.",
         "regola": "Carico verticale: rispetta il limite, è vitale!",
     },
     {
         "domanda": "Il carico verticale massimo che può gravare sul gancio della motrice è indicato in un' apposita targhetta applicata sul gancio di traino",
         "risposta": True,
+        "riassunto": "Carico massimo sul gancio → sulla targhetta?",
         "spiegazione": "L'informazione sul carico verticale massimo che il gancio può sopportare si trova sempre su una piccola targhetta. Questa targhetta è applicata direttamente sul gancio di traino o nelle sue immediate vicinanze, così è facile da consultare.",
         "regola": "Targhetta sul gancio: il peso massimo è lì, non c'è inganno!",
         "trabocchetti": ["indicato in un"],
@@ -2225,6 +2545,7 @@ QUESTIONS = [
     {
         "domanda": "Gli organi di traino di un veicolo non necessitano di lubrificazione, ma devono essere periodicamente sgrassati con appositi detergenti o con benzina",
         "risposta": False,
+        "riassunto": "Organi di traino → sgrassati con benzina?",
         "spiegazione": "FALSO. Questa affermazione è l'opposto di quanto abbiamo imparato! Le parti in movimento del gancio di traino *necessitano* di lubrificazione per funzionare bene e non usurarsi. Sgrassare senza lubrificare le renderebbe secche e soggette a usura rapida. Inoltre, la benzina non è un prodotto adatto per la manutenzione meccanica del gancio.",
         "regola": "Senza lubrificazione, il gancio va in pensione!",
         "trabocchetti": ["non necessitano di lubrificazione"],
@@ -2232,24 +2553,28 @@ QUESTIONS = [
     {
         "domanda": "Gli organi di traino di un veicolo possono non essere di tipo omologato, se destinati solo al traino di rimorchi leggeri",
         "risposta": False,
+        "riassunto": "Organi di traino → non omologati per rimorchi leggeri?",
         "spiegazione": "FALSO. Tutti gli organi di traino, senza eccezioni, devono essere di tipo omologato. L'omologazione è una certificazione che garantisce che il gancio è stato testato e rispetta tutte le norme di sicurezza, indipendentemente dal tipo o dal peso del rimorchio che deve trainare.",
         "regola": "Omologazione sempre, per ogni rimorchio, non si scappa!",
     },
     {
         "domanda": "Per poter trainare un rimorchio leggero non occorre effettuare il collegamento elettrico fra motrice e rimorchio",
         "risposta": False,
+        "riassunto": "Rimorchio leggero → niente collegamento elettrico?",
         "spiegazione": "FALSO. Anche i rimorchi leggeri devono avere le luci funzionanti (frecce, stop, luci di posizione) per essere visibili e segnalare le manovre agli altri utenti della strada. Per questo, il collegamento elettrico tra la motrice e il rimorchio è sempre obbligatorio e fondamentale per la sicurezza.",
         "regola": "Luci sempre accese, anche per il leggero, per non avere sorprese!",
     },
     {
         "domanda": "In caso di rottura degli organi di traino di un veicolo, gli stessi possono essere riparati tramite saldatura presso officina specializzata",
         "risposta": False,
+        "riassunto": "Organi di traino rotti → riparabili con saldatura?",
         "spiegazione": "FALSO. Gli organi di traino sono componenti di sicurezza molto importanti. Se si rompono o si danneggiano gravemente, non possono essere riparati con una semplice saldatura. La saldatura potrebbe alterare la resistenza del materiale e rendere il gancio ancora più debole e pericoloso. In questi casi, il gancio deve essere sostituito con uno nuovo e omologato.",
         "regola": "Gancio rotto? Non saldare, ma cambiare!",
     },
     {
         "domanda": "Il conducente di un veicolo con rimorchio deve sistemare la merce trasportata in modo che, durante la marcia, non si verifichino spostamenti, rovesciamenti, cadute o sfregamenti",
         "risposta": True,
+        "riassunto": "Merce sul rimorchio → nessuno spostamento o caduta?",
         "spiegazione": "È vero. Quando trasporti merci con un rimorchio, devi assicurarti che siano ben ferme e stabili. Questo serve a evitare che si muovano, cadano o si rovinino durante il viaggio, garantendo la sicurezza di tutti.",
         "regola": "Carico sicuro = viaggio sicuro.",
         "trabocchetti": ["deve sistemare"],
@@ -2257,6 +2582,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di prolungata inattività del rimorchio è consigliabile, se non è possibile sollevarlo da terra, aumentare la pressione di gonfiaggio degli pneumatici e cambiare periodicamente la loro superficie di appoggio, in modo da evitare la loro ovalizzazione",
         "risposta": True,
+        "riassunto": "Rimorchio fermo a lungo → più pressione e cambiare appoggio?",
         "spiegazione": "È vero. Se il rimorchio sta fermo per molto tempo e non puoi sollevare le ruote da terra, è una buona idea aumentare un po' la pressione degli pneumatici e spostare il rimorchio ogni tanto. Così eviti che le gomme si schiaccino e si deformino (diventino 'ovalizzate') sempre nello stesso punto.",
         "regola": "Rimorchio fermo? Gomme gonfie e ruotate!",
         "trabocchetti": ["ovalizzazione", "Se non è possibile sollevarlo da terra"],
@@ -2264,6 +2590,7 @@ QUESTIONS = [
     {
         "domanda": "Nel caso in cui il rimorchio rimanga inattivo per lungo tempo è consigliabile, se possibile, mantenere gli pneumatici sollevati da terra, applicando appositi sostegni sotto al telaio",
         "risposta": True,
+        "riassunto": "Rimorchio fermo a lungo → pneumatici sollevati?",
         "spiegazione": "È vero. Se il rimorchio non viene usato per un lungo periodo, la cosa migliore da fare è sollevare gli pneumatici da terra. Puoi usare dei supporti speciali sotto il telaio. In questo modo, le gomme non subiscono il peso del rimorchio e non si deformano.",
         "regola": "Rimorchio fermo? Gomme su!",
         "trabocchetti": ["se possibile"],
@@ -2271,6 +2598,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si traina un rimorchio, la pressione di gonfiaggio degli pneumatici del veicolo trainante deve essere la stessa degli pneumatici del rimorchio",
         "risposta": False,
+        "riassunto": "Rimorchio → stessa pressione di motrice e rimorchio?",
         "spiegazione": "È falso. La pressione degli pneumatici non è uguale per tutti i veicoli e i rimorchi. Dipende dal modello del veicolo, dal tipo di rimorchio e dal peso che trasporti. Devi sempre controllare il manuale del tuo veicolo e del rimorchio per sapere qual è la pressione giusta.",
         "regola": "Pressione gomme: controlla il manuale, non è uguale per tutti!",
         "trabocchetti": ["deve essere la stessa"],

@@ -1,7 +1,7 @@
 """Domande — Segnaletica orizzontale.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Segnaletica orizzontale"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce di guida in figura, sono strisce curve discontinue (tratteggiate) di colore bianco",
         "risposta": True,
+        "riassunto": "Strisce di guida → curve tratteggiate bianche?",
         "spiegazione": "Guarda l'immagine. Le linee al centro dell'incrocio sono bianche, non sono continue ma 'tratteggiate' (cioè fatte a pezzetti, non una linea unica) e formano delle curve per aiutare a girare. Quindi, la descrizione è corretta.",
         "regola": "Strisce guida = bianche e a puntini.",
         "trabocchetti": ["discontinue (tratteggiate)"],
@@ -18,6 +19,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce di guida in figura, di norma, si trovano dove la svolta a sinistra si effettua lasciando alla nostra destra il centro dell'incrocio",
         "risposta": True,
+        "riassunto": "Strisce di guida → svolta a sinistra col centro dell'incrocio a destra?",
         "spiegazione": "Quando giri a sinistra in un incrocio come questo, devi passare 'intorno' al centro dell'incrocio. Le strisce di guida ti mostrano il percorso corretto, facendoti lasciare il centro (e quindi le strisce stesse) alla tua destra. Questo è il modo più comune e sicuro per svoltare a sinistra.",
         "regola": "Svolta a sinistra = centro incrocio a destra.",
         "trabocchetti": ["di norma"],
@@ -26,6 +28,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce di guida in figura debbono essere lasciate alla sinistra del veicolo quando si svolta a sinistra",
         "risposta": True,
+        "riassunto": "Strisce di guida → lasciate a sinistra svoltando a sinistra?",
         "spiegazione": "Quando giri a sinistra in un incrocio con queste strisce, devi fare una curva ampia. Le strisce di guida ti mostrano il punto centrale dell'incrocio. Tu devi passare 'a destra' di questo punto centrale. Questo significa che, mentre giri, le strisce di guida si trovano alla tua 'sinistra'.",
         "regola": "Svolta a sinistra = strisce alla tua sinistra (tu passi a destra).",
         "trabocchetti": ["lasciate alla sinistra del veicolo"],
@@ -34,6 +37,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce di guida in figura servono ad effettuare la svolta in modo corretto, senza prendere contro mano la strada di sinistra",
         "risposta": True,
+        "riassunto": "Strisce di guida → svolta corretta senza andare contromano?",
         "spiegazione": "Le strisce di guida sono lì proprio per aiutarti a fare la curva nel modo giusto, specialmente quando giri a sinistra. Ti impediscono di 'tagliare' troppo la curva e finire nella corsia di chi viene in senso opposto (contromano), il che sarebbe molto pericoloso.",
         "regola": "Strisce guida = svolta sicura, no contromano.",
         "trabocchetti": ["contro mano"],
@@ -42,6 +46,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce di guida in figura debbono essere lasciate sempre alla destra del veicolo quando si svolta a destra",
         "risposta": False,
+        "riassunto": "Strisce di guida → sempre a destra svoltando a destra?",
         "spiegazione": "Quando giri a destra, devi tenerti il più vicino possibile al bordo destro della strada. Le strisce di guida sono al centro dell'incrocio. Non devi passarci vicino o lasciarle alla tua destra; semplicemente non le riguardi quando giri a destra. Le strisce di guida servono principalmente per le svolte a sinistra o per chi prosegue dritto, non per le svolte a destra.",
         "regola": "Svolta a destra = non considerare le strisce centrali. 'Sempre' è spesso falso.",
         "trabocchetti": ["sempre"],
@@ -50,6 +55,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce di guida in figura non possono essere superate dai veicoli che proseguono diritto",
         "risposta": False,
+        "riassunto": "Strisce di guida → non superabili da chi va diritto?",
         "spiegazione": "Le strisce di guida sono discontinue (tratteggiate), non continue. Le linee discontinue possono essere superate. Se prosegui dritto, passi sopra queste strisce senza problemi, perché sono al centro dell'incrocio e non delimitano un'area che non puoi attraversare.",
         "regola": "Strisce tratteggiate = si possono superare.",
         "trabocchetti": ["non possono essere superate"],
@@ -58,6 +64,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce di guida in figura delimitano un'isola di traffico",
         "risposta": False,
+        "riassunto": "Strisce di guida → delimitano un'isola di traffico?",
         "spiegazione": "Un'isola di traffico è un'area rialzata o delimitata da linee continue (spesso gialle o bianche) che non puoi attraversare o calpestare. Le strisce in figura sono tratteggiate e servono solo da guida, non delimitano un'isola fisica o un'area vietata.",
         "regola": "Strisce tratteggiate = guida, non isola. Isola = area fisica o linee continue.",
         "trabocchetti": ["delimitano un"],
@@ -66,6 +73,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico in figura indica un tratto di strada vietato al transito ed alla sosta dei veicoli",
         "risposta": True,
+        "riassunto": "Isola di traffico in figura → vietati transito e sosta?",
         "spiegazione": "L'isola di traffico è un'area della strada dove non si può né passare (transito) né fermarsi (sosta). Serve a guidare il traffico in modo sicuro, separando le direzioni o i flussi di veicoli.",
         "regola": "Isola di traffico = No transito, no sosta.",
         "trabocchetti": ["vietato al transito ed alla sosta"],
@@ -74,6 +82,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico in figura è realizzata con strisce bianche oblique",
         "risposta": True,
+        "riassunto": "Isola di traffico in figura → strisce bianche oblique?",
         "spiegazione": "Osservando l'immagine, puoi vedere che l'isola di traffico è disegnata sulla strada con delle strisce bianche che vanno in diagonale, cioè oblique. Questo è il modo standard per segnalarle.",
         "regola": "Isola = Strisce BIANCHE oblique.",
         "trabocchetti": ["strisce bianche oblique"],
@@ -82,6 +91,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico in figura indica una parte della strada su cui non si può circolare",
         "risposta": True,
+        "riassunto": "Isola di traffico in figura → non si può circolare?",
         "spiegazione": "Dire che 'non si può circolare' su una parte della strada significa che non si può guidare o passare sopra quell'area. L'isola di traffico è un'area che devi evitare con il tuo veicolo.",
         "regola": "Isola = Non ci passi sopra.",
         "immagine": "1770a692eeb4940752ef.jpg",
@@ -89,6 +99,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico in figura può anche essere realizzata con strisce azzurre trasversali",
         "risposta": False,
+        "riassunto": "Isola di traffico in figura → anche strisce azzurre?",
         "spiegazione": "Le isole di traffico sono sempre segnalate con strisce bianche. Le strisce azzurre, invece, sono usate per indicare i parcheggi a pagamento, non le isole di traffico.",
         "regola": "Isola = Solo strisce BIANCHE.",
         "trabocchetti": ["azzurre"],
@@ -97,6 +108,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico in figura indica una zona dove è possibile la sosta dei veicoli",
         "risposta": False,
+        "riassunto": "Isola di traffico in figura → sosta possibile?",
         "spiegazione": "Sull'isola di traffico è assolutamente vietato fermarsi o parcheggiare (sostare). La sua funzione è quella di dividere le corsie e guidare il traffico, non di offrire uno spazio per la sosta.",
         "regola": "Isola = MAI sostare.",
         "trabocchetti": ["è possibile la sosta"],
@@ -105,6 +117,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico in figura indica una parte della carreggiata sulla quale si può sostare solo per 30 minuti",
         "risposta": False,
+        "riassunto": "Isola di traffico in figura → sosta per 30 minuti?",
         "spiegazione": "Non si può sostare sull'isola di traffico per nessun motivo, nemmeno per un breve periodo come 30 minuti. È un divieto assoluto, non una zona di parcheggio a tempo.",
         "regola": "Isola = Divieto ASSOLUTO di sosta.",
         "trabocchetti": ["sostare solo per 30 minuti"],
@@ -113,6 +126,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza dell'isola di traffico rappresentata in figura il veicolo C deve svoltare a destra",
         "risposta": True,
+        "riassunto": "Isola in figura → veicolo C deve svoltare a destra?",
         "spiegazione": "Il veicolo C si trova su una strada che incontra un'isola di traffico. L'isola è un ostacolo fisico che serve a guidare il flusso dei veicoli. Per il veicolo C, l'isola si trova alla sua sinistra, quindi è obbligato a girare a destra per aggirarla e proseguire.",
         "regola": "Isola a sinistra? Svolta a destra!",
         "trabocchetti": ["deve"],
@@ -121,6 +135,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza dell'isola di traffico rappresentata in figura il veicolo B deve svoltare a destra",
         "risposta": True,
+        "riassunto": "Isola in figura → veicolo B deve svoltare a destra?",
         "spiegazione": "Anche il veicolo B, come il veicolo C, si trova di fronte all'isola di traffico. L'isola è posizionata in modo tale che il veicolo B debba tenerla alla sua sinistra. Questo significa che l'unica direzione possibile per B è svoltare a destra sulla strada principale.",
         "regola": "Isola a sinistra? Svolta a destra!",
         "trabocchetti": ["deve"],
@@ -129,6 +144,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza dell'isola di traffico rappresentata in figura il veicolo A deve andare diritto",
         "risposta": True,
+        "riassunto": "Isola in figura → veicolo A deve andare diritto?",
         "spiegazione": "Il veicolo A si trova sulla strada principale e sta per incontrare l'isola di traffico. L'isola è disegnata per separare il traffico che va dritto da quello che eventualmente svolta a destra (nella strada di B). La posizione del veicolo A e la forma dell'isola indicano che la sua direzione naturale e obbligata è proseguire dritto, tenendo l'isola alla sua sinistra.",
         "regola": "Isola divide, dritto prosegui.",
         "trabocchetti": ["deve"],
@@ -137,6 +153,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza dell'isola di traffico rappresentata in figura il veicolo C può andare in qualsiasi direzione",
         "risposta": False,
+        "riassunto": "Isola in figura → veicolo C in qualsiasi direzione?",
         "spiegazione": "Il veicolo C non può andare in qualsiasi direzione. L'isola di traffico è un elemento che limita le scelte del conducente. Come abbiamo visto, il veicolo C è obbligato a svoltare a destra a causa della presenza dell'isola che blocca le altre direzioni.",
         "regola": "Isola = direzione obbligata, non 'qualsiasi'.",
         "trabocchetti": ["qualsiasi direzione", "in qualsiasi direzione"],
@@ -145,6 +162,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza dell'isola di traffico rappresentata in figura il veicolo B può svoltare a sinistra, dando la precedenza al veicolo A",
         "risposta": False,
+        "riassunto": "Isola in figura → B a sinistra dando precedenza ad A?",
         "spiegazione": "Il veicolo B non può svoltare a sinistra. L'isola di traffico è un ostacolo fisico che impedisce questa manovra. La strada è configurata per far sì che B svolti solo a destra. La questione della precedenza al veicolo A è irrilevante, perché la manovra stessa non è permessa.",
         "regola": "Isola blocca la sinistra.",
         "trabocchetti": ["può svoltare a sinistra"],
@@ -153,6 +171,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza dell'isola di traffico rappresentata in figura il veicolo A può svoltare a sinistra, dando la precedenza al veicolo C",
         "risposta": False,
+        "riassunto": "Isola in figura → A a sinistra dando precedenza a C?",
         "spiegazione": "Il veicolo A non può svoltare a sinistra. L'isola di traffico è posizionata per separare i flussi di traffico e non permette al veicolo A di attraversare la sua area per svoltare a sinistra verso la strada da cui proviene il veicolo C. La manovra non è prevista dalla configurazione della strada.",
         "regola": "Isola divide, non permette incroci.",
         "trabocchetti": ["può svoltare a sinistra"],
@@ -161,6 +180,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza delle strisce di guida in figura il veicolo C può andare diritto",
         "risposta": True,
+        "riassunto": "Strisce di guida in figura → C diritto?",
         "spiegazione": "Le strisce di guida in figura mostrano che il veicolo C ha la possibilità di proseguire dritto sulla sua corsia. Non c'è nessun segnale che gli impedisca di farlo.",
         "regola": "Le strisce guidano, non sempre obbligano.",
         "trabocchetti": ["può"],
@@ -169,6 +189,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza delle strisce di guida in figura il veicolo B può svoltare a sinistra, dando però la precedenza al veicolo A",
         "risposta": True,
+        "riassunto": "Strisce di guida in figura → B a sinistra dando precedenza ad A?",
         "spiegazione": "Il veicolo B può svoltare a sinistra, come indicato dalle strisce di guida. Tuttavia, il veicolo A arriva da destra e si trova sulla strada principale, quindi ha la precedenza. Per questo, B deve aspettare che A passi prima di svoltare.",
         "regola": "Svolta a sinistra? Precedenza a chi viene da destra!",
         "trabocchetti": ["può svoltare", "dando però la precedenza"],
@@ -177,6 +198,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza delle strisce di guida in figura il veicolo A può andare in qualsiasi direzione",
         "risposta": True,
+        "riassunto": "Strisce di guida in figura → A in qualsiasi direzione?",
         "spiegazione": "Il veicolo A, arrivando da destra, può scegliere se andare dritto o svoltare a sinistra, come mostrano le strisce di guida. Non ci sono altre direzioni possibili in questo incrocio, quindi 'qualsiasi direzione' si riferisce a quelle consentite.",
         "regola": "A è libero, segue le strisce.",
         "trabocchetti": ["qualsiasi direzione"],
@@ -185,6 +207,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza delle strisce di guida in figura il veicolo C deve svoltare a destra",
         "risposta": False,
+        "riassunto": "Strisce di guida in figura → C deve svoltare a destra?",
         "spiegazione": "Il veicolo C può andare dritto o svoltare a destra, come mostrano le strisce di guida. Non è obbligato a svoltare a destra, può scegliere.",
         "regola": "\"Deve\" è un obbligo, le strisce sono una guida.",
         "trabocchetti": ["deve"],
@@ -193,6 +216,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza delle strisce di guida in figura il veicolo B deve svoltare a destra",
         "risposta": False,
+        "riassunto": "Strisce di guida in figura → B deve svoltare a destra?",
         "spiegazione": "Il veicolo B può svoltare a destra o a sinistra, come mostrano le strisce di guida. Non è obbligato a svoltare a destra, può scegliere la direzione che preferisce (rispettando le precedenze).",
         "regola": "\"Deve\" è un obbligo, le strisce sono una guida.",
         "trabocchetti": ["deve"],
@@ -201,6 +225,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza delle strisce di guida in figura il veicolo A deve andare diritto",
         "risposta": False,
+        "riassunto": "Strisce di guida in figura → A deve andare diritto?",
         "spiegazione": "Il veicolo A può andare dritto o svoltare a sinistra, come mostrano le strisce di guida. Non è obbligato ad andare dritto, ha la possibilità di scegliere.",
         "regola": "\"Deve\" è un obbligo, le strisce sono una guida.",
         "trabocchetti": ["deve"],
@@ -209,6 +234,7 @@ QUESTIONS = [
     {
         "domanda": "Tutte e tre le corsie rappresentate in figura consentono al conducente di proseguire dritto",
         "risposta": True,
+        "riassunto": "Tre corsie in figura → tutte permettono il diritto?",
         "spiegazione": "In assenza di frecce direzionali specifiche sulla strada, la regola generale è che da tutte le corsie è consentito proseguire dritto. L'immagine non mostra frecce che obbligano a svoltare.",
         "regola": "Senza frecce, dritto è sempre permesso.",
         "trabocchetti": ["Tutte e tre le corsie"],
@@ -217,6 +243,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di sinistra rappresentata in figura consente al conducente di proseguire dritto o svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Corsia sinistra in figura → diritto o sinistra?",
         "spiegazione": "La corsia di sinistra, se non ci sono frecce che indicano solo una direzione, permette sia di andare dritto che di svoltare a sinistra. È un'opzione aggiuntiva, non esclusiva.",
         "regola": "Corsia sinistra: dritto O sinistra.",
         "immagine": "cbbccaa4b34042d4501c.jpg",
@@ -224,6 +251,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di mezzo rappresentata in figura consente al conducente solo di proseguire diritto",
         "risposta": True,
+        "riassunto": "Corsia di mezzo in figura → solo diritto?",
         "spiegazione": "La corsia di mezzo, per sua natura, serve solo per proseguire dritto. Non è possibile svoltare a destra o a sinistra da una corsia centrale.",
         "regola": "Corsia centrale: solo dritto.",
         "trabocchetti": ["solo"],
@@ -232,6 +260,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di destra rappresentata in figura consente al conducente di proseguire diritto o svoltare a destra",
         "risposta": True,
+        "riassunto": "Corsia destra in figura → diritto o destra?",
         "spiegazione": "La corsia di destra, se non ci sono frecce che indicano solo una direzione, permette sia di andare dritto che di svoltare a destra. È un'opzione aggiuntiva, non esclusiva.",
         "regola": "Corsia destra: dritto O destra.",
         "immagine": "cbbccaa4b34042d4501c.jpg",
@@ -239,6 +268,7 @@ QUESTIONS = [
     {
         "domanda": "E' possibile cambiare corsia finché le strisce sono ancora discontinue (tratteggiate)",
         "risposta": True,
+        "riassunto": "Cambio corsia → finché le strisce sono tratteggiate?",
         "spiegazione": "Le strisce discontinue (tratteggiate) tra le corsie indicano che è consentito cambiare corsia. Quando le strisce diventano continue, non è più possibile farlo.",
         "regola": "Tratteggiate = cambia corsia.",
         "immagine": "cbbccaa4b34042d4501c.jpg",
@@ -246,6 +276,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo rappresentato in figura può svoltare a sinistra rimanendo nella stessa corsia",
         "risposta": True,
+        "riassunto": "Veicolo in figura → sinistra restando nella sua corsia?",
         "spiegazione": "Il veicolo blu si trova nella corsia di sinistra. Come spiegato nella domanda 20812, da questa corsia è consentito svoltare a sinistra (o andare dritto).",
         "regola": "Da corsia sinistra, giri a sinistra.",
         "trabocchetti": ["rimanendo nella stessa corsia"],
@@ -254,6 +285,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di sinistra rappresentata in figura consente al conducente solo di svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Corsia sinistra in figura → solo sinistra?",
         "spiegazione": "Questa affermazione è falsa. La corsia di sinistra, in assenza di frecce direzionali specifiche, consente sia di andare dritto che di svoltare a sinistra. La parola 'solo' la rende sbagliata.",
         "regola": "'Solo' spesso è falso, se ci sono più opzioni.",
         "trabocchetti": ["solo"],
@@ -262,6 +294,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di destra rappresentata in figura è riservata ai veicoli lenti",
         "risposta": False,
+        "riassunto": "Corsia destra in figura → veicoli lenti?",
         "spiegazione": "Questa affermazione è falsa. La corsia di destra non è riservata esclusivamente ai veicoli lenti in questo contesto. Tutti i veicoli possono usarla per andare dritto o svoltare a destra.",
         "regola": "Corsia destra non è 'solo' per lenti.",
         "trabocchetti": ["riservata"],
@@ -270,6 +303,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di destra rappresentata in figura consente al conducente solo di svoltare a destra",
         "risposta": False,
+        "riassunto": "Corsia destra in figura → solo destra?",
         "spiegazione": "Questa affermazione è falsa. La corsia di destra, in assenza di frecce direzionali specifiche, consente sia di andare dritto che di svoltare a destra. La parola 'solo' la rende sbagliata.",
         "regola": "'Solo' spesso è falso, se ci sono più opzioni.",
         "trabocchetti": ["solo"],
@@ -278,6 +312,7 @@ QUESTIONS = [
     {
         "domanda": "Con la segnaletica rappresentata in figura è consentito al conducente cambiare corsia anche superando la striscia continua",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → cambio corsia superando la continua?",
         "spiegazione": "Questa affermazione è falsa. Le strisce continue non possono mai essere superate per cambiare corsia. Le strisce continue indicano un divieto di sorpasso o di cambio corsia.",
         "regola": "Striscia continua = non si passa.",
         "trabocchetti": ["anche superando la striscia continua"],
@@ -286,6 +321,7 @@ QUESTIONS = [
     {
         "domanda": "Le corsie A, B e C rappresentate in figura non consentono al conducente di proseguire diritto",
         "risposta": True,
+        "riassunto": "Corsie A, B, C → nessuna permette il diritto?",
         "spiegazione": "Le frecce disegnate sulle corsie A, B e C indicano solo di svoltare a sinistra o a destra. Non c'è nessuna freccia che indica di andare dritto. Questo significa che da nessuna di queste corsie puoi proseguire diritto, quindi l'affermazione è VERA.",
         "regola": "Frecce a terra = direzioni obbligatorie. Se non c'è la freccia 'dritto', non puoi andare dritto.",
         "immagine": "db777d355732e7795d98.jpg",
@@ -293,6 +329,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia A, rappresentata in figura, consente al conducente di svoltare solo a sinistra",
         "risposta": True,
+        "riassunto": "Corsia A in figura → solo sinistra?",
         "spiegazione": "Osservando la corsia A, si vede chiaramente una sola freccia che punta a sinistra. Questo significa che i veicoli che si trovano in questa corsia devono obbligatoriamente svoltare a sinistra e non possono fare altro. Quindi l'affermazione è VERA.",
         "regola": "Una freccia = una direzione obbligatoria.",
         "trabocchetti": ["solo"],
@@ -301,6 +338,7 @@ QUESTIONS = [
     {
         "domanda": "Con la segnaletica indicata in figura è consentito al conducente cambiare corsia dove le strisce di corsia sono ancora discontinue(tratteggiate)",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → cambio corsia dove strisce tratteggiate?",
         "spiegazione": "Le linee che separano le corsie A, B e C sono tratteggiate (discontinue) nella parte iniziale. Le linee tratteggiate permettono di cambiare corsia, a patto di farlo con prudenza e solo se le condizioni del traffico lo consentono. Quindi l'affermazione è VERA.",
         "regola": "Linea tratteggiata = puoi cambiare corsia. Linea continua = non puoi cambiare corsia.",
         "immagine": "db777d355732e7795d98.jpg",
@@ -308,6 +346,7 @@ QUESTIONS = [
     {
         "domanda": "Le corsie A,B e C rappresentate in figura sono a doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Corsie A, B, C → doppio senso?",
         "spiegazione": "Le corsie A, B e C mostrano tutte frecce che vanno nella stessa direzione, verso l'incrocio. Questo indica che il traffico si muove in un'unica direzione. Se fosse una strada a doppio senso, ci sarebbero corsie con frecce che vanno anche nella direzione opposta. Quindi l'affermazione è FALSA.",
         "regola": "Frecce tutte uguali = senso unico.",
         "trabocchetti": ["doppio senso di circolazione"],
@@ -316,6 +355,7 @@ QUESTIONS = [
     {
         "domanda": "Le corsie A, B e C rappresentate in figura consentono al conducente di andare in tutte le direzioni",
         "risposta": False,
+        "riassunto": "Corsie A, B, C → tutte le direzioni?",
         "spiegazione": "Le corsie hanno direzioni specifiche: la corsia A solo a sinistra, la corsia B a sinistra o a destra, e la corsia C solo a destra. Nessuna di queste corsie permette di proseguire dritto. Per andare in 'tutte le direzioni' dovresti poter andare dritto, a sinistra e a destra. Quindi l'affermazione è FALSA.",
         "regola": "Controlla ogni freccia: se manca una direzione (es. dritto), non è 'tutte le direzioni'.",
         "trabocchetti": ["tutte le direzioni"],
@@ -324,6 +364,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia B rappresentata in figura consente al conducente di svoltare e di proseguire diritto",
         "risposta": False,
+        "riassunto": "Corsia B in figura → svolta e diritto?",
         "spiegazione": "Osservando la corsia B, si vedono frecce che indicano di svoltare a sinistra e a destra. Non c'è nessuna freccia che indica di proseguire dritto. Quindi, da questa corsia non è permesso andare dritto. L'affermazione è FALSA.",
         "regola": "Solo le frecce disegnate a terra indicano le direzioni permesse.",
         "trabocchetti": ["e di proseguire diritto"],
@@ -332,6 +373,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia A rappresentata in figura consente al conducente solo di svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Corsia A in figura → solo sinistra?",
         "spiegazione": "Osservando l'immagine, la corsia A ha una sola freccia che indica la direzione 'svolta a sinistra'. Questo significa che chi si trova in questa corsia può solo svoltare a sinistra. Quindi la risposta è VERO.",
         "regola": "Corsia A: Solo sinistra.",
         "trabocchetti": ["solo"],
@@ -340,6 +382,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia B rappresentata in figura consente al conducente di proseguire diritto e di svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Corsia B in figura → diritto e sinistra?",
         "spiegazione": "La corsia B mostra due frecce: una che indica di proseguire 'diritto' e una che indica di 'svoltare a sinistra'. Questo significa che da questa corsia si possono fare entrambe le manovre. Quindi la risposta è VERO.",
         "regola": "Corsia B: Diritto e sinistra.",
         "immagine": "865a93849c29041be232.jpg",
@@ -347,6 +390,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza della segnaletica in figura , la corsia C è l'unica che consente di svoltare a destra.",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → solo corsia C per la destra?",
         "spiegazione": "Guardando tutte le corsie, solo la corsia C ha una freccia che indica la 'svolta a destra'. Le corsie A e B non permettono di svoltare a destra. Per questo, la corsia C è l'unica che consente questa manovra. Quindi la risposta è VERO.",
         "regola": "Corsia C: Unica per la destra.",
         "trabocchetti": ["unica"],
@@ -355,6 +399,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza della segnaletica in figura è consentito cambiare corsia fino a che le strisce sono ancora discontinue(tratteggiate)",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → cambio corsia finché tratteggiate?",
         "spiegazione": "Le strisce che separano le corsie sono 'discontinue' (cioè tratteggiate). Quando le strisce sono tratteggiate, è sempre permesso cambiare corsia. Si può cambiare corsia finché le strisce non diventano continue (solide), cosa che di solito accade proprio all'incrocio. Quindi la risposta è VERO.",
         "regola": "Strisce tratteggiate = Puoi cambiare corsia.",
         "immagine": "865a93849c29041be232.jpg",
@@ -362,6 +407,7 @@ QUESTIONS = [
     {
         "domanda": "Tutte e tre le corsie rappresentate in figura consentono al conducente di proseguire diritto",
         "risposta": False,
+        "riassunto": "Tre corsie in figura → tutte diritto?",
         "spiegazione": "Perché questa affermazione sia vera, tutte e tre le corsie dovrebbero permettere di proseguire diritto. Ma la corsia A permette 'solo' di svoltare a sinistra, non di andare diritto. Quindi, non tutte e tre le corsie consentono di proseguire diritto. Quindi la risposta è FALSO.",
         "regola": "'Tutte' è forte: controlla ogni corsia!",
         "trabocchetti": ["Tutte e tre le corsie"],
@@ -370,6 +416,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza della segnaletica in figura, la corsia A è l'unica che consente di svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → solo corsia A per la sinistra?",
         "spiegazione": "La corsia A permette di svoltare a sinistra. Ma anche la corsia B permette di svoltare a sinistra (oltre che di andare diritto). Quindi, la corsia A non è 'l'unica' che consente di svoltare a sinistra. Quindi la risposta è FALSO.",
         "regola": "'Unica' è forte: cerca alternative!",
         "trabocchetti": ["unica"],
@@ -378,6 +425,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia B rappresentata in figura consente al conducente solo di proseguire diritto",
         "risposta": False,
+        "riassunto": "Corsia B in figura → solo diritto?",
         "spiegazione": "La corsia B ha frecce che indicano sia di proseguire 'diritto' sia di 'svoltare a sinistra'. La parola 'solo' nella domanda rende l'affermazione falsa, perché la corsia B permette più di un movimento. Quindi la risposta è FALSO.",
         "regola": "Corsia B: Diritto E sinistra, non 'solo' diritto.",
         "trabocchetti": ["solo"],
@@ -386,6 +434,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia C rappresentata in figura consente al conducente solo la svolta a destra",
         "risposta": False,
+        "riassunto": "Corsia C in figura → solo destra?",
         "spiegazione": "La corsia C ha frecce che indicano sia di proseguire 'diritto' sia di 'svoltare a destra'. La parola 'solo' nella domanda rende l'affermazione falsa, perché la corsia C permette più di un movimento. Quindi la risposta è FALSO.",
         "regola": "Corsia C: Diritto E destra, non 'solo' destra.",
         "trabocchetti": ["solo"],
@@ -394,6 +443,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca continua di mezzo in figura divide la carreggiata in due corsie",
         "risposta": True,
+        "riassunto": "Striscia continua centrale → divide in due corsie?",
         "spiegazione": "La striscia bianca continua al centro della strada serve proprio a dividere la carreggiata in due corsie, una per ogni senso di marcia (se la strada è a doppio senso) o due corsie nella stessa direzione (se la strada è a senso unico).",
         "regola": "Linea continua = divide le corsie.",
         "immagine": "f722e4ba8d273e10ce97.jpg",
@@ -401,6 +451,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca continua di mezzo in figura non può essere superata",
         "risposta": True,
+        "riassunto": "Striscia continua centrale → non superabile?",
         "spiegazione": "Una striscia bianca continua non può mai essere superata, cioè non puoi passarci sopra con le ruote. È un limite invalicabile per la sicurezza.",
         "regola": "Continua = non si attraversa mai.",
         "trabocchetti": ["non può essere superata"],
@@ -409,6 +460,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca continua di mezzo in figura, divide i sensi di marcia nelle strade a doppio senso",
         "risposta": True,
+        "riassunto": "Striscia continua centrale → divide i sensi di marcia?",
         "spiegazione": "Nelle strade a doppio senso di marcia, la striscia continua al centro serve a separare il traffico che va in una direzione da quello che viene nella direzione opposta, per evitare scontri frontali.",
         "regola": "Doppio senso + continua = direzioni separate.",
         "trabocchetti": ["nelle strade a doppio senso"],
@@ -417,6 +469,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca continua di mezzo in figura, sulle strade a doppio senso si può trovare sul tratto in salita di un dosso",
         "risposta": True,
+        "riassunto": "Striscia continua centrale → sulla salita di un dosso?",
         "spiegazione": "Sui dossi (le salite e discese della strada) o nelle curve, la visibilità è ridotta. Per questo, per la tua sicurezza e quella degli altri, è vietato sorpassare e quindi si usa la striscia continua.",
         "regola": "Dosso/Curva = linea continua (no sorpasso).",
         "trabocchetti": ["tratto in salita di un dosso"],
@@ -425,6 +478,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca continua di mezzo in figura, sulle strade a doppio senso può trovarsi in vicinanza degli attraversamenti pedonali",
         "risposta": True,
+        "riassunto": "Striscia continua centrale → vicino alle strisce pedonali?",
         "spiegazione": "Vicino agli attraversamenti pedonali è molto importante non sorpassare per non mettere in pericolo i pedoni che potrebbero attraversare. Per questo, spesso si trova la striscia continua.",
         "regola": "Pedoni vicini = linea continua (massima prudenza).",
         "immagine": "f722e4ba8d273e10ce97.jpg",
@@ -432,6 +486,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca continua di mezzo in figura permette la manovra di sorpasso senza superarla",
         "risposta": True,
+        "riassunto": "Striscia continua centrale → sorpasso senza superarla?",
         "spiegazione": "Puoi sorpassare un veicolo se riesci a farlo rimanendo nella tua corsia, senza mai oltrepassare la striscia continua. Ad esempio, se la tua corsia è molto larga o se stai sorpassando un veicolo molto stretto come una moto.",
         "regola": "Sorpasso OK se non la tocchi.",
         "trabocchetti": ["senza superarla"],
@@ -440,6 +495,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca continua di mezzo in figura divide la strada in due carreggiate, ognuna a doppio senso",
         "risposta": False,
+        "riassunto": "Striscia continua centrale → due carreggiate a doppio senso?",
         "spiegazione": "Una singola striscia continua al centro divide le corsie all'interno della stessa carreggiata. Per avere due carreggiate separate, ci vorrebbe una divisione fisica (come uno spartitraffico) o una segnaletica molto diversa, non solo una linea.",
         "regola": "Una linea = una carreggiata (con più corsie).",
         "trabocchetti": ["due carreggiate", "ognuna a doppio senso"],
@@ -448,6 +504,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca continua di mezzo in figura consente di marciarvi a cavallo",
         "risposta": False,
+        "riassunto": "Striscia continua centrale → marciarci a cavallo?",
         "spiegazione": "Marciare 'a cavallo' significa tenere le ruote di destra su una corsia e quelle di sinistra sull'altra, passando sopra la striscia. Questo è assolutamente vietato con una striscia continua.",
         "regola": "Continua = non a cavallo.",
         "trabocchetti": ["consente", "A cavallo"],
@@ -456,6 +513,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca continua di mezzo in figura consente il sorpasso anche superandola, purché con le sole ruote di sinistra",
         "risposta": False,
+        "riassunto": "Striscia continua → superabile con le sole ruote di sinistra?",
         "spiegazione": "No, non puoi mai superare una striscia continua, nemmeno con una sola ruota. Se la superi, anche solo parzialmente, commetti un'infrazione.",
         "regola": "Superare la continua = MAI.",
         "trabocchetti": ["anche superandola", "purché con le sole ruote di sinistra"],
@@ -464,6 +522,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca continua di mezzo in figura consente l'inversione di marcia nelle strade a doppio senso",
         "risposta": False,
+        "riassunto": "Striscia continua centrale → inversione consentita?",
         "spiegazione": "L'inversione di marcia (fare un'inversione a U) richiede quasi sempre di attraversare la striscia centrale per cambiare direzione. Poiché la striscia continua non può essere superata, non puoi fare l'inversione di marcia dove è presente.",
         "regola": "Continua = no inversione.",
         "trabocchetti": ["consente"],
@@ -472,6 +531,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura può essere superata",
         "risposta": True,
+        "riassunto": "Striscia discontinua → superabile?",
         "spiegazione": "VERO. Una striscia bianca discontinua (tratteggiata) significa che puoi attraversarla per fare manovre, come sorpassare o cambiare corsia, se è sicuro.",
         "regola": "Linea tratteggiata = puoi passare.",
         "trabocchetti": ["superata"],
@@ -480,6 +540,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura divide la carreggiata in due corsie",
         "risposta": True,
+        "riassunto": "Striscia discontinua → divide in due corsie?",
         "spiegazione": "VERO. La funzione principale di una striscia bianca discontinua al centro della strada è proprio quella di dividere la carreggiata in più corsie, per esempio due corsie, una per ogni senso di marcia o due corsie nello stesso senso.",
         "regola": "Tratteggiata = separa le corsie.",
         "trabocchetti": ["Divide"],
@@ -488,6 +549,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle strade a doppio senso con due corsie la striscia bianca discontinua in figura divide i sensi di marcia",
         "risposta": True,
+        "riassunto": "Doppio senso a due corsie → discontinua divide i sensi?",
         "spiegazione": "VERO. Se la strada ha due corsie e il traffico va in due direzioni opposte (doppio senso), la striscia bianca discontinua serve a separare i veicoli che vanno in un senso da quelli che vanno nell'altro.",
         "regola": "Doppio senso + tratteggiata = separa le direzioni.",
         "trabocchetti": ["Doppio senso", "divide i sensi di marcia"],
@@ -496,6 +558,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura consente, in caso si voglia sorpassare, di occupare momentaneamente l'altra corsia di marcia",
         "risposta": True,
+        "riassunto": "Striscia discontinua → occupare l'altra corsia per sorpassare?",
         "spiegazione": "VERO. Poiché la striscia è discontinua, puoi attraversarla per sorpassare un altro veicolo, ma devi farlo solo per il tempo necessario e tornare subito nella tua corsia, sempre in sicurezza.",
         "regola": "Sorpasso = attraversi e torni.",
         "trabocchetti": ["momentaneamente"],
@@ -504,6 +567,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura consente l'inversione di marcia, in condizioni di sicurezza, se la strada è a doppio senso",
         "risposta": True,
+        "riassunto": "Striscia discontinua → inversione in sicurezza su doppio senso?",
         "spiegazione": "VERO. Se la strada è a doppio senso di marcia e la striscia è discontinua, puoi fare inversione di marcia (girarti per andare nella direzione opposta), ma solo se non ci sono pericoli e hai spazio sufficiente per farlo in sicurezza.",
         "regola": "Tratteggiata + sicurezza = puoi girarti.",
         "trabocchetti": ["in condizioni di sicurezza"],
@@ -512,6 +576,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura consente la svolta a sinistra",
         "risposta": True,
+        "riassunto": "Striscia discontinua → svolta a sinistra?",
         "spiegazione": "VERO. Per svoltare a sinistra, spesso devi attraversare la linea centrale della strada. Se questa linea è discontinua, puoi attraversarla per effettuare la svolta, sempre con attenzione e in sicurezza.",
         "regola": "Svolta a sinistra = puoi attraversare.",
         "trabocchetti": ["Svolta a sinistra"],
@@ -520,6 +585,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura consente di circolare stando a cavallo di essa",
         "risposta": False,
+        "riassunto": "Striscia discontinua → circolare a cavallo?",
         "spiegazione": "FALSO. Non si deve mai guidare con le ruote sopra una striscia di divisione delle corsie, sia essa continua o discontinua. Le strisce servono a delimitare gli spazi, non a essere usate come parte della corsia.",
         "regola": "Mai *sulla* linea!",
         "trabocchetti": ["a cavallo di essa"],
@@ -528,6 +594,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura divide la strada da una pista ciclabile",
         "risposta": False,
+        "riassunto": "Striscia discontinua → separa pista ciclabile?",
         "spiegazione": "FALSO. La striscia bianca discontinua in figura divide le corsie di marcia sulla stessa strada. Le piste ciclabili sono separate dalla strada da strisce diverse, spesso continue e a volte con simboli specifici o colori diversi.",
         "regola": "Linea centrale = non è per bici.",
         "trabocchetti": ["pista ciclabile"],
@@ -536,6 +603,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura si trova in vicinanza di tutti i passaggi a livello",
         "risposta": False,
+        "riassunto": "Striscia discontinua → vicino a tutti i passaggi a livello?",
         "spiegazione": "FALSO. Vicino ai passaggi a livello ci sono regole e segnaletiche specifiche, come le strisce di arresto o le linee continue che vietano il sorpasso. Una striscia discontinua non è una caratteristica presente in *tutti* i passaggi a livello.",
         "regola": "'Tutti' = quasi sempre FALSO.",
         "trabocchetti": ["tutti"],
@@ -544,6 +612,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura può essere sostituita da una serie di \"chiodi\" per segnaletica stradale",
         "risposta": False,
+        "riassunto": "Striscia discontinua → sostituibile con chiodi?",
         "spiegazione": "FALSO. I 'chiodi' (che sono dei catarifrangenti o delineatori) sono usati per rendere più visibili le linee o i bordi della strada, specialmente di notte. Non possono *sostituire* una striscia di mezzeria, che è una vera e propria segnaletica orizzontale.",
         "regola": "Chiodi = aiutano, non sostituiscono.",
         "trabocchetti": ["sostituita"],
@@ -552,6 +621,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a senso unico di circolazione con la segnaletica indicata in figura si può sorpassare anche superando la striscia di mezzo",
         "risposta": True,
+        "riassunto": "Senso unico, figura → sorpasso superando la striscia di mezzo?",
         "spiegazione": "Su una strada a senso unico di circolazione, la striscia tratteggiata al centro divide due corsie che vanno nella stessa direzione. Questo significa che puoi superare un veicolo spostandoti nella corsia accanto, anche se questo comporta superare la striscia di mezzo, perché non ci sono veicoli che vengono in senso contrario.",
         "regola": "Senso unico + striscia tratteggiata = sorpasso libero.",
         "trabocchetti": ["anche superando la striscia di mezzo", "senso unico"],
@@ -560,6 +630,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a senso unico di circolazione con la segnaletica indicata in figura si può sorpassare anche in curva",
         "risposta": True,
+        "riassunto": "Senso unico, figura → sorpasso anche in curva?",
         "spiegazione": "In una strada a senso unico, tutti i veicoli vanno nella stessa direzione. Questo elimina il pericolo principale del sorpasso in curva, che è lo scontro frontale con un veicolo che arriva dall'altra parte. Quindi, se la visibilità è buona e le condizioni lo permettono, puoi sorpassare anche in curva.",
         "regola": "Senso unico + curva = sorpasso possibile.",
         "trabocchetti": ["anche in curva", "senso unico"],
@@ -568,6 +639,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a senso unico di circolazione con la segnaletica indicata in figura la carreggiata è divisa in due corsie",
         "risposta": True,
+        "riassunto": "Senso unico, figura → due corsie?",
         "spiegazione": "L'immagine mostra chiaramente una strada con due linee continue ai lati e una linea tratteggiata al centro. Questo indica che la strada è divisa in due parti, chiamate corsie, per la circolazione dei veicoli.",
         "regola": "Due linee tratteggiate = due corsie.",
         "trabocchetti": ["Due corsie"],
@@ -576,6 +648,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a senso unico di circolazione con la segnaletica indicata in figura la corsia di sinistra è, di norma, riservata al sorpasso",
         "risposta": True,
+        "riassunto": "Senso unico, figura → corsia sinistra per sorpasso?",
         "spiegazione": "Su una strada con più corsie che vanno nella stessa direzione (come una strada a senso unico), la corsia più a destra è per la marcia normale, mentre la corsia di sinistra è usata principalmente per sorpassare o per i veicoli che vanno più veloci. 'Di norma' significa che questa è la regola generale, ma non è un obbligo assoluto in ogni momento.",
         "regola": "Corsia sinistra = sorpasso (di norma).",
         "trabocchetti": ["di norma"],
@@ -584,6 +657,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a senso unico di circolazione con la segnaletica indicata in figura è consentito il sorpasso in vicinanza o in corrispondenza di dossi",
         "risposta": True,
+        "riassunto": "Senso unico, figura → sorpasso sui dossi?",
         "spiegazione": "Come per le curve, il pericolo di sorpassare vicino a un dosso (una gobba sulla strada) su una strada a doppio senso è che non vedi i veicoli che arrivano dall'altra parte. Su una strada a senso unico, non ci sono veicoli in arrivo, quindi il sorpasso è permesso, a patto che sia sicuro e la visibilità sia sufficiente per vedere eventuali ostacoli o altri veicoli.",
         "regola": "Senso unico + dosso = sorpasso ok.",
         "trabocchetti": ["senso unico"],
@@ -592,6 +666,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a senso unico di circolazione con la segnaletica indicata in figura si può sempre viaggiare per file parallele",
         "risposta": False,
+        "riassunto": "Senso unico, figura → sempre file parallele?",
         "spiegazione": "Viaggiare per file parallele significa guidare affiancati. Questo è permesso solo in situazioni particolari, come quando il traffico è molto intenso e si formano delle code, o in prossimità di incroci dove ci sono più corsie per svoltare. Non si può 'sempre' viaggiare affiancati su una strada normale, anche se a senso unico, perché si deve mantenere la destra e usare la corsia di sinistra per il sorpasso.",
         "regola": "'Sempre' è spesso FALSO. File parallele solo in casi speciali.",
         "trabocchetti": ["sempre"],
@@ -600,6 +675,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a senso unico di circolazione con la segnaletica indicata in figura si può fare l'inversione del senso di marcia",
         "risposta": False,
+        "riassunto": "Senso unico, figura → inversione di marcia?",
         "spiegazione": "Fare l'inversione del senso di marcia significa fare un'inversione a U per tornare indietro. Su una strada a senso unico, questo è assolutamente vietato perché ti porterebbe a guidare contro il flusso del traffico, creando una situazione molto pericolosa.",
         "regola": "Senso unico = no inversione a U.",
         "trabocchetti": ["inversione del senso di marcia"],
@@ -608,6 +684,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a senso unico di circolazione con la segnaletica indicata in figura si può circolare stando a cavallo della striscia di mezzo",
         "risposta": False,
+        "riassunto": "Senso unico, figura → a cavallo della striscia?",
         "spiegazione": "Circolare 'a cavallo' della striscia di mezzo significa guidare con le ruote su entrambi i lati della linea che divide le corsie. Questa è una manovra scorretta e pericolosa, sempre vietata, perché non ti permette di rimanere nella tua corsia e ostacola gli altri veicoli.",
         "regola": "Mai a cavallo delle strisce.",
         "trabocchetti": ["a cavallo della striscia di mezzo"],
@@ -616,6 +693,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a senso unico di circolazione con la segnaletica indicata in figura per svoltare a sinistra bisogna rimanere nella corsia di destra",
         "risposta": False,
+        "riassunto": "Senso unico, figura → per la sinistra restare a destra?",
         "spiegazione": "Per svoltare a sinistra, devi posizionarti nella corsia più a sinistra disponibile (o il più vicino possibile al margine sinistro della carreggiata se c'è una sola corsia). Rimanere nella corsia di destra per svoltare a sinistra sarebbe sbagliato e pericoloso, perché taglieresti la strada agli altri veicoli.",
         "regola": "Svolta a sinistra = corsia sinistra.",
         "trabocchetti": ["svoltare a sinistra", "rimanere nella corsia di destra"],
@@ -624,6 +702,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a doppio senso di circolazione con la segnaletica indicata in figura si può effettuare un sorpasso anche superando la striscia di mezzo",
         "risposta": True,
+        "riassunto": "Doppio senso, figura → sorpasso superando la striscia?",
         "spiegazione": "La striscia centrale discontinua (tratteggiata) indica che è permesso superarla per effettuare un sorpasso, a condizione che la manovra sia sicura e che non ci siano altri divieti (come curve, incroci o scarsa visibilità).",
         "regola": "Striscia discontinua = puoi superare (se sicuro).",
         "trabocchetti": ["anche superando la striscia di mezzo"],
@@ -632,6 +711,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a doppio senso di circolazione con la segnaletica indicata in figura non si può circolare stando a cavallo della striscia di mezzo",
         "risposta": True,
+        "riassunto": "Doppio senso, figura → vietato stare a cavallo?",
         "spiegazione": "È vietato guidare con le ruote sopra la striscia centrale, sia essa continua che discontinua. La striscia serve a separare le corsie e a indicare i limiti, non è una parte della strada su cui si può circolare normalmente.",
         "regola": "Striscia = non ci si guida sopra.",
         "immagine": "01756f37d9df9bf5484d.jpg",
@@ -639,6 +719,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a doppio senso di circolazione con la segnaletica indicata in figura per svoltare a sinistra bisogna spostarsi verso il centro della carreggiata",
         "risposta": True,
+        "riassunto": "Doppio senso, figura → per la sinistra verso il centro?",
         "spiegazione": "Quando devi svoltare a sinistra in una strada a doppio senso di circolazione, devi posizionarti il più vicino possibile alla striscia centrale (senza superarla prima della svolta) per preparare la manovra e non ostacolare gli altri veicoli.",
         "regola": "Svolta a sinistra = avvicinati al centro.",
         "trabocchetti": ["verso il centro della carreggiata"],
@@ -647,6 +728,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a doppio senso di circolazione con la segnaletica indicata in figura si può sorpassare con qualsiasi condizione di visibilità e di traffico",
         "risposta": False,
+        "riassunto": "Doppio senso, figura → sorpasso con qualsiasi visibilità?",
         "spiegazione": "Anche se la striscia discontinua permette il sorpasso, non puoi farlo 'con qualsiasi condizione'. Devi sempre valutare la sicurezza: ci deve essere buona visibilità, assenza di traffico in arrivo e spazio sufficiente per completare la manovra senza pericoli.",
         "regola": "'Qualsiasi' = quasi sempre FALSO (la sicurezza è un limite).",
         "trabocchetti": ["qualsiasi", "con qualsiasi condizione"],
@@ -655,6 +737,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a doppio senso di circolazione con la segnaletica indicata in figura si può sorpassare anche in curva, ma solo in città",
         "risposta": False,
+        "riassunto": "Doppio senso, figura → sorpasso in curva in città?",
         "spiegazione": "Il sorpasso in curva è quasi sempre vietato e molto pericoloso, sia in città che fuori, perché la visibilità è ridotta. Ci sono pochissime eccezioni (ad esempio, curve con ottima visibilità e più corsie per senso di marcia, ma non è il caso di questa immagine).",
         "regola": "Curva = non sorpassare (pericolo!).",
         "trabocchetti": ["anche in curva", "ma solo in città"],
@@ -663,6 +746,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a doppio senso di circolazione con la segnaletica indicata in figura si può fare l'inversione di marcia, ma senza occupare l'altra corsia",
         "risposta": False,
+        "riassunto": "Doppio senso, figura → inversione senza occupare l'altra corsia?",
         "spiegazione": "Per fare l'inversione di marcia (girare la macchina di 180 gradi) in una strada a doppio senso, è quasi sempre necessario occupare, anche se per un breve momento, parte della corsia opposta. Se la strada è troppo stretta per farlo in sicurezza, l'inversione non è permessa.",
         "regola": "Inversione = spesso serve l'altra corsia.",
         "trabocchetti": ["senza occupare l"],
@@ -671,6 +755,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a doppio senso di circolazione con la segnaletica indicata in figura, fuori dei centri abitati la corsia di sinistra serve per la sosta d'emergenza",
         "risposta": False,
+        "riassunto": "Doppio senso, figura → corsia sinistra per emergenze fuori città?",
         "spiegazione": "La corsia di sinistra in una strada a doppio senso di circolazione è destinata alla normale marcia o al sorpasso. La sosta di emergenza si effettua sulla banchina laterale o su apposite corsie di emergenza, non sulla corsia di marcia.",
         "regola": "Sosta emergenza = banchina o corsia dedicata, non corsia di marcia.",
         "trabocchetti": ["emergenza"],
@@ -679,6 +764,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a senso unico, la striscia bianca discontinua in figura serve a delimitare le corsie",
         "risposta": True,
+        "riassunto": "Senso unico → discontinua delimita le corsie?",
         "spiegazione": "Se la carreggiata è a senso unico, significa che tutte le auto vanno nella stessa direzione. La striscia bianca discontinua (quella a tratti) serve proprio a separare le diverse corsie, permettendo di cambiare corsia per sorpassare o svoltare. Quindi, la risposta è VERO.",
         "regola": "Striscia discontinua = separa corsie (stesso senso).",
         "trabocchetti": ["delimitare le corsie"],
@@ -687,6 +773,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura, nelle strade a senso unico, divide le corsie",
         "risposta": True,
+        "riassunto": "Senso unico → discontinua divide le corsie?",
         "spiegazione": "Questa domanda è molto simile alla precedente. Nelle strade a senso unico, la striscia discontinua serve a mostrare dove finisce una corsia e ne inizia un'altra, così i veicoli possono muoversi tra di esse. Quindi, la risposta è VERO.",
         "regola": "Discontinua = puoi cambiare corsia.",
         "trabocchetti": ["divide le corsie"],
@@ -695,6 +782,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura consente l'inversione di marcia nelle strade a senso unico",
         "risposta": False,
+        "riassunto": "Senso unico → discontinua consente l'inversione?",
         "spiegazione": "La striscia discontinua permette di cambiare corsia o sorpassare, ma non di fare l'inversione di marcia (cioè girarsi e tornare indietro nella direzione opposta). L'inversione di marcia è una manovra specifica che richiede spazio e sicurezza, e non è permessa solo perché c'è una striscia discontinua, specialmente in una strada a senso unico dove andresti contro il traffico. Quindi, la risposta è FALSO.",
         "regola": "Discontinua = cambio corsia, NON inversione.",
         "trabocchetti": ["inversione di marcia"],
@@ -703,6 +791,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura divide la strada in due carreggiate, ognuna a doppio senso",
         "risposta": False,
+        "riassunto": "Striscia discontinua → due carreggiate a doppio senso?",
         "spiegazione": "La striscia discontinua divide le corsie, non le carreggiate. Una carreggiata è la parte della strada dove circolano i veicoli. Se ci fosse una striscia continua doppia o uno spartitraffico, allora potrebbe dividere due carreggiate. Inoltre, la striscia discontinua non significa che ogni carreggiata è a doppio senso. Quindi, la risposta è FALSO.",
         "regola": "Discontinua = corsie, NON carreggiate.",
         "trabocchetti": ["divide la strada in due carreggiate"],
@@ -711,6 +800,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura si trova solo nelle strade a senso unico",
         "risposta": False,
+        "riassunto": "Striscia discontinua → solo su senso unico?",
         "spiegazione": "La striscia bianca discontinua si trova anche nelle strade a doppio senso di marcia, dove permette il sorpasso. L'importante è che non ci sia pericolo. Non è un segnale esclusivo delle strade a senso unico. Quindi, la risposta è FALSO.",
         "regola": "'Solo' è quasi sempre FALSO.",
         "trabocchetti": ["solo"],
@@ -719,6 +809,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca discontinua in figura nelle strade a senso unico è posta nei dossi, per dividere i due sensi di marcia",
         "risposta": False,
+        "riassunto": "Striscia discontinua → sui dossi per dividere i sensi?",
         "spiegazione": "Ci sono due errori in questa affermazione. Primo, nei dossi (punti dove la strada sale e poi scende, limitando la visibilità) di solito si usa una striscia continua per vietare il sorpasso, per motivi di sicurezza. Secondo, se la strada è a senso unico, non ci sono 'due sensi di marcia' da dividere. Quindi, la risposta è FALSO.",
         "regola": "Dossi = striscia continua (sicurezza). Senso unico = un solo senso.",
         "trabocchetti": ["nei dossi", "per dividere i due sensi di marcia"],
@@ -727,6 +818,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica rappresentata in figura si trova vicino ad un passaggio a livello",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → vicino a passaggio a livello?",
         "spiegazione": "La segnaletica con la 'X' disegnata sull'asfalto, chiamata 'Croce di Sant'Andrea', è un segnale orizzontale che avverte i conducenti della vicinanza di un passaggio a livello, cioè un punto dove la strada incrocia i binari del treno.",
         "regola": "La 'X' sulla strada significa 'Passaggio a livello'.",
         "immagine": "11f7bce1ec6e454dd9b2.jpg",
@@ -734,6 +826,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica rappresentata in figura serve ad avvertire i conducenti che si è vicini ad un passaggio a livello senza barriere",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → passaggio a livello senza barriere?",
         "spiegazione": "Questa segnaletica serve a indicare la presenza di un passaggio a livello. È particolarmente importante per i passaggi a livello 'senza barriere', dove non ci sono sbarre che si abbassano, e quindi il pericolo è maggiore perché bisogna fare molta più attenzione al treno.",
         "regola": "Croce X = Attenzione treno, soprattutto se senza barriere.",
         "trabocchetti": ["senza barriere"],
@@ -742,6 +835,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica rappresentata in figura serve ad avvertire i conducenti che si è vicini ad un passaggio a livello con barriere",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → passaggio a livello con barriere?",
         "spiegazione": "La segnaletica a 'X' sull'asfalto si trova sia vicino ai passaggi a livello con barriere (dove ci sono le sbarre) sia a quelli senza barriere. Serve sempre per avvertire del pericolo del treno.",
         "regola": "Croce X = Treno, con o senza sbarre.",
         "trabocchetti": ["con barriere"],
@@ -750,6 +844,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza della segnaletica rappresentata in figura non è consentito spostarsi nella parte sinistra della carreggiata",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → vietato spostarsi a sinistra?",
         "spiegazione": "Nell'immagine, la corsia di sinistra è delimitata da una linea continua. Una linea continua non può essere superata o attraversata. Questo significa che non puoi spostarti nella parte sinistra della carreggiata, ad esempio per sorpassare.",
         "regola": "Linea continua a sinistra = non si passa.",
         "trabocchetti": ["non è consentito"],
@@ -758,6 +853,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza della segnaletica rappresentata in figura i conducenti devono prestare attenzione all'eventuale sopraggiungere di treni",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → attenzione ai treni?",
         "spiegazione": "Il segnale a 'X' indica un passaggio a livello. La cosa più importante da fare in questi casi è guardare e ascoltare attentamente per vedere se sta arrivando un treno, perché il treno ha sempre la precedenza.",
         "regola": "Croce X = Occhi e orecchie aperte per il treno!",
         "trabocchetti": ["Devono prestare attenzione"],
@@ -766,6 +862,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica rappresentata in figura serve ad indicare che a 150 metri vi è un attraversamento tranviario molto pericoloso",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → tram pericoloso a 150 m?",
         "spiegazione": "Questa segnaletica indica un passaggio a livello (dove passa il treno), non un attraversamento tranviario (dove passa il tram). Inoltre, la distanza di '150 metri' è tipica dei segnali verticali di pericolo, non di questa specifica segnaletica orizzontale che si trova più vicino al pericolo.",
         "regola": "Croce X = Treno, non tram e non 150 metri.",
         "trabocchetti": ["attraversamento tranviario", "150 metri"],
@@ -774,6 +871,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica rappresentata in figura si trova solo in vicinanza di passaggi a livello con barriere",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → solo con barriere?",
         "spiegazione": "Questa segnaletica si trova sia vicino ai passaggi a livello con barriere (con le sbarre) sia a quelli senza barriere. La parola 'solo' rende la frase falsa, perché non è l'unica situazione in cui si trova.",
         "regola": "'Solo' è quasi sempre FALSO! Croce X = con O senza barriere.",
         "trabocchetti": ["solo"],
@@ -782,6 +880,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica rappresentata in figura segnala la vicinanza di un incrocio regolato da Polizia locale",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → incrocio con polizia locale?",
         "spiegazione": "La segnaletica a 'X' indica un passaggio a livello, cioè un punto dove la strada incrocia i binari del treno. Non ha nulla a che fare con un incrocio stradale normale o con la Polizia locale che regola il traffico.",
         "regola": "Croce X = Treno, non incrocio o polizia.",
         "trabocchetti": ["incrocio", "Polizia locale"],
@@ -790,6 +889,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica rappresentata in figura delimita un parcheggio di autobus in servizio pubblico di linea",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → parcheggio autobus di linea?",
         "spiegazione": "La segnaletica a 'X' sull'asfalto indica un passaggio a livello, non un parcheggio per autobus. I parcheggi per autobus hanno segnaletiche diverse, spesso con la scritta 'BUS' o linee specifiche.",
         "regola": "Croce X = Treno, non autobus.",
         "trabocchetti": ["parcheggio di autobus"],
@@ -798,6 +898,7 @@ QUESTIONS = [
     {
         "domanda": "La doppia striscia continua in figura serve a dividere i sensi di marcia, sulle strade a doppio senso di circolazione",
         "risposta": True,
+        "riassunto": "Doppia striscia continua → divide i sensi di marcia?",
         "spiegazione": "La doppia striscia continua, come quella che vedi, serve a separare le corsie di marcia quando le auto vanno in direzioni opposte. È come un confine che divide il traffico che viene da una parte da quello che viene dall'altra.",
         "regola": "Doppia continua = Separa i sensi opposti.",
         "trabocchetti": ["dividere i sensi di marcia"],
@@ -806,6 +907,7 @@ QUESTIONS = [
     {
         "domanda": "La doppia striscia continua in figura non può essere superata",
         "risposta": True,
+        "riassunto": "Doppia striscia continua → non superabile?",
         "spiegazione": "Quando c'è una doppia striscia continua, non puoi mai passarci sopra con le ruote della tua auto. È un limite che non si può attraversare in nessun caso.",
         "regola": "Doppia continua = Non si attraversa MAI.",
         "trabocchetti": ["non può essere superata"],
@@ -814,6 +916,7 @@ QUESTIONS = [
     {
         "domanda": "La doppia striscia continua in figura permette il sorpasso, se consentito, senza superarla",
         "risposta": True,
+        "riassunto": "Doppia striscia continua → sorpasso senza superarla?",
         "spiegazione": "Puoi sorpassare un altro veicolo se la strada è libera e la manovra è sicura, ma devi fare attenzione a non toccare o superare la doppia striscia continua. Devi rimanere nella tua corsia.",
         "regola": "Sorpasso ok, ma la striscia non si tocca!",
         "trabocchetti": ["senza superarla"],
@@ -822,6 +925,7 @@ QUESTIONS = [
     {
         "domanda": "La doppia striscia continua in figura non consente l'inversione del senso di marcia",
         "risposta": True,
+        "riassunto": "Doppia striscia continua → inversione vietata?",
         "spiegazione": "Non puoi fare un'inversione a U (cioè girare completamente per tornare indietro) se c'è una doppia striscia continua, perché per fare questa manovra dovresti per forza attraversarla.",
         "regola": "Doppia continua = No inversione (no U-turn).",
         "trabocchetti": ["non consente l"],
@@ -830,6 +934,7 @@ QUESTIONS = [
     {
         "domanda": "La doppia striscia continua in figura non consente di svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Doppia striscia continua → svolta a sinistra vietata?",
         "spiegazione": "Se la doppia striscia continua è al centro della strada, non puoi svoltare a sinistra per entrare in un cancello o in una strada laterale, perché per farlo dovresti attraversare la striscia.",
         "regola": "Doppia continua = No svolta a sinistra (se la attraversi).",
         "trabocchetti": ["non consente di svoltare a sinistra"],
@@ -838,6 +943,7 @@ QUESTIONS = [
     {
         "domanda": "La doppia striscia continua in figura si può trovare ai bordi della strada, per segnalare i margini",
         "risposta": False,
+        "riassunto": "Doppia striscia continua → ai bordi della strada?",
         "spiegazione": "FALSO. La doppia striscia continua si trova sempre al centro della strada per dividere i sensi di marcia. Ai bordi della strada, per indicare il limite, si usa una striscia singola continua, non doppia.",
         "regola": "Doppia continua = Centro strada, non bordo.",
         "trabocchetti": ["bordi della strada"],
@@ -846,6 +952,7 @@ QUESTIONS = [
     {
         "domanda": "La doppia striscia continua in figura indica che si può viaggiare per file parallele",
         "risposta": False,
+        "riassunto": "Doppia striscia continua → file parallele?",
         "spiegazione": "FALSO. Viaggiare per file parallele significa che ci sono più corsie che vanno nella stessa direzione. La doppia striscia continua, invece, serve a separare le corsie che vanno in direzioni opposte.",
         "regola": "Doppia continua = Sensi opposti, non più corsie stessa direzione.",
         "trabocchetti": ["viaggiare per file parallele"],
@@ -854,6 +961,7 @@ QUESTIONS = [
     {
         "domanda": "La doppia striscia continua in figura indica il punto in cui i conducenti si debbono arrestare per la presenza del segnale di STOP",
         "risposta": False,
+        "riassunto": "Doppia striscia continua → punto di arresto allo STOP?",
         "spiegazione": "FALSO. La linea di arresto per un segnale di STOP è una striscia bianca trasversale (orizzontale) sulla strada, non una doppia striscia longitudinale (verticale) come quella in figura.",
         "regola": "STOP = Linea trasversale, non doppia longitudinale.",
         "immagine": "1f798c790fbdc2883e14.jpg",
@@ -861,6 +969,7 @@ QUESTIONS = [
     {
         "domanda": "La doppia striscia continua in figura è di colore azzurro nei parcheggi a pagamento",
         "risposta": False,
+        "riassunto": "Doppia striscia continua → azzurra nei parcheggi a pagamento?",
         "spiegazione": "FALSO. Le strisce che delimitano i parcheggi a pagamento sono di colore blu (azzurro), ma sono strisce singole e servono per i parcheggi. La doppia striscia continua è sempre bianca e serve a dividere i sensi di marcia.",
         "regola": "Doppia continua = Bianca, non azzurra (e non per parcheggi).",
         "trabocchetti": ["colore azzurro nei parcheggi a pagamento"],
@@ -869,6 +978,7 @@ QUESTIONS = [
     {
         "domanda": "La doppia striscia continua in figura può essere superata",
         "risposta": False,
+        "riassunto": "Doppia striscia continua → superabile?",
         "spiegazione": "FALSO. Questa è la regola più importante: la doppia striscia continua non può mai essere superata, attraversata o calpestata. È un limite invalicabile.",
         "regola": "Doppia continua = Limite invalicabile.",
         "trabocchetti": ["può essere superata"],
@@ -877,6 +987,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica, sia dentro che fuori dei centri abitati, un attraversamento pedonale",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → attraversamento pedonale dentro e fuori città?",
         "spiegazione": "Questo segnale, le strisce bianche sull'asfalto, indica sempre un attraversamento pedonale. Lo trovi sia nelle città (centri abitati) che fuori dalle città, dove i pedoni possono attraversare la strada in sicurezza.",
         "regola": "Strisce bianche = Pedoni ovunque.",
         "trabocchetti": ["sia dentro che fuori dei centri abitati"],
@@ -885,6 +996,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica un attraversamento pedonale che può trovarsi anche nei piccoli centri abitati",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → anche in piccoli centri?",
         "spiegazione": "Sì, le strisce pedonali si trovano in ogni tipo di centro abitato, grande o piccolo. L'importante è che ci siano pedoni che devono attraversare la strada in quel punto.",
         "regola": "Pedoni attraversano, ovunque.",
         "trabocchetti": ["anche"],
@@ -893,6 +1005,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica un attraversamento pedonale",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → attraversamento pedonale?",
         "spiegazione": "Questa è la definizione base del segnale. Le strisce bianche sull'asfalto sono fatte per i pedoni che vogliono attraversare la strada in modo sicuro.",
         "regola": "Strisce = Attraversamento pedoni.",
         "immagine": "d0573c91aaf399fae988.jpg",
@@ -900,6 +1013,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica un attraversamento per pedoni",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → attraversamento per pedoni?",
         "spiegazione": "È la stessa cosa della domanda precedente, solo con una formulazione leggermente diversa. 'Per pedoni' significa che l'attraversamento è dedicato a loro.",
         "regola": "Strisce = Solo pedoni.",
         "trabocchetti": ["Per pedoni"],
@@ -908,6 +1022,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica un attraversamento in cui i pedoni hanno la precedenza",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → pedoni con precedenza?",
         "spiegazione": "Quando vedi queste strisce, i pedoni che attraversano o che stanno per attraversare hanno sempre la precedenza sui veicoli. Tu, alla guida, devi fermarti e farli passare.",
         "regola": "Strisce = Pedoni prima di tutto.",
         "trabocchetti": ["hanno la precedenza"],
@@ -916,6 +1031,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica un'isola di traffico",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → isola di traffico?",
         "spiegazione": "Falso. Un'isola di traffico è una parte della strada rialzata o segnalata per separare i flussi di traffico o per dare riparo ai pedoni. Non è rappresentata dalle strisce bianche sull'asfalto.",
         "regola": "Strisce non sono isole.",
         "trabocchetti": ["isola di traffico"],
@@ -924,6 +1040,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica un attraversamento per ciclisti",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → attraversamento ciclisti?",
         "spiegazione": "Falso. Le strisce per i ciclisti sono diverse, di solito sono quadrate o a due linee parallele e discontinue, e a volte sono di colore diverso (rosso). Queste strisce bianche sono solo per i pedoni.",
         "regola": "Strisce bianche = No bici.",
         "trabocchetti": ["per ciclisti"],
@@ -932,6 +1049,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica un attraversamento ciclabile",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → attraversamento ciclabile?",
         "spiegazione": "Falso. È la stessa idea della domanda precedente. 'Ciclabile' significa per le biciclette. Questo segnale è solo per i pedoni, non per le biciclette.",
         "regola": "Strisce bianche = No bici.",
         "trabocchetti": ["ciclabile"],
@@ -940,6 +1058,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica un passo carrabile",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → passo carrabile?",
         "spiegazione": "Falso. Un passo carrabile è un'apertura su un marciapiede o un'area privata per far entrare e uscire i veicoli. È segnalato da un cartello specifico, non da strisce sull'asfalto.",
         "regola": "Strisce non sono passi.",
         "trabocchetti": ["passo carrabile"],
@@ -948,6 +1067,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura può essere completata con l'apposito segnale verticale di ATTRAVERSAMENTO PEDONALE",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → con segnale verticale ATTRAVERSAMENTO PEDONALE?",
         "spiegazione": "Le strisce pedonali (segnaletica orizzontale) sono spesso accompagnate da un cartello verticale blu con un triangolo bianco e un omino nero che cammina. Questo cartello serve a indicare l'attraversamento pedonale e aiuta i conducenti a vederlo meglio, specialmente da lontano.",
         "regola": "Strisce a terra + cartello in alto = Attraversamento pedonale completo.",
         "trabocchetti": ["può essere completata"],
@@ -956,6 +1076,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura obbliga i conducenti ad arrestarsi quando vi sono pedoni che attraversano la carreggiata",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → fermarsi coi pedoni che attraversano?",
         "spiegazione": "Quando un pedone sta attraversando sulle strisce, o sta per farlo, i veicoli devono fermarsi per dargli la precedenza. È un obbligo molto importante per la sicurezza dei pedoni.",
         "regola": "Pedone sulle strisce? Fermati!",
         "trabocchetti": ["obbliga", "Quando vi sono pedoni che attraversano"],
@@ -964,6 +1085,7 @@ QUESTIONS = [
     {
         "domanda": "Un attraversamento pedonale può essere preceduto sulla destra da una striscia gialla a zig zag, come nella figura seguente",
         "risposta": True,
+        "riassunto": "Strisce pedonali → precedute da zig zag giallo a destra?",
         "spiegazione": "La striscia gialla a zig-zag, posta prima delle strisce pedonali, indica un'area dove è vietato fermarsi e parcheggiare. Serve a garantire che i conducenti abbiano una buona visibilità dei pedoni che si accingono ad attraversare e che i pedoni siano ben visibili.",
         "regola": "Zig-zag giallo = Non fermarti, pedoni in arrivo!",
         "trabocchetti": ["può essere preceduto"],
@@ -972,6 +1094,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura posta su strade extraurbane secondarie deve essere preceduta dal segnale di pericolo ATTRAVERSAMENTO PEDONALE",
         "risposta": True,
+        "riassunto": "Segnaletica in figura su extraurbane secondarie → preceduta dal pericolo?",
         "spiegazione": "Sulle strade extraurbane (fuori città), dove le velocità dei veicoli sono più alte, è fondamentale avvisare i conducenti in anticipo della presenza di un attraversamento pedonale. Per questo motivo, si usa il segnale di pericolo (un triangolo rosso con un omino nero) prima delle strisce.",
         "regola": "Fuori città, avviso prima: triangolo di pericolo!",
         "trabocchetti": ["deve essere preceduta"],
@@ -980,6 +1103,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura obbliga i conducenti a fermarsi e dare la precedenza ai pedoni che si accingono ad attraversare",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → fermarsi per pedoni che stanno per attraversare?",
         "spiegazione": "Questo è un punto fondamentale: non solo quando i pedoni sono già sulle strisce, ma anche quando mostrano l'intenzione di attraversare (si 'accingono' a farlo), i veicoli devono fermarsi e dare loro la precedenza. La sicurezza dei pedoni è prioritaria.",
         "regola": "Pedone in attesa? Precedenza!",
         "trabocchetti": ["Che si accingono ad attraversare"],
@@ -988,6 +1112,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura è un'isola di rifugio per pedoni e ciclisti",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → isola di rifugio?",
         "spiegazione": "L'immagine mostra solo le strisce pedonali. Un'isola di rifugio è una parte rialzata della strada, dove i pedoni possono aspettare in sicurezza tra una corsia e l'altra, specialmente su strade larghe. Le strisce pedonali non sono un'isola di rifugio, ma solo il percorso per attraversare.",
         "regola": "Strisce = Attraversamento. Isola = Rifugio rialzato.",
         "trabocchetti": ["isola di rifugio"],
@@ -996,6 +1121,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura non consente ai veicoli di transitarci sopra",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → veicoli non possono passarci?",
         "spiegazione": "I veicoli possono e devono transitare sopra le strisce pedonali quando non ci sono pedoni. L'importante è dare la precedenza ai pedoni quando sono presenti o stanno per attraversare. Non è un'area dove è vietato il passaggio dei veicoli.",
         "regola": "Strisce vuote? Puoi passare!",
         "immagine": "d0573c91aaf399fae988.jpg",
@@ -1003,6 +1129,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica un'area riservata ai soli pedoni disabili",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → solo pedoni disabili?",
         "spiegazione": "Le strisce pedonali sono per *tutti* i pedoni, senza distinzione di età o condizione fisica. Non sono riservate solo ai pedoni disabili, ma sono un punto sicuro per chiunque voglia attraversare la strada a piedi.",
         "regola": "Strisce = Per tutti i pedoni.",
         "trabocchetti": ["soli"],
@@ -1011,6 +1138,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura non consente il transito ai pedoni",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → vietata ai pedoni?",
         "spiegazione": "Al contrario! Le strisce pedonali sono fatte proprio per permettere ai pedoni di attraversare la strada in sicurezza. È il loro percorso designato e protetto per passare da un lato all'altro della carreggiata.",
         "regola": "Strisce = Pedoni attraversano qui!",
         "trabocchetti": ["non consente il transito ai pedoni"],
@@ -1019,6 +1147,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura si trovano all'interno delle corsie, prima di un incrocio",
         "risposta": True,
+        "riassunto": "Frecce direzionali → nelle corsie prima dell'incrocio?",
         "spiegazione": "Le frecce direzionali sono disegnate proprio sulla strada, all'interno di ogni corsia, e servono per indicare le direzioni che puoi prendere prima di arrivare a un incrocio.",
         "regola": "Frecce in corsia = incrocio vicino.",
         "immagine": "e449cb5a720e58fcc054.jpg",
@@ -1026,6 +1155,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura indicano ai conducenti le direzioni consentite all'incrocio",
         "risposta": True,
+        "riassunto": "Frecce direzionali → direzioni consentite?",
         "spiegazione": "Queste frecce sono un segnale molto importante: ti dicono chiaramente dove puoi andare da quella specifica corsia (a sinistra, dritto, o a destra) quando arrivi all'incrocio.",
         "regola": "Frecce = dove puoi andare.",
         "immagine": "e449cb5a720e58fcc054.jpg",
@@ -1033,6 +1163,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura consentono di immettersi nella corsia scelta quando le strisce sono ancora discontinue (tratteggiate)",
         "risposta": True,
+        "riassunto": "Frecce direzionali → cambiare corsia finché tratteggiate?",
         "spiegazione": "Quando le linee tra le corsie sono tratteggiate (discontinue), significa che puoi ancora cambiare corsia. Quindi, puoi spostarti nella corsia con la freccia che indica la direzione che vuoi prendere.",
         "regola": "Linee tratteggiate = puoi cambiare corsia.",
         "immagine": "e449cb5a720e58fcc054.jpg",
@@ -1040,6 +1171,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura obbligano a seguire la direzione indicata se le strisce di corsia sono continue",
         "risposta": True,
+        "riassunto": "Frecce direzionali → obbligo con strisce continue?",
         "spiegazione": "Se le linee tra le corsie diventano continue (non più tratteggiate), non puoi più cambiare corsia. A quel punto, sei obbligato a seguire la direzione indicata dalla freccia nella tua corsia.",
         "regola": "Linee continue + freccia = direzione obbligata.",
         "trabocchetti": ["obbligano a seguire", "strisce di corsia sono continue"],
@@ -1048,6 +1180,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura sono a freccia combinata diritta-destra per corsie destinate a chi deve proseguire diritto o a destra",
         "risposta": True,
+        "riassunto": "Frecce combinate → corsia per diritto o destra?",
         "spiegazione": "Guarda la corsia più a destra nell'immagine: c'è una freccia che punta sia dritto che a destra. Questo significa che da quella corsia puoi scegliere di andare dritto oppure di girare a destra.",
         "regola": "Freccia doppia = due direzioni possibili.",
         "immagine": "e449cb5a720e58fcc054.jpg",
@@ -1055,6 +1188,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura possono essere completate da scritte sulla pavimentazione che indicano la località raggiungibile",
         "risposta": True,
+        "riassunto": "Frecce direzionali → scritte con località?",
         "spiegazione": "Sì, a volte, oltre alle frecce, sulla strada puoi trovare anche delle scritte (come nomi di città o località). Queste scritte ti aiutano a scegliere la corsia giusta per raggiungere la tua destinazione.",
         "regola": "Frecce + scritte = destinazione chiara.",
         "trabocchetti": ["possono"],
@@ -1063,6 +1197,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura segnalano le direzioni permesse",
         "risposta": True,
+        "riassunto": "Frecce direzionali → direzioni permesse?",
         "spiegazione": "Le frecce direzionali hanno proprio lo scopo di indicare ai conducenti quali sono le direzioni che possono prendere da ogni corsia all'incrocio. Sono un segnale di guida.",
         "regola": "Frecce = direzioni ok.",
         "trabocchetti": ["Direzioni permesse"],
@@ -1071,6 +1206,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura obbligano a seguire la direzione indicata, anche se le strisce di corsia sono discontinue (tratteggiate)",
         "risposta": False,
+        "riassunto": "Frecce direzionali → obbligo anche con strisce tratteggiate?",
         "spiegazione": "Falso! Se le strisce tra le corsie sono discontinue (tratteggiate), puoi ancora cambiare corsia. L'obbligo di seguire la direzione della freccia scatta solo quando le strisce diventano continue.",
         "regola": "Linee tratteggiate = puoi ancora scegliere.",
         "immagine": "e449cb5a720e58fcc054.jpg",
@@ -1078,6 +1214,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura indicano che si è vicino ad una corsia per la sosta d'emergenza",
         "risposta": False,
+        "riassunto": "Frecce direzionali → corsia di emergenza vicina?",
         "spiegazione": "Falso! Le frecce direzionali servono per indicare le direzioni all'incrocio. Non hanno nulla a che fare con le corsie di sosta d'emergenza, che hanno segnalazioni diverse.",
         "regola": "Frecce = direzioni, non emergenza.",
         "trabocchetti": ["corsia per la sosta d"],
@@ -1086,6 +1223,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura ci consentono di cambiare corsia se le strisce sono continue",
         "risposta": False,
+        "riassunto": "Frecce direzionali → cambiare corsia con strisce continue?",
         "spiegazione": "Falso! Se le strisce tra le corsie sono continue, non puoi assolutamente cambiare corsia. Devi rimanere nella tua corsia e seguire la direzione indicata dalla freccia.",
         "regola": "Linee continue = non si cambia corsia.",
         "immagine": "e449cb5a720e58fcc054.jpg",
@@ -1093,6 +1231,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura sono di colore azzurro per indicare un parcheggio a pagamento",
         "risposta": False,
+        "riassunto": "Frecce direzionali → azzurre per parcheggio a pagamento?",
         "spiegazione": "Falso! Le frecce direzionali disegnate sulla strada sono sempre di colore bianco. Il colore azzurro si usa per le strisce che delimitano i parcheggi a pagamento, non per le frecce.",
         "regola": "Frecce bianche, parcheggi blu.",
         "trabocchetti": ["colore azzurro"],
@@ -1101,6 +1240,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura sono di colore giallo nelle strade dove è vietata la sosta",
         "risposta": False,
+        "riassunto": "Frecce direzionali → gialle dove la sosta è vietata?",
         "spiegazione": "Falso! Le frecce direzionali sono sempre bianche. Le linee gialle sulla strada indicano dove è vietata la sosta o dove ci sono regole speciali per il parcheggio, ma non sono frecce direzionali.",
         "regola": "Frecce bianche, divieto giallo.",
         "trabocchetti": ["colore giallo"],
@@ -1109,6 +1249,7 @@ QUESTIONS = [
     {
         "domanda": "Le frecce direzionali in figura sono di colore blu nelle autostrade",
         "risposta": False,
+        "riassunto": "Frecce direzionali → blu in autostrada?",
         "spiegazione": "Falso! Le frecce direzionali disegnate sulla strada sono sempre di colore bianco, su qualsiasi tipo di strada, anche in autostrada. Il colore blu è usato per i cartelli stradali in autostrada, non per le frecce sull'asfalto.",
         "regola": "Frecce bianche, sempre.",
         "trabocchetti": ["colore blu"],
@@ -1117,6 +1258,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica una zona per la fermata degli autobus in servizio pubblico di linea",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → fermata autobus di linea?",
         "spiegazione": "Questa segnaletica, con le strisce gialle a zig-zag e la linea gialla tratteggiata, indica proprio un'area dove gli autobus di linea si fermano per far salire e scendere i passeggeri. È la zona dedicata alla fermata dei mezzi pubblici.",
         "regola": "Giallo a zig-zag = fermata bus di linea.",
         "trabocchetti": ["in servizio pubblico di linea"],
@@ -1125,6 +1267,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica lo spazio per la fermata di autobus e filobus in servizio pubblico di linea",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → fermata autobus e filobus di linea?",
         "spiegazione": "Sì, questa segnaletica è valida sia per gli autobus normali che per i filobus, che sono autobus elettrici che prendono corrente da cavi aerei. Entrambi sono veicoli di trasporto pubblico di linea e usano queste fermate.",
         "regola": "Bus e filobus, stessa fermata.",
         "trabocchetti": ["filobus"],
@@ -1133,6 +1276,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia a zig zag della segnaletica in figura serve agli autobus per facilitare la manovra di accostamento e per ripartire",
         "risposta": True,
+        "riassunto": "Zig zag → per accostare e ripartire?",
         "spiegazione": "Le strisce a zig-zag servono a delimitare la zona della fermata e a dare più spazio all'autobus. Questo spazio extra permette all'autista di avvicinarsi al marciapiede in modo sicuro e di ripartire senza ostacoli, facilitando le manovre.",
         "regola": "Zig-zag = spazio per manovra bus.",
         "immagine": "34ab80f1a209c4406ddf.jpg",
@@ -1140,6 +1284,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura vieta la sosta ma non la fermata anche nelle parti con striscia gialla a zig zag",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → sosta vietata, fermata no, anche sul zig zag?",
         "spiegazione": "In questa zona è vietata la sosta (non puoi lasciare il veicolo e allontanarti), ma è permessa la fermata (puoi fermarti per un tempo breve, con il conducente a bordo e pronto a ripartire), a patto di non ostacolare l'autobus. Le strisce a zig-zag indicano proprio il divieto di sosta.",
         "regola": "Zig-zag: no sosta, sì fermata (se non intralci).",
         "trabocchetti": ["sosta", "fermata", "Vieta la sosta ma non la fermata"],
@@ -1148,6 +1293,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica lo spazio per la fermata di autosnodati in servizio pubblico di linea",
         "risposta": True,
+        "riassunto": "Segnaletica in figura → fermata autosnodati di linea?",
         "spiegazione": "Gli autosnodati sono autobus molto lunghi, composti da più sezioni collegate. Anche questi veicoli, quando sono in servizio pubblico di linea, utilizzano le stesse fermate indicate da questa segnaletica.",
         "regola": "Autosnodato = bus lungo, stessa fermata.",
         "trabocchetti": ["autosnodati"],
@@ -1156,6 +1302,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura indica lo spazio riservato alla sosta anche dei taxi",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → sosta anche taxi?",
         "spiegazione": "Falso. Questa zona è riservata esclusivamente alla fermata degli autobus e filobus di linea. I taxi hanno le loro aree di sosta o fermata specifiche, indicate da altri segnali, non da questa segnaletica.",
         "regola": "Bus stop = solo bus, no taxi.",
         "trabocchetti": ["anche dei taxi"],
@@ -1164,6 +1311,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura non consente alle autovetture di circolare all'interno dell'area segnata",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → auto non circolano dentro?",
         "spiegazione": "Falso. Le autovetture possono circolare in questa area, ma non possono sostare. Devono fare attenzione agli autobus che si fermano o ripartono. Il divieto riguarda la sosta, non il transito.",
         "regola": "Circolare sì, sostare no.",
         "immagine": "34ab80f1a209c4406ddf.jpg",
@@ -1171,6 +1319,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura non consente la sosta 20 metri prima della striscia gialla a zig zag",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → sosta vietata 20 m prima del zig zag?",
         "spiegazione": "Falso. Il divieto di sosta in prossimità delle fermate degli autobus è di 15 metri prima e dopo il segnale di fermata, non 20 metri. La striscia a zig-zag *indica* la zona di divieto di sosta, non la precede di una distanza specifica.",
         "regola": "Divieto sosta bus = 15 metri, non 20.",
         "trabocchetti": ["20 metri", "prima"],
@@ -1179,6 +1328,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura vieta agli autocarri di circolare all'interno dell'area segnata",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → autocarri non circolano dentro?",
         "spiegazione": "Falso. Come per le autovetture, anche gli autocarri possono circolare in questa area. Il divieto è di sosta, non di circolazione. Tutti i veicoli possono transitare, ma non devono sostare.",
         "regola": "Circolare sì, sostare no (per tutti).",
         "trabocchetti": ["vieta agli autocarri di circolare"],
@@ -1187,6 +1337,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura può anche essere realizzata con strisce di colore bianco",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → anche bianca?",
         "spiegazione": "Falso. Le strisce che delimitano le aree di fermata per i veicoli di trasporto pubblico di linea sono *sempre* di colore giallo. Le strisce bianche hanno altri significati, come i parcheggi normali o le corsie di marcia.",
         "regola": "Fermata bus = solo giallo.",
         "trabocchetti": ["colore bianco"],
@@ -1195,6 +1346,7 @@ QUESTIONS = [
     {
         "domanda": "La segnaletica in figura consente la sosta delle autovetture dalle ore 20.00 alle ore 8.00",
         "risposta": False,
+        "riassunto": "Segnaletica in figura → sosta auto 20-8?",
         "spiegazione": "Falso. Il divieto di sosta in questa area è permanente, 24 ore su 24, 7 giorni su 7. Non ci sono orari in cui la sosta è permessa, proprio per garantire che la fermata sia sempre libera per gli autobus di linea.",
         "regola": "Bus stop = divieto sosta sempre.",
         "immagine": "34ab80f1a209c4406ddf.jpg",
@@ -1202,6 +1354,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca trasversale in figura può essere abbinata ad un incrocio regolato da semaforo",
         "risposta": True,
+        "riassunto": "Striscia trasversale → con semaforo?",
         "spiegazione": "Questa striscia bianca, chiamata 'striscia di arresto', serve a indicare il punto esatto dove fermarsi. È vero che può trovarsi anche agli incroci con il semaforo, per indicare dove fermarsi quando la luce è rossa.",
         "regola": "Semaforo rosso? Fermati sulla linea!",
         "trabocchetti": ["può"],
@@ -1210,6 +1363,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca trasversale in figura può essere completata con la scritta STOP, dipinta sulla pavimentazione stradale",
         "risposta": True,
+        "riassunto": "Striscia trasversale → con scritta STOP?",
         "spiegazione": "Sì, è vero. Spesso, quando c'è un segnale di STOP, la striscia bianca trasversale è accompagnata dalla parola 'STOP' scritta per terra, proprio per rafforzare l'obbligo di fermarsi.",
         "regola": "Linea + STOP scritto = STOP!",
         "trabocchetti": ["può essere completata"],
@@ -1218,6 +1372,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca trasversale in figura indica il punto in cui i conducenti devono arrestarsi in presenza del segnale FERMARSI E DARE PRECEDENZA (STOP)",
         "risposta": True,
+        "riassunto": "Striscia trasversale → arresto allo STOP?",
         "spiegazione": "Esatto! Questa è una delle funzioni principali della striscia di arresto. Se c'è il segnale 'FERMARSI E DARE PRECEDENZA' (STOP), devi fermarti proprio prima di questa linea.",
         "regola": "Segnale STOP? Fermati *prima* della linea.",
         "immagine": "7cab577c18047480e4c5.jpg",
@@ -1225,6 +1380,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca trasversale in figura indica il punto in cui i conducenti devono arrestarsi in presenza del semaforo a luce rossa",
         "risposta": True,
+        "riassunto": "Striscia trasversale → arresto col rosso?",
         "spiegazione": "Sì, è vero. Come per il segnale di STOP, anche in presenza di un semaforo, questa linea indica il punto dove devi fermarti quando la luce è rossa, per non intralciare l'incrocio o l'attraversamento.",
         "regola": "Semaforo rosso? Fermati *sulla* linea.",
         "immagine": "7cab577c18047480e4c5.jpg",
@@ -1232,6 +1388,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è una striscia trasversale di arresto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → striscia di arresto?",
         "spiegazione": "Sì, è proprio così che si chiama tecnicamente. È una 'striscia trasversale di arresto' perché attraversa la strada e serve per indicare il punto di arresto obbligatorio.",
         "regola": "Linea spessa = Linea di arresto.",
         "trabocchetti": ["segnale"],
@@ -1240,6 +1397,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca trasversale in figura viene abbinata con il segnale di DARE PRECEDENZA",
         "risposta": False,
+        "riassunto": "Striscia trasversale → con DARE PRECEDENZA?",
         "spiegazione": "Falso! La striscia bianca trasversale continua (come quella in figura) è abbinata al segnale di STOP. Il segnale di DARE PRECEDENZA, invece, è abbinato a una striscia trasversale *discontinua* (tratteggiata).",
         "regola": "Linea continua = STOP. Linea tratteggiata = DARE PRECEDENZA.",
         "trabocchetti": ["Viene abbinata con"],
@@ -1248,6 +1406,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca trasversale in figura indica un attraversamento pedonale non regolato",
         "risposta": False,
+        "riassunto": "Striscia trasversale → attraversamento pedonale non regolato?",
         "spiegazione": "Falso! Un attraversamento pedonale (le 'strisce pedonali') è fatto da tante strisce bianche parallele, non da una sola striscia trasversale come questa. Questa linea serve per fermarsi.",
         "regola": "Pedoni = strisce parallele. Linea singola = STOP.",
         "trabocchetti": ["attraversamento pedonale"],
@@ -1256,6 +1415,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca trasversale in figura indica un attraversamento ciclabile",
         "risposta": False,
+        "riassunto": "Striscia trasversale → attraversamento ciclabile?",
         "spiegazione": "Falso! Un attraversamento ciclabile è di solito indicato con due linee tratteggiate parallele e a volte con il simbolo della bicicletta. Non è una singola striscia continua come quella in figura.",
         "regola": "Bici = linee tratteggiate. Linea singola = STOP.",
         "trabocchetti": ["attraversamento ciclabile"],
@@ -1264,6 +1424,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca trasversale in figura non può mai essere superata",
         "risposta": False,
+        "riassunto": "Striscia trasversale → mai superabile?",
         "spiegazione": "Falso! La striscia di arresto indica dove fermarsi, ma una volta che hai dato la precedenza o il semaforo è verde, devi superarla per proseguire. La parola 'mai' rende la frase falsa.",
         "regola": "'Mai' è quasi sempre FALSO! La linea si supera per proseguire.",
         "trabocchetti": ["mai"],
@@ -1272,6 +1433,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca trasversale in figura indica l'inizio del divieto di sosta",
         "risposta": False,
+        "riassunto": "Striscia trasversale → inizio divieto di sosta?",
         "spiegazione": "Falso! Il divieto di sosta è indicato da appositi cartelli o da linee gialle o blu lungo il bordo della strada. Questa striscia bianca trasversale non ha nulla a che fare con la sosta, ma con l'obbligo di fermarsi.",
         "regola": "Sosta = linee sul bordo. Linea trasversale = STOP.",
         "trabocchetti": ["divieto di sosta"],
@@ -1280,6 +1442,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia trasversale continua in figura indica il punto in cui bisogna arrestarsi ad un incrocio, se regolato da semaforo a luce rossa",
         "risposta": True,
+        "riassunto": "Striscia trasversale continua → arresto col semaforo rosso?",
         "spiegazione": "Questa striscia indica il punto esatto dove devi fermarti. Se il semaforo è rosso, l'arresto è obbligatorio, e la striscia ti mostra dove posizionare il veicolo per non intralciare l'incrocio.",
         "regola": "Semaforo rosso? Fermati sulla linea!",
         "trabocchetti": ["se regolato da semaforo a luce rossa"],
@@ -1288,6 +1451,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia trasversale continua in figura indica il punto in cui dobbiamo sempre arrestarci ad un incrocio, se il vigile lo impone",
         "risposta": True,
+        "riassunto": "Striscia trasversale continua → arresto se il vigile lo impone?",
         "spiegazione": "Gli ordini del vigile urbano hanno sempre la precedenza su semafori e segnaletica. Se il vigile ti ordina di fermarti, devi farlo, e la striscia continua ti indica il punto corretto per l'arresto.",
         "regola": "Vigile comanda? Fermati sulla linea!",
         "trabocchetti": ["se il vigile lo impone"],
@@ -1296,6 +1460,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia trasversale continua in figura indica il punto dove occorre arrestarsi",
         "risposta": True,
+        "riassunto": "Striscia trasversale continua → punto di arresto?",
         "spiegazione": "Questa è la funzione principale della striscia trasversale continua: indicare il punto preciso dove il conducente deve arrestare il veicolo quando un segnale (come lo STOP, il semaforo rosso o un ordine del vigile) lo richiede.",
         "regola": "Linea continua = Punto di stop.",
         "immagine": "c5549cabd80597427d83.jpg",
@@ -1303,6 +1468,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia trasversale continua in figura indica il punto in cui dobbiamo arrestarci ad un incrocio, se non è regolato",
         "risposta": False,
+        "riassunto": "Striscia trasversale continua → arresto se incrocio non regolato?",
         "spiegazione": "Falso. Se un incrocio non è regolato da semafori, vigili o segnali (come STOP o Dare Precedenza), si applica la regola generale della precedenza a destra. La striscia continua da sola non ti obbliga a fermarti se non c'è un segnale specifico che lo richiede.",
         "regola": "Senza segnale, la linea non ti ferma!",
         "trabocchetti": ["se non è regolato"],
@@ -1311,6 +1477,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia trasversale continua in figura indica il punto in cui bisogna sempre arrestarsi in vicinanza di un incrocio stradale",
         "risposta": False,
+        "riassunto": "Striscia trasversale continua → sempre arresto all'incrocio?",
         "spiegazione": "Falso. La parola 'sempre' rende l'affermazione sbagliata. Non devi fermarti ogni volta che vedi questa striscia. Ti fermi solo se c'è un motivo specifico: semaforo rosso, segnale di STOP, ordine del vigile, o se devi dare la precedenza e ci sono altri veicoli.",
         "regola": "'Sempre' è quasi sempre falso!",
         "trabocchetti": ["sempre"],
@@ -1319,6 +1486,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia trasversale continua in figura indica che è obbligatorio dare la precedenza ai veicoli provenienti sia da destra sia da sinistra",
         "risposta": False,
+        "riassunto": "Striscia trasversale continua → precedenza a destra e sinistra?",
         "spiegazione": "Falso. La striscia trasversale continua indica il punto dove fermarsi. L'obbligo di dare la precedenza è indicato da specifici segnali stradali, come il segnale 'Dare precedenza' (triangolo rovesciato) o il segnale 'STOP' (ottagonale), che spesso sono accompagnati da questa striscia, ma la striscia da sola non significa 'dare precedenza'.",
         "regola": "Linea = dove fermarsi, non perché!",
         "immagine": "7cab577c18047480e4c5.jpg",
@@ -1326,6 +1494,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia trasversale continua in figura si trova all'uscita di una proprietà privata",
         "risposta": False,
+        "riassunto": "Striscia trasversale continua → uscita da proprietà privata?",
         "spiegazione": "Falso. La striscia trasversale continua in figura è una linea di arresto che si trova in un incrocio stradale pubblico. Le uscite da proprietà private (come un garage o un cortile) di solito non hanno questa segnaletica orizzontale.",
         "regola": "Non è un garage, è un incrocio!",
         "trabocchetti": ["all"],
@@ -1334,6 +1503,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia discontinua in figura si trova subito dopo una curva",
         "risposta": True,
+        "riassunto": "Discontinua dal lato della freccia → subito dopo una curva?",
         "spiegazione": "Dopo una curva, la visibilità di solito migliora. Questo significa che è più sicuro sorpassare, quindi è logico trovare una striscia discontinua che permette il sorpasso.",
         "regola": "Dopo curva, via libera al sorpasso!",
         "trabocchetti": ["subito dopo una curva"],
@@ -1342,6 +1512,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia discontinua in figura consente di effettuare un sorpasso anche superando tutte e due le strisce",
         "risposta": True,
+        "riassunto": "Discontinua dal lato della freccia → sorpasso superando entrambe?",
         "spiegazione": "La striscia discontinua (tratteggiata) serve proprio a indicare che è permesso superarla per effettuare un sorpasso, a condizione che sia sicuro farlo. 'Superare tutte e due le strisce' significa semplicemente attraversare la linea per cambiare corsia e sorpassare.",
         "regola": "Linea tratteggiata = sorpasso consentito.",
         "trabocchetti": ["discontinua", "Tutte e due le strisce"],
@@ -1350,6 +1521,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia discontinua in figura si trova dopo un passaggio a livello",
         "risposta": True,
+        "riassunto": "Discontinua dal lato della freccia → dopo passaggio a livello?",
         "spiegazione": "Dopo un passaggio a livello (dove ci sono i binari del treno), il pericolo è passato e la visibilità è di solito buona. Per questo motivo, è permesso sorpassare e si può trovare una striscia discontinua.",
         "regola": "Dopo i binari, via libera al sorpasso!",
         "trabocchetti": ["dopo un passaggio a livello"],
@@ -1358,6 +1530,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia discontinua in figura si può trovare nel tratto in discesa di un dosso",
         "risposta": True,
+        "riassunto": "Discontinua dal lato della freccia → in discesa del dosso?",
         "spiegazione": "Nel tratto in discesa di un dosso (una salita seguita da una discesa), la visibilità è buona perché si vede bene la strada davanti a sé. Per questo, è permesso sorpassare e si può trovare una striscia discontinua.",
         "regola": "Discesa del dosso, sorpasso posso!",
         "trabocchetti": ["discesa"],
@@ -1366,6 +1539,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia discontinua in figura consente anche al veicolo che viene di fronte di superare le strisce",
         "risposta": False,
+        "riassunto": "Discontinua dal lato della freccia → anche chi viene di fronte supera?",
         "spiegazione": "La striscia discontinua permette di sorpassare. Tuttavia, la domanda parla di un 'veicolo che viene di fronte'. Se la strada è a senso unico (tutte le corsie vanno nella stessa direzione) o se ci sono più corsie nello stesso senso, non ci sono veicoli che 'vengono di fronte' in quella corsia. Quindi, la frase non ha senso in quel contesto, rendendo l'affermazione Falsa.",
         "regola": "Se non c'è nessuno di fronte, non può superare!",
         "trabocchetti": ["veicolo che viene di fronte"],
@@ -1374,6 +1548,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia discontinua in figura si trova, di norma, su strade a senso unico di circolazione",
         "risposta": False,
+        "riassunto": "Discontinua dal lato della freccia → di norma senso unico?",
         "spiegazione": "La striscia discontinua si trova molto spesso anche su strade a doppio senso di circolazione, non solo su quelle a senso unico. Serve a separare le corsie e permettere il sorpasso quando è sicuro. Quindi, dire che 'di norma' si trova solo su strade a senso unico è sbagliato.",
         "regola": "Tratteggiata: anche doppio senso!",
         "trabocchetti": ["di norma", "senso unico di circolazione"],
@@ -1382,6 +1557,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia discontinua in figura si trova sul tratto in salita di un dosso",
         "risposta": False,
+        "riassunto": "Discontinua dal lato della freccia → in salita del dosso?",
         "spiegazione": "Nel tratto in salita di un dosso, la visibilità è ridotta perché non si vede cosa c'è dopo la cima. Per questo motivo, è vietato sorpassare e si troverebbe una striscia continua, non discontinua.",
         "regola": "Salita del dosso, sorpasso non posso!",
         "trabocchetti": ["salita"],
@@ -1390,6 +1566,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia discontinua in figura si trova subito prima di un incrocio",
         "risposta": False,
+        "riassunto": "Discontinua dal lato della freccia → subito prima di un incrocio?",
         "spiegazione": "Prima di un incrocio (un punto dove le strade si incontrano), il sorpasso è molto pericoloso e di solito vietato. Ci sono molti veicoli che possono svoltare o attraversare. Per questo motivo, si troverebbe una striscia continua, non discontinua.",
         "regola": "Prima incrocio, no sorpasso!",
         "trabocchetti": ["subito prima di un incrocio"],
@@ -1398,6 +1575,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia discontinua in figura si trova prima di una curva",
         "risposta": False,
+        "riassunto": "Discontinua dal lato della freccia → prima di una curva?",
         "spiegazione": "Prima di una curva, la visibilità è ridotta perché non si vede cosa c'è dopo la curva. Per questo motivo, è vietato sorpassare e si troverebbe una striscia continua, non discontinua.",
         "regola": "Prima curva, no sorpasso!",
         "trabocchetti": ["prima di una curva"],
@@ -1406,6 +1584,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia continua centrale in figura si trova prima di una curva",
         "risposta": True,
+        "riassunto": "Continua centrale dal lato della freccia → prima di una curva?",
         "spiegazione": "La striscia continua centrale viene usata in punti della strada dove la visibilità è ridotta o dove è pericoloso superare. Prima di una curva, la visibilità è limitata, quindi è VERO che si trova una striscia continua per impedire i sorpassi e garantire la sicurezza.",
         "regola": "Curva = Linea continua per sicurezza.",
         "trabocchetti": ["prima di una curva"],
@@ -1414,6 +1593,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia continua centrale in figura si trova sul tratto in salita di un dosso",
         "risposta": True,
+        "riassunto": "Continua centrale dal lato della freccia → in salita del dosso?",
         "spiegazione": "Sul tratto in salita di un dosso, la visibilità è molto limitata perché non si vede cosa c'è dopo la cima. Per questo motivo, è VERO che si trova una striscia continua centrale per vietare il sorpasso e prevenire incidenti.",
         "regola": "Dosso (salita) = Linea continua, non si vede.",
         "trabocchetti": ["tratto in salita di un dosso"],
@@ -1422,6 +1602,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia continua centrale in figura si trova prima di un incrocio",
         "risposta": True,
+        "riassunto": "Continua centrale dal lato della freccia → prima di un incrocio?",
         "spiegazione": "Prima di un incrocio, è molto pericoloso effettuare un sorpasso perché potrebbero arrivare veicoli dalle altre direzioni. Per questo, è VERO che si trova una striscia continua centrale per vietare il sorpasso e mantenere l'ordine nel traffico.",
         "regola": "Incrocio = Linea continua, attenzione massima.",
         "trabocchetti": ["prima di un incrocio"],
@@ -1430,6 +1611,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo in figura non può superare la striscia continua centrale",
         "risposta": True,
+        "riassunto": "Veicolo in figura → non può superare la continua?",
         "spiegazione": "Una striscia continua, sia singola che doppia, significa che non si può MAI attraversarla. Questo vale per sorpassare, per fare inversione di marcia o per svoltare a sinistra se la linea è centrale. Quindi, è VERO che il veicolo non può superarla.",
         "regola": "Linea continua = Muro invisibile, non si passa.",
         "trabocchetti": ["non può superare"],
@@ -1438,6 +1620,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia continua centrale in figura si trova, di norma, su strade a senso unico di circolazione",
         "risposta": False,
+        "riassunto": "Continua centrale → di norma senso unico?",
         "spiegazione": "Una striscia continua centrale serve a separare due sensi di marcia opposti. Su una strada a senso unico, tutti i veicoli vanno nella stessa direzione, quindi non c'è bisogno di una linea centrale per separare sensi opposti. Per questo è FALSO. Su strade a senso unico, le linee separano le corsie, ma non sono 'centrali' nel senso di separare direzioni opposte.",
         "regola": "Linea continua centrale = Doppio senso. Senso unico = No linea centrale.",
         "trabocchetti": ["senso unico di circolazione", "Di norma"],
@@ -1446,6 +1629,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia continua centrale in figura si trova ogni volta che si supera il tratto in discesa di un dosso",
         "risposta": False,
+        "riassunto": "Continua centrale → ogni volta dopo la discesa di un dosso?",
         "spiegazione": "La striscia continua si trova sul tratto in salita e sulla cima del dosso, dove la visibilità è scarsa. Nel tratto in discesa, la visibilità di solito migliora e la striscia può tornare a essere discontinua. La parola 'ogni volta' rende l'affermazione FALSO, perché non è sempre così.",
         "regola": "'Ogni volta' è quasi sempre FALSO. Discesa dosso = Visibilità migliore.",
         "trabocchetti": ["ogni volta che si supera", "Tratto in discesa di un dosso"],
@@ -1454,6 +1638,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia continua centrale in figura si trova ogni volta che si supera un passaggio a livello",
         "risposta": False,
+        "riassunto": "Continua centrale → ogni volta dopo un passaggio a livello?",
         "spiegazione": "Anche se ci sono regole specifiche per i passaggi a livello (ad esempio, non si può sorpassare), non è vero che c'è una striscia continua centrale 'ogni volta' che si supera un passaggio a livello. La presenza della linea continua dipende dalla visibilità e dalla configurazione della strada, non solo dal passaggio a livello in sé. Quindi è FALSO.",
         "regola": "'Ogni volta' è quasi sempre FALSO. Passaggio a livello = Attenzione, non sempre linea continua.",
         "trabocchetti": ["ogni volta"],
@@ -1462,6 +1647,7 @@ QUESTIONS = [
     {
         "domanda": "Rispetto al veicolo che procede nel senso della freccia, la striscia continua centrale in figura consente l'inversione del senso di marcia",
         "risposta": False,
+        "riassunto": "Continua centrale → inversione consentita?",
         "spiegazione": "Come abbiamo detto, una striscia continua non può essere superata. L'inversione del senso di marcia (fare un'inversione a U) richiede di attraversare la striscia centrale. Dato che è vietato attraversarla, è FALSO che consenta l'inversione del senso di marcia.",
         "regola": "Linea continua = Divieto assoluto, no inversione.",
         "trabocchetti": ["consente", "Inversione del senso di marcia"],
@@ -1470,6 +1656,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo in figura può effettuare un sorpasso anche superando la striscia continua centrale",
         "risposta": False,
+        "riassunto": "Veicolo in figura → sorpasso superando la continua?",
         "spiegazione": "La striscia continua centrale vieta di attraversarla. Per effettuare un sorpasso, il veicolo dovrebbe superare questa linea per entrare nella corsia opposta. Poiché è vietato superare la striscia continua, è FALSO che il veicolo possa effettuare un sorpasso attraversandola.",
         "regola": "Linea continua = Sorpasso vietato (se si attraversa la linea).",
         "immagine": "1f55189c139aa307cc19.jpg",
@@ -1477,6 +1664,7 @@ QUESTIONS = [
     {
         "domanda": "I segni gialli e neri in figura dipinti sul bordo del marciapiede indicano un divieto di sosta",
         "risposta": True,
+        "riassunto": "Segni gialli e neri sul marciapiede → divieto di sosta?",
         "spiegazione": "I segni gialli e neri dipinti sul bordo del marciapiede indicano che non è permesso lasciare il veicolo parcheggiato per un lungo periodo. È un divieto di sosta.",
         "regola": "Giallo-nero sul marciapiede = NO SOSTA.",
         "trabocchetti": ["divieto di sosta"],
@@ -1485,6 +1673,7 @@ QUESTIONS = [
     {
         "domanda": "I segni gialli e neri in figura sono posti lungo la parte verticale del marciapiede",
         "risposta": True,
+        "riassunto": "Segni gialli e neri → sulla parte verticale del marciapiede?",
         "spiegazione": "L'immagine mostra chiaramente che i segni sono dipinti sulla parte del marciapiede che si alza dalla strada, cioè il 'gradino' o il lato verticale, non sulla parte orizzontale dove camminano i pedoni.",
         "regola": "Giallo-nero è sul 'muro' del marciapiede.",
         "trabocchetti": ["parte verticale"],
@@ -1493,6 +1682,7 @@ QUESTIONS = [
     {
         "domanda": "I segni gialli e neri in figura dipinti sul bordo del marciapiede indicano che su quel lato della strada non è possibile sostare",
         "risposta": True,
+        "riassunto": "Segni gialli e neri → sosta vietata su quel lato?",
         "spiegazione": "Questi segni gialli e neri sul bordo del marciapiede significano che non puoi parcheggiare la tua auto in quel punto. È un divieto di sosta.",
         "regola": "Giallo-nero = non parcheggiare.",
         "trabocchetti": ["non è possibile sostare"],
@@ -1501,6 +1691,7 @@ QUESTIONS = [
     {
         "domanda": "I segni gialli e neri in figura dipinti sul bordo del marciapiede consentono la fermata",
         "risposta": True,
+        "riassunto": "Segni gialli e neri → fermata consentita?",
         "spiegazione": "Molto importante! Questi segni vietano la sosta (cioè il parcheggio prolungato), ma PERMETTONO la fermata. La fermata è quando ti fermi per poco tempo, ad esempio per far scendere o salire qualcuno, e rimani vicino al veicolo.",
         "regola": "Giallo-nero: NO sosta, SÌ fermata.",
         "trabocchetti": ["consentono", "fermata"],
@@ -1509,6 +1700,7 @@ QUESTIONS = [
     {
         "domanda": "I segni gialli e neri in figura dipinti sul bordo del marciapiede indicano che la sosta è consentita solo agli autobus",
         "risposta": False,
+        "riassunto": "Segni gialli e neri → sosta solo autobus?",
         "spiegazione": "Questi segni indicano un divieto di sosta per TUTTI i veicoli, non solo per gli autobus. Le fermate degli autobus hanno altri tipi di segnaletica specifica.",
         "regola": "Giallo-nero = divieto per tutti, non solo autobus.",
         "trabocchetti": ["solo"],
@@ -1517,6 +1709,7 @@ QUESTIONS = [
     {
         "domanda": "I segni gialli e neri in figura dipinti sul bordo del marciapiede segnalano un ostacolo al centro della carreggiata",
         "risposta": False,
+        "riassunto": "Segni gialli e neri → ostacolo al centro?",
         "spiegazione": "I segni gialli e neri sono dipinti sul BORDO del marciapiede, quindi ai lati della strada. Non segnalano un ostacolo che si trova al centro della carreggiata (la strada vera e propria).",
         "regola": "Giallo-nero sul marciapiede = divieto di sosta, non ostacolo.",
         "trabocchetti": ["al centro della carreggiata"],
@@ -1525,6 +1718,7 @@ QUESTIONS = [
     {
         "domanda": "I segni gialli e neri in figura dipinti sul bordo del marciapiede avvertono i pedoni di fare attenzione al gradino",
         "risposta": False,
+        "riassunto": "Segni gialli e neri → attenzione al gradino per i pedoni?",
         "spiegazione": "Questi segni sono per i conducenti dei veicoli, non per i pedoni. Indicano regole di sosta e fermata, non pericoli o avvisi per chi cammina sul marciapiede.",
         "regola": "Giallo-nero = per auto, non per pedoni.",
         "trabocchetti": ["avvertono i pedoni"],
@@ -1533,6 +1727,7 @@ QUESTIONS = [
     {
         "domanda": "I segni gialli e neri in figura dipinti sul bordo del marciapiede indicano che è vietata anche la fermata",
         "risposta": False,
+        "riassunto": "Segni gialli e neri → vietata anche la fermata?",
         "spiegazione": "Questa è una domanda molto importante. Come abbiamo visto, questi segni vietano la SOSTA, ma PERMETTONO la FERMATA. Quindi, dire che è vietata ANCHE la fermata è sbagliato.",
         "regola": "Giallo-nero: NO sosta, SÌ fermata.",
         "trabocchetti": ["anche"],
@@ -1541,6 +1736,7 @@ QUESTIONS = [
     {
         "domanda": "Il bordo del marciapiede come dipinto in figura vieta la sosta anche ai taxi",
         "risposta": True,
+        "riassunto": "Marciapiede dipinto in figura → sosta vietata anche ai taxi?",
         "spiegazione": "La striscia gialla e nera sul bordo del marciapiede significa che è vietato parcheggiare (sostare) per tutti i veicoli, senza eccezioni. Quindi, anche i taxi devono rispettare questo divieto.",
         "regola": "Giallo-nero = NO sosta per NESSUNO.",
         "trabocchetti": ["anche ai taxi"],
@@ -1549,6 +1745,7 @@ QUESTIONS = [
     {
         "domanda": "Il bordo del marciapiede dipinto come in figura indica che nessun veicolo può sostare",
         "risposta": True,
+        "riassunto": "Marciapiede dipinto in figura → nessun veicolo in sosta?",
         "spiegazione": "Esatto, la pittura gialla e nera sul marciapiede indica un divieto di sosta. Questo significa che nessun veicolo, di qualsiasi tipo, può parcheggiare in quel tratto di strada.",
         "regola": "Giallo-nero = Sosta vietata a TUTTI.",
         "trabocchetti": ["nessun"],
@@ -1557,6 +1754,7 @@ QUESTIONS = [
     {
         "domanda": "Il bordo del marciapiede dipinto come in figura indica che non si può sostare lungo quel tratto",
         "risposta": True,
+        "riassunto": "Marciapiede dipinto in figura → sosta vietata nel tratto?",
         "spiegazione": "Sì, questa è la funzione principale di queste strisce. Indicano chiaramente che non è permesso lasciare il veicolo parcheggiato (sostare) lungo quel tratto di marciapiede.",
         "regola": "Giallo-nero = Non parcheggiare.",
         "trabocchetti": ["non si può sostare"],
@@ -1565,6 +1763,7 @@ QUESTIONS = [
     {
         "domanda": "Il bordo del marciapiede dipinto come in figura indica che la sosta è consentita solo a pagamento",
         "risposta": False,
+        "riassunto": "Marciapiede dipinto in figura → sosta solo a pagamento?",
         "spiegazione": "Falso. Le strisce gialle e nere indicano un divieto di sosta totale. La sosta a pagamento è indicata da strisce di colore blu, non gialle e nere.",
         "regola": "Giallo-nero = NO sosta. Blu = sosta a PAGAMENTO.",
         "trabocchetti": ["solo a pagamento"],
@@ -1573,6 +1772,7 @@ QUESTIONS = [
     {
         "domanda": "Il bordo del marciapiede dipinto come in figura indica che la sosta è consentita solo per un'ora",
         "risposta": False,
+        "riassunto": "Marciapiede dipinto in figura → sosta per un'ora?",
         "spiegazione": "Falso. Le strisce gialle e nere vietano la sosta completamente, non la limitano nel tempo. La sosta a tempo limitato è indicata da altri segnali, come il disco orario, non da queste strisce.",
         "regola": "Giallo-nero = Divieto ASSOLUTO di sosta, non a tempo.",
         "trabocchetti": ["solo per un"],
@@ -1581,6 +1781,7 @@ QUESTIONS = [
     {
         "domanda": "Il bordo del marciapiede dipinto come in figura indica la presenza di lavori in corso",
         "risposta": False,
+        "riassunto": "Marciapiede dipinto in figura → lavori in corso?",
         "spiegazione": "Falso. Le strisce gialle e nere non hanno nulla a che fare con i lavori in corso. I lavori in corso sono segnalati da cartelli specifici, coni o barriere arancioni.",
         "regola": "Giallo-nero = Divieto di sosta. Non lavori.",
         "immagine": "adb0937aba339e25f920.jpg",
@@ -1588,6 +1789,7 @@ QUESTIONS = [
     {
         "domanda": "Il bordo del marciapiede dipinto come in figura indica una strada con diritto di precedenza",
         "risposta": False,
+        "riassunto": "Marciapiede dipinto in figura → strada con precedenza?",
         "spiegazione": "Falso. Le strisce gialle e nere riguardano solo il divieto di sosta. Il diritto di precedenza è indicato da specifici segnali verticali (come il segnale di 'Dare precedenza' o 'Diritto di precedenza'), non da queste strisce sul marciapiede.",
         "regola": "Giallo-nero = Sosta. Precedenza = Altri segnali.",
         "trabocchetti": ["diritto di precedenza"],
@@ -1596,6 +1798,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di emergenza (corsia A) si può utilizzare in caso di guasto del veicolo, per un massimo di tre ore",
         "risposta": True,
+        "riassunto": "Corsia di emergenza (A) → guasto, massimo tre ore?",
         "spiegazione": "La corsia di emergenza (A) serve proprio per fermarsi se la macchina ha un problema (un guasto) e non può più andare avanti. Però non puoi stare lì per sempre, c'è un limite di tempo, che è di tre ore. Dopo tre ore devi chiamare il soccorso stradale.",
         "regola": "Guasto = 3 ore in emergenza.",
         "trabocchetti": ["massimo di tre ore"],
@@ -1604,6 +1807,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di emergenza (corsia A) non si può occupare per le manovre di sorpasso",
         "risposta": True,
+        "riassunto": "Corsia di emergenza (A) → non per sorpassare?",
         "spiegazione": "La corsia di emergenza (A) è solo per le vere emergenze, come un guasto o un malore. Non è una corsia normale per guidare o per superare altre macchine (sorpassare). Usarla per sorpassare è molto pericoloso e vietato.",
         "regola": "Emergenza = NO sorpasso.",
         "trabocchetti": ["non si può occupare", "Sorpasso"],
@@ -1612,6 +1816,7 @@ QUESTIONS = [
     {
         "domanda": "Nella segnaletica in figura la striscia bianca continua, che delimita la corsia di emergenza, (corsia A), indica una zona di parcheggio a tempo",
         "risposta": False,
+        "riassunto": "Striscia continua della corsia di emergenza → parcheggio a tempo?",
         "spiegazione": "La corsia di emergenza (A) non è un parcheggio. Non puoi fermarti lì per fare una sosta o per aspettare qualcuno, nemmeno per poco tempo. È solo per le emergenze vere e proprie, non per parcheggiare.",
         "regola": "Emergenza ≠ Parcheggio.",
         "trabocchetti": ["zona di parcheggio a tempo"],
@@ -1620,6 +1825,7 @@ QUESTIONS = [
     {
         "domanda": "Nella segnaletica in figura la striscia bianca continua che delimita la corsia di emergenza, (corsia A), può essere sempre superata in caso di intenso traffico",
         "risposta": False,
+        "riassunto": "Striscia della corsia di emergenza → superabile con traffico intenso?",
         "spiegazione": "La striscia continua che separa la corsia di emergenza (A) dalle altre corsie non si può superare, tranne in casi di vera emergenza (come un guasto o un malore). Non puoi usarla per scappare dal traffico, anche se è molto intenso. È pericoloso e vietato.",
         "regola": "Traffico ≠ Emergenza. Striscia continua = NO superamento (salvo emergenza).",
         "trabocchetti": ["sempre superata", "in caso di intenso traffico", "Sempre"],
@@ -1628,6 +1834,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di emergenza (corsia A) è riservata alla svolta a destra",
         "risposta": False,
+        "riassunto": "Corsia di emergenza (A) → per svoltare a destra?",
         "spiegazione": "La corsia di emergenza (A) non serve per girare a destra (svoltare a destra). Le corsie per svoltare sono indicate da frecce sulla strada o da appositi segnali. La corsia di emergenza è solo per le emergenze.",
         "regola": "Emergenza ≠ Svolta.",
         "trabocchetti": ["riservata alla svolta a destra"],
@@ -1636,6 +1843,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di emergenza (corsia A) è riservata alla decelerazione",
         "risposta": False,
+        "riassunto": "Corsia di emergenza (A) → per decelerare?",
         "spiegazione": "La corsia di emergenza (A) non è una corsia per rallentare (decelerare) prima di uscire dalla strada. Per rallentare ci sono le corsie di decelerazione, che sono diverse e hanno un altro scopo. La corsia di emergenza è solo per le emergenze.",
         "regola": "Emergenza ≠ Decelerazione.",
         "trabocchetti": ["riservata alla decelerazione"],
@@ -1644,6 +1852,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di emergenza (corsia A) è vietata al transito degli autoveicoli ma non al transito dei motocicli",
         "risposta": False,
+        "riassunto": "Corsia di emergenza (A) → vietata alle auto ma non alle moto?",
         "spiegazione": "La corsia di emergenza (A) è vietata a TUTTI i veicoli che non sono in emergenza, sia auto (autoveicoli) che moto (motocicli). Non c'è differenza tra i tipi di veicoli in questo caso.",
         "regola": "Emergenza = Vietata a TUTTI (tranne emergenza).",
         "trabocchetti": ["ma non al transito dei motocicli"],
@@ -1652,6 +1861,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce lungo il centro della carreggiata possono essere superate se discontinue (tratteggiate)",
         "risposta": True,
+        "riassunto": "Strisce centrali tratteggiate → superabili?",
         "spiegazione": "Le strisce discontinue (o tratteggiate) al centro della strada indicano che è permesso superarle, ad esempio per fare un sorpasso, a condizione che sia sicuro e consentito dalle altre regole della strada.",
         "regola": "Tratteggiato = puoi passare (se sicuro).",
         "trabocchetti": ["discontinue (tratteggiate)"],
@@ -1659,6 +1869,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce lungo il centro della carreggiata non possono essere superate se continue",
         "risposta": True,
+        "riassunto": "Strisce centrali continue → non superabili?",
         "spiegazione": "Le strisce continue al centro della strada non possono essere superate. Servono a separare le corsie o i sensi di marcia e indicano che non si deve attraversarle.",
         "regola": "Continua = non superare.",
         "trabocchetti": ["non possono essere superate se continue", "Continue"],
@@ -1666,6 +1877,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia di mezzo in figura consente il sorpasso senza superarla, purché non vi siano motivi che lo vietino",
         "risposta": True,
+        "riassunto": "Striscia di mezzo in figura → sorpasso senza superarla?",
         "spiegazione": "Questa domanda è un po' 'furba'. La striscia al centro della carreggiata (anche se continua) non vieta di per sé il sorpasso se riesci a farlo senza superare la striscia stessa (ad esempio, se la tua corsia è molto larga o se stai superando un veicolo molto piccolo e rimani nella tua corsia). La striscia regola il 'superamento' (l'attraversamento), non l'atto di sorpassare in generale.",
         "regola": "La linea regola il 'passaggio', non il sorpasso se resti nella tua corsia.",
         "trabocchetti": ["senza superarla"],
@@ -1674,6 +1886,7 @@ QUESTIONS = [
     {
         "domanda": "La doppia striscia in figura non può essere superata, ma si può circolare stando a cavallo di essa",
         "risposta": False,
+        "riassunto": "Doppia striscia in figura → a cavallo consentito?",
         "spiegazione": "Una doppia striscia continua al centro della strada è un segnale molto chiaro: non puoi assolutamente superarla. E 'circolare stando a cavallo' significa che stai parzialmente attraversando la linea, cosa che è vietata.",
         "regola": "Doppia continua = non toccare, non superare.",
         "immagine": "1f798c790fbdc2883e14.jpg",
@@ -1681,6 +1894,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce lungo il centro della carreggiata possono essere bianche o azzurre",
         "risposta": False,
+        "riassunto": "Strisce centrali → bianche o azzurre?",
         "spiegazione": "Le strisce che delimitano il centro della carreggiata (e la maggior parte delle strisce orizzontali) sono sempre di colore bianco. Le strisce azzurre indicano aree di sosta a pagamento.",
         "regola": "Strisce centrali = bianche.",
         "trabocchetti": ["azzurre"],
@@ -1688,6 +1902,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia discontinua in figura può essere sostituita con alcuni \"chiodi\" o catadiottri, messi a distanza di 50 centimetri",
         "risposta": False,
+        "riassunto": "Discontinua → sostituibile con chiodi ogni 50 cm?",
         "spiegazione": "I 'chiodi' o catadiottri (quei piccoli riflettori sulla strada) servono a rendere più visibili le strisce, specialmente di notte o con la pioggia. Non possono 'sostituire' le strisce, ma le 'integrano' o 'rafforzano'.",
         "regola": "Chiodi/catadiottri = aiutano, non sostituiscono.",
         "trabocchetti": ["sostituita"],
@@ -1696,6 +1911,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia di mezzo in figura non consente il sorpasso in ogni caso",
         "risposta": False,
+        "riassunto": "Striscia di mezzo in figura → sorpasso sempre vietato?",
         "spiegazione": "Questa affermazione è FALSO perché se la striscia di mezzo è discontinua (tratteggiata), allora consente il sorpasso (se le condizioni lo permettono). Quindi, non è vero che 'non consente il sorpasso in ogni caso'.",
         "regola": "'In ogni caso' è spesso FALSO, se c'è un'eccezione.",
         "trabocchetti": ["in ogni caso"],
@@ -1704,6 +1920,7 @@ QUESTIONS = [
     {
         "domanda": "E' regolamentare, nelle zone destinate alla fermata degli autobus in servizio pubblico di linea, trovare sulla pavimentazione la scritta BUS di colore giallo",
         "risposta": True,
+        "riassunto": "Scritta BUS gialla → regolamentare alle fermate?",
         "spiegazione": "Sì, è corretto. Nelle aree dedicate alla fermata degli autobus di linea, la scritta 'BUS' di colore giallo sulla pavimentazione è un segnale regolamentare che indica la zona riservata a questi veicoli.",
         "regola": "BUS = Giallo, sempre!",
         "trabocchetti": ["regolamentare", "Giallo"],
@@ -1711,6 +1928,7 @@ QUESTIONS = [
     {
         "domanda": "E' regolamentare trovare sulla pavimentazione la scritta TAXI di colore giallo, per indicare zone riservate alla sosta dei taxi in servizio",
         "risposta": True,
+        "riassunto": "Scritta TAXI gialla → regolamentare per sosta taxi?",
         "spiegazione": "Sì, è corretto. Proprio come per gli autobus, anche le aree riservate alla sosta dei taxi sono segnalate sulla pavimentazione con la scritta 'TAXI' di colore giallo. Questo aiuta a identificare chiaramente lo spazio.",
         "regola": "TAXI = Giallo, come il BUS!",
         "trabocchetti": ["regolamentare", "giallo"],
@@ -1718,12 +1936,14 @@ QUESTIONS = [
     {
         "domanda": "E' regolamentare trovare sulla pavimentazione la scritta STOP, a completamento del relativo segnale verticale",
         "risposta": True,
+        "riassunto": "Scritta STOP → regolamentare col segnale verticale?",
         "spiegazione": "Sì, è corretto. La scritta 'STOP' dipinta sulla strada è sempre usata insieme al segnale verticale di STOP. Si completano a vicenda per rafforzare l'obbligo di fermarsi.",
         "regola": "STOP a terra + STOP verticale = Fermati!",
     },
     {
         "domanda": "E' regolamentare trovare sulla pavimentazione la scritta P L, con croce di S. Andrea, per segnalare un passaggio a livello",
         "risposta": True,
+        "riassunto": "Scritta P L con croce → regolamentare per passaggio a livello?",
         "spiegazione": "Sì, è corretto. La scritta 'P L' (che sta per Passaggio a Livello) insieme alla croce di Sant'Andrea sulla pavimentazione è un segnale regolamentare per avvisare i conducenti della presenza di un passaggio a livello.",
         "regola": "PL + Croce = Passaggio a Livello.",
         "trabocchetti": ["P L", "croce di S. Andrea"],
@@ -1731,6 +1951,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si incontrano le strisce di figura dipinte sulla pavimentazione occorre moderare la velocità",
         "risposta": True,
+        "riassunto": "Strisce in figura → moderare la velocità?",
         "spiegazione": "Sì, è corretto. Le strisce speciali dipinte sulla pavimentazione (come quelle che creano un effetto ottico di restringimento o dossi artificiali) sono messe lì proprio per indurre i conducenti a rallentare e moderare la velocità per la sicurezza.",
         "regola": "Strisce strane = Rallenta!",
         "trabocchetti": ["Moderare la velocità"],
@@ -1739,12 +1960,14 @@ QUESTIONS = [
     {
         "domanda": "E' regolamentare trovare sulla pavimentazione la scritta indicante il nome di una località, a completamento della freccia direzionale",
         "risposta": True,
+        "riassunto": "Scritta con località → regolamentare con la freccia?",
         "spiegazione": "Sì, è corretto. Sulla pavimentazione si possono trovare scritte che indicano il nome di una località, spesso accompagnate da una freccia direzionale. Questo serve a guidare i conducenti verso la destinazione corretta.",
         "regola": "Nome città + freccia = Dove andare.",
     },
     {
         "domanda": "E' regolamentare trovare sulla pavimentazione la scritta STOP, per completare il segnale verticale di DARE PRECEDENZA",
         "risposta": False,
+        "riassunto": "Scritta STOP → col DARE PRECEDENZA?",
         "spiegazione": "No, è falso. La scritta 'STOP' sulla pavimentazione completa il segnale verticale di STOP. Il segnale verticale di 'DARE PRECEDENZA' è invece completato da un triangolo bianco disegnato sulla strada, non dalla scritta STOP.",
         "regola": "STOP = STOP. DARE PRECEDENZA = Triangolo.",
         "trabocchetti": ["DARE PRECEDENZA", "STOP"],
@@ -1752,6 +1975,7 @@ QUESTIONS = [
     {
         "domanda": "E' regolamentare trovare sulla pavimentazione la scritta indicante una prossima stazione di servizio",
         "risposta": False,
+        "riassunto": "Scritta stazione di servizio → regolamentare?",
         "spiegazione": "No, è falso. Le informazioni sulle stazioni di servizio future sono fornite da cartelli verticali lungo la strada, non da scritte sulla pavimentazione. Le scritte a terra sono per indicazioni immediate o pericoli.",
         "regola": "Stazione servizio = Cartello, non a terra.",
         "trabocchetti": ["Prossima stazione di servizio"],
@@ -1759,6 +1983,7 @@ QUESTIONS = [
     {
         "domanda": "E' regolamentare trovare sulla pavimentazione una scritta pubblicitaria che indica un distributore di carburante",
         "risposta": False,
+        "riassunto": "Scritta pubblicitaria distributore → regolamentare?",
         "spiegazione": "No, è falso. Sulla pavimentazione stradale è vietata qualsiasi forma di pubblicità. Le scritte a terra devono essere solo segnaletica ufficiale per la circolazione e la sicurezza.",
         "regola": "Strada = NO pubblicità.",
         "trabocchetti": ["pubblicitaria"],
@@ -1766,6 +1991,7 @@ QUESTIONS = [
     {
         "domanda": "E' regolamentare trovare sulla pavimentazione una scritta di incoraggiamento per i corridori ciclisti",
         "risposta": False,
+        "riassunto": "Scritta per ciclisti → regolamentare?",
         "spiegazione": "No, è falso. Le scritte sulla pavimentazione sono riservate alla segnaletica stradale ufficiale. Non è permesso scrivere messaggi di incoraggiamento per eventi sportivi o altro sulla strada.",
         "regola": "Strada = Solo segnali ufficiali.",
         "trabocchetti": ["Incoraggiamento per i corridori ciclisti"],
@@ -1773,6 +1999,7 @@ QUESTIONS = [
     {
         "domanda": "E' regolamentare trovare sulla pavimentazione la scritta TAXI, di colore bianco, nei parcheggi per taxi",
         "risposta": False,
+        "riassunto": "Scritta TAXI bianca → regolamentare?",
         "spiegazione": "No, è falso. Come abbiamo visto, la scritta 'TAXI' sulla pavimentazione, per indicare i parcheggi riservati, deve essere di colore giallo, non bianco. Il colore è una parte importante della segnaletica.",
         "regola": "TAXI = Giallo, non bianco!",
         "trabocchetti": ["bianco"],
@@ -1780,6 +2007,7 @@ QUESTIONS = [
     {
         "domanda": "E' regolamentare trovare sulla pavimentazione la scritta GIOCHI, in vicinanza di giardini pubblici",
         "risposta": False,
+        "riassunto": "Scritta GIOCHI → regolamentare?",
         "spiegazione": "No, è falso. La scritta 'GIOCHI' non è una segnaletica stradale regolamentare. Anche se ci sono giardini pubblici, le indicazioni per la sicurezza dei bambini sono date da altri tipi di segnali (ad esempio, 'Bambini' o 'Attenzione bambini'), non dalla parola 'GIOCHI' a terra.",
         "regola": "Strada = NO GIOCHI.",
         "trabocchetti": ["GIOCHI"],
@@ -1787,6 +2015,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione la striscia di mezzo può essere continua o discontinua (tratteggiata)",
         "risposta": True,
+        "riassunto": "Doppio senso → striscia di mezzo continua o tratteggiata?",
         "spiegazione": "In una strada dove le auto vanno in due direzioni diverse (doppio senso), la linea che sta in mezzo può essere di due tipi: continua (una linea unica) o discontinua (una linea fatta a tratti). Entrambe le soluzioni sono possibili a seconda della pericolosità della strada.",
         "regola": "Linea centrale: continua o discontinua, entrambe ok.",
         "trabocchetti": ["può essere"],
@@ -1794,6 +2023,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione la striscia di mezzo, se discontinua (tratteggiata), può essere superata durante un sorpasso",
         "risposta": True,
+        "riassunto": "Doppio senso → tratteggiata superabile per sorpassare?",
         "spiegazione": "Se la linea centrale è discontinua (cioè fatta a tratti), significa che puoi attraversarla per fare un sorpasso, ma solo se la manovra è sicura e non ci sono altri divieti (come un incrocio o una curva).",
         "regola": "Discontinua = puoi superare (con prudenza).",
         "trabocchetti": ["se discontinua (tratteggiata)"],
@@ -1801,6 +2031,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione la linea di mezzo può essere costituita da due strisce continue affiancate, come in figura",
         "risposta": True,
+        "riassunto": "Doppio senso → due strisce continue affiancate?",
         "spiegazione": "Sì, in alcune strade, specialmente dove è molto pericoloso sorpassare, la linea centrale può essere formata da due linee continue vicine. Questo serve a rafforzare il divieto di sorpasso e a indicare maggiore attenzione.",
         "regola": "Due continue = divieto forte.",
         "trabocchetti": ["può essere costituita"],
@@ -1809,6 +2040,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione la linea di mezzo se costituita da strisce continue, come in figura, consente il sorpasso senza superare le linee",
         "risposta": True,
+        "riassunto": "Doppio senso con continue → sorpasso senza superarle?",
         "spiegazione": "Se la linea è continua, non puoi attraversarla con il tuo veicolo. Tuttavia, puoi sorpassare un veicolo (ad esempio, una bicicletta o un veicolo molto lento) se riesci a farlo rimanendo completamente nella tua corsia, senza invadere la corsia opposta e quindi senza superare la linea continua.",
         "regola": "Continua = non attraversare, ma sorpassa nella tua corsia.",
         "trabocchetti": ["senza superare le linee"],
@@ -1817,6 +2049,7 @@ QUESTIONS = [
     {
         "domanda": "Nella carreggiata a doppio senso di circolazione le strisce di mezzo in figura dividono i sensi di marcia",
         "risposta": True,
+        "riassunto": "Doppio senso → strisce di mezzo dividono i sensi?",
         "spiegazione": "Le linee centrali in una strada a doppio senso di circolazione hanno proprio lo scopo di separare il traffico che va in una direzione da quello che viene nella direzione opposta. Sono un confine visivo tra i due sensi di marcia.",
         "regola": "Linea centrale = separa i due sensi.",
         "trabocchetti": ["dividono i sensi di marcia"],
@@ -1825,6 +2058,7 @@ QUESTIONS = [
     {
         "domanda": "Nella carreggiata a doppio senso di circolazione la striscia di mezzo in figura, può essere superata con le sole ruote di sinistra",
         "risposta": False,
+        "riassunto": "Doppio senso → striscia superabile con le ruote di sinistra?",
         "spiegazione": "Se la striscia di mezzo è continua, non puoi superarla nemmeno con una parte del veicolo. Se fosse discontinua, potresti superarla completamente per un sorpasso, non solo parzialmente. La frase 'con le sole ruote di sinistra' è una trappola: o non si supera affatto (se continua) o si supera completamente (se discontinua e per sorpasso).",
         "regola": "Linea continua = non superare mai. 'Solo con le ruote di sinistra' è quasi sempre FALSO.",
         "immagine": "f722e4ba8d273e10ce97.jpg",
@@ -1832,6 +2066,7 @@ QUESTIONS = [
     {
         "domanda": "Nella carreggiata a doppio senso di circolazione come in figura la striscia di mezzo divide la strada in due carreggiate, ognuna a due corsie",
         "risposta": False,
+        "riassunto": "Doppio senso in figura → due carreggiate a due corsie?",
         "spiegazione": "Una carreggiata è la parte di strada dove circolano i veicoli. Una striscia di mezzo all'interno di una carreggiata a doppio senso divide i sensi di marcia, ma non divide la strada in due carreggiate separate. Per avere due carreggiate, ci dovrebbe essere uno spartitraffico (un'isola di cemento o un'area verde) in mezzo, non solo una linea.",
         "regola": "Striscia centrale = divide sensi, non carreggiate. Due carreggiate = spartitraffico.",
         "trabocchetti": ["divide la strada in due carreggiate"],
@@ -1840,6 +2075,7 @@ QUESTIONS = [
     {
         "domanda": "L'iscrizione in figura indica la velocità consigliata",
         "risposta": True,
+        "riassunto": "Iscrizione in figura → velocità consigliata?",
         "spiegazione": "Un numero '50' dipinto sulla strada o su un cartello quadrato verde indica una velocità consigliata, cioè suggerita per la sicurezza, ma non obbligatoria. Non è un limite massimo di velocità.",
         "regola": "Consigliata = suggerita, non imposta.",
         "trabocchetti": ["consigliata"],
@@ -1848,6 +2084,7 @@ QUESTIONS = [
     {
         "domanda": "Il dispositivo in figura è un dosso artificiale",
         "risposta": True,
+        "riassunto": "Dispositivo in figura → dosso artificiale?",
         "spiegazione": "Un dosso artificiale è un rialzo sulla strada, creato apposta per far rallentare i veicoli e aumentare la sicurezza. È un tipo di rallentatore di velocità.",
         "regola": "Dosso = rallentatore.",
         "trabocchetti": ["Dosso artificiale"],
@@ -1856,6 +2093,7 @@ QUESTIONS = [
     {
         "domanda": "L'elemento in figura è un rallentatore di velocità installato sulla strada",
         "risposta": True,
+        "riassunto": "Elemento in figura → rallentatore?",
         "spiegazione": "I rallentatori di velocità sono dispositivi (come dossi, bande sonore o cuscini berlinesi) che vengono installati sulla strada per obbligare i conducenti a ridurre la velocità, migliorando la sicurezza.",
         "regola": "Rallentatore = ti fa andare piano.",
         "trabocchetti": ["Rallentatore di velocità"],
@@ -1864,6 +2102,7 @@ QUESTIONS = [
     {
         "domanda": "L'elemento in figura rappresenta un rallentatore di velocità",
         "risposta": True,
+        "riassunto": "Elemento in figura → rallentatore di velocità?",
         "spiegazione": "Questa domanda ribadisce il concetto: qualsiasi elemento installato sulla strada con lo scopo di far diminuire la velocità dei veicoli è un rallentatore di velocità.",
         "regola": "Rallentatore = per la sicurezza.",
         "trabocchetti": ["rallentatore di velocità"],
@@ -1872,6 +2111,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce di delimitazione gialle in figura individuano un'area di parcheggio riservata a persone invalide",
         "risposta": True,
+        "riassunto": "Strisce gialle in figura → parcheggio invalidi?",
         "spiegazione": "Le aree di parcheggio riservate alle persone con disabilità sono sempre delimitate da strisce gialle e hanno il simbolo internazionale della sedia a rotelle disegnato a terra.",
         "regola": "Giallo + simbolo = parcheggio disabili.",
         "trabocchetti": ["strisce di delimitazione gialle", "persone invalide"],
@@ -1880,6 +2120,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce gialle diagonali in figura devono essere lasciate libere per consentire l'entrata e l'uscita dal veicolo delle persone invalide",
         "risposta": True,
+        "riassunto": "Strisce gialle diagonali → libere per salire e scendere?",
         "spiegazione": "Le strisce gialle diagonali che si trovano accanto a un parcheggio per disabili non sono un'area di sosta, ma uno spazio di manovra. Devono essere lasciate libere per permettere alle persone con disabilità di salire e scendere dal veicolo con facilità.",
         "regola": "Strisce diagonali gialle = spazio vitale per disabili.",
         "trabocchetti": ["Strisce gialle diagonali"],
@@ -1888,6 +2129,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza dell'iscrizione in figura non è consentito il transito di veicoli con massa a pieno carico superiore a 50 quintali",
         "risposta": False,
+        "riassunto": "Iscrizione in figura → vietato oltre 50 quintali?",
         "spiegazione": "L'iscrizione '50' (se si riferisce a un segnale di velocità o a un numero sulla strada) indica la velocità massima o consigliata, non il peso dei veicoli. Un limite di peso è indicato da un segnale specifico con il simbolo del camion e il peso in tonnellate o quintali.",
         "regola": "50 (segnalato così) = velocità, non peso.",
         "trabocchetti": ["massa a pieno carico"],
@@ -1896,6 +2138,7 @@ QUESTIONS = [
     {
         "domanda": "L'elemento in figura è posto su un tratto di strada su cui è vietata la sosta",
         "risposta": False,
+        "riassunto": "Elemento in figura → dove la sosta è vietata?",
         "spiegazione": "L'elemento nero e giallo raffigurato è un dosso artificiale, usato per far rallentare i veicoli. Non è un parcheggio per persone con disabilità e non è un segnale di divieto di sosta: la sua presenza, da sola, non vieta la sosta lungo il tratto.",
         "regola": "Dosso artificiale = rallentare; non stabilisce un divieto di sosta.",
         "immagine": "d2b0523ec26943519c22.jpg",
@@ -1903,6 +2146,7 @@ QUESTIONS = [
     {
         "domanda": "L'elemento in figura individua un attraversamento ciclabile",
         "risposta": False,
+        "riassunto": "Elemento in figura → attraversamento ciclabile?",
         "spiegazione": "Un attraversamento ciclabile è segnalato da strisce bianche larghe e parallele, diverse da quelle di un parcheggio per disabili o da un dosso. Non c'è relazione con il numero '50' o le strisce gialle.",
         "regola": "Ciclabile = strisce bianche larghe.",
         "trabocchetti": ["Attraversamento ciclabile"],
@@ -1911,6 +2155,7 @@ QUESTIONS = [
     {
         "domanda": "L'elemento in figura individua un attraversamento pedonale",
         "risposta": False,
+        "riassunto": "Elemento in figura → attraversamento pedonale?",
         "spiegazione": "Un attraversamento pedonale è segnalato da strisce bianche parallele, le cosiddette 'zebre'. Non è un dosso, né un parcheggio per disabili, né il numero '50'.",
         "regola": "Pedonale = strisce bianche strette (zebre).",
         "trabocchetti": ["Attraversamento pedonale"],
@@ -1919,6 +2164,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce gialle in figura delimitano un'area di parcheggio riservata ai taxi",
         "risposta": False,
+        "riassunto": "Strisce gialle in figura → parcheggio taxi?",
         "spiegazione": "Le strisce gialle, se associate al simbolo della sedia a rotelle (come implicato dalle domande 20925 e 20926), delimitano un parcheggio per disabili. I parcheggi per taxi hanno una segnaletica specifica, spesso con la scritta 'TAXI' e/o un cartello.",
         "regola": "Giallo = riservato. Ma a chi? Controlla il simbolo!",
         "trabocchetti": ["Riservata ai taxi"],
@@ -1927,6 +2173,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce gialle in figura delimitano un'area riservata al carico e allo scarico di merci",
         "risposta": False,
+        "riassunto": "Strisce gialle in figura → carico e scarico?",
         "spiegazione": "Anche in questo caso, se le strisce gialle sono quelle di un parcheggio per disabili, la risposta è falsa. Le aree di carico/scarico merci hanno segnaletica specifica, spesso con la scritta 'CARICO/SCARICO' o un cartello.",
         "regola": "Giallo = riservato. Ma a chi? Non confondere!",
         "immagine": "bb2b938b723e30cde9e3.jpg",
@@ -1934,6 +2181,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca laterale discontinua in figura separa la carreggiata da una piazzola di sosta",
         "risposta": True,
+        "riassunto": "Laterale discontinua → separa da piazzola di sosta?",
         "spiegazione": "La striscia bianca laterale discontinua (tratteggiata) indica che puoi attraversarla per entrare o uscire dalla carreggiata. Una piazzola di sosta è un'area dove puoi fermarti, quindi è logico che ci sia una linea tratteggiata per permettere l'accesso.",
         "regola": "Linea tratteggiata laterale = puoi entrare/uscire.",
         "trabocchetti": ["discontinua"],
@@ -1942,6 +2190,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca laterale discontinua in figura separa la carreggiata da un passo carrabile",
         "risposta": True,
+        "riassunto": "Laterale discontinua → separa da passo carrabile?",
         "spiegazione": "Un passo carrabile è un ingresso per veicoli (ad esempio, un garage o un cortile). Per entrare o uscire da un passo carrabile, devi poter attraversare la linea che lo separa dalla strada. Una linea tratteggiata permette proprio questo.",
         "regola": "Linea tratteggiata laterale = puoi entrare/uscire.",
         "trabocchetti": ["discontinua"],
@@ -1950,6 +2199,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce bianche discontinue sull'intersezione in figura sono strisce di guida",
         "risposta": True,
+        "riassunto": "Discontinue sull'incrocio → strisce di guida?",
         "spiegazione": "Le strisce bianche discontinue che vedi all'interno dell'incrocio servono a 'guidare' i veicoli che svoltano, aiutandoli a mantenere la traiettoria corretta e a non invadere la corsia opposta o altre aree. Sono proprio chiamate 'strisce di guida'.",
         "regola": "Strisce interne tratteggiate = ti guidano nella svolta.",
         "trabocchetti": ["strisce di guida"],
@@ -1958,6 +2208,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca laterale discontinua in figura divide la carreggiata da una corsia di accelerazione",
         "risposta": True,
+        "riassunto": "Laterale discontinua → separa da corsia di accelerazione?",
         "spiegazione": "Una corsia di accelerazione serve per entrare in una strada più veloce (come un'autostrada) aumentando gradualmente la velocità. Per passare dalla corsia di accelerazione alla carreggiata principale, devi poter attraversare la linea che le separa. Una linea tratteggiata lo consente.",
         "regola": "Linea tratteggiata laterale = puoi entrare/uscire.",
         "trabocchetti": ["discontinua"],
@@ -1966,6 +2217,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca laterale discontinua in figura individua il bordo della strada principale, separandolo da quello della strada secondaria",
         "risposta": True,
+        "riassunto": "Laterale discontinua → bordo strada principale da secondaria?",
         "spiegazione": "L'immagine mostra la strada principale e un'area laterale che può essere l'inizio di una strada secondaria o un accesso. La linea tratteggiata indica il punto in cui puoi passare dalla strada principale a quest'area laterale, che può essere considerata una strada secondaria o un suo accesso.",
         "regola": "Linea tratteggiata laterale = punto di incontro tra strade.",
         "trabocchetti": ["bordo della strada principale", "strada secondaria"],
@@ -1974,6 +2226,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca laterale discontinua in figura può essere superata solo in caso di emergenza",
         "risposta": False,
+        "riassunto": "Laterale discontinua → superabile solo in emergenza?",
         "spiegazione": "Una linea bianca laterale discontinua (tratteggiata) può essere superata in qualsiasi momento, purché si faccia con prudenza e rispettando le regole del traffico. Non è limitata solo ai casi di emergenza. Le linee continue, invece, di solito non si possono superare.",
         "regola": "Tratteggiata = si può superare sempre (con prudenza).",
         "trabocchetti": ["solo in caso di emergenza"],
@@ -1982,6 +2235,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca laterale discontinua in figura significa che la sosta non è possibile",
         "risposta": False,
+        "riassunto": "Laterale discontinua → sosta impossibile?",
         "spiegazione": "La striscia bianca laterale discontinua indica solo che puoi attraversare quel punto per entrare o uscire dalla carreggiata. Non dà alcuna informazione specifica sulla possibilità o meno di sostare. La sosta è regolata da altri segnali o dalla natura dell'area (ad esempio, non si sosta su un passo carrabile, ma si potrebbe sostare su una piazzola).",
         "regola": "Linea tratteggiata = non dice nulla sulla sosta.",
         "trabocchetti": ["significa che la sosta non è possibile"],
@@ -1990,6 +2244,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca laterale discontinua separa la carreggiata dalla corsia di emergenza",
         "risposta": False,
+        "riassunto": "Laterale discontinua → separa dalla corsia di emergenza?",
         "spiegazione": "La corsia di emergenza, che si trova spesso in autostrada, è separata dalla carreggiata da una striscia bianca LATERALE CONTINUA, non discontinua. Questo per scoraggiare l'uso improprio e permettere l'accesso solo in caso di reale emergenza.",
         "regola": "Corsia di emergenza = linea continua.",
         "trabocchetti": ["emergenza"],
@@ -1997,6 +2252,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca laterale discontinua segnala l'inizio di una banchina",
         "risposta": False,
+        "riassunto": "Laterale discontinua → inizio banchina?",
         "spiegazione": "La banchina è la parte della strada esterna alla carreggiata, senza marciapiede. Di solito, la banchina è separata dalla carreggiata da una striscia bianca LATERALE CONTINUA, non discontinua, per indicare che non è un'area di normale transito o accesso.",
         "regola": "Banchina = linea continua.",
         "trabocchetti": ["banchina"],
@@ -2004,6 +2260,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce bianche di guida in figura non consentono la svolta",
         "risposta": False,
+        "riassunto": "Strisce di guida → niente svolta?",
         "spiegazione": "Le strisce bianche di guida, come dice il nome stesso, servono proprio a 'guidarti' e a facilitare la svolta in un incrocio, indicandoti la traiettoria corretta. Non la vietano affatto, anzi, la rendono più sicura.",
         "regola": "Strisce di guida = ti aiutano a svoltare.",
         "trabocchetti": ["non consentono la svolta"],
@@ -2012,6 +2269,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca laterale discontinua in figura delimita l'accesso ad una pista ciclabile",
         "risposta": False,
+        "riassunto": "Laterale discontinua → accesso a pista ciclabile?",
         "spiegazione": "La striscia bianca laterale discontinua in figura indica un accesso o un'uscita per veicoli dalla carreggiata. Non ha a che fare con una pista ciclabile, che avrebbe segnaletica specifica (come simboli di biciclette o colori diversi).",
         "regola": "Linea tratteggiata = per veicoli, non per bici.",
         "trabocchetti": ["pista ciclabile"],
@@ -2020,6 +2278,7 @@ QUESTIONS = [
     {
         "domanda": "La striscia bianca laterale discontinua in figura, delimita una piazzola di sosta",
         "risposta": False,
+        "riassunto": "Laterale discontinua → delimita piazzola di sosta?",
         "spiegazione": "Attenzione alla differenza! La striscia bianca laterale discontinua 'separa' la carreggiata dall'accesso a una piazzola di sosta (come visto nella domanda 20933), ma non 'delimita' l'intera piazzola di sosta. La linea è il bordo della carreggiata che permette l'accesso, non il perimetro completo della piazzola stessa.",
         "regola": "La linea tratteggiata è il *bordo della strada*, non il *bordo della piazzola*.",
         "trabocchetti": ["delimita"],

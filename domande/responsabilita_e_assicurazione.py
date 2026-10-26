@@ -1,7 +1,7 @@
 """Domande — Responsabilità e assicurazione.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Responsabilità e assicurazione"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Chi è civilmente obbligato a risarcire i danni provocati da un sinistro stradale si libera dall'obbligo se risarcisce il danneggiato",
         "risposta": True,
+        "riassunto": "Obbligato al risarcimento → liberato pagando il danneggiato?",
         "spiegazione": "Se hai causato un incidente e devi pagare i danni (obbligo civile), una volta che hai pagato o riparato il danno alla persona che lo ha subito, il tuo obbligo finisce. È come saldare un debito.",
         "regola": "Paga il danno = Obbligo civile finito.",
         "trabocchetti": ["si libera dall"],
@@ -17,6 +18,7 @@ QUESTIONS = [
     {
         "domanda": "Chi è civilmente obbligato a risarcire i danni provocati da un sinistro stradale può accordarsi con il danneggiato circa il valore del risarcimento",
         "risposta": True,
+        "riassunto": "Obbligato al risarcimento → accordo sul valore?",
         "spiegazione": "Sì, le due persone coinvolte nell'incidente (chi ha causato il danno e chi lo ha subito) possono parlare e trovare un accordo su quanti soldi pagare o come riparare il danno. Non è sempre necessario andare in tribunale.",
         "regola": "Accordo tra le parti = Sempre possibile.",
         "trabocchetti": ["può accordarsi"],
@@ -24,6 +26,7 @@ QUESTIONS = [
     {
         "domanda": "Chi è civilmente obbligato a risarcire i danni provocati da un sinistro stradale può far riparare il proprio autoveicolo",
         "risposta": True,
+        "riassunto": "Obbligato al risarcimento → può far riparare la propria auto?",
         "spiegazione": "Se hai causato un incidente e devi risarcire i danni agli altri, questo non ti impedisce di far riparare anche la tua macchina, se si è danneggiata. Sono due cose diverse: l'obbligo verso terzi e la gestione del proprio bene.",
         "regola": "La tua auto è tua = Puoi ripararla.",
         "trabocchetti": ["il proprio autoveicolo"],
@@ -31,6 +34,7 @@ QUESTIONS = [
     {
         "domanda": "Chi è civilmente obbligato a risarcire i danni provocati da un sinistro stradale può farsi assistere da un consulente d'infortunistica stradale",
         "risposta": True,
+        "riassunto": "Obbligato al risarcimento → consulente di infortunistica?",
         "spiegazione": "Sì, se sei coinvolto in un incidente e devi pagare i danni, puoi chiedere aiuto a un esperto (un consulente) che ti aiuti a gestire la situazione, i documenti e i rapporti con l'assicurazione o l'altra parte. È un tuo diritto.",
         "regola": "Chiedi aiuto = È un tuo diritto.",
         "trabocchetti": ["può farsi assistere"],
@@ -38,6 +42,7 @@ QUESTIONS = [
     {
         "domanda": "Chi è civilmente obbligato a risarcire i danni provocati da un sinistro stradale può, in alternativa, chiedere che la propria patente di guida sia revocata",
         "risposta": False,
+        "riassunto": "Obbligato al risarcimento → chiedere la revoca della patente?",
         "spiegazione": "L'obbligo di pagare i danni (responsabilità civile) non ha nulla a che fare con la patente di guida. Non puoi scegliere di farti togliere la patente invece di pagare i danni. Sono due tipi di sanzioni o conseguenze diverse.",
         "regola": "Patente e soldi = Non sono alternative.",
         "trabocchetti": ["in alternativa"],
@@ -45,6 +50,7 @@ QUESTIONS = [
     {
         "domanda": "Chi è civilmente obbligato a risarcire i danni provocati da un sinistro stradale si libera da ogni forma di responsabilità penale pagandone l'ammontare del danno",
         "risposta": False,
+        "riassunto": "Pagando il danno → nessuna responsabilità penale?",
         "spiegazione": "Pagare i danni (responsabilità civile) ti libera solo dall'obbligo di risarcire economicamente. Se l'incidente ha causato reati (come lesioni gravi o omicidio stradale), la responsabilità penale rimane e non sparisce pagando i soldi. Sono due tipi di responsabilità diverse.",
         "regola": "Paga i danni = Solo civile, non penale.",
         "trabocchetti": ["ogni forma di responsabilità penale"],
@@ -52,6 +58,7 @@ QUESTIONS = [
     {
         "domanda": "Chi è penalmente e civilmente responsabile di un sinistro stradale è soggetto alle pene previste dal Codice Penale",
         "risposta": True,
+        "riassunto": "Responsabile penale e civile → pene del Codice Penale?",
         "spiegazione": "Se sei responsabile di un incidente e hai commesso un reato (ad esempio, lesioni gravi o omicidio stradale), la legge ti punisce con le pene previste dal Codice Penale. Quindi, se c'è una responsabilità penale, ci sono anche le pene penali.",
         "regola": "Penalmente = Pene del Codice Penale.",
         "trabocchetti": ["penalmente"],
@@ -59,6 +66,7 @@ QUESTIONS = [
     {
         "domanda": "Chi è penalmente e civilmente responsabile di un sinistro stradale è tenuto al risarcimento dei danni",
         "risposta": True,
+        "riassunto": "Responsabile → risarcimento dei danni?",
         "spiegazione": "Se sei responsabile di un incidente, devi pagare i danni che hai causato ad altre persone o alle loro cose. Questo pagamento si chiama 'risarcimento dei danni' ed è la conseguenza della responsabilità civile.",
         "regola": "Civilmente = Risarcimento danni.",
         "trabocchetti": ["civilmente"],
@@ -66,12 +74,14 @@ QUESTIONS = [
     {
         "domanda": "Chi è penalmente e civilmente responsabile di un sinistro stradale qualora abbia violato norme del Codice della strada è anche soggetto alle relative sanzioni",
         "risposta": True,
+        "riassunto": "Responsabile con violazioni → anche sanzioni del Codice della strada?",
         "spiegazione": "Se hai causato un incidente perché non hai rispettato le regole della strada (ad esempio, sei passato con il rosso o andavi troppo veloce), oltre alle responsabilità penali e civili, riceverai anche le multe e le sanzioni previste dal Codice della Strada.",
         "regola": "Violazione CdS = Sanzioni CdS.",
     },
     {
         "domanda": "Chi è penalmente e civilmente responsabile di un sinistro stradale può incorrere nella sospensione della patente di guida",
         "risposta": True,
+        "riassunto": "Responsabile → possibile sospensione della patente?",
         "spiegazione": "Sì, se sei responsabile di un incidente grave o hai commesso infrazioni importanti, la tua patente può essere sospesa per un certo periodo. Questo significa che non potrai guidare per un po' di tempo.",
         "regola": "Incidente grave = Patente sospesa (possibile).",
         "trabocchetti": ["può incorrere"],
@@ -79,6 +89,7 @@ QUESTIONS = [
     {
         "domanda": "Chi è penalmente e civilmente responsabile di un sinistro stradale può incorrere nella revoca della patente di guida",
         "risposta": True,
+        "riassunto": "Responsabile → possibile revoca?",
         "spiegazione": "In casi molto gravi, come incidenti con lesioni gravissime o omicidio stradale, la patente può essere revocata, cioè tolta definitivamente. Non potrai più guidare, a meno che tu non rifaccia tutti gli esami dopo un certo periodo.",
         "regola": "Incidente gravissimo = Patente revocata (possibile).",
         "trabocchetti": ["può incorrere"],
@@ -86,6 +97,7 @@ QUESTIONS = [
     {
         "domanda": "Chi è penalmente e civilmente responsabile di un sinistro stradale può incorrere nella revisione della patente di guida",
         "risposta": True,
+        "riassunto": "Responsabile → possibile revisione?",
         "spiegazione": "Dopo un incidente, le autorità possono chiedere di fare di nuovo gli esami (teoria e pratica) per verificare che tu sia ancora idoneo a guidare. Questa è la 'revisione della patente'.",
         "regola": "Incidente = Revisione patente (possibile).",
         "trabocchetti": ["può incorrere", "revisione"],
@@ -93,6 +105,7 @@ QUESTIONS = [
     {
         "domanda": "Chi è penalmente e civilmente responsabile di un sinistro stradale è sempre soggetto all'arresto preventivo",
         "risposta": False,
+        "riassunto": "Responsabile → sempre arresto preventivo?",
         "spiegazione": "No, l'arresto preventivo (cioè essere arrestati subito e messi in carcere prima del processo) non avviene 'sempre'. Succede solo in casi molto gravi e specifici, non per ogni incidente stradale.",
         "regola": "'Sempre' = Attenzione! (Spesso FALSO).",
         "trabocchetti": ["sempre"],
@@ -100,12 +113,14 @@ QUESTIONS = [
     {
         "domanda": "Chi è penalmente e civilmente responsabile di un sinistro stradale non può continuare a guidare veicoli della stessa categoria, ma solo di categoria inferiore",
         "risposta": False,
+        "riassunto": "Responsabile → solo categoria inferiore?",
         "spiegazione": "No, questa affermazione è falsa. Se la patente non viene sospesa o revocata, puoi continuare a guidare i veicoli per cui sei abilitato. Non c'è una regola che ti obbliga a guidare solo veicoli di categoria inferiore dopo un incidente.",
         "regola": "Nessuna regola su 'categoria inferiore'.",
     },
     {
         "domanda": "Chi è penalmente e civilmente responsabile di un sinistro stradale è in ogni caso assoggettato alla revoca della patente",
         "risposta": False,
+        "riassunto": "Responsabile → sempre revoca?",
         "spiegazione": "No, la revoca della patente è una misura molto grave e non succede 'in ogni caso'. Avviene solo per incidenti gravissimi o reati molto seri, non per qualsiasi responsabilità in un sinistro.",
         "regola": "'In ogni caso' = Attenzione! (Spesso FALSO).",
         "trabocchetti": ["in ogni caso"],
@@ -113,6 +128,7 @@ QUESTIONS = [
     {
         "domanda": "Chi è penalmente e civilmente responsabile di un sinistro stradale non è assoggettato alle sanzioni del codice della strada",
         "risposta": False,
+        "riassunto": "Responsabile → niente sanzioni del Codice della strada?",
         "spiegazione": "Questa è falsa. Se hai violato le regole del Codice della Strada causando l'incidente, sei assolutamente soggetto anche alle sanzioni (multe, decurtazione punti, ecc.) previste dal Codice della Strada. Le responsabilità penali e civili si aggiungono, non sostituiscono, le sanzioni del CdS.",
         "regola": "Violazione CdS = Sanzioni CdS (anche con altre responsabilità).",
         "trabocchetti": ["non è assoggettato"],
@@ -120,6 +136,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale è esclusa quando vi siano danni involontari alle sole cose",
         "risposta": True,
+        "riassunto": "Responsabilità penale esclusa → solo danni involontari alle cose?",
         "spiegazione": "La responsabilità penale riguarda i reati, cioè le azioni gravi che la legge punisce con la prigione o multe pesanti. Se in un incidente ci sono solo danni alle cose (macchine, guardrail, ecc.) e nessuno si fa male, di solito non c'è un reato. Quindi, non c'è responsabilità penale, ma solo responsabilità civile (l'obbligo di pagare i danni).",
         "regola": "Danni solo a cose = no penale.",
         "trabocchetti": ["danni involontari alle sole cose", "Sole cose"],
@@ -127,6 +144,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale è esclusa quando il fatto non sia considerato un reato",
         "risposta": True,
+        "riassunto": "Responsabilità penale esclusa → se non è reato?",
         "spiegazione": "La responsabilità penale esiste solo se quello che è successo è considerato un reato dalla legge. Se l'incidente o l'azione non rientra nelle definizioni di reato (ad esempio, un piccolo incidente con solo danni materiali e nessuna infrazione grave), allora non c'è responsabilità penale.",
         "regola": "No reato = no penale.",
         "trabocchetti": ["non sia considerato un reato"],
@@ -134,6 +152,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale è esclusa quando il fatto dipende da causa di forza maggiore",
         "risposta": True,
+        "riassunto": "Responsabilità penale esclusa → forza maggiore?",
         "spiegazione": "La 'causa di forza maggiore' è un evento imprevedibile e irresistibile che non si poteva evitare (ad esempio, un malore improvviso e imprevedibile del conducente, un fulmine che colpisce l'auto, un terremoto). Se l'incidente è causato da qualcosa che non potevi controllare o prevedere, non hai colpa e quindi non c'è responsabilità penale.",
         "regola": "Forza maggiore = non è colpa tua.",
         "trabocchetti": ["causa di forza maggiore"],
@@ -141,6 +160,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale è esclusa quando si sia prestato soccorso alla vittima",
         "risposta": False,
+        "riassunto": "Responsabilità penale esclusa → se si è soccorso?",
         "spiegazione": "Prestare soccorso è un dovere morale e legale, e può attenuare (diminuire) la pena o evitare un'accusa aggiuntiva (omissione di soccorso), ma non elimina la responsabilità penale per l'incidente stesso se hai commesso un reato (ad esempio, lesioni gravi o omicidio stradale). Se hai causato un incidente grave, sei comunque responsabile penalmente, anche se hai aiutato la vittima.",
         "regola": "Soccorrere è un dovere, non una scusa.",
         "trabocchetti": ["è esclusa"],
@@ -148,6 +168,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale è esclusa ogni qualvolta ci sia stato il risarcimento del danno",
         "risposta": False,
+        "riassunto": "Responsabilità penale esclusa → col risarcimento?",
         "spiegazione": "Il risarcimento del danno (pagare per i danni) riguarda la responsabilità civile. La responsabilità penale riguarda i reati. Anche se paghi tutti i danni (responsabilità civile), se hai commesso un reato (ad esempio, lesioni gravi o omicidio stradale), la responsabilità penale rimane. Il risarcimento può influenzare la pena, ma non la elimina.",
         "regola": "Pagare non cancella il reato.",
         "trabocchetti": ["ogni qualvolta", "risarcimento del danno"],
@@ -155,6 +176,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale è esclusa qualora intervenga l'impresa di assicurazione che risarcisca adeguatamente il danneggiato",
         "risposta": False,
+        "riassunto": "Responsabilità penale esclusa → se paga l'assicurazione?",
         "spiegazione": "Questa domanda è simile alla precedente. L'assicurazione paga i danni (responsabilità civile) per conto tuo. Ma se hai commesso un reato (ad esempio, lesioni gravi o omicidio stradale), la responsabilità penale è personale e non può essere 'pagata' o eliminata dall'assicurazione. L'assicurazione non ti toglie la responsabilità penale.",
         "regola": "L'assicurazione paga i danni, non i reati.",
         "trabocchetti": ["è esclusa", "impresa di assicurazione che risarcisca"],
@@ -162,6 +184,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale sorge qualora esso provochi lesioni gravi a persone",
         "risposta": True,
+        "riassunto": "Responsabilità penale → lesioni gravi?",
         "spiegazione": "La responsabilità penale sorge quando un incidente stradale causa ferite gravi a una persona. Questo perché causare lesioni gravi è considerato un reato dalla legge.",
         "regola": "Lesioni gravi = reato penale.",
         "trabocchetti": ["lesioni gravi"],
@@ -169,6 +192,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale sorge anche in caso di omicidio colposo",
         "risposta": True,
+        "riassunto": "Responsabilità penale → omicidio colposo?",
         "spiegazione": "L'omicidio colposo significa causare la morte di una persona per sbaglio o per negligenza (senza volerlo). Questo è un reato molto grave e comporta sempre responsabilità penale.",
         "regola": "Morte per sbaglio = reato grave.",
         "trabocchetti": ["omicidio colposo"],
@@ -176,6 +200,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale sorge allorché vengano violate norme contemplate dal Codice Penale",
         "risposta": True,
+        "riassunto": "Responsabilità penale → violazioni del Codice Penale?",
         "spiegazione": "La responsabilità penale nasce quando si commette un reato. I reati sono descritti nel Codice Penale. Quindi, se un incidente viola una regola del Codice Penale (come causare lesioni gravi o la morte), c'è responsabilità penale.",
         "regola": "Codice Penale = reato = penale.",
         "trabocchetti": ["Codice Penale"],
@@ -183,6 +208,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale sorge in ogni caso in cui sia violato il Codice della strada",
         "risposta": False,
+        "riassunto": "Responsabilità penale → ogni violazione del Codice della strada?",
         "spiegazione": "Non tutte le violazioni del Codice della Strada portano a responsabilità penale. Molte violazioni (come un divieto di sosta o un eccesso di velocità lieve) comportano solo sanzioni amministrative (multe, punti). La responsabilità penale sorge solo se la violazione del Codice della Strada causa un reato (es. lesioni gravi o morte).",
         "regola": "Non 'ogni caso' del Codice della Strada è penale.",
         "trabocchetti": ["in ogni caso"],
@@ -190,6 +216,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale sorge quando il veicolo vada completamente distrutto",
         "risposta": False,
+        "riassunto": "Responsabilità penale → veicolo distrutto?",
         "spiegazione": "La responsabilità penale riguarda i reati contro le persone o contro la sicurezza pubblica. La distruzione di un veicolo è un danno materiale (alle cose), che di solito comporta responsabilità civile (risarcimento), non penale, a meno che non sia collegato a un reato contro persone.",
         "regola": "Danno al veicolo = civile, non penale.",
         "trabocchetti": ["veicolo vada completamente distrutto"],
@@ -197,6 +224,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale sorge in tutti i casi di danni alle persone o alle cose",
         "risposta": False,
+        "riassunto": "Responsabilità penale → ogni danno a persone o cose?",
         "spiegazione": "Non 'tutti i casi' di danni alle persone o alle cose portano a responsabilità penale. Per le persone, solo se ci sono lesioni gravi o morte. Per le cose, quasi mai è penale, ma civile. Un piccolo graffio a una persona o un danno lieve a un'auto non portano a responsabilità penale.",
         "regola": "Non 'tutti i casi' di danno sono penali.",
         "trabocchetti": ["in tutti i casi"],
@@ -204,12 +232,14 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità penale connessa al sinistro stradale sorge nei confronti del proprietario del veicolo se il conducente non è stato identificato",
         "risposta": False,
+        "riassunto": "Responsabilità penale → del proprietario se il conducente è ignoto?",
         "spiegazione": "La responsabilità penale è personale. Significa che risponde solo chi ha commesso il reato (il conducente che ha causato l'incidente). Il proprietario del veicolo risponde per la responsabilità civile (pagare i danni) o per alcune sanzioni amministrative, ma non per la responsabilità penale se non era lui a guidare.",
         "regola": "Penale = chi guida, non chi possiede.",
     },
     {
         "domanda": "La responsabilità civile connessa al sinistro stradale consiste nell'obbligo di risarcire i danni causati sia alle persone che alle cose",
         "risposta": True,
+        "riassunto": "Responsabilità civile → risarcire persone e cose?",
         "spiegazione": "VERO. La responsabilità civile significa che se causi un incidente, devi pagare per i danni. Questi danni possono essere sia alle persone (per esempio, ferite) sia alle cose (per esempio, la macchina o altri oggetti danneggiati).",
         "regola": "Civile = Persone + Cose.",
         "trabocchetti": ["sia alle persone che alle cose"],
@@ -217,12 +247,14 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità civile connessa al sinistro stradale grava sul proprietario e sul conducente del veicolo",
         "risposta": True,
+        "riassunto": "Responsabilità civile → proprietario e conducente?",
         "spiegazione": "VERO. In caso di incidente, la responsabilità civile ricade sia su chi guidava il veicolo (il conducente) sia su chi ne è il proprietario. Questo perché il proprietario è responsabile del suo veicolo, anche se non lo guidava lui al momento dell'incidente.",
         "regola": "Responsabili: Guida + Possiede.",
     },
     {
         "domanda": "La responsabilità civile connessa al sinistro stradale obbliga il responsabile al risarcimento del danno",
         "risposta": True,
+        "riassunto": "Responsabilità civile → obbligo di risarcire?",
         "spiegazione": "VERO. Se sei civilmente responsabile di un incidente, hai l'obbligo, cioè il dovere, di pagare per i danni che hai causato. Questo pagamento si chiama 'risarcimento'.",
         "regola": "Responsabilità = Obbligo di risarcire.",
         "trabocchetti": ["obbliga"],
@@ -230,6 +262,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità civile connessa al sinistro stradale è indipendente dalla responsabilità penale e dalla responsabilità amministrativa",
         "risposta": True,
+        "riassunto": "Responsabilità civile → indipendente da penale e amministrativa?",
         "spiegazione": "VERO. Ci sono diversi tipi di responsabilità: civile (pagare i danni), penale (se hai commesso un reato, come lesioni gravi) e amministrativa (se hai violato il Codice della Strada, come eccesso di velocità). Anche se un incidente può causare tutte e tre, sono considerate separate e indipendenti l'una dall'altra.",
         "regola": "Civile, Penale, Amministrativa: Ognuna per sé.",
         "trabocchetti": ["indipendente"],
@@ -237,6 +270,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità civile connessa al sinistro stradale è basata sul principio che ogni danno causato deve essere risarcito",
         "risposta": True,
+        "riassunto": "Responsabilità civile → ogni danno va risarcito?",
         "spiegazione": "VERO. Il principio fondamentale della responsabilità civile è che chi causa un danno a un altro deve ripararlo, cioè risarcirlo. Non importa l'entità del danno, l'importante è che sia stato causato.",
         "regola": "Danno causato = Danno risarcito.",
         "trabocchetti": ["ogni danno causato deve essere risarcito"],
@@ -244,6 +278,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità civile connessa al sinistro stradale è esclusa in caso di morte del danneggiato",
         "risposta": False,
+        "riassunto": "Responsabilità civile → esclusa se il danneggiato muore?",
         "spiegazione": "FALSO. Se una persona muore a causa di un incidente, la responsabilità civile non scompare. I danni (come le spese funerarie o il mancato guadagno per la famiglia) devono comunque essere risarciti agli eredi della persona deceduta.",
         "regola": "Morte non cancella il debito.",
         "trabocchetti": ["esclusa"],
@@ -251,6 +286,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità civile connessa al sinistro stradale si limita al risarcimento dei danni alle sole cose",
         "risposta": False,
+        "riassunto": "Responsabilità civile → solo danni alle cose?",
         "spiegazione": "FALSO. Come abbiamo visto, la responsabilità civile copre sia i danni alle persone (lesioni, morte) sia i danni alle cose (veicoli, proprietà). Non si limita 'solo' alle cose.",
         "regola": "Non solo cose, anche persone!",
         "trabocchetti": ["sole"],
@@ -258,6 +294,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità civile connessa al sinistro stradale è esclusa per danni di lieve entità",
         "risposta": False,
+        "riassunto": "Responsabilità civile → esclusa per danni lievi?",
         "spiegazione": "FALSO. Anche un danno piccolo, di 'lieve entità', deve essere risarcito. Non esiste una soglia minima al di sotto della quale la responsabilità civile non si applica.",
         "regola": "Ogni danno, anche piccolo, va risarcito.",
         "trabocchetti": ["esclusa", "lieve entità"],
@@ -265,6 +302,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità civile connessa al sinistro stradale è aggravata dalla mancata copertura assicurativa",
         "risposta": False,
+        "riassunto": "Responsabilità civile → aggravata senza assicurazione?",
         "spiegazione": "FALSO. La responsabilità civile (cioè l'obbligo di risarcire il danno) rimane la stessa. Quello che cambia, se non hai l'assicurazione, è che dovrai pagare tu direttamente tutti i danni di tasca tua, senza l'aiuto dell'assicurazione. Non è la responsabilità ad essere 'aggravata', ma le conseguenze economiche per te.",
         "regola": "Senza assicurazione: paghi tu, non è 'più' responsabile.",
         "trabocchetti": ["aggravata"],
@@ -272,6 +310,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità civile connessa al sinistro stradale grava sull'impresa assicuratrice anche per danni superiori ai massimali",
         "risposta": False,
+        "riassunto": "Assicurazione → paga anche oltre i massimali?",
         "spiegazione": "FALSO. L'impresa assicuratrice paga i danni fino a un limite massimo stabilito nel contratto, chiamato 'massimale'. Se i danni sono superiori a questo massimale, la parte che eccede il massimale deve essere pagata dal responsabile dell'incidente (il conducente o il proprietario del veicolo).",
         "regola": "Assicurazione = Fino al massimale. Il resto lo paghi tu.",
         "trabocchetti": ["anche", "o"],
@@ -279,12 +318,14 @@ QUESTIONS = [
     {
         "domanda": "L'assicurazione obbligatoria RCA copre i danni subiti dai terzi trasportati se il veicolo è autorizzato al trasporto di persone",
         "risposta": True,
+        "riassunto": "RCA → copre i terzi trasportati se autorizzato?",
         "spiegazione": "L'assicurazione RCA (Responsabilità Civile Auto) serve proprio a coprire i danni che il tuo veicolo può causare ad altri. Questo include anche i passeggeri che trasporti, a patto che il veicolo sia autorizzato a trasportare persone (come un'auto normale). Quindi, se un passeggero subisce un danno mentre è a bordo, l'assicurazione lo copre.",
         "regola": "RCA = copre i passeggeri (se il trasporto è legale).",
     },
     {
         "domanda": "Il risarcimento diretto nei sinistri stradali si applica se vi sono danni al veicolo e lesioni di lieve entità al conducente",
         "risposta": True,
+        "riassunto": "Risarcimento diretto → danni al veicolo e lesioni lievi del conducente?",
         "spiegazione": "Il risarcimento diretto è una procedura più veloce per ottenere i soldi dopo un incidente. Si applica quando ci sono danni al tuo veicolo e, se il conducente si è fatto male, le sue ferite devono essere 'di lieve entità', cioè non gravi. Se le ferite sono gravi, la procedura è diversa.",
         "regola": "Risarcimento diretto = danni auto + piccole ferite.",
         "trabocchetti": ["lesioni di lieve entità"],
@@ -292,6 +333,7 @@ QUESTIONS = [
     {
         "domanda": "La procedura di risarcimento diretto non è applicabile se vi sono più di due veicoli coinvolti",
         "risposta": True,
+        "riassunto": "Risarcimento diretto → non con più di due veicoli?",
         "spiegazione": "La procedura di risarcimento diretto è pensata per incidenti semplici. Se ci sono più di due veicoli coinvolti in un incidente, la situazione diventa più complessa e non si può usare il risarcimento diretto. In quel caso, si segue la procedura normale.",
         "regola": "Risarcimento diretto = massimo 2 veicoli.",
         "trabocchetti": ["più di due veicoli coinvolti"],
@@ -299,6 +341,7 @@ QUESTIONS = [
     {
         "domanda": "Il risarcimento diretto è escluso se nel sinistro è coinvolto un motociclo",
         "risposta": False,
+        "riassunto": "Risarcimento diretto → escluso con un motociclo?",
         "spiegazione": "Questa affermazione è falsa. Il risarcimento diretto non è escluso se c'è un motociclo coinvolto. Anche i motocicli sono veicoli e possono rientrare nella procedura di risarcimento diretto, purché siano rispettate le altre condizioni (ad esempio, non più di due veicoli coinvolti e lesioni di lieve entità).",
         "regola": "Moto = veicolo, quindi risarcimento diretto possibile.",
         "trabocchetti": ["escluso"],
@@ -306,6 +349,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di sinistro con danni al veicolo, la richiesta di risarcimento diretto deve essere obbligatoriamente corredata di fotografie",
         "risposta": False,
+        "riassunto": "Risarcimento diretto → foto obbligatorie?",
         "spiegazione": "Questa affermazione è falsa. Le fotografie sono molto utili e consigliate per dimostrare i danni e facilitare la pratica, ma non sono 'obbligatoriamente' richieste dalla legge per presentare la richiesta di risarcimento diretto. Puoi fare la richiesta anche senza foto, anche se è meno facile dimostrare i danni.",
         "regola": "Foto utili, ma non obbligatorie.",
         "trabocchetti": ["obbligatoriamente"],
@@ -313,6 +357,7 @@ QUESTIONS = [
     {
         "domanda": "L'assicurazione obbligatoria copre i danni subiti solo da terzi trasportati sui taxi",
         "risposta": False,
+        "riassunto": "Assicurazione → terzi trasportati solo sui taxi?",
         "spiegazione": "Questa affermazione è falsa. L'assicurazione obbligatoria RCA copre i danni subiti da tutti i terzi trasportati legalmente, non 'solo' quelli sui taxi. Copre i passeggeri di qualsiasi veicolo autorizzato al trasporto di persone, come un'auto privata, un autobus, ecc.",
         "regola": "RCA = tutti i passeggeri, non solo taxi.",
         "trabocchetti": ["solo"],
@@ -320,6 +365,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità per danni connessi alla circolazione dei veicoli è a carico del conducente e del proprietario del veicolo, se si tratta di responsabilità civile",
         "risposta": True,
+        "riassunto": "Responsabilità civile → conducente e proprietario?",
         "spiegazione": "Quando si parla di 'responsabilità civile', significa che se c'è un incidente e qualcuno subisce un danno (ad esempio, la macchina si rompe o una persona si fa male), sia chi guidava (il conducente) sia chi possiede la macchina (il proprietario) possono essere chiamati a pagare i danni. Entrambi sono responsabili in questo caso.",
         "regola": "Civile = Conducente + Proprietario.",
         "trabocchetti": ["responsabilità civile"],
@@ -327,6 +373,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità per danni connessi alla circolazione dei veicoli è a carico del conducente del veicolo, se si tratta di responsabilità penale",
         "risposta": True,
+        "riassunto": "Responsabilità penale → conducente?",
         "spiegazione": "La 'responsabilità penale' è diversa. Riguarda reati più gravi, come causare lesioni gravi o la morte di una persona. In questi casi, la legge punisce solo la persona che ha commesso l'azione, cioè chi era alla guida e ha causato il reato. Il proprietario del veicolo non è responsabile penalmente se non era lui a guidare.",
         "regola": "Penale = Solo Conducente (chi ha guidato).",
         "trabocchetti": ["responsabilità penale"],
@@ -334,6 +381,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità per danni connessi alla circolazione dei veicoli non è a carico del proprietario del veicolo se prova che la circolazione è avvenuta contro la sua volontà",
         "risposta": True,
+        "riassunto": "Proprietario → non responsabile se usato contro la sua volontà?",
         "spiegazione": "Se il proprietario di un veicolo riesce a dimostrare che la sua macchina è stata usata senza il suo permesso, ad esempio perché è stata rubata, allora non è responsabile per i danni causati da chi l'ha usata. In questo caso, la circolazione è avvenuta 'contro la sua volontà'.",
         "regola": "Proprietario non responsabile se 'contro volontà' (es. furto).",
         "trabocchetti": ["contro la sua volontà"],
@@ -341,6 +389,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità per danni connessi alla circolazione dei veicoli è a carico del proprietario del veicolo, se si tratta di responsabilità penale",
         "risposta": False,
+        "riassunto": "Responsabilità penale → proprietario?",
         "spiegazione": "Questa affermazione è falsa perché, come abbiamo visto, la 'responsabilità penale' è sempre personale. Questo significa che solo la persona che ha commesso il reato (il conducente) può essere punita penalmente. Il proprietario del veicolo non può essere punito penalmente se non era lui alla guida e non ha commesso il reato.",
         "regola": "Penale = MAI il proprietario (se non guidava).",
         "trabocchetti": ["con"],
@@ -348,6 +397,7 @@ QUESTIONS = [
     {
         "domanda": "La responsabilità per danni connessi alla circolazione dei veicoli è a carico solo del conducente del veicolo se ci sono stati danni alle cose",
         "risposta": False,
+        "riassunto": "Danni alle cose → solo il conducente?",
         "spiegazione": "Questa affermazione è falsa. Quando ci sono 'danni alle cose' (ad esempio, un'altra macchina o un palo), si rientra nella 'responsabilità civile'. Per la responsabilità civile, sono responsabili sia il conducente che il proprietario del veicolo. Quindi, non è 'solo' il conducente a essere responsabile.",
         "regola": "Danni a cose = Responsabilità civile = Conducente + Proprietario (non 'solo' conducente).",
         "trabocchetti": ["solo"],
@@ -355,6 +405,7 @@ QUESTIONS = [
     {
         "domanda": "Quando l'assicurazione per la responsabilità civile auto è scaduta di validità si può incorrere nella confisca del veicolo",
         "risposta": True,
+        "riassunto": "RCA scaduta → confisca del veicolo?",
         "spiegazione": "Se ti fermano con l'assicurazione scaduta, oltre alla multa, la tua auto può essere sequestrata e, in casi gravi, anche confiscata. Confiscare significa che lo Stato ti toglie l'auto in modo definitivo.",
         "regola": "Assicurazione scaduta = auto a rischio confisca.",
         "trabocchetti": ["Confisca del veicolo"],
@@ -362,6 +413,7 @@ QUESTIONS = [
     {
         "domanda": "Quando l'assicurazione per la responsabilità civile auto è scaduta di validità si può continuare a usare il veicolo solo per brevi tragitti",
         "risposta": False,
+        "riassunto": "RCA scaduta → solo brevi tragitti?",
         "spiegazione": "Falso! Non puoi usare il veicolo per nessun tragitto, nemmeno breve, se l'assicurazione è scaduta. La legge lo vieta sempre, non importa quanto sia corto il percorso.",
         "regola": "Assicurazione scaduta = stop totale, non importa il tragitto.",
         "trabocchetti": ["solo per brevi tragitti"],
@@ -369,6 +421,7 @@ QUESTIONS = [
     {
         "domanda": "Quando l'assicurazione per la responsabilità civile auto è scaduta di validità si può utilizzare il veicolo solo sul territorio italiano",
         "risposta": False,
+        "riassunto": "RCA scaduta → solo in Italia?",
         "spiegazione": "Falso! Non puoi usare il veicolo in nessun luogo, né in Italia né all'estero, se l'assicurazione è scaduta. Il divieto è generale.",
         "regola": "Assicurazione scaduta = stop ovunque.",
         "trabocchetti": ["solo sul territorio italiano"],
@@ -376,6 +429,7 @@ QUESTIONS = [
     {
         "domanda": "Quando l'assicurazione per la responsabilità civile auto è scaduta di validità è possibile lasciare il veicolo in sosta sulle strade pubbliche",
         "risposta": False,
+        "riassunto": "RCA scaduta → sosta su strada pubblica?",
         "spiegazione": "Falso! Non puoi lasciare il veicolo parcheggiato (in sosta) sulle strade pubbliche se l'assicurazione è scaduta. Anche se l'auto è ferma, è una violazione della legge.",
         "regola": "Assicurazione scaduta = via dalla strada, anche da fermo.",
         "trabocchetti": ["è possibile lasciare il veicolo in sosta"],
@@ -383,6 +437,7 @@ QUESTIONS = [
     {
         "domanda": "Quando l'assicurazione per la responsabilità civile auto è scaduta di validità, il veicolo deve essere sottoposto a collaudo tecnico prima di essere rimesso in circolazione",
         "risposta": False,
+        "riassunto": "RCA scaduta → collaudo prima di circolare?",
         "spiegazione": "Falso! La scadenza dell'assicurazione non ha nulla a che fare con il 'collaudo tecnico' (che è la revisione del veicolo). Se l'assicurazione è scaduta, devi rinnovare quella, non fare un collaudo. Sono due cose diverse.",
         "regola": "Assicurazione e collaudo sono due cose diverse.",
         "trabocchetti": ["Collaudo tecnico"],
@@ -390,12 +445,14 @@ QUESTIONS = [
     {
         "domanda": "Quando l'assicurazione per la responsabilità civile auto è scaduta di validità è possibile continuare ad usare il veicolo, solo se si è disposti a pagare personalmente gli eventuali danni arrecati",
         "risposta": False,
+        "riassunto": "RCA scaduta → circolare pagando di tasca propria?",
         "spiegazione": "Falso! Non puoi usare il veicolo se l'assicurazione è scaduta, anche se dici di voler pagare i danni di tasca tua. La legge lo vieta per proteggere tutti, perché non è detto che tu abbia i soldi per coprire danni molto gravi.",
         "regola": "Assicurazione scaduta = divieto assoluto, non è una scelta personale.",
     },
     {
         "domanda": "Il \"fondo di garanzia per le vittime della strada\" prevede il risarcimento dei danni arrecati alle persone da veicoli non coperti da assicurazione",
         "risposta": True,
+        "riassunto": "Fondo di garanzia → danni da veicoli non assicurati?",
         "spiegazione": "Il Fondo di Garanzia per le vittime della strada serve proprio a questo: se un veicolo causa un incidente e non ha l'assicurazione obbligatoria, il Fondo paga i danni alle persone coinvolte.",
         "regola": "Senza assicurazione, paga il Fondo (per le persone).",
         "trabocchetti": ["non coperti da assicurazione"],
@@ -403,6 +460,7 @@ QUESTIONS = [
     {
         "domanda": "Il \"fondo di garanzia per le vittime della strada\" prevede il risarcimento dei danni arrecati alle persone da veicoli non identificati",
         "risposta": True,
+        "riassunto": "Fondo di garanzia → danni da veicoli non identificati?",
         "spiegazione": "Sì, è vero. Se un veicolo causa un incidente e scappa via senza essere identificato (il cosiddetto 'pirata della strada'), il Fondo di Garanzia interviene per risarcire i danni subiti dalle persone.",
         "regola": "Pirata della strada? Paga il Fondo (per le persone).",
         "trabocchetti": ["non identificati"],
@@ -410,6 +468,7 @@ QUESTIONS = [
     {
         "domanda": "Il \"fondo di garanzia per le vittime della strada\" garantisce un vitalizio al conducente infortunato",
         "risposta": False,
+        "riassunto": "Fondo di garanzia → vitalizio al conducente?",
         "spiegazione": "No, questo è falso. Il Fondo di Garanzia risarcisce i danni causati dall'incidente, ma non garantisce un 'vitalizio', cioè una somma di denaro che viene pagata per tutta la vita. Il suo scopo è coprire le spese e i danni specifici dell'incidente.",
         "regola": "Il Fondo risarcisce, non pensiona.",
         "trabocchetti": ["vitalizio"],
@@ -417,6 +476,7 @@ QUESTIONS = [
     {
         "domanda": "Il \"fondo di garanzia per le vittime della strada\" è un premio per chi non ha provocato incidenti",
         "risposta": False,
+        "riassunto": "Fondo di garanzia → premio per chi non fa incidenti?",
         "spiegazione": "Falso. Il Fondo di Garanzia non è un 'premio' per chi guida bene o non fa incidenti. È un sistema di protezione per le vittime di incidenti causati da veicoli che non hanno l'assicurazione o che non sono stati identificati.",
         "regola": "Il Fondo non premia, ma protegge le vittime.",
         "trabocchetti": ["premio"],
@@ -424,6 +484,7 @@ QUESTIONS = [
     {
         "domanda": "Il \"fondo di garanzia per le vittime della strada\" è una convenzione facoltativa",
         "risposta": False,
+        "riassunto": "Fondo di garanzia → convenzione facoltativa?",
         "spiegazione": "Falso. Il Fondo di Garanzia non è una 'convenzione facoltativa', cioè qualcosa che si può scegliere di avere o meno. È un sistema obbligatorio, previsto dalla legge, per dare una protezione minima alle vittime della strada in casi particolari.",
         "regola": "Il Fondo è obbligatorio, non a scelta.",
         "trabocchetti": ["facoltativa"],
@@ -431,6 +492,7 @@ QUESTIONS = [
     {
         "domanda": "Il \"fondo di garanzia per le vittime della strada\" risarcisce i danni arrecati dai conducenti minorenni",
         "risposta": False,
+        "riassunto": "Fondo di garanzia → danni dei conducenti minorenni?",
         "spiegazione": "Falso. Il Fondo di Garanzia non interviene in base all'età del conducente. Interviene se il veicolo che ha causato l'incidente non è assicurato o non è stato identificato. Se un minorenne causa un incidente con un veicolo regolarmente assicurato, paga l'assicurazione del veicolo, non il Fondo.",
         "regola": "Il Fondo guarda l'assicurazione, non l'età.",
         "trabocchetti": ["conducenti minorenni"],
@@ -438,6 +500,7 @@ QUESTIONS = [
     {
         "domanda": "Le polizze assicurative stipulate di solito per coprire i danni da furto, incendio, atti vandalici, eventi naturali o danni al proprio veicolo (polizza kasko) non sono obbligatorie",
         "risposta": True,
+        "riassunto": "Furto, incendio, kasko → non obbligatorie?",
         "spiegazione": "Le polizze come furto, incendio, kasko, atti vandalici o eventi naturali sono assicurazioni facoltative, cioè non obbligatorie per legge. L'unica assicurazione obbligatoria è la Responsabilità Civile Auto (RC Auto), che copre i danni che potresti causare ad altri.",
         "regola": "RC Auto SÌ, le altre NO (se non vuoi).",
         "trabocchetti": ["non sono obbligatorie", "non"],
@@ -445,6 +508,7 @@ QUESTIONS = [
     {
         "domanda": "Nella polizza assicurativa contro il rischio di furto o incendio, il risarcimento dovuto non può essere superiore al valore che il veicolo aveva al momento in cui è stato rubato o ha preso fuoco",
         "risposta": True,
+        "riassunto": "Furto o incendio → risarcimento entro il valore del momento?",
         "spiegazione": "L'assicurazione ti risarcisce sempre per il valore effettivo del veicolo al momento del danno. Non puoi ricevere più di quanto valeva l'auto quando è stata rubata o ha preso fuoco, perché l'assicurazione serve a coprire una perdita, non a farti guadagnare.",
         "regola": "Mai più del valore reale.",
         "trabocchetti": ["non può essere superiore"],
@@ -452,6 +516,7 @@ QUESTIONS = [
     {
         "domanda": "Nel caso in cui il veicolo venga rubato in uno Stato estero, per poter attivare l'assicurazione bisogna ripetere la denuncia nello Stato italiano",
         "risposta": True,
+        "riassunto": "Furto all'estero → ripetere la denuncia in Italia?",
         "spiegazione": "Se la tua auto viene rubata all'estero, devi fare subito denuncia alla polizia locale. Ma per far valere l'assicurazione italiana, devi poi 'ripetere' la denuncia anche in Italia, ad esempio ai Carabinieri o alla Polizia di Stato, quando torni o tramite le procedure previste.",
         "regola": "Denuncia estera + Denuncia italiana = Assicurazione attiva.",
         "trabocchetti": ["ripetere"],
@@ -459,6 +524,7 @@ QUESTIONS = [
     {
         "domanda": "La polizza assicurativa contro il rischio di furto o incendio garantisce una rendita vitalizia al proprietario del veicolo, nel caso in cui venga rubato o prenda fuoco",
         "risposta": False,
+        "riassunto": "Polizza furto o incendio → rendita vitalizia?",
         "spiegazione": "Questa affermazione è falsa. L'assicurazione contro furto o incendio ti dà un risarcimento una tantum, cioè una somma di denaro per il valore del veicolo. Non ti garantisce una 'rendita vitalizia', che sarebbe un pagamento regolare per tutta la vita, come una pensione.",
         "regola": "Auto = risarcimento, non pensione.",
         "trabocchetti": ["rendita vitalizia"],
@@ -466,6 +532,7 @@ QUESTIONS = [
     {
         "domanda": "Per poter stipulare una polizza assicurativa contro il rischio d'incendio occorre che il veicolo sia munito di apposito meccanismo staccabatteria automatico",
         "risposta": False,
+        "riassunto": "Polizza incendio → serve lo staccabatteria automatico?",
         "spiegazione": "Non è vero. Non c'è nessun obbligo di legge che ti imponga di avere un meccanismo staccabatteria automatico per poter fare un'assicurazione contro l'incendio. Potrebbe essere un dispositivo utile per la sicurezza, ma non è una condizione necessaria per stipulare la polizza.",
         "regola": "Nessun obbligo di staccabatteria per l'assicurazione incendio.",
         "trabocchetti": ["occorre che il veicolo sia munito", "Occorre"],
@@ -473,6 +540,7 @@ QUESTIONS = [
     {
         "domanda": "Per poter stipulare una polizza assicurativa contro il rischio di furto, occorre che il veicolo sia dotato di antifurto",
         "risposta": False,
+        "riassunto": "Polizza furto → serve l'antifurto?",
         "spiegazione": "Anche questa affermazione è falsa. Non è obbligatorio avere un antifurto installato sul veicolo per poter stipulare una polizza contro il furto. Le compagnie assicurative potrebbero offrire sconti se hai un antifurto, ma non è una condizione indispensabile per fare l'assicurazione.",
         "regola": "Antifurto non obbligatorio per l'assicurazione furto.",
         "trabocchetti": ["occorre che il veicolo sia dotato"],
@@ -480,6 +548,7 @@ QUESTIONS = [
     {
         "domanda": "Le polizze assicurative contro il rischio d'incendio del veicolo coprono, normalmente, solo i danni causati da incendi dolosi (intenzionali) e non quelli provocati da incendi accidentali (casuali)",
         "risposta": False,
+        "riassunto": "Polizza incendio → solo incendi dolosi?",
         "spiegazione": "Questa affermazione è falsa e confonde i termini. Le polizze incendio coprono normalmente sia gli incendi accidentali (causati per sbaglio) sia quelli dolosi (causati intenzionalmente da terzi). Non coprono invece gli incendi dolosi causati dal proprietario stesso. La domanda dice l'esatto contrario, cioè che coprono 'solo' quelli dolosi e 'non' quelli accidentali, il che è sbagliato.",
         "regola": "Assicurazione = eventi casuali, non solo intenzionali.",
         "trabocchetti": ["solo", "non"],
@@ -487,6 +556,7 @@ QUESTIONS = [
     {
         "domanda": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) sono gli importi massimi che l'impresa assicuratrice si impegna a pagare, in caso di incidente",
         "risposta": True,
+        "riassunto": "Massimali RCA → importi massimi pagati dall'assicurazione?",
         "spiegazione": "VERO. I massimali sono l'importo massimo di denaro che la tua assicurazione si impegna a pagare per i danni che potresti causare in un incidente. Se il danno è più grande di questo importo, la parte extra la devi pagare tu.",
         "regola": "Massimale = limite di pagamento dell'assicurazione.",
         "trabocchetti": ["importi massimi"],
@@ -494,6 +564,7 @@ QUESTIONS = [
     {
         "domanda": "La cifra minima dei massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) viene stabilita dalla legge",
         "risposta": True,
+        "riassunto": "Massimali minimi → stabiliti dalla legge?",
         "spiegazione": "VERO. La legge stabilisce un importo minimo obbligatorio per i massimali. Questo serve a garantire che le persone danneggiate in un incidente ricevano sempre un risarcimento adeguato, anche se il responsabile ha un'assicurazione 'base'.",
         "regola": "C'è un minimo legale per i massimali.",
         "trabocchetti": ["cifra minima", "stabilita dalla legge"],
@@ -501,6 +572,7 @@ QUESTIONS = [
     {
         "domanda": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) possono essere aumentati, a scelta del cliente, pagando una maggiore somma di denaro (premio assicurativo)",
         "risposta": True,
+        "riassunto": "Massimali → aumentabili pagando di più?",
         "spiegazione": "VERO. Puoi scegliere di aumentare i massimali oltre il minimo stabilito dalla legge. Questo ti offre una maggiore protezione in caso di incidenti gravi, ma dovrai pagare un 'premio assicurativo' (il costo dell'assicurazione) più alto.",
         "regola": "Più protezione (massimale), più costo (premio).",
         "trabocchetti": ["a scelta del cliente", "pagando una maggiore somma di denaro"],
@@ -508,6 +580,7 @@ QUESTIONS = [
     {
         "domanda": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto ) sono le somme di denaro che l'impresa assicuratrice riscuote ogni anno dal proprio cliente",
         "risposta": False,
+        "riassunto": "Massimali → somme pagate ogni anno dal cliente?",
         "spiegazione": "FALSO. I massimali non sono i soldi che tu paghi all'assicurazione. I soldi che tu paghi ogni anno si chiamano 'premio assicurativo'. I massimali sono invece la somma massima che l'assicurazione paga a te o a terzi in caso di incidente.",
         "regola": "Massimale = paga l'assicurazione. Premio = paghi tu.",
         "trabocchetti": ["riscuote"],
@@ -515,6 +588,7 @@ QUESTIONS = [
     {
         "domanda": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto ) aumentano ogni anno",
         "risposta": False,
+        "riassunto": "Massimali → aumentano ogni anno?",
         "spiegazione": "FALSO. I massimali non aumentano automaticamente ogni anno. Rimangono quelli che hai scelto o quelli minimi di legge, a meno che tu non decida di modificarli o che la legge non cambi i minimi obbligatori.",
         "regola": "I massimali non crescono da soli.",
         "trabocchetti": ["aumentano ogni anno"],
@@ -522,6 +596,7 @@ QUESTIONS = [
     {
         "domanda": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) vengono restituiti al cliente alla fine dell'anno, se non si causano incidenti",
         "risposta": False,
+        "riassunto": "Massimali → restituiti senza incidenti?",
         "spiegazione": "FALSO. I massimali non sono soldi che ti vengono restituiti. Sono un limite di copertura. Il 'premio assicurativo' che paghi ogni anno è il costo del servizio di protezione e non viene restituito, anche se non fai incidenti.",
         "regola": "L'assicurazione non restituisce soldi (né massimali, né premio).",
         "trabocchetti": ["vengono restituiti"],
@@ -529,6 +604,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula \"bonus malus\" comporta una variazione annuale del premio di assicurazione, in base al numero di incidenti causati",
         "risposta": True,
+        "riassunto": "Bonus malus → premio secondo gli incidenti causati?",
         "spiegazione": "Questa affermazione è VERA. Il sistema 'bonus malus' è proprio così: ogni anno il costo della tua assicurazione (il 'premio') cambia. Se non fai incidenti, ricevi un 'bonus' e paghi meno. Se invece causi incidenti, ricevi un 'malus' e paghi di più. È un modo per premiare i guidatori prudenti.",
         "regola": "Bonus Malus: meno incidenti = meno paghi; più incidenti = più paghi.",
         "trabocchetti": ["bonus malus"],
@@ -536,6 +612,7 @@ QUESTIONS = [
     {
         "domanda": "La formula assicurativa \"bonus malus\" non si applica per i motocicli",
         "risposta": False,
+        "riassunto": "Bonus malus → non per le moto?",
         "spiegazione": "Questa affermazione è FALSA. La formula 'bonus malus' si applica a tutti i veicoli a motore, quindi anche ai motocicli. Non è una cosa solo per le auto.",
         "regola": "Bonus Malus: vale per auto E moto!",
         "trabocchetti": ["non", "bonus malus"],
@@ -543,6 +620,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula \"bonus malus\" viene automaticamente annullato se si provocano più di due incidenti",
         "risposta": False,
+        "riassunto": "Bonus malus → annullato dopo due incidenti?",
         "spiegazione": "Questa affermazione è FALSA. Se causi più incidenti, il tuo premio assicurativo aumenterà molto (riceverai un 'malus'), ma il contratto non viene 'automaticamente annullato'. L'assicurazione continua, ma ti costerà di più. Solo in casi eccezionali o per gravi violazioni il contratto potrebbe essere interrotto, ma non 'automaticamente' per un certo numero di incidenti.",
         "regola": "Incidenti: premio sale, contratto resta!",
         "trabocchetti": ["automaticamente annullato"],
@@ -550,6 +628,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula \"bonus malus\" viene stabilito dal giudice",
         "risposta": False,
+        "riassunto": "Bonus malus → stabilito dal giudice?",
         "spiegazione": "Questa affermazione è FALSA. Il contratto di assicurazione, inclusa la formula 'bonus malus', è un accordo tra te (l'assicurato) e la compagnia di assicurazione. Non è il giudice a stabilirlo. Il giudice interviene solo in caso di liti o problemi, non per creare il contratto.",
         "regola": "Contratto: tu e assicurazione, non giudice!",
         "trabocchetti": ["stabilito dal giudice"],
@@ -557,6 +636,7 @@ QUESTIONS = [
     {
         "domanda": "L'assicurazione per la responsabilità civile auto (R.C.A.) è valida anche per gli incidenti avvenuti nei Paesi dell'Unione Europea",
         "risposta": True,
+        "riassunto": "RCA → valida anche nei paesi UE?",
         "spiegazione": "VERO. L'assicurazione RCA è valida non solo in Italia, ma anche in tutti i Paesi dell'Unione Europea e in alcuni altri Stati che hanno accordi specifici. Questo significa che se fai un incidente, ad esempio, in Francia o in Germania, la tua assicurazione ti copre.",
         "regola": "RCA = Europa inclusa.",
         "trabocchetti": ["anche"],
@@ -564,6 +644,7 @@ QUESTIONS = [
     {
         "domanda": "L'assicurazione per la responsabilità civile auto (R.C.A.) copre anche la responsabilità penale in base al premio pagato",
         "risposta": False,
+        "riassunto": "RCA → copre la responsabilità penale?",
         "spiegazione": "FALSO. L'assicurazione RCA copre la 'responsabilità civile', cioè i danni economici che causi ad altri. Non copre la 'responsabilità penale', che riguarda i reati (come lesioni gravi o omicidio stradale) e le relative conseguenze legali, come la prigione o multe penali. Queste sono personali e non assicurabili.",
         "regola": "RCA = Civile, non Penale.",
         "trabocchetti": ["responsabilità penale", "civile", "in base al premio pagato"],
@@ -571,6 +652,7 @@ QUESTIONS = [
     {
         "domanda": "L'assicurazione per la responsabilità civile auto (R.C.A.) copre anche le sanzioni amministrative pecuniarie, previste dal codice della strada",
         "risposta": False,
+        "riassunto": "RCA → copre le multe?",
         "spiegazione": "FALSO. L'assicurazione RCA serve a risarcire i danni che causi a terzi. Le 'sanzioni amministrative pecuniarie' sono le multe (ad esempio per eccesso di velocità o divieto di sosta) che devi pagare allo Stato per aver infranto una regola del Codice della Strada. Queste multe sono una tua responsabilità personale e non sono coperte dall'assicurazione.",
         "regola": "RCA = Danni, non Multe.",
         "trabocchetti": ["sanzioni amministrative pecuniarie"],
@@ -578,6 +660,7 @@ QUESTIONS = [
     {
         "domanda": "L'assicurazione per la responsabilità civile auto (R.C.A.) copre ogni danno causato, anche se superiore al massimale stabilito",
         "risposta": False,
+        "riassunto": "RCA → copre anche oltre il massimale?",
         "spiegazione": "FALSO. Ogni polizza RCA ha un 'massimale', che è la cifra massima che l'assicurazione pagherà in caso di incidente. Se i danni causati sono superiori a questo massimale, la parte eccedente deve essere pagata da chi ha causato l'incidente (il conducente o il proprietario del veicolo).",
         "regola": "RCA ha un Massimale.",
         "trabocchetti": ["ogni", "Anche se superiore al massimale"],
@@ -585,6 +668,7 @@ QUESTIONS = [
     {
         "domanda": "L'assicurazione per la responsabilità civile auto (R.C.A.) copre solo la responsabilità del conducente, ma non quella del proprietario del veicolo",
         "risposta": False,
+        "riassunto": "RCA → solo il conducente, non il proprietario?",
         "spiegazione": "FALSO. L'assicurazione RCA copre sia la responsabilità del conducente (chi guida al momento dell'incidente) sia quella del proprietario del veicolo. Il proprietario è sempre responsabile del suo mezzo, a meno che non dimostri che il veicolo è stato usato contro la sua volontà (ad esempio, in caso di furto).",
         "regola": "RCA = Conducente + Proprietario.",
         "trabocchetti": ["solo", "Ma non quella del proprietario"],
@@ -592,6 +676,7 @@ QUESTIONS = [
     {
         "domanda": "L'assicurazione per la responsabilità civile auto (R.C.A.) copre solo i danni arrecati alle persone, perché per i danni alle cose occorre un altro tipo di contratto",
         "risposta": False,
+        "riassunto": "RCA → solo danni alle persone?",
         "spiegazione": "FALSO. L'assicurazione RCA è obbligatoria proprio per coprire i danni che il tuo veicolo può causare a 'terzi', sia che si tratti di 'persone' (lesioni fisiche) sia che si tratti di 'cose' (danni ad altri veicoli, edifici, oggetti). Non serve un contratto separato per i danni alle cose.",
         "regola": "RCA = Persone + Cose.",
         "trabocchetti": ["solo"],
@@ -599,6 +684,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo la firma del contratto di assicurazione R.C.A. (responsabilità civile auto), l'impresa assicuratrice deve rilasciare al cliente il certificato di assicurazione",
         "risposta": True,
+        "riassunto": "Contratto RCA → certificato di assicurazione?",
         "spiegazione": "Quando firmi il contratto di assicurazione R.C.A., la compagnia assicurativa è obbligata a darti un documento che prova che il tuo veicolo è assicurato. Questo documento si chiama 'certificato di assicurazione' ed è molto importante.",
         "regola": "Contratto RCA = Certificato obbligatorio.",
         "trabocchetti": ["deve rilasciare"],
@@ -606,6 +692,7 @@ QUESTIONS = [
     {
         "domanda": "L'assicurazione per la responsabilità civile auto (R.C.A.) è obbligatoria per legge",
         "risposta": True,
+        "riassunto": "RCA → obbligatoria per legge?",
         "spiegazione": "Sì, in Italia, è obbligatorio per legge che ogni veicolo a motore abbia l'assicurazione per la responsabilità civile auto (R.C.A.). Senza questa assicurazione, non puoi circolare su strada.",
         "regola": "RCA = Obbligo di legge.",
         "trabocchetti": ["obbligatoria per legge"],
@@ -613,6 +700,7 @@ QUESTIONS = [
     {
         "domanda": "Il certificato di assicurazione obbligatoria deve essere sempre tenuto a bordo del veicolo",
         "risposta": True,
+        "riassunto": "Certificato di assicurazione → sempre a bordo?",
         "spiegazione": "È fondamentale avere sempre con te il certificato di assicurazione quando guidi. Se ti fermano per un controllo, devi essere in grado di mostrarlo alle autorità.",
         "regola": "Certificato = Sempre in auto.",
         "trabocchetti": ["sempre"],
@@ -620,24 +708,28 @@ QUESTIONS = [
     {
         "domanda": "Dopo la firma del contratto di assicurazione R.C.A. (responsabilità civile auto), l'impresa assicuratrice deve rilasciare al cliente un elenco delle autocarrozzerie convenzionate, da contattare in caso d'incidente",
         "risposta": False,
+        "riassunto": "Contratto RCA → elenco carrozzerie convenzionate?",
         "spiegazione": "L'impresa assicuratrice ti fornisce il contratto e il certificato di assicurazione, ma non è obbligata a darti un elenco di carrozzerie convenzionate. Puoi scegliere tu dove portare la tua auto in caso di incidente.",
         "regola": "RCA = Non elenco carrozzerie.",
     },
     {
         "domanda": "Dopo la firma del contratto di assicurazione R.C.A. (responsabilità civile auto), l'impresa assicuratrice deve rilasciare al cliente un libretto sulle nozioni di pronto soccorso",
         "risposta": False,
+        "riassunto": "Contratto RCA → libretto di pronto soccorso?",
         "spiegazione": "L'assicurazione R.C.A. si occupa di coprire i danni in caso di incidente. Non è compito dell'assicurazione darti un libretto sul pronto soccorso; queste informazioni si imparano al corso di guida o in corsi specifici.",
         "regola": "RCA = Non pronto soccorso.",
     },
     {
         "domanda": "Dopo la firma del contratto di assicurazione R.C.A. (responsabilità civile auto), l'impresa assicuratrice deve rilasciare al cliente un manuale su come evitare incidenti",
         "risposta": False,
+        "riassunto": "Contratto RCA → manuale per evitare incidenti?",
         "spiegazione": "L'assicurazione R.C.A. non ti fornisce un manuale su come evitare incidenti. Imparare a guidare in sicurezza e prevenire incidenti è qualcosa che si apprende a scuola guida e con l'esperienza.",
         "regola": "RCA = Non manuale incidenti.",
     },
     {
         "domanda": "L'assicurazione per la responsabilità civile auto (R.C.A.), obbligatoria per legge, comprende il risarcimento dei danni provocati dal veicolo, purché guidato dal proprietario",
         "risposta": False,
+        "riassunto": "RCA → solo se guida il proprietario?",
         "spiegazione": "L'assicurazione R.C.A. copre i danni causati dal veicolo, indipendentemente da chi lo sta guidando, purché la persona abbia la patente e non stia commettendo infrazioni gravi (come guidare ubriaco). Non è necessario che sia il proprietario a guidare.",
         "regola": "RCA = Copre il veicolo, non solo il proprietario.",
         "trabocchetti": ["purché guidato dal proprietario"],
@@ -645,6 +737,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende passare per primo in un incrocio deve sopraggiungervi più velocemente",
         "risposta": False,
+        "riassunto": "Per passare primo all'incrocio → arrivare più veloci?",
         "spiegazione": "La precedenza agli incroci si basa su regole precise (segnali, destra), non sulla velocità. Arrivare veloci è pericoloso e può causare incidenti.",
         "regola": "Precedenza = Regole, non velocità!",
         "trabocchetti": ["deve sopraggiungervi più velocemente"],
@@ -652,6 +745,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la guida, qualora il conducente ritenga non vi sia pericolo imminente, può comporre un numero di telefono con il cellulare, senza fermarsi",
         "risposta": False,
+        "riassunto": "Senza pericolo imminente → comporre numeri al cellulare?",
         "spiegazione": "Usare il cellulare (anche solo per comporre un numero) mentre si guida è sempre vietato e pericoloso, perché distrae l'attenzione dalla strada, anche se non vedi un pericolo immediato.",
         "regola": "Cellulare al volante = MAI!",
         "trabocchetti": ["e"],
@@ -659,6 +753,7 @@ QUESTIONS = [
     {
         "domanda": "Il comportamento degli altri utenti della strada è ininfluente per una guida sicura",
         "risposta": False,
+        "riassunto": "Comportamento altrui → ininfluente per la sicurezza?",
         "spiegazione": "È molto importante osservare e prevedere cosa fanno gli altri (pedoni, ciclisti, altri veicoli) per guidare in sicurezza e prevenire incidenti.",
         "regola": "Guida sicura = Occhi su tutti!",
         "trabocchetti": ["ininfluente"],
@@ -666,6 +761,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente può non tenere conto del comportamento degli altri utenti della strada, se questi ultimi non rispettano le regole del codice della strada",
         "risposta": False,
+        "riassunto": "Altri che violano le regole → ignorarli?",
         "spiegazione": "Anche se gli altri sbagliano, tu devi sempre stare attento e prevedere i loro errori per evitare incidenti. La sicurezza è la tua responsabilità.",
         "regola": "Prevedi gli errori altrui!",
         "trabocchetti": ["può non tenere conto"],
@@ -673,6 +769,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la guida, la percezione di un pericolo e la conseguente reazione del conducente non sono influenzate dalle condizioni ambientali",
         "risposta": False,
+        "riassunto": "Percezione del pericolo → non influenzata dall'ambiente?",
         "spiegazione": "Le condizioni ambientali (pioggia, nebbia, buio) influenzano molto quanto velocemente vedi un pericolo e come reagisci. Riducono la visibilità e i tempi di reazione.",
         "regola": "Ambiente difficile = Attenzione doppia!",
         "trabocchetti": ["non sono influenzate"],
@@ -680,6 +777,7 @@ QUESTIONS = [
     {
         "domanda": "Un conducente deve sempre sottostimare le situazioni di pericolo per non farsi travolgere dall’ansia durante la guida",
         "risposta": False,
+        "riassunto": "Pericoli → sottovalutarli per non agitarsi?",
         "spiegazione": "Devi sempre valutare i pericoli in modo realistico, senza sottovalutarli. Sottostimare un pericolo significa non essere preparato ad affrontarlo.",
         "regola": "Pericolo = Valuta, non sottovaluta!",
         "trabocchetti": ["sottostimare"],
@@ -687,6 +785,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve accogliere gli inviti dei passeggeri a guidare più velocemente",
         "risposta": False,
+        "riassunto": "Passeggeri che chiedono di correre → accontentarli?",
         "spiegazione": "La tua priorità è la sicurezza. Non devi mai farti influenzare dai passeggeri a guidare in modo pericoloso o a superare i limiti di velocità.",
         "regola": "Guida tu, non i passeggeri!",
         "trabocchetti": ["deve accogliere gli inviti"],
@@ -694,12 +793,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve concentrarsi prevalentemente sul tratto di strada non superiore a tre metri antistante il suo veicolo",
         "risposta": False,
+        "riassunto": "Attenzione → solo sui tre metri davanti?",
         "spiegazione": "Devi guardare lontano, non solo i pochi metri davanti a te. Questo ti permette di vedere i pericoli in anticipo e avere tempo per reagire.",
         "regola": "Guarda lontano, pensa in anticipo!",
     },
     {
         "domanda": "Mentre il veicolo è in marcia, il conducente può programmare il navigatore in qualsiasi momento",
         "risposta": False,
+        "riassunto": "Navigatore → programmabile in marcia?",
         "spiegazione": "Programmare il navigatore mentre guidi ti distrae dalla strada ed è pericoloso. Fallo sempre prima di partire o quando sei fermo in sicurezza.",
         "regola": "Navigatore = Fermo e sicuro!",
         "trabocchetti": ["in qualsiasi momento"],
@@ -707,6 +808,7 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore posto sul lato destro del veicolo deve essere utilizzato solo da conducenti esperti",
         "risposta": False,
+        "riassunto": "Specchietto destro → solo per esperti?",
         "spiegazione": "Tutti gli specchi retrovisori sono importanti per tutti i conducenti, esperti e non. Servono per vedere cosa succede dietro e di lato al veicolo.",
         "regola": "Specchi = Per tutti, sempre!",
         "trabocchetti": ["solo da conducenti esperti"],
@@ -714,30 +816,35 @@ QUESTIONS = [
     {
         "domanda": "Gli specchi retrovisori devono essere regolati mentre il veicolo è in movimento",
         "risposta": False,
+        "riassunto": "Specchietti → regolati in movimento?",
         "spiegazione": "Gli specchi vanno regolati prima di partire, quando il veicolo è fermo. Regolarli in movimento ti distrae e ti fa perdere il controllo.",
         "regola": "Regola specchi = Veicolo fermo!",
     },
     {
         "domanda": "Il rispetto delle norme di circolazione è importante solo se la loro violazione comporta una sanzione economica elevata",
         "risposta": False,
+        "riassunto": "Norme → importanti solo se la multa è alta?",
         "spiegazione": "Le norme servono per la sicurezza di tutti, non solo per evitare multe. Rispettarle salva vite e previene incidenti, indipendentemente dalla multa.",
         "regola": "Norme = Sicurezza, non solo multe!",
     },
     {
         "domanda": "Il rispetto delle norme di circolazione è importante per gli utenti deboli, ma non per i conducenti degli autoveicoli",
         "risposta": False,
+        "riassunto": "Norme → importanti per i deboli, non per gli automobilisti?",
         "spiegazione": "Le norme sono importanti per TUTTI gli utenti della strada, sia per i pedoni e ciclisti (utenti deboli) sia per i conducenti di auto, per garantire la sicurezza di tutti.",
         "regola": "Norme = Per tutti, sempre!",
     },
     {
         "domanda": "Il rispetto delle norme di circolazione è importante quando il traffico è molto intenso, ma non quando si è in condizioni di circolazione scorrevole",
         "risposta": False,
+        "riassunto": "Norme → importanti solo col traffico intenso?",
         "spiegazione": "Le norme vanno rispettate sempre, in ogni condizione di traffico. Anche con traffico scorrevole, non rispettarle può causare incidenti gravi.",
         "regola": "Norme = Sempre, non solo nel traffico!",
     },
     {
         "domanda": "Il divieto di sorpasso può non essere osservato se si è in coda dietro a un veicolo lento da più di 10 minuti e si ritiene di poter sorpassare senza pericoli",
         "risposta": False,
+        "riassunto": "Divieto di sorpasso → ignorabile dopo 10 minuti in coda?",
         "spiegazione": "Un divieto di sorpasso è un divieto. Non puoi decidere tu di ignorarlo, anche se sei in coda o pensi sia sicuro. Le regole vanno rispettate.",
         "regola": "Divieto = Divieto, sempre!",
         "trabocchetti": ["può non essere osservato"],
@@ -745,6 +852,7 @@ QUESTIONS = [
     {
         "domanda": "Il rispetto della posizione sulla carreggiata è una norma secondaria che può, se del caso, non essere osservata",
         "risposta": False,
+        "riassunto": "Posizione sulla carreggiata → norma secondaria?",
         "spiegazione": "La posizione sulla carreggiata è una norma fondamentale per la sicurezza e la fluidità del traffico. Non è 'secondaria' e va sempre rispettata.",
         "regola": "Posizione = Fondamentale, sempre!",
         "trabocchetti": ["norma secondaria", "può, se del caso, non essere osservata"],
@@ -752,6 +860,7 @@ QUESTIONS = [
     {
         "domanda": "L’attenzione alla guida è importante solo quando si compiono manovre pericolose quali, ad esempio, un sorpasso",
         "risposta": False,
+        "riassunto": "Attenzione → solo nelle manovre pericolose?",
         "spiegazione": "L'attenzione alla guida deve essere massima in ogni momento, non solo durante manovre 'pericolose'. Anche una semplice rettilinea può nascondere pericoli.",
         "regola": "Attenzione = Sempre, non solo in manovra!",
         "trabocchetti": ["solo"],
@@ -759,6 +868,7 @@ QUESTIONS = [
     {
         "domanda": "Bere un liquore ad alta gradazione alcolica permette di migliorare l’attenzione dopo circa 10 minuti dall’ingestione",
         "risposta": False,
+        "riassunto": "Liquore forte → più attenzione dopo 10 minuti?",
         "spiegazione": "L'alcol, anche in piccole quantità, riduce sempre l'attenzione e i riflessi, non li migliora. È molto pericoloso bere e guidare.",
         "regola": "Alcol = Mai al volante!",
         "trabocchetti": ["permette di migliorare l’attenzione"],
@@ -766,6 +876,7 @@ QUESTIONS = [
     {
         "domanda": "Sintonizzare manualmente l’autoradio non comporta perdita di attenzione alla strada, perché è un compito che si è abituati a svolgere",
         "risposta": False,
+        "riassunto": "Sintonizzare la radio → nessuna distrazione?",
         "spiegazione": "Qualsiasi azione che ti distoglie dalla guida (anche sintonizzare l'autoradio) riduce l'attenzione, anche se sei abituato a farla.",
         "regola": "Distrazione = Pericolo, sempre!",
         "trabocchetti": ["non comporta perdita di attenzione"],
@@ -773,12 +884,14 @@ QUESTIONS = [
     {
         "domanda": "Se si è stato di ebbrezza lieve, si riesce a guidare comunque in sicurezza",
         "risposta": False,
+        "riassunto": "Ebbrezza lieve → guida sicura?",
         "spiegazione": "Anche una piccola quantità di alcol (ebbrezza lieve) riduce le tue capacità di guida e la tua sicurezza. Non si guida mai in sicurezza sotto l'effetto dell'alcol.",
         "regola": "Alcol = Zero sicurezza!",
     },
     {
         "domanda": "La quantità di attenzione che si può prestare alla strada mentre si guida è illimitata",
         "risposta": False,
+        "riassunto": "Attenzione → illimitata?",
         "spiegazione": "La nostra attenzione è limitata. Non possiamo concentrarci su troppe cose contemporaneamente. Per questo le distrazioni sono pericolose.",
         "regola": "Attenzione = Limitata, non sprecarla!",
         "trabocchetti": ["illimitata"],
@@ -786,6 +899,7 @@ QUESTIONS = [
     {
         "domanda": "Con 0,5 grammi per litro di alcool nel sangue si riesce a concentrarsi meglio",
         "risposta": False,
+        "riassunto": "0,5 g/l di alcol → concentrazione migliore?",
         "spiegazione": "0,5 g/l è il limite legale in Italia per i conducenti esperti, ma anche a questo livello l'alcol riduce le capacità di guida, non le migliora. Per i neopatentati il limite è 0.",
         "regola": "Alcol = Concentrazione zero!",
         "trabocchetti": ["si riesce a concentrarsi meglio"],
@@ -793,6 +907,7 @@ QUESTIONS = [
     {
         "domanda": "I nostri sensi riescono a cogliere tutti gli stimoli presenti nell’ambiente",
         "risposta": False,
+        "riassunto": "Sensi → colgono tutti gli stimoli?",
         "spiegazione": "I nostri sensi hanno dei limiti. Non possiamo percepire tutto ciò che ci circonda, specialmente quando siamo distratti o stanchi.",
         "regola": "Sensi = Limiti, non tutto!",
         "trabocchetti": ["tutti gli stimoli"],
@@ -800,6 +915,7 @@ QUESTIONS = [
     {
         "domanda": "I nostri sensi sono in grado di percepire stimoli di qualunque intensità",
         "risposta": False,
+        "riassunto": "Sensi → stimoli di qualunque intensità?",
         "spiegazione": "I nostri sensi hanno una soglia. Non possiamo percepire stimoli troppo deboli o troppo forti.",
         "regola": "Sensi = Limiti di intensità!",
         "trabocchetti": ["di qualunque intensità"],
@@ -807,12 +923,14 @@ QUESTIONS = [
     {
         "domanda": "In condizioni di traffico intenso lo stress può aiutare il conducente a mantenersi vigile",
         "risposta": False,
+        "riassunto": "Traffico intenso → lo stress aiuta a stare vigili?",
         "spiegazione": "Lo stress, specialmente se eccessivo, riduce la capacità di attenzione e reazione, rendendo la guida più pericolosa, non più vigile.",
         "regola": "Stress = Nemico della guida!",
     },
     {
         "domanda": "L’udito non è un senso importante quando si guida",
         "risposta": False,
+        "riassunto": "Udito → poco importante alla guida?",
         "spiegazione": "L'udito è molto importante! Ti permette di sentire clacson, sirene, rumori del motore o di altri veicoli, aiutandoti a percepire pericoli.",
         "regola": "Udito = Allerta extra!",
         "trabocchetti": ["non è un senso importante"],
@@ -820,6 +938,7 @@ QUESTIONS = [
     {
         "domanda": "Distrarsi alla guida può causare incidenti stradali che possono comportare gravi conseguenze",
         "risposta": True,
+        "riassunto": "Distrazione → incidenti gravi?",
         "spiegazione": "È assolutamente vero. Ogni distrazione (cellulare, passeggeri, pensieri) aumenta il rischio di incidenti, anche molto gravi.",
         "regola": "Distrazione = Rischio incidente!",
         "trabocchetti": ["può causare", "possono comportare"],
@@ -827,6 +946,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si attraversa un incrocio è necessario mantenere la massima concentrazione alla guida",
         "risposta": True,
+        "riassunto": "Incrocio → massima concentrazione?",
         "spiegazione": "Gli incroci sono punti molto pericolosi. Devi essere concentratissimo per vedere altri veicoli, pedoni e rispettare le precedenze.",
         "regola": "Incrocio = Concentrazione massima!",
         "trabocchetti": ["massima concentrazione"],
@@ -834,6 +954,7 @@ QUESTIONS = [
     {
         "domanda": "E’ pericoloso, durante la guida, distogliere lo sguardo dalla strada, anche per pochi millisecondi",
         "risposta": True,
+        "riassunto": "Distogliere lo sguardo anche per millisecondi → pericoloso?",
         "spiegazione": "Anche un attimo di distrazione può essere fatale. A velocità elevate, in pochi millisecondi si percorrono molti metri senza vedere la strada.",
         "regola": "Occhi sulla strada = Sempre!",
         "trabocchetti": ["anche per pochi millisecondi"],
@@ -841,12 +962,14 @@ QUESTIONS = [
     {
         "domanda": "Per prevenire il rischio di incidenti, il conducente dovrà valutare attentamente il comportamento degli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Prevenire incidenti → valutare il comportamento altrui?",
         "spiegazione": "È fondamentale osservare e cercare di capire cosa faranno gli altri (pedoni, ciclisti, altri veicoli) per anticipare pericoli e guidare in sicurezza.",
         "regola": "Guida sicura = Prevedi gli altri!",
     },
     {
         "domanda": "Durante la guida, la percezione di un pericolo e la conseguente reazione del conducente sono influenzate dalle condizioni ambientali",
         "risposta": True,
+        "riassunto": "Percezione del pericolo → influenzata dall'ambiente?",
         "spiegazione": "Condizioni come pioggia, nebbia, buio o sole basso rendono più difficile vedere i pericoli e rallentano i tempi di reazione.",
         "regola": "Ambiente difficile = Reazione lenta!",
         "trabocchetti": ["sono influenzate"],
@@ -854,6 +977,7 @@ QUESTIONS = [
     {
         "domanda": "L’ansia può ridurre la capacità di prestare attenzione ai pericoli",
         "risposta": True,
+        "riassunto": "Ansia → meno attenzione ai pericoli?",
         "spiegazione": "L'ansia ti rende meno lucido, ti distrae e ti impedisce di concentrarti bene sui pericoli della strada.",
         "regola": "Ansia = Attenzione giù!",
         "trabocchetti": ["può ridurre"],
@@ -861,12 +985,14 @@ QUESTIONS = [
     {
         "domanda": "Un conducente deve considerare che non sempre è in grado di valutare correttamente le proprie capacità di guida",
         "risposta": True,
+        "riassunto": "Conducente → non sempre valuta bene le proprie capacità?",
         "spiegazione": "È importante essere umili e riconoscere che a volte ci si può sopravvalutare, specialmente quando si è stanchi o sotto stress.",
         "regola": "Conosci i tuoi limiti!",
     },
     {
         "domanda": "Quando si è alla guida, la capacità di attenzione può essere influenzata anche dall’ascolto di musica a volume molto alto",
         "risposta": True,
+        "riassunto": "Musica altissima → influisce sull'attenzione?",
         "spiegazione": "La musica troppo alta può distrarre, impedirti di sentire rumori importanti (clacson, sirene) e aumentare lo stress.",
         "regola": "Musica alta = Meno attenzione!",
         "trabocchetti": ["può essere influenzata anche"],
@@ -874,6 +1000,7 @@ QUESTIONS = [
     {
         "domanda": "Parlare animosamente con altre persone a bordo del veicolo può influenzare negativamente il comportamento di guida",
         "risposta": True,
+        "riassunto": "Discussioni animate a bordo → peggiorano la guida?",
         "spiegazione": "Una discussione accesa o una conversazione troppo coinvolgente ti distrae dalla strada e può farti perdere la concentrazione.",
         "regola": "Parla meno, guida meglio!",
         "trabocchetti": ["può influenzare negativamente"],
@@ -881,6 +1008,7 @@ QUESTIONS = [
     {
         "domanda": "Se non si è certi di attraversare in tutta sicurezza un incrocio, è necessario arrestarsi ed aspettare che transitino tutti i veicoli con cui vi può essere un pericolo di collisione",
         "risposta": True,
+        "riassunto": "Incrocio incerto → fermarsi e far passare?",
         "spiegazione": "In caso di dubbio, la sicurezza viene prima di tutto. Meglio fermarsi e aspettare che la situazione sia chiara e sicura.",
         "regola": "Dubbio = Fermati!",
         "trabocchetti": ["Se non si è certi", "è necessario arrestarsi"],
@@ -888,6 +1016,7 @@ QUESTIONS = [
     {
         "domanda": "La presenza di passeggeri che schiamazzano a bordo del veicolo può influenzare la concentrazione del conducente",
         "risposta": True,
+        "riassunto": "Passeggeri rumorosi → influenzano la concentrazione?",
         "spiegazione": "Rumori forti o comportamenti vivaci dei passeggeri sono una fonte di distrazione che può ridurre la tua attenzione alla guida.",
         "regola": "Silenzio = Concentrazione!",
         "trabocchetti": ["può influenzare"],
@@ -895,18 +1024,21 @@ QUESTIONS = [
     {
         "domanda": "Durante la guida il conducente deve prestare attenzione, sia a gli utenti che si trovano davanti al proprio veicolo, sia a coloro che si trovano ai bordi della strada",
         "risposta": True,
+        "riassunto": "Attenzione → davanti e ai bordi della strada?",
         "spiegazione": "Devi avere una visione completa: guardare avanti, ma anche ai lati (pedoni, ciclisti, veicoli che escono) e usare gli specchietti per il dietro.",
         "regola": "Occhi ovunque!",
     },
     {
         "domanda": "Concentrare la propria attenzione sulle indicazioni del navigatore satellitare può rappresentare un elemento di distrazione alla guida",
         "risposta": True,
+        "riassunto": "Navigatore → elemento di distrazione?",
         "spiegazione": "Anche se utile, guardare troppo il navigatore ti distoglie dalla strada. Meglio ascoltare le indicazioni vocali o guardarlo solo quando sei fermo.",
         "regola": "Navigatore = Ascolta, non guardare troppo!",
     },
     {
         "domanda": "Il conducente non deve mai sopravvalutare la propria abilità di guida",
         "risposta": True,
+        "riassunto": "Conducente → mai sopravvalutarsi?",
         "spiegazione": "È importante essere realisti sulle proprie capacità. Sopravvalutarsi porta a prendere rischi inutili e pericolosi.",
         "regola": "Umiltà al volante!",
         "trabocchetti": ["non deve mai sopravvalutare"],
@@ -914,6 +1046,7 @@ QUESTIONS = [
     {
         "domanda": "Le norme di circolazione sono stabilite per garantire una maggior sicurezza di guida per tutti gli utenti della strada",
         "risposta": True,
+        "riassunto": "Norme → più sicurezza per tutti?",
         "spiegazione": "Le regole del Codice della Strada esistono proprio per proteggere tutti: conducenti, pedoni, ciclisti, rendendo la strada più sicura.",
         "regola": "Norme = Sicurezza per tutti!",
         "trabocchetti": ["per garantire una maggior sicurezza"],
@@ -921,12 +1054,14 @@ QUESTIONS = [
     {
         "domanda": "Il rispetto delle norme di circolazione permette di limitare i rischi connessi alla guida di tutti i veicoli, sia di quelli a motore, sia di quelli che ne sono privi",
         "risposta": True,
+        "riassunto": "Norme → meno rischi per veicoli con e senza motore?",
         "spiegazione": "Le regole valgono per tutti (auto, moto, bici, pedoni) e il loro rispetto riduce i pericoli per tutti.",
         "regola": "Norme = Meno rischi per tutti!",
     },
     {
         "domanda": "Il rispetto delle norme permette di limitare l’intralcio alla circolazione",
         "risposta": True,
+        "riassunto": "Norme → meno intralcio?",
         "spiegazione": "Rispettare le regole (es. parcheggio, precedenze) aiuta il traffico a scorrere meglio e a evitare code e rallentamenti.",
         "regola": "Norme = Traffico fluido!",
         "trabocchetti": ["limitare l’intralcio"],
@@ -934,6 +1069,7 @@ QUESTIONS = [
     {
         "domanda": "Utilizzare il cellulare alla guida è pericoloso perché riduce l’attenzione alla strada",
         "risposta": True,
+        "riassunto": "Cellulare alla guida → meno attenzione?",
         "spiegazione": "È una delle principali cause di incidenti. Il cellulare distrae la vista, la mente e le mani dalla guida.",
         "regola": "Cellulare = Attenzione zero!",
         "trabocchetti": ["riduce l’attenzione"],
@@ -941,6 +1077,7 @@ QUESTIONS = [
     {
         "domanda": "Utilizzare il cellulare alla guida, anche se con impianto viva-voce, può ridurre l’attenzione alla strada",
         "risposta": True,
+        "riassunto": "Cellulare anche col vivavoce → meno attenzione?",
         "spiegazione": "Anche se hai le mani libere, parlare al telefono (anche in vivavoce) impegna la tua mente e riduce la tua concentrazione sulla guida.",
         "regola": "Viva-voce = Mente distratta!",
         "trabocchetti": ["anche se con impianto viva-voce", "può ridurre"],
@@ -948,6 +1085,7 @@ QUESTIONS = [
     {
         "domanda": "La distrazione durante la guida è una delle principali cause di incidenti stradali",
         "risposta": True,
+        "riassunto": "Distrazione → tra le principali cause di incidenti?",
         "spiegazione": "È un dato di fatto. Moltissimi incidenti avvengono perché il conducente non era concentrato sulla strada.",
         "regola": "Distrazione = Causa incidenti!",
         "trabocchetti": ["una delle principali cause"],
@@ -955,6 +1093,7 @@ QUESTIONS = [
     {
         "domanda": "L’attenzione alla guida diminuisce quando si è affaticati",
         "risposta": True,
+        "riassunto": "Stanchezza → meno attenzione?",
         "spiegazione": "La stanchezza riduce i riflessi, la capacità di concentrazione e aumenta il rischio di addormentarsi al volante.",
         "regola": "Stanco = Fermati!",
         "trabocchetti": ["diminuisce quando si è affaticati"],
@@ -962,6 +1101,7 @@ QUESTIONS = [
     {
         "domanda": "Impostare il navigatore satellitare mentre si guida riduce l’attenzione alla strada",
         "risposta": True,
+        "riassunto": "Impostare il navigatore guidando → meno attenzione?",
         "spiegazione": "Guardare lo schermo e toccare i comandi del navigatore mentre si è in movimento distrae la vista e la mente dalla guida.",
         "regola": "Navigatore in marcia = Distrazione!",
         "trabocchetti": ["riduce l’attenzione"],
@@ -969,6 +1109,7 @@ QUESTIONS = [
     {
         "domanda": "Si può \"allenare\" l’attenzione alla guida",
         "risposta": True,
+        "riassunto": "Attenzione → si può allenare?",
         "spiegazione": "Con la pratica e l'esperienza, si può migliorare la propria capacità di concentrazione e di anticipare i pericoli.",
         "regola": "Pratica = Attenzione migliore!",
         "trabocchetti": ["allenare"],
@@ -976,12 +1117,14 @@ QUESTIONS = [
     {
         "domanda": "I nostri sensi non riescono a cogliere tutti gli stimoli presenti nell’ambiente",
         "risposta": True,
+        "riassunto": "Sensi → non colgono tutti gli stimoli?",
         "spiegazione": "I nostri sensi hanno dei limiti. Non possiamo percepire ogni singolo dettaglio o stimolo, specialmente se siamo distratti o l'ambiente è complesso.",
         "regola": "Sensi = Limiti, non tutto!",
     },
     {
         "domanda": "Le emozioni influenzano la nostra attenzione",
         "risposta": True,
+        "riassunto": "Emozioni → influenzano l'attenzione?",
         "spiegazione": "Emozioni forti (rabbia, tristezza, euforia) possono distrarci, farci perdere la concentrazione e influenzare negativamente la guida.",
         "regola": "Emozioni forti = Guida a rischio!",
         "trabocchetti": ["influenzano"],
@@ -989,6 +1132,7 @@ QUESTIONS = [
     {
         "domanda": "A volte ci si espone a situazioni più rischiose di quelle che si è in grado di gestire",
         "risposta": True,
+        "riassunto": "A volte → situazioni più rischiose di quanto sappiamo gestire?",
         "spiegazione": "È vero, a volte per imprudenza o sopravvalutazione delle proprie capacità, si affrontano situazioni troppo pericolose.",
         "regola": "Non rischiare troppo!",
         "trabocchetti": ["A volte"],
@@ -996,12 +1140,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente può distogliere lo sguardo dalla strada quando ritiene che non ci sia pericolo imminente di incidente",
         "risposta": False,
+        "riassunto": "Nessun pericolo imminente → distogliere lo sguardo?",
         "spiegazione": "Non devi mai distogliere lo sguardo dalla strada, nemmeno per un attimo. Un pericolo può presentarsi all'improvviso, anche quando non te lo aspetti.",
         "regola": "Occhi sulla strada = Sempre!",
     },
     {
         "domanda": "In prossimità di un incrocio un conducente può arrestarsi e, mentre attende il passaggio di altri veicoli, può inviare un rapido messaggio con il cellulare",
         "risposta": False,
+        "riassunto": "Fermi all'incrocio → mandare un messaggio?",
         "spiegazione": "Anche se sei fermo a un incrocio, sei comunque alla guida. Usare il cellulare è vietato e distrae, anche per un 'rapido messaggio'.",
         "regola": "Cellulare = Solo a veicolo spento!",
         "trabocchetti": ["può inviare un rapido messaggio"],

@@ -2,3 +2,5 @@ __pycache__/
 # progressi personali
 errori.json
 padronanza.json
+.venv/
+riassunti_batch.json

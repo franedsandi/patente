@@ -1,7 +1,7 @@
 """Domande — Pannelli integrativi dei segnali.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Pannelli integrativi dei segnali"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato preavvisa che temporaneamente manca la segnaletica orizzontale sulla carreggiata",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → manca la segnaletica orizzontale?",
         "spiegazione": "Questo pannello integrativo, che mostra una spazzola che dipinge una linea, serve per avvisare i conducenti che, per un certo periodo, le linee sulla strada (la segnaletica orizzontale) potrebbero non esserci o essere poco visibili. Questo accade spesso durante i lavori stradali.",
         "regola": "Spazzola = linee 'in pausa' o 'in rifacimento'.",
         "trabocchetti": ["temporaneamente"],
@@ -18,6 +19,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un tratto di strada sul quale non è temporaneamente presente la segnaletica orizzontale",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → tratto senza segnaletica orizzontale?",
         "spiegazione": "Esatto, il pannello con la spazzola ci dice che in quel tratto di strada le linee disegnate sull'asfalto (come quelle che separano le corsie o indicano i margini) potrebbero non esserci. Questo rende la guida più difficile e richiede maggiore attenzione.",
         "regola": "Spazzola = attenzione, le linee non ci sono (ancora).",
         "trabocchetti": ["temporaneamente"],
@@ -26,6 +28,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che si stanno svolgendo i lavori per rifare la segnaletica orizzontale",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → lavori di rifacimento della segnaletica?",
         "spiegazione": "Sì, il simbolo della spazzola che dipinge una linea è un chiaro riferimento ai lavori di manutenzione o rifacimento della segnaletica orizzontale. Quindi, se vedi questo pannello, significa che stanno lavorando per ridipingere le linee sulla strada.",
         "regola": "Spazzola = lavori in corso sulle linee.",
         "trabocchetti": ["si stanno svolgendo i lavori"],
@@ -34,6 +37,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato viene posto sotto il segnale ALTRI PERICOLI",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → sotto ALTRI PERICOLI?",
         "spiegazione": "Questo pannello è un 'integrativo', cioè un segnale che aggiunge informazioni a un segnale principale. La mancanza o il rifacimento della segnaletica orizzontale è una situazione di pericolo generico, quindi è logico che venga abbinato al segnale 'Altri pericoli' (il triangolo con il punto esclamativo) per specificare il tipo di rischio.",
         "regola": "Pericolo generico (punto esclamativo) + dettaglio (spazzola per le linee).",
         "trabocchetti": ["pannello integrativo"],
@@ -42,6 +46,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada chiusa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada chiusa?",
         "spiegazione": "No, questo segnale non indica una strada chiusa. Il simbolo della spazzola e della linea si riferisce alla segnaletica orizzontale (le linee sull'asfalto), non al blocco della circolazione. Una strada chiusa è indicata da altri segnali specifici.",
         "regola": "Spazzola = linee, non blocco.",
         "trabocchetti": ["strada chiusa"],
@@ -50,6 +55,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica una strada innevata",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → strada innevata?",
         "spiegazione": "Assolutamente no. Il pannello raffigura una spazzola che dipinge una linea, non la neve. I segnali che indicano neve o ghiaccio hanno simboli diversi, come fiocchi di neve o pneumatici che slittano.",
         "regola": "Spazzola = linee, non neve.",
         "trabocchetti": ["innevata"],
@@ -58,6 +64,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la vicinanza di un attraversamento pedonale",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → attraversamento pedonale vicino?",
         "spiegazione": "Falso. Questo pannello non ha nulla a che fare con gli attraversamenti pedonali. Un attraversamento pedonale è indicato da un segnale specifico con l'immagine di un pedone che cammina sulle strisce.",
         "regola": "Spazzola = linee, non pedoni.",
         "trabocchetti": ["attraversamento pedonale"],
@@ -66,6 +73,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato preavvisa l'inizio di un tratto di strada a senso unico",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → inizio senso unico?",
         "spiegazione": "No, questo pannello non indica una strada a senso unico. I segnali di senso unico sono di forma rettangolare e di colore blu, con una freccia bianca che indica la direzione. Il simbolo della spazzola è legato alla segnaletica orizzontale.",
         "regola": "Spazzola = linee, non direzione.",
         "trabocchetti": ["senso unico"],
@@ -74,6 +82,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che non è consentito superare la linea continua",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → non superare la linea continua?",
         "spiegazione": "Falso. Questo pannello non dà un divieto specifico. Indica una condizione della strada (mancanza o rifacimento delle linee). Il divieto di superare una linea continua è una regola generale del Codice della Strada, che vale quando la linea è presente e ben visibile. Questo pannello, al contrario, ti avvisa proprio che le linee potrebbero non esserci o essere poco chiare.",
         "regola": "Spazzola = stato delle linee, non divieto.",
         "immagine": "e04d4fcb45c22c63cd2d.jpg",
@@ -81,6 +90,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato invita a rallentare a causa di un incidente",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → rallentare per incidente?",
         "spiegazione": "Questo pannello integrativo, che mostra due auto che si sono scontrate, serve a segnalare che c'è stato un incidente. Quando c'è un incidente, è fondamentale rallentare per la propria sicurezza e quella degli altri, per evitare altri pericoli e per essere pronti a fermarsi.",
         "regola": "Incidente = Rallenta sempre!",
         "trabocchetti": ["invita a rallentare"],
@@ -89,6 +99,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica veicoli incidentati sulla carreggiata",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → veicoli incidentati in carreggiata?",
         "spiegazione": "L'immagine sul pannello mostra chiaramente due veicoli che si sono urtati, cioè sono 'incidentati'. Questi veicoli si trovano sulla strada, o 'carreggiata', e possono essere un ostacolo o un pericolo.",
         "regola": "Pannello = Auto rotte sulla strada.",
         "trabocchetti": ["Indica"],
@@ -97,6 +108,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato segnala che la carreggiata è occupata da veicoli incidentati",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → carreggiata occupata da incidentati?",
         "spiegazione": "Se c'è un incidente, i veicoli coinvolti sono fermi sulla strada (carreggiata) e la occupano, anche solo in parte. Questo significa che lo spazio per guidare potrebbe essere ridotto o bloccato, creando un pericolo.",
         "regola": "Incidente = Strada occupata.",
         "trabocchetti": ["occupata"],
@@ -105,6 +117,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato segnala un incidente stradale e che quindi occorre diminuire la velocità",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → incidente, ridurre la velocità?",
         "spiegazione": "Il pannello segnala un incidente stradale. Di fronte a un incidente, la prima cosa da fare per la sicurezza è 'diminuire la velocità' per avere più tempo per reagire e per evitare di causare altri incidenti.",
         "regola": "Incidente = Meno velocità, più sicurezza.",
         "trabocchetti": ["quindi occorre diminuire la velocità"],
@@ -113,6 +126,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica una strada sdrucciolevole",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → strada sdrucciolevole?",
         "spiegazione": "Questo pannello non indica una 'strada sdrucciolevole' (scivolosa). Una strada sdrucciolevole è segnalata da un altro tipo di cartello, di solito triangolare, con un'auto che sbanda. Questo pannello mostra un urto, non uno scivolamento.",
         "regola": "Non scivola, si scontra!",
         "trabocchetti": ["strada sdrucciolevole"],
@@ -121,6 +135,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica di fermarsi e dare la precedenza a destra",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → fermarsi e precedenza a destra?",
         "spiegazione": "Il pannello raffigurato non ha nulla a che fare con il 'fermarsi' o il 'dare la precedenza a destra'. Questi sono indicati da segnali specifici (come il segnale di STOP o il segnale di Dare precedenza). Il pannello indica solo la presenza di un incidente.",
         "regola": "Non è STOP, non è precedenza.",
         "trabocchetti": ["fermarsi", "dare la precedenza a destra"],
@@ -129,6 +144,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato si trova solo se l'incidente è avvenuto in autostrada",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → solo per incidenti in autostrada?",
         "spiegazione": "Questo pannello può essere usato per segnalare un incidente su qualsiasi tipo di strada: autostrade, strade extraurbane o urbane. La parola 'solo' rende l'affermazione falsa, perché limita l'uso del pannello a un unico tipo di strada.",
         "regola": "Non 'solo', ovunque!",
         "trabocchetti": ["solo"],
@@ -137,6 +153,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un divieto di sosta",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → divieto di sosta?",
         "spiegazione": "Il pannello non indica un 'divieto di sosta'. Il divieto di sosta è segnalato da un cartello rotondo blu con una barra diagonale rossa. Questo pannello mostra un incidente, non una restrizione sul parcheggio.",
         "regola": "Non è parcheggio, è scontro.",
         "trabocchetti": ["divieto di sosta"],
@@ -145,6 +162,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato preavvisa la presenza di un garage per veicoli incidentati",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → garage per incidentati?",
         "spiegazione": "Questo pannello serve ad avvisare della presenza di un incidente sulla strada, non di un 'garage per veicoli incidentati'. Non indica un servizio o un luogo dove riparare le auto, ma un pericolo attuale.",
         "regola": "Non è un'officina, è un pericolo.",
         "trabocchetti": ["garage per veicoli incidentati"],
@@ -153,6 +171,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica di accendere le luci per evitare incidenti",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → accendere le luci?",
         "spiegazione": "Il pannello segnala un incidente già avvenuto. Anche se accendere le luci è una buona pratica in molte situazioni per la sicurezza, questo pannello non dà questa specifica istruzione. Il suo scopo è avvisare di un pericolo esistente, non dare consigli generali per 'evitare incidenti'.",
         "regola": "Non è per prevenire, è per avvisare.",
         "trabocchetti": ["accendere le luci per evitare incidenti"],
@@ -161,6 +180,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la possibilità di trovare traffico intenso, con formazione di colonne di veicoli",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → traffico intenso con code?",
         "spiegazione": "Il pannello integrativo mostra tante macchine in fila, il che significa che potresti trovare molto traffico e code di veicoli. È un avviso per prepararti a questa situazione.",
         "regola": "Tante macchine in fila = traffico intenso.",
         "trabocchetti": ["possibilità"],
@@ -169,6 +189,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la possibilità di trovare veicoli fermi in colonna",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → veicoli fermi in colonna?",
         "spiegazione": "Quando c'è traffico intenso, come quello indicato dal pannello, è molto probabile che i veicoli si fermino in colonna. Il pannello ti avvisa proprio di questo.",
         "regola": "Code = veicoli fermi.",
         "trabocchetti": ["possibilità", "Fermi in colonna"],
@@ -177,6 +198,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato si può trovare all'ingresso delle autostrade, per indicare che vi sono veicoli in lento movimento",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → ingresso autostrade, veicoli lenti?",
         "spiegazione": "Questo pannello si usa spesso in autostrada, specialmente vicino agli ingressi o alle uscite, per avvisare i guidatori che più avanti il traffico è lento o ci sono code.",
         "regola": "Autostrada + code = rallentamenti.",
         "trabocchetti": ["Si può trovare", "Lento movimento"],
@@ -185,6 +207,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato invita ad usare prudenza, per non tamponare veicoli fermi per intasamento del traffico",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → prudenza per non tamponare?",
         "spiegazione": "Lo scopo principale di questo pannello è farti guidare con attenzione (prudenza) per evitare di scontrarti con i veicoli davanti a te, che potrebbero essere fermi a causa del traffico.",
         "regola": "Vedi code = usa prudenza per non tamponare.",
         "trabocchetti": ["Invita ad usare prudenza", "Tamponare"],
@@ -193,6 +216,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato, posto sull'autostrada, può consigliare di uscire per evitare probabili rallentamenti o code",
         "risposta": True,
+        "riassunto": "Pannello raffigurato → consiglio di uscire per evitare code?",
         "spiegazione": "Se il pannello è in autostrada, specialmente se è un pannello a messaggio variabile, può suggerirti di prendere un'uscita alternativa per evitare le code o i rallentamenti che ci sono più avanti.",
         "regola": "Code in autostrada = cerca uscita alternativa.",
         "trabocchetti": ["Può consigliare", "Probabili rallentamenti o code"],
@@ -201,6 +225,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato indica un'area di parcheggio per autovetture",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → parcheggio auto?",
         "spiegazione": "Il pannello mostra veicoli in fila, che indicano traffico o code, non un'area dove puoi parcheggiare. I segnali di parcheggio sono diversi, di solito con una 'P'.",
         "regola": "Non è una 'P' = non è parcheggio.",
         "trabocchetti": ["area di parcheggio"],
@@ -209,6 +234,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che la corsia di sinistra è riservata ai veicoli che pagano il pedaggio autostradale tramite telepass",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → corsia sinistra per telepass?",
         "spiegazione": "Questo pannello avvisa del traffico, non ha niente a che fare con il pagamento del pedaggio o con il Telepass. I segnali per il Telepass sono specifici e diversi.",
         "regola": "Non c'è Telepass = non è Telepass.",
         "immagine": "f243b9aef4ecae433364.jpg",
@@ -216,6 +242,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica una strada a senso unico",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → senso unico?",
         "spiegazione": "Il pannello indica traffico, non una strada a senso unico. I segnali di senso unico sono di solito quadrati blu con una freccia bianca.",
         "regola": "Non è una freccia = non è senso unico.",
         "trabocchetti": ["Strada a senso unico"],
@@ -224,6 +251,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica l'obbligo di sorpassare a sinistra",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → sorpasso a sinistra obbligatorio?",
         "spiegazione": "Questo pannello è un avviso di traffico, non ti dice come sorpassare. Le regole sul sorpasso sono indicate da altri segnali o dal Codice della Strada.",
         "regola": "Non è un obbligo = non è sorpasso.",
         "trabocchetti": ["Obbligo di sorpassare a sinistra"],
@@ -232,6 +260,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica di diminuire la distanza di sicurezza",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → diminuire la distanza?",
         "spiegazione": "Quando c'è traffico o code, devi sempre aumentare la distanza di sicurezza, non diminuirla! Diminuire la distanza è molto pericoloso e aumenta il rischio di tamponamento.",
         "regola": "Code = aumenta distanza, mai diminuire!",
         "trabocchetti": ["Diminuire la distanza di sicurezza"],
@@ -240,6 +269,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato obbliga i veicoli a circolare a passo d'uomo",
         "risposta": False,
+        "riassunto": "Pannello raffigurato → passo d'uomo?",
         "spiegazione": "Il pannello avvisa del traffico, che potrebbe farti andare molto lentamente, ma non ti 'obbliga' a circolare a passo d'uomo. È una conseguenza del traffico, non un comando del segnale.",
         "regola": "Non è un obbligo = non è passo d'uomo.",
         "trabocchetti": ["obbliga"],
@@ -248,6 +278,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura (A) indica la vicinanza di una o più curve strette",
         "risposta": True,
+        "riassunto": "Pannello (A) → curve strette vicine?",
         "spiegazione": "Il pannello 'tornante' (A) serve proprio ad avvisarti che stai per incontrare una curva molto stretta e difficile da affrontare. Quindi, la risposta è VERO.",
         "regola": "Tornante = curva stretta.",
         "trabocchetti": ["curve strette"],
@@ -256,6 +287,7 @@ QUESTIONS = [
     {
         "domanda": "La presenza di uno dei due pannelli integrativi in figura indica la vicinanza di una o più curve strette",
         "risposta": True,
+        "riassunto": "Uno dei due pannelli → curve strette vicine?",
         "spiegazione": "Sia il pannello 'tornante' (A) che '3 tornanti' (B) indicano la presenza di curve molto strette. Il pannello B specifica anche quante ce ne sono. Quindi, la risposta è VERO.",
         "regola": "Tornanti = curve strette, singole o multiple.",
         "trabocchetti": ["uno dei due pannelli", "Curve strette"],
@@ -264,6 +296,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura (B) indica la vicinanza di una o più curve particolarmente pericolose",
         "risposta": True,
+        "riassunto": "Pannello (B) → curve particolarmente pericolose?",
         "spiegazione": "I 'tornanti' sono curve molto strette e per questo sono considerate 'particolarmente pericolose'. Il pannello B ti avvisa che ne troverai tre. Quindi, la risposta è VERO.",
         "regola": "Tornanti = curve pericolose.",
         "immagine": "c299306447347988be79.jpg",
@@ -271,6 +304,7 @@ QUESTIONS = [
     {
         "domanda": "La presenza di uno dei due pannelli integrativi in figura indica la vicinanza di una o più curve particolarmente pericolose",
         "risposta": True,
+        "riassunto": "Uno dei due pannelli → curve particolarmente pericolose?",
         "spiegazione": "Entrambi i pannelli si riferiscono ai 'tornanti', che sono per definizione curve molto strette e quindi 'particolarmente pericolose'. Quindi, la risposta è VERO.",
         "regola": "Tornanti = sempre pericolosi.",
         "trabocchetti": ["uno dei due pannelli", "Particolarmente pericolose"],
@@ -279,6 +313,7 @@ QUESTIONS = [
     {
         "domanda": "La presenza di uno dei due pannelli integrativi in figura può indicare uno o più tornanti",
         "risposta": True,
+        "riassunto": "Uno dei due pannelli → tornanti?",
         "spiegazione": "I pannelli mostrano proprio la parola 'tornante' o 'tornanti'. Indicano esattamente la presenza di una o più di queste curve. Quindi, la risposta è VERO.",
         "regola": "Leggo 'tornante', trovo tornante.",
         "trabocchetti": ["può indicare"],
@@ -287,6 +322,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo di figura B indica il numero di corsie di cui è composta la strada",
         "risposta": False,
+        "riassunto": "Pannello B → numero di corsie della strada?",
         "spiegazione": "Il pannello B dice '3 tornanti', il che significa che ci sono tre curve strette. Non ha nulla a che fare con il numero di corsie della strada. Quindi, la risposta è FALSO.",
         "regola": "3 tornanti = 3 curve, non 3 corsie.",
         "trabocchetti": ["numero di corsie"],
@@ -295,6 +331,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo di figura B indica quanti veicoli contemporaneamente possono percorrere la curva",
         "risposta": False,
+        "riassunto": "Pannello B → veicoli insieme in curva?",
         "spiegazione": "Il pannello B indica il numero di 'tornanti' che incontrerai (tre), non quanti veicoli possono passare contemporaneamente in una curva. Questo non è un segnale di capacità. Quindi, la risposta è FALSO.",
         "regola": "Numero tornanti, non numero veicoli.",
         "trabocchetti": ["quanti veicoli contemporaneamente"],
@@ -303,6 +340,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo di figura B indica quanti chilometri mancano per poter trovare un cavalcavia che consente di invertire il senso di marcia",
         "risposta": False,
+        "riassunto": "Pannello B → km al cavalcavia per inversione?",
         "spiegazione": "Il pannello B indica '3 tornanti', cioè tre curve strette. Non ha nulla a che fare con chilometri, cavalcavia o inversioni di marcia. Quindi, la risposta è FALSO.",
         "regola": "3 tornanti = 3 curve, non distanza o cavalcavia.",
         "trabocchetti": ["chilometri", "cavalcavia", "invertire il senso di marcia"],
@@ -311,6 +349,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo di figura B indica il numero degli svincoli autostradali",
         "risposta": False,
+        "riassunto": "Pannello B → numero di svincoli?",
         "spiegazione": "Il pannello B indica il numero di 'tornanti' (curve strette), non il numero di svincoli autostradali. Sono due cose completamente diverse. Quindi, la risposta è FALSO.",
         "regola": "Tornanti non sono svincoli.",
         "trabocchetti": ["svincoli autostradali"],
@@ -319,6 +358,7 @@ QUESTIONS = [
     {
         "domanda": "La presenza di uno dei due pannelli integrativi in figura indica l'incrocio con una strada dalla quale si immettono autocarri provenienti da una discarica",
         "risposta": False,
+        "riassunto": "Uno dei due pannelli → autocarri da una discarica?",
         "spiegazione": "I pannelli indicano la presenza di 'tornanti' (curve strette e pericolose). Non hanno assolutamente nulla a che fare con incroci, autocarri o discariche. Questa è una distrazione totale. Quindi, la risposta è FALSO.",
         "regola": "Tornanti = curve, non camion o discariche.",
         "trabocchetti": ["incrocio", "autocarri", "discarica"],
@@ -327,6 +367,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura, posto sotto il segnale DIVIETO DI SOSTA, indica che la sosta è vietata solo in determinate ore dei giorni indicati",
         "risposta": True,
+        "riassunto": "Pannello sotto DIVIETO DI SOSTA → solo in certe ore dei giorni indicati?",
         "spiegazione": "Questo pannello, se messo sotto il segnale di 'Divieto di Sosta', ti dice che non puoi parcheggiare la tua auto solo in certi giorni e orari. In questo caso, dal lunedì al venerdì, dalle 21:00 alle 4:00 del mattino, perché la strada viene pulita.",
         "regola": "Spazzatrice + orario = Sosta vietata solo lì e allora.",
         "immagine": "fa9498b5740e9401feef.jpg",
@@ -334,6 +375,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura è posto nei tratti di strada dove vengono effettuate operazioni di pulizia delle strade con autospazzatrici",
         "risposta": True,
+        "riassunto": "Pannello → strade pulite con autospazzatrici?",
         "spiegazione": "L'immagine sul pannello mostra un camion con una spazzola, che è proprio un'autospazzatrice. Questo pannello si trova dove la strada viene pulita da questi veicoli.",
         "regola": "Immagine camion = Pulizia strada.",
         "trabocchetti": ["autospazzatrici"],
@@ -342,6 +384,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura indica i giorni e le ore in cui si effettuano operazioni di pulizia della strada con autospazzatrici",
         "risposta": True,
+        "riassunto": "Pannello → giorni e ore della pulizia stradale?",
         "spiegazione": "Il pannello ti dà tutte le informazioni: 'lun - ven' sono i giorni, '21.00 - 4.00' sono le ore, e l'immagine del camion spazzaneve ti fa capire che si tratta di pulizia della strada.",
         "regola": "Testo + Immagine = Quando e cosa si pulisce.",
         "trabocchetti": ["giorni e le ore"],
@@ -350,6 +393,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura, posto sotto il segnale DIVIETO DI SOSTA, indica che la sosta è vietata solo in alcune ore dei giorni indicati",
         "risposta": True,
+        "riassunto": "Pannello sotto DIVIETO DI SOSTA → solo in alcune ore dei giorni indicati?",
         "spiegazione": "Sì, è vero. Il pannello specifica 'lun - ven' e '21.00 - 4.00'. Questo significa che il divieto di sosta non vale sempre, ma solo in 'alcune ore' (dalle 21 alle 4) e in 'alcuni giorni' (dal lunedì al venerdì).",
         "regola": "Orario specifico = Divieto limitato.",
         "trabocchetti": ["solo in alcune ore dei giorni indicati"],
@@ -358,6 +402,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura indica l'orario per il deposito della spazzatura",
         "risposta": False,
+        "riassunto": "Pannello → orario di deposito spazzatura?",
         "spiegazione": "Falso! Il camion disegnato è un'autospazzatrice, serve per pulire la strada. Non ha niente a che fare con la raccolta o il 'deposito della spazzatura' che metti fuori casa.",
         "regola": "Camion con spazzola = Pulisce, non raccoglie.",
         "trabocchetti": ["deposito della spazzatura"],
@@ -366,6 +411,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura indica i giorni di apertura degli autolavaggi",
         "risposta": False,
+        "riassunto": "Pannello → apertura autolavaggi?",
         "spiegazione": "Falso! Questo pannello non c'entra niente con gli autolavaggi. L'immagine è di un veicolo che pulisce le strade, non di un posto dove si lavano le auto.",
         "regola": "Spazzatrice = Pulizia strada, non lavaggio auto.",
         "trabocchetti": ["autolavaggi"],
@@ -374,6 +420,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura obbliga a dare la precedenza agli autocarri",
         "risposta": False,
+        "riassunto": "Pannello → precedenza agli autocarri?",
         "spiegazione": "Falso! Questo pannello è un'informazione aggiuntiva a un segnale di divieto di sosta. Non è un segnale che ti dice di dare la precedenza a qualcuno, tanto meno agli autocarri.",
         "regola": "Pannello integrativo = Informa, non dà precedenza.",
         "trabocchetti": ["obbliga a dare la precedenza"],
@@ -382,6 +429,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura, posto sotto il segnale DIVIETO DI SOSTA, indica che non possono sostare i veicoli rappresentati",
         "risposta": False,
+        "riassunto": "Pannello sotto DIVIETO DI SOSTA → vietato ai veicoli raffigurati?",
         "spiegazione": "Falso! Il pannello, con il segnale di 'Divieto di Sosta', indica che *tutti* i veicoli non possono sostare in quei giorni e orari. Questo serve per permettere al veicolo rappresentato (l'autospazzatrice) di lavorare. Non significa che solo le autospazzatrici non possono parcheggiare.",
         "regola": "Immagine spazzatrice = Divieto per *tutti*, non solo per lei.",
         "immagine": "fa9498b5740e9401feef.jpg",
@@ -389,6 +437,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli integrativi in figura vengono posti sotto i segnali di diritto di precedenza",
         "risposta": True,
+        "riassunto": "Pannelli → sotto i segnali di diritto di precedenza?",
         "spiegazione": "Questi pannelli servono proprio a specificare come è fatta un'intersezione (un incrocio) quando c'è un segnale che regola il diritto di precedenza. Ti dicono quale strada ha la precedenza e quale no.",
         "regola": "Sotto il segnale di precedenza, il pannello ti dà la chiarezza dell'incrocio.",
         "trabocchetti": ["Vengono posti sotto"],
@@ -397,6 +446,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli integrativi in figura indicano una intersezione, distinguendo la strada principale dalle strade secondarie",
         "risposta": True,
+        "riassunto": "Pannelli → strada principale e secondarie all'incrocio?",
         "spiegazione": "Esatto! La linea più spessa sui pannelli indica la strada principale, quella che ha il diritto di precedenza. Le linee più sottili indicano le strade secondarie, che devono dare la precedenza. Così capisci subito chi passa prima.",
         "regola": "Linea spessa: strada maestra. Linea sottile: attenzione, non è la tua via!",
         "trabocchetti": ["Distinguendo"],
@@ -405,6 +455,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli integrativi in figura posti in vicinanza di una intersezione, indicano l'andamento della strada principale",
         "risposta": True,
+        "riassunto": "Pannelli → andamento della strada principale?",
         "spiegazione": "Sì, questi pannelli ti mostrano come la strada principale (quella con la precedenza) prosegue attraverso l'incrocio. È fondamentale per capire bene la dinamica del traffico e non fare errori.",
         "regola": "Il pannello ti disegna la strada che ha la precedenza.",
         "trabocchetti": ["Andamento"],
@@ -413,6 +464,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli integrativi in figura possono trovarsi sotto il segnale INTERSEZIONE CON DIRITTO DI PRECEDENZA",
         "risposta": True,
+        "riassunto": "Pannelli → sotto INTERSEZIONE CON DIRITTO DI PRECEDENZA?",
         "spiegazione": "Assolutamente sì. Il segnale 'INTERSEZIONE CON DIRITTO DI PRECEDENZA' è uno dei segnali principali sotto cui questi pannelli vengono posti per dare maggiori dettagli sulla forma dell'incrocio.",
         "regola": "Precedenza? Guarda il pannello, ti dice come va il traffico.",
         "trabocchetti": ["Possono trovarsi"],
@@ -421,6 +473,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli in figura (B) e (C) indicano una curva pericolosa",
         "risposta": False,
+        "riassunto": "Pannelli (B) e (C) → curva pericolosa?",
         "spiegazione": "Falso! Questi pannelli non indicano curve pericolose. Indicano la forma di un incrocio e quale strada ha la precedenza. I segnali di curva pericolosa sono triangolari con una freccia curva.",
         "regola": "Non è una curva, è un incrocio! Le curve hanno frecce diverse.",
         "trabocchetti": ["curva pericolosa"],
@@ -429,6 +482,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli integrativi in figura indicano come lasciare il veicolo in sosta",
         "risposta": False,
+        "riassunto": "Pannelli → come parcheggiare?",
         "spiegazione": "Falso! Questi pannelli non hanno nulla a che fare con la sosta (il parcheggio) dei veicoli. Servono a indicare la precedenza negli incroci. I segnali di sosta sono diversi, spesso blu con una 'P'.",
         "regola": "Parcheggio? No, incrocio! La sosta è un'altra storia.",
         "trabocchetti": ["sosta"],
@@ -437,6 +491,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli integrativi in figura vengono posti anche sulle autostrade",
         "risposta": False,
+        "riassunto": "Pannelli → anche in autostrada?",
         "spiegazione": "Falso! Sulle autostrade non ci sono incroci a raso (allo stesso livello) come quelli indicati da questi pannelli. Le autostrade hanno svincoli e raccordi, con segnaletica specifica, ma non questi pannelli di precedenza per incroci semplici.",
         "regola": "Autostrada? No incroci a terra, no pannelli di precedenza così.",
         "trabocchetti": ["anche sulle autostrade"],
@@ -445,6 +500,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli integrativi in figura indicano strade senza uscita",
         "risposta": False,
+        "riassunto": "Pannelli → strade senza uscita?",
         "spiegazione": "Falso! Questi pannelli indicano incroci attivi con regole di precedenza. Le strade senza uscita sono indicate da un altro tipo di segnale, solitamente un quadrato blu con una 'T' bianca e una barra rossa orizzontale.",
         "regola": "Non è un vicolo cieco, è un incrocio con precedenza!",
         "trabocchetti": ["strade senza uscita"],
@@ -453,6 +509,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli integrativi in figura indicano la presenza di sottopassaggi",
         "risposta": False,
+        "riassunto": "Pannelli → sottopassaggi?",
         "spiegazione": "Falso! Questi pannelli non indicano sottopassaggi. Indicano la configurazione di un incrocio a livello del suolo. I sottopassaggi sono segnalati con cartelli che mostrano un tunnel o una strada che passa sotto un'altra.",
         "regola": "Non si va sotto, si incrocia! Il sottopassaggio ha un altro disegno.",
         "trabocchetti": ["sottopassaggi"],
@@ -461,6 +518,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli integrativi in figura indicano che le strade che si incrociano sono momentaneamente interrotte",
         "risposta": False,
+        "riassunto": "Pannelli → strade incrociate interrotte?",
         "spiegazione": "Falso! Questi pannelli descrivono la disposizione permanente di un incrocio e le regole di precedenza. Non indicano interruzioni temporanee, che sarebbero segnalate con cartelli di cantiere o semafori provvisori.",
         "regola": "Non sono interrotte, sono incrociate! E la precedenza è chiara.",
         "trabocchetti": ["momentaneamente interrotte"],
@@ -469,6 +527,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura, posto in alto sulla carreggiata insieme ad un segnale indicante una località, segnala la corsia da prendere per raggiungere detta località",
         "risposta": True,
+        "riassunto": "Pannello in alto con località → corsia per raggiungerla?",
         "spiegazione": "Questo pannello, con la freccia che punta in basso, serve a indicare che il segnale principale (quello sopra) si riferisce alla corsia che si trova proprio sotto il pannello. Se il segnale principale indica una località, allora la freccia ti dice quale corsia devi prendere per andare in quella direzione.",
         "regola": "Freccia giù = corsia per la destinazione.",
         "immagine": "c8b081aedb84ee3554e3.jpg",
@@ -476,6 +535,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura, posto in alto sulla carreggiata insieme ad un segnale, specifica a quale corsia si riferisce il segnale",
         "risposta": True,
+        "riassunto": "Pannello in alto → a quale corsia si riferisce il segnale?",
         "spiegazione": "Esatto! La funzione principale di questo pannello è proprio quella di specificare a quale corsia si riferisce il segnale stradale posto sopra di esso. La freccia indica chiaramente la corsia interessata.",
         "regola": "Freccia giù = il segnale vale per QUELLA corsia.",
         "trabocchetti": ["specifica", "o"],
@@ -484,6 +544,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura indica che il segnale posto sopra vale per la sola corsia indicata dalla freccia",
         "risposta": True,
+        "riassunto": "Pannello → segnale valido solo per la corsia della freccia?",
         "spiegazione": "Sì, è vero. Questo pannello chiarisce che il segnale principale (quello sopra) ha valore solo ed esclusivamente per la corsia che si trova direttamente sotto la freccia. Le altre corsie potrebbero avere indicazioni diverse o nessuna indicazione specifica da quel segnale.",
         "regola": "Freccia giù = SOLO per la corsia sotto.",
         "trabocchetti": ["sola"],
@@ -492,6 +553,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura è posto per indicare la fermata degli autobus",
         "risposta": False,
+        "riassunto": "Pannello → fermata autobus?",
         "spiegazione": "No, questo è falso. Questo pannello non ha nulla a che fare con le fermate degli autobus. Le fermate degli autobus sono indicate da segnali specifici, di solito con il simbolo di un autobus.",
         "regola": "Freccia giù = non è un bus!",
         "trabocchetti": ["fermata degli autobus"],
@@ -500,6 +562,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura indica che hanno la precedenza i veicoli che vengono di fronte",
         "risposta": False,
+        "riassunto": "Pannello → precedenza a chi viene di fronte?",
         "spiegazione": "Falso. Questo pannello non indica la precedenza. I segnali di precedenza hanno forme e simboli diversi (ad esempio, triangolari per pericolo o circolari con frecce per dare/avere precedenza). Questo pannello serve solo a indicare una corsia.",
         "regola": "Freccia giù = non è precedenza.",
         "immagine": "c8b081aedb84ee3554e3.jpg",
@@ -507,6 +570,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura indica la fine di una prescrizione",
         "risposta": False,
+        "riassunto": "Pannello → fine prescrizione?",
         "spiegazione": "Falso. Questo pannello non indica la fine di una prescrizione (cioè la fine di un divieto o di un obbligo). I segnali di fine prescrizione sono di solito circolari, bianchi con una barra diagonale nera.",
         "regola": "Freccia giù = non è una fine.",
         "trabocchetti": ["fine di una prescrizione"],
@@ -515,6 +579,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura indica la fine del segnale LIMITE MASSIMO DI VELOCITA'",
         "risposta": False,
+        "riassunto": "Pannello → fine LIMITE MASSIMO DI VELOCITA'?",
         "spiegazione": "Falso. Questo pannello non indica la fine del limite massimo di velocità. La fine di un limite di velocità è indicata da un segnale circolare bianco con una barra diagonale nera e il numero del limite di velocità barrato, oppure dal segnale 'fine di tutti i divieti'.",
         "regola": "Freccia giù = non finisce niente.",
         "immagine": "c8b081aedb84ee3554e3.jpg",
@@ -522,6 +587,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la presenza di macchine sgombraneve al lavoro sulla strada",
         "risposta": True,
+        "riassunto": "Pannello → sgombraneve al lavoro?",
         "spiegazione": "Il pannello mostra un fiocco di neve e un veicolo con una pala davanti, che è una macchina sgombraneve. Questo significa che sulla strada ci sono veicoli che stanno lavorando per togliere la neve.",
         "regola": "Neve + Sgombraneve = Macchine che puliscono la strada.",
         "trabocchetti": ["Al lavoro"],
@@ -530,6 +596,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato è abbinato al segnale ALTRI PERICOLI",
         "risposta": True,
+        "riassunto": "Pannello → abbinato ad ALTRI PERICOLI?",
         "spiegazione": "Questo pannello è un 'integrativo', cioè non sta da solo ma completa un altro segnale. Quando c'è un pericolo generico, come la presenza di sgombraneve, si usa il segnale 'Altri pericoli' (il triangolo con il punto esclamativo).",
         "regola": "Pannello integrativo = completa un pericolo generico (Altri pericoli).",
         "trabocchetti": ["Abbinato"],
@@ -538,6 +605,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato invita a diminuire la velocità per la presenza di macchine sgombraneve in funzione",
         "risposta": True,
+        "riassunto": "Pannello → rallentare per sgombraneve?",
         "spiegazione": "Le macchine sgombraneve sono veicoli grandi, lenti e possono creare nuvole di neve o ghiaccio. Per la tua sicurezza e quella degli operatori, è sempre consigliato rallentare quando ci sono pericoli sulla strada.",
         "regola": "Pericolo (sgombraneve) = Rallenta per sicurezza.",
         "trabocchetti": ["Invita a diminuire la velocità"],
@@ -546,6 +614,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato invita a mantenere una distanza di almeno 20 metri dalle macchine sgombraneve in funzione",
         "risposta": True,
+        "riassunto": "Pannello → almeno 20 m dallo sgombraneve?",
         "spiegazione": "Le macchine sgombraneve possono lanciare neve, ghiaccio o sassi ai lati della strada e hanno punti ciechi. Per legge, è obbligatorio mantenere una distanza di sicurezza di almeno 20 metri da questi veicoli in funzione.",
         "regola": "Sgombraneve = 20 metri di distanza obbligatoria.",
         "trabocchetti": ["Almeno 20 metri"],
@@ -554,6 +623,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica di prestare attenzione a macchine sgombraneve sulla strada",
         "risposta": True,
+        "riassunto": "Pannello → attenzione agli sgombraneve?",
         "spiegazione": "Il pannello è un avviso di pericolo. Ogni volta che c'è un pericolo sulla strada, devi sempre guidare con maggiore attenzione e prudenza.",
         "regola": "Segnale di pericolo = Attenzione alla guida!",
         "trabocchetti": ["Prestare attenzione"],
@@ -562,6 +632,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato è posto su strade innevate per segnalare la presenza di macchine sgombraneve",
         "risposta": True,
+        "riassunto": "Pannello → strade innevate con sgombraneve?",
         "spiegazione": "Il fiocco di neve e la macchina sgombraneve indicano chiaramente che il segnale si trova in un contesto di strade con neve, dove queste macchine sono necessarie per pulire la carreggiata.",
         "regola": "Neve + Sgombraneve = Strade con neve.",
         "trabocchetti": ["Strade innevate"],
@@ -570,6 +641,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la costruzione di un parco giochi nelle vicinanze",
         "risposta": False,
+        "riassunto": "Pannello → costruzione parco giochi?",
         "spiegazione": "Il pannello raffigura una macchina sgombraneve e un fiocco di neve, simboli legati alla neve e alla pulizia delle strade. Non ha nessun legame con la costruzione di un parco giochi.",
         "regola": "Sgombraneve non è un gioco.",
         "trabocchetti": ["Parco giochi"],
@@ -578,6 +650,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica il divieto di transito alle macchine sgombraneve",
         "risposta": False,
+        "riassunto": "Pannello → divieto per sgombraneve?",
         "spiegazione": "Questo pannello serve ad avvisare della presenza delle macchine sgombraneve, non a vietare loro di circolare. Anzi, la loro presenza è fondamentale per rendere la strada percorribile.",
         "regola": "È un avviso, non un divieto per lo sgombraneve.",
         "trabocchetti": ["Divieto di transito"],
@@ -586,6 +659,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica l'obbligo di montare le catene",
         "risposta": False,
+        "riassunto": "Pannello → obbligo catene?",
         "spiegazione": "Questo pannello avvisa della presenza di sgombraneve. L'obbligo di montare le catene da neve è indicato da un altro segnale specifico, un cerchio blu con il simbolo di una catena.",
         "regola": "Sgombraneve non è catene.",
         "trabocchetti": ["Obbligo di montare le catene"],
@@ -594,6 +668,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato obbliga a stare distanti 100 metri dallo sgombraneve in funzione",
         "risposta": False,
+        "riassunto": "Pannello → 100 m dallo sgombraneve?",
         "spiegazione": "La legge stabilisce che la distanza minima di sicurezza da mantenere dalle macchine sgombraneve in funzione è di 20 metri, non 100 metri.",
         "regola": "Distanza sgombraneve = 20 metri, non 100.",
         "trabocchetti": ["100 metri"],
@@ -602,6 +677,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che la strada è percorribile solo dopo che sia passato lo sgombraneve",
         "risposta": False,
+        "riassunto": "Pannello → strada percorribile solo dopo lo sgombraneve?",
         "spiegazione": "Il pannello ti avvisa che potresti incontrare uno sgombraneve al lavoro, ma non ti obbliga ad aspettare che sia passato per poter continuare a guidare. Devi solo fare attenzione e rispettare le distanze di sicurezza.",
         "regola": "Non aspettare, ma fai attenzione e guida prudente.",
         "trabocchetti": ["Solo dopo che sia passato"],
@@ -610,6 +686,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che sulla strada è possibile incrociare il veicolo per la raccolta della spazzatura",
         "risposta": False,
+        "riassunto": "Pannello → camion della spazzatura?",
         "spiegazione": "Il veicolo raffigurato nel pannello è chiaramente una macchina sgombraneve (con la pala davanti e il fiocco di neve). Non è un veicolo per la raccolta della spazzatura, che ha una forma e una funzione diverse.",
         "regola": "Pala + Neve = Sgombraneve, non spazzatura.",
         "trabocchetti": ["Veicolo per la raccolta della spazzatura"],
@@ -618,6 +695,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la possibile presenza di macchine operatrici in movimento",
         "risposta": True,
+        "riassunto": "Pannello → macchine operatrici in movimento?",
         "spiegazione": "Il pannello raffigurato mostra una macchina da cantiere, come un escavatore o una pala meccanica. Questo segnale serve proprio ad avvisare che ci possono essere questi mezzi pesanti che lavorano o si muovono sulla strada o nelle vicinanze, quindi è VERO.",
         "regola": "Macchina da cantiere = Attenzione, lavori in corso!",
         "trabocchetti": ["possibile presenza"],
@@ -626,6 +704,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che sulla corsia possono esserci pale meccaniche al lavoro",
         "risposta": True,
+        "riassunto": "Pannello → pale meccaniche in corsia?",
         "spiegazione": "La figura rappresenta una macchina operatrice, che può essere una pala meccanica. Il pannello avvisa che questi mezzi possono essere presenti e al lavoro sulla strada o nelle vicinanze, quindi è VERO.",
         "regola": "Pala meccanica = Rallenta, c'è un cantiere.",
         "trabocchetti": ["possono esserci"],
@@ -634,6 +713,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che sulla strada possono esserci escavatori in movimento",
         "risposta": True,
+        "riassunto": "Pannello → escavatori in movimento?",
         "spiegazione": "L'immagine è generica per le macchine operatrici, e un escavatore è una di queste. Il pannello serve a segnalare la loro presenza e il loro movimento, per invitare alla prudenza, quindi è VERO.",
         "regola": "Escavatore = Occhio ai movimenti lenti.",
         "trabocchetti": ["possono esserci"],
@@ -642,6 +722,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato invita ad usare particolare prudenza per la presenza di pale meccaniche in movimento",
         "risposta": True,
+        "riassunto": "Pannello → prudenza per pale meccaniche?",
         "spiegazione": "Questo pannello è un segnale di pericolo (o meglio, un pannello integrativo che accompagna un segnale di pericolo, come 'altri pericoli'). Il suo scopo è proprio quello di avvisare i conducenti di fare più attenzione per la presenza di macchine da cantiere come le pale meccaniche, quindi è VERO.",
         "regola": "Segnale di pericolo = Più attenzione.",
         "trabocchetti": ["particolare prudenza"],
@@ -650,6 +731,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la presenza di cantieri stradali con escavatori e pale meccaniche in azione",
         "risposta": True,
+        "riassunto": "Pannello → cantieri con escavatori e pale?",
         "spiegazione": "Le macchine operatrici come escavatori e pale meccaniche sono tipiche dei cantieri stradali. Quindi, vedere questo pannello significa che probabilmente si sta avvicinando un cantiere dove questi mezzi sono al lavoro, quindi è VERO.",
         "regola": "Macchina da cantiere = Cantiere stradale.",
         "trabocchetti": ["in azione"],
@@ -658,6 +740,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la presenza di veicoli militari",
         "risposta": False,
+        "riassunto": "Pannello → veicoli militari?",
         "spiegazione": "Il pannello mostra una macchina da cantiere, non un veicolo militare. I veicoli militari hanno un simbolo diverso, spesso un carro armato o un mezzo con soldati, quindi è FALSO.",
         "regola": "Non è un carro armato = Non è militare.",
         "trabocchetti": ["veicoli militari"],
@@ -666,6 +749,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un'area per lo scarico della spazzatura",
         "risposta": False,
+        "riassunto": "Pannello → scarico spazzatura?",
         "spiegazione": "Il pannello non ha nulla a che fare con la spazzatura. Indica la presenza di macchine operatrici, che sono usate per lavori stradali o edili, non per la raccolta o lo scarico dei rifiuti, quindi è FALSO.",
         "regola": "Non è un bidone = Non è spazzatura.",
         "trabocchetti": ["scarico della spazzatura"],
@@ -674,6 +758,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato si trova prima di un ponte, per vietare il transito alle macchine operatrici",
         "risposta": False,
+        "riassunto": "Pannello → prima di ponte, vietato a macchine operatrici?",
         "spiegazione": "Questo pannello avvisa della presenza di macchine operatrici, non vieta il loro transito. Inoltre, non è specifico per i ponti. I divieti di transito per categoria di veicoli hanno simboli diversi (cerchio rosso con il veicolo barrato), quindi è FALSO.",
         "regola": "Avviso, non divieto.",
         "trabocchetti": ["vietare il transito"],
@@ -682,6 +767,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica una strada riservata alle sole macchine operatrici",
         "risposta": False,
+        "riassunto": "Pannello → strada solo per macchine operatrici?",
         "spiegazione": "Un segnale di \"strada riservata\" ha un simbolo blu e indica che solo quel tipo di veicolo può circolare. Questo pannello, invece, è un avviso di pericolo per tutti gli altri veicoli, che devono fare attenzione alla presenza di macchine operatrici, quindi è FALSO.",
         "regola": "Non è blu = Non è riservata.",
         "trabocchetti": ["riservata alle sole"],
@@ -690,6 +776,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica divieto di transito a tutti i veicoli con i cingoli",
         "risposta": False,
+        "riassunto": "Pannello → divieto per veicoli cingolati?",
         "spiegazione": "Come detto prima, questo pannello avvisa della presenza di macchine operatrici, non vieta il transito a nessun tipo di veicolo. I divieti sono segnali rotondi con bordo rosso, quindi è FALSO.",
         "regola": "Avviso, non divieto.",
         "trabocchetti": ["divieto di transito"],
@@ -698,6 +785,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un'area di parcheggio riservata alle macchine operatrici",
         "risposta": False,
+        "riassunto": "Pannello → parcheggio macchine operatrici?",
         "spiegazione": "Il pannello non indica un parcheggio. I segnali di parcheggio sono quadrati blu con una 'P' bianca. Questo è un avviso di pericolo per la presenza di macchine operatrici in movimento o al lavoro, quindi è FALSO.",
         "regola": "Non è una P = Non è parcheggio.",
         "trabocchetti": ["area di parcheggio"],
@@ -706,6 +794,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un tratto di strada pericoloso in caso di pioggia",
         "risposta": True,
+        "riassunto": "Pannello → pericolo con pioggia?",
         "spiegazione": "Il pannello mostra una nuvola e la pioggia. Questo significa che la strada può diventare pericolosa quando piove, quindi è un avviso di pericolo legato alle condizioni meteo.",
         "regola": "Nuvola + pioggia = Attenzione con la pioggia!",
         "trabocchetti": ["pericoloso in caso di pioggia"],
@@ -714,6 +803,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato invita, in caso di pioggia, ad aumentare la distanza di sicurezza",
         "risposta": True,
+        "riassunto": "Pannello → con pioggia aumentare la distanza?",
         "spiegazione": "Se la strada è pericolosa e sdrucciolevole per la pioggia, è fondamentale aumentare la distanza di sicurezza dal veicolo che ti precede. Questo ti dà più tempo per reagire e frenare in caso di necessità.",
         "regola": "Pioggia = Più spazio tra le auto.",
         "trabocchetti": ["aumentare la distanza di sicurezza"],
@@ -722,6 +812,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che quando piove la strada può diventare sdrucciolevole",
         "risposta": True,
+        "riassunto": "Pannello → sdrucciolevole quando piove?",
         "spiegazione": "La pioggia rende l'asfalto bagnato e meno aderente, diminuendo l'attrito tra i pneumatici e la strada. Questo fa sì che la strada diventi 'sdrucciolevole', cioè si scivola più facilmente.",
         "regola": "Pioggia = Strada scivolosa.",
         "trabocchetti": ["sdrucciolevole"],
@@ -730,6 +821,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che in caso di pioggia si può trovare del fango sulla strada",
         "risposta": True,
+        "riassunto": "Pannello → fango con pioggia?",
         "spiegazione": "In alcune zone, specialmente dove c'è terra o lavori stradali, la pioggia può mescolarsi con il terreno e creare fango sulla strada. Il fango rende la strada ancora più scivolosa e pericolosa.",
         "regola": "Pioggia = Anche fango possibile.",
         "trabocchetti": ["fango sulla strada"],
@@ -738,6 +830,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato segnala un tratto di strada sdrucciolevole in caso di pioggia",
         "risposta": True,
+        "riassunto": "Pannello → sdrucciolevole con pioggia?",
         "spiegazione": "Questo pannello avvisa proprio che il tratto di strada che stai per affrontare potrebbe essere scivoloso (sdrucciolevole) quando piove. È un richiamo alla prudenza.",
         "regola": "Pioggia = Strada scivolosa.",
         "trabocchetti": ["sdrucciolevole in caso di pioggia"],
@@ -746,6 +839,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato invita a diminuire la velocità in caso di pioggia, perché la strada diventa sdrucciolevole",
         "risposta": True,
+        "riassunto": "Pannello → rallentare con pioggia?",
         "spiegazione": "Quando la strada è sdrucciolevole a causa della pioggia, è obbligatorio ridurre la velocità. Andare più piano ti permette di avere un maggiore controllo del veicolo e di reagire meglio agli imprevisti.",
         "regola": "Pioggia = Rallenta!",
         "immagine": "a403a84b8859af9f64b7.jpg",
@@ -753,6 +847,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un autolavaggio nelle vicinanze",
         "risposta": False,
+        "riassunto": "Pannello → autolavaggio?",
         "spiegazione": "Il pannello raffigurato indica un pericolo legato alla pioggia, non un servizio come un autolavaggio. I simboli per i servizi sono diversi.",
         "regola": "Nuvola + pioggia = Pericolo, non servizio.",
         "trabocchetti": ["autolavaggio"],
@@ -761,6 +856,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la presenza di una stazione meteorologica nelle vicinanze",
         "risposta": False,
+        "riassunto": "Pannello → stazione meteorologica?",
         "spiegazione": "Questo pannello non segnala la presenza di una stazione meteorologica. Il suo scopo è avvisare i conducenti di un pericolo sulla strada causato dalla pioggia.",
         "regola": "Nuvola + pioggia = Pericolo, non luogo.",
         "trabocchetti": ["stazione meteorologica"],
@@ -769,6 +865,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica di fare attenzione agli autocarri in transito, per la possibile perdita del carico trasportato",
         "risposta": False,
+        "riassunto": "Pannello → autocarri che perdono il carico?",
         "spiegazione": "Il pannello non riguarda gli autocarri o la possibile perdita del loro carico. Il simbolo è specifico per il pericolo legato alla pioggia e alle condizioni della strada bagnata.",
         "regola": "Nuvola + pioggia = Solo pioggia, non camion.",
         "trabocchetti": ["autocarri", "perdita del carico"],
@@ -777,6 +874,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un tratto di strada con probabile formazione di nuvole di polvere",
         "risposta": False,
+        "riassunto": "Pannello → nuvole di polvere?",
         "spiegazione": "Il simbolo mostra chiaramente una nuvola e delle gocce di pioggia, non nuvole di polvere. Le nuvole di polvere sono un pericolo diverso e non sono rappresentate da questo pannello.",
         "regola": "Nuvola + pioggia = Acqua, non polvere.",
         "immagine": "a403a84b8859af9f64b7.jpg",
@@ -784,6 +882,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato indica una zona dove piove spesso",
         "risposta": False,
+        "riassunto": "Pannello → zona dove piove spesso?",
         "spiegazione": "Il pannello non indica che in quella zona piove spesso, ma avvisa che *quando piove*, quel tratto di strada diventa pericoloso. È una condizione di pericolo, non una frequenza.",
         "regola": "Nuvola + pioggia = Pericolo *se* piove, non 'sempre piove'.",
         "trabocchetti": ["piove spesso"],
@@ -792,6 +891,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica caduta di pietre sulla strada",
         "risposta": False,
+        "riassunto": "Pannello → caduta pietre?",
         "spiegazione": "Il pannello per la 'caduta di pietre' è diverso (solitamente un triangolo con un'auto e delle pietre che cadono). Questo simbolo è specifico per il pericolo causato dalla pioggia.",
         "regola": "Nuvola + pioggia = Acqua, non sassi.",
         "trabocchetti": ["caduta di pietre"],
@@ -800,6 +900,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato, posto sotto un segnale di pericolo, indica la distanza tra il segnale ed il punto d'inizio del pericolo",
         "risposta": True,
+        "riassunto": "Pannello sotto segnale di pericolo → distanza dall'inizio del pericolo?",
         "spiegazione": "Questo pannello, quando è sotto un segnale di pericolo (come 'curva pericolosa' o 'dosso'), ti dice quanti metri o chilometri mancano prima che inizi il pericolo. Non indica la lunghezza del pericolo, ma la distanza per raggiungerlo.",
         "regola": "Pericolo + Pannello senza frecce = 'Il pericolo inizia tra X metri'.",
         "trabocchetti": ["distanza tra il segnale ed il punto d"],
@@ -808,6 +909,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato può essere posto sotto i segnali per completarne il significato",
         "risposta": True,
+        "riassunto": "Pannello → completa il significato dei segnali?",
         "spiegazione": "I pannelli integrativi, come quelli in figura, servono proprio a dare più informazioni o a chiarire il significato del segnale principale a cui sono abbinati. Sono un 'extra' che aiuta il conducente.",
         "regola": "Integrativo = 'Integra', aggiunge informazioni al segnale principale.",
         "trabocchetti": ["completarne"],
@@ -816,6 +918,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato, posto sotto un segnale di indicazione, serve a precisare la distanza che manca per raggiungere il punto indicato dal segnale",
         "risposta": True,
+        "riassunto": "Pannello sotto segnale di indicazione → distanza dal punto indicato?",
         "spiegazione": "Se questo pannello si trova sotto un segnale di indicazione (ad esempio, 'Roma' o 'Ospedale'), ti dice quanti chilometri o metri mancano per arrivare a quel luogo o punto specifico.",
         "regola": "Indicazione + Pannello senza frecce = 'Mancano X metri/km per arrivare'.",
         "immagine": "57322934ac65376139c9.jpg",
@@ -823,6 +926,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato, posto sotto un segnale di obbligo o divieto, indica la distanza dalla quale inizia la prescrizione",
         "risposta": True,
+        "riassunto": "Pannello sotto obbligo/divieto → distanza da cui inizia?",
         "spiegazione": "Quando il pannello è sotto un segnale di obbligo (come 'Stop') o di divieto (come 'Divieto di sosta'), indica la distanza che ti separa dal punto in cui inizia quella regola. Ad esempio, 'Stop' con '50 m' sotto significa che il punto di stop è a 50 metri.",
         "regola": "Obbligo/Divieto + Pannello senza frecce = 'La regola inizia tra X metri'.",
         "immagine": "57322934ac65376139c9.jpg",
@@ -830,6 +934,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo mostrato in figura A indica i metri di strada già fatta",
         "risposta": False,
+        "riassunto": "Pannello A → metri già percorsi?",
         "spiegazione": "Il pannello in figura A ('320 m') indica una distanza che devi ancora percorrere per raggiungere qualcosa, o la lunghezza di un tratto di strada che ti aspetta. Non indica mai la strada che hai già lasciato alle spalle.",
         "regola": "Non è 'già fatta', è 'ancora da fare'!",
         "trabocchetti": ["già fatta"],
@@ -838,6 +943,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la pendenza di una strada",
         "risposta": False,
+        "riassunto": "Pannello → pendenza?",
         "spiegazione": "La pendenza di una strada (cioè quanto è in salita o in discesa) è indicata da un numero seguito dal simbolo di percentuale (%). I pannelli in figura indicano distanze in metri o chilometri, non pendenze.",
         "regola": "Metri/km = Distanza. Percentuale = Pendenza.",
         "trabocchetti": ["pendenza"],
@@ -846,6 +952,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo mostrato in figura A indica la distanza di sicurezza da mantenere dal veicolo che sta davanti",
         "risposta": False,
+        "riassunto": "Pannello A → distanza di sicurezza?",
         "spiegazione": "La distanza di sicurezza è una distanza che ogni conducente deve calcolare e mantenere dal veicolo che lo precede, in base alla velocità, alle condizioni della strada e del veicolo. Non è un valore fisso indicato da un pannello come questo.",
         "regola": "Non è 'quanto lontano stare', è 'quanto manca'.",
         "trabocchetti": ["distanza di sicurezza"],
@@ -854,6 +961,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la larghezza di una strada",
         "risposta": False,
+        "riassunto": "Pannello → larghezza della strada?",
         "spiegazione": "La larghezza di una strada o di un passaggio è indicata da segnali specifici che mostrano un numero (ad esempio, '2,30 m') spesso accompagnato da frecce orizzontali. I pannelli in figura indicano distanze in metri o chilometri, non larghezze.",
         "regola": "Metri/km = Distanza. Larghezza ha frecce orizzontali.",
         "trabocchetti": ["larghezza"],
@@ -862,6 +970,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato, posto sotto il segnale di pericolo, indica la lunghezza del tratto di strada pericoloso",
         "risposta": False,
+        "riassunto": "Pannello sotto pericolo → lunghezza del tratto pericoloso?",
         "spiegazione": "Attenzione! Se il pannello non ha le frecce verticali ai lati del numero (come quelli in figura), indica la distanza che manca all'inizio del pericolo. Se avesse le frecce verticali, allora indicherebbe la lunghezza del tratto pericoloso.",
         "regola": "Senza frecce = 'Quanto manca all'inizio'. Con frecce = 'Quanto dura'.",
         "trabocchetti": ["lunghezza del tratto"],
@@ -870,6 +979,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato, posto sotto un segnale di pericolo, indica la lunghezza del tratto di strada pericoloso",
         "risposta": True,
+        "riassunto": "Pannello sotto pericolo → lunghezza del tratto pericoloso?",
         "spiegazione": "Questo pannello, con le frecce che puntano in alto ai lati della distanza, indica per quanti metri o chilometri si estende il pericolo segnalato dal cartello principale. Quindi, se è sotto un segnale di pericolo, indica proprio la lunghezza del tratto pericoloso.",
         "regola": "Frecce su e giù = 'Quanto dura?'",
         "trabocchetti": ["lunghezza del tratto"],
@@ -878,6 +988,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato, posto sotto un segnale di obbligo, indica la lunghezza del tratto stradale nel quale vale la prescrizione del segnale",
         "risposta": True,
+        "riassunto": "Pannello sotto obbligo → lunghezza del tratto con prescrizione?",
         "spiegazione": "Esatto! Se il pannello è posto sotto un segnale di obbligo (per esempio, 'obbligo di andare diritto'), la distanza indicata (es. 380m o 2,8km) con le frecce laterali ti dice per quanti metri o chilometri devi rispettare quell'obbligo.",
         "regola": "Frecce su e giù = 'Quanto dura?'",
         "immagine": "7288e99f15e3f252c753.jpg",
@@ -885,6 +996,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato può essere posto sotto un segnale di divieto",
         "risposta": True,
+        "riassunto": "Pannello → anche sotto un divieto?",
         "spiegazione": "Sì, è vero. Questo pannello può essere usato anche sotto un segnale di divieto (per esempio, 'divieto di sorpasso') per indicare per quanti metri o chilometri quel divieto è valido.",
         "regola": "Vale per pericoli, obblighi e divieti.",
         "trabocchetti": ["può essere posto"],
@@ -893,6 +1005,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato in figura B, posto sotto ad un segnale di pericolo, indica, in chilometri, la lunghezza del tratto di strada pericoloso",
         "risposta": True,
+        "riassunto": "Pannello B sotto pericolo → lunghezza in km del tratto?",
         "spiegazione": "La figura B mostra '2,8 km'. Se questo pannello è sotto un segnale di pericolo, significa che il pericolo (ad esempio, una serie di curve) si estende per 2,8 chilometri. Quindi, indica la lunghezza del tratto pericoloso in chilometri.",
         "regola": "km o m con frecce = durata.",
         "trabocchetti": ["in chilometri"],
@@ -901,6 +1014,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la lunghezza di un tratto stradale con curve pericolose in successione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → lunghezza del tratto con curve?",
         "spiegazione": "Se il pannello è abbinato a un segnale di 'curve pericolose in successione', indica per quanti metri o chilometri si estende quel tratto di strada con le curve. Quindi, indica la lunghezza di quel tratto stradale.",
         "regola": "Frecce su e giù = 'Quanto dura?'",
         "trabocchetti": ["lunghezza di un tratto stradale"],
@@ -909,6 +1023,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo rappresentato in figura A obbliga a proseguire diritto per 380 metri",
         "risposta": False,
+        "riassunto": "Pannello A → diritto per 380 m?",
         "spiegazione": "Falso! Questo pannello non è un segnale di obbligo da solo. Indica solo la 'lunghezza' di un tratto di strada dove c'è un pericolo, un obbligo o un divieto, ma non ti obbliga a fare nulla. L'obbligo viene dal segnale principale sopra di esso.",
         "regola": "Il pannello non comanda, solo informa sulla durata.",
         "trabocchetti": ["obbliga a proseguire diritto"],
@@ -917,6 +1032,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo rappresentato in figura A indica la distanza di sicurezza da mantenere in caso di pioggia",
         "risposta": False,
+        "riassunto": "Pannello A → distanza di sicurezza con pioggia?",
         "spiegazione": "Falso! Questo pannello indica la 'lunghezza' di un tratto di strada, non la 'distanza di sicurezza'. Non ha nulla a che fare con la pioggia o con quanto spazio devi lasciare tra un veicolo e l'altro.",
         "regola": "Frecce su e giù = durata, non distanza di sicurezza.",
         "trabocchetti": ["distanza di sicurezza", "in caso di pioggia"],
@@ -925,6 +1041,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la distanza tra il segnale e il punto d'inizio del pericolo",
         "risposta": False,
+        "riassunto": "Pannello → distanza dall'inizio del pericolo?",
         "spiegazione": "Falso! Questa è una trappola comune. Le frecce che puntano in alto ai lati della distanza indicano la 'lunghezza' del tratto (cioè, per quanto si estende il pericolo), non la 'distanza' che ti separa dall'inizio del pericolo. Per indicare la distanza all'inizio del pericolo, il pannello non avrebbe le frecce laterali.",
         "regola": "Frecce su e giù = durata. Senza frecce laterali = distanza all'inizio.",
         "trabocchetti": ["distanza tra il segnale e il punto d"],
@@ -933,6 +1050,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la distanza tra il segnale e l'inizio della strada in cattivo stato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanza dall'inizio della strada dissestata?",
         "spiegazione": "Falso! Come spiegato prima, questo pannello indica la 'lunghezza' del tratto di strada (ad esempio, il tratto in cattivo stato), non la 'distanza' che ti separa dall'inizio di quel tratto.",
         "regola": "Frecce su e giù = durata, non distanza all'inizio.",
         "trabocchetti": ["distanza tra il segnale e l"],
@@ -941,6 +1059,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato in figura A indica l'altezza di un viadotto",
         "risposta": False,
+        "riassunto": "Pannello A → altezza del viadotto?",
         "spiegazione": "Falso! Il pannello indica una 'lunghezza' orizzontale (380 metri), non un'altezza verticale. L'altezza di un viadotto o di un sottopasso sarebbe indicata da un altro tipo di segnale, con un simbolo diverso.",
         "regola": "Frecce orizzontali = lunghezza, non altezza.",
         "trabocchetti": ["altezza di un viadotto"],
@@ -949,6 +1068,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta dalle ore 7.30 alle ore 19.00",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta vietata 7.30-19?",
         "spiegazione": "Il segnale principale è un 'Divieto di Sosta', che significa che non puoi lasciare il veicolo fermo in quel punto. Il pannello sotto, con l'orario '7.30-19.00', specifica che questo divieto è attivo solo in quelle ore. Quindi, è vero che la sosta è vietata dalle 7.30 alle 19.00.",
         "regola": "Sbarra rossa = Sosta vietata. Orario = Solo in quelle ore.",
         "trabocchetti": ["vieta la sosta", "sosta"],
@@ -957,6 +1077,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito dalle ore 7.30 alle 19.00",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito vietato 7.30-19?",
         "spiegazione": "Questa affermazione è FALSO. Il segnale raffigurato è un 'Divieto di Sosta', che impedisce di lasciare il veicolo fermo. Non vieta assolutamente il 'transito', cioè il passaggio con il veicolo. Puoi circolare liberamente in questa zona, ma non puoi sostare nelle ore indicate.",
         "regola": "Sbarra rossa = Sosta, non transito.",
         "trabocchetti": ["transito"],
@@ -965,6 +1086,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo (A), posto sotto il segnale (B), vieta il transito ai pedoni nelle sole ore indicate",
         "risposta": True,
+        "riassunto": "Pannello (A) sotto (B) → vietato ai pedoni nelle ore indicate?",
         "spiegazione": "Questa affermazione è FALSO. Il segnale di 'Divieto di Sosta' e il pannello orario si riferiscono ai veicoli, non ai pedoni. Inoltre, il segnale vieta la sosta dei veicoli, non il transito (il passaggio) dei pedoni. I pedoni possono sempre camminare liberamente in questa zona, a meno che non ci sia un segnale specifico che lo vieti.",
         "regola": "Segnale per veicoli, non per pedoni.",
         "trabocchetti": ["vieta il transito ai pedoni"],
@@ -973,6 +1095,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo rappresentato in figura B indica le ore di tutti i giorni nelle quali vale il segnale",
         "risposta": True,
+        "riassunto": "Pannello B → ore di tutti i giorni in cui vale?",
         "spiegazione": "Il pannello integrativo mostra un orario specifico (7.30-19.00). Quando non ci sono altre indicazioni scritte (come 'feriali' per i giorni lavorativi o 'festivi' per i giorni di festa), si intende che l'orario indicato vale per tutti i giorni della settimana, inclusi sabato e domenica. Quindi, il divieto di sosta è attivo in quelle ore ogni giorno.",
         "regola": "Orario senza specificazioni = Tutti i giorni.",
         "trabocchetti": ["tutti i giorni"],
@@ -981,6 +1104,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito ai motocicli nelle sole ore indicate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → moto ammesse solo nelle ore indicate?",
         "spiegazione": "Questa affermazione è FALSO. Il segnale raffigurato è un 'Divieto di Sosta' e si applica a tutti i veicoli, inclusi i motocicli, a meno che non ci siano pannelli integrativi che indicano eccezioni. Non riguarda il 'transito' (il passaggio) dei veicoli, ma solo la sosta. I motocicli possono transitare liberamente in qualsiasi orario.",
         "regola": "Sosta, non transito. Vale per tutti i veicoli.",
         "trabocchetti": ["consente il transito", "ai motocicli"],
@@ -989,6 +1113,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che il clacson può essere usato dalle ore 7.30 alle ore 19.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → clacson 7.30-19?",
         "spiegazione": "Questa affermazione è FALSO. Il segnale di 'Divieto di Sosta' con il pannello orario non ha nulla a che fare con l'uso del clacson. Le regole per l'uso del clacson sono stabilite dal Codice della Strada e dipendono da situazioni di pericolo o dalla necessità di segnalare la propria presenza, non da un divieto di sosta.",
         "regola": "Sosta = Stop. Clacson = Suono. Sono cose diverse.",
         "trabocchetti": ["clacson"],
@@ -997,6 +1122,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'orario di apertura di una zona a traffico limitato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → orario ZTL?",
         "spiegazione": "Questa affermazione è FALSO. Il segnale raffigurato è un 'Divieto di Sosta'. Non è un segnale che indica una 'Zona a Traffico Limitato' (ZTL). I segnali di ZTL sono diversi e hanno lo scopo di limitare l'accesso dei veicoli in determinate aree urbane.",
         "regola": "Sbarra rossa = Sosta. ZTL = Altro segnale.",
         "trabocchetti": ["zona a traffico limitato"],
@@ -1005,6 +1131,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo rappresentato in figura B indica in quali ore si può circolare a fari spenti",
         "risposta": False,
+        "riassunto": "Pannello B → ore a fari spenti?",
         "spiegazione": "Questa affermazione è FALSO. Il pannello integrativo indica solo l'orario in cui è valido il divieto di sosta. Non ha alcuna relazione con l'uso dei fari. Le regole sull'accensione dei fari dipendono dalla visibilità, dal tipo di strada e dall'orario (ad esempio, di notte o in galleria).",
         "regola": "Orario per sosta, non per fari.",
         "trabocchetti": ["circolare a fari spenti"],
@@ -1013,6 +1140,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo rappresentato in figura B indica le fasce orarie durante le quali si circola a targhe alterne",
         "risposta": False,
+        "riassunto": "Pannello B → targhe alterne?",
         "spiegazione": "Questa affermazione è FALSO. Il pannello integrativo indica l'orario in cui è attivo il divieto di sosta. Non ha nulla a che fare con la 'circolazione a targhe alterne', che è una misura di limitazione del traffico basata sul numero finale della targa del veicolo e viene indicata con segnali specifici o ordinanze comunali.",
         "regola": "Orario per sosta, non per targhe.",
         "trabocchetti": ["targhe alterne"],
@@ -1021,6 +1149,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato limita la validità del segnale sotto cui è posto ai giorni festivi e alla fascia oraria indicata",
         "risposta": True,
+        "riassunto": "Pannello → valido nei festivi e nella fascia indicata?",
         "spiegazione": "Questo pannello integrativo serve a specificare quando un altro segnale (quello principale, che non vediamo) è valido. La croce indica i giorni festivi (come la domenica) e '8.00 - 20.00' indica la fascia oraria. Quindi, il pannello dice che il segnale principale vale solo nei giorni festivi e solo tra le 8 del mattino e le 8 di sera.",
         "regola": "Croce = Giorno festivo. Orario = Solo in quelle ore.",
         "trabocchetti": ["limita la validità"],
@@ -1029,6 +1158,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato, posto sotto un segnale di prescrizione, precisa che il segnale vale solo nei giorni festivi e nelle fasce orarie indicate",
         "risposta": True,
+        "riassunto": "Pannello sotto prescrizione → solo festivi nelle fasce indicate?",
         "spiegazione": "Esatto, questo pannello, quando è messo sotto un segnale che dà una regola (come un divieto o un obbligo), serve proprio a dire che quella regola vale solo nei giorni festivi e solo nella fascia oraria indicata (dalle 8:00 alle 20:00).",
         "regola": "Croce + Orario = Valido SOLO in quei momenti.",
         "trabocchetti": ["solo"],
@@ -1037,6 +1167,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito nei giorni festivi e nelle fasce orarie indicate ai soli pedoni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → festivi, transito solo ai pedoni?",
         "spiegazione": "Questo pannello specifica che la regola del segnale principale (che non vediamo) vale solo nei giorni festivi, dalle 8:00 alle 20:00. Se il segnale principale è un divieto di transito per i veicoli, allora, in quei giorni e orari, i pedoni potrebbero essere gli unici a poter passare, perché il divieto non li riguarda.",
         "regola": "Croce + Orario = Condizioni per il segnale principale. Se il segnale principale vieta i veicoli, i pedoni passano.",
         "trabocchetti": ["consente"],
@@ -1045,6 +1176,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta nella fascia oraria indicata, dei giorni festivi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta vietata nei festivi in quella fascia?",
         "spiegazione": "Se questo pannello è posto sotto un segnale di 'Divieto di sosta', significa che non si può parcheggiare solo nei giorni festivi e solo nella fascia oraria indicata, cioè dalle 8:00 alle 20:00.",
         "regola": "Croce + Orario + Divieto Sosta = No sosta in festa, in quelle ore.",
         "immagine": "88929d7be5aedba07ed3.jpg",
@@ -1052,6 +1184,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito dalle ore 8.00 alle ore 20.00 dei giorni festivi ai soli ciclisti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → festivi 8-20 solo ciclisti?",
         "spiegazione": "Simile alla domanda sui pedoni. Questo pannello specifica che la regola del segnale principale (che non vediamo) vale solo nei giorni festivi, dalle 8:00 alle 20:00. Se il segnale principale è un divieto di transito per i veicoli a motore, allora, in quei giorni e orari, i ciclisti potrebbero essere gli unici a poter passare, perché il divieto non li riguarda.",
         "regola": "Croce + Orario = Condizioni per il segnale principale. Se il segnale principale vieta i veicoli a motore, i ciclisti passano.",
         "trabocchetti": ["consente"],
@@ -1060,6 +1193,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito dalle ore 8.00 alle ore 20.00 dei giorni festivi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito vietato festivi 8-20?",
         "spiegazione": "Se questo pannello è posto sotto un segnale di 'Divieto di transito', significa che non si può passare con il veicolo solo nei giorni festivi e solo nella fascia oraria indicata, cioè dalle 8:00 alle 20:00.",
         "regola": "Croce + Orario + Divieto Transito = No transito in festa, in quelle ore.",
         "immagine": "18ed3e2a1c5f5d4f60cc.jpg",
@@ -1067,6 +1201,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica l'orario d'ingresso nel cimitero",
         "risposta": False,
+        "riassunto": "Pannello → orario del cimitero?",
         "spiegazione": "No, il simbolo della croce in un segnale stradale non indica gli orari di apertura di un cimitero. Indica che la regola del segnale principale vale solo nei giorni festivi.",
         "regola": "Croce stradale = Giorno FESTIVO, non orario cimitero.",
         "trabocchetti": ["orario d"],
@@ -1075,6 +1210,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica l'orario di apertura delle chiese",
         "risposta": False,
+        "riassunto": "Pannello → orario delle chiese?",
         "spiegazione": "No, questo pannello non indica gli orari di apertura delle chiese. La croce, nel contesto della segnaletica stradale, significa 'giorni festivi'.",
         "regola": "Croce stradale = Giorno FESTIVO, non orario chiesa.",
         "trabocchetti": ["orario di apertura delle chiese"],
@@ -1083,6 +1219,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica l'orario di celebrazione delle funzioni religiose",
         "risposta": False,
+        "riassunto": "Pannello → orario delle funzioni religiose?",
         "spiegazione": "No, questo pannello non indica gli orari delle funzioni religiose. Il simbolo della croce, in questo contesto, significa 'giorni festivi'.",
         "regola": "Croce stradale = Giorno FESTIVO, non orario messa.",
         "immagine": "ef31a8ad9b47311a2a10.jpg",
@@ -1090,6 +1227,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si può parcheggiare tutti i giorni nella fascia oraria indicata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio ogni giorno nella fascia?",
         "spiegazione": "Falso. Il pannello indica che la regola del segnale principale vale solo nei 'giorni festivi', non 'tutti i giorni'. Quindi, se fosse un segnale di parcheggio, si potrebbe parcheggiare solo nei giorni festivi in quell'orario.",
         "regola": "Croce = SOLO giorni FESTIVI, non tutti i giorni.",
         "trabocchetti": ["tutti i giorni"],
@@ -1098,6 +1236,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato vale nei giorni lavorativi",
         "risposta": False,
+        "riassunto": "Pannello → giorni lavorativi?",
         "spiegazione": "Falso. Il simbolo della croce indica i 'giorni festivi' (come la domenica), che sono l'opposto dei 'giorni lavorativi'.",
         "regola": "Croce = FESTIVO, non LAVORATIVO.",
         "trabocchetti": ["giorni lavorativi"],
@@ -1106,6 +1245,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito dei motocicli la domenica dalle ore 8.00 alle ore 20.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → moto la domenica 8-20?",
         "spiegazione": "Falso. Il pannello integrativo non 'consente' il transito di nessun veicolo da solo. Indica solo che la validità del segnale principale (che non vediamo) è limitata ai giorni festivi (come la domenica) e alla fascia oraria 8:00-20:00. Se il segnale principale è un divieto di transito, questo varrebbe anche per i motocicli in quei giorni e orari.",
         "regola": "Il pannello non 'consente', ma 'limita' la validità del segnale principale. I motocicli sono veicoli, spesso soggetti a divieti.",
         "trabocchetti": ["consente"],
@@ -1114,6 +1254,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato, posto sotto un segnale, ne limita la validità nei giorni lavorativi e alle fasce orarie indicate",
         "risposta": True,
+        "riassunto": "Pannello → limita a feriali e fasce orarie?",
         "spiegazione": "Questo pannello integrativo, con l'icona degli attrezzi (martello e chiave inglese) e l'orario, serve a specificare che la regola del segnale principale (quello sopra) vale solo nei giorni lavorativi (dal lunedì al sabato) e solo tra le 8 del mattino e le 8 di sera. Quindi, limita l'applicazione del segnale a un periodo specifico.",
         "regola": "Attrezzi = giorni lavorativi. Orario = solo in quelle ore.",
         "trabocchetti": ["limita la validità"],
@@ -1122,6 +1263,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito nella fascia oraria indicata, dei giorni lavorativi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito vietato nei feriali nella fascia?",
         "spiegazione": "Se questo pannello è posto sotto un segnale di 'divieto di transito' (il segnale che vieta di passare), allora significa che non puoi transitare (passare) solo nei giorni lavorativi e solo tra le 8 del mattino e le 8 di sera. Il pannello specifica quando il divieto è attivo.",
         "regola": "Attrezzi + orario = divieto specifico a tempo.",
         "trabocchetti": ["vieta"],
@@ -1130,6 +1272,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la fascia oraria dei giorni lavorativi durante la quale vale la prescrizione del segnale sotto cui è posto",
         "risposta": True,
+        "riassunto": "Pannello → fascia oraria feriale della prescrizione?",
         "spiegazione": "Sì, è proprio così. Questo pannello ha la funzione di indicare esattamente quando la regola del segnale principale (la 'prescrizione') deve essere rispettata: solo nei giorni lavorativi e solo nella fascia oraria dalle 8:00 alle 20:00.",
         "regola": "Pannello = quando vale la regola.",
         "trabocchetti": ["Prescrizione"],
@@ -1138,6 +1281,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta nella fascia oraria indicata dei giorni lavorativi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta vietata nei feriali nella fascia?",
         "spiegazione": "Se questo pannello è posto sotto un segnale di 'divieto di sosta' (il segnale che vieta di parcheggiare), allora significa che non puoi sostare (parcheggiare) solo nei giorni lavorativi e solo tra le 8 del mattino e le 8 di sera. Il pannello specifica quando il divieto di sosta è attivo.",
         "regola": "Attrezzi + orario = divieto di sosta a tempo.",
         "trabocchetti": ["vieta"],
@@ -1146,6 +1290,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato, posto sotto un segnale di obbligo, indica che esso vale dalle ore 8.00 alle ore 20.00 dei giorni lavorativi",
         "risposta": True,
+        "riassunto": "Pannello sotto obbligo → feriali 8-20?",
         "spiegazione": "Esatto. Se il pannello è sotto un segnale di obbligo (ad esempio, 'direzione obbligatoria'), significa che devi rispettare quell'obbligo solo nei giorni lavorativi e solo tra le 8 del mattino e le 8 di sera. Il pannello specifica il periodo di validità dell'obbligo.",
         "regola": "Obbligo + attrezzi/orario = obbligo a tempo.",
         "trabocchetti": ["Segnale di obbligo"],
@@ -1154,6 +1299,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito agli autocarri di massa complessiva superiore a 3,5 t. nell'orario indicato, dei giorni lavorativi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarri oltre 3,5 t vietati nei feriali nell'orario?",
         "spiegazione": "Se questo pannello è abbinato a un segnale che vieta il transito agli autocarri pesanti (quelli con massa superiore a 3,5 tonnellate), allora quel divieto vale solo nei giorni lavorativi e solo tra le 8 del mattino e le 8 di sera. Il pannello specifica il periodo in cui il divieto è attivo per quella categoria di veicoli.",
         "regola": "Divieto specifico + attrezzi/orario = divieto a tempo per quel veicolo.",
         "trabocchetti": ["autocarri"],
@@ -1162,6 +1308,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che il segnale al quale è abbinato vale tutti i giorni, ma solo nelle ore indicate",
         "risposta": False,
+        "riassunto": "Pannello → tutti i giorni ma solo nelle ore indicate?",
         "spiegazione": "No, non è vero. L'icona con gli attrezzi (martello e chiave inglese) significa 'giorni lavorativi' (o feriali), cioè dal lunedì al sabato. Non significa 'tutti i giorni', perché esclude i giorni festivi (domeniche e festività).",
         "regola": "Attrezzi = NO festivi.",
         "trabocchetti": ["tutti i giorni"],
@@ -1170,6 +1317,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica gli orari di apertura di un museo di attrezzi da lavoro",
         "risposta": False,
+        "riassunto": "Pannello → museo degli attrezzi?",
         "spiegazione": "Assolutamente no! Questo pannello è un segnale stradale che serve a specificare la validità di un altro segnale. Non ha nulla a che fare con musei, negozi o orari di apertura di attività commerciali.",
         "regola": "Segnali stradali = non sono pubblicità.",
         "trabocchetti": ["museo di attrezzi da lavoro"],
@@ -1178,6 +1326,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la fascia oraria di apertura delle officine di soccorso stradale",
         "risposta": False,
+        "riassunto": "Pannello → orari officine di soccorso?",
         "spiegazione": "No, non è vero. L'icona degli attrezzi non significa 'officina' o 'soccorso stradale'. Nel Codice della Strada, indica i 'giorni lavorativi'. Questo pannello serve solo a specificare quando un segnale stradale è valido.",
         "regola": "Attrezzi = giorni lavorativi, non officine.",
         "trabocchetti": ["officine di soccorso stradale"],
@@ -1186,6 +1335,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è riservato ai veicoli per il soccorso stradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → riservato al soccorso stradale?",
         "spiegazione": "No, questo pannello non è riservato a nessun tipo di veicolo. La sua funzione è solo quella di indicare il periodo (giorni e orari) in cui un altro segnale (quello principale) è valido. Non identifica veicoli o servizi.",
         "regola": "Pannello = quando, non chi.",
         "trabocchetti": ["o"],
@@ -1194,6 +1344,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che il segnale al quale è abbinato vale nei giorni festivi",
         "risposta": False,
+        "riassunto": "Pannello → giorni festivi?",
         "spiegazione": "No, è il contrario! L'icona con gli attrezzi (martello e chiave inglese) significa 'giorni lavorativi', quindi esclude proprio i giorni festivi. Se il segnale dovesse valere nei giorni festivi, ci sarebbe un'icona diversa (ad esempio, una croce o un simbolo specifico per i festivi).",
         "regola": "Attrezzi = NO festivi.",
         "trabocchetti": ["giorni festivi"],
@@ -1202,6 +1353,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato, posto sotto il segnale PARCHEGGIO, indica che si può parcheggiare nei giorni festivi dalle ore 8.00 alle ore 20.00",
         "risposta": False,
+        "riassunto": "Pannello sotto PARCHEGGIO → festivi 8-20?",
         "spiegazione": "No, non è vero. L'icona degli attrezzi significa 'giorni lavorativi', non 'giorni festivi'. Quindi, se fosse sotto un segnale di 'PARCHEGGIO', indicherebbe che si può parcheggiare nei giorni lavorativi dalle 8:00 alle 20:00, non nei festivi.",
         "regola": "Attrezzi = giorni lavorativi, non festivi.",
         "trabocchetti": ["giorni festivi"],
@@ -1210,6 +1362,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai soli veicoli indicati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato solo ai veicoli indicati?",
         "spiegazione": "Il segnale principale (il cerchio rosso con il centro bianco) significa 'Divieto di transito' per tutti i veicoli. Ma il pannello sotto, con il disegno del camion, specifica che questo divieto vale solo per i veicoli come quello disegnato (gli autoarticolati). Quindi, solo gli autoarticolati non possono passare.",
         "regola": "Cerchio rosso + camion = Solo i camion non passano.",
         "trabocchetti": ["ai soli veicoli indicati", "soli"],
@@ -1218,6 +1371,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta ai veicoli indicati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta vietata ai veicoli indicati?",
         "spiegazione": "Se un veicolo (in questo caso l'autoarticolato) non può transitare, cioè non può passare in quella strada o zona, allora non può nemmeno fermarsi o parcheggiare lì. Non può proprio entrare in quell'area.",
         "regola": "Se non puoi passare, non puoi nemmeno fermarti.",
         "trabocchetti": ["vieta la sosta"],
@@ -1226,6 +1380,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta agli autoarticolati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta vietata agli autoarticolati?",
         "spiegazione": "Come spiegato prima, il segnale vieta il transito agli autoarticolati. Se non possono transitare, non possono nemmeno fermarsi o parcheggiare in quell'area. Il pannello indica proprio gli autoarticolati.",
         "regola": "Camion disegnato = divieto per i camion (anche di sosta, se non possono entrare).",
         "trabocchetti": ["agli autoarticolati"],
@@ -1234,6 +1389,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che il segnale al quale è abbinato vale solo per i veicoli rappresentati",
         "risposta": True,
+        "riassunto": "Pannello → solo per i veicoli raffigurati?",
         "spiegazione": "Esatto! Il pannello integrativo serve proprio a dire che il segnale principale (il cerchio rosso) non vale per tutti, ma solo per il tipo di veicolo che vedi disegnato, cioè l'autoarticolato.",
         "regola": "Pannello con veicolo = il segnale è solo per QUEL veicolo.",
         "trabocchetti": ["vale solo per i veicoli rappresentati", "solo"],
@@ -1242,6 +1398,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato può essere abbinato ad un segnale di obbligo",
         "risposta": True,
+        "riassunto": "Pannello → abbinabile a un obbligo?",
         "spiegazione": "Sì, questo tipo di pannello può essere usato con diversi segnali. Ad esempio, potresti trovare un segnale di 'Obbligo di svolta a destra' con sotto questo pannello, per indicare che solo gli autoarticolati devono svoltare a destra.",
         "regola": "Pannelli integrativi = vanno con tanti tipi di segnali.",
         "trabocchetti": ["può essere abbinato"],
@@ -1250,6 +1407,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato può essere abbinato ad un segnale di divieto",
         "risposta": True,
+        "riassunto": "Pannello → abbinabile a un divieto?",
         "spiegazione": "Certo! L'immagine stessa è un esempio: il pannello con il camion è abbinato a un segnale di divieto (il cerchio rosso che vieta il transito).",
         "regola": "L'immagine lo dimostra: pannello + divieto = sì!",
         "trabocchetti": ["può essere abbinato"],
@@ -1258,6 +1416,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un'officina meccanica per autotreni",
         "risposta": False,
+        "riassunto": "Pannello → officina autotreni?",
         "spiegazione": "No, assolutamente no. Il pannello mostra solo un tipo di veicolo (l'autoarticolato). Non indica un'officina meccanica. Per le officine ci sono altri segnali specifici (ad esempio, con una chiave inglese).",
         "regola": "Disegno veicolo = tipo di veicolo, non un servizio.",
         "trabocchetti": ["indica un"],
@@ -1266,6 +1425,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica una stazione di rifornimento per soli mezzi pesanti",
         "risposta": False,
+        "riassunto": "Pannello → rifornimento mezzi pesanti?",
         "spiegazione": "Anche qui, è falso. Il pannello non indica una stazione di rifornimento. Indica solo che il segnale principale si riferisce ai mezzi pesanti (autoarticolati). Per le stazioni di rifornimento ci sono segnali con la pompa di benzina.",
         "regola": "Disegno veicolo = tipo di veicolo, non un servizio.",
         "trabocchetti": ["indica una stazione di rifornimento"],
@@ -1274,6 +1434,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta agli autoarticolati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta consentita agli autoarticolati?",
         "spiegazione": "No, è il contrario! Se il segnale vieta il transito agli autoarticolati, significa che non possono entrare in quell'area e quindi non possono nemmeno fermarsi o parcheggiare. Non 'consente' la sosta, la vieta.",
         "regola": "Divieto di transito = divieto di sosta.",
         "trabocchetti": ["consente"],
@@ -1282,6 +1443,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive che possono transitare gli autoarticolati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autoarticolati ammessi?",
         "spiegazione": "Falso! Il segnale principale è un divieto (il cerchio rosso). Con il pannello del camion, significa che gli autoarticolati non possono transitare, non che possono. Il segnale proibisce, non permette.",
         "regola": "Cerchio rosso = divieto, non permesso.",
         "trabocchetti": ["prescrive che possono transitare", "Prescrive"],
@@ -1290,6 +1452,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato, posto sotto il segnale PARCHEGGIO, indica che possono parcheggiare tutti i veicoli pesanti",
         "risposta": False,
+        "riassunto": "Pannello sotto PARCHEGGIO → tutti i veicoli pesanti?",
         "spiegazione": "Falso. Se fosse sotto un segnale 'PARCHEGGIO', indicherebbe un parcheggio riservato agli autoarticolati (il veicolo disegnato). Non a 'tutti' i veicoli pesanti. Un autobus, ad esempio, è un veicolo pesante ma non è un autoarticolato.",
         "regola": "Pannello specifico = solo per QUEL veicolo, non per 'tutti'.",
         "trabocchetti": ["tutti", "tutti i veicoli pesanti", "veicoli pesanti"],
@@ -1298,6 +1461,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo (A), posto sotto un segnale di divieto, evidenzia il punto d'inizio della prescrizione",
         "risposta": True,
+        "riassunto": "Pannello (A) sotto divieto → inizio della prescrizione?",
         "spiegazione": "Il pannello integrativo (A), con la freccia rivolta verso l'alto, indica che la regola o il divieto del segnale principale inizia proprio nel punto in cui è posizionato il segnale. È come dire: 'Da qui in avanti vale questa regola'.",
         "regola": "Freccia in su = Inizio della regola.",
         "trabocchetti": ["punto d", "inizio"],
@@ -1306,6 +1470,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che il divieto di sosta ha inizio in quel punto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio divieto di sosta?",
         "spiegazione": "Se il pannello (A) è posto sotto un segnale di 'Divieto di sosta', la freccia verso l'alto conferma che il divieto di sosta inizia esattamente in quel punto della strada.",
         "regola": "Freccia in su = Il divieto inizia qui.",
         "trabocchetti": ["ha inizio in quel punto"],
@@ -1314,6 +1479,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato evidenzia l'inizio dell'area dove è possibile parcheggiare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio area di parcheggio?",
         "spiegazione": "Se il pannello (A) è posto sotto un segnale di 'Parcheggio', la freccia verso l'alto indica che l'area dove è permesso parcheggiare inizia da quel punto.",
         "regola": "Freccia in su = L'area inizia qui.",
         "trabocchetti": ["inizio"],
@@ -1322,6 +1488,7 @@ QUESTIONS = [
     {
         "domanda": "il segnale raffigurato evidenzia il punto d'inizio del divieto di fermata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio divieto di fermata?",
         "spiegazione": "Simile ai casi precedenti, se il pannello (A) è sotto un segnale di 'Divieto di fermata', la freccia in su indica che il divieto di fermata inizia proprio lì.",
         "regola": "Freccia in su = Il divieto inizia qui.",
         "trabocchetti": ["punto d"],
@@ -1330,6 +1497,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato evidenzia il punto d'inizio del viale pedonale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio viale pedonale?",
         "spiegazione": "Se il pannello (A) è posto sotto un segnale che indica un 'Viale pedonale', la freccia verso l'alto significa che il viale pedonale inizia da quel punto.",
         "regola": "Freccia in su = La zona pedonale inizia qui.",
         "trabocchetti": ["punto d"],
@@ -1338,6 +1506,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato (A) indica una strada in salita",
         "risposta": False,
+        "riassunto": "Pannello (A) → strada in salita?",
         "spiegazione": "Il pannello (A) è un pannello integrativo che indica l'inizio di una prescrizione. Non ha nulla a che fare con la pendenza della strada. Per indicare una salita ci sono segnali specifici con una percentuale.",
         "regola": "Freccia in su = inizio, non salita.",
         "trabocchetti": ["strada in salita"],
@@ -1346,6 +1515,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato (A) indica l'obbligo di proseguire diritto",
         "risposta": False,
+        "riassunto": "Pannello (A) → obbligo diritto?",
         "spiegazione": "Il pannello (A) è un pannello integrativo che specifica dove inizia una regola. Non è un segnale di obbligo. I segnali di obbligo sono rotondi e di colore blu.",
         "regola": "Pannello bianco rettangolare non è un obbligo.",
         "trabocchetti": ["obbligo di proseguire diritto"],
@@ -1354,6 +1524,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato (A) indica la fine di una strada a senso unico",
         "risposta": False,
+        "riassunto": "Pannello (A) → fine senso unico?",
         "spiegazione": "Il pannello (A) indica l'inizio di una prescrizione, non la fine. Inoltre, non è usato per indicare la fine di una strada a senso unico.",
         "regola": "Freccia in su = inizio, non fine.",
         "trabocchetti": ["fine"],
@@ -1362,6 +1533,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato (B) indica la corsia riservata agli autobus urbani",
         "risposta": False,
+        "riassunto": "Pannello (B) → corsia bus urbani?",
         "spiegazione": "Il pannello (B), con la freccia a sinistra, è un pannello integrativo che indica che la regola del segnale principale si applica nella direzione indicata dalla freccia (in questo caso, a sinistra). Non indica una corsia riservata agli autobus.",
         "regola": "Freccia laterale = direzione dell'effetto, non tipo di corsia.",
         "trabocchetti": ["corsia riservata agli autobus urbani"],
@@ -1370,6 +1542,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato evidenzia il punto in cui finisce l'area destinata al parcheggio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine area di parcheggio?",
         "spiegazione": "Il pannello (A) con la freccia in su indica l'inizio di un'area o di una prescrizione, non la fine. Per indicare la fine di un'area di parcheggio si usano altri pannelli, ad esempio con la freccia rivolta verso il basso.",
         "regola": "Freccia in su = inizio, non fine.",
         "trabocchetti": ["finisce"],
@@ -1378,6 +1551,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello raffigurato (A), posto sotto un segnale di pericolo, evidenzia il punto dove finisce il pericolo",
         "risposta": False,
+        "riassunto": "Pannello (A) sotto pericolo → fine del pericolo?",
         "spiegazione": "Il pannello (A), posto sotto un segnale di pericolo, indica il punto in cui il pericolo inizia, non dove finisce. Per indicare la fine di un pericolo si usano altri pannelli o segnali.",
         "regola": "Freccia in su = inizio, non fine.",
         "trabocchetti": ["finisce il pericolo"],
@@ -1386,6 +1560,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che il divieto di sosta continua",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → divieto di sosta continua?",
         "spiegazione": "Il segnale principale è il 'Divieto di Sosta'. Il pannello integrativo con le due frecce (una in alto e una in basso) indica che il divieto di sosta è valido sia prima che dopo il punto in cui è posizionato il segnale. Quindi, il divieto continua.",
         "regola": "Frecce su/giù = continua il divieto.",
         "trabocchetti": ["continua"],
@@ -1394,6 +1569,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato conferma la continuazione del divieto di sorpasso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → divieto di sorpasso continua?",
         "spiegazione": "Il pannello integrativo con le frecce su e giù serve a indicare la continuazione di un segnale principale. Se fosse posto sotto un segnale di 'Divieto di Sorpasso', confermerebbe che il divieto di sorpasso continua per un certo tratto di strada.",
         "regola": "Pannello frecce = estende il segnale sopra.",
         "trabocchetti": ["conferma la continuazione"],
@@ -1402,6 +1578,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la continuazione del limite massimo di velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → limite massimo continua?",
         "spiegazione": "Come per gli altri casi, il pannello integrativo con le frecce su e giù indica la continuazione. Se fosse abbinato a un segnale di 'Limite massimo di velocità', significherebbe che quel limite continua a essere valido sia prima che dopo il segnale.",
         "regola": "Frecce su/giù = continua il limite.",
         "trabocchetti": ["continuazione"],
@@ -1410,6 +1587,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la continuazione del tratto di strada sdrucciolevole",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → tratto sdrucciolevole continua?",
         "spiegazione": "Il pannello integrativo con le frecce su e giù indica che un pericolo (o un divieto o un obbligo) continua. Se fosse posto sotto un segnale di 'Strada sdrucciolevole', indicherebbe che il tratto di strada pericoloso continua per un certo tratto.",
         "regola": "Frecce su/giù = continua il pericolo.",
         "trabocchetti": ["continuazione"],
@@ -1418,6 +1596,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la fermata è vietata sia prima che dopo il segnale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermata vietata prima e dopo?",
         "spiegazione": "Il segnale principale è 'Divieto di Sosta', che include anche il divieto di fermata. Il pannello integrativo con le frecce su e giù indica che il divieto (di sosta e quindi anche di fermata) è valido sia nel tratto di strada precedente il segnale, sia in quello successivo.",
         "regola": "Frecce su/giù = vale ovunque intorno al segnale.",
         "trabocchetti": ["sia prima che dopo il segnale"],
@@ -1426,6 +1605,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato (A), posto sotto un segnale di pericolo, ne indica la continuazione",
         "risposta": True,
+        "riassunto": "Pannello (A) sotto pericolo → continuazione?",
         "spiegazione": "Questo è proprio lo scopo del pannello integrativo con le frecce su e giù: indicare che il segnale principale (sia esso di pericolo, divieto o obbligo) continua per un certo tratto di strada, sia prima che dopo il segnale stesso.",
         "regola": "Frecce su/giù = continuazione.",
         "trabocchetti": ["continuazione"],
@@ -1434,6 +1614,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato (A) indica di tornare indietro",
         "risposta": False,
+        "riassunto": "Pannello (A) → tornare indietro?",
         "spiegazione": "Il pannello con le frecce su e giù non indica di tornare indietro. Indica che il segnale principale (divieto, pericolo, obbligo) continua in entrambe le direzioni rispetto al punto in cui è posizionato.",
         "regola": "Frecce su/giù = continua, non torna indietro.",
         "trabocchetti": ["tornare indietro"],
@@ -1442,6 +1623,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine della zona destinata al parcheggio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine zona parcheggio?",
         "spiegazione": "Il segnale principale è 'Divieto di Sosta', non un segnale di parcheggio. Inoltre, il pannello integrativo con le frecce su e giù indica la continuazione di un divieto, non la sua fine. La fine di un divieto è indicata da un pannello con una sola freccia che punta verso il basso.",
         "regola": "No parcheggio, no fine. È continuazione.",
         "trabocchetti": ["parcheggio", "fine"],
@@ -1450,6 +1632,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato (A) indica un senso unico alternato",
         "risposta": False,
+        "riassunto": "Pannello (A) → senso unico alternato?",
         "spiegazione": "Il pannello integrativo con le frecce su e giù indica la continuazione di un segnale. Un 'senso unico alternato' è indicato da un segnale di pericolo specifico (un triangolo con due frecce, una rossa e una nera, che si alternano).",
         "regola": "Frecce su/giù = continuazione, non alternato.",
         "trabocchetti": ["senso unico alternato"],
@@ -1458,6 +1641,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato (A), posto sotto un segnale di pericolo, ne indica la fine",
         "risposta": False,
+        "riassunto": "Pannello (A) sotto pericolo → fine?",
         "spiegazione": "Il pannello integrativo con le frecce su e giù indica la 'continuazione' di un segnale, non la sua 'fine'. Per indicare la fine di un pericolo o di un divieto, si usa un pannello con una sola freccia che punta verso il basso.",
         "regola": "Frecce su/giù = continua, non finisce.",
         "trabocchetti": ["fine"],
@@ -1466,6 +1650,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato (A) indica le due direzioni consentite",
         "risposta": False,
+        "riassunto": "Pannello (A) → due direzioni consentite?",
         "spiegazione": "Le frecce su e giù in questo pannello integrativo non indicano le direzioni di marcia consentite. Indicano che il segnale principale (divieto, pericolo, obbligo) si estende, cioè continua, sia prima che dopo il punto in cui è posizionato il segnale.",
         "regola": "Frecce su/giù = estensione del segnale, non direzioni di marcia.",
         "trabocchetti": ["due direzioni consentite"],
@@ -1474,6 +1659,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato (A) indica una strada a doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Pannello (A) → doppio senso?",
         "spiegazione": "Il pannello integrativo con le frecce su e giù indica la continuazione di un segnale. Una 'strada a doppio senso di circolazione' è indicata da un segnale di pericolo specifico (un triangolo con due frecce, una in su e una in giù, ma all'interno del triangolo).",
         "regola": "Frecce su/giù = continuazione, non doppio senso.",
         "trabocchetti": ["strada a doppio senso di circolazione"],
@@ -1482,6 +1668,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il punto nel quale termina il divieto di sosta",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine divieto di sosta?",
         "spiegazione": "Il segnale principale è di 'Divieto di Fermata', che include anche il 'Divieto di Sosta'. Il pannello integrativo con la freccia rivolta verso il basso indica che la prescrizione (il divieto) termina in quel punto. Quindi, se termina il divieto di fermata, termina anche il divieto di sosta.",
         "regola": "Freccia in giù = FINE del divieto.",
         "trabocchetti": ["sosta"],
@@ -1490,6 +1677,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il punto dove termina il divieto di fermata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine divieto di fermata?",
         "spiegazione": "Il segnale principale è il 'Divieto di Fermata'. Il pannello integrativo con la freccia rivolta verso il basso indica proprio la fine della validità del divieto. Quindi, in quel punto, il divieto di fermata non è più valido.",
         "regola": "Freccia in giù = FINE del divieto.",
         "immagine": "b54bd1f125768b7aa592.jpg",
@@ -1497,6 +1685,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del cantiere stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine cantiere?",
         "spiegazione": "Il pannello integrativo con la freccia verso il basso ha la funzione di indicare la fine di una prescrizione o di una condizione. Se questo pannello fosse posto sotto un segnale di 'cantiere stradale', indicherebbe la fine del cantiere. La domanda si riferisce alla funzione generale del pannello di 'fine'.",
         "regola": "Freccia in giù = FINE di ciò che sta sopra.",
         "trabocchetti": ["fine"],
@@ -1505,6 +1694,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine dell'area destinata al parcheggio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine area di parcheggio?",
         "spiegazione": "Il pannello integrativo con la freccia verso il basso indica la fine di una prescrizione. Se questo pannello fosse posto sotto un segnale di 'Parcheggio', indicherebbe la fine dell'area destinata al parcheggio. La domanda si riferisce alla funzione generale del pannello di 'fine'.",
         "regola": "Freccia in giù = FINE di ciò che sta sopra.",
         "trabocchetti": ["fine"],
@@ -1513,6 +1703,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine della strada deformata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine strada deformata?",
         "spiegazione": "Il pannello integrativo con la freccia verso il basso indica la fine di una condizione. Se questo pannello fosse posto sotto un segnale di 'strada deformata', indicherebbe la fine del tratto di strada deformata. La domanda si riferisce alla funzione generale del pannello di 'fine'.",
         "regola": "Freccia in giù = FINE di ciò che sta sopra.",
         "trabocchetti": ["fine"],
@@ -1521,6 +1712,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine della strada sdrucciolevole",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine strada sdrucciolevole?",
         "spiegazione": "Il pannello integrativo con la freccia verso il basso indica la fine di una condizione. Se questo pannello fosse posto sotto un segnale di 'strada sdrucciolevole', indicherebbe la fine del tratto di strada sdrucciolevole. La domanda si riferisce alla funzione generale del pannello di 'fine'.",
         "regola": "Freccia in giù = FINE di ciò che sta sopra.",
         "trabocchetti": ["fine"],
@@ -1529,6 +1721,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato (A) indica una strada in discesa",
         "risposta": False,
+        "riassunto": "Pannello (A) → discesa?",
         "spiegazione": "Il pannello integrativo raffigurato (A), con la freccia verso il basso, indica la fine di una prescrizione o di una condizione. Non indica una strada in discesa. Per la strada in discesa c'è un segnale specifico con la pendenza percentuale.",
         "regola": "Freccia in giù = FINE, non pendenza.",
         "trabocchetti": ["strada in discesa"],
@@ -1537,6 +1730,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato (B), posto sotto il segnale PARCHEGGIO, indica l'inizio della zona destinata al parcheggio",
         "risposta": False,
+        "riassunto": "Pannello (B) sotto PARCHEGGIO → inizio zona parcheggio?",
         "spiegazione": "Il pannello integrativo raffigurato è (A), con la freccia verso il basso, che indica la fine. Un pannello che indica l'inizio di una zona avrebbe una freccia rivolta verso l'alto. Inoltre, il pannello (B) non è raffigurato nell'immagine.",
         "regola": "Freccia in giù = FINE. Freccia in su = INIZIO.",
         "trabocchetti": ["pannello integrativo raffigurato (B)"],
@@ -1545,6 +1739,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato (A), posto sotto un segnale di divieto, indica l'inizio del divieto",
         "risposta": False,
+        "riassunto": "Pannello (A) sotto divieto → inizio del divieto?",
         "spiegazione": "Il pannello integrativo raffigurato (A), con la freccia verso il basso, indica la fine del divieto, non l'inizio. Per indicare l'inizio di un divieto, il pannello dovrebbe avere una freccia rivolta verso l'alto.",
         "regola": "Freccia in giù = FINE. Freccia in su = INIZIO.",
         "trabocchetti": ["inizio"],
@@ -1553,6 +1748,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato (A) indica una strada chiusa al traffico",
         "risposta": False,
+        "riassunto": "Pannello (A) → strada chiusa?",
         "spiegazione": "Il pannello integrativo raffigurato (A), con la freccia verso il basso, indica la fine di una prescrizione. Non ha nulla a che fare con una 'strada chiusa al traffico', che è indicata da un segnale specifico (cerchio rosso con barra bianca).",
         "regola": "Freccia in giù = FINE, non chiusura.",
         "trabocchetti": ["strada chiusa al traffico"],
@@ -1561,6 +1757,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la continuazione del divieto di sorpasso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di sorpasso continua?",
         "spiegazione": "Il segnale principale è di 'Divieto di Fermata', non di 'Divieto di Sorpasso'. Inoltre, il pannello con la freccia verso il basso indica la fine di una prescrizione, non la sua continuazione. Per la continuazione si usa un pannello con doppia freccia (su e giù).",
         "regola": "Freccia in giù = FINE. Doppia freccia = CONTINUA.",
         "trabocchetti": ["divieto di sorpasso", "continuazione"],
@@ -1569,6 +1766,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato (A) indica l'unica direzione consentita",
         "risposta": False,
+        "riassunto": "Pannello (A) → unica direzione consentita?",
         "spiegazione": "Il pannello integrativo raffigurato (A), con la freccia verso il basso, indica la fine di una prescrizione. Non indica l'unica direzione consentita. I segnali di direzione obbligatoria sono cerchi blu con frecce bianche.",
         "regola": "Freccia in giù = FINE, non direzione obbligatoria.",
         "trabocchetti": ["unica direzione consentita"],
@@ -1577,6 +1775,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la presenza di binari di manovra",
         "risposta": True,
+        "riassunto": "Pannello → binari di manovra?",
         "spiegazione": "Questo pannello ti avvisa che stai per incontrare dei binari dove i treni si muovono lentamente, facendo manovre. Non è un passaggio a livello normale, ma comunque devi fare attenzione. Quindi, la risposta è VERO.",
         "regola": "Due trenini = binari di manovra.",
         "trabocchetti": ["Binari di manovra"],
@@ -1585,6 +1784,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'attraversamento di binari di manovra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attraversamento binari di manovra?",
         "spiegazione": "Sì, il segnale ti dice che stai per attraversare dei binari dove i treni fanno manovre, cioè si spostano lentamente. Devi essere prudente. Quindi, la risposta è VERO.",
         "regola": "Attraversi i binari dei trenini.",
         "trabocchetti": ["Attraversamento"],
@@ -1593,6 +1793,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato preavvisa la presenza di binari di manovra o di raccordo in prossimità di scali merci",
         "risposta": True,
+        "riassunto": "Pannello → binari di manovra vicino a scali merci?",
         "spiegazione": "Questo pannello ti avvisa in anticipo (preavvisa) che ci sono binari dove i treni fanno manovre o si collegano (raccordo), spesso vicino a posti dove si caricano e scaricano merci (scali merci). Quindi, la risposta è VERO.",
         "regola": "Preavviso di treni lenti, spesso vicino a merci.",
         "trabocchetti": ["Preavvisa", "O di raccordo", "scali merci"],
@@ -1601,6 +1802,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a diminuire la velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diminuire la velocità?",
         "spiegazione": "Quando vedi questo segnale, significa che c'è un pericolo (i binari con i treni che manovrano). Per la tua sicurezza, devi rallentare (diminuire la velocità) e fare molta attenzione. Quindi, la risposta è VERO.",
         "regola": "Pericolo = rallenta.",
         "trabocchetti": ["Invita a diminuire la velocità"],
@@ -1609,6 +1811,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo è abbinato al segnale ALTRI PERICOLI",
         "risposta": True,
+        "riassunto": "Pannello → abbinato ad ALTRI PERICOLI?",
         "spiegazione": "Questo pannello non è un segnale a sé stante, ma è un 'integrativo', cioè completa un altro segnale. Di solito, è messo sotto il segnale di 'Altri pericoli' (quello con il punto esclamativo) per specificare quale pericolo c'è. Quindi, la risposta è VERO.",
         "regola": "Due trenini + punto esclamativo = Altri pericoli.",
         "trabocchetti": ["Abbinato", "Altri pericoli"],
@@ -1617,6 +1820,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo indica un'area attrezzata per gare di modellismo",
         "risposta": False,
+        "riassunto": "Pannello → gare di modellismo?",
         "spiegazione": "No, questo segnale non ha niente a che fare con i modellini di treni o le gare. Indica binari veri dove passano treni veri, anche se lentamente. Quindi, la risposta è FALSO.",
         "regola": "Treni veri, non giocattoli!",
         "trabocchetti": ["Gare di modellismo"],
@@ -1625,6 +1829,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica di fare attenzione perché la strada può essere attraversata dai tram",
         "risposta": False,
+        "riassunto": "Pannello → tram che attraversano?",
         "spiegazione": "Questo segnale si riferisce ai treni, non ai tram. I tram hanno un segnale specifico (quello con il disegno del tram). Quindi, la risposta è FALSO.",
         "regola": "Treni non tram.",
         "trabocchetti": ["Tram"],
@@ -1633,6 +1838,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato va rispettato dai conducenti dei treni",
         "risposta": False,
+        "riassunto": "Pannello → per i macchinisti dei treni?",
         "spiegazione": "Questo segnale è per chi guida un veicolo sulla strada (automobili, moto, ecc.), non per chi guida i treni. Avvisa i conducenti della strada di fare attenzione ai treni. Quindi, la risposta è FALSO.",
         "regola": "Per chi guida su strada, non sul treno.",
         "trabocchetti": ["Conducenti dei treni"],
@@ -1641,6 +1847,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un passaggio a livello con due binari",
         "risposta": False,
+        "riassunto": "Pannello → passaggio a livello a due binari?",
         "spiegazione": "No, questo segnale non indica un 'passaggio a livello' normale (quello con le sbarre o senza sbarre ma con il segnale a croce di Sant'Andrea). Indica specificamente 'binari di manovra o di raccordo', dove i treni si muovono lentamente e non sono un incrocio stradale-ferroviario classico. Il fatto che ci siano due trenini non significa 'due binari' di un passaggio a livello. Quindi, la risposta è FALSO.",
         "regola": "Non è un passaggio a livello classico. Binari di manovra, non numero di binari.",
         "trabocchetti": ["Passaggio a livello", "Due binari"],
@@ -1649,6 +1856,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica una strada che in caso di forte pioggia si può allagare",
         "risposta": True,
+        "riassunto": "Pannello → allagamento con forte pioggia?",
         "spiegazione": "Il pannello integrativo con le onde indica la presenza di acqua sulla strada. Quindi, è vero che una strada con questo segnale può allagarsi in caso di forte pioggia.",
         "regola": "Onde = acqua = allagamento.",
         "immagine": "21c355ef3fb02b924429.jpg",
@@ -1656,6 +1864,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che stiamo percorrendo un tratto di strada che può allagarsi in caso di forte pioggia",
         "risposta": True,
+        "riassunto": "Pannello → tratto che può allagarsi?",
         "spiegazione": "Questo pannello avvisa i conducenti che il tratto di strada che stanno percorrendo potrebbe avere acqua in superficie, specialmente con piogge intense. È quindi vero che può allagarsi.",
         "regola": "Onde = acqua = allagamento.",
         "immagine": "21c355ef3fb02b924429.jpg",
@@ -1663,6 +1872,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada si può allagare in caso di forte pioggia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → allagamento con forte pioggia?",
         "spiegazione": "Il segnale con le onde è un avviso di pericolo legato all'acqua. È vero che indica la possibilità di allagamento della strada in caso di pioggia forte.",
         "regola": "Onde = acqua = allagamento.",
         "trabocchetti": ["segnale"],
@@ -1671,6 +1881,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica il pericolo di allagamento della carreggiata in caso di pioggia o forte mareggiata",
         "risposta": True,
+        "riassunto": "Pannello → allagamento per pioggia o mareggiata?",
         "spiegazione": "Il pannello avvisa del pericolo di acqua sulla strada. Questo può accadere sia per 'pioggia' che per una 'forte mareggiata' (onde del mare che arrivano sulla strada), specialmente in zone costiere. Quindi è vero.",
         "regola": "Onde = acqua = allagamento (anche dal mare).",
         "trabocchetti": ["mareggiata"],
@@ -1679,6 +1890,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica una piscina nelle vicinanze",
         "risposta": False,
+        "riassunto": "Pannello → piscina?",
         "spiegazione": "Il pannello indica un pericolo sulla strada (acqua), non un luogo ricreativo come una piscina. Quindi è falso.",
         "regola": "Non è per divertimento, è per pericolo!",
         "trabocchetti": ["piscina"],
@@ -1687,6 +1899,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un tratto di strada coperto di neve",
         "risposta": False,
+        "riassunto": "Pannello → strada innevata?",
         "spiegazione": "Le onde rappresentano l'acqua, non la neve. La neve è indicata da altri simboli. Quindi è falso.",
         "regola": "Onde = acqua, non neve.",
         "trabocchetti": ["neve"],
@@ -1695,6 +1908,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato preavvisa una banchina cedevole",
         "risposta": False,
+        "riassunto": "Pannello → banchina cedevole?",
         "spiegazione": "Il pannello con le onde indica acqua sulla strada. Una 'banchina cedevole' (il bordo della strada che può crollare) è indicata da un altro tipo di segnale. Quindi è falso.",
         "regola": "Onde = acqua, non terra che cede.",
         "trabocchetti": ["banchina cedevole"],
@@ -1703,6 +1917,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato vieta il transito ai veicoli che trasportano prodotti che potrebbero inquinare l'acqua",
         "risposta": False,
+        "riassunto": "Pannello → vietato a sostanze che inquinano l'acqua?",
         "spiegazione": "Questo è un pannello di avviso di pericolo (acqua sulla strada), non un divieto. I divieti sono segnali rotondi con bordo rosso. Inoltre, non riguarda il tipo di veicolo o il carico. Quindi è falso.",
         "regola": "È un avviso, non un divieto.",
         "trabocchetti": ["vieta il transito"],
@@ -1711,6 +1926,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un tratto di strada dove è possibile trovare nebbia",
         "risposta": False,
+        "riassunto": "Pannello → nebbia?",
         "spiegazione": "Le onde indicano acqua, non nebbia. La nebbia è rappresentata da un simbolo diverso (spesso una macchina con i fari accesi nella nebbia). Quindi è falso.",
         "regola": "Onde = acqua, non nebbia.",
         "trabocchetti": ["nebbia"],
@@ -1719,6 +1935,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato preavvisa la presenza di cordoli trasversali di rallentamento (dossi artificiali)",
         "risposta": False,
+        "riassunto": "Pannello → dossi artificiali?",
         "spiegazione": "Il pannello con le onde indica acqua sulla strada. I 'dossi artificiali' (cordoli per rallentare) sono indicati da un segnale triangolare con un simbolo di dosso. Quindi è falso.",
         "regola": "Onde = acqua, non dossi.",
         "immagine": "21c355ef3fb02b924429.jpg",
@@ -1726,6 +1943,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la possibilità di trovare un tratto di strada sdrucciolevole a causa di ghiaccio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sdrucciolevole per ghiaccio?",
         "spiegazione": "Il segnale principale (il triangolo con la macchina che sbanda) indica una strada sdrucciolevole. Il pannello blu con i fiocchi di neve specifica che la strada è sdrucciolevole a causa del ghiaccio. Quindi, il segnale completo avvisa di un tratto di strada che potrebbe essere scivoloso per il ghiaccio.",
         "regola": "Triangolo + Fiocchi = Attenzione ghiaccio!",
         "trabocchetti": ["possibilità"],
@@ -1734,6 +1952,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la possibilità di trovare tratti di strada ghiacciati",
         "risposta": True,
+        "riassunto": "Pannello → tratti ghiacciati?",
         "spiegazione": "Il pannello integrativo, quello blu con i fiocchi di neve, è un simbolo universale per indicare condizioni invernali, in particolare la presenza di ghiaccio o neve sulla strada. Quindi, avvisa che potresti trovare tratti di strada ghiacciati.",
         "regola": "Fiocchi = Ghiaccio sulla strada.",
         "trabocchetti": ["possibilità"],
@@ -1742,6 +1961,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica, in caso di bassa temperatura, la presenza di tratti pericolosi per ghiaccio",
         "risposta": True,
+        "riassunto": "Pannello → ghiaccio con basse temperature?",
         "spiegazione": "I fiocchi di neve sono legati al freddo e alle basse temperature. Quando fa freddo, l'acqua sulla strada può ghiacciare, rendendo la strada pericolosa. Il pannello avvisa proprio di questo pericolo.",
         "regola": "Fiocchi + Freddo = Pericolo ghiaccio.",
         "trabocchetti": ["bassa temperatura", "pericolosi"],
@@ -1750,6 +1970,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica, su strade coperte di neve, il pericolo di formazione di ghiaccio",
         "risposta": True,
+        "riassunto": "Pannello → ghiaccio su strade innevate?",
         "spiegazione": "Quando c'è neve sulla strada, specialmente se la temperatura cambia, la neve può sciogliersi e poi rigelare, formando ghiaccio. Il pannello con i fiocchi di neve avvisa di tutti i pericoli legati all'inverno, inclusa la formazione di ghiaccio sulla neve.",
         "regola": "Neve = Anche ghiaccio!",
         "trabocchetti": ["su strade coperte di neve"],
@@ -1758,6 +1979,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato invita ad usare particolare prudenza, perché la strada può essere ghiacciata",
         "risposta": True,
+        "riassunto": "Pannello → prudenza per ghiaccio?",
         "spiegazione": "Tutti i segnali di pericolo, e in particolare quelli che avvisano di ghiaccio, ci chiedono di guidare con molta attenzione (prudenza). Il ghiaccio rende la strada molto scivolosa e quindi è fondamentale essere prudenti.",
         "regola": "Fiocchi = Guida piano!",
         "trabocchetti": ["Può essere"],
@@ -1766,6 +1988,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica strada sdrucciolevole per ghiaccio, in caso di bassa temperatura",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → ghiaccio con basse temperature?",
         "spiegazione": "Questa domanda riassume il significato completo del segnale: il triangolo indica strada sdrucciolevole, il pannello con i fiocchi specifica 'per ghiaccio', e il ghiaccio si forma 'in caso di bassa temperatura'.",
         "regola": "Triangolo + Fiocchi = Ghiaccio, rallenta!",
         "immagine": "f32386ad3a4192f89f85.jpg",
@@ -1773,6 +1996,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la presenza nelle vicinanze di impianti di risalita",
         "risposta": False,
+        "riassunto": "Pannello → impianti di risalita?",
         "spiegazione": "Il pannello con i fiocchi di neve avvisa di pericoli legati al ghiaccio o alla neve sulla strada. Non ha nulla a che fare con impianti turistici come gli impianti di risalita per sciare.",
         "regola": "Fiocchi = Strada, non sci!",
         "trabocchetti": ["impianti di risalita"],
@@ -1781,6 +2005,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la strada da prendere per raggiungere le alpi",
         "risposta": False,
+        "riassunto": "Pannello → strada per le Alpi?",
         "spiegazione": "Questo pannello è un segnale di pericolo per le condizioni della strada (ghiaccio/neve). Non è un segnale che indica una direzione o un percorso per raggiungere un luogo geografico come le Alpi.",
         "regola": "Fiocchi = Pericolo, non direzione.",
         "trabocchetti": ["raggiungere le alpi"],
@@ -1789,6 +2014,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la presenza nelle vicinanze di una stazione sciistica",
         "risposta": False,
+        "riassunto": "Pannello → stazione sciistica?",
         "spiegazione": "Anche se le stazioni sciistiche sono associate alla neve, questo pannello non indica la presenza di una stazione sciistica. Il suo scopo è avvisare di un pericolo sulla strada (ghiaccio o neve), non di un luogo turistico.",
         "regola": "Fiocchi = Pericolo, non vacanza.",
         "trabocchetti": ["stazione sciistica"],
@@ -1797,6 +2023,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato invita ad usare le luci di emergenza durante la sosta",
         "risposta": False,
+        "riassunto": "Pannello → luci di emergenza in sosta?",
         "spiegazione": "Il pannello con i fiocchi di neve avvisa di ghiaccio o neve sulla strada. Non ha nessuna relazione con l'uso delle luci di emergenza o con le regole della sosta.",
         "regola": "Fiocchi = Ghiaccio, non luci.",
         "trabocchetti": ["luci di emergenza", "sosta"],
@@ -1805,6 +2032,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato invita a non usare i fari abbaglianti",
         "risposta": False,
+        "riassunto": "Pannello → niente abbaglianti?",
         "spiegazione": "Questo pannello avvisa di condizioni stradali pericolose (ghiaccio/neve). Non dà istruzioni sull'uso dei fari del veicolo, come i fari abbaglianti.",
         "regola": "Fiocchi = Ghiaccio, non fari.",
         "trabocchetti": ["non usare i fari abbaglianti"],
@@ -1813,6 +2041,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica una zona dove nevica spesso",
         "risposta": False,
+        "riassunto": "Pannello → zona dove nevica spesso?",
         "spiegazione": "Il pannello indica un pericolo attuale o imminente di ghiaccio o neve sulla strada. Non è un'informazione generale sul clima della zona, cioè che 'nevica spesso'. Indica un pericolo specifico per la circolazione.",
         "regola": "Fiocchi = Pericolo ORA, non meteo.",
         "trabocchetti": ["spesso"],
@@ -1821,6 +2050,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un tratto di strada in salita con probabile presenza di autocarri che marciano a bassa velocità",
         "risposta": True,
+        "riassunto": "Pannello → salita con autocarri lenti?",
         "spiegazione": "Il pannello mostra un camion in salita e un'auto dietro, con un simbolo di pericolo. Questo significa che la strada è in salita e i camion, essendo pesanti, vanno molto lentamente. È un avviso per chi guida dietro.",
         "regola": "Camion in salita = lento e pericolo.",
         "trabocchetti": ["probabile presenza"],
@@ -1829,6 +2059,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un tratto di strada in ripida salita che costringe gli autocarri a rallentare",
         "risposta": True,
+        "riassunto": "Pannello → salita ripida che rallenta gli autocarri?",
         "spiegazione": "L'immagine mostra chiaramente una salita (la linea inclinata) e un camion che, per la sua mole, farà fatica e andrà piano. Il simbolo di 'impatto' suggerisce il pericolo di tamponamento.",
         "regola": "Salita + Camion = Rallentamento.",
         "trabocchetti": ["ripida salita"],
@@ -1837,6 +2068,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica di fare attenzione per la probabile presenza di veicoli pesanti in lento movimento",
         "risposta": True,
+        "riassunto": "Pannello → veicoli pesanti lenti?",
         "spiegazione": "Il pannello è un avviso di pericolo. I veicoli pesanti (come gli autocarri) in salita sono lenti e possono creare situazioni pericolose, come la necessità di frenare bruscamente o il rischio di tamponamento.",
         "regola": "Attenzione ai lenti in salita.",
         "trabocchetti": ["probabile presenza", "Veicoli pesanti"],
@@ -1845,6 +2077,7 @@ QUESTIONS = [
     {
         "domanda": "Il presenza del segnale raffigurato il conducente deve moderare la velocità per la possibile presenza di autocarri in lento movimento",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per autocarri lenti?",
         "spiegazione": "Quando vedi questo segnale, devi guidare più lentamente. Questo ti dà più tempo per reagire se un camion davanti a te rallenta molto o si ferma.",
         "regola": "Segnale = Rallenta per i camion.",
         "trabocchetti": ["Moderare la velocità", "Possibile presenza"],
@@ -1853,6 +2086,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica di circolare ad una velocità prudenziale, per evitare incidenti con gli autocarri che potrebbero stare davanti",
         "risposta": True,
+        "riassunto": "Pannello → velocità prudente per autocarri davanti?",
         "spiegazione": "'Velocità prudenziale' significa guidare con attenzione e a una velocità sicura, proprio per prevenire incidenti, specialmente con veicoli più lenti come i camion in salita.",
         "regola": "Prudenza = Evita incidenti.",
         "trabocchetti": ["Velocità prudenziale", "Potrebbero stare davanti"],
@@ -1861,6 +2095,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un tratto di strada chiuso a causa di un tamponamento",
         "risposta": False,
+        "riassunto": "Pannello → strada chiusa per tamponamento?",
         "spiegazione": "Il pannello è un avviso di pericolo, non indica che la strada è già chiusa o che c'è stato un incidente. Serve proprio a prevenire che gli incidenti accadano.",
         "regola": "Avviso di rischio, non di evento.",
         "trabocchetti": ["strada chiuso a causa di un tamponamento"],
@@ -1869,6 +2104,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che è vietato sorpassare gli autocarri",
         "risposta": False,
+        "riassunto": "Pannello → vietato sorpassare autocarri?",
         "spiegazione": "Questo pannello non vieta il sorpasso. Indica solo un pericolo legato alla presenza di autocarri lenti in salita. Se il sorpasso fosse vietato, ci sarebbe un segnale specifico di divieto di sorpasso.",
         "regola": "Pericolo non è divieto.",
         "trabocchetti": ["vietato sorpassare"],
@@ -1877,6 +2113,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato si trova nei pontili d'imbarco delle navi traghetto",
         "risposta": False,
+        "riassunto": "Pannello → pontili dei traghetti?",
         "spiegazione": "Questo pannello si trova su strade in salita, specialmente quelle ripide, dove i veicoli pesanti faticano. Non ha nulla a che fare con i pontili d'imbarco.",
         "regola": "Salita, non mare.",
         "trabocchetti": ["Pontili d"],
@@ -1885,6 +2122,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica di diminuire la distanza di sicurezza",
         "risposta": False,
+        "riassunto": "Pannello → diminuire la distanza?",
         "spiegazione": "Al contrario! Se ci sono veicoli lenti e un rischio di tamponamento, devi aumentare la distanza di sicurezza, non diminuirla. Mantenere una distanza maggiore ti dà più tempo per frenare.",
         "regola": "Pericolo = Aumenta distanza.",
         "trabocchetti": ["Diminuire la distanza di sicurezza"],
@@ -1893,6 +2131,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica di proseguire con le luci accese",
         "risposta": False,
+        "riassunto": "Pannello → proseguire a luci accese?",
         "spiegazione": "Il pannello non dà indicazioni sull'uso delle luci. L'uso delle luci dipende dalla visibilità o dal tipo di strada (es. galleria), non dalla presenza di autocarri lenti in salita.",
         "regola": "Luci non c'entrano.",
         "trabocchetti": ["proseguire con le luci accese"],
@@ -1901,6 +2140,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che bisogna suonare il clacson ogni qualvolta si sorpassa un autocarro",
         "risposta": False,
+        "riassunto": "Pannello → clacson a ogni sorpasso di autocarro?",
         "spiegazione": "Suonare il clacson è permesso solo in caso di pericolo immediato o fuori dai centri abitati per avvisare del sorpasso, ma non è un obbligo generale 'ogni qualvolta si sorpassa' un camion, specialmente non in relazione a questo pannello.",
         "regola": "Clacson solo per pericolo.",
         "trabocchetti": ["Ogni qualvolta si sorpassa"],
@@ -1909,6 +2149,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato segnala la possibilità di poter essere trainati",
         "risposta": False,
+        "riassunto": "Pannello → possibilità di farsi trainare?",
         "spiegazione": "Il pannello avvisa di un pericolo legato ai camion lenti in salita, non ha nulla a che fare con il traino di veicoli.",
         "regola": "Non è un carro attrezzi.",
         "trabocchetti": ["Possibilità di poter essere trainati"],
@@ -1917,6 +2158,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che il veicolo lasciato in sosta può essere portato via dal carro-attrezzi",
         "risposta": True,
+        "riassunto": "Pannello → veicolo in sosta portato via dal carro attrezzi?",
         "spiegazione": "Questo pannello mostra un carro-attrezzi che porta via una macchina. Significa che se parcheggi dove non è permesso, la tua auto può essere rimossa.",
         "regola": "Carro-attrezzi = Via la macchina!",
         "trabocchetti": ["può essere portato via"],
@@ -1925,6 +2167,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che il veicolo può essere spostato in una depositeria comunale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → veicolo in depositeria comunale?",
         "spiegazione": "Se la tua auto viene rimossa, non la lasciano per strada. La portano in un posto speciale chiamato 'depositeria comunale', dove puoi andarla a riprendere (dopo aver pagato la multa e le spese).",
         "regola": "Rimosso = Va in depositeria.",
         "trabocchetti": ["depositeria comunale"],
@@ -1933,6 +2176,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato i veicoli al servizio di persone diversamente abili, muniti di apposito contrassegno, non possono essere portati nella depositeria comunale, né bloccati con le ganasce",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → veicoli per disabili non rimossi né bloccati?",
         "spiegazione": "Le persone con disabilità che hanno il contrassegno speciale hanno delle regole diverse. Anche se c'è questo segnale, la loro auto non può essere rimossa o bloccata, a meno che non crei un pericolo grave. Questa è una protezione speciale per loro.",
         "regola": "Disabili con contrassegno = Immuni da rimozione (salvo grave pericolo).",
         "immagine": "3860df216a6261510fac.jpg",
@@ -1940,6 +2184,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica una zona di divieto di sosta con rimozione del veicolo",
         "risposta": True,
+        "riassunto": "Pannello → divieto di sosta con rimozione?",
         "spiegazione": "Questo pannello è quasi sempre usato insieme a un segnale di 'divieto di sosta' o 'divieto di fermata'. Significa che non solo non puoi parcheggiare, ma se lo fai, la tua auto verrà rimossa.",
         "regola": "Pannello + Divieto = Rimozione sicura.",
         "trabocchetti": ["divieto di sosta con rimozione"],
@@ -1948,6 +2193,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prevede lo spostamento del veicolo o il suo blocco tramite ganasce",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rimozione o ganasce?",
         "spiegazione": "Questo segnale indica due possibili conseguenze per chi parcheggia male: o l'auto viene portata via (spostamento) oppure viene bloccata con le ganasce, così non può muoversi.",
         "regola": "Rimozione O ganasce.",
         "trabocchetti": ["o il suo blocco tramite ganasce"],
@@ -1956,6 +2202,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica la presenza di officine attrezzate per il soccorso stradale",
         "risposta": False,
+        "riassunto": "Pannello → officine per soccorso stradale?",
         "spiegazione": "Il pannello mostra un carro-attrezzi che rimuove un veicolo, non che offre soccorso stradale. Non indica dove trovare un'officina.",
         "regola": "Carro-attrezzi che traina = Rimozione, non officina.",
         "immagine": "f2d4c92806bc943fd9fe.jpg",
@@ -1963,6 +2210,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica l'imbarco delle autovetture sui treni merce",
         "risposta": False,
+        "riassunto": "Pannello → auto su treni merci?",
         "spiegazione": "L'immagine non ha nulla a che fare con i treni o l'imbarco. Riguarda la rimozione di veicoli dalla strada.",
         "regola": "No treni, solo rimozione.",
         "immagine": "f2d4c92806bc943fd9fe.jpg",
@@ -1970,6 +2218,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica un'officina meccanica attrezzata per il cambio d'olio",
         "risposta": False,
+        "riassunto": "Pannello → officina cambio olio?",
         "spiegazione": "Questo pannello non indica un'officina o servizi di manutenzione. Indica la rimozione forzata di un veicolo.",
         "regola": "Non è un meccanico, è una minaccia!",
         "trabocchetti": ["olio"],
@@ -1978,6 +2227,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che possono sostare i veicoli per il soccorso stradale",
         "risposta": False,
+        "riassunto": "Pannello → sosta per soccorso stradale?",
         "spiegazione": "Questo pannello indica che altri veicoli (quelli in sosta vietata) possono essere rimossi, non che i veicoli di soccorso stradale possono sostare lì. Anzi, spesso è abbinato a un divieto di sosta.",
         "regola": "Non è un permesso, è un avvertimento.",
         "immagine": "f2d4c92806bc943fd9fe.jpg",
@@ -1985,6 +2235,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica che dopo tre ore il veicolo lasciato in sosta viene rimosso o bloccato",
         "risposta": False,
+        "riassunto": "Pannello → rimozione dopo tre ore?",
         "spiegazione": "Il pannello non specifica un tempo. La rimozione o il blocco possono avvenire subito, non c'è un'attesa di tre ore.",
         "regola": "Nessun tempo limite, la rimozione è subito.",
         "trabocchetti": ["dopo tre ore"],
@@ -1993,6 +2244,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo raffigurato indica una strada chiusa per incidente",
         "risposta": False,
+        "riassunto": "Pannello → strada chiusa per incidente?",
         "spiegazione": "L'immagine non ha nulla a che fare con incidenti o strade chiuse. Riguarda la rimozione di veicoli in sosta vietata.",
         "regola": "Non è un incidente, è una multa (e rimozione).",
         "trabocchetti": ["strada chiusa per incidente"],
@@ -2001,6 +2253,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale in figura consente l'accesso solo agli autobus",
         "risposta": True,
+        "riassunto": "Segnale in figura → accesso solo autobus?",
         "spiegazione": "Il segnale principale (Divieto di accesso) vieta l'ingresso a tutti i veicoli. Il pannello sotto, con la scritta 'eccetto' e l'immagine dell'autobus, significa che questa regola non vale per gli autobus. Quindi, solo gli autobus possono entrare.",
         "regola": "Divieto per tutti, eccezione per il bus: solo il bus passa!",
         "trabocchetti": ["solo"],
@@ -2009,6 +2262,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale in figura indica che possono parcheggiare tutti i veicoli tranne gli autobus",
         "risposta": True,
+        "riassunto": "Segnale in figura → parcheggio per tutti tranne autobus?",
         "spiegazione": "Il segnale di 'Divieto di accesso' e il pannello 'eccetto autobus' riguardano la possibilità di entrare o transitare in una strada. Non hanno nulla a che fare con il parcheggio. Questo segnale non dà indicazioni sulla sosta dei veicoli.",
         "regola": "Divieto di accesso non è divieto di sosta!",
         "trabocchetti": ["parcheggiare"],
@@ -2017,6 +2271,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura può essere abbinato ad un segnale di obbligo",
         "risposta": True,
+        "riassunto": "Pannello → abbinabile a un obbligo?",
         "spiegazione": "Il pannello 'eccetto' serve a specificare un'eccezione a una regola. Questa regola può essere un divieto (come nell'immagine) ma anche un obbligo. Ad esempio, un segnale di 'Obbligo di svolta a destra' potrebbe avere un pannello 'eccetto autobus' per permettere ai bus di andare dritto.",
         "regola": "'Eccetto' modifica regole, anche gli obblighi.",
         "trabocchetti": ["pannello integrativo"],
@@ -2025,6 +2280,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura può essere abbinato ad un segnale di divieto",
         "risposta": True,
+        "riassunto": "Pannello → abbinabile a un divieto?",
         "spiegazione": "Sì, il pannello 'eccetto' è spesso abbinato a segnali di divieto, proprio come nell'immagine che stiamo analizzando. Il 'Divieto di accesso' è un segnale di divieto, e il pannello 'eccetto autobus' ne modifica la validità.",
         "regola": "'Eccetto' modifica regole, anche i divieti (come nell'immagine!).",
         "immagine": "b15358d6c38c72a32ab4.jpg",
@@ -2032,6 +2288,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale in figura vieta l'accesso agli autobus",
         "risposta": False,
+        "riassunto": "Segnale in figura → accesso vietato agli autobus?",
         "spiegazione": "Il segnale principale (Divieto di accesso) vieta l'accesso a tutti. Ma il pannello 'eccetto autobus' significa proprio il contrario: gli autobus sono esclusi dal divieto, quindi possono accedere. Il segnale non vieta l'accesso agli autobus, ma lo consente.",
         "regola": "'Eccetto' significa 'non vale per loro'.",
         "trabocchetti": ["vieta"],
@@ -2040,6 +2297,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale in figura vieta il transito agli autobus",
         "risposta": False,
+        "riassunto": "Segnale in figura → transito vietato agli autobus?",
         "spiegazione": "Come per la domanda precedente, il pannello 'eccetto autobus' fa sì che il divieto di transito non si applichi agli autobus. Quindi, gli autobus possono transitare, non gli è vietato.",
         "regola": "'Eccetto' significa 'non vale per loro'.",
         "trabocchetti": ["vieta"],
@@ -2048,6 +2306,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura può trovarsi da solo",
         "risposta": False,
+        "riassunto": "Pannello → può stare da solo?",
         "spiegazione": "Un 'pannello integrativo' ha sempre bisogno di un segnale principale a cui riferirsi. Non può mai essere installato da solo perché la sua funzione è quella di 'integrare', cioè completare o modificare, il significato di un altro segnale.",
         "regola": "'Integrativo' non sta mai da solo.",
         "trabocchetti": ["da solo", "integrativo"],
@@ -2056,6 +2315,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello integrativo in figura vale solo per gli autobus urbani",
         "risposta": False,
+        "riassunto": "Pannello → solo autobus urbani?",
         "spiegazione": "L'immagine dell'autobus sul pannello è generica. Se il segnale volesse riferirsi solo agli autobus urbani, lo specificherebbe con una scritta o un simbolo particolare. In assenza di specificazioni, si intende che l'eccezione vale per tutti i tipi di autobus.",
         "regola": "Bus generico = tutti i bus.",
         "trabocchetti": ["solo per gli autobus urbani"],

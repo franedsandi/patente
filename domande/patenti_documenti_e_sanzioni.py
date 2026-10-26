@@ -1,7 +1,7 @@
 """Domande — Patenti, documenti e sanzioni.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Patenti, documenti e sanzioni"
@@ -10,12 +10,14 @@ QUESTIONS = [
     {
         "domanda": "E' vietato condurre un autoveicolo sulle strade pubbliche quando non si possiede la patente di guida necessaria per quel tipo di veicolo",
         "risposta": True,
+        "riassunto": "Guidare senza la patente giusta → vietato?",
         "spiegazione": "Per guidare qualsiasi veicolo, è necessario avere la patente di guida specifica per quel tipo di veicolo. Guidare senza patente o con una patente non adatta è molto pericoloso e illegale, perché significa che non si hanno le competenze necessarie.",
         "regola": "Patente = Permesso di guidare.",
     },
     {
         "domanda": "E' di norma vietato condurre sulle strade pubbliche un autoveicolo non immatricolato",
         "risposta": True,
+        "riassunto": "Autoveicolo non immatricolato → di norma vietato?",
         "spiegazione": "Un veicolo non immatricolato non ha la targa e non è registrato ufficialmente. Questo significa che non può circolare normalmente sulle strade pubbliche. Ci sono eccezioni, come i veicoli con targa prova, ma la regola generale è che l'immatricolazione è obbligatoria.",
         "regola": "Immatricolazione = Targa e registrazione.",
         "trabocchetti": ["di norma", "Non immatricolato"],
@@ -23,6 +25,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato utilizzare un autoveicolo sulle strade pubbliche quando non si ha con sé la ricevuta di avvenuto pagamento della tassa di possesso",
         "risposta": False,
+        "riassunto": "Senza ricevuta del bollo → vietato circolare?",
         "spiegazione": "La tassa di possesso, o 'bollo auto', è una tassa che si paga per avere un veicolo. È obbligatorio pagarla, ma non è obbligatorio avere la ricevuta di pagamento sempre con sé in auto. Le forze dell'ordine possono verificare il pagamento tramite sistemi informatici.",
         "regola": "Bollo = Paga, non portare.",
         "trabocchetti": ["non si ha con sé la ricevuta"],
@@ -30,6 +33,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato circolare sulle strade pubbliche con un autoveicolo dotato della targa prova",
         "risposta": False,
+        "riassunto": "Targa prova → vietato circolare?",
         "spiegazione": "La targa prova è una targa speciale che permette a veicoli non ancora immatricolati (o in fase di test, riparazione, ecc.) di circolare su strada. È usata da concessionari, officine, carrozzieri. Quindi, circolare con la targa prova è permesso, non vietato.",
         "regola": "Targa prova = Permesso speciale.",
         "trabocchetti": ["vietato", "targa prova"],
@@ -37,12 +41,14 @@ QUESTIONS = [
     {
         "domanda": "E' vietato utilizzare un autoveicolo sulle strade pubbliche quando la carta di circolazione è intestata a persona diversa dal conducente",
         "risposta": False,
+        "riassunto": "Carta di circolazione intestata ad altri → vietato?",
         "spiegazione": "La carta di circolazione (oggi parte del Documento Unico) indica chi è il proprietario del veicolo. Non è un problema se chi guida non è il proprietario. Molte persone guidano auto di familiari, amici o aziendali. L'importante è avere la patente e il permesso del proprietario.",
         "regola": "Carta circolazione = Proprietario, non guidatore.",
     },
     {
         "domanda": "Sulle strade pubbliche è vietato utilizzare un autoveicolo se la garanzia è scaduta di validità",
         "risposta": False,
+        "riassunto": "Garanzia scaduta → vietato circolare?",
         "spiegazione": "La garanzia è un accordo commerciale tra te e il venditore o il produttore del veicolo, che ti protegge da eventuali difetti per un certo periodo. La sua scadenza non ha alcuna influenza sulla possibilità di circolare su strada. Puoi guidare un'auto anche se la garanzia è scaduta.",
         "regola": "Garanzia = Acquisto, non strada.",
         "trabocchetti": ["garanzia è scaduta"],
@@ -50,18 +56,21 @@ QUESTIONS = [
     {
         "domanda": "E' vietato utilizzare un autoveicolo sulle strade pubbliche quando non si ha con sé il certificato di proprietà",
         "risposta": False,
+        "riassunto": "Senza certificato di proprietà → vietato?",
         "spiegazione": "Il certificato di proprietà (oggi parte del Documento Unico di Circolazione e Proprietà) è un documento che attesta chi è il proprietario del veicolo. Non è obbligatorio averlo a bordo dell'auto. Serve per pratiche burocratiche come la vendita o il passaggio di proprietà, ma non per la circolazione quotidiana.",
         "regola": "Certificato proprietà = Casa, non auto.",
     },
     {
         "domanda": "Un autoveicolo per poter circolare deve essere munito delle targhe identificative, affinché sia possibile risalire all'intestatario del mezzo",
         "risposta": True,
+        "riassunto": "Targhe → per risalire all'intestatario?",
         "spiegazione": "È vero. Ogni veicolo, per poter circolare su strada, deve avere le targhe. Le targhe sono come la 'carta d'identità' del veicolo e servono per sapere chi è il proprietario e per identificarlo in caso di necessità (ad esempio, multe o incidenti).",
         "regola": "Targhe = Identità del veicolo.",
     },
     {
         "domanda": "Un autoveicolo per poter circolare deve essere munito della carta di circolazione",
         "risposta": True,
+        "riassunto": "Circolare → serve la carta di circolazione?",
         "spiegazione": "È vero. La carta di circolazione (oggi chiamata anche 'Documento Unico di Circolazione e di Proprietà del veicolo') è un documento fondamentale. Attesta che il veicolo è idoneo a circolare e contiene tutte le sue caratteristiche tecniche. Senza questo documento, il veicolo non può circolare legalmente.",
         "regola": "Carta di circolazione = Permesso di circolare.",
         "trabocchetti": ["carta di circolazione"],
@@ -69,6 +78,7 @@ QUESTIONS = [
     {
         "domanda": "Un autoveicolo per poter circolare deve essere munito del segnale mobile di pericolo (triangolo)",
         "risposta": True,
+        "riassunto": "Circolare → serve il triangolo?",
         "spiegazione": "È vero. Il segnale mobile di pericolo, comunemente chiamato 'triangolo', è un equipaggiamento obbligatorio che deve essere sempre presente nel veicolo. Serve per segnalare un veicolo fermo per guasto o incidente, specialmente fuori dai centri abitati, per avvisare gli altri conducenti e prevenire ulteriori pericoli.",
         "regola": "Triangolo = Sicurezza in caso di guasto.",
         "trabocchetti": ["triangolo"],
@@ -76,6 +86,7 @@ QUESTIONS = [
     {
         "domanda": "Un'autovettura per poter circolare deve avere la polizza assicurativa del tipo \"kasko\"",
         "risposta": False,
+        "riassunto": "Circolare → serve la kasko?",
         "spiegazione": "È falso. Per circolare, un'autovettura deve avere la polizza assicurativa obbligatoria, che è la 'Responsabilità Civile Auto' (RCA). La polizza 'Kasko' è un tipo di assicurazione facoltativa, cioè non obbligatoria. La Kasko copre i danni alla tua auto anche se la colpa è tua, ma non è necessaria per poter circolare legalmente.",
         "regola": "Kasko = Facoltativa. RCA = Obbligatoria.",
         "trabocchetti": ["del tipo"],
@@ -83,6 +94,7 @@ QUESTIONS = [
     {
         "domanda": "Le targhe dei veicoli devono essere apposte saldamente e in posizione corretta",
         "risposta": True,
+        "riassunto": "Targhe → fissate bene e nella posizione giusta?",
         "spiegazione": "Le targhe devono essere fissate bene e nella posizione giusta. Questo è importante perché devono essere sempre visibili e non devono cadere mentre guidi.",
         "regola": "Targa: ferma e al suo posto.",
         "trabocchetti": ["saldamente", "in posizione corretta"],
@@ -90,6 +102,7 @@ QUESTIONS = [
     {
         "domanda": "Le targhe dei veicoli devono essere sempre ben leggibili",
         "risposta": True,
+        "riassunto": "Targhe → sempre leggibili?",
         "spiegazione": "È fondamentale che le targhe siano sempre leggibili, cioè che si possano leggere bene i numeri e le lettere. Questo serve per identificare il veicolo in ogni momento.",
         "regola": "Targa: chiara, sempre.",
         "trabocchetti": ["sempre", "Ben leggibili"],
@@ -97,6 +110,7 @@ QUESTIONS = [
     {
         "domanda": "Le targhe dei veicoli non devono essere sporche",
         "risposta": True,
+        "riassunto": "Targhe → pulite?",
         "spiegazione": "Le targhe non devono essere sporche perché lo sporco le renderebbe illeggibili. Se non si leggono bene, è come se non ci fossero.",
         "regola": "Targa: pulita.",
         "trabocchetti": ["non devono essere sporche"],
@@ -104,6 +118,7 @@ QUESTIONS = [
     {
         "domanda": "Le targhe dei veicoli non devono essere manomesse o contraffatte",
         "risposta": True,
+        "riassunto": "Targhe → non manomesse?",
         "spiegazione": "Non si possono modificare le targhe (manomettere) o crearne di false (contraffatte). Le targhe sono documenti ufficiali e devono essere originali e integre.",
         "regola": "Targa: originale, non toccare.",
         "trabocchetti": ["manomesse", "contraffatte"],
@@ -111,6 +126,7 @@ QUESTIONS = [
     {
         "domanda": "Gli autoveicoli usati per le esercitazioni di guida devono essere muniti, sia anteriormente che posteriormente, di appositi pannelli retroriflettenti recanti la lettera \"P\" (principiante)",
         "risposta": True,
+        "riassunto": "Auto per esercitazioni → pannelli P davanti e dietro?",
         "spiegazione": "Quando si impara a guidare, l'auto deve avere un pannello con la lettera 'P' sia davanti che dietro. Questi pannelli sono speciali (retroriflettenti) per essere visti bene, soprattutto di notte, e avvisano gli altri che c'è un principiante alla guida.",
         "regola": "Guida con la P: davanti e dietro.",
         "trabocchetti": ["sia anteriormente che posteriormente", "retroriflettenti"],
@@ -118,6 +134,7 @@ QUESTIONS = [
     {
         "domanda": "Le targhe dei veicoli possono essere piegate per adattarle meglio al loro supporto",
         "risposta": False,
+        "riassunto": "Targhe → piegabili per adattarle?",
         "spiegazione": "È FALSO. Le targhe non possono essere piegate o modificate in alcun modo. Devono mantenere la loro forma originale per essere sempre leggibili e non sembrare manomesse.",
         "regola": "Targa: mai piegare!",
         "trabocchetti": ["possono", "per adattarle meglio"],
@@ -125,6 +142,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria AM si possono condurre i quadricicli leggeri",
         "risposta": True,
+        "riassunto": "Patente AM → quadricicli leggeri?",
         "spiegazione": "Sì, è vero. Con la patente AM puoi guidare i quadricicli leggeri, che sono veicoli a quattro ruote con caratteristiche simili ai ciclomotori (ad esempio, le microcar).",
         "regola": "AM = Ciclomotori e microcar.",
         "trabocchetti": ["quadricicli leggeri"],
@@ -132,6 +150,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria AM si possono condurre i ciclomotori a due ruote",
         "risposta": True,
+        "riassunto": "Patente AM → ciclomotori a due ruote?",
         "spiegazione": "Esatto, è vero. La patente AM è fatta proprio per guidare i ciclomotori a due ruote, come gli scooter o i motorini.",
         "regola": "AM = Ciclomotori (2, 3, 4 ruote leggere).",
         "trabocchetti": ["Ciclomotori a due ruote"],
@@ -139,6 +158,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria AM si possono condurre i ciclomotori a tre ruote",
         "risposta": True,
+        "riassunto": "Patente AM → ciclomotori a tre ruote?",
         "spiegazione": "Sì, è vero. La patente AM ti permette di guidare anche i ciclomotori a tre ruote, non solo quelli a due. Pensa ad alcuni scooter a tre ruote o piccoli veicoli da lavoro.",
         "regola": "AM = Ciclomotori (2, 3, 4 ruote leggere).",
         "trabocchetti": ["Ciclomotori a tre ruote"],
@@ -146,6 +166,7 @@ QUESTIONS = [
     {
         "domanda": "La patente AM si può conseguire a 14 anni di età",
         "risposta": True,
+        "riassunto": "Patente AM → a 14 anni?",
         "spiegazione": "Corretto, è vero. L'età minima per poter fare l'esame e ottenere la patente AM è 14 anni.",
         "regola": "AM = 14 anni.",
         "trabocchetti": ["14 anni"],
@@ -153,6 +174,7 @@ QUESTIONS = [
     {
         "domanda": "La patente AM abilita alla guida di ciclomotori con motore termico non superiore a 50 cm3",
         "risposta": True,
+        "riassunto": "Patente AM → ciclomotori fino a 50 cm3?",
         "spiegazione": "Sì, è vero. I ciclomotori a motore termico (a benzina) non possono avere una cilindrata superiore a 50 cm³. Questo è il limite per la patente AM.",
         "regola": "AM = 50 cm³ (o 4 kW elettrici).",
         "trabocchetti": ["non superiore a 50 cm3"],
@@ -160,6 +182,7 @@ QUESTIONS = [
     {
         "domanda": "La patente AM consente, a chi ha compiuto 14 anni, di condurre i ciclomotori in tutti i paesi dell'Unione Europea",
         "risposta": False,
+        "riassunto": "Patente AM a 14 anni → valida in tutta l'UE?",
         "spiegazione": "Questa affermazione è falsa. Anche se puoi prendere la patente AM a 14 anni in Italia, non 'in tutti' i paesi dell'Unione Europea puoi guidare a quell'età. Alcuni paesi richiedono 16 anni.",
         "regola": "AM all'estero: attenzione all'età minima locale!",
         "trabocchetti": ["tutti"],
@@ -167,6 +190,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria AM si possono condurre i quadricicli non leggeri con potenza fino a 7 kW",
         "risposta": False,
+        "riassunto": "Patente AM → quadricicli non leggeri fino a 7 kW?",
         "spiegazione": "Questa affermazione è falsa. La patente AM ti permette di guidare solo i quadricicli LEGGERI. I quadricicli 'non leggeri' (anche se con potenza limitata) richiedono una patente superiore, come la B1 o la B.",
         "regola": "AM = solo quadricicli LEGGERI.",
         "trabocchetti": ["quadricicli non leggeri"],
@@ -174,6 +198,7 @@ QUESTIONS = [
     {
         "domanda": "La patente AM abilita alla guida di motocicli, purché dotati di motore elettrico",
         "risposta": False,
+        "riassunto": "Patente AM → motocicli elettrici?",
         "spiegazione": "Questa affermazione è falsa. La patente AM è per i ciclomotori, non per i motocicli. I motocicli sono veicoli diversi e richiedono patenti di categoria A (A1, A2, A), anche se hanno un motore elettrico.",
         "regola": "AM = Ciclomotori, non motocicli.",
         "trabocchetti": ["motocicli"],
@@ -181,12 +206,14 @@ QUESTIONS = [
     {
         "domanda": "La patente AM può essere rilasciata senza dover sostenere gli esami teorici e pratici, purché il richiedente sia maggiorenne",
         "risposta": False,
+        "riassunto": "Patente AM → senza esami se maggiorenni?",
         "spiegazione": "Questa affermazione è falsa. Per ottenere la patente AM, come per tutte le patenti, devi sempre superare sia l'esame di teoria che quello di pratica. L'età non cambia questa regola.",
         "regola": "Ogni patente = esami (teoria + pratica).",
     },
     {
         "domanda": "La patente AM conseguita da almeno 3 anni abilita alla guida dei motocicli di potenza fino a 11 kW",
         "risposta": False,
+        "riassunto": "Patente AM da 3 anni → moto fino a 11 kW?",
         "spiegazione": "Questa affermazione è falsa. La patente AM abilita sempre e solo alla guida di ciclomotori. Non ci sono 'promozioni' o cambiamenti dopo 3 anni che ti permettano di guidare motocicli (anche se di bassa potenza). Per i motocicli serve una patente di categoria A.",
         "regola": "AM = sempre e solo ciclomotori.",
         "trabocchetti": ["conseguita da almeno 3 anni", "abilita alla guida dei motocicli"],
@@ -194,6 +221,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria A1 si possono condurre i motocicli (con o senza carrozzetta) di cilindrata fino a 125 cm3, potenza non superiore a 11 kW e rapporto potenza/peso non superiore a 0,1 kW/kg",
         "risposta": True,
+        "riassunto": "Patente A1 → moto fino a 125 cm3, 11 kW, 0,1 kW/kg?",
         "spiegazione": "La patente A1 ti permette di guidare motocicli con una cilindrata massima di 125 cm3, una potenza massima di 11 kW e un rapporto potenza/peso non superiore a 0,1 kW/kg. Questa domanda descrive esattamente i limiti corretti per la patente A1.",
         "regola": "A1 = 125cc, 11kW, 0.1 kW/kg. Ricorda i tre numeri magici!",
         "trabocchetti": ["fino a", "non superiore a"],
@@ -201,6 +229,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria A1 si possono condurre i tricicli a motore di potenza non superiore a 15 kW",
         "risposta": True,
+        "riassunto": "Patente A1 → tricicli fino a 15 kW?",
         "spiegazione": "Sì, con la patente A1 puoi guidare anche i tricicli a motore, ma solo se la loro potenza non supera i 15 kW. Se la potenza è maggiore, serve un'altra patente.",
         "regola": "Tricicli A1: max 15 kW.",
         "trabocchetti": ["non superiore a 15 kW"],
@@ -208,12 +237,14 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria A1 si possono condurre le macchine agricole che rientrano nei limiti di sagoma e di massa previsti per i motoveicoli",
         "risposta": True,
+        "riassunto": "Patente A1 → macchine agricole nei limiti dei motoveicoli?",
         "spiegazione": "La patente A1 ti permette di guidare alcune macchine agricole, ma solo quelle piccole, che hanno dimensioni e peso simili a un motoveicolo. Non puoi guidare tutte le macchine agricole, solo quelle 'leggere'.",
         "regola": "A1 = Macchine agricole 'leggere' (come motoveicoli).",
     },
     {
         "domanda": "La patente di categoria A1 può essere conseguita da chi ha almeno 16 anni di età",
         "risposta": True,
+        "riassunto": "Patente A1 → a 16 anni?",
         "spiegazione": "Per poter prendere la patente A1, devi aver compiuto almeno 16 anni. È una patente pensata per i giovani conducenti.",
         "regola": "A1 = 16 anni.",
         "trabocchetti": ["almeno"],
@@ -221,6 +252,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A1 abilita anche alla guida dei veicoli che si possono condurre con la patente AM",
         "risposta": True,
+        "riassunto": "Patente A1 → anche veicoli della AM?",
         "spiegazione": "Se hai la patente A1, puoi guidare automaticamente anche tutti i veicoli che si possono guidare con la patente AM (ciclomotori e quadricicli leggeri). È come un 'upgrade': la patente superiore include quella inferiore.",
         "regola": "A1 include AM.",
         "trabocchetti": ["anche"],
@@ -228,6 +260,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A1 può essere conseguita solo da chi è già in possesso della patente AM",
         "risposta": False,
+        "riassunto": "Patente A1 → solo con la AM?",
         "spiegazione": "Non è vero che devi avere per forza la patente AM prima di prendere la A1. Puoi prendere la patente A1 direttamente a 16 anni, senza aver mai avuto la AM.",
         "regola": "'Solo' è spesso FALSO. Non serve la AM per la A1.",
         "trabocchetti": ["solo"],
@@ -235,6 +268,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A1 abilita alla guida di tutti i motocicli di cilindrata fino a 125 cm3",
         "risposta": False,
+        "riassunto": "Patente A1 → tutte le moto fino a 125 cm3?",
         "spiegazione": "Attenzione! La patente A1 non ti permette di guidare *tutti* i motocicli fino a 125 cm3. Ci sono anche altri limiti importanti da rispettare: la potenza non deve superare 11 kW e il rapporto potenza/peso non deve superare 0,1 kW/kg. Un motociclo da 125 cm3 potrebbe avere una potenza troppo alta per la A1.",
         "regola": "'Tutti' è spesso FALSO. Ricorda i limiti di potenza e peso per la A1.",
         "trabocchetti": ["tutti"],
@@ -242,6 +276,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria A1 si possono condurre i tricicli di potenza superiore a 15 kW, ma solo se il conducente è maggiorenne",
         "risposta": False,
+        "riassunto": "Patente A1 → tricicli oltre 15 kW se maggiorenni?",
         "spiegazione": "Con la patente A1, i tricicli a motore non possono mai superare i 15 kW di potenza. Questo limite vale sempre, indipendentemente dall'età del conducente. Per guidare tricicli più potenti serve la patente A e un'età minima di 21 anni.",
         "regola": "A1 = Tricicli MAX 15 kW. Mai superiore.",
         "trabocchetti": ["superiore a 15 kW"],
@@ -249,6 +284,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria A1 si possono condurre le macchine operatrici non eccezionali",
         "risposta": False,
+        "riassunto": "Patente A1 → macchine operatrici non eccezionali?",
         "spiegazione": "Le macchine operatrici (come escavatori, pale meccaniche, ecc.) non si possono guidare con la patente A1. Per queste macchine serve almeno la patente B o altre patenti specifiche, non quelle per motocicli.",
         "regola": "A1 = NO macchine operatrici.",
         "trabocchetti": ["macchine operatrici"],
@@ -256,6 +292,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A1 consente al conducente che ha meno di 18 anni di trasportare un passeggero, ma solo se lo stesso è maggiorenne",
         "risposta": False,
+        "riassunto": "Patente A1 minorenni → passeggero solo maggiorenne?",
         "spiegazione": "Un conducente con patente A1 che ha meno di 18 anni non può trasportare passeggeri, non importa l'età del passeggero. Per poter trasportare un passeggero, il conducente deve aver compiuto almeno 18 anni.",
         "regola": "Passeggero A1: conducente DEVE avere 18 anni.",
         "trabocchetti": ["ma solo se lo stesso è maggiorenne"],
@@ -263,6 +300,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A1, trascorsi i primi due anni dal conseguimento, diventa automaticamente patente di categoria A2 e, dopo ulteriori due anni, diventa patente di categoria A che abilita alla guida di qualunque motociclo",
         "risposta": False,
+        "riassunto": "Patente A1 → diventa A2 e poi A automaticamente?",
         "spiegazione": "Le patenti non 'cambiano' o si 'aggiornano' automaticamente. Per passare da una categoria all'altra (ad esempio da A1 ad A2, o da A2 ad A) devi fare un nuovo esame pratico, oppure, in alcuni casi, attendere l'età minima e aver già la patente inferiore da un certo tempo. Non è un processo automatico.",
         "regola": "'Automaticamente' è spesso FALSO. Le patenti non si aggiornano da sole.",
         "trabocchetti": ["automaticamente"],
@@ -270,6 +308,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria A2 si possono condurre i motocicli (con o senza carrozzetta) di potenza fino a 35 kW, rapporto potenza/peso non superiore a 0,2 kW/kg purché non siano derivati da una versione dello stesso modello che sviluppi oltre il doppio della potenza massima",
         "risposta": True,
+        "riassunto": "Patente A2 → moto fino a 35 kW e 0,2 kW/kg?",
         "spiegazione": "La patente A2 permette di guidare motocicli con una potenza massima di 35 kW e un rapporto potenza/peso non superiore a 0,2 kW/kg. È importante anche che il motociclo non sia una versione 'depotenziata' di un modello che in origine ha più del doppio della potenza (cioè, se l'originale ha 70 kW, non puoi guidare la versione da 35 kW con la A2).",
         "regola": "A2 = 35 kW, 0,2 kW/kg, non più del doppio.",
         "trabocchetti": ["fino a 35 kW", "non superiore a 0,2 kW/kg"],
@@ -277,6 +316,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A2 abilita anche alla guida dei veicoli che si possono condurre con le patenti A1 e AM",
         "risposta": True,
+        "riassunto": "Patente A2 → anche veicoli di A1 e AM?",
         "spiegazione": "Le patenti di categoria superiore (come la A2) includono sempre le categorie inferiori (come A1 e AM). Quindi, se hai la A2, puoi guidare anche i veicoli che si guidano con la A1 e la AM.",
         "regola": "Patente superiore include quelle inferiori.",
         "trabocchetti": ["abilita anche"],
@@ -284,6 +324,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A2 può essere conseguita da chi ha almeno 18 anni di età",
         "risposta": True,
+        "riassunto": "Patente A2 → a 18 anni?",
         "spiegazione": "L'età minima per prendere la patente A2 è 18 anni. Quindi, se hai almeno 18 anni, puoi fare l'esame.",
         "regola": "A2 = 18 anni.",
         "trabocchetti": ["almeno 18 anni"],
@@ -291,12 +332,14 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A2 consente al titolare di trasportare un passeggero solo se il posto del passeggero è previsto sulla carta di circolazione del veicolo",
         "risposta": True,
+        "riassunto": "Patente A2 → passeggero se previsto in carta?",
         "spiegazione": "Indipendentemente dalla patente che hai, puoi trasportare un passeggero solo se il veicolo è omologato per due persone e questo è indicato sulla sua carta di circolazione. Non dipende dalla patente, ma dal veicolo.",
         "regola": "Passeggero? Controlla la carta di circolazione!",
     },
     {
         "domanda": "Il titolare di patente di categoria A2 da almeno due anni, può conseguire la patente A che abilita alla guida di tutti i motocicli, anche se ha meno di 24 anni",
         "risposta": True,
+        "riassunto": "A2 da due anni → A anche sotto 24 anni?",
         "spiegazione": "Se hai la patente A2 da almeno due anni, puoi fare un esame pratico per ottenere la patente A (senza limiti di potenza) anche se non hai ancora 24 anni. Questo è un percorso accelerato per i più esperti.",
         "regola": "A2 + 2 anni = A (anche prima dei 24).",
         "trabocchetti": ["e"],
@@ -304,6 +347,7 @@ QUESTIONS = [
     {
         "domanda": "Il titolare di patente di categoria A2 può condurre anche le macchine agricole che rientrano nei limiti di sagoma e di massa dei motoveicoli",
         "risposta": True,
+        "riassunto": "Patente A2 → macchine agricole nei limiti dei motoveicoli?",
         "spiegazione": "La patente A2, come le altre patenti di categoria A, permette di guidare anche le macchine agricole che sono piccole e leggere, cioè che rientrano nei limiti di dimensioni e peso dei motoveicoli.",
         "regola": "Patenti A = anche macchine agricole piccole.",
         "trabocchetti": ["anche le macchine agricole"],
@@ -311,6 +355,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A2 può essere conseguita da chi ha almeno 20 anni di età",
         "risposta": False,
+        "riassunto": "Patente A2 → a 20 anni?",
         "spiegazione": "Questa affermazione è falsa perché l'età minima per la patente A2 è 18 anni, non 20.",
         "regola": "A2 = 18 anni, non 20.",
         "trabocchetti": ["almeno 20 anni"],
@@ -318,6 +363,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria A2 si possono condurre i motocicli (con o senza carrozzetta) di potenza fino a 25 kW, rapporto potenza/peso non superiore a 0,2 kW/kg purché non siano derivati da una versione che sviluppa oltre il triplo della potenza massima",
         "risposta": False,
+        "riassunto": "Patente A2 → moto fino a 25 kW?",
         "spiegazione": "Questa affermazione è falsa perché i limiti di potenza per la A2 sono fino a 35 kW, non 25 kW. Inoltre, il limite per la derivazione da un modello più potente è 'oltre il doppio', non 'oltre il triplo'.",
         "regola": "A2 = 35 kW, non 25 kW; doppio, non triplo.",
         "trabocchetti": ["fino a 25 kW", "oltre il triplo"],
@@ -325,6 +371,7 @@ QUESTIONS = [
     {
         "domanda": "Il titolare di patente di categoria A2 da almeno due anni, può conseguire la patente A che abilita alla guida di tutti i motocicli, solo se è già in possesso della patente di categoria AM ed ha più di 24 anni di età",
         "risposta": False,
+        "riassunto": "A2 da due anni → A solo con AM e oltre 24 anni?",
         "spiegazione": "Questa affermazione è falsa. Come abbiamo visto, si può passare dalla A2 alla A dopo due anni, anche prima dei 24 anni. Non è necessario avere la patente AM e l'età di 24 anni non è un requisito se si hanno i due anni di A2. La parola 'solo' rende la frase falsa.",
         "regola": "A2 + 2 anni = A, senza AM e senza aspettare i 24 anni.",
         "trabocchetti": ["e", "solo"],
@@ -332,6 +379,7 @@ QUESTIONS = [
     {
         "domanda": "Il titolare di patente di categoria A2 non può condurre motocicli di cilindrata superiore a 150 cm3 e di potenza superiore a 25 kW",
         "risposta": False,
+        "riassunto": "Patente A2 → non oltre 150 cm3 e 25 kW?",
         "spiegazione": "Questa affermazione è falsa. La patente A2 permette di guidare motocicli fino a 35 kW, quindi può condurre motocicli con potenza superiore a 25 kW (fino a 35 kW). Non c'è un limite di cilindrata specifico per la A2, solo di potenza e rapporto potenza/peso.",
         "regola": "A2 = 35 kW, nessun limite di cilindrata.",
         "trabocchetti": ["e"],
@@ -339,6 +387,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A2 può essere conseguita solo se si è già in possesso della patente di categoria A1",
         "risposta": False,
+        "riassunto": "Patente A2 → solo avendo la A1?",
         "spiegazione": "Questa affermazione è falsa. Puoi prendere la patente A2 direttamente a 18 anni, senza aver prima conseguito la patente A1. Non è un requisito obbligatorio.",
         "regola": "A2 diretta a 18 anni, non serve A1.",
         "trabocchetti": ["solo"],
@@ -346,6 +395,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A2 consente di guidare solo i ciclomotori e i quadricicli leggeri",
         "risposta": False,
+        "riassunto": "Patente A2 → solo ciclomotori e quadricicli leggeri?",
         "spiegazione": "Questa affermazione è falsa. La patente A2 consente di guidare motocicli fino a 35 kW, oltre ai veicoli delle categorie A1 e AM (che includono ciclomotori e quadricicli leggeri). Quindi, non 'solo' questi ultimi, ma molto di più.",
         "regola": "A2 = motocicli fino a 35 kW + AM + A1. Non 'solo' ciclomotori.",
         "trabocchetti": ["solo"],
@@ -353,6 +403,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A2 non consente di condurre alcun tipo di triciclo a motore",
         "risposta": False,
+        "riassunto": "Patente A2 → nessun triciclo?",
         "spiegazione": "Questa affermazione è falsa. La patente A2 abilita alla guida dei tricicli a motore con potenza non superiore a 15 kW. Quindi, ne consente alcuni, non 'nessuno'.",
         "regola": "A2 = tricicli fino a 15 kW. Non 'nessuno'.",
         "trabocchetti": ["non consente di condurre alcun tipo"],
@@ -360,6 +411,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria A si possono condurre tutti i motocicli (con o senza carrozzetta)",
         "risposta": True,
+        "riassunto": "Patente A → tutti i motocicli?",
         "spiegazione": "La patente di categoria A è la patente 'completa' per i motocicli. Questo significa che, una volta conseguita, permette di guidare qualsiasi tipo di moto, senza limiti di cilindrata o potenza, sia con che senza carrozzetta.",
         "regola": "Patente A = Moto senza limiti.",
         "trabocchetti": ["tutti i motocicli"],
@@ -367,18 +419,21 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria A si possono condurre tutti i tricicli a motore, ma solo se il conducente ha almeno 21 anni",
         "risposta": True,
+        "riassunto": "Patente A → tricicli solo da 21 anni?",
         "spiegazione": "Con la patente A puoi guidare tutti i tricicli a motore. Tuttavia, per i tricicli che hanno una potenza superiore a 15 kW, c'è una condizione di età: devi aver compiuto almeno 21 anni per poterli guidare.",
         "regola": "Tricicli potenti (>15kW) con A = 21 anni.",
     },
     {
         "domanda": "La patente di categoria A abilita a guidare i motocicli di cilindrata superiore a 50 cm3 anche se sviluppano una velocità superiore a 45 km/h",
         "risposta": True,
+        "riassunto": "Patente A → moto oltre 50 cm3 e 45 km/h?",
         "spiegazione": "La patente A abilita alla guida di tutti i motocicli. I motocicli con cilindrata superiore a 50 cm³ e velocità superiore a 45 km/h sono i motocicli 'veri e propri', e la patente A li include senza problemi.",
         "regola": "Patente A = Moto 'grandi' senza problemi.",
     },
     {
         "domanda": "La patente di categoria A può essere conseguita, con accesso diretto, da chi non è già titolare di patente A2 da almeno 2 anni, solo se ha compiuto 24 anni di età",
         "risposta": True,
+        "riassunto": "Patente A accesso diretto → a 24 anni?",
         "spiegazione": "Esistono due modi per prendere la patente A. L'accesso diretto significa che se non hai già la patente A2 da almeno due anni, devi aspettare di compiere 24 anni per poterla conseguire.",
         "regola": "A diretta = 24 anni.",
         "trabocchetti": ["accesso diretto", "solo se ha compiuto 24 anni di età"],
@@ -386,6 +441,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A può essere conseguita a 20 anni di età, con accesso graduale, da chi è titolare di patente A2 da almeno 2 anni",
         "risposta": True,
+        "riassunto": "Patente A graduale → a 20 anni con A2 da 2 anni?",
         "spiegazione": "Questo è il metodo dell'accesso graduale. Se hai già la patente A2 da almeno due anni, puoi 'salire' alla patente A a un'età più giovane, cioè a 20 anni.",
         "regola": "A graduale = 20 anni + A2 da 2 anni.",
         "trabocchetti": ["accesso graduale", "20 anni di età", "titolare di patente A2 da almeno 2 anni"],
@@ -393,12 +449,14 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A abilita anche alla guida dei veicoli che si possono condurre con le patenti A1, A2 e AM",
         "risposta": True,
+        "riassunto": "Patente A → anche veicoli di A1, A2, AM?",
         "spiegazione": "La patente A è la categoria più alta per le due ruote. Questo significa che, una volta ottenuta, include automaticamente la possibilità di guidare tutti i veicoli che si possono condurre con le patenti di categoria inferiore (AM, A1, A2).",
         "regola": "A = AM + A1 + A2.",
     },
     {
         "domanda": "Con la patente di categoria A si possono condurre anche i tricicli di potenza superiore a 15 kW, ma solo se il conducente ha almeno 21 anni di età",
         "risposta": True,
+        "riassunto": "Patente A → tricicli oltre 15 kW da 21 anni?",
         "spiegazione": "Come già visto, la patente A permette di guidare i tricicli. Però, se il triciclo ha una potenza superiore a 15 kW, è obbligatorio che il conducente abbia almeno 21 anni di età.",
         "regola": "Tricicli >15kW con A = 21 anni.",
         "trabocchetti": ["tricicli di potenza superiore a 15 kW"],
@@ -406,12 +464,14 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria A si possono condurre i motocicli (con o senza carrozzetta) di qualsiasi cilindrata, purché abbiano una potenza inferiore a 35 kW per i primi 2 anni dal conseguimento",
         "risposta": False,
+        "riassunto": "Patente A → sotto 35 kW per i primi 2 anni?",
         "spiegazione": "Questa affermazione è falsa. Una volta conseguita la patente A, non ci sono limiti di potenza per i motocicli che puoi guidare. Il limite di 35 kW per i primi 2 anni è una condizione della patente A2, non della A.",
         "regola": "Patente A = Potenza illimitata (subito).",
     },
     {
         "domanda": "Con la patente di categoria A si possono guidare i quadricicli non leggeri, qualunque sia l'età del conducente",
         "risposta": False,
+        "riassunto": "Patente A → quadricicli non leggeri a ogni età?",
         "spiegazione": "Questa affermazione è falsa. La patente A abilita alla guida di motocicli e tricicli, ma non dei quadricicli non leggeri. Per i quadricicli non leggeri serve la patente B1 o la patente B.",
         "regola": "Patente A = No quadricicli.",
         "trabocchetti": ["quadricicli non leggeri", "qualunque sia l"],
@@ -419,6 +479,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A può essere conseguita con accesso graduale a 18 anni di età da chi è già titolare di patente A1 da almeno 2 anni",
         "risposta": False,
+        "riassunto": "Patente A graduale → a 18 anni con A1?",
         "spiegazione": "Questa affermazione è falsa. L'accesso graduale alla patente A avviene a 20 anni di età, non a 18. Inoltre, per l'accesso graduale, devi essere titolare della patente A2 da almeno 2 anni, non della A1.",
         "regola": "A graduale = 20 anni + A2 da 2 anni (non 18 e non A1).",
         "trabocchetti": ["18 anni di età", "patente A1"],
@@ -426,6 +487,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria A si possono condurre anche i tricicli di potenza superiore a 15 kW, qualunque sia l'età del conducente",
         "risposta": False,
+        "riassunto": "Patente A → tricicli oltre 15 kW a ogni età?",
         "spiegazione": "Questa affermazione è falsa. Per guidare tricicli di potenza superiore a 15 kW con la patente A, è obbligatorio aver compiuto almeno 21 anni di età. Non è vero che si possono guidare 'qualunque sia l'età del conducente'.",
         "regola": "Tricicli >15kW con A = 21 anni (non qualunque età).",
         "trabocchetti": ["qualunque sia l"],
@@ -433,6 +495,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A può essere conseguita con accesso diretto anche da chi non è già titolare di patente A2 da almeno 2 anni, purché abbia compiuto 21 anni di età",
         "risposta": False,
+        "riassunto": "Patente A accesso diretto → a 21 anni?",
         "spiegazione": "Questa affermazione è falsa. L'accesso diretto alla patente A, per chi non ha la patente A2 da almeno 2 anni, richiede di aver compiuto 24 anni di età, non 21. A 21 anni si possono guidare i tricicli potenti, ma non si consegue la patente A per accesso diretto.",
         "regola": "A diretta = 24 anni (non 21).",
         "trabocchetti": ["21 anni di età"],
@@ -440,6 +503,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria A conseguita per accesso diretto ad almeno 24 anni di età, consente di condurre tutti i motocicli ma solo in Italia, per guidare all'estero è necessario sostenere un ulteriore esame",
         "risposta": False,
+        "riassunto": "Patente A diretta → valida solo in Italia?",
         "spiegazione": "Questa affermazione è falsa. Le patenti di guida europee, come la patente A italiana, sono valide in tutti i paesi dell'Unione Europea e in molti altri paesi del mondo, senza la necessità di sostenere ulteriori esami o di avere permessi speciali per guidare all'estero.",
         "regola": "Patente A = Valida in UE (e oltre).",
         "trabocchetti": ["ma solo in Italia", "per guidare all"],
@@ -447,6 +511,7 @@ QUESTIONS = [
     {
         "domanda": "Per conseguire la patente di categoria A è in ogni caso necessario aver compiuto almeno 24 anni di età",
         "risposta": False,
+        "riassunto": "Patente A → sempre almeno 24 anni?",
         "spiegazione": "Questa affermazione è falsa. Non è 'in ogni caso' necessario aver compiuto 24 anni. La patente A può essere conseguita anche a 20 anni, se si segue la procedura di accesso graduale (cioè, se si è già titolari di patente A2 da almeno 2 anni).",
         "regola": "A = 20 anni (graduale) O 24 anni (diretta). Non 'sempre' 24.",
         "trabocchetti": ["in ogni caso"],
@@ -454,12 +519,14 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B1 può essere conseguita a 16 anni di età",
         "risposta": True,
+        "riassunto": "Patente B1 → a 16 anni?",
         "spiegazione": "La patente di categoria B1 può essere conseguita già a 16 anni di età. Questo la rende accessibile ai giovani che vogliono iniziare a guidare veicoli specifici come i quadricicli non leggeri.",
         "regola": "B1 = 16 anni.",
     },
     {
         "domanda": "La patente di categoria B1 abilita a condurre alcuni tipi di quadricicli non leggeri",
         "risposta": True,
+        "riassunto": "Patente B1 → alcuni quadricicli non leggeri?",
         "spiegazione": "La patente B1 è fatta proprio per guidare i quadricicli non leggeri. Questi veicoli hanno un peso a vuoto massimo di 400 kg (per trasporto persone) o 550 kg (per trasporto merci) e una potenza massima di 15 kW.",
         "regola": "B1 = Quadricicli non leggeri.",
         "trabocchetti": ["alcuni tipi", "non leggeri"],
@@ -467,6 +534,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B1 abilita a condurre i quadricicli non leggeri con manubrio (Quad)",
         "risposta": True,
+        "riassunto": "Patente B1 → quad con manubrio?",
         "spiegazione": "I 'Quad' sono un tipo di quadriciclo non leggero e, come tali, possono essere guidati con la patente B1. Hanno il manubrio e sono spesso usati per il tempo libero.",
         "regola": "B1 = Quad (con manubrio).",
         "trabocchetti": ["(Quad)"],
@@ -474,6 +542,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B1 abilita a condurre i motocicli (con o senza carrozzetta) di cilindrata fino a 125 cm3, di potenza non superiore a 11 kW e con rapporto potenza/peso non superiore a 0,1kW/kg",
         "risposta": False,
+        "riassunto": "Patente B1 → moto fino a 125 cm3 e 11 kW?",
         "spiegazione": "Questa affermazione è FALSA. La patente B1 non abilita a condurre motocicli. La descrizione dei motocicli (fino a 125 cm3, 11 kW, ecc.) si riferisce ai veicoli che si possono guidare con la patente A1.",
         "regola": "B1 NON è per motocicli (quelli sono A1).",
         "trabocchetti": ["motocicli"],
@@ -481,6 +550,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria B1 si possono condurre tutti i tricicli a motore, ma solo se il conducente ha già compiuto i 18 anni di età",
         "risposta": False,
+        "riassunto": "Patente B1 → tutti i tricicli da 18 anni?",
         "spiegazione": "Questa affermazione è FALSA. La patente B1 non permette di guidare 'tutti' i tricicli a motore. Per i tricicli a motore con potenza superiore a 15 kW, serve la patente A (o la B se si hanno 21 anni). La B1 non li copre. Inoltre, la B1 si prende a 16 anni, non a 18.",
         "regola": "B1 NON copre TUTTI i tricicli.",
         "trabocchetti": ["tutti i tricicli a motore"],
@@ -488,6 +558,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B1 abilita a condurre le autovetture monoposto, o con un massimo di tre posti, compreso il conducente, purché si circoli senza passeggeri a bordo",
         "risposta": False,
+        "riassunto": "Patente B1 → auto fino a 3 posti senza passeggeri?",
         "spiegazione": "Questa affermazione è FALSA. La patente B1 non abilita a condurre autovetture, nemmeno quelle piccole o monoposto. Le autovetture richiedono la patente B.",
         "regola": "B1 NON è per autovetture.",
         "trabocchetti": ["autovetture"],
@@ -495,12 +566,14 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B1 abilita anche alla guida dei veicoli che si possono condurre con la patente A1",
         "risposta": False,
+        "riassunto": "Patente B1 → anche veicoli della A1?",
         "spiegazione": "Questa affermazione è FALSA. La patente B1 non include la patente A1. È la patente B che include la A1, ma la B1 è una categoria a sé stante, specifica per i quadricicli non leggeri.",
         "regola": "B1 NON include A1 (solo la B include A1).",
     },
     {
         "domanda": "Il titolare della patente di categoria B1 che intende conseguire la patente di categoria B dovrà sostenere solo un esame teorico integrativo",
         "risposta": False,
+        "riassunto": "Da B1 a B → solo esame teorico?",
         "spiegazione": "Questa affermazione è FALSA. Per passare dalla patente B1 alla patente B, non basta solo un esame teorico integrativo. Bisogna sostenere anche un esame pratico di guida, oltre all'eventuale esame di teoria se non si è già superato quello della patente B.",
         "regola": "B1 a B = Teoria + Pratica (non solo teoria).",
         "trabocchetti": ["solo un esame teorico integrativo"],
@@ -508,18 +581,21 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B abilita a condurre gli autoveicoli di massa massima autorizzata non superiore a 3,5 tonnellate destinati al trasporto di non più di otto persone oltre al conducente",
         "risposta": True,
+        "riassunto": "Patente B → fino a 3,5 t e 8 passeggeri?",
         "spiegazione": "La patente B ti permette di guidare auto e altri veicoli leggeri che non pesano più di 3,5 tonnellate e che possono portare al massimo 8 passeggeri più il conducente. Questo è il limite standard per la patente B.",
         "regola": "Patente B = max 3,5t e 8+1 persone.",
     },
     {
         "domanda": "La patente di categoria B abilita a condurre le autovetture, anche se trainanti un rimorchio leggero (massa fino a 750 chilogrammi)",
         "risposta": True,
+        "riassunto": "Patente B → auto con rimorchio fino a 750 kg?",
         "spiegazione": "Con la patente B puoi guidare un'auto e attaccarci un rimorchio piccolo, che pesa al massimo 750 kg. Questo è sempre permesso con la patente B.",
         "regola": "Auto + rimorchio leggero (max 750kg) = OK con Patente B.",
     },
     {
         "domanda": "La patente di categoria B abilita a condurre gli autocaravan di massa massima autorizzata non superiore a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Patente B → autocaravan fino a 3,5 t?",
         "spiegazione": "Sì, puoi guidare un camper (autocaravan) con la patente B, a patto che il suo peso massimo autorizzato non superi le 3,5 tonnellate. Se pesa di più, serve un'altra patente.",
         "regola": "Camper (autocaravan) < 3,5t = Patente B.",
         "trabocchetti": ["non superiore a 3,5 tonnellate"],
@@ -527,6 +603,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B abilita a condurre le macchine agricole, comprese quelle definite eccezionali",
         "risposta": True,
+        "riassunto": "Patente B → macchine agricole anche eccezionali?",
         "spiegazione": "Con la patente B puoi guidare tutte le macchine agricole, anche quelle grandi o 'eccezionali'. Non c'è un limite di peso o dimensione per le macchine agricole con la patente B.",
         "regola": "Patente B = Tutte le macchine agricole (anche eccezionali).",
         "trabocchetti": ["comprese quelle definite eccezionali"],
@@ -534,6 +611,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B abilita a condurre le autovetture trainanti un rimorchio non leggero (massa oltre 750 chilogrammi) purché la massa massima autorizzata del complesso non superi 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Patente B → rimorchio oltre 750 kg se complesso entro 3,5 t?",
         "spiegazione": "Puoi guidare un'auto con un rimorchio più pesante di 750 kg, ma c'è una condizione: il peso totale dell'auto più il rimorchio non deve superare le 3,5 tonnellate. Se supera, serve la patente B96 o BE.",
         "regola": "Auto + rimorchio (>750kg) = OK se complesso < 3,5t.",
         "trabocchetti": ["complesso"],
@@ -541,6 +619,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B consente di guidare, ma solo sul territorio nazionale (Italia), i veicoli che si possono condurre con la patente A1",
         "risposta": True,
+        "riassunto": "Patente B → veicoli A1 solo in Italia?",
         "spiegazione": "Con la patente B puoi guidare in Italia i veicoli che si guidano con la patente A1 (moto leggere fino a 125cc, 11kW, rapporto potenza/massa 0,1 kW/kg). Questo è un permesso speciale solo per l'Italia.",
         "regola": "Patente B = A1 in Italia.",
         "trabocchetti": ["solo sul territorio nazionale (Italia)"],
@@ -548,18 +627,21 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B abilita anche alla guida dei veicoli che si possono condurre con le patenti AM e B1",
         "risposta": True,
+        "riassunto": "Patente B → anche AM e B1?",
         "spiegazione": "La patente B è 'superiore' alle patenti AM e B1. Questo significa che se hai la B, puoi guidare anche i veicoli per cui servono la AM (ciclomotori, quadricicli leggeri) e la B1 (quadricicli non leggeri).",
         "regola": "Patente B include AM e B1.",
     },
     {
         "domanda": "La patente di categoria B consente di guidare, solo sul territorio nazionale (Italia) e se il conducente ha almeno 21 anni, i tricicli a motore di potenza superiore a 15 kW",
         "risposta": True,
+        "riassunto": "Patente B → tricicli oltre 15 kW in Italia da 21 anni?",
         "spiegazione": "Per guidare tricicli a motore potenti (oltre 15 kW) con la patente B, devi avere almeno 21 anni e puoi farlo solo in Italia. Se hai meno di 21 anni, anche con la B, non puoi guidarli.",
         "regola": "Tricicli > 15kW = Patente B + 21 anni + Solo Italia.",
     },
     {
         "domanda": "La patente di categoria B abilita anche alla guida dei veicoli che si possono condurre con le patenti A2 e A",
         "risposta": False,
+        "riassunto": "Patente B → anche A2 e A?",
         "spiegazione": "La patente B non ti permette di guidare tutte le moto. Per le moto più potenti (quelle della categoria A2 e A) serve la patente specifica per moto. La B include solo la A1 (in Italia) e la AM.",
         "regola": "Patente B NON è per tutte le moto (no A2, no A).",
         "trabocchetti": ["A2 e A"],
@@ -567,12 +649,14 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B abilita a guidare gli autobus destinati al trasporto di al massimo 16 posti, escluso il conducente",
         "risposta": False,
+        "riassunto": "Patente B → autobus fino a 16 posti?",
         "spiegazione": "La patente B ti permette di guidare veicoli che trasportano al massimo 8 persone più il conducente. Un autobus, anche se piccolo, ha più posti e richiede una patente diversa (come la D1 o D).",
         "regola": "Patente B = max 8+1 persone, NON autobus.",
     },
     {
         "domanda": "La patente di categoria B abilita a guidare gli autocarri di massa massima autorizzata superiore a 3,5 tonnellate ma non superiore a 7,5 tonnellate",
         "risposta": False,
+        "riassunto": "Patente B → autocarri da 3,5 a 7,5 t?",
         "spiegazione": "La patente B ha un limite di peso di 3,5 tonnellate. Se un autocarro pesa più di 3,5 tonnellate, anche se meno di 7,5 tonnellate, non puoi guidarlo con la patente B. Serve la patente C1 o C.",
         "regola": "Patente B = autocarri SOLO fino a 3,5t.",
         "trabocchetti": ["superiore a 3,5 tonnellate"],
@@ -580,6 +664,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B abilita a condurre le macchine operatrici eccezionali",
         "risposta": False,
+        "riassunto": "Patente B → macchine operatrici eccezionali?",
         "spiegazione": "Con la patente B puoi guidare le macchine agricole (anche eccezionali), ma NON le macchine operatrici eccezionali. Per queste ultime serve la patente C1 o C. Le macchine operatrici normali (non eccezionali) si possono guidare con la B.",
         "regola": "Patente B = Macchine agricole (tutte), Macchine operatrici (NON eccezionali).",
         "trabocchetti": ["eccezionali"],
@@ -587,6 +672,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B abilita a condurre solo autovetture con al massimo 9 posti compreso il conducente",
         "risposta": False,
+        "riassunto": "Patente B → solo auto fino a 9 posti?",
         "spiegazione": "La patente B ti permette di guidare autovetture con al massimo 9 posti (8 passeggeri + 1 conducente), ma non 'solo' autovetture. Puoi guidare anche autocarri leggeri, autocaravan, macchine agricole, ecc. La parola 'solo' rende la frase falsa.",
         "regola": "Patente B = NON 'solo' autovetture.",
         "trabocchetti": ["solo"],
@@ -594,6 +680,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B abilita a condurre le autovetture, anche se trainano rimorchi aventi massa superiore a 3.500 chilogrammi",
         "risposta": False,
+        "riassunto": "Patente B → rimorchi oltre 3.500 kg?",
         "spiegazione": "Il peso massimo del rimorchio che puoi trainare con la patente B è limitato. Se il rimorchio pesa più di 3.500 kg, non puoi guidarlo con la sola patente B. Anche con la B96 o BE ci sono limiti sul peso totale del complesso.",
         "regola": "Rimorchio > 3,5t = NO Patente B.",
         "trabocchetti": ["massa superiore a 3.500 chilogrammi"],
@@ -601,6 +688,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B consente di guidare un'autovettura che traina un rimorchio, con massa del complesso veicolare pari a 4.500 chilogrammi",
         "risposta": False,
+        "riassunto": "Patente B → complesso da 4.500 kg?",
         "spiegazione": "Con la patente B, il peso totale dell'auto più il rimorchio (il 'complesso veicolare') non deve superare le 3,5 tonnellate (3.500 kg). 4.500 kg è troppo, per questo serve la patente BE o B96 (con limiti diversi).",
         "regola": "Complesso veicolare > 3,5t = NO Patente B.",
         "trabocchetti": ["pari a 4.500 chilogrammi"],
@@ -608,6 +696,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B, conseguita dopo i 24 anni di età, abilita alla guida di tutti i motocicli",
         "risposta": False,
+        "riassunto": "Patente B dopo 24 anni → tutte le moto?",
         "spiegazione": "Anche se hai più di 24 anni, la patente B non ti permette di guidare tutti i motocicli. Ti permette di guidare solo quelli della categoria A1 (in Italia). Per le moto più grandi serve la patente A specifica.",
         "regola": "Patente B = NON tutti i motocicli.",
         "trabocchetti": ["tutti"],
@@ -615,6 +704,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B consente di guidare tutti gli autocaravan (camper)",
         "risposta": False,
+        "riassunto": "Patente B → tutti i camper?",
         "spiegazione": "Con la patente B puoi guidare i camper, ma solo quelli che non superano le 3,5 tonnellate di massa massima autorizzata. Se un camper è più pesante, serve una patente diversa (come la C1). La parola 'tutti' rende la frase falsa.",
         "regola": "Patente B = NON tutti i camper (solo < 3,5t).",
         "trabocchetti": ["tutti"],
@@ -622,6 +712,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B con codice armonizzato 96, consente di guidare le autovetture trainanti un rimorchio non leggero (oltre 750 chilogrammi), purché la massa massima autorizzata del complesso non sia superiore a 4.250 chilogrammi",
         "risposta": True,
+        "riassunto": "B codice 96 → rimorchio oltre 750 kg, complesso fino a 4.250 kg?",
         "spiegazione": "La patente B con codice 96 ti permette di guidare un'auto che traina un rimorchio 'pesante' (che pesa più di 750 kg), a condizione che il peso totale di auto più rimorchio non superi i 4.250 kg. Questa è proprio la definizione principale di questa abilitazione.",
         "regola": "B96: Rimorchio > 750kg E Complesso <= 4250kg.",
         "trabocchetti": ["rimorchio non leggero", "massa massima autorizzata del complesso"],
@@ -629,6 +720,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B con codice armonizzato 96, può essere conseguita anche successivamente al conseguimento della patente di categoria B, superando una prova di guida su specifico veicolo",
         "risposta": True,
+        "riassunto": "Codice 96 → anche dopo la B con prova pratica?",
         "spiegazione": "Sì, puoi ottenere il codice 96 sulla tua patente B anche dopo aver già preso la patente B. Devi solo fare un esame pratico di guida con un veicolo adatto (auto con rimorchio).",
         "regola": "B96: Si può prendere anche DOPO la patente B.",
         "trabocchetti": ["anche successivamente"],
@@ -636,6 +728,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B con codice armonizzato 96 può essere conseguita anche contestualmente alla patente di categoria B, sostenendo una prova di guida su specifico veicolo",
         "risposta": True,
+        "riassunto": "Codice 96 → insieme alla B con prova pratica?",
         "spiegazione": "Sì, puoi ottenere il codice 96 sulla tua patente B anche nello stesso momento in cui prendi la patente B. Farai l'esame per la patente B e poi l'esame pratico specifico per il codice 96.",
         "regola": "B96: Si può prendere anche INSIEME alla patente B.",
         "trabocchetti": ["anche contestualmente"],
@@ -643,6 +736,7 @@ QUESTIONS = [
     {
         "domanda": "Il codice armonizzato 96, apposto sulla patente di categoria B, abilita alla guida di autoveicoli trainanti un rimorchio non leggero (oltre 750 chilogrammi), purché la massa massima autorizzata del complesso non sia superiore a 4.250 chilogrammi",
         "risposta": True,
+        "riassunto": "Codice 96 → complesso fino a 4.250 kg?",
         "spiegazione": "Questa domanda ripete la stessa informazione della domanda 24557. Il codice 96 sulla patente B ti permette di guidare un'auto con un rimorchio 'pesante' (più di 750 kg), purché il peso totale di auto e rimorchio non superi i 4.250 kg.",
         "regola": "B96: Rimorchio > 750kg E Complesso <= 4250kg.",
         "trabocchetti": ["rimorchio non leggero", "massa massima autorizzata del complesso"],
@@ -650,12 +744,14 @@ QUESTIONS = [
     {
         "domanda": "Per guidare un'autovettura che traina un rimorchio non leggero (oltre 750 chilogrammi), con massa massima autorizzata del complesso superiore a 3.500 chilogrammi ma non superiore a 4.250 chilogrammi, è sufficiente aver conseguito la patente di categoria B con codice armonizzato 96",
         "risposta": True,
+        "riassunto": "Complesso da 3.500 a 4.250 kg → basta B con 96?",
         "spiegazione": "Questa è la situazione specifica per cui serve il codice 96. Se il peso totale di auto e rimorchio è tra 3.500 kg e 4.250 kg (e il rimorchio è 'pesante'), allora la patente B con codice 96 è sufficiente.",
         "regola": "B96: Per totali tra 3500kg e 4250kg (con rimorchio pesante).",
     },
     {
         "domanda": "La patente di categoria B con codice armonizzato 96, abilita alla guida di autosnodati con massa massima autorizzata superiore a 4.250 chilogrammi, ma non superiore a 7.500 chilogrammi",
         "risposta": False,
+        "riassunto": "Codice 96 → autosnodati fino a 7.500 kg?",
         "spiegazione": "Falso. Il codice 96 è per auto con rimorchio, e il peso totale massimo è 4.250 kg. Non serve per gli 'autosnodati' (che sono veicoli molto più grandi, come autobus o camion articolati) e non permette di guidare veicoli con un peso totale superiore a 4.250 kg.",
         "regola": "B96 NON è per autosnodati o oltre 4250kg.",
         "trabocchetti": ["autosnodati", "superiore a 4.250 chilogrammi"],
@@ -663,6 +759,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B con codice armonizzato 96, abilita alla guida di motocicli di potenza fino a 35 kW",
         "risposta": False,
+        "riassunto": "Codice 96 → moto fino a 35 kW?",
         "spiegazione": "Falso. Il codice 96 è un'estensione della patente B per i rimorchi. Non ha nulla a che fare con le moto. Per guidare le moto servono le patenti di categoria A (A1, A2, A).",
         "regola": "B96 = Rimorchi, NON moto!",
         "trabocchetti": ["motocicli"],
@@ -670,6 +767,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria B con codice armonizzato 96, può essere conseguita solo se si è già in possesso della patente A",
         "risposta": False,
+        "riassunto": "Codice 96 → solo con la patente A?",
         "spiegazione": "Falso. Per ottenere il codice 96 ti serve solo la patente B (o la prendi insieme). Non è necessario avere la patente A (per le moto).",
         "regola": "B96 richiede solo la B, non la A.",
         "trabocchetti": ["solo", "solo se", "patente A"],
@@ -677,6 +775,7 @@ QUESTIONS = [
     {
         "domanda": "Il codice armonizzato 96, apposto sulla patente di categoria B, abilita alla guida di autoveicoli trainanti un rimorchio non leggero (oltre 750 chilogrammi), con massa massima autorizzata del complesso superiore a 4.250 chilogrammi ma non superiore a 6.000 chilogrammi",
         "risposta": False,
+        "riassunto": "Codice 96 → complesso da 4.250 a 6.000 kg?",
         "spiegazione": "Falso. Il limite massimo di peso totale (auto + rimorchio) per il codice 96 è 4.250 kg. Questa domanda parla di un peso 'superiore a 4.250 chilogrammi', il che è sbagliato. Per pesi maggiori (fino a 7.000 kg) con rimorchio non leggero, serve la patente BE.",
         "regola": "B96: limite massimo 4250kg totali.",
         "trabocchetti": ["superiore a 4.250 chilogrammi"],
@@ -684,6 +783,7 @@ QUESTIONS = [
     {
         "domanda": "Il codice armonizzato 96, apposto sulla patente di categoria B, indica che il titolare può condurre un'autovettura che traina un rimorchio solo in Italia",
         "risposta": False,
+        "riassunto": "Codice 96 → rimorchio solo in Italia?",
         "spiegazione": "Falso. Le patenti di guida europee, inclusi i codici armonizzati come il 96, sono valide in tutti i paesi dell'Unione Europea e in molti altri paesi che le riconoscono. Non sono limitate 'solo in Italia'.",
         "regola": "Patente UE = Valida in Europa, non 'solo in Italia'.",
         "trabocchetti": ["solo"],
@@ -691,18 +791,21 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria BE abilita a condurre complessi di veicoli composti da un autoveicolo di massa massima autorizzata fino a 3.500 chilogrammi e da un rimorchio di massa fino a 3.500 chilogrammi, anche se la massa del complesso veicolare è superiore a 4.250 chilogrammi",
         "risposta": True,
+        "riassunto": "Patente BE → auto e rimorchio fino a 3.500 kg anche oltre 4.250?",
         "spiegazione": "La patente BE serve proprio per guidare un'auto (fino a 3.500 kg) che traina un rimorchio pesante (fino a 3.500 kg). Questo significa che il peso totale del veicolo più il rimorchio può superare i 4.250 kg, arrivando fino a 7.000 kg. Quindi, l'affermazione è VERA.",
         "regola": "BE = Auto B + Rimorchio pesante (fino a 3.5t).",
     },
     {
         "domanda": "Per guidare un'autovettura che traina un rimorchio di massa massima autorizzata di 2.000 chilogrammi e massa massima autorizzata del complesso veicolare pari a 4.500 chilogrammi, è necessario aver conseguito la patente di categoria BE",
         "risposta": True,
+        "riassunto": "Rimorchio 2.000 kg, complesso 4.500 → serve la BE?",
         "spiegazione": "Con la patente B, puoi guidare un'auto che traina un rimorchio, ma ci sono dei limiti. Se il rimorchio pesa più di 750 kg e il peso totale (auto + rimorchio) supera i 4.250 kg, allora serve la patente BE. In questo caso, il rimorchio è di 2.000 kg e il complesso è di 4.500 kg, quindi superiamo i limiti della patente B e anche della B96. Perciò, l'affermazione è VERA.",
         "regola": "Complesso > 4.250 kg con rimorchio > 750 kg = BE.",
     },
     {
         "domanda": "La patente di categoria BE abilita a condurre autotreni composti da un autoveicolo di massa massima autorizzata fino a 3.500 chilogrammi e da un rimorchio di massa fino a 3.500 chilogrammi",
         "risposta": True,
+        "riassunto": "Patente BE → autotreni con motrice e rimorchio fino a 3.500 kg?",
         "spiegazione": "Questa è la definizione esatta della patente BE. Ti permette di guidare un veicolo della categoria B (che pesa al massimo 3.500 kg) che traina un rimorchio, il cui peso può arrivare anch'esso fino a 3.500 kg. Il peso totale del complesso può quindi arrivare fino a 7.000 kg. L'affermazione è VERA.",
         "regola": "BE = Auto B (max 3.5t) + Rimorchio (max 3.5t).",
         "trabocchetti": ["autotreni", "fino a 3.500 chilogrammi"],
@@ -710,6 +813,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria BE abilita anche alla guida dei veicoli che si possono condurre con le patenti di categoria AM, B1, B e B con codice armonizzato 96",
         "risposta": True,
+        "riassunto": "Patente BE → anche AM, B1, B e 96?",
         "spiegazione": "Quando si consegue una patente di categoria superiore, questa include automaticamente le categorie inferiori. La patente BE è un'estensione della patente B, quindi ti permette di guidare tutti i veicoli che puoi guidare con la AM, B1, B e anche con la B con codice armonizzato 96. L'affermazione è VERA.",
         "regola": "BE 'copre' AM, B1, B, B96.",
         "trabocchetti": ["anche"],
@@ -717,18 +821,21 @@ QUESTIONS = [
     {
         "domanda": "Per condurre un autoveicolo di massa massima autorizzata pari a 3.500 chilogrammi che traina un rimorchio di massa massima autorizzata di 1.000 chilogrammi è necessario aver conseguito la patente di categoria BE",
         "risposta": True,
+        "riassunto": "Motrice 3.500 kg e rimorchio 1.000 → serve la BE?",
         "spiegazione": "Calcoliamo il peso totale: 3.500 kg (autoveicolo) + 1.000 kg (rimorchio) = 4.500 kg. Con la patente B normale, puoi guidare complessi fino a 4.250 kg solo se il rimorchio non supera i 750 kg. Qui il rimorchio è di 1.000 kg e il complesso è di 4.500 kg, quindi superiamo i limiti della patente B e anche della B96. Perciò, è necessario avere la patente BE. L'affermazione è VERA.",
         "regola": "3.5t + 1t = 4.5t. Se > 4.25t e rimorchio > 750kg, serve BE.",
     },
     {
         "domanda": "Per condurre un autoveicolo di massa massima autorizzata pari a 4.000 chilogrammi che traina un rimorchio di massa massima autorizzata di 2.000 chilogrammi è sufficiente aver conseguito la patente di categoria BE",
         "risposta": False,
+        "riassunto": "Motrice 4.000 kg e rimorchio 2.000 → basta la BE?",
         "spiegazione": "La patente BE ti permette di guidare un autoveicolo che rientra nella categoria B, cioè con una massa massima autorizzata fino a 3.500 kg. In questo caso, l'autoveicolo pesa 4.000 kg, quindi è troppo pesante per la patente B e di conseguenza anche per la BE. Per guidare un veicolo di 4.000 kg, avresti bisogno almeno di una patente C1. Perciò, l'affermazione è FALSA.",
         "regola": "BE = Auto B (max 3.5t) + Rimorchio. Se auto > 3.5t, non basta la BE.",
     },
     {
         "domanda": "La patente di categoria BE abilita a condurre complessi di veicoli composti da un minibus che traina un rimorchio di massa fino a 1.500 chilogrammi",
         "risposta": False,
+        "riassunto": "Patente BE → minibus con rimorchio?",
         "spiegazione": "Un 'minibus' è un veicolo che trasporta più di 9 persone (compreso il conducente). Per guidare un minibus, anche se traina un rimorchio leggero, è necessaria una patente di categoria D1 o D, non la patente B o BE. La patente BE è per autoveicoli della categoria B (fino a 9 posti e max 3.5t). Perciò, l'affermazione è FALSA.",
         "regola": "Minibus = Patente D1/D. BE non è per minibus.",
         "trabocchetti": ["minibus"],
@@ -736,6 +843,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria BE abilita anche alla guida dei veicoli che si possono condurre con le patenti di categoria A, B e C1",
         "risposta": False,
+        "riassunto": "Patente BE → anche A, B e C1?",
         "spiegazione": "La patente BE include le categorie AM, B1, B e B96. NON include le categorie A (per motocicli) e C1 (per autocarri medi). Quindi, non puoi guidare una moto o un camion medio con la patente BE. L'affermazione è FALSA.",
         "regola": "BE non è per moto (A) o camion (C1).",
         "trabocchetti": ["e"],
@@ -743,12 +851,14 @@ QUESTIONS = [
     {
         "domanda": "La patente di categoria BE abilita a condurre autotreni composti da un autoveicolo di massa massima autorizzata fino a 3.500 chilogrammi che traina un rimorchio di massa superiore a 3.500 chilogrammi",
         "risposta": False,
+        "riassunto": "Patente BE → rimorchio oltre 3.500 kg?",
         "spiegazione": "La patente BE ti permette di trainare un rimorchio con una massa massima autorizzata fino a 3.500 kg. Se il rimorchio pesa più di 3.500 kg, la patente BE non è sufficiente. Per rimorchi così pesanti, servono altre categorie di patente (come la CE o DE, a seconda del veicolo trainante). L'affermazione è FALSA.",
         "regola": "Rimorchio BE max 3.5t.",
     },
     {
         "domanda": "La patente di categoria BE si può conseguire anche contestualmente alla patente di categoria B, sostenendo la prova di guida su specifico veicolo, ma bisogna aver compiuto almeno 21 anni",
         "risposta": False,
+        "riassunto": "BE insieme alla B → solo da 21 anni?",
         "spiegazione": "L'età minima per conseguire la patente di categoria BE è di 18 anni, non 21 anni. Si può conseguire anche insieme alla patente B, ma l'età indicata nella domanda è sbagliata. Perciò, l'affermazione è FALSA.",
         "regola": "BE = 18 anni.",
         "trabocchetti": ["bisogna aver compiuto almeno 21 anni"],
@@ -756,12 +866,14 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida viene immediatamente ritirata, durante la circolazione, a seguito di violazione che comporti le sanzioni accessorie della sospensione della patente",
         "risposta": True,
+        "riassunto": "Ritiro immediato → violazioni con sospensione?",
         "spiegazione": "Se commetti una violazione molto grave che prevede la sospensione della patente, gli agenti di polizia te la ritirano subito. Questo serve per impedirti di guidare immediatamente, dato il pericolo o la gravità dell'infrazione.",
         "regola": "Sospensione = Ritiro immediato.",
     },
     {
         "domanda": "La patente di guida viene immediatamente ritirata, durante la circolazione, quando si accerti che il conducente guida con patente la cui validità è scaduta",
         "risposta": True,
+        "riassunto": "Ritiro immediato → patente scaduta?",
         "spiegazione": "Guidare con la patente scaduta significa che non sei più autorizzato a condurre veicoli. Per questo motivo, la patente ti viene ritirata immediatamente, come se non l'avessi valida.",
         "regola": "Patente scaduta = Ritiro subito.",
         "trabocchetti": ["scaduta"],
@@ -769,6 +881,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida viene immediatamente ritirata, durante la circolazione, quando il conducente sia alla guida in stato di ebbrezza",
         "risposta": True,
+        "riassunto": "Ritiro immediato → guida in stato di ebbrezza?",
         "spiegazione": "Guidare in stato di ebbrezza (ubriachi) è estremamente pericoloso per te e per gli altri. Per la sicurezza di tutti, la patente viene ritirata immediatamente per fermarti dal guidare in quelle condizioni.",
         "regola": "Ebbrezza = Ritiro immediato.",
         "trabocchetti": ["Stato di ebbrezza"],
@@ -776,6 +889,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida viene immediatamente ritirata, durante la circolazione, se il conducente non sistema correttamente il carico mal disposto, dopo invito degli organi di polizia",
         "risposta": True,
+        "riassunto": "Ritiro immediato → carico non sistemato dopo l'invito?",
         "spiegazione": "Se il carico sul tuo veicolo è pericoloso e la polizia ti chiede di sistemarlo, ma tu ti rifiuti di farlo, stai mettendo a rischio la sicurezza stradale e disubbidendo a un ordine. Per questo, la patente ti viene ritirata.",
         "regola": "Carico pericoloso + Disobbedienza = Ritiro.",
         "trabocchetti": ["dopo invito degli organi di polizia"],
@@ -783,6 +897,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida viene immediatamente ritirata, durante la circolazione, se a seguito di incidente, sono derivate lesioni a persone",
         "risposta": True,
+        "riassunto": "Ritiro immediato → incidente con feriti?",
         "spiegazione": "Se causi un incidente e ci sono persone ferite, è una situazione molto grave. La patente viene ritirata immediatamente per avviare le indagini e per prevenire ulteriori pericoli.",
         "regola": "Incidente con feriti = Ritiro.",
         "trabocchetti": ["Lesioni a persone"],
@@ -790,6 +905,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida viene immediatamente ritirata, durante la circolazione, quando il conducente, obbligato a sostenere un esame di revisione, non vi si è sottoposto nei termini prescritti",
         "risposta": True,
+        "riassunto": "Ritiro immediato → revisione non sostenuta?",
         "spiegazione": "Se ti è stato ordinato di fare un esame di revisione della patente (per esempio, per verificare che sei ancora idoneo a guidare) e non lo fai entro il tempo stabilito, la tua patente non è più considerata valida. Per questo, ti viene ritirata subito.",
         "regola": "Revisione non fatta = Ritiro.",
         "trabocchetti": ["e"],
@@ -797,6 +913,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida viene immediatamente ritirata, durante la circolazione, quando il conducente trasporta un passeggero in stato di ebbrezza",
         "risposta": False,
+        "riassunto": "Ritiro immediato → passeggero ubriaco?",
         "spiegazione": "La legge punisce il conducente che guida in stato di ebbrezza, non il passeggero. Se il tuo passeggero è ubriaco, non è una tua responsabilità come conducente e non è un motivo per ritirarti la patente.",
         "regola": "Passeggero ubriaco? La tua patente è salva.",
         "trabocchetti": ["passeggero"],
@@ -804,12 +921,14 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida viene immediatamente ritirata, durante la circolazione, quando il conducente circola in Italia con patente rilasciata da uno stato estero in cui è residente",
         "risposta": False,
+        "riassunto": "Ritiro immediato → patente estera del paese di residenza?",
         "spiegazione": "Se sei residente in un altro paese e hai una patente valida di quel paese, puoi guidare in Italia per un certo periodo di tempo (di solito un anno). Non è un motivo per ritirarti la patente immediatamente.",
         "regola": "Patente estera valida = Ok (per un periodo).",
     },
     {
         "domanda": "La patente di guida viene immediatamente ritirata, durante la circolazione, se si circola con pneumatici di dimensioni diverse da quelle riportate sulla carta di circolazione",
         "risposta": False,
+        "riassunto": "Ritiro immediato → pneumatici diversi dalla carta?",
         "spiegazione": "Guidare con pneumatici non conformi a quelli indicati sulla carta di circolazione è una violazione che comporta una multa e il fermo del veicolo, ma non il ritiro immediato della patente di guida.",
         "regola": "Gomme sbagliate = Multa, non ritiro patente.",
         "trabocchetti": ["pneumatici di dimensioni diverse"],
@@ -817,6 +936,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida viene immediatamente ritirata, durante la circolazione, tutte le volte che il conducente commette una violazione che comporta una decurtazione di punti dalla patente",
         "risposta": False,
+        "riassunto": "Ritiro immediato → ogni violazione con perdita di punti?",
         "spiegazione": "Molte infrazioni al Codice della Strada comportano la perdita di punti dalla patente, ma solo le violazioni più gravi prevedono il ritiro immediato della patente. Non tutte le volte che perdi punti ti ritirano la patente.",
         "regola": "Punti persi ≠ Ritiro immediato.",
         "trabocchetti": ["tutte le volte"],
@@ -824,12 +944,14 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida viene immediatamente ritirata, durante la circolazione, quando il conducente circola senza avere con sé la carta di circolazione del veicolo",
         "risposta": False,
+        "riassunto": "Ritiro immediato → senza carta di circolazione?",
         "spiegazione": "Se dimentichi a casa la carta di circolazione (il libretto del veicolo), riceverai una multa e dovrai presentare il documento in un ufficio di polizia. Tuttavia, la patente di guida non ti viene ritirata per questa mancanza.",
         "regola": "Libretto dimenticato = Multa, non ritiro patente.",
     },
     {
         "domanda": "La patente di guida viene immediatamente ritirata, durante la circolazione, quando il conducente circola senza avere con sé il certificato di proprietà del veicolo",
         "risposta": False,
+        "riassunto": "Ritiro immediato → senza certificato di proprietà?",
         "spiegazione": "Il certificato di proprietà del veicolo non è un documento che devi portare con te quando guidi. Serve per pratiche burocratiche (come la vendita del veicolo), non per la circolazione. Quindi, non ti possono ritirare la patente per questo motivo.",
         "regola": "Certificato proprietà = Non serve a bordo, nessun ritiro.",
         "trabocchetti": ["Certificato di proprietà"],
@@ -837,6 +959,7 @@ QUESTIONS = [
     {
         "domanda": "La revisione della patente di guida può essere disposta quando sorgono dubbi che il conducente sia ancora in possesso dei requisiti fisici e psichici prescritti",
         "risposta": True,
+        "riassunto": "Revisione patente → dubbi sui requisiti fisici e psichici?",
         "spiegazione": "La revisione della patente serve a controllare se il guidatore è ancora in grado di guidare. Se ci sono dubbi sulla sua salute (fisica o mentale), è giusto fare questo controllo per la sicurezza di tutti.",
         "regola": "Dubbi su salute = Revisione.",
         "trabocchetti": ["dubbi"],
@@ -844,6 +967,7 @@ QUESTIONS = [
     {
         "domanda": "La revisione della patente di guida può essere disposta dall'Ufficio Motorizzazione civile o dal Prefetto",
         "risposta": True,
+        "riassunto": "Revisione patente → disposta da Motorizzazione o Prefetto?",
         "spiegazione": "Sì, sono proprio questi gli enti che hanno l'autorità di chiedere la revisione della patente. L'Ufficio Motorizzazione Civile e il Prefetto sono le figure competenti per queste decisioni.",
         "regola": "Motorizzazione o Prefetto = Revisione.",
         "trabocchetti": ["Ufficio Motorizzazione civile", "Prefetto"],
@@ -851,6 +975,7 @@ QUESTIONS = [
     {
         "domanda": "La revisione della patente di guida può essere disposta a seguito di incidente stradale che ha procurato lesioni gravi a persone",
         "risposta": True,
+        "riassunto": "Revisione patente → dopo incidente con lesioni gravi?",
         "spiegazione": "Un incidente grave con feriti fa pensare che il guidatore potrebbe non essere più idoneo a guidare in sicurezza. Per questo motivo, può essere richiesta la revisione della patente.",
         "regola": "Incidente grave = Revisione.",
         "trabocchetti": ["lesioni gravi a persone"],
@@ -858,6 +983,7 @@ QUESTIONS = [
     {
         "domanda": "La revisione della patente di guida può essere disposta qualora sorgano dubbi che il conducente sia ancora in possesso dell'idoneità tecnica alla guida",
         "risposta": True,
+        "riassunto": "Revisione patente → dubbi sull'idoneità tecnica?",
         "spiegazione": "Se ci sono dubbi sulla tua capacità di guidare bene (ad esempio, se hai fatto molti incidenti o infrazioni gravi), l'autorità può chiederti di rifare l'esame per verificare la tua 'idoneità tecnica'.",
         "regola": "Dubbi su capacità = Revisione.",
         "trabocchetti": ["dubbi", "idoneità tecnica"],
@@ -865,6 +991,7 @@ QUESTIONS = [
     {
         "domanda": "La revisione della patente di guida può essere disposta con l'obbligo di sottoporsi a visita medica e/o ad esame di idoneità tecnica",
         "risposta": True,
+        "riassunto": "Revisione patente → visita medica e/o esame?",
         "spiegazione": "Esatto! La revisione consiste proprio in questo: o devi fare una visita medica per controllare la tua salute, oppure devi rifare l'esame di guida (teoria e/o pratica) per dimostrare che sai ancora guidare.",
         "regola": "Revisione = Visita O Esame.",
         "trabocchetti": ["visita medica", "esame di idoneità tecnica"],
@@ -872,6 +999,7 @@ QUESTIONS = [
     {
         "domanda": "La revisione della patente di guida è disposta a seguito di azzeramento dei \"punti\" della patente di guida",
         "risposta": True,
+        "riassunto": "Revisione patente → dopo l'azzeramento dei punti?",
         "spiegazione": "Se perdi tutti i punti della patente, significa che hai commesso troppe infrazioni. In questo caso, la legge prevede che tu debba fare la revisione per dimostrare di essere ancora un guidatore sicuro.",
         "regola": "Punti a zero = Revisione obbligatoria.",
         "trabocchetti": ["azzeramento dei"],
@@ -879,6 +1007,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che non supera l'esame di revisione della patente, subisce la revoca della patente stessa",
         "risposta": True,
+        "riassunto": "Revisione non superata → revoca?",
         "spiegazione": "Se non superi l'esame di revisione, significa che non sei più considerato idoneo a guidare. Di conseguenza, la tua patente ti viene tolta definitivamente (revocata).",
         "regola": "Revisione fallita = Patente revocata.",
         "trabocchetti": ["non supera", "revoca"],
@@ -886,6 +1015,7 @@ QUESTIONS = [
     {
         "domanda": "La revisione della patente di guida può essere disposta quando il titolare non è più in possesso dei requisiti morali richiesti",
         "risposta": False,
+        "riassunto": "Revisione patente → mancano i requisiti morali?",
         "spiegazione": "Falso. La revisione della patente riguarda la tua capacità di guidare (salute fisica, mentale e abilità tecnica), non il tuo comportamento morale o la tua condotta generale nella vita. I 'requisiti morali' sono controllati al momento del primo rilascio della patente, non per la revisione.",
         "regola": "Morale NO, solo salute/tecnica.",
         "trabocchetti": ["requisiti morali"],
@@ -893,12 +1023,14 @@ QUESTIONS = [
     {
         "domanda": "La revisione della patente di guida può essere disposta quando il titolare incorre, per due volte in un anno, in una infrazione che comporta la perdita di almeno 5 punti",
         "risposta": False,
+        "riassunto": "Revisione → due infrazioni da 5 punti in un anno?",
         "spiegazione": "Falso. Perdere punti non porta automaticamente alla revisione, a meno che tu non li perda tutti. La revisione scatta solo quando i punti della patente si azzerano completamente, non per due infrazioni da 5 punti.",
         "regola": "Non basta perdere 5 punti due volte, serve azzerare TUTTI i punti.",
     },
     {
         "domanda": "La revisione della patente di guida può essere disposta quando il titolare perde permanentemente (per sempre) i requisiti fisici richiesti",
         "risposta": False,
+        "riassunto": "Revisione → perdita permanente dei requisiti fisici?",
         "spiegazione": "Falso. Se perdi i requisiti fisici 'permanentemente' (cioè per sempre), la patente non viene sottoposta a revisione, ma viene direttamente revocata. La revisione serve a verificare se i requisiti ci sono ancora, non quando è già certo che non ci sono più.",
         "regola": "Perso per sempre = Revoca, non revisione.",
         "trabocchetti": ["permanentemente (per sempre)"],
@@ -906,6 +1038,7 @@ QUESTIONS = [
     {
         "domanda": "La revisione della patente di guida può essere disposta quando il titolare circola con la revisione del veicolo scaduta da oltre un anno",
         "risposta": False,
+        "riassunto": "Revisione → revisione del veicolo scaduta da un anno?",
         "spiegazione": "Falso. La revisione del veicolo è un controllo tecnico dell'auto, non del guidatore. Se la revisione del veicolo è scaduta, si prende una multa, ma non c'entra nulla con la tua patente di guida.",
         "regola": "Revisione veicolo = Multa, non revisione patente.",
         "trabocchetti": ["revisione del veicolo"],
@@ -913,12 +1046,14 @@ QUESTIONS = [
     {
         "domanda": "La revisione della patente di guida può essere disposta quando il titolare circola su un'auto storica senza la prescritta documentazione",
         "risposta": False,
+        "riassunto": "Revisione → auto storica senza documenti?",
         "spiegazione": "Falso. Circolare senza i documenti corretti per un'auto storica è una violazione amministrativa che comporta una multa, ma non mette in dubbio la tua capacità di guidare. Non è un motivo per la revisione della patente.",
         "regola": "Documenti auto = Multa, non revisione patente.",
     },
     {
         "domanda": "La revisione della patente di guida può essere disposta quando il titolare circola su un veicolo che non è di sua proprietà e non ha un'autorizzazione scritta del proprietario",
         "risposta": False,
+        "riassunto": "Revisione → veicolo altrui senza autorizzazione scritta?",
         "spiegazione": "Falso. Guidare un veicolo non tuo senza autorizzazione è un problema legale o amministrativo, ma non significa che tu non sia idoneo a guidare. Non è un motivo per la revisione della patente.",
         "regola": "Auto non tua = Problema legale, non revisione patente.",
         "trabocchetti": ["autorizzazione scritta"],
@@ -926,6 +1061,7 @@ QUESTIONS = [
     {
         "domanda": "La revisione della patente di guida è disposta quando si accerti che il conducente è alla guida senza aver con sé la patente",
         "risposta": False,
+        "riassunto": "Revisione → guida senza patente con sé?",
         "spiegazione": "Falso. Dimenticare la patente a casa è una semplice infrazione che comporta una multa e l'obbligo di esibirla in un secondo momento. Non significa che non sei idoneo a guidare, quindi non è un motivo per la revisione.",
         "regola": "Patente dimenticata = Multa, non revisione.",
         "trabocchetti": ["senza aver con sé la patente"],
@@ -933,12 +1069,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che non supera l'esame di revisione della patente, può ripeterlo altre due volte entro un anno, continuando a guidare con uno speciale permesso rilasciato dalla Motorizzazione Civile",
         "risposta": False,
+        "riassunto": "Revisione non superata → ripeterla due volte guidando con permesso?",
         "spiegazione": "Falso. Se non superi l'esame di revisione della patente, la patente ti viene revocata immediatamente. Non puoi continuare a guidare e non hai la possibilità di ripeterlo più volte con un permesso speciale.",
         "regola": "Revisione fallita = Stop alla guida, niente permessi.",
     },
     {
         "domanda": "La revoca della patente è disposta quando il titolare guida nonostante abbia la patente sospesa",
         "risposta": True,
+        "riassunto": "Revoca → guida con patente sospesa?",
         "spiegazione": "Se ti hanno sospeso la patente, significa che non puoi guidare per un certo periodo. Se guidi lo stesso, è una cosa molto grave e ti tolgono la patente per sempre (revoca).",
         "regola": "Sospesa + Guida = Revoca!",
         "trabocchetti": ["nonostante abbia la patente sospesa"],
@@ -946,6 +1084,7 @@ QUESTIONS = [
     {
         "domanda": "La revoca della patente può essere disposta quando il conducente, in autostrada, inverte il senso di marcia o percorre la carreggiata contro mano",
         "risposta": True,
+        "riassunto": "Revoca → inversione o contromano in autostrada?",
         "spiegazione": "In autostrada, invertire la marcia o andare contromano è estremamente pericoloso e può causare incidenti gravissimi. Per questo, è una delle azioni più gravi che portano alla revoca della patente.",
         "regola": "Autostrada + Contromano = Revoca!",
         "trabocchetti": ["in autostrada", "inverte il senso di marcia", "contro mano"],
@@ -953,6 +1092,7 @@ QUESTIONS = [
     {
         "domanda": "La revoca della patente è disposta quando il titolare perde permanentemente (per sempre) i requisiti fisici richiesti",
         "risposta": True,
+        "riassunto": "Revoca → perdita permanente dei requisiti fisici?",
         "spiegazione": "Per guidare devi avere certi requisiti fisici (ad esempio, vedere bene). Se li perdi per sempre, non puoi più guidare in sicurezza e quindi ti revocano la patente.",
         "regola": "Requisiti fisici persi PER SEMPRE = Revoca!",
         "trabocchetti": ["permanentemente (per sempre)"],
@@ -960,6 +1100,7 @@ QUESTIONS = [
     {
         "domanda": "La revoca della patente è disposta quando il titolare perde permanentemente (per sempre) i requisiti psichici richiesti",
         "risposta": True,
+        "riassunto": "Revoca → perdita permanente dei requisiti psichici?",
         "spiegazione": "Come per i requisiti fisici, anche quelli psichici (mentali) sono importanti per guidare in sicurezza. Se li perdi per sempre, non puoi più guidare e ti revocano la patente.",
         "regola": "Requisiti psichici persi PER SEMPRE = Revoca!",
         "trabocchetti": ["permanentemente (per sempre)"],
@@ -967,6 +1108,7 @@ QUESTIONS = [
     {
         "domanda": "La revoca della patente è disposta quando la patente stessa viene sostituita con altra rilasciata da uno stato estero",
         "risposta": True,
+        "riassunto": "Revoca → sostituita da patente estera?",
         "spiegazione": "Se decidi di sostituire la tua patente italiana con una di un altro paese, la patente italiana viene 'revocata' nel senso che non è più valida perché ne hai un'altra. Non è una punizione, ma una procedura amministrativa.",
         "regola": "Patente estera = Patente italiana 'revocata' (sostituita)!",
         "trabocchetti": ["sostituita"],
@@ -974,6 +1116,7 @@ QUESTIONS = [
     {
         "domanda": "La revoca della patente è disposta quando il titolare, sottoposto ad esame di revisione, non risulti più idoneo alla guida",
         "risposta": True,
+        "riassunto": "Revoca → non idoneo alla revisione?",
         "spiegazione": "L'esame di revisione serve a controllare se sei ancora capace di guidare. Se non lo superi, significa che non sei più idoneo e ti revocano la patente.",
         "regola": "Revisione fallita = Revoca!",
         "trabocchetti": ["esame di revisione", "non risulti più idoneo"],
@@ -981,6 +1124,7 @@ QUESTIONS = [
     {
         "domanda": "La revoca della patente è disposta quando il conducente guida con patente scaduta di validità",
         "risposta": False,
+        "riassunto": "Revoca → patente scaduta?",
         "spiegazione": "Se la patente è scaduta, non è una revoca. Devi solo rinnovarla. Ti fanno una multa, ma non ti tolgono la patente per sempre.",
         "regola": "Patente scaduta = Rinnovo (non revoca)!",
         "trabocchetti": ["scaduta di validità"],
@@ -988,6 +1132,7 @@ QUESTIONS = [
     {
         "domanda": "La revoca della patente può essere disposta quando il conducente guida senza averla con sè",
         "risposta": False,
+        "riassunto": "Revoca → guida senza averla con sé?",
         "spiegazione": "Se hai la patente ma l'hai dimenticata a casa, ti fanno una multa. Non è una cosa così grave da meritare la revoca, perché la patente ce l'hai.",
         "regola": "Dimenticata a casa = Multa (non revoca)!",
         "trabocchetti": ["senza averla con sè"],
@@ -995,6 +1140,7 @@ QUESTIONS = [
     {
         "domanda": "La revoca della patente è disposta quando il conducente perde temporaneamente i requisiti fisici",
         "risposta": False,
+        "riassunto": "Revoca → perdita temporanea dei requisiti fisici?",
         "spiegazione": "Se perdi i requisiti fisici solo per un periodo (ad esempio, dopo un'operazione), la patente viene sospesa, non revocata. Quando stai meglio, puoi tornare a guidare.",
         "regola": "Requisiti persi TEMPORANEAMENTE = Sospensione (non revoca)!",
         "trabocchetti": ["temporaneamente"],
@@ -1002,6 +1148,7 @@ QUESTIONS = [
     {
         "domanda": "La revoca della patente può essere disposta quando il conducente guida senza lenti correttive quando prescritte",
         "risposta": False,
+        "riassunto": "Revoca → senza lenti prescritte?",
         "spiegazione": "Se devi guidare con gli occhiali e non li metti, è una multa e magari ti sospendono la patente per un breve periodo. Non è una revoca, perché puoi rimettere gli occhiali e guidare correttamente.",
         "regola": "Occhiali dimenticati = Multa/Sospensione (non revoca)!",
         "trabocchetti": ["senza lenti correttive quando prescritte"],
@@ -1009,6 +1156,7 @@ QUESTIONS = [
     {
         "domanda": "La revoca della patente può essere disposta dagli organi di polizia",
         "risposta": False,
+        "riassunto": "Revoca → disposta dalla polizia?",
         "spiegazione": "Gli organi di polizia (Carabinieri, Polizia) possono ritirare la patente in certi casi, ma la decisione finale sulla revoca spetta ad altre autorità, come la Prefettura o la Motorizzazione Civile.",
         "regola": "Polizia = Ritira (non revoca)!",
         "trabocchetti": ["dagli organi di polizia"],
@@ -1016,12 +1164,14 @@ QUESTIONS = [
     {
         "domanda": "La revoca della patente può essere disposta quando il conducente guida un veicolo intestato ad altra persona senza avere apposita dichiarazione scritta",
         "risposta": False,
+        "riassunto": "Revoca → veicolo altrui senza dichiarazione scritta?",
         "spiegazione": "Guidare un veicolo di un'altra persona senza una dichiarazione scritta (se lo usi per più di 30 giorni) comporta una multa e l'aggiornamento della carta di circolazione, ma non la revoca della patente. È una questione burocratica, non di sicurezza alla guida.",
         "regola": "Auto altrui senza dichiarazione = Multa (non revoca)!",
     },
     {
         "domanda": "La sospensione della patente è una sanzione accessoria che deriva dalla violazione di alcuni articoli del codice della strada",
         "risposta": True,
+        "riassunto": "Sospensione → sanzione accessoria per alcune violazioni?",
         "spiegazione": "VERO. La sospensione della patente è una punizione aggiuntiva (accessoria) che si applica quando si commettono infrazioni molto gravi al Codice della Strada, oltre alla multa principale.",
         "regola": "Sospensione = Sanzione Accessoria per infrazioni gravi.",
         "trabocchetti": ["sanzione accessoria"],
@@ -1029,6 +1179,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta, ad esempio, quando il neopatentato circola senza rispettare le limitazioni sui veicoli e sulle velocità",
         "risposta": True,
+        "riassunto": "Sospensione → neopatentato che non rispetta i limiti?",
         "spiegazione": "VERO. I neopatentati (chi ha la patente da poco tempo) hanno regole speciali e più severe. Se non le rispettano, ad esempio guidando veicoli troppo potenti o superando certi limiti di velocità, la patente viene sospesa.",
         "regola": "Neopatentato + infrazione grave = Sospensione.",
         "trabocchetti": ["neopatentato", "limitazioni"],
@@ -1036,6 +1187,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando si superano di oltre 40 km/h i limiti massimi di velocità",
         "risposta": True,
+        "riassunto": "Sospensione → oltre 40 km/h sopra il limite?",
         "spiegazione": "VERO. Superare i limiti di velocità di oltre 40 km/h è un'infrazione molto grave e comporta la sospensione della patente. È pericoloso per tutti!",
         "regola": "Troppo veloce (>40 km/h) = Patente sospesa.",
         "trabocchetti": ["oltre 40 km/h"],
@@ -1043,6 +1195,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente può essere disposta quando si circola, in autostrada, sulla corsia di emergenza in casi non previsti dal codice della strada",
         "risposta": True,
+        "riassunto": "Sospensione → corsia di emergenza senza motivo?",
         "spiegazione": "VERO. La corsia di emergenza in autostrada è solo per vere emergenze. Usarla per altri motivi, come per superare il traffico, è molto pericoloso e vietato, quindi porta alla sospensione della patente.",
         "regola": "Corsia emergenza (uso sbagliato) = Sospensione.",
         "trabocchetti": ["corsia di emergenza", "casi non previsti"],
@@ -1050,6 +1203,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando il conducente guida in stato di ebbrezza alcolica",
         "risposta": True,
+        "riassunto": "Sospensione → guida in stato di ebbrezza?",
         "spiegazione": "VERO. Guidare dopo aver bevuto troppo alcol (stato di ebbrezza) è una delle infrazioni più gravi e pericolose. La sospensione della patente è una conseguenza certa.",
         "regola": "Alcol al volante = Patente sospesa.",
         "trabocchetti": ["stato di ebbrezza alcolica"],
@@ -1057,6 +1211,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando il conducente rifiuta di sottoporsi agli accertamenti sul suo eventuale stato di ebbrezza alcolica",
         "risposta": True,
+        "riassunto": "Sospensione → rifiuto dell'alcoltest?",
         "spiegazione": "VERO. Se un conducente si rifiuta di fare i test per controllare se ha bevuto alcol, è come se ammettesse di essere ubriaco. Per questo, la patente viene sospesa, proprio come se fosse stato trovato positivo all'alcol.",
         "regola": "Rifiuto test alcol = Patente sospesa.",
         "trabocchetti": ["rifiuta"],
@@ -1064,6 +1219,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando il conducente fugge senza prestare soccorso alla persona investita",
         "risposta": True,
+        "riassunto": "Sospensione → fuga senza soccorso?",
         "spiegazione": "VERO. Fuggire dopo aver causato un incidente e non soccorrere una persona ferita è un reato gravissimo. La sospensione della patente è una delle conseguenze, oltre a quelle penali.",
         "regola": "Fuga dopo incidente = Patente sospesa.",
         "trabocchetti": ["fugge", "senza prestare soccorso"],
@@ -1071,6 +1227,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando il conducente circola abusivamente con veicolo sottoposto a sequestro",
         "risposta": True,
+        "riassunto": "Sospensione → veicolo sotto sequestro?",
         "spiegazione": "VERO. Se un veicolo è stato sequestrato, significa che non può circolare. Guidarlo lo stesso è una violazione diretta di un ordine legale e comporta la sospensione della patente.",
         "regola": "Veicolo sequestrato (uso) = Patente sospesa.",
         "trabocchetti": ["circola abusivamente", "veicolo sottoposto a sequestro"],
@@ -1078,6 +1235,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente può essere disposta nei confronti di chi abbia falsificato o contraffatto i documenti relativi all'assicurazione del veicolo",
         "risposta": True,
+        "riassunto": "Sospensione → documenti assicurativi falsi?",
         "spiegazione": "VERO. Falsificare o alterare documenti importanti come quelli dell'assicurazione è un reato. Questo comportamento porta alla sospensione della patente, perché dimostra disonestà e mette a rischio la sicurezza stradale.",
         "regola": "Falso assicurazione = Patente sospesa.",
         "trabocchetti": ["falsificato o contraffatto"],
@@ -1085,6 +1243,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando il conducente circola con patente sospesa",
         "risposta": False,
+        "riassunto": "Sospensione → guida con patente sospesa?",
         "spiegazione": "FALSO. Se un conducente guida con la patente già sospesa, la punizione non è un'altra sospensione. È una violazione ancora più grave, che porta alla revoca della patente (la si perde del tutto) e a conseguenze penali.",
         "regola": "Patente già sospesa + guida = REVOCA (non altra sospensione).",
         "trabocchetti": ["circola con patente sospesa", "sospensione"],
@@ -1092,6 +1251,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando il titolare della patente perde definitivamente i requisiti fisici",
         "risposta": False,
+        "riassunto": "Sospensione → perdita definitiva dei requisiti fisici?",
         "spiegazione": "FALSO. Se una persona perde in modo permanente (definitivo) i requisiti fisici per guidare (ad esempio, la vista), la patente non viene sospesa, ma revocata. La revoca significa che la patente viene tolta per sempre.",
         "regola": "Requisiti fisici persi *definitivamente* = REVOCA.",
         "trabocchetti": ["definitivamente"],
@@ -1099,6 +1259,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando sorgono dubbi sulla persistenza dei requisiti prescritti",
         "risposta": False,
+        "riassunto": "Sospensione → dubbi sui requisiti?",
         "spiegazione": "FALSO. Se ci sono dubbi sui requisiti di una persona per guidare (ad esempio, per motivi di salute), l'autorità può chiedere una visita medica di controllo. Non si dispone subito la sospensione della patente, ma si verifica prima la situazione.",
         "regola": "Dubbi sui requisiti = Visita medica (non sospensione diretta).",
         "trabocchetti": ["sorgono dubbi"],
@@ -1106,6 +1267,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta contestualmente alla comunicazione di azzeramento dei punti",
         "risposta": False,
+        "riassunto": "Sospensione → insieme all'azzeramento dei punti?",
         "spiegazione": "FALSO. Quando si azzerano i punti della patente, non si ha una sospensione. Si deve fare un esame di revisione della patente: se lo si supera, si riottengono i punti, altrimenti la patente viene revocata.",
         "regola": "Punti azzerati = REVISIONE (non sospensione).",
         "trabocchetti": ["azzeramento dei punti"],
@@ -1113,6 +1275,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente può essere disposta quando si circola senza avere con sè la patente di guida",
         "risposta": False,
+        "riassunto": "Sospensione → senza patente con sé?",
         "spiegazione": "FALSO. Dimenticare la patente a casa non è una sospensione. Si riceve una multa e si deve presentare il documento entro un certo periodo. Non è una violazione grave che mette a rischio la sicurezza.",
         "regola": "Patente dimenticata = Multa (non sospensione).",
         "trabocchetti": ["senza avere con sè la patente"],
@@ -1120,6 +1283,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando si circola con patente illeggibile o deteriorata",
         "risposta": False,
+        "riassunto": "Sospensione → patente illeggibile?",
         "spiegazione": "FALSO. Se la patente è illeggibile o rovinata, devi chiederne un duplicato. Non è una causa di sospensione, ma un problema amministrativo che va risolto per avere un documento valido.",
         "regola": "Patente rovinata = Richiedi duplicato (non sospensione).",
         "trabocchetti": ["illeggibile o deteriorata"],
@@ -1127,6 +1291,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando, a richiesta degli agenti, non si è in grado di esibire il segnale mobile di pericolo",
         "risposta": False,
+        "riassunto": "Sospensione → senza triangolo?",
         "spiegazione": "FALSO. Non avere il triangolo di pericolo (segnale mobile di pericolo) in auto è una violazione che comporta una multa, ma non la sospensione della patente. È un'infrazione minore rispetto a quelle che causano la sospensione.",
         "regola": "Triangolo assente = Multa (non sospensione).",
         "trabocchetti": ["segnale mobile di pericolo"],
@@ -1134,6 +1299,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando il titolare non è più in possesso dei requisiti morali",
         "risposta": False,
+        "riassunto": "Sospensione → mancano i requisiti morali?",
         "spiegazione": "FALSO. Se una persona perde i requisiti morali (ad esempio, per gravi condanne penali), la patente viene revocata (tolta per sempre), non sospesa. La sospensione è temporanea, la revoca è definitiva.",
         "regola": "Requisiti morali persi = REVOCA.",
         "trabocchetti": ["requisiti morali"],
@@ -1141,6 +1307,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando si lascia il veicolo in sosta negli spazi destinati ai disabili",
         "risposta": False,
+        "riassunto": "Sospensione → sosta negli spazi per disabili?",
         "spiegazione": "FALSO. Parcheggiare negli spazi riservati ai disabili senza averne diritto è una grave infrazione che comporta una multa salata e la decurtazione di punti, ma non la sospensione della patente.",
         "regola": "Sosta disabili (senza permesso) = Multa salata e punti (non sospensione).",
         "trabocchetti": ["spazi destinati ai disabili"],
@@ -1148,6 +1315,7 @@ QUESTIONS = [
     {
         "domanda": "La sospensione della patente è disposta quando non si è pagato nei termini il bollo dell'auto",
         "risposta": False,
+        "riassunto": "Sospensione → bollo non pagato?",
         "spiegazione": "FALSO. Il bollo dell'auto è una tassa sulla proprietà del veicolo. Non pagarlo comporta sanzioni economiche e interessi, ma non ha nulla a che fare con la sospensione della patente, che riguarda le infrazioni al Codice della Strada.",
         "regola": "Bollo non pagato = Sanzioni fiscali (non sospensione patente).",
         "trabocchetti": ["bollo dell"],
@@ -1155,48 +1323,56 @@ QUESTIONS = [
     {
         "domanda": "Ogni patente di guida ha un'attribuzione iniziale di 20 punti",
         "risposta": True,
+        "riassunto": "Patente → 20 punti iniziali?",
         "spiegazione": "Quando ottieni la patente di guida, ti vengono assegnati 20 punti. Questo è il tuo 'saldo' iniziale.",
         "regola": "Si parte sempre da 20 punti.",
     },
     {
         "domanda": "Il punteggio sulla patente diminuisce quando si commettono particolari infrazioni al codice della strada",
         "risposta": True,
+        "riassunto": "Punti → calano per particolari infrazioni?",
         "spiegazione": "Non tutte le multe tolgono punti, ma solo quelle che riguardano infrazioni più gravi o 'particolari' al Codice della Strada.",
         "regola": "Solo infrazioni gravi tolgono punti.",
     },
     {
         "domanda": "Quando il conducente ha esaurito la sua dotazione di punti sulla patente deve sottoporsi a revisione della stessa",
         "risposta": True,
+        "riassunto": "Punti esauriti → revisione?",
         "spiegazione": "Se perdi tutti i tuoi punti e arrivi a zero, devi rifare gli esami (teoria e pratica) per dimostrare di essere ancora idoneo a guidare. Questo si chiama 'revisione della patente'.",
         "regola": "Zero punti = esame di revisione.",
     },
     {
         "domanda": "Le violazioni che comportano decurtazione di punti, commesse entro i primi tre anni dal rilascio della patente della categoria B, sono sanzionate con il doppio dei punti previsti",
         "risposta": True,
+        "riassunto": "Neopatentati B nei primi 3 anni → punti doppi?",
         "spiegazione": "Se hai la patente da meno di tre anni (sei un neo-patentato) e commetti un'infrazione che toglie punti, te ne verranno tolti il doppio rispetto a un conducente esperto. È una regola per incentivare maggiore prudenza all'inizio.",
         "regola": "Neo-patentato = punti doppi.",
     },
     {
         "domanda": "Se si commettono contemporaneamente più violazioni che comportano perdita di punti sulla patente, possono essere decurtati al massimo 15 punti, salvo che si tratti di infrazioni che comportano la sospensione della patente",
         "risposta": True,
+        "riassunto": "Più violazioni insieme → massimo 15 punti salvo sospensione?",
         "spiegazione": "Se fai più infrazioni contemporaneamente (ad esempio, non rispetti lo stop e superi il limite di velocità), ti verranno tolti i punti per ogni infrazione, ma il totale massimo che possono toglierti è 15 punti. Attenzione: se una di queste infrazioni è così grave da portare alla sospensione della patente, allora non c'è limite ai punti che possono essere tolti.",
         "regola": "Max 15 punti, a meno di sospensione.",
     },
     {
         "domanda": "Se per due anni non commette infrazioni che comportano perdita di punti, il conducente che abbia meno di 20 punti rientra in possesso di tutti i 20 punti",
         "risposta": True,
+        "riassunto": "Due anni senza infrazioni → si torna a 20 punti?",
         "spiegazione": "Se hai perso dei punti e per due anni consecutivi non commetti nessuna infrazione che ne comporti la perdita, i tuoi punti torneranno automaticamente a 20.",
         "regola": "Due anni senza infrazioni = torni a 20.",
     },
     {
         "domanda": "Ogni patente di guida ha un'attribuzione iniziale di 30 punti",
         "risposta": False,
+        "riassunto": "Patente → 30 punti iniziali?",
         "spiegazione": "La patente di guida parte con 20 punti, non 30. I 30 punti sono il massimo che si può raggiungere con i bonus, ma non il punteggio iniziale.",
         "regola": "Si parte da 20, non 30.",
     },
     {
         "domanda": "Il punteggio sulla patente diminuisce quando si commette una qualunque infrazione al codice della strada",
         "risposta": False,
+        "riassunto": "Punti → calano per qualunque infrazione?",
         "spiegazione": "Non tutte le infrazioni al Codice della Strada comportano la perdita di punti. Ad esempio, un divieto di sosta ti fa prendere una multa, ma non ti toglie punti dalla patente.",
         "regola": "Non tutte le multe tolgono punti.",
         "trabocchetti": ["qualunque"],
@@ -1204,36 +1380,42 @@ QUESTIONS = [
     {
         "domanda": "Il punteggio sulla patente diminuisce esclusivamente quando si commette un'infrazione al codice della strada che comporta la sospensione o il ritiro della patente",
         "risposta": False,
+        "riassunto": "Punti → calano solo con sospensione o ritiro?",
         "spiegazione": "I punti sulla patente diminuiscono anche per infrazioni meno gravi che non comportano la sospensione o il ritiro della patente. Ad esempio, superare di poco il limite di velocità toglie punti ma non sospende la patente.",
         "regola": "Punti persi anche per infrazioni minori.",
     },
     {
         "domanda": "Le violazioni che comportano decurtazione di punti, commesse entro i primi tre anni dal rilascio della prima patente, sono sanzionate con il triplo dei punti previsti",
         "risposta": False,
+        "riassunto": "Primi 3 anni → punti tripli?",
         "spiegazione": "Per i neo-patentati (nei primi tre anni), le violazioni che tolgono punti sono sanzionate con il doppio dei punti previsti, non il triplo.",
         "regola": "Neo-patentato = doppio, non triplo.",
     },
     {
         "domanda": "La frequenza di apposito corso e il superamento di uno specifico esame consentono al titolare di patente A o B di recuperare 9 punti, arrivando al massimo a 30 punti",
         "risposta": False,
+        "riassunto": "Corso ed esame → recupero 9 punti fino a 30?",
         "spiegazione": "Frequentando un corso specifico e superando un esame, si possono recuperare 6 punti, non 9. Inoltre, il massimo a cui si può arrivare è 20 punti (o 30 con i bonus, ma non tramite il corso).",
         "regola": "Corso = 6 punti recuperati, max 20.",
     },
     {
         "domanda": "Se si commettono contemporaneamente più violazioni che comportano perdita di punti sulla patente, possono essere decurtati al massimo 10 punti, salvo che si tratti di infrazioni che comportano la revoca della patente",
         "risposta": False,
+        "riassunto": "Più violazioni insieme → massimo 10 punti?",
         "spiegazione": "Se si commettono più infrazioni contemporaneamente, il massimo dei punti che possono essere tolti è 15, non 10. L'eccezione a questo limite è se le infrazioni comportano la sospensione della patente, non la revoca.",
         "regola": "Max 15 punti, eccezione per sospensione.",
     },
     {
         "domanda": "Se per due anni non commette infrazioni che comportano perdita di punti, il conducente che abbia meno di 20 punti entra in possesso di 30 punti",
         "risposta": False,
+        "riassunto": "Due anni senza infrazioni sotto 20 → si va a 30?",
         "spiegazione": "Se per due anni non commetti infrazioni che tolgono punti, il tuo punteggio torna a 20, non a 30. I 30 punti si possono raggiungere solo con i bonus di 2 punti ogni due anni di buona condotta, partendo da 20.",
         "regola": "Due anni senza infrazioni = torni a 20.",
     },
     {
         "domanda": "Quando ha esaurito la sua dotazione di punti sulla patente, al conducente viene revocata la patente",
         "risposta": False,
+        "riassunto": "Punti esauriti → revoca?",
         "spiegazione": "Quando si esauriscono tutti i punti (si arriva a zero), non viene revocata la patente, ma si deve fare la revisione della patente, cioè rifare gli esami.",
         "regola": "Zero punti = revisione, non revoca.",
         "trabocchetti": ["revoca"],
@@ -1241,6 +1423,7 @@ QUESTIONS = [
     {
         "domanda": "Il superamento dei limiti di velocità di oltre 10 km/h durante la guida comporta una perdita di punti sulla patente",
         "risposta": True,
+        "riassunto": "Oltre 10 km/h sopra il limite → perdita di punti?",
         "spiegazione": "Superare il limite di velocità è pericoloso. Se superi il limite di oltre 10 km/h, è un'infrazione grave che ti fa perdere punti sulla patente, perché metti a rischio la sicurezza tua e degli altri.",
         "regola": "Velocità eccessiva = punti persi.",
         "trabocchetti": ["oltre 10 km/h"],
@@ -1248,6 +1431,7 @@ QUESTIONS = [
     {
         "domanda": "Il mancato rispetto di alcune norme relative alla manovra di sorpasso comporta una perdita di punti sulla patente",
         "risposta": True,
+        "riassunto": "Norme sul sorpasso → perdita di punti?",
         "spiegazione": "Il sorpasso è una manovra che richiede molta attenzione. Se non rispetti le regole (ad esempio, sorpassi dove è vietato o in modo pericoloso), metti a rischio te stesso e gli altri, e per questo si perdono punti sulla patente.",
         "regola": "Sorpasso sbagliato = punti via.",
         "trabocchetti": ["alcune"],
@@ -1255,6 +1439,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso di telefono cellulare senza auricolare o viva voce durante la guida comporta una perdita di punti sulla patente",
         "risposta": True,
+        "riassunto": "Cellulare senza vivavoce → perdita di punti?",
         "spiegazione": "Usare il telefono cellulare senza auricolare o viva voce ti distrae molto dalla guida. È un comportamento molto pericoloso perché riduce la tua attenzione sulla strada, e per questo si perdono punti sulla patente.",
         "regola": "Telefono in mano = punti in meno.",
         "trabocchetti": ["senza auricolare o viva voce"],
@@ -1262,6 +1447,7 @@ QUESTIONS = [
     {
         "domanda": "Circolare senza casco durante la guida quando previsto, o con casco mal allacciato, comporta una perdita di punti sulla patente",
         "risposta": True,
+        "riassunto": "Senza casco o mal allacciato → perdita di punti?",
         "spiegazione": "Il casco ti protegge la testa in caso di incidente. Se non lo usi quando è obbligatorio (ad esempio, su moto o scooter) o lo usi male (non allacciato), rischi la vita e perdi punti, perché è una grave mancanza di sicurezza.",
         "regola": "Casco non sicuro = punti giù.",
         "trabocchetti": ["quando previsto", "mal allacciato"],
@@ -1269,6 +1455,7 @@ QUESTIONS = [
     {
         "domanda": "Il mancato rispetto della distanza di sicurezza da cui sia derivato un incidente, comporta una perdita di punti sulla patente",
         "risposta": True,
+        "riassunto": "Distanza non rispettata con incidente → perdita di punti?",
         "spiegazione": "Mantenere la distanza di sicurezza è fondamentale per avere il tempo di frenare ed evitare incidenti. Se non la rispetti e questo causa un incidente, è una grave responsabilità e perdi punti sulla patente.",
         "regola": "Distanza zero, incidente = punti via.",
         "trabocchetti": ["da cui sia derivato un incidente"],
@@ -1276,6 +1463,7 @@ QUESTIONS = [
     {
         "domanda": "Il mancato utilizzo o l'uso improprio delle luci durante la guida, comporta una perdita di punti sulla patente",
         "risposta": True,
+        "riassunto": "Luci non usate o usate male → perdita di punti?",
         "spiegazione": "Le luci servono per vedere la strada ed essere visti dagli altri veicoli, specialmente di notte o in condizioni di scarsa visibilità. Non usarle o usarle male (ad esempio, abbaglianti dove non si deve) è pericoloso e comporta la perdita di punti.",
         "regola": "Luci sbagliate = punti tolti.",
         "trabocchetti": ["mancato utilizzo", "uso improprio"],
@@ -1283,6 +1471,7 @@ QUESTIONS = [
     {
         "domanda": "Il trasporto in sovraccarico o in sovrannumero durante la guida, comporta una perdita di punti sulla patente",
         "risposta": True,
+        "riassunto": "Sovraccarico o sovrannumero → perdita di punti?",
         "spiegazione": "Trasportare troppe persone (sovrannumero) o troppo peso (sovraccarico) rende il veicolo meno stabile e più difficile da controllare. Questo aumenta il rischio di incidenti, e per questo si perdono punti sulla patente.",
         "regola": "Troppo peso/persone = punti meno.",
         "trabocchetti": ["sovraccarico", "sovrannumero"],
@@ -1290,6 +1479,7 @@ QUESTIONS = [
     {
         "domanda": "L'omesso uso di lenti durante la guida, se prescritte, comporta una perdita di punti sulla patente",
         "risposta": True,
+        "riassunto": "Senza lenti prescritte → perdita di punti?",
         "spiegazione": "Se la tua patente indica che devi guidare con gli occhiali o le lenti a contatto, significa che ne hai bisogno per vedere bene la strada. Non usarle è pericoloso perché riduce la tua capacità visiva e ti fa perdere punti.",
         "regola": "Occhiali obbligatori = punti persi se non li usi.",
         "trabocchetti": ["se prescritte"],
@@ -1297,6 +1487,7 @@ QUESTIONS = [
     {
         "domanda": "Circolare sulla corsia di emergenza in autostrada, al di fuori dei casi previsti, comporta una perdita di punti sulla patente",
         "risposta": True,
+        "riassunto": "Corsia di emergenza senza motivo → perdita di punti?",
         "spiegazione": "La corsia di emergenza in autostrada è riservata solo a situazioni di vera emergenza (ad esempio, un guasto al veicolo o un malore). Usarla per superare o per evitare il traffico è molto pericoloso e vietato, e perdi punti sulla patente.",
         "regola": "Emergenza solo per emergenza = punti salvi.",
         "trabocchetti": ["al di fuori dei casi previsti"],
@@ -1304,6 +1495,7 @@ QUESTIONS = [
     {
         "domanda": "Gareggiare in velocità su piste private, avendo meno di 24 anni e la sola patente B, comporta una perdita di punti sulla patente",
         "risposta": False,
+        "riassunto": "Gare su piste private sotto 24 anni → perdita di punti?",
         "spiegazione": "Gareggiare in velocità su piste private non è un'infrazione del Codice della Strada, perché non sei su una strada aperta al pubblico. Le regole del Codice della Strada e la perdita di punti si applicano solo sulle strade pubbliche.",
         "regola": "Pista privata = no Codice della Strada.",
         "trabocchetti": ["private"],
@@ -1311,6 +1503,7 @@ QUESTIONS = [
     {
         "domanda": "Lasciare in sosta l'auto davanti a un passo carrabile comporta una perdita di punti sulla patente",
         "risposta": False,
+        "riassunto": "Sosta davanti al passo carrabile → perdita di punti?",
         "spiegazione": "Parcheggiare davanti a un passo carrabile è vietato e ti fa prendere una multa, ma non comporta la perdita di punti sulla patente. È un'infrazione amministrativa, meno grave rispetto a quelle che mettono a rischio diretto la sicurezza della circolazione.",
         "regola": "Sosta sbagliata = multa, non punti.",
         "trabocchetti": ["sosta"],
@@ -1318,6 +1511,7 @@ QUESTIONS = [
     {
         "domanda": "Circolare senza avere con sé la carta di circolazione del veicolo di cui si è alla guida comporta una perdita di punti sulla patente",
         "risposta": False,
+        "riassunto": "Senza carta di circolazione → perdita di punti?",
         "spiegazione": "Devi sempre avere con te i documenti del veicolo quando guidi. Se non hai la carta di circolazione, prendi una multa e devi portarla in un secondo momento, ma non perdi punti sulla patente. L'importante è che il documento esista e sia valido.",
         "regola": "Documenti dimenticati = multa, non punti.",
         "trabocchetti": ["senza avere con sé"],
@@ -1325,6 +1519,7 @@ QUESTIONS = [
     {
         "domanda": "Guidare senza avere con sé il certificato di proprietà del veicolo di cui si è alla guida comporta una perdita di punti sulla patente",
         "risposta": False,
+        "riassunto": "Senza certificato di proprietà → perdita di punti?",
         "spiegazione": "Il certificato di proprietà non è un documento che devi portare con te quando guidi. Serve per dimostrare chi è il proprietario del veicolo, ma non è richiesto per la circolazione su strada.",
         "regola": "Certificato di proprietà = non serve a bordo.",
         "trabocchetti": ["certificato di proprietà"],
@@ -1332,12 +1527,14 @@ QUESTIONS = [
     {
         "domanda": "Guidare un veicolo di altro proprietario senza autorizzazione della Motorizzazione Civile comporta una perdita di punti sulla patente",
         "risposta": False,
+        "riassunto": "Veicolo altrui senza autorizzazione → perdita di punti?",
         "spiegazione": "Puoi guidare un veicolo che non è tuo senza chiedere il permesso alla Motorizzazione Civile, purché tu abbia una patente valida per quel tipo di veicolo e il proprietario te lo abbia permesso. Non si perdono punti per questo.",
         "regola": "Auto altrui = ok con patente giusta.",
     },
     {
         "domanda": "La perdita di punti sulla patente per infrazione al codice della strada è raddoppiata se effettuata alla guida di motociclo di potenza superiore a 35 kW",
         "risposta": False,
+        "riassunto": "Moto oltre 35 kW → punti raddoppiati?",
         "spiegazione": "La perdita di punti sulla patente raddoppia solo per i neopatentati (nei primi tre anni dal conseguimento della patente B, A1, A2 o A). Non dipende dalla potenza del motociclo che stai guidando.",
         "regola": "Punti raddoppiati = solo neopatentati.",
         "trabocchetti": ["motociclo di potenza superiore a 35 kW"],
@@ -1345,12 +1542,14 @@ QUESTIONS = [
     {
         "domanda": "La perdita di punti sulla patente per infrazione al codice della strada è raddoppiata se effettuata alla guida di autovettura di potenza superiore a 115 kW",
         "risposta": False,
+        "riassunto": "Auto oltre 115 kW → punti raddoppiati?",
         "spiegazione": "Anche in questo caso, la potenza dell'autovettura non c'entra con il raddoppio dei punti. I punti raddoppiano solo per i neopatentati nei primi tre anni dal conseguimento della patente.",
         "regola": "Punti raddoppiati = solo neopatentati.",
     },
     {
         "domanda": "Circolare con un'autovettura dotata di otto posti compreso il conducente con patente di categoria C comporta una perdita di punti sulla patente",
         "risposta": False,
+        "riassunto": "Auto da otto posti con patente C → perdita di punti?",
         "spiegazione": "Un'autovettura con 8 posti più il conducente (quindi 9 in totale) si può guidare con la patente B. Se hai la patente C, puoi guidare anche veicoli più grandi, quindi puoi guidare tranquillamente anche un'autovettura. Non perdi punti per questo.",
         "regola": "Patente superiore = puoi guidare anche inferiore.",
         "trabocchetti": ["patente di categoria C"],
@@ -1358,6 +1557,7 @@ QUESTIONS = [
     {
         "domanda": "Circolare con un'autovettura su autostrada o su strada extraurbana principale avendo conseguito la patente di categoria B da meno di sei mesi comporta una perdita di punti sulla patente",
         "risposta": False,
+        "riassunto": "Autostrada con B da meno di sei mesi → perdita di punti?",
         "spiegazione": "I neopatentati hanno delle limitazioni (ad esempio, di velocità o di potenza del veicolo), ma non c'è un divieto di circolare in autostrada o su strade extraurbane principali nei primi sei mesi. Non si perdono punti per questo tipo di circolazione.",
         "regola": "Neopatentato in autostrada = ok (con limiti).",
         "trabocchetti": ["meno di sei mesi"],
@@ -1365,6 +1565,7 @@ QUESTIONS = [
     {
         "domanda": "Circolare, in un giorno festivo, con un autocarro carico, di massa complessiva a pieno carico inferiore a 3,5 tonnellate, comporta una perdita di punti sulla patente",
         "risposta": False,
+        "riassunto": "Festivo con autocarro sotto 3,5 t → perdita di punti?",
         "spiegazione": "I divieti di circolazione nei giorni festivi riguardano gli autocarri con massa complessiva superiore a 7,5 tonnellate (o altre categorie specifiche). Un autocarro sotto le 3,5 tonnellate non ha questi divieti. Anche se ci fosse un divieto, la sanzione sarebbe una multa, non la perdita di punti.",
         "regola": "Autocarro leggero = no divieto festivo.",
         "trabocchetti": ["inferiore a 3,5 tonnellate"],
@@ -1372,12 +1573,14 @@ QUESTIONS = [
     {
         "domanda": "Circolare con veicolo che non sia stato sottoposto alla prescritta revisione periodica comporta una perdita di punti sulla patente",
         "risposta": False,
+        "riassunto": "Veicolo non revisionato → perdita di punti?",
         "spiegazione": "La revisione è obbligatoria per garantire che il veicolo sia sicuro e in buone condizioni. Se non l'hai fatta, prendi una multa e il veicolo non può circolare finché non viene revisionato, ma non perdi punti sulla patente.",
         "regola": "Revisione scaduta = multa, non punti.",
     },
     {
         "domanda": "La patente di guida è confermata se il titolare della stessa è ancora in possesso dei requisiti fisici e psichici prescritti",
         "risposta": True,
+        "riassunto": "Conferma patente → requisiti fisici e psichici?",
         "spiegazione": "Per rinnovare la patente, devi dimostrare di essere ancora in buona salute, sia fisicamente che mentalmente. È una condizione fondamentale per guidare in sicurezza.",
         "regola": "Rinnovo = Salute ok.",
         "trabocchetti": ["requisiti fisici e psichici prescritti"],
@@ -1385,6 +1588,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida è confermata a seguito di esito favorevole dell'apposito accertamento sanitario eseguito da medico autorizzato",
         "risposta": True,
+        "riassunto": "Conferma patente → visita medica favorevole?",
         "spiegazione": "La patente viene rinnovata solo dopo aver superato una visita medica specifica, fatta da un dottore che è autorizzato a fare questi controlli. Se la visita va bene ('esito favorevole'), la patente è confermata.",
         "regola": "Rinnovo = Visita medica ok.",
         "trabocchetti": ["medico autorizzato", "Esito favorevole"],
@@ -1392,6 +1596,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida è confermata dal Ministero delle infrastrutture e dei trasporti a seguito di accertamento di idoneità psicofisica svolto da un medico autorizzato",
         "risposta": True,
+        "riassunto": "Conferma patente → dal Ministero dopo visita medica?",
         "spiegazione": "Il Ministero delle Infrastrutture e dei Trasporti è l'ente che gestisce il rinnovo, ma la parte pratica della visita la fa un medico autorizzato. L'importante è che il medico confermi la tua 'idoneità psicofisica', cioè che sei adatto a guidare.",
         "regola": "Ministero + Medico = Patente rinnovata.",
         "trabocchetti": ["Idoneità psicofisica"],
@@ -1399,6 +1604,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria B, salvo diversa limitazione riportata sul documento stesso o salvo allineamento alla data del compleanno del titolare, ha validità di dieci anni se rilasciata o confermata a chi non ha superato i 50 anni di età",
         "risposta": True,
+        "riassunto": "Patente B sotto 50 anni → dieci anni?",
         "spiegazione": "Se hai meno di 50 anni, la tua patente di categoria B dura 10 anni. Ci sono delle piccole eccezioni, ad esempio se hai problemi di salute o se la scadenza viene allineata al tuo compleanno.",
         "regola": "B < 50 anni = 10 anni.",
         "trabocchetti": ["salvo diversa limitazione", "dieci anni", "non ha superato i 50 anni"],
@@ -1406,6 +1612,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria B, salvo diversa limitazione riportata sul documento stesso o salvo allineamento alla data del compleanno del titolare, ha validità di cinque anni se rilasciata o confermata a chi ha una età compresa fra i 50 e i 70 anni",
         "risposta": True,
+        "riassunto": "Patente B tra 50 e 70 anni → cinque anni?",
         "spiegazione": "Se hai tra i 50 e i 70 anni, la tua patente di categoria B dura 5 anni. Anche in questo caso, ci sono le solite piccole eccezioni.",
         "regola": "B 50-70 anni = 5 anni.",
         "trabocchetti": ["cinque anni", "fra i 50 e i 70 anni"],
@@ -1413,6 +1620,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria B, salvo diversa limitazione riportata sul documento stesso o salvo allineamento alla data del compleanno del titolare, ha validità di tre anni se rilasciata o confermata a chi ha una età compresa fra i 70 e gli 80 anni",
         "risposta": True,
+        "riassunto": "Patente B tra 70 e 80 anni → tre anni?",
         "spiegazione": "Se hai tra i 70 e gli 80 anni, la tua patente di categoria B dura 3 anni. Le eccezioni sono sempre le stesse.",
         "regola": "B 70-80 anni = 3 anni.",
         "trabocchetti": ["tre anni", "fra i 70 e gli 80 anni"],
@@ -1420,6 +1628,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria B, salvo diversa limitazione riportata sul documento stesso o salvo allineamento alla data del compleanno del titolare, ha validità di due anni se rilasciata o confermata a chi ha superato gli 80 anni di età",
         "risposta": True,
+        "riassunto": "Patente B oltre 80 anni → due anni?",
         "spiegazione": "Se hai più di 80 anni, la tua patente di categoria B dura 2 anni. Le eccezioni sono sempre le stesse.",
         "regola": "B > 80 anni = 2 anni.",
         "trabocchetti": ["due anni", "superato gli 80 anni"],
@@ -1427,6 +1636,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria BE, salvo diversa limitazione riportata sul documento stesso o salvo allineamento alla data del compleanno del titolare, ha validità di dieci anni se rilasciata o confermata a chi non ha superato i 50 anni di età",
         "risposta": True,
+        "riassunto": "Patente BE sotto 50 anni → dieci anni?",
         "spiegazione": "La patente di categoria BE (che serve per guidare veicoli con rimorchi pesanti) segue le stesse regole di validità della patente B. Quindi, se hai meno di 50 anni, dura 10 anni.",
         "regola": "BE = B per validità.",
         "trabocchetti": ["categoria BE", "dieci anni", "non ha superato i 50 anni"],
@@ -1434,6 +1644,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria A, salvo diversa limitazione riportata sul documento stesso o salvo allineamento alla data del compleanno del titolare, ha validità di dieci anni se rilasciata o confermata a chi non ha superato i 50 anni di età",
         "risposta": True,
+        "riassunto": "Patente A sotto 50 anni → dieci anni?",
         "spiegazione": "Anche la patente di categoria A (per le moto) segue le stesse regole di validità della patente B. Quindi, se hai meno di 50 anni, dura 10 anni.",
         "regola": "A = B per validità.",
         "trabocchetti": ["categoria A", "dieci anni", "non ha superato i 50 anni"],
@@ -1441,6 +1652,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria B SPECIALE (BS), salvo diversa limitazione riportata sul documento stesso o salvo allineamento alla data del compleanno del titolare, ha validità di cinque anni se rilasciata o confermata a chi non ha superato i 70 anni di età",
         "risposta": True,
+        "riassunto": "Patente BS sotto 70 anni → cinque anni?",
         "spiegazione": "La patente di categoria B SPECIALE (BS), che è per persone con disabilità, ha regole di validità leggermente diverse. Dura 5 anni se non hai superato i 70 anni di età.",
         "regola": "BS < 70 anni = 5 anni.",
         "trabocchetti": ["B SPECIALE (BS)", "cinque anni", "non ha superato i 70 anni"],
@@ -1448,6 +1660,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria B è confermata dal Prefetto a seguito di visita di accertamento dei requisiti morali",
         "risposta": False,
+        "riassunto": "Conferma patente B → dal Prefetto per requisiti morali?",
         "spiegazione": "La patente si rinnova con una visita medica che controlla la tua salute fisica e mentale, non con il Prefetto. E non si controllano i 'requisiti morali', cioè se sei una brava persona, ma solo la tua idoneità a guidare.",
         "regola": "Rinnovo = Medico, non Prefetto.",
         "trabocchetti": ["Prefetto", "requisiti morali"],
@@ -1455,6 +1668,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di guida scaduta di validità è possibile comunque continuare a guidare per un tempo massimo di tre giorni",
         "risposta": False,
+        "riassunto": "Patente scaduta → guida per tre giorni?",
         "spiegazione": "Se la patente è scaduta, non puoi guidare nemmeno per un giorno. È come se non l'avessi e potresti ricevere una multa salata.",
         "regola": "Scaduta = Stop subito.",
         "trabocchetti": ["tre giorni"],
@@ -1462,18 +1676,21 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida è confermata a seguito di esito favorevole della prova tecnica di guida (esame di guida) periodica",
         "risposta": False,
+        "riassunto": "Conferma → prova di guida periodica?",
         "spiegazione": "Per rinnovare la patente non devi rifare l'esame di guida. Devi solo fare la visita medica. L'esame di guida si fa solo la prima volta per ottenere la patente.",
         "regola": "Rinnovo = Medico, non esame.",
     },
     {
         "domanda": "Il titolare abilitato a condurre veicoli conducibili con patente della categoria A e della categoria B, per confermarne la validità, deve sostenere due specifiche visite mediche, ognuna abilitante alla singola categoria",
         "risposta": False,
+        "riassunto": "Patenti A e B → due visite mediche?",
         "spiegazione": "Se hai più patenti (ad esempio, la A per la moto e la B per l'auto), ti basta fare una sola visita medica. Questa visita sarà valida per tutte le patenti che possiedi.",
         "regola": "Una visita per tutte le patenti.",
     },
     {
         "domanda": "La patente di guida di categoria B, salvo diversa limitazione riportata sul documento stesso o salvo allineamento alla data del compleanno del titolare, vale otto anni se rilasciata o confermata a chi ha una età compresa fra i 50 e i 70 anni",
         "risposta": False,
+        "riassunto": "Patente B tra 50 e 70 anni → otto anni?",
         "spiegazione": "Questa affermazione è falsa. Abbiamo imparato che per chi ha tra i 50 e i 70 anni, la patente di categoria B dura 5 anni, non 8.",
         "regola": "B 50-70 anni = 5 anni (non 8).",
         "trabocchetti": ["otto anni"],
@@ -1481,6 +1698,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria BE, salvo diversa limitazione riportata sul documento stesso o salvo allineamento alla data del compleanno del titolare, vale cinque anni se rilasciata o confermata a chi non ha superato i 50 anni di età",
         "risposta": False,
+        "riassunto": "Patente BE sotto 50 anni → cinque anni?",
         "spiegazione": "Questa affermazione è falsa. La patente di categoria BE segue le stesse regole della B. Per chi non ha superato i 50 anni, dura 10 anni, non 5.",
         "regola": "BE < 50 anni = 10 anni (non 5).",
         "trabocchetti": ["cinque anni"],
@@ -1488,6 +1706,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria B, non può essere rinnovata a chi ha superato gli 80 anni di età",
         "risposta": False,
+        "riassunto": "Patente B oltre 80 anni → non rinnovabile?",
         "spiegazione": "Questa affermazione è falsa. La patente di categoria B può essere rinnovata anche dopo gli 80 anni, ma la validità è di 2 anni e la visita medica è più frequente. Non c'è un limite di età massimo per il rinnovo.",
         "regola": "Si rinnova anche dopo gli 80.",
         "trabocchetti": ["non può essere rinnovata"],
@@ -1495,6 +1714,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria B, salvo diversa limitazione riportata sul documento stesso o salvo allineamento alla data del compleanno del titolare, vale cinque anni se rilasciata o confermata a chi non ha superato i 50 anni di età",
         "risposta": False,
+        "riassunto": "Patente B sotto 50 anni → cinque anni?",
         "spiegazione": "Questa affermazione è falsa. Per chi non ha superato i 50 anni, la patente di categoria B dura 10 anni, non 5.",
         "regola": "B < 50 anni = 10 anni (non 5).",
         "trabocchetti": ["cinque anni"],
@@ -1502,6 +1722,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria B, salvo diversa limitazione riportata sul documento stesso o salvo allineamento alla data del compleanno del titolare, vale dieci anni in ogni caso di rilascio o di conferma",
         "risposta": False,
+        "riassunto": "Patente B → sempre dieci anni?",
         "spiegazione": "Questa affermazione è falsa. La validità della patente di categoria B cambia in base all'età del titolare (10, 5, 3 o 2 anni). Non vale sempre 10 anni 'in ogni caso'.",
         "regola": "Validità B = dipende dall'età.",
         "trabocchetti": ["in ogni caso"],
@@ -1509,6 +1730,7 @@ QUESTIONS = [
     {
         "domanda": "La patente di guida di categoria B, salvo diversa limitazione riportata sul documento stesso, non ha scadenza di validità fino al compimento dei 50 anni di età",
         "risposta": False,
+        "riassunto": "Patente B → senza scadenza fino a 50 anni?",
         "spiegazione": "Questa affermazione è falsa. La patente di categoria B ha sempre una scadenza, anche prima dei 50 anni. Dura 10 anni fino ai 50 anni, poi la validità cambia. Non è 'senza scadenza'.",
         "regola": "Patente = Sempre una scadenza.",
         "trabocchetti": ["non ha scadenza di validità"],

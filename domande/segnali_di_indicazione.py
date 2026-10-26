@@ -1,7 +1,7 @@
 """Domande — Segnali di indicazione.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Segnali di indicazione"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa confine di Stato con un Paese che fa parte dell'Unione Europea",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → confine con paese UE?",
         "spiegazione": "Il segnale blu con le stelle dell'Unione Europea e la scritta 'FRANCE' indica che stai per entrare in Francia, che è un paese dell'Unione Europea. Il cartello '1 km' sotto dice che il confine è a 1 chilometro. Quindi, ti avvisa che stai per raggiungere il confine con un paese dell'UE.",
         "regola": "Stelle UE + Nome Paese = Confine UE.",
         "trabocchetti": ["preavvisa confine di Stato", "Paese che fa parte dell"],
@@ -18,6 +19,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto sulle strade che portano al confine di Stato con un Paese dell'Unione Europea",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strade verso confine UE?",
         "spiegazione": "Questo segnale è posizionato proprio sulle strade che ti portano verso il confine di un paese dell'Unione Europea, come la Francia in questo caso. Serve per informarti in anticipo che ti stai avvicinando al confine.",
         "regola": "Il segnale ti 'porta' al confine UE.",
         "immagine": "39a5ce26dc6f6ea1d173.jpg",
@@ -25,6 +27,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa la distanza dal confine con uno Stato che fa parte dell'Unione Europea",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → distanza dal confine UE?",
         "spiegazione": "Il cartello bianco sotto, con scritto '1 km', ti dice esattamente quanto manca per arrivare al confine. Quindi, sì, il segnale ti avvisa della distanza che ti separa dal confine con uno Stato dell'Unione Europea.",
         "regola": "'1 km' = distanza al confine UE.",
         "trabocchetti": ["preavvisa la distanza", "Stato che fa parte dell"],
@@ -33,6 +36,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non obbliga ad arrestarsi per il controllo doganale al confine di Stato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → nessun obbligo di arresto doganale?",
         "spiegazione": "Dato che la Francia fa parte dell'Unione Europea e dell'area Schengen, di solito non c'è l'obbligo di fermarsi per i controlli doganali quando si passa il confine tra questi paesi. Puoi passare senza fermarti, a meno di controlli eccezionali.",
         "regola": "Confine UE = Via libera (di solito).",
         "trabocchetti": ["non obbliga ad arrestarsi", "Controllo doganale"],
@@ -41,6 +45,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova in vicinanza di un posto di blocco",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → posto di blocco?",
         "spiegazione": "Questo segnale indica un confine di Stato, ma non significa che ci sia un 'posto di blocco' dove devi fermarti obbligatoriamente per controlli. Nei confini interni dell'UE (area Schengen), di solito non ci sono posti di blocco fissi per i controlli di routine.",
         "regola": "Confine UE non è un 'posto di blocco'.",
         "trabocchetti": ["posto di blocco"],
@@ -49,6 +54,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto dietro ai veicoli, per indicarne la nazionalità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → dietro i veicoli, nazionalità?",
         "spiegazione": "Questo segnale è un cartello stradale fisso, si trova a bordo strada, non è un adesivo o una targa da mettere dietro ai veicoli. La nazionalità del veicolo è indicata da una sigla sulla targa o da un adesivo ovale (es. 'I' per Italia).",
         "regola": "Non è una targa, è un cartello stradale.",
         "trabocchetti": ["posto dietro ai veicoli"],
@@ -57,6 +63,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto dietro al veicolo, per indicare che esso appartiene ad un cittadino dell'Unione Europea",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → dietro i veicoli di cittadini UE?",
         "spiegazione": "Come per la domanda precedente, questo segnale è un cartello stradale fisso, non si attacca ai veicoli. Non serve a dire se il proprietario del veicolo è un cittadino dell'Unione Europea, ma indica l'avvicinamento a un confine di Stato.",
         "regola": "Non è una targa, è un cartello stradale.",
         "trabocchetti": ["posto dietro al veicolo", "Unione Europea"],
@@ -65,6 +72,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa l'obbligo di arresto alla frontiera con uno Stato dell'Unione Europea",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di arresto alla frontiera UE?",
         "spiegazione": "Questo segnale ti avvisa che stai arrivando al confine, ma non ti dice che devi fermarti obbligatoriamente. Come detto prima, tra paesi dell'Unione Europea (area Schengen) di solito non c'è l'obbligo di fermarsi alla frontiera.",
         "regola": "Confine UE = No obbligo di stop.",
         "trabocchetti": ["obbligo di arresto"],
@@ -73,6 +81,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi per il controllo doganale all'ingresso nel territorio di un Paese europeo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → controllo doganale all'ingresso UE?",
         "spiegazione": "No, questo segnale non obbliga a fermarsi per controlli doganali. Questo è un confine interno all'Unione Europea (area Schengen), dove i controlli doganali sono rari o assenti per la libera circolazione delle persone e delle merci.",
         "regola": "Confine UE = No dogana obbligatoria.",
         "trabocchetti": ["obbliga ad arrestarsi", "controllo doganale"],
@@ -81,6 +90,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in vicinanza di un cantiere stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → cantiere stradale?",
         "spiegazione": "Questo segnale ha lo sfondo giallo, che indica sempre un segnale temporaneo. Spesso i segnali temporanei sono usati vicino ai cantieri stradali per dare indicazioni speciali, soprattutto ai mezzi pesanti.",
         "regola": "Giallo = Temporaneo = Spesso cantiere.",
         "trabocchetti": ["vicinanza"],
@@ -89,6 +99,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa la direzione obbligatoria per autotreni ed autoarticolati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → direzione obbligatoria per autotreni?",
         "spiegazione": "Il cerchio blu con la freccia bianca indica una 'direzione obbligatoria', cioè devi andare per forza in quella direzione. I disegni dei camion sotto specificano che questa regola vale solo per gli autotreni e gli autoarticolati (i mezzi pesanti). 'Preavvisa' significa che ti avvisa prima di arrivare al punto in cui devi girare.",
         "regola": "Cerchio blu + freccia = Obbligo. Camion sotto = Solo per mezzi pesanti.",
         "trabocchetti": ["obbligatoria", "Preavvisa"],
@@ -97,6 +108,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato viene installato per il periodo di durata dei lavori stradali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → per la durata dei lavori?",
         "spiegazione": "Come detto prima, il colore giallo del segnale indica che è temporaneo. I segnali temporanei vengono messi solo per il tempo necessario, ad esempio per la durata dei lavori stradali, e poi vengono tolti.",
         "regola": "Giallo = Temporaneo. Lavori = Segnale temporaneo.",
         "trabocchetti": ["per il periodo di durata"],
@@ -105,6 +117,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa la direzione per un'area di rifornimento e sosta per mezzi pesanti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area di sosta per mezzi pesanti?",
         "spiegazione": "Questo segnale indica una direzione obbligatoria per i mezzi pesanti, non un'area di servizio o di sosta. I segnali per le aree di rifornimento o sosta sono diversi, di solito verdi o blu, e mostrano simboli come una pompa di benzina o un letto.",
         "regola": "Nessun simbolo di servizio = Non è un'area di servizio.",
         "trabocchetti": ["rifornimento e sosta"],
@@ -113,6 +126,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga tutti i veicoli a proseguire diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tutti obbligati a proseguire diritto?",
         "spiegazione": "Il segnale obbliga a proseguire diritto, è vero, ma non 'tutti i veicoli'. I disegni dei camion sotto il cerchio blu specificano chiaramente che questa regola vale solo per gli autotreni e gli autoarticolati, cioè i mezzi pesanti. Le auto normali non sono obbligate a seguire questa direzione.",
         "regola": "Simboli sotto = Obbligo solo per loro, non per 'tutti'.",
         "trabocchetti": ["tutti"],
@@ -121,6 +135,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa una direzione consigliata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → direzione consigliata?",
         "spiegazione": "Il segnale con il cerchio blu e la freccia bianca indica una 'direzione obbligatoria', non una 'direzione consigliata'. 'Obbligatoria' significa che devi seguirla per forza, non che puoi scegliere. I segnali di consiglio sono diversi.",
         "regola": "Cerchio blu = Obbligo, non consiglio.",
         "trabocchetti": ["consigliata"],
@@ -129,6 +144,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consiglia a tutti i veicoli di seguire la direzione indicata dalla freccia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → direzione consigliata a tutti?",
         "spiegazione": "Questo segnale non 'consiglia', ma 'obbliga' a seguire la direzione. Inoltre, non 'tutti i veicoli' devono seguirla, ma solo gli autotreni e gli autoarticolati, come mostrato dai disegni dei camion sotto. È importante distinguere tra obbligo e consiglio, e a chi si rivolge il segnale.",
         "regola": "Obbligo + veicoli specifici = Non consiglio per tutti.",
         "trabocchetti": ["consiglia", "tutti i veicoli"],
@@ -137,6 +153,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un posto di telefono pubblico nelle vicinanze",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → telefono pubblico?",
         "spiegazione": "Il segnale con il simbolo del telefono indica proprio che c'è un telefono pubblico vicino, dove puoi fare una chiamata. È un servizio utile per tutti.",
         "regola": "Telefono = Telefono pubblico vicino.",
         "trabocchetti": ["nelle vicinanze"],
@@ -145,6 +162,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che siamo in vicinanza di un apparecchio telefonico pubblico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → telefono pubblico vicino?",
         "spiegazione": "Sì, è vero. Questo segnale ti avvisa che c'è un telefono pubblico a disposizione, un apparecchio che puoi usare per fare una telefonata.",
         "regola": "Telefono = C'è un telefono pubblico.",
         "trabocchetti": ["Apparecchio telefonico pubblico"],
@@ -153,6 +171,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la possibilità, a breve distanza, di poter telefonare da un telefono pubblico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → telefono pubblico a breve distanza?",
         "spiegazione": "Esatto, il segnale ti dice che non lontano da lì puoi trovare un telefono pubblico e usarlo per fare una telefonata. Ti indica la disponibilità del servizio.",
         "regola": "Telefono = Puoi telefonare.",
         "trabocchetti": ["A breve distanza", "Possibilità"],
@@ -161,6 +180,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un apparecchio telefonico pubblico posto su strade extraurbane",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → telefono solo su extraurbane?",
         "spiegazione": "Sì, questo segnale di servizio può essere trovato anche sulle strade fuori città (extraurbane) per indicare la presenza di un telefono pubblico, utile in caso di emergenza o se non hai il cellulare.",
         "regola": "Telefono = Anche fuori città.",
         "trabocchetti": ["Strade extraurbane"],
@@ -169,6 +189,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la vicinanza di un negozio di telefonia mobile",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → negozio di telefonia?",
         "spiegazione": "No, questo è falso. Il segnale indica un telefono pubblico, cioè un telefono fisso a disposizione di tutti. Non indica un negozio dove si vendono o riparano telefoni cellulari.",
         "regola": "Telefono = Non è un negozio.",
         "trabocchetti": ["negozio di telefonia mobile"],
@@ -177,6 +198,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un posto di pronto soccorso raggiungibile per telefono",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pronto soccorso per telefono?",
         "spiegazione": "Falso. Il segnale del pronto soccorso è diverso, di solito una croce rossa. Questo segnale indica solo un telefono pubblico, non un luogo dove si riceve assistenza medica.",
         "regola": "Telefono = Non è pronto soccorso.",
         "trabocchetti": ["pronto soccorso"],
@@ -185,6 +207,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la possibilità di ricaricare i telefoni cellulari",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ricarica cellulari?",
         "spiegazione": "No, è falso. Il segnale indica un telefono pubblico per fare chiamate. Non è un punto dove puoi ricaricare la batteria del tuo cellulare.",
         "regola": "Telefono = Non ricarica cellulari.",
         "trabocchetti": ["ricaricare i telefoni cellulari"],
@@ -193,6 +216,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è vietato usare i telefoni cellulari",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato usare il cellulare?",
         "spiegazione": "Falso. Questo segnale è un segnale di servizio (blu) che indica la presenza di un telefono pubblico. Non vieta l'uso dei cellulari. Un divieto avrebbe un simbolo diverso, di solito un cerchio rosso con una barra.",
         "regola": "Blu = Servizio, non divieto.",
         "trabocchetti": ["vietato"],
@@ -201,6 +225,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una zona sufficientemente coperta dal segnale per telefonia mobile",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → copertura cellulare?",
         "spiegazione": "No, è falso. Il segnale indica un telefono pubblico fisso. Non ha nulla a che fare con la copertura del segnale per i telefoni cellulari, che dipende dalla rete mobile.",
         "regola": "Telefono = Non è copertura mobile.",
         "trabocchetti": ["coperta dal segnale per telefonia mobile"],
@@ -209,6 +234,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è consentito telefonare solo con cellulari a viva voce",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo vivavoce?",
         "spiegazione": "Falso. Questo segnale indica un telefono pubblico. Non dà indicazioni su come usare i cellulari, né se devono essere a viva voce o meno. Non riguarda i cellulari.",
         "regola": "Telefono = Non riguarda i cellulari.",
         "trabocchetti": ["solo con cellulari a viva voce"],
@@ -217,6 +243,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un posto di rifornimento carburante",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rifornimento carburante?",
         "spiegazione": "Il segnale mostra una pompa di benzina, quindi indica proprio un luogo dove puoi fare rifornimento di carburante per la tua auto.",
         "regola": "Pompa = Benzina.",
         "trabocchetti": ["posto di rifornimento carburante"],
@@ -225,6 +252,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che nelle vicinanze vi è un posto di distribuzione carburante",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → distributore vicino?",
         "spiegazione": "Questo segnale ti dice che non lontano da lì c'è un posto dove puoi trovare e comprare carburante per il tuo veicolo.",
         "regola": "Vicino c'è la pompa.",
         "trabocchetti": ["nelle vicinanze", "distribuzione carburante"],
@@ -233,6 +261,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la possibilità di rifornimento carburante a breve distanza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rifornimento a breve distanza?",
         "spiegazione": "Il segnale ti informa che tra poco, guidando, troverai un luogo dove potrai mettere benzina o diesel nel serbatoio.",
         "regola": "Pompa = Carburante vicino.",
         "trabocchetti": ["possibilità di rifornimento", "a breve distanza"],
@@ -241,6 +270,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che a breve distanza vi è una stazione di rifornimento carburante",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → stazione di rifornimento vicina?",
         "spiegazione": "Il segnale ti avvisa che a poca distanza c'è una stazione di servizio, cioè un luogo attrezzato per fare rifornimento di carburante.",
         "regola": "Stazione di servizio = Pompa.",
         "trabocchetti": ["stazione di rifornimento carburante"],
@@ -249,6 +279,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che lungo la strada, a breve distanza, vi è un distributore di carburante",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → distributore lungo la strada?",
         "spiegazione": "Questo segnale ti indica che, proseguendo sulla strada, incontrerai presto un distributore dove potrai fare il pieno.",
         "regola": "Distributore = Pompa.",
         "trabocchetti": ["distributore di carburante", "lungo la strada, a breve distanza"],
@@ -257,6 +288,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'officina di assistenza meccanica nelle vicinanze",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → officina meccanica?",
         "spiegazione": "Falso. Il simbolo della pompa di benzina non indica un'officina. Per l'officina ci sarebbe un simbolo diverso, come una chiave inglese.",
         "regola": "Pompa non è chiave inglese.",
         "trabocchetti": ["officina"],
@@ -265,6 +297,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un posto telefonico pubblico nelle vicinanze",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → telefono pubblico?",
         "spiegazione": "Falso. Il segnale mostra una pompa di benzina, non un telefono. Il simbolo per il telefono pubblico è una cornetta telefonica.",
         "regola": "Pompa non è telefono.",
         "trabocchetti": ["posto telefonico pubblico"],
@@ -273,6 +306,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che nelle vicinanze vi è un'area di sosta per autoveicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area di sosta?",
         "spiegazione": "Falso. Questo segnale indica il carburante, non un'area dove fermarsi e parcheggiare. Per un'area di sosta il simbolo sarebbe una 'P' o un'auto in sosta.",
         "regola": "Pompa non è parcheggio.",
         "trabocchetti": ["area di sosta per autoveicoli"],
@@ -281,6 +315,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un distributore di carburante riservato solo ai veicoli alimentati a GPL",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distributore solo GPL?",
         "spiegazione": "Falso. Il simbolo generico della pompa indica un distributore di carburante in generale (benzina, diesel). Se fosse solo per GPL, ci sarebbe un simbolo specifico per il GPL.",
         "regola": "'Solo' è quasi sempre FALSO.",
         "trabocchetti": ["solo"],
@@ -289,6 +324,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una raffineria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → raffineria?",
         "spiegazione": "Falso. Una raffineria è una grande fabbrica dove si produce il carburante, non un posto dove i veicoli possono fare rifornimento. Il segnale indica un punto vendita.",
         "regola": "Pompa non è fabbrica.",
         "trabocchetti": ["raffineria"],
@@ -297,6 +333,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che trasportano carburante",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a chi trasporta carburante?",
         "spiegazione": "Falso. Questo è un segnale di servizio (blu), che indica la presenza di un servizio. I segnali di divieto sono rotondi e con il bordo rosso.",
         "regola": "Segnale blu = Servizio, non divieto.",
         "trabocchetti": ["vieta il transito"],
@@ -305,6 +342,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è di conferma autostradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → conferma autostradale?",
         "spiegazione": "Questo segnale è di colore verde e mostra le distanze per le città. I segnali verdi si usano in autostrada per confermare la direzione e quanto manca alle città. Quindi, è un segnale di conferma autostradale.",
         "regola": "Verde = Autostrada, conferma distanze.",
         "trabocchetti": ["di conferma autostradale"],
@@ -313,6 +351,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato riporta le località con le relative distanze in chilometri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → località con distanze in km?",
         "spiegazione": "Sì, il segnale mostra i nomi delle città (Firenze, Bologna, Milano) e accanto a ogni nome c'è un numero (180, 285, 472). Questi numeri sono le distanze in chilometri che mancano per arrivare a quelle città.",
         "regola": "Città + Numero = Distanza in km.",
         "trabocchetti": ["relative distanze in chilometri"],
@@ -321,6 +360,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato se di colore blu, si trova su strade extraurbane",
         "risposta": True,
+        "riassunto": "Segnale raffigurato blu → su strade extraurbane?",
         "spiegazione": "Questo segnale è verde perché siamo in autostrada. Se lo stesso tipo di segnale (che indica le distanze per le città) fosse di colore blu, allora si troverebbe sulle strade extraurbane principali o secondarie, non in autostrada.",
         "regola": "Verde = Autostrada; Blu = Extraurbana.",
         "trabocchetti": ["se di colore blu"],
@@ -329,6 +369,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su un'autostrada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → posto in autostrada?",
         "spiegazione": "Il colore verde di questo segnale indica che ci troviamo su un'autostrada. I segnali verdi sono specifici per le autostrade, mentre quelli blu sono per le strade extraurbane e quelli bianchi per le strade urbane.",
         "regola": "Segnale verde = Autostrada.",
         "immagine": "7144532af1314bc59caf.jpg",
@@ -336,6 +377,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che mancano 180 chilometri per Firenze",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → 180 km a Firenze?",
         "spiegazione": "Accanto al nome 'FIRENZE' c'è il numero '180'. Questo significa che mancano 180 chilometri per raggiungere la città di Firenze. I numeri sui segnali di conferma indicano sempre la distanza da percorrere.",
         "regola": "Numero accanto alla città = km mancanti.",
         "trabocchetti": ["mancano"],
@@ -344,6 +386,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica in autostrada la distanza delle località raggiungibili",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → distanze delle località in autostrada?",
         "spiegazione": "Questo segnale, essendo verde, si trova in autostrada. Il suo scopo è proprio quello di mostrare quanto distano le città che si possono raggiungere proseguendo su quella strada.",
         "regola": "Verde in autostrada = Distanze per le città.",
         "trabocchetti": ["località raggiungibili"],
@@ -352,6 +395,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che uscendo dal primo casello autostradale è possibile raggiungere tutte le località indicate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tutte raggiungibili dal primo casello?",
         "spiegazione": "Questo segnale indica le distanze lungo l'autostrada. Non significa che tutte le città indicate siano raggiungibili uscendo al primo casello. Alcune potrebbero essere molto più avanti, o richiedere di prendere altre autostrade o uscite successive.",
         "regola": "Non tutte le città al primo casello!",
         "trabocchetti": ["tutte le località indicate", "primo casello autostradale"],
@@ -360,6 +404,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che per raggiungere Milano bisogna percorrere l'autostrada n. 472",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → Milano tramite autostrada n. 472?",
         "spiegazione": "Il numero '472' accanto a Milano non è il numero dell'autostrada. È la distanza in chilometri che manca per arrivare a Milano. Le autostrade hanno nomi o sigle diverse (es. A1, A4, ecc.).",
         "regola": "Numero = km, non numero strada.",
         "trabocchetti": ["autostrada n. 472"],
@@ -368,6 +413,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che mancano 180 chilometri per l'area di servizio di Firenze",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → 180 km all'area di servizio di Firenze?",
         "spiegazione": "Il segnale indica la distanza per la città di Firenze, non per un'area di servizio specifica a Firenze. Le aree di servizio sono indicate con simboli diversi e spesso con il loro nome.",
         "regola": "Città, non area di servizio.",
         "trabocchetti": ["area di servizio di Firenze"],
@@ -376,6 +422,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica, per ogni località, il numero della strada da percorrere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → numero di strada per ogni località?",
         "spiegazione": "I numeri accanto alle città indicano le distanze in chilometri, non il numero della strada da percorrere per raggiungere quelle località. Per indicare il numero di una strada si usano altri tipi di segnali.",
         "regola": "Numero = km, non numero strada.",
         "trabocchetti": ["il numero della strada da percorrere"],
@@ -384,6 +431,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica i chilometri già fatti dalle località indicate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → km già percorsi dalle località?",
         "spiegazione": "Questo segnale indica i chilometri che *mancano* per arrivare alle località, non i chilometri che sono già stati percorsi da quelle località. È una distanza 'a venire', non 'passata'.",
         "regola": "Km = Mancanti, non fatti.",
         "trabocchetti": ["chilometri già fatti"],
@@ -392,6 +440,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto sulle strade extraurbane",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → su strade extraurbane?",
         "spiegazione": "Il segnale è di colore verde. I segnali verdi sono usati sulle autostrade. Sulle strade extraurbane (non autostrade) i segnali di indicazione delle località e delle distanze sono di colore blu.",
         "regola": "Verde = Autostrada, non extraurbana.",
         "trabocchetti": ["strade extraurbane"],
@@ -400,6 +449,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un itinerario di strada internazionale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → itinerario internazionale?",
         "spiegazione": "Il segnale con la lettera 'E' seguita da un numero (come 'E 55') indica un 'Itinerario Europeo'. Questi itinerari collegano diversi paesi in Europa, quindi sono strade internazionali.",
         "regola": "E = Europa = Internazionale.",
         "trabocchetti": ["internazionale"],
@@ -408,6 +458,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il numero della classificazione internazionale della strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → numero di classificazione internazionale?",
         "spiegazione": "Il segnale 'E 55' non è solo un simbolo, ma è il nome specifico, o 'classificazione', di quella particolare strada internazionale. Ogni itinerario europeo ha il suo numero.",
         "regola": "E 55 è il 'nome' della strada europea.",
         "trabocchetti": ["classificazione internazionale"],
@@ -416,6 +467,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su strade di importanza internazionale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strade di importanza internazionale?",
         "spiegazione": "Questi segnali si trovano sulle strade che fanno parte della rete europea, che sono importanti perché collegano città e paesi diversi, facilitando i viaggi tra le nazioni.",
         "regola": "E = Europa, quindi strade importanti tra paesi.",
         "immagine": "c92374028c57cd48df99.jpg",
@@ -423,6 +475,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'itinerario internazionale n. 55",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → itinerario internazionale n. 55?",
         "spiegazione": "Il segnale 'E 55' indica proprio l'itinerario europeo (e quindi internazionale) che ha il numero 55. È il suo identificativo.",
         "regola": "E 55 = Itinerario 55 in Europa.",
         "immagine": "c92374028c57cd48df99.jpg",
@@ -430,6 +483,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare all'interno di un segnale di preavviso di bivio stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dentro un preavviso di bivio?",
         "spiegazione": "Sì, è molto comune vedere questo piccolo segnale 'E 55' inserito dentro cartelli più grandi, come quelli che ti avvisano di un bivio o di una direzione, per indicare quale percorso prendere per seguire quell'itinerario europeo.",
         "regola": "E 55 è come un 'logo' che vedi anche sui cartelli grandi.",
         "trabocchetti": ["si può trovare all"],
@@ -438,6 +492,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato identifica le strade extraurbane",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → identifica strade extraurbane?",
         "spiegazione": "Questo segnale identifica specificamente gli itinerari europei. Non tutte le strade extraurbane sono itinerari europei. Ci sono molte strade extraurbane che non hanno la sigla 'E'.",
         "regola": "Non tutte le strade extraurbane sono 'E 55'.",
         "trabocchetti": ["identifica"],
@@ -446,6 +501,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'uscita autostradale n. 55",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → uscita autostradale n. 55?",
         "spiegazione": "Il segnale 'E 55' indica un numero di una strada, un percorso, non un'uscita. Le uscite autostradali hanno un'altra segnaletica e numerazione.",
         "regola": "E 55 è una strada, non un'uscita.",
         "trabocchetti": ["uscita autostradale"],
@@ -454,6 +510,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che mancano 55 chilometri al confine di Stato con l'estero",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → 55 km al confine?",
         "spiegazione": "Il numero '55' è il nome dell'itinerario, non una distanza. Non indica quanti chilometri mancano a un confine o a qualsiasi altro punto.",
         "regola": "55 è il nome, non i km.",
         "trabocchetti": ["mancano 55 chilometri"],
@@ -462,6 +519,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la velocità massima da tenere su quella strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → velocità massima?",
         "spiegazione": "Questo segnale serve per identificare la strada. I limiti di velocità sono indicati da segnali rotondi con un numero all'interno, non da questo tipo di cartello.",
         "regola": "E 55 non è un limite di velocità.",
         "trabocchetti": ["velocità massima"],
@@ -470,6 +528,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il numero del cavalcavia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → numero del cavalcavia?",
         "spiegazione": "Il segnale 'E 55' identifica un intero percorso stradale europeo, non un singolo cavalcavia o ponte. I cavalcavia non hanno questo tipo di numerazione.",
         "regola": "E 55 è una strada, non un ponte.",
         "trabocchetti": ["numero del cavalcavia"],
@@ -478,6 +537,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che sono stati percorsi 55 chilometri dal punto di origine dell'autostrada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → 55 km percorsi dall'inizio dell'autostrada?",
         "spiegazione": "Il numero '55' è il nome dell'itinerario, non indica quanti chilometri sono stati percorsi. I chilometri percorsi sulle autostrade sono indicati da appositi segnali chilometrici.",
         "regola": "55 è il nome, non i km percorsi.",
         "trabocchetti": ["sono stati percorsi 55 chilometri"],
@@ -486,6 +546,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il tipo ed il numero di strada percorsa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → tipo e numero della strada?",
         "spiegazione": "Questo segnale ti dice due cose importanti: che tipo di strada stai percorrendo (SS sta per Strada Statale) e qual è il suo numero (in questo caso, il numero 2). Quindi, indica sia il tipo che il numero della strada.",
         "regola": "SS = Tipo (Statale) + Numero.",
         "trabocchetti": ["tipo ed il numero"],
@@ -494,6 +555,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare all'interno di un segnale di direzione o di bivio stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dentro segnale di direzione o bivio?",
         "spiegazione": "Sì, è vero. Spesso questi piccoli cartelli 'SS 2' non sono da soli, ma li trovi 'incastonati' dentro cartelli più grandi che ti indicano le direzioni per le città o i bivi stradali, per farti capire su quale strada statale ti stai immettendo o stai proseguendo.",
         "regola": "Il 'mini-SS' sta nel 'maxi-direzione'.",
         "trabocchetti": ["all"],
@@ -502,6 +564,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada su cui viaggiamo è una strada statale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada statale?",
         "spiegazione": "Esatto! Le lettere 'SS' sono l'abbreviazione di 'Strada Statale'. Quindi, quando vedi questo segnale, sai che sei su una strada gestita dallo Stato.",
         "regola": "SS = Strada Statale.",
         "immagine": "3fe608d1a507552b1bcc.jpg",
@@ -509,6 +572,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che stiamo percorrendo la strada statale n. 2",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → statale n. 2?",
         "spiegazione": "Sì, è proprio così. 'SS' significa Strada Statale e il '2' è il numero identificativo di quella specifica strada. Quindi, stai percorrendo la Strada Statale numero 2.",
         "regola": "SS 2 = Strada Statale numero 2.",
         "trabocchetti": ["e"],
@@ -517,6 +581,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il numero di piazzole di sosta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → numero di piazzole?",
         "spiegazione": "Falso! Questo segnale non ha nulla a che fare con le aree di sosta. Indica solo il tipo e il numero della strada. Le piazzole di sosta hanno altri segnali specifici.",
         "regola": "Il numero è della strada, non delle piazzole.",
         "trabocchetti": ["numero di piazzole di sosta"],
@@ -525,6 +590,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada sdrucciolevole per 2 chilometri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sdrucciolevole per 2 km?",
         "spiegazione": "Falso! Questo segnale non ti avvisa di pericoli come una strada sdrucciolevole. È un segnale di identificazione stradale. I pericoli sono indicati da altri tipi di segnali, di solito triangolari con bordo rosso.",
         "regola": "SS 2 non è un pericolo, è un nome.",
         "trabocchetti": ["sdrucciolevole", "2 chilometri"],
@@ -533,6 +599,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada stretta per 2 chilometri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada stretta per 2 km?",
         "spiegazione": "Falso! Questo segnale non indica che la strada è stretta. È un segnale che identifica la strada. Per le strade strette ci sono altri segnali di pericolo, di solito triangolari.",
         "regola": "SS 2 non è una misura, è un'identità.",
         "trabocchetti": ["stretta", "2 chilometri"],
@@ -541,6 +608,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada senza uscita a 2 chilometri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senza uscita a 2 km?",
         "spiegazione": "Falso! Questo segnale non indica una strada senza uscita. È un segnale di identificazione della strada. I segnali di strada senza uscita sono diversi, spesso quadrati o rettangolari con un simbolo specifico.",
         "regola": "SS 2 non è un vicolo cieco, è una strada.",
         "trabocchetti": ["senza uscita", "2 chilometri"],
@@ -549,6 +617,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada senza segnaletica per 2 chilometri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senza segnaletica per 2 km?",
         "spiegazione": "Falso! Questo segnale è esso stesso una segnaletica! E indica il nome della strada, non che la strada è senza segnaletica. Anzi, è il contrario: ti sta dando un'informazione importante!",
         "regola": "SS 2 è un segnale, non l'assenza di segnali.",
         "trabocchetti": ["senza segnaletica"],
@@ -557,6 +626,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada sterrata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada sterrata?",
         "spiegazione": "Falso! Le Strade Statali (SS) sono strade importanti e di solito sono asfaltate. Questo segnale non ti dice nulla sul tipo di fondo stradale, ma solo il nome della strada.",
         "regola": "SS 2 non è 'sterrata', è 'statale'.",
         "trabocchetti": ["sterrata"],
@@ -565,6 +635,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare all'inizio di una strada comunale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio strada comunale?",
         "spiegazione": "Il segnale con la sigla 'SC' sta per 'Strada Comunale'. È normale e corretto trovare questo segnale all'inizio di una strada gestita dal comune per indicarne l'identità.",
         "regola": "SC = Strada Comunale.",
         "immagine": "55b4d1c15ea5683b017c.jpg",
@@ -572,6 +643,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare a completamento dei segnali di direzione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → completa i segnali di direzione?",
         "spiegazione": "Questo segnale serve a identificare una strada. Per questo motivo, può essere mostrato insieme ai segnali che indicano le direzioni, per aiutare i guidatori a capire quale strada prendere per raggiungere una destinazione specifica.",
         "regola": "Il numero della strada aiuta a scegliere la direzione giusta.",
         "trabocchetti": ["a completamento"],
@@ -580,6 +652,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato identifica una strada comunale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada comunale?",
         "spiegazione": "Le lettere 'SC' sono l'abbreviazione di 'Strada Comunale'. Il numero '19' è il numero specifico che identifica quella particolare strada comunale.",
         "regola": "SC = Strada Comunale.",
         "trabocchetti": ["identifica"],
@@ -588,6 +661,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare lungo la strada comunale n. 19",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → lungo la comunale n. 19?",
         "spiegazione": "Il segnale serve a dire che ti trovi sulla Strada Comunale numero 19. Quindi, è logico trovarlo non solo all'inizio, ma anche lungo il percorso di quella strada per confermare la tua posizione.",
         "regola": "Il segnale ti dice dove sei.",
         "trabocchetti": ["lungo la strada"],
@@ -596,6 +670,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova a diciannove chilometri dalla più vicina Stazione dei Carabinieri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → 19 km dai Carabinieri?",
         "spiegazione": "Il numero '19' sul segnale indica il numero della strada, non una distanza in chilometri. Le lettere 'SC' non hanno alcun legame con la Stazione dei Carabinieri.",
         "regola": "Il numero è della strada, non una distanza.",
         "trabocchetti": ["diciannove chilometri", "Stazione dei Carabinieri"],
@@ -604,6 +679,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova all'inizio di una strada di campagna",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada di campagna?",
         "spiegazione": "Il segnale indica specificamente una 'Strada Comunale' (SC), che è un tipo di strada gestita dal comune. Non indica genericamente una 'strada di campagna', anche se alcune strade comunali possono trovarsi in campagna.",
         "regola": "SC = Comunale, non generica 'campagna'.",
         "trabocchetti": ["strada di campagna"],
@@ -612,6 +688,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova dove la strada è percorribile solo con catene da neve",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo con catene?",
         "spiegazione": "Questo segnale serve solo a identificare la strada come 'Strada Comunale 19'. Non fornisce alcuna informazione sulle condizioni della strada, come la presenza di neve o l'obbligo di usare catene.",
         "regola": "Il segnale identifica la strada, non le condizioni.",
         "trabocchetti": ["solo con catene da neve"],
@@ -620,6 +697,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova su strade dove la sosta è consentita dopo le ore 19.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta dopo le 19?",
         "spiegazione": "Il numero '19' sul segnale indica il numero della strada, non un orario. Questo segnale non ha nulla a che fare con le regole di sosta o i divieti orari.",
         "regola": "Il numero è della strada, non un orario.",
         "trabocchetti": ["dopo le ore 19.00"],
@@ -628,6 +706,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica, su strada urbana, il numero del cavalcavia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → numero del cavalcavia urbano?",
         "spiegazione": "Il segnale 'SC 19' identifica una 'Strada Comunale' con il numero 19. Non ha alcun legame con i cavalcavia o con la loro numerazione.",
         "regola": "SC = Strada Comunale, non cavalcavia.",
         "trabocchetti": ["cavalcavia"],
@@ -636,6 +715,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la vicinanza di un'area per campeggio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → area campeggio vicina?",
         "spiegazione": "Il segnale mostra una tenda e una roulotte, che sono i simboli del campeggio. Questo tipo di segnale marrone serve per dare informazioni turistiche e indica che c'è un'area per campeggiare nelle vicinanze.",
         "regola": "Tenda + Roulotte = Campeggio vicino.",
         "trabocchetti": ["vicinanza"],
@@ -644,6 +724,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area da campeggio con tende e sosta per caravan ed autocaravan",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → campeggio con tende e caravan?",
         "spiegazione": "Il segnale raffigura sia una tenda (per il campeggio tradizionale) sia una roulotte (che rappresenta sia i caravan che gli autocaravan, cioè i camper). Quindi, l'area indicata è attrezzata per entrambi i tipi di sosta e campeggio.",
         "regola": "Tenda e Roulotte = Campeggio completo.",
         "trabocchetti": ["Caravan ed autocaravan"],
@@ -652,6 +733,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una zona destinata alla sosta di caravan ed autocaravan ed al campeggio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → zona per caravan e campeggio?",
         "spiegazione": "Il simbolo della roulotte indica che l'area è per la sosta di caravan e autocaravan, mentre la tenda indica che si può anche campeggiare con le tende. Quindi, la zona è destinata a entrambe le attività.",
         "regola": "Roulotte + Tenda = Sosta e Campeggio.",
         "trabocchetti": ["destinata"],
@@ -660,6 +742,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è consentito il campeggio e la sosta di caravan ed autocaravan",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → campeggio e sosta caravan consentiti?",
         "spiegazione": "Dato che il segnale indica un'area di campeggio, significa che in quel luogo è permesso (consentito) montare tende e far sostare caravan e autocaravan.",
         "regola": "Segnale di area = Attività permesse.",
         "trabocchetti": ["consentito"],
@@ -668,6 +751,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un divieto di sosta per caravan e per i veicoli da campeggio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di sosta per caravan?",
         "spiegazione": "Questo segnale è di informazione turistica (marrone), non di divieto. I segnali di divieto sono di solito rotondi con bordo rosso. Questo segnale indica un servizio, non qualcosa che è proibito.",
         "regola": "Marrone = Informazione, non Divieto.",
         "trabocchetti": ["divieto"],
@@ -676,6 +760,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una zona panoramica",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → zona panoramica?",
         "spiegazione": "Una zona panoramica ha un simbolo diverso, spesso un albero o un paesaggio. Questo segnale mostra una tenda e una roulotte, che non hanno niente a che fare con un panorama.",
         "regola": "Tenda/Roulotte non è un panorama.",
         "immagine": "2c36d083ccd8cc1012fd.jpg",
@@ -683,6 +768,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'officina di riparazione veicoli da campeggio nelle vicinanze",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → officina per caravan?",
         "spiegazione": "Un'officina ha un simbolo specifico, di solito una chiave inglese. Questo segnale indica un'area dove si può campeggiare, non dove si riparano i veicoli.",
         "regola": "Non c'è la chiave inglese = Non è un'officina.",
         "immagine": "2c36d083ccd8cc1012fd.jpg",
@@ -690,6 +776,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una postazione mobile di Polizia nelle vicinanze",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → polizia mobile?",
         "spiegazione": "La Polizia è indicata con simboli specifici, come un agente o un'auto della polizia. Tenda e roulotte non hanno alcun legame con la Polizia.",
         "regola": "Niente Polizia = Niente Polizia.",
         "trabocchetti": ["Polizia"],
@@ -698,6 +785,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un posto mobile di pronto soccorso nelle vicinanze",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pronto soccorso mobile?",
         "spiegazione": "Il pronto soccorso è indicato con una croce rossa. Tenda e roulotte non sono simboli di pronto soccorso, ma di un'area per il campeggio.",
         "regola": "Niente croce rossa = Niente pronto soccorso.",
         "immagine": "2c36d083ccd8cc1012fd.jpg",
@@ -705,6 +793,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'indirizzo ed i numeri telefonici del più vicino comando della polizia stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → indirizzo e telefoni della polizia stradale?",
         "spiegazione": "Il segnale mostra chiaramente le parole 'indirizzo' e 'telefoni' sotto la scritta 'POLIZIA STRADALE'. Questo significa che il cartello serve proprio a dare queste informazioni per il comando di polizia più vicino.",
         "regola": "Indirizzo e telefoni? Sono le info del comando!",
         "immagine": "c3e1e68e010b0ff028c2.jpg",
@@ -712,6 +801,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la località ed i numeri di telefono del più vicino comando di polizia stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → località e telefoni della polizia stradale?",
         "spiegazione": "Il segnale riporta le parole 'localita'' e 'telefoni'. Quindi, indica dove si trova (la località) e come contattare (i numeri di telefono) il comando di polizia stradale più vicino.",
         "regola": "Località e telefoni: per trovare e chiamare la Polizia.",
         "immagine": "c3e1e68e010b0ff028c2.jpg",
@@ -719,6 +809,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la sede ed il numero telefonico del più vicino comando di polizia stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sede e telefono della polizia stradale?",
         "spiegazione": "La 'sede' è il luogo dove si trova un ufficio, quindi include la località e l'indirizzo. Il segnale mostra 'localita'', 'indirizzo' e 'telefoni'. Perciò, indica la sede e i numeri di telefono del comando.",
         "regola": "Sede = dove si trova. Telefoni = come chiamare.",
         "trabocchetti": ["sede"],
@@ -727,6 +818,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato riporta alcuni dati (località, via, telefoni) del più vicino comando di polizia stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dati del comando di polizia stradale?",
         "spiegazione": "Il segnale elenca 'localita'', 'indirizzo' (che include la via) e 'telefoni'. Questi sono esattamente i 'dati' che il cartello riporta per il comando di polizia stradale più vicino.",
         "regola": "Località, via, telefoni: sono i dati del comando.",
         "trabocchetti": ["dati", "Via"],
@@ -735,6 +827,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un posto di blocco della polizia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → posto di blocco?",
         "spiegazione": "Questo segnale serve per dare informazioni su dove si trova e come contattare la Polizia Stradale. Non avvisa di un posto di blocco, che è un controllo temporaneo sulla strada.",
         "regola": "Info, non blocco!",
         "trabocchetti": ["posto di blocco"],
@@ -743,6 +836,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada interrotta per incidente stradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada interrotta per incidente?",
         "spiegazione": "Il segnale fornisce contatti della Polizia Stradale. Non ha nulla a che fare con incidenti o strade chiuse. Per quello ci sono altri tipi di segnali di pericolo o indicazione.",
         "regola": "Non è un pericolo, è un'informazione.",
         "trabocchetti": ["strada interrotta", "incidente stradale"],
@@ -751,6 +845,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una zona riservata al parcheggio dei veicoli della polizia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio polizia?",
         "spiegazione": "Il segnale indica dove trovare e come contattare la Polizia Stradale, non un'area dove possono parcheggiare i loro veicoli. Per i parcheggi ci sono segnali specifici.",
         "regola": "Non è un parcheggio, è un contatto.",
         "trabocchetti": ["zona riservata al parcheggio"],
@@ -759,6 +854,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la possibilità di incrociare una colonna di veicoli della polizia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → colonna di veicoli della polizia?",
         "spiegazione": "Questo segnale è statico e fornisce informazioni di contatto. Non avvisa che potresti incontrare veicoli della polizia in movimento, come una colonna.",
         "regola": "Non è un avviso di transito, è un'informazione.",
         "trabocchetti": ["colonna di veicoli della polizia"],
@@ -767,6 +863,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un tratto di strada riservato alla polizia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tratto riservato alla polizia?",
         "spiegazione": "Il segnale indica dove si trova il comando di polizia e come contattarlo. Non significa che un tratto di strada è riservato solo ai veicoli della polizia.",
         "regola": "Non è una strada speciale, è un contatto.",
         "trabocchetti": ["tratto di strada riservato"],
@@ -775,6 +872,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada su cui è posto è a senso unico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada dove è posto a senso unico?",
         "spiegazione": "Questo segnale (A o B) indica che la strada che si sta per imboccare, svoltando nella direzione della freccia, è a senso unico. Significa che tutti i veicoli vanno nella stessa direzione.",
         "regola": "Freccia blu rettangolare = strada a senso unico che si imbocca.",
         "trabocchetti": ["la strada su cui è posto"],
@@ -783,6 +881,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale A di figura indica che svoltando a sinistra la strada è a senso unico",
         "risposta": True,
+        "riassunto": "Segnale A → svoltando a sinistra, senso unico?",
         "spiegazione": "Il segnale A mostra una freccia che punta a sinistra. Questo significa che se decidi di svoltare a sinistra, la strada che prenderai sarà a senso unico in quella direzione.",
         "regola": "Segnale A = se giri a sinistra, strada a senso unico.",
         "immagine": "fe1d243c4a7dbf1ec4be.jpg",
@@ -790,6 +889,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che svoltando nel senso della freccia non si incrociano veicoli provenienti dal senso opposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svoltando, nessun veicolo opposto?",
         "spiegazione": "Quando una strada è a senso unico, tutti i veicoli vanno nella stessa direzione. Per questo motivo, non incontrerai veicoli che vengono dalla direzione opposta.",
         "regola": "Senso unico = nessun veicolo contro.",
         "immagine": "fe1d243c4a7dbf1ec4be.jpg",
@@ -797,6 +897,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che una volta svoltato nel senso della freccia è vietata l'inversione di marcia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dopo la svolta inversione vietata?",
         "spiegazione": "In una strada a senso unico, non puoi fare inversione di marcia (cioè girarti e tornare indietro). Se lo facessi, andresti contro il traffico e creeresti pericolo.",
         "regola": "Senso unico = no inversione di marcia.",
         "trabocchetti": ["vietata l"],
@@ -805,6 +906,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che nel tratto di strada in cui è posto si deve sorpassare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso a destra?",
         "spiegazione": "In Italia, di solito, si sorpassa a sinistra. Il fatto che una strada sia a senso unico non cambia questa regola generale. Sorpassare a destra è permesso solo in casi specifici (ad esempio, se il veicolo davanti sta svoltando a sinistra).",
         "regola": "Sorpasso = sempre a sinistra (salvo eccezioni).",
         "trabocchetti": ["si deve sorpassare a destra", "Si deve"],
@@ -813,6 +915,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale A di figura indica che è obbligatorio svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale A → obbligo di svoltare a sinistra?",
         "spiegazione": "Il segnale A ti informa che la strada a sinistra è a senso unico. Non ti obbliga a svoltare a sinistra. Potresti anche andare dritto o svoltare a destra, se consentito.",
         "regola": "Rettangolare blu = informa. Rotondo blu = obbliga.",
         "trabocchetti": ["è obbligatorio svoltare a sinistra"],
@@ -821,6 +924,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è vietato proseguire diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → diritto vietato?",
         "spiegazione": "Questo segnale ti dice solo che la strada che imbocchi svoltando è a senso unico. Non ti vieta di andare dritto. Se non ci sono altri segnali che lo vietano, puoi proseguire diritto.",
         "regola": "Segnale rettangolare = informa, non vieta altre direzioni.",
         "trabocchetti": ["vietato proseguire diritto"],
@@ -829,6 +933,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si deve marciare per file parallele",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → file parallele?",
         "spiegazione": "Questo segnale indica una strada a senso unico. Non ha nulla a che fare con il modo in cui i veicoli devono disporsi sulla strada, come 'marciare per file parallele'.",
         "regola": "Senso unico = direzione. File parallele = traffico/corsie.",
         "trabocchetti": ["si deve marciare per file parallele"],
@@ -837,6 +942,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che svoltando nel senso della freccia la sosta è consentita solo a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta solo a sinistra?",
         "spiegazione": "Il segnale di senso unico non dà informazioni sulla sosta. Le regole per la sosta sono indicate da altri segnali specifici (come il divieto di sosta) o dalle norme generali del Codice della Strada.",
         "regola": "Senso unico = direzione. Sosta = altri segnali.",
         "trabocchetti": ["sosta è consentita solo a sinistra"],
@@ -845,6 +951,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un parcheggio libero nel senso della freccia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio libero?",
         "spiegazione": "Questo segnale indica una strada a senso unico, non un parcheggio. I segnali di parcheggio sono diversi, di solito quadrati blu con una 'P' bianca.",
         "regola": "Senso unico = direzione. Parcheggio = P.",
         "trabocchetti": ["parcheggio libero"],
@@ -853,6 +960,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area di sosta per i taxi in servizio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta taxi in servizio?",
         "spiegazione": "Questo segnale arancione con scritto 'TAXI' indica proprio il punto dove i taxi possono fermarsi e aspettare i clienti. È un'area dedicata a loro per svolgere il loro lavoro.",
         "regola": "Segnale TAXI = Sosta TAXI.",
         "trabocchetti": ["in servizio"],
@@ -861,6 +969,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area di sosta ad uso esclusivo dei taxi in servizio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta esclusiva taxi?",
         "spiegazione": "Sì, è vero. 'Esclusivo' significa che solo i taxi possono usare quest'area per la sosta. Nessun altro veicolo può fermarsi lì, per lasciare spazio ai taxi che lavorano.",
         "regola": "TAXI = Solo TAXI.",
         "trabocchetti": ["ad uso esclusivo"],
@@ -869,6 +978,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un parcheggio riservato ai taxi in servizio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → parcheggio riservato taxi?",
         "spiegazione": "'Parcheggio riservato' è un altro modo per dire 'area di sosta ad uso esclusivo'. Significa che lo spazio è messo da parte solo per i taxi che stanno lavorando e aspettano i clienti.",
         "regola": "TAXI = Parcheggio loro.",
         "trabocchetti": ["riservato"],
@@ -877,6 +987,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area contrassegnata da strisce gialle con la scritta TAXI",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strisce gialle con TAXI?",
         "spiegazione": "Spesso, le aree di sosta per i taxi sono indicate non solo dal segnale, ma anche da strisce gialle dipinte sull'asfalto e dalla scritta 'TAXI' per terra. Il segnale conferma quello che vedi a terra.",
         "regola": "Segnale + Strisce Gialle = Area Taxi.",
         "trabocchetti": ["contrassegnata da strisce gialle"],
@@ -885,6 +996,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un divieto di sorpasso ai taxi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di sorpasso ai taxi?",
         "spiegazione": "Questo segnale non ha nulla a che fare con il sorpasso. Indica solo un'area dove i taxi possono fermarsi. Un divieto di sorpasso ha un altro tipo di segnale (rotondo, rosso con due auto).",
         "regola": "Segnale TAXI = Sosta, non divieto.",
         "trabocchetti": ["divieto di sorpasso"],
@@ -893,6 +1005,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada vietata ai taxi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada vietata ai taxi?",
         "spiegazione": "Al contrario! Questo segnale indica un'area *per* i taxi, non una strada dove non possono andare. Se una strada fosse vietata ai taxi, ci sarebbe un segnale rotondo rosso con l'immagine di un taxi barrato.",
         "regola": "TAXI = Benvenuti, non vietati.",
         "trabocchetti": ["vietata ai taxi"],
@@ -901,6 +1014,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza nelle vicinanze di un apparecchio per chiamare un taxi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → colonnina per chiamare taxi?",
         "spiegazione": "Questo segnale indica dove i taxi *sono* o possono fermarsi, non dove puoi chiamarli. Non è una cabina telefonica o un punto di chiamata per prenotare un taxi.",
         "regola": "Segnale TAXI = Vedo il taxi, non lo chiamo.",
         "trabocchetti": ["apparecchio per chiamare un taxi"],
@@ -909,6 +1023,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di una stazione radio per taxi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → radio taxi?",
         "spiegazione": "No, questo segnale non indica una stazione radio. Indica un'area di sosta per i taxi. Una stazione radio è un luogo dove i taxi comunicano tra loro, non dove si fermano per i clienti.",
         "regola": "Segnale TAXI = Sosta, non radio.",
         "trabocchetti": ["stazione radio per taxi"],
@@ -917,6 +1032,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è dotato di luce propria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → luce propria?",
         "spiegazione": "Questo segnale è un normale cartello stradale. Non ha una luce interna che lo illumina. Di notte, viene illuminato dai fari delle auto o dall'illuminazione pubblica, oppure è fatto con materiale riflettente.",
         "regola": "Segnale TAXI = Riflette, non brilla.",
         "trabocchetti": ["dotato di luce propria"],
@@ -925,6 +1041,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un garage riservato ai taxi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → garage taxi?",
         "spiegazione": "Un garage è un luogo chiuso dove si riparano o si tengono le auto. Questo segnale indica un'area di sosta *all'aperto* per i taxi, dove aspettano i clienti. Non è un garage.",
         "regola": "Segnale TAXI = Fuori, non dentro.",
         "trabocchetti": ["garage riservato"],
@@ -933,6 +1050,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un preavviso di deviazione temporanea",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → preavviso di deviazione temporanea?",
         "spiegazione": "Questo segnale è giallo, e i segnali gialli indicano sempre situazioni temporanee, come i lavori. La freccia mostra un percorso diverso da quello dritto, quindi è una deviazione. È un 'preavviso' perché ti avvisa prima che la deviazione inizi, così puoi prepararti.",
         "regola": "Giallo = temporaneo. Freccia curva = deviazione.",
         "trabocchetti": ["temporanea", "Preavviso"],
@@ -941,6 +1059,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa l'interruzione di una strada per lavori in corso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada interrotta per lavori?",
         "spiegazione": "Sì, il segnale ti avvisa che la strada normale è bloccata (interrotta) e devi seguire un percorso diverso. La piccola icona triangolare con l'omino e la pala conferma che ci sono 'lavori in corso' che causano l'interruzione.",
         "regola": "Simbolo lavori + deviazione = strada bloccata.",
         "trabocchetti": ["interruzione"],
@@ -949,6 +1068,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato fa parte dei segnali temporanei per lavori sulla strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → segnali temporanei per lavori?",
         "spiegazione": "Esatto, il colore giallo è il colore tipico dei segnali temporanei. Questi segnali vengono usati quando ci sono lavori o altre situazioni che cambiano la circolazione per un periodo limitato di tempo.",
         "regola": "Giallo = lavori, temporaneo.",
         "trabocchetti": ["temporanei"],
@@ -957,6 +1077,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica nella parte inferiore la lunghezza della deviazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → lunghezza della deviazione in basso?",
         "spiegazione": "La parte inferiore bianca con '2 km' e le due frecce che puntano verso l'alto (una a sinistra e una a destra del numero) indica la lunghezza del tratto di strada deviato, cioè quanto sarà lungo il percorso alternativo che dovrai percorrere.",
         "regola": "Frecce laterali + km = lunghezza deviazione.",
         "trabocchetti": ["lunghezza della deviazione"],
@@ -965,6 +1086,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è assolutamente possibile raggiungere Novara",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → Novara irraggiungibile?",
         "spiegazione": "Falso! Il segnale ti dice che per raggiungere Novara devi seguire la deviazione, non che non puoi arrivarci. Ti mostra solo un percorso alternativo per continuare il tuo viaggio verso quella destinazione.",
         "regola": "Novara si raggiunge, ma con deviazione.",
         "trabocchetti": ["assolutamente"],
@@ -973,6 +1095,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a tornare indietro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di tornare indietro?",
         "spiegazione": "No, il segnale non ti obbliga a tornare indietro. Ti indica un percorso alternativo per continuare il tuo viaggio nella direzione desiderata, in questo caso verso Novara.",
         "regola": "Freccia avanti = non si torna indietro.",
         "trabocchetti": ["obbliga a tornare indietro"],
@@ -981,6 +1104,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una piazzola di sosta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → piazzola di sosta?",
         "spiegazione": "Assolutamente no. Questo segnale parla di una deviazione per lavori sulla strada. Non ha nulla a che fare con una 'piazzola di sosta', che è un'area dove fermarsi per riposare o per emergenza.",
         "regola": "Non è un parcheggio, è una deviazione.",
         "trabocchetti": ["piazzola di sosta"],
@@ -989,6 +1113,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la distanza da un'area di servizio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanza dall'area di servizio?",
         "spiegazione": "Falso. Il segnale non indica un'area di servizio (come un distributore di benzina o un'area di riposo). I '2 km' si riferiscono alla lunghezza del percorso deviato, non alla distanza da un servizio.",
         "regola": "Non è benzina, è deviazione.",
         "trabocchetti": ["area di servizio"],
@@ -997,6 +1122,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un cantiere di lavoro lungo 2 chilometri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cantiere lungo 2 km?",
         "spiegazione": "Attenzione! I '2 km' indicano la 'lunghezza della deviazione', cioè quanto è lungo il percorso alternativo che dovrai fare. Non è detto che il cantiere di lavoro sia lungo esattamente 2 km. Il cantiere potrebbe essere più corto o più lungo, ma la deviazione che devi percorrere è di 2 km.",
         "regola": "2 km = lunghezza deviazione, non cantiere.",
         "immagine": "0b7a3b30622aea9267f8.jpg",
@@ -1004,6 +1130,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto a 2 chilometri dal segnale di lavori in corso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → a 2 km dai lavori?",
         "spiegazione": "Falso. Il segnale con le frecce laterali e '2 km' indica la 'lunghezza della deviazione', non la distanza dal punto in cui iniziano i lavori o dal segnale successivo. Se fosse la distanza all'inizio della deviazione, non ci sarebbero le frecce laterali, ma solo la distanza sotto la freccia principale.",
         "regola": "Frecce laterali = lunghezza, non distanza.",
         "immagine": "0b7a3b30622aea9267f8.jpg",
@@ -1011,6 +1138,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la deviazione si trova a 2 chilometri di distanza dal segnale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → deviazione a 2 km?",
         "spiegazione": "No, è falso. Come detto prima, i '2 km' con le frecce laterali indicano la 'lunghezza totale della deviazione' che dovrai percorrere. Se avesse indicato la distanza all'inizio della deviazione, non ci sarebbero state le frecce laterali, ma solo la distanza sotto la freccia principale.",
         "regola": "Frecce laterali = lunghezza, non distanza.",
         "trabocchetti": ["si trova a 2 chilometri di distanza"],
@@ -1019,6 +1147,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un incrocio urbano",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio urbano?",
         "spiegazione": "Il segnale è di colore bianco, e i segnali bianchi di solito si trovano all'interno delle città o dei paesi, cioè in un contesto urbano. Questo segnale ti avvisa che stai per arrivare a un incrocio dove potrai scegliere la direzione.",
         "regola": "Sfondo bianco = incrocio in città.",
         "trabocchetti": ["urbano"],
@@ -1027,6 +1156,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato riporta i nomi dei luoghi raggiungibili dall'incrocio urbano",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → luoghi raggiungibili dall'incrocio?",
         "spiegazione": "Sì, il segnale ti mostra chiaramente i nomi delle destinazioni che puoi raggiungere: andando dritto puoi andare a Sora e Napoli, mentre svoltando a destra puoi raggiungere il centro della città e la stazione.",
         "regola": "Il segnale ti dice 'dove puoi andare'.",
         "trabocchetti": ["Riporta i nomi dei luoghi"],
@@ -1035,6 +1165,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa la svolta a destra per raggiungere la stazione ferroviaria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → a destra per la stazione?",
         "spiegazione": "L'indicazione 'stazione' con il simbolo del treno è posizionata vicino alla freccia che indica di svoltare a destra. Questo significa che per arrivare alla stazione ferroviaria devi girare a destra all'incrocio.",
         "regola": "Freccia destra = stazione.",
         "trabocchetti": ["Stazione ferroviaria"],
@@ -1043,6 +1174,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa la svolta a destra per raggiungere il centro della città",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → a destra per il centro?",
         "spiegazione": "Anche la parola 'centro' con il simbolo del cerchio è allineata con la freccia che indica di svoltare a destra. Quindi, per raggiungere il centro della città, devi girare a destra.",
         "regola": "Freccia destra = centro.",
         "trabocchetti": ["Centro della città"],
@@ -1051,6 +1183,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica di proseguire diritto per raggiungere Sora",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto per Sora?",
         "spiegazione": "Le destinazioni 'Sora' e 'Napoli' si trovano nel riquadro blu, che è posizionato sopra la freccia che indica di proseguire dritto. Quindi, per andare a Sora, devi continuare dritto.",
         "regola": "Freccia dritta = Sora.",
         "trabocchetti": ["Proseguire diritto"],
@@ -1059,6 +1192,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa di proseguire diritto per raggiungere Napoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto per Napoli?",
         "spiegazione": "Come per Sora, anche la destinazione 'Napoli' si trova nel riquadro blu, associato alla freccia che indica di proseguire dritto. Perciò, per raggiungere Napoli, devi andare dritto.",
         "regola": "Freccia dritta = Napoli.",
         "trabocchetti": ["Preavvisa"],
@@ -1067,6 +1201,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova su strade extraurbane",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → su strade extraurbane?",
         "spiegazione": "Questo segnale ha lo sfondo bianco. I segnali con sfondo bianco si trovano nelle città o nei paesi (strade urbane). I segnali con sfondo blu, invece, si trovano fuori città (strade extraurbane o autostrade).",
         "regola": "Sfondo bianco = urbano, Sfondo blu = extraurbano.",
         "trabocchetti": ["extraurbane"],
@@ -1075,6 +1210,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica di svoltare a destra per uscire dal centro abitato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → a destra per uscire dal centro?",
         "spiegazione": "Svoltando a destra, il segnale indica che si va verso il 'centro' e la 'stazione', che sono luoghi tipicamente all'interno di un centro abitato, non per uscirne. Per uscire dalla città, di solito si seguono le indicazioni per altre città o per l'autostrada, che in questo caso sono indicate andando dritto.",
         "regola": "Destra = dentro la città, non fuori.",
         "trabocchetti": ["Uscire dal centro abitato", "Centro"],
@@ -1083,6 +1219,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che per raggiungere il centro della città bisogna tornare indietro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tornare indietro per il centro?",
         "spiegazione": "Il segnale mostra due possibili direzioni: dritto o a destra. Non c'è nessuna freccia che indica di tornare indietro o di fare inversione di marcia.",
         "regola": "Nessuna freccia indietro = non si torna indietro.",
         "trabocchetti": ["Tornare indietro"],
@@ -1091,6 +1228,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un'area di sosta a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area di sosta a destra?",
         "spiegazione": "Svoltando a destra si raggiungono il 'centro' e la 'stazione'. Non c'è nessun simbolo (come una 'P' per parcheggio o un simbolo di area di servizio) che indichi la presenza di un'area di sosta.",
         "regola": "Nessun simbolo P = non è area di sosta.",
         "trabocchetti": ["area di sosta"],
@@ -1099,6 +1237,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa a destra un passaggio a livello senza barriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passaggio a livello a destra?",
         "spiegazione": "A destra si trova la 'stazione', ma il segnale non indica la presenza di un passaggio a livello, e tantomeno specifica che sia 'senza barriere'. Il simbolo del treno indica solo la destinazione 'stazione'.",
         "regola": "Simbolo treno = stazione, non passaggio a livello.",
         "trabocchetti": ["passaggio a livello senza barriere"],
@@ -1107,6 +1246,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa due incroci vicini",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → due incroci vicini?",
         "spiegazione": "Questo segnale ti informa in anticipo che ci sono due incroci uno dopo l'altro. Le frecce separate, una in basso e due in alto, indicano proprio questo: la freccia in basso si riferisce al primo incrocio, quelle in alto al secondo.",
         "regola": "Frecce separate = due incroci.",
         "trabocchetti": ["preavvisa", "Due incroci vicini"],
@@ -1115,6 +1255,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è possibile svoltare a sinistra al primo incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → al primo incrocio niente sinistra?",
         "spiegazione": "Guarda la freccia in basso a sinistra: c'è un segnale di 'divieto di accesso' (il cerchio rosso con la barra bianca). Questo significa che non puoi svoltare a sinistra al primo incrocio.",
         "regola": "Cerchio rosso con barra + freccia = divieto.",
         "trabocchetti": ["non è possibile svoltare a sinistra"],
@@ -1123,6 +1264,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa di svoltare a sinistra per l'ospedale al secondo incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → ospedale a sinistra al secondo incrocio?",
         "spiegazione": "Osserva la parte in alto a sinistra del segnale. C'è l'indicazione 'ospedale' con una freccia che punta a sinistra. Questa freccia si riferisce al secondo incrocio.",
         "regola": "Ospedale a sinistra, freccia in alto = secondo incrocio.",
         "trabocchetti": ["Preavvisa", "Svoltare a sinistra per l"],
@@ -1131,6 +1273,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa di svoltare a destra per via Gemona al primo incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → via Gemona a destra al primo incrocio?",
         "spiegazione": "Nella parte in basso a destra del segnale, vedi 'via Gemona' con una freccia che punta a destra. Questa freccia si riferisce al primo incrocio che incontrerai.",
         "regola": "Via Gemona a destra, freccia in basso = primo incrocio.",
         "trabocchetti": ["Preavvisa"],
@@ -1139,6 +1282,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa di svoltare a destra per il centro della città al secondo incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → centro a destra al secondo incrocio?",
         "spiegazione": "Guarda la parte in alto a destra del segnale. C'è il simbolo del 'centro' della città con una freccia che punta a destra. Questa direzione è per il secondo incrocio.",
         "regola": "Centro a destra, freccia in alto = secondo incrocio.",
         "trabocchetti": ["Preavvisa"],
@@ -1147,6 +1291,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa di svoltare a destra in direzione Trieste al secondo incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → Trieste a destra al secondo incrocio?",
         "spiegazione": "Nella parte in alto a destra del segnale, trovi 'Trieste' (e altre città) con una freccia che punta a destra. Questa direzione è per il secondo incrocio.",
         "regola": "Trieste a destra, freccia in alto = secondo incrocio.",
         "trabocchetti": ["Preavvisa"],
@@ -1155,6 +1300,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che bisogna svoltare a sinistra al secondo incrocio per raggiungere l'Austria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → Austria a sinistra al secondo incrocio?",
         "spiegazione": "Nella parte in alto a sinistra del segnale, c'è 'Austria' (e altre città) con una freccia che punta a sinistra. Questa direzione è per il secondo incrocio.",
         "regola": "Austria a sinistra, freccia in alto = secondo incrocio.",
         "trabocchetti": ["Austria"],
@@ -1163,6 +1309,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica due incroci vicini su strada urbana",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → due incroci vicini in città?",
         "spiegazione": "Il segnale ha lo sfondo bianco. I segnali con sfondo bianco si trovano sempre nelle strade urbane, cioè in città. Le frecce separate indicano due incroci vicini.",
         "regola": "Sfondo bianco = strada urbana (in città).",
         "trabocchetti": ["due incroci vicini", "urbana"],
@@ -1171,6 +1318,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova su strade extraurbane",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → su strade extraurbane?",
         "spiegazione": "FALSO. Il segnale ha lo sfondo bianco. I segnali con sfondo bianco si trovano nelle strade urbane (in città). I segnali per le strade extraurbane (fuori città) di solito hanno lo sfondo blu.",
         "regola": "Bianco = urbano, Blu = extraurbano.",
         "trabocchetti": ["extraurbane"],
@@ -1179,6 +1327,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica come lasciare in sosta i veicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → come parcheggiare?",
         "spiegazione": "FALSO. Questo segnale serve a darti indicazioni su dove andare (le direzioni agli incroci). Non ti dice nulla su come o dove parcheggiare o fare la sosta con il tuo veicolo.",
         "regola": "Segnale direzionale, non di sosta.",
         "trabocchetti": ["come lasciare in sosta i veicoli"],
@@ -1187,6 +1336,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica ai veicoli diretti in Austria di tornare indietro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → per l'Austria tornare indietro?",
         "spiegazione": "FALSO. Il segnale indica chiaramente di svoltare a sinistra al secondo incrocio per andare in Austria. Non c'è nessuna indicazione di tornare indietro. Il divieto di accesso è solo per la svolta a sinistra al primo incrocio.",
         "regola": "Freccia = direzione, non inversione.",
         "trabocchetti": ["tornare indietro"],
@@ -1195,6 +1345,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di svoltare a sinistra al primo incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → a sinistra al primo incrocio consentito?",
         "spiegazione": "FALSO. Guarda la freccia in basso a sinistra: c'è un segnale di 'divieto di accesso' (il cerchio rosso con la barra bianca) proprio lì. Questo significa che non è permesso svoltare a sinistra al primo incrocio.",
         "regola": "Cerchio rosso con barra = divieto.",
         "trabocchetti": ["consente"],
@@ -1203,6 +1354,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica come uscire da un centro commerciale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → uscita da centro commerciale?",
         "spiegazione": "FALSO. Questo è un segnale stradale che ti dà indicazioni per raggiungere luoghi come città, ospedali o vie. Non ha nulla a che fare con l'uscita da un centro commerciale.",
         "regola": "Segnale stradale, non commerciale.",
         "trabocchetti": ["uscire da un centro commerciale"],
@@ -1211,6 +1363,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia le direzioni per l'ingresso in autostrada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → direzioni per l'autostrada?",
         "spiegazione": "FALSO. I segnali che indicano le direzioni per l'autostrada sono di colore verde. Questo segnale è bianco, quindi si riferisce a strade urbane e non all'ingresso in autostrada.",
         "regola": "Autostrada = verde.",
         "trabocchetti": ["ingresso in autostrada"],
@@ -1219,6 +1372,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un preavviso di incrocio urbano con circolazione rotatoria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → preavviso di rotatoria urbana?",
         "spiegazione": "Il segnale mostra una rotatoria e indica direzioni per luoghi urbani (Bologna centro, quartiere Mazzini) e anche per la tangenziale/autostrade, tipico di un incrocio in città o nelle sue vicinanze. È un 'preavviso' perché ti informa prima di arrivare all'incrocio.",
         "regola": "Rotatoria + nomi città = Preavviso urbano.",
         "trabocchetti": ["preavviso"],
@@ -1227,6 +1381,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa di svoltare alla prima traversa a destra per andare a Forlì",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima a destra per Forlì?",
         "spiegazione": "Guardando il segnale, l'indicazione per 'FORLI'' si trova sulla destra, associata all'uscita a destra della rotatoria. Se consideriamo l'ingresso nella rotatoria, la prima uscita a destra porta a Forlì.",
         "regola": "Forlì è a destra.",
         "trabocchetti": ["prima traversa a destra"],
@@ -1235,6 +1390,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa di svoltare alla seconda traversa per raggiungere la tangenziale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → seconda traversa per la tangenziale?",
         "spiegazione": "Entrando nella rotatoria, la prima uscita a destra è per S. Lazzaro/Forlì. La seconda uscita, andando dritto, è per la 'tangenziale autostrade'.",
         "regola": "Tangenziale = dritto (seconda uscita).",
         "trabocchetti": ["seconda traversa"],
@@ -1243,6 +1399,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato contiene lo schema della rotatoria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → schema della rotatoria?",
         "spiegazione": "Al centro del segnale c'è un simbolo che rappresenta chiaramente una rotatoria, con le frecce che indicano le direzioni delle uscite.",
         "regola": "Il disegno centrale è la rotatoria.",
         "trabocchetti": ["schema"],
@@ -1251,6 +1408,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato riporta i nomi delle località raggiungibili",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → località raggiungibili?",
         "spiegazione": "Il segnale mostra chiaramente nomi come 'quartiere Mazzini', 'BOLOGNA centro', 'S. LAZZARO', 'FORLI'', che sono tutte località o direzioni raggiungibili.",
         "regola": "Nomi scritti = destinazioni.",
         "trabocchetti": ["località raggiungibili"],
@@ -1259,6 +1417,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada interrotta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada interrotta?",
         "spiegazione": "Questo segnale è un preavviso di incrocio con rotatoria, non indica affatto che una strada è interrotta. Al contrario, mostra le direzioni per continuare il viaggio.",
         "regola": "Non è un blocco, è una scelta.",
         "trabocchetti": ["interrotta"],
@@ -1267,6 +1426,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un'area pedonale con verde pubblico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area pedonale con verde?",
         "spiegazione": "Il segnale è un'indicazione stradale per veicoli, non ha nulla a che fare con aree pedonali o parchi. Non ci sono simboli che indichino pedoni o verde pubblico.",
         "regola": "Non ci sono omini o alberi.",
         "trabocchetti": ["area pedonale", "verde pubblico"],
@@ -1275,6 +1435,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un divieto di transito agli autoveicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto per autoveicoli?",
         "spiegazione": "Questo segnale serve proprio a guidare gli autoveicoli verso le diverse destinazioni, non a vietare loro il transito. Non c'è nessun simbolo di divieto.",
         "regola": "Non è rosso e barrato.",
         "trabocchetti": ["divieto di transito"],
@@ -1283,6 +1444,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova su strade extraurbane",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → su strade extraurbane?",
         "spiegazione": "Il segnale indica 'BOLOGNA centro' e 'quartiere Mazzini', che sono destinazioni urbane. Anche se indica tangenziale e autostrade, la presenza di destinazioni urbane lo rende tipico di un contesto urbano o immediatamente periferico, non esclusivamente extraurbano. I segnali di preavviso di incrocio urbano sono bianchi.",
         "regola": "Bologna centro = città.",
         "trabocchetti": ["extraurbane"],
@@ -1291,6 +1453,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale solo nelle ore notturne",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo di notte?",
         "spiegazione": "I segnali stradali sono validi 24 ore su 24, a meno che non ci siano indicazioni specifiche (come pannelli integrativi con orari). Questo segnale non ha alcuna limitazione oraria.",
         "regola": "Segnali = sempre validi (salvo eccezioni).",
         "trabocchetti": ["solo nelle ore notturne"],
@@ -1299,6 +1462,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un preavviso di incrocio urbano",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → preavviso di incrocio urbano?",
         "spiegazione": "Questo segnale ti avvisa che stai per arrivare a un incrocio. Il fatto che indichi 'Avezzano centro' e abbia uno sfondo bianco (tipico delle strade urbane o extraurbane secondarie) conferma che è un preavviso di incrocio urbano o comunque in prossimità di un centro abitato.",
         "regola": "Bianco = città o vicino. Preavviso = ti dice prima.",
         "trabocchetti": ["Preavviso"],
@@ -1307,6 +1471,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta agli autocarri di massa a pieno carico superiore a 3,5 tonnellate di proseguire diritto per Avezzano",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarri oltre 3,5 t non diritto per Avezzano?",
         "spiegazione": "Sulla freccia che indica di proseguire diritto (verso Pescara e Avezzano), c'è un segnale rotondo rosso con un camion. Questo segnale significa 'Divieto di transito per veicoli con massa a pieno carico superiore a 3,5 tonnellate'. Quindi, gli autocarri pesanti non possono andare diritto per Avezzano.",
         "regola": "Camion rosso = divieto per camion pesanti.",
         "trabocchetti": ["Proseguire diritto"],
@@ -1315,6 +1480,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente alle autovetture di proseguire diritto per Pescara",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → auto diritto per Pescara?",
         "spiegazione": "Il divieto con il simbolo del camion si applica solo agli autocarri pesanti. Le autovetture non sono autocarri e quindi non sono soggette a questo divieto. Possono tranquillamente proseguire diritto per Pescara, come indicato dalla freccia.",
         "regola": "Divieto specifico = non vale per tutti.",
         "trabocchetti": ["Consente", "autovetture"],
@@ -1323,6 +1489,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa di svoltare a sinistra per raggiungere l'autostrada Roma-L'Aquila",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → a sinistra per l'autostrada Roma-L'Aquila?",
         "spiegazione": "La freccia che punta a sinistra indica la direzione per l'autostrada 'A24 ROMA - L'AQUILA'. Il pannello verde con la sigla 'A24' conferma che si tratta di un'autostrada. Quindi, per raggiungere l'autostrada, devi svoltare a sinistra.",
         "regola": "Freccia sinistra + verde = autostrada a sinistra.",
         "trabocchetti": ["Preavvisa di svoltare"],
@@ -1331,6 +1498,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta agli autocarri di massa a pieno carico superiore a 3,5 tonnellate di continuare diritto per raggiungere il centro urbano",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarri oltre 3,5 t non verso il centro?",
         "spiegazione": "La direzione diritto porta a 'AVEZZANO centro'. Poiché c'è il divieto per gli autocarri di massa a pieno carico superiore a 3,5 tonnellate di proseguire diritto, questi veicoli non possono raggiungere il centro urbano di Avezzano seguendo quella direzione.",
         "regola": "Divieto camion = vale per tutte le destinazioni di quella direzione.",
         "trabocchetti": ["Centro urbano", "centro"],
@@ -1339,6 +1507,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta anche agli autobus di raggiungere Avezzano",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato anche agli autobus per Avezzano?",
         "spiegazione": "Il segnale di divieto è specifico per gli 'autocarri di massa a pieno carico superiore a 3,5 tonnellate'. Gli autobus sono veicoli per il trasporto di persone e non rientrano nella categoria degli autocarri. Pertanto, gli autobus non sono soggetti a questo divieto e possono raggiungere Avezzano andando diritto.",
         "regola": "Camion non è autobus.",
         "trabocchetti": ["Anche agli autobus", "autobus"],
@@ -1347,6 +1516,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova solo su strade a senso unico di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo su strade a senso unico?",
         "spiegazione": "Questo tipo di segnale di preavviso di incrocio può essere installato su qualsiasi tipo di strada, sia a senso unico che a doppio senso di circolazione, prima di un incrocio. Non è limitato 'solo' alle strade a senso unico.",
         "regola": "'Solo' è quasi sempre FALSO.",
         "trabocchetti": ["solo"],
@@ -1355,6 +1525,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova all'ingresso di un'autostrada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ingresso autostrada?",
         "spiegazione": "Il segnale è un preavviso di incrocio che indica come raggiungere un'autostrada (A24). Non si trova 'all'ingresso' dell'autostrada, ma su una strada normale, prima dell'accesso all'autostrada. I segnali all'ingresso dell'autostrada sono diversi (es. inizio autostrada, casello).",
         "regola": "Preavviso = prima, non dentro.",
         "trabocchetti": ["All", "autostrada"],
@@ -1363,6 +1534,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la corsia centrale è chiusa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia centrale chiusa?",
         "spiegazione": "Il segnale mostra le direzioni disponibili all'incrocio, non indica che una corsia è chiusa. La freccia diritta è una direzione di marcia. Il divieto per i camion non significa che la corsia è chiusa, ma che alcuni veicoli non possono usarla per quella specifica direzione.",
         "regola": "Freccia = direzione, non chiusura.",
         "trabocchetti": ["Corsia centrale è chiusa"],
@@ -1371,6 +1543,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato fa parte dei segnali di precedenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di precedenza?",
         "spiegazione": "Questo segnale è un segnale di indicazione, in particolare un preavviso di incrocio. I segnali di precedenza sono una categoria diversa (es. 'Dare precedenza', 'Stop', 'Diritto di precedenza') e hanno forme e colori specifici per regolare chi deve passare per primo.",
         "regola": "Indicazione non è precedenza.",
         "trabocchetti": ["Segnali di precedenza"],
@@ -1379,6 +1552,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un incrocio su strada extraurbana",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio extraurbano?",
         "spiegazione": "VERO. Questo segnale è di colore blu, e i segnali blu con indicazioni di località si trovano sulle strade fuori città, cioè extraurbane. Ti avvisa in anticipo (preavvisa) che stai per arrivare a un incrocio.",
         "regola": "Blu = fuori città, preavviso = prima.",
         "trabocchetti": ["preavvisa"],
@@ -1387,6 +1561,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di un passaggio a livello svoltando a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passaggio a livello a destra?",
         "spiegazione": "VERO. Se guardi la freccia che indica di svoltare a destra verso 'S. GIOVANNI', c'è un piccolo segnale triangolare di pericolo. Quel segnale indica un passaggio a livello senza barriere, cioè un incrocio con la ferrovia dove non ci sono le sbarre.",
         "regola": "Triangolo rosso a destra = treno senza sbarre.",
         "trabocchetti": ["passaggio a livello", "svoltando a destra"],
@@ -1395,6 +1570,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa di proseguire diritto per raggiungere Porto Torres",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto per Porto Torres?",
         "spiegazione": "VERO. La freccia che va dritta, cioè in avanti, indica la località 'PORTO TORRES'. Quindi, per raggiungere Porto Torres, devi continuare dritto.",
         "regola": "Freccia dritta = Porto Torres.",
         "trabocchetti": ["proseguire diritto"],
@@ -1403,6 +1579,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa di svoltare a sinistra per una località turistica",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → a sinistra per località turistica?",
         "spiegazione": "VERO. La freccia che indica di svoltare a sinistra punta verso 'nuraghe Speranza'. Il cartello marrone con scritto 'nuraghe Speranza' indica una località di interesse turistico o culturale, come un monumento o un sito archeologico.",
         "regola": "Cartello marrone a sinistra = turismo.",
         "trabocchetti": ["località turistica"],
@@ -1411,6 +1588,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa di svoltare a destra per S. Giovanni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → a destra per S. Giovanni?",
         "spiegazione": "VERO. La freccia che indica di svoltare a destra ha scritto sotto 'S. GIOVANNI'. Questo significa che per andare a S. Giovanni devi girare a destra all'incrocio.",
         "regola": "Freccia destra = S. Giovanni.",
         "immagine": "31dee3ca3c305f04347e.jpg",
@@ -1418,6 +1596,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un pericolo per chi svolta a destra per il possibile attraversamento di treni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → treni svoltando a destra?",
         "spiegazione": "VERO. Il piccolo segnale triangolare con il treno, che si trova sulla freccia per S. Giovanni (a destra), è un segnale di pericolo. Indica un passaggio a livello senza barriere, quindi c'è il rischio di incontrare un treno.",
         "regola": "Triangolo a destra = attenzione al treno.",
         "trabocchetti": ["pericolo", "attraversamento di treni"],
@@ -1426,6 +1605,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova dopo un incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → dopo un incrocio?",
         "spiegazione": "FALSO. Questo è un segnale di 'preavviso' di incrocio. 'Preavviso' significa che ti avvisa PRIMA di arrivare all'incrocio, per darti il tempo di scegliere la direzione. Non si trova dopo l'incrocio.",
         "regola": "Preavviso = prima, non dopo.",
         "trabocchetti": ["dopo un incrocio"],
@@ -1434,6 +1614,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una stazione balneare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → stazione balneare a sinistra?",
         "spiegazione": "FALSO. A sinistra è indicato 'nuraghe Speranza'. Un nuraghe è un'antica costruzione tipica della Sardegna, quindi è una località storico-culturale, non una 'stazione balneare' (cioè una località di mare o spiaggia).",
         "regola": "Nuraghe = storia, non spiaggia.",
         "trabocchetti": ["stazione balneare"],
@@ -1442,6 +1623,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato fa parte dei segnali di obbligo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di obbligo?",
         "spiegazione": "FALSO. I segnali di obbligo sono rotondi e di colore blu con un simbolo bianco (per esempio, 'direzione obbligatoria'). Questo segnale è rettangolare e blu, e fa parte dei segnali di indicazione, che ti danno informazioni sulle direzioni e le località.",
         "regola": "Obbligo = rotondo blu. Questo è rettangolare blu = indicazione.",
         "trabocchetti": ["segnali di obbligo"],
@@ -1450,6 +1632,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è possibile raggiungere S. Giovanni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → S. Giovanni irraggiungibile?",
         "spiegazione": "FALSO. Il segnale indica chiaramente che per raggiungere S. Giovanni devi svoltare a destra. Quindi, è possibile raggiungerla, il segnale ti mostra proprio come fare.",
         "regola": "C'è la freccia = si può andare.",
         "trabocchetti": ["non è possibile"],
@@ -1458,6 +1641,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un incrocio urbano con zona residenziale a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → zona residenziale a sinistra?",
         "spiegazione": "FALSO. Il segnale è blu, quindi indica una strada extraurbana (fuori città), non 'urbana'. Inoltre, a sinistra c'è 'nuraghe Speranza', che è una località turistica/culturale, non una 'zona residenziale' (cioè un'area con case).",
         "regola": "Blu = extraurbano. Marrone = turismo, non case.",
         "trabocchetti": ["urbano", "zona residenziale"],
@@ -1466,6 +1650,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su strade extraurbane suddivise in due corsie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → extraurbane a due corsie?",
         "spiegazione": "Questo segnale si trova spesso fuori dalle città, sulle strade extraurbane. Serve a indicare ai guidatori quale corsia prendere per andare verso una certa destinazione. La linea tratteggiata al centro del segnale mostra che ci sono due corsie distinte.",
         "regola": "Segnale blu con frecce e nomi = strade extraurbane con corsie separate.",
         "trabocchetti": ["suddivise in due corsie"],
@@ -1474,6 +1659,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa una zona di preselezione con due destinazioni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → preselezione con due destinazioni?",
         "spiegazione": "Questo segnale ti avvisa in anticipo che stai per arrivare a un punto dove devi scegliere la corsia giusta per la tua destinazione. Ci sono due destinazioni indicate: Bari e Pescara, ognuna con la sua freccia.",
         "regola": "Preavviso + destinazioni = scegli la corsia in anticipo.",
         "trabocchetti": ["preavvisa", "Zona di preselezione"],
@@ -1482,6 +1668,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica al conducente diretto a Bari di spostarsi sulla corsia di sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → per Bari corsia di sinistra?",
         "spiegazione": "Se vuoi andare a Bari, devi prendere la corsia di sinistra, come mostra chiaramente la freccia sotto la scritta 'BARI' che indica una svolta a sinistra.",
         "regola": "Bari a sinistra = corsia sinistra.",
         "immagine": "eac2b5ae6b0b485dd2b2.jpg",
@@ -1489,6 +1676,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica al conducente diretto a Pescara di spostarsi sulla corsia di destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → per Pescara corsia di destra?",
         "spiegazione": "Se la tua destinazione è Pescara, devi usare la corsia di destra, come indicato dalla freccia che va dritto sotto la scritta 'PESCARA'.",
         "regola": "Pescara dritto = corsia destra.",
         "immagine": "eac2b5ae6b0b485dd2b2.jpg",
@@ -1496,6 +1684,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto dove è ancora possibile cambiare la corsia di canalizzazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → si può ancora cambiare corsia?",
         "spiegazione": "Questo segnale è un 'preavviso', quindi è posto prima del punto in cui le corsie diventano fisse (cioè separate da una linea continua). Questo significa che hai ancora tempo e spazio per spostarti nella corsia corretta.",
         "regola": "Preavviso = puoi ancora cambiare corsia.",
         "trabocchetti": ["ancora possibile cambiare"],
@@ -1504,6 +1693,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'obbligo di sorpassare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso a destra?",
         "spiegazione": "Questo segnale serve solo a indicare quale corsia prendere per andare verso una destinazione specifica. Non ha nulla a che fare con le regole di sorpasso, e in Italia il sorpasso a destra è generalmente vietato, salvo casi particolari.",
         "regola": "Frecce e nomi = destinazioni, non sorpasso.",
         "trabocchetti": ["obbligo di sorpassare a destra"],
@@ -1512,6 +1702,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada per Bari è interrotta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada per Bari interrotta?",
         "spiegazione": "Il segnale mostra come andare a Bari (girando a sinistra), non che la strada è chiusa o interrotta. Indica semplicemente una direzione.",
         "regola": "Freccia = direzione, non interruzione.",
         "trabocchetti": ["interrotta"],
@@ -1520,6 +1711,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa a destra un lungo rettilineo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → rettilineo a destra?",
         "spiegazione": "Il segnale indica che per Pescara si va dritto, ma non fornisce alcuna informazione sulla forma o la lunghezza della strada, quindi non dice se è un 'lungo rettilineo'.",
         "regola": "Destinazione, non descrizione strada.",
         "trabocchetti": ["lungo rettilineo"],
@@ -1528,6 +1720,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa a sinistra una curva pericolosa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → curva pericolosa a sinistra?",
         "spiegazione": "La freccia a sinistra indica di girare per Bari, ma non dice che la curva è pericolosa. I segnali di pericolo (come quelli per le curve pericolose) sono di forma triangolare e hanno un simbolo specifico.",
         "regola": "Freccia = direzione, non pericolo.",
         "trabocchetti": ["curva pericolosa"],
@@ -1536,6 +1729,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un obbligo di invertire il senso di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di inversione?",
         "spiegazione": "La freccia per Bari indica una svolta a sinistra, non un'inversione a U (cioè tornare indietro nella direzione opposta).",
         "regola": "Svolta a sinistra, non inversione.",
         "trabocchetti": ["invertire il senso di marcia"],
@@ -1544,6 +1738,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa a sinistra un cavalcavia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cavalcavia a sinistra?",
         "spiegazione": "Il segnale indica di girare a sinistra per Bari, ma non fornisce alcuna informazione sulla presenza di un cavalcavia o di altre strutture stradali.",
         "regola": "Destinazione, non struttura.",
         "trabocchetti": ["cavalcavia"],
@@ -1552,6 +1747,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su strade urbane",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su strade urbane?",
         "spiegazione": "Questo segnale ha il fondo bianco. I segnali con fondo bianco sono usati sulle strade urbane, cioè le strade che si trovano dentro le città.",
         "regola": "Bianco = Urbano.",
         "immagine": "cc828b98bbe269d4d523.jpg",
@@ -1559,6 +1755,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato nelle strade urbane a più corsie consente di immettersi nelle corsie di canalizzazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → immettersi nelle corsie di canalizzazione?",
         "spiegazione": "Questo segnale serve proprio a mostrare le diverse direzioni e le corsie da prendere (chiamate 'corsie di canalizzazione') prima di un incrocio, specialmente quando ci sono più corsie.",
         "regola": "Frecce = Scegli la corsia.",
         "trabocchetti": ["consente di immettersi"],
@@ -1567,6 +1764,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica ai conducenti diretti alla località turistica di immettersi nella corsia di mezzo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → località turistica corsia di mezzo?",
         "spiegazione": "Terminillo è una località turistica (lo capiamo dal colore marrone del riquadro). La freccia sotto 'Terminillo' indica di andare dritto, quindi devi prendere la corsia di mezzo.",
         "regola": "Marrone = Turismo, Dritto = Centro.",
         "trabocchetti": ["località turistica"],
@@ -1575,6 +1773,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica ai conducenti diretti a Terni di mettersi nella corsia di sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → Terni corsia di sinistra?",
         "spiegazione": "La scritta 'TERNI' si trova sopra la freccia che indica di svoltare a sinistra. Quindi, per andare a Terni, devi metterti nella corsia di sinistra.",
         "regola": "Terni = Sinistra.",
         "immagine": "cc828b98bbe269d4d523.jpg",
@@ -1582,6 +1781,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica ai conducenti diretti al centro della città di occupare la corsia di destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → centro corsia di destra?",
         "spiegazione": "La scritta 'centro' (con il simbolo del centro città) si trova sopra la freccia che indica di svoltare a destra. Quindi, per andare al centro della città, devi occupare la corsia di destra.",
         "regola": "Centro = Destra.",
         "trabocchetti": ["centro della città"],
@@ -1590,6 +1790,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un incrocio autostradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → incrocio autostradale?",
         "spiegazione": "Questo segnale ha il fondo bianco, il che significa che si trova su una strada urbana. I segnali che preavvisano un incrocio autostradale hanno il fondo verde.",
         "regola": "Bianco = Urbano, Verde = Autostrada.",
         "trabocchetti": ["autostradale"],
@@ -1598,6 +1799,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica come raggiungere un parcheggio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → come raggiungere il parcheggio?",
         "spiegazione": "Il segnale mostra le direzioni per diverse località e vie, ma non c'è nessun simbolo o indicazione per un parcheggio (che di solito è una 'P').",
         "regola": "No 'P' = No parcheggio.",
         "trabocchetti": ["parcheggio"],
@@ -1606,6 +1808,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che Terni si trova 500 metri dopo aver effettuato la svolta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → Terni a 500 m dopo la svolta?",
         "spiegazione": "Questo segnale ti dice solo quale direzione prendere all'incrocio. Non indica le distanze in metri delle località. Non ci sono numeri che indicano distanze.",
         "regola": "No numeri = No distanza.",
         "trabocchetti": ["500 metri"],
@@ -1614,6 +1817,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica nelle corsie laterali di invertire il senso di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inversione nelle corsie laterali?",
         "spiegazione": "Le frecce sul segnale indicano di svoltare a sinistra, andare dritto o svoltare a destra. Non c'è nessuna freccia a forma di 'U' che indichi di invertire il senso di marcia.",
         "regola": "No freccia a U = No inversione.",
         "trabocchetti": ["invertire il senso di marcia"],
@@ -1622,6 +1826,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada per Terni è interrotta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada per Terni interrotta?",
         "spiegazione": "Il segnale indica la direzione per Terni, non che la strada è chiusa o bloccata. Se la strada fosse interrotta, ci sarebbe un simbolo di strada sbarrata o un'indicazione di deviazione.",
         "regola": "Indica direzione, non blocco.",
         "trabocchetti": ["interrotta"],
@@ -1630,6 +1835,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è più possibile cambiare corsia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non più possibile cambiare corsia?",
         "spiegazione": "Questo segnale serve proprio a preavvisare le direzioni, permettendo ai conducenti di scegliere la corsia corretta in anticipo. Non vieta di cambiare corsia, anzi, ti aiuta a farlo prima dell'incrocio. Il divieto di cambiare corsia è indicato da una linea continua sull'asfalto.",
         "regola": "Preavviso = Scegli la corsia, non blocca.",
         "trabocchetti": ["non è più possibile cambiare corsia"],
@@ -1638,6 +1844,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'ingresso di un ospedale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → ingresso ospedale?",
         "spiegazione": "Il segnale mostra un letto e una croce rossa, che sono i simboli internazionali per indicare un ospedale o un pronto soccorso. La freccia indica la direzione per raggiungere l'ingresso.",
         "regola": "Letto + Croce Rossa = Ospedale.",
         "trabocchetti": ["ingresso"],
@@ -1646,6 +1853,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, che indica la vicinanza di un ospedale, invita a non fare rumori molesti nelle sue vicinanze",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → ospedale, niente rumori molesti?",
         "spiegazione": "È vero. Vicino a un ospedale ci sono persone malate che hanno bisogno di riposo e tranquillità. Per questo motivo, è buona educazione e rispetto non fare rumori forti o molesti nelle vicinanze.",
         "regola": "Ospedale = Silenzio e rispetto.",
         "immagine": "f08b50110e3f55639c58.jpg",
@@ -1653,6 +1861,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la direzione per entrare nell'ospedale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → direzione per entrare in ospedale?",
         "spiegazione": "Sì, è vero. La freccia nera sotto il simbolo dell'ospedale serve proprio a indicare la strada o la direzione che devi prendere per arrivare all'ingresso dell'ospedale.",
         "regola": "Freccia = Indica la strada.",
         "trabocchetti": ["direzione"],
@@ -1661,6 +1870,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un ospedale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → presso un ospedale?",
         "spiegazione": "Questo segnale viene messo sulla strada per informare i guidatori che un ospedale è vicino o che si sta per arrivare all'ingresso. Quindi, lo trovi proprio dove c'è l'ospedale o nelle sue immediate vicinanze.",
         "regola": "Segnale Ospedale = Ospedale vicino.",
         "trabocchetti": ["o"],
@@ -1669,6 +1879,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la vicinanza di un hotel",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → hotel?",
         "spiegazione": "No, è falso. Anche se c'è un letto, la presenza della croce rossa cambia completamente il significato. La croce rossa indica un luogo di cura e assistenza sanitaria, non un semplice albergo per dormire.",
         "regola": "Croce Rossa = Non è un hotel.",
         "trabocchetti": ["hotel"],
@@ -1677,6 +1888,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la vicinanza di una stazione ferroviaria con vagoni letto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → stazione con vagoni letto?",
         "spiegazione": "È falso. Non c'è nessun simbolo che richiami un treno o una stazione ferroviaria. Il letto è associato alla croce rossa per indicare un ospedale, non un vagone letto di un treno.",
         "regola": "No treno, no stazione.",
         "trabocchetti": ["stazione ferroviaria", "vagoni letto"],
@@ -1685,6 +1897,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un parcheggio riservato ai medici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio medici?",
         "spiegazione": "No, è falso. Il segnale indica la presenza di un ospedale, non un parcheggio. I segnali di parcheggio sono diversi e di solito hanno una 'P' bianca su sfondo blu.",
         "regola": "Non è una P = Non è un parcheggio.",
         "immagine": "f08b50110e3f55639c58.jpg",
@@ -1692,6 +1905,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un dormitorio pubblico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → dormitorio pubblico?",
         "spiegazione": "È falso. Un dormitorio pubblico è un luogo dove le persone possono dormire, spesso per beneficenza. La croce rossa indica un servizio sanitario, non un semplice luogo per dormire aperto a tutti.",
         "regola": "Croce Rossa = Cura, non solo dormire.",
         "trabocchetti": ["dormitorio pubblico"],
@@ -1700,6 +1914,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che per raggiungere Bologna bisogna proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → Bologna diritto?",
         "spiegazione": "Il segnale mostra chiaramente la scritta 'BOLOGNA' con una freccia che punta verso l'alto, cioè 'diritto'. Questo significa che per andare a Bologna devi continuare sulla tua strada, senza svoltare.",
         "regola": "Bologna = Freccia dritta.",
         "immagine": "938ff78307346f8ecae6.jpg",
@@ -1707,6 +1922,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa due determinate destinazioni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → due destinazioni?",
         "spiegazione": "Il segnale ti informa in anticipo (preavvisa) che puoi scegliere tra due direzioni: una per 'Bologna' (andando dritto) e l'altra per 'Linate' (girando a sinistra). Sono due destinazioni ben precise.",
         "regola": "Due frecce = Due scelte.",
         "trabocchetti": ["determinate destinazioni"],
@@ -1715,6 +1931,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa uno svincolo con svolta a sinistra per l'aeroporto di Linate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svincolo a sinistra per Linate?",
         "spiegazione": "Sulla parte sinistra del segnale vedi il simbolo di un aereo e la scritta 'Linate', con una freccia che indica di svoltare a sinistra. Questo ti dice che per l'aeroporto di Linate devi prendere la svolta a sinistra.",
         "regola": "Aereo + Linate + Freccia sinistra = Aeroporto a sinistra.",
         "immagine": "938ff78307346f8ecae6.jpg",
@@ -1722,6 +1939,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa uno svincolo autostradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svincolo autostradale?",
         "spiegazione": "Il segnale è di colore verde, che è il colore tipico dei segnali stradali sulle autostrade e sulle strade extraurbane principali. Inoltre, c'è la sigla 'A1', che è il nome di un'autostrada italiana. Quindi, il segnale ti avvisa di uno svincolo che si trova su un'autostrada.",
         "regola": "Verde + A1 = Autostrada.",
         "immagine": "938ff78307346f8ecae6.jpg",
@@ -1729,6 +1947,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa uno svincolo in cui si deve proseguire diritto per andare a Bologna",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svincolo, Bologna diritto?",
         "spiegazione": "Questo segnale ti avvisa che stai per arrivare a un incrocio (svincolo) dove, per raggiungere Bologna, devi continuare a guidare dritto, seguendo la freccia che punta in alto.",
         "regola": "Bologna = Sempre dritto.",
         "immagine": "938ff78307346f8ecae6.jpg",
@@ -1736,6 +1955,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova su strade extraurbane",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → su strade extraurbane?",
         "spiegazione": "Questo segnale, essendo verde e indicando un'autostrada (A1), si trova sulle autostrade o sulle strade extraurbane principali. Non si trova su *tutte* le strade extraurbane, ad esempio non sulle strade extraurbane secondarie. Quindi, dire che si trova 'su strade extraurbane' in generale è troppo generico e quindi falso.",
         "regola": "A1 = Autostrada, non 'extraurbana' generica.",
         "trabocchetti": ["su strade extraurbane"],
@@ -1744,6 +1964,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la svolta a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svolta a sinistra vietata?",
         "spiegazione": "Il segnale mostra chiaramente una freccia che indica di svoltare a sinistra per raggiungere Linate. Quindi, non vieta (non proibisce) la svolta a sinistra, ma anzi la permette per quella destinazione.",
         "regola": "Freccia sinistra = Permesso, non divieto.",
         "trabocchetti": ["vieta"],
@@ -1752,6 +1973,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che manca un chilometro per arrivare a Bologna",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → 1 km a Bologna?",
         "spiegazione": "Questo segnale è un 'preavviso di svincolo', serve per indicare le direzioni. Non c'è nessun numero o indicazione che dica quanti chilometri mancano per arrivare a Bologna. Per le distanze ci sono altri tipi di segnali.",
         "regola": "Nessun numero = Nessuna distanza.",
         "trabocchetti": ["manca un chilometro"],
@@ -1760,6 +1982,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a cambiare corsia per raggiungere Bologna",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cambiare corsia per Bologna?",
         "spiegazione": "Il segnale indica che per Bologna si prosegue dritto. Non ti obbliga a cambiare corsia. Se sei già nella corsia giusta per andare dritto, non devi fare nessun cambio. Indica solo la direzione.",
         "regola": "Freccia dritta = Direzione, non obbligo di cambio corsia.",
         "trabocchetti": ["obbliga a cambiare corsia"],
@@ -1768,6 +1991,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto all'ingresso di un aeroporto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ingresso aeroporto?",
         "spiegazione": "Il segnale ti avvisa di come raggiungere l'aeroporto di Linate, ma si trova sulla strada principale (autostrada), molto prima dell'ingresso vero e proprio dell'aeroporto. Serve a darti le indicazioni per arrivarci, non è all'ingresso.",
         "regola": "Preavviso = Prima, non all'ingresso.",
         "trabocchetti": ["all"],
@@ -1776,6 +2000,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un parco giochi sulla sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parco giochi a sinistra?",
         "spiegazione": "Il simbolo a sinistra è chiaramente un aereo, che indica un aeroporto (Linate). Non ha nulla a che fare con un parco giochi. I parchi giochi hanno simboli diversi.",
         "regola": "Aereo = Aeroporto, non parco giochi.",
         "trabocchetti": ["parco giochi"],
@@ -1784,6 +2009,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che per raggiungere Milano bisogna proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → Milano diritto?",
         "spiegazione": "Il cartello mostra una freccia che va dritta e sopra c'è scritto 'MILANO'. Questo significa che per andare a Milano devi continuare dritto.",
         "regola": "Freccia dritta = Milano dritta.",
         "immagine": "d6b09943daea6e598301.jpg",
@@ -1791,6 +2017,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica due determinate destinazioni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → due destinazioni?",
         "spiegazione": "Il cartello mostra due nomi di luoghi: 'MILANO' e 'centro'. Sono due posti diversi che puoi raggiungere, quindi due destinazioni.",
         "regola": "Due frecce = due destinazioni.",
         "trabocchetti": ["determinate"],
@@ -1799,6 +2026,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un incrocio con svolta a destra per il centro cittadino",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → centro a destra?",
         "spiegazione": "La freccia a destra indica 'centro' (con il simbolo del centro città). Questo cartello ti avvisa che più avanti c'è un incrocio dove puoi girare a destra per andare al centro.",
         "regola": "Freccia curva = svolta per destinazione.",
         "trabocchetti": ["preavvisa", "centro"],
@@ -1807,6 +2035,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare su strade urbane",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su strade urbane?",
         "spiegazione": "I cartelli bianchi come questo, che indicano le direzioni, sono comuni nelle città (strade urbane) e anche fuori città. Il simbolo del 'centro' è tipico delle città.",
         "regola": "Bianco = anche in città.",
         "trabocchetti": ["si può trovare"],
@@ -1815,6 +2044,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un incrocio in cui si deve proseguire diritto per andare a Milano",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → Milano diritto all'incrocio?",
         "spiegazione": "Come già detto, la freccia dritta indica 'MILANO'. Il cartello ti avvisa prima dell'incrocio che per Milano devi andare dritto.",
         "regola": "Preavviso + freccia dritta = Milano dritta.",
         "trabocchetti": ["preavvisa"],
@@ -1823,6 +2053,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova solo su strade a senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo su strade a senso unico?",
         "spiegazione": "Questo tipo di cartello può trovarsi su strade a senso unico, ma anche su strade a doppio senso di circolazione. Non è limitato solo alle strade a senso unico.",
         "regola": "'Solo' è quasi sempre FALSO.",
         "trabocchetti": ["solo"],
@@ -1831,6 +2062,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un incrocio per il poligono di tiro a segno",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → poligono di tiro?",
         "spiegazione": "Il simbolo accanto alla parola 'centro' è il simbolo del centro città, non di un poligono di tiro. Sono due cose molto diverse.",
         "regola": "Simbolo tondo = centro città, non poligono.",
         "trabocchetti": ["poligono di tiro a segno"],
@@ -1839,6 +2071,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che svoltando a destra si incontra una strada secondaria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → a destra strada secondaria?",
         "spiegazione": "Svoltando a destra si va verso il 'centro' della città, che non è necessariamente una strada secondaria. Potrebbe essere una strada importante. Il cartello indica la destinazione, non il tipo di strada.",
         "regola": "Destinazione non è tipo di strada.",
         "trabocchetti": ["strada secondaria"],
@@ -1847,6 +2080,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa la fine del doppio senso di circolazione e l'inizio del senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine doppio senso, inizio senso unico?",
         "spiegazione": "Questo cartello è un'indicazione di direzione, non ha nulla a che fare con il senso di marcia della strada (doppio senso o senso unico). Ci sono altri segnali specifici per quello.",
         "regola": "Direzioni non sono sensi di marcia.",
         "trabocchetti": ["inizio del senso unico"],
@@ -1855,6 +2089,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica di svoltare a destra per raggiungere un centro commerciale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → a destra per centro commerciale?",
         "spiegazione": "La freccia a destra indica 'centro' con il simbolo del centro città, non un centro commerciale. I centri commerciali hanno simboli diversi o sono indicati con il loro nome.",
         "regola": "Centro (simbolo) = città, non shopping.",
         "trabocchetti": ["centro commerciale", "centro"],
@@ -1863,6 +2098,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova sulle strade extraurbane principali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su extraurbane principali?",
         "spiegazione": "Questo tipo di segnale, con lo sfondo blu, si trova sulle strade extraurbane principali o in autostrada. Indica un'uscita da queste strade.",
         "regola": "Sfondo blu = Autostrada o Extraurbana Principale.",
         "trabocchetti": ["strade extraurbane principali"],
@@ -1871,6 +2107,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che lo svincolo di uscita per Frosinone è a 500 metri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → uscita per Frosinone a 500 m?",
         "spiegazione": "La scritta 'uscita FROSINONE' in alto e '500 m' in basso indicano che tra 500 metri troverai lo svincolo per uscire e andare verso Frosinone.",
         "regola": "500 m = distanza all'uscita.",
         "trabocchetti": ["Svincolo di uscita"],
@@ -1879,6 +2116,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato riporta i nomi delle località raggiungibili uscendo dalla strada extraurbana principale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → località raggiungibili uscendo dall'extraurbana?",
         "spiegazione": "Sotto l'indicazione dell'uscita per Frosinone, il segnale elenca altre città e località (come Ceccano, Terracina, Fiuggi) che puoi raggiungere una volta presa quella specifica uscita.",
         "regola": "Le città sotto l'uscita sono le destinazioni successive.",
         "trabocchetti": ["Località raggiungibili"],
@@ -1887,6 +2125,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica, con la scritta su fondo marrone, le località turistiche",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fondo marrone per località turistiche?",
         "spiegazione": "I nomi 'Circeo' e 'Campocatino' sono scritti su un fondo marrone. Questo colore è usato per indicare località di interesse turistico, storico o culturale.",
         "regola": "Marrone = Turismo.",
         "trabocchetti": ["fondo marrone"],
@@ -1895,6 +2134,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la distanza che c'è tra il segnale e il prossimo svincolo d'uscita",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → distanza dal prossimo svincolo?",
         "spiegazione": "La scritta '500 m' in basso indica esattamente quanti metri mancano per arrivare al punto in cui potrai prendere lo svincolo per uscire dalla strada principale.",
         "regola": "500 m = distanza all'uscita.",
         "trabocchetti": ["uscita"],
@@ -1903,6 +2143,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova uscendo dal comune di Frosinone",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → uscendo dal comune di Frosinone?",
         "spiegazione": "Questo segnale ti avvisa che stai per *arrivare* all'uscita per Frosinone, quindi sei ancora sulla strada principale (autostrada o extraurbana). Non indica che stai *uscendo* dal comune di Frosinone.",
         "regola": "Uscita 'per' non 'da'.",
         "trabocchetti": ["uscendo dal comune di Frosinone"],
@@ -1911,6 +2152,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che a 500 metri si arriva al comune di Frosinone",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → comune di Frosinone a 500 m?",
         "spiegazione": "A 500 metri non si arriva direttamente al comune di Frosinone, ma si arriva allo svincolo, cioè al punto in cui si può uscire dalla strada principale. Dopo l'uscita, dovrai percorrere altra strada per raggiungere il centro abitato.",
         "regola": "500m = uscita, non città.",
         "trabocchetti": ["si arriva al comune di Frosinone"],
@@ -1919,6 +2161,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che tutte le località riportate nel cartello sono distanti 500 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tutte le località a 500 m?",
         "spiegazione": "I 500 metri si riferiscono solo alla distanza per l'uscita di Frosinone. Le altre località elencate (come Ceccano o Terracina) si trovano a distanze diverse *dopo* aver preso quell'uscita.",
         "regola": "500m = solo all'uscita, non alle destinazioni finali.",
         "trabocchetti": ["tutte le località"],
@@ -1927,6 +2170,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada non è più percorribile e che l'ultima uscita è quella di Frosinone",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada finita, ultima uscita Frosinone?",
         "spiegazione": "Questo segnale indica solo un'uscita dalla strada principale. La strada su cui stai viaggiando continua anche dopo l'uscita di Frosinone, non finisce lì e non è l'ultima uscita.",
         "regola": "Un'uscita non è la fine della strada.",
         "trabocchetti": ["strada non è più percorribile", "ultima uscita"],
@@ -1935,6 +2179,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di un centro abitato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio centro abitato?",
         "spiegazione": "Questo segnale indica un'uscita da una strada extraurbana principale o autostrada. I segnali che indicano l'inizio di un centro abitato sono diversi, di solito rettangolari bianchi con il nome della città in nero.",
         "regola": "Segnale blu = uscita, non inizio città.",
         "trabocchetti": ["inizio di un centro abitato"],
@@ -1943,6 +2188,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del centro abitato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine centro abitato?",
         "spiegazione": "Il segnale bianco con il nome di una località barrato da una linea rossa indica sempre che si è usciti da quel centro abitato, quindi ne indica la fine.",
         "regola": "Nome barrato = Fine paese.",
         "immagine": "ef000cde1c07fefb5f67.jpg",
@@ -1950,6 +2196,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato nella prima riga in alto del pannello blu indica il prossimo centro abitato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima riga blu = prossimo centro abitato?",
         "spiegazione": "Il pannello blu mostra le località successive. La prima riga, 'S. CESAREO 7', indica che S. Cesareo è il prossimo centro abitato e dista 7 chilometri.",
         "regola": "Prima riga blu = Prossima città.",
         "trabocchetti": ["prossimo centro abitato"],
@@ -1958,6 +2205,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del centro abitato e le località successive",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine centro e località successive?",
         "spiegazione": "Il segnale è composto da due parti: quello in alto (bianco e barrato) indica la fine di Montecompatri, mentre quello in basso (blu) elenca le località che si possono raggiungere e le loro distanze.",
         "regola": "Barrato + Blu = Fine paese + Prossime mete.",
         "immagine": "ef000cde1c07fefb5f67.jpg",
@@ -1965,6 +2213,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato nel pannello blu indica, per ogni località, la rispettiva distanza chilometrica",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → distanza per ogni località?",
         "spiegazione": "Sì, accanto ad ogni nome di città nel pannello blu (S. Cesareo, Frosinone, Napoli) c'è un numero che indica quanti chilometri mancano per raggiungere quella località.",
         "regola": "Numero accanto al nome = Quanti km mancano.",
         "trabocchetti": ["rispettiva distanza chilometrica"],
@@ -1973,6 +2222,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che per Napoli mancano 190 chilometri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → 190 km a Napoli?",
         "spiegazione": "Osservando il pannello blu, l'ultima riga indica 'NAPOLI 190'. Questo significa che la città di Napoli si trova a 190 chilometri di distanza dal punto in cui si trova il segnale.",
         "regola": "Napoli 190 = 190 km a Napoli.",
         "immagine": "ef000cde1c07fefb5f67.jpg",
@@ -1980,6 +2230,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che per S. Cesareo mancano 7 chilometri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → 7 km a S. Cesareo?",
         "spiegazione": "Guardando il pannello blu, la prima riga indica 'S. CESAREO 7'. Questo significa che la località di S. Cesareo si trova a 7 chilometri di distanza.",
         "regola": "S. Cesareo 7 = 7 km a S. Cesareo.",
         "immagine": "ef000cde1c07fefb5f67.jpg",
@@ -1987,6 +2238,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di un tratto di strada in salita per raggiungere Montecompatri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → salita verso Montecompatri?",
         "spiegazione": "Il segnale di Montecompatri barrato indica la *fine* del centro abitato, non l'inizio di una salita. Non c'è nessun simbolo che indichi una pendenza o una salita.",
         "regola": "Barrato = Fine, non inizio o salita.",
         "trabocchetti": ["inizio di un tratto di strada in salita"],
@@ -1995,6 +2247,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è possibile raggiungere Montecompatri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → Montecompatri irraggiungibile?",
         "spiegazione": "Il segnale indica che hai *lasciato* Montecompatri, non che non puoi più raggiungerlo. Se vuoi, puoi tornare indietro. Non è un divieto.",
         "regola": "Barrato = Uscito, non vietato.",
         "trabocchetti": ["non è possibile raggiungere"],
@@ -2003,6 +2256,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che per raggiungere Napoli bisogna percorrere la strada statale n. 190",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → Napoli tramite statale n. 190?",
         "spiegazione": "Il numero '190' accanto a Napoli indica la *distanza* in chilometri, non il numero di una strada statale. I numeri delle strade statali sono indicati in altri tipi di segnali.",
         "regola": "Numero accanto alla città = Distanza, non numero di strada.",
         "trabocchetti": ["strada statale n. 190"],
@@ -2011,6 +2265,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada chiusa al traffico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada chiusa?",
         "spiegazione": "Il segnale barrato indica la fine di un centro abitato, non una strada chiusa al traffico. Le strade sono aperte per proseguire verso le località indicate nel pannello blu.",
         "regola": "Barrato = Fine paese, non strada chiusa.",
         "trabocchetti": ["strada chiusa al traffico"],
@@ -2019,6 +2274,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova su strade extraurbane principali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → su extraurbane principali?",
         "spiegazione": "Questo tipo di segnale (con pannello blu) si trova su strade *extraurbane secondarie* o *locali*, subito dopo essere usciti da un paese. I segnali di direzione sulle strade extraurbane principali (come le superstrade) sono di colore verde.",
         "regola": "Segnale blu = Strade normali, non superstrade (verdi).",
         "trabocchetti": ["strade extraurbane principali"],
@@ -2027,6 +2283,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio del centro abitato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio centro abitato?",
         "spiegazione": "Il segnale con il nome barrato indica la *fine* del centro abitato. L'inizio di un centro abitato è indicato da un segnale simile, ma senza la barra rossa.",
         "regola": "Barra rossa = Fine, non inizio.",
         "trabocchetti": ["inizio del centro abitato", "inizio"],
@@ -2035,6 +2292,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di un'area pedonale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio area pedonale?",
         "spiegazione": "Il segnale principale, con la scritta 'area pedonale' e il simbolo del pedone, indica proprio che stai entrando in un'area dove i pedoni hanno la precedenza e la circolazione dei veicoli è limitata.",
         "regola": "Area pedonale = Pedoni al centro.",
         "trabocchetti": ["Indica l"],
@@ -2043,6 +2301,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica, nel pannello aggiuntivo, i veicoli che possono entrare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con veicoli ammessi?",
         "spiegazione": "Il pannello sotto il segnale principale elenca chiaramente quali veicoli sono autorizzati a circolare nell'area pedonale, come i veicoli per disabili, i mezzi di soccorso e i veicoli per il carico/scarico merci in certi orari.",
         "regola": "Pannello sotto = Chi può entrare.",
         "trabocchetti": ["Pannello aggiuntivo"],
@@ -2051,6 +2310,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la circolazione dei veicoli per il carico e lo scarico merci",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → veicoli per carico e scarico ammessi?",
         "spiegazione": "Sì, il pannello aggiuntivo mostra un simbolo di un omino con un carrello e specifica che i veicoli per il trasporto merci possono entrare in orari precisi (14:00-16:00 e 24:00-06:00).",
         "regola": "Carico/scarico = Sì, ma con orari.",
         "trabocchetti": ["consente la circolazione"],
@@ -2059,6 +2319,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la circolazione dei veicoli per persone diversamente abili",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → veicoli per disabili ammessi?",
         "spiegazione": "Il primo simbolo nel pannello aggiuntivo è quello della sedia a rotelle, che indica proprio che i veicoli al servizio di persone con disabilità possono circolare in quest'area.",
         "regola": "Sedia a rotelle = Via libera.",
         "trabocchetti": ["Diversamente abili"],
@@ -2067,6 +2328,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una stazione di polizia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → stazione di polizia?",
         "spiegazione": "Il simbolo del poliziotto nel pannello aggiuntivo significa che i veicoli della polizia (e altri mezzi di soccorso) possono entrare in caso di emergenza, non che lì si trovi una stazione di polizia.",
         "regola": "Poliziotto = Eccezione, non edificio.",
         "trabocchetti": ["Indica una stazione"],
@@ -2075,6 +2337,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area riservata solo alle persone diversamente abili",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area solo per disabili?",
         "spiegazione": "L'area è pedonale, quindi per tutti i pedoni. Il simbolo della sedia a rotelle indica che i veicoli al servizio di persone con disabilità possono entrare, ma non che l'intera area sia riservata solo a loro.",
         "regola": "Solo = Attenzione, quasi sempre falso.",
         "trabocchetti": ["Riservata solo"],
@@ -2083,6 +2346,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di polizia a piedi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → polizia a piedi?",
         "spiegazione": "Il simbolo del poliziotto si riferisce ai veicoli della polizia che possono entrare in caso di emergenza, non alla presenza di agenti di polizia che camminano nell'area.",
         "regola": "Simbolo poliziotto = Mezzi di soccorso, non pattuglia.",
         "trabocchetti": ["Polizia a piedi"],
@@ -2091,6 +2355,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di venditori ambulanti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → venditori ambulanti?",
         "spiegazione": "Il simbolo dell'omino con il carrello si riferisce ai veicoli che trasportano merci per il carico e scarico, non ai venditori ambulanti che vendono prodotti per strada.",
         "regola": "Carrello = Merci, non venditori.",
         "trabocchetti": ["Venditori ambulanti"],
@@ -2099,6 +2364,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di una zona a traffico limitato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio zona a traffico limitato?",
         "spiegazione": "Il cartello dice chiaramente 'ZONA TRAFFICO LIMITATO'. Questo significa che si sta entrando in un'area dove il traffico è controllato e non tutti i veicoli possono circolare liberamente.",
         "regola": "ZTL = Zona Traffico Limitato.",
         "immagine": "080cf82531497d069d63.jpg",
@@ -2106,6 +2372,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio dell'area dove il traffico è consentito solo ad alcune categorie di veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → traffico solo per alcune categorie?",
         "spiegazione": "È vero. La ZTL non vieta il passaggio a tutti i veicoli, ma solo a quelli 'non autorizzati'. Il pannello sotto il segnale principale mostra le 'eccezioni', cioè le categorie di veicoli che possono entrare (ad esempio, mezzi per disabili, mezzi di soccorso, mezzi merci in certi orari).",
         "regola": "ZTL: non tutti, ma alcuni sì.",
         "trabocchetti": ["solo ad alcune categorie di veicoli"],
@@ -2114,6 +2381,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato riporta quali sono i veicoli che possono entrare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → veicoli che possono entrare?",
         "spiegazione": "Sì, è vero. Il pannello aggiuntivo sotto il segnale principale elenca le 'eccezioni', che sono proprio i veicoli che hanno il permesso di entrare nella zona a traffico limitato (ad esempio, veicoli per persone invalide, mezzi di emergenza, mezzi per il trasporto merci in orari specifici).",
         "regola": "Le 'eccezioni' sono chi può entrare.",
         "immagine": "080cf82531497d069d63.jpg",
@@ -2121,6 +2389,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato riporta le categorie di veicoli ammessi al transito",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → categorie ammesse?",
         "spiegazione": "Questa domanda è simile alla precedente ed è vera. Il pannello sotto il segnale principale specifica le 'categorie di veicoli ammessi al transito', cioè chi può passare. Sono le stesse 'eccezioni' di cui abbiamo parlato prima.",
         "regola": "Categorie ammesse = le eccezioni.",
         "trabocchetti": ["categorie di veicoli ammessi al transito"],
@@ -2129,6 +2398,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada a senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico?",
         "spiegazione": "Falso. Il segnale di 'Zona Traffico Limitato' indica chi può entrare in una certa area, ma non dice nulla sul senso di marcia della strada. Per il senso unico ci sono altri segnali specifici.",
         "regola": "ZTL non è senso unico.",
         "trabocchetti": ["senso unico"],
@@ -2137,6 +2407,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito di tutti i veicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a tutti?",
         "spiegazione": "Falso. Il segnale non vieta il transito a 'tutti' i veicoli. Come abbiamo visto, ci sono delle 'eccezioni' (mezzi per disabili, emergenza, merci in orari specifici) che possono entrare. Quindi, il divieto è solo per i veicoli non autorizzati.",
         "regola": "ZTL: non 'tutti', ma 'alcuni' sì.",
         "trabocchetti": ["tutti i veicoli"],
@@ -2145,6 +2416,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una zona militare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → zona militare?",
         "spiegazione": "Falso. Il segnale indica una 'Zona Traffico Limitato', che è un'area dove il traffico è regolato per motivi di sicurezza, inquinamento o vivibilità. Non ha nulla a che fare con una zona militare, che avrebbe un segnale diverso.",
         "regola": "ZTL non è militare.",
         "trabocchetti": ["zona militare"],
@@ -2153,6 +2425,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada è chiusa per l'intenso traffico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada chiusa per traffico?",
         "spiegazione": "Falso. Il segnale indica una limitazione al traffico che è stabilita per regole precise (ad esempio, orari o tipi di veicoli), non perché la strada è temporaneamente chiusa a causa di troppo traffico in quel momento.",
         "regola": "ZTL: regola, non chiusura per traffico.",
         "trabocchetti": ["chiusa per l"],
@@ -2161,6 +2434,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito solo ai residenti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo residenti?",
         "spiegazione": "Falso. Il pannello sotto il segnale elenca le categorie ammesse (mezzi per disabili, emergenza, merci in orari specifici), ma non dice che il transito è 'solo ai residenti'. I residenti potrebbero avere un permesso, ma il segnale da solo non lo specifica come unica eccezione.",
         "regola": "ZTL: non solo residenti.",
         "trabocchetti": ["solo ai residenti"],
@@ -2169,6 +2443,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di un'area pedonale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio area pedonale?",
         "spiegazione": "Falso. Un'area pedonale è un'area dove possono circolare quasi esclusivamente i pedoni. La ZTL, invece, permette il transito a diverse categorie di veicoli autorizzati, quindi non è un'area solo per pedoni.",
         "regola": "ZTL non è area pedonale.",
         "trabocchetti": ["area pedonale"],
@@ -2177,6 +2452,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato permette di conoscere le condizioni di transitabilità del passo dello Stelvio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transitabilità del passo dello Stelvio?",
         "spiegazione": "Il segnale mostra il nome di un passo di montagna, 'STELVIO', e la parola 'aperto' in diverse lingue. Questo significa che ci informa se la strada del passo è aperta o chiusa, quindi ci dice se si può passare o meno.",
         "regola": "Aperto = si può passare.",
         "trabocchetti": ["condizioni di transitabilità"],
@@ -2185,6 +2461,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è necessario transitare solo con catene o pneumatici invernali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → solo con catene o gomme invernali?",
         "spiegazione": "Questo tipo di segnale, quando indica che un passo montano è 'aperto' in periodi invernali, spesso implica che è obbligatorio avere a bordo catene da neve o pneumatici invernali montati. Le caselle bianche sotto servono proprio a specificare queste condizioni, anche se non sono compilate nell'immagine.",
         "regola": "Passo montano aperto in inverno = catene o gomme invernali.",
         "trabocchetti": ["necessario transitare solo con"],
@@ -2193,6 +2470,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada è aperta, ma solo ai veicoli che sono equipaggiati con catene o pneumatici invernali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → aperta solo con catene o gomme invernali?",
         "spiegazione": "La strada è 'aperta', ma in montagna, specialmente in inverno, questo non significa 'aperta a tutti'. Spesso è 'aperta con condizioni', cioè solo per i veicoli che hanno catene a bordo o pneumatici invernali. Le caselle bianche servono a dare queste informazioni aggiuntive.",
         "regola": "Aperto in montagna = spesso con equipaggiamento speciale.",
         "trabocchetti": ["ma solo ai veicoli che sono equipaggiati"],
@@ -2201,6 +2479,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su strade di montagna",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strade di montagna?",
         "spiegazione": "Il nome 'STELVIO' è un famoso passo di montagna. Questo tipo di segnale, che indica l'apertura o la chiusura di un passo, si trova sempre sulle strade che portano a questi luoghi in montagna.",
         "regola": "'Stelvio' = montagna.",
         "trabocchetti": ["posto su strade di montagna"],
@@ -2209,6 +2488,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è possibile raggiungere il passo dello Stelvio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → Stelvio raggiungibile?",
         "spiegazione": "La parola 'aperto' (e le sue traduzioni) significa che la strada è percorribile. Quindi, se il passo è aperto, si può arrivare al Passo dello Stelvio.",
         "regola": "Aperto = si può andare.",
         "trabocchetti": ["è possibile raggiungere"],
@@ -2217,6 +2497,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica strada aperta solo ai veicoli con pneumatici nuovi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo pneumatici nuovi?",
         "spiegazione": "Il segnale indica la necessità di catene o pneumatici invernali, non di pneumatici 'nuovi'. I pneumatici devono essere in buone condizioni e del tipo giusto (invernali), ma non devono essere per forza appena comprati.",
         "regola": "Non 'nuovi', ma 'invernali' o 'con catene'.",
         "trabocchetti": ["nuovi"],
@@ -2225,6 +2506,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consiglia di montare le catene",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consiglia le catene?",
         "spiegazione": "Quando le condizioni lo richiedono, l'uso di catene o pneumatici invernali è un 'obbligo', non un semplice 'consiglio'. C'è una grande differenza tra un suggerimento e una regola da seguire per legge.",
         "regola": "Non 'consiglio', ma 'obbligo' (se le condizioni lo richiedono).",
         "trabocchetti": ["consiglia"],
@@ -2233,6 +2515,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a montare le catene su tutte le quattro ruote",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → catene su tutte e quattro le ruote?",
         "spiegazione": "Quando è obbligatorio montare le catene, di solito si montano solo sulle ruote motrici (quelle che danno la spinta al veicolo), che sono due. Non è quasi mai richiesto montarle su tutte e quattro le ruote.",
         "regola": "Catene = solo ruote motrici (di solito due).",
         "trabocchetti": ["su tutte le quattro ruote"],
@@ -2241,6 +2524,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a togliere le catene per non rovinare l'asfalto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → togliere le catene?",
         "spiegazione": "Il segnale indica le condizioni per 'transitare' (passare), non per 'togliere' le catene. Se le condizioni richiedono le catene, non si devono togliere. Si tolgono solo quando non c'è più neve o ghiaccio e non sono più necessarie.",
         "regola": "Catene si mettono per sicurezza, non si tolgono per l'asfalto (se serve).",
         "trabocchetti": ["obbliga a togliere"],
@@ -2249,6 +2533,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'apertura di un impianto sciistico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → impianto sciistico aperto?",
         "spiegazione": "Il segnale si riferisce alla strada del passo montano ('Passo dello Stelvio'), non a un impianto sciistico. Anche se al Passo dello Stelvio ci possono essere impianti sciistici, il segnale riguarda la viabilità della strada, non l'apertura delle piste da sci.",
         "regola": "Segnale stradale = per la strada, non per lo sci.",
         "trabocchetti": ["impianto sciistico"],
@@ -2257,6 +2542,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consiglia di procedere con particolare prudenza e attenzione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → particolare prudenza?",
         "spiegazione": "Quando un passo di montagna è chiuso, specialmente per neve o ghiaccio (come suggerito dai simboli), le condizioni della strada possono essere difficili anche nel tratto aperto. Per questo, è sempre consigliabile guidare con molta prudenza e attenzione per la propria sicurezza e quella degli altri.",
         "regola": "Passo chiuso = massima attenzione.",
         "immagine": "fb42a5b0f2a84f201b8a.jpg",
@@ -2264,6 +2550,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che il passo dello Stelvio non è raggiungibile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → Stelvio non raggiungibile?",
         "spiegazione": "Il segnale mostra chiaramente la scritta 'STELVIO chiuso' in rosso. Questo significa che il Passo dello Stelvio non è accessibile e non si può raggiungere oltre un certo punto (indicato come 'fino a TRAFOI').",
         "regola": "'Chiuso' = non si passa.",
         "immagine": "fb42a5b0f2a84f201b8a.jpg",
@@ -2271,6 +2558,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato raccomanda l'uso delle catene o di pneumatici invernali fino a Trafoi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → catene o gomme invernali fino a Trafoi?",
         "spiegazione": "Il segnale mostra i simboli delle catene da neve e degli pneumatici invernali. Questi simboli, in un contesto di passo chiuso per l'inverno, indicano che è necessario o fortemente consigliato avere questo tipo di equipaggiamento per affrontare la strada fino a Trafoi, il punto massimo raggiungibile.",
         "regola": "Simboli catene/gomme = equipaggiamento invernale necessario.",
         "trabocchetti": ["raccomanda"],
@@ -2279,6 +2567,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è possibile arrivare fino a Trafoi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → si arriva fino a Trafoi?",
         "spiegazione": "Il segnale indica chiaramente 'fino a TRAFOI'. Questo significa che la strada è aperta e percorribile fino alla località di Trafoi, ma non oltre, perché il Passo dello Stelvio è chiuso.",
         "regola": "'Fino a X' = X è il limite raggiungibile.",
         "trabocchetti": ["fino a TRAFOI"],
@@ -2287,6 +2576,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che le stazioni di servizio sono chiuse",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → stazioni di servizio chiuse?",
         "spiegazione": "Il segnale si riferisce alla chiusura del 'Passo dello Stelvio', non alle stazioni di servizio. Non c'è nessuna informazione sul funzionamento o la chiusura di stazioni di servizio sulla strada.",
         "regola": "Leggi bene: 'chiuso' si riferisce al nome indicato (Stelvio).",
         "trabocchetti": ["stazioni di servizio"],
@@ -2295,6 +2585,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è obbligatorio montare gli pneumatici invernali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di gomme invernali?",
         "spiegazione": "Il segnale mostra sia il simbolo delle catene da neve che quello degli pneumatici invernali. Questo significa che è necessario avere uno dei due, non che sia obbligatorio montare solo gli pneumatici invernali. Spesso, l'obbligo è alternativo (catene O pneumatici invernali).",
         "regola": "Catene O gomme invernali: non è un obbligo esclusivo.",
         "trabocchetti": ["obbligatorio"],
@@ -2303,6 +2594,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che non hanno le catene da neve",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato senza catene?",
         "spiegazione": "Il segnale indica che il Passo dello Stelvio è chiuso. Per il tratto aperto (fino a Trafoi), mostra i simboli di catene E pneumatici invernali. Non vieta il transito solo a chi non ha le catene, perché si può transitare anche con pneumatici invernali.",
         "regola": "Due opzioni (catene/gomme) = non è vietato se manca solo una.",
         "immagine": "fb42a5b0f2a84f201b8a.jpg",
@@ -2310,6 +2602,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che i veicoli per poter transitare debbono avere a bordo le catene",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → catene a bordo obbligatorie?",
         "spiegazione": "Il segnale mostra i simboli sia delle catene da neve che degli pneumatici invernali. Questo significa che per transitare è necessario avere A BORDO O MONTATI uno dei due tipi di equipaggiamento, non solo le catene. L'obbligo è di avere l'equipaggiamento invernale, che può essere catene o pneumatici invernali.",
         "regola": "Catene O gomme invernali: non è solo 'catene'.",
         "trabocchetti": ["debbono avere a bordo le catene"],
@@ -2318,6 +2611,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di una strada extraurbana principale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio extraurbana principale?",
         "spiegazione": "Questo segnale blu con le due carreggiate separate e il ponte sopra indica proprio l'inizio di una strada extraurbana principale. È una strada importante, simile all'autostrada ma con alcune differenze.",
         "regola": "Blu e due strade = Inizio Extraurbana Principale.",
         "trabocchetti": ["indica l"],
@@ -2326,6 +2620,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se barrato, da una striscia rossa indica la fine di una strada extraurbana principale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato barrato → fine extraurbana principale?",
         "spiegazione": "Sì, è vero. Tutti i segnali di inizio (come questo) quando sono barrati da una striscia rossa diagonale, indicano la fine di quella condizione o di quel tipo di strada.",
         "regola": "Segnale barrato = Fine.",
         "trabocchetti": ["se barrato, da una striscia rossa", "fine"],
@@ -2334,6 +2629,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto all'inizio di una strada extraurbana principale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio extraurbana principale?",
         "spiegazione": "Questo segnale è un segnale di 'inizio'. Quindi, lo trovi proprio quando stai per entrare in una strada extraurbana principale.",
         "regola": "Segnale senza barra = Inizio.",
         "trabocchetti": ["è posto all"],
@@ -2342,6 +2638,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada a carreggiate separate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → carreggiate separate?",
         "spiegazione": "Guarda bene il disegno: ci sono due 'strade' bianche ben distinte, separate da uno spazio al centro. Questo significa che la strada ha due carreggiate (una per ogni senso di marcia) che non si toccano.",
         "regola": "Due 'strade' bianche = Carreggiate separate.",
         "trabocchetti": ["carreggiate separate"],
@@ -2350,6 +2647,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di un cavalcavia che consente l'inversione di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cavalcavia per inversione?",
         "spiegazione": "Il segnale indica una strada extraurbana principale, che spesso ha cavalcavia, ma non indica specificamente un cavalcavia per fare inversione di marcia. L'immagine del 'ponte' serve a rappresentare la complessità della strada, non una manovra specifica.",
         "regola": "Non è un segnale di manovra.",
         "trabocchetti": ["consente l"],
@@ -2358,6 +2656,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un tratto di strada in salita",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → salita?",
         "spiegazione": "Questo segnale non ha nulla a che fare con la pendenza della strada (salita o discesa). Indica solo il tipo di strada.",
         "regola": "Non indica pendenza.",
         "trabocchetti": ["preavvisa un tratto di strada in salita"],
@@ -2366,6 +2665,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la vicinanza di un sottopassaggio per i veicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sottopassaggio per veicoli?",
         "spiegazione": "Il segnale mostra una struttura sopraelevata (come un ponte o cavalcavia), non un sottopassaggio. E comunque, il suo scopo principale è indicare il tipo di strada.",
         "regola": "Non è un sottopassaggio.",
         "trabocchetti": ["sottopassaggio"],
@@ -2374,6 +2674,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada è interrotta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada interrotta?",
         "spiegazione": "Al contrario! Questo segnale indica l'inizio di una strada importante e continua, non che è interrotta.",
         "regola": "Inizio strada, non fine.",
         "trabocchetti": ["strada è interrotta"],
@@ -2382,6 +2683,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive la circolazione per file parallele",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → file parallele?",
         "spiegazione": "Questo segnale indica il tipo di strada, non come devi guidare (ad esempio, in fila parallela). I segnali che prescrivono la circolazione per file parallele sono diversi.",
         "regola": "Non è un segnale di prescrizione di guida.",
         "immagine": "c636579ec61a8e524d6d.jpg",
@@ -2389,6 +2691,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa l'inizio di un lungo rettilineo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → lungo rettilineo?",
         "spiegazione": "Il segnale non dà informazioni sulla forma della strada (se è dritta o curva). Indica solo che stai entrando in una strada extraurbana principale.",
         "regola": "Non indica la forma della strada.",
         "trabocchetti": ["lungo rettilineo"],
@@ -2397,6 +2700,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato viene posto in vicinanza della frontiera italiana, visibile dai conducenti provenienti dallo Stato estero",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vicino alla frontiera per chi entra in Italia?",
         "spiegazione": "Questo segnale è come un 'benvenuto' in Italia per chi arriva da un altro paese. Serve a informare subito i guidatori stranieri sui limiti di velocità che devono rispettare sulle strade italiane, quindi si trova vicino al confine.",
         "regola": "Segnale al confine = Benvenuto + Regole velocità per stranieri.",
         "trabocchetti": ["in vicinanza della frontiera italiana", "provenienti dallo Stato estero"],
@@ -2405,6 +2709,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica i limiti massimi di velocità generali che valgono in Italia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → limiti generali in Italia?",
         "spiegazione": "Sì, questo segnale mostra proprio le velocità massime che puoi raggiungere sulle diverse strade in Italia: in città, fuori città, sulle superstrade e in autostrada. Sono i limiti 'generali' perché valgono per tutti, a meno che non ci siano segnali specifici diversi.",
         "regola": "Il cartello riassume le velocità massime standard italiane.",
         "trabocchetti": ["limiti massimi di velocità generali"],
@@ -2413,6 +2718,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica nel primo riquadro in alto il limite massimo di velocità nei centri abitati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → primo riquadro = limite nei centri abitati?",
         "spiegazione": "Guarda il primo riquadro in alto: c'è il numero 50 e un disegno di case (una città). Questo significa che il limite di velocità massimo nei centri abitati (cioè in città o nei paesi) è di 50 km/h.",
         "regola": "50 + case = città.",
         "trabocchetti": ["Centri abitati"],
@@ -2421,6 +2727,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica in 90 km/h il limite massimo di velocità su strade extraurbane secondarie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → 90 km/h su extraurbane secondarie?",
         "spiegazione": "Il secondo riquadro mostra 90 km/h e un disegno di una strada senza case. Questo indica il limite per le strade fuori città che non sono superstrade (le 'extraurbane secondarie').",
         "regola": "90 + strada semplice = fuori città normale.",
         "immagine": "2e24b10e5b3f625382bb.jpg",
@@ -2428,6 +2735,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica in 110 km /h il limite massimo di velocità sulle strade extraurbane principali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → 110 km/h su extraurbane principali?",
         "spiegazione": "Il terzo riquadro mostra 110 km/h e il simbolo di una strada extraurbana principale (il cartello blu). Quindi, su queste strade, il limite è 110 km/h.",
         "regola": "110 + cartello blu = superstrada.",
         "trabocchetti": ["strade extraurbane principali"],
@@ -2436,6 +2744,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica in 130 km /h il limite massimo di velocità sulle autostrade",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → 130 km/h in autostrada?",
         "spiegazione": "L'ultimo riquadro in basso mostra 130 km/h e il simbolo dell'autostrada (il cartello verde). Questo significa che in autostrada il limite è 130 km/h.",
         "regola": "130 + cartello verde = autostrada.",
         "trabocchetti": ["autostrade"],
@@ -2444,6 +2753,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica in 90 km /h il limite massimo di velocità nei centri abitati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → 90 km/h nei centri abitati?",
         "spiegazione": "No, non è vero. Il limite di velocità nei centri abitati (in città) è di 50 km/h, come mostra il primo riquadro. 90 km/h è il limite per le strade extraurbane secondarie.",
         "regola": "90 non è per la città! La città è 50.",
         "trabocchetti": ["centri abitati"],
@@ -2452,6 +2762,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il numero di autostrade in Italia che si possono percorrere senza pagarne il pedaggio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autostrade senza pedaggio?",
         "spiegazione": "Assolutamente no! Questo segnale parla solo dei limiti di velocità. Non ha nulla a che fare con il pedaggio (il costo per usare l'autostrada) o con il numero di autostrade. Sono informazioni completamente diverse.",
         "regola": "Il segnale è solo velocità, non soldi o quantità.",
         "trabocchetti": ["numero di autostrade", "senza pagarne il pedaggio"],
@@ -2460,6 +2771,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica in 130 km /h il limite massimo di velocità su strade extraurbane principali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → 130 km/h su extraurbane principali?",
         "spiegazione": "Falso. Il limite di 130 km/h è per le autostrade (simbolo verde). Sulle strade extraurbane principali (simbolo blu) il limite è 110 km/h. La domanda scambia i due limiti.",
         "regola": "130 = autostrada (verde); 110 = superstrada (blu).",
         "trabocchetti": ["strade extraurbane principali"],
@@ -2468,6 +2780,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova all'ingresso di ogni città",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → all'ingresso di ogni città?",
         "spiegazione": "No, questo segnale non si trova all'ingresso di ogni città. Si trova ai confini dell'Italia, per informare i guidatori stranieri sui limiti di velocità generali del nostro paese. All'ingresso delle città trovi il cartello con il nome della città.",
         "regola": "Non in ogni città, ma al confine italiano.",
         "trabocchetti": ["all"],
@@ -2476,6 +2789,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica i limiti minimi di velocità che valgono in Italia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → limiti minimi?",
         "spiegazione": "Falso! Questo segnale indica i limiti MASSIMI di velocità, cioè la velocità più alta che puoi raggiungere. Non indica la velocità più bassa che devi tenere.",
         "regola": "Il cartello dice 'fino a', non 'almeno'.",
         "trabocchetti": ["minimi"],
@@ -2484,6 +2798,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il numero dell'autostrada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → numero dell'autostrada?",
         "spiegazione": "Questo segnale, con la lettera 'A' e un numero, serve proprio a identificare e indicare il numero specifico di un'autostrada. Quindi, 'A 25' significa 'Autostrada numero 25'.",
         "regola": "A = Autostrada, il numero è il suo nome.",
         "immagine": "6530a34ab75eb8faf67a.jpg",
@@ -2491,6 +2806,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare all'interno di un segnale di preavviso di svincolo autostradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dentro preavviso di svincolo?",
         "spiegazione": "Sì, è vero. Spesso, quando ti avvicini a un'uscita o a un incrocio in autostrada, vedi cartelli più grandi che ti dicono dove vanno le diverse direzioni. All'interno di questi cartelli grandi, trovi anche il simbolo dell'autostrada (come 'A 25') per farti capire a quale autostrada si riferisce quella direzione.",
         "regola": "Il numero dell'autostrada è spesso 'dentro' altri cartelli direzionali.",
         "trabocchetti": ["all"],
@@ -2499,6 +2815,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato abbinato ad una freccia, indica la direzione per un casello autostradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato con freccia → direzione casello?",
         "spiegazione": "Esatto! Se vedi questo segnale 'A 25' insieme a una freccia, significa che quella è la direzione da prendere per entrare nell'autostrada numero 25. E per entrare in autostrada, di solito, si passa per un casello dove si paga il pedaggio.",
         "regola": "A con freccia = direzione per l'autostrada (e il casello).",
         "trabocchetti": ["abbinato ad una freccia"],
@@ -2507,6 +2824,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato identifica l'autostrada n. 25",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autostrada n. 25?",
         "spiegazione": "Questa è la funzione principale e più semplice del segnale. La 'A' sta per Autostrada e il '25' è il numero che la identifica. Quindi, il segnale ti dice che sei sull'Autostrada numero 25 o che stai andando verso di essa.",
         "regola": "A 25 = Autostrada 25. Semplice!",
         "immagine": "6530a34ab75eb8faf67a.jpg",
@@ -2514,6 +2832,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova al confine con l'Austria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → confine con l'Austria?",
         "spiegazione": "No, questo è falso. Il segnale 'A 25' identifica un'autostrada specifica in Italia (l'Autostrada dei Parchi, che collega Torano a Pescara). Non ha nulla a che fare con i confini nazionali, tanto meno con l'Austria, che si trova molto più a nord.",
         "regola": "Il cartello dice 'A 25', non 'Austria'.",
         "trabocchetti": ["confine con l"],
@@ -2522,6 +2841,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il numero del cavalcavia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → numero del cavalcavia?",
         "spiegazione": "Falso. La lettera 'A' nel segnale sta per 'Autostrada', non per 'cavalcavia'. I cavalcavia sono ponti che passano sopra altre strade o ferrovie e non hanno questo tipo di numerazione per i guidatori.",
         "regola": "A non è C (cavalcavia).",
         "trabocchetti": ["cavalcavia"],
@@ -2530,6 +2850,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la distanza di sicurezza da mantenere dal veicolo che sta davanti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanza di sicurezza?",
         "spiegazione": "Assolutamente falso. Questo segnale serve solo a identificare un'autostrada. La distanza di sicurezza è un concetto legato alla guida sicura e viene indicata da altri tipi di segnali (se presenti) o dalle regole generali del Codice della Strada, non da questo cartello.",
         "regola": "A 25 non è un numero di metri.",
         "trabocchetti": ["distanza di sicurezza"],
@@ -2538,6 +2859,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un centro di assistenza a 25 chilometri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → assistenza a 25 km?",
         "spiegazione": "No, è falso. Il numero '25' sul segnale indica il numero dell'autostrada, non una distanza in chilometri. I centri di assistenza sono segnalati con cartelli specifici di servizio, non con questo tipo di segnale.",
         "regola": "A 25 è un nome, non una distanza.",
         "trabocchetti": ["centro di assistenza a 25 chilometri"],
@@ -2546,6 +2868,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che il prossimo svincolo autostradale si trova a 25 chilometri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svincolo a 25 km?",
         "spiegazione": "Falso. Come nelle domande precedenti, il '25' è il numero dell'autostrada. La distanza al prossimo svincolo viene indicata su altri tipi di cartelli, solitamente verdi e rettangolari, che mostrano le destinazioni e le distanze in chilometri.",
         "regola": "A 25 è un nome, non una distanza.",
         "immagine": "6530a34ab75eb8faf67a.jpg",
@@ -2553,6 +2876,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il limite minimo di velocità che si consiglia di non superare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → limite minimo consigliato?",
         "spiegazione": "Falso. Questo segnale non ha nulla a che fare con la velocità. I limiti di velocità (massimi o minimi) sono indicati da segnali circolari con numeri neri su sfondo bianco (massimo) o blu (minimo).",
         "regola": "A 25 non è un limite di velocità.",
         "trabocchetti": ["limite minimo di velocità"],
@@ -2561,6 +2885,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'ingresso di un pronto soccorso medico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → ingresso pronto soccorso?",
         "spiegazione": "Il segnale con la croce rossa e la freccia indica dove si trova o come raggiungere un pronto soccorso. La freccia mostra la direzione da seguire per l'ingresso.",
         "regola": "Croce rossa + freccia = Pronto Soccorso in quella direzione.",
         "trabocchetti": ["ingresso"],
@@ -2569,6 +2894,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la direzione per entrare nel pronto soccorso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → direzione per il pronto soccorso?",
         "spiegazione": "Esatto, la freccia serve proprio a indicare la strada da seguire per arrivare al pronto soccorso. Ti mostra la direzione giusta.",
         "regola": "Freccia = indica la via.",
         "trabocchetti": ["direzione per entrare"],
@@ -2577,6 +2903,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un pronto soccorso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → presso un pronto soccorso?",
         "spiegazione": "Questo segnale si trova vicino a un pronto soccorso per aiutare le persone a trovarlo, specialmente in caso di emergenza. 'In corrispondenza' significa 'vicino a' o 'nel punto dove si trova'.",
         "regola": "Segnale + Pronto Soccorso = Sono vicini.",
         "trabocchetti": ["in corrispondenza di"],
@@ -2585,6 +2912,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un posto di confine con la Svizzera",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → confine con la Svizzera?",
         "spiegazione": "La croce rossa è un simbolo medico e non ha nulla a che fare con i confini nazionali. I segnali di confine sono diversi.",
         "regola": "Croce rossa = Aiuto medico, non confine.",
         "trabocchetti": ["posto di confine con la Svizzera"],
@@ -2593,6 +2921,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una farmacia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → farmacia?",
         "spiegazione": "Anche se la farmacia ha a che fare con la salute, il simbolo della croce rossa in questo contesto stradale indica specificamente un pronto soccorso o un ospedale, non una farmacia. Il simbolo della farmacia è di solito una croce verde.",
         "regola": "Croce rossa stradale = Pronto Soccorso, non farmacia (che ha croce verde).",
         "trabocchetti": ["farmacia"],
@@ -2601,6 +2930,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la strada da seguire per raggiungere il cimitero",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cimitero?",
         "spiegazione": "Il cimitero ha un simbolo diverso, di solito una croce latina o un'immagine stilizzata di una lapide. La croce rossa è per l'assistenza medica, non per il cimitero.",
         "regola": "Croce rossa = Vita/Salute, non cimitero.",
         "trabocchetti": ["cimitero"],
@@ -2609,6 +2939,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un incrocio a quattro strade",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → incrocio a quattro strade?",
         "spiegazione": "Questo segnale è un'indicazione di servizio, non un segnale di pericolo che preavvisa un incrocio. I segnali di pericolo sono triangolari con bordo rosso.",
         "regola": "Segnale rettangolare = Servizio/Indicazione, non pericolo/incrocio.",
         "trabocchetti": ["preavvisa un incrocio a quattro strade"],
@@ -2617,6 +2948,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un parcheggio riservato ai medici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio medici?",
         "spiegazione": "Il segnale indica la presenza o la direzione di un pronto soccorso, non un parcheggio. I segnali di parcheggio hanno il simbolo 'P'.",
         "regola": "Croce rossa + freccia = Pronto Soccorso, non parcheggio.",
         "trabocchetti": ["parcheggio riservato ai medici"],
@@ -2625,6 +2957,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova in vicinanza di un ponte che attraversa il fiume Arno",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → ponte sull'Arno?",
         "spiegazione": "Il segnale mostra il nome 'fiume Arno' e un simbolo che rappresenta l'acqua. È logico che questo segnale si trovi vicino a un ponte che attraversa proprio quel fiume.",
         "regola": "Nome del fiume = ponte sul fiume.",
         "immagine": "6d012b8e5f2aee5a85db.jpg",
@@ -2632,6 +2965,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il nome del fiume in vicinanza del ponte che lo attraversa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → nome del fiume vicino al ponte?",
         "spiegazione": "Il segnale bianco sotto quello marrone dice chiaramente 'fiume Arno'. Questo indica il nome del fiume. Il segnale è posto in prossimità di un ponte che lo attraversa.",
         "regola": "La scritta è chiara: 'fiume Arno'.",
         "immagine": "6d012b8e5f2aee5a85db.jpg",
@@ -2639,6 +2973,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato fa parte dei segnali di indicazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "I segnali di indicazione servono a dare informazioni utili, come nomi di luoghi, fiumi, direzioni. Questo segnale indica il nome di un fiume, quindi è un segnale di indicazione.",
         "regola": "Dà informazioni? È di indicazione.",
         "trabocchetti": ["Segnali di indicazione"],
@@ -2647,6 +2982,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto dove in caso di pioggia la strada si può allagare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → allagamento con pioggia?",
         "spiegazione": "Il segnale indica la presenza di un fiume, non un pericolo di allagamento della strada. Per il pericolo di allagamento ci sono altri segnali specifici, che mostrano un'auto che attraversa l'acqua.",
         "regola": "Fiume non è allagamento.",
         "trabocchetti": ["si può allagare"],
@@ -2655,6 +2991,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il pericolo di mareggiate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → mareggiate?",
         "spiegazione": "Le 'mareggiate' sono onde molto forti del mare. Il segnale indica un 'fiume', che è acqua dolce e non è il mare. Quindi non c'è pericolo di mareggiate.",
         "regola": "Fiume non è mare.",
         "trabocchetti": ["mareggiate"],
@@ -2663,6 +3000,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la possibilità di effettuare sci nautico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sci nautico?",
         "spiegazione": "Il segnale indica solo il nome del fiume. Non dà informazioni su attività sportive come lo sci nautico. Per le attività sportive ci sono altri tipi di segnali.",
         "regola": "Nome fiume non è sport.",
         "trabocchetti": ["sci nautico"],
@@ -2671,6 +3009,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada con curve in successione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → curve in successione?",
         "spiegazione": "Le onde nel segnale marrone rappresentano l'acqua di un fiume. Le curve in successione sulla strada sono indicate da un altro tipo di segnale, che mostra una strada con delle curve.",
         "regola": "Onde = acqua, non curve.",
         "trabocchetti": ["curve in successione"],
@@ -2679,6 +3018,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un ufficio di informazioni turistico- alberghiere",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → informazioni turistico-alberghiere?",
         "spiegazione": "Il simbolo 'i' significa 'informazioni', e il simbolo del letto indica 'alberghi'. Quindi, il segnale ti avvisa che a 150 metri troverai un ufficio dove puoi chiedere informazioni su turismo e alberghi.",
         "regola": "i + letto = Info Alberghi.",
         "trabocchetti": ["preavvisa"],
@@ -2687,6 +3027,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la possibilità di avere informazioni su alberghi e motel",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → informazioni su alberghi?",
         "spiegazione": "Il simbolo 'i' sta per informazioni, e il letto rappresenta le strutture dove si può dormire, come alberghi e motel. Quindi, il segnale indica che puoi trovare informazioni su questi posti.",
         "regola": "i = chiedi, letto = dove dormire.",
         "trabocchetti": ["possibilità di avere informazioni"],
@@ -2695,6 +3036,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un posto dove si possono richiedere informazioni sugli alberghi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → posto informazioni alberghi?",
         "spiegazione": "Esatto! La 'i' è per 'informazioni' e il letto per 'alberghi'. Il segnale ti mostra dove si trova un punto per chiedere informazioni sugli alberghi.",
         "regola": "i + letto = Info Alberghi.",
         "immagine": "56c50e9a8c11daa8d619.jpg",
@@ -2702,6 +3044,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il numero di alberghi che si trovano nelle vicinanze",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → numero di alberghi?",
         "spiegazione": "Questo è falso. Il segnale non ti dice quanti alberghi ci sono. Il numero '150 m' indica la distanza al punto informazioni, non il numero di alberghi.",
         "regola": "150 m = distanza, non quantità.",
         "trabocchetti": ["il numero di alberghi"],
@@ -2710,6 +3053,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica, a 150 metri, l'ingresso di un ospedale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ospedale a 150 m?",
         "spiegazione": "Falso! Il simbolo del letto indica un albergo o un alloggio, non un ospedale. Per l'ospedale ci sarebbe un simbolo diverso, come una croce rossa o un letto con una croce.",
         "regola": "Letto = Albergo, non Ospedale.",
         "trabocchetti": ["ospedale"],
@@ -2718,6 +3062,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'ufficio accettazione dell'ospedale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → accettazione ospedale?",
         "spiegazione": "No, è falso. Come detto prima, il simbolo del letto non si riferisce a un ospedale, ma a un albergo o un alloggio.",
         "regola": "Letto = Albergo, non Ospedale.",
         "trabocchetti": ["ospedale"],
@@ -2726,6 +3071,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che a 150 metri vi è un albergo con personale interprete per clienti stranieri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → albergo con interprete a 150 m?",
         "spiegazione": "Falso. Il segnale indica un punto dove puoi avere informazioni sugli alberghi in generale. Non dà dettagli specifici su un singolo albergo, come la presenza di un interprete. La 'i' è per 'informazioni', non per 'interprete'.",
         "regola": "i = Info generiche, non servizi specifici.",
         "immagine": "56c50e9a8c11daa8d619.jpg",
@@ -2733,6 +3079,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un attraversamento pedonale non regolato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attraversamento pedonale non regolato?",
         "spiegazione": "Questo segnale blu indica un punto dove i pedoni possono attraversare la strada. 'Non regolato' significa che non ci sono semafori o vigili a gestire il traffico, quindi i veicoli devono dare la precedenza ai pedoni.",
         "regola": "Blu = attraversamento pedonale senza semaforo.",
         "trabocchetti": ["non regolato"],
@@ -2741,6 +3088,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato fuori dei centri abitati si trova dopo il segnale di pericolo ATTRAVERSAMENTO PEDONALE",
         "risposta": True,
+        "riassunto": "Segnale raffigurato fuori città → dopo il pericolo ATTRAVERSAMENTO PEDONALE?",
         "spiegazione": "Fuori dai centri abitati, prima di un attraversamento pedonale, trovi prima un segnale di pericolo (triangolare, rosso e bianco) che ti avvisa. Questo segnale blu, invece, si trova proprio nel punto dell'attraversamento, quindi 'dopo' il segnale di pericolo che ti ha preavvisato.",
         "regola": "Pericolo (rosso) avvisa prima, Indicazione (blu) è sul posto.",
         "trabocchetti": ["dopo il segnale di pericolo"],
@@ -2749,6 +3097,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova direttamente in corrispondenza delle strisce dell'attraversamento pedonale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → proprio sulle strisce?",
         "spiegazione": "Sì, questo segnale blu è un segnale di indicazione e viene posizionato proprio dove iniziano le strisce pedonali, per mostrare chiaramente dove si trova l'attraversamento.",
         "regola": "Blu = qui e ora, sulle strisce.",
         "trabocchetti": ["direttamente in corrispondenza"],
@@ -2757,6 +3106,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i conducenti a fermarsi quando i pedoni transitano sugli attraversamenti pedonali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi coi pedoni sulle strisce?",
         "spiegazione": "Questo segnale indica un attraversamento pedonale. Per legge, i conducenti devono sempre dare la precedenza ai pedoni che stanno attraversando o che stanno per attraversare sulle strisce. Quindi, se ci sono pedoni, devi fermarti.",
         "regola": "Pedoni sulle strisce = stop obbligatorio.",
         "trabocchetti": ["obbliga i conducenti a fermarsi"],
@@ -2765,6 +3115,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un sottopassaggio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sottopassaggio?",
         "spiegazione": "Falso. Il segnale mostra un pedone che cammina su strisce a livello della strada. Un sottopassaggio è un passaggio sotto la strada e avrebbe un simbolo diverso, come una scala o una rampa che scende.",
         "regola": "Strisce = a terra, non sotto.",
         "trabocchetti": ["sottopassaggio"],
@@ -2773,6 +3124,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto 150 metri prima di un attraversamento pedonale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → 150 m prima delle strisce?",
         "spiegazione": "Falso. Questo è un segnale di indicazione e si trova 'direttamente' in corrispondenza dell'attraversamento. I segnali che avvisano 150 metri prima sono i segnali di pericolo (triangolari, rossi e bianchi), non questo segnale blu.",
         "regola": "Blu = sul posto, non prima.",
         "trabocchetti": ["150 metri prima"],
@@ -2781,6 +3133,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato se di colore verde è posto in autostrada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato verde → in autostrada?",
         "spiegazione": "Falso. I segnali di indicazione in autostrada sono verdi, ma questo specifico segnale (attraversamento pedonale) non si trova in autostrada. In autostrada non ci sono attraversamenti pedonali a raso.",
         "regola": "Pedoni non attraversano autostrade.",
         "immagine": "c4ec88137df816bbe3d7.jpg",
@@ -2788,6 +3141,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa una scuola elementare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → scuola elementare?",
         "spiegazione": "Falso. Il segnale indica solo un attraversamento pedonale. Anche se spesso le scuole hanno attraversamenti pedonali vicini, questo segnale non indica la scuola in sé, ma solo il punto dove i pedoni possono attraversare. C'è un segnale specifico per le scuole.",
         "regola": "Segnale = attraversamento, non scuola.",
         "trabocchetti": ["preavvisa una scuola elementare"],
@@ -2796,6 +3150,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di sorpassare un veicolo che si è arrestato per dare la precedenza ai pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpassare chi si ferma per i pedoni?",
         "spiegazione": "Falso. È molto pericoloso e vietato sorpassare un veicolo che si è fermato per dare la precedenza ai pedoni. Potresti investire il pedone che sta attraversando. Devi fermarti anche tu.",
         "regola": "Veicolo fermo per pedoni = fermati anche tu, mai sorpassare.",
         "trabocchetti": ["consente di sorpassare"],
@@ -2804,6 +3159,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se posto sul bordo del marciapiede, indica la fermata di uno scuolabus",
         "risposta": True,
+        "riassunto": "Segnale raffigurato sul marciapiede → fermata scuolabus?",
         "spiegazione": "Questo segnale, quando lo trovi sul marciapiede, ti dice che lì si ferma lo scuolabus per far salire o scendere i bambini. Devi fare attenzione.",
         "regola": "Segnale arancione sul marciapiede = fermata scuolabus.",
         "trabocchetti": ["se posto sul bordo del marciapiede"],
@@ -2812,6 +3168,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se posto all'esterno di un autobus, segnala che esso trasporta scolari",
         "risposta": True,
+        "riassunto": "Segnale raffigurato su autobus → trasporto scolari?",
         "spiegazione": "Se vedi questo segnale attaccato fuori da un autobus, significa che quell'autobus sta trasportando dei bambini a scuola o a casa. È un autobus scolastico.",
         "regola": "Segnale sull'autobus = è uno scuolabus.",
         "trabocchetti": ["se posto all"],
@@ -2820,6 +3177,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può indicare la fermata di un autobus per trasporto scolari",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermata scuolabus?",
         "spiegazione": "Sì, è vero. Questo segnale può indicare il punto dove si ferma l'autobus che porta i bambini a scuola. È una delle sue funzioni principali.",
         "regola": "Segnale = fermata per bambini.",
         "trabocchetti": ["può"],
@@ -2828,6 +3186,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a fare attenzione ai bambini che possono attraversare improvvisamente la strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → bambini che attraversano?",
         "spiegazione": "Questo segnale ti avvisa di stare molto attento perché in quella zona ci sono bambini, e i bambini a volte attraversano la strada senza guardare bene o all'improvviso.",
         "regola": "Bambini = attenzione, possono correre!",
         "trabocchetti": ["invita a fare attenzione", "possono attraversare improvvisamente"],
@@ -2836,6 +3195,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a fare attenzione perché possono esserci bambini discesi dallo scuolabus che possono attraversare improvvisamente la strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → bambini scesi dallo scuolabus?",
         "spiegazione": "È vero. Quando vedi questo segnale, specialmente vicino a una fermata, devi pensare che i bambini appena scesi dallo scuolabus potrebbero attraversare la strada senza preavviso, magari per raggiungere casa.",
         "regola": "Scuolabus + bambini = massima attenzione all'attraversamento.",
         "trabocchetti": ["bambini discesi dallo scuolabus", "possono attraversare improvvisamente"],
@@ -2844,6 +3204,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai bambini non accompagnati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai bambini soli?",
         "spiegazione": "Questo segnale non vieta niente ai bambini. Serve solo per avvisare gli automobilisti di fare attenzione. Non è un divieto per i pedoni.",
         "regola": "Segnale arancione = pericolo/informazione, non divieto.",
         "trabocchetti": ["vieta"],
@@ -2852,6 +3213,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di giardini pubblici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → giardini pubblici?",
         "spiegazione": "No, questo segnale non c'entra con i giardini pubblici. Indica la presenza di bambini, spesso legata a scuole o fermate di scuolabus, e la necessità di fare attenzione.",
         "regola": "Bambini con borse = scuola/scuolabus, non giardini.",
         "trabocchetti": ["indica la presenza di giardini pubblici"],
@@ -2860,6 +3222,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che bisogna obbligatoriamente dare precedenza ai bambini che attraversano",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di precedenza ai bambini?",
         "spiegazione": "Questo segnale ti dice di fare attenzione ai bambini, ma non ti obbliga a dare la precedenza in ogni caso. La precedenza ai pedoni si dà sulle strisce pedonali o quando stanno per attraversare. Qui ti avvisa di un pericolo generico, non di un obbligo di precedenza immediato e automatico ovunque.",
         "regola": "Attenzione sì, precedenza automatica no (solo se ci sono strisce o stanno già attraversando).",
         "trabocchetti": ["obbligatoriamente"],
@@ -2868,6 +3231,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di un dispositivo da utilizzare in caso di richiesta di soccorso stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dispositivo per soccorso stradale?",
         "spiegazione": "Il segnale SOS significa 'aiuto' o 'emergenza'. Quando lo vedi sulla strada, indica che lì c'è un telefono o un dispositivo per chiedere aiuto se hai un problema con la macchina, come un guasto o un incidente. È proprio per il soccorso stradale.",
         "regola": "SOS = Aiuto per la macchina.",
         "trabocchetti": ["dispositivo"],
@@ -2876,6 +3240,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su un dispositivo di chiamata per assistenza stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su colonnina di assistenza?",
         "spiegazione": "Questo segnale non è un cartello stradale normale, ma è proprio attaccato a una colonnina o a un telefono speciale che serve per chiamare l'assistenza se hai bisogno di aiuto sulla strada.",
         "regola": "SOS è SUL telefono di aiuto.",
         "trabocchetti": ["posto su un dispositivo"],
@@ -2884,6 +3249,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di un apparecchio per chiamare il soccorso stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → apparecchio per soccorso stradale?",
         "spiegazione": "È molto simile alla prima domanda. Il segnale SOS ti dice che lì vicino c'è un apparecchio, come un telefono, che puoi usare per chiamare aiuto se la tua auto ha un problema.",
         "regola": "SOS = Telefono per aiuto.",
         "trabocchetti": ["apparecchio per chiamare"],
@@ -2892,6 +3258,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una zona ospedaliera",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → zona ospedaliera?",
         "spiegazione": "Il segnale SOS significa 'aiuto' in generale, ma in questo contesto stradale si riferisce a un punto per chiamare soccorso per l'auto. Non indica che lì vicino c'è un ospedale. Per gli ospedali ci sono altri segnali specifici (quadrato blu con letto bianco o croce rossa).",
         "regola": "SOS stradale = NO ospedale.",
         "trabocchetti": ["ospedaliera"],
@@ -2900,6 +3267,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di un telefono pubblico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → telefono pubblico?",
         "spiegazione": "Un telefono pubblico è un telefono che tutti possono usare per fare chiamate normali. Il segnale SOS, invece, indica un telefono speciale, fatto solo per chiamare il soccorso stradale o le emergenze, non per fare telefonate private.",
         "regola": "SOS = Solo emergenza, non telefono normale.",
         "trabocchetti": ["telefono pubblico"],
@@ -2908,6 +3276,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area di sosta per ambulanze",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta ambulanze?",
         "spiegazione": "Il segnale SOS indica dove puoi chiamare aiuto, non dove le ambulanze si fermano o parcheggiano. Le aree di sosta per ambulanze sono indicate in modo diverso, spesso con simboli di croce rossa o specifici cartelli di parcheggio.",
         "regola": "SOS = Chiami, non parcheggi.",
         "trabocchetti": ["area di sosta per ambulanze"],
@@ -2916,6 +3285,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa una scuola secondaria statale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → scuola secondaria?",
         "spiegazione": "Questo segnale non ha nulla a che fare con le scuole. Le scuole sono indicate con altri tipi di segnali, spesso con l'immagine di bambini o con la scritta 'SCUOLA'. Il segnale SOS è solo per le emergenze stradali.",
         "regola": "SOS = NO scuola.",
         "trabocchetti": ["scuola secondaria statale"],
@@ -2924,6 +3294,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto all'inizio di una strada senza uscita per i veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada senza uscita per veicoli?",
         "spiegazione": "Questo segnale ti dice che la strada che stai per prendere non ha una via d'uscita per i veicoli. Significa che dovrai tornare indietro per uscire.",
         "regola": "Segnale a 'T' rossa = strada chiusa per veicoli.",
         "trabocchetti": ["all"],
@@ -2932,6 +3303,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale anche per i motocicli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vale anche per le moto?",
         "spiegazione": "Quando il segnale si riferisce ai 'veicoli', include tutti i tipi di mezzi a motore, quindi anche le motociclette. Non è una strada senza uscita solo per le auto.",
         "regola": "'Veicoli' include auto, moto, camion.",
         "trabocchetti": ["anche"],
@@ -2940,6 +3312,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada senza sbocco per i veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada senza sbocco?",
         "spiegazione": "Questo segnale indica proprio che la strada non ha una continuazione o un'altra uscita. 'Senza sbocco' è un sinonimo di 'senza uscita'.",
         "regola": "Senza sbocco = senza uscita.",
         "trabocchetti": ["Senza sbocco"],
@@ -2948,6 +3321,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vieta la sosta?",
         "spiegazione": "Questo segnale ti informa solo che la strada finisce. Non ti dice nulla sul fatto che tu possa o non possa fermarti o parcheggiare. Per vietare la sosta ci sono altri segnali specifici.",
         "regola": "Senza uscita non è divieto di sosta.",
         "trabocchetti": ["vieta la sosta"],
@@ -2956,6 +3330,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un incrocio a forma di \"T\"",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → incrocio a T?",
         "spiegazione": "Anche se il segnale ha una forma che ricorda una 'T', non indica un incrocio. Indica che la strada finisce, non che si unisce ad un'altra strada. I segnali di incrocio sono diversi.",
         "regola": "Non è un incrocio, è una fine strada.",
         "trabocchetti": ["incrocio a forma di"],
@@ -2964,6 +3339,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in vicinanza di una tabaccheria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tabaccheria?",
         "spiegazione": "Questo segnale stradale non ha nulla a che fare con i negozi o i servizi. Indica solo una condizione della strada, non la presenza di attività commerciali.",
         "regola": "Segnali stradali = informazioni sulla strada, non sui negozi.",
         "trabocchetti": ["tabaccheria"],
@@ -2972,6 +3348,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica lavori in corso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → lavori in corso?",
         "spiegazione": "I segnali che indicano 'lavori in corso' sono di solito di colore giallo e nero, o hanno simboli specifici (come un operaio). Questo segnale è blu e rosso e indica una strada senza uscita.",
         "regola": "Lavori in corso = segnali gialli.",
         "trabocchetti": ["lavori in corso"],
@@ -2980,6 +3357,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta l'inversione di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vieta l'inversione?",
         "spiegazione": "Il segnale ti dice che la strada finisce. Anzi, se ti trovi in una strada senza uscita, spesso dovrai fare un'inversione di marcia per tornare indietro. Il segnale non la vieta.",
         "regola": "Senza uscita non vieta l'inversione (anzi, la rende necessaria).",
         "trabocchetti": ["vieta l"],
@@ -2988,6 +3366,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta di entrare anche ai pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato anche ai pedoni?",
         "spiegazione": "Il segnale si riferisce ai 'veicoli'. I pedoni possono tranquillamente entrare in una strada senza uscita, camminare e poi tornare indietro. Non è un divieto di accesso per loro.",
         "regola": "Segnale per veicoli, non per pedoni.",
         "trabocchetti": ["anche", "anche ai pedoni"],
@@ -2996,6 +3375,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa che la strada di destra è senza uscita per i veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada a destra senza uscita?",
         "spiegazione": "Il segnale mostra una strada principale (linea bianca orizzontale) e una strada che si dirama a destra (linea bianca verticale con una barra rossa alla fine). La barra rossa significa che la strada a destra non ha un'uscita per i veicoli, è un vicolo cieco. Quindi, il segnale ti avvisa di questa situazione.",
         "regola": "Rosso = Stop/Fine strada per i veicoli.",
         "trabocchetti": ["preavvisa"],
@@ -3004,6 +3384,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la svolta a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a destra consentita?",
         "spiegazione": "Il segnale ti informa che la strada a destra è senza uscita, ma non ti proibisce di svoltare. Puoi decidere di entrare in quella strada, ma devi sapere che poi dovrai tornare indietro.",
         "regola": "Informa, non vieta la svolta.",
         "trabocchetti": ["consente"],
@@ -3012,6 +3393,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto consentito?",
         "spiegazione": "Il segnale mostra chiaramente che la strada principale continua dritta (la linea bianca orizzontale). Non c'è nessun divieto di proseguire in quella direzione.",
         "regola": "La linea bianca dritta è la tua strada.",
         "trabocchetti": ["consente"],
@@ -3020,6 +3402,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale anche per i motocicli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vale anche per le moto?",
         "spiegazione": "Questo tipo di segnale stradale, che indica la conformazione di una strada, è valido per tutti i veicoli che circolano, inclusi i motocicli, le auto, i camion, ecc.",
         "regola": "Segnali stradali = per tutti i veicoli.",
         "trabocchetti": ["vale anche per"],
@@ -3028,6 +3411,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato fa parte dei segnali di indicazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "I segnali di indicazione sono quelli che danno informazioni utili ai conducenti, come direzioni, servizi o, come in questo caso, la conformazione della strada. Questo segnale ti indica che una strada è senza uscita.",
         "regola": "Blu = Informazione.",
         "trabocchetti": ["Segnali di indicazione"],
@@ -3036,6 +3420,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la manovra di inversione di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vieta l'inversione?",
         "spiegazione": "Il segnale ti avvisa solo che la strada a destra è senza uscita. Non ti proibisce di fare l'inversione di marcia (cioè girare l'auto per tornare indietro) sulla strada principale o anche nella strada senza uscita, se lo spazio lo permette e non ci sono altri divieti.",
         "regola": "Informa, non vieta manovre.",
         "trabocchetti": ["vieta"],
@@ -3044,6 +3429,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la svolta a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vieta la svolta a destra?",
         "spiegazione": "Come spiegato prima, il segnale ti dice che la strada a destra è senza uscita, ma non ti impedisce di svoltare. Puoi svoltare, ma devi essere consapevole che non potrai proseguire oltre un certo punto.",
         "regola": "Rosso = senza uscita, non 'vietato entrare'.",
         "trabocchetti": ["vieta"],
@@ -3052,6 +3438,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una piazzola di sosta sulla destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → piazzola a destra?",
         "spiegazione": "Una piazzola di sosta è un'area dove puoi fermarti per un breve periodo. Questo segnale indica una strada che finisce, non un'area dove puoi sostare. I segnali per le piazzole di sosta sono diversi.",
         "regola": "Rosso = fine strada, non sosta.",
         "trabocchetti": ["piazzola di sosta"],
@@ -3060,6 +3447,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un'area di parcheggio sulla destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio a destra?",
         "spiegazione": "Un'area di parcheggio è un luogo dove puoi lasciare il veicolo. Questo segnale non indica un parcheggio, ma una strada senza uscita. I segnali di parcheggio sono di solito blu con una 'P' bianca.",
         "regola": "Rosso = fine strada, non parcheggio.",
         "trabocchetti": ["area di parcheggio"],
@@ -3068,6 +3456,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale anche per i pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vale anche per i pedoni?",
         "spiegazione": "Questo segnale si riferisce alla circolazione dei veicoli. Per i pedoni, una strada 'senza uscita' non significa che non possono camminare lì. Possono entrare e uscire a piedi senza problemi, anche se un veicolo non può proseguire oltre.",
         "regola": "Senza uscita (rosso) = per veicoli. I pedoni camminano.",
         "trabocchetti": ["vale anche per i pedoni"],
@@ -3076,6 +3465,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la velocità che si consiglia di non superare in condizioni ottimali di traffico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità consigliata?",
         "spiegazione": "Questo segnale blu con il numero '60' bianco indica una velocità consigliata. Significa che, se le condizioni della strada e del traffico sono buone, è una buona idea non andare più veloce di 60 km/h per la tua sicurezza e quella degli altri.",
         "regola": "Blu = Consiglio, non obbligo.",
         "trabocchetti": ["si consiglia di non superare"],
@@ -3084,6 +3474,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di viaggiare a 50 km/h",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → si può andare a 50 km/h?",
         "spiegazione": "Il segnale ti consiglia di non superare i 60 km/h. Questo significa che puoi andare a 60 km/h o anche più lentamente, come 50 km/h. L'importante è non andare più veloce di quanto consigliato, se le condizioni lo permettono.",
         "regola": "Sotto il consiglio, puoi andare.",
         "trabocchetti": ["consente"],
@@ -3092,6 +3483,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere abbinato con un pannello che indica la lunghezza del tratto di strada dove si consiglia di non superare la velocità indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con lunghezza del tratto?",
         "spiegazione": "Sì, è possibile trovare sotto questo segnale un altro pannello, di solito rettangolare, che dice per quanti chilometri vale questo consiglio di velocità. Ad esempio, potrebbe esserci scritto '5 km' per indicare che il consiglio vale per i prossimi 5 chilometri.",
         "regola": "Pannello = Dettaglio extra.",
         "trabocchetti": ["abbinato con un pannello"],
@@ -3100,6 +3492,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato se barrato da una striscia rossa indica la fine della sua validità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato barrato → fine validità?",
         "spiegazione": "Esatto! Quando vedi questo segnale blu con una striscia rossa diagonale sopra, significa che il consiglio di velocità (in questo caso, di non superare i 60 km/h) non vale più. Da quel punto in poi, puoi guidare secondo i limiti generali della strada.",
         "regola": "Striscia rossa = Fine del consiglio.",
         "trabocchetti": ["barrato da una striscia rossa"],
@@ -3108,6 +3501,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente, sulle strade extraurbane, di viaggiare a 70 km/h",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → 70 km/h su extraurbane?",
         "spiegazione": "Questo segnale è un *consiglio*, non un *obbligo*. Ti suggerisce di non superare i 60 km/h, ma non ti vieta di andare più veloce se il limite di velocità generale della strada lo permette e le condizioni sono sicure. Sulle strade extraurbane, il limite massimo è spesso 90 km/h, quindi 70 km/h è consentito, anche se il segnale consiglia 60 km/h. Devi sempre valutare le condizioni.",
         "regola": "Consiglio non è divieto.",
         "trabocchetti": ["consente"],
@@ -3116,6 +3510,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che superano a pieno carico 60 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato oltre 60 t?",
         "spiegazione": "Questo segnale riguarda la velocità, non il peso dei veicoli. Il numero '60' si riferisce ai chilometri orari (km/h), non alle tonnellate (t). I segnali che vietano il transito per peso sono diversi, di solito rotondi con bordo rosso e un numero seguito da 't'.",
         "regola": "60 km/h, non 60 tonnellate.",
         "trabocchetti": ["tonnellate"],
@@ -3124,6 +3519,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un limite minimo di velocità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → limite minimo?",
         "spiegazione": "No, questo segnale non indica un limite minimo di velocità. Un limite minimo di velocità è un segnale rotondo blu con un numero bianco. Questo segnale quadrato blu indica una velocità *consigliata*, cioè una velocità che è opportuno non superare.",
         "regola": "Quadrato blu = Consiglio. Cerchio blu = Minimo obbligatorio.",
         "trabocchetti": ["limite minimo"],
@@ -3132,6 +3528,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta di superare la velocità indicata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato superare la velocità?",
         "spiegazione": "Attenzione! Questo segnale *consiglia* di non superare i 60 km/h, ma non lo *vieta*. Un segnale che vieta di superare una certa velocità è rotondo, con bordo rosso e il numero nero al centro. Questo è un consiglio, non un divieto.",
         "regola": "Consiglio non è divieto.",
         "trabocchetti": ["vieta"],
@@ -3140,6 +3537,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la distanza di sicurezza da mantenere dal veicolo che sta davanti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanza di sicurezza?",
         "spiegazione": "No, questo segnale non ha nulla a che fare con la distanza di sicurezza. Il numero '60' si riferisce alla velocità in chilometri orari (km/h). I segnali per la distanza di sicurezza sono diversi e mostrano spesso due veicoli o un numero in metri.",
         "regola": "60 km/h, non 60 metri.",
         "trabocchetti": ["distanza di sicurezza"],
@@ -3148,6 +3546,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è possibile viaggiare ad una velocità più bassa di quella indicata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato andare più piano?",
         "spiegazione": "Questo segnale ti *consiglia* di non superare i 60 km/h, ma non ti impedisce di andare più lentamente. Anzi, se le condizioni della strada o del traffico lo richiedono, è giusto e sicuro viaggiare a una velocità inferiore.",
         "regola": "Puoi andare più lento del consiglio.",
         "immagine": "d3ac6ffdfebb6e60f9b1.jpg",
@@ -3155,6 +3554,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica i chilometri già fatti dal punto di origine della strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → km dall'origine della strada?",
         "spiegazione": "Questo segnale non indica i chilometri percorsi sulla strada. È un segnale di velocità consigliata. I segnali che indicano i chilometri progressivi di una strada sono diversi, di solito rettangolari e con un numero che indica la distanza dal punto di inizio della strada.",
         "regola": "60 km/h, non km percorsi.",
         "immagine": "d3ac6ffdfebb6e60f9b1.jpg",
@@ -3162,6 +3562,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada riservata alla circolazione dei soli veicoli a motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada solo per veicoli a motore?",
         "spiegazione": "Il segnale blu con il simbolo dell'auto bianca indica che quella strada è riservata solo ai veicoli che hanno un motore (come auto, moto, camion, autobus).",
         "regola": "Blu con auto = Solo veicoli a motore.",
         "trabocchetti": ["soli"],
@@ -3170,6 +3571,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito alle biciclette",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato alle bici?",
         "spiegazione": "Le biciclette non hanno un motore. Poiché la strada è riservata solo ai veicoli a motore, le biciclette non possono entrare o circolare su quella strada.",
         "regola": "Niente motore = Niente strada.",
         "trabocchetti": ["vieta il transito"],
@@ -3178,6 +3580,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato viene posto all'inizio di una strada riservata alla circolazione dei veicoli a motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio strada per veicoli a motore?",
         "spiegazione": "Questo segnale è un segnale di indicazione. Serve a informare i conducenti che da quel punto inizia una strada con una regola speciale: è riservata ai veicoli a motore.",
         "regola": "Segnale blu = Inizio di una regola.",
         "trabocchetti": ["all"],
@@ -3186,6 +3589,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli senza motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai veicoli senza motore?",
         "spiegazione": "Se la strada è riservata ai veicoli con motore, allora è vietata a tutti i veicoli che non hanno un motore, come biciclette, carretti trainati da animali o pedoni (anche se per i pedoni ci sono altre regole specifiche).",
         "regola": "No motore = No accesso.",
         "trabocchetti": ["senza motore"],
@@ -3194,6 +3598,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito agli autobus",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito agli autobus?",
         "spiegazione": "Gli autobus sono veicoli a motore. Poiché la strada è riservata a tutti i veicoli a motore, gli autobus possono tranquillamente circolare su questa strada.",
         "regola": "Autobus ha motore = Sì transito.",
         "trabocchetti": ["consente"],
@@ -3202,6 +3607,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato se barrato da una striscia rossa indica la fine della sua validità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato barrato → fine validità?",
         "spiegazione": "Molti segnali che indicano l'inizio di una regola (come questo) hanno un segnale 'gemello' barrato da una striscia rossa. Questo segnale barrato indica la fine della regola o della strada speciale.",
         "regola": "Striscia rossa = Fine regola.",
         "trabocchetti": ["barrato da una striscia rossa"],
@@ -3210,6 +3616,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada riservata solo ai taxi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada solo per taxi?",
         "spiegazione": "Il segnale mostra un'auto generica, non un simbolo specifico per i taxi. Indica che la strada è per tutti i veicoli a motore, non solo per i taxi.",
         "regola": "Auto generica = Tutti i motori, non solo taxi.",
         "trabocchetti": ["solo"],
@@ -3218,6 +3625,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un parcheggio per le sole autovetture",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio solo auto?",
         "spiegazione": "Questo segnale non indica un parcheggio. È un segnale di indicazione che mostra una strada riservata ai veicoli a motore. I segnali di parcheggio sono diversi, di solito con una 'P' bianca.",
         "regola": "Non è una 'P' = Non è parcheggio.",
         "trabocchetti": ["parcheggio"],
@@ -3226,6 +3634,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente ad una bicicletta di percorrere quella strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → bici ammessa?",
         "spiegazione": "Le biciclette non hanno motore. Poiché la strada è riservata solo ai veicoli a motore, le biciclette non possono circolare su quella strada.",
         "regola": "Bici senza motore = Non consentita.",
         "trabocchetti": ["consente"],
@@ -3234,6 +3643,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ad un autocarro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato all'autocarro?",
         "spiegazione": "Gli autocarri (comunemente chiamati camion) sono veicoli a motore. Poiché la strada è riservata a tutti i veicoli a motore, gli autocarri possono circolare.",
         "regola": "Autocarro ha motore = Consentito.",
         "trabocchetti": ["vieta il transito"],
@@ -3242,6 +3652,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto all'inizio di una galleria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio galleria?",
         "spiegazione": "Il segnale raffigurato è un segnale di indicazione che mostra l'ingresso di una galleria. Quindi, è posto proprio all'inizio di essa per avvisare i conducenti.",
         "regola": "Galleria = Entrata nel tunnel.",
         "immagine": "0f4f39609df7ed44f981.jpg",
@@ -3249,6 +3660,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa una galleria autostradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → galleria autostradale?",
         "spiegazione": "Il colore verde del segnale indica che si trova su autostrade o strade extraurbane principali. Per questo motivo, è corretto dire che preavvisa una galleria che si trova su queste strade, come quelle autostradali.",
         "regola": "Segnale verde = Autostrada o strada principale.",
         "trabocchetti": ["autostradale"],
@@ -3257,6 +3669,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato ricorda di spegnere il motore in caso di arresto prolungato in galleria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → spegnere il motore se fermi a lungo in galleria?",
         "spiegazione": "Quando entri in galleria, è importante seguire alcune regole di sicurezza. Spegnere il motore in caso di arresto lungo aiuta a non inquinare l'aria e a non consumare carburante inutilmente. Il segnale ti ricorda, in generale, le norme di comportamento in galleria.",
         "regola": "Galleria = Aria pulita, spegni il motore se ti fermi a lungo.",
         "trabocchetti": ["ricorda"],
@@ -3265,6 +3678,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato ricorda di non sostare e di non fermarsi in galleria, salvo diversa segnalazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → niente sosta né fermata in galleria?",
         "spiegazione": "In galleria è molto pericoloso fermarsi o sostare, perché potresti causare incidenti o bloccare il traffico. Ci si può fermare solo in aree di emergenza apposite, se segnalate. Il segnale ti avvisa della galleria e quindi delle sue regole.",
         "regola": "Galleria = Non fermarti, è pericoloso!",
         "trabocchetti": ["salvo diversa segnalazione"],
@@ -3273,6 +3687,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a tenere ben saldo lo sterzo per fronteggiare eventuali colpi di vento all'uscita della galleria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sterzo saldo all'uscita per il vento?",
         "spiegazione": "Quando esci da una galleria, specialmente se lunga, potresti sentire un forte colpo di vento o un cambiamento di pressione. Tenere lo sterzo ben saldo ti aiuta a mantenere il controllo del veicolo. Il segnale ti prepara a queste situazioni.",
         "regola": "Uscita galleria = Attenzione al vento, tieni lo sterzo.",
         "trabocchetti": ["invita"],
@@ -3281,6 +3696,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada chiusa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada chiusa?",
         "spiegazione": "Il segnale raffigurato indica una galleria, cioè un passaggio. Una strada chiusa ha un segnale diverso, di divieto (un cerchio rosso con una barra bianca orizzontale).",
         "regola": "Galleria = Si passa, non è chiusa.",
         "trabocchetti": ["strada chiusa"],
@@ -3289,6 +3705,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica lavori in corso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → lavori in corso?",
         "spiegazione": "Il segnale indica una galleria. I segnali di lavori in corso sono di colore giallo e mostrano persone al lavoro o macchinari.",
         "regola": "Verde = Galleria, non lavori.",
         "trabocchetti": ["lavori in corso"],
@@ -3297,6 +3714,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una galleria non illuminata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → galleria non illuminata?",
         "spiegazione": "Il segnale indica solo che c'è una galleria. Non ti dice se è illuminata o meno. La maggior parte delle gallerie moderne sono illuminate.",
         "regola": "Galleria = Non dice se c'è luce.",
         "trabocchetti": ["non illuminata"],
@@ -3305,6 +3723,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che superano 3,5 metri di altezza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato oltre 3,5 m di altezza?",
         "spiegazione": "Questo segnale indica una galleria, non un divieto di altezza. I divieti di altezza sono indicati da un segnale rotondo rosso con il limite di altezza in metri.",
         "regola": "Galleria = Non vieta l'altezza.",
         "trabocchetti": ["vieta il transito", "3,5 metri di altezza"],
@@ -3313,6 +3732,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di un ponte",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio ponte?",
         "spiegazione": "Il segnale raffigura l'ingresso di una galleria, che è un passaggio sotto terra o attraverso una montagna. Un ponte è una struttura che passa sopra un ostacolo (come un fiume o un'altra strada) e ha un segnale diverso.",
         "regola": "Galleria = Sotto, non sopra.",
         "trabocchetti": ["ponte"],
@@ -3321,6 +3741,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il sorpasso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso vietato?",
         "spiegazione": "Il segnale indica una galleria. Non vieta il sorpasso. Il divieto di sorpasso è indicato da un segnale rotondo rosso con due auto affiancate.",
         "regola": "Galleria = Non vieta il sorpasso.",
         "trabocchetti": ["vieta il sorpasso"],
@@ -3329,6 +3750,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare all'inizio di un ponte, di un viadotto o di un cavalcavia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio ponte, viadotto o cavalcavia?",
         "spiegazione": "Questo segnale, di colore verde, è un segnale di indicazione. Il simbolo bianco rappresenta un ponte, un viadotto o un cavalcavia. Quindi, è corretto dire che lo trovi all'inizio di queste strutture.",
         "regola": "Il simbolo è un ponte, quindi indica un ponte!",
         "immagine": "4c77610199612074f06c.jpg",
@@ -3336,6 +3758,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere abbinato ad un pannello che indica la lunghezza del cavalcavia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con lunghezza del cavalcavia?",
         "spiegazione": "I segnali di indicazione, come questo, possono spesso essere accompagnati da pannelli aggiuntivi. Questi pannelli servono a dare più informazioni, come la lunghezza della struttura (ponte, viadotto o cavalcavia) che stai per percorrere.",
         "regola": "Segnali verdi danno informazioni, anche con pannelli extra.",
         "trabocchetti": ["può essere abbinato"],
@@ -3344,6 +3767,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a fare particolare attenzione in caso di forte vento",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attenzione col forte vento?",
         "spiegazione": "Ponti, viadotti e cavalcavia sono strutture elevate e spesso aperte, quindi sono più esposti al vento forte. Per questo motivo, è sempre consigliabile fare più attenzione quando li si attraversa, specialmente in condizioni di vento.",
         "regola": "Ponte in alto = vento forte. Attenzione!",
         "trabocchetti": ["invita a fare particolare attenzione"],
@@ -3352,6 +3776,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a tenere ben saldo lo sterzo per fronteggiare eventuali colpi di vento laterale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sterzo saldo contro il vento laterale?",
         "spiegazione": "Se c'è vento forte, soprattutto vento laterale, il veicolo può essere spinto. Tenere saldamente lo sterzo ti aiuta a mantenere il controllo della direzione e a reagire meglio a eventuali raffiche improvvise.",
         "regola": "Vento sul ponte? Mani ferme sul volante!",
         "trabocchetti": ["invita a tenere ben saldo", "Eventuali colpi di vento laterale"],
@@ -3360,6 +3785,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive il divieto di sorpasso tra autoveicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di sorpasso?",
         "spiegazione": "Questo è un segnale di indicazione (verde e quadrato), non un segnale di divieto (che di solito è rotondo e rosso). Non impone nessuna regola di comportamento come il divieto di sorpasso. Indica solo la presenza di una struttura.",
         "regola": "Verde indica, rosso vieta. Questo è verde!",
         "trabocchetti": ["prescrive"],
@@ -3368,6 +3794,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di una galleria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio galleria?",
         "spiegazione": "Il simbolo raffigurato mostra un arco sopra uno spazio, che rappresenta chiaramente un ponte o un cavalcavia. Una galleria sarebbe rappresentata in modo diverso, come un'apertura scura in una montagna.",
         "regola": "Arco sopra = ponte. Non è un buco nella montagna!",
         "trabocchetti": ["galleria"],
@@ -3376,6 +3803,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si sta per transitare sotto un ponte",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passaggio sotto un ponte?",
         "spiegazione": "Il segnale indica che stai per salire e transitare *sopra* un ponte, un viadotto o un cavalcavia. Non indica che stai per passare *sotto* una di queste strutture.",
         "regola": "Il simbolo è il ponte su cui vai, non quello sotto cui passi.",
         "trabocchetti": ["sotto un ponte"],
@@ -3384,6 +3812,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un attraversamento ciclabile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attraversamento ciclabile?",
         "spiegazione": "Questo segnale, di forma quadrata e colore blu, con il simbolo di un ciclista bianco, indica proprio un punto della strada dove i ciclisti possono attraversare. È un segnale di indicazione.",
         "regola": "Quadrato blu con ciclista = Attraversamento ciclabile.",
         "immagine": "f5b6b9931a396b7db1e4.jpg",
@@ -3391,6 +3820,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza delle strisce dell'attraversamento ciclabile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sulle strisce ciclabili?",
         "spiegazione": "Sì, è vero. Questo segnale viene messo sulla strada proprio dove ci sono le strisce bianche disegnate per l'attraversamento dei ciclisti. Serve a rendere l'attraversamento più visibile e sicuro.",
         "regola": "Segnale e strisce: vanno sempre insieme!",
         "trabocchetti": ["in corrispondenza"],
@@ -3399,6 +3829,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che bisogna dare la precedenza ai ciclisti che attraversano sulle strisce",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza ai ciclisti sulle strisce?",
         "spiegazione": "Quando vedi questo segnale, significa che devi fare attenzione e, se ci sono ciclisti che stanno attraversando o stanno per farlo sulle strisce, devi fermarti e lasciarli passare. Hanno la precedenza.",
         "regola": "Ciclista sulle strisce? Stop e precedenza!",
         "trabocchetti": ["bisogna dare la precedenza"],
@@ -3407,6 +3838,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è abbinato alle strisce di attraversamento ciclabile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → abbinato alle strisce ciclabili?",
         "spiegazione": "Esatto, questo segnale non è mai da solo. È sempre usato insieme alle strisce bianche disegnate sull'asfalto che indicano l'attraversamento per i ciclisti. Sono un 'pacchetto' completo per la sicurezza.",
         "regola": "Segnale + Strisce = Attraversamento completo.",
         "trabocchetti": ["abbinato"],
@@ -3415,6 +3847,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita ad usare prudenza perché possiamo trovare ciclisti che attraversano la carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prudenza, ciclisti che attraversano?",
         "spiegazione": "Questo segnale ti avvisa che in quel punto potresti incontrare ciclisti che attraversano la strada. Quindi, devi rallentare, guardare bene e guidare con molta attenzione per evitare pericoli.",
         "regola": "Segnale ciclista? Occhi aperti e rallenta!",
         "trabocchetti": ["invita ad usare prudenza", "possiamo trovare"],
@@ -3423,6 +3856,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli senza motore",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai veicoli senza motore?",
         "spiegazione": "Falso! Questo segnale è un segnale di 'indicazione' (ti dà un'informazione), non un segnale di 'divieto'. I segnali di divieto sono rotondi con il bordo rosso. Questo segnale indica un attraversamento per i ciclisti, non vieta loro di passare.",
         "regola": "Blu non vieta, blu informa!",
         "trabocchetti": ["vieta"],
@@ -3431,6 +3865,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai ciclisti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai ciclisti?",
         "spiegazione": "Falso! Questo segnale è messo proprio per i ciclisti, per indicare un punto sicuro dove possono attraversare la strada. Non vieta assolutamente il loro passaggio, anzi, lo facilita e lo rende più sicuro.",
         "regola": "Segnale ciclista = Benvenuto ciclista!",
         "trabocchetti": ["vieta"],
@@ -3439,6 +3874,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una pista ciclabile",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pista ciclabile?",
         "spiegazione": "Falso! Questo segnale indica un 'attraversamento ciclabile', cioè un punto dove i ciclisti passano da un lato all'altro della strada. Una 'pista ciclabile' è una strada o un percorso dedicato ai ciclisti, e ha un segnale diverso (di solito un cerchio blu con un ciclista bianco).",
         "regola": "Quadrato blu con ciclista = Attraversamento. Cerchio blu con ciclista = Pista obbligatoria.",
         "trabocchetti": ["pista ciclabile"],
@@ -3447,6 +3883,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica ai ciclisti di svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ciclisti a sinistra?",
         "spiegazione": "Falso! Il segnale mostra un ciclista che va dritto. Non ci sono frecce o indicazioni che suggeriscono di svoltare a sinistra o in qualsiasi altra direzione. Indica solo la presenza di un attraversamento.",
         "regola": "Nessuna freccia = Nessuna svolta.",
         "trabocchetti": ["svoltare a sinistra"],
@@ -3455,6 +3892,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i ciclisti a dare la precedenza ai veicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ciclisti danno precedenza ai veicoli?",
         "spiegazione": "Falso! È il contrario! Questo segnale indica un attraversamento ciclabile, e significa che i conducenti dei veicoli devono dare la precedenza ai ciclisti che attraversano. I ciclisti, in questo punto, hanno la precedenza.",
         "regola": "Attraversamento ciclabile: la precedenza è del ciclista!",
         "immagine": "f5b6b9931a396b7db1e4.jpg",
@@ -3462,6 +3900,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il percorso da fare per prendere la strada di sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → percorso per prendere la strada di sinistra?",
         "spiegazione": "Questo segnale ti mostra la strada giusta da seguire per poter girare a sinistra. Non puoi girare direttamente, ma devi fare un piccolo giro come indicato dalla freccia.",
         "regola": "Freccia a sinistra curva = giro per girare a sinistra.",
         "trabocchetti": ["Percorso da fare"],
@@ -3470,6 +3909,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è possibile svoltare a sinistra in modo diretto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → niente svolta diretta a sinistra?",
         "spiegazione": "Esatto! Questo segnale viene messo proprio quando non puoi girare a sinistra subito, in modo diretto. Ti obbliga a fare un percorso diverso per poi poter svoltare.",
         "regola": "Giro per sinistra = no sinistra diretta.",
         "trabocchetti": ["in modo diretto"],
@@ -3478,6 +3918,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di proseguire diritto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diritto consentito?",
         "spiegazione": "Questo segnale ti dice come girare a sinistra, ma non ti impedisce di andare dritto. Se non devi girare a sinistra, puoi continuare per la tua strada.",
         "regola": "Segnale per sinistra indiretta = dritto è permesso.",
         "trabocchetti": ["consente"],
@@ -3486,6 +3927,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la svolta a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → svolta a destra consentita?",
         "spiegazione": "Anche se il segnale ti mostra come girare a sinistra, non ti vieta di girare a destra. Puoi scegliere di andare dritto, girare a destra o fare il percorso per girare a sinistra.",
         "regola": "Segnale per sinistra indiretta = destra è permessa.",
         "trabocchetti": ["consente"],
@@ -3494,6 +3936,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato interessa i conducenti che intendono prendere la strada di sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → per chi vuole andare a sinistra?",
         "spiegazione": "Certo! Questo segnale è importante solo per chi vuole girare a sinistra. Se tu devi andare dritto o girare a destra, questo segnale non ti riguarda direttamente.",
         "regola": "Segnale per sinistra indiretta = solo per chi va a sinistra.",
         "trabocchetti": ["interessa i conducenti che intendono"],
@@ -3502,6 +3945,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a svoltare a sinistra al prossimo incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo a sinistra al prossimo incrocio?",
         "spiegazione": "Attenzione! Questo segnale ti mostra *come* girare a sinistra, non ti *obbliga* a farlo. Tu puoi scegliere di andare dritto, girare a destra o seguire il percorso per girare a sinistra.",
         "regola": "Freccia curva = percorso, non obbligo di direzione.",
         "trabocchetti": ["obbliga"],
@@ -3510,6 +3954,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un parcheggio a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio a sinistra?",
         "spiegazione": "No, questo segnale non ha niente a che fare con i parcheggi. La freccia indica un percorso da seguire sulla strada, non un posto dove lasciare la macchina.",
         "regola": "Freccia curva = percorso, non parcheggio.",
         "trabocchetti": ["parcheggio"],
@@ -3518,6 +3963,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non vale per le biciclette ed i ciclomotori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non vale per bici e ciclomotori?",
         "spiegazione": "Falso! Questo segnale vale per tutti i veicoli, comprese le biciclette e i ciclomotori. Tutti devono seguire il percorso indicato se vogliono girare a sinistra.",
         "regola": "Segnale stradale = vale per tutti (salvo eccezioni).",
         "trabocchetti": ["non vale per"],
@@ -3526,6 +3972,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la svolta a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vieta la svolta a destra?",
         "spiegazione": "No, questo segnale ti dice solo come girare a sinistra. Non ti vieta assolutamente di girare a destra. Puoi girare a destra se vuoi.",
         "regola": "Segnale per sinistra indiretta = non vieta altre direzioni.",
         "trabocchetti": ["vieta"],
@@ -3534,6 +3981,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il percorso degli autobus che hanno fermate nelle vicinanze",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → percorso degli autobus?",
         "spiegazione": "Falso. Questo segnale non è solo per gli autobus. È un percorso che devono seguire tutti i veicoli che vogliono girare a sinistra, non solo i mezzi pubblici.",
         "regola": "Segnale generico = non solo per autobus.",
         "trabocchetti": ["percorso degli autobus"],
@@ -3542,6 +3990,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica, su strade a carreggiate separate, la presenza di un cavalcavia per effettuare l'inversione di marcia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → cavalcavia per inversione su carreggiate separate?",
         "spiegazione": "Il segnale mostra una strada divisa in due (carreggiate separate) e una freccia che indica un percorso per tornare indietro. Questo significa che c'è una struttura, come un cavalcavia (un ponte sopra la strada), che ti permette di fare un'inversione di marcia, cioè di cambiare direzione e tornare da dove sei venuto.",
         "regola": "Freccia curva indietro = si può invertire la marcia.",
         "trabocchetti": ["cavalcavia", "strade a carreggiate separate"],
@@ -3550,6 +3999,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica, su strade a carreggiate separate, un sottopassaggio per invertire il senso di marcia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sottopassaggio per inversione?",
         "spiegazione": "Come per la domanda precedente, il segnale indica la possibilità di invertire la marcia su strade divise. Un 'sottopassaggio' (un tunnel sotto la strada) è l'altra struttura, oltre al cavalcavia, che permette di fare questa manovra in sicurezza.",
         "regola": "Inversione = cavalcavia O sottopassaggio.",
         "trabocchetti": ["sottopassaggio"],
@@ -3558,6 +4008,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su una strada a carreggiate separate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su strada a carreggiate separate?",
         "spiegazione": "Il disegno del segnale mostra chiaramente due corsie di marcia separate da uno spazio centrale. Questo tipo di strada si chiama 'a carreggiate separate'. Il segnale si trova proprio su queste strade, come autostrade o strade extraurbane principali, dove non si può fare inversione direttamente.",
         "regola": "Il disegno mostra due strade separate.",
         "trabocchetti": ["carreggiate separate"],
@@ -3566,6 +4017,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di una struttura (cavalcavia o sottopassaggio) che consente di tornare indietro",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → struttura per tornare indietro?",
         "spiegazione": "Questo segnale ti informa che c'è un punto dove puoi fare un'inversione di marcia, cioè 'tornare indietro'. Per farlo, dovrai usare una struttura apposita, che può essere un cavalcavia (un ponte) o un sottopassaggio (un tunnel).",
         "regola": "Freccia curva = si torna indietro.",
         "trabocchetti": ["struttura (cavalcavia o sottopassaggio)", "consente di tornare indietro"],
@@ -3574,6 +4026,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se su fondo verde, indica, su un'autostrada, la presenza di un cavalcavia per effettuare l'inversione di marcia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato verde → cavalcavia per inversione in autostrada?",
         "spiegazione": "Il colore del fondo dei segnali stradali ci dice su che tipo di strada siamo. Se il segnale ha il fondo blu (come nell'immagine), è per strade extraurbane principali. Se fosse su fondo verde, indicherebbe la stessa cosa (un cavalcavia per l'inversione di marcia), ma su un'autostrada. Il significato del simbolo non cambia, solo il contesto stradale.",
         "regola": "Verde = Autostrada. Blu = Extraurbana. Simbolo = Inversione.",
         "trabocchetti": ["se su fondo verde"],
@@ -3582,6 +4035,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada è interrotta a causa di lavori in corso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada interrotta per lavori?",
         "spiegazione": "Questo segnale non ha nulla a che fare con lavori in corso o strade interrotte. Indica solo che puoi fare un'inversione di marcia. I segnali di lavori in corso sono diversi, di solito gialli o con simboli specifici (come un operaio).",
         "regola": "Nessun operaio, nessun lavoro.",
         "trabocchetti": ["interrotta a causa di lavori in corso"],
@@ -3590,6 +4044,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di un lungo rettilineo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → lungo rettilineo?",
         "spiegazione": "Il segnale mostra una freccia che fa una curva a U, indicando un'inversione di marcia, non una strada dritta. Un 'rettilineo' è una strada senza curve, quindi questa affermazione è falsa.",
         "regola": "Freccia curva, non dritta.",
         "trabocchetti": ["lungo rettilineo"],
@@ -3598,6 +4053,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di una strada extraurbana principale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio extraurbana principale?",
         "spiegazione": "Il segnale di inizio di una strada extraurbana principale è un cartello rettangolare blu con solo il simbolo della strada divisa, senza la freccia curva. Questo segnale, invece, indica una manovra specifica (l'inversione di marcia) che si può fare su quel tipo di strada.",
         "regola": "Questo è un segnale di manovra, non di inizio strada.",
         "immagine": "12de76951b5284e45ab4.jpg",
@@ -3605,6 +4061,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la vicinanza di un incrocio a raso (allo stesso livello del piano stradale)",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → incrocio a raso vicino?",
         "spiegazione": "Questo segnale si trova su strade a carreggiate separate (come autostrade), dove gli incroci 'a raso' (cioè allo stesso livello della strada) sono molto rari o assenti per sicurezza. La freccia indica un'inversione di marcia, non un incrocio.",
         "regola": "Su strade divise non ci sono incroci a raso per l'inversione.",
         "trabocchetti": ["incrocio a raso"],
@@ -3613,6 +4070,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad invertire il senso di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di inversione?",
         "spiegazione": "Il segnale indica la 'presenza' o la 'possibilità' di fare un'inversione di marcia, non un 'obbligo'. I segnali di obbligo sono rotondi e blu con simboli bianchi. Questo è un segnale di indicazione (rettangolare).",
         "regola": "Rettangolare = indicazione, non obbligo.",
         "trabocchetti": ["obbliga"],
@@ -3621,6 +4079,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una piazzola a lato della carreggiata per effettuare la fermata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → piazzola per la fermata?",
         "spiegazione": "Il segnale mostra uno spazio extra a lato della strada, chiamato 'piazzola', dove puoi fermarti per una breve pausa o in caso di emergenza. È un luogo sicuro per la fermata.",
         "regola": "Piazzola = spazio per fermarsi.",
         "trabocchetti": ["Piazzola", "fermata"],
@@ -3629,6 +4088,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in vicinanza di una piazzola per effettuare una fermata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vicino a piazzola per fermata?",
         "spiegazione": "Questo segnale ti avvisa che tra poco troverai una piazzola dove potrai fermarti. Non è proprio *sulla* piazzola, ma un po' prima, per darti il tempo di prepararti.",
         "regola": "Avviso = prima della piazzola.",
         "trabocchetti": ["in vicinanza"],
@@ -3637,6 +4097,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova su strada extraurbana",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su strada extraurbana?",
         "spiegazione": "Le piazzole di sosta come questa sono utili e si trovano spesso fuori città, sulle strade extraurbane o in autostrada, dove non ci sono molti altri posti per fermarsi in sicurezza.",
         "regola": "Piazzola = fuori città.",
         "trabocchetti": ["Strada extraurbana"],
@@ -3645,6 +4106,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere abbinato ad un pannello che indica la distanza che c'è tra il segnale e la piazzola",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con distanza dalla piazzola?",
         "spiegazione": "Sì, spesso sotto questo segnale trovi un pannello aggiuntivo con un numero (ad esempio '300 m'). Questo numero ti dice quanti metri mancano per arrivare alla piazzola.",
         "regola": "Segnale + pannello = distanza.",
         "trabocchetti": ["Abbinato ad un pannello"],
@@ -3653,6 +4115,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un allargamento della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → allargamento della carreggiata?",
         "spiegazione": "Questo segnale non indica che la strada principale diventa più larga. Indica uno spazio *a lato* della strada, separato dalla carreggiata, dove puoi fermarti, non un allargamento della carreggiata stessa.",
         "regola": "Non allarga la strada, aggiunge una piazzola.",
         "trabocchetti": ["allargamento della carreggiata"],
@@ -3661,6 +4124,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la sosta è consentita solo per 3 ore",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta per 3 ore?",
         "spiegazione": "Il segnale ti dice che c'è una piazzola, ma non ti dà informazioni su quanto tempo puoi stare fermo o parcheggiato. Per i limiti di tempo servono altri segnali specifici.",
         "regola": "Piazzola sì, tempo no.",
         "trabocchetti": ["solo per 3 ore"],
@@ -3669,6 +4133,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area di campeggio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → campeggio?",
         "spiegazione": "Questo segnale non indica un'area dove puoi campeggiare con tende o camper. È solo una piazzola per una breve fermata o sosta, non un'area attrezzata per il campeggio.",
         "regola": "Non è una tenda, è una piazzola.",
         "trabocchetti": ["area di campeggio"],
@@ -3677,6 +4142,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fermata di un autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata autobus?",
         "spiegazione": "Questo segnale non ha nulla a che fare con gli autobus. Indica una piazzola dove *qualsiasi* veicolo può fermarsi, non è una fermata dedicata ai mezzi pubblici.",
         "regola": "Non è un bus, è una piazzola.",
         "trabocchetti": ["fermata di un autobus"],
@@ -3685,6 +4151,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area di parcheggio per caravan",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio caravan?",
         "spiegazione": "Questo segnale indica una piazzola generica per tutti i veicoli. Non è un'area di parcheggio *dedicata* solo ai caravan, anche se i caravan possono usarla.",
         "regola": "Non è solo per caravan, è per tutti.",
         "trabocchetti": ["per caravan"],
@@ -3693,6 +4160,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto solo sulle autostrade",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo in autostrada?",
         "spiegazione": "Questo segnale si trova spesso in autostrada, ma anche su altre strade fuori città, come le strade extraurbane principali e secondarie. Non è *solo* per le autostrade.",
         "regola": "Non 'solo' autostrada, anche extraurbana.",
         "trabocchetti": ["solo"],
@@ -3701,6 +4169,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica come utilizzare le corsie di una carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → uso delle corsie?",
         "spiegazione": "Il segnale mostra due frecce che indicano due corsie e sulla corsia di sinistra c'è un divieto per i camion. Questo significa che il segnale ci dice come dobbiamo usare le diverse corsie della strada, regolandone l'utilizzo.",
         "regola": "Frecce + divieto = Istruzioni per le corsie.",
         "trabocchetti": ["come utilizzare le corsie"],
@@ -3709,6 +4178,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la circolazione dei motocicli su tutte e due le corsie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moto su entrambe le corsie?",
         "spiegazione": "Il divieto sulla corsia di sinistra riguarda solo gli autocarri (camion) che superano una certa massa. I motocicli non sono autocarri, quindi non sono soggetti a questo divieto e possono usare liberamente entrambe le corsie.",
         "regola": "Divieto solo per camion = Moto libere.",
         "trabocchetti": ["motocicli"],
@@ -3717,6 +4187,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la corsia di sinistra è vietata agli autocarri che superano la massa a pieno carico di 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → corsia sinistra vietata ad autocarri oltre 3,5 t?",
         "spiegazione": "Il simbolo del camion all'interno del segnale di divieto (il cerchio rosso) si riferisce agli autocarri che superano la massa a pieno carico di 3,5 tonnellate. Quindi, questi camion non possono usare la corsia di sinistra.",
         "regola": "Camion nel cerchio rosso = No corsia sinistra per camion pesanti (>3.5t).",
         "immagine": "c8e9e1f7b3fd5f1754d6.jpg",
@@ -3724,6 +4195,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è installato sulle strade extraurbane",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su strade extraurbane?",
         "spiegazione": "Questi segnali che regolano l'uso delle corsie, specialmente con divieti per i mezzi pesanti, si trovano tipicamente su strade a scorrimento veloce, come le autostrade o le strade extraurbane principali, dove ci sono più corsie per senso di marcia.",
         "regola": "Regolazione corsie = Strade veloci (extraurbane/autostrade).",
         "trabocchetti": ["extraurbane"],
@@ -3732,6 +4204,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la circolazione delle autovetture su tutte e due le corsie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → auto su entrambe le corsie?",
         "spiegazione": "Come per i motocicli, il divieto sulla corsia di sinistra è solo per gli autocarri pesanti. Le autovetture non sono autocarri, quindi non sono soggette a questa restrizione e possono usare liberamente entrambe le corsie.",
         "regola": "Divieto solo per camion = Auto libere.",
         "trabocchetti": ["autovetture"],
@@ -3740,6 +4213,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente a tutti gli autocarri di sorpassare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarri sorpassano a destra?",
         "spiegazione": "Il sorpasso a destra è generalmente vietato, tranne in casi specifici (ad esempio, quando il veicolo davanti intende svoltare a sinistra). Questo segnale non modifica le regole generali sul sorpasso e non autorizza il sorpasso a destra per nessun veicolo, inclusi gli autocarri.",
         "regola": "Sorpasso a destra = Quasi sempre FALSO.",
         "immagine": "c8e9e1f7b3fd5f1754d6.jpg",
@@ -3747,6 +4221,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che gli autocarri che superano 3,5 tonnellate possono circolare solo sulla corsia di sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarri oltre 3,5 t solo a sinistra?",
         "spiegazione": "È il contrario! Il segnale indica che gli autocarri pesanti (quelli sopra le 3,5 tonnellate) *non possono* circolare sulla corsia di sinistra. Devono usare la corsia di destra.",
         "regola": "Divieto sinistra = Obbligo destra (per i camion pesanti).",
         "trabocchetti": ["solo"],
@@ -3755,6 +4230,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta a tutti gli autocarri di circolare sulla corsia di sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia sinistra vietata a tutti gli autocarri?",
         "spiegazione": "Il divieto sulla corsia di sinistra non è per *tutti* gli autocarri, ma solo per quelli che superano le 3,5 tonnellate di massa a pieno carico. Gli autocarri più leggeri (sotto le 3,5 tonnellate) possono usare la corsia di sinistra.",
         "regola": "'Tutti' = Attenzione! Spesso è FALSO.",
         "trabocchetti": ["tutti"],
@@ -3763,6 +4239,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito anche agli autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato anche agli autobus?",
         "spiegazione": "Il simbolo nel segnale di divieto è un autocarro (camion), non un autobus. Gli autobus sono veicoli per il trasporto di persone e non rientrano nella categoria degli autocarri a cui si riferisce il divieto. Quindi, gli autobus possono usare entrambe le corsie.",
         "regola": "Camion non è autobus = Autobus libero.",
         "trabocchetti": ["anche agli autobus", "autobus"],
@@ -3771,6 +4248,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova solo su strade a doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo su doppio senso?",
         "spiegazione": "Le frecce sul segnale indicano che tutte le corsie vanno nella stessa direzione. Questo tipo di segnale si trova su strade a senso unico di marcia o su carreggiate separate di strade a doppio senso (come le autostrade), ma non su una strada a doppio senso dove le corsie sono usate per direzioni opposte.",
         "regola": "Frecce tutte in su = Senso unico per le corsie.",
         "trabocchetti": ["solo"],
@@ -3779,6 +4257,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica le velocità minime obbligatorie da mantenere sulle corsie indicate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità minime per corsia?",
         "spiegazione": "Questo segnale, con i cerchi blu e i numeri, indica le velocità minime che devi mantenere su ogni corsia. Non puoi andare più piano di quanto indicato.",
         "regola": "Cerchio blu = obbligo minimo.",
         "trabocchetti": ["minime obbligatorie"],
@@ -3787,6 +4266,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto sulle autostrade",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → in autostrada?",
         "spiegazione": "Questi segnali si trovano spesso sulle autostrade o sulle strade extraurbane principali, dove ci sono più corsie e il traffico deve scorrere velocemente.",
         "regola": "Tante corsie, velocità diverse = autostrada.",
         "trabocchetti": ["Autostrade"],
@@ -3795,6 +4275,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente ad un veicolo che viaggia a 100 km/h di percorrere la corsia di mezzo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → a 100 km/h corsia di mezzo?",
         "spiegazione": "La corsia di mezzo ha una velocità minima di 60 km/h. Se vai a 100 km/h, stai andando più veloce del minimo (100 è maggiore di 60), quindi puoi usarla.",
         "regola": "100 > 60? Sì, puoi!",
         "trabocchetti": ["consente"],
@@ -3803,6 +4284,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i veicoli che viaggiano alla velocità di 50 km/h di stare sulla prima corsia di destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → a 50 km/h corsia di destra?",
         "spiegazione": "Se vai a 50 km/h, non puoi usare la corsia di sinistra (minimo 90) né quella di mezzo (minimo 60). Quindi, sei obbligato a stare sulla corsia più a destra, che non ha un minimo specifico indicato dal segnale.",
         "regola": "Lento? Stai a destra!",
         "trabocchetti": ["obbliga"],
@@ -3811,6 +4293,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di circolare a 160 km/h in tutte e tre le corsie",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → 160 km/h in tutte le corsie?",
         "spiegazione": "Il segnale indica solo le velocità minime. Non significa che puoi andare a qualsiasi velocità sopra il minimo. La velocità massima consentita in autostrada è di solito 130 km/h. 160 km/h è troppo veloce e non è permesso.",
         "regola": "Minimo non è massimo! 160 è vietato.",
         "trabocchetti": ["consente"],
@@ -3819,6 +4302,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato riporta le velocità che si consiglia di non superare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → velocità consigliate massime?",
         "spiegazione": "Questo segnale indica velocità 'minime obbligatorie', non 'consigliate di non superare'. Le velocità consigliate sono indicate da un altro tipo di segnale (quadrato verde).",
         "regola": "Cerchio blu = obbligo minimo, non consiglio massimo.",
         "trabocchetti": ["si consiglia di non superare"],
@@ -3827,6 +4311,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente ad un veicolo che viaggia alla velocità di 80 km/h di stare sulla corsia di sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → a 80 km/h corsia di sinistra?",
         "spiegazione": "La corsia di sinistra ha una velocità minima obbligatoria di 90 km/h. Se vai a 80 km/h, sei troppo lento per quella corsia (80 è minore di 90).",
         "regola": "80 < 90? No sinistra!",
         "trabocchetti": ["consente"],
@@ -3835,6 +4320,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada a doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → doppio senso?",
         "spiegazione": "Tutte le frecce sul segnale puntano nella stessa direzione. Questo indica una strada a senso unico, non a doppio senso di circolazione.",
         "regola": "Frecce uguali = senso unico.",
         "trabocchetti": ["doppio senso di circolazione"],
@@ -3843,6 +4329,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica le velocità consigliate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → velocità consigliate?",
         "spiegazione": "Come detto prima, i cerchi blu indicano velocità 'minime obbligatorie'. Le 'velocità consigliate' sono un altro tipo di segnale, di colore verde e di forma quadrata.",
         "regola": "Cerchio blu = obbligo minimo, non consiglio.",
         "trabocchetti": ["velocità consigliate"],
@@ -3851,6 +4338,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica come devono essere utilizzate le corsie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → uso delle corsie?",
         "spiegazione": "Questo segnale ti mostra come devi usare le diverse corsie della strada. Le frecce indicano la direzione e il simbolo 'BUS' ti dice che una corsia è speciale.",
         "regola": "Frecce + BUS = Istruzioni corsie.",
         "trabocchetti": ["come devono essere utilizzate"],
@@ -3859,6 +4347,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la corsia di destra è riservata agli autobus dei servizi pubblici urbani",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → corsia destra riservata agli autobus urbani?",
         "spiegazione": "Sì, è vero. Il simbolo 'BUS' sulla corsia di destra indica chiaramente che quella corsia è solo per gli autobus che fanno servizio pubblico in città.",
         "regola": "BUS = Solo autobus.",
         "trabocchetti": ["riservata", "Servizi pubblici urbani"],
@@ -3867,6 +4356,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che le corsie di sinistra sono destinate al transito normale di tutti i veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → corsie sinistre per tutti?",
         "spiegazione": "Esatto! Le due frecce a sinistra, senza simboli speciali, indicano che quelle corsie sono per tutti gli altri veicoli, per il traffico normale.",
         "regola": "Frecce senza simboli = Tutti i veicoli.",
         "trabocchetti": ["Transito normale di tutti i veicoli"],
@@ -3875,6 +4365,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su strade urbane",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su strade urbane?",
         "spiegazione": "Sì, è vero. Le corsie riservate agli autobus urbani si trovano quasi sempre nelle città, dove c'è il trasporto pubblico locale.",
         "regola": "Corsia BUS = Città.",
         "trabocchetti": ["Strade urbane"],
@@ -3883,6 +4374,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente ai taxi di stare sulla corsia di destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → taxi nella corsia di destra?",
         "spiegazione": "No, questo è falso. La corsia è riservata solo agli 'BUS'. Anche se i taxi sono un servizio pubblico, non sono autobus e non possono usare questa corsia, a meno che non ci sia un'indicazione specifica che li includa, ma qui non c'è.",
         "regola": "BUS = Solo BUS, non taxi.",
         "trabocchetti": ["consente", "TAXI"],
@@ -3891,6 +4383,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una pista ciclabile sulla destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pista ciclabile a destra?",
         "spiegazione": "No, è falso. Il simbolo sulla corsia di destra è 'BUS', non il simbolo di una bicicletta. Quindi non è una pista ciclabile.",
         "regola": "BUS non è BICI.",
         "trabocchetti": ["pista ciclabile"],
@@ -3899,6 +4392,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare sulle autostrade",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → in autostrada?",
         "spiegazione": "No, è falso. Questo tipo di segnale, con corsie riservate agli autobus urbani, si trova nelle città, non sulle autostrade.",
         "regola": "Corsia BUS = Città, non autostrada.",
         "trabocchetti": ["autostrade"],
@@ -3907,6 +4401,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che gli autobus possono sorpassare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autobus sorpassano a destra?",
         "spiegazione": "No, è falso. Il segnale indica che gli autobus devono usare quella corsia, ma non dice che possono sorpassare a destra. Il sorpasso a destra è generalmente vietato, salvo casi molto specifici che non sono indicati da questo segnale.",
         "regola": "Corsia BUS = Destinazione, non sorpasso.",
         "trabocchetti": ["possono sorpassare a destra"],
@@ -3915,6 +4410,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un cambiamento del numero di corsie disponibili",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → cambia il numero di corsie?",
         "spiegazione": "Il segnale mostra che la strada avrà più corsie. Prima c'era una corsia, ora ce ne saranno due, quindi il numero di corsie cambia (aumenta).",
         "regola": "Più frecce = più corsie.",
         "immagine": "7abed5f0efe9efa47c27.jpg",
@@ -3922,6 +4418,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un aumento da una a due corsie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → da una a due corsie?",
         "spiegazione": "Sì, il segnale mostra una corsia che va dritta e un'altra che si aggiunge da destra. Questo significa che da una corsia si passa a due corsie che vanno nella stessa direzione.",
         "regola": "Una che si aggiunge = da 1 a 2.",
         "trabocchetti": ["aumento da una a due corsie"],
@@ -3930,6 +4427,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere abbinato ad un pannello che indica la distanza dal punto in cui si ha l'aumento di corsia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con distanza dall'aumento di corsie?",
         "spiegazione": "Questo segnale è un preavviso, cioè ti avvisa prima che succeda l'aumento di corsia. Spesso, sotto questi segnali, c'è un pannello che indica la distanza (es. '300 m') per farti sapere quanto manca al punto esatto.",
         "regola": "Preavviso + distanza = informazione completa.",
         "trabocchetti": ["può essere abbinato"],
@@ -3938,6 +4436,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto sulle strade extraurbane",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su strade extraurbane?",
         "spiegazione": "Questi segnali, che indicano cambiamenti importanti nella struttura della strada come l'aumento di corsie, si trovano spesso sulle strade fuori città, come le strade extraurbane principali o secondarie, dove le velocità sono più alte e serve più preavviso.",
         "regola": "Strade veloci = più preavviso.",
         "trabocchetti": ["sulle strade extraurbane"],
@@ -3946,6 +4445,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si è vicini ad un cavalcavia che consente di invertire il senso di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cavalcavia per inversione?",
         "spiegazione": "Il segnale mostra solo un aumento di corsia. Non ha nulla a che fare con cavalcavia o con la possibilità di tornare indietro (invertire il senso di marcia).",
         "regola": "Frecce dritte/curve = corsie, non inversioni.",
         "trabocchetti": ["cavalcavia", "invertire il senso di marcia"],
@@ -3954,6 +4454,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa l'obbligo di svolta a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo a destra?",
         "spiegazione": "Le frecce indicano che si continua dritto, con una corsia in più. Non c'è nessuna freccia che indica una svolta obbligatoria a destra. I segnali di obbligo sono rotondi e blu.",
         "regola": "Non è rotondo = non è un obbligo.",
         "trabocchetti": ["obbligo di svolta a destra"],
@@ -3962,6 +4463,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la possibilità di passare a destra o a sinistra di un ostacolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passare ai due lati dell'ostacolo?",
         "spiegazione": "Questo segnale non mostra nessun ostacolo. Le frecce indicano solo come si sviluppano le corsie della strada. I segnali per ostacoli sono diversi (ad esempio, frecce oblique su sfondo bianco e rosso).",
         "regola": "Nessun ostacolo = nessuna deviazione.",
         "trabocchetti": ["ostacolo"],
@@ -3970,6 +4472,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è possibile sorpassare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso a destra?",
         "spiegazione": "Il segnale indica un aumento di corsia, non dà indicazioni specifiche sul sorpasso. Il sorpasso a destra è permesso solo in casi particolari (es. se il veicolo davanti deve svoltare a sinistra e ha segnalato l'intenzione), ma questo segnale non c'entra.",
         "regola": "Corsie in più, non sorpassi.",
         "trabocchetti": ["sorpassare a destra"],
@@ -3978,6 +4481,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una zona di preselezione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preselezione?",
         "spiegazione": "Una zona di preselezione è un tratto di strada dove le corsie sono dedicate a direzioni diverse (es. una corsia per andare dritto, una per svoltare a destra). Questo segnale indica solo che le corsie aumentano, ma tutte vanno nella stessa direzione.",
         "regola": "Stessa direzione = non preselezione.",
         "trabocchetti": ["zona di preselezione"],
@@ -3986,6 +4490,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una corsia di decelerazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia di decelerazione?",
         "spiegazione": "Una corsia di decelerazione serve per rallentare e uscire dalla strada principale (ad esempio, per un'uscita autostradale). Questo segnale, invece, indica che si aggiunge una corsia per continuare sulla stessa strada, non per uscirne.",
         "regola": "Corsia che si aggiunge = non uscita.",
         "trabocchetti": ["corsia di decelerazione"],
@@ -3994,6 +4499,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una diminuzione del numero di corsie disponibili",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → diminuiscono le corsie?",
         "spiegazione": "Il segnale mostra che una delle corsie (quella a destra, indicata dalla freccia che curva a sinistra) sta per finire. Questo significa che ci saranno meno corsie disponibili per continuare a guidare dritto.",
         "regola": "Freccia che si sposta = meno corsie.",
         "immagine": "9e2ecf965993bc2e8471.jpg",
@@ -4001,6 +4507,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una riduzione da tre a due corsie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → da tre a due corsie?",
         "spiegazione": "Il segnale raffigura tre frecce: due vanno dritte e una (quella a destra) si sposta a sinistra. Questo indica che la corsia di destra sta per chiudersi, quindi si passa da tre corsie a due.",
         "regola": "Tre frecce, una si 'chiude' = da 3 a 2.",
         "trabocchetti": ["tre", "due"],
@@ -4009,6 +4516,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consiglia di rallentare per restringimento della carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare per restringimento?",
         "spiegazione": "Quando una corsia finisce e i veicoli devono spostarsi, è sempre una buona idea rallentare e fare attenzione per guidare in sicurezza. Il 'restringimento della carreggiata' (meno spazio) richiede prudenza.",
         "regola": "Meno spazio = rallenta.",
         "trabocchetti": ["consiglia", "Restringimento della carreggiata"],
@@ -4017,6 +4525,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere abbinato ad un pannello che indica la distanza dal restringimento di corsia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con distanza dal restringimento?",
         "spiegazione": "Sì, è molto comune che i segnali importanti, come quelli che indicano un cambiamento nella strada, siano accompagnati da un pannello sotto che dice 'tra X metri' per avvisare i conducenti in anticipo.",
         "regola": "Segnale importante + distanza = preavviso.",
         "trabocchetti": ["può essere abbinato"],
@@ -4025,6 +4534,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è installato sulle autostrade",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → in autostrada?",
         "spiegazione": "I segnali di indicazione con sfondo verde sono tipici delle autostrade e delle strade extraurbane principali. Questo tipo di restringimento di corsia è frequente su queste strade veloci.",
         "regola": "Sfondo verde = autostrada/strada principale.",
         "immagine": "9e2ecf965993bc2e8471.jpg",
@@ -4032,6 +4542,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica lavori in corso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → lavori in corso?",
         "spiegazione": "Questo segnale indica solo che una corsia finisce. I 'lavori in corso' sono indicati da segnali specifici, che di solito hanno uno sfondo giallo o arancione, non verde.",
         "regola": "Verde = restringimento, Giallo/Arancione = lavori.",
         "trabocchetti": ["lavori in corso"],
@@ -4040,6 +4551,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa l'obbligo di svoltare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo a sinistra?",
         "spiegazione": "La freccia che curva a sinistra indica che la corsia di destra finisce e i veicoli devono spostarsi a sinistra per continuare dritto. Non significa che tutti devono 'svoltare a sinistra'. Le altre due frecce continuano dritto.",
         "regola": "Spostamento non è svolta.",
         "trabocchetti": ["obbligo di svoltare a sinistra"],
@@ -4048,6 +4560,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un cavalcavia che consente l'inversione di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cavalcavia per inversione?",
         "spiegazione": "Questo segnale non ha nulla a che fare con 'cavalcavia' o 'inversioni di marcia'. Indica solo che una corsia sta per finire e bisogna spostarsi.",
         "regola": "Nessun cavalcavia, nessuna inversione.",
         "trabocchetti": ["cavalcavia", "inversione di marcia"],
@@ -4056,6 +4569,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che bisogna dare la precedenza ai veicoli che entrano in autostrada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza a chi entra in autostrada?",
         "spiegazione": "Questo segnale non riguarda la precedenza ai veicoli che entrano in autostrada. Quella situazione è indicata da altri segnali specifici (come 'Dare precedenza' o 'Stop' sulle rampe di ingresso). Qui si parla di veicoli che si spostano all'interno della stessa strada.",
         "regola": "Restringimento non è ingresso.",
         "immagine": "9e2ecf965993bc2e8471.jpg",
@@ -4063,6 +4577,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consiglia ai veicoli rappresentati nel pannello di seguire la direzione indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → direzione consigliata ai veicoli nel pannello?",
         "spiegazione": "Il segnale mostra una freccia che indica una direzione e i disegni di autotreni e autoarticolati. Questo tipo di pannello serve proprio a consigliare a questi veicoli di prendere quella direzione, spesso per evitare strade strette o centri abitati.",
         "regola": "Freccia + camion = Consiglio di direzione per camion.",
         "trabocchetti": ["consiglia"],
@@ -4071,6 +4586,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa una deviazione consigliata per gli autotreni ed autoarticolati in transito",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → deviazione consigliata ad autotreni?",
         "spiegazione": "Sì, il segnale preavvisa, cioè avvisa prima, che c'è una strada alternativa (una deviazione) che è consigliata per i veicoli pesanti come gli autotreni e gli autoarticolati. È un'informazione utile per chi guida questi mezzi.",
         "regola": "Preavviso + deviazione + consiglio = VERO.",
         "trabocchetti": ["preavvisa", "consigliata"],
@@ -4079,6 +4595,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consiglia di svoltare a destra alle categorie dei veicoli rappresentati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → destra consigliata ai veicoli raffigurati?",
         "spiegazione": "La freccia nel segnale indica chiaramente una svolta a destra. Il pannello è specifico per le categorie di veicoli disegnate (autotreni, autoarticolati, autocarri), e il suo scopo è consigliare loro quella direzione.",
         "regola": "Freccia a destra + camion = Consiglio di svolta a destra.",
         "trabocchetti": ["consiglia", "a destra"],
@@ -4087,6 +4604,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non è un segnale di obbligo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non di obbligo?",
         "spiegazione": "Questo è un pannello integrativo di indicazione o consiglio. I segnali di obbligo sono di solito rotondi e blu con simboli bianchi. Questo è un pannello rettangolare bianco, quindi non è un obbligo.",
         "regola": "Pannello bianco rettangolare = Mai obbligo.",
         "trabocchetti": ["non è un segnale di obbligo"],
@@ -4095,6 +4613,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consiglia agli autotreni e agli autoarticolati la direzione per non attraversare il centro abitato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autotreni evitano il centro?",
         "spiegazione": "Spesso questi segnali vengono usati proprio per deviare il traffico pesante (autotreni e autoarticolati) dai centri abitati, dove potrebbero creare problemi di traffico, rumore o danni alle strade. Quindi, il consiglio è per una direzione alternativa.",
         "regola": "Camion fuori città = Consiglio utile.",
         "trabocchetti": ["consiglia", "non attraversare il centro abitato"],
@@ -4103,6 +4622,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la svolta a destra agli autotreni ed autoarticolati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietata la destra agli autotreni?",
         "spiegazione": "Il segnale raffigurato consiglia una direzione, non la vieta. Un divieto sarebbe un segnale rotondo con bordo rosso e una barra diagonale. Questo è un consiglio, non un divieto.",
         "regola": "Consiglio non è divieto.",
         "trabocchetti": ["vieta"],
@@ -4111,6 +4631,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica agli autocarri di sorpassare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarri sorpassano a destra?",
         "spiegazione": "La freccia indica una direzione da seguire (svoltare a destra), non una manovra di sorpasso. Il sorpasso a destra è generalmente vietato, tranne in casi specifici. Questo segnale non c'entra nulla con il sorpasso.",
         "regola": "Freccia = Direzione, non sorpasso.",
         "trabocchetti": ["sorpassare a destra"],
@@ -4119,6 +4640,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica agli autocarri la direzione per il centro cittadino",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → centro per autocarri?",
         "spiegazione": "Come detto in precedenza, questi segnali sono spesso usati proprio per deviare i veicoli pesanti fuori dal centro abitato, non per indicarli. I camion di solito non sono incoraggiati a passare per il centro.",
         "regola": "Camion fuori dal centro, non dentro.",
         "trabocchetti": ["per il centro cittadino"],
@@ -4127,6 +4649,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'obbligo di svoltare subito a destra per i veicoli rappresentati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di svoltare subito a destra?",
         "spiegazione": "Ci sono due errori qui: 'obbligo' e 'subito'. Il segnale è un consiglio, non un obbligo. E 'preannuncia' significa che avvisa prima, quindi non è una svolta 'subito' ma una svolta che arriverà più avanti.",
         "regola": "Consiglio, non obbligo; preavviso, non subito.",
         "trabocchetti": ["obbligo", "subito"],
@@ -4135,6 +4658,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che i veicoli rappresentati nel pannello devono immediatamente svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → veicoli nel pannello svoltano subito a destra?",
         "spiegazione": "Simile alla domanda precedente. 'Devono' implica un obbligo, e 'immediatamente' non è corretto perché il segnale è un preavviso. È un consiglio per una svolta futura, non un'azione da fare all'istante.",
         "regola": "Consiglio, non obbligo; preavviso, non subito.",
         "trabocchetti": ["devono", "immediatamente"],
@@ -4143,6 +4667,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa agli autocarri di spostarsi sulla corsia di destra per superare un ostacolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarri a destra per l'ostacolo?",
         "spiegazione": "Il segnale indica una direzione da seguire (svolta a destra), non ha nulla a che fare con il superamento di un ostacolo o con il cambio di corsia per sorpasso. È un'informazione sulla strada, non sulla manovra.",
         "regola": "Direzione, non ostacolo o sorpasso.",
         "immagine": "ee2c8b2382e106fc77c1.jpg",
@@ -4150,6 +4675,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una fermata di autobus di pubblico trasporto extraurbano",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermata autobus extraurbano?",
         "spiegazione": "Questo segnale indica una fermata dove gli autobus di linea, inclusi quelli che fanno servizio fuori città (extraurbano), si fermano per far salire e scendere i passeggeri. Quindi, è vero che può indicare una fermata per autobus extraurbani.",
         "regola": "Segnale blu con bus = Fermata bus.",
         "trabocchetti": ["extraurbano"],
@@ -4158,6 +4684,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere abbinato ad un pannello che riporta gli orari di partenza degli autobus extraurbani",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con orari degli autobus?",
         "spiegazione": "È molto comune che alle fermate degli autobus ci siano dei pannelli aggiuntivi che mostrano gli orari di arrivo e partenza, specialmente per i servizi extraurbani che hanno orari più definiti. Quindi, è vero che il segnale può essere accompagnato da un pannello con gli orari.",
         "regola": "Fermata + orari = informazione utile.",
         "trabocchetti": ["può essere abbinato"],
@@ -4166,6 +4693,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il luogo dove aspettare un autobus di pubblico trasporto extraurbano",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dove aspettare l'autobus extraurbano?",
         "spiegazione": "La funzione principale di questo segnale è proprio quella di indicare il punto esatto dove i passeggeri devono attendere l'autobus per salire. Questo vale anche per gli autobus che viaggiano fuori città (extraurbani).",
         "regola": "Aspetti il bus dove vedi il segnale.",
         "trabocchetti": ["extraurbano", "luogo dove aspettare"],
@@ -4174,6 +4702,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un divieto di transito agli autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto per autobus?",
         "spiegazione": "Questo segnale è un segnale di indicazione (blu e rettangolare), non un segnale di divieto. I segnali di divieto sono rotondi con bordo rosso. Questo segnale indica una fermata, non un divieto di transito per gli autobus.",
         "regola": "Blu = informazione, Rosso = divieto.",
         "trabocchetti": ["divieto"],
@@ -4182,6 +4711,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una corsia riservata agli autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia autobus?",
         "spiegazione": "Questo segnale indica una fermata dell'autobus, non una corsia riservata. Una corsia riservata agli autobus è indicata da un segnale rotondo blu con l'immagine di un autobus bianco, che indica un obbligo per gli autobus di usare quella corsia.",
         "regola": "Fermata non è corsia.",
         "trabocchetti": ["corsia riservata"],
@@ -4190,6 +4720,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area di sosta per autobus e filobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta autobus e filobus?",
         "spiegazione": "Il segnale indica una 'fermata', cioè un punto dove l'autobus si ferma brevemente per far salire e scendere i passeggeri. Non indica un'area di 'sosta' o parcheggio, dove gli autobus possono rimanere fermi per un tempo più lungo. Per la sosta ci sono altri segnali.",
         "regola": "Fermata = sali/scendi, Sosta = parcheggi.",
         "trabocchetti": ["area di sosta"],
@@ -4198,6 +4729,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada riservata agli autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada riservata agli autobus?",
         "spiegazione": "Questo segnale indica una fermata, non un'intera strada riservata agli autobus. Una strada riservata agli autobus sarebbe indicata da un segnale diverso, solitamente rotondo e blu, che indica che solo gli autobus possono circolare lì.",
         "regola": "Fermata non è strada.",
         "trabocchetti": ["strada riservata"],
@@ -4206,6 +4738,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un parcheggio per veicoli e fermata di autobus nelle vicinanze",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → parcheggio e fermata autobus vicina?",
         "spiegazione": "Questo segnale ti dice che puoi parcheggiare la tua auto (la 'P' blu) e che lì vicino c'è una fermata degli autobus (il disegno del bus e i numeri delle linee). La croce nera indica proprio la possibilità di 'scambiare' il mezzo di trasporto, cioè lasciare l'auto e prendere l'autobus.",
         "regola": "P + Bus = Parcheggia e prendi il bus.",
         "trabocchetti": ["vicinanze"],
@@ -4214,6 +4747,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto vicino ad una fermata di autobus",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vicino a fermata autobus?",
         "spiegazione": "Sì, è vero. Il segnale con il disegno dell'autobus e i numeri delle linee (8 e 45) serve proprio a indicare che in quella zona c'è una fermata per quei mezzi pubblici.",
         "regola": "Bus disegnato = Fermata vicina.",
         "trabocchetti": ["vicino"],
@@ -4222,6 +4756,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che dopo aver parcheggiato l'autovettura è possibile prendere l'autobus n. 8 o n. 45",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → parcheggi e prendi bus 8 o 45?",
         "spiegazione": "Esatto! Questo è il significato principale del segnale. Ti permette di lasciare la tua auto nel parcheggio e poi continuare il viaggio usando gli autobus delle linee 8 o 45, che fermano lì vicino.",
         "regola": "P + Bus 8/45 = Parcheggi e prendi il bus 8 o 45.",
         "trabocchetti": ["dopo aver parcheggiato"],
@@ -4230,6 +4765,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il numero (8 e 45) degli autobus pubblici che hanno fermate nelle vicinanze",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → numeri dei bus vicini?",
         "spiegazione": "Sì, è vero. I numeri 8 e 45, scritti nei cerchi rossi accanto al disegno dell'autobus, indicano proprio i numeri delle linee di autobus che puoi prendere da quella fermata.",
         "regola": "Numeri in cerchio + Bus = Numeri di linea.",
         "immagine": "4148852f9963b7a3bf06.jpg",
@@ -4237,6 +4773,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la possibilità di parcheggiare l'autovettura e di prendere l'autobus",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → parcheggia e prendi l'autobus?",
         "spiegazione": "Questa è la spiegazione più semplice e completa del segnale. Ti offre la comodità di parcheggiare la tua auto e poi usare i mezzi pubblici per raggiungere la tua destinazione, magari per evitare il traffico in centro.",
         "regola": "P + Bus = Parcheggia e vai in bus.",
         "trabocchetti": ["possibilità"],
@@ -4245,6 +4782,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una piazzola di sosta per autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → piazzola autobus?",
         "spiegazione": "Falso. Il segnale indica un parcheggio per le auto (la 'P') e la possibilità di prendere un autobus, non una zona dove gli autobus possono sostare o parcheggiare. Gli autobus hanno le loro fermate e depositi.",
         "regola": "P = Auto, non bus.",
         "trabocchetti": ["piazzola di sosta per autobus"],
@@ -4253,6 +4791,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto nelle vicinanze di un pronto soccorso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vicino al pronto soccorso?",
         "spiegazione": "Falso. La croce nera in questo contesto, vicino a un parcheggio e un simbolo di trasporto pubblico, non indica un pronto soccorso o un ospedale. Indica un 'interscambio' o 'scambio' tra mezzi di trasporto (auto e bus).",
         "regola": "Croce nera qui = Scambio, non ospedale.",
         "immagine": "4148852f9963b7a3bf06.jpg",
@@ -4260,6 +4799,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il numero massimo di autobus che possono parcheggiare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → numero massimo di autobus?",
         "spiegazione": "Falso. I numeri 8 e 45 si riferiscono alle linee degli autobus, non al numero di autobus che possono parcheggiare. Gli autobus non parcheggiano in questo tipo di aree, ma si fermano per far salire e scendere i passeggeri.",
         "regola": "Numeri bus = Linee, non numero di mezzi.",
         "immagine": "4148852f9963b7a3bf06.jpg",
@@ -4267,6 +4807,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica per quanti minuti resta fermo un autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → minuti di sosta dell'autobus?",
         "spiegazione": "Falso. I numeri 8 e 45 sono i numeri delle linee degli autobus. Non indicano per quanti minuti un autobus si ferma. Gli orari e le durate delle fermate sono indicati in altri modi, di solito su tabelle orarie.",
         "regola": "Numeri bus = Linee, non tempo.",
         "trabocchetti": ["minuti"],
@@ -4275,6 +4816,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è possibile iniziare a sostare dalle ore 8.45",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta dalle 8.45?",
         "spiegazione": "Falso. I numeri 8 e 45 sono i numeri delle linee degli autobus, non un orario. Se il segnale volesse indicare un orario, lo farebbe in un formato diverso, ad esempio '8:45 - 18:00' o simili.",
         "regola": "Numeri bus = Linee, non orario.",
         "trabocchetti": ["ore"],
@@ -4283,6 +4825,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova nelle vicinanze di una stazione ferroviaria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vicino alla stazione ferroviaria?",
         "spiegazione": "Il segnale mostra un'auto e un letto su un vagone ferroviario. Questo indica un servizio di trasporto auto in treno, che si trova sempre vicino a una stazione ferroviaria.",
         "regola": "Treno + Auto + Letto = Stazione.",
         "immagine": "a2c05346a7f0f17a2740.jpg",
@@ -4290,6 +4833,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la vicinanza di una grande stazione ferroviaria con possibilità di trasporto di autovetture al seguito del viaggiatore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → stazione con trasporto auto al seguito?",
         "spiegazione": "Questo segnale indica proprio che in quella stazione ferroviaria puoi caricare la tua auto sul treno e viaggiare anche tu, magari in una carrozza letto (simboleggiata dal letto).",
         "regola": "Auto sul treno + Letto = Servizio completo in stazione.",
         "trabocchetti": ["grande"],
@@ -4298,6 +4842,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova in vicinanza dell'accesso per le autovetture da caricare sul treno",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → accesso per caricare l'auto sul treno?",
         "spiegazione": "Se il segnale indica il trasporto di auto sul treno, è logico che si trovi vicino all'ingresso dove le auto vengono caricate sui vagoni.",
         "regola": "Dove carichi l'auto sul treno, lì trovi il segnale.",
         "immagine": "a2c05346a7f0f17a2740.jpg",
@@ -4305,6 +4850,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica, sulle strade extraurbane, la presenza di un hotel con parcheggio custodito",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → hotel con parcheggio custodito?",
         "spiegazione": "Il segnale mostra un treno! Non ha nulla a che fare con un hotel o un parcheggio custodito. Il letto simboleggia la possibilità di dormire sul treno, non in un hotel.",
         "regola": "C'è un treno! Non è un hotel.",
         "trabocchetti": ["hotel con parcheggio custodito"],
@@ -4313,6 +4859,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la possibilità di restare in auto durante il suo trasporto in treno",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → restare in auto sul treno?",
         "spiegazione": "Quando la tua auto viene trasportata sul treno, tu non puoi rimanere dentro l'auto. Devi scendere e salire su una carrozza passeggeri (o una carrozza letto).",
         "regola": "Auto sul treno = Tu fuori dall'auto.",
         "trabocchetti": ["restare in auto"],
@@ -4321,6 +4868,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la zona è coperta dal segnale per antifurti satellitari",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → copertura antifurto satellitare?",
         "spiegazione": "Questo segnale non ha nulla a che fare con la tecnologia o gli antifurti. Indica un servizio di trasporto ferroviario per auto.",
         "regola": "Non è un'antenna, è un treno!",
         "trabocchetti": ["antifurti satellitari"],
@@ -4329,6 +4877,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area riservata alla sosta delle autocaravan",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta autocaravan?",
         "spiegazione": "Il segnale indica il trasporto di auto sul treno, non un'area dove parcheggiare camper (autocaravan). Il letto si riferisce al riposo del viaggiatore sul treno.",
         "regola": "Non è un parcheggio per camper, è un treno per auto.",
         "trabocchetti": ["autocaravan", "sosta"],
@@ -4337,6 +4886,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area attrezzata con impianti di scarico per i veicoli che hanno i servizi igienico-sanitari",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → impianti di scarico per servizi igienici?",
         "spiegazione": "Il segnale mostra un camper con una freccia che indica un punto di scarico. Questo significa che è un'area dove i veicoli come i camper possono svuotare i loro serbatoi dei servizi igienici e delle acque sporche. Quindi, la risposta è VERO.",
         "regola": "Camper + freccia giù = Scarico.",
         "trabocchetti": ["impianti di scarico", "servizi igienico-sanitari"],
@@ -4345,6 +4895,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area con impianti igienico-sanitari per raccogliere le acque delle autocaravan",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → raccolta acque delle autocaravan?",
         "spiegazione": "Sì, il segnale indica proprio un'area dove le autocaravan (i camper) possono scaricare le loro acque usate, sia quelle dei lavandini che quelle del bagno. Quindi, la risposta è VERO.",
         "regola": "Camper scarica acqua.",
         "trabocchetti": ["Raccogliere le acque", "Autocaravan"],
@@ -4353,6 +4904,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato interessa tutti i veicoli che hanno degli impianti igienico-sanitari",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → per veicoli con servizi igienici?",
         "spiegazione": "Questo segnale è utile per tutti i veicoli, non solo i camper, che hanno un bagno o un lavandino a bordo e devono svuotare i serbatoi delle acque sporche. Quindi, la risposta è VERO.",
         "regola": "Non solo camper, ma ogni veicolo con bagno.",
         "immagine": "924c8d3bd80b02d92039.jpg",
@@ -4360,6 +4912,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica impianti che consentono, ai veicoli che hanno i servizi igienico-sanitari, lo scarico dei residui organici e delle acque bianche e sporche",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → scarico residui e acque?",
         "spiegazione": "Esatto! Questo segnale indica un posto dove puoi scaricare sia i rifiuti del bagno (residui organici) sia le acque usate (acque sporche) e anche le acque pulite che non ti servono più (acque bianche). Quindi, la risposta è VERO.",
         "regola": "Scarico completo: bagno e acque.",
         "trabocchetti": ["Residui organici", "acque bianche e sporche"],
@@ -4368,6 +4921,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di servizi igienici per i viaggiatori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → servizi igienici per viaggiatori?",
         "spiegazione": "No, questo segnale non indica un bagno pubblico per le persone. Indica un punto dove i veicoli possono scaricare i loro serbatoi. Quindi, la risposta è FALSO.",
         "regola": "Non è un bagno per te, è per il camper!",
         "trabocchetti": ["servizi igienici per i viaggiatori"],
@@ -4376,6 +4930,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada riservata alle autocaravan",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada per autocaravan?",
         "spiegazione": "Falso. Il segnale non indica una strada dove possono circolare solo i camper. Indica un'area di servizio per loro. Quindi, la risposta è FALSO.",
         "regola": "Non è una strada, è un servizio.",
         "trabocchetti": ["strada riservata"],
@@ -4384,6 +4939,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un impianto per la pesatura delle autocaravan",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pesa autocaravan?",
         "spiegazione": "No, il segnale non ha nulla a che fare con la pesatura. La freccia verso il basso e il simbolo del camper che scarica indicano un'area di scarico. Quindi, la risposta è FALSO.",
         "regola": "Non pesa, scarica.",
         "trabocchetti": ["pesatura"],
@@ -4392,6 +4948,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato avverte di fare attenzione alle buche sulla carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → buche?",
         "spiegazione": "Falso. Il simbolo della freccia che punta verso il basso in un buco non significa 'attenzione alle buche'. Significa 'scarico' per il camper. Quindi, la risposta è FALSO.",
         "regola": "Non buca, ma scarico.",
         "trabocchetti": ["attenzione alle buche"],
@@ -4400,6 +4957,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa una cunetta pericolosa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cunetta pericolosa?",
         "spiegazione": "No, non è una cunetta pericolosa. Il segnale indica un servizio per i camper, non un pericolo sulla strada. Quindi, la risposta è FALSO.",
         "regola": "Non pericolo, ma servizio.",
         "trabocchetti": ["cunetta pericolosa"],
@@ -4408,6 +4966,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il confine di Stato con un Paese che fa parte dell'Unione Europea",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → confine con paese UE?",
         "spiegazione": "Il segnale raffigurato, con le stelle dell'Unione Europea e la scritta 'ITALIA', indica che stai attraversando un confine tra l'Italia e un altro Paese che fa parte dell'Unione Europea. È un segnale di confine interno all'UE.",
         "regola": "Stelle UE = Confine UE.",
         "trabocchetti": ["Unione Europea"],
@@ -4416,6 +4975,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova al confine di Stato con un Paese dell'Unione Europea",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → al confine UE?",
         "spiegazione": "Questo segnale è posizionato proprio nel punto in cui si attraversa il confine tra l'Italia e un altro Stato membro dell'Unione Europea, per informare i guidatori del passaggio di frontiera.",
         "regola": "Il cartello è *al* confine.",
         "trabocchetti": ["si trova al confine di Stato"],
@@ -4424,6 +4984,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il confine tra l'Italia ed uno Stato membro dell'Unione Europea",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → confine Italia-UE?",
         "spiegazione": "Il segnale con la scritta 'ITALIA' e le stelle dell'Unione Europea serve proprio a indicare il punto di passaggio tra l'Italia e un altro paese che fa parte dell'Unione Europea.",
         "regola": "Italia + Stelle UE = Confine Italia-UE.",
         "trabocchetti": ["tra l", "Unione Europea"],
@@ -4432,6 +4993,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non obbliga ad arrestarsi al confine di Stato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → nessun obbligo di arresto?",
         "spiegazione": "Poiché questo segnale indica un confine interno all'Unione Europea (area Schengen), di norma non c'è l'obbligo di fermarsi per controlli di frontiera o doganali. Si può passare senza arrestarsi, a meno di indicazioni diverse o situazioni eccezionali.",
         "regola": "Confine UE = Non stop.",
         "trabocchetti": ["non obbliga ad arrestarsi"],
@@ -4440,6 +5002,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa un posto di blocco degli organi di polizia in vicinanza del confine di Stato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → posto di blocco al confine?",
         "spiegazione": "Questo segnale indica solo il confine di Stato con un Paese dell'Unione Europea. Non ha la funzione di avvisare che ci sarà un posto di blocco della polizia. I posti di blocco possono esserci, ma non sono preannunciati da questo specifico cartello.",
         "regola": "Non è un 'preavviso di blocco'.",
         "trabocchetti": ["preavvisa un posto di blocco"],
@@ -4448,6 +5011,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto dietro al veicolo per indicare la nazione in cui è stato immatricolato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → dietro, nazione di immatricolazione?",
         "spiegazione": "Questo segnale è un cartello stradale che si trova al confine, non è un adesivo o una targa da mettere dietro al veicolo. L'indicazione della nazione di immatricolazione del veicolo è data dalla targa stessa o da un adesivo ovale con la sigla internazionale (es. 'I' per Italia).",
         "regola": "Non è una targa.",
         "trabocchetti": ["posto dietro al veicolo"],
@@ -4456,6 +5020,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto dietro al veicolo per indicare che può circolare solo in uno Stato dell'Europa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → dietro, circola solo in uno Stato?",
         "spiegazione": "Il segnale raffigurato è un cartello stradale e non va posto dietro al veicolo. Inoltre, un veicolo immatricolato in Italia può circolare in molti paesi del mondo, non solo in Europa, rispettando le norme internazionali.",
         "regola": "Non è una limitazione di circolazione.",
         "trabocchetti": ["posto dietro al veicolo", "solo in uno Stato dell"],
@@ -4464,6 +5029,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi alla frontiera con uno Stato dell'Unione Europea",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → arresto alla frontiera UE?",
         "spiegazione": "È FALSO. Come spiegato in precedenza, ai confini interni dell'Unione Europea (area Schengen), non c'è l'obbligo di fermarsi per i controlli di frontiera. Si può passare liberamente.",
         "regola": "Confine UE = Non obbliga a fermarsi.",
         "trabocchetti": ["obbliga"],
@@ -4472,6 +5038,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa l'obbligo di arrestarsi per il controllo doganale entrando in Italia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → controllo doganale entrando in Italia?",
         "spiegazione": "Questo segnale non preavvisa alcun obbligo di arresto per controlli doganali. I controlli doganali sono stati eliminati per i confini interni all'Unione Europea, quindi non c'è bisogno di fermarsi per questo motivo.",
         "regola": "Niente dogana ai confini UE.",
         "trabocchetti": ["preavvisa l"],
@@ -4480,6 +5047,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un senso unico frontale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → senso unico frontale?",
         "spiegazione": "Questo segnale blu con la freccia bianca indica che la strada davanti a te è a senso unico. 'Frontale' significa proprio 'davanti a te', quindi la strada prosegue solo in quella direzione.",
         "regola": "Freccia dritta = Senso unico avanti.",
         "trabocchetti": ["frontale"],
@@ -4488,6 +5056,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la circolazione su quel tratto di strada è a senso unico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → tratto a senso unico?",
         "spiegazione": "Sì, questo segnale ti dice che tutta la strada, da quel punto in poi, è a senso unico. Puoi andare solo nella direzione indicata dalla freccia.",
         "regola": "Senso unico = Tutta la strada in una direzione.",
         "trabocchetti": ["tratto di strada"],
@@ -4496,6 +5065,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che dopo di esso è vietata l'inversione di marcia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inversione vietata dopo?",
         "spiegazione": "Se la strada è a senso unico, significa che tutti i veicoli vanno nella stessa direzione. Fare un'inversione di marcia (tornare indietro) ti metterebbe contromano, ed è molto pericoloso e vietato.",
         "regola": "Senso unico = No inversione (perché andresti contromano).",
         "trabocchetti": ["inversione di marcia"],
@@ -4504,6 +5074,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di una strada a senso unico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio senso unico?",
         "spiegazione": "Esatto, questo segnale viene messo proprio all'inizio di una strada per avvisarti che da lì in poi puoi andare solo nella direzione indicata dalla freccia.",
         "regola": "Segnale blu con freccia = Inizio senso unico.",
         "trabocchetti": ["inizio"],
@@ -4512,6 +5083,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'obbligo di proseguire diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo diritto?",
         "spiegazione": "Attenzione! Questo segnale indica che la strada è a senso unico, ma non ti obbliga a proseguire diritto se ci sono altre direzioni (ad esempio, puoi svoltare a destra o a sinistra se permesso da altri segnali). L'obbligo di proseguire diritto è un altro segnale (rotondo blu con freccia bianca dritta).",
         "regola": "Quadrato blu = Senso unico della strada. Rotondo blu = Obbligo di direzione.",
         "trabocchetti": ["obbligo di proseguire diritto"],
@@ -4520,6 +5092,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il divieto di svoltare a destra o a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di svolta?",
         "spiegazione": "No, questo segnale ti dice che la strada è a senso unico, ma non ti vieta di svoltare. Se ci sono incroci e altri segnali lo permettono, puoi svoltare a destra o a sinistra.",
         "regola": "Senso unico = Puoi svoltare se permesso.",
         "trabocchetti": ["divieto di svoltare"],
@@ -4528,6 +5101,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica di circolare su una sola corsia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → una sola corsia?",
         "spiegazione": "Questo segnale indica che la strada è a senso unico, ma non dice quante corsie ci sono o su quante corsie devi circolare. Una strada a senso unico può avere anche più corsie.",
         "regola": "Senso unico = Direzione della strada, non numero di corsie.",
         "trabocchetti": ["su una sola corsia"],
@@ -4536,6 +5110,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un restringimento della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → restringimento?",
         "spiegazione": "Assolutamente no. Un restringimento della carreggiata è indicato da un segnale di pericolo (triangolare con bordo rosso) che mostra la strada che si stringe. Questo segnale è di indicazione e riguarda il senso di marcia.",
         "regola": "Quadrato blu = Senso unico. Triangolo rosso = Pericolo (come restringimento).",
         "trabocchetti": ["restringimento della carreggiata"],
@@ -4544,6 +5119,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si viaggia per file parallele",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → file parallele?",
         "spiegazione": "No, questo segnale indica solo che la strada è a senso unico. Viaggiare per file parallele è una situazione che può accadere su strade con più corsie, ma non è indicata da questo segnale.",
         "regola": "Senso unico = Direzione. File parallele = Altro concetto, non indicato qui.",
         "trabocchetti": ["viaggia per file parallele"],
@@ -4552,6 +5128,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la distanza dallo svincolo d'uscita per la località indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → distanza dallo svincolo d'uscita?",
         "spiegazione": "Il segnale verde con la scritta 'PIACENZA 4' ti dice che mancano 4 chilometri per arrivare all'uscita che porta a Piacenza. Quindi, indica proprio la distanza dallo svincolo d'uscita per quella località.",
         "regola": "Verde + Città + Numero = Distanza all'uscita.",
         "trabocchetti": ["località indicata"],
@@ -4560,6 +5137,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto lungo un'autostrada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → lungo un'autostrada?",
         "spiegazione": "I segnali con lo sfondo verde, come quello raffigurato, sono tipici delle autostrade o delle strade extraurbane principali. Questo colore ti aiuta a capire dove ti trovi.",
         "regola": "Sfondo verde = Autostrada o strada extraurbana principale.",
         "immagine": "c68016267aabc4caa33a.jpg",
@@ -4567,6 +5145,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica a sinistra la distanza progressiva e a destra quella dal casello d'uscita per Piacenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → progressiva a sinistra, uscita Piacenza a destra?",
         "spiegazione": "Sì, è corretto. La parte bianca a sinistra con il numero '54' indica il chilometro progressivo, cioè quanti chilometri sono stati percorsi dall'inizio di quella strada. La parte verde a destra 'PIACENZA 4' indica che mancano 4 chilometri all'uscita per Piacenza.",
         "regola": "Bianco = Km percorsi; Verde = Km all'uscita.",
         "trabocchetti": ["distanza progressiva"],
@@ -4575,6 +5154,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato nella parte sinistra indica la distanza progressiva dal luogo di origine dell'autostrada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → a sinistra distanza dall'origine dell'autostrada?",
         "spiegazione": "Il numero '54' nel riquadro bianco è un 'progressivo chilometrico'. Significa che hai percorso 54 chilometri dall'inizio di quella specifica autostrada o strada principale.",
         "regola": "Numero bianco = Km totali percorsi su quella strada.",
         "trabocchetti": ["distanza progressiva"],
@@ -4583,6 +5163,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che mancano 4 chilometri dal casello d'uscita per Piacenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → 4 km all'uscita Piacenza?",
         "spiegazione": "La scritta 'PIACENZA 4' sul segnale verde significa proprio che l'uscita per Piacenza si trova a 4 chilometri di distanza da dove ti trovi in quel momento.",
         "regola": "Numero verde = Km che mancano all'uscita.",
         "trabocchetti": ["mancano 4 chilometri"],
@@ -4591,6 +5172,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato fa parte dei segnali di indicazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "Questo segnale ti fornisce informazioni utili per la guida, come le distanze e le direzioni per raggiungere una località. Per questo motivo, fa parte della categoria dei 'segnali di indicazione'.",
         "regola": "Informazioni utili = Segnale di indicazione.",
         "trabocchetti": ["segnali di indicazione"],
@@ -4599,6 +5181,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica cha mancano 54 chilometri dallo svincolo d'uscita per Piacenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → 54 km all'uscita Piacenza?",
         "spiegazione": "Falso! Il numero '54' indica i chilometri che hai già percorso dall'inizio dell'autostrada. La distanza che manca all'uscita per Piacenza è indicata dal numero '4', non dal '54'.",
         "regola": "54 = Km percorsi; 4 = Km all'uscita. Non confondere!",
         "immagine": "c68016267aabc4caa33a.jpg",
@@ -4606,6 +5189,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si sta percorrendo l'autostrada n. 54",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autostrada n. 54?",
         "spiegazione": "Falso! Il numero '54' non è il numero dell'autostrada. È il chilometro progressivo, cioè ti dice a quale chilometro della strada ti trovi. I numeri delle autostrade sono diversi (es. A1, A4).",
         "regola": "Numero bianco = Km progressivo, non numero autostrada.",
         "immagine": "c68016267aabc4caa33a.jpg",
@@ -4613,6 +5197,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica a sinistra la velocità consigliata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → velocità consigliata a sinistra?",
         "spiegazione": "Falso! Il numero '54' indica il chilometro progressivo, cioè quanti chilometri sono stati percorsi dall'inizio della strada. Non ha nulla a che fare con la velocità consigliata.",
         "regola": "Numero bianco = Km, non velocità.",
         "trabocchetti": ["velocità consigliata"],
@@ -4621,6 +5206,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che sono stati già percorsi 4 chilometri da Piacenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → 4 km percorsi da Piacenza?",
         "spiegazione": "Falso! La scritta 'PIACENZA 4' significa che mancano 4 chilometri per arrivare all'uscita per Piacenza. Non significa che hai già percorso 4 chilometri da Piacenza, anzi, stai andando verso Piacenza.",
         "regola": "Numero verde = Km *a* destinazione, non *da* destinazione.",
         "trabocchetti": ["da Piacenza", "a Piacenza"],
@@ -4629,6 +5215,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di un centro abitato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio centro abitato?",
         "spiegazione": "Falso! Questo segnale si trova sulle autostrade o strade extraurbane principali e indica distanze e chilometri. L'inizio di un centro abitato è indicato da un segnale diverso, di solito un cartello bianco con il nome della città in nero.",
         "regola": "Verde = Autostrada/Distanze; Bianco con nome = Centro abitato.",
         "trabocchetti": ["inizio di un centro abitato"],
@@ -4637,6 +5224,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di un centro abitato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio centro abitato?",
         "spiegazione": "Questo segnale, con il nome di una città (Taranto), ti dice che stai entrando in un centro abitato. Da qui cambiano alcune regole, come i limiti di velocità.",
         "regola": "Nome città = Entri in città.",
         "trabocchetti": ["inizio di un centro abitato"],
@@ -4645,6 +5233,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato identifica la località raggiunta",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → località raggiunta?",
         "spiegazione": "Sì, quando vedi questo cartello con scritto 'TARANTO', significa che sei arrivato a Taranto. Ti dice il nome del posto dove ti trovi.",
         "regola": "Sei arrivato!",
         "trabocchetti": ["località raggiunta"],
@@ -4653,6 +5242,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto all'inizio del centro abitato, su tutte le strade d'ingresso alla località indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su tutte le strade d'ingresso?",
         "spiegazione": "Questo segnale è messo proprio all'ingresso di ogni strada che porta dentro la città. Così, chiunque arrivi sa che sta entrando in un centro abitato.",
         "regola": "Ogni ingresso ha il suo cartello.",
         "trabocchetti": ["su tutte le strade d"],
@@ -4661,6 +5251,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato se barrato da una striscia rossa indica la fine del centro abitato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato barrato → fine centro abitato?",
         "spiegazione": "Immagina lo stesso cartello, ma con una linea rossa diagonale sopra. Quella linea significa 'fine'. Quindi, se vedi 'TARANTO' con una riga rossa, significa che stai uscendo da Taranto.",
         "regola": "Riga rossa = Fine.",
         "trabocchetti": ["se barrato da una striscia rossa"],
@@ -4669,6 +5260,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una località turistica",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → località turistica?",
         "spiegazione": "Questo segnale indica solo che stai entrando in un centro abitato, cioè una città o un paese. Non ti dice se è un posto turistico o meno. Per le località turistiche ci sono altri tipi di cartelli, spesso con simboli specifici.",
         "regola": "Non è un'agenzia viaggi!",
         "trabocchetti": ["località turistica"],
@@ -4677,6 +5269,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto per indicare la fine di una provincia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine provincia?",
         "spiegazione": "Questo segnale indica l'inizio di un centro abitato (una città), non la fine di una provincia. I confini di provincia sono indicati con altri cartelli, spesso più grandi e con i nomi delle province.",
         "regola": "Non è un confine provinciale.",
         "trabocchetti": ["fine di una provincia"],
@@ -4685,6 +5278,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la direzione da seguire per raggiungere Taranto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → direzione per Taranto?",
         "spiegazione": "Questo segnale lo vedi QUANDO SEI GIÀ ARRIVATO a Taranto, all'ingresso della città. Non ti dice 'vai a destra o a sinistra per Taranto'. Quelli sono i segnali di direzione, che hanno le frecce.",
         "regola": "Sei arrivato, non ti indica la strada.",
         "trabocchetti": ["direzione da seguire"],
@@ -4693,6 +5287,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato identifica un viadotto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → viadotto?",
         "spiegazione": "Un viadotto è un ponte molto lungo, una struttura stradale. Questo segnale, invece, indica il nome di una città, un centro abitato. Non c'entra nulla con i viadotti.",
         "regola": "Non è un ponte, è una città.",
         "trabocchetti": ["viadotto"],
@@ -4701,6 +5296,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'officina meccanica per veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → officina meccanica?",
         "spiegazione": "Il simbolo sul cartello, che sembra una chiave inglese o un attrezzo, significa proprio che lì vicino c'è un'officina dove si riparano le auto. Quindi, il segnale indica un'officina meccanica.",
         "regola": "Chiave = Officina.",
         "immagine": "582c915b7107d4720bf5.jpg",
@@ -4708,6 +5304,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che nelle vicinanze c'è un'officina meccanica per veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → officina vicina?",
         "spiegazione": "Questo cartello blu con il simbolo della chiave ti dice che non sei proprio davanti all'officina, ma che è molto vicina, a poca distanza. È un segnale di servizio che indica la presenza di un'officina nelle vicinanze.",
         "regola": "Chiave = Officina vicina.",
         "trabocchetti": ["vicinanze", "nelle vicinanze"],
@@ -4716,6 +5313,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica officina di riparazione veicoli nelle vicinanze",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → officina di riparazione vicina?",
         "spiegazione": "Esatto, il cartello ti avvisa che c'è un posto dove puoi far riparare la tua auto o moto, e si trova lì vicino. 'Officina di riparazione veicoli' è la descrizione corretta del servizio.",
         "regola": "Chiave = Riparazioni vicine.",
         "trabocchetti": ["Officina di riparazione veicoli", "Nelle vicinanze"],
@@ -4724,6 +5322,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che a breve distanza è possibile trovare un'officina meccanica per veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → officina a breve distanza?",
         "spiegazione": "Sì, questo segnale è utile se hai un problema con la macchina: ti dice che non devi andare molto lontano per trovare un'officina che possa aiutarti. 'A breve distanza' è un sinonimo di 'nelle vicinanze'.",
         "regola": "Chiave = Officina a portata di mano.",
         "trabocchetti": ["A breve distanza"],
@@ -4732,6 +5331,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica di fare attenzione agli operai che escono da una fabbrica",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → operai che escono dalla fabbrica?",
         "spiegazione": "No, questo cartello non c'entra niente con gli operai o le fabbriche. Il simbolo della chiave indica un'officina, non un luogo di lavoro generico o un pericolo legato a persone.",
         "regola": "Chiave = Riparazione, non operai.",
         "trabocchetti": ["operai che escono da una fabbrica"],
@@ -4740,6 +5340,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un distributore di carburante",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distributore di carburante?",
         "spiegazione": "Falso! Un distributore di carburante ha un simbolo diverso, di solito una pompa di benzina. Questo simbolo è per le riparazioni dei veicoli, non per il rifornimento.",
         "regola": "Chiave = Riparazione, non benzina.",
         "trabocchetti": ["Distributore di carburante"],
@@ -4748,6 +5349,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area di sosta nelle vicinanze",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area di sosta vicina?",
         "spiegazione": "No, questo segnale non indica un posto dove fermarsi per riposare. Per le aree di sosta ci sono altri cartelli, spesso con la lettera 'P' o un simbolo di letto. Il simbolo della chiave è specifico per le officine.",
         "regola": "Chiave = Riparazione, non sosta.",
         "trabocchetti": ["Area di sosta"],
@@ -4756,6 +5358,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica cantonieri al lavoro sulla strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cantonieri al lavoro?",
         "spiegazione": "Assolutamente no. I cantonieri al lavoro sono segnalati con un cartello triangolare giallo con un omino che scava o lavora. Questo è un segnale di servizio per officina, non di pericolo per lavori in corso.",
         "regola": "Chiave = Riparazione, non lavori in corso.",
         "trabocchetti": ["Cantonieri al lavoro"],

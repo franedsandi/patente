@@ -1,7 +1,7 @@
 """Domande — Cinture, bambini, casco e dispositivi di sicurezza.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Cinture, bambini, casco e dispositivi di sicurezza"
@@ -10,18 +10,21 @@ QUESTIONS = [
     {
         "domanda": "Sono previste sanzioni per chi, pur facendo uso della cintura di sicurezza, ne alteri o ostacoli il normale funzionamento",
         "risposta": True,
+        "riassunto": "Cintura manomessa → sanzioni?",
         "spiegazione": "Anche se indossi la cintura di sicurezza, non devi modificarla o fare in modo che non funzioni bene. La cintura deve essere sempre in perfette condizioni per proteggerti. Se la alteri, rischi una multa.",
         "regola": "Cintura modificata = multa assicurata.",
     },
     {
         "domanda": "Se non si allaccia la cintura di sicurezza, in caso d'improvvisa frenata si può essere proiettati contro il parabrezza",
         "risposta": True,
+        "riassunto": "Senza cintura → contro il parabrezza in frenata?",
         "spiegazione": "Questa affermazione è vera. La cintura di sicurezza serve proprio a questo: in caso di frenata improvvisa o incidente, ti tiene fermo sul sedile e ti impedisce di sbattere contro il parabrezza o altre parti dell'auto.",
         "regola": "Senza cintura, volo assicurato.",
     },
     {
         "domanda": "Se il veicolo è dotato di airbag frontali e laterali, si può fare a meno di allacciare la cintura di sicurezza",
         "risposta": False,
+        "riassunto": "Con airbag → niente cintura?",
         "spiegazione": "Questa affermazione è falsa. Gli airbag sono un sistema di sicurezza aggiuntivo, ma non sostituiscono la cintura. Anzi, gli airbag funzionano al meglio solo se la cintura è allacciata. Senza cintura, l'airbag potrebbe anche essere pericoloso.",
         "regola": "Airbag + Cintura = Doppia sicurezza. Mai senza cintura!",
         "trabocchetti": ["si può fare a meno"],
@@ -29,6 +32,7 @@ QUESTIONS = [
     {
         "domanda": "Le cinture di sicurezza vanno agganciate solo se si circola a velocità uguale o superiore a 30 km/h",
         "risposta": False,
+        "riassunto": "Cinture → solo da 30 km/h?",
         "spiegazione": "Questa affermazione è falsa. Le cinture di sicurezza vanno allacciate sempre, a qualsiasi velocità e anche per brevi tragitti. Gli incidenti possono avvenire anche a basse velocità e la cintura è fondamentale per la tua sicurezza in ogni situazione.",
         "regola": "Cintura sempre, velocità mai!",
         "trabocchetti": ["solo"],
@@ -36,6 +40,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli dotati di airbag con comando di disabilitazione, prima di sistemare sul sedile anteriore un seggiolino per bambini (schienale rivolto verso il parabrezza), bisogna disattivare l'airbag",
         "risposta": True,
+        "riassunto": "Seggiolino contromarcia davanti → disattivare l'airbag?",
         "spiegazione": "Se metti un seggiolino per bambini sul sedile davanti, con il bambino che guarda indietro (cioè lo schienale è verso il parabrezza), e l'airbag si apre in caso di incidente, può essere molto pericoloso per il bambino. Per questo, se il veicolo ha il comando per spegnere l'airbag, devi farlo.",
         "regola": "Seggiolino all'indietro davanti? Airbag spento!",
         "trabocchetti": ["schienale rivolto verso il parabrezza"],
@@ -43,6 +48,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli che non sono muniti del comando per disabilitare l'airbag dal lato passeggero, il seggiolino per bambini non deve essere sistemato sul sedile anteriore, con lo schienale rivolto verso la strada",
         "risposta": True,
+        "riassunto": "Senza comando airbag → seggiolino contromarcia davanti vietato?",
         "spiegazione": "Se la tua auto non ha un modo per spegnere l'airbag del passeggero, non puoi mettere un seggiolino per bambini sul sedile davanti, anche se il bambino è girato in avanti (schienale rivolto verso la strada). L'airbag potrebbe comunque causare danni gravi. La regola generale è: se non puoi spegnere l'airbag, il seggiolino va dietro.",
         "regola": "Niente disattivazione airbag? Seggiolino sempre dietro!",
         "trabocchetti": ["non deve essere sistemato", "schienale rivolto verso la strada"],
@@ -50,6 +56,7 @@ QUESTIONS = [
     {
         "domanda": "Se un veicolo è dotato di air-bag, non vi è l'obbligo di indossare le cinture di sicurezza durante la marcia",
         "risposta": False,
+        "riassunto": "Con airbag → niente obbligo di cintura?",
         "spiegazione": "L'airbag e le cinture di sicurezza lavorano insieme per proteggerti. L'airbag è un sistema di protezione aggiuntivo, ma non sostituisce le cinture. Le cinture ti tengono fermo e ti impediscono di sbattere contro l'airbag quando si apre, evitando lesioni gravi. È sempre obbligatorio indossare le cinture.",
         "regola": "Airbag + Cinture = Sicurezza massima. Cinture SEMPRE!",
         "trabocchetti": ["non vi è l"],
@@ -57,12 +64,14 @@ QUESTIONS = [
     {
         "domanda": "Il poggiatesta è utile per prevenire il \"colpo di frusta\"",
         "risposta": True,
+        "riassunto": "Poggiatesta → previene il colpo di frusta?",
         "spiegazione": "Il poggiatesta è un elemento di sicurezza fondamentale. La sua funzione principale è proprio quella di proteggere il collo e la testa in caso di incidente, specialmente in un tamponamento (quando un'auto ti colpisce da dietro). Fermando il movimento improvviso della testa all'indietro, previene il 'colpo di frusta', una lesione molto dolorosa al collo.",
         "regola": "Poggiatesta = Protezione collo in caso di urto.",
     },
     {
         "domanda": "Il poggiatesta è utile se viene regolato correttamente, sia in altezza che in inclinazione",
         "risposta": True,
+        "riassunto": "Poggiatesta → utile se regolato in altezza e inclinazione?",
         "spiegazione": "Perché il poggiatesta sia efficace e ti protegga davvero, deve essere regolato bene. Questo significa che la parte superiore del poggiatesta deve essere all'altezza della parte superiore della tua testa e deve essere il più vicino possibile alla nuca. Se è troppo basso o troppo lontano, non può fermare la testa correttamente e la protezione diminuisce.",
         "regola": "Regolazione giusta = Sicurezza garantita.",
         "trabocchetti": ["correttamente", "sia in altezza che in inclinazione"],
@@ -70,6 +79,7 @@ QUESTIONS = [
     {
         "domanda": "Il poggiatesta è particolarmente utile per rilassare la muscolatura durante la guida",
         "risposta": False,
+        "riassunto": "Poggiatesta → per rilassare i muscoli?",
         "spiegazione": "Questa affermazione è falsa. Il poggiatesta non serve per rilassare i muscoli mentre guidi. La sua funzione è di sicurezza attiva, cioè proteggere in caso di incidente. Se lo usi per appoggiare la testa e rilassarti durante la guida, potresti anche non avere la postura corretta per reagire prontamente o per essere protetto in caso di emergenza.",
         "regola": "Poggiatesta = Sicurezza, non relax.",
         "trabocchetti": ["rilassare la muscolatura"],
@@ -77,6 +87,7 @@ QUESTIONS = [
     {
         "domanda": "Il poggiatesta ha una funzione non di sicurezza, ma estetica",
         "risposta": False,
+        "riassunto": "Poggiatesta → solo estetico?",
         "spiegazione": "Questa affermazione è completamente falsa. Il poggiatesta ha una funzione di sicurezza molto importante, come abbiamo già detto, per proteggere il collo e la testa in caso di incidente. Non è un elemento decorativo o 'estetico'. La sua presenza e la sua forma sono dettate da studi sulla sicurezza e sulla protezione dei passeggeri.",
         "regola": "Poggiatesta = Sicurezza, mai estetica.",
         "trabocchetti": ["non di sicurezza, ma estetica"],
@@ -84,6 +95,7 @@ QUESTIONS = [
     {
         "domanda": "Le donne in stato di gravidanza con particolari condizioni di rischio certificate non sono obbligate ad agganciare la cintura di sicurezza",
         "risposta": True,
+        "riassunto": "Gravidanza a rischio certificata → esenzione cintura?",
         "spiegazione": "Questa affermazione è VERA. Le donne in gravidanza sono obbligate a usare la cintura di sicurezza, ma se hanno un certificato medico che attesta un rischio specifico per la loro salute o quella del bambino, allora possono essere esentate dall'obbligo.",
         "regola": "Gravidanza + Certificato = Esenzione.",
         "trabocchetti": ["certificate"],
@@ -91,6 +103,7 @@ QUESTIONS = [
     {
         "domanda": "Le persone che soffrono di particolari malattie certificate non sono tenute ad agganciare la cintura di sicurezza",
         "risposta": True,
+        "riassunto": "Malattie certificate → esenzione cintura?",
         "spiegazione": "Questa affermazione è VERA. Se una persona ha una malattia particolare e un medico certifica che indossare la cintura di sicurezza potrebbe essere pericoloso o dannoso per la sua salute, allora quella persona è esentata dall'obbligo.",
         "regola": "Malattia + Certificato = Esenzione.",
         "trabocchetti": ["certificate"],
@@ -98,6 +111,7 @@ QUESTIONS = [
     {
         "domanda": "Gli istruttori di guida nello svolgimento della loro professione non sono obbligati ad agganciare la cintura di sicurezza",
         "risposta": True,
+        "riassunto": "Istruttori di guida al lavoro → esenti?",
         "spiegazione": "Questa affermazione è VERA. Gli istruttori di guida, quando stanno svolgendo il loro lavoro (cioè insegnando a guidare), non sono obbligati a usare la cintura. Questo perché potrebbero aver bisogno di muoversi rapidamente per intervenire sul volante o sui pedali in caso di emergenza.",
         "regola": "Istruttore in servizio = No cintura.",
         "trabocchetti": ["nello svolgimento della loro professione"],
@@ -105,6 +119,7 @@ QUESTIONS = [
     {
         "domanda": "Il postino, durante l'attività lavorativa, non ha l'obbligo di agganciare la cintura di sicurezza",
         "risposta": False,
+        "riassunto": "Postino al lavoro → esente?",
         "spiegazione": "Questa affermazione è FALSA. Anche il postino, come la maggior parte dei conducenti, ha l'obbligo di agganciare la cintura di sicurezza durante l'attività lavorativa. Non ci sono esenzioni generali per questa categoria, a meno di specifiche e rare eccezioni legate a particolari tipi di veicoli o servizi di raccolta e distribuzione a domicilio con fermate molto frequenti, ma non è la regola generale.",
         "regola": "Postino = Cintura (salvo eccezioni molto specifiche).",
         "trabocchetti": ["non ha l"],
@@ -112,6 +127,7 @@ QUESTIONS = [
     {
         "domanda": "Le persone con oltre 65 anni di età non sono obbligate ad agganciare la cintura di sicurezza",
         "risposta": False,
+        "riassunto": "Oltre 65 anni → esenti?",
         "spiegazione": "Questa affermazione è FALSA. L'età non è un motivo per non indossare la cintura di sicurezza. Tutti i conducenti e i passeggeri, indipendentemente dall'età (a parte i bambini che usano seggiolini specifici), devono sempre usare la cintura.",
         "regola": "Età non conta, la cintura si porta!",
         "trabocchetti": ["oltre 65 anni di età"],
@@ -119,6 +135,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida un'autovettura munito di autorizzazione ad esercitarsi alla guida (foglio rosa), non è obbligato ad utilizzare la cintura di sicurezza",
         "risposta": False,
+        "riassunto": "Foglio rosa → niente cintura?",
         "spiegazione": "Questa affermazione è FALSA. Chi guida con il 'foglio rosa' (l'autorizzazione ad esercitarsi) è assolutamente obbligato a usare la cintura di sicurezza. Anzi, deve essere ancora più attento alle regole.",
         "regola": "Foglio rosa = Cintura SEMPRE.",
         "trabocchetti": ["non è obbligato"],
@@ -126,6 +143,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco è obbligatorio per i conducenti di ciclomotori a due ruote",
         "risposta": True,
+        "riassunto": "Ciclomotori a due ruote → casco obbligatorio?",
         "spiegazione": "Il casco è un dispositivo di sicurezza molto importante. È sempre obbligatorio per chi guida un ciclomotore a due ruote, per proteggere la testa in caso di caduta o incidente.",
         "regola": "Ciclomotore a due ruote = casco sempre!",
         "trabocchetti": ["obbligatorio"],
@@ -133,12 +151,14 @@ QUESTIONS = [
     {
         "domanda": "Il casco è obbligatorio per i conducenti di motocicli non dotati di cellula di sicurezza e di dispositivi di ritenuta",
         "risposta": True,
+        "riassunto": "Moto senza cellula → casco obbligatorio?",
         "spiegazione": "I motocicli (le moto) non hanno una 'gabbia' di protezione (cellula di sicurezza) o cinture di sicurezza come le auto. Per questo motivo, il casco è l'unica protezione per la testa ed è sempre obbligatorio per il conducente.",
         "regola": "Moto senza 'gabbia' = casco obbligatorio.",
     },
     {
         "domanda": "Il casco è obbligatorio per il passeggero di un motociclo privo di cellula di sicurezza e sistemi di ritenuta",
         "risposta": True,
+        "riassunto": "Passeggero moto senza cellula → casco?",
         "spiegazione": "Anche il passeggero, cioè la persona che sta dietro al conducente, deve indossare il casco. Se il motociclo non ha una struttura che lo protegge (come un'auto), il casco è obbligatorio anche per chi è trasportato, per la sua sicurezza.",
         "regola": "Su moto senza 'gabbia', casco per tutti.",
         "trabocchetti": ["passeggero"],
@@ -146,6 +166,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco è obbligatorio per il passeggero di un ciclomotore a due ruote, anche se maggiorenne",
         "risposta": True,
+        "riassunto": "Passeggero ciclomotore maggiorenne → casco?",
         "spiegazione": "Non importa l'età del passeggero, che sia minorenne o maggiorenne. Su un ciclomotore a due ruote, il casco è sempre obbligatorio per tutti, per garantire la massima sicurezza a chiunque sia a bordo.",
         "regola": "Ciclomotore a due ruote, passeggero (qualsiasi età) = casco.",
         "trabocchetti": ["anche se maggiorenne"],
@@ -153,6 +174,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco è obbligatorio per i conducenti di ciclomotori a due ruote, solo se minorenni",
         "risposta": False,
+        "riassunto": "Ciclomotori → casco solo per minorenni?",
         "spiegazione": "Questa affermazione è falsa. Il casco è obbligatorio per tutti i conducenti di ciclomotori a due ruote, non solo per i minorenni. L'età non cambia l'obbligo di indossare il casco per la propria sicurezza.",
         "regola": "Casco sempre, età non conta.",
         "trabocchetti": ["solo"],
@@ -160,6 +182,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco non è obbligatorio per i conducenti di ciclomotori a due ruote, titolari di patente della categoria B",
         "risposta": False,
+        "riassunto": "Ciclomotori con patente B → niente casco?",
         "spiegazione": "Questa affermazione è falsa. Non importa che patente hai (anche la patente B per l'auto). Se guidi un ciclomotore a due ruote, il casco è sempre obbligatorio per la tua sicurezza. La patente B non ti esenta da questa regola.",
         "regola": "Patente B non toglie il casco.",
         "trabocchetti": ["non è obbligatorio"],
@@ -167,6 +190,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco non è obbligatorio per i conducenti di ciclomotori a due ruote",
         "risposta": False,
+        "riassunto": "Ciclomotori → casco non obbligatorio?",
         "spiegazione": "Questa affermazione è falsa. Il casco è sempre obbligatorio per i conducenti di ciclomotori a due ruote. È una regola fondamentale per la sicurezza di chi guida e del passeggero.",
         "regola": "Ciclomotore a due ruote = casco SEMPRE.",
         "trabocchetti": ["non è obbligatorio"],
@@ -174,6 +198,7 @@ QUESTIONS = [
     {
         "domanda": "Le cinture di sicurezza hanno lo scopo di limitare i danni al conducente e ai passeggeri in caso di incidente stradale",
         "risposta": True,
+        "riassunto": "Cinture → limitano i danni negli incidenti?",
         "spiegazione": "VERO. Le cinture di sicurezza sono fatte proprio per proteggere chi è in macchina, sia il guidatore che i passeggeri, e per ridurre i danni se succede un incidente.",
         "regola": "Cintura = Protezione.",
         "trabocchetti": ["limitare i danni"],
@@ -181,6 +206,7 @@ QUESTIONS = [
     {
         "domanda": "Le cinture di sicurezza devono essere indossate sia dal conducente che dai passeggeri delle autovetture che ne siano dotate",
         "risposta": True,
+        "riassunto": "Cinture → conducente e passeggeri?",
         "spiegazione": "VERO. La legge dice che tutti devono mettere la cintura: chi guida e tutti i passeggeri, sia davanti che dietro, se l'auto ha le cinture.",
         "regola": "Tutti allacciati, sempre.",
         "trabocchetti": ["sia dal conducente che dai passeggeri"],
@@ -188,6 +214,7 @@ QUESTIONS = [
     {
         "domanda": "Le cinture di sicurezza richiedono un periodico controllo del loro stato di usura e di efficienza",
         "risposta": True,
+        "riassunto": "Cinture → controllare usura ed efficienza?",
         "spiegazione": "VERO. Le cinture, come tutte le parti importanti dell'auto, devono essere controllate ogni tanto. Così si vede se sono ancora buone e funzionano bene, senza essere rovinate.",
         "regola": "Controlla la cintura, salva la vita.",
         "trabocchetti": ["periodico controllo"],
@@ -195,6 +222,7 @@ QUESTIONS = [
     {
         "domanda": "Le cinture di sicurezza devono essere di tipo omologato e devono essere mantenute sempre efficienti",
         "risposta": True,
+        "riassunto": "Cinture → omologate ed efficienti?",
         "spiegazione": "VERO. Le cinture devono essere 'omologate', cioè approvate secondo le regole di sicurezza, e devono funzionare sempre perfettamente. Non si possono usare cinture rotte o non a norma.",
         "regola": "Omologata e perfetta.",
         "trabocchetti": ["omologato", "sempre efficienti"],
@@ -202,6 +230,7 @@ QUESTIONS = [
     {
         "domanda": "Le cinture di sicurezza hanno lo scopo di mantenere il corpo attaccato al sedile in caso di urto violento",
         "risposta": True,
+        "riassunto": "Cinture → corpo sul sedile negli urti?",
         "spiegazione": "VERO. Se c'è un incidente forte, la cintura ti tiene fermo sul sedile. Così non sbatti contro il volante, il cruscotto o il parabrezza.",
         "regola": "Ti tengono fermo.",
         "trabocchetti": ["mantenere il corpo attaccato al sedile"],
@@ -209,12 +238,14 @@ QUESTIONS = [
     {
         "domanda": "Le cinture di sicurezza hanno lo scopo di evitare che il conducente o i passeggeri vadano a urtare parti interne del veicolo in caso di urto violento",
         "risposta": True,
+        "riassunto": "Cinture → evitano urti contro l'abitacolo?",
         "spiegazione": "VERO. In caso di incidente, la cintura impedisce che tu o i passeggeri colpiate le parti interne dell'auto, come il cruscotto, i sedili o il tetto, riducendo le ferite.",
         "regola": "No urti interni.",
     },
     {
         "domanda": "Le cinture di sicurezza hanno lo scopo di evitare che il conducente o i passeggeri siano proiettati all'esterno della autovettura in caso di urto violento",
         "risposta": True,
+        "riassunto": "Cinture → evitano di essere sbalzati fuori?",
         "spiegazione": "VERO. La cintura è fondamentale per non essere sbalzati fuori dall'auto in caso di incidente grave. Rimanere dentro il veicolo aumenta molto le possibilità di salvarsi.",
         "regola": "Non volare fuori.",
         "trabocchetti": ["proiettati all"],
@@ -222,6 +253,7 @@ QUESTIONS = [
     {
         "domanda": "Le cinture di sicurezza devono essere utilizzate in qualsiasi situazione di marcia",
         "risposta": True,
+        "riassunto": "Cinture → in ogni situazione di marcia?",
         "spiegazione": "VERO. Non importa dove o a che velocità vai, la cintura va sempre messa. L'obbligo vale in ogni momento in cui l'auto è in movimento.",
         "regola": "Sempre, ovunque.",
         "trabocchetti": ["qualsiasi"],
@@ -229,12 +261,14 @@ QUESTIONS = [
     {
         "domanda": "Le cinture di sicurezza devono essere utilizzate anche dai passeggeri dei sedili posteriori delle autovetture",
         "risposta": True,
+        "riassunto": "Cinture → anche dietro?",
         "spiegazione": "VERO. Anche chi siede sui sedili posteriori deve mettere la cintura. Non è un obbligo solo per chi sta davanti, ma per tutti i passeggeri.",
         "regola": "Anche dietro, cintura.",
     },
     {
         "domanda": "Le cinture di sicurezza devono essere di tipo omologato e mantenute sempre efficienti",
         "risposta": True,
+        "riassunto": "Cinture → omologate ed efficienti?",
         "spiegazione": "VERO. Le cinture devono essere 'omologate', cioè approvate secondo le regole di sicurezza, e devono funzionare sempre perfettamente. Non si possono usare cinture rotte o non a norma.",
         "regola": "Omologata e perfetta.",
         "trabocchetti": ["omologato", "sempre efficienti"],
@@ -242,6 +276,7 @@ QUESTIONS = [
     {
         "domanda": "Non è obbligatorio utilizzare le cinture di sicurezza su una autovettura quando si circola ad una velocità inferiore ai 30 km/h",
         "risposta": False,
+        "riassunto": "Sotto 30 km/h → niente cintura?",
         "spiegazione": "FALSO. È FALSO. L'obbligo di usare le cinture vale sempre, a qualsiasi velocità, anche a bassa velocità. Un incidente può accadere anche a 10 km/h e causare danni gravi.",
         "regola": "Velocità non conta, cintura sì.",
         "trabocchetti": ["inferiore ai 30 km/h"],
@@ -249,6 +284,7 @@ QUESTIONS = [
     {
         "domanda": "Non è obbligatorio, ma è consigliato, indossare le cinture di sicurezza se si occupano i posti posteriori di una autovettura",
         "risposta": False,
+        "riassunto": "Posti posteriori → cintura solo consigliata?",
         "spiegazione": "FALSO. È FALSO. È obbligatorio per legge indossare le cinture anche sui sedili posteriori. Non è solo un consiglio, ma una regola da rispettare per la sicurezza di tutti.",
         "regola": "Dietro è obbligo, non consiglio.",
         "trabocchetti": ["Non è obbligatorio, ma è consigliato"],
@@ -256,18 +292,21 @@ QUESTIONS = [
     {
         "domanda": "Non è obbligatorio l'uso delle cinture di sicurezza su una autovettura da parte di persone anziane (età superiore ai 70 anni)",
         "risposta": False,
+        "riassunto": "Oltre 70 anni → niente cintura?",
         "spiegazione": "FALSO. È FALSO. L'età non è un motivo per non mettere la cintura. L'obbligo vale per tutti, a meno di specifiche esenzioni mediche certificate da un medico.",
         "regola": "Età non esenta.",
     },
     {
         "domanda": "Non è obbligatorio l'uso delle cinture di sicurezza sui veicoli muniti di air- bag",
         "risposta": False,
+        "riassunto": "Con airbag → niente cintura?",
         "spiegazione": "FALSO. È FALSO. Airbag e cinture lavorano insieme per la tua sicurezza. L'airbag da solo non basta e, anzi, senza cintura può essere molto pericoloso perché l'airbag si apre con grande forza.",
         "regola": "Airbag + cintura = sicurezza.",
     },
     {
         "domanda": "La spia che indica il mancato agganciamento delle cinture può essere disabilitata dal conducente con apposito comando posto sul cruscotto",
         "risposta": False,
+        "riassunto": "Spia cinture → disattivabile?",
         "spiegazione": "FALSO. È FALSO. La spia serve a ricordarti di mettere la cintura e non può essere spenta dal conducente. È un sistema di sicurezza obbligatorio per legge.",
         "regola": "Spia sempre accesa se non allacci.",
         "trabocchetti": ["disabilitata dal conducente"],
@@ -275,12 +314,14 @@ QUESTIONS = [
     {
         "domanda": "Le persone obese possono utilizzare appositi strumenti che evitano che la cintura di sicurezza stia aderente al corpo",
         "risposta": False,
+        "riassunto": "Persone obese → dispositivi per allentare la cintura?",
         "spiegazione": "FALSO. È FALSO. La cintura deve aderire bene al corpo per funzionare correttamente. Non si possono usare strumenti che la allontanano. In casi particolari, esistono prolunghe omologate, ma non strumenti che la rendono meno aderente.",
         "regola": "Aderenza salva.",
     },
     {
         "domanda": "L'arrotolatore delle cinture di sicurezza può essere disattivato o modificato dal conducente, se crea fastidio al passeggero",
         "risposta": False,
+        "riassunto": "Arrotolatore → modificabile se dà fastidio?",
         "spiegazione": "FALSO. È FALSO. L'arrotolatore è una parte importante della cintura che la tiene tesa e la blocca in caso di urto. Non si può modificare o disattivare per nessun motivo, anche se 'crea fastidio'. La sicurezza viene prima di tutto.",
         "regola": "Non toccare l'arrotolatore.",
         "trabocchetti": ["disattivato o modificato", "se crea fastidio"],
@@ -288,12 +329,14 @@ QUESTIONS = [
     {
         "domanda": "Le cinture di sicurezza sono di utilità trascurabile nella circolazione urbana",
         "risposta": False,
+        "riassunto": "Cinture in città → utilità trascurabile?",
         "spiegazione": "FALSO. È FALSO. Anche in città, dove le velocità sono più basse, gli incidenti possono causare gravi danni. La cintura è sempre utile e obbligatoria, anche per brevi tragitti urbani.",
         "regola": "Utile sempre, anche in città.",
     },
     {
         "domanda": "Non è obbligatorio utilizzare le cinture di sicurezza su una autovettura quando si effettuano tragitti di lunghezza inferiore a un chilometro all'interno dei centri abitati",
         "risposta": False,
+        "riassunto": "Tragitti urbani sotto 1 km → niente cintura?",
         "spiegazione": "FALSO. È FALSO. La distanza percorsa non cambia l'obbligo. Anche per un tragitto brevissimo, la cintura va messa. Un incidente può succedere anche a pochi metri da casa.",
         "regola": "Breve o lungo, allaccia.",
         "trabocchetti": ["lunghezza inferiore a un chilometro"],
@@ -301,6 +344,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso delle cinture di sicurezza consente il trasporto di bambini sui sedili anteriori in braccio a un adulto, senza pericoli",
         "risposta": False,
+        "riassunto": "Con le cinture → bambini in braccio davanti?",
         "spiegazione": "FALSO. È FALSO. I bambini devono essere trasportati su seggiolini omologati e adatti alla loro età e peso, non in braccio, nemmeno con la cintura dell'adulto. È estremamente pericoloso e vietato dalla legge.",
         "regola": "Bambini = seggiolino.",
         "trabocchetti": ["in braccio a un adulto, senza pericoli"],
@@ -308,6 +352,7 @@ QUESTIONS = [
     {
         "domanda": "I bambini di età inferiore a 3 anni non possono viaggiare su autovetture sprovviste degli idonei sistemi di ritenuta",
         "risposta": True,
+        "riassunto": "Sotto 3 anni → solo con sistemi di ritenuta?",
         "spiegazione": "È VERO. I bambini molto piccoli, sotto i 3 anni, non possono assolutamente viaggiare in auto se non sono assicurati a un seggiolino adatto. È una regola di sicurezza molto importante.",
         "regola": "Meno di 3 anni? Seggiolino obbligatorio!",
         "trabocchetti": ["non possono viaggiare", "sprovviste"],
@@ -315,6 +360,7 @@ QUESTIONS = [
     {
         "domanda": "Se un'autovettura è munita di airbag, è possibile trasportare bambini sul sedile anteriore assicurati ad idoneo seggiolino solo se il veicolo è dotato di comando per disattivare l'airbag stesso",
         "risposta": True,
+        "riassunto": "Con airbag → bambino davanti solo se disattivabile?",
         "spiegazione": "È VERO. Se metti un bambino sul sedile anteriore con un seggiolino, e l'auto ha l'airbag, devi disattivare l'airbag. L'airbag, in caso di incidente, potrebbe essere molto pericoloso per il bambino.",
         "regola": "Airbag anteriore + bambino = disattiva!",
         "trabocchetti": ["airbag stesso"],
@@ -322,6 +368,7 @@ QUESTIONS = [
     {
         "domanda": "I sistemi di ritenuta per bambini devono essere di tipo omologato e mantenuti sempre efficienti",
         "risposta": True,
+        "riassunto": "Sistemi di ritenuta → omologati ed efficienti?",
         "spiegazione": "È VERO. I seggiolini devono essere 'omologati', cioè approvati secondo le norme di sicurezza. Inoltre, devono essere sempre in buone condizioni e funzionanti, non rotti o danneggiati.",
         "regola": "Seggiolino: omologato e perfetto!",
         "trabocchetti": ["omologato", "mantenuti sempre efficienti"],
@@ -329,6 +376,7 @@ QUESTIONS = [
     {
         "domanda": "I sistemi di ritenuta per bambini sono di un unico tipo e sono tutti utilizzabili per trasportare bambini fino a 1,50 metri di altezza",
         "risposta": False,
+        "riassunto": "Sistemi di ritenuta → un solo tipo fino a 1,50 m?",
         "spiegazione": "È FALSO. Come abbiamo visto, i sistemi di ritenuta non sono di un 'unico tipo'. Ci sono diversi gruppi (per peso) e modelli. Non tutti sono adatti per tutti i bambini fino a 1,50 metri, ma devono essere scelti in base alle caratteristiche del bambino.",
         "regola": "Non esiste un 'unico tipo' per tutti!",
         "trabocchetti": ["unico tipo", "tutti utilizzabili"],
@@ -336,6 +384,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il trasporto di bambini senza che siano assicurati a sistemi di ritenuta, purché su percorsi urbani",
         "risposta": False,
+        "riassunto": "Bambini senza ritenuta → su percorsi urbani?",
         "spiegazione": "È FALSO. I bambini devono essere sempre assicurati con i sistemi di ritenuta, non importa dove si guida. La sicurezza è importante sia in città che fuori città.",
         "regola": "Mai senza seggiolino, neanche in città!",
         "trabocchetti": ["purché su percorsi urbani"],
@@ -343,12 +392,14 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il trasporto di bambini senza che siano assicurati a sistemi di ritenuta, purché si circoli alla velocità massima di 40 km/h",
         "risposta": False,
+        "riassunto": "Bambini senza ritenuta → fino a 40 km/h?",
         "spiegazione": "È FALSO. Anche a bassa velocità, un incidente può essere pericoloso per un bambino non assicurato. La velocità non è una scusa per non usare il seggiolino.",
         "regola": "Velocità bassa non è scusa!",
     },
     {
         "domanda": "E' consentito il trasporto di bambini senza che siano assicurati a sistemi di ritenuta, purché sui sedili anteriori e a portata di braccio del conducente",
         "risposta": False,
+        "riassunto": "Bambini senza ritenuta → davanti vicino al conducente?",
         "spiegazione": "È FALSO. Tenere un bambino 'a portata di braccio' non è un sistema di sicurezza. In caso di frenata improvvisa o incidente, il bambino non sarebbe protetto.",
         "regola": "Braccio non è seggiolino!",
         "trabocchetti": ["a portata di braccio del conducente"],
@@ -356,6 +407,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il trasporto di bambini senza che siano assicurati a sistemi di ritenuta, purché sui sedili anteriori in braccio a persona maggiorenne",
         "risposta": False,
+        "riassunto": "Bambini senza ritenuta → in braccio a un adulto?",
         "spiegazione": "È FALSO. Tenere un bambino in braccio, anche se da un adulto, è estremamente pericoloso. In caso di incidente, il bambino verrebbe sbalzato via con forza. È vietato.",
         "regola": "Mai in braccio, mai!",
         "trabocchetti": ["in braccio a persona maggiorenne"],
@@ -363,12 +415,14 @@ QUESTIONS = [
     {
         "domanda": "Si possono utilizzare le cinture di sicurezza al posto dei sistemi di ritenuta per trasportare un bambino, purché sia di altezza superiore a 1,30 metri",
         "risposta": False,
+        "riassunto": "Cintura al posto del seggiolino → oltre 1,30 m?",
         "spiegazione": "È FALSO. La regola generale è che i bambini sotto 1,50 metri di altezza devono usare un sistema di ritenuta. Le cinture di sicurezza normali sono fatte per gli adulti e non proteggono adeguatamente un bambino più basso di 1,50 metri, anche se la domanda indica 1,30 metri.",
         "regola": "1,30m non basta, serve 1,50m!",
     },
     {
         "domanda": "I seggiolini per bambini possono anche essere di costruzione artigianale, purché approvati da esperto della ASL",
         "risposta": False,
+        "riassunto": "Seggiolini artigianali → approvati dalla ASL?",
         "spiegazione": "È FALSO. I seggiolini devono essere prodotti da aziende specializzate e devono essere 'omologati', cioè approvati ufficialmente secondo le norme di sicurezza. Un seggiolino fatto in casa, anche se 'approvato' da un esperto, non è legale né sicuro.",
         "regola": "Solo seggiolini omologati, mai fai-da-te!",
         "trabocchetti": ["costruzione artigianale", "approvati da esperto della ASL"],
@@ -376,6 +430,7 @@ QUESTIONS = [
     {
         "domanda": "L'airbag è un cuscino gonfiabile di nylon o altro materiale sintetico",
         "risposta": True,
+        "riassunto": "Airbag → cuscino di nylon o sintetico?",
         "spiegazione": "L'airbag è un cuscino speciale, fatto di un materiale resistente come il nylon, che si gonfia molto velocemente in caso di incidente per proteggerti.",
         "regola": "Airbag = cuscino protettivo resistente.",
         "trabocchetti": ["o altro materiale sintetico"],
@@ -383,6 +438,7 @@ QUESTIONS = [
     {
         "domanda": "L'airbag entra in funzione in caso di incidente stradale con urto violento",
         "risposta": True,
+        "riassunto": "Airbag → si attiva negli urti violenti?",
         "spiegazione": "L'airbag si attiva solo quando c'è un impatto molto forte, come in un incidente grave. Non si gonfia per piccoli urti o frenate brusche.",
         "regola": "Airbag = solo per urti forti.",
         "trabocchetti": ["urto violento"],
@@ -390,12 +446,14 @@ QUESTIONS = [
     {
         "domanda": "L'airbag può essere pericoloso se si attiva mentre non si indossa la cintura di sicurezza",
         "risposta": True,
+        "riassunto": "Airbag → pericoloso senza cintura?",
         "spiegazione": "Se l'airbag si attiva e tu non hai la cintura di sicurezza, potresti essere spinto con molta forza contro l'airbag stesso o contro altre parti dell'auto, facendoti male. La cintura ti tiene nella posizione giusta.",
         "regola": "Airbag + cintura = sicurezza. Senza cintura = pericolo.",
     },
     {
         "domanda": "L'airbag serve a limitare i danni agli occupanti del veicolo per urti contro superfici interne del veicolo in caso di urto violento a seguito di incidente",
         "risposta": True,
+        "riassunto": "Airbag → limita i danni contro l'abitacolo?",
         "spiegazione": "L'airbag serve a creare un 'cuscino' tra te e le parti dure dell'auto (come il volante, il cruscotto o il parabrezza) in caso di incidente, per evitare che tu ci sbatta contro e ti faccia male.",
         "regola": "Airbag = scudo contro l'interno dell'auto.",
         "trabocchetti": ["limitare i danni", "urti contro superfici interne"],
@@ -403,6 +461,7 @@ QUESTIONS = [
     {
         "domanda": "L'airbag può essere talvolta disattivabile",
         "risposta": True,
+        "riassunto": "Airbag → talvolta disattivabile?",
         "spiegazione": "In alcune auto, specialmente l'airbag del passeggero, può essere disattivato. Questo è utile, ad esempio, se devi mettere un seggiolino per bambini sul sedile anteriore.",
         "regola": "Airbag passeggero = a volte OFF (es. per bambini).",
         "trabocchetti": ["talvolta"],
@@ -410,6 +469,7 @@ QUESTIONS = [
     {
         "domanda": "L'airbag si gonfia automaticamente grazie al comando di un sensore",
         "risposta": True,
+        "riassunto": "Airbag → gonfiato da un sensore?",
         "spiegazione": "L'auto ha dei sensori che 'sentono' l'urto. Quando l'urto è abbastanza forte, i sensori inviano un segnale e l'airbag si gonfia da solo, senza che tu debba fare nulla.",
         "regola": "Sensore = airbag ON automatico.",
         "trabocchetti": ["automaticamente", "sensore"],
@@ -417,6 +477,7 @@ QUESTIONS = [
     {
         "domanda": "L'airbag si gonfia in pochi millisecondi",
         "risposta": True,
+        "riassunto": "Airbag → si gonfia in millisecondi?",
         "spiegazione": "L'airbag deve gonfiarsi in un tempo brevissimo, quasi istantaneo, per poterti proteggere subito dopo l'impatto. I millisecondi sono frazioni di secondo, quindi è velocissimo.",
         "regola": "Airbag = flash, velocissimo.",
         "trabocchetti": ["pochi millisecondi"],
@@ -424,6 +485,7 @@ QUESTIONS = [
     {
         "domanda": "L'airbag si gonfia in pochi secondi",
         "risposta": False,
+        "riassunto": "Airbag → si gonfia in secondi?",
         "spiegazione": "Se l'airbag si gonfiasse in 'pochi secondi', sarebbe troppo lento. L'incidente avviene in un attimo, e l'airbag deve essere già gonfio per proteggerti. Deve gonfiarsi in millisecondi, non secondi.",
         "regola": "Non secondi, ma millisecondi!",
         "trabocchetti": ["secondi"],
@@ -431,6 +493,7 @@ QUESTIONS = [
     {
         "domanda": "L'airbag si gonfia premendo un pulsante posto sul cruscotto",
         "risposta": False,
+        "riassunto": "Airbag → con un pulsante sul cruscotto?",
         "spiegazione": "L'airbag non si gonfia premendo un pulsante. Si attiva da solo, automaticamente, grazie ai sensori dell'auto che rilevano un urto violento.",
         "regola": "Airbag = automatico, non con pulsante.",
         "trabocchetti": ["premendo un pulsante"],
@@ -438,6 +501,7 @@ QUESTIONS = [
     {
         "domanda": "L'airbag deve essere gonfiato periodicamente per verificarne l'efficienza",
         "risposta": False,
+        "riassunto": "Airbag → gonfiato periodicamente per prova?",
         "spiegazione": "L'airbag è un sistema sigillato che si attiva una sola volta in caso di incidente. Non deve essere gonfiato periodicamente per controllarlo; la sua efficienza viene verificata durante la normale manutenzione dell'auto, senza gonfiarlo.",
         "regola": "Airbag = si gonfia solo una volta, non per prova.",
         "trabocchetti": ["gonfiato periodicamente"],
@@ -445,6 +509,7 @@ QUESTIONS = [
     {
         "domanda": "L'airbag è utile soltanto nei percorsi extraurbani",
         "risposta": False,
+        "riassunto": "Airbag → utile solo fuori città?",
         "spiegazione": "L'airbag è un sistema di sicurezza utile su qualsiasi strada, sia in città (urbani) che fuori città (extraurbani) o in autostrada. Gli incidenti possono avvenire ovunque.",
         "regola": "Airbag = utile ovunque, sempre.",
         "trabocchetti": ["soltanto"],
@@ -452,6 +517,7 @@ QUESTIONS = [
     {
         "domanda": "L'airbag non va usato insieme alle cinture di sicurezza",
         "risposta": False,
+        "riassunto": "Airbag → non insieme alle cinture?",
         "spiegazione": "È FALSO! L'airbag e le cinture di sicurezza sono progettati per lavorare insieme. Le cinture ti tengono fermo al sedile, e l'airbag ammortizza l'impatto. Insieme offrono la massima protezione.",
         "regola": "Airbag + cintura = coppia vincente per la sicurezza.",
         "trabocchetti": ["non va usato insieme"],
@@ -459,6 +525,7 @@ QUESTIONS = [
     {
         "domanda": "L'airbag non può essere montato su vetture con meno di 4 porte",
         "risposta": False,
+        "riassunto": "Airbag → non su auto con meno di 4 porte?",
         "spiegazione": "Il numero di porte di un'auto non ha nulla a che fare con la possibilità di montare gli airbag. Molte auto a 2 o 3 porte hanno regolarmente gli airbag.",
         "regola": "Airbag = indipendente dal numero di porte.",
         "trabocchetti": ["meno di 4 porte"],
@@ -466,6 +533,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente può tarare, con apposito comando, la velocità minima d'urto al di sopra della quale far attivare l'airbag",
         "risposta": False,
+        "riassunto": "Airbag → soglia d'urto regolabile dal conducente?",
         "spiegazione": "Il conducente non può decidere a quale velocità d'urto l'airbag si deve attivare. Questa è una impostazione tecnica decisa dal costruttore dell'auto per garantire la massima sicurezza e non può essere modificata.",
         "regola": "Airbag = impostazioni fisse di fabbrica, non modificabili.",
         "trabocchetti": ["Il conducente può tarare"],
@@ -473,6 +541,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco subisce un processo di invecchiamento dovuto a luce e calore",
         "risposta": True,
+        "riassunto": "Casco → invecchia per luce e calore?",
         "spiegazione": "I materiali di cui è fatto il casco, come la plastica e la resina, si rovinano con il tempo. L'esposizione al sole (luce) e al caldo accelera questo processo, rendendo il casco meno sicuro e meno efficace in caso di urto. Per questo, i caschi hanno una 'data di scadenza' o un periodo di vita consigliato.",
         "regola": "Sole e caldo, casco rovinato.",
         "trabocchetti": ["invecchiamento"],
@@ -480,6 +549,7 @@ QUESTIONS = [
     {
         "domanda": "La pulizia del casco deve essere effettuata con detersivi non corrosivi",
         "risposta": True,
+        "riassunto": "Casco → pulito con detersivi non corrosivi?",
         "spiegazione": "Per pulire il casco, è fondamentale usare prodotti delicati. I detersivi 'non corrosivi' sono quelli che non contengono sostanze aggressive che potrebbero danneggiare la superficie o la struttura interna del casco, compromettendone la sicurezza.",
         "regola": "Pulizia delicata, casco protetto.",
         "trabocchetti": ["non corrosivi"],
@@ -487,6 +557,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco non deve essere pulito con solventi",
         "risposta": True,
+        "riassunto": "Casco → niente solventi?",
         "spiegazione": "I solventi sono sostanze chimiche molto forti che possono sciogliere o indebolire i materiali plastici e le resine di cui è fatto il casco. Anche se il danno non è subito visibile, il casco potrebbe perdere la sua capacità di proteggere la testa in caso di incidente.",
         "regola": "Solventi lontani dal casco.",
         "trabocchetti": ["solventi"],
@@ -494,6 +565,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco non deve essere pulito con benzina",
         "risposta": True,
+        "riassunto": "Casco → niente benzina?",
         "spiegazione": "La benzina è un tipo di solvente molto potente e aggressivo. Usarla per pulire il casco può danneggiare gravemente i materiali, rendendoli fragili e meno resistenti agli urti, anche se il danno non è visibile esternamente.",
         "regola": "No benzina, casco salvo.",
         "trabocchetti": ["benzina"],
@@ -501,6 +573,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso del casco è necessario per ridurre gli effetti di eventuali urti alla testa",
         "risposta": True,
+        "riassunto": "Casco → riduce gli effetti degli urti alla testa?",
         "spiegazione": "Il casco è progettato per assorbire l'energia di un urto e distribuirla su una superficie più ampia, riducendo così la forza che arriva alla testa. Questo diminuisce il rischio di traumi gravi in caso di caduta o incidente.",
         "regola": "Casco in testa, testa protetta.",
         "trabocchetti": ["ridurre gli effetti"],
@@ -508,6 +581,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco integrale protegge anche il viso da traumi e lesioni in caso di incidente",
         "risposta": True,
+        "riassunto": "Casco integrale → protegge anche il viso?",
         "spiegazione": "Il casco integrale è quello che copre tutta la testa, inclusa la parte del viso (mento e mascella). Questa protezione completa è fondamentale per evitare ferite e lesioni al viso in caso di incidente, oltre a proteggere la parte superiore della testa.",
         "regola": "Integrale = protezione totale.",
         "trabocchetti": ["integrale"],
@@ -515,12 +589,14 @@ QUESTIONS = [
     {
         "domanda": "E' bene che il casco sia dotato di visiera",
         "risposta": True,
+        "riassunto": "Casco → meglio con visiera?",
         "spiegazione": "La visiera è un elemento essenziale del casco. Protegge gli occhi e il viso da vento, pioggia, polvere, insetti e piccoli sassi che possono colpire mentre si guida, garantendo una visione chiara e sicura.",
         "regola": "Visiera sempre, occhi sicuri.",
     },
     {
         "domanda": "La visiera del casco protegge il viso e gli occhi da impatti con insetti",
         "risposta": True,
+        "riassunto": "Visiera → protegge dagli insetti?",
         "spiegazione": "Quando si guida, soprattutto a velocità elevate, insetti o piccoli detriti possono colpire il viso e gli occhi. La visiera agisce come una barriera protettiva, evitando distrazioni e possibili lesioni che potrebbero compromettere la guida.",
         "regola": "Visiera = scudo per occhi.",
         "trabocchetti": ["impatti con insetti"],
@@ -528,6 +604,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco deve essere di taglia corretta",
         "risposta": True,
+        "riassunto": "Casco → taglia giusta?",
         "spiegazione": "Un casco della taglia sbagliata non può proteggere efficacemente. Se è troppo grande, si muove e può sfilarsi. Se è troppo piccolo, stringe e può causare fastidio o mal di testa. Deve aderire bene alla testa senza stringere troppo, per rimanere fermo in caso di urto.",
         "regola": "Taglia giusta, protezione robusta.",
         "trabocchetti": ["taglia corretta"],
@@ -535,12 +612,14 @@ QUESTIONS = [
     {
         "domanda": "Il casco deve essere sostituito dopo che abbia subito un forte urto, anche se non mostra deformazioni sulla calotta esterna",
         "risposta": True,
+        "riassunto": "Casco dopo forte urto → sostituirlo anche senza deformazioni?",
         "spiegazione": "Anche se la parte esterna del casco (calotta) sembra intatta, un forte urto può aver danneggiato la struttura interna, che è quella che assorbe l'energia. Un casco che ha subito un urto non è più sicuro e deve essere sostituito, proprio come un airbag che si è attivato.",
         "regola": "Un urto = casco da buttare.",
     },
     {
         "domanda": "La robustezza della calotta esterna del casco potrebbe essere compromessa da solventi presenti in vernici o colle",
         "risposta": True,
+        "riassunto": "Calotta → indebolita da solventi di vernici o colle?",
         "spiegazione": "Alcune vernici o colle non adatte per il casco possono contenere solventi. Questi solventi possono indebolire la plastica o la resina della calotta esterna, rendendo il casco meno resistente e meno sicuro in caso di incidente.",
         "regola": "No vernici strane, casco sano.",
         "trabocchetti": ["compromessa da solventi"],
@@ -548,6 +627,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la marcia, il casco deve essere sempre correttamente allacciato",
         "risposta": True,
+        "riassunto": "Casco in marcia → sempre allacciato?",
         "spiegazione": "Se il casco non è allacciato correttamente, in caso di caduta o incidente può sfilarsi dalla testa e non offrire alcuna protezione. L'allacciatura deve essere ben stretta, ma senza causare fastidio.",
         "regola": "Allacciato bene, testa al sicuro.",
         "trabocchetti": ["sempre", "correttamente allacciato"],
@@ -555,6 +635,7 @@ QUESTIONS = [
     {
         "domanda": "Indossare il casco in modo errato o senza averlo correttamente allacciato può comportare gravi rischi alla salute in caso di caduta o incidente",
         "risposta": True,
+        "riassunto": "Casco mal indossato → gravi rischi?",
         "spiegazione": "Indossare il casco in modo sbagliato (ad esempio, troppo indietro sulla testa) o senza allacciarlo bene lo rende inutile. In caso di incidente, il casco potrebbe spostarsi o volare via, lasciando la testa senza protezione e aumentando il rischio di gravi lesioni.",
         "regola": "Casco sì, ma bene.",
         "trabocchetti": ["in modo errato", "senza averlo correttamente allacciato"],
@@ -562,12 +643,14 @@ QUESTIONS = [
     {
         "domanda": "Il casco deve essere indossato anche per spostamenti brevi e a bassa velocità",
         "risposta": True,
+        "riassunto": "Casco → anche per brevi tragitti lenti?",
         "spiegazione": "Anche per un breve tragitto o a bassa velocità, un incidente può sempre capitare. Le conseguenze di un trauma cranico possono essere molto gravi, quindi la protezione del casco è sempre necessaria, senza eccezioni.",
         "regola": "Sempre casco, sempre sicuro.",
     },
     {
         "domanda": "Il casco deve essere indossato anche a bordo dei quadricicli a motore privi di carrozzeria (Quad)",
         "risposta": True,
+        "riassunto": "Casco → anche sui quad senza carrozzeria?",
         "spiegazione": "I quadricicli a motore privi di carrozzeria, come i quad, non offrono alcuna protezione in caso di ribaltamento o caduta. Per questo motivo, chi li guida deve indossare il casco per proteggere la testa.",
         "regola": "Quad senza carrozzeria = casco obbligatorio.",
         "trabocchetti": ["privi di carrozzeria (Quad)"],
@@ -575,6 +658,7 @@ QUESTIONS = [
     {
         "domanda": "La visiera del casco deve essere sostituita se rigata o danneggiata",
         "risposta": True,
+        "riassunto": "Visiera rigata → sostituirla?",
         "spiegazione": "Una visiera rigata o danneggiata può ridurre la visibilità, specialmente di notte, con il sole basso o in condizioni di pioggia. Questo può causare distrazioni e aumentare il rischio di incidenti. Per la sicurezza, è fondamentale avere una visiera sempre perfetta.",
         "regola": "Visiera chiara, guida sicura.",
         "trabocchetti": ["rigata o danneggiata"],
@@ -582,12 +666,14 @@ QUESTIONS = [
     {
         "domanda": "La visiera del casco deve garantire la perfetta visione con qualunque condizione di luce o illuminazione",
         "risposta": True,
+        "riassunto": "Visiera → visione perfetta con ogni luce?",
         "spiegazione": "La visiera deve essere trasparente e pulita per permettere al conducente di vedere chiaramente la strada e l'ambiente circostante in ogni condizione, sia di giorno che di notte, con sole o pioggia. Una visiera che non garantisce una visione perfetta è pericolosa.",
         "regola": "Visiera perfetta, visione perfetta.",
     },
     {
         "domanda": "Il sistema di aerazione del casco consente di limitare il pericolo di appannamento della visiera",
         "risposta": True,
+        "riassunto": "Aerazione del casco → meno appannamento?",
         "spiegazione": "Il sistema di aerazione del casco (le prese d'aria) serve a far circolare l'aria all'interno. Questo aiuta a prevenire che la visiera si appanni a causa del respiro o dell'umidità, mantenendo la visibilità chiara e costante.",
         "regola": "Aria nel casco, visiera chiara.",
         "trabocchetti": ["sistema di aerazione", "appannamento"],
@@ -595,12 +681,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che non indossa il casco è soggetto alla decurtazione di punti dalla patente di guida",
         "risposta": True,
+        "riassunto": "Senza casco → perdita di punti?",
         "spiegazione": "Non indossare il casco quando è obbligatorio è una grave violazione del Codice della Strada. Oltre a una multa, questa infrazione comporta la perdita di punti dalla patente di guida, come previsto dalla legge.",
         "regola": "No casco = meno punti.",
     },
     {
         "domanda": "Sul casco possono essere applicati adesivi di qualunque tipo, purché non coprano la visiera",
         "risposta": False,
+        "riassunto": "Casco → adesivi di ogni tipo se non coprono la visiera?",
         "spiegazione": "FALSO. Non si possono applicare adesivi 'di qualunque tipo'. Alcuni adesivi o vernici non specifici per caschi possono contenere solventi che, anche se non coprono la visiera, possono danneggiare la struttura del casco e comprometterne la sicurezza. Solo adesivi omologati o specifici per caschi sono ammessi.",
         "regola": "Adesivi? Solo se specifici.",
         "trabocchetti": ["qualunque"],
@@ -608,6 +696,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco deve essere periodicamente pulito con benzina o acquaragia per sgrassarlo ed eliminare resti di insetti",
         "risposta": False,
+        "riassunto": "Casco → pulito con benzina o acquaragia?",
         "spiegazione": "FALSO. Benzina e acquaragia sono solventi molto aggressivi che danneggiano gravemente i materiali del casco, rendendolo insicuro. Per la pulizia si devono usare solo acqua tiepida e sapone neutro o prodotti specifici e delicati per caschi.",
         "regola": "No benzina, no acquaragia.",
         "trabocchetti": ["benzina o acquaragia"],
@@ -615,6 +704,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco deve essere completamente allacciato solo sui percorsi extraurbani",
         "risposta": False,
+        "riassunto": "Casco allacciato → solo fuori città?",
         "spiegazione": "FALSO. Il casco deve essere sempre allacciato correttamente, in ogni situazione e su ogni tipo di strada, sia in città che fuori. La sicurezza non dipende dal percorso, ma dall'uso corretto del dispositivo di protezione.",
         "regola": "Allacciato sempre, ovunque.",
         "trabocchetti": ["solo"],
@@ -622,6 +712,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si circola nelle zone a velocità controllata inferiore a 30 km/h, non è obbligatorio l'uso del casco",
         "risposta": False,
+        "riassunto": "Zone sotto 30 km/h → casco non obbligatorio?",
         "spiegazione": "FALSO. L'obbligo di indossare il casco vale sempre, indipendentemente dalla velocità o dal tipo di strada. Anche a bassa velocità, un incidente può causare gravi traumi alla testa, quindi la protezione è sempre necessaria.",
         "regola": "Velocità bassa? Casco non scappa.",
         "trabocchetti": ["non è obbligatorio", "inferiore a 30 km/h"],
@@ -629,6 +720,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso del casco è obbligatorio su qualunque quadriciclo a motore",
         "risposta": False,
+        "riassunto": "Casco → su qualunque quadriciclo?",
         "spiegazione": "FALSO. L'uso del casco è obbligatorio solo sui quadricicli a motore 'privi di carrozzeria' (come i quad aperti). Se il quadriciclo ha una carrozzeria chiusa (come una microcar), non è obbligatorio indossare il casco.",
         "regola": "Quadriciclo con carrozzeria? No casco.",
         "trabocchetti": ["qualunque"],
@@ -636,6 +728,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco conserva invariate le sue caratteristiche protettive per periodi lunghissimi, di oltre venti anni",
         "risposta": False,
+        "riassunto": "Casco → protezione invariata oltre vent'anni?",
         "spiegazione": "FALSO. I materiali del casco (resine, plastiche, imbottiture) invecchiano e si deteriorano con il tempo, anche se non usato, perdendo le loro capacità protettive. La durata media di un casco è di circa 5-7 anni dalla data di produzione, non 'oltre venti anni'.",
         "regola": "Casco ha scadenza, non dura vent'anni.",
         "trabocchetti": ["periodi lunghissimi, di oltre venti anni"],
@@ -643,6 +736,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco integrale non può essere utilizzato quando si circola nei centri urbani ad alta densità di circolazione",
         "risposta": False,
+        "riassunto": "Casco integrale → vietato in città trafficate?",
         "spiegazione": "FALSO. Il casco integrale offre la massima protezione ed è sempre permesso, anzi consigliato, in qualsiasi condizione di circolazione, inclusi i centri urbani. Non esistono divieti di utilizzo in base al tipo di strada.",
         "regola": "Integrale sempre, ovunque.",
         "trabocchetti": ["non può essere utilizzato"],
@@ -650,6 +744,7 @@ QUESTIONS = [
     {
         "domanda": "Il casco integrale è inutile se si circola a bordo di un ciclomotore a due ruote",
         "risposta": False,
+        "riassunto": "Casco integrale → inutile sul ciclomotore?",
         "spiegazione": "FALSO. Il casco integrale è il tipo di casco che offre la maggiore protezione, coprendo tutta la testa e il viso. È sempre utile e consigliato per chiunque guidi un veicolo a due ruote, inclusi i ciclomotori, per massimizzare la sicurezza in caso di incidente.",
         "regola": "Integrale = massima protezione, mai inutile.",
         "trabocchetti": ["inutile"],
@@ -657,12 +752,14 @@ QUESTIONS = [
     {
         "domanda": "L'obbligo dell'uso del casco non riguarda i maggiorenni con più di tre anni di esperienza di guida",
         "risposta": False,
+        "riassunto": "Casco → non per maggiorenni con 3 anni di guida?",
         "spiegazione": "FALSO. L'obbligo di indossare il casco vale per tutti i conducenti e passeggeri di veicoli a due ruote, senza alcuna eccezione legata all'età o all'esperienza di guida. La sicurezza è un diritto e un dovere per tutti.",
         "regola": "Casco per tutti, sempre.",
     },
     {
         "domanda": "L'uso del casco durante la marcia diventa facoltativo quando la temperatura dell'aria è superiore ai trenta gradi",
         "risposta": False,
+        "riassunto": "Casco → facoltativo oltre 30 gradi?",
         "spiegazione": "FALSO. L'obbligo di indossare il casco non dipende dalla temperatura esterna. È sempre obbligatorio, anche con temperature molto alte, per garantire la sicurezza del conducente e del passeggero in caso di incidente.",
         "regola": "Caldo o freddo, casco stretto.",
         "trabocchetti": ["diventa facoltativo"],
@@ -670,6 +767,7 @@ QUESTIONS = [
     {
         "domanda": "La visiera del casco peggiora notevolmente la visibilità e quindi va usata il meno possibile",
         "risposta": False,
+        "riassunto": "Visiera → peggiora la visibilità, usarla poco?",
         "spiegazione": "FALSO. Una visiera pulita e in buone condizioni migliora la visibilità, proteggendo da vento, pioggia, insetti e detriti. È un elemento essenziale per la sicurezza e va usata sempre, non il meno possibile.",
         "regola": "Visiera chiara = visione chiara.",
         "trabocchetti": ["peggiora notevolmente la visibilità", "va usata il meno possibile"],
@@ -677,6 +775,7 @@ QUESTIONS = [
     {
         "domanda": "La calotta del casco può essere riparata con nastro adesivo di tipo speciale, se presenta una rottura inferiore ai tre centimetri",
         "risposta": False,
+        "riassunto": "Calotta rotta sotto 3 cm → nastro adesivo?",
         "spiegazione": "FALSO. La calotta esterna del casco è la parte più importante per la protezione. Se presenta una rottura, anche piccola, la sua capacità di assorbire gli urti è compromessa. Non può essere riparata con nastro adesivo; il casco deve essere sostituito per garantire la sicurezza.",
         "regola": "Casco rotto? Casco nuovo.",
         "trabocchetti": ["riparata con nastro adesivo"],
@@ -684,6 +783,7 @@ QUESTIONS = [
     {
         "domanda": "La visiera del casco può essere riparata con nastro adesivo, purché sia di tipo ultra trasparente",
         "risposta": False,
+        "riassunto": "Visiera → riparabile con nastro trasparente?",
         "spiegazione": "FALSO. Una visiera danneggiata, rigata o rotta deve essere sostituita. Anche il nastro adesivo 'ultra trasparente' altera la visione, crea distorsioni e non ripristina la sicurezza e l'integrità della visiera. La visibilità deve essere perfetta.",
         "regola": "Visiera rotta? Visiera nuova.",
         "trabocchetti": ["riparata con nastro adesivo"],
@@ -691,6 +791,7 @@ QUESTIONS = [
     {
         "domanda": "I caschi da utilizzare alla guida dei ciclomotori non necessitano di omologazione",
         "risposta": False,
+        "riassunto": "Caschi per ciclomotori → senza omologazione?",
         "spiegazione": "FALSO. Tutti i caschi utilizzati per la guida di veicoli a motore, inclusi i ciclomotori, devono essere omologati. L'omologazione garantisce che il casco abbia superato test di sicurezza e rispetti gli standard previsti dalla legge per proteggere efficacemente la testa.",
         "regola": "Casco senza omologazione = casco senza protezione.",
         "trabocchetti": ["non necessitano di omologazione"],
@@ -698,6 +799,7 @@ QUESTIONS = [
     {
         "domanda": "Gli stivali ad uso motociclistico permettono una giusta protezione di piedi e caviglie quando si è alla guida di veicolo a due ruote",
         "risposta": True,
+        "riassunto": "Stivali da moto → proteggono piedi e caviglie?",
         "spiegazione": "Gli stivali da moto sono progettati proprio per proteggere i piedi e le caviglie. Sono robusti e coprono bene queste parti del corpo, che sono molto esposte in caso di incidente o caduta.",
         "regola": "Stivali moto = piedi e caviglie protetti.",
         "trabocchetti": ["giusta protezione"],
@@ -705,6 +807,7 @@ QUESTIONS = [
     {
         "domanda": "Gli stivali ad uso motociclistico riducono gli effetti di distorsioni in caso di appoggio impreciso dei piedi e proteggono le articolazioni della caviglia dal freddo",
         "risposta": True,
+        "riassunto": "Stivali da moto → meno distorsioni e freddo?",
         "spiegazione": "Questi stivali sono fatti per tenere ferma la caviglia, così è più difficile farsi male (distorsione) se appoggi male il piede. Inoltre, i materiali usati aiutano a tenere i piedi al caldo, proteggendoli dal freddo durante la guida.",
         "regola": "Stivali moto = meno distorsioni + piedi caldi.",
         "trabocchetti": ["riducono gli effetti di distorsioni"],
@@ -712,6 +815,7 @@ QUESTIONS = [
     {
         "domanda": "Gli stivali ad uso motociclistico sono privi di nastri liberi o stringhe per evitarne l'aggancio alle pedivelle dei motocicli",
         "risposta": True,
+        "riassunto": "Stivali da moto → senza lacci che si impigliano?",
         "spiegazione": "Per la sicurezza, gli stivali da moto non devono avere lacci o nastri che penzolano. Questo evita che si possano impigliare nelle pedivelle o in altre parti della moto mentre guidi, cosa che sarebbe molto pericolosa.",
         "regola": "Niente lacci penzolanti = sicurezza in moto.",
         "trabocchetti": ["privi di nastri liberi o stringhe"],
@@ -719,6 +823,7 @@ QUESTIONS = [
     {
         "domanda": "Gli stivali ad uso motociclistico proteggono i piedi da abrasioni sull'asfalto in caso di caduta",
         "risposta": True,
+        "riassunto": "Stivali da moto → contro le abrasioni?",
         "spiegazione": "Se cadi dalla moto, gli stivali sono fatti con materiali resistenti che proteggono i tuoi piedi dallo sfregamento sull'asfalto. Questo evita ferite gravi come le abrasioni.",
         "regola": "Caduta = stivali proteggono da asfalto.",
         "trabocchetti": ["abrasioni sull"],
@@ -726,6 +831,7 @@ QUESTIONS = [
     {
         "domanda": "Gli stivali ad uso motociclistico sono omologati secondo norme internazionali",
         "risposta": True,
+        "riassunto": "Stivali da moto → omologati?",
         "spiegazione": "Per essere venduti come stivali da moto, devono superare dei test e rispettare delle regole di sicurezza precise. Questo si chiama 'omologazione' e significa che sono stati controllati e approvati secondo standard internazionali.",
         "regola": "Stivali moto = certificati (omologati).",
         "trabocchetti": ["omologati"],
@@ -733,6 +839,7 @@ QUESTIONS = [
     {
         "domanda": "Le calzature omologate per l'uso motociclistico sono progettate per non scalzarsi in caso di caduta",
         "risposta": True,
+        "riassunto": "Calzature da moto → non si sfilano cadendo?",
         "spiegazione": "Gli stivali da moto sono fatti per rimanere ben saldi ai piedi, anche se cadi. Questo è fondamentale perché se si sfilano, il piede rimane senza protezione, aumentando il rischio di lesioni.",
         "regola": "Stivali moto = restano ai piedi, anche cadendo.",
         "trabocchetti": ["non scalzarsi"],
@@ -740,6 +847,7 @@ QUESTIONS = [
     {
         "domanda": "Al posto degli stivali ad uso motociclistico si possono utilizzare scarpe da trekking in alta montagna, perché sono di analoga concezione",
         "risposta": False,
+        "riassunto": "Scarpe da trekking → al posto degli stivali?",
         "spiegazione": "Le scarpe da trekking sono ottime per camminare in montagna, ma non sono fatte per proteggere in caso di caduta dalla moto. Non hanno le stesse protezioni rigide per caviglie e piedi e non sono progettate per resistere all'abrasione dell'asfalto. Non sono 'di analoga concezione' per la sicurezza in moto.",
         "regola": "Trekking NO moto. Solo stivali specifici.",
         "trabocchetti": ["si possono utilizzare", "di analoga concezione"],
@@ -747,6 +855,7 @@ QUESTIONS = [
     {
         "domanda": "Gli stivali ad uso motociclistico sono dotati di doppie stringhe per evitare scalzamenti",
         "risposta": False,
+        "riassunto": "Stivali da moto → doppie stringhe?",
         "spiegazione": "Abbiamo visto che gli stivali da moto sono 'privi di nastri liberi o stringhe' proprio per evitare che si impiglino. Quindi, non hanno doppie stringhe. Usano sistemi di chiusura diversi, come cerniere o velcro, per essere sicuri e pratici.",
         "regola": "Niente stringhe (singole o doppie) negli stivali da moto.",
         "trabocchetti": ["doppie stringhe"],
@@ -754,6 +863,7 @@ QUESTIONS = [
     {
         "domanda": "Gli stivali ad uso motociclistico hanno la suola in acciaio",
         "risposta": False,
+        "riassunto": "Stivali da moto → suola d'acciaio?",
         "spiegazione": "La suola degli stivali da moto è robusta e antiscivolo, ma non è fatta di acciaio. L'acciaio sarebbe troppo pesante, rigido e non permetterebbe una buona sensibilità sui comandi della moto, oltre a non essere il materiale ideale per l'aderenza.",
         "regola": "Suola moto = robusta, NON acciaio.",
         "trabocchetti": ["suola in acciaio"],
@@ -761,6 +871,7 @@ QUESTIONS = [
     {
         "domanda": "Gli stivali ad uso motociclistico coprono la gamba fin sopra il ginocchio per proteggere meglio il conducente in caso di caduta",
         "risposta": False,
+        "riassunto": "Stivali da moto → sopra il ginocchio?",
         "spiegazione": "Gli stivali da moto proteggono piedi e caviglie, e a volte parte dello stinco, ma non arrivano fino sopra il ginocchio. Quella protezione è data da pantaloni specifici o protezioni separate. Stivali così alti sarebbero scomodi e limiterebbero i movimenti.",
         "regola": "Stivali moto = non coprono il ginocchio.",
         "trabocchetti": ["fin sopra il ginocchio"],
@@ -768,6 +879,7 @@ QUESTIONS = [
     {
         "domanda": "Gli stivali ad uso motociclistico devono essere interamente realizzati in gomma ignifuga",
         "risposta": False,
+        "riassunto": "Stivali da moto → tutti in gomma ignifuga?",
         "spiegazione": "Gli stivali da moto sono fatti con materiali resistenti e protettivi (come pelle, materiali sintetici, protezioni rigide), ma non sono interamente di gomma ignifuga. La gomma ignifuga è un materiale specifico che non brucia, ma non è il materiale principale per uno stivale da moto.",
         "regola": "Stivali moto = materiali vari, NON solo gomma ignifuga.",
         "trabocchetti": ["interamente realizzati in gomma ignifuga"],
@@ -775,12 +887,14 @@ QUESTIONS = [
     {
         "domanda": "Non esistono specifici stivali ad uso motociclistico, pertanto è bene utilizzare calzature robuste del tipo utilizzato per caccia, pesca o alpinismo",
         "risposta": False,
+        "riassunto": "Stivali da moto → non esistono, usare scarponi?",
         "spiegazione": "Questa affermazione è completamente falsa. Esistono eccome stivali specifici per la moto, omologati e progettati per la sicurezza su due ruote. Le calzature per caccia, pesca o alpinismo non offrono la stessa protezione in caso di caduta o abrasione sull'asfalto.",
         "regola": "Esistono SEMPRE stivali specifici per moto.",
     },
     {
         "domanda": "Guidando ciclomotori o motocicli è consigliabile utilizzare guanti protettivi per le mani",
         "risposta": True,
+        "riassunto": "Ciclomotore o moto → guanti protettivi?",
         "spiegazione": "È vero che è molto importante usare i guanti quando guidi un ciclomotore o una moto. I guanti proteggono le tue mani in caso di caduta o se urti qualcosa.",
         "regola": "Guanti = mani protette.",
         "trabocchetti": ["consigliabile"],
@@ -788,6 +902,7 @@ QUESTIONS = [
     {
         "domanda": "I guanti da motociclisti omologati proteggono in particolar modo il dorso della mano in caso di impatto con corpi duri",
         "risposta": True,
+        "riassunto": "Guanti omologati → proteggono il dorso?",
         "spiegazione": "Sì, è vero. I guanti omologati sono fatti apposta per proteggere. Il dorso della mano (la parte superiore) è spesso rinforzato per proteggerti dagli urti, ad esempio se colpisci qualcosa di duro.",
         "regola": "Guanti omologati = dorso al sicuro dagli urti.",
         "trabocchetti": ["in particolar modo"],
@@ -795,6 +910,7 @@ QUESTIONS = [
     {
         "domanda": "I guanti da motociclisti proteggono il palmo della mano in caso di caduta con strisciamento sull'asfalto",
         "risposta": True,
+        "riassunto": "Guanti da moto → proteggono il palmo?",
         "spiegazione": "È vero. Il palmo della mano (la parte interna) è la prima cosa che spesso tocca terra in caso di caduta. I guanti hanno materiali resistenti che proteggono la pelle dall'asfalto, evitando graffi e abrasioni.",
         "regola": "Guanti = palmo salvo da strisciamento.",
         "trabocchetti": ["strisciamento sull"],
@@ -802,6 +918,7 @@ QUESTIONS = [
     {
         "domanda": "I guanti da motociclisti garantiscono la giusta sensibilità durante la guida e una presa più sicura sui comandi",
         "risposta": True,
+        "riassunto": "Guanti da moto → sensibilità e presa?",
         "spiegazione": "Sì, è vero. I guanti specifici per la moto sono fatti per darti la giusta sensibilità per usare i comandi (come i freni e l'acceleratore) e per avere una presa più salda, specialmente se le mani sudano o fa freddo.",
         "regola": "Guanti = sensibilità + presa sicura.",
         "trabocchetti": ["giusta sensibilità", "presa più sicura"],
@@ -809,6 +926,7 @@ QUESTIONS = [
     {
         "domanda": "I guanti da motociclisti possono avere imbottiture diverse a seconde della stagione",
         "risposta": True,
+        "riassunto": "Guanti da moto → imbottiture stagionali?",
         "spiegazione": "È vero. Ci sono guanti più leggeri e ventilati per l'estate e guanti più spessi e caldi per l'inverno. Così puoi scegliere quelli giusti per ogni stagione e stare comodo.",
         "regola": "Guanti = diversi per stagione.",
         "trabocchetti": ["possono avere"],
@@ -816,6 +934,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si circola a bordo di un motociclo, è opportuno indossare gli specifici guanti anche d'estate",
         "risposta": True,
+        "riassunto": "Guanti da moto → anche d'estate?",
         "spiegazione": "Sì, è vero. Anche d'estate, il rischio di cadere e farsi male alle mani è sempre presente. I guanti estivi sono più leggeri ma offrono comunque una protezione fondamentale in caso di incidente.",
         "regola": "Guanti = sempre, anche d'estate.",
         "trabocchetti": ["opportuno", "Anche d"],
@@ -823,6 +942,7 @@ QUESTIONS = [
     {
         "domanda": "I guanti ad uso motociclistico hanno speciali sistemi di aggancio per impedire il loro sfilamento in caso di caduta",
         "risposta": True,
+        "riassunto": "Guanti da moto → agganci contro lo sfilamento?",
         "spiegazione": "È vero. Molti guanti da moto hanno un cinturino o un sistema di chiusura sul polso. Questo serve a tenere il guanto ben fermo sulla mano e a evitare che si sfili durante una caduta, così la protezione rimane al suo posto.",
         "regola": "Guanti = aggancio anti-sfilamento.",
         "trabocchetti": ["speciali sistemi di aggancio"],
@@ -830,6 +950,7 @@ QUESTIONS = [
     {
         "domanda": "Non esistono guanti ad uso motociclistico di tipo omologato",
         "risposta": False,
+        "riassunto": "Guanti da moto → non esistono omologati?",
         "spiegazione": "È falso. Esistono eccome guanti da motociclista omologati! Sono guanti che hanno superato test di sicurezza e sono riconoscibili da un'etichetta specifica che ne attesta la conformità alle norme europee.",
         "regola": "Guanti omologati = esistono e sono importanti!",
         "trabocchetti": ["Non esistono"],
@@ -837,6 +958,7 @@ QUESTIONS = [
     {
         "domanda": "I guanti ad uso motociclistico possono essere sostituiti dai guanti da sci, ma solo nella stagione fredda",
         "risposta": False,
+        "riassunto": "Guanti da sci → al posto di quelli da moto d'inverno?",
         "spiegazione": "È falso. I guanti da sci non sono fatti per proteggere come quelli da moto. Non offrono la stessa resistenza all'abrasione sull'asfalto o la stessa protezione dagli impatti. Ogni tipo di guanto ha uno scopo diverso.",
         "regola": "Guanti moto = specifici, non da sci.",
         "trabocchetti": ["possono essere sostituiti"],
@@ -844,6 +966,7 @@ QUESTIONS = [
     {
         "domanda": "Se si guida un motociclo senza guanti si può intervenire più rapidamente sui comandi",
         "risposta": False,
+        "riassunto": "Senza guanti → comandi più rapidi?",
         "spiegazione": "È falso. I guanti specifici per la moto sono progettati per non ostacolare i movimenti e, anzi, migliorano la presa e la sensibilità sui comandi. Senza guanti, le mani possono sudare o scivolare, rendendo l'intervento meno sicuro.",
         "regola": "Guanti = non rallentano, migliorano la presa.",
         "trabocchetti": ["più rapidamente"],
@@ -851,6 +974,7 @@ QUESTIONS = [
     {
         "domanda": "I guanti ad uso motociclistico si riconoscono perché di colore nero e con una sagoma di moto stampigliata sul polso",
         "risposta": False,
+        "riassunto": "Guanti da moto → neri con moto stampata?",
         "spiegazione": "È falso. Il colore o un disegno non sono un modo per riconoscere un guanto omologato. I guanti omologati si riconoscono da un'etichetta interna che indica che rispettano le norme di sicurezza europee, non dall'estetica.",
         "regola": "Riconosci guanti = etichetta omologazione, non colore/disegno.",
         "trabocchetti": ["si riconoscono perché", "colore nero", "sagoma di moto"],
@@ -858,6 +982,7 @@ QUESTIONS = [
     {
         "domanda": "I guanti ad uso motociclistico coprono anche il gomito per proteggere meglio in caso di caduta",
         "risposta": False,
+        "riassunto": "Guanti da moto → fino al gomito?",
         "spiegazione": "È falso. I guanti da moto coprono solo la mano e una parte del polso. Il gomito è protetto da altre parti dell'abbigliamento, come le protezioni della giacca o un paraschiena specifico.",
         "regola": "Guanti = solo mani e polsi.",
         "trabocchetti": ["coprono anche il gomito"],
@@ -865,6 +990,7 @@ QUESTIONS = [
     {
         "domanda": "I guanti ad uso motociclistico non sono idonei alla guida di ciclomotori a due ruote",
         "risposta": False,
+        "riassunto": "Guanti da moto → non per ciclomotori?",
         "spiegazione": "È falso. I guanti da motociclista sono perfetti e consigliati per la guida di qualsiasi veicolo a due ruote, inclusi i ciclomotori. Offrono la stessa protezione e sicurezza per tutti i mezzi a due ruote.",
         "regola": "Guanti moto = ok anche per ciclomotori.",
         "trabocchetti": ["non sono idonei"],
@@ -872,6 +998,7 @@ QUESTIONS = [
     {
         "domanda": "I guanti ad uso motociclistico hanno come principale scopo quello di proteggere dal freddo, pertanto è inutile usarli l'estate",
         "risposta": False,
+        "riassunto": "Guanti da moto → solo contro il freddo?",
         "spiegazione": "È falso. Lo scopo principale dei guanti da moto è proteggere le mani in caso di caduta (da abrasioni e impatti), non solo dal freddo. Per questo è importante usarli anche d'estate, scegliendo modelli più leggeri e ventilati.",
         "regola": "Guanti = protezione caduta, non solo freddo.",
         "trabocchetti": ["pertanto è inutile usarli l"],
@@ -879,6 +1006,7 @@ QUESTIONS = [
     {
         "domanda": "Le giacche ad uso motociclistico garantiscono un'adeguata protezione all'abrasione in caso di scivolamento sull'asfalto",
         "risposta": True,
+        "riassunto": "Giacche da moto → contro le abrasioni?",
         "spiegazione": "VERO. Le giacche da moto sono fatte con materiali speciali che proteggono la pelle se scivoli sull'asfalto. Questo è uno dei loro scopi principali: ridurre i danni da 'abrasione', cioè lo sfregamento.",
         "regola": "Giacca moto = Protezione abrasione.",
         "trabocchetti": ["protezione all"],
@@ -886,6 +1014,7 @@ QUESTIONS = [
     {
         "domanda": "Le giacche ad uso motociclistico hanno inserti rigidi protettivi in corrispondenza delle articolazioni",
         "risposta": True,
+        "riassunto": "Giacche da moto → protezioni rigide alle articolazioni?",
         "spiegazione": "VERO. Le buone giacche da moto hanno delle protezioni dure (come delle 'imbottiture' rigide) sui gomiti, sulle spalle e a volte sulla schiena. Queste protezioni servono a difendere le tue 'articolazioni' (le parti che si piegano, come gomiti e spalle) in caso di caduta.",
         "regola": "Giacca moto = Protezioni rigide per articolazioni.",
         "trabocchetti": ["inserti rigidi protettivi", "articolazioni"],
@@ -893,6 +1022,7 @@ QUESTIONS = [
     {
         "domanda": "Gli indumenti ad uso motociclistico omologati sono sottoposti a prove di resistenza al taglio e all'abrasione da impatto",
         "risposta": True,
+        "riassunto": "Indumenti omologati → prove di taglio e abrasione?",
         "spiegazione": "VERO. Quando un indumento da moto è 'omologato', significa che ha superato dei test di sicurezza molto severi. Questi test verificano proprio quanto il materiale resiste a tagli e a forti sfregamenti (abrasione) in caso di impatto o caduta.",
         "regola": "Omologati = Resistono a taglio e abrasione.",
         "trabocchetti": ["omologati", "Resistenza al taglio e all"],
@@ -900,6 +1030,7 @@ QUESTIONS = [
     {
         "domanda": "Gli indumenti ad uso motociclistico omologati sono sottoposti a prove di resistenza al lavaggio",
         "risposta": False,
+        "riassunto": "Indumenti omologati → prove di lavaggio?",
         "spiegazione": "FALSO. L'omologazione di un indumento da moto riguarda la sua capacità di proteggere il motociclista in caso di incidente (resistenza a tagli, abrasioni, impatti). Non riguarda quanto bene resiste ai lavaggi in lavatrice. Certo, deve essere lavabile, ma non è un requisito per la sua certificazione di sicurezza.",
         "regola": "Omologazione = Sicurezza, non lavaggio.",
         "trabocchetti": ["resistenza al lavaggio"],
@@ -907,6 +1038,7 @@ QUESTIONS = [
     {
         "domanda": "Le giacche ad uso motociclistico non sono previste per utilizzo estivo",
         "risposta": False,
+        "riassunto": "Giacche da moto → non per l'estate?",
         "spiegazione": "FALSO. Esistono giacche da moto pensate apposta per l'estate! Hanno tessuti più leggeri, prese d'aria e sistemi di ventilazione per farti stare fresco, ma mantengono comunque le protezioni necessarie. La sicurezza in moto è importante tutto l'anno.",
         "regola": "Giacche moto = Per tutte le stagioni (anche estate).",
         "trabocchetti": ["non sono previste per utilizzo estivo"],
@@ -914,6 +1046,7 @@ QUESTIONS = [
     {
         "domanda": "Le giacche ad uso motociclistico, per essere omologate devono essere unicamente di colore nero",
         "risposta": False,
+        "riassunto": "Giacche omologate → solo nere?",
         "spiegazione": "FALSO. Il colore della giacca non ha nessuna importanza per l'omologazione. Una giacca può essere omologata se rispetta gli standard di sicurezza, indipendentemente dal suo colore. Anzi, colori vivaci possono aumentare la tua visibilità sulla strada!",
         "regola": "Omologazione = Sicurezza, non colore.",
         "trabocchetti": ["unicamente"],

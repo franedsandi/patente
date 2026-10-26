@@ -1,7 +1,7 @@
 """Domande — Segnali di divieto.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Segnali di divieto"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la circolazione nei due sensi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietata la circolazione nei due sensi?",
         "spiegazione": "Questo segnale, chiamato 'Divieto di transito', significa che nessun veicolo può entrare o uscire dalla strada. Quindi, vieta la circolazione in entrambi i sensi di marcia.",
         "regola": "Cerchio rosso vuoto = Stop totale, da ogni lato.",
         "trabocchetti": ["nei due sensi"],
@@ -18,6 +19,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito a tutti i veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito vietato a tutti i veicoli?",
         "spiegazione": "Esatto, questo segnale è molto chiaro: vieta il passaggio a tutti i veicoli, senza fare distinzioni. Non possono passare né auto, né moto, né biciclette, ecc.",
         "regola": "Divieto di transito = Tutti i veicoli fermi.",
         "trabocchetti": ["tutti"],
@@ -26,6 +28,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la circolazione ai quadricicli a motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai quadricicli a motore?",
         "spiegazione": "I quadricicli a motore sono veicoli. Poiché il segnale vieta il transito a tutti i veicoli, anche i quadricicli a motore non possono circolare.",
         "regola": "Tutti i veicoli = Anche i quadricicli.",
         "trabocchetti": ["quadricicli a motore"],
@@ -34,6 +37,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su entrambi gli accessi della strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su entrambi gli accessi della strada?",
         "spiegazione": "Questo segnale, il 'Divieto di transito', viene messo sia all'inizio che alla fine di un tratto di strada. Serve a chiudere completamente la circolazione veicolare in quel tratto.",
         "regola": "Divieto di transito = Strada chiusa da due lati.",
         "trabocchetti": ["entrambi gli accessi"],
@@ -42,6 +46,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito agli autocarri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato agli autocarri?",
         "spiegazione": "Gli autocarri sono veicoli. Dato che il segnale vieta il transito a tutti i veicoli, anche gli autocarri non possono passare.",
         "regola": "Tutti i veicoli = Anche gli autocarri.",
         "trabocchetti": ["autocarri"],
@@ -50,6 +55,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può avere validità limitata nel tempo, indicata in un pannello integrativo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → validità limitata nel tempo con pannello?",
         "spiegazione": "Sì, è possibile che un divieto sia valido solo in certi orari o giorni. Se è così, sotto il segnale principale troverai un pannello aggiuntivo che indica le limitazioni di tempo.",
         "regola": "Segnale + Pannello = Regola più precisa.",
         "trabocchetti": ["può avere validità limitata nel tempo", "pannello integrativo"],
@@ -58,6 +64,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito ai pedoni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito consentito ai pedoni?",
         "spiegazione": "Questo segnale vieta il transito ai veicoli. I pedoni non sono veicoli, quindi possono passare, a meno che non ci sia un altro segnale specifico che vieti il passaggio anche a loro.",
         "regola": "Veicoli fermi, pedoni liberi.",
         "trabocchetti": ["pedoni"],
@@ -66,6 +73,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la circolazione ai ciclomotori",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai ciclomotori?",
         "spiegazione": "I ciclomotori sono veicoli. Poiché il segnale vieta il transito a tutti i veicoli, anche i ciclomotori non possono circolare.",
         "regola": "Tutti i veicoli = Anche i ciclomotori.",
         "trabocchetti": ["ciclomotori"],
@@ -74,6 +82,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un DIVIETO DI TRANSITO",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → DIVIETO DI TRANSITO?",
         "spiegazione": "Questa è la definizione esatta del segnale. Il cerchio rosso con il centro bianco indica proprio un 'Divieto di transito', cioè non si può passare con nessun veicolo.",
         "regola": "Cerchio rosso vuoto = Divieto di transito.",
         "trabocchetti": ["DIVIETO DI TRANSITO"],
@@ -82,6 +91,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito alle biciclette",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → transito consentito alle biciclette?",
         "spiegazione": "Falso. Le biciclette sono considerate veicoli, anche se non hanno motore. Dato che il segnale vieta il transito a tutti i veicoli, vieta il passaggio anche alle biciclette.",
         "regola": "Tutti i veicoli = Anche le bici.",
         "trabocchetti": ["consente"],
@@ -90,6 +100,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito unicamente ai veicoli a motore",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato solo ai veicoli a motore?",
         "spiegazione": "Falso. Questo segnale vieta il transito a tutti i veicoli, non solo a quelli a motore. Anche le biciclette, i carretti o altri veicoli senza motore non possono passare.",
         "regola": "'Unicamente' è quasi sempre falso nei divieti generali.",
         "trabocchetti": ["unicamente"],
@@ -98,6 +109,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente, di norma, di entrare nella strada per effettuare la sosta e le operazioni di carico e scarico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → si può entrare per sosta e carico/scarico?",
         "spiegazione": "Falso. Il 'Divieto di transito' è un divieto assoluto: non puoi proprio entrare nella strada con un veicolo, per nessun motivo, nemmeno per sostare o per carico/scarico. Queste eccezioni valgono per altri tipi di divieto, non per questo.",
         "regola": "Divieto di transito = No ingresso, punto.",
         "trabocchetti": ["consente, di norma"],
@@ -106,6 +118,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente l'ingresso, ma solo l'uscita dalla strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo uscita dalla strada?",
         "spiegazione": "Falso. Questo segnale vieta la circolazione in entrambi i sensi. Non puoi né entrare né uscire con un veicolo. Il segnale che vieta solo l'ingresso è il 'Senso vietato' (un cerchio rosso con una barra bianca orizzontale).",
         "regola": "Divieto di transito = Blocco totale, non solo ingresso.",
         "trabocchetti": ["non consente l", "uscita"],
@@ -114,6 +127,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la circolazione è a senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → circolazione a senso unico?",
         "spiegazione": "Falso. Questo segnale non indica un senso unico. Indica un divieto totale di circolazione per tutti i veicoli in entrambi i sensi. I segnali di senso unico sono quadrati blu con una freccia bianca.",
         "regola": "Cerchio rosso vuoto = Chiuso, non senso unico.",
         "trabocchetti": ["circolazione è a senso unico"],
@@ -122,6 +136,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito alle autovetture con motore elettrico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito alle auto elettriche?",
         "spiegazione": "Falso. Le autovetture con motore elettrico sono comunque veicoli. Il segnale vieta il transito a tutti i veicoli, senza fare distinzioni sul tipo di motore o alimentazione.",
         "regola": "Tutti i veicoli = Anche gli elettrici.",
         "trabocchetti": ["motore elettrico"],
@@ -130,6 +145,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Falso. I segnali di pericolo sono triangolari con bordo rosso e sfondo bianco. Questo è un segnale di divieto, che è rotondo con bordo rosso.",
         "regola": "Rotondo rosso = Divieto. Triangolo rosso = Pericolo.",
         "trabocchetti": ["segnale di pericolo"],
@@ -138,6 +154,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se barrato in rosso, indica la fine del divieto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato barrato in rosso → fine divieto?",
         "spiegazione": "Falso. Questo segnale non viene barrato in rosso per indicare la fine del divieto. I segnali di fine divieto sono rotondi con sfondo bianco e una barra diagonale nera. Questo segnale è un divieto in sé e non ha una 'fine' in quel modo.",
         "regola": "Fine divieto = Barra nera, non rossa.",
         "trabocchetti": ["se barrato in rosso", "fine del divieto"],
@@ -146,6 +163,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta di entrare in una strada accessibile invece dall'altra parte",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato entrare, accessibile dall'altra parte?",
         "spiegazione": "Questo segnale significa 'Senso Vietato'. Ti dice che non puoi entrare in quella strada da dove ti trovi. Però, la strada è aperta e accessibile per chi viene dall'altra parte, perché è una strada a senso unico.",
         "regola": "Senso Vietato: Non entri da qui, ma gli altri sì dall'altra parte!",
         "trabocchetti": ["accessibile invece dall"],
@@ -154,6 +172,7 @@ QUESTIONS = [
     {
         "domanda": "I veicoli senza motore devono rispettare il divieto imposto dal segnale rappresentato",
         "risposta": True,
+        "riassunto": "Senso vietato → valido anche per veicoli senza motore?",
         "spiegazione": "Il segnale di 'Senso Vietato' vale per tutti i veicoli, non solo quelli a motore. Quindi, anche biciclette, carretti o altri mezzi senza motore devono rispettare questo divieto.",
         "regola": "Senso Vietato: Tutti fermi, anche bici e carretti!",
         "trabocchetti": ["senza motore"],
@@ -162,6 +181,7 @@ QUESTIONS = [
     {
         "domanda": "I taxi devono rispettare il divieto imposto dal segnale rappresentato",
         "risposta": True,
+        "riassunto": "Senso vietato → valido anche per i taxi?",
         "spiegazione": "I taxi sono veicoli e, come tutti gli altri veicoli, devono rispettare il segnale di 'Senso Vietato'. Non hanno permessi speciali per ignorarlo, a meno che non ci sia un cartello aggiuntivo che lo indichi.",
         "regola": "Senso Vietato: Nessuno entra, nemmeno i taxi!",
         "trabocchetti": ["I taxi"],
@@ -170,6 +190,7 @@ QUESTIONS = [
     {
         "domanda": "I quadricicli a motore devono rispettare il divieto imposto dal segnale rappresentato",
         "risposta": True,
+        "riassunto": "Senso vietato → valido per quadricicli a motore?",
         "spiegazione": "I quadricicli a motore (come le microcar o i quad) sono veicoli a motore. Il segnale di 'Senso Vietato' si applica a tutti i veicoli, inclusi quelli a motore, quindi anche loro devono rispettarlo.",
         "regola": "Senso Vietato: Ogni motore si ferma qui!",
         "trabocchetti": ["quadricicli a motore"],
@@ -178,6 +199,7 @@ QUESTIONS = [
     {
         "domanda": "Il divieto imposto dal segnale raffigurato deve essere rispettato anche nelle ore notturne",
         "risposta": True,
+        "riassunto": "Senso vietato → valido anche di notte?",
         "spiegazione": "I segnali stradali, come il 'Senso Vietato', sono validi 24 ore su 24, tutti i giorni, a meno che non ci sia un pannello integrativo sotto il segnale che indichi orari specifici. Senza quel pannello, il divieto è sempre attivo.",
         "regola": "Senso Vietato: Sempre valido, giorno e notte!",
         "trabocchetti": ["anche nelle ore notturne"],
@@ -186,6 +208,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su una strada a senso unico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su strada a senso unico?",
         "spiegazione": "Il segnale di 'Senso Vietato' è messo all'inizio di una strada a senso unico, per indicare che non puoi entrare da quel lato. Il traffico è permesso solo nell'altra direzione.",
         "regola": "Senso Vietato: Entrata vietata, strada a senso unico!",
         "immagine": "0da55fdd957ad5c7726e.jpg",
@@ -193,6 +216,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un SENSO VIETATO",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → SENSO VIETATO?",
         "spiegazione": "Sì, il nome ufficiale di questo segnale è proprio 'Senso Vietato'.",
         "regola": "È il 'Senso Vietato', lo dice il nome!",
         "immagine": "0da55fdd957ad5c7726e.jpg",
@@ -200,6 +224,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente l'accesso ai motocicli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → accesso consentito ai motocicli?",
         "spiegazione": "Il segnale di 'Senso Vietato' vieta l'ingresso a tutti i veicoli, inclusi i motocicli. Non ci sono eccezioni per le moto, a meno che non sia specificato da un altro cartello.",
         "regola": "Senso Vietato: Nessuno entra, nemmeno le moto!",
         "trabocchetti": ["consente"],
@@ -208,6 +233,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente l'accesso ai ciclomotori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → accesso consentito ai ciclomotori?",
         "spiegazione": "Anche i ciclomotori (come gli scooter 50cc) sono veicoli e devono rispettare il segnale di 'Senso Vietato'. Non possono accedere alla strada da quel lato.",
         "regola": "Senso Vietato: Nessuno entra, nemmeno i ciclomotori!",
         "trabocchetti": ["consente"],
@@ -216,6 +242,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente la circolazione dei veicoli in quella strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → nessuna circolazione in quella strada?",
         "spiegazione": "Falso. Questo segnale vieta solo di entrare da *quel lato* della strada. Non significa che la strada sia completamente chiusa al traffico. Significa che è una strada a senso unico e il traffico è permesso solo nell'altra direzione.",
         "regola": "Senso Vietato: Vietato entrare da qui, ma la strada non è chiusa del tutto!",
         "immagine": "0da55fdd957ad5c7726e.jpg",
@@ -223,6 +250,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su una carreggiata a doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → su carreggiata a doppio senso?",
         "spiegazione": "Falso. Il segnale di 'Senso Vietato' è tipicamente posto su una strada a senso unico, per impedire l'ingresso dalla direzione sbagliata. Se fosse a doppio senso, il segnale non avrebbe senso in quel contesto.",
         "regola": "Senso Vietato: Strada a senso unico, non doppio!",
         "trabocchetti": ["doppio senso di circolazione"],
@@ -231,6 +259,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta, ma non la fermata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta vietata, fermata no?",
         "spiegazione": "Falso. Questo segnale riguarda il divieto di ingresso in una strada. Non ha nulla a che fare con la sosta (parcheggio) o la fermata (breve sosta). Ci sono altri segnali specifici per la sosta e la fermata.",
         "regola": "Senso Vietato: Non è per la sosta, è per l'ingresso!",
         "trabocchetti": ["sosta", "fermata"],
@@ -239,6 +268,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il sorpasso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso vietato?",
         "spiegazione": "Falso. Il segnale di 'Senso Vietato' vieta di entrare in una strada. Non ha alcuna relazione con il sorpasso. Il sorpasso è regolato da altri segnali o dalle condizioni della strada.",
         "regola": "Senso Vietato: Non è per sorpassare, è per non entrare!",
         "trabocchetti": ["vieta il sorpasso"],
@@ -247,6 +277,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la circolazione del traffico locale in entrambi i sensi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → traffico locale in entrambi i sensi?",
         "spiegazione": "Falso. Il segnale vieta l'ingresso da quel lato. Non consente la circolazione in entrambi i sensi, anzi, indica che la circolazione è permessa solo nell'altro senso (strada a senso unico). Il 'traffico locale' non cambia la regola, a meno di eccezioni specifiche indicate.",
         "regola": "Senso Vietato: Solo un senso, e non da qui!",
         "immagine": "0da55fdd957ad5c7726e.jpg",
@@ -254,6 +285,7 @@ QUESTIONS = [
     {
         "domanda": "Il divieto imposto dal segnale raffigurato deve essere rispettato, nei centri abitati, dalle ore 8.00 alle ore 20.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → in città solo dalle 8 alle 20?",
         "spiegazione": "Falso. Come detto prima, i segnali stradali sono validi 24 ore su 24, a meno che non ci sia un pannello integrativo che indichi orari specifici. Questo segnale non ha limitazioni di orario.",
         "regola": "Senso Vietato: Sempre valido, non a orari!",
         "trabocchetti": ["dalle ore 8.00 alle ore 20.00"],
@@ -262,6 +294,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un DIVIETO DI TRANSITO",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → DIVIETO DI TRANSITO?",
         "spiegazione": "Falso. Questo è il segnale di 'Senso Vietato' (un cerchio rosso con una barra bianca orizzontale). Il 'Divieto di Transito' è un segnale simile, ma ha anche una barra diagonale rossa che lo attraversa, e significa che la strada è chiusa in entrambi i sensi.",
         "regola": "Senso Vietato: Solo una barra, non due (come il Divieto di Transito)!",
         "trabocchetti": ["DIVIETO DI TRANSITO"],
@@ -270,6 +303,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta ai veicoli di massa a pieno carico superiore a 3,5 tonnellate non destinati al trasporto di persone, di sorpassare veicoli a motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → oltre 3,5 t non per persone, vietato sorpassare veicoli a motore?",
         "spiegazione": "Il segnale raffigurato vieta il sorpasso solo a una specifica categoria di veicoli: quelli che pesano più di 3,5 tonnellate e che non trasportano persone (cioè i camion o autocarri). Quindi, se un veicolo rientra in questa descrizione, non può sorpassare altri veicoli a motore. La domanda descrive esattamente il significato del segnale.",
         "regola": "Camion pesanti (>3,5t) = no sorpasso.",
         "trabocchetti": ["non destinati al trasporto di persone"],
@@ -278,6 +312,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, un autocarro non può sorpassare veicoli a motore se sulla sua carta di circolazione è indicata una massa complessiva a pieno carico superiore a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarro oltre 3,5 t in carta, niente sorpasso?",
         "spiegazione": "Un autocarro è un veicolo che trasporta merci, quindi 'non destinato al trasporto di persone'. Se la sua massa complessiva a pieno carico (il peso massimo che può avere) è superiore a 3,5 tonnellate, rientra nella categoria di veicoli a cui il segnale vieta il sorpasso. Quindi, non può sorpassare.",
         "regola": "Autocarro pesante (>3,5t) = no sorpasso.",
         "trabocchetti": ["autocarro", "Massa complessiva a pieno carico"],
@@ -286,6 +321,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente ad un autocarro di massa a pieno carico inferiore a 3,5 tonnellate di sorpassare un autoarticolato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarro sotto 3,5 t può sorpassare autoarticolato?",
         "spiegazione": "Il divieto di sorpasso si applica solo agli autocarri che pesano più di 3,5 tonnellate. Se un autocarro pesa meno di 3,5 tonnellate ('inferiore a 3,5 tonnellate'), non è soggetto a questo divieto e può sorpassare, anche un veicolo grande come un autoarticolato.",
         "regola": "Autocarro leggero (<3,5t) = sì sorpasso.",
         "trabocchetti": ["inferiore a 3,5 tonnellate"],
@@ -294,6 +330,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente ad un autobus di massa a pieno carico pari a 18 tonnellate di sorpassare un autotreno",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autobus da 18 t può sorpassare autotreno?",
         "spiegazione": "Il segnale vieta il sorpasso ai veicoli che non trasportano persone. Un autobus, anche se molto pesante (18 tonnellate), è un veicolo destinato al trasporto di persone. Per questo motivo, non è soggetto al divieto e può sorpassare.",
         "regola": "Autobus = sempre sì sorpasso (con questo segnale).",
         "trabocchetti": ["autobus"],
@@ -302,6 +339,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato un'autovettura con massa a pieno carico pari a 3 tonnellate trainante un carrello appendice, può sorpassare veicoli a motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → auto da 3 t con carrello può sorpassare?",
         "spiegazione": "Un'autovettura non è un veicolo per il trasporto di merci e la sua massa (3 tonnellate) è inferiore al limite di 3,5 tonnellate. Anche se traina un carrello appendice, l'autovettura non rientra nella categoria dei veicoli a cui è vietato il sorpasso. Quindi, può sorpassare.",
         "regola": "Auto = sì sorpasso.",
         "trabocchetti": ["autovettura", "3 tonnellate", "carrello appendice"],
@@ -310,6 +348,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato un'autovettura può sorpassare un autotreno",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → auto può sorpassare autotreno?",
         "spiegazione": "Le autovetture non rientrano nella categoria dei veicoli a cui il segnale vieta il sorpasso, perché non sono veicoli merci pesanti. Perciò, un'autovettura può sorpassare qualsiasi veicolo, incluso un autotreno, rispettando le altre regole del codice della strada.",
         "regola": "Auto = sì sorpasso.",
         "trabocchetti": ["autovettura"],
@@ -318,6 +357,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato un autocaravan con massa a pieno carico pari a 4 tonnellate può effettuare manovre di sorpasso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocaravan da 4 t può sorpassare?",
         "spiegazione": "Gli autocaravan (i camper) sono considerati veicoli destinati al trasporto di persone o per uso speciale, non veicoli per il trasporto di merci. Anche se un autocaravan pesa più di 3,5 tonnellate (come 4 tonnellate), non è soggetto al divieto di sorpasso di questo segnale.",
         "regola": "Camper = sì sorpasso.",
         "trabocchetti": ["autocaravan"],
@@ -326,6 +366,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato agli autocarri con massa a pieno carico superiore a 3,5 t di sorpassare un motociclo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarro oltre 3,5 t non può sorpassare moto?",
         "spiegazione": "Il segnale vieta agli autocarri (veicoli merci) che pesano più di 3,5 tonnellate di sorpassare qualsiasi veicolo a motore. Un motociclo è un veicolo a motore, quindi il sorpasso è vietato anche in questo caso.",
         "regola": "Camion pesanti (>3,5t) = no sorpasso (nemmeno moto).",
         "immagine": "166138275072c92a671c.jpg",
@@ -333,6 +374,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato un autocarro con massa massima a pieno carico superiore a 3,5 tonnellate trainante un rimorchio leggero, può sorpassare un motociclo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarro oltre 3,5 t con rimorchio leggero sorpassa moto?",
         "spiegazione": "Un autocarro con massa superiore a 3,5 tonnellate è soggetto al divieto di sorpasso, indipendentemente dal fatto che traini un rimorchio leggero o dal tipo di veicolo che vuole sorpassare. Il divieto rimane valido.",
         "regola": "Camion pesante (>3,5t) = sempre no sorpasso.",
         "trabocchetti": ["può sorpassare", "Rimorchio leggero"],
@@ -341,6 +383,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato un autocaravan di massa a pieno carico superiore a 3,5 tonnellate non può sorpassare veicoli a motore",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocaravan oltre 3,5 t non può sorpassare?",
         "spiegazione": "Gli autocaravan (camper) non sono soggetti al divieto di sorpasso di questo segnale, anche se pesano più di 3,5 tonnellate. Questo perché sono considerati veicoli per il trasporto di persone o per uso speciale, non veicoli per il trasporto di merci.",
         "regola": "Camper = sì sorpasso.",
         "trabocchetti": ["autocaravan", "non può sorpassare"],
@@ -349,6 +392,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente ad un autocarro di massa complessiva superiore a 3,5 tonnellate di sorpassare un motociclo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarro oltre 3,5 t può sorpassare moto?",
         "spiegazione": "Il segnale vieta proprio agli autocarri con massa superiore a 3,5 tonnellate di sorpassare qualsiasi veicolo a motore, quindi anche un motociclo. Affermare che 'consente' il sorpasso è sbagliato.",
         "regola": "Camion pesante (>3,5t) = no sorpasso.",
         "trabocchetti": ["consente"],
@@ -357,6 +401,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente alle autovetture di sorpassare gli autocarri sulla corsia di destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → auto sorpassano autocarri a destra?",
         "spiegazione": "Questo segnale non riguarda le autovetture, quindi non le vieta di sorpassare. Tuttavia, il sorpasso a destra è generalmente vietato dal Codice della Strada, tranne in casi specifici (ad esempio, se il veicolo davanti sta svoltando a sinistra). Il segnale raffigurato non dà alcun permesso speciale per sorpassare a destra.",
         "regola": "Sorpasso a destra = quasi sempre vietato. Questo segnale non cambia nulla.",
         "trabocchetti": ["sulla corsia di destra"],
@@ -365,6 +410,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il sorpasso agli autosnodati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato sorpasso agli autosnodati?",
         "spiegazione": "Gli autosnodati sono veicoli destinati al trasporto di persone (sono un tipo di autobus). Poiché il divieto del segnale non si applica ai veicoli che trasportano persone, gli autosnodati possono sorpassare.",
         "regola": "Autobus (anche snodati) = sì sorpasso.",
         "trabocchetti": ["autosnodati", "vieta"],
@@ -373,6 +419,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta ad un'autocaravan di massa complessiva pari a 6 tonnellate di effettuare manovre di sorpasso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocaravan da 6 t non può sorpassare?",
         "spiegazione": "Come già detto, gli autocaravan (camper) non sono soggetti a questo divieto di sorpasso, anche se la loro massa è elevata (6 tonnellate). Sono considerati veicoli per il trasporto di persone o per uso speciale.",
         "regola": "Camper = sì sorpasso.",
         "trabocchetti": ["autocaravan", "vieta"],
@@ -381,6 +428,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, un autocarro di massa a pieno carico pari a 3 tonnellate non può effettuare manovre di sorpasso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarro da 3 t non può sorpassare?",
         "spiegazione": "Il divieto di sorpasso si applica solo agli autocarri che pesano *più di* 3,5 tonnellate. Un autocarro di 3 tonnellate è *inferiore* a questo limite, quindi non è soggetto al divieto e può sorpassare.",
         "regola": "Autocarro leggero (<3,5t) = sì sorpasso.",
         "trabocchetti": ["3 tonnellate", "non può effettuare"],
@@ -389,6 +437,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato i veicoli con massa a pieno carico superiore a 3,5 tonnellate destinati al trasporto di persone, non possono effettuare manovre di sorpasso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → oltre 3,5 t per persone, niente sorpasso?",
         "spiegazione": "Il segnale vieta il sorpasso ai veicoli 'non destinati al trasporto di persone'. I veicoli 'destinati al trasporto di persone' (come gli autobus), anche se pesanti, non sono soggetti a questo divieto e possono sorpassare.",
         "regola": "Trasporto persone (>3,5t) = sì sorpasso.",
         "trabocchetti": ["destinati al trasporto di persone", "non possono effettuare"],
@@ -397,6 +446,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente ad un'autovettura di sorpassare un motociclo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → auto può sorpassare moto?",
         "spiegazione": "Il segnale raffigurato vieta agli autoveicoli di sorpassare altri autoveicoli. Un motociclo non è considerato un autoveicolo ai fini di questo specifico divieto. Pertanto, un'autovettura (che è un autoveicolo) può sorpassare un motociclo.",
         "regola": "Auto su moto? Sì! Auto su auto? No!",
         "trabocchetti": ["autovettura", "motociclo"],
@@ -405,6 +455,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare sia sulle strade urbane che su quelle extraurbane",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strade urbane ed extraurbane?",
         "spiegazione": "Questo segnale di divieto è un segnale generale che può essere installato su qualsiasi tipo di strada, sia in città (urbane) che fuori città (extraurbane), quando le condizioni di traffico o di sicurezza lo richiedono.",
         "regola": "Divieto universale, non solo in città.",
         "immagine": "06081151976754f6fd62.jpg",
@@ -412,6 +463,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A) può essere ripetuto dopo ogni incrocio con pannello integrativo (B)",
         "risposta": True,
+        "riassunto": "Segnale (A) → ripetuto dopo ogni incrocio con pannello (B)?",
         "spiegazione": "I segnali di divieto, come questo, devono essere ripetuti dopo ogni incrocio se il divieto continua. Questo serve a ricordare ai conducenti che il divieto è ancora valido. Spesso viene usato un pannello integrativo per indicare la continuazione.",
         "regola": "Dopo incrocio, il divieto si ripete.",
         "trabocchetti": ["Ripetuto dopo ogni incrocio", "pannello integrativo"],
@@ -420,6 +472,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta di sorpassare autocarri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato sorpassare autocarri?",
         "spiegazione": "Un autocarro è un tipo di autoveicolo. Poiché il segnale vieta agli autoveicoli di sorpassare altri autoveicoli, un'autovettura (che è un autoveicolo) non può sorpassare un autocarro (che è un altro autoveicolo).",
         "regola": "Auto su camion? No! (Entrambi autoveicoli).",
         "trabocchetti": ["Autocarri"],
@@ -428,6 +481,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di sorpassare i ciclomotori",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sorpasso di ciclomotori consentito?",
         "spiegazione": "Come per i motocicli, i ciclomotori non sono considerati 'autoveicoli' ai fini di questo specifico divieto. Pertanto, un autoveicolo può sorpassare un ciclomotore.",
         "regola": "Auto su ciclomotore? Sì!",
         "trabocchetti": ["Ciclomotori"],
@@ -436,6 +490,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il sorpasso fra autoveicoli, anche se la manovra può compiersi entro la semicarreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato anche entro la semicarreggiata?",
         "spiegazione": "Il segnale vieta il sorpasso tra autoveicoli in modo assoluto. Non importa se la manovra può essere fatta senza invadere la corsia opposta o rimanendo nella propria semicarreggiata; il divieto rimane valido.",
         "regola": "Divieto assoluto tra autoveicoli, lo spazio non conta.",
         "immagine": "06081151976754f6fd62.jpg",
@@ -443,6 +498,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente ad un motociclo di sorpassare un'autovettura",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → moto può sorpassare auto?",
         "spiegazione": "Secondo la definizione precisa del Codice della Strada, questo segnale vieta solo agli *autoveicoli* di sorpassare altri *autoveicoli*. Un motociclo non è un autoveicolo. Quindi, il segnale *non vieta* a un motociclo di sorpassare un'autovettura, e di conseguenza, lo consentirebbe. **Tuttavia, in alcuni quiz, si tende a interpretare questo segnale in modo più generale, come un divieto di sorpasso per *tutti i veicoli a motore* (inclusi i motocicli) su *altri veicoli a motore*.** Se si segue questa interpretazione più ampia (che non è strettamente quella legale per questo specifico segnale), allora il sorpasso di un'autovettura da parte di un motociclo sarebbe vietato, e quindi il segnale *non lo consentirebbe*.",
         "regola": "Attenzione! Per i quiz, a volte il divieto è 'no motore su motore'.",
         "trabocchetti": ["consente", "motociclo"],
@@ -451,6 +507,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la corsia di destra è riservata ai veicoli lenti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia destra per veicoli lenti?",
         "spiegazione": "Questo segnale indica il divieto di sorpasso tra autoveicoli. Non ha nulla a che fare con la riserva di corsie per veicoli lenti, che è indicata da altri segnali specifici.",
         "regola": "Non è corsia lenta, è divieto di sorpasso.",
         "trabocchetti": ["riservata ai veicoli lenti"],
@@ -459,6 +516,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di sorpassare un'autovettura purché non si oltrepassi la striscia continua",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso di auto senza superare la continua?",
         "spiegazione": "Il segnale vieta il sorpasso tra autoveicoli (come due autovetture) in modo assoluto. Non importa se non si oltrepassa la striscia continua; il sorpasso è comunque vietato dal segnale stesso. La striscia continua è un divieto aggiuntivo, non una condizione che rende il sorpasso consentito.",
         "regola": "Auto su auto? No, anche senza striscia.",
         "trabocchetti": ["Consente di sorpassare un"],
@@ -467,6 +525,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta ad un motociclo di sorpassare una bicicletta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → moto non può sorpassare bici?",
         "spiegazione": "Il segnale vieta agli autoveicoli di sorpassare altri autoveicoli. Non riguarda i motocicli che sorpassano le biciclette. Questa manovra non è vietata dal segnale.",
         "regola": "Moto su bici? Sì, il segnale non lo vieta.",
         "immagine": "06081151976754f6fd62.jpg",
@@ -474,6 +533,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il sorpasso tra autovetture se non vi è la striscia bianca continua",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso tra auto se niente striscia continua?",
         "spiegazione": "Il segnale vieta il sorpasso tra autovetture (che sono autoveicoli) in ogni caso. La presenza o assenza della striscia continua è un'altra regola, ma il segnale da solo rende il sorpasso tra autovetture vietato.",
         "regola": "Auto su auto? No, anche senza striscia.",
         "trabocchetti": ["Consente il sorpasso tra autovetture", "se non vi è la striscia bianca continua"],
@@ -482,6 +542,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato un autocarro può sorpassare un motociclo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarro può sorpassare moto?",
         "spiegazione": "Il segnale raffigurato vieta il sorpasso di veicoli a motore con più di due ruote da parte di tutti i veicoli a motore. Un autocarro può sorpassare un motociclo perché il motociclo ha solo due ruote, e quindi non rientra nella categoria dei veicoli 'con più di due ruote' che non possono essere sorpassati.",
         "regola": "Due ruote? Si può sorpassare!",
         "immagine": "06081151976754f6fd62.jpg",
@@ -489,6 +550,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato un'autovettura può sorpassare un ciclomotore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → auto può sorpassare ciclomotore?",
         "spiegazione": "Il segnale vieta il sorpasso di veicoli a motore con più di due ruote. Un ciclomotore ha solo due ruote, quindi un'autovettura (che è un veicolo a motore) può sorpassarlo, perché il ciclomotore non è un veicolo 'con più di due ruote'.",
         "regola": "Due ruote? Via libera al sorpasso!",
         "trabocchetti": ["ciclomotore"],
@@ -497,6 +559,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito agli autotreni, autoarticolati ed autosnodati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito ad autotreni e autoarticolati?",
         "spiegazione": "Il segnale raffigurato è un divieto di sorpasso, non un divieto di transito. Questo significa che i veicoli come autotreni, autoarticolati ed autosnodati possono circolare sulla strada, ma devono rispettare il divieto di sorpasso.",
         "regola": "Sorpasso non transito!",
         "trabocchetti": ["transito"],
@@ -505,6 +568,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato sorpassare anche gli autoveicoli di massa complessiva inferiore a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato sorpassare anche sotto 3,5 t?",
         "spiegazione": "Il segnale vieta il sorpasso di veicoli a motore con più di due ruote da parte di tutti i veicoli a motore. Gli autoveicoli, anche se di massa inferiore a 3,5 tonnellate (come le normali autovetture), hanno più di due ruote. Quindi, è vietato sorpassarli.",
         "regola": "Più di due ruote? Non sorpassare!",
         "trabocchetti": ["inferiore a 3,5 tonnellate"],
@@ -513,6 +577,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato sorpassare veicoli a motore diversi dai motocicli e dai ciclomotori",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato sorpassare veicoli a motore tranne moto e ciclomotori?",
         "spiegazione": "Questa è la definizione principale del segnale. È vietato sorpassare tutti i veicoli a motore che non siano motocicli o ciclomotori, perché questi ultimi hanno più di due ruote (come auto, camion, autobus).",
         "regola": "No sorpasso a 'quattro ruote'!",
         "trabocchetti": ["diversi dai motocicli e dai ciclomotori"],
@@ -521,6 +586,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito sorpassare veicoli a trazione animale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sorpasso di veicoli a trazione animale?",
         "spiegazione": "Il divieto di sorpasso si applica solo ai veicoli a motore che sorpassano altri veicoli a motore con più di due ruote. I veicoli a trazione animale non sono veicoli a motore, quindi è consentito sorpassarli, purché in sicurezza.",
         "regola": "Non a motore? Si può sorpassare!",
         "immagine": "06081151976754f6fd62.jpg",
@@ -528,6 +594,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente ad un'autovettura di sorpassare un autocarro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → auto può sorpassare autocarro?",
         "spiegazione": "Il segnale vieta a un'autovettura (veicolo a motore) di sorpassare un autocarro (veicolo a motore con più di due ruote). Quindi, non è consentito.",
         "regola": "Auto non sorpassa camion!",
         "immagine": "06081151976754f6fd62.jpg",
@@ -535,6 +602,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova solo sulle strade extraurbane principali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo su extraurbane principali?",
         "spiegazione": "Questo segnale può essere installato su qualsiasi tipo di strada (urbana, extraurbana, ecc.) dove le condizioni lo rendano necessario, non solo sulle strade extraurbane principali.",
         "regola": "Non 'solo' lì, ma ovunque serva!",
         "trabocchetti": ["solo"],
@@ -543,6 +611,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato sorpassare qualsiasi veicolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato sorpassare qualsiasi veicolo?",
         "spiegazione": "Non è vietato sorpassare 'qualsiasi' veicolo. Come abbiamo visto, è consentito sorpassare motocicli, ciclomotori, biciclette e veicoli a trazione animale. Il divieto è specifico per i veicoli a motore con più di due ruote.",
         "regola": "Non 'qualsiasi', ci sono eccezioni!",
         "trabocchetti": ["qualsiasi"],
@@ -551,6 +620,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato il transito alle autovetture",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → transito vietato alle auto?",
         "spiegazione": "Il segnale indica un divieto di sorpasso, non un divieto di transito. Le autovetture possono circolare sulla strada, ma non possono sorpassare altri veicoli a motore con più di due ruote.",
         "regola": "Non blocca il passaggio, ma il sorpasso!",
         "trabocchetti": ["transito"],
@@ -559,6 +629,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di dare la precedenza nei sensi unici alternati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza nel senso unico alternato?",
         "spiegazione": "Questo segnale non ha nulla a che fare con la precedenza nei sensi unici alternati. È un segnale di divieto di sorpasso. I segnali di precedenza sono diversi.",
         "regola": "Sorpasso, non precedenza!",
         "trabocchetti": ["precedenza"],
@@ -567,6 +638,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente ad un motociclo di superare un autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → moto può superare autobus?",
         "spiegazione": "Il segnale vieta il sorpasso di veicoli a motore con più di due ruote da parte di tutti i veicoli a motore. Un autobus è un veicolo a motore con più di due ruote. Anche se i motocicli sono veicoli a due ruote, in presenza di questo segnale non è consentito sorpassare un veicolo grande come un autobus.",
         "regola": "Moto non sorpassa bus!",
         "trabocchetti": ["consente"],
@@ -575,6 +647,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito sorpassare ciclomotori a due ruote",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sorpasso di ciclomotori a due ruote?",
         "spiegazione": "Il segnale di divieto di sorpasso vieta di superare gli autoveicoli (come auto e camion). I ciclomotori a due ruote, pur avendo un motore, non rientrano in questa categoria specifica di veicoli che non si possono sorpassare con questo segnale. Quindi, puoi sorpassarli, se le condizioni della strada lo permettono in sicurezza.",
         "regola": "Due ruote a motore (ciclomotori, motocicli)? Sì, puoi sorpassare!",
         "immagine": "06081151976754f6fd62.jpg",
@@ -582,6 +655,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il sorpasso dei motocicli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sorpasso dei motocicli?",
         "spiegazione": "Come per i ciclomotori, anche i motocicli a due ruote non sono considerati 'autoveicoli' ai fini di questo specifico divieto. Perciò, in presenza di questo segnale, è consentito sorpassare i motocicli, sempre rispettando le regole di sicurezza.",
         "regola": "Due ruote a motore (ciclomotori, motocicli)? Sì, puoi sorpassare!",
         "immagine": "06081151976754f6fd62.jpg",
@@ -589,6 +663,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il sorpasso delle biciclette",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sorpasso delle biciclette?",
         "spiegazione": "Le biciclette non hanno motore, quindi non sono autoveicoli. Il segnale vieta di sorpassare solo gli autoveicoli. Per questo motivo, puoi sorpassare le biciclette, facendo attenzione e mantenendo una distanza di sicurezza.",
         "regola": "Senza motore? Sì, puoi sorpassare!",
         "trabocchetti": ["biciclette"],
@@ -597,6 +672,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il sorpasso dei veicoli sprovvisti di motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sorpasso di veicoli senza motore?",
         "spiegazione": "Il segnale vieta il sorpasso degli autoveicoli, cioè i veicoli che hanno un motore. I veicoli 'sprovvisti di motore' (come biciclette, carretti, ecc.) non rientrano in questa categoria e quindi possono essere sorpassati.",
         "regola": "Senza motore? Sì, puoi sorpassare!",
         "trabocchetti": ["sprovvisti di motore"],
@@ -605,6 +681,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il sorpasso dei veicoli a braccia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sorpasso di veicoli a braccia?",
         "spiegazione": "I veicoli a braccia sono spinti o tirati da persone e non hanno motore. Non essendo autoveicoli, il divieto di sorpasso non si applica a loro. Puoi sorpassarli con prudenza.",
         "regola": "Senza motore? Sì, puoi sorpassare!",
         "trabocchetti": ["veicoli a braccia"],
@@ -613,6 +690,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il sorpasso delle carrozze a cavalli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sorpasso di carrozze a cavalli?",
         "spiegazione": "Le carrozze a cavalli sono trainate da animali e non hanno motore. Per questo motivo, non rientrano nella categoria degli autoveicoli che il segnale vieta di sorpassare. Puoi sorpassarle, prestando attenzione.",
         "regola": "Senza motore? Sì, puoi sorpassare!",
         "trabocchetti": ["carrozze a cavalli"],
@@ -621,6 +699,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il sorpasso degli autoveicoli a motore elettrico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso di veicoli elettrici?",
         "spiegazione": "Anche se il motore è elettrico, un autoveicolo a motore elettrico è comunque un 'autoveicolo'. Il segnale vieta il sorpasso di tutti gli autoveicoli, indipendentemente dal tipo di motore (benzina, diesel, elettrico).",
         "regola": "Ha un motore (anche elettrico) ed è un autoveicolo? No, non puoi sorpassare!",
         "trabocchetti": ["autoveicoli", "a motore elettrico"],
@@ -629,6 +708,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strettoia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strettoia?",
         "spiegazione": "Questo segnale è un 'divieto di sorpasso', che è un segnale di prescrizione (obbligo o divieto). Non è un segnale di pericolo che 'preannuncia' qualcosa, come una strettoia. I segnali di pericolo sono triangolari.",
         "regola": "Tondo rosso? È un divieto, non un pericolo!",
         "trabocchetti": ["preannuncia"],
@@ -637,6 +717,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il sorpasso delle macchine agricole",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso di macchine agricole?",
         "spiegazione": "Le macchine agricole sono veicoli a motore. Il segnale di divieto di sorpasso si applica a tutti i veicoli a motore, ad eccezione dei ciclomotori e dei motocicli a due ruote. Quindi, non è consentito sorpassare le macchine agricole.",
         "regola": "Ha un motore (e non è un ciclomotore/motociclo)? No, non puoi sorpassare!",
         "trabocchetti": ["macchine agricole"],
@@ -645,6 +726,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il sorpasso delle macchine operatrici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso di macchine operatrici?",
         "spiegazione": "Anche le macchine operatrici (come escavatori o rulli compressori) sono veicoli a motore. Il divieto di sorpasso vale anche per loro, proprio come per gli altri autoveicoli, escludendo solo ciclomotori e motocicli a due ruote.",
         "regola": "Ha un motore (e non è un ciclomotore/motociclo)? No, non puoi sorpassare!",
         "trabocchetti": ["macchine operatrici"],
@@ -653,6 +735,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il sorpasso dei veicoli a motore che procedono molto lentamente",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso di veicoli a motore lentissimi?",
         "spiegazione": "Il segnale di divieto di sorpasso vieta di superare i veicoli a motore (tranne ciclomotori e motocicli) indipendentemente dalla loro velocità. Il fatto che un veicolo proceda lentamente non annulla il divieto.",
         "regola": "Lento o veloce, se ha un motore (e non è ciclomotore/motociclo), non sorpassi!",
         "trabocchetti": ["molto lentamente"],
@@ -661,6 +744,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il sorpasso dei veicoli che hanno segnalato l'intenzione di svoltare a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso di chi svolta a destra?",
         "spiegazione": "Il segnale vieta il sorpasso di tutti gli autoveicoli. Anche se un veicolo a motore ha segnalato l'intenzione di svoltare a destra, il divieto di sorpasso rimane valido. Non puoi sorpassarlo, perché è un autoveicolo e c'è il divieto.",
         "regola": "Divieto di sorpasso per autoveicoli? Vale sempre, anche se girano!",
         "trabocchetti": ["hanno segnalato l"],
@@ -669,6 +753,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di divieto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di divieto?",
         "spiegazione": "Il segnale raffigurato, essendo un cerchio con bordo rosso e un numero al centro, indica un divieto. In questo caso, vieta di superare la velocità di 80 km/h.",
         "regola": "Cerchio rosso = divieto.",
         "trabocchetti": ["divieto"],
@@ -677,6 +762,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato superare la velocità di 80 km/h",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato superare 80 km/h?",
         "spiegazione": "Il segnale indica che la velocità massima consentita è 80 km/h. Questo significa che non puoi andare più veloce di 80 km/h. È vietato superare quel limite.",
         "regola": "80 nel cerchio = massimo 80.",
         "immagine": "f923eae7da6518b1124d.jpg",
@@ -684,6 +770,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può trovarsi anche sulle autostrade",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → anche in autostrada?",
         "spiegazione": "Sì, anche sulle autostrade possono esserci limiti di velocità inferiori a quello generale (130 km/h), ad esempio per lavori, curve pericolose o condizioni meteo particolari. Quindi, un limite di 80 km/h è possibile anche lì.",
         "regola": "Limiti anche in autostrada.",
         "trabocchetti": ["può trovarsi anche"],
@@ -692,6 +779,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite di velocità indicato sul segnale raffigurato ha validità immediatamente dopo il segnale stesso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → limite valido subito dopo il segnale?",
         "spiegazione": "I segnali di divieto, come questo, hanno effetto dal punto in cui sono posizionati. Appena vedi il segnale, devi subito rispettare il limite di velocità.",
         "regola": "Segnale = regola subito.",
         "trabocchetti": ["immediatamente"],
@@ -700,6 +788,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive di marciare a velocità inferiore o uguale a 80 km/h",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità fino a 80 km/h?",
         "spiegazione": "Questo segnale ti dice che puoi guidare a 80 km/h o a una velocità inferiore (ad esempio 70, 60, ecc.). L'importante è non superare gli 80 km/h. 'Inferiore o uguale' è la definizione corretta di un limite massimo.",
         "regola": "Max 80 = 80 o meno.",
         "trabocchetti": ["inferiore o uguale"],
@@ -708,6 +797,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "I segnali di divieto (come questo) e i segnali di obbligo fanno parte della categoria più ampia dei 'segnali di prescrizione'. Questi segnali danno delle regole precise da seguire.",
         "regola": "Divieto = prescrizione.",
         "trabocchetti": ["prescrizione"],
@@ -716,6 +806,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di mantenere una distanza di sicurezza di almeno 80 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanza di sicurezza di 80 m?",
         "spiegazione": "FALSO. Questo segnale riguarda solo la velocità massima che puoi raggiungere. Non ha nulla a che fare con la distanza di sicurezza tra i veicoli. Per la distanza di sicurezza ci sono altre regole.",
         "regola": "80 = velocità, non distanza.",
         "trabocchetti": ["distanza di sicurezza"],
@@ -724,6 +815,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non si riferisce ai motocicli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non per i motocicli?",
         "spiegazione": "FALSO. I limiti di velocità indicati da questi segnali valgono per tutti i veicoli, a meno che non ci sia un pannello aggiuntivo che specifichi diversamente. Quindi, anche i motocicli devono rispettare il limite di 80 km/h.",
         "regola": "Limite per tutti i veicoli.",
         "trabocchetti": ["non si riferisce"],
@@ -732,6 +824,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la velocità consigliata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → velocità consigliata?",
         "spiegazione": "FALSO. Questo è un segnale di divieto, quindi indica una velocità MASSIMA che non puoi superare. La velocità consigliata è indicata da un segnale diverso, di forma quadrata e di colore blu.",
         "regola": "Cerchio rosso = obbligo, non consiglio.",
         "trabocchetti": ["velocità consigliata"],
@@ -740,6 +833,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato permette di effettuare il sorpasso a velocità superiore a 80 km/h",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso oltre 80 km/h?",
         "spiegazione": "FALSO. Il segnale ti dice che non puoi superare gli 80 km/h in nessun caso, nemmeno quando sorpassi. La velocità massima è sempre 80 km/h in quel tratto di strada.",
         "regola": "Max 80 sempre, anche in sorpasso.",
         "immagine": "f923eae7da6518b1124d.jpg",
@@ -747,6 +841,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la circolazione dei veicoli di massa totale superiore a 80 quintali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato oltre 80 quintali?",
         "spiegazione": "FALSO. Il numero 80 sul segnale si riferisce alla velocità in chilometri orari (km/h), non al peso dei veicoli. Per i limiti di peso ci sono altri segnali specifici.",
         "regola": "80 = km/h, non quintali.",
         "trabocchetti": ["massa totale superiore a 80 quintali", "Quintali"],
@@ -755,6 +850,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a rispettare un limite minimo di velocità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → limite minimo di velocità?",
         "spiegazione": "FALSO. Questo segnale indica un limite MASSIMO di velocità (non puoi andare più veloce di 80 km/h). Un limite MINIMO di velocità è indicato da un segnale rotondo di colore blu con il numero bianco.",
         "regola": "Cerchio rosso = massimo, non minimo.",
         "trabocchetti": ["limite minimo di velocità"],
@@ -763,6 +859,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che, per costruzione, non possono raggiungere la velocità indicata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a chi non raggiunge la velocità?",
         "spiegazione": "FALSO. Il segnale impone un limite massimo di velocità. Non vieta il transito ai veicoli che sono lenti o che non possono raggiungere gli 80 km/h. Anzi, questi veicoli possono circolare, purché rispettino il limite massimo e non creino pericolo.",
         "regola": "Limite max, non min.",
         "trabocchetti": [", non"],
@@ -771,6 +868,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta ai veicoli di superare la velocità indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato superare la velocità indicata?",
         "spiegazione": "Questo segnale ti dice che non puoi andare più veloce di 80 km/h. 'Vietare di superare' significa proprio questo: non puoi andare oltre quella velocità.",
         "regola": "Cerchio rosso con numero = non andare *più veloce* del numero.",
         "immagine": "f923eae7da6518b1124d.jpg",
@@ -778,6 +876,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a rispettare un limite massimo di velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → limite massimo di velocità?",
         "spiegazione": "Sì, il segnale ti obbliga a rispettare un 'limite massimo'. Questo significa che 80 km/h è la velocità più alta che puoi raggiungere, non puoi andare oltre.",
         "regola": "80 nel cerchio rosso = 80 è il 'tetto' della tua velocità.",
         "trabocchetti": ["massimo"],
@@ -786,6 +885,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la velocità massima alla quale i veicoli possono procedere",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità massima consentita?",
         "spiegazione": "Esatto, il numero 80 indica la velocità più alta alla quale puoi guidare. Puoi andare a 70, 60, ma non a 81.",
         "regola": "Il numero è il 'massimo' che puoi fare.",
         "trabocchetti": ["Velocità massima"],
@@ -794,6 +894,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive l'obbligo di viaggiare a velocità non superiore a 80 km/h",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → obbligo di non superare 80 km/h?",
         "spiegazione": "La frase 'non superiore a 80 km/h' significa che puoi andare a 80 o meno, ma non di più. Questo è esattamente ciò che il segnale ti chiede di fare.",
         "regola": "'Non superiore' = 'massimo'.",
         "trabocchetti": ["Non superiore a"],
@@ -802,6 +903,7 @@ QUESTIONS = [
     {
         "domanda": "Il numero raffigurato nel segnale indica la velocità massima consentita",
         "risposta": True,
+        "riassunto": "Numero nel segnale → velocità massima?",
         "spiegazione": "Il numero 80 all'interno del segnale è proprio la velocità più alta che ti è permesso tenere su quel tratto di strada.",
         "regola": "Il numero è il 'permesso massimo'.",
         "trabocchetti": ["Velocità massima consentita", "Consentita"],
@@ -810,6 +912,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di circolare a velocità inferiore a quella indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → si può andare più piano?",
         "spiegazione": "Certo! Se il limite massimo è 80 km/h, puoi tranquillamente circolare a una velocità inferiore, come 70 o 60 km/h. L'importante è non superare gli 80.",
         "regola": "Puoi andare *sotto* il numero, ma non *sopra*.",
         "trabocchetti": ["Inferiore a"],
@@ -818,6 +921,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un limite di velocità valido solo per autoveicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo per autoveicoli?",
         "spiegazione": "Falso. Questo segnale di limite di velocità vale per *tutti* i veicoli (auto, moto, camion, ecc.), a meno che non ci sia un pannello aggiuntivo che specifichi diversamente. La parola 'solo' è spesso una trappola.",
         "regola": "Limite di velocità = per *tutti* i veicoli, non 'solo' per alcuni.",
         "trabocchetti": ["solo"],
@@ -826,6 +930,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a rispettare il limite minimo di velocità indicato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → limite minimo?",
         "spiegazione": "Falso. Questo segnale indica un *limite massimo* di velocità (non puoi andare più veloce di 80), non un *limite minimo* (non ti obbliga ad andare almeno a 80). Il limite minimo ha un segnale diverso (blu con numero bianco).",
         "regola": "Cerchio rosso = *massimo*. Cerchio blu = *minimo*.",
         "trabocchetti": ["limite minimo", "minimo"],
@@ -834,6 +939,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone ai veicoli che non sono in grado di superare gli 80 km/h di marciare sulla corsia di destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → chi non supera 80 km/h a destra?",
         "spiegazione": "Falso. Questo segnale indica solo un limite di velocità. Non dà nessuna indicazione su quale corsia devono usare i veicoli lenti. Quella è una regola generale della circolazione, non legata a questo segnale specifico.",
         "regola": "Il segnale 80 dice solo 'quanto veloce', non 'dove stare'.",
         "immagine": "f923eae7da6518b1124d.jpg",
@@ -841,6 +947,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite di velocità indicato dal segnale raffigurato entra in vigore 150 metri dopo il segnale stesso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → limite valido 150 m dopo?",
         "spiegazione": "Falso. I segnali di prescrizione, come i limiti di velocità, valgono *dal punto in cui sono posti*, a meno che non ci sia un pannello integrativo che indichi una distanza. La distanza di 150 metri è tipica dei segnali di pericolo.",
         "regola": "Limite di velocità = vale *subito*, non dopo 150 metri.",
         "trabocchetti": ["150 metri dopo"],
@@ -849,6 +956,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito agli autoveicoli con massa complessiva superiore al valore indicato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato oltre una certa massa?",
         "spiegazione": "Falso. Il numero 80 si riferisce alla *velocità* dei veicoli, non alla loro *massa* (peso). Esistono altri segnali specifici per i limiti di massa.",
         "regola": "80 = velocità. Non è un peso.",
         "trabocchetti": ["massa"],
@@ -857,6 +965,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un limite di velocità valido dalle ore 8.00 alle ore 20.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → limite valido dalle 8 alle 20?",
         "spiegazione": "Falso. Questo segnale è valido 24 ore su 24, tutti i giorni, a meno che non ci sia un pannello integrativo sotto che indichi orari specifici. Senza pannelli aggiuntivi, il limite vale sempre.",
         "regola": "Senza pannelli extra, il limite vale *sempre*.",
         "trabocchetti": ["valido dalle ore 8.00 alle ore 20.00"],
@@ -865,6 +974,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è obbligatorio mantenere una distanza di almeno 70 metri dal veicolo che precede",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → distanza di almeno 70 m?",
         "spiegazione": "Questo segnale circolare con bordo rosso indica un divieto o un obbligo. Le due auto e la scritta '70 m' significano che devi mantenere una distanza di sicurezza di almeno 70 metri dal veicolo che ti precede. Quindi, la frase è VERA.",
         "regola": "70 m tra le auto? Minimo 70!",
         "trabocchetti": ["almeno"],
@@ -873,6 +983,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito ad un veicolo di circolare alla distanza di 80 metri da quello che lo precede",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → distanza di 80 m consentita?",
         "spiegazione": "Se il segnale ti obbliga a mantenere 'almeno' 70 metri di distanza, significa che puoi mantenere 70 metri, 71 metri, 80 metri o anche di più. Quindi, circolare a 80 metri è permesso. La frase è VERA.",
         "regola": "Più di 70 va bene!",
         "trabocchetti": ["consentito"],
@@ -881,6 +992,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta ad un veicolo di circolare a meno di 70 metri da quello che lo precede",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato stare a meno di 70 m?",
         "spiegazione": "Il segnale ti dice che non puoi stare più vicino di 70 metri al veicolo davanti a te. 'Vietare a meno di 70 metri' significa proprio questo: non puoi essere a 60, 50 o 30 metri. La frase è VERA.",
         "regola": "Non meno di 70!",
         "immagine": "a04bffebf6ed13dc9a34.jpg",
@@ -888,6 +1000,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale anche per i motocicli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vale anche per le moto?",
         "spiegazione": "Questo segnale è un segnale di prescrizione generale per tutti i veicoli. Non ci sono simboli che lo limitano solo alle auto. Anche i motocicli sono veicoli e devono rispettare la distanza. La frase è VERA.",
         "regola": "Vale per tutti i veicoli!",
         "trabocchetti": ["Anche per i motocicli"],
@@ -896,6 +1009,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato deve essere rispettato anche quando si viaggia a bassa velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vale anche a bassa velocità?",
         "spiegazione": "La distanza di sicurezza è importante sempre, a qualsiasi velocità. Anche se vai piano, devi mantenere una distanza adeguata per poter frenare in sicurezza. Il segnale non fa eccezioni per la velocità. La frase è VERA.",
         "regola": "Sempre 70 m, a ogni velocità!",
         "trabocchetti": ["anche quando si viaggia a bassa velocità"],
@@ -904,6 +1018,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a rispettare la distanza minima indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → distanza minima indicata?",
         "spiegazione": "Il segnale è un segnale di obbligo (cerchio rosso) e indica una distanza minima da mantenere. Quindi, sei obbligato a rispettare quella distanza. La frase è VERA.",
         "regola": "È un obbligo, è un minimo!",
         "trabocchetti": ["obbliga", "distanza minima"],
@@ -912,6 +1027,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i veicoli a marciare a meno di 70 metri di distanza l'uno dall'altro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → marciare a meno di 70 m?",
         "spiegazione": "Il segnale obbliga a stare 'almeno' 70 metri, cioè da 70 metri in su. La frase dice 'a meno di 70 metri', che significa stare più vicini di 70 metri (ad esempio 60 o 50 metri). Questo è l'opposto di ciò che il segnale richiede. La frase è FALSA.",
         "regola": "Non 'meno di', ma 'almeno'!",
         "trabocchetti": ["a meno di", "meno di"],
@@ -920,6 +1036,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga il veicolo che precede a distanziare quello che lo segue di almeno 70 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → chi precede si distanzia da chi segue?",
         "spiegazione": "L'obbligo di mantenere la distanza di sicurezza è sempre per il veicolo che segue. È il tuo compito mantenere la distanza dal veicolo davanti a te, non il contrario. Il veicolo che precede non può controllare la distanza da quello che lo segue. La frase è FALSA.",
         "regola": "Sei tu che segui, tu mantieni la distanza!",
         "immagine": "a04bffebf6ed13dc9a34.jpg",
@@ -927,6 +1044,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la distanza massima da mantenere esclusivamente nei tratti di strada dove il sorpasso è vietato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanza massima solo dove sorpasso vietato?",
         "spiegazione": "Il segnale indica una distanza 'minima', non 'massima'. Inoltre, non è legato solo ai tratti dove il sorpasso è vietato, ma è una regola generale di distanza di sicurezza. La frase è FALSA.",
         "regola": "Non massima, ma minima! Non solo lì!",
         "trabocchetti": ["massima", "esclusivamente"],
@@ -935,6 +1053,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa che a 70 metri inizia il divieto di transito per le autovetture",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto per auto fra 70 m?",
         "spiegazione": "Questo segnale non è un preavviso e non ha nulla a che fare con un 'divieto di transito' per le autovetture. Indica solo una distanza di sicurezza. La frase è FALSA.",
         "regola": "Non è un divieto di transito, è una distanza!",
         "trabocchetti": ["preavvisa", "divieto di transito"],
@@ -943,6 +1062,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato le autovetture non possono superare la velocità di 70 km/h",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → auto a non oltre 70 km/h?",
         "spiegazione": "Il numero '70 m' si riferisce a 'metri', quindi a una distanza. Non è una velocità in 'km/h'. I limiti di velocità sono indicati da altri segnali. La frase è FALSA.",
         "regola": "70 m è distanza, non velocità!",
         "immagine": "a04bffebf6ed13dc9a34.jpg",
@@ -950,6 +1070,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la lunghezza massima del cavo di traino",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → lunghezza massima del cavo di traino?",
         "spiegazione": "Il segnale mostra due veicoli che viaggiano normalmente, non un veicolo che ne traina un altro. Non ha nulla a che fare con la lunghezza del cavo di traino. La frase è FALSA.",
         "regola": "Non è un traino, è una distanza di sicurezza!",
         "trabocchetti": ["lunghezza massima del cavo di traino"],
@@ -958,6 +1079,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta l'uso del clacson",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato il clacson?",
         "spiegazione": "Il segnale raffigurato, con il simbolo del clacson barrato, significa proprio che non si può usare il clacson. È un divieto chiaro.",
         "regola": "Corno barrato = clacson vietato.",
         "trabocchetti": ["vieta"],
@@ -966,6 +1088,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta le segnalazioni acustiche",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietate le segnalazioni acustiche?",
         "spiegazione": "Il clacson è una 'segnalazione acustica'. Quindi, se è vietato il clacson, sono vietate tutte le segnalazioni acustiche fatte con il veicolo, tranne in casi di grave pericolo.",
         "regola": "No clacson = no rumore (del veicolo).",
         "trabocchetti": ["Segnalazioni acustiche"],
@@ -974,6 +1097,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di una zona in cui è vietato suonare il clacson",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio zona senza clacson?",
         "spiegazione": "Questo segnale, come tutti i segnali di divieto (quelli tondi con bordo rosso), indica che da quel punto in poi inizia una regola che bisogna rispettare. In questo caso, il divieto di usare il clacson.",
         "regola": "Segnale tondo rosso = inizia un divieto.",
         "trabocchetti": ["Inizio di una zona"],
@@ -982,6 +1106,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si può utilizzare il clacson se si trasportano feriti o ammalati gravi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → clacson se si trasportano feriti gravi?",
         "spiegazione": "Questa è un'eccezione importante! Anche se c'è il divieto, in situazioni di emergenza grave, come il trasporto di persone ferite o malate che hanno bisogno di aiuto urgente, si può usare il clacson per avvisare gli altri e chiedere strada. La sicurezza delle persone viene prima del divieto.",
         "regola": "Emergenza vita = clacson permesso.",
         "immagine": "81fc74549f188259ce48.jpg",
@@ -989,6 +1114,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente l'uso del clacson per richiamare l'attenzione in qualsiasi circostanza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → clacson in qualsiasi circostanza?",
         "spiegazione": "Il segnale vieta l'uso del clacson. Non lo consente. L'unica eccezione è per un grave pericolo, non 'in qualsiasi circostanza' per richiamare l'attenzione. Questo renderebbe il divieto inutile!",
         "regola": "'Qualsiasi' è quasi sempre FALSO.",
         "trabocchetti": ["consente", "in qualsiasi circostanza"],
@@ -997,6 +1123,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato deve essere rispettato soltanto dalle ore 20.00 alle ore 8.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → valido solo dalle 20 alle 8?",
         "spiegazione": "Il segnale di divieto è valido sempre, 24 ore su 24, a meno che non ci sia un pannello integrativo sotto che indichi orari specifici. Senza quel pannello, il divieto vale sempre.",
         "regola": "Senza pannello = divieto sempre valido.",
         "trabocchetti": ["soltanto"],
@@ -1005,6 +1132,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa la possibilità di incontrare una caserma dei vigili del fuoco",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → caserma dei vigili del fuoco?",
         "spiegazione": "Questo segnale riguarda il divieto di usare il clacson, non ha nulla a che fare con la presenza di una caserma dei vigili del fuoco. Per le caserme ci sono altri tipi di segnali.",
         "regola": "Corno barrato = silenzio, non pompieri.",
         "trabocchetti": ["caserma dei vigili del fuoco"],
@@ -1013,6 +1141,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa una strettoia su strade di montagna",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strettoia in montagna?",
         "spiegazione": "Il segnale indica il divieto di usare il clacson. Non ha niente a che vedere con la larghezza della strada o con il tipo di strada (montagna). Per le strettoie ci sono altri segnali di pericolo.",
         "regola": "Corno barrato = silenzio, non strada stretta.",
         "trabocchetti": ["strettoia su strade di montagna"],
@@ -1021,6 +1150,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente l'uso del clacson nei casi di ingorgo stradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → clacson negli ingorghi?",
         "spiegazione": "Il segnale vieta l'uso del clacson. Un ingorgo stradale, anche se fastidioso, non è considerato un 'grave pericolo' per la vita delle persone che giustifichi l'uso del clacson in una zona dove è vietato.",
         "regola": "Ingorgo non è emergenza vita.",
         "trabocchetti": ["consente", "ingorgo stradale"],
@@ -1029,6 +1159,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del divieto di segnalazioni acustiche",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine divieto di clacson?",
         "spiegazione": "Questo segnale indica l'inizio del divieto di usare il clacson. La fine di un divieto è indicata da un segnale simile, ma di colore grigio e con una barra diagonale che va dall'alto a destra al basso a sinistra.",
         "regola": "Segnale rosso = inizia il divieto. Fine è grigio.",
         "trabocchetti": ["fine del divieto"],
@@ -1037,6 +1168,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli a trazione animale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a trazione animale?",
         "spiegazione": "Questo segnale, con il cavallo e il carro nel cerchio rosso, significa che i veicoli trainati da animali non possono passare. Quindi, la frase è VERA.",
         "regola": "Cavallo nel cerchio rosso? Non si passa!",
         "trabocchetti": ["vieta"],
@@ -1045,6 +1177,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli trainati da cavalli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a veicoli trainati da cavalli?",
         "spiegazione": "Il segnale mostra un cavallo che tira un carro. Quindi, vieta il passaggio proprio a questo tipo di veicoli. La frase è VERA.",
         "regola": "Il cavallo è vietato.",
         "trabocchetti": ["trainati da cavalli"],
@@ -1053,6 +1186,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la circolazione alle carrozze a cavalli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a carrozze a cavalli?",
         "spiegazione": "Le carrozze a cavalli sono un tipo di veicolo trainato da animali. Il segnale vieta il transito a tutti i veicoli a trazione animale. La frase è VERA.",
         "regola": "Qualsiasi carrozza con cavallo è vietata.",
         "trabocchetti": ["carrozze"],
@@ -1061,6 +1195,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli trainati da asini",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a veicoli trainati da asini?",
         "spiegazione": "Il segnale vieta il transito a tutti i veicoli a trazione animale, non solo quelli trainati da cavalli. Anche gli asini sono animali, quindi i veicoli trainati da asini non possono passare. La frase è VERA.",
         "regola": "Qualsiasi animale che tira un carro? Vietato!",
         "immagine": "6aa21edb494e7bb6c824.jpg",
@@ -1068,6 +1203,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito dei motocicli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito consentito alle moto?",
         "spiegazione": "Questo segnale vieta solo i veicoli trainati da animali. Non dice nulla sui motocicli, che sono veicoli a motore. Quindi, i motocicli possono passare. La frase è VERA.",
         "regola": "Il divieto è per il cavallo, non per la moto!",
         "trabocchetti": ["consente"],
@@ -1076,6 +1212,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito degli autoveicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito consentito agli autoveicoli?",
         "spiegazione": "Il segnale vieta solo i veicoli trainati da animali. Gli autoveicoli (come le auto) hanno un motore, non sono trainati da animali. Quindi, possono passare. La frase è VERA.",
         "regola": "Se non ha un cavallo, può passare!",
         "trabocchetti": ["consente"],
@@ -1084,6 +1221,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli a motore",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai veicoli a motore?",
         "spiegazione": "Questo segnale vieta i veicoli trainati da animali, non i veicoli a motore. I veicoli a motore possono passare. La frase è FALSO.",
         "regola": "Il divieto è per il cavallo, non per il motore!",
         "trabocchetti": ["vieta il transito ai veicoli a motore"],
@@ -1092,6 +1230,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vige, nei centri abitati, dalle ore 8.00 alle ore 20.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → in città dalle 8 alle 20?",
         "spiegazione": "Questo è un segnale di divieto permanente. Non ha orari specifici, a meno che non ci sia un pannello aggiuntivo sotto. Quindi, non è valido solo dalle 8.00 alle 20.00. La frase è FALSO.",
         "regola": "Nessun orario sul cartello? Vale sempre!",
         "trabocchetti": ["dalle ore 8.00 alle ore 20.00"],
@@ -1100,6 +1239,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito ai veicoli a trazione animale se muniti di pneumatici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → trazione animale con pneumatici consentita?",
         "spiegazione": "Il divieto riguarda tutti i veicoli a trazione animale, senza eccezioni. Non importa se hanno pneumatici (gomme) o ruote di legno. Non possono passare. La frase è FALSO.",
         "regola": "Cavallo nel cerchio rosso? Non importa le ruote, non passa!",
         "trabocchetti": ["se muniti di pneumatici"],
@@ -1108,6 +1248,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada riservata ai carri agricoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada per carri agricoli?",
         "spiegazione": "Questo è un segnale di divieto (cerchio rosso), non un segnale che 'riserva' una strada. Indica che i veicoli a trazione animale non possono entrare, non che la strada è per loro. La frase è FALSO.",
         "regola": "Cerchio rosso = divieto, non permesso!",
         "trabocchetti": ["riservata"],
@@ -1116,6 +1257,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli a braccia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai veicoli a braccia?",
         "spiegazione": "Il segnale vieta i veicoli trainati da animali. I veicoli a braccia (come un carretto spinto da una persona) non sono trainati da animali, quindi possono passare. La frase è FALSO.",
         "regola": "Il divieto è per il cavallo, non per le braccia!",
         "trabocchetti": ["a braccia"],
@@ -1124,6 +1266,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la circolazione a tutti i veicoli sprovvisti di motore",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a tutti i veicoli senza motore?",
         "spiegazione": "Questo segnale vieta solo i veicoli trainati da animali. Non vieta 'tutti' i veicoli senza motore (ad esempio, le biciclette non hanno motore e possono passare). La frase è FALSO.",
         "regola": "Non tutti i veicoli senza motore sono vietati, solo quelli con animali!",
         "trabocchetti": ["a tutti i veicoli sprovvisti di motore"],
@@ -1132,6 +1275,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai pedoni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai pedoni?",
         "spiegazione": "Il segnale raffigurato è un segnale di divieto. La figura del pedone all'interno del cerchio rosso significa che i pedoni non possono entrare o camminare in quella zona. Quindi, vieta il transito ai pedoni.",
         "regola": "Cerchio rosso + pedone = Pedoni STOP!",
         "trabocchetti": ["vieta"],
@@ -1140,6 +1284,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito agli autoveicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito consentito agli autoveicoli?",
         "spiegazione": "Questo segnale vieta il transito SOLO ai pedoni. Non dice nulla riguardo agli autoveicoli. Perciò, se non li vieta, significa che gli autoveicoli possono passare, a meno che non ci siano altri segnali specifici per loro.",
         "regola": "Divieto specifico = gli altri possono.",
         "trabocchetti": ["consente"],
@@ -1148,6 +1293,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito ai motocicli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito consentito alle moto?",
         "spiegazione": "Come per gli autoveicoli, questo segnale riguarda solo i pedoni. I motocicli sono veicoli e non sono interessati da questo divieto. Quindi, possono transitare.",
         "regola": "Solo i piedi sono vietati.",
         "trabocchetti": ["consente"],
@@ -1156,6 +1302,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito ai quadricicli a motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito consentito ai quadricicli?",
         "spiegazione": "Il segnale vieta il passaggio ai pedoni, non ai quadricicli a motore. I quadricicli a motore sono veicoli e, in assenza di altri segnali, possono transitare.",
         "regola": "Non è un pedone? Può passare.",
         "trabocchetti": ["consente"],
@@ -1164,6 +1311,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito alle biciclette",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → transito consentito alle biciclette?",
         "spiegazione": "Le biciclette non sono pedoni. Questo segnale vieta il transito solo a chi cammina. Quindi, le biciclette possono passare, a meno che non ci sia un altro segnale che le vieti.",
         "regola": "Bici non è pedone.",
         "trabocchetti": ["consente"],
@@ -1172,6 +1320,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai ciclomotori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai ciclomotori?",
         "spiegazione": "Questo segnale vieta il transito ESCLUSIVAMENTE ai pedoni. I ciclomotori sono veicoli, non pedoni. Quindi, il segnale non vieta il loro transito.",
         "regola": "Divieto solo per chi cammina.",
         "trabocchetti": ["vieta"],
@@ -1180,6 +1329,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale dalle ore 8.00 alle ore 20.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → valido dalle 8 alle 20?",
         "spiegazione": "I segnali di divieto, come questo, sono validi 24 ore su 24, tutti i giorni, a meno che non ci sia un pannello integrativo sotto che indichi orari specifici. Senza quel pannello, il divieto è sempre attivo.",
         "regola": "Nessun orario = sempre valido.",
         "trabocchetti": ["vale dalle ore 8.00 alle ore 20.00"],
@@ -1188,6 +1338,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area urbana riservata a parco giochi e divertimenti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area parco giochi?",
         "spiegazione": "Questo segnale è un divieto, non un'indicazione di un luogo. Non ha nulla a che fare con parchi giochi o divertimenti. Indica semplicemente che i pedoni non possono entrare.",
         "regola": "Rosso = divieto, non informazione.",
         "immagine": "93b6fde38de9dae24c5d.jpg",
@@ -1195,6 +1346,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i pedoni a circolare sul margine sinistro della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pedoni sul margine sinistro?",
         "spiegazione": "Questo segnale vieta ai pedoni di trovarsi in quella zona. Non dice loro dove devono camminare, ma che non devono proprio esserci. La regola di camminare sul margine sinistro è un'altra cosa, valida quando non ci sono marciapiedi.",
         "regola": "Non dice 'come', dice 'non'.",
         "trabocchetti": ["obbliga", "margine sinistro"],
@@ -1203,6 +1355,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di un percorso pedonale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio percorso pedonale?",
         "spiegazione": "Questo segnale è un divieto (cerchio rosso). Un percorso pedonale è indicato da un segnale blu con un pedone bianco (segnale di obbligo). Sono due cose diverse.",
         "regola": "Rosso = divieto, Blu = obbligo.",
         "trabocchetti": ["indica l"],
@@ -1211,6 +1364,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai motocicli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai motocicli?",
         "spiegazione": "Il segnale mostra una moto dentro un cerchio rosso. Questo tipo di segnale significa che le moto non possono passare in quella strada o zona.",
         "regola": "Cerchio rosso + moto = Moto non passa.",
         "trabocchetti": ["vieta"],
@@ -1219,6 +1373,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito ai tricicli e ai quadricicli a motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito a tricicli e quadricicli?",
         "spiegazione": "Il segnale vieta solo i motocicli, che sono veicoli a due ruote. I tricicli (tre ruote) e i quadricicli (quattro ruote) a motore non sono motocicli, quindi possono passare.",
         "regola": "Divieto solo per moto (2 ruote), non per 3 o 4 ruote.",
         "trabocchetti": ["Consente"],
@@ -1227,6 +1382,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito alle autovetture",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito alle auto?",
         "spiegazione": "Il segnale vieta il transito solo ai motocicli. Le autovetture non sono motocicli, quindi possono passare senza problemi.",
         "regola": "Non è una moto? Allora passa.",
         "trabocchetti": ["consente"],
@@ -1235,6 +1391,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito alle biciclette",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito alle biciclette?",
         "spiegazione": "Il segnale vieta i 'motocicli', cioè le moto con motore. Le biciclette non sono motocicli (non hanno motore o ne hanno uno molto piccolo che le rende ciclomotori, ma non motocicli), quindi possono passare.",
         "regola": "Moto con motore NO, bici senza motore SÌ.",
         "trabocchetti": ["biciclette"],
@@ -1243,6 +1400,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai motocicli di qualsiasi cilindrata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a moto di ogni cilindrata?",
         "spiegazione": "Il segnale vieta il transito a tutti i motocicli, non importa quanto è grande il loro motore (la cilindrata). Non ci sono eccezioni per la grandezza del motore.",
         "regola": "Tutte le moto, grandi o piccole, sono vietate.",
         "trabocchetti": ["di qualsiasi cilindrata"],
@@ -1251,6 +1409,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito ai motocicli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito alle moto?",
         "spiegazione": "Il segnale con il cerchio rosso e la moto indica un divieto. Questo significa che i motocicli NON possono passare, non che possono.",
         "regola": "Cerchio rosso + moto = Moto NON passa.",
         "trabocchetti": ["consente"],
@@ -1259,6 +1418,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito a tutti i veicoli a due ruote",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a tutti i due ruote?",
         "spiegazione": "Il segnale vieta i 'motocicli' (moto con motore). Non vieta le biciclette o i ciclomotori, che sono anch'essi veicoli a due ruote ma non sono motocicli.",
         "regola": "Non è un divieto per 'tutte' le due ruote, solo per le 'moto'.",
         "trabocchetti": ["tutti i veicoli a due ruote"],
@@ -1267,6 +1427,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si riferisce ai soli motocicli di cilindrata superiore ai 125 cm3",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo moto oltre 125 cm3?",
         "spiegazione": "Il segnale vieta tutti i motocicli, senza fare distinzioni sulla grandezza del motore. Non si riferisce solo a quelli con cilindrata superiore a 125 cm3.",
         "regola": "Tutte le moto sono vietate, non solo quelle grandi.",
         "trabocchetti": ["ai soli", "superiore ai 125 cm3"],
@@ -1275,6 +1436,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito ai motocicli dotati di cellula di sicurezza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito alle moto con cellula di sicurezza?",
         "spiegazione": "Un motociclo, anche se ha una 'cellula di sicurezza' (una specie di protezione), rimane sempre un motociclo. Il divieto vale per tutti i motocicli, indipendentemente dalle loro caratteristiche aggiuntive.",
         "regola": "Se è una moto, anche se 'speciale', non passa.",
         "trabocchetti": ["dotati di cellula di sicurezza"],
@@ -1283,6 +1445,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai ciclomotori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai ciclomotori?",
         "spiegazione": "Il segnale vieta i 'motocicli'. I ciclomotori sono veicoli diversi dai motocicli (hanno un motore più piccolo e una velocità limitata). Quindi, i ciclomotori possono passare.",
         "regola": "Moto NO, ciclomotori SÌ.",
         "trabocchetti": ["ciclomotori"],
@@ -1291,6 +1454,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai quadricicli a motore",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai quadricicli a motore?",
         "spiegazione": "Il segnale vieta solo i 'motocicli', che hanno due ruote. I quadricicli a motore hanno quattro ruote, quindi non sono motocicli e possono passare.",
         "regola": "Divieto solo per moto (2 ruote), non per 4 ruote.",
         "trabocchetti": ["quadricicli a motore"],
@@ -1299,6 +1463,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "I segnali di pericolo sono di forma triangolare con bordo rosso. Questo segnale è rotondo con bordo rosso, quindi è un segnale di divieto, non di pericolo.",
         "regola": "Rotondo rosso = Divieto. Triangolo rosso = Pericolo.",
         "trabocchetti": ["pericolo"],
@@ -1307,6 +1472,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i motociclisti a servirsi della pista loro riservata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → motociclisti obbligati sulla loro pista?",
         "spiegazione": "Questo segnale vieta il transito ai motocicli, non li obbliga a fare qualcosa. I segnali di obbligo sono rotondi e di colore blu.",
         "regola": "Rotondo rosso = Divieto. Rotondo blu = Obbligo.",
         "trabocchetti": ["obbliga"],
@@ -1315,6 +1481,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito alle biciclette",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato alle biciclette?",
         "spiegazione": "Questo segnale, con il cerchio rosso e la bicicletta, significa che le biciclette non possono passare. È un divieto specifico per loro.",
         "regola": "Cerchio rosso + bici = Bici vietate.",
         "trabocchetti": ["vieta"],
@@ -1323,6 +1490,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di divieto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di divieto?",
         "spiegazione": "Tutti i segnali rotondi con il bordo rosso sono segnali di divieto. Questo segnale rientra in questa categoria perché proibisce qualcosa.",
         "regola": "Cerchio rosso = Divieto.",
         "trabocchetti": ["segnale di divieto"],
@@ -1331,6 +1499,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito ai quadricicli a motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ai quadricicli a motore?",
         "spiegazione": "Il segnale vieta solo le biciclette. I quadricicli a motore non sono biciclette, quindi possono passare. Il divieto è specifico per il tipo di veicolo mostrato.",
         "regola": "Vieta solo la bici, non gli altri veicoli.",
         "trabocchetti": ["consente"],
@@ -1339,6 +1508,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito ai pedoni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ai pedoni?",
         "spiegazione": "Il segnale proibisce solo le biciclette. I pedoni non sono biciclette, quindi possono camminare e passare dove c'è questo segnale.",
         "regola": "Vieta solo la bici, non i pedoni.",
         "trabocchetti": ["consente"],
@@ -1347,6 +1517,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito ai ciclomotori a due ruote",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ai ciclomotori a due ruote?",
         "spiegazione": "Il segnale vieta le biciclette, che sono veicoli a pedali. I ciclomotori a due ruote hanno un motore, quindi non sono biciclette e possono passare.",
         "regola": "Bici non è ciclomotore.",
         "immagine": "2ef74d5feb554eb6d16f.jpg",
@@ -1354,6 +1525,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai quadricicli a pedale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai quadricicli a pedale?",
         "spiegazione": "I quadricicli a pedale sono veicoli che si muovono con la forza dei pedali, proprio come le biciclette (anche se hanno quattro ruote). Per questo, anche a loro è vietato il transito.",
         "regola": "A pedali = Bici.",
         "trabocchetti": ["a pedale"],
@@ -1362,6 +1534,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai tandem",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai tandem?",
         "spiegazione": "Il tandem è una bicicletta, anche se è fatta per due o più persone. Poiché è una bicicletta, il divieto si applica anche a essa.",
         "regola": "Tandem = Bici.",
         "trabocchetti": ["tandem"],
@@ -1370,6 +1543,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale dalle ore 8.00 alle ore 20.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → valido dalle 8 alle 20?",
         "spiegazione": "Questo segnale di divieto è valido sempre, 24 ore su 24, 7 giorni su 7, a meno che non ci sia un pannello aggiuntivo sotto che indichi orari specifici. Senza quel pannello, il divieto è continuo.",
         "regola": "Senza pannello, vale sempre.",
         "trabocchetti": ["dalle ore 8.00 alle ore 20.00"],
@@ -1378,6 +1552,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito delle biciclette nelle ore notturne",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → biciclette consentite di notte?",
         "spiegazione": "Il divieto di transito per le biciclette è valido a tutte le ore del giorno e della notte, non solo di giorno. Non c'è differenza tra giorno e notte per questo segnale.",
         "regola": "Divieto è sempre, giorno e notte.",
         "trabocchetti": ["nelle ore notturne"],
@@ -1386,6 +1561,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai motocicli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai motocicli?",
         "spiegazione": "Il segnale vieta solo le biciclette. I motocicli sono veicoli a motore e non sono biciclette, quindi possono passare. Il divieto è specifico per il simbolo mostrato.",
         "regola": "Bici non è moto.",
         "trabocchetti": ["motocicli"],
@@ -1394,6 +1570,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai ciclomotori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai ciclomotori?",
         "spiegazione": "Il segnale vieta le biciclette (a pedali). I ciclomotori sono veicoli a motore, quindi non rientrano nel divieto di questo segnale e possono passare.",
         "regola": "Bici non è ciclomotore.",
         "trabocchetti": ["ciclomotori"],
@@ -1402,6 +1579,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di una corsia riservata a biciclette e ciclomotori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia per bici e ciclomotori?",
         "spiegazione": "Questo è un segnale di divieto (cerchio rosso), non un segnale di indicazione o di obbligo (che di solito sono blu). Non indica una corsia riservata, ma proibisce il passaggio alle biciclette.",
         "regola": "Rosso = Divieto, non corsia.",
         "trabocchetti": ["corsia riservata"],
@@ -1410,6 +1588,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un parcheggio per le biciclette",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio biciclette?",
         "spiegazione": "Questo segnale non indica un parcheggio. È un segnale di divieto. Un parcheggio per biciclette sarebbe indicato con un segnale diverso, di solito blu, con il simbolo della bicicletta e/o una 'P'.",
         "regola": "Rosso = Divieto, non parcheggio.",
         "trabocchetti": ["parcheggio"],
@@ -1418,6 +1597,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli a braccia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai veicoli a braccia?",
         "spiegazione": "Il segnale raffigurato è un divieto. L'immagine mostra una persona che spinge un carretto, cioè un 'veicolo a braccia'. Quindi, il segnale vieta proprio il passaggio di questi veicoli.",
         "regola": "Il disegno mostra ciò che è vietato.",
         "immagine": "86a414599100f9f59099.jpg",
@@ -1425,6 +1605,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito delle biciclette",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito alle biciclette?",
         "spiegazione": "Il segnale vieta solo i veicoli spinti a mano (veicoli a braccia). Le biciclette non sono veicoli a braccia, ma vengono guidate. Per questo motivo, il loro transito è permesso.",
         "regola": "Non è vietato? Allora è permesso!",
         "trabocchetti": ["consente"],
@@ -1433,6 +1614,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito dei ciclomotori",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ai ciclomotori?",
         "spiegazione": "Il segnale vieta i veicoli a braccia. I ciclomotori sono veicoli a motore, non a braccia. Perciò, possono passare.",
         "regola": "Solo ciò che è disegnato è vietato.",
         "trabocchetti": ["consente"],
@@ -1441,6 +1623,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito di autovetture che trainano un carrello-appendice",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ad auto con carrello?",
         "spiegazione": "Il segnale vieta i veicoli a braccia. Le autovetture, anche se trainano un carrello, sono veicoli a motore e non rientrano nella categoria dei veicoli a braccia. Quindi, possono transitare.",
         "regola": "Il divieto è per chi spinge a mano, non per i motori.",
         "trabocchetti": ["che trainano un carrello-appendice"],
@@ -1449,6 +1632,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito di carretti a mano",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai carretti a mano?",
         "spiegazione": "Un 'carretto a mano' è un tipo di 'veicolo a braccia', proprio come quello raffigurato nel segnale. Quindi, il segnale ne vieta il passaggio.",
         "regola": "Carretto a mano = veicolo a braccia.",
         "trabocchetti": ["Carretti a mano"],
@@ -1457,6 +1641,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada riservata ai venditori ambulanti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada per ambulanti?",
         "spiegazione": "Questo segnale è un divieto (cerchio rosso), non un'indicazione di riserva. Non indica una strada per venditori ambulanti, ma vieta il transito a un certo tipo di veicolo.",
         "regola": "Rosso tondo = divieto, non riserva.",
         "trabocchetti": ["riservata", "venditori ambulanti"],
@@ -1465,6 +1650,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito dei veicoli a motore durante le ore di mercato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai veicoli a motore durante il mercato?",
         "spiegazione": "Il segnale vieta i veicoli a braccia, non i veicoli a motore. Inoltre, non c'è nessun riferimento a 'ore di mercato' nel segnale.",
         "regola": "Non parla di motori né di orari.",
         "trabocchetti": ["veicoli a motore", "durante le ore di mercato"],
@@ -1473,6 +1659,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "I segnali di pericolo sono triangolari con bordo rosso. Questo segnale è circolare con bordo rosso, quindi è un segnale di divieto.",
         "regola": "Rosso tondo = divieto, non pericolo.",
         "trabocchetti": ["pericolo"],
@@ -1481,6 +1668,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale, per tutti i veicoli, durante le ore di mercato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → per tutti i veicoli durante il mercato?",
         "spiegazione": "Il segnale vale solo per i veicoli a braccia, non per 'tutti i veicoli'. Non ci sono indicazioni di 'ore di mercato' sul segnale.",
         "regola": "Non per tutti, non per orari.",
         "trabocchetti": ["tutti i veicoli", "durante le ore di mercato"],
@@ -1489,6 +1677,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito di veicoli a trazione animale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a trazione animale?",
         "spiegazione": "Il segnale raffigura una persona che spinge un carretto (veicolo a braccia). I veicoli a trazione animale sono un'altra categoria e hanno un segnale specifico diverso.",
         "regola": "Uomo spinge, non animale tira.",
         "trabocchetti": ["trazione animale"],
@@ -1497,6 +1686,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ad un motociclo, anche se spinto a braccia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → moto vietata anche spinta a mano?",
         "spiegazione": "Il segnale vieta il transito ai 'veicoli a braccia' come i carretti o le carriole. Un motociclo, anche se spinto a mano, rimane un veicolo a motore e non diventa un 'veicolo a braccia' nel senso del segnale. Quindi, il suo transito è permesso.",
         "regola": "Il divieto è per il tipo di veicolo, non per come lo muovi.",
         "trabocchetti": ["anche se spinto a braccia"],
@@ -1505,6 +1695,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito a tutti gli autoveicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a tutti gli autoveicoli?",
         "spiegazione": "Il segnale raffigurato, con l'immagine di un'auto e il bordo rosso, indica che è vietato il passaggio a tutti gli autoveicoli. Questo include automobili, camion, autobus, ecc.",
         "regola": "Auto nel cerchio rosso = stop a tutte le auto.",
         "trabocchetti": ["tutti"],
@@ -1513,6 +1704,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai tricicli a motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai tricicli a motore?",
         "spiegazione": "I tricicli a motore, anche se a volte sembrano moto, sono considerati dalla legge come autoveicoli. Per questo motivo, anche a loro è vietato il transito in presenza di questo segnale.",
         "regola": "Triciclo a motore = è un autoveicolo, quindi non passa.",
         "trabocchetti": ["tricicli a motore"],
@@ -1521,6 +1713,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è permesso il transito ai motocicli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ai motocicli?",
         "spiegazione": "Il segnale vieta il transito agli autoveicoli. I motocicli (le moto) non sono classificati come autoveicoli, ma come una categoria a parte. Perciò, possono passare.",
         "regola": "Moto non è auto, quindi passa.",
         "trabocchetti": ["motocicli"],
@@ -1529,6 +1722,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è permesso il transito ai ciclomotori a due ruote",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ai ciclomotori a due ruote?",
         "spiegazione": "I ciclomotori (i motorini) non sono considerati autoveicoli. Il segnale vieta solo gli autoveicoli, quindi i ciclomotori a due ruote possono transitare.",
         "regola": "Ciclomotore non è auto, quindi passa.",
         "trabocchetti": ["ciclomotori"],
@@ -1537,6 +1731,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai quadricicli a motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai quadricicli a motore?",
         "spiegazione": "I quadricicli a motore (come i quad) sono considerati autoveicoli dalla legge. Di conseguenza, il segnale vieta anche a loro il transito.",
         "regola": "Quadriciclo a motore = è un autoveicolo, quindi non passa.",
         "trabocchetti": ["quadricicli a motore"],
@@ -1545,6 +1740,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è permesso il transito ai veicoli sprovvisti di motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ai veicoli senza motore?",
         "spiegazione": "Il segnale vieta il transito solo ai veicoli che hanno un motore e sono classificati come autoveicoli. I veicoli senza motore, come biciclette o carretti, possono passare liberamente.",
         "regola": "Senza motore = passa.",
         "trabocchetti": ["sprovvisti di motore"],
@@ -1553,6 +1749,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è permesso il transito ai quadricicli a motore",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito ai quadricicli a motore?",
         "spiegazione": "Questa affermazione è falsa perché i quadricicli a motore sono considerati autoveicoli. Il segnale vieta il transito a tutti gli autoveicoli, quindi anche ai quadricicli a motore.",
         "regola": "Quadriciclo a motore = è un autoveicolo, quindi non passa.",
         "trabocchetti": ["permesso il transito"],
@@ -1561,6 +1758,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito alle sole autovetture non catalizzate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato solo alle auto non catalizzate?",
         "spiegazione": "Il segnale vieta il transito a tutti gli autoveicoli, senza fare distinzioni sul tipo di motore (catalizzato o non catalizzato) o sulle emissioni. Il divieto è generale.",
         "regola": "Divieto generale, non solo per alcune auto.",
         "trabocchetti": ["sole autovetture non catalizzate"],
@@ -1569,6 +1767,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito alle autovetture adibite al servizio di taxi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito ai taxi?",
         "spiegazione": "Un taxi è un'autovettura, e le autovetture sono autoveicoli. Il segnale vieta il transito a tutti gli autoveicoli, quindi anche ai taxi, a meno che non ci sia un pannello aggiuntivo che faccia un'eccezione.",
         "regola": "Taxi è auto, quindi non passa.",
         "trabocchetti": ["autovetture adibite al servizio di taxi"],
@@ -1577,6 +1776,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è permesso il transito a tutti i tricicli a motore",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito a tutti i tricicli a motore?",
         "spiegazione": "Questa affermazione è falsa. I tricicli a motore sono classificati come autoveicoli e, come abbiamo visto, il segnale vieta il transito a tutti gli autoveicoli.",
         "regola": "Triciclo a motore = è un autoveicolo, quindi non passa.",
         "trabocchetti": ["permesso il transito"],
@@ -1585,6 +1785,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito agli autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito agli autobus?",
         "spiegazione": "Gli autobus sono autoveicoli. Il segnale vieta il transito a tutti gli autoveicoli, quindi anche agli autobus non è consentito il passaggio.",
         "regola": "Autobus è auto, quindi non passa.",
         "trabocchetti": ["consentito il transito"],
@@ -1593,6 +1794,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito agli autocarri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito agli autocarri?",
         "spiegazione": "Gli autocarri (i camion) sono autoveicoli. Il segnale vieta il transito a tutti gli autoveicoli, quindi anche agli autocarri non è consentito il passaggio.",
         "regola": "Autocarro è auto, quindi non passa.",
         "trabocchetti": ["consentito il transito"],
@@ -1601,6 +1803,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il divieto di transito agli autobus",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato agli autobus?",
         "spiegazione": "Il segnale raffigurato è un segnale di divieto. Il cerchio rosso con il simbolo di un autobus al centro significa che è vietato il transito a tutti gli autobus.",
         "regola": "Cerchio rosso + autobus = Autobus STOP!",
         "trabocchetti": ["divieto", "Transito"],
@@ -1609,6 +1812,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito alle autovetture",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito alle auto?",
         "spiegazione": "Questo segnale vieta il transito solo agli autobus. Le autovetture (le normali macchine) non sono autobus, quindi possono passare senza problemi.",
         "regola": "Divieto solo per il veicolo disegnato.",
         "immagine": "67ff8d03d06f7d9a8d37.jpg",
@@ -1616,6 +1820,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito agli autocarri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito agli autocarri?",
         "spiegazione": "Il segnale vieta il transito solo agli autobus. Gli autocarri (i camion) non sono autobus, quindi possono transitare.",
         "regola": "Se non è un autobus, passa!",
         "trabocchetti": ["autocarri"],
@@ -1624,6 +1829,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito ai motocicli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ai motocicli?",
         "spiegazione": "Il divieto si applica esclusivamente agli autobus. I motocicli (le moto) non sono autobus, quindi possono passare.",
         "regola": "Solo autobus fermi.",
         "immagine": "67ff8d03d06f7d9a8d37.jpg",
@@ -1631,6 +1837,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito alle autocaravan",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito alle autocaravan?",
         "spiegazione": "Le autocaravan (i camper) non sono autobus. Il segnale vieta il transito solo agli autobus, quindi le autocaravan possono passare.",
         "regola": "Camper via libera.",
         "trabocchetti": ["autocaravan"],
@@ -1639,6 +1846,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito anche agli autobus di massa a pieno carico inferiore a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato anche ad autobus sotto 3,5 t?",
         "spiegazione": "Questo segnale vieta il transito a TUTTI gli autobus, indipendentemente dalla loro massa (peso). Non ci sono eccezioni per gli autobus più leggeri.",
         "regola": "Tutti gli autobus, senza eccezioni di peso.",
         "immagine": "67ff8d03d06f7d9a8d37.jpg",
@@ -1646,6 +1854,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito agli autobus turistici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito ad autobus turistici?",
         "spiegazione": "Gli autobus turistici sono comunque autobus. Il segnale vieta il transito a tutti i tipi di autobus, quindi anche a quelli turistici.",
         "regola": "Ogni autobus è un autobus.",
         "trabocchetti": ["turistici"],
@@ -1654,6 +1863,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato segnala una corsia riservata agli autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia riservata agli autobus?",
         "spiegazione": "Questo è un segnale di divieto (cerchio rosso). I segnali che indicano una corsia riservata sono di colore blu e rotondi, con il simbolo del veicolo al centro.",
         "regola": "Rosso = Divieto. Blu = Obbligo.",
         "immagine": "67ff8d03d06f7d9a8d37.jpg",
@@ -1661,6 +1871,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un'area di sosta per autobus turistici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta autobus turistici?",
         "spiegazione": "Il segnale raffigurato è un divieto di transito. Non ha nulla a che fare con aree di sosta. I segnali di sosta sono diversi (solitamente quadrati blu con una 'P').",
         "regola": "Divieto di passaggio, non di sosta.",
         "trabocchetti": ["preannuncia"],
@@ -1669,6 +1880,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito agli scuolabus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito agli scuolabus?",
         "spiegazione": "Gli scuolabus sono una categoria di autobus. Poiché il segnale vieta il transito a tutti gli autobus, anche gli scuolabus non possono passare.",
         "regola": "Scuolabus = autobus.",
         "trabocchetti": ["scuolabus"],
@@ -1677,6 +1889,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito alle autocaravan",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato alle autocaravan?",
         "spiegazione": "Il segnale vieta il transito solo agli autobus. Le autocaravan (i camper) non sono autobus, quindi non sono soggette a questo divieto e possono passare.",
         "regola": "Camper non sono autobus.",
         "trabocchetti": ["vieta il transito alle autocaravan"],
@@ -1685,6 +1898,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è valido solo nei giorni feriali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo nei giorni feriali?",
         "spiegazione": "Se un segnale di divieto non ha un pannello integrativo che specifica giorni o orari, significa che è valido sempre, tutti i giorni della settimana, 24 ore su 24.",
         "regola": "Senza pannello, vale sempre.",
         "trabocchetti": ["solo nei giorni feriali"],
@@ -1693,6 +1907,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli adibiti al trasporto di cose con massa a pieno carico superiore a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a trasporto cose oltre 3,5 t?",
         "spiegazione": "Questo segnale vieta il passaggio ai veicoli che trasportano merci (come i camion) se la loro massa totale, quando sono completamente carichi, è maggiore di 3,5 tonnellate. Quindi, se un camion è più pesante di 3,5 tonnellate, non può passare.",
         "regola": "Camion pesanti (>3.5t) = STOP.",
         "trabocchetti": ["veicoli adibiti al trasporto di cose"],
@@ -1701,6 +1916,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di autobus di massa complessiva superiore a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ad autobus oltre 3,5 t?",
         "spiegazione": "Il segnale riguarda solo i veicoli che trasportano merci. Gli autobus trasportano persone, non merci. Per questo motivo, anche se un autobus è molto pesante (più di 3,5 tonnellate), può comunque passare perché non è un veicolo da trasporto merci.",
         "regola": "Persone passano, merci no.",
         "trabocchetti": ["autobus"],
@@ -1709,6 +1925,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di un'autocaravan di massa a pieno carico superiore a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ad autocaravan oltre 3,5 t?",
         "spiegazione": "Un'autocaravan (o camper) è un veicolo per il tempo libero e il trasporto di persone, non per il trasporto commerciale di merci. Quindi, anche se è pesante (più di 3,5 tonnellate), non rientra nel divieto del segnale e può passare.",
         "regola": "Camper = casa, non merce. Passa!",
         "trabocchetti": ["autocaravan"],
@@ -1717,6 +1934,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere munito di pannello integrativo con un diverso valore della massa ammessa al transito",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con massa diversa?",
         "spiegazione": "Sotto questo segnale, a volte, puoi trovare un pannello aggiuntivo (integrativo) che indica un peso diverso. Ad esempio, potrebbe esserci scritto '5 t' invece di 3,5 t. Questo significa che il divieto si applica ai veicoli merci che superano quel nuovo peso indicato.",
         "regola": "Pannello = cambia il limite.",
         "trabocchetti": ["pannello integrativo", "diverso valore della massa"],
@@ -1725,6 +1943,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito di un autocarro di massa a pieno carico pari a 3 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ad autocarro da 3 t?",
         "spiegazione": "Il segnale vieta il transito ai veicoli merci che superano i 3,5 tonnellate. Un autocarro che pesa 3 tonnellate è meno di 3,5 tonnellate, quindi non rientra nel divieto e può passare.",
         "regola": "Sotto 3.5t = Via libera.",
         "trabocchetti": ["pari a 3 tonnellate"],
@@ -1733,6 +1952,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito a tutti gli autocarri carrozzati con furgone chiuso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a tutti gli autocarri con furgone?",
         "spiegazione": "Il segnale non vieta il passaggio a TUTTI gli autocarri, ma solo a quelli che superano le 3,5 tonnellate. Un piccolo furgone (autocarro con furgone chiuso) potrebbe pesare meno di 3,5 tonnellate e quindi essere autorizzato a passare.",
         "regola": "Non tutti, solo i 'grandi'.",
         "trabocchetti": ["a tutti gli autocarri"],
@@ -1741,6 +1961,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito a tutti gli autocarri carrozzati con cassone aperto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito a tutti gli autocarri con cassone aperto?",
         "spiegazione": "Anche qui, il segnale non permette il passaggio a TUTTI gli autocarri con cassone aperto. Se un autocarro con cassone aperto supera le 3,5 tonnellate, non può passare. Il tipo di cassone (aperto o chiuso) non cambia la regola del peso.",
         "regola": "Non tutti, solo i 'piccoli' passano.",
         "trabocchetti": ["a tutti gli autocarri"],
@@ -1749,6 +1970,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli di massa superiore a 3,5 tonnellate destinati al trasporto di persone",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a trasporto persone oltre 3,5 t?",
         "spiegazione": "Questo segnale vieta il transito solo ai veicoli che trasportano merci. I veicoli che trasportano persone (come autobus o pulmini grandi), anche se pesano più di 3,5 tonnellate, non sono soggetti a questo divieto e possono passare.",
         "regola": "Persone = OK, Merci = NO.",
         "trabocchetti": ["destinati al trasporto di persone", "persone"],
@@ -1757,6 +1979,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito agli autotreni di massa superiore a 3,5 tonnellate non adibiti al trasporto di persone",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito ad autotreni oltre 3,5 t per cose?",
         "spiegazione": "Un autotreno è un veicolo molto grande usato per trasportare merci. Se la sua massa è superiore a 3,5 tonnellate e non trasporta persone (quindi trasporta merci), allora il transito è vietato da questo segnale. La domanda dice che è 'consentito', il che è falso.",
         "regola": "Autotreno (>3.5t) = STOP.",
         "trabocchetti": ["autotreni", "non adibiti al trasporto di persone", "è consentito"],
@@ -1765,6 +1988,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito alle autocaravan",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito alle autocaravan?",
         "spiegazione": "Il segnale raffigurato vieta il transito solo ai veicoli che trasportano cose (autocarri) e che superano il peso di 6,5 tonnellate. Le autocaravan (i camper) sono veicoli per il trasporto di persone, non di cose. Per questo motivo, possono transitare liberamente, indipendentemente dal loro peso.",
         "regola": "Il divieto è per i 'camion', non per i 'camper'.",
         "trabocchetti": ["autocaravan"],
@@ -1773,6 +1997,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito agli autobus",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito agli autobus?",
         "spiegazione": "Come per le autocaravan, anche gli autobus sono veicoli destinati al trasporto di persone. Il segnale si applica esclusivamente ai veicoli che trasportano cose (autocarri) e che superano il limite di peso indicato. Quindi, gli autobus possono passare.",
         "regola": "Il divieto è per i 'camion', non per gli 'autobus'.",
         "trabocchetti": ["autobus"],
@@ -1781,6 +2006,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito agli autocarri con massa a pieno carico superiore a 6,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ad autocarri oltre 6,5 t?",
         "spiegazione": "Questo è il significato esatto del segnale. L'immagine del camion e l'indicazione del peso '6,5 t' significano che è vietato il transito a tutti gli autocarri (veicoli per il trasporto di cose) la cui massa a pieno carico (cioè il peso massimo che possono raggiungere, compreso il carico) è superiore a 6,5 tonnellate.",
         "regola": "Camion + peso = divieto per camion più pesanti.",
         "trabocchetti": ["massa a pieno carico"],
@@ -1789,6 +2015,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito ai veicoli adibiti al trasporto di cose con massa complessiva pari o inferiore a quella indicata nel segnale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito a trasporto cose entro la massa indicata?",
         "spiegazione": "Il segnale vieta il transito solo se la massa complessiva del veicolo (il suo peso totale) *supera* i 6,5 tonnellate. Se un veicolo per il trasporto di cose pesa esattamente 6,5 tonnellate o meno, può transitare perché non supera il limite.",
         "regola": "Sotto o uguale al limite? Passi!",
         "trabocchetti": ["pari o inferiore"],
@@ -1797,6 +2024,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato il transito di autocarri se sulla carta di circolazione è indicata una massa a pieno carico superiore a 6,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ad autocarri oltre 6,5 t in carta?",
         "spiegazione": "La 'massa a pieno carico' è il peso massimo che il veicolo può avere ed è indicata sulla carta di circolazione del veicolo. Se questo valore supera i 6,5 tonnellate, significa che l'autocarro è troppo pesante per quel tratto di strada e non può passare.",
         "regola": "Controlla la carta: se il peso max è troppo, non passi.",
         "trabocchetti": ["carta di circolazione"],
@@ -1805,6 +2033,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito agli autocarri di massa complessiva pari a 7,5 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito ad autocarri da 7,5 t?",
         "spiegazione": "Il segnale vieta il transito ai veicoli che superano i 6,5 tonnellate. Un autocarro di 7,5 tonnellate supera questo limite (7,5 è maggiore di 6,5). Quindi, il transito non è consentito, ma vietato.",
         "regola": "7.5 > 6.5 = VIETATO.",
         "trabocchetti": ["consentito"],
@@ -1813,6 +2042,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli di massa superiore a 6,5 tonnellate destinati al trasporto di persone",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a trasporto persone oltre 6,5 t?",
         "spiegazione": "Il segnale raffigurato vieta il transito solo ai veicoli destinati al trasporto di *cose* (merci), come gli autocarri. Non si applica ai veicoli destinati al trasporto di *persone*, come autobus o autocaravan, indipendentemente dal loro peso.",
         "regola": "Camion = Cose. Persone = Via libera.",
         "trabocchetti": ["destinati al trasporto di persone"],
@@ -1821,6 +2051,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito agli autoveicoli ad uso speciale di massa superiore a 6,5 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito a veicoli speciali oltre 6,5 t?",
         "spiegazione": "Il segnale vieta il transito ai veicoli che superano la massa indicata. Anche se gli autoveicoli ad uso speciale (come gru, spazzaneve, ecc.) non trasportano merci nel senso tradizionale, se il loro peso supera i 6,5 tonnellate, il loro transito è vietato per motivi di sicurezza e protezione delle infrastrutture stradali.",
         "regola": "Peso limite vale anche per i mezzi speciali.",
         "trabocchetti": ["autoveicoli ad uso speciale"],
@@ -1829,6 +2060,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una pesa pubblica nelle vicinanze",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pesa pubblica?",
         "spiegazione": "Il segnale raffigurato è un divieto di transito basato sul peso dei veicoli. Non ha nulla a che fare con l'indicazione di una pesa pubblica. I segnali che preannunciano una pesa sono diversi e hanno un altro simbolo.",
         "regola": "Divieto di peso, non pesa.",
         "trabocchetti": ["preannuncia una pesa pubblica"],
@@ -1837,6 +2069,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito di autobus di massa complessiva superiore a 10 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ad autobus oltre 10 t?",
         "spiegazione": "Il segnale si riferisce esclusivamente ai veicoli adibiti al trasporto di *cose* (autocarri). Gli autobus, essendo veicoli per il trasporto di *persone*, non sono soggetti a questo divieto, indipendentemente dalla loro massa.",
         "regola": "Autobus = Persone. Il divieto è per le Cose.",
         "trabocchetti": ["autobus"],
@@ -1845,6 +2078,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere integrato con pannello che consente il traino di rimorchi di massa non superiore a quella indicata nel pannello stesso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello che ammette rimorchi entro una massa?",
         "spiegazione": "Questo segnale, che vieta il transito ai veicoli con rimorchio, può essere modificato da un pannello aggiuntivo. Questo pannello può specificare che il divieto vale solo per i rimorchi che superano una certa massa, permettendo quindi il passaggio a quelli più leggeri.",
         "regola": "Pannello = Eccezione o dettaglio.",
         "trabocchetti": ["può essere integrato"],
@@ -1853,6 +2087,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito agli autotreni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato agli autotreni?",
         "spiegazione": "Un autotreno è un veicolo formato da un camion (motrice) che traina un rimorchio. Poiché il segnale vieta il transito a tutti i veicoli che trainano un rimorchio, vieta anche il transito agli autotreni.",
         "regola": "Autotreno = Camion + Rimorchio.",
         "trabocchetti": ["autotreni"],
@@ -1861,6 +2096,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di un autoveicolo trainante un carrello-appendice",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito con carrello-appendice?",
         "spiegazione": "Il carrello-appendice non è considerato un vero e proprio rimorchio per questo segnale. È un piccolo carrello che serve per trasportare oggetti e viene considerato parte integrante del veicolo che lo traina. Per questo motivo, il suo transito è permesso.",
         "regola": "Carrello-appendice = OK.",
         "trabocchetti": ["carrello-appendice"],
@@ -1869,6 +2105,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli a motore trainanti un rimorchio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a veicoli che trainano rimorchi?",
         "spiegazione": "Questa è la definizione principale del segnale. Il segnale raffigurato, un cerchio rosso con l'immagine di un veicolo che traina un rimorchio, significa proprio che è vietato il transito a tutti i veicoli a motore che trainano un rimorchio.",
         "regola": "Immagine = Divieto di rimorchio.",
         "trabocchetti": ["veicoli a motore trainanti un rimorchio"],
@@ -1877,6 +2114,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito agli autosnodati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito agli autosnodati?",
         "spiegazione": "Un autosnodato è un autobus 'pieghevole', composto da due parti unite da un giunto. Anche se sembra lungo, è considerato un unico veicolo e non un veicolo che traina un rimorchio. Per questo, può passare.",
         "regola": "Autosnodato = Un solo veicolo.",
         "trabocchetti": ["autosnodati"],
@@ -1885,6 +2123,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di un'autovettura trainante un caravan",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito ad auto con caravan?",
         "spiegazione": "Un caravan (o roulotte) è un tipo di rimorchio, usato per le vacanze. Poiché il segnale vieta il transito a tutti i veicoli che trainano un rimorchio, un'autovettura con un caravan non può passare.",
         "regola": "Caravan = Rimorchio, quindi vietato.",
         "trabocchetti": ["caravan"],
@@ -1893,6 +2132,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale soltanto per i veicoli adibiti al trasporto di merci",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo per trasporto merci?",
         "spiegazione": "Il segnale vieta il transito a tutti i veicoli a motore che trainano un rimorchio, non importa cosa trasportano o a cosa servono. Vale per rimorchi di merci, caravan, rimorchi per barche, ecc.",
         "regola": "Non solo merci, vale per tutti i rimorchi.",
         "trabocchetti": ["soltanto"],
@@ -1901,6 +2141,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica autocarri in rallentamento",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarri che rallentano?",
         "spiegazione": "Questo segnale è un segnale di divieto (cerchio rosso). Non indica una situazione del traffico come 'autocarri in rallentamento', ma impone una regola di comportamento.",
         "regola": "Rosso = Divieto, non informazione.",
         "trabocchetti": ["indica autocarri in rallentamento"],
@@ -1909,6 +2150,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che gli autotreni debbono procedere ad una distanza di almeno 100 metri tra di loro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autotreni distanziati 100 m?",
         "spiegazione": "Il segnale raffigurato vieta il transito ai veicoli con rimorchio. Non ha nulla a che fare con la distanza di sicurezza tra i veicoli. Ci sono altri segnali per quello.",
         "regola": "Non è distanza, è divieto.",
         "trabocchetti": ["debbono procedere ad una distanza"],
@@ -1917,6 +2159,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito ad un'autovettura che traina un rimorchio per imbarcazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito ad auto con rimorchio barca?",
         "spiegazione": "Un rimorchio per imbarcazione è, appunto, un rimorchio. Poiché il segnale vieta il transito a tutti i veicoli che trainano un rimorchio (eccetto il carrello-appendice), anche un'autovettura con un rimorchio per barca non può passare.",
         "regola": "Rimorchio è rimorchio, anche per barca.",
         "trabocchetti": ["rimorchio per imbarcazione"],
@@ -1925,6 +2168,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito alle trattrici agricole",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato alle trattrici agricole?",
         "spiegazione": "Il segnale raffigurato è un divieto di transito per le macchine agricole. Le trattrici agricole sono proprio un tipo di macchina agricola, quindi il segnale ne vieta il passaggio.",
         "regola": "Il trattore è lì, quindi non può passare.",
         "trabocchetti": ["trattrici agricole"],
@@ -1933,6 +2177,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di veicoli sgombraneve",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito agli sgombraneve?",
         "spiegazione": "I veicoli sgombraneve sono considerati 'macchine operatrici' e servono per la manutenzione delle strade, non sono macchine agricole. Per questo motivo, il segnale non li riguarda e possono passare.",
         "regola": "Sgombraneve = lavoro stradale, non agricolo.",
         "trabocchetti": ["sgombraneve"],
@@ -1941,6 +2186,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale sia di giorno che di notte",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → valido giorno e notte?",
         "spiegazione": "Tutti i segnali stradali, a meno che non ci siano pannelli integrativi che indicano orari specifici, sono validi 24 ore su 24, sia di giorno che di notte.",
         "regola": "I segnali non dormono mai.",
         "immagine": "d5c18e250e772d3f74cc.jpg",
@@ -1948,6 +2194,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito alle macchine operatrici destinate a lavori di manutenzione stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito a macchine per manutenzione stradale?",
         "spiegazione": "Le macchine operatrici che fanno lavori di manutenzione stradale (come quelle per pulire o riparare la strada) non sono macchine agricole. Il divieto si applica solo alle macchine agricole, quindi le macchine per la manutenzione stradale possono passare.",
         "regola": "Lavori stradali? Sì, possono passare.",
         "immagine": "d5c18e250e772d3f74cc.jpg",
@@ -1955,6 +2202,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale sia per le macchine agricole gommate, sia per quelle cingolate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → per macchine agricole gommate e cingolate?",
         "spiegazione": "Il segnale vieta il transito a tutte le macchine agricole, senza fare distinzioni sul tipo di ruote che hanno. Che siano gommate (con pneumatici) o cingolate (con cingoli), se sono macchine agricole, non possono passare.",
         "regola": "Agricole? Tutte ferme!",
         "trabocchetti": ["gommate", "cingolate"],
@@ -1963,6 +2211,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito ai motocicli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ai motocicli?",
         "spiegazione": "Il segnale vieta solo il transito alle macchine agricole. I motocicli non sono macchine agricole, quindi possono tranquillamente passare.",
         "regola": "Solo trattori no, gli altri sì.",
         "immagine": "d5c18e250e772d3f74cc.jpg",
@@ -1970,6 +2219,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito alle macchine agricole",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito alle macchine agricole?",
         "spiegazione": "Il segnale raffigurato è un divieto di transito per le macchine agricole. Quindi, non è 'consentito' (permesso) il loro transito, ma è 'vietato'.",
         "regola": "Segnale rosso = divieto.",
         "trabocchetti": ["consentito"],
@@ -1978,6 +2228,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il traino dei rimorchi agricoli di massa complessiva fino a 1,5 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → rimorchi agricoli fino a 1,5 t consentiti?",
         "spiegazione": "Se le macchine agricole non possono passare, di conseguenza non possono passare neanche i rimorchi agricoli che verrebbero trainati da esse. La massa del rimorchio non cambia il divieto.",
         "regola": "Se il trattore non passa, neanche il suo rimorchio agricolo.",
         "trabocchetti": ["fino a 1,5 tonnellate"],
@@ -1986,6 +2237,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai trattori stradali per semirimorchi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai trattori per semirimorchi?",
         "spiegazione": "I 'trattori stradali per semirimorchi' sono veicoli usati per trasportare merci su strada (i camion con il semirimorchio), non sono 'trattrici agricole'. Il segnale vieta solo le macchine agricole.",
         "regola": "Stradale non è agricolo.",
         "trabocchetti": ["trattori stradali"],
@@ -1994,6 +2246,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è obbligatorio in corrispondenza degli accessi privati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligatorio agli accessi privati?",
         "spiegazione": "Questo segnale è un segnale di divieto stradale e viene messo sulle strade pubbliche per regolare il traffico. Non è obbligatorio per gli accessi privati (come un cancello di casa o di un campo).",
         "regola": "Segnali stradali = strade pubbliche.",
         "immagine": "d5c18e250e772d3f74cc.jpg",
@@ -2001,6 +2254,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova soltanto sulla rete stradale delle aziende agricole",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo su strade di aziende agricole?",
         "spiegazione": "Questo segnale è un segnale stradale ufficiale e può essere trovato su qualsiasi strada pubblica dove si vuole vietare il passaggio alle macchine agricole, non solo vicino alle aziende agricole.",
         "regola": "Non solo in fattoria.",
         "trabocchetti": ["soltanto"],
@@ -2009,6 +2263,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito alle macchine agricole durante le fiere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → macchine agricole consentite durante le fiere?",
         "spiegazione": "Il divieto di transito per le macchine agricole è sempre valido, non ci sono eccezioni per eventi speciali come le fiere. Se il segnale è presente, le macchine agricole non possono passare, punto.",
         "regola": "Divieto è divieto, anche per le feste.",
         "trabocchetti": ["durante le fiere"],
@@ -2017,6 +2272,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che trasportano esplosivi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a chi trasporta esplosivi?",
         "spiegazione": "Il segnale con il cerchio rosso e il simbolo di esplosione vieta il passaggio a tutti i veicoli che trasportano materiali esplosivi. È un divieto chiaro per la sicurezza.",
         "regola": "Esplosione = Vietato agli esplosivi.",
         "trabocchetti": ["vieta"],
@@ -2025,6 +2281,7 @@ QUESTIONS = [
     {
         "domanda": "Il carburante contenuto nel serbatoio del veicolo non si considera trasporto di materiale infiammabile vietato dal segnale in figura",
         "risposta": True,
+        "riassunto": "Carburante nel serbatoio → non conta come trasporto vietato?",
         "spiegazione": "Il carburante che hai nel serbatoio della tua auto (benzina, diesel, GPL, metano) non è considerato un 'trasporto di materiale infiammabile' nel senso di questo segnale. Il segnale si riferisce a grandi quantità di merci pericolose trasportate per lavoro.",
         "regola": "Il tuo pieno non è un carico pericoloso.",
         "trabocchetti": ["non si considera"],
@@ -2033,6 +2290,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di autovetture alimentate a metano",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito ad auto a metano?",
         "spiegazione": "Come per il carburante normale, anche il metano usato per far funzionare l'auto non è considerato un trasporto di materiale pericoloso vietato da questo segnale. Le auto a metano possono passare.",
         "regola": "Metano per l'auto = Passaggio consentito.",
         "trabocchetti": ["consentito"],
@@ -2041,6 +2299,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che trasportano prodotti facilmente infiammabili",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a prodotti infiammabili?",
         "spiegazione": "Il segnale non vieta solo gli esplosivi, ma anche tutti i prodotti che prendono fuoco molto facilmente. Il simbolo dell'esplosione indica un pericolo generale di incendio o esplosione.",
         "regola": "Esplosione = Esplosivi E infiammabili.",
         "trabocchetti": ["facilmente infiammabili"],
@@ -2049,6 +2308,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato gli autoveicoli che trasportano esplosivi possono effettuare manovre di sorpasso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → chi trasporta esplosivi può sorpassare?",
         "spiegazione": "Se un veicolo che trasporta esplosivi non può proprio passare (è vietato il transito), allora non può nemmeno fare manovre come il sorpasso. Non dovrebbe essere lì.",
         "regola": "Vietato entrare = Vietato sorpassare.",
         "trabocchetti": ["possono"],
@@ -2057,6 +2317,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive di fare attenzione al transito di veicoli che trasportano esplosivo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → attenzione a veicoli con esplosivo?",
         "spiegazione": "Questo segnale è un 'divieto', non un 'avviso' o una 'prescrizione di attenzione'. Ti dice cosa non puoi fare, non di stare attento a qualcosa che potrebbe passare.",
         "regola": "Cerchio rosso = Divieto, non attenzione.",
         "trabocchetti": ["prescrive di fare attenzione"],
@@ -2065,6 +2326,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito ai veicoli che trasportano prodotti facilmente infiammabili, purché non esplosivi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → infiammabili non esplosivi consentiti?",
         "spiegazione": "Il segnale vieta sia gli esplosivi che i prodotti facilmente infiammabili. Non importa se un prodotto infiammabile non è esplosivo, è comunque vietato.",
         "regola": "Infiammabili = Vietati, anche se non esplosivi.",
         "trabocchetti": ["purché non esplosivi"],
@@ -2073,6 +2335,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il traino di veicoli che trasportano prodotti facilmente infiammabili",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → traino di veicoli con infiammabili consentito?",
         "spiegazione": "Se un veicolo che trasporta prodotti infiammabili non può passare, non può nemmeno essere trainato attraverso quella zona. Il divieto riguarda il tipo di carico, non solo il modo in cui il veicolo si muove.",
         "regola": "Carico vietato = Anche il traino è vietato.",
         "trabocchetti": ["traino"],
@@ -2081,6 +2344,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che trasportano sostanze suscettibili di contaminare l'acqua",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a sostanze che inquinano l'acqua?",
         "spiegazione": "Il segnale con il camion cisterna e le onde vieta il passaggio ai veicoli che portano liquidi o materiali che possono sporcare o avvelenare l'acqua. È un divieto per proteggere l'ambiente, quindi la risposta è VERO.",
         "regola": "Cisterna + Acqua = No inquinanti.",
         "trabocchetti": ["suscettibili di contaminare"],
@@ -2089,6 +2353,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di autoveicoli che trasportano prodotti che non contaminano l'acqua",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito a prodotti non inquinanti per l'acqua?",
         "spiegazione": "Il divieto vale solo per i veicoli che trasportano cose che possono inquinare l'acqua. Se un veicolo porta qualcosa che non inquina l'acqua (come acqua potabile o latte), può passare. Quindi la risposta è VERO.",
         "regola": "No inquinanti, sì non inquinanti.",
         "trabocchetti": ["che non contaminano l"],
@@ -2097,6 +2362,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito alle autocisterne che trasportano acqua",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito a cisterne d'acqua?",
         "spiegazione": "Se l'autocisterna trasporta solo acqua (ad esempio, acqua potabile), non c'è pericolo di inquinamento. Quindi, può passare. La risposta è VERO.",
         "regola": "Acqua pura = Via libera.",
         "trabocchetti": ["che trasportano acqua"],
@@ -2105,6 +2371,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito alle innaffiatrici stradali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → consentito alle innaffiatrici?",
         "spiegazione": "Le innaffiatrici stradali usano acqua per pulire le strade o innaffiare. L'acqua che usano non inquina, quindi possono passare. La risposta è VERO.",
         "regola": "Innaffiatrice = Acqua = Passa.",
         "trabocchetti": ["innaffiatrici stradali"],
@@ -2113,6 +2380,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di rimorchi che trasportano sostanze che possono contaminare l'acqua",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → rimorchi con sostanze inquinanti consentiti?",
         "spiegazione": "Il segnale vieta il passaggio a tutti i veicoli, anche con rimorchio, che trasportano sostanze che possono inquinare l'acqua. Non importa se è un camion o un rimorchio, il divieto è per il carico. Quindi, non è consentito. La risposta è FALSO.",
         "regola": "Carico inquinante = Divieto, sempre.",
         "trabocchetti": ["è consentito"],
@@ -2121,6 +2389,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una zona soggetta ad allagamento",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → zona soggetta ad allagamento?",
         "spiegazione": "Questo segnale è un divieto (cerchio rosso), non un avviso di pericolo. Non ti dice che c'è un allagamento, ma che non puoi passare con certi tipi di carico. La risposta è FALSO.",
         "regola": "Cerchio rosso = Divieto, non pericolo.",
         "immagine": "445006b32c0141610b74.jpg",
@@ -2128,6 +2397,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la probabile presenza di acqua sulla carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → acqua sulla carreggiata?",
         "spiegazione": "Anche qui, il segnale non ti avvisa di acqua sulla strada. È un divieto specifico per i veicoli che trasportano sostanze inquinanti per l'acqua. La risposta è FALSO.",
         "regola": "Onde = Inquinamento, non pozzanghere.",
         "immagine": "445006b32c0141610b74.jpg",
@@ -2135,6 +2405,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta delle autocisterne",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta vietata alle autocisterne?",
         "spiegazione": "Il segnale vieta il passaggio (transito), non la sosta. Per vietare la sosta ci sono altri segnali specifici (come il segnale di divieto di sosta). La risposta è FALSO.",
         "regola": "Transito, non sosta.",
         "trabocchetti": ["vieta la sosta"],
@@ -2143,6 +2414,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito alle cisterne vuote",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a cisterne vuote?",
         "spiegazione": "Se la cisterna è vuota, non trasporta nulla che possa inquinare l'acqua. Quindi, può passare. Il divieto è per il carico pericoloso, non per il veicolo in sé. La risposta è FALSO.",
         "regola": "Vuoto = Non inquina = Passa.",
         "trabocchetti": ["cisterne vuote"],
@@ -2151,6 +2423,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si riferisce ai veicoli anche se sprovvisti di motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vale anche per veicoli senza motore?",
         "spiegazione": "Questo segnale si riferisce alla larghezza del veicolo. Non importa se il veicolo ha un motore (come un'auto) o non ce l'ha (come un carretto o una bicicletta con rimorchio). Se il veicolo, o il suo carico, supera la larghezza indicata, non può passare.",
         "regola": "Larghezza = Vale per tutti i veicoli.",
         "trabocchetti": ["anche se sprovvisti di motore"],
@@ -2159,6 +2432,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può trovarsi prima di una strettoia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima di una strettoia?",
         "spiegazione": "Il segnale indica una larghezza massima. È logico trovarlo prima di un punto dove la strada diventa più stretta (una strettoia), per avvisare i veicoli troppo larghi di non proseguire.",
         "regola": "Strettoia = Limite di larghezza.",
         "trabocchetti": ["può"],
@@ -2167,6 +2441,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto sulle strade sia urbane che extraurbane",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strade urbane ed extraurbane?",
         "spiegazione": "I limiti di larghezza possono essere necessari sia in città (strade urbane), magari per vicoli stretti o centri storici, sia fuori città (strade extraurbane), per esempio prima di gallerie, ponti o passaggi a livello stretti.",
         "regola": "Larghezza = Limite ovunque serva.",
         "trabocchetti": ["sia urbane che extraurbane"],
@@ -2175,6 +2450,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la larghezza massima dei veicoli ammessi al transito",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → larghezza massima dei veicoli?",
         "spiegazione": "Questo è il significato esatto del segnale. Le frecce orizzontali indicano la larghezza, e il numero '2,30 m' è la misura massima che un veicolo può avere per poter passare.",
         "regola": "Frecce laterali = Larghezza massima.",
         "immagine": "3ebad85f66a9db27971c.jpg",
@@ -2182,6 +2458,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di autotreni larghi 2,30 metri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autotreni larghi 2,30 m consentiti?",
         "spiegazione": "Il segnale vieta il transito ai veicoli che sono 'superiori' a 2,30 metri. Questo significa che un veicolo largo esattamente 2,30 metri può ancora passare. Il divieto scatta solo se la larghezza è maggiore di 2,30 metri.",
         "regola": "2,30 m = OK. Più di 2,30 m = NO.",
         "immagine": "3ebad85f66a9db27971c.jpg",
@@ -2189,6 +2466,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si riferisce a tutti i veicoli di larghezza superiore a 2,30 metri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → per veicoli oltre 2,30 m di larghezza?",
         "spiegazione": "Il segnale si applica a qualsiasi tipo di veicolo (auto, camion, autobus, ecc.) che, per la sua dimensione o per il carico che trasporta, supera la larghezza di 2,30 metri.",
         "regola": "Tutti i veicoli = Se troppo larghi, NO.",
         "trabocchetti": ["tutti i veicoli"],
@@ -2197,6 +2475,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la distanza minima di sicurezza tra due autoveicoli in transito su quella strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanza minima di sicurezza?",
         "spiegazione": "Questo segnale non ha nulla a che fare con la distanza di sicurezza. Le frecce orizzontali indicano una dimensione laterale (la larghezza), non una distanza tra veicoli. I segnali di distanza di sicurezza sono diversi.",
         "regola": "Frecce laterali = Larghezza, non distanza.",
         "trabocchetti": ["distanza minima di sicurezza"],
@@ -2205,6 +2484,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato i veicoli a trazione animale larghi più di 2,30 m possono transitare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → trazione animale oltre 2,30 m consentita?",
         "spiegazione": "Come detto prima, il divieto di larghezza si applica a tutti i veicoli, anche quelli senza motore come i veicoli a trazione animale. Se sono più larghi di 2,30 metri, non possono passare.",
         "regola": "Larghezza = Vale per tutti, anche animali.",
         "trabocchetti": ["veicoli a trazione animale"],
@@ -2213,6 +2493,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un divieto che non riguarda gli autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non riguarda gli autobus?",
         "spiegazione": "Questo segnale è un divieto che riguarda tutti i veicoli, inclusi gli autobus. Se un autobus è più largo di 2,30 metri, non può transitare.",
         "regola": "Divieto larghezza = Nessuna eccezione per tipo veicolo.",
         "trabocchetti": ["non riguarda gli autobus"],
@@ -2221,6 +2502,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la larghezza di una strettoia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → larghezza di una strettoia?",
         "spiegazione": "Il segnale non indica la larghezza esatta della strettoia, ma la larghezza massima che un veicolo può avere per poter passare. La strettoia potrebbe essere anche più larga di 2,30 metri, ma il limite per i veicoli rimane quello indicato.",
         "regola": "Non descrive la strada, ma il limite per i veicoli.",
         "trabocchetti": ["larghezza di una strettoia"],
@@ -2229,6 +2511,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è relativo al rimorchio, ma non alla motrice",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo rimorchio, non motrice?",
         "spiegazione": "Il segnale si riferisce alla larghezza totale del veicolo o del complesso di veicoli (motrice + rimorchio). Non si guarda solo il rimorchio o solo la motrice, ma l'insieme.",
         "regola": "Larghezza = Tutto il veicolo, non solo un pezzo.",
         "trabocchetti": ["ma non alla motrice"],
@@ -2237,6 +2520,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una strada larga 2,30 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada larga 2,30 m?",
         "spiegazione": "Il segnale non dice che la strada è larga esattamente 2,30 metri. Dice che i veicoli più larghi di 2,30 metri non possono passare. La strada potrebbe essere più larga, ma il limite per i veicoli è quello.",
         "regola": "Non descrive la strada, ma il limite per i veicoli.",
         "trabocchetti": ["strada larga 2,30 metri"],
@@ -2245,6 +2529,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'altezza massima, misurata dal piano stradale, dei veicoli che possono transitare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → altezza massima dal piano stradale?",
         "spiegazione": "Il segnale ti dice che i veicoli non possono essere più alti di 3,50 metri. Questa altezza si misura da terra (piano stradale) fino al punto più alto del veicolo, incluso il carico.",
         "regola": "Altezza massima = da terra al cielo.",
         "trabocchetti": ["misurata dal piano stradale"],
@@ -2253,6 +2538,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito degli autoveicoli con altezza, comprensiva del carico, superiore a 3,50 metri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato oltre 3,50 m di altezza col carico?",
         "spiegazione": "Il segnale vieta il passaggio a tutti i veicoli che, con il loro carico, superano i 3,50 metri di altezza. Se un veicolo è alto 3,51 metri, non può passare.",
         "regola": "Più alto di 3,50m? STOP!",
         "trabocchetti": ["superiore a"],
@@ -2261,6 +2547,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'altezza massima dei veicoli ammessi al transito",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → altezza massima dei veicoli?",
         "spiegazione": "Sì, il segnale ti dice qual è l'altezza più grande che un veicolo può avere per poter passare. È un limite massimo.",
         "regola": "3,50m è il tuo limite di altezza.",
         "trabocchetti": ["altezza massima"],
@@ -2269,6 +2556,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di una macchina agricola alta 3,50 metri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → macchina agricola alta 3,50 m consentita?",
         "spiegazione": "Il segnale vieta il transito ai veicoli 'superiori a 3,50 metri'. Se la macchina agricola è alta esattamente 3,50 metri, non è 'superiore', quindi può passare.",
         "regola": "3,50m esatto? Passi!",
         "immagine": "3ccdbc41fed66564ddce.jpg",
@@ -2276,6 +2564,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può trovarsi sia nei centri abitati che fuori",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dentro e fuori città?",
         "spiegazione": "Questo tipo di segnale si usa ovunque ci sia un limite di altezza, come sotto un ponte o in una galleria, sia in città che fuori dai centri abitati.",
         "regola": "Limite di altezza = ovunque serva.",
         "immagine": "3ccdbc41fed66564ddce.jpg",
@@ -2283,6 +2572,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può trovarsi in un punto in cui la strada passa sotto un ponte",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada sotto un ponte?",
         "spiegazione": "È molto comune trovare questo segnale prima di un ponte, un sottopassaggio o una galleria, proprio per avvisare i veicoli troppo alti che non possono passare.",
         "regola": "Ponte basso? Segnale di altezza!",
         "immagine": "3ccdbc41fed66564ddce.jpg",
@@ -2290,6 +2580,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito degli autoveicoli di lunghezza superiore a 3,50 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato oltre 3,50 m di lunghezza?",
         "spiegazione": "Il segnale mostra due frecce che indicano l'altezza (verticale), non la lunghezza (orizzontale). Il numero 3,50 si riferisce all'altezza, non alla lunghezza.",
         "regola": "Frecce verticali = altezza, non lunghezza.",
         "trabocchetti": ["lunghezza"],
@@ -2298,6 +2589,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un passaggio alto 3,50 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passaggio alto 3,50 m?",
         "spiegazione": "Il segnale non indica che il passaggio è alto esattamente 3,50 metri. Indica che i veicoli non devono superare i 3,50 metri. Il passaggio potrebbe essere più alto (es. 4 metri), ma il limite imposto è 3,50 metri per vari motivi.",
         "regola": "Non è l'altezza del tunnel, ma il limite per te.",
         "trabocchetti": ["indica un passaggio alto 3,50 metri"],
@@ -2306,6 +2598,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato nei centri abitati vale soltanto dalle ore 8.00 alle ore 20.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → in città solo dalle 8 alle 20?",
         "spiegazione": "I segnali di divieto come questo valgono sempre, 24 ore su 24, 7 giorni su 7, a meno che non ci sia un pannello integrativo che indichi orari diversi. Non ci sono orari specifici per questo divieto.",
         "regola": "Divieto di altezza = sempre valido.",
         "trabocchetti": ["soltanto dalle ore 8.00 alle ore 20.00"],
@@ -2314,6 +2607,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che possono passare gli autocarri con carico alto 3,50 metri dal piano del cassone",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → carico alto 3,50 m dal cassone?",
         "spiegazione": "L'altezza si misura sempre dal piano stradale (da terra) fino al punto più alto del veicolo, incluso il carico. Non si misura dal piano del cassone.",
         "regola": "Altezza = da terra, non dal cassone.",
         "trabocchetti": ["dal piano del cassone"],
@@ -2322,6 +2616,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la distanza di sicurezza da tenere dal veicolo che precede",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanza di sicurezza?",
         "spiegazione": "Questo segnale riguarda l'altezza massima dei veicoli. La distanza di sicurezza è indicata da altri segnali o si calcola in base alla velocità e alle condizioni della strada.",
         "regola": "Frecce verticali = altezza, non distanza.",
         "trabocchetti": ["distanza di sicurezza"],
@@ -2330,6 +2625,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito a tutti i veicoli di lunghezza complessiva superiore a 10 metri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato oltre 10 m di lunghezza?",
         "spiegazione": "Il segnale raffigurato vieta il passaggio a tutti i veicoli che, dalla parte anteriore a quella posteriore, misurano più di 10 metri.",
         "regola": "Più lungo di 10m? Non passi!",
         "trabocchetti": ["superiore a 10 metri"],
@@ -2338,6 +2634,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di un autotreno lungo 10 metri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autotreno lungo 10 m consentito?",
         "spiegazione": "Il segnale vieta il transito ai veicoli che superano i 10 metri. Un autotreno lungo esattamente 10 metri non supera questa misura, quindi può passare.",
         "regola": "Uguale a 10m? Sì, passi!",
         "immagine": "fec77e8702023e3acc20.jpg",
@@ -2345,6 +2642,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito a veicoli di lunghezza superiore a quella indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato oltre la lunghezza indicata?",
         "spiegazione": "Il segnale indica chiaramente una lunghezza (10 metri) e, essendo un segnale di divieto (cerchio rosso), vieta il passaggio a tutti i veicoli che sono più lunghi di quella misura.",
         "regola": "Divieto + misura = limite di lunghezza.",
         "trabocchetti": ["Superiore a quella indicata"],
@@ -2353,6 +2651,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato deve essere rispettato anche dai conducenti di autobus",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vale anche per autobus?",
         "spiegazione": "Questo segnale si riferisce alla lunghezza del veicolo, non al suo tipo. Se un autobus è più lungo di 10 metri, non può passare.",
         "regola": "Lunghezza conta, non il tipo!",
         "immagine": "fec77e8702023e3acc20.jpg",
@@ -2360,6 +2659,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vige anche di notte",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vale anche di notte?",
         "spiegazione": "I segnali stradali sono validi sempre, giorno e notte, a meno che non ci sia un pannello aggiuntivo che indichi orari specifici.",
         "regola": "Segnali sempre attivi, 24/7!",
         "trabocchetti": ["Anche di notte"],
@@ -2368,6 +2668,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato deve essere rispettato anche dai conducenti di complessi di veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vale anche per complessi di veicoli?",
         "spiegazione": "Un \"complesso di veicoli\" è formato da più veicoli uniti (come un'auto con rimorchio). La lunghezza totale di questo complesso deve rispettare il limite di 10 metri.",
         "regola": "Lunghezza totale del 'treno'!",
         "trabocchetti": ["Complessi di veicoli"],
@@ -2376,6 +2677,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato deve essere rispettato solo dai conducenti di veicoli adibiti al trasporto di cose",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo per trasporto cose?",
         "spiegazione": "No, non è vero. Il segnale si riferisce alla lunghezza del veicolo, non al suo uso. Quindi, anche un autobus o un'auto con rimorchio, se superano i 10 metri, non possono passare.",
         "regola": "'Solo' è quasi sempre FALSO!",
         "trabocchetti": ["solo"],
@@ -2384,6 +2686,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga un veicolo a distanziare quello che lo segue di almeno 10 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanziare chi segue di 10 m?",
         "spiegazione": "Questo segnale indica un limite di lunghezza per i veicoli, non una distanza di sicurezza da mantenere tra un veicolo e l'altro.",
         "regola": "Lunghezza veicolo, non distanza!",
         "trabocchetti": ["Distanziare quello che lo segue"],
@@ -2392,6 +2695,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area di parcheggio per autocarri lunghi al massimo 10 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio autocarri fino a 10 m?",
         "spiegazione": "No, questo è un segnale di divieto (cerchio rosso), non un segnale di parcheggio. Indica che non si può passare se il veicolo è più lungo di 10 metri.",
         "regola": "Rosso = divieto, non parcheggio!",
         "trabocchetti": ["Area di parcheggio"],
@@ -2400,6 +2704,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone il distanziamento minimo tra autocarri per consentire alle autovetture di sorpassarli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanza tra autocarri per far sorpassare?",
         "spiegazione": "Questo segnale non ha nulla a che fare con la distanza di sicurezza o con il sorpasso. Riguarda solo la lunghezza massima dei veicoli che possono transitare.",
         "regola": "Lunghezza, non sorpasso o distanza!",
         "trabocchetti": ["Distanziamento minimo"],
@@ -2408,6 +2713,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di una autovettura che traina un caravan anche se insieme superano i 10 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → auto con caravan oltre 10 m consentita?",
         "spiegazione": "Se l'autovettura con il caravan (che è un \"complesso di veicoli\") supera i 10 metri di lunghezza totale, non può assolutamente passare. Il limite è per la lunghezza complessiva.",
         "regola": "Lunghezza totale del 'treno'!",
         "trabocchetti": ["anche se insieme superano i 10 metri"],
@@ -2416,6 +2722,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito a tutti gli autosnodati per trasporto di persone",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tutti gli autosnodati per persone consentiti?",
         "spiegazione": "No, non è vero. Un autosnodato è un veicolo molto lungo. Se la sua lunghezza supera i 10 metri, non può passare, proprio come qualsiasi altro veicolo. Il divieto vale per la lunghezza, non per il tipo di veicolo.",
         "regola": "'Tutti' è spesso FALSO!",
         "trabocchetti": ["tutti"],
@@ -2424,6 +2731,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che gli autocarri devono mantenere una distanza di sicurezza di almeno 10 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autocarri distanziati 10 m?",
         "spiegazione": "Questo segnale non preannuncia nulla e non riguarda la distanza di sicurezza. È un divieto di transito per veicoli troppo lunghi.",
         "regola": "Divieto di lunghezza, non distanza!",
         "trabocchetti": ["Preannuncia", "distanza di sicurezza"],
@@ -2432,6 +2740,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli aventi una massa effettiva superiore a quella indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato oltre la massa effettiva indicata?",
         "spiegazione": "Questo segnale indica che nessun veicolo può passare se il suo peso totale (massa effettiva), con passeggeri e carico, è maggiore di 7 tonnellate. Se pesi 7 tonnellate o meno, puoi passare.",
         "regola": "7t = limite di peso totale. Se pesi di più, non passi.",
         "trabocchetti": ["massa effettiva"],
@@ -2440,6 +2749,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, integrato con pannello, può vietare il transito contemporaneo di più veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato con pannello → vietato più veicoli insieme?",
         "spiegazione": "Il segnale da solo si riferisce a un veicolo. Ma se sotto c'è un altro pannello (un cartello aggiuntivo), questo pannello può indicare che il limite di 7 tonnellate si applica alla somma dei pesi di più veicoli che transitano nello stesso momento (ad esempio, su un ponte).",
         "regola": "Pannello extra = regole extra (anche per più veicoli insieme).",
         "trabocchetti": ["integrato con pannello"],
@@ -2448,6 +2758,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito agli autocarri di tara superiore a 7 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ad autocarri con tara oltre 7 t?",
         "spiegazione": "La 'tara' è il peso del veicolo quando è vuoto, senza carico. Se un autocarro vuoto pesa già più di 7 tonnellate, significa che il suo peso totale (massa effettiva) sarà sempre superiore a 7 tonnellate, anche senza carico. Quindi, non può passare.",
         "regola": "Se sei già pesante da vuoto (>7t), non puoi passare.",
         "trabocchetti": ["tara"],
@@ -2456,6 +2767,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di una macchina agricola di massa a pieno carico pari a 7 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → macchina agricola da 7 t consentita?",
         "spiegazione": "Il segnale vieta il transito ai veicoli con massa *superiore* a 7 tonnellate. Se la macchina agricola pesa *esattamente* 7 tonnellate (pari a), non supera il limite e quindi può passare.",
         "regola": "Pari a 7t = OK. Più di 7t = NO.",
         "trabocchetti": ["pari a"],
@@ -2464,6 +2776,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare prima di un ponte",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima di un ponte?",
         "spiegazione": "Sì, è molto comune trovare questo segnale prima di un ponte o di una galleria. Queste strutture hanno un limite di peso massimo che possono sopportare per motivi di sicurezza.",
         "regola": "Ponti e gallerie spesso hanno limiti di peso.",
         "immagine": "ea90b0ae148618a30464.jpg",
@@ -2471,6 +2784,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito ai veicoli il cui asse più caricato ha massa superiore a quella indicata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → consentito con asse oltre la massa indicata?",
         "spiegazione": "Questo segnale si riferisce al peso *totale* del veicolo (massa complessiva). Non si riferisce al peso che grava su un singolo asse (le ruote). Esiste un altro segnale specifico per il limite di peso per asse.",
         "regola": "7t è il peso *totale*, non il peso per asse.",
         "trabocchetti": ["asse più caricato"],
@@ -2479,6 +2793,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, nei centri abitati, vige dalle ore 8.00 alle ore 20.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → in città dalle 8 alle 20?",
         "spiegazione": "Questo segnale di divieto è valido sempre, 24 ore su 24, tutti i giorni, a meno che non ci sia un pannello aggiuntivo sotto che specifichi orari o giorni diversi. Senza pannello, è sempre valido.",
         "regola": "Segnale senza orari = sempre valido.",
         "trabocchetti": ["vige dalle ore 8.00 alle ore 20.00"],
@@ -2487,6 +2802,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di autobus di massa superiore a 7 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → autobus oltre 7 t consentiti?",
         "spiegazione": "Il segnale vieta il transito a *tutti* i veicoli (inclusi gli autobus) che hanno un peso totale (massa) superiore a 7 tonnellate. Non ci sono eccezioni per gli autobus.",
         "regola": "7t vale per tutti i veicoli, autobus inclusi.",
         "trabocchetti": ["consentito"],
@@ -2495,6 +2811,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai soli veicoli per trasporto merci di massa superiore a 7 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo trasporto merci oltre 7 t?",
         "spiegazione": "Il segnale si riferisce al peso totale di *qualsiasi* veicolo, non solo quelli che trasportano merci. Anche un autobus, un camper o una macchina agricola con un peso superiore a 7 tonnellate non possono passare.",
         "regola": "'Soli' è quasi sempre FALSO nei quiz. Il divieto è per *tutti* i veicoli pesanti.",
         "trabocchetti": ["soli"],
@@ -2503,6 +2820,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli di lunghezza superiore a 7 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato oltre 7 m di lunghezza?",
         "spiegazione": "Il segnale indica un limite di *massa* (peso), misurato in tonnellate ('t'). Non indica un limite di *lunghezza*, che si misura in metri ('m'). Esiste un altro segnale specifico per il limite di lunghezza.",
         "regola": "'t' = tonnellate (peso). 'm' = metri (lunghezza). Non confondere!",
         "trabocchetti": ["lunghezza superiore a 7 metri"],
@@ -2511,6 +2829,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli aventi sull'asse più caricato una massa effettiva superiore a quella indicata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato con asse oltre la massa indicata?",
         "spiegazione": "Questo segnale ti dice che non puoi passare se il tuo veicolo ha un asse (una coppia di ruote) che, al momento del transito, pesa più di 2,5 tonnellate. Si guarda l'asse che porta il peso maggiore.",
         "regola": "Asse + Effettivo > 2,5t = STOP.",
         "trabocchetti": ["asse più caricato", "massa effettiva"],
@@ -2519,6 +2838,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il transito di autocarri aventi massa effettiva per asse di 2,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarri con 2,5 t per asse consentiti?",
         "spiegazione": "Il segnale vieta il transito se la massa per asse è 'superiore' a 2,5 tonnellate. Questo significa che se un autocarro ha esattamente 2,5 tonnellate per asse, può passare perché non supera il limite.",
         "regola": "2,5t = OK; > 2,5t = NO.",
         "immagine": "4be686df45e51101d25e.jpg",
@@ -2526,6 +2846,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli aventi una massa effettiva per asse superiore a 2,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato oltre 2,5 t per asse?",
         "spiegazione": "Esatto, questa è la regola principale del segnale. Se il peso reale (effettivo) di un asse del tuo veicolo è maggiore di 2,5 tonnellate, non puoi passare.",
         "regola": "Limite per asse: 2,5t.",
         "trabocchetti": ["massa effettiva per asse superiore a"],
@@ -2534,6 +2855,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato fa riferimento alla massa effettiva sull'asse al momento del transito",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → massa effettiva per asse al momento del transito?",
         "spiegazione": "Il segnale si riferisce al peso che il veicolo ha in quel momento, con il suo carico. Non si riferisce al peso massimo che il veicolo potrebbe avere quando è completamente carico (massa a pieno carico).",
         "regola": "Peso REALE, non teorico.",
         "trabocchetti": ["massa effettiva", "al momento del transito"],
@@ -2542,6 +2864,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può trovarsi prima di un ponte",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima di un ponte?",
         "spiegazione": "Sì, è molto comune trovare questo segnale prima di ponti, gallerie o altre strutture che potrebbero danneggiarsi se attraversate da veicoli troppo pesanti su un singolo asse.",
         "regola": "Ponti e strutture delicate = limiti per asse.",
         "immagine": "4be686df45e51101d25e.jpg",
@@ -2549,6 +2872,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga i veicoli aventi massa per asse superiore a 2,5 tonnellate a procedere a passo d'uomo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → oltre 2,5 t per asse a passo d'uomo?",
         "spiegazione": "Falso! Questo segnale non ti dice di andare piano. Ti vieta proprio di passare se superi il limite di peso per asse. Se non puoi passare, devi trovare un'altra strada.",
         "regola": "Divieto TOTALE, non riduzione velocità.",
         "immagine": "4be686df45e51101d25e.jpg",
@@ -2556,6 +2880,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito agli autocarri di massa complessiva superiore a quella indicata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ad autocarri oltre la massa complessiva?",
         "spiegazione": "Falso! Il segnale si riferisce al peso di un singolo asse ('massa per asse'), non al peso totale del veicolo ('massa complessiva'). Un autocarro può essere molto pesante in totale, ma se il peso è ben distribuito tra i suoi assi, può passare.",
         "regola": "NON massa complessiva, ma massa PER ASSE.",
         "trabocchetti": ["massa complessiva"],
@@ -2564,6 +2889,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale solo per autoveicoli con ruote gemellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo per ruote gemellate?",
         "spiegazione": "Falso! Questo divieto vale per tutti i tipi di veicoli, non solo per quelli con ruote gemellate. L'importante è il peso che grava su ogni asse, indipendentemente da come sono fatte le ruote.",
         "regola": "Vale per TUTTI i veicoli.",
         "trabocchetti": ["solo"],
@@ -2572,6 +2898,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato nei centri abitati vige dalle ore 8.00 alle ore 20.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → in città dalle 8 alle 20?",
         "spiegazione": "Falso! I segnali di divieto come questo sono validi 24 ore su 24, tutti i giorni, a meno che non ci sia un pannello aggiuntivo che indichi orari specifici. Non hanno orari predefiniti.",
         "regola": "Divieto SEMPRE valido (24/7).",
         "trabocchetti": ["vige dalle ore 8.00 alle ore 20.00"],
@@ -2580,6 +2907,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito a tutti i veicoli con massa complessiva a pieno carico superiore a 2,5 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a tutti oltre 2,5 t complessive?",
         "spiegazione": "Falso! Anche qui, la trappola è 'massa complessiva a pieno carico'. Il segnale si riferisce alla 'massa effettiva per asse', cioè al peso reale su ogni asse, non al peso massimo totale che il veicolo potrebbe raggiungere.",
         "regola": "NON massa complessiva, ma massa PER ASSE.",
         "trabocchetti": ["massa complessiva a pieno carico"],
@@ -2588,6 +2916,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine delle prescrizioni precedentemente imposte",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine prescrizioni precedenti?",
         "spiegazione": "Questo segnale, con la striscia nera diagonale, significa che tutte le regole (chiamate 'prescrizioni') che erano state messe prima di questo punto, ora non valgono più. È come dire 'via libera' da tutte quelle regole.",
         "regola": "Striscia diagonale = Stop a tutte le regole precedenti.",
         "trabocchetti": ["prescrizioni", "Precedentemente imposte"],
@@ -2596,6 +2925,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine di divieti precedentemente imposti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine divieti precedenti?",
         "spiegazione": "Sì, è vero. I 'divieti' sono un tipo di 'prescrizione'. Quindi, se il segnale annulla tutte le prescrizioni, annulla anche i divieti che erano stati messi prima (come il divieto di sorpasso o un limite di velocità).",
         "regola": "Striscia diagonale = Divieti finiti.",
         "trabocchetti": ["divieti"],
@@ -2604,6 +2934,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di via libera",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → via libera?",
         "spiegazione": "È vero. 'Via libera' è un modo semplice per dire che le restrizioni o i divieti che c'erano prima sono finiti. Quindi, puoi guidare senza quelle regole specifiche che erano state imposte.",
         "regola": "Striscia diagonale = Via libera, le regole sono finite.",
         "trabocchetti": ["Via libera"],
@@ -2612,6 +2943,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di fine prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine prescrizione?",
         "spiegazione": "Sì, è vero. Il nome ufficiale di questo segnale è proprio 'Fine di tutte le prescrizioni locali'. Quindi, è un segnale che indica la fine di regole specifiche.",
         "regola": "Striscia diagonale = Fine prescrizione.",
         "trabocchetti": ["Fine prescrizione"],
@@ -2620,6 +2952,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il punto dal quale le prescrizioni precedentemente indicate non sono più valide",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → punto da cui le prescrizioni non valgono più?",
         "spiegazione": "È vero. Questo segnale ti dice che, proprio da dove lo vedi, le regole (prescrizioni) che erano state indicate prima non valgono più. È il punto esatto in cui finiscono.",
         "regola": "Striscia diagonale = Da qui, regole annullate.",
         "immagine": "3bcc0dfbe0594c446b8b.jpg",
@@ -2627,6 +2960,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine di un cantiere di lavoro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine cantiere?",
         "spiegazione": "Falso. Questo segnale non ha niente a che fare con i cantieri di lavoro. I cantieri hanno segnali specifici (spesso gialli o arancioni) per indicare il loro inizio e la loro fine.",
         "regola": "Striscia diagonale = Non è un cantiere!",
         "trabocchetti": ["cantiere di lavoro"],
@@ -2635,6 +2969,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato riguarda soltanto i veicoli in servizio pubblico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo per servizio pubblico?",
         "spiegazione": "Falso. Questo segnale vale per TUTTI i veicoli che circolano su quella strada, non solo per i mezzi pubblici. Le regole che annulla valgono per tutti gli automobilisti.",
         "regola": "Striscia diagonale = Vale per tutti!",
         "trabocchetti": ["soltanto"],
@@ -2643,6 +2978,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "Falso. I segnali di indicazione di solito sono rettangolari e danno informazioni (come direzioni o nomi di luoghi). Questo segnale, essendo circolare con una striscia, è un segnale di 'fine prescrizione', che fa parte dei segnali di prescrizione.",
         "regola": "Striscia diagonale = Non indica, annulla!",
         "trabocchetti": ["Segnale di indicazione"],
@@ -2651,6 +2987,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine di un centro abitato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine centro abitato?",
         "spiegazione": "Falso. La fine di un centro abitato è indicata da un segnale rettangolare bianco con il nome del paese barrato in rosso. Questo segnale è diverso e ha un altro significato.",
         "regola": "Striscia diagonale = Non è la fine del paese!",
         "trabocchetti": ["Fine di un centro abitato"],
@@ -2659,6 +2996,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del pericolo precedentemente segnalato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine del pericolo?",
         "spiegazione": "Falso. I segnali di pericolo sono triangolari con bordo rosso. Questo segnale annulla le 'prescrizioni' (come limiti di velocità o divieti), non i pericoli. La fine di un pericolo non viene segnalata con questo cartello.",
         "regola": "Striscia diagonale = Non è la fine di un pericolo!",
         "trabocchetti": ["Fine del pericolo"],
@@ -2667,6 +3005,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine di una prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine di una prescrizione?",
         "spiegazione": "Il segnale con la barra nera diagonale indica sempre la fine di un divieto o di un obbligo che era in vigore prima. In questo caso, indica la fine della prescrizione di non superare i 50 km/h.",
         "regola": "Barra diagonale = Fine di un obbligo o divieto.",
         "trabocchetti": ["prescrizione"],
@@ -2675,6 +3014,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del limite massimo di velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine limite massimo di velocità?",
         "spiegazione": "Questo è proprio il segnale che indica che il limite massimo di velocità di 50 km/h, che era stato imposto prima, non è più valido. Ora puoi andare più veloce, rispettando i limiti generali della strada.",
         "regola": "50 barrato = Il limite dei 50 è finito.",
         "trabocchetti": ["limite massimo di velocità"],
@@ -2683,6 +3023,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di circolare a velocità superiore a 50 km/h",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → oltre 50 km/h consentito?",
         "spiegazione": "Dato che il limite di 50 km/h è terminato, ora puoi circolare a una velocità superiore, sempre rispettando i limiti generali previsti per il tipo di strada su cui ti trovi (ad esempio, 90 km/h su una strada extraurbana principale, se non ci sono altri segnali).",
         "regola": "Fine 50 = Puoi andare oltre (ma con prudenza!).",
         "immagine": "efd29e1ddbfd1561fd6e.jpg",
@@ -2690,6 +3031,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di circolare entro i limiti di velocità vigenti per quel tipo di strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → limiti generali di quella strada?",
         "spiegazione": "Esatto! Quando finisce un limite di velocità specifico, tornano a valere i limiti di velocità generali stabiliti dal Codice della Strada per quel tipo di strada (ad esempio, 50 km/h in città, 90 km/h fuori città, ecc.).",
         "regola": "Fine limite = Valgono i limiti normali della strada.",
         "immagine": "efd29e1ddbfd1561fd6e.jpg",
@@ -2697,6 +3039,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente di marciare anche a velocità inferiore a 50 km/h",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → anche sotto 50 km/h?",
         "spiegazione": "Certo! Se il limite massimo di 50 km/h è finito, significa che non sei più obbligato a non superare i 50. Puoi andare anche più piano, se le condizioni della strada o del traffico lo richiedono, o se lo desideri, purché non crei intralcio.",
         "regola": "Fine limite = Libertà di velocità (ma sempre in sicurezza).",
         "trabocchetti": ["anche a velocità inferiore"],
@@ -2705,6 +3048,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del relativo divieto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine del divieto?",
         "spiegazione": "Il segnale di limite di velocità (ad esempio, 50 km/h) è un divieto di superare quella velocità. Questo segnale, con la barra diagonale, indica proprio che quel divieto è terminato.",
         "regola": "Barra = Fine del divieto.",
         "trabocchetti": ["relativo divieto"],
@@ -2713,6 +3057,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il limite di velocità per tutti i veicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → limite per tutti i veicoli?",
         "spiegazione": "Falso. Questo segnale NON indica un limite di velocità. Indica la FINE di un limite di velocità che era in vigore prima. Un segnale di limite di velocità è un cerchio rosso con il numero, senza barra.",
         "regola": "Barra = Non è un limite, è la fine del limite.",
         "trabocchetti": ["indica il limite di velocità"],
@@ -2721,6 +3066,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta di superare la velocità di 50 km/h",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato superare 50 km/h?",
         "spiegazione": "Falso. È il contrario! Questo segnale significa che NON è più vietato superare la velocità di 50 km/h. Il divieto è terminato.",
         "regola": "Barra = Non vieta più.",
         "trabocchetti": ["vieta di superare"],
@@ -2729,6 +3075,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del limite minimo di velocità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine limite minimo?",
         "spiegazione": "Falso. Questo segnale si riferisce alla fine di un limite MASSIMO di velocità (il divieto di andare oltre i 50 km/h). Il limite minimo di velocità ha un segnale diverso (un cerchio blu con il numero bianco).",
         "regola": "50 barrato = Fine limite massimo, non minimo.",
         "trabocchetti": ["limite minimo di velocità"],
@@ -2737,6 +3084,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine dell'obbligo di mantenere una distanza di sicurezza di almeno 50 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine distanza minima di 50 m?",
         "spiegazione": "Falso. Questo segnale riguarda la velocità, non la distanza di sicurezza. La distanza di sicurezza è un concetto diverso e non è indicata da questo tipo di segnale.",
         "regola": "50 barrato = Velocità, non distanza.",
         "trabocchetti": ["distanza di sicurezza"],
@@ -2745,6 +3093,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive ai veicoli che non superano la velocità di 50 km/h di marciare sulla corsia di destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → chi non supera 50 km/h a destra?",
         "spiegazione": "Falso. Questo segnale non dà alcuna indicazione su quale corsia usare. Indica solo la fine del limite di velocità. L'obbligo di stare a destra per i veicoli lenti è una regola generale del Codice della Strada, non legata a questo segnale specifico.",
         "regola": "50 barrato = Velocità, non corsia.",
         "immagine": "efd29e1ddbfd1561fd6e.jpg",
@@ -2752,6 +3101,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la velocità consigliata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → velocità consigliata?",
         "spiegazione": "Falso. La velocità consigliata ha un segnale diverso, che è di forma quadrata e di colore blu con il numero bianco. Questo segnale indica la fine di un limite massimo di velocità, non una velocità consigliata.",
         "regola": "50 barrato = Fine limite, non consiglio.",
         "trabocchetti": ["velocità consigliata"],
@@ -2760,6 +3110,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del divieto di sorpasso precedentemente imposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine divieto di sorpasso?",
         "spiegazione": "Questo segnale ti dice che il divieto di sorpasso che c'era prima è finito. Ora puoi sorpassare, ma sempre rispettando le altre regole della strada (ad esempio, se la strada è libera e sicura).",
         "regola": "Sbarra sui due veicoli = Via libera al sorpasso (se sicuro).",
         "trabocchetti": ["precedentemente imposto"],
@@ -2768,6 +3119,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato il sorpasso se deve essere oltrepassata la striscia continua",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sorpasso vietato oltre la striscia continua?",
         "spiegazione": "Anche se il divieto di sorpasso è finito, non puoi mai sorpassare se per farlo devi passare sopra una linea continua sull'asfalto. Le linee continue non si possono mai superare, sono un divieto assoluto.",
         "regola": "Fine divieto OK, ma striscia continua MAI!",
         "immagine": "0383f6397181cf925cc4.jpg",
@@ -2775,6 +3127,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il punto in cui termina il divieto di sorpasso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → punto di fine divieto di sorpasso?",
         "spiegazione": "Esatto, questo segnale ti mostra il punto preciso dove finisce la regola che ti impediva di sorpassare. Da qui in poi, il sorpasso è di nuovo permesso, se le condizioni lo consentono.",
         "regola": "Dove lo vedi, lì finisce il divieto.",
         "trabocchetti": ["punto in cui termina"],
@@ -2783,6 +3136,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non impone un particolare limite di velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → nessun limite particolare di velocità?",
         "spiegazione": "Questo segnale parla solo di sorpasso. Non ti dice nulla sulla velocità massima che puoi tenere. Se c'è un limite di velocità, sarà indicato da un altro segnale specifico.",
         "regola": "Sorpasso sì/no, velocità è un'altra storia.",
         "immagine": "0383f6397181cf925cc4.jpg",
@@ -2790,6 +3144,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto sia nei centri urbani che fuori",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dentro e fuori città?",
         "spiegazione": "Sì, questo segnale può essere usato sia nelle città (centri urbani) che fuori dalle città, su qualsiasi strada dove prima era stato vietato il sorpasso.",
         "regola": "Ovunque ci sia un divieto, lì può finire.",
         "immagine": "0383f6397181cf925cc4.jpg",
@@ -2797,6 +3152,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di fine prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine prescrizione?",
         "spiegazione": "I segnali con la sbarra diagonale nera sono segnali di 'fine prescrizione', cioè indicano che una regola (una 'prescrizione') che c'era prima, ora non vale più.",
         "regola": "Sbarra diagonale = Fine di una regola.",
         "trabocchetti": ["fine prescrizione"],
@@ -2805,6 +3161,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato ha validità per tutte le 24 ore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → valido 24 ore?",
         "spiegazione": "Se non ci sono pannelli integrativi sotto il segnale che indicano orari specifici, questo segnale vale sempre, giorno e notte, per tutte le 24 ore.",
         "regola": "Senza orari, vale sempre.",
         "trabocchetti": ["per tutte le 24 ore"],
@@ -2813,6 +3170,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del divieto di sorpasso tra le sole autovetture",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine divieto solo tra auto?",
         "spiegazione": "Questo segnale indica la fine del divieto di sorpasso per *tutti* i veicoli a cui era stato imposto il divieto, non solo per le autovetture. Se il divieto era per tutti, la fine è per tutti.",
         "regola": "Non è solo per le auto, è per tutti!",
         "trabocchetti": ["sole"],
@@ -2821,6 +3179,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del divieto di transito per tutti gli autoveicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine divieto di transito?",
         "spiegazione": "Questo segnale riguarda solo il sorpasso. Non ha nulla a che fare con il 'divieto di transito' (cioè il divieto di passare) per gli autoveicoli. Sono due cose diverse.",
         "regola": "Sorpasso, non transito!",
         "trabocchetti": ["divieto di transito"],
@@ -2829,6 +3188,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive il divieto di marcia per file parallele",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di file parallele?",
         "spiegazione": "Questo segnale non c'entra niente con la 'marcia per file parallele' (cioè guidare affiancati in più corsie). Riguarda solo il sorpasso.",
         "regola": "Sorpasso, non file!",
         "trabocchetti": ["divieto di marcia per file parallele"],
@@ -2837,6 +3197,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del limite massimo di velocità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine limite massimo?",
         "spiegazione": "No, questo segnale non ti dice che è finito un limite di velocità. Ti dice solo che è finito il divieto di sorpasso. La fine del limite di velocità è indicata da un altro segnale (un cerchio bianco con sbarra nera e il numero del limite barrato).",
         "regola": "Sorpasso, non velocità!",
         "trabocchetti": ["fine del limite massimo di velocità"],
@@ -2845,6 +3206,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del divieto di sosta su entrambi i lati della strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine divieto di sosta sui due lati?",
         "spiegazione": "Assolutamente no. Questo segnale non ha nulla a che fare con la sosta. La fine del divieto di sosta è indicata da un segnale diverso (un cerchio blu con una sbarra rossa diagonale, barrato).",
         "regola": "Sorpasso, non sosta!",
         "trabocchetti": ["divieto di sosta"],
@@ -2853,6 +3215,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che è finito l'obbligo di mantenere la distanza di sicurezza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine obbligo di distanza?",
         "spiegazione": "Falso. Questo segnale non riguarda la distanza di sicurezza. L'obbligo di mantenere una distanza di sicurezza adeguata è una regola generale del Codice della Strada e non finisce mai, è sempre valida.",
         "regola": "Sorpasso, non distanza!",
         "immagine": "0383f6397181cf925cc4.jpg",
@@ -2860,6 +3223,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del divieto di sosta in seconda fila",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine divieto di sosta in seconda fila?",
         "spiegazione": "Anche questa è falsa. Come detto prima, il segnale non riguarda la sosta. E la sosta in seconda fila è sempre vietata dal Codice della Strada, non c'è un segnale che ne indichi la fine.",
         "regola": "Sorpasso, non sosta (e la seconda fila è sempre vietata)!",
         "trabocchetti": ["divieto di sosta in seconda fila"],
@@ -2868,6 +3232,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato un autotreno di massa pari a 44 tonnellate può sorpassare un'autovettura",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autotreno da 44 t può sorpassare auto?",
         "spiegazione": "Il segnale indica la fine del divieto di sorpasso per i veicoli merci con massa superiore a 3,5 tonnellate. Un autotreno di 44 tonnellate è un veicolo merce pesante, quindi, dopo questo segnale, può sorpassare.",
         "regola": "Fine divieto = via libera per i mezzi pesanti.",
         "trabocchetti": ["può sorpassare"],
@@ -2876,6 +3241,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del divieto di sorpasso precedentemente imposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine divieto di sorpasso?",
         "spiegazione": "Esatto! Questo segnale, con la barra diagonale nera, è un segnale di 'fine prescrizione'. Nello specifico, con l'immagine del camion e dell'auto, indica la fine del divieto di sorpasso per i veicoli merci pesanti.",
         "regola": "Barra diagonale = fine di qualcosa.",
         "trabocchetti": ["precedentemente"],
@@ -2884,6 +3250,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato un autocarro può sorpassare un autobus",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → autocarro può sorpassare autobus?",
         "spiegazione": "Sì, è vero. Il segnale toglie il divieto di sorpasso per i veicoli merci (come l'autocarro) con massa superiore a 3,5 tonnellate. Quindi, un autocarro può ora sorpassare un autobus, rispettando le regole generali del sorpasso.",
         "regola": "Autocarro = veicolo merce, ora può sorpassare.",
         "immagine": "c7b7aa268a41cce80b26.jpg",
@@ -2891,6 +3258,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del divieto di sorpasso per veicoli merci di massa a pieno carico superiore a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine divieto di sorpasso per merci oltre 3,5 t?",
         "spiegazione": "Questa è la descrizione precisa del segnale. L'immagine del camion e dell'auto con la barra diagonale indica proprio la fine del divieto di sorpasso per i veicoli merci che superano le 3,5 tonnellate.",
         "regola": "Camion barrato = fine divieto camion > 3.5t.",
         "trabocchetti": ["veicoli merci", "superiore a 3,5 tonnellate"],
@@ -2899,6 +3267,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di fine prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine prescrizione?",
         "spiegazione": "Sì, è vero. Tutti i segnali rotondi con una barra diagonale nera indicano la 'fine di una prescrizione', cioè la fine di un obbligo o di un divieto imposto prima.",
         "regola": "Barra diagonale = fine.",
         "trabocchetti": ["fine prescrizione"],
@@ -2907,6 +3276,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato il transito degli autotreni, autosnodati, autoarticolati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ad autotreni e autoarticolati?",
         "spiegazione": "Falso! Il segnale non vieta il transito (il passaggio) a questi veicoli. Indica solo la fine del divieto di sorpasso per loro. Quindi, possono transitare e, dopo il segnale, anche sorpassare.",
         "regola": "Sorpasso non transito.",
         "trabocchetti": ["transito"],
@@ -2915,6 +3285,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato le autovetture devono sorpassare gli autocarri sulla corsia di destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → auto sorpassano autocarri a destra?",
         "spiegazione": "Falso. Il sorpasso si fa sempre a sinistra, tranne in casi molto specifici (ad esempio, se il veicolo davanti gira a sinistra e lascia spazio a destra). Questo segnale non cambia le regole generali del sorpasso per le autovetture.",
         "regola": "Sorpasso a sinistra, sempre!",
         "trabocchetti": ["devono", "Destra"],
@@ -2923,6 +3294,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del divieto di sorpasso per autobus di massa a pieno carico superiore a 3,5 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine divieto di sorpasso per autobus oltre 3,5 t?",
         "spiegazione": "Falso. Il segnale raffigura un camion (veicolo merce), non un autobus. Quindi, il divieto (e la sua fine) si riferisce ai veicoli merci, non agli autobus, anche se pesanti.",
         "regola": "Camion non autobus.",
         "trabocchetti": ["autobus"],
@@ -2931,6 +3303,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Falso. I segnali di pericolo sono di forma triangolare e con bordo rosso. Questo è un segnale rotondo con una barra diagonale, quindi è un segnale di fine prescrizione.",
         "regola": "Triangolo = pericolo, cerchio barrato = fine.",
         "trabocchetti": ["pericolo"],
@@ -2939,6 +3312,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non vale per gli autocarri di massa complessiva pari a 7 tonnellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non vale per autocarri da 7 t?",
         "spiegazione": "Falso. Un autocarro di 7 tonnellate ha una massa superiore a 3,5 tonnellate. Quindi, il divieto di sorpasso (che c'era prima di questo segnale) valeva per lui. Questo segnale indica proprio che quel divieto per gli autocarri pesanti (come quello da 7 tonnellate) è finito.",
         "regola": "7t > 3.5t, quindi il divieto finisce anche per loro.",
         "trabocchetti": ["non vale", "vale"],
@@ -2947,6 +3321,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che trasportano merci pericolose",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato a merci pericolose?",
         "spiegazione": "Il segnale raffigurato, con il simbolo di un camion con un pannello arancione, indica che è vietato il transito a tutti i veicoli che trasportano merci considerate pericolose, come ad esempio sostanze infiammabili o esplosive. L'arancione è il colore internazionale per indicare il pericolo.",
         "regola": "Camion arancione = Pericolo non passa!",
         "trabocchetti": ["merci pericolose"],
@@ -2955,6 +3330,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito alle autocisterne che trasportano benzina",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ad autocisterne di benzina?",
         "spiegazione": "La benzina è una merce pericolosa perché è altamente infiammabile. Le autocisterne che trasportano benzina rientrano quindi nella categoria dei veicoli a cui è vietato il transito da questo segnale.",
         "regola": "Benzina è pericolosa, quindi non passa.",
         "trabocchetti": ["benzina"],
@@ -2963,6 +3339,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che trasportano carni macellate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a carni macellate?",
         "spiegazione": "Le carni macellate sono prodotti alimentari e non sono considerate 'merci pericolose' nel senso del codice della strada (cioè non sono infiammabili, esplosive o tossiche). Per questo motivo, i veicoli che le trasportano possono transitare.",
         "regola": "Carne non è pericolo, può passare.",
         "trabocchetti": ["carni macellate"],
@@ -2971,6 +3348,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito agli autoveicoli con motore alimentato a gas liquido (GPL)",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ad auto a GPL?",
         "spiegazione": "Questo segnale vieta il transito ai veicoli che *trasportano* merci pericolose come carico. Non vieta il transito ai veicoli che *usano* un carburante (come il GPL) per il proprio motore. Un'auto a GPL non sta trasportando il gas come merce per altri.",
         "regola": "Carburante proprio non è carico pericoloso.",
         "trabocchetti": ["alimentato a"],
@@ -2979,6 +3357,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito agli autocarri telonati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ad autocarri telonati?",
         "spiegazione": "Un autocarro telonato è un camion coperto da un telo. Il segnale non vieta il transito a un tipo specifico di veicolo in base alla sua copertura, ma solo se il veicolo sta trasportando merci pericolose. Se il carico non è pericoloso, l'autocarro telonato può passare.",
         "regola": "Telo non fa pericolo, il carico sì.",
         "trabocchetti": ["telonati"],
@@ -2987,6 +3366,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che trasportano merci deperibili",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a merci deperibili?",
         "spiegazione": "Le merci deperibili sono quelle che si rovinano facilmente (come frutta, verdura, latticini) e devono essere trasportate velocemente o a temperatura controllata. Non sono considerate 'pericolose' nel senso di esplosive, infiammabili o tossiche. Quindi, i veicoli che le trasportano possono passare.",
         "regola": "Deperibile non è pericoloso.",
         "trabocchetti": ["merci deperibili"],
@@ -2995,6 +3375,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli con furgone frigorifero",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a furgoni frigorifero?",
         "spiegazione": "Un furgone frigorifero è un veicolo attrezzato per mantenere fresche le merci (spesso deperibili). Il segnale non vieta il transito a questo tipo di veicolo in sé, ma solo se sta trasportando merci pericolose. Se il carico non è pericoloso, il furgone frigorifero può passare.",
         "regola": "Frigo non fa pericolo, il carico sì.",
         "trabocchetti": ["furgone frigorifero"],
@@ -3003,6 +3384,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto nei luoghi dove la sosta è vietata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dove la sosta è vietata?",
         "spiegazione": "Questo segnale ti dice che non puoi lasciare la tua auto ferma a lungo in quel punto. È proprio il segnale che indica il divieto di sosta, quindi è posto dove la sosta non è permessa.",
         "regola": "Segnale = Divieto di Sosta.",
         "trabocchetti": ["è posto nei luoghi"],
@@ -3011,6 +3393,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta sulle strade urbane dalle ore 8.00 alle ore 20.00, salvo diversa indicazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → in città sosta vietata dalle 8 alle 20?",
         "spiegazione": "Di solito, questo divieto vale dalle 8 del mattino alle 8 di sera (dalle 8.00 alle 20.00) nelle città. Se ci sono altri cartelli sotto, possono cambiare l'orario, ma questa è la regola generale.",
         "regola": "Sosta vietata 8-20 (urbane), se non specificato.",
         "trabocchetti": ["salvo diversa indicazione"],
@@ -3019,6 +3402,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere integrato da pannelli per indicarne l'inizio, il proseguimento o la fine",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannelli di inizio, proseguimento, fine?",
         "spiegazione": "Questo segnale può avere sotto altri piccoli cartelli (pannelli) che ti dicono se il divieto inizia lì, continua per un tratto, o finisce. Servono a chiarire l'estensione del divieto.",
         "regola": "Pannelli = inizio, fine, proseguimento.",
         "trabocchetti": ["integrato da pannelli"],
@@ -3027,6 +3411,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato cessa di validità dopo il primo incrocio, se non ripetuto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non valido dopo il primo incrocio se non ripetuto?",
         "spiegazione": "Se non vedi di nuovo il segnale dopo un incrocio (un punto dove due strade si incontrano), il divieto di sosta finisce. Devi cercare il segnale ripetuto dopo l'incrocio per sapere se il divieto continua.",
         "regola": "Incrocio = fine divieto (se non ripetuto).",
         "trabocchetti": ["cessa di validità", "se non ripetuto"],
@@ -3035,6 +3420,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la fermata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermata consentita?",
         "spiegazione": "Questo segnale vieta la 'sosta' (cioè lasciare il veicolo fermo e allontanarsi). Ma ti permette la 'fermata', cioè puoi fermarti per un tempo breve (ad esempio per far scendere qualcuno) senza allontanarti dal veicolo.",
         "regola": "Una riga = No Sosta, sì Fermata.",
         "trabocchetti": ["fermata"],
@@ -3043,6 +3429,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta nel tratto precedente",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta consentita nel tratto precedente?",
         "spiegazione": "Il divieto di sosta inizia dal punto in cui vedi il segnale. Quindi, prima del segnale, puoi parcheggiare, a meno che non ci sia un altro divieto precedente.",
         "regola": "Divieto inizia *dal* segnale.",
         "trabocchetti": ["nel tratto precedente"],
@@ -3051,6 +3438,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, opportunamente integrato, può vietare la sosta nei centri abitati dalle ore 0,00 alle 24,00",
         "risposta": True,
+        "riassunto": "Segnale raffigurato con pannello → sosta vietata 0-24 in città?",
         "spiegazione": "Se sotto il segnale c'è un altro cartello (pannello) che indica '0-24' o '24h', allora non puoi parcheggiare in nessun momento del giorno o della notte. Senza questo pannello, il divieto è di solito dalle 8 alle 20.",
         "regola": "Con pannello '0-24' = sempre vietato.",
         "trabocchetti": ["opportunamente integrato"],
@@ -3059,6 +3447,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se posto sul lato sinistro di una strada a senso unico, vieta la sosta anche sul lato destro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato a sinistra su senso unico → vieta anche a destra?",
         "spiegazione": "Questo segnale vale solo per il lato della strada dove è messo. Se è a sinistra, vieta la sosta solo a sinistra. Per vietare anche a destra, dovrebbe esserci un altro segnale sul lato destro o una specifica indicazione.",
         "regola": "Segnale = lato dove è posto.",
         "trabocchetti": ["anche sul lato destro"],
@@ -3067,6 +3456,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta sul tratto precedente",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vieta la sosta nel tratto precedente?",
         "spiegazione": "No, il divieto inizia *da* dove vedi il segnale. Non vieta la sosta prima del segnale. Se fosse vietato anche prima, ci sarebbe un pannello con una freccia che indica all'indietro.",
         "regola": "Divieto inizia *dal* segnale, non prima.",
         "trabocchetti": ["sul tratto precedente"],
@@ -3075,6 +3465,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un divieto di fermata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preavviso di divieto di fermata?",
         "spiegazione": "Questo segnale vieta la sosta, non la fermata. E non 'preannuncia' nulla, ma indica direttamente il divieto. Il segnale di divieto di fermata è diverso, ha due linee rosse incrociate.",
         "regola": "Una riga = No Sosta. Due righe = No Fermata.",
         "trabocchetti": ["preannuncia", "divieto di fermata"],
@@ -3083,6 +3474,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non vale per i motocicli ed i ciclomotori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non vale per moto e ciclomotori?",
         "spiegazione": "Questo divieto vale per tutti i veicoli, inclusi moto e motorini, a meno che non ci sia un cartello aggiuntivo che dica il contrario (ad esempio, 'eccetto motocicli').",
         "regola": "Divieto = per tutti i veicoli.",
         "trabocchetti": ["non vale per"],
@@ -3091,6 +3483,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è sempre prevista la rimozione forzata del veicolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sempre rimozione forzata?",
         "spiegazione": "Non è detto che la tua auto venga *sempre* portata via (rimozione forzata). È una possibilità, ma non succede ogni volta che parcheggi dove c'è questo segnale. Dipende da quanto ostacoli il traffico o da altre regole locali.",
         "regola": "'Sempre' = attenzione! Non è automatico.",
         "trabocchetti": ["sempre prevista"],
@@ -3099,6 +3492,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la sosta è regolamentata con l'uso di parchimetri a pagamento",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta a pagamento con parchimetri?",
         "spiegazione": "Questo segnale ti dice che non puoi parcheggiare. Non c'entra nulla con il parcheggio a pagamento. Per quello ci sono altri segnali specifici (di solito blu, con una 'P' e un simbolo di moneta).",
         "regola": "No Sosta = divieto. Parcheggio a pagamento = altro segnale.",
         "trabocchetti": ["parchimetri a pagamento"],
@@ -3107,6 +3501,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta ai residenti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta consentita ai residenti?",
         "spiegazione": "Il divieto di sosta vale per tutti, anche per chi abita lì, a meno che non ci sia un cartello aggiuntivo che lo permetta solo ai residenti (ad esempio, 'eccetto residenti').",
         "regola": "Divieto = per tutti, salvo eccezioni scritte.",
         "trabocchetti": ["consente la sosta ai residenti"],
@@ -3115,6 +3510,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta esponendo il tagliando emesso da un parchimetro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta col tagliando del parchimetro?",
         "spiegazione": "No, questo segnale vieta la sosta. Non puoi parcheggiare lì nemmeno se hai un biglietto del parchimetro, perché il parcheggio è proprio vietato. Il tagliando del parchimetro serve per i parcheggi a pagamento, non per i divieti di sosta.",
         "regola": "No Sosta = no parcheggio, punto.",
         "trabocchetti": ["consente la sosta esponendo il tagliando"],
@@ -3123,6 +3519,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta, ma non la fermata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta vietata, fermata no?",
         "spiegazione": "Questo segnale ti dice che non puoi lasciare la macchina parcheggiata (sosta), ma puoi fermarti per un tempo molto breve, ad esempio per far scendere qualcuno o scaricare qualcosa, purché tu rimanga al volante e sia pronto a ripartire (fermata).",
         "regola": "Sosta = No. Fermata = Sì (breve).",
         "trabocchetti": ["ma non la fermata"],
@@ -3131,6 +3528,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato contraddistingue le aree dove è proibito lasciare in sosta un veicolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → aree dove è proibito sostare?",
         "spiegazione": "Sì, questo segnale serve proprio a indicare le zone dove non è permesso lasciare il veicolo parcheggiato. È il suo scopo principale.",
         "regola": "Il segnale ti dice: 'Qui non si parcheggia!'",
         "trabocchetti": ["Proibito lasciare in sosta"],
@@ -3139,6 +3537,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, lungo strade extraurbane, indica divieto permanente di sosta in assenza di indicazioni integrative",
         "risposta": True,
+        "riassunto": "Segnale raffigurato extraurbano → divieto permanente senza pannelli?",
         "spiegazione": "Se non ci sono altri cartelli aggiuntivi che specificano orari o condizioni, questo segnale indica che il divieto di sosta è valido sempre, 24 ore su 24, sia in città che fuori città.",
         "regola": "Senza pannelli extra = Divieto sempre valido.",
         "trabocchetti": ["Permanente", "In assenza di indicazioni integrative"],
@@ -3147,6 +3546,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), se integrato con pannello (B), indica una zona in cui vige divieto di sosta",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → zona con divieto di sosta?",
         "spiegazione": "Il segnale (A) è il divieto di sosta. Se c'è un pannello aggiuntivo (B), questo pannello serve a dare più informazioni o a specificare meglio il divieto, ma il divieto di sosta rimane sempre valido.",
         "regola": "Pannello aggiuntivo = Più dettagli, non meno divieto.",
         "trabocchetti": ["Integrato con pannello (B)"],
@@ -3155,6 +3555,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), se integrato con pannello (B), indica una zona in cui vige divieto di sosta, con rimozione del veicolo",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → divieto di sosta con rimozione?",
         "spiegazione": "Se insieme al segnale di divieto di sosta c'è un pannello che mostra un carro attrezzi, significa che se parcheggi lì, la tua macchina verrà portata via (rimossa).",
         "regola": "Carro attrezzi = Via la macchina!",
         "trabocchetti": ["Con rimozione del veicolo"],
@@ -3163,6 +3564,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta sul lato della strada dove è posto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vieta la sosta sul lato dove è posto?",
         "spiegazione": "I segnali stradali verticali, come questo, valgono per il lato della strada dove sono posizionati. Quindi, se lo vedi a destra, non puoi parcheggiare a destra.",
         "regola": "Il segnale ti guarda = Il divieto è lì.",
         "trabocchetti": ["Sul lato della strada dove è posto"],
@@ -3171,6 +3573,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A) con il pannello (B) vieta la sosta solo nei giorni lavorativi",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → solo nei giorni lavorativi?",
         "spiegazione": "Se il segnale di divieto di sosta ha un pannello aggiuntivo (B) che indica 'feriale' o giorni lavorativi, allora il divieto vale solo in quei giorni, non nei festivi.",
         "regola": "Pannello 'feriale' = Divieto solo nei giorni feriali.",
         "trabocchetti": ["Solo nei giorni lavorativi"],
@@ -3179,6 +3582,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), integrato con il pannello (B), indica una ZONA RIMOZIONE COATTA",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → ZONA RIMOZIONE COATTA?",
         "spiegazione": "Se il segnale di divieto di sosta è accompagnato da un pannello (B) che indica la rimozione forzata (coatta) del veicolo, significa proprio che in quella zona la macchina può essere rimossa se parcheggi male.",
         "regola": "Pannello con carro attrezzi = Zona rimozione.",
         "trabocchetti": ["ZONA RIMOZIONE COATTA"],
@@ -3187,6 +3591,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, nelle strade extraurbane, consente la sosta dopo le ore 20.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato extraurbano → sosta dopo le 20?",
         "spiegazione": "Falso. Il segnale di divieto di sosta, se non ha pannelli aggiuntivi con orari specifici, vale sempre, 24 ore su 24. Non c'è un orario in cui la sosta è automaticamente permessa.",
         "regola": "No Sosta = Sempre no, se non c'è un orario scritto.",
         "trabocchetti": ["Consente la sosta dopo le ore 20.00"],
@@ -3195,6 +3600,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta soltanto ai veicoli a due ruote",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta solo per due ruote?",
         "spiegazione": "Falso. Questo segnale vieta la sosta a tutti i veicoli, non fa eccezioni per le moto o gli scooter, a meno che non ci sia un pannello aggiuntivo che lo specifichi.",
         "regola": "No Sosta = Per tutti i veicoli.",
         "trabocchetti": ["Soltanto ai veicoli a due ruote"],
@@ -3203,6 +3609,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta ai quadricicli a motore",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta per quadricicli?",
         "spiegazione": "Falso. Come per le moto, il divieto di sosta vale per tutti i veicoli, inclusi i quadricicli a motore. Non c'è un permesso speciale per loro.",
         "regola": "No Sosta = Per tutti, anche i quadricicli.",
         "immagine": "01b96cbe3c4c6ce87241.jpg",
@@ -3210,6 +3617,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, nei centri urbani, prescrive il divieto di sosta dalle ore 20.00 alle ore 8.00, salvo diversa indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato in città → divieto dalle 20 alle 8?",
         "spiegazione": "Falso. Il segnale di divieto di sosta, senza altri pannelli, vale sempre. Non indica un divieto solo notturno (dalle 20.00 alle 8.00). Se fosse così, ci sarebbe un pannello con gli orari.",
         "regola": "No Sosta = Sempre, non solo di notte.",
         "trabocchetti": ["Dalle ore 20.00 alle ore 8.00", "Salvo diversa indicazione"],
@@ -3218,6 +3626,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la sosta è regolamentata mediante disco orario",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta con disco orario?",
         "spiegazione": "Falso. Questo segnale vieta la sosta. Il disco orario si usa quando la sosta è permessa, ma solo per un tempo limitato. Sono due cose diverse: qui non puoi proprio parcheggiare.",
         "regola": "No Sosta = Non parcheggi. Disco orario = Parcheggi a tempo.",
         "trabocchetti": ["Disco orario"],
@@ -3226,6 +3635,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), se integrato con il pannello (B), è divieto di sosta permanente",
         "risposta": False,
+        "riassunto": "Segnale (A) con pannello (B) → divieto permanente?",
         "spiegazione": "A è il divieto di sosta; B mostra due frecce orizzontali che indicano il tratto interessato dal divieto. Le frecce non indicano un orario e non rendono il divieto permanente. Sulle strade urbane, in assenza di indicazioni di orario, il divieto di sosta vige dalle 8 alle 20.",
         "regola": "Frecce = tratto interessato; non significano divieto di sosta per 24 ore.",
         "immagine": "01e1550fc54fb09d2150.jpg",
@@ -3233,6 +3643,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, opportunamente integrato, può vietare la sosta in doppia fila",
         "risposta": False,
+        "riassunto": "Segnale raffigurato con pannello → vieta la doppia fila?",
         "spiegazione": "Falso. La sosta in doppia fila è sempre vietata dal Codice della Strada, non serve un segnale specifico per proibirla. Questo segnale vieta la sosta sul lato della strada, non la doppia fila.",
         "regola": "Doppia fila = Sempre vietato, non serve il segnale.",
         "trabocchetti": ["Può vietare la sosta in doppia fila"],
@@ -3241,6 +3652,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "Questo segnale è un segnale di prescrizione perché indica un obbligo o un divieto. In questo caso, vieta la sosta.",
         "regola": "Rosso e tondo, ti dice cosa fare o non fare.",
         "trabocchetti": ["prescrizione"],
@@ -3249,6 +3661,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non è posto nei luoghi ove per regola generale vige il divieto di sosta",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non dove vige già il divieto generale?",
         "spiegazione": "Questo segnale viene messo dove la sosta sarebbe normalmente permessa, ma si vuole vietarla. Non si mette dove la sosta è già vietata da altre regole generali (ad esempio, sulle curve o vicino agli incroci).",
         "regola": "Il segnale aggiunge un divieto, non ripete uno che c'è già.",
         "immagine": "01b96cbe3c4c6ce87241.jpg",
@@ -3256,6 +3669,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta l'abbandono prolungato nel tempo del veicolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vieta l'abbandono prolungato?",
         "spiegazione": "Il segnale di divieto di sosta vieta di lasciare il veicolo fermo per un tempo prolungato, anche se il conducente è presente. Questo è ciò che si intende con 'abbandono prolungato nel tempo'.",
         "regola": "Sosta = lasciare l'auto a lungo.",
         "immagine": "01b96cbe3c4c6ce87241.jpg",
@@ -3263,6 +3677,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, posto nei centri abitati, vieta, di norma, la sosta dalle ore 8.00 alle 20.00",
         "risposta": True,
+        "riassunto": "Segnale raffigurato in città → di norma dalle 8 alle 20?",
         "spiegazione": "Nei centri abitati (in città), se non ci sono altri pannelli che indicano orari diversi, il divieto di sosta vale di solito dalle 8:00 del mattino alle 20:00 della sera. Fuori dai centri abitati, vale 24 ore su 24.",
         "regola": "In città, 8-20 è la regola se non c'è altro.",
         "trabocchetti": ["di norma", "nei centri abitati"],
@@ -3271,6 +3686,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), integrato con il pannello (B), consente la sosta agli autobus",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → sosta consentita agli autobus?",
         "spiegazione": "Se il segnale di divieto di sosta (A) ha sotto un pannello aggiuntivo (B) che mostra il simbolo di un autobus, significa che il divieto di sosta non vale per gli autobus. Quindi, gli autobus possono sostare.",
         "regola": "Pannello aggiuntivo = eccezione.",
         "trabocchetti": ["integrato con il pannello (B)"],
@@ -3279,6 +3695,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), integrato con il pannello (B), vieta la sosta soltanto nei giorni festivi",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → solo nei festivi?",
         "spiegazione": "Se il segnale di divieto di sosta (A) ha sotto un pannello aggiuntivo (B) che indica 'giorni festivi', allora il divieto di sosta vale solo in quei giorni. Negli altri giorni, la sosta è permessa.",
         "regola": "Pannello aggiuntivo = condizione specifica.",
         "trabocchetti": ["integrato con il pannello (B)", "soltanto nei giorni festivi"],
@@ -3287,6 +3704,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta ma non la fermata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta vietata, fermata no?",
         "spiegazione": "Questo segnale vieta la 'sosta' (lasciare il veicolo fermo per un tempo prolungato), ma non vieta la 'fermata'. La fermata è una breve interruzione della marcia per far salire o scendere passeggeri, con il conducente presente e pronto a ripartire.",
         "regola": "Una sbarra = solo sosta vietata.",
         "trabocchetti": ["sosta", "fermata"],
@@ -3295,6 +3713,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sospensione temporanea della marcia per la salita e discesa dei passeggeri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietata la salita e discesa dei passeggeri?",
         "spiegazione": "La 'sospensione temporanea della marcia per la salita e discesa dei passeggeri' è la definizione di 'fermata'. Questo segnale, come abbiamo detto, non vieta la fermata. Quindi, è FALSO che la vieti.",
         "regola": "Sbarra singola = fermata OK.",
         "immagine": "01b96cbe3c4c6ce87241.jpg",
@@ -3302,6 +3721,7 @@ QUESTIONS = [
     {
         "domanda": "Lungo le strade extraurbane, il segnale raffigurato vale soltanto nelle ore diurne",
         "risposta": False,
+        "riassunto": "Segnale raffigurato extraurbano → solo di giorno?",
         "spiegazione": "Lungo le strade extraurbane (fuori città), se non ci sono pannelli aggiuntivi che indicano orari specifici, il divieto di sosta vale 24 ore su 24, sia di giorno che di notte. La regola 8:00-20:00 vale solo nei centri abitati.",
         "regola": "Fuori città, vale sempre (24h).",
         "trabocchetti": ["soltanto nelle ore diurne", "strade extraurbane"],
@@ -3310,6 +3730,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta dei veicoli su ambo i lati della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta vietata su entrambi i lati?",
         "spiegazione": "Il segnale di divieto di sosta, di solito, vale solo sul lato della strada dove è posizionato. Per vietare la sosta su entrambi i lati, ci vorrebbero due segnali (uno per lato) o un pannello integrativo specifico.",
         "regola": "Un segnale = un lato.",
         "trabocchetti": ["su ambo i lati della carreggiata"],
@@ -3318,6 +3739,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato permette la sosta degli autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta per autobus?",
         "spiegazione": "Il segnale di divieto di sosta vieta la sosta a tutti i veicoli, inclusi gli autobus, a meno che non ci sia un pannello aggiuntivo che faccia un'eccezione specifica per loro.",
         "regola": "Divieto per tutti, se non specificato.",
         "trabocchetti": ["permette"],
@@ -3326,6 +3748,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato permette la sosta dei ciclomotori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta per ciclomotori?",
         "spiegazione": "Il segnale di divieto di sosta vale per tutti i veicoli, compresi i ciclomotori, a meno che non ci sia un pannello aggiuntivo che indichi un'eccezione.",
         "regola": "Divieto per tutti, anche i piccoli.",
         "trabocchetti": ["permette"],
@@ -3334,6 +3757,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la temporanea sospensione della marcia del veicolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vieta la sospensione temporanea della marcia?",
         "spiegazione": "Questo segnale, con la croce rossa, significa 'Divieto di Fermata e Sosta'. La 'fermata' è proprio una temporanea sospensione della marcia, anche per poco tempo. Quindi, il segnale vieta anche questo.",
         "regola": "Croce rossa = Stop totale! Niente fermata, niente sosta.",
         "trabocchetti": ["temporanea sospensione della marcia"],
@@ -3342,6 +3766,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la fermata volontaria di tutti i veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermata volontaria vietata a tutti?",
         "spiegazione": "Il segnale con la croce rossa vieta sia la sosta che la fermata. La 'fermata volontaria' è quando decidi tu di fermarti, anche per un attimo, per esempio per far scendere qualcuno. Questo segnale lo proibisce.",
         "regola": "Croce rossa = Stop totale! Niente fermata, niente sosta.",
         "trabocchetti": ["volontaria"],
@@ -3350,6 +3775,7 @@ QUESTIONS = [
     {
         "domanda": "Lungo le strade dove è posto, il segnale raffigurato vale 24 ore su 24",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → valido 24 ore su 24?",
         "spiegazione": "I segnali di divieto, come questo, valgono sempre, 24 ore su 24, tutti i giorni, a meno che non ci sia un pannello integrativo sotto che indichi orari o giorni specifici. Qui non c'è nessun pannello, quindi vale sempre.",
         "regola": "Nessun pannello = Divieto sempre attivo.",
         "trabocchetti": ["24 ore su 24"],
@@ -3358,6 +3784,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta, ma consente la fermata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta vietata, fermata consentita?",
         "spiegazione": "Questo segnale, con la croce rossa, è il 'Divieto di Fermata e Sosta'. Questo significa che non puoi né sostare (parcheggiare) né fermarti (anche per un attimo). Se consentisse la fermata, avrebbe solo una linea diagonale rossa, non la croce.",
         "regola": "Una riga = No Sosta. Due righe (croce) = No Sosta E No Fermata.",
         "trabocchetti": ["sosta", "fermata"],
@@ -3366,6 +3793,7 @@ QUESTIONS = [
     {
         "domanda": "Lungo le strade urbane, il segnale raffigurato indica che il divieto di fermata vige dalle ore 8.00 alle 20.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato in città → fermata vietata dalle 8 alle 20?",
         "spiegazione": "Come abbiamo detto, i segnali di divieto valgono 24 ore su 24, a meno che non ci sia un pannello integrativo che indichi orari diversi. Questo segnale non ha pannelli, quindi il divieto non è limitato a orari specifici come dalle 8.00 alle 20.00.",
         "regola": "Nessun pannello = Divieto sempre attivo.",
         "trabocchetti": ["ore 8.00 alle 20.00"],
@@ -3374,6 +3802,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la fermata per far salire o scendere passeggeri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata per far salire o scendere?",
         "spiegazione": "Far salire o scendere passeggeri è un esempio classico di 'fermata'. Poiché questo segnale (con la croce rossa) vieta la fermata, non è consentito fermarsi nemmeno per questa ragione.",
         "regola": "Croce rossa = Stop totale! Niente fermata, nemmeno per passeggeri.",
         "trabocchetti": ["far salire o scendere passeggeri", "fermata"],
@@ -3382,6 +3811,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la fermata se il veicolo non arreca intralcio alla circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata se non si intralcia?",
         "spiegazione": "Il divieto di fermata è assoluto quando c'è questo segnale. Non importa se il tuo veicolo crea o meno intralcio alla circolazione. Il segnale vieta la fermata in ogni caso.",
         "regola": "Divieto assoluto = Non importa se intralci o no.",
         "immagine": "14f58a5a7439d3fc15c1.jpg",
@@ -3389,6 +3819,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta sia di giorno che di notte, anche nei centri abitati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta vietata giorno e notte, anche in città?",
         "spiegazione": "Il segnale con la 'X' rossa significa 'Divieto di fermata e di sosta'. Questo divieto è valido sempre, 24 ore su 24, tutti i giorni, a meno che non ci siano pannelli aggiuntivi che indicano orari o giorni specifici. Quindi, vale sia di giorno che di notte e in qualsiasi luogo, inclusi i centri abitati.",
         "regola": "X rossa = stop totale, sempre e ovunque.",
         "trabocchetti": ["sia di giorno che di notte", "anche nei centri abitati"],
@@ -3397,6 +3828,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la fermata a tutti i veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermata vietata a tutti?",
         "spiegazione": "Il segnale raffigurato vieta sia la sosta (fermata lunga) che la fermata (fermata breve, anche per far scendere o salire qualcuno). Questo divieto si applica a tutti i veicoli, senza eccezioni, a meno che non sia specificato diversamente da un pannello integrativo.",
         "regola": "X = neanche un secondo.",
         "trabocchetti": ["a tutti i veicoli"],
@@ -3405,6 +3837,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, in assenza di iscrizioni integrative, vige per tutto l'arco delle ventiquattro ore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → senza pannelli vale 24 ore?",
         "spiegazione": "I segnali stradali, se non accompagnati da pannelli che indicano orari o giorni specifici, sono validi per tutto il giorno e tutta la notte, cioè per 24 ore su 24.",
         "regola": "Senza pannelli, vale sempre.",
         "trabocchetti": ["in assenza di iscrizioni integrative", "per tutto l"],
@@ -3413,6 +3846,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta qualsiasi volontaria fermata del veicolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietata ogni fermata volontaria?",
         "spiegazione": "Il divieto di fermata significa che non puoi fermare il veicolo per tua volontà, nemmeno per un istante. Questo include anche le fermate brevissime per far scendere o salire passeggeri.",
         "regola": "Volontaria? No!",
         "immagine": "14f58a5a7439d3fc15c1.jpg",
@@ -3420,6 +3854,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è sempre disposta la rimozione forzata del veicolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sempre rimozione forzata?",
         "spiegazione": "Il segnale raffigurato è DIVIETO DI FERMATA: proibisce sia la fermata sia la sosta. Per questo quesito ministeriale la risposta è vera: al veicolo lasciato in violazione di questo divieto è associata la rimozione forzata.",
         "regola": "Divieto di fermata = niente fermata né sosta; il quiz lo associa alla rimozione.",
         "immagine": "14f58a5a7439d3fc15c1.jpg",
@@ -3427,6 +3862,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), se integrato con il pannello (B), vieta la fermata nel tratto precedente",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → fermata vietata nel tratto precedente?",
         "spiegazione": "Se il segnale di divieto di fermata (A) è accompagnato da un pannello integrativo (B) con una freccia che punta all'indietro (verso sinistra, se il segnale è sul lato destro della strada), significa che il divieto si applica nel tratto di strada che precede il segnale stesso.",
         "regola": "Freccia indietro = divieto prima.",
         "trabocchetti": ["nel tratto precedente"],
@@ -3435,6 +3871,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), se integrato con il pannello (B), indica la fine del divieto di fermata e di sosta",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → fine divieto di fermata e sosta?",
         "spiegazione": "Se il segnale di divieto di fermata (A) è integrato con un pannello (B) che ha una freccia che punta verso il basso, o un simbolo specifico di 'fine', indica che il divieto di fermata e di sosta termina in quel punto.",
         "regola": "Freccia giù = divieto finito.",
         "trabocchetti": ["fine del divieto"],
@@ -3443,6 +3880,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la fermata, ma consente la sosta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata vietata, sosta consentita?",
         "spiegazione": "FALSO. Il segnale con la 'X' rossa è il più restrittivo: vieta sia la fermata (anche brevissima) che la sosta (parcheggio). Se fosse consentita solo la sosta, il segnale avrebbe una sola barra diagonale rossa.",
         "regola": "X = no fermata, no sosta.",
         "trabocchetti": ["ma consente la sosta"],
@@ -3451,6 +3889,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non vale per gli autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non vale per gli autobus?",
         "spiegazione": "FALSO. I segnali stradali valgono per tutti i veicoli, inclusi gli autobus, a meno che non ci sia un pannello aggiuntivo che indichi un'eccezione specifica (es. 'eccetto autobus di linea').",
         "regola": "Vale per tutti, senza eccezioni scritte.",
         "trabocchetti": ["non vale per gli autobus"],
@@ -3459,6 +3898,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non vale per i taxi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non vale per i taxi?",
         "spiegazione": "FALSO. Come per gli autobus, anche i taxi devono rispettare il divieto di fermata e sosta, a meno che non ci sia un pannello integrativo che li escluda specificamente.",
         "regola": "Vale per tutti, senza eccezioni scritte.",
         "trabocchetti": ["non vale per i taxi"],
@@ -3467,6 +3907,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un preavviso di divieto di sosta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preavviso di divieto di sosta?",
         "spiegazione": "FALSO. Questo segnale non è un preavviso, ma il segnale che indica l'inizio effettivo del divieto. Inoltre, vieta sia la fermata che la sosta, non solo la sosta.",
         "regola": "È un divieto, non un avviso.",
         "trabocchetti": ["preavviso", "divieto di sosta"],
@@ -3475,6 +3916,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale solo nei giorni feriali, salvo diversa indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo nei feriali?",
         "spiegazione": "FALSO. Come già detto, i segnali stradali sono validi 24 ore su 24, tutti i giorni della settimana (feriali e festivi), a meno che non ci sia un pannello aggiuntivo che limiti la validità a certi giorni o orari.",
         "regola": "Senza pannelli, vale sempre.",
         "trabocchetti": ["solo nei giorni feriali"],
@@ -3483,6 +3925,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la fermata del veicolo per la salita e la discesa dei passeggeri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata per passeggeri consentita?",
         "spiegazione": "FALSO. Il divieto di fermata include proprio la possibilità di fermarsi anche per un breve tempo, come quello necessario per far salire o scendere i passeggeri. Questo segnale vieta anche questo tipo di fermata.",
         "regola": "X = neanche un secondo per scendere.",
         "immagine": "14f58a5a7439d3fc15c1.jpg",
@@ -3490,6 +3933,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la fine del divieto di sosta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine divieto di sosta?",
         "spiegazione": "FALSO. Questo segnale indica l'inizio di un divieto (di fermata e sosta), non la sua fine. La fine di un divieto è indicata da un segnale diverso (un cerchio bianco con una barra diagonale nera) o da un pannello integrativo con una freccia verso il basso.",
         "regola": "È un inizio, non una fine.",
         "trabocchetti": ["preannuncia la fine del divieto di sosta"],
@@ -3498,6 +3942,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di DIVIETO DI SOSTA TEMPORANEO",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → DIVIETO DI SOSTA TEMPORANEO?",
         "spiegazione": "Questo segnale indica un divieto di sosta che non è sempre valido, ma solo in certi giorni e orari. Per questo si dice che è 'temporaneo', cioè dura solo per un certo periodo di tempo.",
         "regola": "Giorni e ore specifici = divieto temporaneo.",
         "trabocchetti": ["TEMPORANEO"],
@@ -3506,6 +3951,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto nei tratti di strada ove vengono effettuate operazioni di pulizia meccanica delle strade",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → tratti con pulizia meccanica?",
         "spiegazione": "L'immagine del camioncino con le spazzole (una spazzatrice) ci dice che il divieto di sosta serve proprio per permettere a questi mezzi di pulire la strada senza ostacoli. Quindi, il segnale è messo dove si pulisce la strada.",
         "regola": "Spazzatrice = pulizia strada.",
         "trabocchetti": ["pulizia meccanica delle strade"],
@@ -3514,6 +3960,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta nei periodi in cui viene effettuata la pulizia meccanica della strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta vietata durante la pulizia?",
         "spiegazione": "Il segnale combina il divieto di sosta con l'indicazione dei giorni e delle ore (Lun-Ven, 21.00-4.00) e il simbolo della spazzatrice. Questo significa che non puoi parcheggiare proprio quando passano a pulire la strada.",
         "regola": "Divieto + orario + spazzatrice = no sosta per pulizia.",
         "trabocchetti": ["vieta la sosta"],
@@ -3522,6 +3969,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, nei centri urbani, segnala il divieto di sosta limitato ai giorni e alle ore indicate",
         "risposta": True,
+        "riassunto": "Segnale raffigurato in città → divieto nei giorni e ore indicati?",
         "spiegazione": "Sì, è vero. Questo tipo di segnale è molto comune nelle città (centri urbani) e serve a dire che non si può parcheggiare solo in certi momenti, quelli scritti sul cartello (giorni e ore), per esempio per la pulizia della strada.",
         "regola": "Limitato a giorni e ore.",
         "trabocchetti": ["limitato ai giorni e alle ore indicate"],
@@ -3530,6 +3978,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di macchine sgombraneve al lavoro sulla strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sgombraneve al lavoro?",
         "spiegazione": "Falso! Il veicolo disegnato sul cartello è una spazzatrice, che serve per pulire la strada. Le macchine sgombraneve sono diverse, hanno una grande pala davanti e servono per togliere la neve. Non sono la stessa cosa.",
         "regola": "Spazzatrice non è sgombraneve.",
         "trabocchetti": ["sgombraneve"],
@@ -3538,6 +3987,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato segnala che nelle ore indicate vige il DIVIETO DI SOSTA per i veicoli rappresentati in figura",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di sosta per i veicoli in figura?",
         "spiegazione": "Falso! Il divieto di sosta vale per TUTTI i veicoli, non solo per il camioncino della pulizia. Il camioncino è il motivo per cui c'è il divieto, non il veicolo a cui è vietato parcheggiare.",
         "regola": "Divieto per TUTTI, non solo per la spazzatrice.",
         "trabocchetti": ["per i veicoli rappresentati in figura"],
@@ -3546,6 +3996,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che nei giorni e nelle ore indicate è vietata la sosta ai mezzi di pulizia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta vietata ai mezzi di pulizia?",
         "spiegazione": "Falso! Questo segnale non vieta la sosta ai mezzi di pulizia. Al contrario, vieta la sosta agli altri veicoli proprio per permettere ai mezzi di pulizia di lavorare bene e senza ostacoli.",
         "regola": "Non vieta ai mezzi di pulizia, ma per i mezzi di pulizia.",
         "trabocchetti": ["ai mezzi di pulizia"],
@@ -3554,6 +4005,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica presenza di un deposito con probabile uscita di mezzi per pulizia meccanica delle strade",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → deposito con uscita mezzi di pulizia?",
         "spiegazione": "Falso! Questo segnale è un divieto di sosta. Non ci dice che c'è un deposito di mezzi o che stanno uscendo dei veicoli. Ci dice solo che non si può parcheggiare in quel tratto di strada in certi orari per la pulizia.",
         "regola": "Non è un deposito, è un divieto.",
         "trabocchetti": ["deposito", "uscita di mezzi"],
@@ -3562,6 +4014,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta ai veicoli al servizio di persone invalide munite dell'apposito contrassegno",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta per invalidi con contrassegno?",
         "spiegazione": "Questo segnale indica un divieto di sosta generale, ma il pannello sotto con la 'P' e il simbolo della persona invalida crea un'eccezione. Significa che solo i veicoli al servizio di persone invalide, che hanno il permesso speciale (il contrassegno), possono parcheggiare in questo posto.",
         "regola": "Divieto di sosta + simbolo disabile = parcheggio riservato ai disabili.",
         "trabocchetti": ["consente la sosta", "munite dell"],
@@ -3570,6 +4023,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "I segnali di prescrizione sono quelli che danno regole precise sulla circolazione, come divieti, obblighi o precedenze. Il segnale di divieto di sosta, anche se con un'eccezione, è una regola che 'prescrive' un comportamento, quindi rientra in questa categoria.",
         "regola": "Divieti e obblighi sono sempre 'di prescrizione'.",
         "trabocchetti": ["segnale di prescrizione"],
@@ -3578,6 +4032,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato rappresenta una specifica eccezione al divieto di sosta",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → eccezione al divieto di sosta?",
         "spiegazione": "Il segnale principale in alto è un divieto di sosta per tutti. Tuttavia, i pannelli aggiuntivi sotto (la 'P' e il simbolo della persona invalida) indicano che, nonostante il divieto generale, c'è una specifica eccezione per i veicoli delle persone invalide con il permesso.",
         "regola": "Divieto + pannello sotto = eccezione alla regola.",
         "trabocchetti": ["specifica eccezione"],
@@ -3586,6 +4041,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non consente la sosta a veicoli diversi da quelli al servizio di persone invalide",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta solo per veicoli di invalidi?",
         "spiegazione": "Questo segnale riserva il parcheggio esclusivamente ai veicoli delle persone invalide con il permesso. Di conseguenza, tutti gli altri veicoli, che non rientrano in questa categoria, non possono parcheggiare in quello spazio.",
         "regola": "Riservato ai disabili = vietato agli altri.",
         "immagine": "9b22a8eff90e6ca051d0.jpg",
@@ -3593,6 +4049,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta agli scuolabus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta per scuolabus?",
         "spiegazione": "Questo parcheggio è riservato solo ai veicoli al servizio di persone invalide che hanno il contrassegno. Non è un parcheggio generico e non è destinato agli scuolabus o ad altri tipi di veicoli.",
         "regola": "Simbolo disabile = solo disabili, nessun altro veicolo generico.",
         "trabocchetti": ["agli scuolabus"],
@@ -3601,6 +4058,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una corsia riservata ai veicoli al servizio di persone invalide",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia riservata agli invalidi?",
         "spiegazione": "Il segnale raffigurato riguarda la 'sosta' (cioè il parcheggio), non una 'corsia' (una parte della strada dove si guida). Indica un posto dove si può parcheggiare, non una corsia dedicata al transito dei veicoli.",
         "regola": "P = parcheggio, non corsia di transito.",
         "trabocchetti": ["corsia riservata"],
@@ -3609,6 +4067,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un divieto di sosta per i veicoli al servizio di invalidi, ed indica il più vicino parcheggio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto per invalidi con parcheggio vicino?",
         "spiegazione": "Il segnale non è un divieto di sosta per i veicoli al servizio di invalidi; al contrario, permette e riserva la sosta a questi veicoli. Inoltre, non indica il parcheggio 'più vicino', ma indica proprio quel preciso posto di parcheggio.",
         "regola": "Non vieta ai disabili, ma riserva. Non indica il più vicino, ma il qui.",
         "immagine": "9b22a8eff90e6ca051d0.jpg",
@@ -3616,6 +4075,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preavvisa una zona vietata al traffico regolare perché attrezzata per persone invalide",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → zona vietata al traffico per invalidi?",
         "spiegazione": "Questo segnale riguarda solo un posto specifico per parcheggiare. Non significa che tutta la zona è vietata al traffico normale. Le auto possono passare regolarmente, ma non possono parcheggiare in quello spazio se non sono veicoli di persone invalide.",
         "regola": "Solo sosta, non divieto di traffico per la zona.",
         "trabocchetti": ["zona vietata al traffico regolare"],
@@ -3624,6 +4084,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, nella strada ove è posto, consente il transito ai soli veicoli al servizio di persone invalide",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → transito solo per veicoli di invalidi?",
         "spiegazione": "Il segnale si riferisce alla 'sosta' (parcheggio), non al 'transito' (circolazione). Tutti i veicoli possono circolare sulla strada dove è posto il segnale; solo la possibilità di parcheggiare è limitata ai veicoli delle persone invalide.",
         "regola": "Sosta, non transito.",
         "trabocchetti": ["transito"],
@@ -3632,6 +4093,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta ai ciclomotori e ai motocicli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta per moto e ciclomotori?",
         "spiegazione": "Questo parcheggio è riservato solo ai veicoli al servizio di persone invalide con il contrassegno. Non è un parcheggio generico che consente la sosta a ciclomotori e motocicli, a meno che non siano essi stessi al servizio di una persona invalida e abbiano il permesso.",
         "regola": "Solo disabili, non altri veicoli generici.",
         "trabocchetti": ["ai ciclomotori e ai motocicli"],
@@ -3640,6 +4102,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta esponendo il tagliando emesso da un parchimetro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta col tagliando del parchimetro?",
         "spiegazione": "Per parcheggiare in questo spazio riservato, è necessario esporre il contrassegno speciale per persone invalide. Non è un parcheggio a pagamento e quindi non richiede l'esposizione di un tagliando emesso da un parchimetro.",
         "regola": "Disabili = permesso, non parchimetro.",
         "trabocchetti": ["tagliando emesso da un parchimetro"],
@@ -3648,6 +4111,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato rappresenta una regolazione della sosta",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → regolazione della sosta?",
         "spiegazione": "Il segnale mostra chiaramente due tipi di regole: quando puoi parcheggiare (simbolo P) e quando non puoi (simbolo di divieto di sosta). Questo significa che il segnale serve proprio a dare delle regole su come e quando si può lasciare il veicolo fermo.",
         "regola": "P e divieto = regole per parcheggiare.",
         "trabocchetti": ["regolazione della sosta"],
@@ -3656,6 +4120,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta dalle ore 9.00 alle 17.00",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta dalle 9 alle 17?",
         "spiegazione": "Sotto il simbolo 'P' (che significa parcheggio), puoi leggere l'orario '9.00 - 17.00'. Questo indica che in questo intervallo di tempo è permesso parcheggiare.",
         "regola": "P = permesso, controlla l'orario.",
         "trabocchetti": ["Consente la sosta"],
@@ -3664,6 +4129,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta dalle ore 17.00 alle 20.00",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta vietata dalle 17 alle 20?",
         "spiegazione": "Accanto al simbolo di divieto di sosta (il cerchio rosso con la barra diagonale), c'è l'orario '17.00 - 20.00'. Questo significa che in queste ore non è permesso parcheggiare.",
         "regola": "Cerchio rosso = vietato, controlla l'orario.",
         "trabocchetti": ["Vieta la sosta"],
@@ -3672,6 +4138,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta in alcune ore e la vieta in altre",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta in alcune ore sì, in altre no?",
         "spiegazione": "Il segnale è diviso in due parti: una con il simbolo 'P' e i suoi orari (permesso) e l'altra con il simbolo di divieto di sosta e i suoi orari (vietato). Questo dimostra che la sosta è permessa in alcuni momenti e vietata in altri.",
         "regola": "Due simboli, due regole: permesso e vietato.",
         "trabocchetti": ["in alcune ore e la vieta in altre"],
@@ -3680,6 +4147,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta dalle ore 20.00 alle ore 7.00",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta dalle 20 alle 7?",
         "spiegazione": "Sotto il simbolo 'P' (parcheggio), oltre all'orario '9.00 - 17.00', c'è anche l'orario '20.00 - 7.00'. Questo significa che anche durante la notte è permesso parcheggiare.",
         "regola": "P = permesso, anche di notte.",
         "immagine": "94dfe7d3d54fdb7310f4.jpg",
@@ -3687,6 +4155,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta dalle ore 7.00 alle ore 9.00",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta vietata dalle 7 alle 9?",
         "spiegazione": "Accanto al simbolo di divieto di sosta (il cerchio rosso con la barra), puoi vedere l'orario '7.00 - 9.00'. Questo indica che in queste ore del mattino non è permesso parcheggiare.",
         "regola": "Cerchio rosso = vietato, anche al mattino.",
         "immagine": "94dfe7d3d54fdb7310f4.jpg",
@@ -3694,6 +4163,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, nei centri abitati, consente la sosta dalle ore 20.00 alle 8.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato in città → sosta dalle 20 alle 8?",
         "spiegazione": "Il segnale indica che la sosta è consentita dalle ore 20.00 alle ore 7.00 (sotto il simbolo 'P'). La domanda dice 'fino alle 8.00', che è un'ora in più rispetto a quanto indicato dal segnale. Anche se solo un'ora, rende l'affermazione falsa.",
         "regola": "Orari precisi! 7.00 non è 8.00.",
         "trabocchetti": ["nei centri abitati"],
@@ -3702,6 +4172,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una zona destinata al parcheggio con impiego del disco orario",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio con disco orario?",
         "spiegazione": "Questo segnale indica solo gli orari in cui puoi parcheggiare o non puoi. Non c'è nessun simbolo o scritta aggiuntiva che ti dice di usare il disco orario. Per il disco orario ci sarebbe un simbolo specifico o una scritta chiara.",
         "regola": "Nessun disco orario, solo orari.",
         "trabocchetti": ["con impiego del disco orario"],
@@ -3710,6 +4181,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la fermata del veicolo tra le ore 17.00 e le 20.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata vietata dalle 17 alle 20?",
         "spiegazione": "Il simbolo in alto è il 'divieto di sosta' (un cerchio rosso con una sola barra diagonale). Questo significa che non puoi lasciare il veicolo fermo e allontanarti. Ma puoi fermarti per un breve tempo, ad esempio per far scendere o salire qualcuno. Il 'divieto di fermata' (che vieta anche le brevi fermate) ha due barre diagonali.",
         "regola": "Una barra = solo sosta vietata. Due barre = fermata e sosta vietate.",
         "trabocchetti": ["vieta la fermata"],
@@ -3718,6 +4190,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il parcheggio dalle ore 7.00 alle 9.00",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio dalle 7 alle 9?",
         "spiegazione": "Guarda bene il segnale: dalle 7.00 alle 9.00 c'è il simbolo di divieto di sosta (il cerchio rosso con la barra). Questo significa che in quelle ore non puoi parcheggiare, è vietato, non consentito.",
         "regola": "Cerchio rosso = vietato, non consentito.",
         "trabocchetti": ["consente il parcheggio"],
@@ -3726,6 +4199,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle ore in cui è vietata la sosta, il segnale raffigurato comporta la rimozione del veicolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → rimozione nelle ore di divieto?",
         "spiegazione": "Il segnale di divieto di sosta da solo non significa automaticamente che la tua auto verrà rimossa. La rimozione del veicolo avviene solo se c'è un pannello aggiuntivo che lo indica chiaramente, oppure se la sosta crea un pericolo o un intralcio grave. Questo segnale non lo specifica.",
         "regola": "Divieto sosta non è rimozione automatica. Cerca pannello aggiuntivo.",
         "trabocchetti": ["comporta la rimozione del veicolo"],
@@ -3734,6 +4208,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta nel luogo dove è posto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vieta la sosta dove è posto?",
         "spiegazione": "Il segnale di passo carrabile, con il simbolo di divieto di sosta (cerchio rosso con barra diagonale), indica chiaramente che non si può parcheggiare (fare sosta) in quel punto. Questo serve a lasciare libero l'accesso ai veicoli.",
         "regola": "Passo Carrabile = No Sosta.",
         "trabocchetti": ["vieta"],
@@ -3742,6 +4217,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la zona per l'accesso dei veicoli alle proprietà laterali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → accesso alle proprietà laterali?",
         "spiegazione": "Un 'passo carrabile' è proprio il punto della strada dove i veicoli possono entrare o uscire da una proprietà privata (come un garage, un cortile o un parcheggio privato).",
         "regola": "Carrabile = per il passaggio dei veicoli.",
         "immagine": "4d47d3685d93ae6099d7.jpg",
@@ -3749,6 +4225,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica lo sbocco di un passo carrabile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sbocco di passo carrabile?",
         "spiegazione": "Il passo carrabile è l'apertura o l'uscita (lo 'sbocco') che collega una proprietà privata alla strada pubblica, permettendo il transito dei veicoli.",
         "regola": "Sbocco = entrata/uscita veicoli.",
         "trabocchetti": ["sbocco"],
@@ -3757,6 +4234,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la fermata, purché il veicolo non sia di intralcio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermata consentita se non si intralcia?",
         "spiegazione": "Il segnale di passo carrabile vieta la 'sosta' (parcheggio prolungato), ma non la 'fermata'. La fermata è un'interruzione breve della marcia, ad esempio per far scendere o salire qualcuno, a condizione che il veicolo non crei problemi al traffico o all'accesso.",
         "regola": "No Sosta, Sì Fermata (se non blocchi).",
         "trabocchetti": ["fermata"],
@@ -3765,6 +4243,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, per essere valido, deve contenere l'indicazione dell'ente che ha concesso l'autorizzazione, il numero e l'anno del rilascio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → valido con ente, numero e anno?",
         "spiegazione": "Per essere un segnale ufficiale e valido, il cartello di passo carrabile deve mostrare chi lo ha autorizzato (ad esempio, il Comune), il numero dell'autorizzazione e l'anno in cui è stata rilasciata. Questo lo rende legale e riconoscibile.",
         "regola": "Passo Carrabile = Autorizzazione visibile.",
         "trabocchetti": ["per essere valido", "deve contenere"],
@@ -3773,6 +4252,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto soltanto nelle strade urbane",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo su strade urbane?",
         "spiegazione": "I passi carrabili non si trovano 'soltanto' nelle città. Possono esserci anche in strade fuori città, come strade provinciali o private che si collegano a strade pubbliche, dove c'è bisogno di un accesso per i veicoli.",
         "regola": "Attenzione a 'soltanto' o 'solo'!",
         "trabocchetti": ["soltanto"],
@@ -3781,6 +4261,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale solo nelle ore diurne",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo di giorno?",
         "spiegazione": "Il divieto di sosta davanti a un passo carrabile vale sempre, 24 ore su 24, sia di giorno che di notte. Non ci sono limiti di orario, a meno che non siano specificamente indicati sul cartello, cosa molto rara per i passi carrabili.",
         "regola": "Senza orari specifici = sempre valido.",
         "trabocchetti": ["solo"],
@@ -3789,6 +4270,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vale solo nelle ore notturne",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo di notte?",
         "spiegazione": "Come per la domanda precedente, il divieto di sosta davanti a un passo carrabile è valido a tutte le ore del giorno e della notte, non 'solo' di notte. L'accesso deve essere sempre libero.",
         "regola": "Senza orari specifici = sempre valido.",
         "trabocchetti": ["solo"],
@@ -3797,6 +4279,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta a particolari categorie di veicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta per particolari categorie?",
         "spiegazione": "Il divieto di sosta davanti a un passo carrabile è generale e vale per tutti i veicoli. Non ci sono 'particolari categorie' che possono parcheggiare lì, a meno che non siano veicoli di emergenza in servizio di emergenza (ma questa è un'eccezione generale, non concessa dal passo carrabile stesso).",
         "regola": "No Sosta = No Sosta per nessuno.",
         "immagine": "4d47d3685d93ae6099d7.jpg",
@@ -3804,6 +4287,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la sosta ai veicoli adibiti al pronto soccorso non in servizio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta per pronto soccorso non in servizio?",
         "spiegazione": "Un veicolo di pronto soccorso, quando 'non in servizio' (cioè non sta svolgendo un'emergenza), è considerato come un veicolo normale. Perciò, non può parcheggiare davanti a un passo carrabile, perché il divieto di sosta vale anche per loro in quel caso.",
         "regola": "Veicolo non in servizio = veicolo normale.",
         "trabocchetti": ["non in servizio", "in servizio"],
@@ -3812,6 +4296,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che nella direzione della freccia vi è un parcheggio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → parcheggio nella direzione della freccia?",
         "spiegazione": "Questo segnale, con la lettera 'P' su sfondo blu, indica sempre un parcheggio. La freccia mostra la direzione da seguire per raggiungerlo. Quindi, è vero che ti avvisa di un parcheggio nella direzione indicata.",
         "regola": "P + freccia = Parcheggio in quella direzione.",
         "trabocchetti": ["preannuncia"],
@@ -3820,6 +4305,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una zona di parcheggio procedendo nel senso della freccia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → zona di parcheggio seguendo la freccia?",
         "spiegazione": "Esatto! Il segnale con la 'P' è per il parcheggio. La freccia ti dice dove devi andare per trovare questa zona di parcheggio. È un segnale di indicazione.",
         "regola": "P + freccia = Parcheggio in quella direzione.",
         "trabocchetti": ["Zona di parcheggio", "parcheggio", "Procedendo nel senso della freccia"],
@@ -3828,6 +4314,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un parcheggio a 300 metri nel senso della freccia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → parcheggio a 300 m?",
         "spiegazione": "Sì, è vero. Il pannello bianco sotto il segnale principale, con scritto '300 m', indica la distanza. Quindi, il parcheggio si trova a 300 metri nella direzione mostrata dalla freccia.",
         "regola": "P + freccia + distanza = Parcheggio a quella distanza.",
         "trabocchetti": ["300 m"],
@@ -3836,6 +4323,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un posto di pronto soccorso nel senso della freccia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pronto soccorso?",
         "spiegazione": "No, questo è falso. Il segnale con la 'P' indica un parcheggio. Un posto di pronto soccorso ha un simbolo diverso, di solito una croce rossa o un simbolo specifico per l'ospedale.",
         "regola": "'P' non è Croce Rossa.",
         "trabocchetti": ["posto di pronto soccorso"],
@@ -3844,6 +4332,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un parcheggio vietato nel senso della freccia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio vietato?",
         "spiegazione": "Falso! Questo segnale indica un parcheggio disponibile, non un parcheggio vietato. Se fosse vietato, ci sarebbe un segnale di divieto (un cerchio rosso con una barra diagonale).",
         "regola": "'P' blu = Parcheggio permesso, non vietato.",
         "trabocchetti": ["vietato"],
@@ -3852,6 +4341,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che la sosta e il parcheggio sono vietati nel senso della freccia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta e parcheggio vietati?",
         "spiegazione": "Anche questa è falsa. Il segnale 'P' su sfondo blu serve per indicare un parcheggio, non per vietare la sosta o il parcheggio. I divieti hanno segnali specifici e diversi.",
         "regola": "'P' blu = Parcheggio permesso, non vietato.",
         "trabocchetti": ["vietati"],
@@ -3860,6 +4350,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia di procedere oltre perché il parcheggio è riservato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio riservato, proseguire?",
         "spiegazione": "Falso. Il segnale ti indica che c'è un parcheggio, non ti dice di 'procedere oltre'. E non dice che il parcheggio è 'riservato' in modo da non poterlo usare. Ti sta solo dando un'informazione utile.",
         "regola": "'P' blu = Parcheggio disponibile, non da ignorare.",
         "trabocchetti": ["procedere oltre", "parcheggio è riservato"],
@@ -3868,6 +4359,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ad autotreni ed autoarticolati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ad autotreni e autoarticolati?",
         "spiegazione": "Il segnale mostra un cerchio rosso, che significa 'divieto', e sotto ci sono due tipi di camion grandi: l'autotreno (un camion con un rimorchio) e l'autoarticolato (un camion con un semirimorchio). Quindi, il segnale dice che questi veicoli specifici non possono passare.",
         "regola": "Cerchio rosso + camion = Camion grandi non passano.",
         "trabocchetti": ["vieta il transito"],
@@ -3876,6 +4368,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato il transito alle categorie di veicoli rappresentati in figura",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato ai veicoli in figura?",
         "spiegazione": "Questo segnale è un divieto (lo capiamo dal cerchio rosso) e le immagini sotto mostrano esattamente quali veicoli non possono passare. Quindi, è vietato il transito proprio a quei veicoli che vedi disegnati.",
         "regola": "Il divieto è solo per chi è disegnato.",
         "immagine": "57a2bb06f27552eefcf6.jpg",
@@ -3883,6 +4376,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un divieto di transito per determinate categorie di veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → divieto per determinate categorie?",
         "spiegazione": "Sì, è un divieto (cerchio rosso) e non è per tutti i veicoli, ma solo per 'determinate categorie', cioè quelle che sono disegnate sotto (autotreni e autoarticolati).",
         "regola": "Divieto specifico, non generale.",
         "trabocchetti": ["determinate categorie"],
@@ -3891,6 +4385,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che i veicoli delle categorie rappresentate in figura non possono transitare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → categorie in figura non possono transitare?",
         "spiegazione": "Il cerchio rosso significa 'no', e le immagini sotto mostrano a chi è rivolto questo 'no'. Quindi, quei veicoli che vedi disegnati non possono passare.",
         "regola": "Disegnato = vietato.",
         "trabocchetti": ["non possono transitare"],
@@ -3899,6 +4394,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che possono transitare tutti i veicoli esclusi quelli delle categorie rappresentate in figura",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → tutti tranne le categorie in figura?",
         "spiegazione": "Se il divieto è solo per gli autotreni e gli autoarticolati (cioè i veicoli disegnati), significa che tutti gli altri veicoli (come auto, moto, furgoni più piccoli, ecc.) possono passare senza problemi.",
         "regola": "Solo i disegnati sono esclusi.",
         "immagine": "57a2bb06f27552eefcf6.jpg",
@@ -3906,6 +4402,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un itinerario obbligatorio per gli autoveicoli delle categorie rappresentate in figura",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → itinerario obbligatorio per i veicoli in figura?",
         "spiegazione": "Questo segnale è rosso e tondo, quindi è un divieto. Non è un segnale blu, che invece indica un obbligo o un itinerario da seguire. Questo segnale dice 'non possono passare qui', non 'devono andare qui'.",
         "regola": "Rosso = divieto, Blu = obbligo.",
         "trabocchetti": ["itinerario obbligatorio"],
@@ -3914,6 +4411,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un parcheggio per autocarri ed autotreni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parcheggio per autocarri?",
         "spiegazione": "Questo segnale non ha nulla a che fare con il parcheggio. È un divieto di transito, cioè non si può passare. I segnali di parcheggio sono diversi, di solito sono quadrati blu con una 'P' bianca.",
         "regola": "Divieto di transito, non parcheggio.",
         "trabocchetti": ["parcheggio"],
@@ -3922,6 +4420,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito di tutti i veicoli con esclusione di quelli rappresentati in figura",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a tutti tranne quelli in figura?",
         "spiegazione": "Questa frase dice esattamente il contrario di quello che significa il segnale! Il segnale vieta il transito *solo* ai veicoli disegnati, non a tutti gli altri. Gli altri veicoli possono passare.",
         "regola": "Il divieto è *per* i disegnati, non *esclusi* i disegnati.",
         "immagine": "57a2bb06f27552eefcf6.jpg",
@@ -3929,6 +4428,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la sosta ad autotreni ed autoarticolati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta vietata ad autotreni?",
         "spiegazione": "Questo segnale vieta di passare (transito), non di fermarsi o parcheggiare (sosta). I segnali di divieto di sosta sono diversi, hanno un cerchio rosso con una linea diagonale rossa su sfondo blu.",
         "regola": "Transito non sosta.",
         "trabocchetti": ["vieta la sosta"],
@@ -3937,6 +4437,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un divieto di sosta per autotreni e autoarticolati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di sosta per autotreni?",
         "spiegazione": "Come per la domanda precedente, questo segnale riguarda il passaggio (transito), non la possibilità di fermarsi o parcheggiare (sosta). Non è un divieto di sosta.",
         "regola": "Transito, non sosta.",
         "trabocchetti": ["divieto di sosta"],
@@ -3945,6 +4446,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato presegnala una strada riservata ai veicoli delle categorie rappresentate in figura",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada riservata ai veicoli in figura?",
         "spiegazione": "Questo segnale è un divieto (lo capiamo dal colore rosso), non indica una strada 'riservata' (che sarebbe un segnale blu). Dice che i veicoli disegnati non possono entrare, non che la strada è solo per loro.",
         "regola": "Rosso = divieto, non riserva.",
         "trabocchetti": ["strada riservata"],

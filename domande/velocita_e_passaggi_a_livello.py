@@ -1,7 +1,7 @@
 """Domande — Velocità e passaggi a livello.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Velocità e passaggi a livello"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in relazione alle caratteristiche del veicolo",
         "risposta": True,
+        "riassunto": "Regolare la velocità → caratteristiche del veicolo?",
         "spiegazione": "È vero. Ogni veicolo ha caratteristiche diverse (peso, dimensioni, potenza) che influenzano come si guida. Devi adattare la velocità al tipo di veicolo che stai guidando per essere sicuro.",
         "regola": "Ogni veicolo ha il suo passo.",
         "trabocchetti": ["caratteristiche del veicolo"],
@@ -17,6 +18,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in relazione allo stato del veicolo",
         "risposta": True,
+        "riassunto": "Regolare la velocità → stato del veicolo?",
         "spiegazione": "È vero. Se il tuo veicolo non è in perfette condizioni (es. freni un po' usurati, gomme vecchie), devi andare più piano per compensare e guidare in sicurezza.",
         "regola": "Veicolo in forma = guida sicura.",
         "trabocchetti": ["stato del veicolo"],
@@ -24,6 +26,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in relazione al carico del veicolo",
         "risposta": True,
+        "riassunto": "Regolare la velocità → carico?",
         "spiegazione": "È vero. Un veicolo molto carico è più pesante, frena più lentamente e si comporta in modo diverso. Per questo, devi ridurre la velocità.",
         "regola": "Più peso, meno fretta.",
         "trabocchetti": ["carico del veicolo"],
@@ -31,6 +34,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in relazione alle caratteristiche della strada",
         "risposta": True,
+        "riassunto": "Regolare la velocità → caratteristiche della strada?",
         "spiegazione": "È vero. Una strada di montagna piena di curve è diversa da un'autostrada dritta. Devi adattare la velocità al tipo di strada che stai percorrendo.",
         "regola": "Guarda la strada, adatta la velocità.",
         "trabocchetti": ["caratteristiche della strada"],
@@ -38,6 +42,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in relazione alle condizioni della strada",
         "risposta": True,
+        "riassunto": "Regolare la velocità → condizioni della strada?",
         "spiegazione": "È vero. Se la strada è bagnata, ghiacciata, con buche o ghiaia, l'aderenza diminuisce. Devi ridurre la velocità per non perdere il controllo.",
         "regola": "Strada brutta, velocità ridotta.",
         "trabocchetti": ["condizioni della strada"],
@@ -45,6 +50,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in relazione alle condizioni del traffico",
         "risposta": True,
+        "riassunto": "Regolare la velocità → traffico?",
         "spiegazione": "È vero. Se c'è molto traffico, code o incroci affollati, devi andare più piano per avere il tempo di reagire ed evitare incidenti.",
         "regola": "Traffico denso, piede leggero.",
         "trabocchetti": ["condizioni del traffico"],
@@ -52,6 +58,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in modo da non costituire pericolo di danno alle cose",
         "risposta": True,
+        "riassunto": "Regolare la velocità → non danneggiare le cose?",
         "spiegazione": "È vero. Guidare troppo veloce può farti perdere il controllo e danneggiare guardrail, segnaletica, altri veicoli o proprietà private. La sicurezza riguarda anche le cose.",
         "regola": "Rispetta tutto, anche le cose.",
         "trabocchetti": ["pericolo di danno alle cose"],
@@ -59,6 +66,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in modo da non costituire pericolo per le persone",
         "risposta": True,
+        "riassunto": "Regolare la velocità → non mettere in pericolo le persone?",
         "spiegazione": "È vero. La cosa più importante è la sicurezza delle persone. Devi guidare in modo da non mettere in pericolo pedoni, ciclisti o altri automobilisti.",
         "regola": "La vita è sacra, rallenta.",
         "trabocchetti": ["pericolo per le persone"],
@@ -66,6 +74,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in modo da non costituire disordine per la circolazione",
         "risposta": True,
+        "riassunto": "Regolare la velocità → non creare disordine?",
         "spiegazione": "È vero. Andare troppo veloce o troppo piano senza motivo può creare confusione, intralciare il flusso del traffico e causare situazioni pericolose. La velocità deve essere adeguata per mantenere l'ordine.",
         "regola": "Guida fluida, traffico sereno.",
         "trabocchetti": ["disordine per la circolazione"],
@@ -73,6 +82,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità entro i limiti massimi consentiti",
         "risposta": True,
+        "riassunto": "Regolare la velocità → entro i limiti massimi?",
         "spiegazione": "È vero. Ci sono sempre dei limiti massimi di velocità da rispettare. Non puoi mai superarli, ma spesso devi andare anche più piano se le condizioni lo richiedono.",
         "regola": "Limite massimo = tetto, non pavimento.",
         "trabocchetti": ["limiti massimi consentiti"],
@@ -80,6 +90,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in modo da rispettare le limitazioni imposte",
         "risposta": True,
+        "riassunto": "Regolare la velocità → rispettare le limitazioni?",
         "spiegazione": "È vero. Oltre ai limiti generali, ci possono essere limitazioni specifiche (es. cartelli di velocità ridotta per lavori in corso, zone scolastiche). Devi sempre rispettarle.",
         "regola": "Segui le regole, sempre.",
         "trabocchetti": ["limitazioni imposte"],
@@ -87,6 +98,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in relazione alle condizioni atmosferiche",
         "risposta": True,
+        "riassunto": "Regolare la velocità → condizioni atmosferiche?",
         "spiegazione": "È vero. Pioggia, nebbia, neve o forte vento riducono la visibilità e l'aderenza. In queste condizioni, devi ridurre molto la velocità per guidare in sicurezza.",
         "regola": "Brutto tempo, bassa velocità.",
         "trabocchetti": ["condizioni atmosferiche"],
@@ -94,6 +106,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità tenendo conto esclusivamente dei limiti massimi",
         "risposta": False,
+        "riassunto": "Regolare la velocità → solo secondo i limiti massimi?",
         "spiegazione": "È falso. Non basta guardare solo il limite massimo. Devi anche considerare tutti gli altri fattori come il traffico, le condizioni della strada, il meteo, ecc. La parola 'esclusivamente' rende la frase falsa.",
         "regola": "Non solo il limite, ma tutto il contesto.",
         "trabocchetti": ["esclusivamente"],
@@ -101,6 +114,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in relazione alla propria abilità alla guida",
         "risposta": False,
+        "riassunto": "Regolare la velocità → propria abilità?",
         "spiegazione": "È falso. La velocità si regola in base a fattori oggettivi (strada, traffico, meteo), non in base a quanto tu pensi di essere bravo a guidare. Anche un guidatore esperto deve rispettare le condizioni esterne.",
         "regola": "Non la tua bravura, ma la sicurezza generale.",
         "trabocchetti": ["propria abilità alla guida"],
@@ -108,6 +122,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in relazione alla marca dei pneumatici",
         "risposta": False,
+        "riassunto": "Regolare la velocità → marca degli pneumatici?",
         "spiegazione": "È falso. La marca dei pneumatici non è un fattore rilevante per regolare la velocità. Ciò che conta è lo stato generale dei pneumatici (usura, pressione), non la marca specifica.",
         "regola": "Non la marca, ma lo stato.",
         "trabocchetti": ["marca dei pneumatici"],
@@ -115,6 +130,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve regolare la velocità in relazione alla distanza del luogo da raggiungere",
         "risposta": False,
+        "riassunto": "Regolare la velocità → distanza da percorrere?",
         "spiegazione": "È falso. La velocità non dipende da quanto è lontano il luogo che devi raggiungere. Non puoi andare più veloce solo perché sei in ritardo o hai molta strada da fare. La velocità si regola per la sicurezza del momento.",
         "regola": "Non la fretta, ma la sicurezza.",
         "trabocchetti": ["distanza del luogo da raggiungere"],
@@ -122,6 +138,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve sempre mantenere il controllo del veicolo",
         "risposta": True,
+        "riassunto": "Conducente → sempre il controllo del veicolo?",
         "spiegazione": "È fondamentale per la sicurezza tua e degli altri utenti della strada. Se perdi il controllo del veicolo, puoi causare incidenti gravi.",
         "regola": "Controllo = Sicurezza.",
         "trabocchetti": ["sempre"],
@@ -129,6 +146,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve sempre essere in grado di arrestare il veicolo in condizioni di sicurezza",
         "risposta": True,
+        "riassunto": "Conducente → sempre in grado di fermarsi in sicurezza?",
         "spiegazione": "Devi guidare a una velocità e in un modo che ti permetta di fermare la macchina senza pericoli, per esempio se un ostacolo appare all'improvviso o se un pedone attraversa.",
         "regola": "Pronto a fermarti, sempre.",
         "trabocchetti": ["sempre"],
@@ -136,6 +154,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve poter arrestare il veicolo nel campo di visibilità e in condizioni di sicurezza.",
         "risposta": True,
+        "riassunto": "Conducente → fermarsi entro il campo di visibilità?",
         "spiegazione": "Questo significa che devi guidare a una velocità che ti permetta di vedere un pericolo (nel tuo 'campo di visibilità') e di fermarti prima di raggiungerlo, in modo sicuro.",
         "regola": "Vedi e fermi.",
         "trabocchetti": ["campo di visibilità"],
@@ -143,6 +162,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità nelle curve",
         "risposta": True,
+        "riassunto": "Regolare la velocità obbligatorio → curve?",
         "spiegazione": "Nelle curve, se vai troppo veloce, rischi di perdere il controllo del veicolo e di uscire di strada. Rallentare ti aiuta a mantenere la traiettoria.",
         "regola": "Curva = rallenta.",
         "trabocchetti": ["Obbligatorio regolare"],
@@ -150,6 +170,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità nei tratti di strada a visibilità limitata",
         "risposta": True,
+        "riassunto": "Regolare la velocità → visibilità limitata?",
         "spiegazione": "Se non vedi bene la strada davanti a te (per esempio a causa di nebbia, pioggia forte, o una curva cieca), devi andare più piano per avere il tempo di reagire a un pericolo improvviso.",
         "regola": "Se non vedi, rallenta.",
         "trabocchetti": ["Visibilità limitata"],
@@ -157,6 +178,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità in prossimità delle intersezioni",
         "risposta": True,
+        "riassunto": "Regolare la velocità → incroci?",
         "spiegazione": "Le intersezioni (gli incroci) sono punti pericolosi dove altri veicoli o pedoni possono arrivare da diverse direzioni. Rallentare ti dà il tempo per controllare e reagire in sicurezza.",
         "regola": "Incrocio = attenzione.",
         "trabocchetti": ["Intersezioni"],
@@ -164,6 +186,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità in prossimità delle scuole",
         "risposta": True,
+        "riassunto": "Regolare la velocità → scuole?",
         "spiegazione": "Vicino alle scuole ci sono bambini che potrebbero attraversare la strada all'improvviso o giocare. Rallentare è fondamentale per la loro sicurezza e per prevenire incidenti.",
         "regola": "Bambini = piano.",
         "trabocchetti": ["scuole"],
@@ -171,6 +194,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità in prossimità di luoghi frequentati dai bambini",
         "risposta": True,
+        "riassunto": "Regolare la velocità → luoghi con bambini?",
         "spiegazione": "Come per le scuole, in luoghi come parchi, giardini pubblici o aree gioco, i bambini possono essere imprevedibili. Rallentare previene incidenti e protegge i più piccoli.",
         "regola": "Bambini = piano.",
         "trabocchetti": ["Luoghi frequentati dai bambini"],
@@ -178,6 +202,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità nelle forti discese",
         "risposta": True,
+        "riassunto": "Regolare la velocità → forti discese?",
         "spiegazione": "In una forte discesa, la velocità del veicolo aumenta facilmente e diventa più difficile da controllare. Rallentare ti aiuta a mantenere il controllo e a frenare in modo più efficace.",
         "regola": "Discesa = frena.",
         "trabocchetti": ["Forti discese"],
@@ -185,6 +210,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità nei passaggi stretti",
         "risposta": True,
+        "riassunto": "Regolare la velocità → passaggi stretti?",
         "spiegazione": "In un passaggio stretto c'è meno spazio per manovrare e per incrociare altri veicoli o pedoni. Rallentare evita collisioni e facilita il passaggio.",
         "regola": "Stretto = piano.",
         "trabocchetti": ["Passaggi stretti"],
@@ -192,6 +218,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità nei passaggi ingombrati",
         "risposta": True,
+        "riassunto": "Regolare la velocità → passaggi ingombrati?",
         "spiegazione": "Se la strada è ingombrata (per esempio da veicoli parcheggiati male, lavori in corso, o altri ostacoli), devi andare piano per evitare di urtare qualcosa o qualcuno e per avere il tempo di reagire.",
         "regola": "Ingombro = attenzione.",
         "trabocchetti": ["Passaggi ingombrati"],
@@ -199,6 +226,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità nelle ore notturne",
         "risposta": True,
+        "riassunto": "Regolare la velocità → di notte?",
         "spiegazione": "Di notte la visibilità è molto ridotta, anche con i fari accesi. Rallentare ti permette di vedere meglio i pericoli e di avere più tempo per reagire a eventuali ostacoli o altri veicoli.",
         "regola": "Notte = piano.",
         "trabocchetti": ["Ore notturne"],
@@ -206,6 +234,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità nell'attraversamento di abitati",
         "risposta": True,
+        "riassunto": "Regolare la velocità → attraversando abitati?",
         "spiegazione": "Nei centri abitati ci sono più pedoni, ciclisti, veicoli parcheggiati, incroci e uscite private. Rallentare è essenziale per la sicurezza di tutti e per prevenire incidenti.",
         "regola": "Città = piano.",
         "trabocchetti": ["Attraversamento di abitati"],
@@ -213,6 +242,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità nei tratti di strada fiancheggiati da edifici",
         "risposta": True,
+        "riassunto": "Regolare la velocità → tratti con edifici?",
         "spiegazione": "Gli edifici ai lati della strada possono nascondere pedoni che escono all'improvviso, veicoli che si immettono da passi carrabili o incroci. Rallentare ti dà più tempo per vederli e reagire.",
         "regola": "Edifici = occhio.",
         "trabocchetti": ["Fiancheggiati da edifici"],
@@ -220,6 +250,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità quando sia difficoltoso l'incrocio con altri veicoli",
         "risposta": True,
+        "riassunto": "Ridurre la velocità → incrocio difficile con altri veicoli?",
         "spiegazione": "Se c'è poco spazio, la visibilità è scarsa o la strada è stretta, incrociare un altro veicolo può essere difficile e pericoloso. Rallentare è obbligatorio per evitare una collisione.",
         "regola": "Incrocio difficile = rallenta.",
         "trabocchetti": ["Difficoltoso l"],
@@ -227,6 +258,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità in caso di nebbia o foschia",
         "risposta": True,
+        "riassunto": "Regolare la velocità → nebbia o foschia?",
         "spiegazione": "Nebbia e foschia riducono drasticamente la visibilità, rendendo difficile vedere la strada, gli altri veicoli e gli ostacoli. Rallentare è vitale per la tua sicurezza e quella degli altri.",
         "regola": "Nebbia = piano.",
         "trabocchetti": ["Nebbia o foschia"],
@@ -234,6 +266,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità nei tratti di strada coperti da neve",
         "risposta": True,
+        "riassunto": "Regolare la velocità → neve?",
         "spiegazione": "La neve rende la strada molto scivolosa e allunga gli spazi di frenata. Rallentare è fondamentale per mantenere il controllo del veicolo e prevenire sbandamenti.",
         "regola": "Neve = piano.",
         "trabocchetti": ["Coperti da neve"],
@@ -241,6 +274,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità nei tratti di strada coperti da ghiaccio",
         "risposta": True,
+        "riassunto": "Regolare la velocità → ghiaccio?",
         "spiegazione": "Il ghiaccio è estremamente scivoloso e pericoloso, rendendo quasi impossibile frenare o mantenere il controllo. Rallentare al massimo e guidare con estrema cautela è obbligatorio.",
         "regola": "Ghiaccio = piano piano.",
         "trabocchetti": ["Coperti da ghiaccio"],
@@ -248,6 +282,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità su strada a senso unico",
         "risposta": False,
+        "riassunto": "Ridurre la velocità obbligatorio → su senso unico?",
         "spiegazione": "Su una strada a senso unico non hai il problema di incrociare veicoli dalla direzione opposta, quindi questa condizione di per sé non impone di ridurre la velocità. Devi comunque rispettare i limiti e le altre condizioni di sicurezza.",
         "regola": "Senso unico non è pericolo.",
         "trabocchetti": ["su strada a senso unico"],
@@ -255,6 +290,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità fuori dai centri abitati",
         "risposta": False,
+        "riassunto": "Ridurre la velocità obbligatorio → fuori dai centri abitati?",
         "spiegazione": "Fuori dai centri abitati i limiti di velocità sono generalmente più alti. Non è obbligatorio ridurre la velocità solo perché sei fuori città, a meno che non ci siano altre condizioni (curve, scarsa visibilità, ecc.) che lo richiedano.",
         "regola": "Fuori città non è sempre lento.",
         "trabocchetti": ["fuori dai centri abitati"],
@@ -262,6 +298,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità nelle strade provinciali",
         "risposta": False,
+        "riassunto": "Ridurre la velocità obbligatorio → strade provinciali?",
         "spiegazione": "Le strade provinciali hanno limiti di velocità specifici, ma non è obbligatorio ridurre la velocità solo perché si tratta di una strada provinciale. Devi rispettare i limiti e le condizioni della strada, come su qualsiasi altra via.",
         "regola": "Provinciale non è sempre lento.",
         "trabocchetti": ["nelle strade provinciali"],
@@ -269,6 +306,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità nelle ore diurne ma non in quelle notturne",
         "risposta": False,
+        "riassunto": "Regolare la velocità → di giorno ma non di notte?",
         "spiegazione": "È obbligatorio regolare la velocità sia di giorno che di notte. Anzi, di notte la visibilità è minore, quindi spesso è ancora più importante rallentare per la sicurezza.",
         "regola": "Giorno e notte, sempre attento.",
         "trabocchetti": ["ma non in quelle notturne"],
@@ -276,6 +314,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità nei rettilinei e non in curva",
         "risposta": False,
+        "riassunto": "Regolare la velocità → rettilinei e non curve?",
         "spiegazione": "È vero il contrario! Nelle curve è quasi sempre necessario regolare la velocità per non perdere il controllo, mentre nei rettilinei, se la visibilità è buona e non ci sono pericoli, si può mantenere una velocità più alta (sempre nei limiti).",
         "regola": "Curva sì, rettilineo no (per riduzione obbligatoria).",
         "trabocchetti": ["e non in curva"],
@@ -283,6 +322,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità nelle strade in salita",
         "risposta": False,
+        "riassunto": "Ridurre la velocità obbligatorio → in salita?",
         "spiegazione": "In salita, il veicolo tende a perdere velocità, non ad aumentarla. Non è una condizione che di per sé impone una riduzione della velocità; a volte, anzi, si deve accelerare per mantenere la marcia.",
         "regola": "Salita non è rallentare.",
         "trabocchetti": ["nelle strade in salita"],
@@ -290,6 +330,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità in presenza di qualunque segnale stradale",
         "risposta": False,
+        "riassunto": "Ridurre la velocità obbligatorio → con qualunque segnale?",
         "spiegazione": "Non tutti i segnali stradali impongono di ridurre la velocità (es. segnali di indicazione, di preavviso, di direzione). Devi ridurre la velocità solo in presenza di segnali che lo richiedono (es. limite di velocità, pericolo).",
         "regola": "Non ogni segnale è rallenta.",
         "trabocchetti": ["qualunque"],
@@ -297,6 +338,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità solo in presenza degli agenti del traffico",
         "risposta": False,
+        "riassunto": "Ridurre la velocità → solo con agenti?",
         "spiegazione": "Devi ridurre la velocità in molte situazioni di pericolo (curve, scarsa visibilità, presenza di bambini, ecc.), non solo quando ci sono gli agenti del traffico. La sicurezza è una tua responsabilità costante.",
         "regola": "Non solo vigile, ma sempre.",
         "trabocchetti": ["solo"],
@@ -304,6 +346,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio regolare la velocità sulle strade extraurbane secondarie, ma non in quelle principali",
         "risposta": False,
+        "riassunto": "Regolare la velocità → secondarie sì, principali no?",
         "spiegazione": "È obbligatorio regolare la velocità su *tutte* le strade, incluse le extraurbane principali, dove spesso si raggiungono velocità più elevate e quindi è ancora più importante essere prudenti e attenti.",
         "regola": "Tutte le strade richiedono attenzione.",
         "trabocchetti": ["ma non in quelle principali"],
@@ -311,6 +354,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità solo se l'autovettura è scarica",
         "risposta": False,
+        "riassunto": "Ridurre la velocità → solo se l'auto è scarica?",
         "spiegazione": "È vero il contrario! Se l'autovettura è carica, il peso maggiore aumenta gli spazi di frenata e rende il veicolo più difficile da controllare, quindi è *ancora più* importante ridurre la velocità.",
         "regola": "Carico = più piano.",
         "trabocchetti": ["solo se l"],
@@ -318,12 +362,14 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità in prossimità degli autovelox",
         "risposta": False,
+        "riassunto": "Ridurre la velocità obbligatorio → vicino agli autovelox?",
         "spiegazione": "Devi rispettare i limiti di velocità sempre, non solo in prossimità degli autovelox. Rallentare solo per l'autovelox non è un comportamento corretto e non garantisce la sicurezza stradale.",
         "regola": "Limite sempre, non solo autovelox.",
     },
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi quando riesce malagevole l'incrocio con altri veicoli",
         "risposta": True,
+        "riassunto": "Ridurre e se serve fermarsi → incrocio malagevole con altri veicoli?",
         "spiegazione": "Se incontri difficoltà nell'incrociare un altro veicolo, per la sicurezza di tutti, è obbligatorio rallentare e, se necessario, fermarsi per evitare pericoli.",
         "regola": "Difficoltà = Rallenta o Ferma.",
         "trabocchetti": ["malagevole", "All"],
@@ -331,6 +377,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi in prossimità degli attraversamenti pedonali",
         "risposta": True,
+        "riassunto": "Ridurre e se serve fermarsi → vicino alle strisce pedonali?",
         "spiegazione": "Vicino agli attraversamenti pedonali, i pedoni hanno la precedenza. Devi essere pronto a fermarti per farli passare in sicurezza.",
         "regola": "Pedoni = Attenzione massima.",
         "trabocchetti": ["In prossimità"],
@@ -338,6 +385,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi quando i pedoni, che sono sul percorso, tardano a scansarsi",
         "risposta": True,
+        "riassunto": "Ridurre e se serve fermarsi → pedoni che tardano a scansarsi?",
         "spiegazione": "Se un pedone sulla strada non si sposta subito, devi rallentare o fermarti per non metterlo in pericolo e dargli il tempo di reagire.",
         "regola": "Pedone lento = Tu fermo.",
         "trabocchetti": ["Tardano a scansarsi"],
@@ -345,6 +393,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi quando i pedoni, che sono sul percorso, danno segni d'incertezza",
         "risposta": True,
+        "riassunto": "Ridurre e se serve fermarsi → pedoni incerti?",
         "spiegazione": "Se un pedone sembra indeciso su cosa fare (ad esempio, se attraversare o meno), devi rallentare o fermarti per prevenire incidenti, perché potrebbe fare un movimento improvviso.",
         "regola": "Pedone incerto = Tu prudente.",
         "trabocchetti": ["Segni d"],
@@ -352,6 +401,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi quando gli animali che si trovano sulla strada danno segni di spavento",
         "risposta": True,
+        "riassunto": "Ridurre e se serve fermarsi → animali spaventati?",
         "spiegazione": "Gli animali spaventati possono avere reazioni imprevedibili e pericolose. Per la loro sicurezza e la tua, è obbligatorio rallentare o fermarsi.",
         "regola": "Animale spaventato = Rallenta/Ferma.",
         "trabocchetti": ["Segni di spavento"],
@@ -359,6 +409,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi quando si rimane abbagliati",
         "risposta": True,
+        "riassunto": "Ridurre e se serve fermarsi → se abbagliati?",
         "spiegazione": "Quando la luce (del sole o dei fari) ti impedisce di vedere bene la strada, è obbligatorio rallentare o fermarsi per evitare di causare un incidente.",
         "regola": "Non vedi = Non vai.",
         "trabocchetti": ["Abbagliati"],
@@ -366,18 +417,21 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi in corrispondenza dei passi carrabili",
         "risposta": False,
+        "riassunto": "Ridurre e se serve fermarsi → a ogni passo carrabile?",
         "spiegazione": "Non è obbligatorio fermarsi o rallentare sempre in corrispondenza di un passo carrabile. Devi fare attenzione e, se necessario, rallentare o fermarti solo se vedi un veicolo che sta per uscire o entrare.",
         "regola": "Passo carrabile = Attenzione, non obbligo di stop.",
     },
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi in prossimità delle fermate degli autobus",
         "risposta": False,
+        "riassunto": "Ridurre e se serve fermarsi → a ogni fermata autobus?",
         "spiegazione": "Non è obbligatorio fermarsi o rallentare sempre in prossimità delle fermate degli autobus. Devi fare attenzione se ci sono persone che scendono o salgono e che potrebbero attraversare la strada.",
         "regola": "Fermata bus = Attenzione, non obbligo di stop.",
     },
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi ogni volta che si percorre un cavalcavia",
         "risposta": False,
+        "riassunto": "Ridurre e se serve fermarsi → su ogni cavalcavia?",
         "spiegazione": "Non è obbligatorio rallentare o fermarsi ogni volta che si percorre un cavalcavia. Devi farlo solo se le condizioni della strada o del traffico lo richiedono (ad esempio, una curva stretta o scarsa visibilità).",
         "regola": "Cavalcavia = Non sempre stop.",
         "trabocchetti": ["ogni volta"],
@@ -385,12 +439,14 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi in prossimità degli autovelox",
         "risposta": False,
+        "riassunto": "Ridurre e se serve fermarsi → autovelox?",
         "spiegazione": "Non è obbligatorio fermarsi o rallentare per un autovelox. Devi semplicemente rispettare il limite di velocità. Frenare bruscamente per un autovelox può essere pericoloso per chi ti segue.",
         "regola": "Autovelox = Rispetta limite, non frenare.",
     },
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi in corrispondenza di qualunque segnale stradale",
         "risposta": False,
+        "riassunto": "Ridurre e se serve fermarsi → con qualunque segnale?",
         "spiegazione": "Non è obbligatorio fermarsi o rallentare per ogni segnale stradale. Devi farlo solo per i segnali che lo richiedono (come lo STOP o il Dare Precedenza) o se la situazione lo impone.",
         "regola": "Segnale = Leggi, non frenare sempre.",
         "trabocchetti": ["qualunque segnale stradale"],
@@ -398,6 +454,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi all'uscita dei centri abitati",
         "risposta": False,
+        "riassunto": "Ridurre e se serve fermarsi → all'uscita dai centri abitati?",
         "spiegazione": "All'uscita dei centri abitati, di solito, la velocità massima consentita aumenta, non diminuisce. Non c'è un obbligo generale di fermarsi o rallentare, a meno che non ci siano altre indicazioni o pericoli.",
         "regola": "Uscita centro = Aumenta limite, non fermarti.",
         "trabocchetti": ["all"],
@@ -405,6 +462,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un'autovettura sulle autostrade è ordinariamente di 130 km/h",
         "risposta": True,
+        "riassunto": "Autovettura in autostrada → 130 km/h?",
         "spiegazione": "È vero. Per un'autovettura, il limite di velocità normale sulle autostrade è di 130 km/h, se non ci sono condizioni particolari o segnali diversi.",
         "regola": "Autostrada: 130 km/h (normale).",
         "trabocchetti": ["ordinariamente"],
@@ -412,6 +470,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un'autovettura sulle strade extraurbane principali è ordinariamente di 110 km/h",
         "risposta": True,
+        "riassunto": "Autovettura su extraurbana principale → 110 km/h?",
         "spiegazione": "È vero. Sulle strade extraurbane principali, il limite di velocità normale per un'autovettura è di 110 km/h.",
         "regola": "Extraurbana Principale: 110 km/h (normale).",
         "trabocchetti": ["ordinariamente"],
@@ -419,12 +478,14 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un'autovettura sulle strade extraurbane secondarie è di 90 km/h",
         "risposta": True,
+        "riassunto": "Autovettura su extraurbana secondaria → 90 km/h?",
         "spiegazione": "È vero. Sulle strade extraurbane secondarie, il limite di velocità per un'autovettura è di 90 km/h. Questo limite è fisso, non 'ordinario'.",
         "regola": "Extraurbana Secondaria: 90 km/h.",
     },
     {
         "domanda": "Il limite massimo di velocità per un'autovettura nei centri abitati è ordinariamente di 50 km/h",
         "risposta": True,
+        "riassunto": "Autovettura in città → 50 km/h?",
         "spiegazione": "È vero. Nei centri abitati (cioè in città), il limite di velocità normale per un'autovettura è di 50 km/h.",
         "regola": "Centri Abitati: 50 km/h (normale).",
         "trabocchetti": ["Ordinariamente"],
@@ -432,6 +493,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un autoveicolo fino a 3,5 tonnellate sulle autostrade è ordinariamente di 130 km/h",
         "risposta": True,
+        "riassunto": "Autoveicolo fino a 3,5 t in autostrada → 130 km/h?",
         "spiegazione": "È vero. Un autoveicolo con massa complessiva fino a 3,5 tonnellate (come un'autovettura o un furgone leggero) segue gli stessi limiti di velocità delle autovetture. Quindi, 130 km/h in autostrada in condizioni normali.",
         "regola": "Veicolo leggero (fino a 3.5t) = stessi limiti dell'auto.",
         "trabocchetti": ["fino a 3,5 tonnellate", "Ordinariamente"],
@@ -439,6 +501,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un autocarro fino a 3,5 tonnellate sulle strade extraurbane principali è di 110 km/h",
         "risposta": True,
+        "riassunto": "Autocarro fino a 3,5 t su extraurbana principale → 110 km/h?",
         "spiegazione": "È vero. Anche un autocarro con massa complessiva fino a 3,5 tonnellate ha gli stessi limiti di velocità di un'autovettura. Quindi, 110 km/h sulle strade extraurbane principali.",
         "regola": "Autocarro leggero (fino a 3.5t) = stessi limiti dell'auto.",
         "trabocchetti": ["fino a 3,5 tonnellate"],
@@ -446,6 +509,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un autoveicolo fino a 3,5 tonnellate sulle strade extraurbane secondarie è di 90 km/h",
         "risposta": True,
+        "riassunto": "Autoveicolo fino a 3,5 t su extraurbana secondaria → 90 km/h?",
         "spiegazione": "È vero. Un autoveicolo con massa complessiva fino a 3,5 tonnellate ha il limite di 90 km/h sulle strade extraurbane secondarie, proprio come un'autovettura.",
         "regola": "Veicolo leggero (fino a 3.5t) = 90 km/h su secondarie.",
         "trabocchetti": ["fino a 3,5 tonnellate"],
@@ -453,6 +517,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un motociclo nei centri abitati, è ordinariamente di 50 km/h",
         "risposta": True,
+        "riassunto": "Motociclo in città → 50 km/h?",
         "spiegazione": "È vero. I motocicli seguono gli stessi limiti di velocità delle autovetture. Quindi, nei centri abitati, il limite normale è 50 km/h.",
         "regola": "Moto = Auto (stessi limiti).",
         "trabocchetti": ["Ordinariamente"],
@@ -460,6 +525,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un'autovettura, in presenza di apposito segnale in tratti di autostrade con particolari caratteristiche, è di 150 km/h",
         "risposta": True,
+        "riassunto": "Autovettura con segnale in autostrade particolari → 150 km/h?",
         "spiegazione": "È vero. In Italia, su alcuni tratti di autostrada con caratteristiche speciali (ad esempio, tre corsie più corsia di emergenza) e con un segnale specifico, il limite può essere alzato a 150 km/h. Non è il limite normale per tutte le autostrade.",
         "regola": "150 km/h in autostrada: solo con segnale speciale e condizioni particolari.",
         "trabocchetti": ["in presenza di apposito segnale", "particolari caratteristiche"],
@@ -467,6 +533,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un'autovettura in presenza di segnali su una strada urbana con particolari caratteristiche è di 70 km/h",
         "risposta": True,
+        "riassunto": "Autovettura con segnali su strada urbana particolare → 70 km/h?",
         "spiegazione": "È vero. Anche se il limite normale in città è 50 km/h, su alcune strade urbane con caratteristiche particolari (ad esempio, ampie e senza incroci a raso) e con un segnale specifico, il limite può essere alzato a 70 km/h.",
         "regola": "70 km/h in città: solo con segnale speciale e condizioni particolari.",
         "trabocchetti": ["in presenza di segnali", "particolari caratteristiche"],
@@ -474,6 +541,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un'autovettura in caso di precipitazioni atmosferiche sulle autostrade è di 110 km/h",
         "risposta": True,
+        "riassunto": "Autovettura con pioggia in autostrada → 110 km/h?",
         "spiegazione": "È vero. Quando piove o nevica, per motivi di sicurezza, il limite di velocità per le autovetture sulle autostrade si riduce da 130 km/h a 110 km/h.",
         "regola": "Pioggia/Neve in Autostrada: -20 km/h (da 130 a 110).",
         "trabocchetti": ["in caso di precipitazioni atmosferiche"],
@@ -481,6 +549,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un'autovettura in caso di precipitazioni atmosferiche su strade extraurbane principali è di 90 km/h",
         "risposta": True,
+        "riassunto": "Autovettura con pioggia su extraurbana principale → 90 km/h?",
         "spiegazione": "È vero. Anche sulle strade extraurbane principali, in caso di pioggia o neve, il limite di velocità per le autovetture si riduce da 110 km/h a 90 km/h.",
         "regola": "Pioggia/Neve su Extraurbana Principale: -20 km/h (da 110 a 90).",
         "trabocchetti": ["in caso di precipitazioni atmosferiche"],
@@ -488,12 +557,14 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per i ciclomotori è di 45 km/h",
         "risposta": True,
+        "riassunto": "Ciclomotori → 45 km/h?",
         "spiegazione": "È vero. I ciclomotori (veicoli a due o tre ruote con motore di piccola cilindrata) non possono mai superare i 45 km/h.",
         "regola": "Ciclomotore: massimo 45 km/h.",
     },
     {
         "domanda": "Il limite massimo di velocità per i quadricicli non leggeri, fuori dai centri urbani, è di 80 km/h",
         "risposta": True,
+        "riassunto": "Quadricicli non leggeri fuori città → 80 km/h?",
         "spiegazione": "È vero. I quadricicli non leggeri (quelli più potenti, diversi dai ciclomotori) hanno un limite massimo di velocità di 80 km/h quando si trovano fuori dai centri urbani.",
         "regola": "Quadriciclo non leggero (fuori città): 80 km/h.",
         "trabocchetti": ["non leggeri", "fuori dai centri urbani"],
@@ -501,6 +572,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un'autovettura su una qualsiasi autostrada è di 150 km/h",
         "risposta": False,
+        "riassunto": "Autovettura su qualsiasi autostrada → 150 km/h?",
         "spiegazione": "È falso. Il limite normale per un'autovettura in autostrada è 130 km/h. Il limite di 150 km/h è un'eccezione, possibile solo su tratti specifici e ben segnalati, non su 'qualsiasi' autostrada.",
         "regola": "150 km/h non è il limite generale in autostrada.",
         "trabocchetti": ["qualsiasi"],
@@ -508,6 +580,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un'autovettura su una strada extraurbana principale è di 90 km/h",
         "risposta": False,
+        "riassunto": "Autovettura su extraurbana principale → 90 km/h?",
         "spiegazione": "È falso. Il limite normale per un'autovettura sulle strade extraurbane principali è 110 km/h. Il limite di 90 km/h si applica in caso di pioggia o sulle strade extraurbane secondarie.",
         "regola": "Extraurbana Principale: 110 km/h (normale).",
         "trabocchetti": ["90 km/h"],
@@ -515,6 +588,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un'autovettura su una strada extraurbana secondaria è di 70 km/h",
         "risposta": False,
+        "riassunto": "Autovettura su extraurbana secondaria → 70 km/h?",
         "spiegazione": "È falso. Il limite per un'autovettura sulle strade extraurbane secondarie è 90 km/h. Il limite di 70 km/h può essere presente in alcuni tratti urbani con segnale, ma non su extraurbane secondarie.",
         "regola": "Extraurbana Secondaria: 90 km/h.",
         "trabocchetti": ["70 km/h"],
@@ -522,6 +596,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un'autovettura nei centri abitati è sempre di 70 km/h",
         "risposta": False,
+        "riassunto": "Autovettura in città → sempre 70 km/h?",
         "spiegazione": "È falso. Il limite normale nei centri abitati è 50 km/h. Il limite di 70 km/h è un'eccezione, possibile solo su tratti specifici e segnalati. La parola 'sempre' rende la frase falsa.",
         "regola": "'Sempre' è quasi sempre FALSO.",
         "trabocchetti": ["sempre"],
@@ -529,6 +604,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un'autovettura nei centri abitati è sempre di 50 km/h",
         "risposta": False,
+        "riassunto": "Autovettura in città → sempre 50 km/h?",
         "spiegazione": "È falso. Anche se 50 km/h è il limite ordinario nei centri abitati, non è 'sempre' così. Ci possono essere zone con limiti più bassi (es. 30 km/h) o, in rari casi e con segnale, più alti (es. 70 km/h).",
         "regola": "'Sempre' è quasi sempre FALSO.",
         "trabocchetti": ["sempre"],
@@ -536,6 +612,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità dei quadricicli fuori dai centri abitati è di 70 km/h",
         "risposta": False,
+        "riassunto": "Quadricicli fuori città → 70 km/h?",
         "spiegazione": "È falso. I quadricicli non leggeri hanno un limite di 80 km/h fuori dai centri abitati. I quadricicli leggeri (assimilati ai ciclomotori) hanno 45 km/h. 70 km/h non è un limite standard per i quadricicli fuori città.",
         "regola": "Quadriciclo non leggero (fuori città): 80 km/h.",
         "trabocchetti": ["70 km/h"],
@@ -543,6 +620,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità degli autocarri nei centri abitati è di 40 km/h",
         "risposta": False,
+        "riassunto": "Autocarri in città → 40 km/h?",
         "spiegazione": "È falso. Gli autocarri con massa complessiva fino a 3,5 tonnellate seguono il limite di 50 km/h nei centri abitati, come le autovetture. Per autocarri più pesanti, i limiti sono diversi ma non 40 km/h come regola generale.",
         "regola": "Autocarro leggero = 50 km/h in città.",
         "trabocchetti": ["40 km/h"],
@@ -550,6 +628,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un autocarro di massa complessiva fino a 3,5 tonnellate sulle autostrade è di 120 km/h",
         "risposta": False,
+        "riassunto": "Autocarro fino a 3,5 t in autostrada → 120 km/h?",
         "spiegazione": "È falso. Un autocarro con massa complessiva fino a 3,5 tonnellate ha gli stessi limiti di velocità di un'autovettura. Quindi, in autostrada, il limite è 130 km/h, non 120 km/h.",
         "regola": "Autocarro leggero = 130 km/h in autostrada.",
         "trabocchetti": ["120 km/h"],
@@ -557,6 +636,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un autoveicolo fino a 3,5 tonnellate sulle strade extraurbane principali è di 80 km/h",
         "risposta": False,
+        "riassunto": "Autoveicolo fino a 3,5 t su extraurbana principale → 80 km/h?",
         "spiegazione": "È falso. Il limite per un autoveicolo con massa complessiva fino a 3,5 tonnellate sulle strade extraurbane principali è 110 km/h, non 80 km/h.",
         "regola": "Veicolo leggero = 110 km/h su principali.",
         "trabocchetti": ["80 km/h"],
@@ -564,6 +644,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per un autoveicolo fino a 3,5 tonnellate nei centri abitati è di 40 km/h",
         "risposta": False,
+        "riassunto": "Autoveicolo fino a 3,5 t in città → 40 km/h?",
         "spiegazione": "È falso. Il limite per un autoveicolo con massa complessiva fino a 3,5 tonnellate nei centri abitati è 50 km/h, non 40 km/h.",
         "regola": "Veicolo leggero = 50 km/h in città.",
         "trabocchetti": ["40 km/h"],
@@ -571,6 +652,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per qualsiasi veicolo nei centri abitati è di 60 km/h",
         "risposta": False,
+        "riassunto": "Qualsiasi veicolo in città → 60 km/h?",
         "spiegazione": "È falso. Il limite ordinario nei centri abitati è 50 km/h. Inoltre, non è 'qualsiasi' veicolo, perché i ciclomotori hanno 45 km/h e altri veicoli speciali hanno limiti diversi. La frase è sbagliata sia nel valore che nella generalizzazione.",
         "regola": "'Qualsiasi' è quasi sempre FALSO.",
         "trabocchetti": ["qualsiasi veicolo", "60 km/h", "Qualsiasi"],
@@ -578,6 +660,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per una macchina agricola con pneumatici è di 50 km/h",
         "risposta": False,
+        "riassunto": "Macchina agricola gommata → 50 km/h?",
         "spiegazione": "È falso. Le macchine agricole gommate (con pneumatici) hanno un limite massimo di velocità di 40 km/h, non 50 km/h.",
         "regola": "Macchina agricola gommata: 40 km/h.",
         "trabocchetti": ["50 km/h"],
@@ -585,6 +668,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per una macchina operatrice gommata è di 50 km/h",
         "risposta": False,
+        "riassunto": "Macchina operatrice gommata → 50 km/h?",
         "spiegazione": "È falso. Le macchine operatrici gommate hanno un limite massimo di velocità di 40 km/h, non 50 km/h.",
         "regola": "Macchina operatrice gommata: 40 km/h.",
         "trabocchetti": ["50 km/h"],
@@ -592,18 +676,21 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità per una macchina agricola gommata è di 40 km/h",
         "risposta": True,
+        "riassunto": "Macchina agricola gommata → 40 km/h?",
         "spiegazione": "È vero. Le macchine agricole con pneumatici (gommate) non possono superare i 40 km/h.",
         "regola": "Macchina agricola gommata: 40 km/h.",
     },
     {
         "domanda": "Il limite massimo di velocità per una macchina operatrice gommata è di 40 km/h",
         "risposta": True,
+        "riassunto": "Macchina operatrice gommata → 40 km/h?",
         "spiegazione": "È vero. Anche le macchine operatrici con pneumatici (gommate) non possono superare i 40 km/h.",
         "regola": "Macchina operatrice gommata: 40 km/h.",
     },
     {
         "domanda": "Il limite di velocità sulle autostrade per coloro che hanno conseguito la patente da meno di 3 anni è di 100 km/h",
         "risposta": True,
+        "riassunto": "Neopatentati in autostrada → 100 km/h?",
         "spiegazione": "Questa affermazione è VERA. Per i neopatentati, cioè chi ha la patente da meno di 3 anni, il limite di velocità in autostrada è ridotto a 100 km/h, invece dei normali 130 km/h.",
         "regola": "Neopatentati: Autostrada 100.",
         "trabocchetti": ["meno di 3 anni"],
@@ -611,6 +698,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite di velocità sulle strade extraurbane principali per coloro che hanno conseguito la patente da meno di 3 anni è di 90 km/h",
         "risposta": True,
+        "riassunto": "Neopatentati su extraurbana principale → 90 km/h?",
         "spiegazione": "Questa affermazione è VERA. Anche sulle strade extraurbane principali, i neopatentati (chi ha la patente da meno di 3 anni) devono rispettare un limite di 90 km/h, invece dei normali 110 km/h.",
         "regola": "Neopatentati: Extraurbane principali 90.",
         "trabocchetti": ["meno di 3 anni"],
@@ -618,6 +706,7 @@ QUESTIONS = [
     {
         "domanda": "Viaggiare ad alta velocità incide sul consumo di carburante e sull'inquinamento ambientale",
         "risposta": True,
+        "riassunto": "Alta velocità → più consumo e inquinamento?",
         "spiegazione": "Questa affermazione è VERA. Andare molto veloce fa consumare più benzina o diesel e, di conseguenza, aumenta l'inquinamento dell'aria.",
         "regola": "Veloce = più benzina, più smog.",
         "trabocchetti": ["incide sul"],
@@ -625,6 +714,7 @@ QUESTIONS = [
     {
         "domanda": "Brusche variazioni di velocità comportano maggior consumo di carburante",
         "risposta": True,
+        "riassunto": "Brusche variazioni di velocità → più consumo?",
         "spiegazione": "Questa affermazione è VERA. Accelerare e frenare spesso e in modo improvviso (brusche variazioni) fa consumare molto più carburante rispetto a una guida fluida e costante.",
         "regola": "Guida fluida = risparmio carburante.",
         "trabocchetti": ["Brusche variazioni"],
@@ -632,6 +722,7 @@ QUESTIONS = [
     {
         "domanda": "La velocità in curva incide sulla tenuta di strada del veicolo",
         "risposta": True,
+        "riassunto": "Velocità in curva → incide sulla tenuta?",
         "spiegazione": "Questa affermazione è VERA. La velocità con cui affronti una curva è molto importante. Se vai troppo veloce, il veicolo potrebbe perdere aderenza e non 'tenere' bene la strada, rischiando di sbandare.",
         "regola": "Curva: velocità giusta = sicurezza.",
         "trabocchetti": ["tenuta di strada"],
@@ -639,6 +730,7 @@ QUESTIONS = [
     {
         "domanda": "L'eccessiva velocità in curva può determinare il ribaltamento del veicolo",
         "risposta": True,
+        "riassunto": "Troppa velocità in curva → ribaltamento?",
         "spiegazione": "Questa affermazione è VERA. Se si entra in curva a una velocità troppo alta, le forze che agiscono sul veicolo possono essere così forti da farlo perdere il controllo e, nei casi più gravi, farlo ribaltare, cioè capovolgere.",
         "regola": "Curva troppo veloce = ribaltamento.",
         "trabocchetti": ["eccessiva velocità", "Ribaltamento"],
@@ -646,6 +738,7 @@ QUESTIONS = [
     {
         "domanda": "I tratti di strada in curva debbono essere percorsi con il pedale della frizione abbassato",
         "risposta": False,
+        "riassunto": "Curve → con la frizione abbassata?",
         "spiegazione": "Questa affermazione è FALSA. In curva, è fondamentale avere il veicolo in marcia (con una marcia inserita) per poter controllare la velocità con il motore e avere la massima stabilità. Tenere il pedale della frizione abbassato significa che il motore è scollegato dalle ruote, e questo fa perdere il controllo del veicolo, rendendolo molto pericoloso.",
         "regola": "In curva: MAI frizione abbassata!",
         "trabocchetti": ["pedale della frizione abbassato"],
@@ -653,6 +746,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite di velocità sulle autostrade per coloro che hanno conseguito la patente da meno di tre anni è di 110 km/h",
         "risposta": False,
+        "riassunto": "Neopatentati in autostrada → 110 km/h?",
         "spiegazione": "Questa affermazione è FALSA. Come abbiamo visto, per i neopatentati (chi ha la patente da meno di tre anni) il limite di velocità in autostrada è di 100 km/h, non 110 km/h.",
         "regola": "Autostrada neopatentati = 100, non 110.",
         "trabocchetti": ["110 km/h"],
@@ -660,6 +754,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite di velocità sulle strade extraurbane principali per coloro che hanno conseguito la patente da meno di 3 anni è di 110 km/h",
         "risposta": False,
+        "riassunto": "Neopatentati su extraurbana principale → 110 km/h?",
         "spiegazione": "Questa affermazione è FALSA. Per i neopatentati (chi ha la patente da meno di 3 anni), il limite di velocità sulle strade extraurbane principali è di 90 km/h, non 110 km/h. I 110 km/h sono il limite per gli altri conducenti.",
         "regola": "Extraurbane principali neopatentati = 90, non 110.",
         "trabocchetti": ["110 km/h"],
@@ -667,6 +762,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle autostrade è ordinariamente di 130 km/h per le autovetture con carrello appendice",
         "risposta": True,
+        "riassunto": "Auto con carrello appendice in autostrada → 130 km/h?",
         "spiegazione": "Un carrello appendice è un piccolo rimorchio leggero che non cambia il limite di velocità dell'autovettura. Quindi, in autostrada, il limite rimane 130 km/h per l'autovettura con carrello appendice, se non ci sono condizioni particolari come la pioggia.",
         "regola": "Carrello appendice = stessa velocità dell'auto.",
         "trabocchetti": ["ordinariamente", "Carrello appendice"],
@@ -674,6 +770,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle autostrade è di 80 km/h per le autovetture con rimorchio",
         "risposta": True,
+        "riassunto": "Auto con rimorchio in autostrada → 80 km/h?",
         "spiegazione": "Quando un'autovettura traina un rimorchio (più grande di un carrello appendice), la velocità massima consentita in autostrada è ridotta a 80 km/h per motivi di sicurezza.",
         "regola": "Auto + rimorchio in autostrada = 80 km/h.",
         "trabocchetti": ["rimorchio"],
@@ -681,6 +778,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle autostrade è ordinariamente di 130 km/h per i motocicli",
         "risposta": True,
+        "riassunto": "Motocicli in autostrada → 130 km/h?",
         "spiegazione": "I motocicli, come le autovetture, possono raggiungere la velocità massima di 130 km/h sulle autostrade, in condizioni normali.",
         "regola": "Moto in autostrada = 130 km/h (come l'auto).",
         "trabocchetti": ["ordinariamente"],
@@ -688,6 +786,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle autostrade è ordinariamente di 130 km/h per autocaravan di massa complessiva fino a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Autocaravan fino a 3,5 t in autostrada → 130 km/h?",
         "spiegazione": "Gli autocaravan (i camper) che hanno una massa complessiva fino a 3,5 tonnellate sono considerati veicoli leggeri e seguono gli stessi limiti di velocità delle autovetture, quindi 130 km/h in autostrada.",
         "regola": "Camper leggeri (fino a 3.5t) = velocità auto.",
         "trabocchetti": ["fino a 3,5 tonnellate", "Ordinariamente"],
@@ -695,6 +794,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle autostrade è di 80 km/h per l'autovettura che traina un caravan",
         "risposta": True,
+        "riassunto": "Auto con caravan in autostrada → 80 km/h?",
         "spiegazione": "Un caravan è un tipo di rimorchio (la roulotte). Quindi, un'autovettura che traina un caravan ha lo stesso limite di velocità di un'autovettura con rimorchio in autostrada, cioè 80 km/h.",
         "regola": "Auto + caravan in autostrada = 80 km/h.",
         "trabocchetti": ["caravan"],
@@ -702,6 +802,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle strade extraurbane principali è ordinariamente di 110 km/h per i motocicli",
         "risposta": True,
+        "riassunto": "Motocicli su extraurbana principale → 110 km/h?",
         "spiegazione": "Sulle strade extraurbane principali, il limite massimo di velocità per i motocicli è di 110 km/h, come per le autovetture, in condizioni normali.",
         "regola": "Moto su extraurbane principali = 110 km/h.",
         "trabocchetti": ["strade extraurbane principali", "Ordinariamente"],
@@ -709,6 +810,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle strade extraurbane principali è di 110 km/h per autovetture con carrello appendice",
         "risposta": True,
+        "riassunto": "Auto con carrello su extraurbana principale → 110 km/h?",
         "spiegazione": "Anche sulle strade extraurbane principali, il carrello appendice non modifica il limite di velocità dell'autovettura, che rimane 110 km/h.",
         "regola": "Carrello appendice = stessa velocità dell'auto.",
         "trabocchetti": ["carrello appendice"],
@@ -716,6 +818,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle strade extraurbane principali è di 70 km/h per autovetture con rimorchio per trasporto imbarcazioni",
         "risposta": True,
+        "riassunto": "Auto con rimorchio barca su extraurbana principale → 70 km/h?",
         "spiegazione": "Quando un'autovettura traina un rimorchio, anche se è per il trasporto di imbarcazioni, il limite di velocità sulle strade extraurbane principali è di 70 km/h.",
         "regola": "Auto + rimorchio su extraurbane principali = 70 km/h.",
         "trabocchetti": ["rimorchio", "Strade extraurbane principali"],
@@ -723,6 +826,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle strade extraurbane secondarie è di 90 km/h per i motocicli",
         "risposta": True,
+        "riassunto": "Motocicli su extraurbana secondaria → 90 km/h?",
         "spiegazione": "Sulle strade extraurbane secondarie, il limite massimo di velocità per i motocicli è di 90 km/h, come per le autovetture.",
         "regola": "Moto su extraurbane secondarie = 90 km/h.",
         "trabocchetti": ["strade extraurbane secondarie"],
@@ -730,6 +834,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 70 km/h per autovettura che traina un caravan con massa complessiva di 900 chilogrammi.",
         "risposta": True,
+        "riassunto": "Auto con caravan da 900 kg su extraurbana secondaria → 70 km/h?",
         "spiegazione": "Un caravan è un rimorchio. Sulle strade extraurbane secondarie, il limite per un'autovettura che traina un rimorchio (come un caravan) è di 70 km/h, indipendentemente dalla sua massa se rientra nei limiti di traino.",
         "regola": "Auto + caravan su extraurbane secondarie = 70 km/h.",
         "trabocchetti": ["caravan", "900 chilogrammi"],
@@ -737,6 +842,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle autostrade è di 130 km/h per le autovetture con rimorchio",
         "risposta": False,
+        "riassunto": "Auto con rimorchio in autostrada → 130 km/h?",
         "spiegazione": "Falso! Le autovetture con rimorchio in autostrada hanno un limite di velocità di 80 km/h, non 130 km/h. Il rimorchio riduce sempre la velocità massima consentita.",
         "regola": "Auto + rimorchio in autostrada = 80 km/h (non 130!).",
         "trabocchetti": ["con rimorchio"],
@@ -744,6 +850,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle autostrade è di 90 km/h per i motocicli",
         "risposta": False,
+        "riassunto": "Motocicli in autostrada → 90 km/h?",
         "spiegazione": "Falso! I motocicli in autostrada possono andare fino a 130 km/h, come le autovetture. Il limite di 90 km/h è per le strade extraurbane secondarie.",
         "regola": "Moto in autostrada = 130 km/h.",
         "trabocchetti": ["90 km/h"],
@@ -751,6 +858,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle autostrade è di 90 km/h per autocaravan",
         "risposta": False,
+        "riassunto": "Autocaravan in autostrada → 90 km/h?",
         "spiegazione": "Falso! Gli autocaravan (camper) fino a 3,5 tonnellate hanno il limite di 130 km/h in autostrada. Solo quelli più pesanti hanno limiti diversi, ma non 90 km/h in autostrada.",
         "regola": "Camper leggeri (fino a 3.5t) = 130 km/h in autostrada.",
         "trabocchetti": ["90 km/h"],
@@ -758,6 +866,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle autostrade è di 70 km/h per autovettura che traina un caravan",
         "risposta": False,
+        "riassunto": "Auto con caravan in autostrada → 70 km/h?",
         "spiegazione": "Falso! Un'autovettura che traina un caravan (che è un rimorchio) in autostrada ha un limite di 80 km/h, non 70 km/h. Il limite di 70 km/h è per le strade extraurbane principali e secondarie con rimorchio.",
         "regola": "Auto + caravan in autostrada = 80 km/h.",
         "trabocchetti": ["70 km/h"],
@@ -765,6 +874,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle autostrade è di 120 km/h per autovettura con carrello appendice in caso di pioggia",
         "risposta": False,
+        "riassunto": "Auto con carrello in autostrada con pioggia → 120 km/h?",
         "spiegazione": "Falso! In caso di pioggia, il limite di velocità sulle autostrade scende a 110 km/h per tutti i veicoli che normalmente possono andare a 130 km/h, inclusi quelli con carrello appendice. Non è 120 km/h.",
         "regola": "Pioggia in autostrada = 110 km/h per tutti.",
         "trabocchetti": ["120 km/h", "in caso di pioggia"],
@@ -772,6 +882,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane principali è di 100 km/h per i motocicli",
         "risposta": False,
+        "riassunto": "Motocicli su extraurbana principale → 100 km/h?",
         "spiegazione": "Falso! Sulle strade extraurbane principali, il limite per i motocicli è di 110 km/h, non 100 km/h.",
         "regola": "Moto su extraurbane principali = 110 km/h.",
         "trabocchetti": ["100 km/h"],
@@ -779,6 +890,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle strade extraurbane principali è di 80 km/h per autovetture con rimorchio per trasporto di imbarcazioni",
         "risposta": False,
+        "riassunto": "Auto con rimorchio barca su extraurbana principale → 80 km/h?",
         "spiegazione": "Falso! Sulle strade extraurbane principali, il limite per autovetture con rimorchio (anche per imbarcazioni) è di 70 km/h, non 80 km/h. Il limite di 80 km/h è per auto con rimorchio in autostrada.",
         "regola": "Auto + rimorchio su extraurbane principali = 70 km/h.",
         "trabocchetti": ["80 km/h"],
@@ -786,6 +898,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle strade extraurbane secondarie è di 70 km/h per i motocicli",
         "risposta": False,
+        "riassunto": "Motocicli su extraurbana secondaria → 70 km/h?",
         "spiegazione": "Falso! Sulle strade extraurbane secondarie, il limite per i motocicli è di 90 km/h, non 70 km/h. Il limite di 70 km/h è per auto con rimorchio su queste strade.",
         "regola": "Moto su extraurbane secondarie = 90 km/h.",
         "trabocchetti": ["70 km/h"],
@@ -793,6 +906,7 @@ QUESTIONS = [
     {
         "domanda": "La velocità dei veicoli deve essere regolata in modo da non causare intralcio alla circolazione",
         "risposta": True,
+        "riassunto": "Velocità → non intralciare la circolazione?",
         "spiegazione": "È vero. La velocità deve essere sempre adeguata per non creare problemi agli altri veicoli. Guidare troppo lentamente può bloccare il traffico, proprio come guidare troppo velocemente.",
         "regola": "Né troppo veloce, né troppo lento: sii fluido!",
         "trabocchetti": ["intralcio"],
@@ -800,6 +914,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi negli incroci, per far passare i veicoli cui spetti la precedenza",
         "risposta": True,
+        "riassunto": "Ridurre e se serve fermarsi → agli incroci per chi ha precedenza?",
         "spiegazione": "È vero. Quando arrivi a un incrocio e non hai la precedenza, devi rallentare o, se necessario, fermarti completamente per far passare i veicoli che hanno il diritto di passare prima di te. Questo è fondamentale per la sicurezza.",
         "regola": "Precedenza? Rallenta o fermati!",
         "trabocchetti": ["all", "o"],
@@ -807,6 +922,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio ridurre la velocità e all'occorrenza fermarsi da mezz'ora prima del tramonto a mezz'ora dopo il sorgere del sole",
         "risposta": False,
+        "riassunto": "Ridurre e fermarsi → da mezz'ora prima del tramonto?",
         "spiegazione": "È falso. Non esiste una regola che ti obbliga a ridurre la velocità o a fermarti in base all'ora del giorno, come mezz'ora prima del tramonto o dopo l'alba. La velocità si regola in base alle condizioni della strada, del traffico e della visibilità, non all'orario.",
         "regola": "L'ora del giorno non impone la velocità.",
         "trabocchetti": ["obbligatorio"],
@@ -814,6 +930,7 @@ QUESTIONS = [
     {
         "domanda": "Si è tenuti a regolare la velocità in funzione del tipo di alimentazione del motore",
         "risposta": False,
+        "riassunto": "Regolare la velocità → tipo di alimentazione?",
         "spiegazione": "È falso. La velocità con cui guidi non dipende dal tipo di motore della tua auto (benzina, diesel, elettrico, ecc.). La velocità deve essere regolata in base ai limiti, alle condizioni della strada, del traffico e della visibilità.",
         "regola": "Carburante non è velocità.",
         "trabocchetti": ["tipo di alimentazione del motore"],
@@ -821,6 +938,7 @@ QUESTIONS = [
     {
         "domanda": "Si è tenuti a regolare la velocità in funzione della velocità dei veicoli che seguono",
         "risposta": False,
+        "riassunto": "Regolare la velocità → velocità di chi segue?",
         "spiegazione": "È falso. Devi regolare la tua velocità in base a chi ti precede, alle condizioni della strada, al traffico e ai limiti di velocità, non in base a chi ti segue. Chi ti segue deve mantenere la distanza di sicurezza e adattarsi alla tua velocità (se corretta).",
         "regola": "Guida per te, non per chi ti segue.",
         "trabocchetti": ["veicoli che seguono"],
@@ -828,6 +946,7 @@ QUESTIONS = [
     {
         "domanda": "Si è tenuti a regolare la velocità in funzione del tipo di cambio di velocità",
         "risposta": False,
+        "riassunto": "Regolare la velocità → tipo di cambio?",
         "spiegazione": "È falso. Che la tua auto abbia un cambio manuale o automatico non cambia le regole su come devi regolare la velocità. La velocità si adatta sempre alle condizioni esterne (strada, traffico, meteo) e ai limiti, non al meccanismo interno dell'auto.",
         "regola": "Cambio manuale o automatico, la velocità è la stessa.",
         "trabocchetti": ["tipo di cambio di velocità"],
@@ -835,6 +954,7 @@ QUESTIONS = [
     {
         "domanda": "La velocità deve essere moderata nei tratti di strada a visuale non libera",
         "risposta": True,
+        "riassunto": "Velocità moderata → visuale non libera?",
         "spiegazione": "Quando la strada non ti permette di vedere bene (ad esempio in curva o su un dosso), devi guidare più lentamente. Questo ti dà più tempo per reagire se c'è un pericolo improvviso.",
         "regola": "Non vedi? Rallenta!",
         "trabocchetti": ["visuale non libera"],
@@ -842,6 +962,7 @@ QUESTIONS = [
     {
         "domanda": "Si deve tenere una velocità che non costituisca pericolo per la sicurezza della circolazione",
         "risposta": True,
+        "riassunto": "Velocità → non pericolosa per la circolazione?",
         "spiegazione": "La tua velocità deve essere sempre sicura per te e per gli altri. Non devi mai guidare così veloce da creare un pericolo per la circolazione, per le persone o per le cose.",
         "regola": "Sicurezza prima di tutto!",
         "trabocchetti": ["non costituisca pericolo"],
@@ -849,12 +970,14 @@ QUESTIONS = [
     {
         "domanda": "Si deve tenere una velocità che consenta di intervenire con sicurezza in caso di imprevisti",
         "risposta": True,
+        "riassunto": "Velocità → intervenire in sicurezza negli imprevisti?",
         "spiegazione": "Devi guidare a una velocità che ti permetta di frenare o fare una manovra in sicurezza se succede qualcosa di inaspettato, come un bambino che attraversa la strada o un ostacolo improvviso.",
         "regola": "Pronto a frenare!",
     },
     {
         "domanda": "Si deve tenere una velocità adeguata alle proprie condizioni psicofisiche",
         "risposta": True,
+        "riassunto": "Velocità → adeguata alle condizioni psicofisiche?",
         "spiegazione": "Se sei stanco, non ti senti bene o sei distratto, devi guidare più lentamente del solito. La tua condizione fisica e mentale influenza la tua capacità di guidare in sicurezza.",
         "regola": "Stanco? Vai piano!",
         "trabocchetti": ["proprie condizioni psicofisiche"],
@@ -862,6 +985,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligo del conducente regolare la velocità in relazione al carico del veicolo",
         "risposta": True,
+        "riassunto": "Regolare la velocità → carico del veicolo?",
         "spiegazione": "Un veicolo molto carico frena più lentamente e si comporta in modo diverso. Per questo, se hai un carico pesante, devi ridurre la velocità per mantenere il controllo e frenare in tempo.",
         "regola": "Carico pesante? Velocità prudente!",
         "trabocchetti": ["carico del veicolo"],
@@ -869,6 +993,7 @@ QUESTIONS = [
     {
         "domanda": "Si deve tenere una velocità regolata in funzione del tempo che abbiamo a disposizione",
         "risposta": False,
+        "riassunto": "Velocità → secondo il tempo a disposizione?",
         "spiegazione": "FALSO. La velocità non dipende da quanto tempo hai a disposizione. Non puoi guidare più veloce solo perché sei in ritardo. La velocità deve essere sempre sicura e rispettare i limiti, non la tua fretta.",
         "regola": "La fretta è cattiva consigliera!",
         "trabocchetti": ["tempo che abbiamo a disposizione"],
@@ -876,6 +1001,7 @@ QUESTIONS = [
     {
         "domanda": "La velocità deve essere moderata fuori dai centri abitati",
         "risposta": False,
+        "riassunto": "Velocità moderata → fuori dai centri abitati?",
         "spiegazione": "FALSO. Fuori dai centri abitati, i limiti di velocità sono generalmente più alti (ad esempio 90 km/h sulle strade normali). Non è obbligatorio andare sempre a una velocità 'moderata' (cioè lenta), ma a una velocità 'adeguata' alle condizioni della strada e del traffico, rispettando i limiti.",
         "regola": "Fuori città non è sempre 'piano', ma 'giusto'!",
         "trabocchetti": ["moderata"],
@@ -883,6 +1009,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di apposito segnale, il limite massimo di velocità consentito può essere di 150 km/h su tratti di autostrade con particolari caratteristiche",
         "risposta": True,
+        "riassunto": "Con segnale, autostrade particolari → 150 km/h?",
         "spiegazione": "Sì, è vero. In Italia, su alcuni tratti di autostrada che hanno caratteristiche speciali (ad esempio, tre corsie più corsia di emergenza per senso di marcia) e solo se c'è un segnale specifico che lo indica, la velocità massima può essere aumentata a 150 km/h. Non è la regola generale, ma un'eccezione.",
         "regola": "150 km/h: solo autostrada 'super' e con segnale.",
         "trabocchetti": ["può essere", "apposito segnale", "particolari caratteristiche"],
@@ -890,6 +1017,7 @@ QUESTIONS = [
     {
         "domanda": "Salvo diversa segnalazione, il limite massimo di velocità consentito è di 130 km/h sulle autostrade",
         "risposta": True,
+        "riassunto": "Salvo segnali, autostrade → 130 km/h?",
         "spiegazione": "Sì, è vero. La velocità massima normale sulle autostrade è di 130 km/h. Questo limite vale se non ci sono segnali che indicano una velocità diversa, ad esempio per lavori, traffico intenso o maltempo.",
         "regola": "Autostrada: 130 km/h (base).",
         "trabocchetti": ["Salvo diversa segnalazione"],
@@ -897,6 +1025,7 @@ QUESTIONS = [
     {
         "domanda": "Salvo diversa segnalazione, il limite massimo di velocità consentito è di 50 km/h nei centri abitati",
         "risposta": True,
+        "riassunto": "Salvo segnali, centri abitati → 50 km/h?",
         "spiegazione": "Sì, è vero. Nei centri abitati, cioè nelle città e nei paesi, il limite massimo di velocità è di 50 km/h. Questo serve per la sicurezza di pedoni e altri veicoli. Solo in casi eccezionali e con un segnale specifico, il limite può essere diverso.",
         "regola": "Centri abitati: 50 km/h (base).",
         "trabocchetti": ["Salvo diversa segnalazione"],
@@ -904,6 +1033,7 @@ QUESTIONS = [
     {
         "domanda": "Salvo diversa segnalazione, per i ciclomotori il limite massimo di velocità consentito è di 45 km/h",
         "risposta": True,
+        "riassunto": "Salvo segnali, ciclomotori → 45 km/h?",
         "spiegazione": "Sì, è vero. I ciclomotori (come gli scooter 50cc) hanno un limite massimo di velocità di 45 km/h. Questo limite è stabilito dalla legge per la loro categoria e non può essere superato.",
         "regola": "Ciclomotori: massimo 45 km/h.",
         "trabocchetti": ["Salvo diversa segnalazione"],
@@ -911,6 +1041,7 @@ QUESTIONS = [
     {
         "domanda": "Salvo diversa segnalazione, il limite massimo di velocità consentito per macchine agricole e macchine operatrici con pneumatici è di 40 km/h",
         "risposta": True,
+        "riassunto": "Salvo segnali, macchine agricole e operatrici gommate → 40 km/h?",
         "spiegazione": "Sì, è vero. Le macchine agricole (come i trattori) e le macchine operatrici (come gli escavatori) che hanno pneumatici (cioè ruote normali) non possono superare i 40 km/h. Sono veicoli lenti e pesanti, quindi hanno un limite di velocità più basso per la sicurezza.",
         "regola": "Macchine agricole/operatrici: 40 km/h.",
         "trabocchetti": ["Salvo diversa segnalazione"],
@@ -918,6 +1049,7 @@ QUESTIONS = [
     {
         "domanda": "Salvo diversa segnalazione, il limite massimo di velocità consentito sulle autostrade è di 110 km/h in caso di pioggia",
         "risposta": True,
+        "riassunto": "Salvo segnali, autostrada con pioggia → 110 km/h?",
         "spiegazione": "Sì, è vero. Quando piove, la strada diventa scivolosa e la visibilità diminuisce. Per questo motivo, in autostrada il limite di velocità scende da 130 km/h a 110 km/h per aumentare la sicurezza.",
         "regola": "Autostrada + Pioggia = 110 km/h.",
         "trabocchetti": ["in caso di pioggia"],
@@ -925,6 +1057,7 @@ QUESTIONS = [
     {
         "domanda": "Salvo diversa segnalazione, il limite massimo di velocità consentito su strade extraurbane principali è di 90 km/h in caso di grandine",
         "risposta": True,
+        "riassunto": "Salvo segnali, extraurbana principale con grandine → 90 km/h?",
         "spiegazione": "Sì, è vero. Anche in caso di grandine, come per la pioggia, le condizioni della strada e la visibilità peggiorano molto. Sulle strade extraurbane principali, il limite di velocità scende da 110 km/h a 90 km/h per garantire maggiore sicurezza.",
         "regola": "Extraurbana principale + Maltempo = 90 km/h.",
         "trabocchetti": ["in caso di grandine"],
@@ -932,6 +1065,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di appositi segnali, il limite massimo di velocità consentito nei centri abitati su strade con particolari caratteristiche è di 70 km/h",
         "risposta": True,
+        "riassunto": "Con segnali, strade urbane particolari → 70 km/h?",
         "spiegazione": "Sì, è vero. Normalmente nei centri abitati il limite è 50 km/h. Tuttavia, su alcune strade urbane particolari, che sono larghe, ben illuminate e senza incroci a raso (come alcune tangenziali urbane), se c'è un segnale specifico, il limite può essere aumentato a 70 km/h.",
         "regola": "Città 70 km/h: solo con segnale e strada 'speciale'.",
         "trabocchetti": ["appositi segnali", "particolari caratteristiche"],
@@ -939,6 +1073,7 @@ QUESTIONS = [
     {
         "domanda": "Salvo diversa segnalazione, il limite massimo di velocità consentito sulle strade extraurbane principali è di 110 km/h",
         "risposta": True,
+        "riassunto": "Salvo segnali, extraurbane principali → 110 km/h?",
         "spiegazione": "Sì, è vero. Le strade extraurbane principali sono strade a doppia carreggiata (come le superstrade) e il loro limite di velocità standard è di 110 km/h, se non ci sono segnali che indicano un limite diverso.",
         "regola": "Extraurbana principale: 110 km/h (base).",
         "trabocchetti": ["Salvo diversa segnalazione"],
@@ -946,6 +1081,7 @@ QUESTIONS = [
     {
         "domanda": "Salvo diversa segnalazione, il limite massimo di velocità consentito sulle strade urbane è di 80 km/h",
         "risposta": False,
+        "riassunto": "Salvo segnali, strade urbane → 80 km/h?",
         "spiegazione": "No, è falso. Le strade urbane sono le strade che si trovano all'interno dei centri abitati. Il limite massimo di velocità consentito nei centri abitati è di 50 km/h, non 80 km/h. Andare a 80 km/h in città è troppo pericoloso.",
         "regola": "Strade urbane = 50 km/h, non 80 km/h!",
         "trabocchetti": ["urbane"],
@@ -953,6 +1089,7 @@ QUESTIONS = [
     {
         "domanda": "Salvo diversa segnalazione, il limite massimo di velocità consentito per i quadricicli non leggeri è di 70 km/h.",
         "risposta": False,
+        "riassunto": "Salvo segnali, quadricicli non leggeri → 70 km/h?",
         "spiegazione": "No, è falso. I quadricicli non leggeri (come i quad o le 'minicar' più potenti) hanno un limite massimo di velocità di 80 km/h fuori dai centri abitati. Il limite di 70 km/h non è corretto per questa categoria di veicoli.",
         "regola": "Quadricicli non leggeri: 80 km/h.",
         "trabocchetti": ["70 km/h"],
@@ -960,6 +1097,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità consentito su qualsiasi autostrada è di 150 km/h",
         "risposta": False,
+        "riassunto": "Qualsiasi autostrada → 150 km/h?",
         "spiegazione": "No, è falso. Il limite di 150 km/h non è consentito su 'qualsiasi' autostrada. È un'eccezione molto rara, possibile solo su tratti specifici di autostrada che hanno particolari caratteristiche e solo se c'è un segnale che lo indica. La regola generale in autostrada è 130 km/h.",
         "regola": "150 km/h non è per 'qualsiasi' autostrada, ma solo per alcune speciali.",
         "trabocchetti": ["qualsiasi"],
@@ -967,12 +1105,14 @@ QUESTIONS = [
     {
         "domanda": "Su strade extraurbane principali il limite massimo di velocità è di 110 km/h per le autovetture",
         "risposta": True,
+        "riassunto": "Extraurbane principali, autovetture → 110 km/h?",
         "spiegazione": "Sulle strade extraurbane principali, le autovetture possono viaggiare fino a un massimo di 110 km/h, a meno che non ci siano segnali diversi. Quindi, l'affermazione è VERA.",
         "regola": "Auto su extraurbana principale = 110 km/h.",
     },
     {
         "domanda": "Su strade extraurbane principali il limite massimo di velocità è di 70 km/h per autovettura che traina caravan da 900 chilogrammi",
         "risposta": True,
+        "riassunto": "Extraurbane principali, auto con caravan 900 kg → 70 km/h?",
         "spiegazione": "Quando un'autovettura traina un rimorchio, come una caravan, il limite di velocità sulle strade extraurbane principali scende a 70 km/h. Non importa il peso della caravan, se traini un rimorchio, il limite è ridotto. Quindi, l'affermazione è VERA.",
         "regola": "Auto + Rimorchio = 70 km/h.",
         "trabocchetti": ["traina caravan"],
@@ -980,6 +1120,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade extraurbane principali il limite massimo di velocità è di 110 km/h per autoveicoli fino a 3,5t",
         "risposta": True,
+        "riassunto": "Extraurbane principali, autoveicoli fino a 3,5 t → 110 km/h?",
         "spiegazione": "La categoria 'autoveicoli fino a 3,5t' include le autovetture e i motocicli, per i quali il limite è 110 km/h. Anche se ci sono altri veicoli in questa categoria con limiti diversi (come autocaravan o autocarri), la domanda è generica e il limite di 110 km/h è valido per una parte significativa di essi. Quindi, l'affermazione è VERA.",
         "regola": "Autoveicoli leggeri (generico) = 110 km/h.",
         "trabocchetti": ["autoveicoli"],
@@ -987,6 +1128,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade extraurbane principali il limite massimo di velocità è di 70 km/h per autotreni",
         "risposta": True,
+        "riassunto": "Extraurbane principali, autotreni → 70 km/h?",
         "spiegazione": "Gli autotreni sono veicoli molto lunghi e pesanti, formati da una motrice e un rimorchio. Per motivi di sicurezza, hanno limiti di velocità più bassi. Sulle strade extraurbane principali, il limite per gli autotreni è di 70 km/h. Quindi, l'affermazione è VERA.",
         "regola": "Autotreni = 70 km/h.",
         "trabocchetti": ["autotreni"],
@@ -994,6 +1136,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade extraurbane principali il limite massimo di velocità è di 100 km/h per autocarri di massa complessiva fino a 3,5 t",
         "risposta": False,
+        "riassunto": "Extraurbane principali, autocarri fino a 3,5 t → 100 km/h?",
         "spiegazione": "Per gli autocarri con massa complessiva fino a 3,5 tonnellate, il limite di velocità sulle strade extraurbane principali è di 80 km/h, non 100 km/h. I 100 km/h sono il limite per gli autocarri leggeri in autostrada. Quindi, l'affermazione è FALSA.",
         "regola": "Autocarri leggeri su extraurbana principale = 80 km/h.",
         "trabocchetti": ["100 km/h"],
@@ -1001,6 +1144,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade extraurbane principali il limite massimo di velocità è di 100 km/h per autocaravan di massa complessiva fino a 3,5 t",
         "risposta": False,
+        "riassunto": "Extraurbane principali, autocaravan fino a 3,5 t → 100 km/h?",
         "spiegazione": "Per gli autocaravan (i camper) con massa complessiva fino a 3,5 tonnellate, il limite di velocità sulle strade extraurbane principali è di 90 km/h, non 100 km/h. I 100 km/h sono il limite per gli autocaravan leggeri in autostrada. Quindi, l'affermazione è FALSA.",
         "regola": "Autocaravan leggeri su extraurbana principale = 90 km/h.",
         "trabocchetti": ["100 km/h"],
@@ -1008,6 +1152,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade extraurbane principali il limite massimo di velocità è di 80 km/h per autovetture con rimorchio leggero",
         "risposta": False,
+        "riassunto": "Extraurbane principali, auto con rimorchio leggero → 80 km/h?",
         "spiegazione": "Le autovetture che trainano un rimorchio, anche se leggero, hanno un limite di velocità ridotto. Sulle strade extraurbane principali, questo limite è di 70 km/h, non 80 km/h. Quindi, l'affermazione è FALSA.",
         "regola": "Auto + Rimorchio (anche leggero) = 70 km/h.",
         "trabocchetti": ["80 km/h", "Rimorchio leggero"],
@@ -1015,6 +1160,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade extraurbane principali il limite massimo di velocità è di 100 km/h per motocicli",
         "risposta": False,
+        "riassunto": "Extraurbane principali, motocicli → 100 km/h?",
         "spiegazione": "I motocicli, come le autovetture, possono raggiungere una velocità massima di 110 km/h sulle strade extraurbane principali, a meno che non ci siano segnali diversi. Il limite di 100 km/h è sbagliato per i motocicli su questo tipo di strada. Quindi, l'affermazione è FALSA.",
         "regola": "Moto su extraurbana principale = 110 km/h.",
         "trabocchetti": ["100 km/h"],
@@ -1022,6 +1168,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade extraurbane principali il limite massimo di velocità è di 100 km/h per le autovetture con carrello appendice",
         "risposta": False,
+        "riassunto": "Extraurbane principali, auto con carrello → 100 km/h?",
         "spiegazione": "Un carrello appendice è considerato un tipo di rimorchio. Perciò, un'autovettura che traina un carrello appendice ha lo stesso limite di velocità di un'autovettura con rimorchio, cioè 70 km/h sulle strade extraurbane principali. Il limite di 100 km/h è sbagliato. Quindi, l'affermazione è FALSA.",
         "regola": "Auto + Carrello appendice = 70 km/h.",
         "trabocchetti": ["carrello appendice", "100 km/h"],
@@ -1029,12 +1176,14 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 90 km/h per motocicli",
         "risposta": True,
+        "riassunto": "Extraurbane secondarie, motocicli → 90 km/h?",
         "spiegazione": "Sulle strade extraurbane secondarie, i motocicli possono viaggiare fino a un massimo di 90 km/h, proprio come le autovetture. Questo è il limite generale per molti veicoli su queste strade.",
         "regola": "Moto e auto = 90 km/h su secondarie.",
     },
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 90 km/h per autovetture con carrello appendice",
         "risposta": True,
+        "riassunto": "Extraurbane secondarie, auto con carrello → 90 km/h?",
         "spiegazione": "Un'autovettura con un carrello appendice mantiene lo stesso limite di velocità di un'autovettura normale, cioè 90 km/h sulle strade extraurbane secondarie. Il carrello appendice non è considerato un rimorchio che abbassa il limite.",
         "regola": "Carrello appendice non cambia il limite (90 km/h).",
         "trabocchetti": ["carrello appendice"],
@@ -1042,6 +1191,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 70 km/h per autovetture con rimorchio per trasporto di imbarcazioni o simili",
         "risposta": True,
+        "riassunto": "Extraurbane secondarie, auto con rimorchio barca → 70 km/h?",
         "spiegazione": "Quando un'autovettura traina un rimorchio, come quello per il trasporto di imbarcazioni, il limite di velocità sulle strade extraurbane secondarie si abbassa a 70 km/h per maggiore sicurezza.",
         "regola": "Auto + rimorchio = 70 km/h.",
         "trabocchetti": ["con rimorchio"],
@@ -1049,6 +1199,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 90 km/h per autocaravan di massa complessiva fino a 3,5t",
         "risposta": True,
+        "riassunto": "Extraurbane secondarie, autocaravan fino a 3,5 t → 90 km/h?",
         "spiegazione": "Gli autocaravan (i camper) che hanno una massa complessiva fino a 3,5 tonnellate sono considerati veicoli leggeri e possono viaggiare fino a 90 km/h sulle strade extraurbane secondarie, come le autovetture.",
         "regola": "Camper leggeri (fino a 3.5t) = 90 km/h.",
         "trabocchetti": ["fino a 3,5t"],
@@ -1056,6 +1207,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 90 km/h per autocarri di massa complessiva fino a 3,5t",
         "risposta": True,
+        "riassunto": "Extraurbane secondarie, autocarri fino a 3,5 t → 90 km/h?",
         "spiegazione": "Anche gli autocarri con una massa complessiva fino a 3,5 tonnellate rientrano nella categoria dei veicoli leggeri e possono raggiungere i 90 km/h sulle strade extraurbane secondarie.",
         "regola": "Autocarri leggeri (fino a 3.5t) = 90 km/h.",
         "trabocchetti": ["fino a 3,5t"],
@@ -1063,6 +1215,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 70 km/h per autotreni",
         "risposta": True,
+        "riassunto": "Extraurbane secondarie, autotreni → 70 km/h?",
         "spiegazione": "Gli autotreni sono veicoli molto lunghi e pesanti, composti da un trattore stradale e un rimorchio. Per la loro complessità e dimensione, hanno un limite di velocità ridotto a 70 km/h sulle strade extraurbane secondarie.",
         "regola": "Autotreni = 70 km/h.",
         "trabocchetti": ["autotreni"],
@@ -1070,6 +1223,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 70 km/h per i ciclomotori",
         "risposta": False,
+        "riassunto": "Extraurbane secondarie, ciclomotori → 70 km/h?",
         "spiegazione": "I ciclomotori hanno un limite massimo di velocità di 45 km/h su tutte le strade, sia in città che fuori. Quindi, 70 km/h è un limite sbagliato per loro.",
         "regola": "Ciclomotori = sempre 45 km/h.",
         "trabocchetti": ["70 km/h"],
@@ -1077,6 +1231,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 90 km/h per i quadricicli non leggeri",
         "risposta": False,
+        "riassunto": "Extraurbane secondarie, quadricicli non leggeri → 90 km/h?",
         "spiegazione": "I quadricicli non leggeri (come i quad) hanno un limite massimo di velocità di 80 km/h fuori dai centri abitati, non 90 km/h. Quindi, l'affermazione è falsa.",
         "regola": "Quadricicli non leggeri = 80 km/h (fuori città).",
         "trabocchetti": ["90 km/h"],
@@ -1084,6 +1239,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 80 km/h per motocicli",
         "risposta": False,
+        "riassunto": "Extraurbane secondarie, motocicli → 80 km/h?",
         "spiegazione": "I motocicli, come le autovetture, possono andare fino a 90 km/h sulle strade extraurbane secondarie. Il limite di 80 km/h è sbagliato per loro.",
         "regola": "Moto = 90 km/h.",
         "trabocchetti": ["80 km/h"],
@@ -1091,6 +1247,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 100 km/h per le autovetture",
         "risposta": False,
+        "riassunto": "Extraurbane secondarie, autovetture → 100 km/h?",
         "spiegazione": "Il limite di 100 km/h per le autovetture è valido sulle strade extraurbane principali. Sulle strade extraurbane secondarie, il limite è di 90 km/h.",
         "regola": "Secondarie = 90, Principali = 100.",
         "trabocchetti": ["100 km/h"],
@@ -1098,6 +1255,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 80 km/h per autovettura che traina caravan da 750 chilogrammi",
         "risposta": False,
+        "riassunto": "Extraurbane secondarie, auto con caravan 750 kg → 80 km/h?",
         "spiegazione": "Un'autovettura che traina una caravan (che è un tipo di rimorchio) ha un limite di velocità di 70 km/h sulle strade extraurbane secondarie, non 80 km/h.",
         "regola": "Auto + rimorchio = 70 km/h.",
         "trabocchetti": ["80 km/h", "Caravan"],
@@ -1105,6 +1263,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità su strade extraurbane secondarie è di 100 km/h per autoveicoli fino a 3,5 tonnellate",
         "risposta": False,
+        "riassunto": "Extraurbane secondarie, autoveicoli fino a 3,5 t → 100 km/h?",
         "spiegazione": "Il limite di 100 km/h è per le strade extraurbane principali. Sulle strade extraurbane secondarie, per gli autoveicoli fino a 3,5 tonnellate (come autovetture o autocaravan leggeri), il limite è 90 km/h.",
         "regola": "Secondarie = 90, Principali = 100.",
         "trabocchetti": ["100 km/h"],
@@ -1112,6 +1271,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade extraurbane secondarie il limite massimo di velocità è di 80 km/h per autovetture con carrello appendice",
         "risposta": False,
+        "riassunto": "Extraurbane secondarie, auto con carrello → 80 km/h?",
         "spiegazione": "Le autovetture con carrello appendice mantengono il limite di 90 km/h sulle strade extraurbane secondarie. Il carrello appendice non abbassa il limite di velocità, quindi 80 km/h è sbagliato.",
         "regola": "Carrello appendice non cambia il limite (90 km/h).",
         "trabocchetti": ["80 km/h", "carrello appendice"],
@@ -1119,6 +1279,7 @@ QUESTIONS = [
     {
         "domanda": "I contrassegni rappresentati in figura sono applicati sulla parte posteriore di alcune categorie di veicoli",
         "risposta": True,
+        "riassunto": "Contrassegni in figura → sul retro di alcuni veicoli?",
         "spiegazione": "Questi adesivi (contrassegni) che mostrano un limite di velocità (60, 80, 100) sono messi dietro ad alcuni veicoli, come i mezzi pesanti o gli autobus, per indicare la loro velocità massima consentita. Quindi, è VERO.",
         "regola": "Contrassegni dietro = limiti speciali per il veicolo.",
         "trabocchetti": ["alcune categorie di veicoli"],
@@ -1127,6 +1288,7 @@ QUESTIONS = [
     {
         "domanda": "I contrassegni rappresentati in figura indicano le velocità massime consentite al veicolo sul quale sono applicati",
         "risposta": True,
+        "riassunto": "Contrassegni in figura → velocità massime del veicolo?",
         "spiegazione": "Sì, questi adesivi servono proprio a dire qual è la velocità massima che quel veicolo può raggiungere. Non sono i limiti della strada, ma i limiti che il veicolo stesso non può superare. Quindi, è VERO.",
         "regola": "Numero sul contrassegno = velocità massima del veicolo.",
         "trabocchetti": ["velocità massime consentite al veicolo"],
@@ -1135,6 +1297,7 @@ QUESTIONS = [
     {
         "domanda": "I contrassegni rappresentati in figura sono applicati ad alcuni autobus",
         "risposta": True,
+        "riassunto": "Contrassegni in figura → su alcuni autobus?",
         "spiegazione": "Sì, gli autobus, specialmente quelli più grandi o che fanno servizio di linea, devono avere questi contrassegni che indicano le loro velocità massime. Quindi, è VERO.",
         "regola": "Autobus grandi = contrassegno velocità.",
         "trabocchetti": ["alcuni autobus"],
@@ -1143,6 +1306,7 @@ QUESTIONS = [
     {
         "domanda": "La velocità deve essere diminuita in caso di traffico misto (presenza di veicoli lenti e veloci o di animali e pedoni che occupano la strada)",
         "risposta": True,
+        "riassunto": "Traffico misto → diminuire la velocità?",
         "spiegazione": "Quando ci sono tanti tipi diversi di utenti sulla strada (macchine, bici, pedoni, animali) o veicoli che vanno a velocità diverse, è più difficile guidare in sicurezza. Per questo, devi andare più piano per evitare pericoli. Quindi, è VERO.",
         "regola": "Traffico misto = rallenta, più attenzione.",
         "trabocchetti": ["Traffico misto"],
@@ -1150,6 +1314,7 @@ QUESTIONS = [
     {
         "domanda": "Si deve regolare la velocità in base alle condizioni del fondo stradale (presenza di buche, sconnessioni, fogliame bagnato.)",
         "risposta": True,
+        "riassunto": "Velocità → secondo il fondo stradale?",
         "spiegazione": "Se la strada non è perfetta (ci sono buche, è bagnata, ci sono foglie), la tua auto potrebbe perdere aderenza o potresti non riuscire a frenare bene. Per questo, devi andare più piano per mantenere il controllo. Quindi, è VERO.",
         "regola": "Fondo stradale brutto = velocità ridotta.",
         "trabocchetti": ["Regolare la velocità"],
@@ -1157,6 +1322,7 @@ QUESTIONS = [
     {
         "domanda": "I contrassegni rappresentati in figura sono applicati su autocarri di massa complessiva fino a 3,5 tonnellate",
         "risposta": False,
+        "riassunto": "Contrassegni in figura → su autocarri fino a 3,5 t?",
         "spiegazione": "Questi contrassegni sono obbligatori per gli autocarri che superano le 3,5 tonnellate di massa complessiva. Gli autocarri più piccoli (fino a 3,5 tonnellate) seguono i limiti di velocità normali per le automobili e non hanno bisogno di questi adesivi speciali. Quindi, è FALSO.",
         "regola": "Contrassegni velocità = veicoli pesanti (oltre 3,5t).",
         "trabocchetti": ["fino a 3,5 tonnellate"],
@@ -1165,6 +1331,7 @@ QUESTIONS = [
     {
         "domanda": "I contrassegni rappresentati in figura sono applicati su autocaravan di massa totale fino a 3,5 tonnellate",
         "risposta": False,
+        "riassunto": "Contrassegni in figura → su autocaravan fino a 3,5 t?",
         "spiegazione": "Come per gli autocarri, anche gli autocaravan (camper) che pesano fino a 3,5 tonnellate non devono avere questi contrassegni. Seguono i limiti di velocità delle auto. Solo gli autocaravan più pesanti (oltre 3,5 tonnellate) li devono avere. Quindi, è FALSO.",
         "regola": "Camper leggeri (fino a 3,5t) = no contrassegni speciali.",
         "trabocchetti": ["fino a 3,5 tonnellate"],
@@ -1173,6 +1340,7 @@ QUESTIONS = [
     {
         "domanda": "I contrassegni rappresentati in figura sono applicati sui motocicli di cilindrata superiore a 150 cm3",
         "risposta": False,
+        "riassunto": "Contrassegni in figura → su moto oltre 150 cm3?",
         "spiegazione": "I motocicli, indipendentemente dalla loro cilindrata, non devono avere questi contrassegni di velocità. Questi adesivi sono per veicoli pesanti come autobus e autocarri. Quindi, è FALSO.",
         "regola": "Motocicli = no contrassegni velocità.",
         "trabocchetti": ["motocicli"],
@@ -1181,6 +1349,7 @@ QUESTIONS = [
     {
         "domanda": "La velocità deve essere particolarmente moderata in prossimità di un incrocio",
         "risposta": True,
+        "riassunto": "Velocità particolarmente moderata → vicino agli incroci?",
         "spiegazione": "È vero. In prossimità di un incrocio ci sono molti pericoli, come altri veicoli che arrivano da diverse direzioni o pedoni che attraversano. Andare piano ti dà più tempo per vedere e reagire, evitando incidenti.",
         "regola": "Incrocio = rallenta sempre.",
         "trabocchetti": ["particolarmente moderata"],
@@ -1188,6 +1357,7 @@ QUESTIONS = [
     {
         "domanda": "La velocità deve essere particolarmente moderata nelle strettoie",
         "risposta": True,
+        "riassunto": "Velocità particolarmente moderata → strettoie?",
         "spiegazione": "È vero. Una strettoia è un tratto di strada dove c'è poco spazio per i veicoli. Andando piano, puoi manovrare meglio, evitare di toccare altri veicoli o ostacoli e passare in sicurezza.",
         "regola": "Strettoia = spazio ridotto, velocità ridotta.",
         "trabocchetti": ["strettoie"],
@@ -1195,6 +1365,7 @@ QUESTIONS = [
     {
         "domanda": "La velocità deve essere particolarmente moderata quando risulta difficoltoso l'incrocio con altri veicoli",
         "risposta": True,
+        "riassunto": "Velocità particolarmente moderata → incrocio difficile con altri veicoli?",
         "spiegazione": "È vero. Se la strada è stretta o ci sono ostacoli che rendono difficile il passaggio con un altro veicolo, devi andare piano. Questo ti permette di avere il controllo e di evitare collisioni.",
         "regola": "Difficoltà = prudenza e lentezza.",
         "trabocchetti": ["incrocio"],
@@ -1202,6 +1373,7 @@ QUESTIONS = [
     {
         "domanda": "La velocità deve essere particolarmente moderata nei tratti di strada in cui manca la visibilità (curve, dossi)",
         "risposta": True,
+        "riassunto": "Velocità particolarmente moderata → curve e dossi senza visibilità?",
         "spiegazione": "È vero. Quando non puoi vedere bene cosa c'è più avanti (come in una curva cieca o su un dosso), devi ridurre la velocità. Così, se c'è un pericolo improvviso, hai più tempo per frenare o sterzare.",
         "regola": "Non vedi = non corri.",
         "trabocchetti": ["manca la visibilità"],
@@ -1209,6 +1381,7 @@ QUESTIONS = [
     {
         "domanda": "La velocità deve essere particolarmente moderata quando, in mancanza di marciapiedi, i pedoni occupano la carreggiata",
         "risposta": True,
+        "riassunto": "Velocità particolarmente moderata → pedoni in carreggiata senza marciapiede?",
         "spiegazione": "È vero. Se i pedoni camminano sulla strada perché non c'è un marciapiede, sono molto più vulnerabili. Devi andare molto piano per proteggerli e avere il tempo di fermarti se si muovono improvvisamente.",
         "regola": "Pedoni in strada = massima attenzione.",
         "trabocchetti": ["in mancanza di marciapiedi"],
@@ -1216,6 +1389,7 @@ QUESTIONS = [
     {
         "domanda": "Si deve diminuire la velocità quando la strada è viscida, a causa di acqua, neve, ghiaccio, foglie o fango",
         "risposta": True,
+        "riassunto": "Diminuire la velocità → strada viscida?",
         "spiegazione": "È vero. Quando la strada è scivolosa (viscida) a causa di acqua, neve, ghiaccio, foglie o fango, le gomme del veicolo fanno meno presa. Diminuire la velocità ti aiuta a mantenere il controllo e a non sbandare.",
         "regola": "Strada scivolosa = velocità bassa.",
         "trabocchetti": ["viscida"],
@@ -1223,12 +1397,14 @@ QUESTIONS = [
     {
         "domanda": "La velocità deve essere particolarmente moderata subito dopo il tramonto del sole",
         "risposta": False,
+        "riassunto": "Velocità particolarmente moderata → subito dopo il tramonto?",
         "spiegazione": "È falso. Non è vero che devi moderare la velocità *solo* subito dopo il tramonto. Devi essere prudente e moderare la velocità ogni volta che la visibilità diminuisce, quindi durante il tramonto, di notte e in condizioni di scarsa luce. La frase è troppo specifica e limitante.",
         "regola": "Buio = sempre prudenza, non solo 'subito dopo'.",
     },
     {
         "domanda": "La velocità deve essere particolarmente moderata subito dopo un incrocio",
         "risposta": False,
+        "riassunto": "Velocità particolarmente moderata → subito dopo un incrocio?",
         "spiegazione": "È falso. La velocità deve essere moderata *in prossimità* dell'incrocio (cioè prima e mentre lo attraversi) per prevenire pericoli. *Dopo* aver superato l'incrocio, se la strada è libera e sicura, puoi riprendere la tua velocità normale.",
         "regola": "Incrocio: prudenza *prima*, non *dopo*.",
         "trabocchetti": ["subito dopo"],
@@ -1236,6 +1412,7 @@ QUESTIONS = [
     {
         "domanda": "Si deve regolare la velocità in base alla fretta del conducente",
         "risposta": False,
+        "riassunto": "Velocità → secondo la fretta?",
         "spiegazione": "È falso. La velocità deve essere regolata in base alla sicurezza, alle condizioni della strada, del traffico, del veicolo e del meteo. La tua fretta non è mai un buon motivo per andare più veloce, anzi, può causare incidenti.",
         "regola": "Fretta = pericolo, non velocità.",
         "trabocchetti": ["fretta del conducente"],
@@ -1243,6 +1420,7 @@ QUESTIONS = [
     {
         "domanda": "Si deve tenere una velocità adeguata solo alle nostre condizioni di salute",
         "risposta": False,
+        "riassunto": "Velocità → solo secondo la salute?",
         "spiegazione": "È falso. Le tue condizioni di salute sono importanti, ma non sono l'unico fattore da considerare. Devi tenere conto anche delle condizioni della strada, del traffico, del veicolo e del meteo. La parola 'solo' rende la frase sbagliata.",
         "regola": "'Solo' = attenzione, spesso è falso.",
         "trabocchetti": ["solo"],
@@ -1250,12 +1428,14 @@ QUESTIONS = [
     {
         "domanda": "Si deve tenere una velocità sempre superiore a 30 km/h",
         "risposta": False,
+        "riassunto": "Velocità → sempre oltre 30 km/h?",
         "spiegazione": "È falso. Ci sono molte situazioni in cui devi andare più piano di 30 km/h, ad esempio in zone residenziali, in parcheggi, in caso di traffico molto intenso, scarsa visibilità o manovre particolari. La parola 'sempre' rende la frase sbagliata.",
         "regola": "'Sempre' o 'mai' = quasi sempre falso.",
     },
     {
         "domanda": "Si deve diminuire la velocità quando si è seguiti da un autobus di linea",
         "risposta": False,
+        "riassunto": "Diminuire la velocità → se seguiti da un bus?",
         "spiegazione": "È falso. Non c'è nessuna regola che ti obbliga a diminuire la velocità solo perché un autobus di linea ti sta seguendo. Devi mantenere la velocità adeguata alle condizioni della strada, del traffico e della sicurezza generale, non in base a chi ti sta dietro.",
         "regola": "Chi ti segue non decide la tua velocità.",
         "trabocchetti": ["seguiti da un autobus di linea"],
@@ -1263,12 +1443,14 @@ QUESTIONS = [
     {
         "domanda": "Si deve regolare la velocità in base allo stato di manutenzione e pulizia della strada",
         "risposta": True,
+        "riassunto": "Velocità → secondo manutenzione e pulizia della strada?",
         "spiegazione": "È importante adattare la velocità del veicolo alle condizioni della strada. Se la strada è rovinata, sporca o con buche, è più sicuro andare più piano per evitare incidenti o danni al veicolo.",
         "regola": "Strada brutta, velocità ridotta.",
     },
     {
         "domanda": "La velocità deve essere diminuita in caso di forte vento laterale",
         "risposta": True,
+        "riassunto": "Diminuire la velocità → forte vento laterale?",
         "spiegazione": "Un forte vento che soffia di lato può spingere la tua auto e farti perdere il controllo. Diminuire la velocità ti aiuta a mantenere la stabilità e la direzione del veicolo.",
         "regola": "Vento forte, meno velocità per stare in rotta.",
         "trabocchetti": ["Vento laterale"],
@@ -1276,6 +1458,7 @@ QUESTIONS = [
     {
         "domanda": "La velocità va diminuita in caso di abbagliamento dovuto al sole",
         "risposta": True,
+        "riassunto": "Diminuire la velocità → abbagliamento da sole?",
         "spiegazione": "Quando il sole ti abbaglia, non riesci a vedere bene la strada e gli altri veicoli. Rallentare ti dà più tempo per reagire a eventuali pericoli e riduce il rischio di incidenti.",
         "regola": "Sole negli occhi, rallenta e non fai pasticci.",
         "trabocchetti": ["abbagliamento"],
@@ -1283,6 +1466,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade e sulle strade extraurbane principali, in caso di nebbia fitta, con visibilità inferiore a 100 m, possono essere imposti limiti massimi temporanei di velocità, non superiori a 50 km/h",
         "risposta": True,
+        "riassunto": "Nebbia sotto 100 m → limiti temporanei fino a 50 km/h?",
         "spiegazione": "In caso di nebbia molto fitta, quando non si vede bene (meno di 100 metri), per la tua sicurezza e quella degli altri, le autorità possono imporre un limite di velocità molto basso, massimo 50 km/h, anche su strade dove normalmente si andrebbe più veloci.",
         "regola": "Nebbia fitta (<100m), 50 km/h è il limite massimo.",
         "trabocchetti": ["nebbia fitta", "visibilità inferiore a 100 m", "non superiori a 50 km/h", "Possono essere imposti"],
@@ -1290,6 +1474,7 @@ QUESTIONS = [
     {
         "domanda": "Salvo diversa segnalazione, il limite massimo di velocità sulle strade extraurbane principali è di 100 km/h",
         "risposta": False,
+        "riassunto": "Salvo segnali, extraurbane principali → 100 km/h?",
         "spiegazione": "Questa affermazione è FALSA. Il limite massimo di velocità sulle strade extraurbane principali, se non ci sono altri segnali, è di 110 km/h, non 100 km/h. I 100 km/h sono il limite per le strade extraurbane secondarie.",
         "regola": "Principali = 110, Secondarie = 90.",
         "trabocchetti": ["100 km/h", "strade extraurbane principali", "principali"],
@@ -1297,6 +1482,7 @@ QUESTIONS = [
     {
         "domanda": "Salvo diversa segnalazione, il limite massimo di velocità nei centri abitati è di 60 km/h, valido fino ad un chilometro dopo l'uscita del paese",
         "risposta": False,
+        "riassunto": "Salvo segnali, centri abitati → 60 km/h fino a 1 km dopo?",
         "spiegazione": "Questa affermazione è FALSA. Il limite massimo di velocità nei centri abitati è di 50 km/h, non 60 km/h. Inoltre, il limite finisce quando incontri il segnale di 'fine centro abitato', non un chilometro dopo.",
         "regola": "Centro abitato = 50. Il limite finisce al cartello, non dopo un chilometro.",
         "trabocchetti": ["60 km/h", "valido fino ad un chilometro dopo l"],
@@ -1304,6 +1490,7 @@ QUESTIONS = [
     {
         "domanda": "Si deve diminuire la velocità ogni qualvolta si incontra un segnale stradale di indicazione",
         "risposta": False,
+        "riassunto": "Diminuire la velocità → a ogni segnale di indicazione?",
         "spiegazione": "Questa affermazione è FALSA. I segnali di indicazione (come quelli che ti dicono la direzione o la distanza di una città) servono a darti informazioni, ma non ti obbligano a rallentare. Devi diminuire la velocità solo se ci sono segnali di pericolo, di stop, di dare precedenza o specifici limiti di velocità.",
         "regola": "Indicazione = informazione, non rallentamento automatico.",
         "trabocchetti": ["ogni qualvolta", "Segnale stradale di indicazione"],
@@ -1311,6 +1498,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade, il limite massimo di velocità è di 80 km/h per le autovetture che trainano un rimorchio per il trasporto di cavalli",
         "risposta": True,
+        "riassunto": "Autostrada, auto con rimorchio per cavalli → 80 km/h?",
         "spiegazione": "È VERO. Le autovetture che trainano un rimorchio, come quello per i cavalli, hanno limiti di velocità ridotti. In autostrada, il limite massimo per loro è di 80 km/h.",
         "regola": "Autostrada + Rimorchio = 80 km/h.",
         "trabocchetti": ["per il trasporto di cavalli"],
@@ -1318,6 +1506,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle strade extraurbane secondarie è di 70 km/h per le autovetture che trainano un rimorchio per il trasporto di motocicli",
         "risposta": True,
+        "riassunto": "Extraurbane secondarie, auto con rimorchio per moto → 70 km/h?",
         "spiegazione": "È VERO. Anche sulle strade extraurbane secondarie, le autovetture che trainano un rimorchio (come quello per i motocicli) devono rispettare un limite di velocità inferiore, che è di 70 km/h.",
         "regola": "Extraurbana secondaria + Rimorchio = 70 km/h.",
         "trabocchetti": ["per il trasporto di motocicli"],
@@ -1325,12 +1514,14 @@ QUESTIONS = [
     {
         "domanda": "Si deve, in particolare, regolare la velocità in presenza di lavori in corso",
         "risposta": True,
+        "riassunto": "Regolare la velocità → lavori in corso?",
         "spiegazione": "È VERO. Quando ci sono lavori in corso sulla strada, è fondamentale rallentare e regolare la velocità per la sicurezza degli operai e per la tua.",
         "regola": "Lavori in corso = rallenta, massima attenzione.",
     },
     {
         "domanda": "Si deve, in particolare, regolare la velocità se si incontra sulla strada il segnale di veicolo fermo (triangolo mobile di pericolo)",
         "risposta": True,
+        "riassunto": "Regolare la velocità → triangolo di veicolo fermo?",
         "spiegazione": "È VERO. Il triangolo mobile di pericolo segnala un ostacolo o un veicolo fermo. Quando lo vedi, devi subito ridurre la velocità per evitare incidenti.",
         "regola": "Triangolo di pericolo = rallenta subito.",
         "trabocchetti": ["Triangolo mobile di pericolo"],
@@ -1338,6 +1529,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si viaggia per file parallele, è possibile che nella corsia di destra si circoli ad una velocità superiore a quella di sinistra",
         "risposta": True,
+        "riassunto": "File parallele → a destra più veloce che a sinistra?",
         "spiegazione": "È VERO. In situazioni di traffico intenso, quando si formano file parallele, può capitare che la corsia di destra scorra più velocemente di quella di sinistra, ad esempio se la corsia di sinistra è bloccata da veicoli che devono svoltare.",
         "regola": "Traffico a file parallele: la destra può essere più veloce.",
         "trabocchetti": ["è possibile che"],
@@ -1345,6 +1537,7 @@ QUESTIONS = [
     {
         "domanda": "Lungo le corsie di canalizzazione, è possibile che nella corsia di destra si circoli ad una velocità superiore a quella di sinistra",
         "risposta": True,
+        "riassunto": "Corsie di canalizzazione → a destra più veloce?",
         "spiegazione": "È VERO. Le corsie di canalizzazione servono a indirizzare il traffico verso diverse direzioni. In queste situazioni, il flusso di veicoli può essere diverso tra le corsie, e la corsia di destra può scorrere a una velocità superiore rispetto a quella di sinistra.",
         "regola": "Canalizzazione: la destra può essere più veloce.",
         "trabocchetti": ["è possibile che", "Corsie di canalizzazione"],
@@ -1352,6 +1545,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il traffico risulta canalizzato, è possibile che nella corsia di destra si circoli ad una velocità superiore a quella di sinistra",
         "risposta": True,
+        "riassunto": "Traffico canalizzato → a destra più veloce?",
         "spiegazione": "È VERO. Quando il traffico è 'canalizzato', cioè diviso in corsie per diverse direzioni, è normale che le velocità tra le corsie possano variare. Quindi, la corsia di destra può effettivamente scorrere più velocemente.",
         "regola": "Traffico canalizzato: la destra può essere più veloce.",
         "trabocchetti": ["è possibile che"],
@@ -1359,6 +1553,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade a quattro corsie è consentito viaggiare fino a 170 km/h",
         "risposta": False,
+        "riassunto": "Autostrade a quattro corsie → fino a 170 km/h?",
         "spiegazione": "È FALSO. Il limite massimo di velocità sulle autostrade in Italia è di 130 km/h, indipendentemente dal numero di corsie. Non esiste un limite di 170 km/h.",
         "regola": "Autostrada = max 130 km/h, sempre.",
         "trabocchetti": ["170 km/h", "A quattro corsie"],
@@ -1366,6 +1561,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade è consentito superare, nelle ore notturne, la velocità di 130 km/h, purché si usino i proiettori a luce abbagliante",
         "risposta": False,
+        "riassunto": "Autostrada di notte → oltre 130 con abbaglianti?",
         "spiegazione": "È FALSO. Il limite di 130 km/h in autostrada è fisso e non può essere superato, né di giorno né di notte. L'uso dei proiettori abbaglianti non ti autorizza a superare il limite, anzi, di notte la prudenza deve essere maggiore.",
         "regola": "Limite autostrada = 130 km/h, giorno e notte. Gli abbaglianti non cambiano il limite.",
         "trabocchetti": ["nelle ore notturne"],
@@ -1373,6 +1569,7 @@ QUESTIONS = [
     {
         "domanda": "In autostrada, nella corsia riservata al sorpasso, non è consentito superare la velocità di 110 km/h",
         "risposta": False,
+        "riassunto": "Corsia di sorpasso in autostrada → massimo 110 km/h?",
         "spiegazione": "È FALSO. In autostrada, il limite massimo di velocità è di 130 km/h per le autovetture, anche nella corsia di sorpasso. 110 km/h è il limite per le strade extraurbane principali.",
         "regola": "Autostrada = 130 km/h, anche in sorpasso.",
         "trabocchetti": ["non è consentito", "110 km/h"],
@@ -1380,6 +1577,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle autostrade, il limite massimo di velocità è di 150 km/h nelle ore diurne e di 130 km/h in quelle notturne",
         "risposta": False,
+        "riassunto": "Autostrade → 150 di giorno, 130 di notte?",
         "spiegazione": "È FALSO. Il limite massimo di velocità in autostrada è di 130 km/h, sia di giorno che di notte. Non esiste un limite di 150 km/h in Italia.",
         "regola": "Autostrada = 130 km/h, sempre (giorno e notte).",
         "trabocchetti": ["150 km/h", "ore diurne", "notturne"],
@@ -1387,6 +1585,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle strade extraurbane principali, che abbiano particolari caratteristiche costruttive e di sicurezza, è possibile che il limite massimo di velocità sia di 130 km/h",
         "risposta": False,
+        "riassunto": "Extraurbane principali particolari → 130 km/h?",
         "spiegazione": "È FALSO. Il limite massimo di velocità sulle strade extraurbane principali è di 110 km/h. Il limite di 130 km/h è solo per le autostrade. Le 'particolari caratteristiche' non modificano il limite legale.",
         "regola": "Extraurbana principale = max 110 km/h.",
         "trabocchetti": ["130 km/h"],
@@ -1394,6 +1593,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle strade extraurbane principali è consentito superare la velocità di 110 km/h, ma solo nei tratti di strada in discesa",
         "risposta": False,
+        "riassunto": "Extraurbane principali → oltre 110 in discesa?",
         "spiegazione": "È FALSO. Il limite di 110 km/h sulle strade extraurbane principali è un limite massimo e non può essere superato, nemmeno in discesa. Anzi, in discesa è spesso necessario rallentare per mantenere il controllo del veicolo.",
         "regola": "Limite extraurbana principale = 110 km/h, sempre. La discesa non è una scusa.",
         "trabocchetti": ["ma solo nei tratti di strada in discesa"],
@@ -1401,6 +1601,7 @@ QUESTIONS = [
     {
         "domanda": "Il limite massimo di velocità sulle strade extraurbane secondarie è di 90 km/h per le autovetture che trainano un rimorchio per il trasporto di gommoni o alianti",
         "risposta": False,
+        "riassunto": "Extraurbane secondarie, auto con rimorchio gommoni → 90 km/h?",
         "spiegazione": "È FALSO. Per le autovetture che trainano un rimorchio, il limite di velocità sulle strade extraurbane secondarie è di 70 km/h, non 90 km/h. Il limite di 90 km/h è per le autovetture senza rimorchio su queste strade.",
         "regola": "Extraurbana secondaria + Rimorchio = 70 km/h.",
         "trabocchetti": ["90 km/h", "Per il trasporto di gommoni o alianti"],
@@ -1408,6 +1609,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle strade extraurbane secondarie il limite massimo di velocità per le macchine agricole e le macchine operatrici è di 70 km/h, se hanno in funzione il dispositivo a luce gialla lampeggiante",
         "risposta": False,
+        "riassunto": "Extraurbane secondarie, macchine agricole con lampeggiante → 70 km/h?",
         "spiegazione": "È FALSO. Le macchine agricole e le macchine operatrici hanno limiti di velocità molto più bassi. Sulle strade extraurbane secondarie, il limite è di 40 km/h per entrambe (con alcune eccezioni per le operatrici). 70 km/h è un limite troppo alto per questi veicoli. Il dispositivo a luce gialla lampeggiante serve solo a segnalare la loro presenza, non ad aumentare la velocità massima consentita.",
         "regola": "Macchine agricole/operatrici = molto lente (max 40 km/h su extraurbane secondarie). La luce gialla non aumenta il limite.",
         "trabocchetti": ["70 km/h"],
@@ -1415,6 +1617,7 @@ QUESTIONS = [
     {
         "domanda": "Se si attraversa ad alta velocità un incrocio avendo diritto di precedenza, in caso di incidente, non può escludersi un concorso di colpa",
         "risposta": True,
+        "riassunto": "Incrocio veloce con precedenza → possibile concorso di colpa?",
         "spiegazione": "Anche se hai la precedenza, devi sempre guidare con prudenza. Se vai troppo veloce e c'è un incidente, potresti avere una parte di colpa (concorso di colpa), perché non hai fatto tutto il possibile per evitarlo. Quindi, è possibile che tu abbia una parte di responsabilità.",
         "regola": "Precedenza non è mai via libera totale.",
         "trabocchetti": ["non può escludersi", "Concorso di colpa"],
@@ -1422,6 +1625,7 @@ QUESTIONS = [
     {
         "domanda": "I limiti massimi di velocità vigenti sulle autostrade e sulle strade extraurbane non sono identici in tutti gli stati d'Europa",
         "risposta": True,
+        "riassunto": "Limiti in Europa → non identici ovunque?",
         "spiegazione": "Ogni paese in Europa ha le sue regole. I limiti di velocità in autostrada o sulle strade fuori città possono essere diversi da un paese all'altro. Per esempio, in Germania ci sono tratti senza limiti, mentre in Italia il limite è 130 km/h.",
         "regola": "Limiti velocità: ogni paese, sua regola.",
         "trabocchetti": ["non sono identici", "in tutti gli stati d"],
@@ -1429,6 +1633,7 @@ QUESTIONS = [
     {
         "domanda": "Se si attraversa un incrocio a forte velocità avendo il diritto di precedenza, in caso di incidente si è completamente privi di responsabilità",
         "risposta": False,
+        "riassunto": "Incrocio veloce con precedenza → nessuna responsabilità?",
         "spiegazione": "Anche se hai la precedenza, non puoi andare troppo veloce. Se causi un incidente andando a forte velocità, hai comunque una responsabilità, non sei 'completamente privo di responsabilità'. Devi sempre guidare con attenzione e prudenza.",
         "regola": "Precedenza + velocità = possibile colpa.",
         "trabocchetti": ["completamente privi di responsabilità"],
@@ -1436,6 +1641,7 @@ QUESTIONS = [
     {
         "domanda": "Se si attraversa ad alta velocità un incrocio in cui si ha precedenza, in caso di incidente la responsabilità sarà solo del conducente del veicolo proveniente dalla strada senza diritto di precedenza",
         "risposta": False,
+        "riassunto": "Incrocio veloce con precedenza → colpa solo dell'altro?",
         "spiegazione": "Non è vero che la responsabilità sarà 'solo' dell'altro. Anche se hai la precedenza, se vai troppo veloce e non fai attenzione, puoi avere una parte di colpa nell'incidente. La responsabilità può essere divisa tra i conducenti.",
         "regola": "'Solo' colpa altrui? Quasi mai se sei imprudente.",
         "trabocchetti": ["solo"],
@@ -1443,6 +1649,7 @@ QUESTIONS = [
     {
         "domanda": "Se si attraversa un incrocio con diritto di precedenza, non si ha alcun obbligo di rallentare",
         "risposta": False,
+        "riassunto": "Incrocio con precedenza → nessun obbligo di rallentare?",
         "spiegazione": "Anche se hai la precedenza, devi sempre rallentare e fare attenzione quando ti avvicini a un incrocio. Questo ti permette di vedere se qualcuno non rispetta la precedenza e di frenare in tempo per evitare un incidente. La prudenza è sempre obbligatoria.",
         "regola": "Incrocio = rallenta, anche con precedenza.",
         "trabocchetti": ["non si ha alcun obbligo"],
@@ -1450,6 +1657,7 @@ QUESTIONS = [
     {
         "domanda": "Se si attraversa ad alta velocità un incrocio con precedenza, in caso di incidente la responsabilità sarà del conducente del veicolo che ha impegnato per primo l'incrocio",
         "risposta": False,
+        "riassunto": "Incrocio veloce → colpa di chi è entrato per primo?",
         "spiegazione": "Non è vero che la responsabilità è di chi entra per primo nell'incrocio, specialmente se tu hai la precedenza ma vai troppo veloce. La responsabilità dipende da chi non ha rispettato le regole e da chi non ha guidato con prudenza. Se hai la precedenza ma vai ad alta velocità, puoi avere una parte di colpa.",
         "regola": "Precedenza e prudenza contano più di 'chi entra prima'.",
         "trabocchetti": ["incrocio"],
@@ -1457,6 +1665,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di arresto forzato di un veicolo sui binari di un passaggio a livello, bisogna spostarlo, spingendolo quanto prima fuori dai binari",
         "risposta": True,
+        "riassunto": "Bloccati sui binari → spingere il veicolo fuori subito?",
         "spiegazione": "Se il veicolo si ferma sui binari di un passaggio a livello, la prima cosa da fare è cercare di spostarlo subito, spingendolo fuori dai binari. Questo è fondamentale per evitare un incidente con il treno.",
         "regola": "Binari = pericolo immediato, sposta subito!",
         "trabocchetti": ["quanto prima"],
@@ -1464,6 +1673,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di arresto forzato di un veicolo sui binari di un passaggio a livello, se non è possibile spostarlo subito dai binari, bisogna far scendere immediatamente tutte le persone che si trovano a bordo, e avvisare la stazione ferroviaria",
         "risposta": True,
+        "riassunto": "Bloccati sui binari → far scendere tutti e avvisare la stazione?",
         "spiegazione": "Se non riesci a spostare il veicolo dai binari, la priorità è mettere in salvo le persone a bordo, facendole scendere subito. Dopo, devi avvisare la stazione ferroviaria per segnalare il pericolo e fermare i treni.",
         "regola": "Non si sposta? Salva persone, poi avvisa stazione.",
         "trabocchetti": ["immediatamente", "subito"],
@@ -1471,6 +1681,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di arresto forzato del veicolo sui binari ferroviari di un passaggio a livello, bisogna fare in modo che i conducenti dei veicoli su rotaie siano avvisati in tempo utile del pericolo",
         "risposta": True,
+        "riassunto": "Bloccati sui binari → avvisare i treni in tempo?",
         "spiegazione": "È molto importante che i macchinisti dei treni siano informati del pericolo in anticipo. Questo permette loro di frenare o fermarsi in tempo, evitando una collisione. Avvisare la stazione ferroviaria serve proprio a questo.",
         "regola": "Avvisa i treni per tempo!",
         "trabocchetti": ["in tempo utile"],
@@ -1478,6 +1689,7 @@ QUESTIONS = [
     {
         "domanda": "Se si percorre una lunga discesa con il cambio in folle e a motore spento, diventa difficoltoso muovere lo sterzo se il veicolo è dotato di servosterzo",
         "risposta": True,
+        "riassunto": "Discesa in folle a motore spento → servosterzo duro?",
         "spiegazione": "Il servosterzo è un sistema che rende il volante leggero e facile da girare. Funziona grazie al motore. Se il motore è spento, il servosterzo non funziona e girare il volante diventa molto più difficile e pesante.",
         "regola": "Motore spento = servosterzo spento = sterzo duro.",
         "trabocchetti": ["difficoltoso", "Servosterzo"],
@@ -1485,6 +1697,7 @@ QUESTIONS = [
     {
         "domanda": "Se si percorre una lunga discesa con il cambio in folle e a motore spento, diventa difficoltoso frenare se il veicolo è dotato di servofreno",
         "risposta": True,
+        "riassunto": "Discesa in folle a motore spento → frenare difficile col servofreno?",
         "spiegazione": "Il servofreno (o freno assistito) usa la depressione creata dal motore per rendere la frenata più facile. Se il motore è spento, il servofreno non funziona bene e devi premere il pedale del freno con molta più forza per frenare.",
         "regola": "Motore spento = servofreno spento = freni duri.",
         "trabocchetti": ["difficoltoso", "Servofreno"],
@@ -1492,6 +1705,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli dotati di servofreno, se si percorre una lunga discesa con il cambio in folle e a motore spento, aumenta il rischio di provocare incidenti",
         "risposta": True,
+        "riassunto": "Servofreno, discesa a motore spento → più rischio di incidenti?",
         "spiegazione": "Se sterzare e frenare sono più difficili a causa del motore spento e del cambio in folle, è molto più facile perdere il controllo del veicolo e causare un incidente. Per questo, il rischio aumenta.",
         "regola": "Folle + motore spento in discesa = pericolo!",
         "trabocchetti": ["aumenta il rischio"],
@@ -1499,6 +1713,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli dotati di servosterzo, se si percorre una lunga discesa con il cambio in folle e a motore spento, diventa difficoltoso girare rapidamente lo sterzo per schivare un ostacolo",
         "risposta": True,
+        "riassunto": "Servosterzo, discesa a motore spento → difficile schivare?",
         "spiegazione": "Senza il servosterzo (perché il motore è spento), il volante è molto pesante. Questo rende quasi impossibile fare manovre veloci, come girare rapidamente lo sterzo per evitare un ostacolo improvviso sulla strada.",
         "regola": "Senza servosterzo, non schivi.",
         "trabocchetti": ["girare rapidamente", "schivare un ostacolo"],
@@ -1506,6 +1721,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli dotati di servofreno, se si percorre una lunga discesa con il cambio in folle e a motore spento, aumenta pericolosamente lo spazio di frenatura",
         "risposta": True,
+        "riassunto": "Servofreno, discesa a motore spento → spazio di frenata più lungo?",
         "spiegazione": "Se il servofreno non funziona bene (perché il motore è spento), devi premere il pedale con più forza e il veicolo impiega più strada per fermarsi. Questa distanza maggiore si chiama \"spazio di frenatura\" e diventa pericolosamente lunga.",
         "regola": "Motore spento = frenata lunga e pericolosa.",
         "trabocchetti": ["aumenta pericolosamente", "spazio di frenatura"],
@@ -1513,6 +1729,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli dotati di servofreno, se si percorre una lunga discesa con il cambio in folle e a motore spento, diventa sempre più difficoltoso arrestare il veicolo",
         "risposta": True,
+        "riassunto": "Servofreno, discesa a motore spento → sempre più difficile fermarsi?",
         "spiegazione": "Quando il motore è spento, la riserva di depressione del servofreno si esaurisce man mano che si frena. Questo significa che ogni frenata successiva diventa ancora più difficile della precedente, rendendo sempre più complicato fermare il veicolo.",
         "regola": "Senza motore, il freno peggiora.",
         "trabocchetti": ["sempre più difficoltoso"],
@@ -1520,6 +1737,7 @@ QUESTIONS = [
     {
         "domanda": "Se si percorre una lunga discesa con il cambio in folle e a motore spento, si ha un sovraccarico di corrente elettrica",
         "risposta": False,
+        "riassunto": "Discesa a motore spento → sovraccarico elettrico?",
         "spiegazione": "Se il motore è spento, non produce corrente elettrica. Quindi, non ci può essere nessun \"sovraccarico di corrente elettrica\". Anzi, la batteria potrebbe scaricarsi se si usano accessori elettrici.",
         "regola": "Motore spento = niente sovraccarico elettrico.",
         "trabocchetti": ["sovraccarico"],
@@ -1527,6 +1745,7 @@ QUESTIONS = [
     {
         "domanda": "Se si percorre una lunga discesa con il cambio in folle e a motore spento, si può avere un'anomalia al differenziale",
         "risposta": False,
+        "riassunto": "Discesa a motore spento → guasto al differenziale?",
         "spiegazione": "Il differenziale è un componente meccanico che permette alle ruote di girare a velocità diverse, ad esempio in curva. Andare in folle o a motore spento non causa nessun problema o \"anomalia\" al differenziale.",
         "regola": "Folle e motore spento non rompono il differenziale.",
         "trabocchetti": ["anomalia al differenziale"],
@@ -1534,6 +1753,7 @@ QUESTIONS = [
     {
         "domanda": "Per una maggiore sicurezza, è conveniente percorrere le lunghe discese con il cambio in folle e a motore spento, risparmiando così anche carburante",
         "risposta": False,
+        "riassunto": "Discese lunghe → in folle a motore spento per sicurezza?",
         "spiegazione": "Percorrere una discesa con il cambio in folle e il motore spento è una pratica estremamente pericolosa, non \"conveniente per la sicurezza\". Il piccolo risparmio di carburante non giustifica l'enorme rischio di incidenti.",
         "regola": "Sicurezza prima del risparmio! Mai folle in discesa.",
         "trabocchetti": ["maggiore sicurezza", "risparmiando così anche carburante"],
@@ -1541,6 +1761,7 @@ QUESTIONS = [
     {
         "domanda": "Se si percorre una lunga discesa con il cambio in folle e a motore spento, conviene estrarre la chiave di accensione del veicolo",
         "risposta": False,
+        "riassunto": "Discesa in folle → togliere la chiave?",
         "spiegazione": "Estrarre la chiave di accensione mentre il veicolo è in movimento blocca il volante (bloccasterzo). Questo rende impossibile guidare il veicolo e causerebbe un incidente gravissimo. È una pratica estremamente pericolosa e illegale.",
         "regola": "Chiave fuori = volante bloccato = incidente sicuro.",
         "trabocchetti": ["conviene estrarre la chiave"],
@@ -1548,6 +1769,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli dotati di servofreno a depressione, se si percorre una lunga discesa con il cambio in folle e a motore spento, si ottiene la stessa forza frenante che si ha con il motore acceso",
         "risposta": False,
+        "riassunto": "Servofreno a depressione, motore spento → stessa forza frenante?",
         "spiegazione": "Il servofreno a depressione funziona grazie al motore. Se il motore è spento, la depressione si esaurisce e la forza frenante diminuisce drasticamente. Non si ottiene affatto la stessa forza frenante che si ha con il motore acceso, ma molta meno.",
         "regola": "Motore spento = meno forza frenante.",
         "trabocchetti": ["stessa forza frenante"],
@@ -1555,6 +1777,7 @@ QUESTIONS = [
     {
         "domanda": "Nel caso in cui, a un passaggio a livello, ci si trova ancora sui binari col proprio veicolo quando le barriere cominciano a chiudersi, occorre mantenere la calma e sgomberare in qualunque modo la sede ferroviaria",
         "risposta": True,
+        "riassunto": "Sui binari mentre le barriere si chiudono → calma e liberare in ogni modo?",
         "spiegazione": "Se ti trovi sui binari e le barriere del passaggio a livello iniziano a chiudersi, la cosa più importante è mantenere la calma e fare tutto il possibile per spostare il tuo veicolo dai binari. Questo serve a evitare un incidente con il treno.",
         "regola": "Sui binari, via subito!",
         "trabocchetti": ["in qualunque modo"],
@@ -1562,12 +1785,14 @@ QUESTIONS = [
     {
         "domanda": "Nel caso in cui, a un passaggio a livello, ci si trova ancora sui binari col proprio veicolo quando le barriere cominciano a chiudersi, occorre sgomberare in qualunque modo la sede ferroviaria, se necessario anche sfondando le barriere",
         "risposta": True,
+        "riassunto": "Sui binari mentre si chiudono → anche sfondando le barriere?",
         "spiegazione": "Se sei sui binari e le barriere si chiudono, la tua vita e quella delle persone sul treno sono più importanti delle barriere. Se non c'è altro modo per uscire dai binari, devi sfondare le barriere per metterti in salvo.",
         "regola": "Vita > Barriera.",
     },
     {
         "domanda": "Nel caso in cui, per un guasto al veicolo, si rimane bloccati sulla sede ferroviaria di un passaggio a livello, occorre adoperarsi per rimuovere il veicolo al più presto, ad esempio facendosi trainare da altri utenti",
         "risposta": True,
+        "riassunto": "Guasto sui binari → farsi trainare via?",
         "spiegazione": "Se il tuo veicolo si rompe e rimane bloccato sui binari di un passaggio a livello, devi agire subito per toglierlo. Chiedere aiuto ad altri automobilisti per farti trainare è un buon modo per farlo velocemente.",
         "regola": "Guasto sui binari? Sposta subito!",
         "trabocchetti": ["ad esempio facendosi trainare"],
@@ -1575,12 +1800,14 @@ QUESTIONS = [
     {
         "domanda": "Nel caso in cui, per un guasto alla propria autovettura, si rimane bloccati sulla sede ferroviaria di un passaggio a livello, occorre adoperarsi per rimuovere il veicolo al più presto, ad esempio facendosi aiutare da altri utenti a spingere il veicolo fuori dalla linea ferroviaria",
         "risposta": True,
+        "riassunto": "Guasto sui binari → farsi aiutare a spingere fuori?",
         "spiegazione": "Se la tua auto si ferma sui binari per un guasto, devi fare di tutto per spostarla il più velocemente possibile. Chiedere aiuto ad altre persone per spingere il veicolo fuori dai binari è un'azione corretta e necessaria.",
         "regola": "Guasto sui binari? Spingi via!",
     },
     {
         "domanda": "Ai passaggi a livello occorre usare la massima prudenza e moderare la velocità, per evitare situazioni di pericolo che comportino il danneggiamento delle attrezzature",
         "risposta": True,
+        "riassunto": "Passaggi a livello → prudenza per non danneggiare le attrezzature?",
         "spiegazione": "Quando ti avvicini a un passaggio a livello, devi essere molto attento e andare piano. Questo ti aiuta a evitare incidenti che potrebbero rovinare le barriere, i semafori o altre attrezzature del passaggio a livello.",
         "regola": "Passaggio a livello: piano e attento.",
         "trabocchetti": ["massima prudenza e moderare la velocità", "danneggiamento delle attrezzature"],
@@ -1588,6 +1815,7 @@ QUESTIONS = [
     {
         "domanda": "Ai passaggi a livello occorre usare la massima prudenza e moderare la velocità, per evitare situazioni di pericolo che comportino la collisione con le barriere del passaggio stesso",
         "risposta": True,
+        "riassunto": "Passaggi a livello → prudenza per non urtare le barriere?",
         "spiegazione": "Ai passaggi a livello è fondamentale guidare con molta attenzione e a bassa velocità. In questo modo, eviti di sbattere contro le barriere, il che è molto pericoloso e può causare gravi danni.",
         "regola": "Passaggio a livello: piano e attento.",
         "trabocchetti": ["massima prudenza e moderare la velocità", "collisione con le barriere"],
@@ -1595,6 +1823,7 @@ QUESTIONS = [
     {
         "domanda": "Attraversare un passaggio a livello senza rispettare tutte le norme previste, può mettere in pericolo l'incolumità di molte persone che viaggino su un treno in transito",
         "risposta": True,
+        "riassunto": "Passaggio a livello senza regole → pericolo per chi è sul treno?",
         "spiegazione": "Non rispettare le regole al passaggio a livello è estremamente pericoloso. Un incidente con un treno può causare feriti o morti a molte persone che viaggiano sul treno, non solo a te.",
         "regola": "Regole al passaggio a livello = sicurezza di tutti.",
         "trabocchetti": ["può mettere in pericolo l"],
@@ -1602,6 +1831,7 @@ QUESTIONS = [
     {
         "domanda": "Attraversare un passaggio a livello con manovra azzardata per guadagnare tempo, può essere un pericolo per molti individui, oltre che per il conducente",
         "risposta": True,
+        "riassunto": "Manovra azzardata al passaggio a livello → pericolo per molti?",
         "spiegazione": "Cercare di attraversare un passaggio a livello in modo rischioso per guadagnare qualche secondo è molto pericoloso. Non metti a rischio solo te stesso, ma anche le persone sul treno e chiunque si trovi nelle vicinanze.",
         "regola": "Non rischiare per un minuto!",
         "trabocchetti": ["manovra azzardata per guadagnare tempo"],
@@ -1609,12 +1839,14 @@ QUESTIONS = [
     {
         "domanda": "Nel caso in cui un veicolo rimanga fermo tra le barriere chiuse del passaggio a livello occorre adoperarsi in ogni modo per presegnalare il pericolo a eventuali treni in transito",
         "risposta": True,
+        "riassunto": "Veicolo fermo tra le barriere → presegnalare ai treni?",
         "spiegazione": "Se il tuo veicolo rimane bloccato tra le barriere chiuse di un passaggio a livello, dopo aver tentato di spostarlo, la cosa più importante è avvisare subito i treni che potrebbero arrivare. Questo può salvare molte vite.",
         "regola": "Bloccato? Avvisa il treno!",
     },
     {
         "domanda": "Nel caso in cui, a un passaggio a livello, ci si trova ancora sui binari col proprio veicolo quando le barriere cominciano a chiudersi, occorre scendere e abbandonare rapidamente il veicolo per mettersi in salvo",
         "risposta": False,
+        "riassunto": "Sui binari mentre si chiudono → abbandonare il veicolo?",
         "spiegazione": "Se sei sui binari e le barriere si chiudono, la prima cosa da fare è cercare di spostare il veicolo, anche sfondando le barriere. Abbandonare il veicolo sui binari è molto pericoloso perché il treno lo colpirebbe, causando un disastro. Devi prima provare a salvarlo.",
         "regola": "Non abbandonare il veicolo sui binari!",
         "trabocchetti": ["abbandonare rapidamente il veicolo"],
@@ -1622,24 +1854,28 @@ QUESTIONS = [
     {
         "domanda": "Nel caso in cui, a un passaggio a livello, ci si trova ancora sui binari col proprio veicolo quando le barriere cominciano a chiudersi, se si sta trainando un rimorchio occorre sganciarlo rapidamente e abbandonarlo sui binari per salvare almeno la motrice",
         "risposta": False,
+        "riassunto": "Sui binari con rimorchio → sganciarlo e abbandonarlo?",
         "spiegazione": "Anche se stai trainando un rimorchio e ti trovi sui binari con le barriere che si chiudono, l'obiettivo è sgomberare completamente i binari. Abbandonare il rimorchio sui binari è pericoloso quanto abbandonare l'auto, perché il treno lo colpirebbe comunque. Devi cercare di spostare tutto il convoglio.",
         "regola": "Non lasciare nulla sui binari!",
     },
     {
         "domanda": "Nel caso in cui, per un guasto al veicolo, si rimane bloccati sulla sede ferroviaria di un passaggio a livello, occorre scaricare rapidamente il veicolo per salvare almeno il carico",
         "risposta": False,
+        "riassunto": "Guasto sui binari → scaricare per salvare il carico?",
         "spiegazione": "Se il tuo veicolo si guasta e rimane bloccato sui binari, la priorità assoluta è togliere il veicolo (e il suo carico) dai binari il più velocemente possibile. Scaricare il carico richiederebbe troppo tempo e lascerebbe comunque il veicolo in una posizione pericolosa.",
         "regola": "Salva la vita, non il carico!",
     },
     {
         "domanda": "Nel caso in cui, per un guasto alla propria autovettura, si rimane bloccati sulla sede ferroviaria di un passaggio a livello, occorre svuotare rapidamente il serbatoio per evitare incendi in caso di collisione col treno",
         "risposta": False,
+        "riassunto": "Guasto sui binari → svuotare il serbatoio?",
         "spiegazione": "Se la tua auto si blocca sui binari, svuotare il serbatoio è un'operazione che richiede tempo prezioso e non è la priorità. Inoltre, il carburante sparso potrebbe aumentare il rischio di incendio, non diminuirlo. La cosa più importante è spostare il veicolo.",
         "regola": "Sposta il veicolo, non svuotare il serbatoio!",
     },
     {
         "domanda": "I passaggi a livello vanno affrontati a velocità molto elevata per evitare di rimanere bloccati sulla linea ferroviaria",
         "risposta": False,
+        "riassunto": "Passaggi a livello → a velocità molto elevata?",
         "spiegazione": "I passaggi a livello devono essere affrontati con prudenza e a velocità moderata. Andare molto veloce è pericoloso perché potresti non riuscire a fermarti in tempo se le barriere si abbassano o se c'è un ostacolo.",
         "regola": "Passaggio a livello: piano, non veloce!",
         "trabocchetti": ["velocità molto elevata"],
@@ -1647,12 +1883,14 @@ QUESTIONS = [
     {
         "domanda": "I passaggi a livello vanno affrontati a velocità molto elevata per essere in grado di sfondare le barriere se non si è in grado di fermarsi per tempo a barriere abbassate",
         "risposta": False,
+        "riassunto": "Passaggi a livello → veloci per sfondare le barriere?",
         "spiegazione": "Non devi mai affrontare un passaggio a livello a velocità elevata. Se le barriere sono abbassate, devi fermarti. Sfondarle è una soluzione estrema solo se sei già sui binari e non hai altra scelta per la tua sicurezza, non un motivo per andare veloce.",
         "regola": "Non correre per sfondare!",
     },
     {
         "domanda": "Attraversare un passaggio a livello senza rispettare tutte le norme previste, comporta esclusivamente una lieve sanzione amministrativa in quanto non comporta reali pericoli per gli altri utenti",
         "risposta": False,
+        "riassunto": "Passaggio a livello senza regole → solo lieve sanzione?",
         "spiegazione": "Non rispettare le regole al passaggio a livello è estremamente pericoloso e può causare incidenti gravissimi, mettendo a rischio la vita di molte persone sul treno e non solo. Le conseguenze non sono solo una \"lieve sanzione\".",
         "regola": "Passaggio a livello: pericolo reale, non solo multa.",
         "trabocchetti": ["e"],
@@ -1660,6 +1898,7 @@ QUESTIONS = [
     {
         "domanda": "Attraversare un passaggio a livello con manovra azzardata per guadagnare tempo, può essere pericoloso solo nelle ore notturne",
         "risposta": False,
+        "riassunto": "Manovra azzardata al passaggio a livello → pericolosa solo di notte?",
         "spiegazione": "Una manovra azzardata al passaggio a livello è pericolosa in qualsiasi momento, sia di giorno che di notte. Il rischio di un treno in arrivo o di un incidente non dipende dall'ora del giorno.",
         "regola": "Pericolo sempre, non solo di notte!",
         "trabocchetti": ["solo nelle ore notturne"],
@@ -1667,6 +1906,7 @@ QUESTIONS = [
     {
         "domanda": "Nel caso in cui un veicolo rimanga fermo tra le barriere chiuse del passaggio a livello, unico obbligo del conducente è quello di spegnere il motore e invitare eventuali passeggeri a scendere dal veicolo",
         "risposta": False,
+        "riassunto": "Fermo tra le barriere → solo spegnere e far scendere?",
         "spiegazione": "Spegnere il motore e far scendere i passeggeri sono azioni importanti per la sicurezza, ma non sono l'UNICO obbligo. L'obbligo principale è cercare di spostare il veicolo e, se non possibile, presegnalare il pericolo al treno.",
         "regola": "Non solo scendere, ma agire!",
         "trabocchetti": ["unico obbligo"],
@@ -1674,18 +1914,21 @@ QUESTIONS = [
     {
         "domanda": "Nel caso in cui un veicolo rimanga fermo tra le barriere chiuse del passaggio a livello occorre allontanarsi di almeno cento metri il prima possibile",
         "risposta": False,
+        "riassunto": "Fermo tra le barriere → allontanarsi di cento metri?",
         "spiegazione": "Allontanarsi dal veicolo è importante per la propria sicurezza, ma solo dopo aver fatto tutto il possibile per spostare il veicolo o per avvisare il treno. Abbandonare subito il veicolo senza fare nulla è sbagliato e irresponsabile.",
         "regola": "Prima agisci, poi allontanati!",
     },
     {
         "domanda": "In caso di tamponamento tra veicoli in corrispondenza di un passaggio a livello, non si devono spostare i veicoli dai binari qualora vi siano stati feriti",
         "risposta": False,
+        "riassunto": "Tamponamento sui binari con feriti → non spostare i veicoli?",
         "spiegazione": "In un passaggio a livello, la priorità assoluta è sempre sgomberare i binari, anche se ci sono feriti. I feriti vanno soccorsi, ma i veicoli devono essere spostati immediatamente per evitare un disastro con il treno, che causerebbe ancora più danni e feriti.",
         "regola": "Sui binari, sposta sempre!",
     },
     {
         "domanda": "In un centro abitato, se si vede un pallone rotolare sulla carreggiata, bisogna diminuire subito la velocità",
         "risposta": True,
+        "riassunto": "Pallone in strada in città → diminuire subito la velocità?",
         "spiegazione": "Se vedi un pallone rotolare in strada, devi subito diminuire la velocità. Questo ti dà più tempo per reagire e fermarti in sicurezza, perché un bambino potrebbe correre dietro al pallone.",
         "regola": "Pallone = bambino = rallenta subito.",
         "trabocchetti": ["subito"],
@@ -1693,6 +1936,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato, se si vede un pallone rotolare sulla carreggiata, bisogna rallentare per potersi fermare, se necessario",
         "risposta": True,
+        "riassunto": "Pallone in strada → rallentare per potersi fermare?",
         "spiegazione": "È fondamentale rallentare per essere pronti a fermarsi. Se un bambino dovesse correre in strada per prendere il pallone, tu devi essere in grado di bloccare il veicolo in tempo.",
         "regola": "Rallenta per fermarti, sempre pronto.",
         "trabocchetti": ["se necessario"],
@@ -1700,6 +1944,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato, se si vede un pallone rotolare sulla carreggiata, bisogna prevedere anche il possibile attraversamento della strada da parte di un bambino",
         "risposta": True,
+        "riassunto": "Pallone in strada → possibile bambino che attraversa?",
         "spiegazione": "Quando vedi un pallone, devi pensare che ci sia un bambino nelle vicinanze. I bambini spesso non guardano la strada e potrebbero attraversare all'improvviso. La prudenza è d'obbligo.",
         "regola": "Pallone = bambino in arrivo.",
         "trabocchetti": ["prevedere"],
@@ -1707,6 +1952,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato, se si vede un pallone rotolare sulla carreggiata, bisogna rallentare progressivamente, per evitare di essere tamponati dal veicolo che segue",
         "risposta": True,
+        "riassunto": "Pallone in strada → rallentare gradualmente per non farsi tamponare?",
         "spiegazione": "Rallentare in modo graduale è importante per la tua sicurezza e quella di chi ti segue. Se freni di colpo, il veicolo dietro di te potrebbe non avere il tempo di frenare e tamponarti.",
         "regola": "Rallenta piano, evita il tamponamento.",
         "trabocchetti": ["progressivamente"],
@@ -1714,6 +1960,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato, se si vede un pallone rotolare sulla carreggiata, bisogna sterzare bruscamente",
         "risposta": False,
+        "riassunto": "Pallone in strada → sterzare bruscamente?",
         "spiegazione": "Sterzare bruscamente è molto pericoloso. Potresti perdere il controllo del veicolo, finire fuori strada o invadere la corsia opposta, causando un incidente grave. La priorità è rallentare e fermarsi, non fare manovre improvvise.",
         "regola": "Mai sterzare di colpo.",
         "trabocchetti": ["bruscamente"],
@@ -1721,6 +1968,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a doppio senso di circolazione, se si vede un pallone rotolare sulla carreggiata, bisogna scansarlo, anche invadendo la corsia opposta",
         "risposta": False,
+        "riassunto": "Pallone in strada su doppio senso → scansarlo invadendo l'opposta?",
         "spiegazione": "Invadere la corsia opposta è estremamente pericoloso, specialmente in un centro abitato. Potrebbe arrivare un altro veicolo e causare un incidente frontale. La sicurezza delle persone è più importante di un pallone.",
         "regola": "Non invadere mai l'altra corsia per un pallone.",
         "trabocchetti": ["anche invadendo la corsia opposta"],
@@ -1728,6 +1976,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato, se si vede un pallone rotolare sulla carreggiata, non occorre rallentare, per evitare di essere tamponati dal veicolo che segue",
         "risposta": False,
+        "riassunto": "Pallone in strada → non rallentare per non farsi tamponare?",
         "spiegazione": "Questa affermazione è falsa e molto pericolosa. La sicurezza di un bambino è la priorità assoluta. Devi sempre rallentare. Il rischio di un tamponamento si gestisce rallentando progressivamente, non ignorando il pericolo.",
         "regola": "Rallenta sempre, la sicurezza prima di tutto.",
         "trabocchetti": ["non occorre rallentare"],
@@ -1735,6 +1984,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato, se si vede un pallone rotolare sulla carreggiata, bisogna azionare immediatamente la segnalazione luminosa di pericolo",
         "risposta": False,
+        "riassunto": "Pallone in strada → accendere subito le quattro frecce?",
         "spiegazione": "Le luci di emergenza (le 'quattro frecce') si usano quando il veicolo è fermo o procede molto lentamente in situazioni di pericolo. Quando vedi un pallone, la prima cosa da fare è rallentare e osservare, non accendere subito le luci di emergenza.",
         "regola": "Luci di pericolo per veicolo fermo, non per un pallone.",
         "trabocchetti": ["immediatamente"],
@@ -1742,6 +1992,7 @@ QUESTIONS = [
     {
         "domanda": "Passare molto vicino ad un'auto parcheggiata, a bordo della quale si trovano ancora persone, può essere pericoloso, per la possibile apertura imprudente delle portiere",
         "risposta": True,
+        "riassunto": "Vicino ad auto parcheggiata con persone → portiere che si aprono?",
         "spiegazione": "È VERO. Se ci sono persone dentro un'auto parcheggiata, c'è il rischio che aprano una portiera all'improvviso senza guardare, causando un incidente. Per questo è importante mantenere una distanza di sicurezza.",
         "regola": "Persone in auto = porta che si apre.",
         "trabocchetti": ["possibile apertura imprudente"],
@@ -1749,6 +2000,7 @@ QUESTIONS = [
     {
         "domanda": "Può essere pericoloso circolare troppo vicino alle auto parcheggiate, perché potrebbero impedire la vista di un disabile in carrozzella o di un pedone che spinge un passeggino per bambini, che sono in procinto di attraversare",
         "risposta": True,
+        "riassunto": "Vicino ad auto parcheggiate → nascondono disabili o passeggini?",
         "spiegazione": "È VERO. Le auto parcheggiate possono coprire la visuale. Potresti non vedere chi sta per attraversare, specialmente persone più difficili da notare come chi è in carrozzella o chi spinge un passeggino. Mantenere la distanza ti dà più tempo per vedere e reagire.",
         "regola": "Auto parcheggiate = ostacolo alla vista.",
         "trabocchetti": ["impedire la vista", "disabile in carrozzella", "pedone che spinge un passeggino"],
@@ -1756,6 +2008,7 @@ QUESTIONS = [
     {
         "domanda": "Passare molto vicino ad un'auto parcheggiata, a bordo della quale si trovano ancora persone, non rappresenta un grave pericolo se avviene a bassa velocità",
         "risposta": False,
+        "riassunto": "Vicino ad auto parcheggiata con persone → nessun pericolo a bassa velocità?",
         "spiegazione": "È FALSO. Anche se vai piano, se qualcuno apre una portiera all'improvviso, l'incidente può comunque succedere. La velocità bassa riduce la gravità, ma non elimina il pericolo di scontrarsi con la portiera.",
         "regola": "Pericolo porta = sempre, anche piano.",
         "trabocchetti": ["non", "se avviene a bassa velocità"],
@@ -1763,6 +2016,7 @@ QUESTIONS = [
     {
         "domanda": "Passare molto vicino ad un'auto parcheggiata, a bordo della quale si trovano ancora persone, è pericoloso solo se una delle portiere risulta già aperta",
         "risposta": False,
+        "riassunto": "Vicino ad auto parcheggiata → pericolo solo con portiera già aperta?",
         "spiegazione": "È FALSO. Il pericolo non c'è 'solo' se la portiera è già aperta. Il vero rischio è proprio che la portiera venga aperta all'improvviso mentre stai passando. Quindi, il pericolo esiste anche se la portiera è chiusa.",
         "regola": "'Solo' = quasi sempre FALSO.",
         "trabocchetti": ["solo"],
@@ -1770,6 +2024,7 @@ QUESTIONS = [
     {
         "domanda": "Passare molto vicino ad un'auto parcheggiata, a bordo della quale si trovano ancora persone, è pericoloso solo se il conducente ed alcuni passeggeri sono già scesi",
         "risposta": False,
+        "riassunto": "Vicino ad auto parcheggiata → pericolo solo se qualcuno è già sceso?",
         "spiegazione": "È FALSO. Il pericolo maggiore è quando le persone sono 'ancora a bordo' e possono aprire una portiera. Se sono già scese, il rischio di un'apertura improvvisa della portiera è molto più basso (a meno che non ci siano altre persone dentro). Anche qui, la parola 'solo' rende la frase falsa.",
         "regola": "'Solo' = quasi sempre FALSO.",
         "trabocchetti": ["solo"],
@@ -1777,6 +2032,7 @@ QUESTIONS = [
     {
         "domanda": "Passare molto vicino ad un'auto parcheggiata, a bordo della quale si trovano ancora persone, può essere pericoloso, solo se si viaggia ad alta velocità",
         "risposta": False,
+        "riassunto": "Vicino ad auto parcheggiata → pericolo solo ad alta velocità?",
         "spiegazione": "È FALSO. Come abbiamo visto, il pericolo di una portiera che si apre esiste a qualsiasi velocità, non 'solo' ad alta velocità. Anche a bassa velocità, un'apertura improvvisa può causare un incidente.",
         "regola": "'Solo' = quasi sempre FALSO.",
         "trabocchetti": ["solo"],

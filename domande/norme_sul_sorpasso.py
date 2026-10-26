@@ -1,7 +1,7 @@
 """Domande — Norme sul sorpasso.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Norme sul sorpasso"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende sorpassare deve accertarsi che la visibilità sia tale da consentire la manovra",
         "risposta": True,
+        "riassunto": "Sorpasso → visibilità sufficiente?",
         "spiegazione": "È fondamentale che tu possa vedere bene la strada davanti a te e intorno a te prima di iniziare un sorpasso. Se la visibilità è scarsa (per esempio per nebbia, pioggia forte o una curva cieca), non puoi sorpassare in sicurezza.",
         "regola": "Se non vedi, non sorpassi.",
         "trabocchetti": ["accertarsi"],
@@ -17,18 +18,21 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende sorpassare deve accertarsi che la manovra possa compiersi senza costituire intralcio",
         "risposta": True,
+        "riassunto": "Sorpasso → senza intralcio?",
         "spiegazione": "Il sorpasso deve essere una manovra fluida e sicura, che non costringa gli altri veicoli a frenare bruscamente o a cambiare direzione per evitarti. Non devi creare problemi agli altri utenti della strada.",
         "regola": "Sorpassa senza disturbare nessuno.",
     },
     {
         "domanda": "Il conducente che intende sorpassare deve accertarsi che il conducente che lo precede nella stessa corsia non abbia segnalato di voler compiere analoga manovra",
         "risposta": True,
+        "riassunto": "Sorpasso → chi precede non sta per sorpassare?",
         "spiegazione": "Prima di sorpassare, devi guardare se il veicolo davanti a te ha già messo la freccia per sorpassare a sua volta. Se sì, devi aspettare che finisca la sua manovra. Non si sorpassa chi sta già sorpassando.",
         "regola": "Chi prima segnala, prima sorpassa.",
     },
     {
         "domanda": "Il conducente che intende sorpassare deve accertarsi che il conducente che lo segue sulla stessa carreggiata non abbia iniziato il sorpasso",
         "risposta": True,
+        "riassunto": "Sorpasso → chi segue non ha già iniziato a sorpassare?",
         "spiegazione": "Non devi controllare solo davanti, ma anche dietro di te. Se un veicolo che ti segue ha già iniziato a sorpassarti, non puoi iniziare tu la manovra. Devi dargli la precedenza.",
         "regola": "Guarda avanti e dietro prima di agire.",
         "trabocchetti": ["sulla stessa carreggiata"],
@@ -36,12 +40,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende sorpassare deve accertarsi che la strada sia libera per consentire la completa esecuzione del sorpasso",
         "risposta": True,
+        "riassunto": "Sorpasso → strada libera per completarlo?",
         "spiegazione": "Devi avere abbastanza spazio libero sulla strada per poter completare il sorpasso e rientrare nella tua corsia in sicurezza, senza tagliare la strada al veicolo sorpassato o a quelli che arrivano.",
         "regola": "Spazio libero per rientrare.",
     },
     {
         "domanda": "Il conducente che intende sorpassare deve valutare lo spazio necessario per la manovra anche in relazione alla differenza di velocità tra il proprio veicolo e quello da sorpassare",
         "risposta": True,
+        "riassunto": "Sorpasso → spazio secondo la differenza di velocità?",
         "spiegazione": "Lo spazio necessario per sorpassare dipende da quanto più veloce vai tu rispetto al veicolo che vuoi sorpassare. Se la differenza di velocità è piccola, ti servirà più strada. Se è grande, meno.",
         "regola": "Poca differenza, lungo sorpasso.",
         "trabocchetti": ["differenza di velocità"],
@@ -49,6 +55,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende sorpassare deve tener conto di eventuali veicoli che provengono dalla direzione opposta",
         "risposta": True,
+        "riassunto": "Sorpasso → veicoli in senso opposto?",
         "spiegazione": "Se la strada è a doppio senso di marcia, devi assicurarti che non stia arrivando nessun veicolo dalla direzione opposta mentre sei nella corsia di sorpasso. Se arriva qualcuno, devi avere il tempo di rientrare in sicurezza.",
         "regola": "Occhio al traffico che viene incontro.",
         "trabocchetti": ["Eventuali veicoli", "Direzione opposta"],
@@ -56,12 +63,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende sorpassare deve valutare lo spazio necessario in relazione alla lunghezza del proprio veicolo e di quello da sorpassare",
         "risposta": True,
+        "riassunto": "Sorpasso → spazio secondo le lunghezze dei veicoli?",
         "spiegazione": "Un veicolo più lungo (come un camion o un autobus) ha bisogno di più spazio e tempo per sorpassare rispetto a un'auto piccola. Devi considerare la dimensione di entrambi i veicoli.",
         "regola": "Veicoli lunghi, sorpassi lunghi.",
     },
     {
         "domanda": "Il conducente che intende sorpassare deve accertarsi che la larghezza della carreggiata consenta la manovra in condizioni di sicurezza",
         "risposta": True,
+        "riassunto": "Sorpasso → carreggiata abbastanza larga?",
         "spiegazione": "La strada deve essere abbastanza larga da permetterti di sorpassare senza rischiare di finire fuori strada, di toccare il veicolo sorpassato o di invadere la corsia opposta in modo pericoloso.",
         "regola": "Strada stretta, sorpasso vietato.",
         "trabocchetti": ["larghezza della carreggiata", "In condizioni di sicurezza"],
@@ -69,6 +78,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende sorpassare deve accertarsi che nessun segnale verticale vieti la manovra",
         "risposta": True,
+        "riassunto": "Sorpasso → nessun segnale che lo vieti?",
         "spiegazione": "Ci sono cartelli stradali specifici che vietano il sorpasso (ad esempio, il segnale rotondo bianco e nero con due auto). Devi sempre controllare che non ci siano questi segnali prima di sorpassare.",
         "regola": "Rispetta i cartelli, sempre.",
         "trabocchetti": ["segnale verticale"],
@@ -76,6 +86,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende sorpassare deve accertarsi semplicemente che nessun veicolo provenga dalla direzione opposta",
         "risposta": False,
+        "riassunto": "Sorpasso → basta che nessuno venga di fronte?",
         "spiegazione": "Questa affermazione è FALSA. Non basta solo guardare se arrivano veicoli dalla direzione opposta. Ci sono molti altri fattori da considerare per un sorpasso sicuro: la visibilità, lo spazio, i veicoli che ti seguono, quelli che ti precedono, i segnali stradali, ecc.",
         "regola": "Mai 'semplicemente', il sorpasso è complesso.",
         "trabocchetti": ["semplicemente"],
@@ -83,12 +94,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende sorpassare ha come unico obbligo quello di azionare l'indicatore di direzione (frecce)",
         "risposta": False,
+        "riassunto": "Sorpasso → unico obbligo la freccia?",
         "spiegazione": "Questa affermazione è FALSA. Azionare l'indicatore di direzione (le frecce) è obbligatorio per segnalare la tua intenzione, ma non è l'unico obbligo. Devi anche controllare tutti gli altri aspetti di sicurezza visti nelle domande precedenti.",
         "regola": "Non solo freccia, ma anche testa.",
     },
     {
         "domanda": "Il conducente che intende sorpassare deve unicamente accertarsi che non vi sia nessun segnale di divieto di sorpasso",
         "risposta": False,
+        "riassunto": "Sorpasso → basta l'assenza di divieto?",
         "spiegazione": "Questa affermazione è FALSA. Controllare i segnali di divieto di sorpasso è molto importante, ma non è l'unica cosa da fare. Devi anche valutare la situazione del traffico, la visibilità, lo spazio disponibile e tutti gli altri fattori di sicurezza.",
         "regola": "Non 'unicamente', ma 'tutto' per sorpassare.",
         "trabocchetti": ["unicamente"],
@@ -96,6 +109,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di iniziare una manovra di sorpasso occorre azionare l'indicatore di direzione",
         "risposta": True,
+        "riassunto": "Prima del sorpasso → freccia?",
         "spiegazione": "Prima di iniziare qualsiasi manovra, come il sorpasso, è fondamentale segnalare la tua intenzione agli altri utenti della strada. Usare l'indicatore di direzione (la freccia) è obbligatorio per far capire cosa farai.",
         "regola": "Freccia sempre prima di muoverti!",
         "trabocchetti": ["occorre"],
@@ -103,18 +117,21 @@ QUESTIONS = [
     {
         "domanda": "La manovra di sorpasso si effettua, di norma, a sinistra",
         "risposta": True,
+        "riassunto": "Sorpasso → di norma a sinistra?",
         "spiegazione": "In Italia e nella maggior parte dei paesi con guida a destra, la regola generale è che il sorpasso si effettua sulla sinistra del veicolo che si vuole superare. Ci sono pochissime eccezioni, ma la norma è questa.",
         "regola": "Sorpasso? A sinistra!",
     },
     {
         "domanda": "Il sorpasso si effettua tenendo una adeguata distanza laterale dal veicolo che si sorpassa",
         "risposta": True,
+        "riassunto": "Sorpasso → adeguata distanza laterale?",
         "spiegazione": "Quando sorpassi un altro veicolo, devi lasciare uno spazio sufficiente tra la tua auto e quella che stai superando. Questo spazio laterale è essenziale per la sicurezza di entrambi e per evitare collisioni.",
         "regola": "Spazio laterale = sicurezza.",
     },
     {
         "domanda": "Dopo aver effettuato una manovra di sorpasso il conducente del veicolo deve riportarsi a destra appena possibile senza creare pericolo o intralcio",
         "risposta": True,
+        "riassunto": "Dopo il sorpasso → tornare a destra appena possibile senza pericolo?",
         "spiegazione": "Dopo aver completato il sorpasso, devi tornare nella corsia di destra. È importante farlo 'appena possibile', ma soprattutto 'senza creare pericolo o intralcio', cioè senza tagliare la strada o frenare bruscamente davanti al veicolo sorpassato.",
         "regola": "Torna a destra, ma con calma e sicurezza.",
         "trabocchetti": ["appena possibile", "senza creare pericolo o intralcio"],
@@ -122,6 +139,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo che viene sorpassato deve agevolare la manovra di sorpasso e non accelerare",
         "risposta": True,
+        "riassunto": "Chi è sorpassato → agevolare, non accelerare?",
         "spiegazione": "Se un altro veicolo ti sta sorpassando, tu devi aiutarlo a completare la manovra in sicurezza. Questo significa che non devi accelerare e, se possibile, devi spostarti leggermente a destra per dargli più spazio.",
         "regola": "Chi è sorpassato non accelera, anzi aiuta.",
         "trabocchetti": ["agevolare", "Non accelerare"],
@@ -129,12 +147,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo che viene sorpassato, nelle strade ad una corsia per senso di marcia, deve tenersi il più vicino possibile al margine destro",
         "risposta": True,
+        "riassunto": "Chi è sorpassato, una corsia per senso → tenersi a destra?",
         "spiegazione": "Su strade con una sola corsia per senso di marcia, se qualcuno ti sta sorpassando, devi spostarti il più possibile verso il margine destro della strada. Questo crea più spazio per il veicolo che ti sta superando e rende la manovra più sicura.",
         "regola": "A destra per chi sorpassa.",
     },
     {
         "domanda": "La manovra di sorpasso non va effettuata se lo spazio visibile risulta insufficiente per completarla in sicurezza",
         "risposta": True,
+        "riassunto": "Sorpasso → non se lo spazio visibile non basta?",
         "spiegazione": "Non devi mai sorpassare se non vedi bene la strada davanti a te (ad esempio, in curva, in salita, o se c'è nebbia) e non sei sicuro di poter finire il sorpasso in modo sicuro. La visibilità è fondamentale per la sicurezza.",
         "regola": "Se non vedi bene, non sorpassare.",
         "trabocchetti": ["non va effettuata"],
@@ -142,6 +162,7 @@ QUESTIONS = [
     {
         "domanda": "La manovra di sorpasso non va effettuata se la carreggiata non è sufficientemente larga",
         "risposta": True,
+        "riassunto": "Sorpasso → non se la carreggiata è stretta?",
         "spiegazione": "Se la strada è troppo stretta, non c'è abbastanza spazio per sorpassare in sicurezza. Potresti urtare il veicolo che sorpassi o finire fuori strada. La larghezza della carreggiata è un fattore di sicurezza importante.",
         "regola": "Strada stretta? No sorpasso.",
         "trabocchetti": ["non va effettuata", "non è sufficientemente larga"],
@@ -149,6 +170,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende effettuare il sorpasso ha l'obbligo di azionare il segnale acustico",
         "risposta": False,
+        "riassunto": "Sorpasso → obbligo di clacson?",
         "spiegazione": "Non è obbligatorio usare il clacson (segnale acustico) per sorpassare. Anzi, il clacson si usa solo in caso di pericolo immediato o, fuori dai centri abitati, per avvertire. Per il sorpasso si usa l'indicatore di direzione (la freccia).",
         "regola": "Clacson solo per pericolo, non per sorpasso.",
         "trabocchetti": ["obbligo"],
@@ -156,6 +178,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende iniziare una manovra di sorpasso non ha l'obbligo di azionare l'indicatore di direzione",
         "risposta": False,
+        "riassunto": "Sorpasso → niente obbligo di freccia?",
         "spiegazione": "Questa affermazione è falsa perché è sempre obbligatorio usare la freccia (indicatore di direzione) prima di iniziare un sorpasso. Serve a segnalare la tua intenzione agli altri conducenti e garantire la sicurezza.",
         "regola": "Freccia SEMPRE prima di sorpassare.",
         "trabocchetti": ["obbligo"],
@@ -163,6 +186,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo il sorpasso il veicolo può immediatamente spostarsi a destra se taglia la strada a quello sorpassato",
         "risposta": False,
+        "riassunto": "Dopo il sorpasso → rientrare tagliando la strada?",
         "spiegazione": "Dopo il sorpasso, devi tornare a destra, ma solo quando puoi farlo in sicurezza, senza 'tagliare la strada' al veicolo che hai appena superato. Tornare 'immediatamente' e 'tagliando la strada' è pericoloso e vietato.",
         "regola": "Torna a destra con spazio, mai tagliare.",
         "trabocchetti": ["immediatamente", "se taglia la strada"],
@@ -170,18 +194,21 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo sorpassato può gareggiare in velocità con il conducente del veicolo che lo sta sorpassando",
         "risposta": False,
+        "riassunto": "Chi è sorpassato → gareggiare?",
         "spiegazione": "Non devi mai fare una 'gara' di velocità con chi ti sta sorpassando. È estremamente pericoloso e contro la legge. Il conducente sorpassato deve agevolare la manovra e non accelerare.",
         "regola": "No gare in strada, mai.",
     },
     {
         "domanda": "La manovra di sorpasso si effettua anche se lo spazio visibile risulta insufficiente per completarla in sicurezza",
         "risposta": False,
+        "riassunto": "Sorpasso → anche con spazio visibile insufficiente?",
         "spiegazione": "Non devi mai sorpassare se non vedi bene la strada o se non sei sicuro di poter finire il sorpasso in sicurezza. Se lo spazio visibile è insufficiente, il sorpasso è vietato perché troppo rischioso.",
         "regola": "Se non vedi, non sorpassare.",
     },
     {
         "domanda": "Dopo aver eseguito una prima manovra di sorpasso, in strade ad almeno due corsie per senso di marcia, è possibile eseguirne un' altra senza rientrare a destra, se non si crea intralcio",
         "risposta": True,
+        "riassunto": "Due corsie per senso → secondo sorpasso senza rientrare?",
         "spiegazione": "In strade con almeno due corsie per senso di marcia (come le autostrade), se hai già sorpassato un veicolo e puoi sorpassarne un altro subito dopo senza creare pericolo o rallentare gli altri, puoi farlo senza tornare nella corsia più a destra. L'importante è non intralciare il traffico.",
         "regola": "Più corsie, più sorpassi a fila se non intralci.",
         "trabocchetti": ["senza rientrare a destra", "se non si crea intralcio"],
@@ -189,6 +216,7 @@ QUESTIONS = [
     {
         "domanda": "La manovra di sorpasso deve essere eseguita a destra se il conducente del veicolo da sorpassare ha segnalato l'intenzione di voler svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Chi precede svolta a sinistra → sorpasso a destra?",
         "spiegazione": "Se un veicolo davanti a te mette la freccia a sinistra per svoltare, si sposterà verso il centro della strada. In questo caso, tu puoi sorpassarlo sulla sua destra, perché lui sta liberando la corsia di destra.",
         "regola": "Lui a sinistra per svoltare? Tu lo passi a destra!",
         "trabocchetti": ["deve essere eseguita a destra", "ha segnalato l"],
@@ -196,6 +224,7 @@ QUESTIONS = [
     {
         "domanda": "La manovra di sorpasso deve essere eseguita a destra se, su strada a senso unico, il conducente del veicolo da sorpassare ha segnalato l'intenzione di voler accostare a sinistra",
         "risposta": True,
+        "riassunto": "Senso unico, chi precede accosta a sinistra → sorpasso a destra?",
         "spiegazione": "Anche in questo caso, se un veicolo su una strada a senso unico si sposta a sinistra per accostare (cioè fermarsi), libera la parte destra della strada. Quindi, tu puoi sorpassarlo a destra.",
         "regola": "Accosta a sinistra? Passa a destra!",
         "trabocchetti": ["su strada a senso unico", "accostare a sinistra", "deve essere eseguita a destra"],
@@ -203,6 +232,7 @@ QUESTIONS = [
     {
         "domanda": "La manovra di sorpasso del tram può effettuarsi su ambo i lati se la strada è a senso unico e la larghezza della carreggiata lo consente",
         "risposta": True,
+        "riassunto": "Tram su senso unico largo → sorpasso su entrambi i lati?",
         "spiegazione": "Se sei su una strada dove tutte le macchine vanno nella stessa direzione (senso unico) e c'è abbastanza spazio, puoi sorpassare il tram sia a destra che a sinistra.",
         "regola": "Senso unico, spazio c'è? Tram lo passi dove vuoi!",
         "trabocchetti": ["su ambo i lati", "strada è a senso unico"],
@@ -210,6 +240,7 @@ QUESTIONS = [
     {
         "domanda": "Se il tram o il filobus sono fermi la manovra di sorpasso può effettuarsi a destra se esiste il salvagente",
         "risposta": True,
+        "riassunto": "Tram o filobus fermi → sorpasso a destra se c'è salvagente?",
         "spiegazione": "Il salvagente è una specie di isola pedonale dove i passeggeri aspettano o scendono dal tram. Se c'è il salvagente, significa che i passeggeri sono protetti e tu puoi sorpassare il tram a destra, facendo attenzione.",
         "regola": "Salvagente c'è? Passa a destra!",
         "trabocchetti": ["se esiste il salvagente", "può effettuarsi a destra"],
@@ -217,6 +248,7 @@ QUESTIONS = [
     {
         "domanda": "Se il tram o il filobus sono fermi la manovra di sorpasso non può effettuarsi a destra se manca il salvagente",
         "risposta": True,
+        "riassunto": "Tram o filobus fermi senza salvagente → niente sorpasso a destra?",
         "spiegazione": "Se il tram è fermo e non c'è il salvagente, i passeggeri scendono direttamente sulla strada. In questo caso, è pericoloso sorpassare a destra perché potresti investire qualcuno. Devi aspettare che il tram riparta.",
         "regola": "Salvagente non c'è? Non passare a destra!",
         "trabocchetti": ["non può effettuarsi a destra", "se manca il salvagente"],
@@ -224,6 +256,7 @@ QUESTIONS = [
     {
         "domanda": "Se il tram o il filobus sono fermi per la salita e la discesa dei passeggeri, la manovra di sorpasso può sempre effettuarsi a destra",
         "risposta": False,
+        "riassunto": "Tram fermo per passeggeri → sempre sorpasso a destra?",
         "spiegazione": "Questa affermazione è falsa per via della parola 'sempre'. Come abbiamo visto, puoi sorpassare a destra solo se c'è il salvagente. Se non c'è, non puoi. Quindi non è 'sempre' possibile.",
         "regola": "'Sempre' è quasi sempre FALSO! Controlla il salvagente.",
         "trabocchetti": ["sempre"],
@@ -231,6 +264,7 @@ QUESTIONS = [
     {
         "domanda": "E' sempre vietato effettuare la manovra di sorpasso a destra",
         "risposta": False,
+        "riassunto": "Sorpasso a destra → sempre vietato?",
         "spiegazione": "Questa affermazione è falsa. Abbiamo appena visto diversi casi in cui il sorpasso a destra è permesso, ad esempio quando il veicolo davanti svolta a sinistra, o quando c'è il salvagente per il tram. Non è 'sempre' vietato.",
         "regola": "'Sempre vietato' è quasi sempre FALSO! Ci sono eccezioni.",
         "trabocchetti": ["sempre"],
@@ -238,6 +272,7 @@ QUESTIONS = [
     {
         "domanda": "La manovra di sorpasso può, di norma, effettuarsi a destra sulle autostrade",
         "risposta": False,
+        "riassunto": "Autostrade → di norma sorpasso a destra?",
         "spiegazione": "Sulle autostrade, il sorpasso si fa sempre a sinistra. L'unica eccezione è se la colonna di veicoli nella corsia di destra va più veloce di quella di sinistra, ma non è un vero e proprio sorpasso, è un 'superamento'. Il sorpasso vero e proprio è a sinistra.",
         "regola": "Autostrada, sorpasso a sinistra!",
         "trabocchetti": ["di norma", "a destra sulle autostrade"],
@@ -245,6 +280,7 @@ QUESTIONS = [
     {
         "domanda": "La manovra di sorpasso può effettuarsi a sinistra soltanto se il veicolo da sorpassare sta svoltando a destra",
         "risposta": False,
+        "riassunto": "Sorpasso a sinistra → solo se l'altro svolta a destra?",
         "spiegazione": "Questa affermazione è falsa. Il sorpasso si fa 'di norma' a sinistra, non solo in quel caso specifico. Se un veicolo sta svoltando a destra, tu lo sorpassi a sinistra, ma puoi sorpassare a sinistra anche in molte altre situazioni (ad esempio, un veicolo che va dritto).",
         "regola": "'Soltanto' è quasi sempre FALSO! Il sorpasso a sinistra è la regola generale.",
         "trabocchetti": ["soltanto"],
@@ -252,6 +288,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato effettuare un secondo sorpasso senza prima essersi riportati a destra",
         "risposta": False,
+        "riassunto": "Secondo sorpasso → vietato senza rientrare a destra?",
         "spiegazione": "Questa affermazione è falsa. Come abbiamo visto nella domanda 23483, in strade con almeno due corsie per senso di marcia (come le autostrade), se non crei intralcio, puoi fare più sorpassi di seguito senza rientrare nella corsia più a destra.",
         "regola": "Più corsie, più sorpassi a fila se non intralci.",
         "trabocchetti": ["vietato", "senza prima essersi riportati a destra"],
@@ -259,6 +296,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso è vietato in prossimità delle curve su strade a due corsie a doppio senso di marcia",
         "risposta": True,
+        "riassunto": "Doppio senso a due corsie → sorpasso vietato vicino alle curve?",
         "spiegazione": "Su strade con due corsie e doppio senso di marcia, le curve riducono la visibilità. Non puoi vedere chi arriva dall'altra parte, quindi sorpassare è molto pericoloso e per questo è vietato.",
         "regola": "Curva + Doppio Senso = NO Sorpasso.",
         "trabocchetti": ["a due corsie a doppio senso di marcia"],
@@ -266,6 +304,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso è vietato in prossimità dei dossi su strade a due corsie a doppio senso di marcia",
         "risposta": True,
+        "riassunto": "Doppio senso a due corsie → sorpasso vietato vicino ai dossi?",
         "spiegazione": "Come per le curve, anche i dossi (le salite e discese ripide) su strade a doppio senso di marcia limitano la visibilità. Non puoi vedere cosa c'è dopo il dosso, quindi sorpassare è vietato per evitare incidenti.",
         "regola": "Dosso + Doppio Senso = NO Sorpasso.",
         "trabocchetti": ["a due corsie a doppio senso di marcia"],
@@ -273,6 +312,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso è vietato in caso di scarsa visibilità",
         "risposta": True,
+        "riassunto": "Scarsa visibilità → sorpasso vietato?",
         "spiegazione": "Se la visibilità è scarsa (per nebbia, pioggia forte, buio), non puoi valutare bene la distanza e la velocità degli altri veicoli. Sorpassare in queste condizioni è estremamente pericoloso e quindi vietato.",
         "regola": "Non vedi bene? Non sorpassare!",
         "trabocchetti": ["Scarsa visibilità"],
@@ -280,6 +320,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso è consentito in curva se la strada è a due carreggiate separate con almeno due corsie per ogni senso di marcia",
         "risposta": True,
+        "riassunto": "Due carreggiate con almeno due corsie per senso → sorpasso in curva?",
         "spiegazione": "Se la strada ha due carreggiate separate, significa che non c'è traffico che viene in senso opposto sulla tua carreggiata. Se poi ci sono almeno due corsie per il tuo senso di marcia, puoi sorpassare in curva usando la corsia di sinistra in sicurezza.",
         "regola": "Carreggiate separate + più corsie = Curva OK.",
         "trabocchetti": ["due carreggiate separate"],
@@ -287,6 +328,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso è consentito su dossi se la strada è a due carreggiate separate e a due corsie per senso di marcia",
         "risposta": True,
+        "riassunto": "Due carreggiate a due corsie per senso → sorpasso sui dossi?",
         "spiegazione": "La stessa logica delle curve vale per i dossi. Se la strada ha carreggiate separate e più corsie per il tuo senso di marcia, non c'è rischio di scontrarsi con veicoli che vengono dall'altra parte, quindi puoi sorpassare in sicurezza.",
         "regola": "Carreggiate separate + più corsie = Dosso OK.",
         "trabocchetti": ["due carreggiate separate", "due corsie per senso di marcia"],
@@ -294,6 +336,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato il sorpasso di un veicolo che ne stia superando un altro se ciò impone di spostarsi sul lato riservato all'altro senso di marcia",
         "risposta": True,
+        "riassunto": "Sorpassare chi sorpassa → vietato se si invade l'opposta?",
         "spiegazione": "Se un veicolo sta già sorpassando e tu vuoi sorpassare anche lui, ma per farlo devi andare nella corsia opposta (dove arrivano le macchine), è vietato. È troppo pericoloso perché rimarresti troppo a lungo nella corsia sbagliata.",
         "regola": "Doppio sorpasso + corsia opposta = NO.",
         "trabocchetti": ["altro senso di marcia"],
@@ -301,12 +344,14 @@ QUESTIONS = [
     {
         "domanda": "E' vietato il sorpasso di veicoli fermi ai passaggi a livello, se bisogna impegnare la semicarreggiata opposta",
         "risposta": True,
+        "riassunto": "Veicoli fermi al passaggio a livello → vietato sorpassarli invadendo l'opposta?",
         "spiegazione": "Ai passaggi a livello c'è il rischio che arrivi un treno. Se ci sono veicoli fermi e tu devi andare nella corsia opposta per sorpassarli, è vietato perché è estremamente pericoloso.",
         "regola": "Passaggio a livello + corsia opposta = NO Sorpasso.",
     },
     {
         "domanda": "E' vietato il sorpasso di veicoli in lento movimento ai passaggi a livello quando, a tal fine è necessario spostarsi sul lato riservato all'altro senso di marcia",
         "risposta": True,
+        "riassunto": "Veicoli lenti al passaggio a livello → vietato sorpassarli invadendo l'opposta?",
         "spiegazione": "Anche se i veicoli si muovono lentamente, il rischio al passaggio a livello rimane alto. Se per sorpassarli devi invadere la corsia opposta, è vietato per la tua sicurezza e quella degli altri.",
         "regola": "Passaggio a livello + corsia opposta = NO.",
         "trabocchetti": ["lento movimento ai passaggi a livello", "altro senso di marcia"],
@@ -314,6 +359,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato il sorpasso di veicoli fermi ai semafori quando, a tal fine è necessario spostarsi sul lato riservato all'altro senso di marcia",
         "risposta": True,
+        "riassunto": "Veicoli fermi al semaforo → vietato sorpassarli invadendo l'opposta?",
         "spiegazione": "I veicoli fermi al semaforo aspettano il loro turno. Se per sorpassarli devi andare nella corsia opposta, è vietato. Potresti scontrarti con chi arriva da altre direzioni o con chi riparte al verde.",
         "regola": "Semaforo + corsia opposta = NO Sorpasso.",
         "trabocchetti": ["altro senso di marcia"],
@@ -321,6 +367,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato il sorpasso di veicoli in lento movimento a causa di congestione della circolazione quando, a tal fine è necessario spostarsi sul lato riservato all'altro senso di marcia",
         "risposta": True,
+        "riassunto": "Veicoli lenti per congestione → vietato sorpassarli invadendo l'opposta?",
         "spiegazione": "Nel traffico intenso, i veicoli si muovono in modo imprevedibile. Se per sorpassare devi invadere la corsia opposta, è molto pericoloso e vietato, perché potresti causare un incidente o bloccare il traffico.",
         "regola": "Traffico + corsia opposta = NO Sorpasso.",
         "trabocchetti": ["congestione della circolazione", "spostarsi sul lato riservato all"],
@@ -328,6 +375,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il sorpasso in prossimità o in corrispondenza delle intersezioni se regolate dai semafori",
         "risposta": True,
+        "riassunto": "Incroci con semaforo → sorpasso consentito?",
         "spiegazione": "Normalmente agli incroci non si sorpassa. Ma se l'incrocio è regolato da semafori, il traffico è controllato e i movimenti sono previsti. In questo caso, il sorpasso è consentito se le condizioni lo permettono.",
         "regola": "Incrocio + Semaforo = Sorpasso OK.",
         "trabocchetti": ["se regolate dai semafori"],
@@ -335,6 +383,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il sorpasso a destra nelle intersezioni regolate da semaforo, se il veicolo da sorpassare ha indicato di voler svoltare a sinistra ed ha iniziato la manovra",
         "risposta": True,
+        "riassunto": "Incrocio con semaforo → sorpasso a destra di chi svolta a sinistra?",
         "spiegazione": "Questa è una delle poche situazioni in cui è consentito sorpassare a destra. Se un veicolo davanti a te sta per girare a sinistra e ha già iniziato la manovra, si sposta a sinistra, lasciando spazio a destra per il sorpasso.",
         "regola": "Svolta a sinistra + Sorpasso a destra = OK.",
         "trabocchetti": ["a destra", "e"],
@@ -342,6 +391,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il sorpasso nelle intersezioni se la strada è a precedenza purché a due carreggiate separate e le corsie siano delimitate dall'apposita segnaletica orizzontale",
         "risposta": True,
+        "riassunto": "Incroci su strada con precedenza a carreggiate separate → sorpasso?",
         "spiegazione": "Se l'incrocio è su una strada a precedenza (hai la precedenza), ha due carreggiate separate (niente traffico opposto) e le corsie sono ben delimitate, allora è sicuro sorpassare.",
         "regola": "Incrocio + Precedenza + Carreggiate separate + Corsie = Sorpasso OK.",
         "trabocchetti": ["strada è a precedenza", "due carreggiate separate", "corsie siano delimitate"],
@@ -349,6 +399,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il sorpasso in corrispondenza delle intersezioni se si supera un veicolo a due ruote non a motore e non si invade il lato riservato al senso opposto",
         "risposta": True,
+        "riassunto": "Incroci → sorpasso di bici senza invadere l'opposta?",
         "spiegazione": "Le biciclette (veicoli a due ruote non a motore) sono più piccole e lente. Se puoi sorpassarle all'incrocio senza invadere la corsia opposta, il rischio è minimo e quindi è consentito.",
         "regola": "Incrocio + Bici + NO corsia opposta = OK.",
         "trabocchetti": ["veicolo a due ruote non a motore"],
@@ -356,6 +407,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il sorpasso nelle intersezioni regolate da agenti del traffico",
         "risposta": True,
+        "riassunto": "Incroci con agenti → sorpasso consentito?",
         "spiegazione": "Se un agente del traffico (vigile) regola l'incrocio, è lui che decide chi passa e quando. Le sue indicazioni rendono il traffico sicuro, quindi il sorpasso è consentito se lui lo permette.",
         "regola": "Incrocio + Vigile = Sorpasso OK.",
         "trabocchetti": ["Regolate da agenti del traffico"],
@@ -363,12 +415,14 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il sorpasso in prossimità o in corrispondenza di passaggi a livello senza barriere se la circolazione è regolata da semafori",
         "risposta": True,
+        "riassunto": "Passaggi a livello senza barriere con semaforo → sorpasso?",
         "spiegazione": "I passaggi a livello senza barriere sono molto pericolosi. Ma se ci sono semafori che regolano il traffico, questi indicano quando è sicuro passare. Quindi, in questo caso, il sorpasso è consentito.",
         "regola": "Passaggio a livello senza barriere + Semaforo = Sorpasso OK.",
     },
     {
         "domanda": "E' vietato il sorpasso di un veicolo che si sia arrestato in corrispondenza di un passaggio pedonale per consentire l'attraversamento di pedoni",
         "risposta": True,
+        "riassunto": "Veicolo fermo alle strisce per i pedoni → vietato sorpassarlo?",
         "spiegazione": "Se un veicolo si ferma per far passare i pedoni, significa che ci sono persone sulla strada o che stanno per attraversare. Sorpassare quel veicolo metterebbe i pedoni in grave pericolo, quindi è assolutamente vietato.",
         "regola": "Pedoni + Veicolo fermo = NO Sorpasso.",
         "trabocchetti": ["per consentire l"],
@@ -376,6 +430,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato il sorpasso di un veicolo che abbia rallentato in corrispondenza di un passaggio pedonale per consentire l'attraversamento dei pedoni",
         "risposta": True,
+        "riassunto": "Veicolo che rallenta alle strisce → vietato sorpassarlo?",
         "spiegazione": "Vale lo stesso principio della domanda precedente. Se un veicolo rallenta per i pedoni, sta agendo per la loro sicurezza. Sorpassarlo sarebbe pericoloso per i pedoni, quindi è vietato.",
         "regola": "Pedoni + Veicolo rallentato = NO Sorpasso.",
         "trabocchetti": ["attraversamento dei pedoni"],
@@ -383,18 +438,21 @@ QUESTIONS = [
     {
         "domanda": "E' vietato sorpassare sulle corsie di accelerazione o di decelerazione",
         "risposta": True,
+        "riassunto": "Corsie di accelerazione o decelerazione → sorpasso vietato?",
         "spiegazione": "Le corsie di accelerazione servono per entrare in una strada principale, quelle di decelerazione per uscire. Sono luoghi dove le velocità cambiano rapidamente e in modo imprevedibile. Sorpassare lì è pericoloso e vietato.",
         "regola": "Corsie speciali (accel/decel) = NO Sorpasso.",
     },
     {
         "domanda": "E' vietato il sorpasso se si deve valicare la striscia longitudinale bianca continua semplice o doppia",
         "risposta": True,
+        "riassunto": "Sorpasso → vietato oltre la continua semplice o doppia?",
         "spiegazione": "Le strisce continue (bianche, singole o doppie) sulla strada indicano che non puoi superarle. Sono lì per segnalare punti pericolosi dove non si deve invadere la corsia opposta, quindi il sorpasso è vietato.",
         "regola": "Linea continua = NO Sorpasso.",
     },
     {
         "domanda": "Lo spazio necessario al sorpasso aumenta se il veicolo da sorpassare accelera",
         "risposta": True,
+        "riassunto": "Spazio per il sorpasso → aumenta se l'altro accelera?",
         "spiegazione": "Se il veicolo che stai cercando di sorpassare accelera, la differenza di velocità tra voi diminuisce. Questo significa che impiegherai più tempo e quindi più spazio per completare il sorpasso.",
         "regola": "L'altro accelera? Più spazio!",
         "trabocchetti": ["Aumenta", "veicolo da sorpassare accelera"],
@@ -402,18 +460,21 @@ QUESTIONS = [
     {
         "domanda": "Lo spazio necessario al sorpasso aumenta in relazione alla maggiore lunghezza del veicolo da sorpassare",
         "risposta": True,
+        "riassunto": "Spazio per il sorpasso → aumenta col veicolo sorpassato più lungo?",
         "spiegazione": "Un veicolo più lungo richiede più tempo per essere superato completamente. Devi stare affianco a lui per una distanza maggiore, quindi ti serve più spazio sulla strada.",
         "regola": "Veicolo lungo da superare? Più spazio!",
     },
     {
         "domanda": "Lo spazio necessario alla manovra di sorpasso aumenta in relazione alla maggiore lunghezza del veicolo che sorpassa",
         "risposta": True,
+        "riassunto": "Spazio per il sorpasso → aumenta col proprio veicolo più lungo?",
         "spiegazione": "Se il tuo veicolo è più lungo, hai bisogno di più spazio per uscire dalla corsia, superare e poi rientrare in sicurezza senza tagliare la strada al veicolo sorpassato.",
         "regola": "Il tuo veicolo è lungo? Più spazio!",
     },
     {
         "domanda": "Lo spazio necessario al sorpasso è maggiore se vi è poca differenza di velocità tra i veicoli",
         "risposta": True,
+        "riassunto": "Spazio per il sorpasso → maggiore con poca differenza di velocità?",
         "spiegazione": "Se la tua velocità è solo leggermente superiore a quella del veicolo che vuoi sorpassare, ci vorrà molto più tempo per completare la manovra. Questo significa che avrai bisogno di una distanza maggiore.",
         "regola": "Poca differenza di velocità? Più spazio!",
         "trabocchetti": ["Poca differenza di velocità", "maggiore"],
@@ -421,12 +482,14 @@ QUESTIONS = [
     {
         "domanda": "La distanza di sicurezza va rispettata anche quando si inizia la manovra di sorpasso",
         "risposta": True,
+        "riassunto": "Distanza di sicurezza → anche iniziando il sorpasso?",
         "spiegazione": "La distanza di sicurezza è fondamentale per la tua sicurezza e quella degli altri. Devi mantenerla sempre, anche quando ti prepari a sorpassare, per poter frenare in tempo se il veicolo davanti frena improvvisamente.",
         "regola": "Distanza di sicurezza = Sempre!",
     },
     {
         "domanda": "E' consentito il sorpasso sul tratto discendente di un dosso in una strada a due corsie a doppio senso di marcia",
         "risposta": True,
+        "riassunto": "Doppio senso a due corsie → sorpasso in discesa del dosso?",
         "spiegazione": "Sul tratto in discesa di un dosso, la visibilità migliora molto rispetto alla cima o alla salita. Se vedi bene e la strada è libera, puoi sorpassare. Il divieto vale per la salita e la cima del dosso.",
         "regola": "Dosso in discesa = OK (se vedi bene).",
         "trabocchetti": ["Tratto discendente"],
@@ -434,6 +497,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio accertarsi prima di effettuare il sorpasso che non vi siano segnali che lo vietino",
         "risposta": True,
+        "riassunto": "Prima del sorpasso → controllare i divieti?",
         "spiegazione": "Prima di sorpassare, devi sempre controllare che non ci siano cartelli stradali o segnaletica orizzontale (come le linee continue) che vietano la manovra. È una tua responsabilità.",
         "regola": "Prima di sorpassare, controlla i divieti!",
         "trabocchetti": ["Obbligatorio accertarsi"],
@@ -441,30 +505,35 @@ QUESTIONS = [
     {
         "domanda": "La pericolosità del sorpasso nasce dalla possibilità di urtare altri veicoli che, davanti o dietro, intendano compiere la stessa manovra",
         "risposta": True,
+        "riassunto": "Sorpasso pericoloso → altri che fanno la stessa manovra?",
         "spiegazione": "Il sorpasso è pericoloso perché potresti non essere l'unico a voler sorpassare. Altri veicoli, davanti o dietro di te, potrebbero iniziare la stessa manovra contemporaneamente, causando un incidente.",
         "regola": "Sorpasso = Attenzione agli altri che sorpassano!",
     },
     {
         "domanda": "E' vietato il sorpasso se il veicolo da superare si è fermato per dare precedenza ai pedoni, anche fuori dagli attraversamenti pedonali",
         "risposta": True,
+        "riassunto": "Veicolo fermo per pedoni fuori strisce → sorpasso vietato?",
         "spiegazione": "Se un veicolo si ferma per far passare i pedoni, anche se non c'è un attraversamento pedonale segnalato, devi fermarti anche tu. Sorpassarlo metterebbe in pericolo i pedoni, quindi è vietato.",
         "regola": "Pedoni = Stop, sempre!",
     },
     {
         "domanda": "E' pericoloso effettuare il rientro dopo il sorpasso se la manovra costringe i veicoli sorpassati a frenare bruscamente",
         "risposta": True,
+        "riassunto": "Rientro dopo sorpasso → pericoloso se fa frenare il sorpassato?",
         "spiegazione": "Quando rientri nella tua corsia dopo un sorpasso, devi farlo in modo sicuro. Se rientri troppo presto o troppo bruscamente, costringi il veicolo che hai appena superato a frenare, creando una situazione pericolosa.",
         "regola": "Rientro = Non far frenare nessuno!",
     },
     {
         "domanda": "Prima di rientrare nella corsia di destra dopo il sorpasso, occorre controllare la posizione del veicolo sorpassato attraverso gli specchietti retrovisori",
         "risposta": True,
+        "riassunto": "Prima di rientrare → controllare il sorpassato negli specchietti?",
         "spiegazione": "Per rientrare in sicurezza, devi essere sicuro di avere abbastanza spazio. Controlla negli specchietti retrovisori che il veicolo che hai sorpassato sia completamente visibile prima di spostarti a destra.",
         "regola": "Rientro = Specchietti!",
     },
     {
         "domanda": "Il sorpasso è consentito in caso di scarsa visibilità purché si lampeggi durante la manovra",
         "risposta": False,
+        "riassunto": "Scarsa visibilità → sorpasso lampeggiando?",
         "spiegazione": "Falso. Il sorpasso è sempre vietato in caso di scarsa visibilità. Lampeggiare con i fari non rende una situazione pericolosa sicura. La visibilità è la condizione fondamentale per un sorpasso sicuro.",
         "regola": "Scarsa visibilità = NO Sorpasso, sempre!",
         "trabocchetti": ["consentito", "scarsa visibilità"],
@@ -472,6 +541,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso è vietato in curva anche se la strada è a due carreggiate separate",
         "risposta": False,
+        "riassunto": "Due carreggiate separate → sorpasso in curva vietato?",
         "spiegazione": "Falso. Se la strada ha due carreggiate separate, non c'è traffico in senso opposto sulla tua carreggiata. Questo elimina il pericolo principale delle curve, quindi il sorpasso è consentito (se ci sono abbastanza corsie).",
         "regola": "Carreggiate separate = Curva OK.",
         "trabocchetti": ["vietato"],
@@ -479,6 +549,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso è vietato in curva anche se la strada è ad almeno due corsie per senso di marcia",
         "risposta": False,
+        "riassunto": "Almeno due corsie per senso → sorpasso in curva vietato?",
         "spiegazione": "Falso. Se la strada ha almeno due corsie per il tuo senso di marcia, puoi sorpassare in curva usando la corsia di sinistra senza invadere la corsia opposta. Quindi non è vietato.",
         "regola": "Più corsie per senso = Curva OK.",
         "trabocchetti": ["vietato"],
@@ -486,6 +557,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il sorpasso di veicoli fermi ai passaggi a livello senza barriere se il treno è distante",
         "risposta": False,
+        "riassunto": "Passaggio a livello senza barriere, treno lontano → sorpasso di fermi?",
         "spiegazione": "Falso. I passaggi a livello senza barriere sono molto pericolosi. Anche se il treno sembra lontano, non puoi mai essere sicuro. Il sorpasso è vietato in queste situazioni, a meno che non ci siano semafori che regolano il traffico.",
         "regola": "Passaggio a livello = Massima prudenza, NO sorpasso (salvo semaforo).",
         "trabocchetti": ["se il treno è distante"],
@@ -493,6 +565,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il sorpasso di veicoli in lento movimento ai passaggi a livello senza barriere se il treno è distante",
         "risposta": False,
+        "riassunto": "Passaggio a livello senza barriere, treno lontano → sorpasso di lenti?",
         "spiegazione": "Falso. Vale lo stesso principio della domanda precedente. La vicinanza di un passaggio a livello senza barriere rende il sorpasso estremamente rischioso, anche se i veicoli si muovono lentamente e il treno sembra lontano.",
         "regola": "Passaggio a livello = Massima prudenza, NO sorpasso (salvo semaforo).",
         "trabocchetti": ["se il treno è distante"],
@@ -500,6 +573,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il sorpasso sulle intersezioni purché non provenga nessuno dalla destra",
         "risposta": False,
+        "riassunto": "Incroci → sorpasso se nessuno viene da destra?",
         "spiegazione": "Falso. Il sorpasso agli incroci è generalmente vietato per la scarsa visibilità e i possibili conflitti di traffico. La condizione 'purché non provenga nessuno dalla destra' non è sufficiente a renderlo sicuro o legale. Ci sono eccezioni specifiche, ma questa non è una di quelle.",
         "regola": "Incrocio = NO Sorpasso (salvo eccezioni specifiche).",
         "trabocchetti": ["purché non provenga nessuno dalla destra"],
@@ -507,6 +581,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il sorpasso sulle corsie d'accelerazione purché la manovra venga effettuata con attenzione",
         "risposta": False,
+        "riassunto": "Corsie di accelerazione → sorpasso con attenzione?",
         "spiegazione": "Falso. Le corsie di accelerazione sono fatte per aumentare la velocità e immettersi nel flusso del traffico, non per sorpassare. È vietato sorpassare lì, anche se lo fai con attenzione.",
         "regola": "Corsie di accelerazione = NO Sorpasso.",
         "trabocchetti": ["consentito"],
@@ -514,6 +589,7 @@ QUESTIONS = [
     {
         "domanda": "E' sempre consentito superare un veicolo a due ruote",
         "risposta": False,
+        "riassunto": "Veicolo a due ruote → sempre sorpassabile?",
         "spiegazione": "Falso. Anche se sorpassare un veicolo a due ruote può sembrare più facile, tutte le regole generali sul sorpasso (visibilità, segnaletica, incroci, ecc.) si applicano anche a loro. Non è 'sempre' consentito.",
         "regola": "'Sempre' = Attenzione, spesso è FALSO!",
         "trabocchetti": ["sempre"],
@@ -521,6 +597,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato il sorpasso nelle strade a senso unico",
         "risposta": False,
+        "riassunto": "Strade a senso unico → sorpasso vietato?",
         "spiegazione": "Falso. Nelle strade a senso unico non c'è traffico in senso opposto, il che rende il sorpasso generalmente più sicuro e quindi consentito, a meno di altri divieti specifici (es. linea continua).",
         "regola": "Senso unico = Sorpasso più facile (non vietato).",
         "trabocchetti": ["vietato"],
@@ -528,6 +605,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato il sorpasso di veicoli della polizia",
         "risposta": False,
+        "riassunto": "Veicoli della polizia → sorpasso vietato?",
         "spiegazione": "Falso. Puoi sorpassare i veicoli della polizia come qualsiasi altro veicolo, a meno che non siano in servizio di emergenza (con sirene e luci blu accese).",
         "regola": "Polizia = Si sorpassa (se non in emergenza).",
         "trabocchetti": ["vietato"],
@@ -535,6 +613,7 @@ QUESTIONS = [
     {
         "domanda": "In autostrada si può sorpassare indifferentemente a destra e a sinistra",
         "risposta": False,
+        "riassunto": "Autostrada → sorpasso a destra o sinistra indifferente?",
         "spiegazione": "Falso. In autostrada si sorpassa normalmente a sinistra. Il sorpasso a destra è consentito solo in casi molto specifici, ad esempio se il veicolo davanti sta svoltando a sinistra o in caso di traffico intenso con corsie parallele. Non è una scelta 'indifferente'.",
         "regola": "Autostrada = Sorpasso a sinistra (di norma).",
         "trabocchetti": ["indifferentemente"],
@@ -542,6 +621,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso tra motocicli si può effettuare sia a destra che a sinistra",
         "risposta": False,
+        "riassunto": "Tra motocicli → sorpasso a destra e sinistra?",
         "spiegazione": "Falso. La regola generale del sorpasso a sinistra vale per tutti i veicoli, inclusi i motocicli. Il sorpasso a destra è permesso solo in situazioni molto specifiche, non come opzione generale.",
         "regola": "Sorpasso = A sinistra (salvo eccezioni).",
         "trabocchetti": ["sia a destra che a sinistra"],
@@ -549,6 +629,7 @@ QUESTIONS = [
     {
         "domanda": "Lo spazio necessario per il sorpasso aumenta se il veicolo da sorpassare rallenta",
         "risposta": False,
+        "riassunto": "Spazio per il sorpasso → aumenta se l'altro rallenta?",
         "spiegazione": "Falso. Se il veicolo che stai sorpassando rallenta, la differenza di velocità tra voi aumenta. Questo ti permette di completare la manovra più velocemente e quindi hai bisogno di *meno* spazio, non di più.",
         "regola": "L'altro rallenta? Meno spazio!",
         "trabocchetti": ["aumenta"],
@@ -556,6 +637,7 @@ QUESTIONS = [
     {
         "domanda": "Lo spazio necessario per il sorpasso è indipendente dalla lunghezza dei veicoli",
         "risposta": False,
+        "riassunto": "Spazio per il sorpasso → indipendente dalle lunghezze?",
         "spiegazione": "Falso. Lo spazio necessario per il sorpasso dipende molto dalla lunghezza sia del veicolo che sorpassa sia di quello sorpassato. Veicoli più lunghi richiedono più spazio.",
         "regola": "Lunghezza veicoli = Più spazio.",
         "trabocchetti": ["indipendente"],
@@ -563,6 +645,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato il sorpasso di un autobus fermo per la salita e la discesa dei passeggeri",
         "risposta": False,
+        "riassunto": "Autobus fermo per passeggeri → sorpasso vietato?",
         "spiegazione": "Falso. Non è vietato sorpassare un autobus fermo per i passeggeri, ma devi farlo con estrema cautela. Devi rallentare e prepararti a fermarti se i passeggeri attraversano la strada. Il divieto assoluto non esiste.",
         "regola": "Autobus fermo = Cautela, non vietato.",
         "trabocchetti": ["vietato"],
@@ -570,6 +653,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso è vietato sulle curve e sui dossi delle strade a senso unico",
         "risposta": False,
+        "riassunto": "Senso unico → sorpasso vietato in curve e dossi?",
         "spiegazione": "Falso. Nelle strade a senso unico non c'è traffico in senso opposto. Questo elimina il pericolo principale delle curve e dei dossi, quindi il sorpasso è consentito (se ci sono abbastanza corsie e visibilità).",
         "regola": "Senso unico = Curva/Dosso OK.",
         "trabocchetti": ["strade a senso unico"],
@@ -577,6 +661,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso è vietato se si è costretti a superare la linea longitudinale tratteggiata",
         "risposta": False,
+        "riassunto": "Sorpasso → vietato oltre la tratteggiata?",
         "spiegazione": "Falso. La linea longitudinale tratteggiata (discontinua) indica proprio che è consentito superarla per effettuare un sorpasso, a condizione che sia sicuro. È la linea continua che vieta il sorpasso.",
         "regola": "Linea tratteggiata = Sorpasso OK.",
         "trabocchetti": ["vietato"],
@@ -584,6 +669,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito il sorpasso a destra dei motocicli se vi è spazio sufficiente",
         "risposta": False,
+        "riassunto": "Motocicli → sorpasso a destra se c'è spazio?",
         "spiegazione": "Falso. Il sorpasso a destra è generalmente vietato, indipendentemente dal tipo di veicolo o dallo spazio disponibile. È consentito solo in casi molto specifici (es. veicolo che svolta a sinistra, tram). 'Spazio sufficiente' non è una condizione valida per sorpassare a destra.",
         "regola": "Sorpasso a destra = Solo in casi specifici.",
         "trabocchetti": ["a destra", "se vi è spazio sufficiente"],
@@ -591,6 +677,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di intenso traffico è consentito ai motociclisti utilizzare per il sorpasso le corsie riservate",
         "risposta": False,
+        "riassunto": "Traffico intenso → moto sorpassano nelle corsie riservate?",
         "spiegazione": "Falso. Le corsie riservate sono dedicate a categorie specifiche di veicoli (es. autobus, taxi) o a scopi particolari. Nessun veicolo, inclusi i motociclisti, può usarle per sorpassare nel traffico intenso, a meno che non siano autorizzati a circolare in quella corsia.",
         "regola": "Corsie riservate = NO Sorpasso.",
         "trabocchetti": ["consentito", "corsie riservate"],
@@ -598,6 +685,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si inizia il sorpasso è consentito segnalare la manovra ai veicoli che precedono lampeggiando con i proiettori abbaglianti",
         "risposta": True,
+        "riassunto": "Inizio sorpasso → lampeggiare con gli abbaglianti?",
         "spiegazione": "Sì, è permesso usare i proiettori abbaglianti per un breve lampeggio per avvisare chi ti precede che stai per iniziare la manovra di sorpasso. È un modo per attirare l'attenzione e segnalare la tua intenzione.",
         "regola": "Lampeggio abbaglianti = Segnale di sorpasso.",
         "trabocchetti": ["consentito", "Segnalare la manovra"],
@@ -605,24 +693,28 @@ QUESTIONS = [
     {
         "domanda": "Nell'eseguire la manovra di sorpasso occorre regolare la velocità in relazione a quella del veicolo da sorpassare",
         "risposta": True,
+        "riassunto": "Sorpasso → velocità secondo il veicolo sorpassato?",
         "spiegazione": "Quando sorpassi, devi scegliere una velocità che ti permetta di superare il veicolo in modo rapido e sicuro, ma anche di non essere troppo lento rispetto a chi sorpassi. Devi adattare la tua velocità per completare la manovra senza pericoli.",
         "regola": "Velocità sorpasso = Adatta e sicura.",
     },
     {
         "domanda": "Per eseguire la manovra di sorpasso nei centri urbani si possono momentaneamente superare i limiti di velocità",
         "risposta": False,
+        "riassunto": "Sorpasso in città → superare momentaneamente i limiti?",
         "spiegazione": "Assolutamente no! I limiti di velocità devono essere sempre rispettati, anche quando si sorpassa, specialmente nei centri urbani dove ci sono più pericoli (pedoni, incroci, ecc.). Superare i limiti è sempre vietato e pericoloso.",
         "regola": "Limiti velocità = Sempre validi, mai superare.",
     },
     {
         "domanda": "Nell'eseguire la manovra di sorpasso bisogna mantenere strettamente la destra",
         "risposta": False,
+        "riassunto": "Durante il sorpasso → tenere la destra?",
         "spiegazione": "Quando sorpassi, devi spostarti a sinistra per superare il veicolo che ti precede. Mantenere strettamente la destra è la regola quando non stai sorpassando o quando devi facilitare il sorpasso agli altri.",
         "regola": "Sorpasso = Spostati a sinistra.",
     },
     {
         "domanda": "Nell'eseguire la manovra di sorpasso non bisogna accelerare",
         "risposta": False,
+        "riassunto": "Durante il sorpasso → non accelerare?",
         "spiegazione": "Per sorpassare in sicurezza e il più velocemente possibile, devi accelerare per superare il veicolo e rientrare nella tua corsia. Non accelerare renderebbe la manovra troppo lunga e quindi più pericolosa.",
         "regola": "Sorpasso = Accelerare per sicurezza.",
         "trabocchetti": ["non bisogna accelerare"],
@@ -630,6 +722,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo il sorpasso bisogna rientrare immediatamente a destra, rallentando",
         "risposta": False,
+        "riassunto": "Dopo il sorpasso → rientrare subito rallentando?",
         "spiegazione": "Dopo il sorpasso devi rientrare a destra, ma non 'immediatamente' e soprattutto non 'rallentando'. Devi rientrare solo quando hai superato completamente il veicolo e lo vedi nello specchietto retrovisore, mantenendo una velocità adeguata. Rallentare sarebbe molto pericoloso per chi ti segue.",
         "regola": "Rientro = Sicuro, non subito, non rallentando.",
         "trabocchetti": ["immediatamente", "rallentando"],
@@ -637,6 +730,7 @@ QUESTIONS = [
     {
         "domanda": "È vietato il sorpasso degli autobus in servizio pubblico di linea",
         "risposta": False,
+        "riassunto": "Autobus di linea → sorpasso vietato?",
         "spiegazione": "Non è vietato sorpassare gli autobus di linea in generale. Il sorpasso è vietato solo se l'autobus è fermo per far salire o scendere passeggeri e ci sono pedoni che attraversano o potrebbero attraversare. Se l'autobus è in movimento o fermo senza passeggeri, puoi sorpassarlo se le condizioni lo permettono.",
         "regola": "Autobus = Sorpassabile (se non fermo passeggeri).",
         "trabocchetti": ["È vietato il sorpasso"],
@@ -644,6 +738,7 @@ QUESTIONS = [
     {
         "domanda": "È vietato il sorpasso quando il veicolo che precede ha azionato l'indicatore di direzione destro",
         "risposta": False,
+        "riassunto": "Chi precede ha la freccia destra → sorpasso vietato?",
         "spiegazione": "Se il veicolo davanti mette la freccia destra, probabilmente sta per svoltare a destra o accostare. Questo di solito non vieta il sorpasso, anzi, in alcuni casi potrebbe facilitarlo se il veicolo si sposta a destra. Devi comunque fare attenzione.",
         "regola": "Freccia destra = Non vieta sorpasso.",
         "trabocchetti": ["È vietato il sorpasso"],
@@ -651,6 +746,7 @@ QUESTIONS = [
     {
         "domanda": "È vietato il sorpasso se nevica",
         "risposta": False,
+        "riassunto": "Nevicata → sorpasso vietato?",
         "spiegazione": "Non è vietato sorpassare solo perché nevica. Il sorpasso è vietato in condizioni di scarsa visibilità o aderenza (strada scivolosa), che possono essere causate dalla neve, ma la neve da sola non è un divieto assoluto. Devi valutare attentamente le condizioni della strada e la visibilità.",
         "regola": "Neve = Prudenza, non divieto assoluto.",
         "trabocchetti": ["È vietato il sorpasso se nevica"],
@@ -658,6 +754,7 @@ QUESTIONS = [
     {
         "domanda": "È vietato il sorpasso in corrispondenza dei passi carrabili",
         "risposta": False,
+        "riassunto": "Passi carrabili → sorpasso vietato?",
         "spiegazione": "I passi carrabili sono gli accessi a proprietà private (come garage o cortili). Non esiste un divieto specifico di sorpasso in corrispondenza dei passi carrabili. Devi solo fare attenzione a chi entra o esce, ma puoi sorpassare se le condizioni lo permettono.",
         "regola": "Passi carrabili = Attenzione, non divieto.",
         "trabocchetti": ["È vietato il sorpasso"],
@@ -665,6 +762,7 @@ QUESTIONS = [
     {
         "domanda": "È vietato il sorpasso in prossimità degli ospedali",
         "risposta": False,
+        "riassunto": "Vicino agli ospedali → sorpasso vietato?",
         "spiegazione": "Non esiste un divieto di sorpasso specifico in prossimità degli ospedali. Devi guidare con prudenza, rispettare i limiti di velocità e fare attenzione alle ambulanze o ai pedoni, ma non è vietato sorpassare se le condizioni lo permettono e la manovra è sicura.",
         "regola": "Ospedale = Prudenza, non divieto.",
         "trabocchetti": ["È vietato il sorpasso"],
@@ -672,6 +770,7 @@ QUESTIONS = [
     {
         "domanda": "È vietato il sorpasso in prossimità delle stazioni di servizio",
         "risposta": False,
+        "riassunto": "Vicino alle stazioni di servizio → sorpasso vietato?",
         "spiegazione": "Non è vietato sorpassare in prossimità delle stazioni di servizio. Devi fare attenzione ai veicoli che entrano ed escono dalla stazione, ma non c'è un divieto assoluto di sorpasso in queste aree. La prudenza è sempre d'obbligo.",
         "regola": "Stazione servizio = Attenzione, non divieto.",
         "trabocchetti": ["È vietato il sorpasso"],
@@ -679,6 +778,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso in prossimità di un dosso è consentito sulle strade a senso unico",
         "risposta": True,
+        "riassunto": "Dosso su strada a senso unico → sorpasso consentito?",
         "spiegazione": "Su una strada a senso unico, tutti i veicoli vanno nella stessa direzione. Questo significa che non c'è traffico che viene in senso contrario. Quindi, anche se c'è un dosso (una salita che limita la visibilità), puoi sorpassare perché non rischi di scontrarti con veicoli che arrivano dall'altra parte.",
         "regola": "Senso unico = via libera al dosso.",
         "trabocchetti": ["strade a senso unico"],
@@ -686,6 +786,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso in prossimità di un dosso è consentito sulle carreggiate a senso unico",
         "risposta": True,
+        "riassunto": "Dosso su carreggiata a senso unico → sorpasso consentito?",
         "spiegazione": "Simile alla precedente. Una carreggiata a senso unico significa che tutti i veicoli su quella parte di strada vanno nella stessa direzione. Non c'è traffico che viene contro di te, quindi il sorpasso è sicuro anche vicino a un dosso.",
         "regola": "Carreggiata a senso unico = sorpasso ok al dosso.",
         "trabocchetti": ["carreggiate a senso unico"],
@@ -693,6 +794,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso in prossimità di un dosso è consentito sulle strade a due corsie per senso di marcia",
         "risposta": True,
+        "riassunto": "Dosso su strada a due corsie per senso → sorpasso consentito?",
         "spiegazione": "Se una strada ha due corsie per ogni senso di marcia, significa che ci sono almeno quattro corsie in totale (due per andare e due per tornare). In questo caso, puoi sorpassare usando la corsia di sinistra del tuo senso di marcia, senza invadere la parte di strada dove arrivano i veicoli dall'altra direzione. Quindi, anche con un dosso, il sorpasso è sicuro.",
         "regola": "Due corsie per senso = sorpasso sicuro al dosso.",
         "trabocchetti": ["due corsie per senso di marcia"],
@@ -700,6 +802,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso in prossimità di un dosso è consentito sulle strade a due carreggiate separate",
         "risposta": True,
+        "riassunto": "Dosso su strada a carreggiate separate → sorpasso consentito?",
         "spiegazione": "Le strade a due carreggiate separate sono come le autostrade o le superstrade, dove c'è una barriera (come uno spartitraffico) che divide il traffico che va in una direzione da quello che va nell'altra. Non c'è rischio di scontrarsi con veicoli che arrivano in senso opposto, quindi puoi sorpassare anche vicino a un dosso.",
         "regola": "Carreggiate separate = dosso non blocca il sorpasso.",
         "trabocchetti": ["separate"],
@@ -707,6 +810,7 @@ QUESTIONS = [
     {
         "domanda": "E'vietato sorpassare accodandosi ad un'ambulanza in servizio di emergenza",
         "risposta": True,
+        "riassunto": "Ambulanza in emergenza → vietato sorpassare accodandosi?",
         "spiegazione": "Le ambulanze in emergenza vanno molto veloci e hanno la precedenza. Se ti 'accodi' (cioè le segui da vicino) per approfittare del loro passaggio e superare il traffico, è molto pericoloso e vietato. Potresti ostacolare l'ambulanza o causare un incidente.",
         "regola": "Ambulanza in emergenza = non seguirla per sorpassare.",
         "trabocchetti": ["accodandosi", "in servizio di emergenza"],
@@ -714,6 +818,7 @@ QUESTIONS = [
     {
         "domanda": "Su carreggiate a due corsie e a doppio senso in prossimità di un dosso, è consentito sorpassare veicoli a trazione animale",
         "risposta": False,
+        "riassunto": "Doppio senso a due corsie, dosso → sorpasso di trazione animale?",
         "spiegazione": "Su una strada a doppio senso con un dosso, la visibilità è limitata. Non puoi vedere chi arriva dall'altra parte. Anche se un veicolo a trazione animale è lento, il sorpasso richiede di invadere la corsia opposta, il che è pericoloso in prossimità di un dosso. La regola generale è che il sorpasso è vietato in prossimità dei dossi se si deve invadere la corsia opposta.",
         "regola": "Dosso + doppio senso = no sorpasso (anche se lento).",
         "trabocchetti": ["doppio senso", "in prossimità di un dosso"],
@@ -721,6 +826,7 @@ QUESTIONS = [
     {
         "domanda": "Su carreggiate a due corsie a doppio senso di marcia in prossimità di un dosso, è consentito sorpassare nella scia del veicolo che precede",
         "risposta": False,
+        "riassunto": "Doppio senso a due corsie, dosso → sorpasso in scia?",
         "spiegazione": "'Sorpassare nella scia' significa seguire molto da vicino il veicolo che ti precede e superarlo appena lui si sposta. Questo è pericoloso in generale, ma ancora di più in prossimità di un dosso su una strada a doppio senso. Non hai visibilità e non puoi reagire in tempo se c'è un pericolo. Il sorpasso è vietato in queste condizioni.",
         "regola": "Dosso + doppio senso = no sorpasso, nemmeno 'a scia'.",
         "trabocchetti": ["nella scia del veicolo che precede"],
@@ -728,6 +834,7 @@ QUESTIONS = [
     {
         "domanda": "In prossimità di un dosso è consentito invadere l'opposta semicarreggiata, per sorpassare autobus di linea fermi per la salita e discesa dei passeggeri",
         "risposta": False,
+        "riassunto": "Dosso → invadere l'opposta per sorpassare bus fermo?",
         "spiegazione": "In prossimità di un dosso, la visibilità è ridotta. Invadere la semicarreggiata opposta è pericolosissimo perché non puoi vedere se sta arrivando un altro veicolo. Non importa se stai sorpassando un autobus fermo; la regola di sicurezza sul dosso prevale.",
         "regola": "Dosso + corsia opposta = mai sorpassare.",
         "trabocchetti": ["invadere l", "e"],
@@ -735,6 +842,7 @@ QUESTIONS = [
     {
         "domanda": "Non si può sorpassare in corrispondenza dei dossi su carreggiata a senso unico a due corsie",
         "risposta": False,
+        "riassunto": "Senso unico a due corsie → sorpasso vietato sui dossi?",
         "spiegazione": "Questa domanda dice 'Non si può sorpassare', ma la risposta corretta è FALSO, quindi *si può* sorpassare. Se la carreggiata è a senso unico e ha due corsie, significa che tutti i veicoli vanno nella stessa direzione. Puoi usare la corsia di sinistra per sorpassare senza invadere la corsia opposta. Quindi, il sorpasso è consentito anche in prossimità di un dosso.",
         "regola": "Senso unico a due corsie = sorpasso ok al dosso.",
         "trabocchetti": ["Non si può", "senso unico a due corsie"],
@@ -742,6 +850,7 @@ QUESTIONS = [
     {
         "domanda": "Non si può sorpassare un veicolo che abbia segnalato l'intenzione di accostarsi al margine destro della carreggiata",
         "risposta": False,
+        "riassunto": "Chi segnala di accostare a destra → sorpasso vietato?",
         "spiegazione": "Questa domanda dice 'Non si può sorpassare', ma la risposta corretta è FALSO, quindi *si può* sorpassare. Se un veicolo segnala che vuole accostarsi a destra, significa che sta per rallentare o fermarsi e liberare la corsia. In questo caso, puoi sorpassarlo a sinistra, se le condizioni lo permettono e la manovra è sicura.",
         "regola": "Veicolo a destra = sorpasso a sinistra possibile.",
         "trabocchetti": ["Non si può"],
@@ -749,6 +858,7 @@ QUESTIONS = [
     {
         "domanda": "Non si può sorpassare in corrispondenza dell'uscita di un pubblico parcheggio",
         "risposta": False,
+        "riassunto": "Uscita di parcheggio pubblico → sorpasso vietato?",
         "spiegazione": "Questa domanda dice 'Non si può sorpassare', ma la risposta corretta è FALSO, quindi *si può* sorpassare. Non c'è una regola specifica che vieti il sorpasso all'uscita di un parcheggio pubblico. Devi sempre valutare la sicurezza della manovra, ma non è un divieto assoluto come, ad esempio, in prossimità di un incrocio o di un dosso su strada a doppio senso.",
         "regola": "Uscita parcheggio = sorpasso possibile con cautela.",
         "trabocchetti": ["Non si può", "Uscita di un pubblico parcheggio"],
@@ -756,6 +866,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato il sorpasso se alla sinistra del veicolo si trova una linea bianca discontinua affiancata da una continua",
         "risposta": False,
+        "riassunto": "Tratteggiata affiancata a continua a sinistra → sorpasso vietato?",
         "spiegazione": "Questa domanda dice 'E' vietato', ma la risposta corretta è FALSO, quindi *non è vietato*. Se alla sinistra del tuo veicolo c'è una linea discontinua affiancata da una continua, significa che tu (che sei dalla parte della discontinua) puoi sorpassare, mentre chi viene dal senso opposto (dalla parte della continua) non può. Quindi, il sorpasso è consentito per te.",
         "regola": "Discontinua dalla tua parte = puoi sorpassare.",
         "trabocchetti": ["vietato"],
@@ -763,6 +874,7 @@ QUESTIONS = [
     {
         "domanda": "Non si può sorpassare sulla destra il tram che marcia al centro della carreggiata",
         "risposta": False,
+        "riassunto": "Tram al centro → vietato sorpassarlo a destra?",
         "spiegazione": "Questa domanda dice 'Non si può sorpassare', ma la risposta corretta è FALSO, quindi *si può* sorpassare. Se il tram marcia al centro della carreggiata e non c'è spazio a sinistra, o se la strada è a senso unico, è consentito sorpassare il tram sulla destra, purché ci sia spazio sufficiente e sia sicuro.",
         "regola": "Tram al centro = sorpasso a destra possibile (se sicuro).",
         "trabocchetti": ["Non si può"],
@@ -770,6 +882,7 @@ QUESTIONS = [
     {
         "domanda": "Nella fase di sorpasso, il conducente è tenuto a evitare di stringere o di tagliare la strada al veicolo sorpassato",
         "risposta": True,
+        "riassunto": "Sorpasso → non stringere né tagliare la strada?",
         "spiegazione": "Quando sorpassi un altro veicolo, devi fare attenzione a non andare troppo vicino al veicolo che hai appena superato, né a rientrare troppo presto nella tua corsia. È importante lasciare sempre uno spazio di sicurezza per evitare incidenti.",
         "regola": "Sorpassa con spazio, rientra con calma.",
         "trabocchetti": ["stringere", "tagliare la strada"],
@@ -777,6 +890,7 @@ QUESTIONS = [
     {
         "domanda": "La pericolosità del sorpasso è determinata dal rischio di urtare altri veicoli che manifestano l'intenzione di compiere la stessa manovra",
         "risposta": True,
+        "riassunto": "Pericolo del sorpasso → altri che fanno la stessa manovra?",
         "spiegazione": "Il sorpasso è pericoloso perché potresti scontrarti con un altro veicolo che, nello stesso momento, vuole fare la tua stessa manovra. Per questo è fondamentale controllare bene gli specchietti prima di iniziare.",
         "regola": "Prima di sorpassare, guarda sempre gli specchietti.",
         "trabocchetti": ["manifestano l"],
@@ -784,6 +898,7 @@ QUESTIONS = [
     {
         "domanda": "La pericolosità del sorpasso è determinata dal rischio di collisione, in fase di avvicinamento, con il veicolo da sorpassare",
         "risposta": True,
+        "riassunto": "Pericolo del sorpasso → urto avvicinandosi al sorpassato?",
         "spiegazione": "Il sorpasso diventa pericoloso se, mentre ti avvicini al veicolo che vuoi superare, non mantieni la giusta distanza o velocità e rischi di colpirlo prima ancora di affiancarlo.",
         "regola": "Distanza di sicurezza, sempre.",
         "trabocchetti": ["in fase di avvicinamento"],
@@ -791,6 +906,7 @@ QUESTIONS = [
     {
         "domanda": "La pericolosità del sorpasso è determinata dal rischio di collisione, in fase di rientro in corsia, con il veicolo sorpassato",
         "risposta": True,
+        "riassunto": "Pericolo del sorpasso → urto rientrando?",
         "spiegazione": "Dopo aver superato un veicolo, se rientri troppo presto nella tua corsia, potresti colpire il veicolo che hai appena sorpassato. Devi rientrare solo quando lo vedi bene nello specchietto retrovisore interno.",
         "regola": "Rientra solo quando vedi il veicolo nello specchietto interno.",
         "trabocchetti": ["in fase di rientro in corsia"],
@@ -798,6 +914,7 @@ QUESTIONS = [
     {
         "domanda": "La pericolosità del sorpasso è determinata dal rischio di urto frontale con un veicolo che provenga dal senso contrario",
         "risposta": True,
+        "riassunto": "Pericolo del sorpasso → scontro frontale?",
         "spiegazione": "Se sorpassi su una strada a doppio senso di marcia, devi fare molta attenzione ai veicoli che arrivano dalla direzione opposta. Se non c'è abbastanza spazio o tempo, potresti scontrarti frontalmente, il che è estremamente pericoloso.",
         "regola": "Su strada a doppio senso, occhio al traffico opposto.",
         "trabocchetti": ["urto frontale", "veicolo che provenga dal senso contrario"],
@@ -805,6 +922,7 @@ QUESTIONS = [
     {
         "domanda": "La pericolosità del sorpasso è determinata dalla ridotta larghezza della carreggiata",
         "risposta": True,
+        "riassunto": "Pericolo del sorpasso → carreggiata stretta?",
         "spiegazione": "Se la strada è stretta, c'è meno spazio per sorpassare in sicurezza. Questo aumenta il rischio di toccare il veicolo sorpassato o di finire fuori strada.",
         "regola": "Strada stretta, sorpasso vietato o molto difficile.",
         "trabocchetti": ["ridotta larghezza della carreggiata"],
@@ -812,6 +930,7 @@ QUESTIONS = [
     {
         "domanda": "Nella fase di sorpasso, il conducente è tenuto a mantenersi il più a lungo possibile nella corsia di sorpasso",
         "risposta": False,
+        "riassunto": "Sorpasso → restare a lungo nella corsia di sorpasso?",
         "spiegazione": "Dopo aver sorpassato, devi rientrare nella tua corsia il prima possibile, ma sempre in sicurezza. Non devi rimanere nella corsia di sorpasso più del necessario, per non bloccare gli altri veicoli che potrebbero voler sorpassare.",
         "regola": "Sorpassa e rientra subito (in sicurezza).",
         "trabocchetti": ["il più a lungo possibile"],
@@ -819,6 +938,7 @@ QUESTIONS = [
     {
         "domanda": "Nella fase di sorpasso, il conducente è tenuto a segnalare continuamente con l'avvisatore acustico l'effettuazione della manovra",
         "risposta": False,
+        "riassunto": "Sorpasso → clacson continuo?",
         "spiegazione": "Non devi usare il clacson (avvisatore acustico) continuamente mentre sorpassi. Il clacson si usa solo in caso di pericolo immediato o, fuori dai centri abitati, per avvisare. Per segnalare il sorpasso si usano le frecce.",
         "regola": "Frecce per sorpassare, clacson solo per pericolo.",
         "trabocchetti": ["continuamente"],
@@ -826,6 +946,7 @@ QUESTIONS = [
     {
         "domanda": "Nella fase di sorpasso, il conducente è tenuto a mantenere una velocità almeno doppia di quella del veicolo sorpassato",
         "risposta": False,
+        "riassunto": "Sorpasso → velocità almeno doppia?",
         "spiegazione": "Devi sorpassare velocemente per ridurre il tempo della manovra, ma non c'è una regola che dice che la tua velocità deve essere 'almeno doppia' rispetto a quella del veicolo sorpassato. Devi superare in sicurezza e in un tempo breve, ma senza esagerare.",
         "regola": "Sorpassa rapidamente ma senza eccessi.",
         "trabocchetti": ["almeno doppia"],
@@ -833,6 +954,7 @@ QUESTIONS = [
     {
         "domanda": "La pericolosità del sorpasso è determinata dalla presenza, sulla strada, di delineatori normali di margine",
         "risposta": False,
+        "riassunto": "Pericolo del sorpasso → delineatori di margine?",
         "spiegazione": "I delineatori di margine sono quei paletti bianchi e neri o gialli che si trovano ai bordi della strada e servono a indicare dove finisce la carreggiata. Non rendono il sorpasso pericoloso, anzi, aiutano a orientarsi.",
         "regola": "Delineatori = bordo strada, non pericolo.",
         "trabocchetti": ["delineatori normali di margine"],
@@ -840,12 +962,14 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso è vietato di notte, nei centri urbani con pubblica illuminazione insufficiente",
         "risposta": False,
+        "riassunto": "Sorpasso → vietato di notte in città poco illuminate?",
         "spiegazione": "Il sorpasso non è vietato solo perché è notte o l'illuminazione è scarsa. È vietato se le condizioni di visibilità non permettono di farlo in sicurezza. Ma non c'è un divieto generale per la notte o l'illuminazione insufficiente di per sé.",
         "regola": "Sorpasso: sempre con buona visibilità, non solo di giorno.",
     },
     {
         "domanda": "Il sorpasso è vietato quando sulla carreggiata è tracciata la linea tratteggiata di mezzeria",
         "risposta": False,
+        "riassunto": "Sorpasso → vietato con mezzeria tratteggiata?",
         "spiegazione": "La linea tratteggiata di mezzeria significa proprio che il sorpasso è consentito, se le condizioni lo permettono e la manovra è sicura. Se il sorpasso fosse vietato, ci sarebbe una linea continua.",
         "regola": "Linea tratteggiata = via libera (se sicuro).",
         "trabocchetti": ["linea tratteggiata di mezzeria"],
@@ -853,12 +977,14 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso è vietato quando sulle strade di montagna si è preceduti da un autobus di linea",
         "risposta": False,
+        "riassunto": "Montagna dietro un bus di linea → sorpasso vietato?",
         "spiegazione": "Non c'è un divieto specifico di sorpassare un autobus di linea sulle strade di montagna. Puoi sorpassarlo se ci sono le condizioni di sicurezza (spazio, visibilità, assenza di divieti specifici come curve o dossi).",
         "regola": "Autobus in montagna: sorpassa solo se sicuro, non è vietato a priori.",
     },
     {
         "domanda": "Nella fase di rientro dal sorpasso in autostrada, il conducente deve distanziarsi di almeno 100 m dal veicolo sorpassato",
         "risposta": False,
+        "riassunto": "Rientro in autostrada → almeno 100 m dal sorpassato?",
         "spiegazione": "Non c'è una distanza fissa di 100 metri per il rientro dal sorpasso. Devi rientrare in sicurezza, assicurandoti di non tagliare la strada al veicolo sorpassato e di vederlo bene nello specchietto retrovisore interno. La distanza di sicurezza è variabile e dipende dalla velocità.",
         "regola": "Rientra sicuro, non c'è distanza fissa.",
         "trabocchetti": ["almeno 100 m"],
@@ -866,6 +992,7 @@ QUESTIONS = [
     {
         "domanda": "Nella fase di rientro dal sorpasso il conducente deve segnalare acusticamente la manovra al veicolo sorpassato",
         "risposta": False,
+        "riassunto": "Rientro → segnalare col clacson?",
         "spiegazione": "Non devi usare il clacson (segnalare acusticamente) quando rientri dal sorpasso. Devi usare le frecce per indicare il rientro e assicurarti di farlo in sicurezza. Il clacson è per segnalare un pericolo, non una manovra di routine.",
         "regola": "Frecce per rientrare, non clacson.",
         "trabocchetti": ["segnalare acusticamente"],
@@ -873,6 +1000,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso a destra è consentito quando il filobus è fermo per la salita e la discesa dei passeggeri, anche se non esiste salvagente",
         "risposta": False,
+        "riassunto": "Filobus fermo senza salvagente → sorpasso a destra?",
         "spiegazione": "Il sorpasso a destra è consentito solo in casi specifici. Quando un filobus è fermo per far salire o scendere i passeggeri, puoi sorpassarlo a destra solo se c'è un 'salvagente' (un'isola pedonale) o uno spazio apposito che ti separa dai passeggeri. Se non c'è, non puoi.",
         "regola": "Filobus fermo, passeggeri: sorpasso a destra solo con salvagente.",
         "trabocchetti": ["anche se non esiste salvagente"],
@@ -880,18 +1008,21 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso a destra è consentito quando si percorre una strada extraurbana a senso unico",
         "risposta": False,
+        "riassunto": "Extraurbana a senso unico → sorpasso a destra?",
         "spiegazione": "Anche su una strada extraurbana a senso unico, la regola generale è sorpassare a sinistra. Il sorpasso a destra è permesso solo in situazioni molto particolari, ad esempio se il veicolo davanti ha segnalato l'intenzione di svoltare a sinistra. Non è consentito solo perché la strada è a senso unico.",
         "regola": "Sorpasso a destra: solo in casi eccezionali, non per strada a senso unico.",
     },
     {
         "domanda": "Il conducente che intende sorpassare deve assicurarsi che la potenza del motore del proprio veicolo sia maggiore di quella del veicolo da sorpassare",
         "risposta": False,
+        "riassunto": "Sorpasso → motore più potente dell'altro?",
         "spiegazione": "Non devi preoccuparti di confrontare la potenza del tuo motore con quella del veicolo che stai per sorpassare. Devi assicurarti che il tuo veicolo abbia una potenza sufficiente per completare il sorpasso in sicurezza e rapidamente, ma non è necessario che sia 'maggiore' di quella dell'altro veicolo.",
         "regola": "Potenza sufficiente per te, non per confronto.",
     },
     {
         "domanda": "Il conducente del veicolo da sorpassare ha l'obbligo di non gareggiare in velocità con il veicolo sorpassante",
         "risposta": True,
+        "riassunto": "Chi è sorpassato → non gareggiare?",
         "spiegazione": "Quando un altro veicolo ti sta sorpassando, non devi aumentare la velocità per impedirgli di passare. È pericoloso e contro la legge, perché potrebbe causare un incidente.",
         "regola": "Non fare a gara, facilita il sorpasso!",
         "trabocchetti": ["gareggiare in velocità"],
@@ -899,6 +1030,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo da sorpassare ha l'obbligo di non accelerare la propria andatura",
         "risposta": True,
+        "riassunto": "Chi è sorpassato → non accelerare?",
         "spiegazione": "Se qualcuno ti sta sorpassando, devi mantenere la tua velocità o, se necessario, rallentare un po', ma mai accelerare. Accelerare rende il sorpasso più difficile e pericoloso per chi ti sta superando.",
         "regola": "Non accelerare, facilita il sorpasso.",
         "trabocchetti": ["Non accelerare la propria andatura"],
@@ -906,6 +1038,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo da sorpassare ha l'obbligo di fermarsi appena possibile per far defluire il traffico se guida un veicolo molto lento",
         "risposta": True,
+        "riassunto": "Chi è sorpassato e molto lento → fermarsi per far defluire?",
         "spiegazione": "Se guidi un veicolo molto lento e crei un intralcio al traffico (cioè rallenti molto gli altri), devi fermarti in un posto sicuro (come una piazzola di sosta) appena possibile per permettere agli altri veicoli di passare. Questo aiuta a mantenere il flusso del traffico e la sicurezza.",
         "regola": "Se sei lento e intralci, accosta.",
         "trabocchetti": ["Veicolo molto lento", "far defluire il traffico"],
@@ -913,12 +1046,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo da sorpassare ha l'obbligo di tenersi il più possibile vicino al margine destro su strade ad unica corsia per senso di marcia",
         "risposta": True,
+        "riassunto": "Chi è sorpassato, una corsia per senso → vicino al margine destro?",
         "spiegazione": "Per facilitare il sorpasso e lasciare spazio a chi ti supera, devi spostarti il più possibile verso il lato destro della strada, specialmente se c'è una sola corsia per il tuo senso di marcia. Questo permette al veicolo sorpassante di avere più spazio e di superarti in sicurezza.",
         "regola": "Stai a destra, lascia spazio.",
     },
     {
         "domanda": "Il conducente del veicolo da sorpassare ha l'obbligo di portarsi al centro della carreggiata per evitare sorpassi in scia",
         "risposta": False,
+        "riassunto": "Chi è sorpassato → al centro contro i sorpassi in scia?",
         "spiegazione": "È il contrario! Devi spostarti a destra per facilitare il sorpasso, non al centro. Andare al centro della carreggiata bloccherebbe il sorpasso e sarebbe molto pericoloso, impedendo agli altri di superarti.",
         "regola": "Mai al centro per il sorpasso!",
         "trabocchetti": ["portarsi al centro della carreggiata"],
@@ -926,6 +1061,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo da sorpassare ha l'obbligo di azionare la segnalazione luminosa di pericolo(lampeggio simultaneo di tutte le frecce) per segnalare che la strada è sgombra",
         "risposta": False,
+        "riassunto": "Chi è sorpassato → quattro frecce per dire strada libera?",
         "spiegazione": "Le luci di emergenza (le quattro frecce che lampeggiano insieme) si usano solo in caso di pericolo, di guasto al veicolo o di fermata di emergenza. Non si usano per segnalare che la strada è libera per un sorpasso. Questo potrebbe confondere gli altri conducenti e creare situazioni pericolose.",
         "regola": "Quattro frecce = pericolo, non via libera.",
         "trabocchetti": ["per segnalare che la strada è sgombra"],
@@ -933,6 +1069,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo da sorpassare ha l'obbligo di ridurre sempre la propria velocità",
         "risposta": False,
+        "riassunto": "Chi è sorpassato → ridurre sempre la velocità?",
         "spiegazione": "Non devi *sempre* ridurre la velocità. Devi mantenere la tua andatura o, se necessario, rallentare un po' per facilitare il sorpasso, ma non c'è un obbligo di ridurre la velocità in ogni situazione. L'importante è non accelerare e non ostacolare il sorpasso.",
         "regola": "Non 'sempre' ridurre, ma non accelerare.",
         "trabocchetti": ["sempre"],
@@ -940,6 +1077,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo da sorpassare ha l'obbligo di inserire le marce più basse per facilitare il sorpasso",
         "risposta": False,
+        "riassunto": "Chi è sorpassato → marce basse?",
         "spiegazione": "Inserire marce più basse farebbe aumentare i giri del motore e la velocità del veicolo, il che è contrario a quanto richiesto quando si viene sorpassati. Devi mantenere la tua andatura, non accelerare, per facilitare il sorpasso in sicurezza.",
         "regola": "Marce basse non servono per farsi sorpassare.",
         "trabocchetti": ["Inserire le marce più basse"],
@@ -947,6 +1085,7 @@ QUESTIONS = [
     {
         "domanda": "Per effettuare il sorpasso bisogna considerare che un veicolo trainante un caravan non può mai essere superato in una discesa a forte pendenza",
         "risposta": False,
+        "riassunto": "Veicolo con caravan in forte discesa → mai sorpassabile?",
         "spiegazione": "Non c'è una regola che vieta *sempre* il sorpasso di un veicolo che traina un caravan in discesa. Il sorpasso è vietato in discesa solo se la visibilità è limitata (ad esempio per una curva) o se la strada è a doppio senso con una sola corsia per senso di marcia e non c'è spazio sufficiente. La presenza del caravan non lo rende 'mai' vietato di per sé.",
         "regola": "'Mai' è quasi sempre falso nei quiz.",
         "trabocchetti": ["mai"],
@@ -954,6 +1093,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito sorpassare un'auto della Polizia, se non è in servizio di emergenza e non vi sono altri tipi di impedimenti",
         "risposta": True,
+        "riassunto": "Polizia non in emergenza → sorpasso consentito?",
         "spiegazione": "Se un'auto della Polizia non sta svolgendo un servizio di emergenza (cioè non ha sirene o luci blu accese), è considerata come qualsiasi altro veicolo. Quindi, puoi sorpassarla se le condizioni della strada lo permettono e non ci sono altri divieti.",
         "regola": "Polizia 'normale' = auto 'normale'.",
         "trabocchetti": ["se non è in servizio di emergenza"],
@@ -961,6 +1101,7 @@ QUESTIONS = [
     {
         "domanda": "Se si viene sorpassati mentre sopraggiunge un veicolo dal senso opposto, è consigliabile ridurre la velocità",
         "risposta": True,
+        "riassunto": "Sorpassati con veicolo opposto in arrivo → ridurre la velocità?",
         "spiegazione": "Quando un altro veicolo ti sta sorpassando e vedi un'auto arrivare dal senso opposto, è una buona idea ridurre un po' la tua velocità. Questo aiuta chi ti sta sorpassando a completare la manovra più velocemente e in sicurezza, evitando un possibile scontro con il veicolo che arriva.",
         "regola": "Aiuta chi sorpassa, rallenta un po'.",
         "trabocchetti": ["consigliabile"],
@@ -968,6 +1109,7 @@ QUESTIONS = [
     {
         "domanda": "Se si viene sorpassati mentre sopraggiunge un veicolo dal senso opposto, occorre spostarsi il più vicino possibile al margine destro della carreggiata",
         "risposta": True,
+        "riassunto": "Sorpassati con veicolo opposto → spostarsi a destra?",
         "spiegazione": "Quando vieni sorpassato, specialmente se c'è un veicolo che arriva dalla direzione opposta, devi spostarti il più possibile verso il margine destro della strada. Questo crea più spazio per il veicolo che ti sta sorpassando e rende la manovra più sicura per tutti.",
         "regola": "Fai spazio a destra, sempre.",
         "trabocchetti": ["il più vicino possibile"],
@@ -975,12 +1117,14 @@ QUESTIONS = [
     {
         "domanda": "Se si viene sorpassati ed avviene un incidente, si può avere una parte di responsabilità, se non si è fatto il possibile per facilitare la manovra di sorpasso",
         "risposta": True,
+        "riassunto": "Sorpassati con incidente → corresponsabilità se non si è agevolato?",
         "spiegazione": "Sì, è vero. La legge ti chiede di facilitare la manovra di sorpasso. Se non lo fai (ad esempio, acceleri o non ti sposti a destra) e succede un incidente, potresti essere considerato in parte responsabile perché non hai fatto il possibile per aiutare chi ti stava sorpassando.",
         "regola": "Facilitare è un dovere, non un favore.",
     },
     {
         "domanda": "E' vietato sorpassare un'auto della Polizia, non in servizio di emergenza, per non ostacolarne la marcia",
         "risposta": False,
+        "riassunto": "Polizia non in emergenza → sorpasso vietato?",
         "spiegazione": "Questa affermazione è falsa. Come abbiamo visto, se un'auto della Polizia non è in servizio di emergenza (cioè non ha sirene o luci blu accese), è come un veicolo normale. Non è vietato sorpassarla e non la ostacoli se lo fai in modo corretto e sicuro.",
         "regola": "Polizia 'normale' = sorpasso 'normale'.",
         "trabocchetti": ["vietato", "non in servizio di emergenza"],
@@ -988,6 +1132,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle autostrade a tre corsie per senso di marcia è consentito sorpassare un'auto della polizia, anche se in servizio di emergenza",
         "risposta": False,
+        "riassunto": "Autostrada a tre corsie → sorpassare polizia in emergenza?",
         "spiegazione": "Questa affermazione è falsa. Non è mai consentito sorpassare un veicolo di emergenza (come un'auto della Polizia, un'ambulanza o i Vigili del Fuoco) quando è in servizio di emergenza, cioè con sirene e luci accese. Devi sempre dargli la precedenza e facilitare il suo passaggio, non sorpassarlo, anche se ci sono molte corsie.",
         "regola": "Emergenza = non sorpassare MAI.",
         "trabocchetti": ["anche se in servizio di emergenza"],
@@ -995,6 +1140,7 @@ QUESTIONS = [
     {
         "domanda": "Se si viene sorpassati mentre sopraggiunge un veicolo dal senso opposto, occorre tenere accesi i proiettori abbaglianti, come segnale di pericolo",
         "risposta": False,
+        "riassunto": "Sorpassati con veicolo opposto → abbaglianti accesi?",
         "spiegazione": "Questa affermazione è falsa. Tenere accesi i proiettori abbaglianti (luci alte) quando c'è un veicolo che arriva dal senso opposto è molto pericoloso, perché acceca il conducente dell'altro veicolo. Non è un segnale di pericolo, ma crea pericolo. Devi usare i proiettori anabbaglianti (luci basse).",
         "regola": "Abbaglianti = pericolo per gli altri.",
         "trabocchetti": ["proiettori abbaglianti", "come segnale di pericolo"],
@@ -1002,6 +1148,7 @@ QUESTIONS = [
     {
         "domanda": "Se si viene sorpassati mentre sopraggiunge un veicolo dal senso opposto, si ha l'obbligo di mantenere la stessa velocità",
         "risposta": False,
+        "riassunto": "Sorpassati con veicolo opposto → mantenere la velocità?",
         "spiegazione": "Questa affermazione è falsa. Non hai l'obbligo di mantenere la stessa velocità. Anzi, come abbiamo visto, è consigliabile ridurre leggermente la velocità per facilitare la manovra di sorpasso e renderla più sicura, soprattutto se c'è un veicolo che arriva dal senso opposto.",
         "regola": "Non mantenere, facilita!",
         "trabocchetti": ["obbligo di mantenere la stessa velocità"],
@@ -1009,12 +1156,14 @@ QUESTIONS = [
     {
         "domanda": "Se si viene sorpassati mentre sopraggiunge un veicolo dal senso opposto, occorre azionare l'indicatore di direzione destro, come segnale di pericolo",
         "risposta": False,
+        "riassunto": "Sorpassati con veicolo opposto → freccia destra?",
         "spiegazione": "Questa affermazione è falsa. L'indicatore di direzione destro (la freccia destra) serve per segnalare che vuoi svoltare a destra o spostarti a destra. Non è un segnale generico di pericolo. Usarlo in questa situazione creerebbe confusione e non sarebbe corretto.",
         "regola": "Freccia destra = svolta a destra, non pericolo.",
     },
     {
         "domanda": "Durante un sorpasso in autostrada, la scarsa attenzione posta ai veicoli che seguono può essere causa di incidente",
         "risposta": True,
+        "riassunto": "Sorpasso in autostrada → poca attenzione a chi segue?",
         "spiegazione": "Quando sorpassi, devi sempre guardare anche dietro, nello specchietto. Se non fai attenzione a chi ti segue, potresti non vedere un veicolo che sta già sorpassando o che arriva molto veloce, causando un pericolo. Per questo, la scarsa attenzione è una causa di incidente.",
         "regola": "Sorpasso = Occhi ovunque (anche dietro)!",
         "trabocchetti": ["scarsa attenzione"],
@@ -1022,6 +1171,7 @@ QUESTIONS = [
     {
         "domanda": "Durante un sorpasso in autostrada, l'insufficiente distanza di sicurezza può essere causa di incidente",
         "risposta": True,
+        "riassunto": "Sorpasso in autostrada → distanza insufficiente?",
         "spiegazione": "La distanza di sicurezza è fondamentale. Se non mantieni una distanza sufficiente dal veicolo che stai sorpassando o da quello che ti precede dopo il sorpasso, non avrai tempo di frenare in caso di imprevisto e potresti fare un incidente.",
         "regola": "Distanza = Tempo per reagire.",
         "trabocchetti": ["insufficiente", "insufficiente distanza di sicurezza"],
@@ -1029,6 +1179,7 @@ QUESTIONS = [
     {
         "domanda": "Durante un sorpasso in autostrada, può essere causa di incidente l'improvviso spostamento sulla corsia di sorpasso di uno dei veicoli che precedono",
         "risposta": True,
+        "riassunto": "Sorpasso in autostrada → chi davanti si sposta all'improvviso?",
         "spiegazione": "Immagina di voler sorpassare e un'altra auto davanti a te, che non hai visto o che non ti ha visto, si sposta improvvisamente nella stessa corsia di sorpasso. Questo crea una situazione molto pericolosa e può causare un incidente.",
         "regola": "Sorpasso = Attenzione a chi ti precede!",
         "trabocchetti": ["improvviso"],
@@ -1036,6 +1187,7 @@ QUESTIONS = [
     {
         "domanda": "Durante un sorpasso in autostrada, mantenersi troppo a lungo sulla corsia di sorpasso può essere motivo di intralcio",
         "risposta": True,
+        "riassunto": "Sorpasso in autostrada → troppo a lungo a sinistra intralcia?",
         "spiegazione": "La corsia di sorpasso serve per sorpassare e poi tornare a destra. Se rimani 'troppo a lungo' sulla corsia di sorpasso, impedisci agli altri veicoli più veloci di sorpassare, creando un 'intralcio' (un ostacolo) al traffico. Questo è un comportamento scorretto e pericoloso.",
         "regola": "Corsia di sorpasso = Solo per sorpassare, poi a destra!",
         "trabocchetti": ["troppo a lungo", "intralcio"],
@@ -1043,12 +1195,14 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso in autostrada può essere motivo di incidente, se viene effettuato accodandosi ad un veicolo che sta sorpassando",
         "risposta": True,
+        "riassunto": "Sorpasso in autostrada → accodarsi a chi sorpassa?",
         "spiegazione": "Accodarsi significa mettersi subito dietro un altro veicolo che sta già sorpassando. Questo è pericoloso perché riduce la tua visibilità e la distanza di sicurezza. Se il veicolo davanti frena o ha un problema, tu non hai spazio per reagire e potresti causare un incidente.",
         "regola": "Sorpasso = Non in fila indiana!",
     },
     {
         "domanda": "Il sorpasso in autostrada può essere motivo di incidente, se il forte vento laterale compromette la stabilità dei veicoli",
         "risposta": True,
+        "riassunto": "Sorpasso in autostrada → forte vento laterale?",
         "spiegazione": "Un forte vento laterale (che arriva di lato) può spingere l'auto e farla sbandare, specialmente quando si cambia corsia o si è vicini a veicoli grandi. Questo rende il sorpasso molto più rischioso e può causare la perdita di controllo del veicolo e quindi un incidente.",
         "regola": "Vento forte = Sorpasso con cautela (o evita)!",
         "trabocchetti": ["compromette la stabilità", "vento laterale"],
@@ -1056,6 +1210,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso in autostrada può essere motivo di incidente, se viene effettuato in vicinanza di una piazzola di sosta",
         "risposta": False,
+        "riassunto": "Sorpasso in autostrada → vicino a piazzola?",
         "spiegazione": "Le piazzole di sosta sono aree dove ci si può fermare, ma non sono un punto dove il sorpasso è più pericoloso di altri. Non c'è una regola specifica che vieta o rende il sorpasso più rischioso vicino a una piazzola di sosta, a meno che non ci siano altre condizioni (come un veicolo che entra o esce). La sola vicinanza non è di per sé causa di incidente.",
         "regola": "Piazzola = Non è un divieto di sorpasso.",
         "trabocchetti": ["in vicinanza di una piazzola di sosta"],
@@ -1063,6 +1218,7 @@ QUESTIONS = [
     {
         "domanda": "Il sorpasso in autostrada può essere motivo di incidente, se si viaggia con le luci anabbaglianti sempre accese",
         "risposta": False,
+        "riassunto": "Sorpasso in autostrada → anabbaglianti accesi?",
         "spiegazione": "Le luci anabbaglianti devono essere sempre accese in autostrada, anche di giorno. Accenderle non è una causa di incidente, anzi, aumenta la tua visibilità e quindi la sicurezza. Viaggiare con le luci anabbaglianti accese è un comportamento corretto e sicuro, non pericoloso.",
         "regola": "Anabbaglianti = Sempre accesi, sempre più sicuri!",
         "trabocchetti": ["sempre accese"],

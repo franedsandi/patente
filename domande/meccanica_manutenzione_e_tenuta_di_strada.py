@@ -1,7 +1,7 @@
 """Domande — Meccanica, manutenzione e tenuta di strada.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Meccanica, manutenzione e tenuta di strada"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente consente il movimento del veicolo",
         "risposta": True,
+        "riassunto": "Forza aderente → permette il movimento?",
         "spiegazione": "La forza aderente è quella che permette alle ruote di 'aggrapparsi' all'asfalto. Senza questa forza, le ruote girerebbero a vuoto e il veicolo non si muoverebbe. È fondamentale per partire, accelerare e frenare.",
         "regola": "Aderenza = Movimento del veicolo.",
         "trabocchetti": ["consente il movimento"],
@@ -17,6 +18,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente si oppone allo slittamento verso l'esterno della curva",
         "risposta": True,
+        "riassunto": "Forza aderente → contro lo slittamento in curva?",
         "spiegazione": "Quando fai una curva, c'è una forza che tende a spingerti fuori (la forza centrifuga). La forza aderente tra pneumatici e strada è quella che ti tiene 'incollato' alla traiettoria e impedisce al veicolo di scivolare verso l'esterno della curva.",
         "regola": "In curva, l'aderenza ti tiene in strada.",
         "trabocchetti": ["si oppone allo slittamento", "Verso l"],
@@ -24,6 +26,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente consente al veicolo di percorrere la traiettoria voluta",
         "risposta": True,
+        "riassunto": "Forza aderente → mantiene la traiettoria?",
         "spiegazione": "La traiettoria voluta è la strada che tu vuoi fare con il veicolo. La forza aderente è ciò che permette alle ruote di seguire la direzione che imposti con il volante, senza scivolare o andare dritte.",
         "regola": "Aderenza = Guida precisa.",
         "trabocchetti": ["traiettoria voluta", "Consente"],
@@ -31,6 +34,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente si oppone allo slittamento dello pneumatico sull'asfalto",
         "risposta": True,
+        "riassunto": "Forza aderente → contro lo slittamento del pneumatico?",
         "spiegazione": "Questa è la definizione base di forza aderente. È la forza che impedisce alla gomma di scivolare (slittare) sulla superficie della strada, sia in accelerazione, frenata o curva.",
         "regola": "Aderenza = No slittamento.",
         "trabocchetti": ["si oppone allo slittamento"],
@@ -38,6 +42,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente non si oppone allo slittamento causato dal vento laterale",
         "risposta": False,
+        "riassunto": "Forza aderente → non contro il vento laterale?",
         "spiegazione": "Il vento laterale spinge il veicolo di lato. La forza aderente tra le gomme e la strada è proprio quella che contrasta questa spinta, mantenendo il veicolo sulla sua traiettoria. Se non ci fosse aderenza, il vento ti sposterebbe facilmente. Quindi, la forza aderente *si* oppone allo slittamento causato dal vento.",
         "regola": "Vento laterale? L'aderenza ti stabilizza.",
         "trabocchetti": ["non"],
@@ -45,6 +50,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente , se eccessiva, comporta il surriscaldamento dei freni",
         "risposta": False,
+        "riassunto": "Forza aderente eccessiva → freni surriscaldati?",
         "spiegazione": "La forza aderente è la 'presa' tra gomma e strada. Il surriscaldamento dei freni avviene quando si usano troppo i freni, non è direttamente legato a una 'eccessiva' forza aderente. Anzi, una buona aderenza aiuta i freni a essere più efficaci senza doverli surriscaldare. Se l'aderenza è poca, i freni possono bloccarsi e le ruote slittare, ma non è l'aderenza in sé a surriscaldare i freni.",
         "regola": "Aderenza = Bene. Surriscaldamento freni = Troppo uso freni.",
         "trabocchetti": ["se eccessiva", "comporta il surriscaldamento dei freni"],
@@ -52,6 +58,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente aumenta se l'asfalto è rugoso",
         "risposta": True,
+        "riassunto": "Asfalto rugoso → più aderenza?",
         "spiegazione": "VERO. La forza aderente è la 'presa' che le gomme hanno sull'asfalto. Se l'asfalto è rugoso, cioè non liscio, le gomme hanno più punti a cui aggrapparsi, e quindi la presa aumenta.",
         "regola": "Rugoso = più presa.",
         "trabocchetti": ["rugoso"],
@@ -59,6 +66,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente diminuisce se l'asfalto è bagnato",
         "risposta": True,
+        "riassunto": "Asfalto bagnato → meno aderenza?",
         "spiegazione": "VERO. Quando l'asfalto è bagnato, c'è uno strato d'acqua tra le gomme e la strada. Questo strato fa scivolare le gomme più facilmente, riducendo la 'presa' e quindi la forza aderente.",
         "regola": "Bagnato = meno presa.",
         "trabocchetti": ["diminuisce"],
@@ -66,6 +74,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente aumenta se l'asfalto è bagnato",
         "risposta": False,
+        "riassunto": "Asfalto bagnato → più aderenza?",
         "spiegazione": "FALSO. Questa affermazione è l'opposto di quella vera. L'acqua sull'asfalto rende la strada più scivolosa, non meno. Quindi, la forza aderente diminuisce, non aumenta.",
         "regola": "Acqua = pericolo, non più presa.",
         "trabocchetti": ["aumenta"],
@@ -73,6 +82,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente aumenta se l'asfalto è coperto di foglie",
         "risposta": False,
+        "riassunto": "Foglie → più aderenza?",
         "spiegazione": "FALSO. Le foglie, specialmente se sono bagnate o umide, creano uno strato scivoloso sull'asfalto. Le gomme non riescono ad avere una buona 'presa', e quindi la forza aderente diminuisce, non aumenta.",
         "regola": "Foglie = scivoloso.",
         "trabocchetti": ["coperto di foglie"],
@@ -80,6 +90,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente aumenta se l'asfalto è coperto di ghiaccio",
         "risposta": False,
+        "riassunto": "Ghiaccio → più aderenza?",
         "spiegazione": "FALSO. Il ghiaccio è estremamente scivoloso. Quando l'asfalto è coperto di ghiaccio, le gomme non hanno quasi nessuna 'presa' sulla strada. La forza aderente diminuisce moltissimo, rendendo la guida molto pericolosa.",
         "regola": "Ghiaccio = zero presa.",
         "trabocchetti": ["ghiaccio"],
@@ -87,6 +98,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente aumenta se l'asfalto è coperto dal fango",
         "risposta": False,
+        "riassunto": "Fango → più aderenza?",
         "spiegazione": "FALSO. Il fango, come l'acqua o le foglie, crea uno strato tra le gomme e l'asfalto. Questo strato rende la superficie scivolosa e riduce la 'presa' delle gomme. Quindi, la forza aderente diminuisce, non aumenta.",
         "regola": "Fango = scivoloso.",
         "trabocchetti": ["coperto dal fango"],
@@ -94,6 +106,7 @@ QUESTIONS = [
     {
         "domanda": "Se il coefficiente di aderenza diminuisce le ruote motrici potrebbero pattinare",
         "risposta": True,
+        "riassunto": "Meno aderenza → ruote motrici che pattinano?",
         "spiegazione": "Se c'è meno aderenza (cioè le gomme 'attaccano' meno alla strada, per esempio su ghiaccio o bagnato), le ruote motrici (quelle che danno la spinta) possono girare a vuoto senza far avanzare bene il veicolo. Questo si chiama 'pattinare'. Quindi, è VERO.",
         "regola": "Meno aderenza = più scivoli.",
         "trabocchetti": ["potrebbero"],
@@ -101,6 +114,7 @@ QUESTIONS = [
     {
         "domanda": "Se il coefficiente di aderenza diminuisce lo spazio di frenatura aumenta",
         "risposta": True,
+        "riassunto": "Meno aderenza → frenata più lunga?",
         "spiegazione": "L'aderenza è quanto bene le gomme si 'aggrappano' alla strada. Se l'aderenza diminuisce (per esempio, strada bagnata o sporca), le gomme fanno più fatica a fermare il veicolo. Per questo, serve più spazio per frenare completamente. Quindi, è VERO.",
         "regola": "Meno aderenza = più strada per fermarsi.",
         "trabocchetti": ["aumenta"],
@@ -108,6 +122,7 @@ QUESTIONS = [
     {
         "domanda": "Se il coefficiente di aderenza è basso bisogna ridurre la velocità",
         "risposta": True,
+        "riassunto": "Aderenza bassa → ridurre la velocità?",
         "spiegazione": "Quando l'aderenza è bassa (strada scivolosa), è molto più facile perdere il controllo del veicolo, pattinare o non riuscire a frenare in tempo. Ridurre la velocità ti dà più tempo per reagire e aiuta le gomme a mantenere un contatto migliore con la strada, rendendo la guida più sicura. Quindi, è VERO.",
         "regola": "Poco grip = piano vai.",
         "trabocchetti": ["bisogna"],
@@ -115,6 +130,7 @@ QUESTIONS = [
     {
         "domanda": "Se il coefficiente di aderenza diminuisce lo spazio di frenatura si riduce",
         "risposta": False,
+        "riassunto": "Meno aderenza → frenata più corta?",
         "spiegazione": "Questa domanda è il contrario della 25181. Se l'aderenza diminuisce, le gomme fanno più fatica a fermare il veicolo. Di conseguenza, lo spazio necessario per frenare non si riduce, ma 'aumenta'. Quindi, è FALSO.",
         "regola": "Meno aderenza = più strada per fermarsi (non meno!).",
         "trabocchetti": ["si riduce"],
@@ -122,6 +138,7 @@ QUESTIONS = [
     {
         "domanda": "Se il coefficiente di aderenza è basso bisogna ridurre la velocità solo in curva",
         "risposta": False,
+        "riassunto": "Aderenza bassa → ridurre solo in curva?",
         "spiegazione": "Quando l'aderenza è bassa (per esempio, per pioggia o ghiaccio), la strada è pericolosa ovunque, non 'solo' in curva. Devi ridurre la velocità sia in rettilineo, sia in frenata, sia in accelerazione, non solo quando affronti una curva. Le curve sono più rischiose, ma il pericolo è generale. Quindi, è FALSO.",
         "regola": "Poco grip = piano sempre, non solo in curva.",
         "trabocchetti": ["solo"],
@@ -129,6 +146,7 @@ QUESTIONS = [
     {
         "domanda": "Il coefficiente di aderenza basso limita la velocità alla quale è possibile percorrere una curva in sicurezza",
         "risposta": True,
+        "riassunto": "Aderenza bassa → limita la velocità in curva?",
         "spiegazione": "Se il coefficiente di aderenza è basso, significa che le gomme fanno meno 'presa' sulla strada. Questo rende più difficile controllare il veicolo, specialmente in curva. Per guidare in sicurezza, devi andare più piano, quindi la velocità è limitata.",
         "regola": "Meno aderenza = meno velocità in curva.",
         "trabocchetti": ["limita", "In sicurezza"],
@@ -136,6 +154,7 @@ QUESTIONS = [
     {
         "domanda": "Il coefficiente di aderenza basso favorisce lo slittamento in curva",
         "risposta": True,
+        "riassunto": "Aderenza bassa → slittamento in curva?",
         "spiegazione": "Quando l'aderenza è bassa, le gomme scivolano più facilmente. In curva, questo significa che il veicolo può 'slittare', cioè perdere il controllo e andare dritto o di traverso. Quindi, un'aderenza bassa favorisce, cioè aiuta, lo slittamento.",
         "regola": "Meno aderenza = più slittamento.",
         "trabocchetti": ["favorisce", "Slittamento"],
@@ -143,6 +162,7 @@ QUESTIONS = [
     {
         "domanda": "Il coefficiente di aderenza basso aumenta lo spazio di frenatura",
         "risposta": True,
+        "riassunto": "Aderenza bassa → frenata più lunga?",
         "spiegazione": "Se le gomme hanno poca aderenza, quando freni, ci vuole più tempo e più strada per fermare il veicolo. Questo perché le gomme non riescono a 'aggrapparsi' bene all'asfalto per rallentare. Perciò, lo spazio di frenatura, cioè la distanza per fermarsi, aumenta.",
         "regola": "Meno aderenza = più spazio per frenare.",
         "trabocchetti": ["aumenta", "Spazio di frenatura"],
@@ -150,6 +170,7 @@ QUESTIONS = [
     {
         "domanda": "Il coefficiente di aderenza basso rende pericolose le frenate brusche",
         "risposta": True,
+        "riassunto": "Aderenza bassa → frenate brusche pericolose?",
         "spiegazione": "Con poca aderenza, una frenata improvvisa e forte (brusca) può far bloccare le ruote e far perdere il controllo del veicolo, rendendo la situazione molto pericolosa. È meglio frenare dolcemente e gradualmente.",
         "regola": "Meno aderenza = no frenate brusche.",
         "trabocchetti": ["pericolose", "brusche"],
@@ -157,6 +178,7 @@ QUESTIONS = [
     {
         "domanda": "Il coefficiente di aderenza basso non condiziona la velocità del veicolo",
         "risposta": False,
+        "riassunto": "Aderenza bassa → nessun effetto sulla velocità?",
         "spiegazione": "Questa affermazione è falsa. Come abbiamo visto, un'aderenza bassa ti obbliga a ridurre la velocità, specialmente in curva o quando freni, per guidare in sicurezza. Quindi, condiziona eccome la velocità del veicolo!",
         "regola": "Meno aderenza = sì, condiziona la velocità!",
         "trabocchetti": ["non condiziona"],
@@ -164,6 +186,7 @@ QUESTIONS = [
     {
         "domanda": "Il coefficiente di aderenza basso riduce lo spazio di frenatura",
         "risposta": False,
+        "riassunto": "Aderenza bassa → frenata più corta?",
         "spiegazione": "Questa affermazione è falsa. È il contrario! Se l'aderenza è bassa, le gomme scivolano di più e ci vuole più strada per fermarsi. Quindi, lo spazio di frenatura aumenta, non si riduce.",
         "regola": "Meno aderenza = più spazio per frenare, non meno!",
         "trabocchetti": ["riduce"],
@@ -171,6 +194,7 @@ QUESTIONS = [
     {
         "domanda": "Il coefficiente di aderenza basso diminuisce i consumi di carburante",
         "risposta": False,
+        "riassunto": "Aderenza bassa → meno consumi?",
         "spiegazione": "Questa affermazione è falsa. Il coefficiente di aderenza riguarda la 'presa' delle gomme sulla strada e la sicurezza di guida. Non ha un effetto diretto e significativo sui consumi di carburante, che dipendono più dallo stile di guida e dal motore.",
         "regola": "Aderenza = sicurezza, non carburante.",
         "trabocchetti": ["diminuisce i consumi di carburante"],
@@ -178,6 +202,7 @@ QUESTIONS = [
     {
         "domanda": "Il coefficiente di aderenza basso riduce lo slittamento in curva",
         "risposta": False,
+        "riassunto": "Aderenza bassa → meno slittamento in curva?",
         "spiegazione": "Questa affermazione è falsa. Se l'aderenza è bassa, le gomme fanno meno presa e quindi è più facile che il veicolo slitti in curva, non meno facile. Quindi, lo slittamento aumenta, non si riduce.",
         "regola": "Meno aderenza = più slittamento, non meno!",
         "trabocchetti": ["riduce"],
@@ -185,6 +210,7 @@ QUESTIONS = [
     {
         "domanda": "Chi conduce un motociclo deve considerare che l'aderenza diminuisce sulle rotaie specialmente in caso di pioggia",
         "risposta": True,
+        "riassunto": "Moto → meno aderenza sulle rotaie con pioggia?",
         "spiegazione": "Quando guidi un motociclo, devi fare molta attenzione alle rotaie (come quelle del tram o del treno). Sono fatte di metallo e, specialmente quando piove, diventano molto scivolose. La tua moto ha meno contatto con la strada rispetto a un'auto, quindi è più facile perdere l'equilibrio. Per questo, l'aderenza (la capacità delle gomme di 'aggrapparsi' alla strada) diminuisce.",
         "regola": "Rotaie + Pioggia = Scivolo!",
         "trabocchetti": ["specialmente"],
@@ -192,6 +218,7 @@ QUESTIONS = [
     {
         "domanda": "Chi conduce un motociclo deve considerare che l'aderenza diminuisce sulle strisce della segnaletica orizzontale in caso di pioggia",
         "risposta": True,
+        "riassunto": "Moto → meno aderenza sulle strisce con pioggia?",
         "spiegazione": "Le strisce bianche o gialle che vedi sull'asfalto (come gli attraversamenti pedonali o le linee di stop) sono fatte con vernici o materiali che sono più lisci dell'asfalto. Quando piove, queste strisce diventano molto scivolose per le gomme della moto. Per questo, l'aderenza diminuisce e devi fare attenzione.",
         "regola": "Strisce bagnate = Attenzione!",
         "trabocchetti": ["in caso di pioggia"],
@@ -199,6 +226,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un motociclo deve considerare che l'aderenza non dipende dal tipo di pavimentazione stradale",
         "risposta": False,
+        "riassunto": "Moto → aderenza indipendente dalla pavimentazione?",
         "spiegazione": "Questa affermazione è falsa. L'aderenza delle gomme dipende moltissimo dal tipo di strada su cui guidi. L'asfalto, il cemento, la ghiaia, il pavé (strade con pietre) e anche se la strada è asciutta o bagnata, cambiano tutti la capacità delle gomme di fare presa. Dire che 'non dipende' è sbagliato.",
         "regola": "Aderenza = Tipo strada!",
         "trabocchetti": ["non"],
@@ -206,6 +234,7 @@ QUESTIONS = [
     {
         "domanda": "Chi conduce un motociclo deve considerare che l'aderenza diminuisce quando trasporta un passeggero",
         "risposta": False,
+        "riassunto": "Moto → meno aderenza col passeggero?",
         "spiegazione": "Questa affermazione è falsa. Quando trasporti un passeggero, il peso totale della moto aumenta. Questo peso extra, in realtà, tende a 'schiacciare' di più le gomme sull'asfalto, e questo generalmente aumenta l'aderenza. Certo, la moto si guida in modo diverso e lo spazio di frenata può cambiare, ma l'aderenza in sé non diminuisce, anzi, può migliorare.",
         "regola": "Più peso = Più aderenza (ma guida diversa)!",
         "trabocchetti": ["diminuisce"],
@@ -213,6 +242,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente diminuisce se la strada è sporca di olio",
         "risposta": True,
+        "riassunto": "Olio sulla strada → meno aderenza?",
         "spiegazione": "La forza aderente è la capacità delle gomme di 'attaccarsi' alla strada. Se la strada è sporca di olio, le gomme scivolano di più e quindi la forza aderente diminuisce. È come camminare su una buccia di banana!",
         "regola": "Olio = scivola, aderenza giù.",
         "trabocchetti": ["diminuisce", "Sporca di olio"],
@@ -220,6 +250,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente risulta maggiore se l'asfalto è asciutto e pulito",
         "risposta": True,
+        "riassunto": "Asfalto asciutto e pulito → più aderenza?",
         "spiegazione": "Quando l'asfalto è asciutto e pulito, le gomme hanno il massimo contatto con la strada. Questo significa che la forza aderente è maggiore, e l'auto ha più stabilità e controllo.",
         "regola": "Asciutto e pulito = massima aderenza.",
         "trabocchetti": ["maggiore", "asciutto", "pulito"],
@@ -227,6 +258,7 @@ QUESTIONS = [
     {
         "domanda": "La forza aderente non dipende dalla pressione dei pneumatici",
         "risposta": False,
+        "riassunto": "Aderenza → indipendente dalla pressione delle gomme?",
         "spiegazione": "La pressione dei pneumatici è fondamentale per la forza aderente! Se la pressione è sbagliata (troppo alta o troppo bassa), la gomma non tocca bene la strada e l'aderenza diminuisce. Per questo è importante controllarla spesso.",
         "regola": "Pressione giusta = aderenza perfetta.",
         "trabocchetti": ["non dipende"],
@@ -234,6 +266,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il veicolo percorre una curva è assoggettato ad una forza che tende a spostarlo verso l'esterno",
         "risposta": True,
+        "riassunto": "In curva → forza verso l'esterno?",
         "spiegazione": "Quando un veicolo gira in curva, c'è una forza che lo spinge sempre verso l'esterno della curva. È come quando giri velocemente e senti che vieni spinto fuori.",
         "regola": "In curva, la forza ti spinge SEMPRE FUORI.",
         "trabocchetti": ["assoggettato ad una forza", "verso l"],
@@ -241,6 +274,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il veicolo percorre una curva, la velocità eccessiva può provocarne lo sbandamento",
         "risposta": True,
+        "riassunto": "In curva troppo veloci → sbandamento?",
         "spiegazione": "Se vai troppo veloce in curva, le ruote possono perdere aderenza con la strada e il veicolo può scivolare, cioè 'sbandare'. È molto pericoloso.",
         "regola": "Troppa velocità in curva = sbandi.",
         "trabocchetti": ["eccessiva", "Sbandamento"],
@@ -248,6 +282,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il veicolo percorre una curva, la velocità eccessiva può provocarne il ribaltamento",
         "risposta": True,
+        "riassunto": "In curva troppo veloci → ribaltamento?",
         "spiegazione": "Andare troppo veloce in curva può essere così pericoloso che il veicolo, specialmente se è alto o carico, può perdere l'equilibrio e capovolgersi, cioè 'ribaltarsi'.",
         "regola": "Troppa velocità in curva = ti ribalti.",
         "trabocchetti": ["eccessiva", "Ribaltamento"],
@@ -255,6 +290,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il veicolo percorre una curva è assoggettato ad una forza che tende a spostarlo verso l'interno",
         "risposta": False,
+        "riassunto": "In curva → forza verso l'interno?",
         "spiegazione": "Questa affermazione è falsa. La forza che agisce sul veicolo in curva lo spinge sempre verso l'esterno, mai verso l'interno della curva.",
         "regola": "In curva, la spinta è FUORI, mai DENTRO.",
         "trabocchetti": ["verso l"],
@@ -262,6 +298,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il veicolo percorre una curva si deve aumentare la velocità per evitare lo slittamento",
         "risposta": False,
+        "riassunto": "In curva → accelerare contro lo slittamento?",
         "spiegazione": "Questa affermazione è falsa. Aumentare la velocità in curva è molto pericoloso perché aumenta il rischio di perdere aderenza e slittare, non lo evita. Bisogna sempre rallentare prima di una curva.",
         "regola": "In curva, MAI aumentare la velocità.",
         "trabocchetti": ["aumentare la velocità"],
@@ -269,6 +306,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il veicolo percorre una curva si deve aumentare la velocità per evitare il ribaltamento",
         "risposta": False,
+        "riassunto": "In curva → accelerare contro il ribaltamento?",
         "spiegazione": "Questa affermazione è falsa. Aumentare la velocità in curva è estremamente pericoloso e aumenta il rischio di ribaltarsi, non lo evita. È fondamentale ridurre la velocità prima di affrontare una curva.",
         "regola": "In curva, MAI aumentare la velocità.",
         "trabocchetti": ["aumentare la velocità"],
@@ -276,6 +314,7 @@ QUESTIONS = [
     {
         "domanda": "Il ribaltamento in curva del veicolo è favorito da un carico posto in alto",
         "risposta": True,
+        "riassunto": "Ribaltamento → favorito dal carico in alto?",
         "spiegazione": "Se il carico è posizionato in alto, il centro di gravità del veicolo si alza. Questo rende il veicolo meno stabile e più facile da ribaltare, specialmente quando si affronta una curva.",
         "regola": "Carico in alto = veicolo instabile.",
         "trabocchetti": ["favorito"],
@@ -283,12 +322,14 @@ QUESTIONS = [
     {
         "domanda": "Il ribaltamento in curva del veicolo è favorito dal carico non stabilmente fissato",
         "risposta": True,
+        "riassunto": "Ribaltamento → favorito dal carico non fissato?",
         "spiegazione": "Se il carico non è ben fissato, si muove all'interno del veicolo, soprattutto in curva. Questo movimento improvviso sposta il peso e può far perdere l'equilibrio al veicolo, aumentando il rischio di ribaltamento.",
         "regola": "Carico che si muove = pericolo.",
     },
     {
         "domanda": "Il ribaltamento in curva del veicolo è favorito da una ridotta distanza fra ruote dello stesso asse (carreggiata stretta)",
         "risposta": True,
+        "riassunto": "Ribaltamento → favorito dalla carreggiata stretta del veicolo?",
         "spiegazione": "Una carreggiata stretta significa che la distanza tra le ruote dello stesso asse è ridotta. Questo rende il veicolo meno stabile lateralmente, proprio come una sedia con le gambe troppo vicine, e quindi più propenso a ribaltarsi in curva.",
         "regola": "Carreggiata stretta = meno stabile.",
         "trabocchetti": ["ridotta distanza", "carreggiata stretta"],
@@ -296,6 +337,7 @@ QUESTIONS = [
     {
         "domanda": "Il ribaltamento in curva del veicolo è favorito da un raggio di curvatura della strada piccolo (curva stretta)",
         "risposta": True,
+        "riassunto": "Ribaltamento → favorito dalla curva stretta?",
         "spiegazione": "Una curva stretta (con un raggio di curvatura piccolo) richiede al veicolo di cambiare direzione più bruscamente. Questo genera una forza maggiore che spinge il veicolo verso l'esterno della curva, aumentando il rischio di ribaltamento.",
         "regola": "Curva stretta = più rischio.",
         "trabocchetti": ["curva stretta"],
@@ -303,6 +345,7 @@ QUESTIONS = [
     {
         "domanda": "Il ribaltamento in curva del veicolo è favorito da una ampia distanza fra ruote dello stesso asse (carreggiata larga)",
         "risposta": False,
+        "riassunto": "Ribaltamento → favorito dalla carreggiata larga?",
         "spiegazione": "Questa affermazione è FALSA. Una carreggiata larga significa che le ruote dello stesso asse sono più distanti tra loro. Questo aumenta la stabilità del veicolo, rendendolo meno propenso a ribaltarsi, non il contrario.",
         "regola": "Carreggiata larga = più stabile.",
         "trabocchetti": ["favorito", "ampia distanza", "carreggiata larga"],
@@ -310,6 +353,7 @@ QUESTIONS = [
     {
         "domanda": "Il ribaltamento in curva del veicolo è favorito da un carico posto in basso",
         "risposta": False,
+        "riassunto": "Ribaltamento → favorito dal carico in basso?",
         "spiegazione": "Questa affermazione è FALSA. Se il carico è posizionato in basso, il centro di gravità del veicolo si abbassa. Questo rende il veicolo più stabile e quindi meno facile da ribaltare in curva.",
         "regola": "Carico in basso = veicolo stabile.",
         "trabocchetti": ["favorito"],
@@ -317,6 +361,7 @@ QUESTIONS = [
     {
         "domanda": "Il ribaltamento in curva del veicolo è favorito da un raggio di curvatura della strada ampio (curva larga)",
         "risposta": False,
+        "riassunto": "Ribaltamento → favorito dalla curva larga?",
         "spiegazione": "Questa affermazione è FALSA. Una curva larga (con un raggio di curvatura ampio) è meno impegnativa per il veicolo. La forza che spinge il veicolo verso l'esterno è minore, quindi è più difficile che si ribalti.",
         "regola": "Curva larga = meno rischio.",
         "trabocchetti": ["curva larga", "favorito"],
@@ -324,6 +369,7 @@ QUESTIONS = [
     {
         "domanda": "La forza ribaltante in curva aumenta all'aumentare della velocità",
         "risposta": True,
+        "riassunto": "Forza ribaltante → aumenta con la velocità?",
         "spiegazione": "Quando vai più veloce in curva, la macchina viene spinta verso l'esterno con più forza (forza centrifuga). Questa spinta può far sì che la macchina si inclini e si ribalti. Quindi, più è alta la velocità, più è grande la forza che può far ribaltare il veicolo.",
         "regola": "Velocità alta in curva = più forza ribaltante.",
         "trabocchetti": ["aumenta all"],
@@ -331,6 +377,7 @@ QUESTIONS = [
     {
         "domanda": "La forza ribaltante in curva diminuisce all'aumentare della velocità",
         "risposta": False,
+        "riassunto": "Forza ribaltante → diminuisce con la velocità?",
         "spiegazione": "Questa affermazione è falsa. È il contrario! Se aumenti la velocità in curva, la forza che può far ribaltare il veicolo (forza ribaltante) non diminuisce, ma aumenta. Andare troppo veloci in curva è pericoloso proprio per questo motivo.",
         "regola": "Velocità alta in curva = pericolo alto, non basso.",
         "trabocchetti": ["diminuisce"],
@@ -338,6 +385,7 @@ QUESTIONS = [
     {
         "domanda": "L'A.B.S. impedisce alle ruote di bloccarsi",
         "risposta": True,
+        "riassunto": "ABS → impedisce il blocco delle ruote?",
         "spiegazione": "L'ABS (Sistema Antibloccaggio) è un sistema di sicurezza che, quando freni forte, evita che le ruote si fermino completamente (si blocchino). Questo ti permette di mantenere il controllo del veicolo e di sterzare anche durante una frenata di emergenza.",
         "regola": "ABS = Anti Bloccaggio Ruote.",
         "trabocchetti": ["impedisce"],
@@ -345,6 +393,7 @@ QUESTIONS = [
     {
         "domanda": "L'A.B.S. consente di correggere la traiettoria del veicolo anche durante una frenata di emergenza",
         "risposta": True,
+        "riassunto": "ABS → correggere la traiettoria in frenata?",
         "spiegazione": "Grazie all'ABS, le ruote non si bloccano del tutto. Questo significa che puoi ancora girare il volante e cambiare direzione (correggere la traiettoria) per evitare un ostacolo, anche mentre stai frenando molto forte.",
         "regola": "ABS = Freno + Sterzo (contemporaneamente).",
         "trabocchetti": ["consente di correggere"],
@@ -352,6 +401,7 @@ QUESTIONS = [
     {
         "domanda": "L'A.B.S. consente di utilizzare la massima forza aderente, in frenata",
         "risposta": True,
+        "riassunto": "ABS → massima forza aderente in frenata?",
         "spiegazione": "L'ABS fa in modo che le ruote non si blocchino, ma continuino a girare un po'. Questo permette al pneumatico di 'aggrapparsi' meglio all'asfalto, usando tutta la forza che può per fermare l'auto nel modo più efficace e nel minor spazio possibile.",
         "regola": "ABS = Massima aderenza in frenata.",
         "trabocchetti": ["massima forza aderente"],
@@ -359,6 +409,7 @@ QUESTIONS = [
     {
         "domanda": "L'A.B.S. è in grado di agire su tutte le ruote, intervenendo di volta in volta su quelle che stanno per bloccarsi durante la frenata",
         "risposta": True,
+        "riassunto": "ABS → agisce sulle ruote che stanno per bloccarsi?",
         "spiegazione": "L'ABS è un sistema intelligente che controlla ogni ruota separatamente. Se una ruota sta per bloccarsi, l'ABS agisce solo su quella ruota per farla girare un po' di nuovo, senza bloccare le altre. Così la frenata è più stabile.",
         "regola": "ABS = Controllo singolo per ogni ruota.",
         "trabocchetti": ["Di volta in volta"],
@@ -366,6 +417,7 @@ QUESTIONS = [
     {
         "domanda": "L'A.B.S. agisce anche quando gli pneumatici sono usurati",
         "risposta": True,
+        "riassunto": "ABS → funziona anche con gomme usurate?",
         "spiegazione": "L'ABS funziona sempre, anche se le gomme sono un po' vecchie o consumate. Certo, con gomme usurate la frenata sarà comunque meno efficace in generale, ma l'ABS farà comunque il suo lavoro per evitare il bloccaggio.",
         "regola": "ABS funziona sempre, ma gomme buone sono meglio.",
         "trabocchetti": ["Anche quando"],
@@ -373,6 +425,7 @@ QUESTIONS = [
     {
         "domanda": "L'A.B.S. agisce anche quando l'asfalto è bagnato",
         "risposta": True,
+        "riassunto": "ABS → funziona anche sul bagnato?",
         "spiegazione": "L'ABS è molto utile proprio quando la strada è scivolosa, come sul bagnato. In queste condizioni, le ruote si bloccano più facilmente, e l'ABS aiuta a evitarlo, rendendo la frenata più sicura e controllabile.",
         "regola": "ABS = Amico sul bagnato.",
         "trabocchetti": ["Anche quando"],
@@ -380,6 +433,7 @@ QUESTIONS = [
     {
         "domanda": "L'A.B.S. rende la frenata più sicura perché impedisce alle ruote di bloccarsi",
         "risposta": True,
+        "riassunto": "ABS → frenata più sicura senza blocco?",
         "spiegazione": "Questa domanda riassume il concetto principale dell'ABS. Non bloccando le ruote, l'ABS ti permette di mantenere il controllo del veicolo e di fermarti in modo più stabile, rendendo la frenata complessivamente più sicura.",
         "regola": "ABS = Sicurezza in frenata.",
         "trabocchetti": ["Rende la frenata più sicura"],
@@ -387,6 +441,7 @@ QUESTIONS = [
     {
         "domanda": "L'A.B.S. favorisce il bloccaggio delle ruote",
         "risposta": False,
+        "riassunto": "ABS → favorisce il blocco?",
         "spiegazione": "Questa affermazione è falsa perché l'ABS è stato creato proprio per EVITARE che le ruote si blocchino, non per aiutarle a bloccarsi. 'Anti-bloccaggio' è nel suo nome!",
         "regola": "ABS = Anti-bloccaggio, non pro-bloccaggio!",
         "trabocchetti": ["favorisce"],
@@ -394,12 +449,14 @@ QUESTIONS = [
     {
         "domanda": "L'A.B.S. impedisce , durante la frenata , di modificare la traiettoria del veicolo",
         "risposta": False,
+        "riassunto": "ABS → impedisce di cambiare traiettoria?",
         "spiegazione": "Questa affermazione è falsa. L'ABS ti permette proprio di modificare la traiettoria (cioè di sterzare) mentre freni. Se le ruote si bloccassero, non potresti più sterzare e l'auto andrebbe dritta.",
         "regola": "ABS = Sterzi anche frenando.",
     },
     {
         "domanda": "L'A.B.S. impedisce di utilizzare la massima forza aderente , in frenata",
         "risposta": False,
+        "riassunto": "ABS → impedisce la massima aderenza?",
         "spiegazione": "Questa affermazione è falsa. L'ABS, al contrario, aiuta a usare la massima forza aderente tra le gomme e la strada. Se le ruote si bloccassero, l'aderenza sarebbe minore e la frenata meno efficace.",
         "regola": "ABS = Massima aderenza, non minima.",
         "trabocchetti": ["impedisce di utilizzare"],
@@ -407,6 +464,7 @@ QUESTIONS = [
     {
         "domanda": "L'A.B.S. non agisce sulle ruote motrici",
         "risposta": False,
+        "riassunto": "ABS → non sulle ruote motrici?",
         "spiegazione": "Questa affermazione è falsa. L'ABS agisce su TUTTE le ruote del veicolo, sia quelle motrici (che danno la spinta) sia quelle non motrici, per garantire una frenata stabile e sicura su tutto il veicolo.",
         "regola": "ABS = Tutte le ruote.",
         "trabocchetti": ["non"],
@@ -414,6 +472,7 @@ QUESTIONS = [
     {
         "domanda": "L'A.B.S. non si attiva se gli pneumatici sono usurati",
         "risposta": False,
+        "riassunto": "ABS → non con gomme usurate?",
         "spiegazione": "Questa affermazione è falsa. L'ABS si attiva sempre quando serve, indipendentemente dallo stato degli pneumatici. Certo, con gomme usurate la frenata sarà meno efficace in generale, ma l'ABS farà comunque il suo lavoro per evitare il bloccaggio.",
         "regola": "ABS = Funziona sempre, anche con gomme usurate.",
         "trabocchetti": ["non si attiva se"],
@@ -421,6 +480,7 @@ QUESTIONS = [
     {
         "domanda": "Si deve controllare periodicamente la pressione di gonfiaggio dei pneumatici, compresa quella della ruota di scorta",
         "risposta": True,
+        "riassunto": "Pressione → controllarla anche sulla ruota di scorta?",
         "spiegazione": "È vero. Controllare la pressione delle gomme è molto importante per la tua sicurezza e per non rovinare i pneumatici. Non dimenticare di controllare anche la ruota di scorta, così è sempre pronta se ti serve.",
         "regola": "Pressione = Sicurezza. Controlla anche la scorta!",
         "trabocchetti": ["periodicamente", "Compresa quella della ruota di scorta"],
@@ -428,6 +488,7 @@ QUESTIONS = [
     {
         "domanda": "La pressione di gonfiaggio degli pneumatici va adeguata alle condizioni di peso del veicolo",
         "risposta": True,
+        "riassunto": "Pressione → secondo il peso del veicolo?",
         "spiegazione": "È vero. Se il veicolo è più pesante (per esempio, hai molti bagagli o passeggeri), le gomme devono avere una pressione un po' più alta. Questo aiuta a sostenere meglio il peso e a mantenere il veicolo stabile.",
         "regola": "Più peso = più pressione.",
         "trabocchetti": ["va adeguata alle condizioni di peso"],
@@ -435,6 +496,7 @@ QUESTIONS = [
     {
         "domanda": "La corretta pressione di gonfiaggio degli pneumatici dipende dal carico del veicolo e dal numero dei passeggeri trasportati",
         "risposta": True,
+        "riassunto": "Pressione → secondo carico e passeggeri?",
         "spiegazione": "È vero. Il 'carico' (cioè i bagagli o le cose che trasporti) e il 'numero dei passeggeri' aumentano il peso totale del veicolo. Per questo, la pressione delle gomme deve essere regolata per sopportare questo peso extra e garantire una guida sicura.",
         "regola": "Carico e passeggeri cambiano la pressione.",
         "trabocchetti": ["dipende"],
@@ -442,6 +504,7 @@ QUESTIONS = [
     {
         "domanda": "Un'insufficiente pressione di gonfiaggio degli pneumatici fa aumentare l'attrito e anche i consumi di carburante",
         "risposta": True,
+        "riassunto": "Gomme sgonfie → più attrito e consumi?",
         "spiegazione": "È vero. Se la gomma è sgonfia (pressione insufficiente), tocca di più la strada. Questo aumenta l'attrito (la 'resistenza' al movimento), il motore deve fare più fatica, consuma più benzina e la gomma si usura più velocemente.",
         "regola": "Gomma sgonfia = più attrito, più benzina.",
         "trabocchetti": ["insufficiente pressione", "Aumentare l", "e"],
@@ -449,6 +512,7 @@ QUESTIONS = [
     {
         "domanda": "La pressione di gonfiaggio dei pneumatici deve essere controllata quando la gomma è fredda",
         "risposta": True,
+        "riassunto": "Pressione → controllata a gomma fredda?",
         "spiegazione": "È vero. Quando la gomma è calda (dopo aver guidato), l'aria al suo interno si espande e la pressione sembra più alta di quella reale. Per avere una misurazione precisa e sapere la vera pressione, devi controllare quando la gomma è fredda, cioè quando non hai guidato per un po'.",
         "regola": "Pressione si misura a freddo.",
         "trabocchetti": ["quando la gomma è fredda"],
@@ -456,6 +520,7 @@ QUESTIONS = [
     {
         "domanda": "Il sistema automatico di rilevamento della pressione di gonfiaggio dei pneumatici fa aumentare la sicurezza dei veicoli che ne sono dotati",
         "risposta": True,
+        "riassunto": "Rilevamento automatico della pressione → più sicurezza?",
         "spiegazione": "È vero. Questo sistema (chiamato TPMS) ti avvisa se una gomma si sta sgonfiando. Così puoi intervenire subito, evitando problemi di guida o incidenti. Questo rende la guida più sicura.",
         "regola": "TPMS = più sicurezza.",
         "trabocchetti": ["sistema automatico di rilevamento", "fa aumentare la sicurezza"],
@@ -463,6 +528,7 @@ QUESTIONS = [
     {
         "domanda": "Se si misura la pressione di gonfiaggio degli pneumatici quando la gomma è calda, si ha una corretta lettura dei valori di pressione",
         "risposta": False,
+        "riassunto": "Pressione a gomma calda → lettura corretta?",
         "spiegazione": "È falso. Come abbiamo detto, quando la gomma è calda, l'aria al suo interno si espande e la pressione che misuri è più alta di quella reale. Quindi, la lettura non è corretta e non ti dà il valore giusto.",
         "regola": "Caldo = lettura sbagliata.",
         "trabocchetti": ["quando la gomma è calda", "corretta lettura"],
@@ -470,6 +536,7 @@ QUESTIONS = [
     {
         "domanda": "La pressione di gonfiaggio degli pneumatici va controllata dopo aver percorso alcuni chilometri, appena la gomma si è surriscaldata",
         "risposta": False,
+        "riassunto": "Pressione → dopo qualche km, a gomma calda?",
         "spiegazione": "È falso. Questo è l'esatto contrario di quello che si deve fare! La pressione va controllata a freddo, non dopo aver guidato o quando la gomma è calda. Misurare a caldo ti darebbe un valore sbagliato.",
         "regola": "Mai a caldo!",
         "trabocchetti": ["dopo aver percorso alcuni chilometri", "appena la gomma si è surriscaldata"],
@@ -477,12 +544,14 @@ QUESTIONS = [
     {
         "domanda": "La pressione di gonfiaggio degli pneumatici va stabilita in base al materiale con cui sono realizzati i cerchioni (acciaio, lega leggera, ecc.)",
         "risposta": False,
+        "riassunto": "Pressione → secondo il materiale dei cerchi?",
         "spiegazione": "È falso. La pressione delle gomme dipende dal tipo di veicolo, dal suo peso e dal numero di passeggeri, non dal materiale dei cerchioni (che sono la parte metallica della ruota). I cerchioni supportano la gomma, ma non influenzano la pressione interna.",
         "regola": "Cerchioni non contano per la pressione.",
     },
     {
         "domanda": "Prima di iniziare un lungo viaggio, è opportuno aumentare la pressione di gonfiaggio degli pneumatici",
         "risposta": False,
+        "riassunto": "Prima di un lungo viaggio → aumentare la pressione?",
         "spiegazione": "È falso. Non si deve 'aumentare' la pressione in modo generico. Si deve 'adeguare' la pressione al carico previsto per il viaggio. Se il veicolo è più carico (più bagagli, più passeggeri), allora sì, la pressione va aumentata un po' rispetto al valore normale. Ma se il carico è leggero o normale, non si aumenta. Una pressione eccessiva è pericolosa quanto una insufficiente.",
         "regola": "Non 'aumentare', ma 'adeguare al carico'.",
         "trabocchetti": ["aumentare"],
@@ -490,6 +559,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli con rimorchio, la pressione di gonfiaggio degli pneumatici del veicolo trainante deve essere uguale a quella degli pneumatici del rimorchio",
         "risposta": False,
+        "riassunto": "Con rimorchio → stessa pressione su motrice e rimorchio?",
         "spiegazione": "È falso. Il veicolo che traina (l'auto) e il rimorchio sono due mezzi diversi, con pesi, carichi e spesso tipi di gomme diversi. Per questo, anche le pressioni di gonfiaggio saranno diverse e devono essere controllate separatamente, seguendo le indicazioni del produttore per ciascuno.",
         "regola": "Auto e rimorchio: pressioni diverse.",
         "trabocchetti": ["uguale"],
@@ -497,6 +567,7 @@ QUESTIONS = [
     {
         "domanda": "Lo spessore minimo del battistrada degli pneumatici di un autoveicolo deve essere di 1,6 millimetri",
         "risposta": True,
+        "riassunto": "Battistrada autoveicoli → minimo 1,6 mm?",
         "spiegazione": "È vero. La legge stabilisce che il battistrada degli pneumatici di un autoveicolo (come un'auto) non deve essere più basso di 1,6 millimetri. Questo spessore è importante per la sicurezza, specialmente quando piove, per garantire una buona aderenza alla strada.",
         "regola": "Auto = 1,6 mm minimo.",
         "trabocchetti": ["minimo"],
@@ -504,6 +575,7 @@ QUESTIONS = [
     {
         "domanda": "E' consigliabile sostituire gli pneumatici dopo alcuni anni, anche se non sono consumati",
         "risposta": True,
+        "riassunto": "Pneumatici → sostituirli dopo anni anche se non consumati?",
         "spiegazione": "È vero. Anche se gli pneumatici non sembrano consumati, la gomma invecchia con il tempo. Dopo alcuni anni, la gomma può diventare più dura e perdere elasticità, riducendo l'aderenza e la sicurezza. Per questo è consigliabile cambiarli.",
         "regola": "Gomme: non solo usura, ma anche età!",
         "trabocchetti": ["anche se non sono consumati", "Consigliabile"],
@@ -511,6 +583,7 @@ QUESTIONS = [
     {
         "domanda": "Lo spessore minimo del battistrada degli pneumatici di un motociclo deve essere di 1,0 millimetri",
         "risposta": True,
+        "riassunto": "Battistrada moto → minimo 1,0 mm?",
         "spiegazione": "È vero. Per i motocicli, la legge prevede uno spessore minimo del battistrada di 1,0 millimetri. È un valore diverso rispetto alle auto, ma altrettanto importante per la sicurezza.",
         "regola": "Moto = 1,0 mm minimo.",
         "trabocchetti": ["minimo"],
@@ -518,6 +591,7 @@ QUESTIONS = [
     {
         "domanda": "Se in uno pneumatico del tipo \"tubeless\" si è conficcato un chiodo, è possibile, con le necessarie cautele, continuare a guidare, fermandosi quanto prima per riparare il danno",
         "risposta": True,
+        "riassunto": "Chiodo nel tubeless → proseguire con cautela e riparare presto?",
         "spiegazione": "È vero. Se un chiodo si conficca in uno pneumatico 'tubeless' (senza camera d'aria), l'aria esce lentamente. Questo ti permette di guidare con prudenza per un breve tratto, fino a un luogo sicuro o da un gommista, per far riparare il danno senza fermarti in un posto pericoloso.",
         "regola": "Chiodo tubeless: piano fino al gommista.",
         "trabocchetti": ["con le necessarie cautele", "quanto prima"],
@@ -525,6 +599,7 @@ QUESTIONS = [
     {
         "domanda": "Gli pneumatici \"tubeless\" possono essere riparati solo con apposite bombolette contenenti uno speciale mastice, che chiudono il foro dall'interno",
         "risposta": False,
+        "riassunto": "Tubeless → riparabili solo con bombolette?",
         "spiegazione": "È falso. Gli pneumatici 'tubeless' possono essere riparati in diversi modi da un professionista, non 'solo' con le bombolette. Le bombolette sono una soluzione temporanea per emergenze, ma non l'unico metodo di riparazione e spesso non quello definitivo.",
         "regola": "'Solo' = Attenzione, spesso FALSO!",
         "trabocchetti": ["solo"],
@@ -532,6 +607,7 @@ QUESTIONS = [
     {
         "domanda": "Gli pneumatici \"tubeless\", in caso di foratura, si sgonfiano lentamente",
         "risposta": True,
+        "riassunto": "Tubeless forato → si sgonfia lentamente?",
         "spiegazione": "È vero. La caratteristica principale degli pneumatici 'tubeless' è che, in caso di foratura, l'aria non esce di colpo ma 'lentamente'. Questo ti dà il tempo di accorgerti del problema e di fermarti in sicurezza.",
         "regola": "Tubeless = sgonfiaggio lento.",
         "trabocchetti": ["lentamente"],
@@ -539,6 +615,7 @@ QUESTIONS = [
     {
         "domanda": "Gli pneumatici con camera d'aria, in caso di foratura, si sgonfiano lentamente",
         "risposta": False,
+        "riassunto": "Camera d'aria forata → si sgonfia lentamente?",
         "spiegazione": "È falso. Gli pneumatici con 'camera d'aria' (il tipo più vecchio) si sgonfiano molto rapidamente e improvvisamente in caso di foratura. Questo può essere pericoloso perché si perde subito il controllo del veicolo.",
         "regola": "Camera d'aria = sgonfiaggio RAPIDO.",
         "trabocchetti": ["lentamente"],
@@ -546,6 +623,7 @@ QUESTIONS = [
     {
         "domanda": "Se in uno pneumatico del tipo \"tubeless\" si è conficcato un chiodo, bisogna estrarlo subito, per evitare che il pneumatico possa esplodere",
         "risposta": False,
+        "riassunto": "Chiodo nel tubeless → toglierlo subito?",
         "spiegazione": "È falso. Se estrai subito il chiodo da un tubeless, l'aria uscirà più velocemente. È meglio lasciarlo dentro e andare con cautela dal gommista. Lo pneumatico non esplode per un chiodo, ma si sgonfia.",
         "regola": "Chiodo tubeless: NON togliere subito.",
         "trabocchetti": ["estrarlo subito", "possa esplodere"],
@@ -553,6 +631,7 @@ QUESTIONS = [
     {
         "domanda": "Gli pneumatici gonfiati con l'azoto devono essere tenuti a minore pressione rispetto a quelli con aria compressa",
         "risposta": False,
+        "riassunto": "Gomme ad azoto → pressione più bassa?",
         "spiegazione": "È falso. La pressione di gonfiaggio raccomandata per gli pneumatici è la stessa, sia che siano gonfiati con aria compressa che con azoto. L'azoto ha altri vantaggi (come una minore variazione di pressione con la temperatura), ma non cambia la pressione consigliata.",
         "regola": "Azoto o aria = stessa pressione.",
         "trabocchetti": ["minore pressione"],
@@ -560,12 +639,14 @@ QUESTIONS = [
     {
         "domanda": "Gli pneumatici chiodati possono essere usati limitatamente ad un predeterminato periodo dell'anno",
         "risposta": True,
+        "riassunto": "Gomme chiodate → solo in un periodo dell'anno?",
         "spiegazione": "Gli pneumatici chiodati sono speciali e si possono usare solo in un periodo specifico dell'anno, di solito in inverno (dal 15 novembre al 15 marzo), quando c'è neve o ghiaccio. Non si possono usare sempre.",
         "regola": "Chiodati = solo in inverno, per legge.",
     },
     {
         "domanda": "E' consigliabile che gli pneumatici invernali vengano montati su tutte le ruote",
         "risposta": True,
+        "riassunto": "Gomme invernali → su tutte le ruote?",
         "spiegazione": "Per avere la massima sicurezza e stabilità quando guidi con neve o ghiaccio, è sempre meglio montare i pneumatici invernali su tutte e quattro le ruote. Così l'auto frena e sterza meglio.",
         "regola": "Invernali = tutte le ruote per massima sicurezza.",
         "trabocchetti": ["consigliabile"],
@@ -573,6 +654,7 @@ QUESTIONS = [
     {
         "domanda": "Chi fa uso di catene da neve non omologate è sanzionabile come se ne fosse sprovvisto",
         "risposta": True,
+        "riassunto": "Catene non omologate → come esserne senza?",
         "spiegazione": "Le catene da neve devono essere 'omologate', cioè devono avere un marchio che certifica che sono state testate e sono sicure. Se usi catene senza questa certificazione, è come se non le avessi e puoi prendere una multa.",
         "regola": "Catene = sempre omologate, altrimenti multa.",
         "trabocchetti": ["non omologate"],
@@ -580,6 +662,7 @@ QUESTIONS = [
     {
         "domanda": "Gli pneumatici chiodati vanno montati solo su due ruote dello stesso asse",
         "risposta": False,
+        "riassunto": "Gomme chiodate → solo su due ruote dello stesso asse?",
         "spiegazione": "Per garantire la stabilità e la sicurezza del veicolo, gli pneumatici chiodati, proprio come quelli invernali, devono essere montati su tutte e quattro le ruote, non solo su due.",
         "regola": "Chiodati = tutte e quattro le ruote.",
         "trabocchetti": ["solo su due ruote dello stesso asse"],
@@ -587,12 +670,14 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a doppia trazione (cosiddetti 4x4), le catene da neve devono essere montate sulle ruote posteriori",
         "risposta": False,
+        "riassunto": "4x4 → catene sulle ruote posteriori?",
         "spiegazione": "Nei veicoli 4x4, le catene da neve vanno montate sulle ruote che danno la trazione principale. Questo può essere l'asse anteriore, o tutte e quattro le ruote, a seconda del modello del veicolo. Non è corretto dire che vanno montate 'solo' sulle ruote posteriori.",
         "regola": "4x4 catene = sull'asse motore principale (spesso anteriore), non solo posteriori.",
     },
     {
         "domanda": "Gli organi della sospensione non si danneggiano se nei tratti di strada privi di neve si fa uso di pneumatici con catene",
         "risposta": False,
+        "riassunto": "Catene su strada senza neve → nessun danno alle sospensioni?",
         "spiegazione": "Le catene da neve sono fatte per essere usate solo su neve o ghiaccio. Se le usi su strada asciutta, senza neve, possono rovinare l'asfalto, le catene stesse, le gomme, i cerchioni e anche le sospensioni dell'auto a causa delle forti vibrazioni.",
         "regola": "Catene = solo su neve, mai su asfalto asciutto.",
         "trabocchetti": ["non si danneggiano"],
@@ -600,12 +685,14 @@ QUESTIONS = [
     {
         "domanda": "I veicoli muniti di pneumatici invernali devono rispettare limiti di velocità massima inferiori a quelli ordinari",
         "risposta": False,
+        "riassunto": "Gomme invernali → limiti di velocità più bassi?",
         "spiegazione": "I veicoli con pneumatici invernali (M+S) non devono per forza rispettare limiti di velocità inferiori a quelli normali. Questo succede solo se l'indice di velocità del pneumatico invernale è più basso di quello indicato sul libretto dell'auto. Molti pneumatici invernali hanno indici di velocità adeguati alle velocità ordinarie.",
         "regola": "Invernali = velocità normale, a meno che l'indice del pneumatico sia più basso (e c'è un adesivo).",
     },
     {
         "domanda": "Per la sostituzione di una ruota conviene stazionare il veicolo su un terreno orizzontale e stabile",
         "risposta": True,
+        "riassunto": "Cambio ruota → terreno piano e stabile?",
         "spiegazione": "È fondamentale per la tua sicurezza e per la stabilità del veicolo che il terreno sia piatto e fermo. Così eviti che l'auto si muova o cada mentre lavori.",
         "regola": "Terreno piatto e stabile = sicurezza.",
         "trabocchetti": ["conviene"],
@@ -613,6 +700,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di procedere alla sostituzione di una ruota, bisogna azionare il freno di stazionamento e inserire la prima marcia o la retromarcia",
         "risposta": True,
+        "riassunto": "Cambio ruota → freno a mano e prima o retromarcia?",
         "spiegazione": "Queste azioni bloccano il veicolo e impediscono che si muova accidentalmente mentre lo sollevi con il martinetto. È una misura di sicurezza indispensabile.",
         "regola": "Freno a mano + marcia = veicolo bloccato.",
         "trabocchetti": ["bisogna"],
@@ -620,6 +708,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di sollevare il veicolo per la sostituzione di una ruota, è conveniente allentare leggermente i bulloni di fissaggio",
         "risposta": True,
+        "riassunto": "Prima di sollevare → allentare leggermente i bulloni?",
         "spiegazione": "È molto più facile allentare i bulloni quando la ruota è ancora a terra e può fare presa. Se provi ad allentarli dopo aver sollevato il veicolo, la ruota potrebbe girare a vuoto e faresti più fatica.",
         "regola": "Bulloni: prima allenti (a terra), poi sollevi.",
         "trabocchetti": ["leggermente", "Conveniente"],
@@ -627,6 +716,7 @@ QUESTIONS = [
     {
         "domanda": "Durante le operazioni di sostituzione di una ruota tramite il martinetto (cric), bisogna evitare di mettersi sotto il veicolo",
         "risposta": True,
+        "riassunto": "Col cric → mai sotto il veicolo?",
         "spiegazione": "Il martinetto (cric) può cedere e il veicolo potrebbe cadere. Mettersi sotto il veicolo è estremamente pericoloso e può causare gravi infortuni.",
         "regola": "Sotto il veicolo MAI, è pericoloso.",
         "trabocchetti": ["evitare"],
@@ -634,6 +724,7 @@ QUESTIONS = [
     {
         "domanda": "Per sostituire una ruota, dopo aver sollevato il veicolo e inserito la ruota di scorta, bisogna stringere leggermente i bulloni a veicolo sollevato e completarne il bloccaggio solo dopo averlo abbassato",
         "risposta": True,
+        "riassunto": "Ruota di scorta → stringere da sollevato, bloccare da abbassato?",
         "spiegazione": "Stringere completamente i bulloni a veicolo sollevato è difficile e meno sicuro. La stretta finale, quella forte, si fa a terra per garantire il massimo serraggio e la stabilità della ruota.",
         "regola": "Bulloni: prima avviti (sollevato), poi stringi forte (a terra).",
         "trabocchetti": ["stringere leggermente"],
@@ -641,6 +732,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di foratura, prima di procedere alla sostituzione della ruota, è opportuno far scendere dal veicolo tutti i passeggeri, facendoli sistemare, per ragioni di sicurezza, fuori dalla carreggiata",
         "risposta": True,
+        "riassunto": "Foratura → far scendere i passeggeri fuori carreggiata?",
         "spiegazione": "I passeggeri potrebbero essere in pericolo se il veicolo si muove o se c'è traffico. È molto più sicuro che stiano in un luogo protetto, lontano dalla strada.",
         "regola": "Passeggeri fuori, sicurezza prima di tutto.",
         "trabocchetti": ["opportuno", "Fuori dalla carreggiata"],
@@ -648,6 +740,7 @@ QUESTIONS = [
     {
         "domanda": "Per smontare una ruota da sostituire bisogna togliere i bulloni, prima di sollevare il veicolo con il martinetto (cric)",
         "risposta": False,
+        "riassunto": "Cambio ruota → togliere i bulloni prima di sollevare?",
         "spiegazione": "No, non devi togliere i bulloni prima di sollevare il veicolo! Devi solo allentarli leggermente (come abbiamo visto nella domanda 25258). Se li togli, la ruota potrebbe cadere o il veicolo perdere stabilità.",
         "regola": "Bulloni: prima allenti, poi sollevi, MAI togliere prima.",
         "trabocchetti": ["togliere i bulloni"],
@@ -655,6 +748,7 @@ QUESTIONS = [
     {
         "domanda": "Per smontare una ruota da sostituire bisogna fissare il martinetto (cric) in un punto qualsiasi del longherone del veicolo",
         "risposta": False,
+        "riassunto": "Cric → in un punto qualsiasi del longherone?",
         "spiegazione": "Assolutamente no! Il martinetto deve essere posizionato in punti specifici e rinforzati del telaio, indicati nel manuale del veicolo. Metterlo in un punto qualsiasi può danneggiare l'auto o, peggio, far cadere il veicolo.",
         "regola": "Cric: punto specifico, MAI a caso.",
         "trabocchetti": ["in un punto qualsiasi"],
@@ -662,6 +756,7 @@ QUESTIONS = [
     {
         "domanda": "Per smontare una ruota bisogna fissare il martinetto (cric) il più lontano possibile dalla ruota da sostituire",
         "risposta": False,
+        "riassunto": "Cric → lontano dalla ruota da cambiare?",
         "spiegazione": "È il contrario! Il martinetto va posizionato vicino alla ruota che devi sostituire, nei punti indicati dal costruttore. Posizionarlo lontano sarebbe inutile o addirittura pericoloso perché non solleverebbe correttamente la parte interessata.",
         "regola": "Cric: vicino alla ruota, non lontano.",
         "trabocchetti": ["il più lontano possibile"],
@@ -669,6 +764,7 @@ QUESTIONS = [
     {
         "domanda": "L'applicazione del \"ruotino\" (ruota di scorta di ridotte dimensioni), consente di raggiungere la velocità di 120 km/h",
         "risposta": False,
+        "riassunto": "Ruotino → fino a 120 km/h?",
         "spiegazione": "Falso! Il ruotino è una soluzione temporanea e ha limiti di velocità molto inferiori, solitamente 80 km/h. Non è progettato per alte velocità o lunghe distanze.",
         "regola": "Ruotino: velocità ridotta, MAI 120 km/h.",
         "trabocchetti": ["120 km/h"],
@@ -676,6 +772,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli con il \"ruotino\" applicato (ruota di scorta di ridotte dimensioni) non è consentito trasportare passeggeri",
         "risposta": False,
+        "riassunto": "Ruotino → niente passeggeri?",
         "spiegazione": "No, è consentito trasportare passeggeri, ma devi guidare con maggiore prudenza e rispettare i limiti di velocità e distanza imposti dal ruotino. Non è un divieto assoluto.",
         "regola": "Ruotino: passeggeri sì, ma con prudenza.",
         "trabocchetti": ["non è consentito trasportare passeggeri"],
@@ -683,6 +780,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di frenata di emergenza, con entrata in azione dell'ABS, bisogna continuare a premere con forza il pedale, senza allentare la pressione",
         "risposta": True,
+        "riassunto": "Frenata di emergenza con ABS → continuare a premere forte?",
         "spiegazione": "Quando freni forte e l'ABS si attiva, devi continuare a premere il pedale del freno con tutta la forza. L'ABS ti aiuta a non bloccare le ruote, quindi non devi togliere il piede o diminuire la pressione. Devi solo premere forte e lasciare che il sistema faccia il suo lavoro.",
         "regola": "ABS = Piede forte, sempre!",
         "trabocchetti": ["senza allentare la pressione"],
@@ -690,6 +788,7 @@ QUESTIONS = [
     {
         "domanda": "L'azione frenante esercitata dal motore è massima se si inserisce la prima marcia del cambio di velocità",
         "risposta": True,
+        "riassunto": "Freno motore → massimo in prima?",
         "spiegazione": "Il motore può aiutare a rallentare il veicolo, specialmente in discesa. Questa si chiama 'frenata di motore'. Più la marcia è bassa (come la prima marcia), più il motore 'trattiene' l'auto e la rallenta. È come se il motore facesse più fatica a girare e quindi frena di più.",
         "regola": "Marcia bassa = Freno motore massimo.",
         "trabocchetti": ["massima"],
@@ -697,6 +796,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso prolungato e ripetuto dei freni, provocandone il surriscaldamento, comporta la diminuzione dell'efficienza frenante",
         "risposta": True,
+        "riassunto": "Freni usati a lungo → meno efficienza?",
         "spiegazione": "Se usi i freni troppo spesso o per molto tempo, ad esempio in una lunga discesa, questi si scaldano molto (surriscaldamento). Quando i freni sono troppo caldi, non funzionano più bene come dovrebbero, la loro capacità di frenare diminuisce. Questo è molto pericoloso perché l'auto frena meno efficacemente.",
         "regola": "Freni caldi = Freni deboli.",
         "trabocchetti": ["diminuzione dell"],
@@ -704,12 +804,14 @@ QUESTIONS = [
     {
         "domanda": "Percorrendo lunghe e ripide discese è necessario inserire una marcia bassa per evitare di surriscaldare i freni",
         "risposta": True,
+        "riassunto": "Lunghe discese → marcia bassa per non surriscaldare i freni?",
         "spiegazione": "Quando scendi da una strada lunga e ripida, è importante mettere una marcia bassa. In questo modo, il motore aiuta a rallentare l'auto (freno motore) e tu non devi usare i freni a pedale troppo spesso. Così eviti che i freni si surriscaldino e perdano efficienza.",
         "regola": "Discesa ripida + Marcia bassa = Freni salvi.",
     },
     {
         "domanda": "Dopo il lavaggio del veicolo, è opportuno eseguire una prova di frenata",
         "risposta": True,
+        "riassunto": "Dopo il lavaggio → prova dei freni?",
         "spiegazione": "Dopo aver lavato l'auto, l'acqua può bagnare i dischi o i tamburi dei freni. I freni bagnati non funzionano bene all'inizio. Fare una piccola prova di frenata a bassa velocità aiuta ad asciugarli e a controllare che funzionino correttamente prima di ripartire normalmente.",
         "regola": "Lavaggio = Freni bagnati = Prova per asciugare.",
         "trabocchetti": ["opportuno"],
@@ -717,6 +819,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di frenata di emergenza, con entrata in azione dell'ABS, bisogna immediatamente diminuire la pressione esercitata sul pedale del freno",
         "risposta": False,
+        "riassunto": "Frenata con ABS → diminuire subito la pressione?",
         "spiegazione": "Questa affermazione è falsa. In caso di frenata di emergenza con l'ABS attivo, devi continuare a premere il pedale del freno con la massima forza. Non devi diminuire la pressione, altrimenti l'ABS non può lavorare al meglio e la frenata sarà meno efficace. L'ABS è fatto per permetterti di frenare forte senza bloccare le ruote.",
         "regola": "ABS = Pressione costante e forte.",
         "trabocchetti": ["diminuire la pressione"],
@@ -724,6 +827,7 @@ QUESTIONS = [
     {
         "domanda": "Tutti i veicoli sono dotati del freno di stazionamento che si aziona con comando manuale",
         "risposta": False,
+        "riassunto": "Freno di stazionamento → sempre a comando manuale?",
         "spiegazione": "Questa affermazione è falsa. Tutti i veicoli hanno il freno di stazionamento (il 'freno a mano'), ma non tutti si azionano con un comando manuale, cioè con una leva. Molti veicoli moderni hanno un freno di stazionamento elettronico, che si attiva premendo un pulsante.",
         "regola": "Non tutti i freni a mano sono a leva!",
         "trabocchetti": ["Tutti i veicoli", "comando manuale"],
@@ -731,6 +835,7 @@ QUESTIONS = [
     {
         "domanda": "Il freno di stazionamento si utilizza durante la marcia, per frenare o arrestare il veicolo",
         "risposta": False,
+        "riassunto": "Freno di stazionamento → per frenare in marcia?",
         "spiegazione": "Questa affermazione è falsa. Il freno di stazionamento (freno a mano) serve per tenere fermo il veicolo quando è parcheggiato o in sosta. Non si deve usare per frenare mentre l'auto è in movimento, perché potrebbe bloccare le ruote posteriori e farti perdere il controllo del veicolo. Per frenare in marcia si usa il pedale del freno.",
         "regola": "Freno a mano = Solo da fermo.",
         "trabocchetti": ["durante la marcia"],
@@ -738,6 +843,7 @@ QUESTIONS = [
     {
         "domanda": "Percorrendo lunghe e ripide discese è opportuno marciare con il cambio in folle per risparmiare carburante e freni",
         "risposta": False,
+        "riassunto": "Lunghe discese → in folle?",
         "spiegazione": "Questa affermazione è falsa e molto pericolosa! Andare in folle (con il cambio in folle) in una lunga e ripida discesa è estremamente rischioso. L'auto prende troppa velocità e non hai il controllo del motore. Non si risparmia carburante in folle, anzi, il motore consuma per rimanere acceso. Inoltre, dovresti usare i freni a pedale molto di più, facendoli surriscaldare e diminuendo la loro efficienza. Devi sempre tenere una marcia inserita (bassa) per usare il freno motore e controllare la velocità.",
         "regola": "Folle in discesa = Pericolo!",
         "trabocchetti": ["cambio in folle", "risparmiare carburante e freni"],
@@ -745,6 +851,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo un incidente, se c'è un rischio d'incendio del veicolo è opportuno spegnere il quadro elettrico girando la chiave di accensione",
         "risposta": True,
+        "riassunto": "Rischio incendio dopo incidente → spegnere il quadro?",
         "spiegazione": "Se c'è un rischio di incendio dopo un incidente, spegnere il quadro elettrico è fondamentale. Questo interrompe l'alimentazione elettrica e riduce la possibilità di scintille che potrebbero causare o alimentare le fiamme.",
         "regola": "Rischio incendio? Via la corrente!",
         "trabocchetti": ["opportuno"],
@@ -752,6 +859,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di principio d'incendio del veicolo, in mancanza di estintore, si può gettare sabbia o terra alla base delle fiamme",
         "risposta": True,
+        "riassunto": "Principio d'incendio senza estintore → sabbia o terra?",
         "spiegazione": "In caso di un piccolo incendio e se non hai un estintore, gettare sabbia o terra alla base delle fiamme può aiutare a spegnerle. Questo perché la sabbia o la terra tolgono l'ossigeno, che è necessario al fuoco per bruciare.",
         "regola": "Senza estintore, soffoca con terra.",
         "trabocchetti": ["in mancanza di estintore"],
@@ -759,6 +867,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo un incidente, se c'è un principio d'incendio del veicolo, in mancanza di estintore si può utilizzare una coperta bagnata per spegnere le fiamme",
         "risposta": True,
+        "riassunto": "Principio d'incendio senza estintore → coperta bagnata?",
         "spiegazione": "Anche una coperta bagnata può essere usata per soffocare un principio d'incendio, togliendo l'ossigeno alle fiamme. L'acqua sulla coperta aiuta anche a raffreddare la zona.",
         "regola": "Coperta bagnata = Fuoco spento.",
         "trabocchetti": ["in mancanza di estintore"],
@@ -766,6 +875,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo un incidente, se c'è un principio d'incendio del veicolo occorre svuotarne immediatamente il serbatoio del carburante",
         "risposta": False,
+        "riassunto": "Principio d'incendio → svuotare il serbatoio?",
         "spiegazione": "Svuotare il serbatoio del carburante durante un incendio è estremamente pericoloso. Il carburante potrebbe spargersi e alimentare ancora di più le fiamme, o addirittura esplodere. Non è una procedura sicura da fare in emergenza.",
         "regola": "Mai svuotare serbatoi in fiamme!",
         "trabocchetti": ["immediatamente"],
@@ -773,6 +883,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo un incidente, il rischio che scoppi un incendio è maggiore se il veicolo è dotato di interruttore inerziale, che blocca l'afflusso di carburante al motore",
         "risposta": False,
+        "riassunto": "Interruttore inerziale → più rischio di incendio?",
         "spiegazione": "L'interruttore inerziale è un dispositivo di sicurezza. In caso di incidente, blocca automaticamente il flusso di carburante al motore. Questo serve proprio a RIDURRE il rischio di incendio, non ad aumentarlo.",
         "regola": "Interruttore inerziale = Più sicurezza, meno fuoco.",
         "trabocchetti": ["maggiore"],
@@ -780,6 +891,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo un incidente, se c'è un principio d'incendio del veicolo alimentato a GPL, occorre smontare subito il serbatoio contenente il carburante",
         "risposta": False,
+        "riassunto": "Incendio con GPL → smontare il serbatoio?",
         "spiegazione": "Smontare il serbatoio del GPL (o di qualsiasi altro carburante) durante un incendio è estremamente pericoloso. Potrebbe causare esplosioni o fughe di gas incontrollate. Questa operazione deve essere fatta solo da personale specializzato e in condizioni di sicurezza, non in emergenza.",
         "regola": "Non toccare serbatoi GPL in fiamme!",
         "trabocchetti": ["smontare subito il serbatoio"],
@@ -787,6 +899,7 @@ QUESTIONS = [
     {
         "domanda": "E' sconsigliabile sistemare oggetti sotto il sedile del conducente per evitare che, scivolando durante la marcia, vadano ad intralciare i movimenti dell'autista",
         "risposta": True,
+        "riassunto": "Oggetti sotto il sedile del conducente → sconsigliati?",
         "spiegazione": "È vero che non bisogna mettere oggetti sotto il sedile del conducente. Se scivolano, possono finire sotto i pedali e impedirti di frenare o accelerare, creando una situazione molto pericolosa.",
         "regola": "Spazio libero sotto i pedali: la sicurezza prima di tutto!",
         "trabocchetti": ["sconsigliabile", "Intralciare"],
@@ -794,6 +907,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso del telefono cellulare senza l'ausilio del \"viva-voce\" o dell'auricolare è vietato durante la guida",
         "risposta": True,
+        "riassunto": "Cellulare senza vivavoce o auricolare → vietato?",
         "spiegazione": "È vero. Non puoi tenere il telefono in mano mentre guidi. Devi usare il viva-voce o l'auricolare per parlare, così le tue mani restano libere per il volante.",
         "regola": "Mani sul volante, non sul cellulare!",
         "trabocchetti": ["Senza l", "Vietato"],
@@ -801,6 +915,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si trasportano bambini è consigliabile inserire il dispositivo di sicurezza che impedisce l'apertura delle portiere dall'interno del veicolo",
         "risposta": True,
+        "riassunto": "Bambini a bordo → sicura per le portiere?",
         "spiegazione": "È vero. Quando ci sono bambini in auto, è una buona idea attivare la sicurezza per le portiere posteriori. Così i bambini non possono aprirle da soli mentre l'auto è in movimento.",
         "regola": "Bambini a bordo? Blocco portiere!",
         "trabocchetti": ["Consigliabile", "Impedisce l"],
@@ -808,6 +923,7 @@ QUESTIONS = [
     {
         "domanda": "Il climatizzatore può essere utilmente impiegato anche nel periodo invernale, per sbrinare velocemente il parabrezza",
         "risposta": True,
+        "riassunto": "Climatizzatore d'inverno → per sbrinare il parabrezza?",
         "spiegazione": "È vero. Il climatizzatore non serve solo per il freddo d'estate. In inverno, aiuta a togliere l'umidità dall'aria e a sbrinare più velocemente il parabrezza appannato o ghiacciato.",
         "regola": "Clima: freddo d'estate, sbrina d'inverno!",
         "trabocchetti": ["Anche nel periodo invernale"],
@@ -815,6 +931,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la guida è consentito utilizzare il cellulare per comporre sms",
         "risposta": False,
+        "riassunto": "Guidando → scrivere sms?",
         "spiegazione": "È falso. Non è permesso usare il cellulare per scrivere messaggi mentre guidi. Anche se hai il viva-voce, digitare distrae molto e ti impedisce di concentrarti sulla strada.",
         "regola": "SMS? Solo da fermo!",
         "trabocchetti": ["Consentito", "Comporre sms"],
@@ -822,6 +939,7 @@ QUESTIONS = [
     {
         "domanda": "I sistemi di navigazione satellitare presenti su alcuni veicoli devono essere programmati mentre il veicolo è in movimento",
         "risposta": False,
+        "riassunto": "Navigatore → programmato in movimento?",
         "spiegazione": "È falso. Non devi programmare il navigatore mentre l'auto è in movimento. È molto pericoloso perché ti distrae dalla guida. Devi farlo prima di partire o quando sei fermo in sicurezza.",
         "regola": "Navigatore? Programma da fermo!",
         "trabocchetti": ["Devono essere programmati", "Mentre il veicolo è in movimento"],
@@ -829,6 +947,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli a messaggio variabile forniscono indicazioni di pericolo ma non possono avere valore prescrittivo (di obbligo, di divieto)",
         "risposta": False,
+        "riassunto": "Pannelli a messaggio variabile → mai prescrittivi?",
         "spiegazione": "È falso. I pannelli a messaggio variabile non danno solo informazioni di pericolo. Possono anche mostrare segnali di obbligo o divieto, come limiti di velocità o chiusure di corsie, e questi segnali hanno valore legale.",
         "regola": "Pannelli variabili: non solo info, anche regole!",
         "trabocchetti": ["ma non possono avere valore prescrittivo", "Prescrittivo"],
@@ -836,6 +955,7 @@ QUESTIONS = [
     {
         "domanda": "Quando la strada è bagnata, se il veicolo che mi precede solleva dell'acqua che mi sporca il parabrezza, devo sorpassarlo immediatamente",
         "risposta": False,
+        "riassunto": "Chi precede mi schizza acqua → sorpassarlo subito?",
         "spiegazione": "È falso. Se la strada è bagnata e l'auto davanti ti sporca il parabrezza, non devi sorpassarla subito. È pericoloso perché la visibilità è ridotta e la strada è scivolosa. Devi mantenere la distanza di sicurezza e usare i tergicristalli.",
         "regola": "Acqua sul parabrezza? Distanza e tergicristallo, non sorpasso!",
         "trabocchetti": ["immediatamente"],
@@ -843,6 +963,7 @@ QUESTIONS = [
     {
         "domanda": "Adesivi, ciondoli o altri oggetti applicati sui vetri del veicolo possono ridurre la visibilità del conducente",
         "risposta": True,
+        "riassunto": "Adesivi e ciondoli sui vetri → meno visibilità?",
         "spiegazione": "Se metti adesivi, ciondoli o altri oggetti sui vetri dell'auto, questi possono coprire una parte della tua visuale. Questo rende più difficile vedere bene la strada e gli altri veicoli, aumentando il rischio di incidenti. Per questo è VERO.",
         "regola": "Vetri liberi = visibilità chiara.",
         "trabocchetti": ["possono ridurre"],
@@ -850,6 +971,7 @@ QUESTIONS = [
     {
         "domanda": "La trasparenza e la pulizia dei vetri dei finestrini del veicolo garantiscono una migliore visibilità esterna",
         "risposta": True,
+        "riassunto": "Vetri puliti → migliore visibilità?",
         "spiegazione": "Avere i vetri puliti e trasparenti è fondamentale per guidare in sicurezza. Se i vetri sono sporchi o opachi, non puoi vedere bene cosa succede fuori dall'auto, specialmente in condizioni di luce scarsa o pioggia. Per questo è VERO.",
         "regola": "Vetri puliti = guida sicura.",
         "trabocchetti": ["garantiscono"],
@@ -857,12 +979,14 @@ QUESTIONS = [
     {
         "domanda": "Occorre verificare le spazzole del tergicristallo per sostituirle se sono consumate",
         "risposta": True,
+        "riassunto": "Spazzole consumate → sostituirle?",
         "spiegazione": "Le spazzole del tergicristallo sono essenziali per pulire il parabrezza quando piove o c'è sporco. Se sono vecchie, rotte o consumate, non puliscono bene e lasciano aloni, riducendo la tua visibilità. Per la tua sicurezza, devi controllarle e cambiarle se necessario. Per questo è VERO.",
         "regola": "Spazzole ok = pioggia non fa paura.",
     },
     {
         "domanda": "Occorre verificare che nel serbatoio del dispositivo lavacristallo sia sempre presente liquido per detergere i vetri",
         "risposta": True,
+        "riassunto": "Lavacristallo → sempre col liquido?",
         "spiegazione": "Il serbatoio del lavacristallo deve contenere sempre il liquido apposito per pulire i vetri. Se finisce, non puoi lavare il parabrezza da polvere, insetti o fango, e la tua visibilità sarà compromessa. È una buona abitudine controllare spesso il livello. Per questo è VERO.",
         "regola": "Liquido lavavetri = vetri sempre puliti.",
         "trabocchetti": ["sempre"],
@@ -870,12 +994,14 @@ QUESTIONS = [
     {
         "domanda": "In caso di lesioni o rottura del vetro anteriore del veicolo, bisogna ripararlo con del nastro adesivo trasparente",
         "risposta": False,
+        "riassunto": "Parabrezza rotto → nastro adesivo trasparente?",
         "spiegazione": "Se il parabrezza è rotto o ha una crepa, il nastro adesivo non è una soluzione sicura e non ripara il danno in modo adeguato. Il vetro potrebbe rompersi del tutto, o la visibilità potrebbe essere compromessa. Devi portare l'auto da un professionista per una riparazione o sostituzione. Per questo è FALSO.",
         "regola": "Vetro rotto? Dal meccanico, non col nastro!",
     },
     {
         "domanda": "Se il parabrezza è coperto dalla polvere, bisogna utilizzare il dispositivo di disappannamento",
         "risposta": False,
+        "riassunto": "Parabrezza polveroso → disappannamento?",
         "spiegazione": "Il dispositivo di disappannamento serve a togliere la condensa (l'appannamento) dai vetri, che si forma per l'umidità o la differenza di temperatura. Se il parabrezza è coperto dalla polvere, devi usare il lavacristallo con le spazzole, non il disappannamento. Per questo è FALSO.",
         "regola": "Disappannamento = condensa. Polvere = lavavetri.",
         "trabocchetti": ["dispositivo di disappannamento"],
@@ -883,6 +1009,7 @@ QUESTIONS = [
     {
         "domanda": "Per una maggiore sicurezza, bisogna utilizzare esclusivamente pneumatici delle dimensioni previste dall'omologazione del veicolo",
         "risposta": True,
+        "riassunto": "Pneumatici → solo delle misure omologate?",
         "spiegazione": "È vero. Per la tua sicurezza e per essere in regola con la legge, devi usare solo pneumatici che hanno le dimensioni approvate per il tuo veicolo. Non puoi montare gomme di misure diverse.",
         "regola": "Omologazione = Sicurezza e Legge.",
         "trabocchetti": ["esclusivamente"],
@@ -890,6 +1017,7 @@ QUESTIONS = [
     {
         "domanda": "Per una maggiore sicurezza, sulle ruote dello stesso asse bisogna utilizzare pneumatici uguali",
         "risposta": True,
+        "riassunto": "Stesso asse → pneumatici uguali?",
         "spiegazione": "È vero. Per guidare in sicurezza, le due gomme sullo stesso asse (ad esempio, le due gomme davanti o le due gomme dietro) devono essere identiche. Devono avere la stessa marca, lo stesso tipo e lo stesso disegno del battistrada. Questo garantisce che il veicolo sia stabile e abbia una buona aderenza.",
         "regola": "Stesso asse = Stessi pneumatici.",
         "trabocchetti": ["uguali"],
@@ -897,6 +1025,7 @@ QUESTIONS = [
     {
         "domanda": "Per una maggiore sicurezza, bisogna controllare le condizioni dei pneumatici anche sui lati, per prevenire improvvisi scoppi o sgonfiamenti",
         "risposta": True,
+        "riassunto": "Pneumatici → controllare anche i fianchi?",
         "spiegazione": "È vero. Non devi controllare solo la parte che tocca la strada (il battistrada), ma anche i lati del pneumatico. Tagli, rigonfiamenti o crepe sui lati possono essere molto pericolosi e causare lo scoppio improvviso della gomma.",
         "regola": "Controlla tutto il pneumatico, anche i lati!",
         "trabocchetti": ["anche sui lati"],
@@ -904,6 +1033,7 @@ QUESTIONS = [
     {
         "domanda": "Per garantire l'aderenza e la stabilità del veicolo, bisogna controllare che la pressione di gonfiaggio degli pneumatici sia quella consigliata dalla casa costruttrice",
         "risposta": True,
+        "riassunto": "Pressione → quella del costruttore?",
         "spiegazione": "È vero. La pressione giusta degli pneumatici è molto importante per la tua sicurezza. Se la pressione è quella consigliata dal produttore del veicolo, le gomme aderiscono bene alla strada e il veicolo è stabile. Trovi i valori corretti nel libretto di uso e manutenzione o su un adesivo all'interno della portiera.",
         "regola": "Pressione = Casa costruttrice.",
         "trabocchetti": ["consigliata dalla casa costruttrice"],
@@ -911,6 +1041,7 @@ QUESTIONS = [
     {
         "domanda": "La pressione di gonfiaggio troppo bassa degli pneumatici ne provoca l'anomalo consumo ai bordi",
         "risposta": True,
+        "riassunto": "Pressione bassa → usura dei bordi?",
         "spiegazione": "È vero. Se la pressione di gonfiaggio è troppo bassa, il pneumatico si 'schiaccia' di più e la parte centrale si solleva leggermente. Di conseguenza, i bordi del pneumatico toccano di più la strada e si consumano più velocemente del centro.",
         "regola": "Pressione bassa = Consumo ai bordi.",
         "trabocchetti": ["ai bordi"],
@@ -918,6 +1049,7 @@ QUESTIONS = [
     {
         "domanda": "Non bisogna mai invertire la posizione degli pneumatici, per permettere loro di adattarsi meglio",
         "risposta": False,
+        "riassunto": "Pneumatici → mai invertirli?",
         "spiegazione": "È falso. È una buona pratica invertire la posizione degli pneumatici (ad esempio, spostare quelli anteriori dietro e viceversa) ogni tanto. Questo serve proprio a farli consumare in modo più uniforme e a farli durare più a lungo, non a 'non adattarsi'.",
         "regola": "Invertire = Usura uniforme.",
         "trabocchetti": ["Non bisogna mai", "permettere loro di adattarsi meglio"],
@@ -925,6 +1057,7 @@ QUESTIONS = [
     {
         "domanda": "Per garantire l'aderenza e la stabilità del veicolo, bisogna controllare solo la pressione di gonfiaggio degli pneumatici delle ruote motrici",
         "risposta": False,
+        "riassunto": "Pressione → solo sulle ruote motrici?",
         "spiegazione": "È falso. Devi controllare la pressione di gonfiaggio di TUTTI gli pneumatici, non solo di quelli delle ruote motrici (quelle che danno la spinta al veicolo). Anche le ruote non motrici sono fondamentali per la stabilità e la sicurezza del veicolo.",
         "regola": "Tutte le ruote contano!",
         "trabocchetti": ["solo"],
@@ -932,6 +1065,7 @@ QUESTIONS = [
     {
         "domanda": "Per migliorare il raffreddamento degli pneumatici, bisogna diminuire la pressione di gonfiaggio",
         "risposta": False,
+        "riassunto": "Raffreddare le gomme → meno pressione?",
         "spiegazione": "È falso. Diminuire la pressione di gonfiaggio fa sì che il pneumatico si deformi di più mentre gira, aumentando l'attrito con la strada e, di conseguenza, la temperatura. Quindi, una pressione bassa fa surriscaldare il pneumatico, non lo raffredda.",
         "regola": "Pressione bassa = Più calore.",
         "trabocchetti": ["diminuire la pressione di gonfiaggio"],
@@ -939,6 +1073,7 @@ QUESTIONS = [
     {
         "domanda": "La pressione di gonfiaggio troppo bassa degli pneumatici ne provoca l'anomalo consumo della parte centrale e dei bordi",
         "risposta": False,
+        "riassunto": "Pressione bassa → usura del centro e dei bordi?",
         "spiegazione": "È falso. Come abbiamo visto, la pressione troppo bassa provoca un consumo anomalo SOLO ai bordi del pneumatico. Il consumo della parte centrale è causato da una pressione TROPPO ALTA. Questa domanda mescola due effetti diversi, rendendola falsa.",
         "regola": "Bassa = Bordi. Alta = Centro. Mai entrambi!",
         "trabocchetti": ["e"],
@@ -946,6 +1081,7 @@ QUESTIONS = [
     {
         "domanda": "Gli impianti di frenatura dei veicoli leggeri sono spesso dotati di servofreno",
         "risposta": True,
+        "riassunto": "Veicoli leggeri → spesso col servofreno?",
         "spiegazione": "Il servofreno è un sistema che aiuta il conducente a frenare con meno forza sul pedale. È molto comune nei veicoli moderni per rendere la guida più comoda e sicura.",
         "regola": "Servofreno = meno fatica per frenare.",
         "trabocchetti": ["spesso"],
@@ -953,6 +1089,7 @@ QUESTIONS = [
     {
         "domanda": "Negli impianti di frenatura, l'energia cinetica dell'autoveicolo viene trasformata in calore grazie all'attrito",
         "risposta": True,
+        "riassunto": "Freni → energia cinetica in calore per attrito?",
         "spiegazione": "Quando freni, le pastiglie o le ganasce sfregano contro i dischi o i tamburi. Questo sfregamento (attrito) trasforma l'energia del movimento (energia cinetica) in calore, rallentando il veicolo fino a fermarlo.",
         "regola": "Freno = attrito = calore = stop.",
         "trabocchetti": ["energia cinetica", "attrito"],
@@ -960,12 +1097,14 @@ QUESTIONS = [
     {
         "domanda": "Le parti dell'impianto frenante maggiormente sollecitate dalle alte temperature sono le guarnizioni di attrito",
         "risposta": True,
+        "riassunto": "Più sollecitate dal calore → guarnizioni d'attrito?",
         "spiegazione": "Le guarnizioni di attrito (cioè le pastiglie o le ganasce dei freni) sono le parti che sfregano direttamente contro i dischi o i tamburi. Per questo motivo, sono quelle che si scaldano di più durante la frenata.",
         "regola": "Guarnizioni = sfregamento = più calore.",
     },
     {
         "domanda": "Il freno di stazionamento deve essere utilizzato per bloccare il veicolo in sosta o per situazioni di emergenza",
         "risposta": True,
+        "riassunto": "Freno di stazionamento → sosta o emergenza?",
         "spiegazione": "Il freno di stazionamento, o freno a mano, serve principalmente per tenere fermo il veicolo quando è parcheggiato. In caso di emergenza, se il freno a pedale non funziona, può essere usato con molta cautela per rallentare il veicolo.",
         "regola": "Freno a mano = sosta + emergenza.",
         "trabocchetti": ["deve essere utilizzato"],
@@ -973,6 +1112,7 @@ QUESTIONS = [
     {
         "domanda": "Il livello del liquido idraulico dei freni deve essere periodicamente controllato",
         "risposta": True,
+        "riassunto": "Liquido freni → controllarlo periodicamente?",
         "spiegazione": "Il liquido dei freni è essenziale per il corretto funzionamento dell'impianto frenante. Se il livello è troppo basso, i freni potrebbero non funzionare bene o per niente. Per questo, è importante controllarlo regolarmente.",
         "regola": "Liquido freni = controllo regolare = sicurezza.",
         "trabocchetti": ["periodicamente"],
@@ -980,6 +1120,7 @@ QUESTIONS = [
     {
         "domanda": "Il freno di stazionamento deve essere in grado di tenere bloccato il veicolo in sosta anche su strade in pendenza",
         "risposta": True,
+        "riassunto": "Freno di stazionamento → tenere fermo anche in pendenza?",
         "spiegazione": "Il freno di stazionamento deve essere abbastanza forte da bloccare il veicolo e impedirgli di muoversi, anche se è parcheggiato su una strada in salita o in discesa. Questo garantisce la sicurezza del veicolo e degli altri.",
         "regola": "Freno a mano = tiene fermo ovunque.",
         "trabocchetti": ["anche su strade in pendenza"],
@@ -987,6 +1128,7 @@ QUESTIONS = [
     {
         "domanda": "Il servofreno a depressione non può funzionare a motore spento",
         "risposta": True,
+        "riassunto": "Servofreno a depressione → non funziona a motore spento?",
         "spiegazione": "Il servofreno a depressione funziona grazie al vuoto (depressione) creato dal motore quando è acceso. Se il motore è spento, non c'è depressione e il servofreno non può aiutare a frenare, rendendo il pedale molto più duro da premere.",
         "regola": "Servofreno = motore acceso.",
         "trabocchetti": ["non può funzionare"],
@@ -994,6 +1136,7 @@ QUESTIONS = [
     {
         "domanda": "Il freno di stazionamento non deve essere utilizzato per la frenatura di servizio",
         "risposta": True,
+        "riassunto": "Freno di stazionamento → non per frenare in marcia?",
         "spiegazione": "Il freno di servizio è il pedale del freno che usi normalmente per rallentare o fermare il veicolo mentre guidi. Il freno di stazionamento (freno a mano) non è progettato per questo uso quotidiano e non deve essere usato per frenare durante la marcia.",
         "regola": "Freno a mano = solo sosta/emergenza, non guida.",
         "trabocchetti": ["non deve essere utilizzato", "Frenatura di servizio"],
@@ -1001,24 +1144,28 @@ QUESTIONS = [
     {
         "domanda": "Il circuito frenante dei veicoli leggeri è di tipo a circuito sigillato, pertanto non è necessario un periodico controllo del livello del liquido idraulico",
         "risposta": False,
+        "riassunto": "Circuito sigillato → niente controlli del liquido?",
         "spiegazione": "Anche se il circuito frenante è sigillato, il liquido dei freni può diminuire leggermente nel tempo a causa dell'usura delle pastiglie o di piccole perdite. Per la tua sicurezza, è sempre necessario controllare il livello periodicamente.",
         "regola": "Sigillato non significa eterno; controlla sempre il liquido.",
     },
     {
         "domanda": "Il freno di stazionamento deve essere utilizzato per la frenatura di servizio quando si circola su strade a forte pendenza, in modo da ridurre il surriscaldamento degli elementi frenanti",
         "risposta": False,
+        "riassunto": "Forte pendenza → freno di stazionamento per frenare?",
         "spiegazione": "Usare il freno a mano per frenare mentre si guida, specialmente in discesa, è molto pericoloso. Può bloccare le ruote posteriori e farti perdere il controllo del veicolo. Per le discese lunghe si usano le marce basse (freno motore).",
         "regola": "Freno a mano = mai in movimento (tranne emergenza estrema).",
     },
     {
         "domanda": "Il servofreno a depressione può funzionare anche a motore spento, purché sia inserita la chiave di accensione nel quadro",
         "risposta": False,
+        "riassunto": "Servofreno → funziona a motore spento con la chiave inserita?",
         "spiegazione": "Il servofreno a depressione ha bisogno del motore acceso per creare la depressione necessaria al suo funzionamento. La sola chiave inserita nel quadro non basta ad attivarlo.",
         "regola": "Servofreno = motore acceso, non solo chiave.",
     },
     {
         "domanda": "In caso di frenata di emergenza, il conducente deve inserire rapidamente la retromarcia",
         "risposta": False,
+        "riassunto": "Frenata di emergenza → inserire la retromarcia?",
         "spiegazione": "In caso di frenata di emergenza, devi usare il pedale del freno. Inserire la retromarcia mentre il veicolo è in movimento è estremamente pericoloso, può danneggiare gravemente il cambio e farti perdere il controllo del veicolo.",
         "regola": "Retromarcia = solo da fermo. Frenata = pedale.",
         "trabocchetti": ["inserire rapidamente la retromarcia"],
@@ -1026,6 +1173,7 @@ QUESTIONS = [
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata dalla presenza d'aria o vapore nel circuito frenante idraulico",
         "risposta": True,
+        "riassunto": "Aria o vapore nel circuito → frenata inefficiente?",
         "spiegazione": "La presenza di aria o vapore nel circuito idraulico dei freni rende il pedale 'spugnoso' e la frenata meno potente o irregolare, perché il liquido non riesce a trasmettere bene la forza. Questo è un problema serio per la sicurezza.",
         "regola": "Aria/vapore nei freni = freni 'molli'.",
         "trabocchetti": ["circuito frenante idraulico"],
@@ -1033,6 +1181,7 @@ QUESTIONS = [
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata dal consumo eccessivo delle guarnizioni frenanti",
         "risposta": True,
+        "riassunto": "Guarnizioni consumate → frenata inefficiente?",
         "spiegazione": "Le guarnizioni frenanti (pastiglie o ganasce) sono le parti che creano attrito per fermare il veicolo. Se sono troppo consumate, non riescono a fare abbastanza presa e la frenata diventa debole e meno efficace.",
         "regola": "Guarnizioni consumate = frena poco.",
         "trabocchetti": ["guarnizioni frenanti"],
@@ -1040,6 +1189,7 @@ QUESTIONS = [
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata dal consumo irregolare dei tamburi o dei dischi",
         "risposta": True,
+        "riassunto": "Tamburi o dischi consumati in modo irregolare → frenata squilibrata?",
         "spiegazione": "Se i tamburi o i dischi dei freni non si consumano in modo uniforme, le pastiglie non riescono a fare presa bene su tutta la superficie. Questo causa una frenata debole o che tira da un lato, rendendola 'squilibrata'.",
         "regola": "Dischi/tamburi irregolari = frenata storta.",
         "trabocchetti": ["consumo irregolare"],
@@ -1047,6 +1197,7 @@ QUESTIONS = [
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata dalla differente pressione di gonfiaggio dei pneumatici dello stesso asse",
         "risposta": True,
+        "riassunto": "Pressione diversa sullo stesso asse → frenata squilibrata?",
         "spiegazione": "Se le gomme sullo stesso asse (ad esempio, le due ruote anteriori) hanno pressioni diverse, una ruota avrà più aderenza dell'altra. Questo può far sì che il veicolo tiri da un lato durante la frenata, rendendola 'squilibrata'.",
         "regola": "Pressione gomme diversa = frenata sbilanciata.",
         "trabocchetti": ["stesso asse"],
@@ -1054,6 +1205,7 @@ QUESTIONS = [
     {
         "domanda": "Una frenatura poco efficiente può essere causata dall'eccessivo riscaldamento delle guarnizioni frenanti",
         "risposta": True,
+        "riassunto": "Guarnizioni surriscaldate → frenata inefficiente?",
         "spiegazione": "Quando si frena molto e a lungo, specialmente in discesa, le guarnizioni dei freni si scaldano troppo. Questo calore eccessivo riduce l'attrito e la capacità di frenare, un fenomeno chiamato 'fading'.",
         "regola": "Freni caldi = frenano meno.",
         "trabocchetti": ["eccessivo riscaldamento"],
@@ -1061,12 +1213,14 @@ QUESTIONS = [
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata dal carico eccessivo o mal ripartito",
         "risposta": True,
+        "riassunto": "Carico eccessivo o mal distribuito → frenata squilibrata?",
         "spiegazione": "Un veicolo troppo carico o con il peso distribuito male (ad esempio, tutto il peso su un lato) cambia il modo in cui le ruote toccano la strada. Questo può rendere la frenata meno efficace o far sbandare il veicolo.",
         "regola": "Carico sbagliato = frenata instabile.",
     },
     {
         "domanda": "Una frenatura poco efficiente può essere causata da eccessive e ripetute frenate",
         "risposta": True,
+        "riassunto": "Frenate ripetute → frenata inefficiente?",
         "spiegazione": "Frenare troppo spesso e con forza, specialmente in discesa, surriscalda i freni e ne riduce l'efficienza. È meglio usare il freno motore e frenare a intermittenza.",
         "regola": "Troppe frenate = freni stanchi.",
         "trabocchetti": ["eccessive e ripetute frenate"],
@@ -1074,6 +1228,7 @@ QUESTIONS = [
     {
         "domanda": "Con freni squilibrati può avvenire che, in frenata, si blocchino soltanto le ruote di un lato",
         "risposta": True,
+        "riassunto": "Freni squilibrati → si bloccano le ruote di un lato?",
         "spiegazione": "Se i freni non funzionano allo stesso modo su tutte le ruote (sono 'squilibrati'), una ruota potrebbe bloccarsi prima delle altre, specialmente quelle di un solo lato. Questo è molto pericoloso e può far perdere il controllo del veicolo.",
         "regola": "Freni squilibrati = ruote bloccate a caso.",
         "trabocchetti": ["freni squilibrati"],
@@ -1081,18 +1236,21 @@ QUESTIONS = [
     {
         "domanda": "Con freni squilibrati può avvenire che, in frenata, il veicolo sbandi, dirigendosi verso il lato della ruota che si blocca per prima",
         "risposta": True,
+        "riassunto": "Freni squilibrati → si sbanda verso la ruota bloccata?",
         "spiegazione": "Se una ruota frena molto più forte o si blocca prima delle altre, il veicolo tenderà a 'tirare' o sbandare verso quel lato. Questo rende difficile mantenere la traiettoria e può causare un incidente.",
         "regola": "Freni squilibrati = veicolo tira.",
     },
     {
         "domanda": "Con freni squilibrati si manifesta, in genere, un'usura irregolare e non omogenea dei battistrada",
         "risposta": True,
+        "riassunto": "Freni squilibrati → usura irregolare del battistrada?",
         "spiegazione": "Se i freni non agiscono in modo uniforme, alcune ruote potrebbero 'strusciare' di più o bloccarsi più spesso. Questo causa un consumo anomalo e non uniforme del battistrada delle gomme.",
         "regola": "Freni squilibrati = gomme consumate male.",
     },
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata dal consumo eccessivo dei meccanismi del freno di stazionamento",
         "risposta": False,
+        "riassunto": "Freno a mano consumato → frenata squilibrata?",
         "spiegazione": "Il freno di stazionamento (freno a mano) è un sistema separato usato per tenere fermo il veicolo quando è parcheggiato. Non influisce sulla frenata di servizio (quella che usi mentre guidi).",
         "regola": "Freno a mano = solo per parcheggio.",
         "trabocchetti": ["freno di stazionamento"],
@@ -1100,6 +1258,7 @@ QUESTIONS = [
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata dall'insufficiente lubrificazione dei tamburi o dei dischi",
         "risposta": False,
+        "riassunto": "Tamburi o dischi poco lubrificati → frenata squilibrata?",
         "spiegazione": "I tamburi e i dischi dei freni devono essere asciutti e puliti per funzionare bene, non lubrificati. La lubrificazione ridurrebbe l'attrito e renderebbe la frenata inefficace o addirittura pericolosa.",
         "regola": "Freni = attrito, non olio.",
         "trabocchetti": ["lubrificazione"],
@@ -1107,6 +1266,7 @@ QUESTIONS = [
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata dall'eccessivo gioco del pedale della frizione",
         "risposta": False,
+        "riassunto": "Gioco del pedale della frizione → frenata squilibrata?",
         "spiegazione": "La frizione serve a cambiare marcia e a collegare o scollegare il motore dalle ruote. Non ha nessun legame diretto con il sistema frenante, quindi un suo problema non influisce sulla frenata.",
         "regola": "Frizione = cambio, non freni.",
         "trabocchetti": ["pedale della frizione"],
@@ -1114,6 +1274,7 @@ QUESTIONS = [
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata dalla presenza del servosterzo su veicoli di piccola cilindrata",
         "risposta": False,
+        "riassunto": "Servosterzo su piccole auto → frenata squilibrata?",
         "spiegazione": "Il servosterzo è un sistema che aiuta a girare il volante più facilmente. Non ha nulla a che fare con il sistema frenante o con la cilindrata del veicolo.",
         "regola": "Servosterzo = sterzo facile, non freni.",
         "trabocchetti": ["servosterzo"],
@@ -1121,6 +1282,7 @@ QUESTIONS = [
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata dalla presenza di freni a disco sull'asse posteriore",
         "risposta": False,
+        "riassunto": "Dischi posteriori → frenata squilibrata?",
         "spiegazione": "I freni a disco sono un tipo di freno moderno ed efficiente. Averli anche sull'asse posteriore è un vantaggio per la frenata, perché migliora la sicurezza e l'efficienza, non è una causa di problemi.",
         "regola": "Freni a disco = bene, non male.",
         "trabocchetti": ["presenza di freni a disco sull"],
@@ -1128,12 +1290,14 @@ QUESTIONS = [
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata da pneumatici invernali montati su tutte e quattro le ruote",
         "risposta": False,
+        "riassunto": "Gomme invernali su tutte → frenata squilibrata?",
         "spiegazione": "I pneumatici invernali sono progettati per migliorare l'aderenza su neve e ghiaccio. Montarli su tutte e quattro le ruote è la procedura corretta e migliora la sicurezza in inverno, non peggiora la frenata.",
         "regola": "Gomme invernali su 4 ruote = sicurezza.",
     },
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata da pneumatici invernali utilizzati su strade non innevate",
         "risposta": False,
+        "riassunto": "Gomme invernali senza neve → frenata squilibrata?",
         "spiegazione": "Anche se i pneumatici invernali si consumano più velocemente su asfalto asciutto e possono avere prestazioni leggermente diverse dagli estivi, la loro presenza non è una causa diretta di un malfunzionamento del sistema frenante.",
         "regola": "Gomme invernali su asciutto = non è un guasto.",
         "trabocchetti": ["strade non innevate"],
@@ -1141,6 +1305,7 @@ QUESTIONS = [
     {
         "domanda": "Una frenatura poco efficiente o squilibrata può essere causata dall'utilizzo di veicoli con alimentazione a metano su strade di montagna",
         "risposta": False,
+        "riassunto": "Metano in montagna → frenata squilibrata?",
         "spiegazione": "Il tipo di carburante (metano) e il tipo di strada (montagna) non hanno alcun legame diretto con l'efficienza o l'equilibrio del sistema frenante. Sono due aspetti completamente diversi del veicolo e della guida.",
         "regola": "Carburante/strada = non freni.",
         "trabocchetti": ["alimentazione a metano", "strade di montagna"],
@@ -1148,6 +1313,7 @@ QUESTIONS = [
     {
         "domanda": "Con freni squilibrati si manifesta in genere un surriscaldamento del liquido refrigerante del motore",
         "risposta": False,
+        "riassunto": "Freni squilibrati → liquido di raffreddamento caldo?",
         "spiegazione": "I freni e il sistema di raffreddamento del motore sono due sistemi completamente separati nel veicolo. Un problema ai freni non causa il surriscaldamento del liquido refrigerante del motore.",
         "regola": "Freni e motore = sistemi diversi.",
         "trabocchetti": ["liquido refrigerante del motore"],
@@ -1155,6 +1321,7 @@ QUESTIONS = [
     {
         "domanda": "Su discese molto ripide è bene viaggiare con il freno a mano inserito parzialmente",
         "risposta": False,
+        "riassunto": "Discese ripide → freno a mano parzialmente tirato?",
         "spiegazione": "Usare il freno a mano (freno di stazionamento) durante la marcia, anche parzialmente, è molto pericoloso. Provoca un surriscaldamento eccessivo, usura rapida e può bloccare le ruote posteriori, causando una perdita di controllo. In discesa si usa il freno motore e il freno di servizio a intermittenza.",
         "regola": "Freno a mano = solo da fermo.",
         "trabocchetti": ["freno a mano inserito parzialmente"],
@@ -1162,6 +1329,7 @@ QUESTIONS = [
     {
         "domanda": "Il cambio delle pastiglie dei freni è un'operazione di manutenzione ordinaria che può essere svolta da qualunque conducente",
         "risposta": False,
+        "riassunto": "Pastiglie dei freni → le cambia qualunque conducente?",
         "spiegazione": "Il cambio delle pastiglie dei freni è un'operazione delicata che richiede conoscenze tecniche specifiche e attrezzi particolari. Deve essere fatta da personale specializzato (un meccanico) per garantire la sicurezza del veicolo, non da 'qualunque conducente'.",
         "regola": "Freni = meccanico esperto.",
         "trabocchetti": ["qualunque conducente"],
@@ -1169,6 +1337,7 @@ QUESTIONS = [
     {
         "domanda": "Le sospensioni di un veicolo a motore sono poste tra il telaio e le ruote",
         "risposta": True,
+        "riassunto": "Sospensioni → tra telaio e ruote?",
         "spiegazione": "Le sospensioni sono un elemento fondamentale del veicolo e si trovano proprio tra il telaio (la struttura principale dell'auto) e le ruote. Servono a collegare queste due parti e a permettere che si muovano in modo indipendente.",
         "regola": "Sospensioni = Ponte tra telaio e ruote.",
         "trabocchetti": ["tra il telaio e le ruote"],
@@ -1176,6 +1345,7 @@ QUESTIONS = [
     {
         "domanda": "Le sospensioni di un veicolo a motore servono a garantire un buon confort di marcia",
         "risposta": True,
+        "riassunto": "Sospensioni → comfort di marcia?",
         "spiegazione": "Uno degli scopi principali delle sospensioni è rendere il viaggio più comodo. Assorbono i colpi e le vibrazioni della strada, così tu e i passeggeri sentite meno scossoni e viaggiate più rilassati.",
         "regola": "Sospensioni = Comfort per tutti.",
         "trabocchetti": ["confort"],
@@ -1183,6 +1353,7 @@ QUESTIONS = [
     {
         "domanda": "Le sospensioni di un veicolo a motore servono a garantire che le ruote rimangano aderenti al fondo stradale",
         "risposta": True,
+        "riassunto": "Sospensioni → ruote aderenti alla strada?",
         "spiegazione": "Le sospensioni sono cruciali per la sicurezza. Aiutano le ruote a seguire la forma della strada, anche quando ci sono buche o dossi, mantenendo sempre il contatto con l'asfalto. Questo garantisce una migliore aderenza e controllo del veicolo.",
         "regola": "Sospensioni = Ruote sempre incollate alla strada.",
         "trabocchetti": ["rimangano aderenti al fondo stradale"],
@@ -1190,6 +1361,7 @@ QUESTIONS = [
     {
         "domanda": "Le sospensioni di un veicolo a motore servono a smorzare gli urti trasmessi dalle asperità del terreno",
         "risposta": True,
+        "riassunto": "Sospensioni → smorzano gli urti?",
         "spiegazione": "Le sospensioni hanno il compito di 'smorzare', cioè ridurre la forza degli urti. Quando incontri una buca o una strada sconnessa, le sospensioni assorbono il colpo, evitando che arrivi direttamente al veicolo e ai passeggeri.",
         "regola": "Sospensioni = Ammortizzano i colpi.",
         "trabocchetti": ["smorzare gli urti", "asperità del terreno"],
@@ -1197,6 +1369,7 @@ QUESTIONS = [
     {
         "domanda": "Le sospensioni di un veicolo a motore collaborano a rendere più confortevole e sicura la guida",
         "risposta": True,
+        "riassunto": "Sospensioni → guida confortevole e sicura?",
         "spiegazione": "Questa domanda riassume i benefici delle sospensioni. Rendono la guida più comoda (comfort) perché assorbono gli urti e più sicura perché le ruote aderiscono meglio alla strada, garantendo maggiore stabilità e controllo.",
         "regola": "Sospensioni = Guida comoda e sicura.",
         "trabocchetti": ["confortevole e sicura"],
@@ -1204,6 +1377,7 @@ QUESTIONS = [
     {
         "domanda": "Le sospensioni di un veicolo a motore sono in genere poste sulle ruote anteriori, ma non su quelle posteriori",
         "risposta": False,
+        "riassunto": "Sospensioni → solo davanti?",
         "spiegazione": "Questa affermazione è falsa. Un veicolo ha bisogno di stabilità e comfort su tutte le ruote, sia davanti che dietro. Per questo motivo, le sospensioni sono presenti su tutte e quattro le ruote (o su tutte le ruote in caso di veicoli con più assi).",
         "regola": "Sospensioni = Davanti E dietro.",
         "trabocchetti": ["ma non su quelle posteriori"],
@@ -1211,6 +1385,7 @@ QUESTIONS = [
     {
         "domanda": "Le sospensioni di un veicolo a motore servono a irrigidire il veicolo, in modo che il conducente percepisca chiaramente tutti i saltellamenti del veicolo dovuti ad irregolarità della strada",
         "risposta": False,
+        "riassunto": "Sospensioni → irrigidire il veicolo?",
         "spiegazione": "Questa affermazione è falsa perché descrive l'esatto contrario della funzione delle sospensioni. Le sospensioni non servono a 'irrigidire' il veicolo, ma a renderlo più 'morbido' per assorbire gli urti. Il loro scopo è proprio quello di non farti sentire tutti i saltellamenti, ma di ridurli al minimo.",
         "regola": "Sospensioni = Ammorbidiscono, non irrigidiscono.",
         "trabocchetti": ["irrigidire il veicolo"],
@@ -1218,6 +1393,7 @@ QUESTIONS = [
     {
         "domanda": "Le sospensioni di un veicolo a motore non entrano in funzione su strada rettilinea",
         "risposta": False,
+        "riassunto": "Sospensioni → non lavorano in rettilineo?",
         "spiegazione": "Questa affermazione è falsa. Anche su una strada che sembra perfettamente dritta e liscia, ci sono sempre piccole imperfezioni o variazioni. Le sospensioni lavorano continuamente per mantenere il comfort e l'aderenza delle ruote, anche quando non ci sono curve o grandi buche evidenti.",
         "regola": "Sospensioni = Sempre attive, anche sul dritto.",
         "trabocchetti": ["non entrano in funzione"],
@@ -1225,6 +1401,7 @@ QUESTIONS = [
     {
         "domanda": "Le sospensioni possono diventare inefficienti per usura o per aver subito urti troppo forti",
         "risposta": True,
+        "riassunto": "Sospensioni → inefficienti per usura o urti?",
         "spiegazione": "Le sospensioni sono fatte per assorbire gli urti, ma col tempo si consumano (usura) o possono danneggiarsi se prendono colpi molto forti, come buche profonde o incidenti. Quando si rovinano, non funzionano più bene.",
         "regola": "Usura e urti forti rovinano le sospensioni.",
         "trabocchetti": ["possono"],
@@ -1232,12 +1409,14 @@ QUESTIONS = [
     {
         "domanda": "Un veicolo con sospensioni inefficienti ha problemi di tenuta di strada",
         "risposta": True,
+        "riassunto": "Sospensioni inefficienti → problemi di tenuta?",
         "spiegazione": "Se le sospensioni non lavorano bene, l'auto non riesce a mantenere un buon contatto con la strada. Questo significa che in curva, in frenata o su strade sconnesse, l'auto può diventare instabile e difficile da controllare, perdendo la 'tenuta di strada'.",
         "regola": "Sospensioni rotte = auto instabile.",
     },
     {
         "domanda": "Il sovraccarico del veicolo può comportare la rottura delle sospensioni",
         "risposta": True,
+        "riassunto": "Sovraccarico → rottura delle sospensioni?",
         "spiegazione": "Ogni veicolo ha un limite di peso che può trasportare. Se si supera questo limite (sovraccarico), le sospensioni sono costrette a lavorare troppo e con uno sforzo eccessivo, e questo può causarne la rottura, specialmente su strade irregolari.",
         "regola": "Troppo peso = rischio rottura sospensioni.",
         "trabocchetti": ["può comportare"],
@@ -1245,6 +1424,7 @@ QUESTIONS = [
     {
         "domanda": "Il sovraccarico del veicolo può comportare la temporanea inefficienza delle sospensioni",
         "risposta": True,
+        "riassunto": "Sovraccarico → sospensioni temporaneamente inefficienti?",
         "spiegazione": "Quando un veicolo è sovraccarico, le sospensioni si comprimono più del normale e non riescono ad assorbire bene gli urti. Questo le rende meno efficaci per il tempo in cui il veicolo è troppo carico, anche se non si rompono subito.",
         "regola": "Peso eccessivo = sospensioni 'strette'.",
         "trabocchetti": ["temporanea"],
@@ -1252,6 +1432,7 @@ QUESTIONS = [
     {
         "domanda": "Il sovraccarico ripetuto del veicolo può comportare la rapida usura delle sospensioni",
         "risposta": True,
+        "riassunto": "Sovraccarico ripetuto → usura rapida?",
         "spiegazione": "Se si carica spesso il veicolo con troppo peso, le sospensioni sono sempre sotto sforzo. Questo le fa invecchiare e rovinare molto più velocemente del normale, accorciando la loro vita utile.",
         "regola": "Carico frequente = usura accelerata.",
         "trabocchetti": ["ripetuto", "rapida usura"],
@@ -1259,6 +1440,7 @@ QUESTIONS = [
     {
         "domanda": "Un veicolo con sospensioni inefficienti riduce il confort di marcia",
         "risposta": True,
+        "riassunto": "Sospensioni inefficienti → meno comfort?",
         "spiegazione": "Le sospensioni servono a rendere il viaggio più comodo, assorbendo le vibrazioni e gli urti della strada. Se non funzionano bene, sentirai di più ogni buca e ogni scossone, rendendo il viaggio meno confortevole per tutti i passeggeri.",
         "regola": "Sospensioni rotte = viaggio scomodo.",
         "trabocchetti": ["confort di marcia"],
@@ -1266,6 +1448,7 @@ QUESTIONS = [
     {
         "domanda": "Un veicolo con sospensioni inefficienti aumenta l'affaticamento alla guida del conducente",
         "risposta": True,
+        "riassunto": "Sospensioni inefficienti → più fatica alla guida?",
         "spiegazione": "Guidare un veicolo con sospensioni inefficienti è più faticoso. Il conducente deve fare più attenzione per mantenere il controllo, sente più vibrazioni e scossoni, e questo porta a una maggiore stanchezza fisica e mentale durante la guida.",
         "regola": "Sospensioni rotte = guidatore stanco.",
         "trabocchetti": ["affaticamento alla guida"],
@@ -1273,6 +1456,7 @@ QUESTIONS = [
     {
         "domanda": "Un veicolo con sospensioni inefficienti può avere come conseguenza l'anomalo orientamento dei proiettori anabbaglianti",
         "risposta": True,
+        "riassunto": "Sospensioni inefficienti → anabbaglianti orientati male?",
         "spiegazione": "Se le sospensioni sono danneggiate, il veicolo potrebbe non essere più livellato correttamente. Questo può far sì che i fari anabbaglianti puntino troppo in alto o troppo in basso, illuminando male la strada o, peggio, abbagliando gli altri conducenti.",
         "regola": "Sospensioni rotte = fari storti.",
         "trabocchetti": ["anomalo orientamento"],
@@ -1280,6 +1464,7 @@ QUESTIONS = [
     {
         "domanda": "Il sovraccarico del veicolo non comporta problemi per le sospensioni",
         "risposta": False,
+        "riassunto": "Sovraccarico → nessun problema per le sospensioni?",
         "spiegazione": "Questa affermazione è falsa. Come abbiamo visto nelle domande precedenti, il sovraccarico del veicolo è una delle cause principali di problemi alle sospensioni, che vanno dall'inefficienza temporanea alla rottura vera e propria.",
         "regola": "Troppo peso = SEMPRE problemi alle sospensioni.",
         "trabocchetti": ["non"],
@@ -1287,6 +1472,7 @@ QUESTIONS = [
     {
         "domanda": "Se il veicolo è sovraccarico, per evitare problemi per le sospensioni è sufficiente aumentare la pressione dei pneumatici di un bar",
         "risposta": False,
+        "riassunto": "Sovraccarico → basta un bar in più nelle gomme?",
         "spiegazione": "Questa affermazione è falsa. Aumentare la pressione dei pneumatici può aiutare a sostenere meglio il carico e migliorare leggermente la tenuta di strada, ma non risolve i problemi di stress e usura che il sovraccarico provoca direttamente alle sospensioni. Le sospensioni hanno un limite di carico strutturale.",
         "regola": "Pressione gomme NON basta per sospensioni sovraccariche.",
         "trabocchetti": ["sufficiente"],
@@ -1294,6 +1480,7 @@ QUESTIONS = [
     {
         "domanda": "Le sospensioni del veicolo devono essere sostituite all'incirca ogni trentamila chilometri",
         "risposta": False,
+        "riassunto": "Sospensioni → sostituite ogni 30.000 km?",
         "spiegazione": "Questa affermazione è falsa. Non esiste un chilometraggio fisso (come 30.000 km) per la sostituzione delle sospensioni. La loro durata dipende da molti fattori: stile di guida, tipo di strade percorse, qualità delle sospensioni stesse. Vanno controllate periodicamente e sostituite solo se usurate o danneggiate.",
         "regola": "Nessun km fisso per cambiare le sospensioni.",
         "trabocchetti": ["trentamila chilometri"],
@@ -1301,12 +1488,14 @@ QUESTIONS = [
     {
         "domanda": "Il sovraccarico del veicolo comporta maggiori difficoltà di guida, mentre non comporta problemi per le sospensioni",
         "risposta": False,
+        "riassunto": "Sovraccarico → guida difficile ma sospensioni intatte?",
         "spiegazione": "Questa affermazione è falsa. È vero che il sovraccarico comporta maggiori difficoltà di guida, ma è falso che 'non comporta problemi per le sospensioni'. Il sovraccarico è una delle cause principali di usura, inefficienza e rottura delle sospensioni.",
         "regola": "Troppo peso = difficoltà + problemi sospensioni.",
     },
     {
         "domanda": "Le sospensioni di un veicolo a motore, essendo realizzate con materiali elastici, non subiscono danni per gli urti subiti durante la marcia",
         "risposta": False,
+        "riassunto": "Sospensioni elastiche → nessun danno dagli urti?",
         "spiegazione": "Questa affermazione è falsa. Anche se le sospensioni sono fatte con materiali elastici per assorbire gli urti, non sono indistruttibili. Urti molto forti, come prendere una buca profonda a velocità elevata, possono comunque danneggiarle o romperle.",
         "regola": "Elastiche sì, ma NON indistruttibili.",
         "trabocchetti": ["non subiscono danni"],
@@ -1314,12 +1503,14 @@ QUESTIONS = [
     {
         "domanda": "Le sospensioni di un veicolo a motore sono realizzate in modo da non necessitare di verifiche e manutenzioni per tutta la durata della garanzia del veicolo",
         "risposta": False,
+        "riassunto": "Sospensioni → nessuna manutenzione in garanzia?",
         "spiegazione": "Questa affermazione è falsa. Tutte le parti di un veicolo, incluse le sospensioni, necessitano di controlli e manutenzione periodica, anche durante il periodo di garanzia. La garanzia copre i difetti di fabbrica, non esclude la normale manutenzione per mantenere il veicolo efficiente e sicuro.",
         "regola": "Garanzia NON significa zero manutenzione.",
     },
     {
         "domanda": "Le sospensioni non collaborano alla dirigibilità del veicolo, perché questa è assicurata unicamente dagli organi di direzione",
         "risposta": False,
+        "riassunto": "Sospensioni → nessun ruolo nella dirigibilità?",
         "spiegazione": "Questa affermazione è falsa. Le sospensioni sono fondamentali per la 'dirigibilità' del veicolo, cioè la sua capacità di seguire la traiettoria voluta dal conducente. Collaborano attivamente con lo sterzo per mantenere le ruote a contatto con la strada e garantire il controllo del veicolo. Se le sospensioni sono inefficienti, l'auto è difficile da guidare.",
         "regola": "Sospensioni = controllo e dirigibilità.",
         "trabocchetti": ["non collaborano", "assicurata unicamente"],
@@ -1327,6 +1518,7 @@ QUESTIONS = [
     {
         "domanda": "Poiché le autovetture sono dotate di sospensioni su ogni ruota, la rottura di una sola delle quattro non comporta problemi per la guida",
         "risposta": False,
+        "riassunto": "Una sospensione rotta su quattro → nessun problema?",
         "spiegazione": "Questa affermazione è falsa. Anche se ogni ruota ha la sua sospensione, il sistema lavora in modo coordinato. La rottura di una sola sospensione compromette gravemente l'equilibrio, la stabilità e la tenuta di strada dell'intero veicolo, rendendo la guida pericolosa e difficile.",
         "regola": "Anche una rotta = problemi seri di guida.",
         "trabocchetti": ["non comporta problemi per la guida"],
@@ -1334,6 +1526,7 @@ QUESTIONS = [
     {
         "domanda": "Gli ammortizzatori di un veicolo a motore servono a ridurre le oscillazioni delle sospensioni",
         "risposta": True,
+        "riassunto": "Ammortizzatori → riducono le oscillazioni?",
         "spiegazione": "Gli ammortizzatori sono componenti fondamentali che servono proprio a 'smorzare' e ridurre i movimenti su e giù (le oscillazioni) che le sospensioni fanno quando l'auto incontra buche o dossi, garantendo così una guida più stabile e confortevole.",
         "regola": "Ammortizzatore = meno 'salti' dell'auto.",
         "trabocchetti": ["ridurre le oscillazioni"],
@@ -1341,6 +1534,7 @@ QUESTIONS = [
     {
         "domanda": "Gli ammortizzatori collaborano alla tenuta di strada del veicolo",
         "risposta": True,
+        "riassunto": "Ammortizzatori → aiutano la tenuta di strada?",
         "spiegazione": "Se le ruote di un veicolo 'saltano' troppo a causa delle oscillazioni, perdono il contatto con la strada. Gli ammortizzatori, controllando questi movimenti, aiutano le ruote a rimanere sempre ben aderenti al terreno, migliorando così la sicurezza e la stabilità del veicolo.",
         "regola": "Ammortizzatori = ruote incollate alla strada.",
         "trabocchetti": ["collaborano"],
@@ -1348,6 +1542,7 @@ QUESTIONS = [
     {
         "domanda": "Gli ammortizzatori servono, tra l'altro, a garantire la tenuta di strada del veicolo",
         "risposta": True,
+        "riassunto": "Ammortizzatori → garantiscono la tenuta?",
         "spiegazione": "Questa domanda ribadisce un concetto chiave. Oltre a rendere la guida più confortevole riducendo le oscillazioni, gli ammortizzatori sono essenziali per mantenere le ruote a contatto con la strada, il che è fondamentale per la sicurezza e la capacità del veicolo di curvare e frenare correttamente.",
         "regola": "Ammortizzatori = sicurezza e aderenza.",
         "trabocchetti": ["tra l"],
@@ -1355,6 +1550,7 @@ QUESTIONS = [
     {
         "domanda": "Il sovraccarico del veicolo può rendere inefficienti gli ammortizzatori",
         "risposta": True,
+        "riassunto": "Sovraccarico → ammortizzatori inefficienti?",
         "spiegazione": "Quando un veicolo è sovraccarico, gli ammortizzatori devono sostenere un peso maggiore e lavorare molto di più per controllare i movimenti. Questo sforzo extra li affatica e li rende meno efficaci nel loro compito di 'smorzare' le oscillazioni.",
         "regola": "Troppo peso = ammortizzatori stanchi.",
         "trabocchetti": ["può"],
@@ -1362,24 +1558,28 @@ QUESTIONS = [
     {
         "domanda": "Il sovraccarico del veicolo può comportare un'usura precoce degli ammortizzatori",
         "risposta": True,
+        "riassunto": "Sovraccarico → usura precoce degli ammortizzatori?",
         "spiegazione": "Il lavoro eccessivo e lo stress a cui sono sottoposti gli ammortizzatori a causa del sovraccarico fanno sì che i loro componenti si consumino più rapidamente del normale. Questo significa che si rovinano prima del previsto e devono essere sostituiti prima.",
         "regola": "Troppo peso = ammortizzatori rotti prima.",
     },
     {
         "domanda": "Gli ammortizzatori di un veicolo a motore non necessitano di verifiche e manutenzioni fino a quando dura la garanzia del veicolo",
         "risposta": False,
+        "riassunto": "Ammortizzatori → nessun controllo in garanzia?",
         "spiegazione": "FALSO. Anche se un veicolo è nuovo e in garanzia, tutti i suoi componenti, inclusi gli ammortizzatori, necessitano di controlli e manutenzione periodica. La garanzia copre i difetti di fabbrica, non esonera dalla normale manutenzione necessaria per il buon funzionamento e la sicurezza del veicolo.",
         "regola": "Garanzia non è manutenzione zero.",
     },
     {
         "domanda": "Il sovraccarico non causa problemi agli ammortizzatori di un veicolo a motore se il conducente adotta uno stile di guida prudente",
         "risposta": False,
+        "riassunto": "Sovraccarico → nessun problema con guida prudente?",
         "spiegazione": "FALSO. Anche se guidi con la massima prudenza, il peso eccessivo sul veicolo mette comunque sotto forte stress gli ammortizzatori. Il sovraccarico è un problema meccanico e strutturale che affatica i componenti, indipendentemente da come si guida.",
         "regola": "Peso eccessivo = sempre un problema.",
     },
     {
         "domanda": "Se il veicolo è sovraccarico, per evitare problemi agli ammortizzatori è sufficiente aumentare la pressione dei pneumatici di mezzo bar",
         "risposta": False,
+        "riassunto": "Sovraccarico → basta mezzo bar in più?",
         "spiegazione": "FALSO. Aumentare la pressione dei pneumatici è una buona pratica quando il veicolo è sovraccarico, perché aiuta i pneumatici a sostenere meglio il peso e a mantenere una buona tenuta di strada. Tuttavia, non è 'sufficiente' a risolvere lo stress e l'usura che il sovraccarico provoca agli ammortizzatori.",
         "regola": "Gomme gonfie non salvano gli ammortizzatori.",
         "trabocchetti": ["sufficiente"],
@@ -1387,6 +1587,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente può in ogni caso regolare la rigidità degli ammortizzatori",
         "risposta": False,
+        "riassunto": "Rigidità degli ammortizzatori → sempre regolabile dal conducente?",
         "spiegazione": "FALSO. Non tutti i veicoli permettono al conducente di regolare la rigidità degli ammortizzatori. Questa è una funzione avanzata, presente solo su alcuni modelli specifici (spesso sportivi o di alta gamma), e non è una caratteristica universale di tutte le auto.",
         "regola": "Non tutti gli ammortizzatori sono regolabili.",
         "trabocchetti": ["in ogni caso"],
@@ -1394,6 +1595,7 @@ QUESTIONS = [
     {
         "domanda": "La rigidità degli ammortizzatori di un veicolo a motore può essere controllata dal proprietario del veicolo, senza ricorrere ad un'officina specializzata",
         "risposta": False,
+        "riassunto": "Rigidità degli ammortizzatori → controllabile senza officina?",
         "spiegazione": "FALSO. La regolazione o il controllo della rigidità degli ammortizzatori, anche sui veicoli che lo permettono, è un'operazione complessa che richiede conoscenze tecniche specifiche e attrezzi particolari. Deve essere eseguita da un meccanico specializzato in officina, non può essere fatta dal proprietario 'fai da te'.",
         "regola": "Ammortizzatori = meccanico specializzato.",
         "trabocchetti": ["senza ricorrere ad un"],
@@ -1401,6 +1603,7 @@ QUESTIONS = [
     {
         "domanda": "Gli ammortizzatori scarichi provocano un comportamento anomalo del veicolo in frenata",
         "risposta": True,
+        "riassunto": "Ammortizzatori scarichi → frenata anomala?",
         "spiegazione": "Gli ammortizzatori servono a tenere le ruote ben attaccate alla strada. Se sono 'scarichi' (rovinati), le ruote non aderiscono bene, specialmente quando freni, e il veicolo può comportarsi in modo strano, ad esempio 'saltellando' o sbandando. Per questo, un comportamento anomalo in frenata è un segno di ammortizzatori scarichi.",
         "regola": "Ammortizzatori scarichi = frenata instabile.",
         "trabocchetti": ["anomalo"],
@@ -1408,6 +1611,7 @@ QUESTIONS = [
     {
         "domanda": "Gli ammortizzatori scarichi provocano un comportamento anomalo del veicolo, particolarmente in curva",
         "risposta": True,
+        "riassunto": "Ammortizzatori scarichi → comportamento anomalo in curva?",
         "spiegazione": "Come per la frenata, anche in curva gli ammortizzatori rovinati non riescono a tenere le ruote ferme sulla strada. Questo è ancora più pericoloso perché il veicolo si inclina e le ruote potrebbero perdere aderenza, rendendo la guida difficile e rischiosa. Quindi, un comportamento anomalo in curva è un chiaro segnale di ammortizzatori scarichi.",
         "regola": "Ammortizzatori scarichi = curva pericolosa.",
         "trabocchetti": ["particolarmente"],
@@ -1415,6 +1619,7 @@ QUESTIONS = [
     {
         "domanda": "In un veicolo a motore, gli ammortizzatori scarichi provocano l'usura non uniforme del battistrada dei pneumatici",
         "risposta": True,
+        "riassunto": "Ammortizzatori scarichi → usura irregolare del battistrada?",
         "spiegazione": "Se gli ammortizzatori non funzionano bene, le ruote 'saltellano' sulla strada invece di rotolare in modo fluido e costante. Questo fa sì che alcune parti del pneumatico si consumino più velocemente di altre, creando un'usura 'non uniforme' (irregolare) del battistrada.",
         "regola": "Ammortizzatori scarichi = gomme consumate male.",
         "trabocchetti": ["usura non uniforme"],
@@ -1422,6 +1627,7 @@ QUESTIONS = [
     {
         "domanda": "In un veicolo a motore, gli ammortizzatori scarichi aumentano il rischio di rottura delle molle delle sospensioni",
         "risposta": True,
+        "riassunto": "Ammortizzatori scarichi → rischio di rottura delle molle?",
         "spiegazione": "Gli ammortizzatori e le molle lavorano insieme nel sistema delle sospensioni. Le molle assorbono i colpi, e gli ammortizzatori 'frenano' il movimento delle molle. Se gli ammortizzatori sono scarichi, le molle lavorano troppo e senza controllo, subendo uno stress maggiore che può portarle a rompersi più facilmente.",
         "regola": "Ammortizzatori scarichi = molle sotto stress.",
         "trabocchetti": ["aumentano il rischio"],
@@ -1429,6 +1635,7 @@ QUESTIONS = [
     {
         "domanda": "In un veicolo a motore, gli ammortizzatori scarichi provocano una diminuzione del comfort di marcia dei passeggeri",
         "risposta": True,
+        "riassunto": "Ammortizzatori scarichi → meno comfort?",
         "spiegazione": "Gli ammortizzatori servono proprio a rendere il viaggio più comodo, assorbendo le vibrazioni e i colpi della strada. Se sono scarichi, sentirai di più ogni buca e ogni irregolarità, rendendo il viaggio scomodo e meno piacevole per te e i passeggeri.",
         "regola": "Ammortizzatori scarichi = viaggio scomodo.",
         "trabocchetti": ["diminuzione del comfort"],
@@ -1436,6 +1643,7 @@ QUESTIONS = [
     {
         "domanda": "In un veicolo a motore, gli ammortizzatori scarichi peggiorano la tenuta di strada",
         "risposta": True,
+        "riassunto": "Ammortizzatori scarichi → peggiore tenuta?",
         "spiegazione": "La 'tenuta di strada' è la capacità del veicolo di rimanere stabile e aderente alla strada. Gli ammortizzatori scarichi fanno sì che le ruote non siano sempre ben a contatto con l'asfalto, riducendo questa capacità e rendendo il veicolo meno sicuro e più difficile da controllare.",
         "regola": "Ammortizzatori scarichi = meno aderenza.",
         "trabocchetti": ["peggiorano"],
@@ -1443,6 +1651,7 @@ QUESTIONS = [
     {
         "domanda": "In un veicolo, gli ammortizzatori scarichi provocano un anomalo funzionamento del motore",
         "risposta": False,
+        "riassunto": "Ammortizzatori scarichi → motore anomalo?",
         "spiegazione": "Gli ammortizzatori fanno parte del sistema delle sospensioni e servono a gestire i movimenti del veicolo sulla strada (come assorbire le buche). Non hanno nessun collegamento diretto con il motore, che è la parte che produce la forza per far muovere l'auto. Quindi, non possono causare problemi al motore.",
         "regola": "Ammortizzatori = sospensioni, non motore.",
         "trabocchetti": ["anomalo funzionamento del motore"],
@@ -1450,6 +1659,7 @@ QUESTIONS = [
     {
         "domanda": "In un veicolo a motore, gli ammortizzatori scarichi provocano un maggior consumo di lubrificante",
         "risposta": False,
+        "riassunto": "Ammortizzatori scarichi → più consumo di lubrificante?",
         "spiegazione": "Il lubrificante (o olio motore) serve a far funzionare bene le parti interne del motore, riducendo l'attrito. Gli ammortizzatori, invece, sono esterni al motore e non usano il lubrificante del motore. Quindi, non c'è nessun legame tra ammortizzatori scarichi e un maggior consumo di olio motore.",
         "regola": "Ammortizzatori = non olio motore.",
         "trabocchetti": ["maggior consumo di lubrificante"],
@@ -1457,6 +1667,7 @@ QUESTIONS = [
     {
         "domanda": "In un veicolo a motore, gli ammortizzatori scarichi, abbassando l'altezza da terra del telaio, migliorano la tenuta di strada del veicolo, specie in curva",
         "risposta": False,
+        "riassunto": "Ammortizzatori scarichi → migliore tenuta in curva?",
         "spiegazione": "Questa è una domanda 'trappola'. Gli ammortizzatori scarichi non abbassano l'altezza del telaio in modo controllato per migliorare la tenuta. Al contrario, rendono il veicolo instabile, le ruote perdono aderenza e il veicolo 'saltella', quindi la tenuta di strada peggiora, non migliora, specialmente in curva.",
         "regola": "Scarichi = peggio, non meglio.",
         "trabocchetti": ["migliorano la tenuta di strada"],
@@ -1464,18 +1675,21 @@ QUESTIONS = [
     {
         "domanda": "In un veicolo a motore, gli ammortizzatori possono essere sostituiti con una sospensione rinforzata",
         "risposta": False,
+        "riassunto": "Ammortizzatori → sostituibili da sospensione rinforzata?",
         "spiegazione": "Gli ammortizzatori sono una parte specifica e fondamentale del sistema di sospensione. Non puoi semplicemente 'sostituirli con una sospensione rinforzata' perché sono componenti diversi che lavorano insieme. Se gli ammortizzatori sono rotti, devi sostituire gli ammortizzatori con altri ammortizzatori nuovi e adatti al veicolo, non l'intero sistema di sospensione con qualcosa di generico.",
         "regola": "Ammortizzatori = ammortizzatori, non 'sospensione'.",
     },
     {
         "domanda": "Un veicolo a motore è dotato di sospensioni oppure di ammortizzatori, ma difficilmente di tutti e due",
         "risposta": False,
+        "riassunto": "Sospensioni oppure ammortizzatori → raramente entrambi?",
         "spiegazione": "Questa è una frase molto ingannevole. Le 'sospensioni' sono un sistema complesso che include sia le molle (che assorbono i colpi) sia gli ammortizzatori (che controllano il movimento delle molle). Tutti i veicoli moderni hanno sia molle che ammortizzatori, perché lavorano insieme per garantire comfort e sicurezza. Non è 'o uno o l'altro'.",
         "regola": "Sospensioni = molle + ammortizzatori (sempre insieme).",
     },
     {
         "domanda": "Gli ammortizzatori di un veicolo, se sono del tipo a circuito sigillato, non necessitano di manutenzione",
         "risposta": False,
+        "riassunto": "Ammortizzatori sigillati → nessuna manutenzione?",
         "spiegazione": "Anche se un ammortizzatore è 'a circuito sigillato' (cioè non si può aprire o riempire), questo non significa che non si usuri o non si rovini con il tempo e l'uso. Tutti i componenti di un veicolo sono soggetti a usura e devono essere controllati e, se necessario, sostituiti. La frase 'non necessitano di manutenzione' è quasi sempre falsa per qualsiasi componente meccanico di un veicolo.",
         "regola": "Tutto si usura, anche se 'sigillato'.",
         "trabocchetti": ["non necessitano di manutenzione"],
@@ -1483,6 +1697,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di mal funzionamento del servosterzo, lo sterzo diventa \"pesante\"",
         "risposta": True,
+        "riassunto": "Servosterzo guasto → sterzo pesante?",
         "spiegazione": "Il servosterzo è un sistema che ti aiuta a girare il volante con meno fatica. Se non funziona bene, il volante diventa più difficile da muovere, cioè 'pesante'.",
         "regola": "Servosterzo rotto = sterzo pesante.",
         "trabocchetti": ["mal funzionamento", "Pesante"],
@@ -1490,6 +1705,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di foratura di un pneumatico, lo sterzo tira nella direzione della ruota forata",
         "risposta": True,
+        "riassunto": "Foratura → sterzo tira verso la ruota forata?",
         "spiegazione": "Quando un pneumatico si fora, perde pressione e la macchina tende a 'cadere' da quel lato. Questo fa sì che lo sterzo tiri (giri da solo) verso la ruota sgonfia.",
         "regola": "Gomma forata = sterzo tira verso la foratura.",
         "trabocchetti": ["tira nella direzione della ruota forata"],
@@ -1497,6 +1713,7 @@ QUESTIONS = [
     {
         "domanda": "Al fine di garantire la sicurezza della circolazione occorre verificare periodicamente l'assenza di giochi anomali allo sterzo",
         "risposta": True,
+        "riassunto": "Sterzo → controllare i giochi anomali?",
         "spiegazione": "I 'giochi anomali' allo sterzo significano che c'è troppo movimento libero del volante prima che le ruote inizino a girare. Questo rende la guida meno precisa e può essere pericoloso. Controllare spesso è fondamentale per la sicurezza.",
         "regola": "Niente giochi allo sterzo = guida sicura.",
         "trabocchetti": ["Giochi anomali", "Periodicamente"],
@@ -1504,6 +1721,7 @@ QUESTIONS = [
     {
         "domanda": "La \"durezza\" dello sterzo può essere indice di insufficiente pressione dei pneumatici",
         "risposta": True,
+        "riassunto": "Sterzo duro → gomme sgonfie?",
         "spiegazione": "Se i pneumatici non hanno abbastanza aria (pressione insufficiente), fanno più attrito con la strada. Questo rende più difficile girare il volante, facendolo sentire 'duro'.",
         "regola": "Gomme sgonfie = sterzo duro.",
         "trabocchetti": ["Durezza", "Insufficiente pressione"],
@@ -1511,6 +1729,7 @@ QUESTIONS = [
     {
         "domanda": "Il servosterzo idraulico non funziona se il motore è spento",
         "risposta": True,
+        "riassunto": "Servosterzo idraulico → non funziona a motore spento?",
         "spiegazione": "Il servosterzo idraulico funziona grazie a una pompa che è collegata al motore. Se il motore è spento, la pompa non gira e il servosterzo non può aiutarti a girare il volante.",
         "regola": "Motore spento = servosterzo spento.",
         "trabocchetti": ["Idraulico", "Motore è spento"],
@@ -1518,6 +1737,7 @@ QUESTIONS = [
     {
         "domanda": "Eccessivi giochi allo sterzo rendono imprecisa la traiettoria del veicolo",
         "risposta": True,
+        "riassunto": "Giochi allo sterzo → traiettoria imprecisa?",
         "spiegazione": "Se il volante ha troppo 'gioco' (movimento a vuoto), quando lo giri un po', le ruote non rispondono subito. Questo rende difficile mantenere la macchina dritta o fare curve precise, rendendo la traiettoria 'imprecisa'.",
         "regola": "Troppo gioco = guida imprecisa.",
         "trabocchetti": ["Eccessivi giochi", "Imprecisa la traiettoria"],
@@ -1525,6 +1745,7 @@ QUESTIONS = [
     {
         "domanda": "La convergenza delle ruote ha influenza sulla precisione della sterzata",
         "risposta": True,
+        "riassunto": "Convergenza → precisione della sterzata?",
         "spiegazione": "La convergenza è l'angolo con cui le ruote sono allineate tra loro. Se non sono allineate correttamente, la macchina non va dritta e lo sterzo non è preciso, influenzando la sterzata.",
         "regola": "Convergenza ok = sterzo preciso.",
         "trabocchetti": ["Convergenza"],
@@ -1532,6 +1753,7 @@ QUESTIONS = [
     {
         "domanda": "Se lo sterzo vibra è bene far controllare la bilanciatura delle ruote anteriori",
         "risposta": True,
+        "riassunto": "Sterzo che vibra → bilanciare le ruote anteriori?",
         "spiegazione": "Se senti il volante vibrare, è molto probabile che le ruote anteriori non siano bilanciate correttamente. La bilanciatura serve a distribuire il peso della ruota in modo uniforme.",
         "regola": "Sterzo vibra = controlla bilanciatura ruote anteriori.",
         "trabocchetti": ["Vibra", "Bilanciatura delle ruote anteriori"],
@@ -1539,6 +1761,7 @@ QUESTIONS = [
     {
         "domanda": "Il servosterzo aiuta a controllare la traiettoria del veicolo in caso di foratura di un pneumatico",
         "risposta": True,
+        "riassunto": "Servosterzo → aiuta in caso di foratura?",
         "spiegazione": "In caso di foratura, lo sterzo tende a tirare. Il servosterzo, rendendo il volante più leggero, ti permette di contrastare meglio questa forza e mantenere il controllo del veicolo, aiutandoti a controllare la traiettoria.",
         "regola": "Servosterzo = più controllo anche con gomma forata.",
         "trabocchetti": ["Aiuta a controllare", "Traiettoria"],
@@ -1546,6 +1769,7 @@ QUESTIONS = [
     {
         "domanda": "Il servosterzo migliora l'azione frenante del veicolo",
         "risposta": False,
+        "riassunto": "Servosterzo → migliora la frenata?",
         "spiegazione": "Il servosterzo serve solo a rendere più facile girare il volante. Non ha nessun legame con il sistema frenante e quindi non migliora la capacità del veicolo di frenare.",
         "regola": "Servosterzo = solo per sterzare, non per frenare.",
         "trabocchetti": ["migliora l"],
@@ -1553,6 +1777,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di foratura di un pneumatico, lo sterzo tira nella direzione opposta a quella della ruota forata",
         "risposta": False,
+        "riassunto": "Foratura → sterzo tira dal lato opposto?",
         "spiegazione": "Quando un pneumatico si fora, lo sterzo tira sempre nella direzione della ruota sgonfia, non in quella opposta. Questo perché la macchina 'cade' e si sbilancia verso il lato della foratura.",
         "regola": "Gomma forata = tira VERSO la foratura.",
         "trabocchetti": ["opposta"],
@@ -1560,6 +1785,7 @@ QUESTIONS = [
     {
         "domanda": "Se lo sterzo vibra si deve far controllare la bilanciatura delle ruote posteriori",
         "risposta": False,
+        "riassunto": "Sterzo che vibra → bilanciare le ruote posteriori?",
         "spiegazione": "Le vibrazioni che si sentono al volante (sterzo) sono quasi sempre causate da problemi alle ruote anteriori. Se le ruote posteriori non sono bilanciate, le vibrazioni si sentono più sul sedile o sulla carrozzeria, non direttamente sullo sterzo.",
         "regola": "Sterzo vibra = ruote ANTERIORI.",
         "trabocchetti": ["ruote posteriori"],
@@ -1567,12 +1793,14 @@ QUESTIONS = [
     {
         "domanda": "La rottura del servosterzo si manifesta con un'eccessiva facilità di manovra dello sterzo",
         "risposta": False,
+        "riassunto": "Servosterzo rotto → sterzo troppo leggero?",
         "spiegazione": "Se il servosterzo si rompe, non ricevi più l'aiuto per girare il volante. Questo lo rende molto più 'pesante' e difficile da manovrare, non più facile.",
         "regola": "Servosterzo rotto = sterzo PESANTE.",
     },
     {
         "domanda": "Il volante deve essere impugnato nella sua parte bassa, con entrambe le mani sotto le razze",
         "risposta": False,
+        "riassunto": "Volante → impugnato in basso sotto le razze?",
         "spiegazione": "Per avere il massimo controllo e sicurezza, il volante deve essere impugnato nella parte alta, di solito nella posizione '9 e 15' (come le lancette dell'orologio), con i pollici appoggiati sulle razze. Impugnarlo in basso riduce il controllo.",
         "regola": "Volante = mani in ALTO (9 e 15).",
         "trabocchetti": ["parte bassa", "sotto le razze"],
@@ -1580,6 +1808,7 @@ QUESTIONS = [
     {
         "domanda": "Il volante non può essere regolato in altezza",
         "risposta": False,
+        "riassunto": "Volante → non regolabile in altezza?",
         "spiegazione": "Molte auto moderne permettono di regolare il volante sia in altezza che in profondità. Questo serve per permettere al guidatore di trovare la posizione più comoda e sicura.",
         "regola": "Volante = spesso regolabile.",
         "trabocchetti": ["non può essere regolato"],
@@ -1587,6 +1816,7 @@ QUESTIONS = [
     {
         "domanda": "La precisione della sterzata non è influenzata dalle cattive condizioni delle sospensioni e degli ammortizzatori",
         "risposta": False,
+        "riassunto": "Sterzata → non influenzata da sospensioni e ammortizzatori?",
         "spiegazione": "Sospensioni e ammortizzatori in cattive condizioni rendono la macchina meno stabile, specialmente in curva o su strade sconnesse. Questo rende la sterzata meno precisa e più difficile da controllare.",
         "regola": "Sospensioni/ammortizzatori rotti = sterzo impreciso.",
         "trabocchetti": ["non è influenzata"],
@@ -1594,6 +1824,7 @@ QUESTIONS = [
     {
         "domanda": "La precisione della sterzata è influenzata dalla scarsa pressione dell'olio di lubrificazione",
         "risposta": False,
+        "riassunto": "Sterzata → influenzata dalla pressione dell'olio?",
         "spiegazione": "La pressione dell'olio di lubrificazione è fondamentale per il buon funzionamento del motore, ma non ha un effetto diretto sulla precisione dello sterzo. Lo sterzo è influenzato da altri elementi come pneumatici, sospensioni, convergenza.",
         "regola": "Olio motore = non c'entra con lo sterzo.",
         "trabocchetti": ["scarsa pressione dell"],
@@ -1601,12 +1832,14 @@ QUESTIONS = [
     {
         "domanda": "La precisione della sterzata è influenzata dall'eccessiva temperatura del liquido di raffreddamento",
         "risposta": False,
+        "riassunto": "Sterzata → influenzata dalla temperatura del liquido di raffreddamento?",
         "spiegazione": "L'eccessiva temperatura del liquido di raffreddamento indica un problema di surriscaldamento del motore. Questo è un problema grave per il motore, ma non influenza direttamente la precisione con cui giri il volante.",
         "regola": "Liquido raffreddamento = non c'entra con lo sterzo.",
     },
     {
         "domanda": "La marmitta deteriorata aumenta l'inquinamento acustico prodotto dai veicoli a motore",
         "risposta": True,
+        "riassunto": "Marmitta deteriorata → più rumore?",
         "spiegazione": "Se la marmitta è rotta o vecchia, non riesce più a 'silenziare' bene il rumore del motore. Quindi, il veicolo fa più rumore e aumenta l'inquinamento acustico.",
         "regola": "Marmitta rotta = più rumore.",
         "trabocchetti": ["deteriorata"],
@@ -1614,6 +1847,7 @@ QUESTIONS = [
     {
         "domanda": "La marmitta deteriorata deve essere sostituita con altra di tipo approvato per quel tipo di veicolo",
         "risposta": True,
+        "riassunto": "Marmitta deteriorata → sostituirla con una approvata?",
         "spiegazione": "Quando la marmitta è rotta, devi cambiarla. È importante usare una marmitta che sia stata 'approvata', cioè che sia fatta apposta per il tuo modello di veicolo e rispetti le regole di sicurezza e inquinamento. Non puoi metterne una qualsiasi.",
         "regola": "Marmitta nuova? Solo quella approvata!",
         "trabocchetti": ["di tipo approvato"],
@@ -1621,6 +1855,7 @@ QUESTIONS = [
     {
         "domanda": "L'impianto di scarico ha lo scopo di convogliare i gas di scarico verso l'esterno dopo averne abbassato la tossicità",
         "risposta": True,
+        "riassunto": "Scarico → espelle i gas dopo averne ridotto la tossicità?",
         "spiegazione": "L'impianto di scarico non solo porta via i gas dal motore, ma grazie al catalizzatore (che fa parte dell'impianto), rende questi gas meno 'velenosi' (meno tossici) prima che escano nell'aria.",
         "regola": "Scarico = gas fuori e meno velenosi.",
         "trabocchetti": ["dopo averne abbassato la tossicità"],
@@ -1628,6 +1863,7 @@ QUESTIONS = [
     {
         "domanda": "L'impianto di scarico ha lo scopo di convogliare i gas di scarico verso l'esterno dopo averne abbassato la pressione",
         "risposta": True,
+        "riassunto": "Scarico → espelle i gas dopo averne ridotto la pressione?",
         "spiegazione": "I gas che escono dal motore hanno molta pressione. L'impianto di scarico, con i suoi tubi e la marmitta, aiuta a ridurre questa pressione prima che i gas escano, rendendo il flusso più controllato e meno rumoroso.",
         "regola": "Scarico = gas fuori e meno pressione.",
         "trabocchetti": ["dopo averne abbassato la pressione"],
@@ -1635,6 +1871,7 @@ QUESTIONS = [
     {
         "domanda": "L'impianto di scarico ha lo scopo di convogliare i gas di scarico verso l'esterno dopo averne abbassato la temperatura",
         "risposta": True,
+        "riassunto": "Scarico → espelle i gas dopo averne ridotto la temperatura?",
         "spiegazione": "I gas che escono dal motore sono molto caldi. L'impianto di scarico, essendo lungo e fatto di metallo, permette ai gas di raffreddarsi un po' prima di uscire, riducendo il rischio di scottature o incendi.",
         "regola": "Scarico = gas fuori e meno caldi.",
         "trabocchetti": ["dopo averne abbassato la temperatura"],
@@ -1642,12 +1879,14 @@ QUESTIONS = [
     {
         "domanda": "L'impianto di scarico ha lo scopo di ridurre la rumorosità del veicolo",
         "risposta": True,
+        "riassunto": "Scarico → riduce il rumore?",
         "spiegazione": "La marmitta, che è una parte fondamentale dell'impianto di scarico, serve proprio a 'silenziare' il rumore forte che fa il motore quando i gas vengono espulsi. Senza marmitta, il rumore sarebbe fortissimo.",
         "regola": "Scarico = meno rumore.",
     },
     {
         "domanda": "L'impianto di scarico ha lo scopo di ridurre l'inquinamento atmosferico causato dai gas di scarico del veicolo",
         "risposta": True,
+        "riassunto": "Scarico → riduce l'inquinamento?",
         "spiegazione": "Grazie al catalizzatore, che è parte dell'impianto di scarico, i gas 'velenosi' (come monossido di carbonio, ossidi di azoto) vengono trasformati in sostanze meno dannose prima di essere rilasciati nell'aria. Questo riduce l'inquinamento.",
         "regola": "Scarico = meno inquinamento nell'aria.",
         "trabocchetti": ["ridurre l"],
@@ -1655,12 +1894,14 @@ QUESTIONS = [
     {
         "domanda": "L'impianto di scarico deve essere integralmente sostituito a ogni cambio di lubrificante",
         "risposta": False,
+        "riassunto": "Scarico → sostituito a ogni cambio d'olio?",
         "spiegazione": "Il cambio del lubrificante (olio motore) si fa spesso, ogni tot chilometri. L'impianto di scarico non si cambia così spesso, ma solo quando è rotto o molto usurato. Sono due cose diverse e non legate.",
         "regola": "Olio e scarico: due manutenzioni diverse.",
     },
     {
         "domanda": "L'impianto di scarico dei veicoli elettrici necessita di manutenzione più frequente rispetto a quello dei veicoli con motore a scoppio",
         "risposta": False,
+        "riassunto": "Elettrici → scarico con più manutenzione?",
         "spiegazione": "I veicoli elettrici non hanno un motore a scoppio e quindi non producono gas di scarico. Per questo motivo, non hanno un impianto di scarico come quello dei veicoli a benzina o diesel. Quindi, non necessitano di manutenzione per qualcosa che non hanno.",
         "regola": "Elettrico = no scarico, no manutenzione scarico.",
         "trabocchetti": ["veicoli elettrici"],
@@ -1668,6 +1909,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dei centri abitati, i veicoli possono circolare anche senza silenziatore",
         "risposta": False,
+        "riassunto": "Fuori città → senza silenziatore?",
         "spiegazione": "Il silenziatore (marmitta) è obbligatorio sempre, sia in città che fuori. Serve a ridurre il rumore e l'inquinamento acustico, ed è una parte essenziale per la circolazione legale del veicolo.",
         "regola": "Silenziatore sempre, ovunque.",
         "trabocchetti": ["anche senza silenziatore"],
@@ -1675,6 +1917,7 @@ QUESTIONS = [
     {
         "domanda": "Se il tubo di scarico del silenziatore si fora e non si intende sostituirlo a breve, lo si può riparare avvolgendolo con lana di vetro e nastro isolante",
         "risposta": False,
+        "riassunto": "Tubo di scarico forato → lana di vetro e nastro?",
         "spiegazione": "Riparazioni 'fai da te' con nastro isolante o lana di vetro non sono sicure né efficaci per l'impianto di scarico. I gas sono caldi e sotto pressione, e una riparazione non professionale non terrebbe. È pericoloso e illegale. Bisogna andare in officina.",
         "regola": "Scarico rotto? Solo officina, no 'fai da te'.",
         "trabocchetti": ["lana di vetro e nastro isolante"],
@@ -1682,6 +1925,7 @@ QUESTIONS = [
     {
         "domanda": "La sostituzione del tubo di scarico può essere fatta anche personalmente, senza rivolgersi ad un'officina autorizzata",
         "risposta": False,
+        "riassunto": "Tubo di scarico → sostituibile da sé?",
         "spiegazione": "La sostituzione di parti importanti come l'impianto di scarico richiede competenze tecniche specifiche e l'uso di ricambi approvati. È meglio farla fare da un'officina specializzata per garantire sicurezza e conformità alle norme.",
         "regola": "Scarico: lavoro da meccanico, non da solo.",
         "trabocchetti": ["officina autorizzata"],
@@ -1689,6 +1933,7 @@ QUESTIONS = [
     {
         "domanda": "E' possibile modificare l'impianto di scarico, purché si autocertifichi che ciò non comporta aumenti del consumo di carburante",
         "risposta": False,
+        "riassunto": "Modificare lo scarico → con autocertificazione sui consumi?",
         "spiegazione": "Non puoi modificare l'impianto di scarico a tuo piacimento. Le modifiche sono permesse solo se sono approvate e omologate, e non basta una tua 'autocertificazione'. Le modifiche non autorizzate possono alterare rumore, emissioni e prestazioni, e sono illegali.",
         "regola": "Scarico modificato? Solo con omologazione, mai 'fai da te'.",
         "trabocchetti": ["purché si autocertifichi"],
@@ -1696,6 +1941,7 @@ QUESTIONS = [
     {
         "domanda": "La manomissione dell'impianto di scarico non comporta alcuna sanzione, purché si circoli solo nei centri urbani",
         "risposta": False,
+        "riassunto": "Scarico manomesso → nessuna sanzione in città?",
         "spiegazione": "Manomettere l'impianto di scarico (cioè modificarlo in modo non autorizzato) è sempre illegale e comporta sanzioni, multe e a volte anche il ritiro del libretto. Non importa dove circoli, la legge è uguale per tutti.",
         "regola": "Scarico manomesso = multa sicura, ovunque.",
         "trabocchetti": ["non comporta alcuna sanzione", "purché si circoli solo nei centri urbani"],
@@ -1703,6 +1949,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote è possibile spegnere il motore anche tramite l'interruttore di emergenza posto sul manubrio",
         "risposta": True,
+        "riassunto": "Due ruote → spegnere col pulsante di emergenza sul manubrio?",
         "spiegazione": "VERO. L'interruttore di emergenza, chiamato anche 'kill switch', si trova sul manubrio e serve proprio per spegnere il motore rapidamente, soprattutto in caso di pericolo o necessità immediata. È una funzione di sicurezza importante.",
         "regola": "Kill switch = spegnimento rapido.",
         "trabocchetti": ["anche tramite"],
@@ -1710,6 +1957,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, per poter avviare il motore, è necessario che l'interruttore di emergenza posto sul manubrio sia posizionato su ON/Avviamento",
         "risposta": True,
+        "riassunto": "Due ruote → interruttore di emergenza su ON per avviare?",
         "spiegazione": "VERO. Se l'interruttore di emergenza è su 'OFF' (spento), il motore non può avviarsi perché non riceve corrente. Per accendere la moto, devi assicurarti che sia su 'ON' (acceso/avviamento).",
         "regola": "ON per partire, OFF per fermare.",
         "trabocchetti": ["necessario"],
@@ -1717,6 +1965,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, l'interruttore di emergenza permette lo spegnimento del motore senza staccare le mani dal manubrio",
         "risposta": True,
+        "riassunto": "Interruttore di emergenza → spegnere senza togliere le mani?",
         "spiegazione": "VERO. Questo è uno dei vantaggi principali dell'interruttore di emergenza. Essendo sul manubrio, ti permette di spegnere il motore senza togliere le mani dalle manopole, mantenendo il controllo del veicolo in situazioni critiche.",
         "regola": "Mani sul manubrio, motore spento.",
         "trabocchetti": ["senza staccare le mani dal manubrio"],
@@ -1724,12 +1973,14 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, l'interruttore di emergenza, permette lo spegnimento del motore qualora ci si arresti su strade a forti pendenze avendo le mani occupate sulle leve di comando",
         "risposta": True,
+        "riassunto": "Interruttore di emergenza → spegnere in salita con le mani sulle leve?",
         "spiegazione": "VERO. Immagina di fermarti su una salita o discesa molto ripida: le tue mani sono impegnate a tenere i freni per non far muovere la moto. In questa situazione, l'interruttore di emergenza ti permette di spegnere il motore facilmente, senza dover lasciare le leve dei freni.",
         "regola": "Pendenza e mani occupate? Kill switch!",
     },
     {
         "domanda": "L'interruttore di emergenza di cui sono muniti i veicoli a motore a due ruote, se guasto, deve essere riparato al più presto",
         "risposta": True,
+        "riassunto": "Interruttore di emergenza guasto → ripararlo presto?",
         "spiegazione": "VERO. L'interruttore di emergenza è un dispositivo di sicurezza. Se non funziona bene (è guasto), la tua moto non è sicura al 100%. Per questo motivo, è fondamentale farlo riparare il prima possibile per garantire la tua sicurezza e quella degli altri.",
         "regola": "Sicurezza non aspetta, ripara subito.",
         "trabocchetti": ["deve essere riparato al più presto"],
@@ -1737,6 +1988,7 @@ QUESTIONS = [
     {
         "domanda": "Su un motociclo, per lo spegnimento del motore nelle situazioni ordinarie, è preferibile utilizzare la chiave di accensione anziché l'interruttore di emergenza",
         "risposta": True,
+        "riassunto": "Moto → spegnere di solito con la chiave?",
         "spiegazione": "VERO. L'interruttore di emergenza è pensato per le emergenze. Per spegnere la moto normalmente, quando non c'è fretta o pericolo, è meglio usare la chiave di accensione. Questo aiuta a preservare l'interruttore di emergenza e spesso blocca anche lo sterzo, aumentando la sicurezza del veicolo parcheggiato.",
         "regola": "Ordinario = chiave. Emergenza = kill switch.",
         "trabocchetti": ["situazioni ordinarie", "è preferibile"],
@@ -1744,6 +1996,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, l'interruttore di emergenza posto sul manubrio sostituisce il dispositivo di accensione a chiave",
         "risposta": False,
+        "riassunto": "Interruttore di emergenza → sostituisce la chiave?",
         "spiegazione": "FALSO. L'interruttore di emergenza non sostituisce la chiave. La chiave serve per accendere la moto, bloccare lo sterzo e spegnere il motore in modo normale. L'interruttore di emergenza è un dispositivo aggiuntivo per spegnere il motore velocemente in caso di necessità, ma non può fare tutte le funzioni della chiave.",
         "regola": "Non sostituisce, ma aiuta.",
         "trabocchetti": ["sostituisce"],
@@ -1751,6 +2004,7 @@ QUESTIONS = [
     {
         "domanda": "Per facilitare lo spegnimento del motore, i veicoli a motore a due ruote sono equipaggiati di un interruttore d'emergenza posto sulla pedivella del cambio",
         "risposta": False,
+        "riassunto": "Interruttore di emergenza → sulla pedivella del cambio?",
         "spiegazione": "FALSO. L'interruttore di emergenza si trova sul manubrio, non sulla pedivella del cambio. La pedivella del cambio serve per cambiare le marce con il piede.",
         "regola": "Kill switch sul manubrio, non sul cambio.",
         "trabocchetti": ["sulla pedivella del cambio"],
@@ -1758,6 +2012,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, l'interruttore d'emergenza permette il blocco istantaneo delle ruote",
         "risposta": False,
+        "riassunto": "Interruttore di emergenza → blocca le ruote?",
         "spiegazione": "FALSO. L'interruttore di emergenza serve solo a spegnere il motore. Non ha nessuna funzione che blocca le ruote. Bloccare le ruote all'improvviso sarebbe molto pericoloso e causerebbe una caduta.",
         "regola": "Spegne il motore, non blocca le ruote.",
         "trabocchetti": ["blocco istantaneo delle ruote"],
@@ -1765,6 +2020,7 @@ QUESTIONS = [
     {
         "domanda": "L'interruttore di emergenza posto sul cavalletto laterale, serve per spegnere il motore del motociclo sulle strade in pendenza",
         "risposta": False,
+        "riassunto": "Interruttore sul cavalletto laterale → spegnere in pendenza?",
         "spiegazione": "FALSO. L'interruttore di emergenza è sul manubrio. Sul cavalletto laterale a volte c'è un sensore che spegne il motore se provi a partire con il cavalletto abbassato, ma non è l'interruttore di emergenza e non serve per le pendenze.",
         "regola": "Kill switch sul manubrio, non sul cavalletto.",
         "trabocchetti": ["posto sul cavalletto laterale"],
@@ -1772,12 +2028,14 @@ QUESTIONS = [
     {
         "domanda": "Per facilitare lo spegnimento del motore, i veicoli a motore a due ruote sono equipaggiati di un interruttore d'emergenza azionabile con la pressione del piede destro",
         "risposta": False,
+        "riassunto": "Interruttore di emergenza → col piede destro?",
         "spiegazione": "FALSO. L'interruttore di emergenza si aziona con la mano, perché si trova sul manubrio. Non si usa con il piede.",
         "regola": "Kill switch a mano, non a piede.",
     },
     {
         "domanda": "Nei veicoli a motore a due ruote, l'interruttore d'emergenza ha la funzione di freno di stazionamento",
         "risposta": False,
+        "riassunto": "Interruttore di emergenza → freno di stazionamento?",
         "spiegazione": "FALSO. L'interruttore di emergenza serve solo a spegnere il motore. Non ha nulla a che fare con i freni o con il freno di stazionamento (che blocca la moto quando è ferma, come il freno a mano in auto).",
         "regola": "Spegne il motore, non frena.",
         "trabocchetti": ["funzione di freno di stazionamento"],
@@ -1785,6 +2043,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, l'interruttore d'emergenza è collegato con l'antifurto del veicolo",
         "risposta": False,
+        "riassunto": "Interruttore di emergenza → collegato all'antifurto?",
         "spiegazione": "FALSO. L'interruttore di emergenza è un sistema per spegnere il motore. L'antifurto è un sistema per proteggere la moto dai furti (ad esempio, con un allarme o un blocco motore). Sono due sistemi diversi e non sono collegati tra loro.",
         "regola": "Spegne il motore, non è un antifurto.",
         "trabocchetti": ["collegato con l"],
@@ -1792,6 +2051,7 @@ QUESTIONS = [
     {
         "domanda": "Ai fini della sicurezza della circolazione, nei veicoli a motore a due ruote è opportuno verificare periodicamente l'usura della catena di trasmissione",
         "risposta": True,
+        "riassunto": "Catena di trasmissione → controllarne l'usura?",
         "spiegazione": "Per la tua sicurezza e quella degli altri, è importante controllare spesso se la catena della moto è consumata. Una catena consumata può rompersi o funzionare male, creando pericoli.",
         "regola": "Catena consumata = pericolo. Controlla sempre!",
         "trabocchetti": ["è opportuno verificare periodicamente"],
@@ -1799,6 +2059,7 @@ QUESTIONS = [
     {
         "domanda": "La catena di trasmissione dei veicoli a motore a due ruote, se non lubrificata, può essere soggetta a rottura",
         "risposta": True,
+        "riassunto": "Catena non lubrificata → può rompersi?",
         "spiegazione": "Se la catena non ha abbastanza olio (non è lubrificata), si 'grippa' e si usura più velocemente. Questo aumenta molto il rischio che si rompa mentre guidi, causando un incidente.",
         "regola": "Catena secca = catena rotta. Olio sempre!",
         "trabocchetti": ["se non lubrificata"],
@@ -1806,12 +2067,14 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, la catena di trasmissione collega il pignone motore alla corona della ruota",
         "risposta": True,
+        "riassunto": "Catena → collega pignone e corona?",
         "spiegazione": "La catena serve a portare la forza dal motore (tramite il pignone, che è un piccolo ingranaggio) alla ruota posteriore (tramite la corona, che è un ingranaggio più grande), facendo muovere la moto.",
         "regola": "Catena = ponte tra motore e ruota.",
     },
     {
         "domanda": "Ai fini della sicurezza, nei veicoli a motore a due ruote, è opportuno verificare periodicamente che la catena di trasmissione sia ben lubrificata",
         "risposta": True,
+        "riassunto": "Catena → controllare la lubrificazione?",
         "spiegazione": "Controllare spesso che la catena abbia l'olio giusto è fondamentale per la sicurezza. Una catena ben lubrificata dura di più, funziona meglio e riduce il rischio di rotture improvvise.",
         "regola": "Catena lubrificata = guida sicura.",
         "trabocchetti": ["ben lubrificata", "opportuno verificare periodicamente"],
@@ -1819,6 +2082,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, è opportuno verificare periodicamente la corretta tensione della catena di trasmissione",
         "risposta": True,
+        "riassunto": "Catena → controllare la tensione?",
         "spiegazione": "La catena non deve essere né troppo tesa né troppo lenta. Se è troppo tesa, si usura e può rompersi. Se è troppo lenta, può saltare o cadere. Per questo, devi controllare la sua tensione regolarmente.",
         "regola": "Tensione giusta = catena felice.",
         "trabocchetti": ["corretta tensione", "opportuno verificare periodicamente"],
@@ -1826,6 +2090,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, la rottura improvvisa della catena di trasmissione può causare il bloccaggio della ruota posteriore, con conseguente perdita del controllo del veicolo",
         "risposta": True,
+        "riassunto": "Catena rotta → ruota posteriore bloccata?",
         "spiegazione": "Se la catena si rompe all'improvviso, può incastrarsi e bloccare la ruota posteriore. Questo ti farebbe perdere il controllo della moto, con un grande pericolo di caduta.",
         "regola": "Catena rotta = ruota bloccata = caduta.",
         "trabocchetti": ["rottura improvvisa"],
@@ -1833,6 +2098,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, se la catena di trasmissione mostra segni di usura occorre sostituirla",
         "risposta": True,
+        "riassunto": "Catena usurata → sostituirla?",
         "spiegazione": "Se vedi che la catena è vecchia, arrugginita, allungata o ha altri segni di usura, non aspettare. Devi cambiarla subito per evitare problemi e pericoli durante la guida.",
         "regola": "Catena usurata = cambia subito!",
         "trabocchetti": ["mostra segni di usura", "occorre sostituirla"],
@@ -1840,6 +2106,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, la catena di trasmissione non necessita di lubrificazione perché è realizzata in acciaio autolubrificante",
         "risposta": False,
+        "riassunto": "Catena → autolubrificante?",
         "spiegazione": "Questa affermazione è falsa. Le catene delle moto hanno sempre bisogno di essere lubrificate con olio specifico. Non sono 'autolubrificanti' e l'acciaio da solo non basta a proteggerle dall'usura.",
         "regola": "Catena = olio. Sempre!",
         "trabocchetti": ["non necessita di lubrificazione", "acciaio autolubrificante"],
@@ -1847,6 +2114,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, la rottura della catena di trasmissione pregiudica la velocità di marcia, ma non la sicurezza",
         "risposta": False,
+        "riassunto": "Catena rotta → solo meno velocità?",
         "spiegazione": "Questa affermazione è falsa. La rottura della catena non solo ti ferma (quindi pregiudica la velocità), ma è anche molto pericolosa perché può bloccare la ruota e farti cadere. La sicurezza è assolutamente compromessa.",
         "regola": "Catena rotta = pericolo, non solo stop.",
         "trabocchetti": ["ma non la sicurezza"],
@@ -1854,12 +2122,14 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, se la catena di trasmissione mostra segni di usura occorre rinforzarla con filo di ferro di tipo idoneo",
         "risposta": False,
+        "riassunto": "Catena usurata → rinforzarla col fil di ferro?",
         "spiegazione": "Questa affermazione è falsa. Non si può 'riparare' una catena usurata con del filo di ferro. È una soluzione improvvisata, pericolosissima e non efficace. Una catena usurata va sempre sostituita con una nuova.",
         "regola": "Catena usurata = sostituisci, non rattoppa.",
     },
     {
         "domanda": "Nei veicoli a motore a due ruote, in caso di sostituzione della catena di trasmissione per usura, non è mai necessario sostituire anche il pignone motore e la corona della ruota",
         "risposta": False,
+        "riassunto": "Cambio catena → mai pignone e corona?",
         "spiegazione": "Questa affermazione è falsa. Quando la catena è molto usurata, anche il pignone (ingranaggio piccolo) e la corona (ingranaggio grande) si consumano. Per avere un sistema di trasmissione efficiente e sicuro, è quasi sempre consigliabile cambiare tutti e tre i componenti insieme (il 'kit trasmissione').",
         "regola": "Catena usurata = kit completo.",
         "trabocchetti": ["mai"],
@@ -1867,6 +2137,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote non è necessario il periodico controllo della tensione della catena di trasmissione, perché la stessa è dotata di tenditore automatico",
         "risposta": False,
+        "riassunto": "Catena → tenditore automatico?",
         "spiegazione": "Questa affermazione è falsa. La maggior parte delle moto non ha un tenditore automatico per la catena di trasmissione. È sempre necessario controllare e regolare manualmente la tensione della catena periodicamente.",
         "regola": "Tensione = controllo manuale.",
         "trabocchetti": ["non è necessario il periodico controllo", "tenditore automatico"],
@@ -1874,18 +2145,21 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli a motore a due ruote, la catena di trasmissione deve essere pulita con detergente sgrassante, ma assolutamente non lubrificata per non far slittare il cambio",
         "risposta": False,
+        "riassunto": "Catena → sgrassare ma non lubrificare?",
         "spiegazione": "Questa affermazione è falsa. È vero che la catena va pulita con un detergente sgrassante, ma dopo la pulizia è FONDAMENTALE lubrificarla. La lubrificazione non fa slittare il cambio, anzi, è essenziale per il buon funzionamento e la durata della catena.",
         "regola": "Pulisci e poi lubrifica. Sempre!",
     },
     {
         "domanda": "Nei veicoli a motore a due ruote, è possibile sostituire il pignone motore e la corona della ruota in modo da modificare il rapporto di trasmissione",
         "risposta": False,
+        "riassunto": "Pignone e corona → cambiarli per modificare il rapporto?",
         "spiegazione": "Questa affermazione è falsa. Anche se tecnicamente si può cambiare il pignone e la corona per modificare come la moto prende velocità, questa modifica non è permessa dalla legge se non è stata approvata per il tuo veicolo. Fare modifiche non autorizzate è illegale e può rendere la moto meno sicura.",
         "regola": "Modifiche tecniche = solo se legali.",
     },
     {
         "domanda": "Nei veicoli a motore a due ruote, il livello dell'olio deve essere controllato a veicolo perfettamente orizzontale, poggiato con le ruote a terra e non sul cavalletto",
         "risposta": True,
+        "riassunto": "Olio su due ruote → in piano a terra, non sul cavalletto?",
         "spiegazione": "Per controllare il livello dell'olio in modo corretto, la moto deve essere dritta, come se ci fossi seduto sopra, con entrambe le ruote a terra. Se la metti sul cavalletto, la moto è inclinata e il livello dell'olio non sarà quello vero.",
         "regola": "Olio: moto dritta, ruote a terra.",
         "trabocchetti": ["perfettamente orizzontale", "non sul cavalletto"],
@@ -1893,6 +2167,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli è necessario verificare periodicamente i livelli di olio motore e liquido freni",
         "risposta": True,
+        "riassunto": "Moto → controllare olio motore e liquido freni?",
         "spiegazione": "Sì, è molto importante controllare regolarmente l'olio del motore e il liquido dei freni. Questi liquidi sono fondamentali per il buon funzionamento e la sicurezza della moto. Un controllo periodico evita problemi.",
         "regola": "Olio e freni: controlla sempre!",
         "trabocchetti": ["periodicamente"],
@@ -1900,6 +2175,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli, il livello del liquido freni si verifica controllando l'apposita vaschetta trasparente",
         "risposta": True,
+        "riassunto": "Liquido freni moto → vaschetta trasparente?",
         "spiegazione": "Il liquido dei freni si trova in una piccola vaschetta, di solito trasparente, che si trova sul manubrio. Guardando questa vaschetta puoi vedere se il livello è tra il minimo e il massimo.",
         "regola": "Liquido freni: guarda la vaschetta trasparente.",
         "trabocchetti": ["vaschetta trasparente"],
@@ -1907,6 +2183,7 @@ QUESTIONS = [
     {
         "domanda": "In alcuni motori di motocicli, il livello dell'olio motore può essere controllato da un'apposita finestrella posta sulla coppa motore",
         "risposta": True,
+        "riassunto": "Olio motore → finestrella sulla coppa?",
         "spiegazione": "Alcune moto hanno una piccola finestra trasparente sul motore (sulla 'coppa') dove puoi vedere il livello dell'olio senza usare l'astina. È un metodo alternativo e comodo.",
         "regola": "Olio: astina o finestrella.",
         "trabocchetti": ["In alcuni motori", "finestrella"],
@@ -1914,6 +2191,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli, il livello del lubrificante va controllato con il veicolo in piano e dopo aver spento il motore da alcuni minuti",
         "risposta": True,
+        "riassunto": "Olio moto → in piano dopo qualche minuto a motore spento?",
         "spiegazione": "Per un controllo corretto, la moto deve essere dritta (in piano) e il motore deve essere spento da un po' di tempo (alcuni minuti). Questo permette all'olio di scendere tutto nella coppa e di dare una lettura precisa.",
         "regola": "Olio: moto dritta, motore freddo.",
         "trabocchetti": ["in piano"],
@@ -1921,6 +2199,7 @@ QUESTIONS = [
     {
         "domanda": "Sui veicoli a motore a due ruote, non vi sono liquidi di cui occorre fare un controllo dei livelli perché i serbatoi sono sigillati",
         "risposta": False,
+        "riassunto": "Due ruote → nessun livello da controllare?",
         "spiegazione": "Questa affermazione è falsa. Anche sulle moto ci sono liquidi importanti da controllare, come l'olio motore, il liquido dei freni e, se la moto è raffreddata a liquido, anche il liquido di raffreddamento. I serbatoi non sono sigillati per sempre.",
         "regola": "Moto: tanti liquidi da controllare!",
         "trabocchetti": ["non vi sono liquidi", "serbatoi sono sigillati"],
@@ -1928,6 +2207,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli, il livello del l'olio motore deve essere controllato con il motore in funzione al minimo e la moto sistemata sul cavalletto",
         "risposta": False,
+        "riassunto": "Olio moto → col motore al minimo sul cavalletto?",
         "spiegazione": "Questa affermazione è falsa. L'olio motore si controlla con il motore spento (perché l'olio deve scendere nella coppa) e con la moto dritta, non sul cavalletto (perché il cavalletto la inclina e la lettura non è corretta).",
         "regola": "Olio: motore spento, moto dritta.",
         "trabocchetti": ["motore in funzione al minimo", "moto sistemata sul cavalletto"],
@@ -1935,6 +2215,7 @@ QUESTIONS = [
     {
         "domanda": "I motocicli non sono dotati di serbatoio del liquido freni perché la frenatura è di tipo puramente meccanico",
         "risposta": False,
+        "riassunto": "Moto → senza liquido freni perché frenatura meccanica?",
         "spiegazione": "Questa affermazione è falsa. La maggior parte dei motocicli moderni ha freni idraulici, che usano un liquido per funzionare. Quindi, hanno un serbatoio per il liquido dei freni. Solo alcuni freni molto vecchi o particolari sono puramente meccanici.",
         "regola": "Freni moto: quasi sempre idraulici, con liquido!",
         "trabocchetti": ["non sono dotati", "puramente meccanico"],
@@ -1942,6 +2223,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli raffreddati ad aria, il livello del liquido di raffreddamento può essere controllato da un'apposita finestrella posta tra le alettature del motore",
         "risposta": False,
+        "riassunto": "Moto raffreddate ad aria → finestrella del liquido di raffreddamento?",
         "spiegazione": "Questa affermazione è falsa. Se una moto è 'raffreddata ad aria', significa che non usa un liquido per raffreddare il motore, ma solo l'aria che passa sulle alette. Quindi, non c'è nessun 'liquido di raffreddamento' da controllare.",
         "regola": "Raffreddamento ad aria = no liquido!",
         "trabocchetti": ["e"],

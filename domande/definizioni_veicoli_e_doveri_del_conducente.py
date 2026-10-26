@@ -1,7 +1,7 @@
 """Domande — Definizioni, veicoli e doveri del conducente.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Definizioni, veicoli e doveri del conducente"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "La strada rappresentata è composta da tre carreggiate",
         "risposta": True,
+        "riassunto": "Strada in figura → composta da tre carreggiate?",
         "spiegazione": "Osservando l'immagine, puoi vedere che la strada è divisa in tre grandi sezioni separate dalle strisce verdi (spartitraffico). Ogni sezione è una 'carreggiata'. Quindi, ci sono tre carreggiate.",
         "regola": "Tre blocchi di strada = tre carreggiate.",
         "immagine": "d1f501c0d8a1a4acd93b.jpg",
@@ -17,6 +18,7 @@ QUESTIONS = [
     {
         "domanda": "La strada rappresentata è composta da otto corsie",
         "risposta": True,
+        "riassunto": "Strada in figura → composta da otto corsie?",
         "spiegazione": "Contiamo le corsie, cioè gli spazi per le auto, separati dalle linee bianche tratteggiate. La carreggiata superiore ha 3 corsie, quella centrale ne ha 2 e quella inferiore ne ha 3. In totale, 3 + 2 + 3 = 8 corsie.",
         "regola": "Conta le linee tratteggiate: 8 corsie.",
         "immagine": "d1f501c0d8a1a4acd93b.jpg",
@@ -24,6 +26,7 @@ QUESTIONS = [
     {
         "domanda": "Nella strada rappresentata le carreggiate laterali sono, di norma, a senso unico",
         "risposta": True,
+        "riassunto": "Strada in figura → carreggiate laterali di norma a senso unico?",
         "spiegazione": "In questo tipo di strada, le due carreggiate ai lati (quella in alto e quella in basso nell'immagine) sono solitamente usate per andare in una sola direzione. Questo aiuta il traffico a scorrere meglio e in sicurezza.",
         "regola": "Carreggiate laterali = senso unico (di solito).",
         "trabocchetti": ["di norma"],
@@ -32,6 +35,7 @@ QUESTIONS = [
     {
         "domanda": "Nella strada rappresentata la carreggiata centrale è, di norma, a doppio senso di circolazione",
         "risposta": True,
+        "riassunto": "Strada in figura → carreggiata centrale di norma a doppio senso?",
         "spiegazione": "La carreggiata al centro, quella con due corsie, di solito permette alle auto di andare in entrambe le direzioni. Questo è utile per collegare le altre carreggiate o per particolari esigenze di traffico.",
         "regola": "Carreggiata centrale = doppio senso (di solito).",
         "trabocchetti": ["di norma"],
@@ -40,6 +44,7 @@ QUESTIONS = [
     {
         "domanda": "La strada rappresentata consente, di norma, il sorpasso anche in curva",
         "risposta": True,
+        "riassunto": "Strada in figura → di norma sorpasso consentito anche in curva?",
         "spiegazione": "Su strade come questa, che hanno più carreggiate e corsie ben separate, è permesso sorpassare anche quando la strada fa una curva. Questo perché di solito c'è buona visibilità e la strada è progettata per la sicurezza anche in curva.",
         "regola": "Strade grandi e divise = sorpasso anche in curva.",
         "trabocchetti": ["di norma"],
@@ -48,6 +53,7 @@ QUESTIONS = [
     {
         "domanda": "La strada rappresentata è composta da quattro carreggiate, tutte a senso unico",
         "risposta": False,
+        "riassunto": "Strada in figura → quattro carreggiate, tutte a senso unico?",
         "spiegazione": "Abbiamo contato tre carreggiate, non quattro. Quindi, l'affermazione che ce ne siano quattro è sbagliata. Inoltre, non tutte sono a senso unico, la centrale può essere a doppio senso.",
         "regola": "Conta bene: sono 3 carreggiate, non 4.",
         "trabocchetti": ["quattro"],
@@ -56,6 +62,7 @@ QUESTIONS = [
     {
         "domanda": "La strada rappresentata è composta da otto carreggiate",
         "risposta": False,
+        "riassunto": "Strada in figura → composta da otto carreggiate?",
         "spiegazione": "La strada ha tre carreggiate, non otto. Otto è il numero delle corsie (gli spazi per le auto), non delle carreggiate (i blocchi principali della strada).",
         "regola": "Carreggiate (blocchi) = 3; Corsie (linee) = 8.",
         "trabocchetti": ["otto", "carreggiate"],
@@ -64,6 +71,7 @@ QUESTIONS = [
     {
         "domanda": "La strada rappresentata, di norma, ha due carreggiate a doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Strada in figura → di norma due carreggiate a doppio senso?",
         "spiegazione": "Di solito, in questo tipo di strada, le carreggiate laterali sono a senso unico. Solo la carreggiata centrale (se lo è) può essere a doppio senso. Quindi, non ci sono due carreggiate a doppio senso.",
         "regola": "Solo una (centrale) può essere doppio senso, non due.",
         "trabocchetti": ["due carreggiate a doppio senso"],
@@ -72,6 +80,7 @@ QUESTIONS = [
     {
         "domanda": "La strada rappresentata è composta da tre corsie",
         "risposta": False,
+        "riassunto": "Strada in figura → composta da tre corsie?",
         "spiegazione": "Le corsie sono otto in totale, non tre. Tre sono le carreggiate, cioè i blocchi principali della strada.",
         "regola": "Corsie (linee) = 8; Carreggiate (blocchi) = 3.",
         "trabocchetti": ["tre", "corsie"],
@@ -80,6 +89,7 @@ QUESTIONS = [
     {
         "domanda": "Nella strada rappresentata, la corsia centrale è a doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Strada in figura → corsia centrale a doppio senso?",
         "spiegazione": "Una singola 'corsia' è sempre a senso unico, serve per andare in una direzione. È la 'carreggiata' (il blocco di strada che contiene più corsie) che può essere a doppio senso, avendo al suo interno corsie per entrambe le direzioni.",
         "regola": "Corsia = sempre un senso. Carreggiata = può essere doppio senso.",
         "trabocchetti": ["la corsia centrale"],
@@ -88,6 +98,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle carreggiate laterali della strada rappresentata è consentita, di norma, l'inversione di marcia",
         "risposta": False,
+        "riassunto": "Carreggiate laterali in figura → inversione di marcia di norma consentita?",
         "spiegazione": "Nelle carreggiate laterali, che di solito sono a senso unico e per traffico veloce, non è permesso fare l'inversione di marcia (girarsi e tornare indietro). Sarebbe molto pericoloso e interromperebbe il flusso del traffico.",
         "regola": "Strade veloci e divise = no inversione di marcia.",
         "immagine": "d1f501c0d8a1a4acd93b.jpg",
@@ -95,6 +106,7 @@ QUESTIONS = [
     {
         "domanda": "Nella strada rappresentata, per ogni senso di marcia, la corsia di destra è, di norma, dedicata alla marcia ordinaria",
         "risposta": True,
+        "riassunto": "Strada in figura, per ogni senso → corsia di destra per la marcia ordinaria?",
         "spiegazione": "In una strada con più corsie per lo stesso senso di marcia, la corsia più a destra è quella che devi usare normalmente per guidare. Le altre corsie (centro e sinistra) servono principalmente per superare altri veicoli.",
         "regola": "Corsia destra = marcia ordinaria.",
         "trabocchetti": ["di norma"],
@@ -103,6 +115,7 @@ QUESTIONS = [
     {
         "domanda": "La strada rappresentata è composta da tre corsie per ogni senso di marcia",
         "risposta": True,
+        "riassunto": "Strada in figura → tre corsie per ogni senso di marcia?",
         "spiegazione": "Guardando l'immagine, puoi contare le corsie: ci sono tre corsie separate da linee tratteggiate per ogni direzione di marcia. Questo significa che la strada è larga e permette a più veicoli di viaggiare affiancati nello stesso senso.",
         "regola": "Conta le linee tratteggiate: 2 linee = 3 corsie.",
         "trabocchetti": ["Composta da"],
@@ -111,6 +124,7 @@ QUESTIONS = [
     {
         "domanda": "Nella strada rappresentata, per ogni senso di marcia, le corsie di centro e di sinistra sono dedicate, di norma, al sorpasso",
         "risposta": True,
+        "riassunto": "Strada in figura, per ogni senso → corsie di centro e sinistra per il sorpasso?",
         "spiegazione": "Se la corsia di destra è per la marcia normale, le corsie di centro e di sinistra sono quelle che si usano per superare altri veicoli. Dopo aver sorpassato, devi tornare nella corsia più a destra libera.",
         "regola": "Centro e sinistra = sorpasso.",
         "trabocchetti": ["di norma"],
@@ -119,6 +133,7 @@ QUESTIONS = [
     {
         "domanda": "La strada rappresentata è composta da una carreggiata",
         "risposta": True,
+        "riassunto": "Strada in figura → composta da una sola carreggiata?",
         "spiegazione": "L'immagine mostra un'unica superficie stradale divisa in due sensi di marcia da una doppia linea continua. Non c'è uno spartitraffico fisico (come un'aiuola o un muretto) che separi le due direzioni. Per questo motivo, si considera una sola carreggiata.",
         "regola": "Senza spartitraffico fisico = una sola carreggiata.",
         "trabocchetti": ["carreggiata"],
@@ -127,6 +142,7 @@ QUESTIONS = [
     {
         "domanda": "Nella strada rappresentata, per ogni senso di marcia, la corsia di centro è dedicata, di norma, alla marcia ordinaria",
         "risposta": False,
+        "riassunto": "Strada in figura, per ogni senso → corsia di centro per la marcia ordinaria?",
         "spiegazione": "Questa affermazione è falsa perché la corsia di centro, come quella di sinistra, è dedicata al sorpasso. La marcia ordinaria si tiene nella corsia più a destra.",
         "regola": "Marcia ordinaria = solo corsia destra.",
         "trabocchetti": ["dedicata"],
@@ -135,6 +151,7 @@ QUESTIONS = [
     {
         "domanda": "Nella strada rappresentata, per ogni senso di marcia, la corsia di destra è dedicata, di norma, al sorpasso",
         "risposta": False,
+        "riassunto": "Strada in figura, per ogni senso → corsia di destra per il sorpasso?",
         "spiegazione": "Questa affermazione è falsa. La corsia di destra è per la marcia normale. Il sorpasso si fa, di norma, a sinistra. Solo in casi eccezionali (come traffico incolonnato e la corsia di destra scorre più velocemente) si può sorpassare a destra, ma non è la regola generale.",
         "regola": "Sorpasso = sinistra, mai destra (di norma).",
         "trabocchetti": ["di norma"],
@@ -143,6 +160,7 @@ QUESTIONS = [
     {
         "domanda": "La strada rappresentata è composta da due carreggiate",
         "risposta": False,
+        "riassunto": "Strada in figura → composta da due carreggiate?",
         "spiegazione": "Questa affermazione è falsa. Come spiegato per la domanda 18325, la strada rappresentata ha una sola carreggiata. La doppia linea continua al centro divide i due sensi di marcia, ma non crea due carreggiate separate, perché manca uno spartitraffico fisico.",
         "regola": "Senza spartitraffico fisico = una sola carreggiata.",
         "immagine": "008b35c4619fe2569f68.jpg",
@@ -150,6 +168,7 @@ QUESTIONS = [
     {
         "domanda": "Nella strada rappresentata, per ogni senso di marcia, la corsia di sinistra è dedicata, di norma, alla marcia ordinaria",
         "risposta": False,
+        "riassunto": "Strada in figura, per ogni senso → corsia di sinistra per la marcia ordinaria?",
         "spiegazione": "Questa affermazione è falsa. La corsia di sinistra è quella più lontana dal bordo della strada e si usa per il sorpasso. Non si deve usare per la marcia ordinaria se le corsie di destra sono libere.",
         "regola": "Corsia sinistra = sorpasso, non marcia ordinaria.",
         "immagine": "008b35c4619fe2569f68.jpg",
@@ -157,6 +176,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata del tipo rappresentato si può sorpassare anche in curva",
         "risposta": True,
+        "riassunto": "Carreggiata in figura → sorpasso consentito anche in curva?",
         "spiegazione": "L'immagine mostra una strada con due carreggiate separate, una per ogni senso di marcia. Questo significa che non c'è rischio di scontrarsi frontalmente con veicoli che vengono dall'altra direzione. Per questo motivo, su strade di questo tipo (come le autostrade o le strade extraurbane principali), è permesso sorpassare anche in curva, perché la visibilità all'interno della propria carreggiata è sufficiente e non ci sono pericoli dall'altro senso di marcia.",
         "regola": "Doppia carreggiata = sorpasso in curva OK.",
         "trabocchetti": ["anche in curva"],
@@ -165,6 +185,7 @@ QUESTIONS = [
     {
         "domanda": "La carreggiata del tipo rappresentato è a doppio senso di circolazione",
         "risposta": True,
+        "riassunto": "Carreggiata in figura → a doppio senso di circolazione?",
         "spiegazione": "L'immagine mostra una strada composta da due carreggiate distinte, separate da una doppia linea continua (o da uno spartitraffico). Ogni carreggiata è a senso unico di circolazione. Tuttavia, la strada nel suo complesso, avendo una carreggiata per andare e una per tornare, è considerata una 'strada a doppio senso di circolazione'.",
         "regola": "Due carreggiate separate = strada a doppio senso.",
         "trabocchetti": ["La carreggiata", "La carreggiata del tipo rappresentato"],
@@ -173,6 +194,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata extraurbana del tipo rappresentato le corsie interne sono, di norma, riservate al sorpasso",
         "risposta": True,
+        "riassunto": "Carreggiata extraurbana in figura → corsie interne riservate al sorpasso?",
         "spiegazione": "Sulle strade extraurbane con più corsie per senso di marcia, la corsia più a destra è quella 'di norma' usata per la marcia normale. Le corsie a sinistra (interne) sono principalmente dedicate al sorpasso. Dopo aver sorpassato, dovresti tornare nella corsia più a destra, se libera.",
         "regola": "Extraurbana, più corsie = destra per marcia, sinistra per sorpasso.",
         "trabocchetti": ["di norma"],
@@ -181,6 +203,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata del tipo rappresentato non si può effettuare l'inversione di marcia",
         "risposta": True,
+        "riassunto": "Carreggiata in figura → inversione di marcia vietata?",
         "spiegazione": "La strada rappresentata ha due carreggiate separate per i due sensi di marcia. Effettuare un'inversione di marcia (fare un'inversione a U) significherebbe attraversare la separazione centrale e immettersi nel flusso di traffico opposto, il che è estremamente pericoloso e vietato su questo tipo di strade.",
         "regola": "Doppia carreggiata = no inversione di marcia.",
         "trabocchetti": ["non si può"],
@@ -189,6 +212,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata extraurbana del tipo rappresentato si può sorpassare indifferentemente sia da destra che da sinistra",
         "risposta": False,
+        "riassunto": "Carreggiata extraurbana in figura → sorpasso indifferentemente a destra o sinistra?",
         "spiegazione": "In Italia, il sorpasso si effettua quasi sempre a sinistra. Sorpassare a destra è permesso solo in situazioni molto specifiche, come quando il veicolo davanti ha segnalato l'intenzione di svoltare a sinistra e si è spostato verso il centro della carreggiata, oppure in caso di traffico intenso dove le corsie si muovono a velocità diverse. Non si può sorpassare 'indifferentemente' da destra o da sinistra.",
         "regola": "Sorpasso = sempre a sinistra (salvo eccezioni).",
         "trabocchetti": ["indifferentemente"],
@@ -197,6 +221,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata extraurbana del tipo rappresentato si può sempre marciare per file parallele",
         "risposta": False,
+        "riassunto": "Carreggiata extraurbana in figura → sempre marcia per file parallele?",
         "spiegazione": "La marcia per file parallele (cioè guidare affiancati su più corsie) è generalmente permessa solo nei centri abitati quando il traffico è intenso, o in prossimità di incroci. Sulle strade extraurbane, anche se a più corsie, si deve normalmente occupare la corsia più a destra e usare le altre solo per il sorpasso. La parola 'sempre' rende la frase falsa.",
         "regola": "Extraurbana = no file parallele (non 'sempre').",
         "trabocchetti": ["sempre"],
@@ -205,6 +230,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata del tipo rappresentato possiamo iniziare un sorpasso anche se il conducente che sta dietro ha già iniziato la stessa manovra",
         "risposta": False,
+        "riassunto": "Carreggiata in figura → iniziare sorpasso se chi segue l'ha già iniziato?",
         "spiegazione": "Prima di iniziare un sorpasso, è fondamentale assicurarsi che la strada sia libera e, soprattutto, che nessun veicolo dietro di te abbia già iniziato la stessa manovra. Se qualcuno dietro ha già iniziato a sorpassarti, devi aspettare e non iniziare la manovra.",
         "regola": "Sorpasso = controlla sempre dietro prima di iniziare.",
         "trabocchetti": ["anche se"],
@@ -213,6 +239,7 @@ QUESTIONS = [
     {
         "domanda": "L'attraversamento pedonale viene segnalato con strisce bianche parallele",
         "risposta": True,
+        "riassunto": "Attraversamento pedonale → strisce bianche parallele?",
         "spiegazione": "Le strisce pedonali sono proprio quelle linee bianche che vedi sull'asfalto, messe una accanto all'altra. Servono a indicare dove i pedoni possono attraversare in sicurezza.",
         "regola": "Strisce bianche = passaggio pedoni.",
         "trabocchetti": ["strisce bianche parallele"],
@@ -220,6 +247,7 @@ QUESTIONS = [
     {
         "domanda": "L'attraversamento pedonale è una parte della carreggiata sulla quale è vietata la fermata dei veicoli",
         "risposta": True,
+        "riassunto": "Attraversamento pedonale → parte della carreggiata → fermata vietata?",
         "spiegazione": "Sulle strisce pedonali non puoi né fermarti né sostare con il veicolo. Devono essere sempre libere per permettere ai pedoni di attraversare senza ostacoli.",
         "regola": "Strisce pedonali = sempre libere.",
         "trabocchetti": ["vietata"],
@@ -227,6 +255,7 @@ QUESTIONS = [
     {
         "domanda": "L'attraversamento pedonale è una parte della carreggiata, in cui i veicoli devono dare la precedenza ai pedoni, che attraversano sulle apposite strisce",
         "risposta": True,
+        "riassunto": "Attraversamento pedonale → nella carreggiata → precedenza ai pedoni sulle strisce?",
         "spiegazione": "Quando un pedone è sulle strisce o sta per salirci, tu con il veicolo devi fermarti e farlo passare. I pedoni hanno sempre la precedenza in questo punto.",
         "regola": "Pedone sulle strisce = precedenza.",
         "trabocchetti": ["devono dare la precedenza"],
@@ -234,6 +263,7 @@ QUESTIONS = [
     {
         "domanda": "L'attraversamento pedonale è una parte della carreggiata destinata al transito dei pedoni che attraversano",
         "risposta": True,
+        "riassunto": "Attraversamento pedonale → parte della carreggiata per i pedoni che attraversano?",
         "spiegazione": "Le strisce pedonali sono create apposta per i pedoni che vogliono passare da un lato all'altro della strada, in un punto sicuro e segnalato.",
         "regola": "Strisce = passaggio pedoni.",
         "trabocchetti": ["destinata al transito dei pedoni"],
@@ -241,6 +271,7 @@ QUESTIONS = [
     {
         "domanda": "L'attraversamento pedonale è una parte della carreggiata sulla quale è vietata la sosta dei veicoli",
         "risposta": True,
+        "riassunto": "Attraversamento pedonale → parte della carreggiata → sosta vietata?",
         "spiegazione": "Come per la fermata, anche la sosta è vietata sulle strisce pedonali. Non puoi lasciare il veicolo lì, nemmeno per un minuto, perché bloccheresti il passaggio ai pedoni.",
         "regola": "Sosta/Fermata sulle strisce = NO.",
         "trabocchetti": ["vietata la sosta"],
@@ -248,6 +279,7 @@ QUESTIONS = [
     {
         "domanda": "L'attraversamento pedonale è una parte della strada, separata dalla carreggiata mediante una striscia gialla",
         "risposta": False,
+        "riassunto": "Attraversamento pedonale → separato dalla carreggiata → con striscia gialla?",
         "spiegazione": "L'attraversamento pedonale fa parte della carreggiata, non è separato da essa. E le strisce sono bianche, non gialle.",
         "regola": "Strisce pedonali = sulla carreggiata, bianche.",
         "trabocchetti": ["separata dalla carreggiata", "striscia gialla"],
@@ -255,6 +287,7 @@ QUESTIONS = [
     {
         "domanda": "L'attraversamento pedonale è una parte della carreggiata vietata al transito dei veicoli",
         "risposta": False,
+        "riassunto": "Attraversamento pedonale → transito dei veicoli vietato?",
         "spiegazione": "I veicoli possono transitare (passare) sull'attraversamento pedonale, ma devono dare la precedenza ai pedoni e non possono fermarsi o sostare. Non è vietato il transito in generale.",
         "regola": "Transito veicoli = sì, ma con precedenza ai pedoni.",
         "trabocchetti": ["vietata al transito dei veicoli"],
@@ -262,6 +295,7 @@ QUESTIONS = [
     {
         "domanda": "L'attraversamento pedonale non fa parte della carreggiata",
         "risposta": False,
+        "riassunto": "Attraversamento pedonale → non fa parte della carreggiata?",
         "spiegazione": "L'attraversamento pedonale è proprio una parte della carreggiata, cioè la parte della strada dove normalmente circolano i veicoli.",
         "regola": "Strisce pedonali = sulla carreggiata.",
         "trabocchetti": ["non fa parte della carreggiata"],
@@ -269,6 +303,7 @@ QUESTIONS = [
     {
         "domanda": "L'attraversamento pedonale è posto al di fuori della carreggiata ed è destinato al transito dei pedoni",
         "risposta": False,
+        "riassunto": "Attraversamento pedonale → fuori dalla carreggiata?",
         "spiegazione": "L'attraversamento pedonale non è 'al di fuori' della carreggiata, ma 'sulla' carreggiata. È destinato ai pedoni, ma la sua posizione è sbagliata nella descrizione.",
         "regola": "Strisce pedonali = sulla carreggiata.",
         "trabocchetti": ["al di fuori della carreggiata"],
@@ -276,6 +311,7 @@ QUESTIONS = [
     {
         "domanda": "L'attraversamento pedonale è una parte della carreggiata in cui è consentita la fermata ma non la sosta dei veicoli",
         "risposta": False,
+        "riassunto": "Attraversamento pedonale → fermata consentita ma sosta no?",
         "spiegazione": "Sulle strisce pedonali sono vietate sia la fermata che la sosta. Non puoi fermarti nemmeno per un attimo, perché ostacoleresti il passaggio dei pedoni.",
         "regola": "Fermata/Sosta sulle strisce = MAI.",
         "trabocchetti": ["consentita la fermata"],
@@ -283,6 +319,7 @@ QUESTIONS = [
     {
         "domanda": "Le strade extraurbane principali sono a carreggiate separate",
         "risposta": True,
+        "riassunto": "Extraurbane principali → carreggiate separate?",
         "spiegazione": "Sì, le strade extraurbane principali sono costruite con due carreggiate separate, una per ogni senso di marcia. Questo le rende più sicure e permette di viaggiare a velocità più elevate.",
         "regola": "Principali = Due strade, non una.",
         "trabocchetti": ["carreggiate separate"],
@@ -290,6 +327,7 @@ QUESTIONS = [
     {
         "domanda": "Le strade extraurbane principali sono dotate di apposite aree di sosta",
         "risposta": True,
+        "riassunto": "Extraurbane principali → aree di sosta apposite?",
         "spiegazione": "Esatto, come le autostrade, anche le strade extraurbane principali devono avere delle aree dove i veicoli possono fermarsi in sicurezza, per una pausa o in caso di emergenza.",
         "regola": "Sosta sicura = Sì, come in autostrada.",
         "trabocchetti": ["Apposite aree di sosta"],
@@ -297,6 +335,7 @@ QUESTIONS = [
     {
         "domanda": "La strada extraurbana principale non ha incroci a raso che l'attraversano",
         "risposta": True,
+        "riassunto": "Extraurbana principale → senza incroci a raso?",
         "spiegazione": "Vero. Per garantire la massima sicurezza e fluidità del traffico, su queste strade non ci sono incroci dove le strade si incontrano allo stesso livello. Gli accessi avvengono tramite rampe e svincoli.",
         "regola": "Niente incroci a terra!",
         "trabocchetti": ["Incroci a raso"],
@@ -304,6 +343,7 @@ QUESTIONS = [
     {
         "domanda": "Le strade extraurbane principali sono segnalate da cartelli stradali di inizio e fine",
         "risposta": True,
+        "riassunto": "Extraurbane principali → cartelli di inizio e fine?",
         "spiegazione": "Sì, come per ogni tipo di strada con regole speciali, ci sono cartelli specifici che indicano chiaramente dove inizia e dove finisce una strada extraurbana principale. Questo aiuta i conducenti a capire le regole di quella strada.",
         "regola": "Inizio/Fine = Sempre segnalate.",
         "trabocchetti": ["Cartelli stradali di inizio e fine"],
@@ -311,6 +351,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle strade extraurbane principali possono circolare solo alcune categorie di veicoli a motore",
         "risposta": True,
+        "riassunto": "Extraurbane principali → solo alcune categorie di veicoli a motore?",
         "spiegazione": "Vero. Non tutti i veicoli possono circolare su queste strade. Ad esempio, i ciclomotori o i quadricicli leggeri non sono ammessi perché sono troppo lenti e potrebbero creare pericolo per il traffico veloce.",
         "regola": "Solo i 'veloci' possono entrare.",
         "trabocchetti": ["Solo alcune categorie di veicoli"],
@@ -318,12 +359,14 @@ QUESTIONS = [
     {
         "domanda": "Nelle strade extraurbane principali si possono trovare intersezioni (incroci) a livelli sfalsati",
         "risposta": True,
+        "riassunto": "Extraurbane principali → incroci a livelli sfalsati?",
         "spiegazione": "Sì, per evitare gli incroci 'a raso' (allo stesso livello), le strade extraurbane principali usano incroci 'a livelli sfalsati', cioè con ponti o sottopassi. Questo migliora la sicurezza e la scorrevolezza.",
         "regola": "Incroci 'alti e bassi' = Sì.",
     },
     {
         "domanda": "Le strade extraurbane principali sono provviste di corsie di accelerazione per l'ingresso",
         "risposta": True,
+        "riassunto": "Extraurbane principali → corsie di accelerazione per l'ingresso?",
         "spiegazione": "Vero. Per entrare in sicurezza su una strada extraurbana principale, dove si viaggia a velocità elevate, ci sono corsie speciali per accelerare e immettersi nel flusso del traffico senza creare pericoli.",
         "regola": "Entri veloce = Corsia per accelerare.",
         "trabocchetti": ["Corsie di accelerazione per l"],
@@ -331,6 +374,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle strade extraurbane principali è consentito circolare alla velocità massima di 130 km/h",
         "risposta": False,
+        "riassunto": "Extraurbane principali → velocità massima 130 km/h?",
         "spiegazione": "Falso! Attenzione, questa è una domanda 'trappola' sulla velocità. La velocità massima sulle strade extraurbane principali è di 110 km/h. I 130 km/h sono per le autostrade (salvo diverse indicazioni).",
         "regola": "Extraurbane Principali = 110 km/h.",
         "trabocchetti": ["130 km/h"],
@@ -338,6 +382,7 @@ QUESTIONS = [
     {
         "domanda": "Le strade extraurbane principali sono contraddistinte da segnaletica verde",
         "risposta": False,
+        "riassunto": "Extraurbane principali → segnaletica verde?",
         "spiegazione": "Falso. La segnaletica verde è tipica delle autostrade. Le strade extraurbane principali sono contraddistinte da segnaletica di colore blu.",
         "regola": "Verde = Autostrada. Blu = Extraurbana.",
         "trabocchetti": ["Segnaletica verde"],
@@ -345,6 +390,7 @@ QUESTIONS = [
     {
         "domanda": "Le strade extraurbane principali possono essere ad un'unica carreggiata",
         "risposta": False,
+        "riassunto": "Extraurbane principali → anche a un'unica carreggiata?",
         "spiegazione": "Falso! Una delle caratteristiche più importanti delle strade extraurbane principali è che hanno sempre due carreggiate separate, una per ogni senso di marcia. Non possono essere ad un'unica carreggiata.",
         "regola": "Principali = Sempre due carreggiate.",
         "trabocchetti": ["unica carreggiata"],
@@ -352,12 +398,14 @@ QUESTIONS = [
     {
         "domanda": "Sulle strade extraurbane principali è consentito circolare alla stessa velocità massima prevista per le autostrade",
         "risposta": False,
+        "riassunto": "Extraurbane principali → stesso limite massimo delle autostrade?",
         "spiegazione": "Falso. La velocità massima è diversa. Sulle autostrade è 130 km/h (salvo diverse indicazioni), mentre sulle strade extraurbane principali è 110 km/h. Non confondere le due categorie!",
         "regola": "Velocità diverse: Autostrada > Extraurbana Principale.",
     },
     {
         "domanda": "Sulle strade extraurbane principali i quadricicli leggeri possono transitare",
         "risposta": False,
+        "riassunto": "Extraurbane principali → transito dei quadricicli leggeri?",
         "spiegazione": "Falso. I quadricicli leggeri (le 'macchinine' che non richiedono la patente B) sono veicoli troppo lenti e non possono circolare sulle strade extraurbane principali, proprio come i ciclomotori.",
         "regola": "Lenti (quadricicli leggeri, ciclomotori) = No.",
         "trabocchetti": ["Quadricicli leggeri possono transitare"],
@@ -365,6 +413,7 @@ QUESTIONS = [
     {
         "domanda": "Le strade extraurbane principali hanno una sola corsia per ogni senso di marcia",
         "risposta": False,
+        "riassunto": "Extraurbane principali → una sola corsia per senso di marcia?",
         "spiegazione": "Falso. Le strade extraurbane principali hanno almeno due corsie per ogni senso di marcia, più la corsia di emergenza. Non hanno mai una sola corsia per direzione, altrimenti non sarebbero 'principali' e veloci.",
         "regola": "Principali = Più di una corsia per direzione.",
         "trabocchetti": ["Una sola corsia per ogni senso di marcia"],
@@ -372,6 +421,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle strade extraurbane principali i ciclomotori possono transitare",
         "risposta": False,
+        "riassunto": "Extraurbane principali → transito dei ciclomotori?",
         "spiegazione": "Falso. I ciclomotori sono veicoli troppo lenti per circolare in sicurezza sulle strade extraurbane principali, dove le velocità sono elevate. È vietato il loro transito.",
         "regola": "Ciclomotori = Troppo lenti, vietato.",
         "trabocchetti": ["Ciclomotori possono transitare"],
@@ -379,6 +429,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle strade extraurbane principali non vi sono curve né dossi",
         "risposta": False,
+        "riassunto": "Extraurbane principali → nessuna curva né dosso?",
         "spiegazione": "Falso. Anche se sono progettate per essere molto scorrevoli e sicure, possono esserci curve e dossi. L'affermazione 'non vi sono' è troppo assoluta e quindi falsa. Sono progettati per essere affrontati in sicurezza ad alta velocità, ma ci sono.",
         "regola": "'Mai' o 'non vi sono' = Attenzione, quasi sempre FALSO.",
         "trabocchetti": ["non vi sono"],
@@ -386,6 +437,7 @@ QUESTIONS = [
     {
         "domanda": "Le strade extraurbane principali devono essere dotate di pannelli a messaggio variabile",
         "risposta": False,
+        "riassunto": "Extraurbane principali → obbligo di pannelli a messaggio variabile?",
         "spiegazione": "Falso. Non è obbligatorio che tutte le strade extraurbane principali abbiano i pannelli a messaggio variabile. Questi sono più comuni sulle autostrade o in tratti particolarmente trafficati, ma non sono un requisito per tutte le extraurbane principali.",
         "regola": "'Devono' = Controlla l'obbligo. Non sempre vero.",
         "trabocchetti": ["devono"],
@@ -393,6 +445,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico serve a facilitare l'incanalamento dei veicoli verso varie direzioni",
         "risposta": True,
+        "riassunto": "Isola di traffico → incanala i veicoli verso varie direzioni?",
         "spiegazione": "L'isola di traffico è una parte della strada fatta apposta per guidare i veicoli e aiutarli a prendere la direzione giusta, specialmente negli incroci o dove ci sono più corsie. È come un 'divisore' che ti indica dove andare.",
         "regola": "Isola = Guida il traffico.",
         "trabocchetti": ["facilitare l"],
@@ -400,6 +453,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico è delimitata da strisce bianche continue",
         "risposta": True,
+        "riassunto": "Isola di traffico → delimitata da strisce bianche continue?",
         "spiegazione": "Sì, l'isola di traffico è sempre ben visibile perché i suoi bordi sono segnati con strisce bianche continue. Questo serve a far capire ai guidatori che non possono passarci sopra.",
         "regola": "Isola = Bordi bianchi continui.",
         "trabocchetti": ["Delimitata da strisce bianche continue"],
@@ -407,6 +461,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico può essere a raso o in rilievo (rialzata)",
         "risposta": True,
+        "riassunto": "Isola di traffico → a raso o rialzata?",
         "spiegazione": "Esatto, ci sono due tipi di isole di traffico: quelle 'a raso' sono solo disegnate sull'asfalto con delle strisce, mentre quelle 'in rilievo' sono un po' più alte, come un piccolo marciapiede, e si vedono e si sentono di più.",
         "regola": "Isola = Piatta o Rialzata.",
         "trabocchetti": ["A raso o in rilievo"],
@@ -414,6 +469,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico viene evidenziata mediante zebrature di colore bianco",
         "risposta": True,
+        "riassunto": "Isola di traffico → zebrature bianche?",
         "spiegazione": "Le 'zebrature di colore bianco' sono quelle strisce oblique bianche che vedi disegnate sull'isola, specialmente se è a raso. Servono a renderla ancora più visibile e a far capire che è una zona dove non si può passare.",
         "regola": "Isola = Strisce bianche oblique.",
         "trabocchetti": ["Zebrature di colore bianco"],
@@ -421,6 +477,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico è una parte della strada sulla quale è vietato il transito dei motocicli",
         "risposta": True,
+        "riassunto": "Isola di traffico → vietata solo ai motocicli?",
         "spiegazione": "Sull'isola di traffico è vietato il transito a *tutti* i veicoli, inclusi i motocicli. Non è una zona dove si può circolare o passare sopra.",
         "regola": "Isola = No mezzi, nemmeno moto.",
         "trabocchetti": ["vietato"],
@@ -428,6 +485,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico a raso è costituita da zebrature di colore bianco",
         "risposta": True,
+        "riassunto": "Isola di traffico a raso → zebrature bianche?",
         "spiegazione": "Se l'isola di traffico non è rialzata (cioè è 'a raso'), è fatta solo con le 'zebrature di colore bianco' disegnate sull'asfalto. Questo la rende visibile anche se non ha un bordo fisico.",
         "regola": "Isola piatta = Solo strisce.",
         "trabocchetti": ["A raso è costituita da zebrature"],
@@ -435,6 +493,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico, se rialzata, è preceduta da zebrature di colore bianco",
         "risposta": True,
+        "riassunto": "Isola di traffico rialzata → preceduta da zebrature bianche?",
         "spiegazione": "Anche se l'isola è rialzata, spesso prima di arrivarci trovi delle 'zebrature di colore bianco' sull'asfalto. Queste servono come un avviso per i guidatori, per far capire che sta per iniziare l'isola e che devono fare attenzione.",
         "regola": "Isola alta = Avviso strisce.",
         "trabocchetti": ["Preceduta da zebrature"],
@@ -442,6 +501,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico è una parte della strada sulla quale è vietato il transito dei veicoli",
         "risposta": True,
+        "riassunto": "Isola di traffico → transito dei veicoli vietato?",
         "spiegazione": "Questa è la regola più importante: sull'isola di traffico è assolutamente 'vietato il transito dei veicoli'. Nessun veicolo, di nessun tipo, può passare sopra o attraversarla.",
         "regola": "Isola = Divieto totale.",
         "trabocchetti": ["Vietato il transito dei veicoli"],
@@ -449,6 +509,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico serve a separare la carreggiata dalla banchina",
         "risposta": False,
+        "riassunto": "Isola di traffico → separa carreggiata e banchina?",
         "spiegazione": "Falso. L'isola di traffico si trova *dentro* la carreggiata (la parte della strada dove si circola) per guidare il traffico. La banchina è il bordo della strada, fuori dalla carreggiata, e l'isola non ha la funzione di separarle.",
         "regola": "Isola = Dentro la strada, non ai bordi.",
         "trabocchetti": ["Separare la carreggiata dalla banchina"],
@@ -456,6 +517,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico serve per il transito dei pedoni",
         "risposta": False,
+        "riassunto": "Isola di traffico → per il transito dei pedoni?",
         "spiegazione": "Falso. L'isola di traffico non è fatta per i pedoni. I pedoni devono usare i marciapiedi o gli attraversamenti pedonali. Camminare sull'isola di traffico è pericoloso e vietato.",
         "regola": "Isola = No pedoni.",
         "trabocchetti": ["Transito dei pedoni"],
@@ -463,6 +525,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico è una piazzola di sosta per i veicoli",
         "risposta": False,
+        "riassunto": "Isola di traffico → piazzola di sosta?",
         "spiegazione": "Falso. Sull'isola di traffico è vietato il transito, quindi è vietato anche fermarsi o sostare. Non è assolutamente un posto dove parcheggiare o aspettare.",
         "regola": "Isola = No sosta.",
         "trabocchetti": ["Piazzola di sosta"],
@@ -470,6 +533,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico può essere percorsa solo dai taxi e dagli autobus urbani",
         "risposta": False,
+        "riassunto": "Isola di traffico → percorribile solo da taxi e autobus?",
         "spiegazione": "Falso. Ricorda la regola generale: è vietato il transito a *tutti* i veicoli, senza eccezioni. Nemmeno taxi o autobus urbani possono passare sopra l'isola di traffico.",
         "regola": "Isola = Divieto per TUTTI.",
         "trabocchetti": ["solo dai taxi e dagli autobus urbani"],
@@ -477,6 +541,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico è la parte della città con maggiore traffico",
         "risposta": False,
+        "riassunto": "Isola di traffico → zona della città con più traffico?",
         "spiegazione": "Falso. 'Isola di traffico' è un nome tecnico per una struttura stradale specifica, non indica una zona della città dove c'è molto traffico. Può esserci traffico anche dove non ci sono isole.",
         "regola": "Isola = Struttura, non zona trafficata.",
         "trabocchetti": ["Parte della città con maggiore traffico"],
@@ -484,6 +549,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico corrisponde, in genere, al centro storico della città",
         "risposta": False,
+        "riassunto": "Isola di traffico → centro storico della città?",
         "spiegazione": "Falso. L'isola di traffico è un elemento della strada che può trovarsi in qualsiasi punto, non è legata al centro storico della città. Si trova dove serve per regolare il flusso dei veicoli.",
         "regola": "Isola = Struttura, non luogo storico.",
         "trabocchetti": ["Centro storico della città"],
@@ -491,6 +557,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico è una piazzola per effettuare l'inversione di marcia",
         "risposta": False,
+        "riassunto": "Isola di traffico → piazzola per l'inversione di marcia?",
         "spiegazione": "Falso. Sull'isola di traffico è vietato il transito e qualsiasi manovra, inclusa l'inversione di marcia. Non è un'area pensata per fare manovre.",
         "regola": "Isola = No inversioni.",
         "trabocchetti": ["Piazzola per effettuare l"],
@@ -498,6 +565,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico è posta al di fuori della strada",
         "risposta": False,
+        "riassunto": "Isola di traffico → fuori dalla strada?",
         "spiegazione": "Falso. L'isola di traffico è sempre *dentro* la strada, fa parte della carreggiata, anche se non ci si può passare sopra. Non è mai 'al di fuori' della strada.",
         "regola": "Isola = Parte della strada.",
         "trabocchetti": ["Al di fuori della strada"],
@@ -505,6 +573,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico serve per la fermata dei veicoli",
         "risposta": False,
+        "riassunto": "Isola di traffico → per la fermata dei veicoli?",
         "spiegazione": "Falso. Come per la sosta e il transito, anche la 'fermata dei veicoli' è vietata sull'isola di traffico. Non è un posto dove ci si può fermare, nemmeno per un breve momento.",
         "regola": "Isola = No fermata.",
         "trabocchetti": ["Fermata dei veicoli"],
@@ -512,12 +581,14 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico facilita la salita e la discesa di passeggeri da tram, filobus e autobus",
         "risposta": False,
+        "riassunto": "Isola di traffico → salita e discesa da tram e autobus?",
         "spiegazione": "Falso. Questa descrizione si riferisce al 'salvagente', che è una parte della strada rialzata per proteggere i passeggeri che salgono o scendono da mezzi pubblici. L'isola di traffico ha una funzione diversa, legata alla guida dei veicoli.",
         "regola": "Isola = No passeggeri (quella è il salvagente).",
     },
     {
         "domanda": "L'isola di traffico è una zona destinata al parcheggio dei veicoli",
         "risposta": False,
+        "riassunto": "Isola di traffico → zona di parcheggio?",
         "spiegazione": "Falso. È vietato il transito, la sosta e la fermata, quindi è ovviamente vietato anche il 'parcheggio dei veicoli'. L'isola di traffico non è un'area di parcheggio.",
         "regola": "Isola = No parcheggio.",
         "trabocchetti": ["Zona destinata al parcheggio"],
@@ -525,6 +596,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico è un'area pedonale urbana",
         "risposta": False,
+        "riassunto": "Isola di traffico → area pedonale urbana?",
         "spiegazione": "Falso. Un'area pedonale urbana è una zona dove possono circolare solo i pedoni. L'isola di traffico è una struttura stradale per guidare i veicoli, non un'area dedicata ai pedoni.",
         "regola": "Isola = Struttura, non zona pedonale.",
         "trabocchetti": ["Area pedonale urbana"],
@@ -532,6 +604,7 @@ QUESTIONS = [
     {
         "domanda": "L'isola di traffico è una parte della strada sulla quale è consentito il transito dei ciclomotori",
         "risposta": False,
+        "riassunto": "Isola di traffico → transito consentito ai ciclomotori?",
         "spiegazione": "Falso. Ricorda la regola generale: è 'vietato' il transito di *qualsiasi* veicolo sull'isola di traffico, inclusi i ciclomotori. La parola 'consentito' rende la frase falsa.",
         "regola": "Isola = Divieto per TUTTI i veicoli.",
         "trabocchetti": ["consentito"],
@@ -539,12 +612,14 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione (incrocio) a livelli sfalsati comprende strade situate ad altezze diverse",
         "risposta": True,
+        "riassunto": "Incrocio a livelli sfalsati → strade ad altezze diverse?",
         "spiegazione": "VERO. Un'intersezione a livelli sfalsati significa che le strade non si incontrano sullo stesso piano, ma una passa sopra o sotto l'altra. Quindi, le strade sono a diverse altezze.",
         "regola": "Sfalsati = altezze diverse.",
     },
     {
         "domanda": "L'intersezione (incrocio) a livelli sfalsati facilita la circolazione, perché esclude l'incrocio diretto fra i veicoli",
         "risposta": True,
+        "riassunto": "Incrocio a livelli sfalsati → niente incrocio diretto fra veicoli?",
         "spiegazione": "VERO. Il vantaggio principale di un incrocio a livelli sfalsati è che i veicoli non si incrociano direttamente sullo stesso piano. Questo rende il traffico più scorrevole e sicuro, perché non ci sono punti di conflitto diretti che richiederebbero stop o precedenze.",
         "regola": "Sfalsati = niente incrocio diretto = più fluido.",
         "trabocchetti": ["esclude l"],
@@ -552,6 +627,7 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione (incrocio) a livelli sfalsati comprende rampe, sovrappassi o sottopassi",
         "risposta": True,
+        "riassunto": "Incrocio a livelli sfalsati → rampe, sovrappassi o sottopassi?",
         "spiegazione": "VERO. Per collegare le strade che si trovano a livelli diversi, sono necessarie delle strutture specifiche. Le rampe permettono di salire o scendere, i sovrappassi sono ponti che passano sopra e i sottopassi sono gallerie che passano sotto.",
         "regola": "Sfalsati = rampe, ponti, gallerie.",
         "trabocchetti": ["rampe, sovrappassi o sottopassi"],
@@ -559,6 +635,7 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione (incrocio) a livelli sfalsati è munita di infrastrutture (rampe, sovrappassi, sottopassi) per il collegamento fra strade poste a livelli diversi",
         "risposta": True,
+        "riassunto": "Incrocio a livelli sfalsati → infrastrutture di collegamento fra livelli?",
         "spiegazione": "VERO. Questa domanda ribadisce il concetto precedente. Le 'infrastrutture' come rampe, sovrappassi e sottopassi sono proprio gli elementi che permettono ai veicoli di spostarsi tra le strade poste a livelli differenti.",
         "regola": "Sfalsati = infrastrutture per collegare i livelli.",
         "trabocchetti": ["Infrastrutture"],
@@ -566,6 +643,7 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione a livelli sfalsati è un incrocio a raso fra una strada e i binari del treno",
         "risposta": False,
+        "riassunto": "Incrocio a livelli sfalsati → incrocio a raso con binari del treno?",
         "spiegazione": "FALSO. Un incrocio 'a raso' significa che le strade (o strada e binari) si incontrano allo stesso livello. Un incrocio a livelli sfalsati è l'esatto contrario: le strade sono a livelli diversi. L'incrocio a raso con i binari del treno si chiama 'passaggio a livello'.",
         "regola": "Sfalsati ≠ a raso.",
         "trabocchetti": ["a raso"],
@@ -573,6 +651,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione (incrocio) a livelli sfalsati non valgono i limiti massimi generali di velocità",
         "risposta": False,
+        "riassunto": "Incrocio a livelli sfalsati → limiti di velocità non validi?",
         "spiegazione": "FALSO. I limiti di velocità generali (ad esempio, 50 km/h in città, 90 km/h fuori città, 130 km/h in autostrada) valgono sempre, a meno che non ci siano segnali specifici che indicano un limite diverso. Un incrocio a livelli sfalsati non è un'eccezione a questa regola.",
         "regola": "Limiti = valgono sempre, anche negli incroci sfalsati.",
         "trabocchetti": ["non valgono"],
@@ -580,6 +659,7 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione (incrocio) a livelli sfalsati è, di norma, regolata da semafori",
         "risposta": False,
+        "riassunto": "Incrocio a livelli sfalsati → di norma con semafori?",
         "spiegazione": "FALSO. Il grande vantaggio degli incroci a livelli sfalsati è proprio quello di eliminare i punti di conflitto e quindi la necessità di semafori o stop. I semafori servono per regolare il traffico quando le strade si incrociano allo stesso livello, cosa che non avviene in un incrocio sfalsato.",
         "regola": "Sfalsati = no semafori (per l'incrocio principale).",
         "trabocchetti": ["di norma, regolata da semafori"],
@@ -587,6 +667,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione (incrocio) a raso due o più strade si incrociano allo stesso livello",
         "risposta": True,
+        "riassunto": "Incrocio a raso → strade allo stesso livello?",
         "spiegazione": "Un'intersezione (o incrocio) 'a raso' significa che due o più strade si incontrano sullo stesso piano, senza che una passi sopra o sotto l'altra. Immagina un normale incrocio in città.",
         "regola": "A raso = stesso livello.",
         "trabocchetti": ["allo stesso livello", "a raso"],
@@ -594,6 +675,7 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione (incrocio) a raso può essere regolata da semaforo",
         "risposta": True,
+        "riassunto": "Incrocio a raso → può avere un semaforo?",
         "spiegazione": "Molti incroci a raso, specialmente quelli con molto traffico, sono regolati da semafori per gestire il flusso dei veicoli e garantire la sicurezza. Non tutti gli incroci a raso hanno un semaforo, ma molti sì.",
         "regola": "Semaforo sì, per incroci a raso.",
         "trabocchetti": ["può"],
@@ -601,6 +683,7 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione (incrocio) a raso è un'intersezione di due o più strade poste allo stesso livello",
         "risposta": True,
+        "riassunto": "Incrocio a raso → strade poste allo stesso livello?",
         "spiegazione": "Questa è la definizione esatta di un'intersezione a raso: è un punto dove due o più strade si incontrano e sono tutte sullo stesso piano, senza ponti o gallerie.",
         "regola": "A raso = strade piane.",
         "trabocchetti": ["poste allo stesso livello"],
@@ -608,6 +691,7 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione (incrocio) a raso richiede di fare attenzione ai veicoli provenienti dalle strade che si incrociano",
         "risposta": True,
+        "riassunto": "Incrocio a raso → attenzione ai veicoli dalle strade che si incrociano?",
         "spiegazione": "In qualsiasi incrocio, e in particolare in quelli a raso dove i veicoli si incontrano direttamente, è fondamentale prestare la massima attenzione per evitare collisioni con i veicoli che arrivano dalle altre direzioni.",
         "regola": "Incrocio = attenzione massima.",
         "trabocchetti": ["richiede di fare attenzione"],
@@ -615,6 +699,7 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione (incrocio) a raso è un incrocio fra una strada statale e i binari del tram",
         "risposta": False,
+        "riassunto": "Incrocio a raso → strada statale e binari del tram?",
         "spiegazione": "Un incrocio tra una strada e i binari del tram non è un'intersezione a raso nel senso stradale. Quello è un 'attraversamento tranviario' o 'passaggio a livello' se ci sono treni, e ha regole specifiche diverse.",
         "regola": "Binari = non incrocio a raso.",
         "trabocchetti": ["binari del tram"],
@@ -622,6 +707,7 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione (incrocio) a raso è un incrocio fra una strada statale e un passo carrabile",
         "risposta": False,
+        "riassunto": "Incrocio a raso → strada statale e passo carrabile?",
         "spiegazione": "Un passo carrabile è un accesso privato a una proprietà (come un garage o un cortile) e non è considerato un'intersezione stradale vera e propria tra due strade pubbliche. Non è un incrocio a raso.",
         "regola": "Passo carrabile = non incrocio.",
         "trabocchetti": ["passo carrabile"],
@@ -629,6 +715,7 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione (incrocio) a raso è un passaggio a livello dotato di barriere o semibarriere",
         "risposta": False,
+        "riassunto": "Incrocio a raso → passaggio a livello con barriere?",
         "spiegazione": "Un passaggio a livello è un punto dove una strada incrocia una ferrovia (binari del treno), e può avere barriere o semibarriere. Non è un'intersezione a raso tra due strade.",
         "regola": "Passaggio a livello = treno, non incrocio a raso.",
         "trabocchetti": ["passaggio a livello"],
@@ -636,6 +723,7 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione (incrocio) a raso è un'intersezione a livelli sfalsati",
         "risposta": False,
+        "riassunto": "Incrocio a raso → a livelli sfalsati?",
         "spiegazione": "Un'intersezione 'a livelli sfalsati' è l'esatto contrario di un'intersezione 'a raso'. Significa che le strade si incrociano a livelli diversi, ad esempio con un ponte (sovrappasso) o una galleria (sottopasso).",
         "regola": "A raso = piatto; Sfalsato = su/giù.",
         "trabocchetti": ["a livelli sfalsati", "A raso"],
@@ -643,6 +731,7 @@ QUESTIONS = [
     {
         "domanda": "L'intersezione (incrocio) a raso è un insieme di sovrappassi, sottopassi e rampe",
         "risposta": False,
+        "riassunto": "Incrocio a raso → sovrappassi, sottopassi e rampe?",
         "spiegazione": "Sovrappassi, sottopassi e rampe sono elementi che si trovano nelle intersezioni 'a livelli sfalsati', dove le strade si incrociano a diverse altezze. Non fanno parte di un'intersezione 'a raso', che è tutta sullo stesso piano.",
         "regola": "Sovrappassi/sottopassi = non a raso.",
         "trabocchetti": ["sovrappassi, sottopassi e rampe"],
@@ -650,6 +739,7 @@ QUESTIONS = [
     {
         "domanda": "Una zona a traffico limitato è un'area in cui può essere limitata la circolazione dei veicoli solo in alcune ore",
         "risposta": True,
+        "riassunto": "Zona a traffico limitato → limitata solo in alcune ore?",
         "spiegazione": "Una Zona a Traffico Limitato (ZTL) può avere regole diverse. A volte, la limitazione del traffico è attiva solo in certi orari del giorno o della notte, non per tutte le 24 ore. Quindi, è vero che può essere limitata solo in alcune ore.",
         "regola": "ZTL = orari flessibili.",
         "trabocchetti": ["solo in alcune ore"],
@@ -657,6 +747,7 @@ QUESTIONS = [
     {
         "domanda": "Una zona a traffico limitato è un'area nella quale può essere limitata la circolazione solo di particolari categorie di veicoli",
         "risposta": True,
+        "riassunto": "Zona a traffico limitato → limitata solo per alcune categorie di veicoli?",
         "spiegazione": "In una ZTL, le regole possono riguardare solo specifici tipi di veicoli. Ad esempio, possono entrare solo i veicoli elettrici, o solo quelli dei residenti, o solo i mezzi pubblici. Non tutti i veicoli sono esclusi, ma solo alcune 'categorie'.",
         "regola": "ZTL = veicoli specifici.",
         "trabocchetti": ["solo di particolari categorie di veicoli"],
@@ -664,6 +755,7 @@ QUESTIONS = [
     {
         "domanda": "In una zona a traffico limitato possono circolare solo i veicoli autorizzati",
         "risposta": True,
+        "riassunto": "Zona a traffico limitato → solo veicoli autorizzati?",
         "spiegazione": "Il nome stesso 'Zona a Traffico Limitato' indica che l'accesso non è libero per tutti. Possono circolare solo i veicoli che hanno un permesso speciale, cioè sono 'autorizzati' a entrare.",
         "regola": "ZTL = solo con permesso.",
         "trabocchetti": ["solo i veicoli autorizzati"],
@@ -671,6 +763,7 @@ QUESTIONS = [
     {
         "domanda": "Una zona a traffico limitato è un'area nella quale può essere limitata la circolazione solo a particolari categorie di utenti",
         "risposta": True,
+        "riassunto": "Zona a traffico limitato → limitata solo per alcune categorie di utenti?",
         "spiegazione": "Le limitazioni in una ZTL possono riguardare non solo il tipo di veicolo, ma anche chi lo guida. Ad esempio, possono entrare solo i residenti, i commercianti della zona, o le persone con disabilità. Questi sono 'particolari categorie di utenti'.",
         "regola": "ZTL = chi guida conta.",
         "trabocchetti": ["utenti"],
@@ -678,18 +771,21 @@ QUESTIONS = [
     {
         "domanda": "Una zona a traffico limitato è delimitata da appositi segnali stradali di inizio e di fine",
         "risposta": True,
+        "riassunto": "Zona a traffico limitato → segnali di inizio e fine?",
         "spiegazione": "Per sapere dove inizia e dove finisce una ZTL, ci sono sempre dei cartelli stradali specifici. Questi segnali indicano chiaramente l'inizio e la fine della zona, così i guidatori sanno quando devono rispettare le regole.",
         "regola": "ZTL = sempre segnalata.",
     },
     {
         "domanda": "In una zona a traffico limitato non possono entrare più di un certo numero di veicoli",
         "risposta": False,
+        "riassunto": "Zona a traffico limitato → numero massimo di veicoli?",
         "spiegazione": "Una ZTL limita l'accesso in base a chi può entrare (veicoli autorizzati, orari, categorie), non in base a quanti veicoli ci sono già dentro. Non c'è un 'contatore' che blocca l'ingresso se si supera un certo numero di veicoli.",
         "regola": "ZTL = no numero massimo.",
     },
     {
         "domanda": "Una zona a traffico limitato è un'area nella quale è consentito solo il transito di ciclomotori e biciclette",
         "risposta": False,
+        "riassunto": "Zona a traffico limitato → solo ciclomotori e biciclette?",
         "spiegazione": "Non è vero che in una ZTL possono circolare 'solo' ciclomotori e biciclette. Le regole variano molto: spesso possono entrare auto, furgoni o altri veicoli a motore, purché siano autorizzati. La limitazione non è così stretta.",
         "regola": "ZTL = regole diverse, non solo bici/ciclomotori.",
         "trabocchetti": ["solo"],
@@ -697,6 +793,7 @@ QUESTIONS = [
     {
         "domanda": "Una zona a traffico limitato è un'area sempre vietata al transito dei veicoli a motore",
         "risposta": False,
+        "riassunto": "Zona a traffico limitato → sempre vietata ai veicoli a motore?",
         "spiegazione": "La ZTL non è 'sempre vietata' ai veicoli a motore. Al contrario, i veicoli a motore che hanno un permesso (come i residenti, i mezzi pubblici, i taxi o i veicoli per carico/scarico in certi orari) possono circolare. La ZTL limita, non vieta completamente.",
         "regola": "ZTL = non sempre vietata.",
         "trabocchetti": ["sempre"],
@@ -704,6 +801,7 @@ QUESTIONS = [
     {
         "domanda": "Una zona a traffico limitato è un'area vietata al transito dei pedoni durante le ore notturne",
         "risposta": False,
+        "riassunto": "Zona a traffico limitato → vietata ai pedoni di notte?",
         "spiegazione": "Una ZTL riguarda la circolazione dei veicoli, non dei pedoni. I pedoni possono sempre camminare liberamente, anche di notte, a meno che non ci siano altre specifiche restrizioni (come un cantiere), ma non è una regola generale della ZTL.",
         "regola": "ZTL = pedoni liberi.",
         "trabocchetti": ["vietata al transito dei pedoni"],
@@ -711,6 +809,7 @@ QUESTIONS = [
     {
         "domanda": "In un passaggio a livello si possono trovare le barriere",
         "risposta": True,
+        "riassunto": "Passaggio a livello → barriere?",
         "spiegazione": "VERO. Un passaggio a livello è un punto dove la strada incrocia i binari del treno. Le barriere sono le sbarre che si abbassano per fermare il traffico quando arriva il treno, quindi è corretto trovarle.",
         "regola": "Barriere = sbarre che chiudono.",
         "trabocchetti": ["si possono trovare"],
@@ -718,6 +817,7 @@ QUESTIONS = [
     {
         "domanda": "In un passaggio a livello si possono trovare le semibarriere",
         "risposta": True,
+        "riassunto": "Passaggio a livello → semibarriere?",
         "spiegazione": "VERO. Le semibarriere sono un tipo di barriera che copre solo metà della carreggiata. Anche queste servono a fermare il traffico quando arriva il treno, quindi si possono trovare in un passaggio a livello.",
         "regola": "Semibarriere = barriere a metà.",
         "trabocchetti": ["semibarriere"],
@@ -725,6 +825,7 @@ QUESTIONS = [
     {
         "domanda": "In un passaggio a livello si possono trovare le luci rosse",
         "risposta": True,
+        "riassunto": "Passaggio a livello → luci rosse?",
         "spiegazione": "VERO. Le luci rosse lampeggianti sono un segnale fondamentale al passaggio a livello. Si accendono per avvisare che le barriere si stanno abbassando o che il treno è in arrivo, indicando l'obbligo di fermarsi.",
         "regola": "Rosso = stop, treno in arrivo.",
         "trabocchetti": ["luci rosse"],
@@ -732,6 +833,7 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza di un passaggio a livello si trovano i pannelli distanziometrici",
         "risposta": True,
+        "riassunto": "Vicino al passaggio a livello → pannelli distanziometrici?",
         "spiegazione": "VERO. I pannelli distanziometrici sono cartelli con strisce oblique (una, due o tre) che si trovano prima del passaggio a livello. Servono per avvisarti della distanza che ti separa dal passaggio a livello, aiutandoti a prepararti per tempo.",
         "regola": "Pannelli = contano la distanza.",
         "trabocchetti": ["In vicinanza"],
@@ -739,6 +841,7 @@ QUESTIONS = [
     {
         "domanda": "In un passaggio a livello si può trovare la croce di S. Andrea",
         "risposta": True,
+        "riassunto": "Passaggio a livello → croce di S. Andrea?",
         "spiegazione": "VERO. La croce di Sant'Andrea è un segnale che indica un passaggio a livello senza barriere. Se la vedi, significa che non ci sono le sbarre e devi fare molta più attenzione prima di attraversare.",
         "regola": "Croce S. Andrea = attenzione, niente barriere.",
         "trabocchetti": ["si può trovare"],
@@ -746,6 +849,7 @@ QUESTIONS = [
     {
         "domanda": "In un passaggio a livello si può trovare un dispositivo di segnalazione acustica",
         "risposta": True,
+        "riassunto": "Passaggio a livello → segnalazione acustica?",
         "spiegazione": "VERO. Oltre ai segnali visivi (luci, barriere), spesso c'è anche un segnale acustico (una campana o un cicalino) che avvisa quando il treno sta per arrivare o le barriere si stanno abbassando. È un segnale di sicurezza in più.",
         "regola": "Acustica = suono, campanella.",
         "trabocchetti": ["dispositivo di segnalazione acustica"],
@@ -753,6 +857,7 @@ QUESTIONS = [
     {
         "domanda": "Il passaggio a livello è un cavalcavia ferroviario o tranviario",
         "risposta": False,
+        "riassunto": "Passaggio a livello → cavalcavia ferroviario o tranviario?",
         "spiegazione": "FALSO. Un cavalcavia è una strada che passa sopra i binari del treno. Un passaggio a livello, invece, è quando la strada e i binari si incrociano sullo stesso piano, allo stesso livello. Sono due strutture diverse.",
         "regola": "Cavalcavia = sopra. Passaggio a livello = stesso piano.",
         "trabocchetti": ["cavalcavia"],
@@ -760,6 +865,7 @@ QUESTIONS = [
     {
         "domanda": "In un passaggio a livello si possono trovare le luci gialle lampeggianti",
         "risposta": False,
+        "riassunto": "Passaggio a livello → luci gialle lampeggianti?",
         "spiegazione": "FALSO. Al passaggio a livello si usano le luci rosse lampeggianti per indicare pericolo e l'arrivo del treno. Le luci gialle lampeggianti hanno altri significati nel codice della strada, ma non sono usate per segnalare il passaggio a livello.",
         "regola": "Treno = rosso. Giallo = altro pericolo.",
         "trabocchetti": ["gialle"],
@@ -767,6 +873,7 @@ QUESTIONS = [
     {
         "domanda": "Il passaggio a livello è caratterizzato dalla presenza di un attraversamento autostradale",
         "risposta": False,
+        "riassunto": "Passaggio a livello → attraversamento autostradale?",
         "spiegazione": "FALSO. Un passaggio a livello è l'incrocio tra una strada (o una ferrovia) e i binari del treno. Le autostrade sono strade a scorrimento veloce e non hanno incroci a raso con i binari, quindi non hanno passaggi a livello.",
         "regola": "Autostrada = no incroci a livello.",
         "trabocchetti": ["attraversamento autostradale"],
@@ -774,6 +881,7 @@ QUESTIONS = [
     {
         "domanda": "In un passaggio a livello si possono trovare le corsie di accelerazione",
         "risposta": False,
+        "riassunto": "Passaggio a livello → corsie di accelerazione?",
         "spiegazione": "FALSO. Le corsie di accelerazione servono per entrare in autostrada o in strade principali, per raggiungere la velocità giusta. Al passaggio a livello, invece, devi rallentare o fermarti, non accelerare.",
         "regola": "Passaggio a livello = rallenta, non accelera.",
         "trabocchetti": ["accelerazione"],
@@ -781,6 +889,7 @@ QUESTIONS = [
     {
         "domanda": "Il passaggio a livello è un passo carrabile",
         "risposta": False,
+        "riassunto": "Passaggio a livello → passo carrabile?",
         "spiegazione": "FALSO. Un passo carrabile è un'apertura nel marciapiede o nel muro che permette ai veicoli di entrare in una proprietà privata (come un garage o un cortile). Non ha niente a che fare con i binari del treno.",
         "regola": "Passo carrabile = ingresso privato. Passaggio a livello = treno.",
         "trabocchetti": ["passo carrabile"],
@@ -788,6 +897,7 @@ QUESTIONS = [
     {
         "domanda": "Il passaggio a livello è caratterizzato dalla presenza di un sottopassaggio",
         "risposta": False,
+        "riassunto": "Passaggio a livello → sottopassaggio?",
         "spiegazione": "FALSO. Un sottopassaggio è una strada che passa sotto i binari del treno. Il passaggio a livello, come abbiamo detto, è quando la strada e i binari si incrociano allo stesso livello. Sono l'opposto.",
         "regola": "Sottopassaggio = sotto. Passaggio a livello = stesso piano.",
         "trabocchetti": ["sottopassaggio"],
@@ -795,6 +905,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle aree pedonali possono transitare i veicoli ad emissione zero (elettrici), se espressamente consentito",
         "risposta": True,
+        "riassunto": "Aree pedonali → veicoli elettrici, se espressamente consentito?",
         "spiegazione": "Le aree pedonali sono fatte per i pedoni, ma ci sono delle eccezioni. I veicoli elettrici (a emissione zero) possono entrare se c'è un permesso specifico, ad esempio per residenti o per servizi particolari. Quindi, non è un permesso automatico, ma deve essere indicato.",
         "regola": "Elettrico sì, ma solo con permesso!",
         "trabocchetti": ["se espressamente consentito"],
@@ -802,36 +913,42 @@ QUESTIONS = [
     {
         "domanda": "Nelle aree pedonali possono transitare i pedoni",
         "risposta": True,
+        "riassunto": "Aree pedonali → transito dei pedoni?",
         "spiegazione": "Un'area pedonale è uno spazio dedicato principalmente a chi cammina. Per questo motivo, i pedoni possono sempre transitare liberamente e sono i 'protagonisti' di queste zone.",
         "regola": "Area pedonale = regno dei pedoni.",
     },
     {
         "domanda": "Nelle aree pedonali possono transitare le biciclette",
         "risposta": True,
+        "riassunto": "Aree pedonali → transito delle biciclette?",
         "spiegazione": "Le biciclette sono considerate veicoli 'leggeri' e non inquinanti. Generalmente, nelle aree pedonali è permesso il loro transito, ma i ciclisti devono sempre fare molta attenzione ai pedoni e andare a una velocità moderata per non creare pericoli.",
         "regola": "Bici sì, ma con prudenza.",
     },
     {
         "domanda": "Nelle aree pedonali possono transitare i veicoli al servizio di persone diversamente abili",
         "risposta": True,
+        "riassunto": "Aree pedonali → veicoli al servizio di persone disabili?",
         "spiegazione": "I veicoli che trasportano persone con disabilità hanno spesso permessi speciali per accedere a zone con limitazioni, come le aree pedonali. Questo serve a facilitare la mobilità e l'accesso a tutti, garantendo un servizio essenziale.",
         "regola": "Disabili sempre agevolati.",
     },
     {
         "domanda": "Nelle aree pedonali possono transitare i veicoli della polizia, con sirena e luce lampeggiante blu in funzione",
         "risposta": True,
+        "riassunto": "Aree pedonali → polizia con sirena e lampeggiante blu?",
         "spiegazione": "I veicoli di emergenza, come quelli della polizia, possono sempre accedere a qualsiasi area, incluse quelle pedonali, quando sono in servizio urgente. Devono però segnalare la loro urgenza con la sirena e le luci lampeggianti blu accese.",
         "regola": "Emergenza = via libera ovunque.",
     },
     {
         "domanda": "Nelle aree pedonali possono transitare gli autoveicoli dei vigili del fuoco, con luce lampeggiante blu e sirena in funzione",
         "risposta": True,
+        "riassunto": "Aree pedonali → vigili del fuoco con sirena e lampeggiante blu?",
         "spiegazione": "Come per la polizia, anche i veicoli dei vigili del fuoco sono mezzi di emergenza. Possono entrare nelle aree pedonali quando sono in missione urgente, usando la luce lampeggiante blu e la sirena per avvisare tutti della loro presenza e urgenza.",
         "regola": "Emergenza = via libera ovunque.",
     },
     {
         "domanda": "Nelle aree pedonali possono transitare tutti i motocicli, purché diano la precedenza ai pedoni",
         "risposta": False,
+        "riassunto": "Aree pedonali → tutti i motocicli, dando precedenza ai pedoni?",
         "spiegazione": "I motocicli sono veicoli a motore e, di solito, non possono entrare nelle aree pedonali. Non basta dare la precedenza ai pedoni; il transito è vietato per la loro natura di veicoli a motore, a meno di permessi molto specifici che non riguardano 'tutti' i motocicli.",
         "regola": "Moto no, salvo eccezioni specifiche.",
         "trabocchetti": ["tutti i motocicli", "purché diano la precedenza"],
@@ -839,6 +956,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle aree pedonali possono transitare i trattori stradali, con velocità non superiore a 30 km/h",
         "risposta": False,
+        "riassunto": "Aree pedonali → trattori stradali fino a 30 km/h?",
         "spiegazione": "I trattori stradali sono veicoli grandi e pesanti, non adatti a transitare nelle aree pedonali. Sono vietati. La velocità indicata (30 km/h) non cambia il fatto che il loro transito non è permesso in queste zone.",
         "regola": "Mezzi pesanti = divieto assoluto.",
         "trabocchetti": ["trattori stradali", "con velocità non superiore a 30 km/h"],
@@ -846,6 +964,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle aree pedonali i ciclomotori possono transitare solo di giorno",
         "risposta": False,
+        "riassunto": "Aree pedonali → ciclomotori solo di giorno?",
         "spiegazione": "I ciclomotori, essendo veicoli a motore, non possono transitare nelle aree pedonali. Questo divieto vale sempre, sia di giorno che di notte, a meno di permessi speciali. L'indicazione \"solo di giorno\" è una distrazione per farti sbagliare.",
         "regola": "Ciclomotori no, giorno o notte.",
         "trabocchetti": ["solo di giorno"],
@@ -853,6 +972,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle aree pedonali possono transitare tutti gli autoveicoli, ma con prudenza",
         "risposta": False,
+        "riassunto": "Aree pedonali → tutti gli autoveicoli, con prudenza?",
         "spiegazione": "Affermare che \"tutti gli autoveicoli\" possono transitare è sbagliato. Le aree pedonali sono vietate agli autoveicoli, tranne per categorie specifiche con permessi (come residenti, veicoli di emergenza, o per carico/scarico in orari precisi). La prudenza non basta a permettere il transito.",
         "regola": "Auto no, salvo eccezioni specifiche.",
         "trabocchetti": ["tutti gli autoveicoli", "ma con prudenza"],
@@ -860,6 +980,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle aree pedonali possono transitare i quadricicli a motore, purché non superino la velocità di 50 km/h",
         "risposta": False,
+        "riassunto": "Aree pedonali → quadricicli a motore fino a 50 km/h?",
         "spiegazione": "I quadricicli a motore sono veicoli a motore e, come motocicli e ciclomotori, non possono transitare nelle aree pedonali. La velocità massima indicata (50 km/h) è irrilevante, perché il transito è vietato a prescindere dalla velocità.",
         "regola": "Quadricicli a motore no.",
         "trabocchetti": ["quadricicli a motore"],
@@ -867,6 +988,7 @@ QUESTIONS = [
     {
         "domanda": "La strada può essere suddivisa in carreggiate",
         "risposta": True,
+        "riassunto": "Strada → suddivisa in carreggiate?",
         "spiegazione": "VERO. La strada è un'area molto ampia e può essere divisa in più carreggiate. Le carreggiate sono le parti della strada dove i veicoli circolano, a volte in direzioni diverse o con più corsie per lo stesso senso di marcia.",
         "regola": "Strada = insieme di parti, carreggiata = una di queste parti.",
         "trabocchetti": ["può"],
@@ -874,6 +996,7 @@ QUESTIONS = [
     {
         "domanda": "La strada può comprendere le piste ciclabili",
         "risposta": True,
+        "riassunto": "Strada → comprende piste ciclabili?",
         "spiegazione": "VERO. La strada non è solo per le auto. È un'area più grande che include anche spazi dedicati ad altri utenti, come le piste ciclabili per le biciclette.",
         "regola": "La strada è grande, include anche le bici.",
         "trabocchetti": ["può comprendere"],
@@ -881,6 +1004,7 @@ QUESTIONS = [
     {
         "domanda": "La strada può essere a senso unico di circolazione",
         "risposta": True,
+        "riassunto": "Strada → a senso unico?",
         "spiegazione": "VERO. Una strada può avere veicoli che vanno tutti nella stessa direzione (senso unico) oppure in direzioni opposte (doppio senso). Entrambe sono configurazioni valide per una strada.",
         "regola": "Senso unico? È sempre una strada.",
         "trabocchetti": ["può essere"],
@@ -888,6 +1012,7 @@ QUESTIONS = [
     {
         "domanda": "La strada può essere a doppio senso di circolazione",
         "risposta": True,
+        "riassunto": "Strada → a doppio senso?",
         "spiegazione": "VERO. Come per il senso unico, anche una strada con veicoli che vanno in direzioni opposte è una strada. È una configurazione molto comune.",
         "regola": "Doppio senso? È sempre una strada.",
         "trabocchetti": ["può essere"],
@@ -895,6 +1020,7 @@ QUESTIONS = [
     {
         "domanda": "La strada è aperta alla circolazione dei pedoni, degli animali e dei veicoli",
         "risposta": True,
+        "riassunto": "Strada → aperta a pedoni, animali e veicoli?",
         "spiegazione": "VERO. La strada è uno spazio pubblico pensato per tutti: persone a piedi (pedoni), animali (se consentito, come in alcune zone rurali) e tutti i tipi di veicoli (auto, moto, bici, ecc.).",
         "regola": "Strada = per tutti (pedoni, animali, veicoli).",
         "trabocchetti": ["aperta"],
@@ -902,6 +1028,7 @@ QUESTIONS = [
     {
         "domanda": "La strada non comprende le banchine",
         "risposta": False,
+        "riassunto": "Strada → non comprende le banchine?",
         "spiegazione": "FALSO. La banchina è la parte della strada che si trova ai lati della carreggiata, senza marciapiede. Fa parte della strada, serve per la sosta di emergenza o per i pedoni dove non c'è marciapiede.",
         "regola": "Banchina = parte della strada.",
         "trabocchetti": ["non"],
@@ -909,6 +1036,7 @@ QUESTIONS = [
     {
         "domanda": "La strada è riservata alla circolazione dei soli autoveicoli e motocicli",
         "risposta": False,
+        "riassunto": "Strada → riservata solo ad autoveicoli e motocicli?",
         "spiegazione": "FALSO. Questa affermazione è sbagliata perché la strada è per tutti gli utenti (pedoni, animali, biciclette, ecc.), non solo per auto e moto. Solo alcune parti della strada (come le autostrade) sono riservate a certi veicoli.",
         "regola": "'Soli' = quasi sempre falso per la strada generica.",
         "trabocchetti": ["soli"],
@@ -916,6 +1044,7 @@ QUESTIONS = [
     {
         "domanda": "La strada è normalmente riservata alla circolazione dei soli veicoli e animali",
         "risposta": False,
+        "riassunto": "Strada → riservata solo a veicoli e animali?",
         "spiegazione": "FALSO. Anche qui, la parola 'soli' rende l'affermazione falsa. I pedoni sono un utente fondamentale della strada, anche se spesso usano marciapiedi o attraversamenti. La strada è un concetto ampio che li include.",
         "regola": "'Soli' esclude troppi utenti.",
         "trabocchetti": ["soli", "normalmente riservata", "normalmente"],
@@ -923,6 +1052,7 @@ QUESTIONS = [
     {
         "domanda": "La strada non comprende i marciapiedi",
         "risposta": False,
+        "riassunto": "Strada → non comprende i marciapiedi?",
         "spiegazione": "FALSO. Il marciapiede è la parte della strada rialzata, fatta apposta per i pedoni. Fa parte della strada, anche se è separato dalla carreggiata.",
         "regola": "Marciapiede = parte della strada.",
         "trabocchetti": ["non"],
@@ -930,6 +1060,7 @@ QUESTIONS = [
     {
         "domanda": "La strada è qualsiasi area asfaltata, limitata lateralmente dagli attraversamenti pedonali",
         "risposta": False,
+        "riassunto": "Strada → area asfaltata limitata dagli attraversamenti pedonali?",
         "spiegazione": "FALSO. Questa definizione è troppo specifica e sbagliata. Non tutte le strade sono asfaltate (esistono anche strade sterrate o bianche), e gli attraversamenti pedonali non sono i limiti laterali della strada. I limiti laterali sono di solito fossi, muri, o il confine della proprietà.",
         "regola": "Definizione troppo specifica o con dettagli sbagliati = FALSO.",
         "trabocchetti": ["qualsiasi area asfaltata"],
@@ -937,6 +1068,7 @@ QUESTIONS = [
     {
         "domanda": "L'autostrada non ha incroci a raso che l'attraversano",
         "risposta": True,
+        "riassunto": "Autostrada → senza incroci a raso?",
         "spiegazione": "Le autostrade sono strade speciali progettate per la velocità e la sicurezza. Per questo motivo, non ci sono incroci dove le strade si incontrano allo stesso livello (a raso). Tutti gli incroci avvengono tramite ponti o sottopassaggi.",
         "regola": "Autostrada = niente incroci a terra.",
         "trabocchetti": ["non ha incroci a raso"],
@@ -944,6 +1076,7 @@ QUESTIONS = [
     {
         "domanda": "L'autostrada è dotata di speciali corsie per l'ingresso e l'uscita dei veicoli",
         "risposta": True,
+        "riassunto": "Autostrada → corsie speciali di ingresso e uscita?",
         "spiegazione": "Per entrare e uscire dall'autostrada in modo sicuro e senza creare pericoli, ci sono corsie speciali. Queste sono le corsie di accelerazione (per entrare) e le corsie di decelerazione (per uscire).",
         "regola": "Entri/Esci? Usa le corsie speciali.",
         "trabocchetti": ["speciali corsie"],
@@ -951,12 +1084,14 @@ QUESTIONS = [
     {
         "domanda": "L'autostrada è a carreggiate indipendenti o separate da spartitraffico",
         "risposta": True,
+        "riassunto": "Autostrada → carreggiate indipendenti o con spartitraffico?",
         "spiegazione": "Le autostrade sono costruite in modo che le due direzioni di marcia (ad esempio, Milano-Roma e Roma-Milano) siano separate. Questa separazione può essere fatta con uno spartitraffico (una barriera centrale) o con carreggiate completamente indipendenti, per evitare scontri frontali.",
         "regola": "Autostrada = due strade divise.",
     },
     {
         "domanda": "I motocicli con cilindrata di almeno 150 cm3 possono circolare in autostrada",
         "risposta": True,
+        "riassunto": "Autostrada → motocicli di almeno 150 cm3?",
         "spiegazione": "Per circolare in autostrada, i motocicli devono essere abbastanza potenti. La legge stabilisce che devono avere una cilindrata di almeno 150 cm³ (o 120 cm³ se a motore termico e omologati prima del 1986, ma il limite generale è 150 cm³).",
         "regola": "Moto in autostrada? Solo se 'grande' (min. 150cc).",
         "trabocchetti": ["almeno 150 cm3"],
@@ -964,6 +1099,7 @@ QUESTIONS = [
     {
         "domanda": "Le macchine agricole non possono circolare in autostrada",
         "risposta": True,
+        "riassunto": "Autostrada → macchine agricole non ammesse?",
         "spiegazione": "Le macchine agricole sono veicoli lenti e non sono adatte a circolare su strade ad alta velocità come le autostrade. Per questo motivo, è vietato loro l'ingresso.",
         "regola": "Trattore = no autostrada.",
         "trabocchetti": ["Non possono circolare"],
@@ -971,6 +1107,7 @@ QUESTIONS = [
     {
         "domanda": "Non tutti i tipi di veicoli possono circolare in autostrada",
         "risposta": True,
+        "riassunto": "Autostrada → non tutti i veicoli ammessi?",
         "spiegazione": "Questa affermazione è vera perché non tutti i veicoli possono entrare in autostrada. Ad esempio, biciclette, ciclomotori, macchine agricole, veicoli a trazione animale e motocicli con cilindrata inferiore a 150 cm³ sono vietati.",
         "regola": "Autostrada = selezione all'ingresso.",
         "trabocchetti": ["Non tutti i tipi di veicoli", "Tutti i tipi di veicoli"],
@@ -978,6 +1115,7 @@ QUESTIONS = [
     {
         "domanda": "L'uscita dei veicoli dalle autostrade avviene tramite corsie di decelerazione",
         "risposta": True,
+        "riassunto": "Uscita dall'autostrada → corsie di decelerazione?",
         "spiegazione": "Quando si esce dall'autostrada, è necessario rallentare. Per farlo in sicurezza, si utilizzano le corsie di decelerazione, che permettono di ridurre la velocità senza intralciare il traffico che prosegue in autostrada.",
         "regola": "Esci? Decelera!",
         "trabocchetti": ["Corsie di decelerazione"],
@@ -985,6 +1123,7 @@ QUESTIONS = [
     {
         "domanda": "L'autostrada deve essere lateralmente recintata",
         "risposta": True,
+        "riassunto": "Autostrada → recintata lateralmente?",
         "spiegazione": "Le autostrade sono recintate ai lati per impedire che animali o persone a piedi possano entrare sulla carreggiata, garantendo così maggiore sicurezza per tutti i veicoli che vi circolano.",
         "regola": "Autostrada = protetta da recinzione.",
         "trabocchetti": ["Lateralmente recintata"],
@@ -992,6 +1131,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle autostrade possono circolare solo le autovetture",
         "risposta": False,
+        "riassunto": "Autostrada → solo autovetture?",
         "spiegazione": "Questa affermazione è falsa. Non possono circolare 'solo' le autovetture. Possono circolare anche altri tipi di veicoli, come autocarri, autobus e motocicli con cilindrata superiore a 150 cm³.",
         "regola": "'Solo' in autostrada? Spesso è FALSO.",
         "trabocchetti": ["solo"],
@@ -999,6 +1139,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle autostrade possono circolare tutti i tipi di motocicli",
         "risposta": False,
+        "riassunto": "Autostrada → tutti i tipi di motocicli?",
         "spiegazione": "Questa affermazione è falsa. Non 'tutti' i tipi di motocicli possono circolare in autostrada. C'è un limite minimo di cilindrata: devono avere almeno 150 cm³.",
         "regola": "'Tutti' i motocicli? No, solo i 'grandi'.",
         "trabocchetti": ["tutti"],
@@ -1006,6 +1147,7 @@ QUESTIONS = [
     {
         "domanda": "L'autostrada può comprendere piste ciclabili",
         "risposta": False,
+        "riassunto": "Autostrada → piste ciclabili?",
         "spiegazione": "Questa affermazione è falsa. Le autostrade sono riservate ai veicoli a motore veloci. Le biciclette e le piste ciclabili non sono ammesse e non fanno parte della struttura autostradale.",
         "regola": "Bici e autostrada? Mai insieme.",
         "trabocchetti": ["Piste ciclabili"],
@@ -1013,12 +1155,14 @@ QUESTIONS = [
     {
         "domanda": "Nelle autostrade possono circolare i ciclomotori e i motocicli con cilindrata fino a 125 cm3",
         "risposta": False,
+        "riassunto": "Autostrada → ciclomotori e motocicli fino a 125 cm3?",
         "spiegazione": "Questa affermazione è falsa. I ciclomotori non possono mai circolare in autostrada. Anche i motocicli con cilindrata fino a 125 cm³ sono esclusi; il limite minimo è di 150 cm³.",
         "regola": "Piccoli (ciclomotori, 125cc) = no autostrada.",
     },
     {
         "domanda": "Nelle autostrade possono circolare solo gli autoveicoli",
         "risposta": False,
+        "riassunto": "Autostrada → solo autoveicoli?",
         "spiegazione": "Questa affermazione è falsa. Non possono circolare 'solo' gli autoveicoli. Anche alcuni tipi di motocicli (quelli con cilindrata di almeno 150 cm³) sono ammessi in autostrada.",
         "regola": "'Solo' in autostrada? Spesso è FALSO.",
         "trabocchetti": ["solo"],
@@ -1026,6 +1170,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle autostrade possono circolare tutti i motocicli e i ciclomotori",
         "risposta": False,
+        "riassunto": "Autostrada → tutti i motocicli e ciclomotori?",
         "spiegazione": "Questa affermazione è falsa per due motivi: 1) Non 'tutti' i motocicli possono circolare (solo quelli con almeno 150 cm³). 2) I ciclomotori non possono mai circolare in autostrada.",
         "regola": "Ciclomotori mai. Motocicli solo i 'grandi'.",
         "trabocchetti": ["tutti i motocicli e i ciclomotori", "Tutti", "ciclomotori"],
@@ -1033,6 +1178,7 @@ QUESTIONS = [
     {
         "domanda": "La carreggiata può essere a senso unico di circolazione",
         "risposta": True,
+        "riassunto": "Carreggiata → a senso unico?",
         "spiegazione": "VERO. Una carreggiata può essere organizzata per far circolare i veicoli in una sola direzione, come in una strada a senso unico.",
         "regola": "Carreggiata = Via per i veicoli. Può andare solo avanti.",
         "trabocchetti": ["può essere"],
@@ -1040,6 +1186,7 @@ QUESTIONS = [
     {
         "domanda": "La carreggiata può essere a doppio senso di circolazione",
         "risposta": True,
+        "riassunto": "Carreggiata → a doppio senso?",
         "spiegazione": "VERO. Una carreggiata può anche essere organizzata per far circolare i veicoli in entrambe le direzioni, come nella maggior parte delle strade normali.",
         "regola": "Carreggiata = Via per i veicoli. Può andare avanti e indietro.",
         "trabocchetti": ["può essere"],
@@ -1047,6 +1194,7 @@ QUESTIONS = [
     {
         "domanda": "La carreggiata può essere suddivisa in corsie",
         "risposta": True,
+        "riassunto": "Carreggiata → suddivisa in corsie?",
         "spiegazione": "VERO. Spesso la carreggiata è divisa da linee sull'asfalto in più corsie, per permettere a più veicoli di circolare affiancati o per direzioni diverse.",
         "regola": "Carreggiata = Tante corsie.",
         "trabocchetti": ["può essere suddivisa"],
@@ -1054,6 +1202,7 @@ QUESTIONS = [
     {
         "domanda": "La carreggiata non comprende le piste ciclabili",
         "risposta": True,
+        "riassunto": "Carreggiata → non comprende le piste ciclabili?",
         "spiegazione": "VERO. Le piste ciclabili sono spazi separati, pensati solo per le biciclette. La carreggiata è per i veicoli a motore (e altri veicoli specifici), non per le bici.",
         "regola": "Bici fuori dalla carreggiata.",
         "trabocchetti": ["non comprende"],
@@ -1061,6 +1210,7 @@ QUESTIONS = [
     {
         "domanda": "La carreggiata non comprende i marciapiedi",
         "risposta": True,
+        "riassunto": "Carreggiata → non comprende i marciapiedi?",
         "spiegazione": "VERO. I marciapiedi sono per i pedoni e sono sempre separati dalla carreggiata, che è per i veicoli.",
         "regola": "Pedoni sul marciapiede, veicoli sulla carreggiata.",
         "trabocchetti": ["non comprende"],
@@ -1068,6 +1218,7 @@ QUESTIONS = [
     {
         "domanda": "La carreggiata è la parte della strada destinata normalmente alla circolazione dei veicoli",
         "risposta": True,
+        "riassunto": "Carreggiata → parte della strada per la circolazione dei veicoli?",
         "spiegazione": "VERO. Questa è la definizione esatta di carreggiata: è la parte della strada dove i veicoli devono circolare.",
         "regola": "Carreggiata = Dove guidi.",
         "trabocchetti": ["normalmente"],
@@ -1075,6 +1226,7 @@ QUESTIONS = [
     {
         "domanda": "La carreggiata è destinata soltanto alla circolazione di carri a trazione animale",
         "risposta": False,
+        "riassunto": "Carreggiata → soltanto per carri a trazione animale?",
         "spiegazione": "FALSO. La carreggiata è per tutti i tipi di veicoli che possono circolare su strada, non 'soltanto' per i carri a trazione animale. Questo renderebbe la definizione troppo limitata.",
         "regola": "'Soltanto' = Attenzione!",
         "trabocchetti": ["soltanto"],
@@ -1082,6 +1234,7 @@ QUESTIONS = [
     {
         "domanda": "La carreggiata è destinata alla sosta di emergenza",
         "risposta": False,
+        "riassunto": "Carreggiata → per la sosta di emergenza?",
         "spiegazione": "FALSO. La carreggiata deve rimanere libera per la circolazione. La sosta di emergenza si fa sulla banchina (la spalla della strada) o in apposite piazzole, non sulla carreggiata.",
         "regola": "Sosta d'emergenza = Fuori dalla carreggiata.",
         "trabocchetti": ["è destinata"],
@@ -1089,6 +1242,7 @@ QUESTIONS = [
     {
         "domanda": "La carreggiata è destinata alla sosta degli autocarri",
         "risposta": False,
+        "riassunto": "Carreggiata → per la sosta degli autocarri?",
         "spiegazione": "FALSO. La carreggiata è per la circolazione dei veicoli, non per la sosta, nemmeno per gli autocarri. La sosta si fa in aree apposite o dove è permesso, ma non sulla carreggiata.",
         "regola": "Sosta = Non sulla carreggiata.",
         "trabocchetti": ["è destinata"],
@@ -1096,6 +1250,7 @@ QUESTIONS = [
     {
         "domanda": "La carreggiata è la traccia lasciata dalle ruote dei veicoli sulle strade innevate",
         "risposta": False,
+        "riassunto": "Carreggiata → traccia delle ruote sulla neve?",
         "spiegazione": "FALSO. La carreggiata è una parte fisica e permanente della strada, costruita per la circolazione. Non è un segno temporaneo lasciato dalle ruote sulla neve o sul fango.",
         "regola": "Carreggiata = Parte della strada, non un segno.",
         "trabocchetti": ["traccia lasciata"],
@@ -1103,6 +1258,7 @@ QUESTIONS = [
     {
         "domanda": "La carreggiata comprende le piazzole di sosta",
         "risposta": False,
+        "riassunto": "Carreggiata → comprende le piazzole di sosta?",
         "spiegazione": "FALSO. Le piazzole di sosta sono aree separate dalla carreggiata, create apposta per fermarsi. La carreggiata è per il movimento dei veicoli.",
         "regola": "Piazzola di sosta = Fuori dalla carreggiata.",
         "trabocchetti": ["comprende"],
@@ -1110,12 +1266,14 @@ QUESTIONS = [
     {
         "domanda": "Fanno parte della carreggiata le corsie di marcia",
         "risposta": True,
+        "riassunto": "Carreggiata → comprende le corsie di marcia?",
         "spiegazione": "Le corsie di marcia sono le parti della strada dove i veicoli guidano normalmente. Per questo, fanno parte della carreggiata, che è la zona della strada dedicata alla circolazione dei veicoli.",
         "regola": "Carreggiata = dove si guida.",
     },
     {
         "domanda": "Fanno parte della carreggiata gli attraversamenti ciclabili",
         "risposta": True,
+        "riassunto": "Carreggiata → comprende gli attraversamenti ciclabili?",
         "spiegazione": "Gli attraversamenti ciclabili sono le strisce disegnate sulla strada per permettere alle biciclette di attraversare. Anche se sono per le bici, si trovano sulla carreggiata, cioè la parte della strada usata dai veicoli.",
         "regola": "Attraversamenti (pedonali/ciclabili) = sulla carreggiata.",
         "trabocchetti": ["ciclabili"],
@@ -1123,6 +1281,7 @@ QUESTIONS = [
     {
         "domanda": "Fanno parte della carreggiata gli attraversamenti pedonali",
         "risposta": True,
+        "riassunto": "Carreggiata → comprende gli attraversamenti pedonali?",
         "spiegazione": "Gli attraversamenti pedonali, le famose 'strisce pedonali', sono disegnati sulla carreggiata per dare ai pedoni un punto sicuro per attraversare. Quindi, sono una parte della carreggiata.",
         "regola": "Attraversamenti (pedonali/ciclabili) = sulla carreggiata.",
         "trabocchetti": ["pedonali"],
@@ -1130,12 +1289,14 @@ QUESTIONS = [
     {
         "domanda": "Fanno parte della carreggiata le corsie di sorpasso",
         "risposta": True,
+        "riassunto": "Carreggiata → comprende le corsie di sorpasso?",
         "spiegazione": "Le corsie di sorpasso sono usate dai veicoli per superare altri veicoli. Sono una parte fondamentale della carreggiata, la zona della strada destinata al traffico.",
         "regola": "Carreggiata = tutte le corsie per il traffico.",
     },
     {
         "domanda": "Fanno parte della carreggiata le corsie di emergenza delle autostrade",
         "risposta": False,
+        "riassunto": "Carreggiata → comprende le corsie di emergenza autostradali?",
         "spiegazione": "Le corsie di emergenza non sono fatte per la circolazione normale dei veicoli. Servono solo per fermarsi in caso di guasto o per i mezzi di soccorso. Per questo, non fanno parte della carreggiata, che è la parte per il traffico regolare.",
         "regola": "Emergenza = fuori dalla carreggiata.",
         "trabocchetti": ["emergenza"],
@@ -1143,6 +1304,7 @@ QUESTIONS = [
     {
         "domanda": "Fanno parte della carreggiata le banchine",
         "risposta": False,
+        "riassunto": "Carreggiata → comprende le banchine?",
         "spiegazione": "Le banchine sono le strisce di terra o asfalto che si trovano ai lati della carreggiata. Non sono fatte per la circolazione dei veicoli, ma servono come margine. Per questo, non fanno parte della carreggiata.",
         "regola": "Banchina = bordo, non carreggiata.",
         "trabocchetti": ["banchine"],
@@ -1150,6 +1312,7 @@ QUESTIONS = [
     {
         "domanda": "Fanno parte della carreggiata i marciapiedi",
         "risposta": False,
+        "riassunto": "Carreggiata → comprende i marciapiedi?",
         "spiegazione": "I marciapiedi sono spazi dedicati ai pedoni e sono separati dalla carreggiata, dove circolano i veicoli. Non sono fatti per il traffico di auto o moto. Per questo, non fanno parte della carreggiata.",
         "regola": "Marciapiede = per i pedoni, non per le auto.",
         "trabocchetti": ["marciapiedi"],
@@ -1157,6 +1320,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia può essere destinata alla normale marcia dei veicoli",
         "risposta": True,
+        "riassunto": "Corsia → per la normale marcia dei veicoli?",
         "spiegazione": "La corsia è lo spazio della strada dove i veicoli viaggiano normalmente. È il suo scopo principale.",
         "regola": "Corsia = dove si guida.",
         "trabocchetti": ["normale marcia"],
@@ -1164,6 +1328,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia è limitata da strisce continue o discontinue",
         "risposta": True,
+        "riassunto": "Corsia → limitata da strisce continue o discontinue?",
         "spiegazione": "Le corsie sono separate e definite sull'asfalto da linee bianche. Queste linee possono essere continue (non si possono superare) o discontinue (si possono superare per cambiare corsia o svoltare).",
         "regola": "Linee bianche = confini corsia.",
         "trabocchetti": ["limitata"],
@@ -1171,6 +1336,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia può essere di accelerazione",
         "risposta": True,
+        "riassunto": "Corsia → anche di accelerazione?",
         "spiegazione": "Sì, esistono corsie speciali chiamate 'corsie di accelerazione'. Servono per entrare in autostrada o su strade a scorrimento veloce, permettendo ai veicoli di aumentare la velocità in sicurezza prima di immettersi nel flusso del traffico.",
         "regola": "Accelerazione = per entrare veloce.",
         "trabocchetti": ["può essere"],
@@ -1178,6 +1344,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia può essere di decelerazione",
         "risposta": True,
+        "riassunto": "Corsia → anche di decelerazione?",
         "spiegazione": "Sì, esistono anche le 'corsie di decelerazione'. Queste servono per uscire da autostrade o strade a scorrimento veloce, permettendo ai veicoli di rallentare in sicurezza senza intralciare il traffico principale.",
         "regola": "Decelerazione = per uscire piano.",
         "trabocchetti": ["può essere"],
@@ -1185,6 +1352,7 @@ QUESTIONS = [
     {
         "domanda": "Le corsie possono essere vietate a taluni tipi di veicoli",
         "risposta": True,
+        "riassunto": "Corsie → vietabili ad alcuni tipi di veicoli?",
         "spiegazione": "È vero. Alcune corsie sono riservate a specifici tipi di veicoli, come le corsie preferenziali per autobus, taxi o veicoli di soccorso. Altri veicoli non possono usarle.",
         "regola": "Segnali specifici = divieto per alcuni.",
         "trabocchetti": ["taluni"],
@@ -1192,6 +1360,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia può essere riservata alla circolazione di alcune categorie di veicoli (taxi, autobus, ecc.)",
         "risposta": True,
+        "riassunto": "Corsia → riservabile a taxi, autobus ecc.?",
         "spiegazione": "Questa è la definizione delle corsie preferenziali. Sono corsie speciali dove possono circolare solo determinate categorie di veicoli, come i mezzi pubblici (autobus) o i taxi, per facilitare il loro movimento.",
         "regola": "Riservata = solo per autorizzati.",
         "trabocchetti": ["riservata"],
@@ -1199,6 +1368,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia può essere destinata ad effettuare sorpassi",
         "risposta": True,
+        "riassunto": "Corsia → per i sorpassi?",
         "spiegazione": "Nelle strade a più corsie per lo stesso senso di marcia, la corsia più a sinistra è generalmente destinata al sorpasso, mentre le altre sono per la marcia normale.",
         "regola": "Corsia sinistra = sorpasso.",
         "trabocchetti": ["destinata"],
@@ -1206,6 +1376,7 @@ QUESTIONS = [
     {
         "domanda": "L'ente proprietario della strada può imporre che su una corsia i veicoli transitino ad una velocità minima obbligatoria",
         "risposta": True,
+        "riassunto": "Corsia → velocità minima obbligatoria imposta dall'ente?",
         "spiegazione": "Sì, è possibile. In alcune situazioni, specialmente su autostrade o tangenziali, l'ente che gestisce la strada può indicare una velocità minima obbligatoria per evitare che i veicoli troppo lenti creino pericolo o rallentino eccessivamente il traffico.",
         "regola": "Ente strada = decide velocità minima.",
         "trabocchetti": ["può imporre", "Velocità minima obbligatoria"],
@@ -1213,6 +1384,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia è una parte della carreggiata che consente la circolazione di una sola fila di veicoli",
         "risposta": True,
+        "riassunto": "Corsia → una sola fila di veicoli?",
         "spiegazione": "Questa è la definizione precisa di corsia. È una parte della carreggiata (la parte della strada dove circolano i veicoli) e ha spazio sufficiente per far passare una sola fila di veicoli.",
         "regola": "Corsia = un veicolo alla volta.",
         "trabocchetti": ["una sola fila di veicoli"],
@@ -1220,6 +1392,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia può essere destinata alle soste di emergenza, in caso di guasto o malessere",
         "risposta": True,
+        "riassunto": "Corsia → per soste di emergenza?",
         "spiegazione": "Sì, le corsie di emergenza, presenti soprattutto in autostrada, sono fatte apposta per fermarsi solo in caso di necessità urgenti, come un guasto al veicolo o un malore del conducente o dei passeggeri.",
         "regola": "Emergenza = solo per problemi gravi.",
         "trabocchetti": ["emergenza"],
@@ -1227,6 +1400,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia può essere riservata ai veicoli che intendono svoltare (corsia specializzata)",
         "risposta": True,
+        "riassunto": "Corsia specializzata → per chi deve svoltare?",
         "spiegazione": "È vero. Queste sono le 'corsie specializzate' o 'di preselezione'. Hanno frecce disegnate sull'asfalto che indicano la direzione obbligatoria (svolta a destra, a sinistra o dritto) per i veicoli che si trovano su quella corsia.",
         "regola": "Frecce a terra = corsia specializzata.",
         "trabocchetti": ["riservata"],
@@ -1234,6 +1408,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia può essere destinata al rallentamento dei veicoli in uscita dalle autostrade",
         "risposta": True,
+        "riassunto": "Corsia → per rallentare in uscita dall'autostrada?",
         "spiegazione": "Questa è un'altra descrizione della corsia di decelerazione. Serve proprio a permettere ai veicoli di ridurre la velocità in sicurezza quando devono uscire da una strada veloce come l'autostrada.",
         "regola": "Rallentamento in uscita = decelerazione.",
         "trabocchetti": ["rallentamento dei veicoli in uscita"],
@@ -1241,6 +1416,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia è destinata solo al transito dei pedoni",
         "risposta": False,
+        "riassunto": "Corsia → solo per i pedoni?",
         "spiegazione": "Falso. La corsia è destinata alla circolazione dei veicoli. I pedoni devono usare i marciapiedi o gli attraversamenti pedonali per la loro sicurezza.",
         "regola": "Corsia = veicoli, non pedoni.",
         "trabocchetti": ["solo"],
@@ -1248,6 +1424,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia può essere a doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Corsia → a doppio senso?",
         "spiegazione": "Falso. Una singola corsia è sempre a senso unico, cioè i veicoli viaggiano tutti nella stessa direzione. È la carreggiata (che può contenere più corsie) che può essere a doppio senso di circolazione, ma con le corsie per i due sensi ben separate.",
         "regola": "Una corsia = un senso.",
         "trabocchetti": ["Doppio senso"],
@@ -1255,12 +1432,14 @@ QUESTIONS = [
     {
         "domanda": "La corsia è una pista riservata alle vetture da corsa",
         "risposta": False,
+        "riassunto": "Corsia → pista per vetture da corsa?",
         "spiegazione": "Falso. Le corsie sono parte delle strade pubbliche e sono usate per la normale circolazione dei veicoli. Le piste riservate alle vetture da corsa sono circuiti speciali, non corsie stradali.",
         "regola": "Corsia = strada normale, non pista.",
     },
     {
         "domanda": "La corsia non può mai essere attraversata dai pedoni",
         "risposta": False,
+        "riassunto": "Corsia → mai attraversabile dai pedoni?",
         "spiegazione": "Falso. I pedoni possono e devono attraversare le corsie, ma solo negli appositi attraversamenti pedonali (le strisce pedonali) e prestando la massima attenzione.",
         "regola": "Pedoni attraversano su strisce.",
         "trabocchetti": ["mai"],
@@ -1268,18 +1447,21 @@ QUESTIONS = [
     {
         "domanda": "La corsia è formata da due carreggiate",
         "risposta": False,
+        "riassunto": "Corsia → formata da due carreggiate?",
         "spiegazione": "Falso. È il contrario: la carreggiata è la parte della strada destinata alla circolazione dei veicoli e può essere formata da una o più corsie. La corsia è una parte della carreggiata, non viceversa.",
         "regola": "Carreggiata > Corsia.",
     },
     {
         "domanda": "La corsia è una strada a scorrimento veloce",
         "risposta": False,
+        "riassunto": "Corsia → strada a scorrimento veloce?",
         "spiegazione": "Falso. La corsia è una parte della strada. Una 'strada a scorrimento veloce' è un tipo di strada (come un'autostrada o una tangenziale) che può avere più corsie, ma la corsia in sé non è la strada intera.",
         "regola": "Corsia = pezzo di strada, non la strada intera.",
     },
     {
         "domanda": "Nei centri abitati, su una stessa corsia possono circolare affiancati due motocicli",
         "risposta": False,
+        "riassunto": "Centro abitato, stessa corsia → due motocicli affiancati?",
         "spiegazione": "Falso. La regola generale è che su una corsia può circolare una sola fila di veicoli. Anche se i motocicli sono più stretti, non possono viaggiare affiancati sulla stessa corsia, né nei centri abitati né fuori.",
         "regola": "Una corsia = una fila.",
         "trabocchetti": ["affiancati due motocicli"],
@@ -1287,6 +1469,7 @@ QUESTIONS = [
     {
         "domanda": "Fuori dai centri abitati, su una stessa corsia possono circolare affiancati due ciclomotori",
         "risposta": False,
+        "riassunto": "Fuori centro abitato, stessa corsia → due ciclomotori affiancati?",
         "spiegazione": "Falso. La regola 'una sola fila di veicoli per corsia' vale sempre, sia dentro che fuori i centri abitati, e per tutti i tipi di veicoli, inclusi i ciclomotori. Circolare affiancati è pericoloso e non permesso.",
         "regola": "Una corsia = una fila (sempre).",
         "trabocchetti": ["affiancati due ciclomotori"],
@@ -1294,6 +1477,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di accelerazione facilita l'ingresso dei veicoli in autostrada o su strade extraurbane principali",
         "risposta": True,
+        "riassunto": "Corsia di accelerazione → facilita l'ingresso in autostrada/extraurbana principale?",
         "spiegazione": "La corsia di accelerazione è fatta proprio per questo: aiuta i veicoli a prendere velocità e ad entrare in modo sicuro in autostrada o nelle strade extraurbane principali, unendosi al flusso del traffico.",
         "regola": "Accelerazione = Entrata sicura.",
         "trabocchetti": ["facilita"],
@@ -1301,6 +1485,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di accelerazione serve ad entrare correttamente in autostrada",
         "risposta": True,
+        "riassunto": "Corsia di accelerazione → per entrare in autostrada?",
         "spiegazione": "Sì, è vero. La corsia di accelerazione ti permette di aumentare la velocità per raggiungere quella degli altri veicoli e inserirti senza pericoli nel traffico dell'autostrada. Questo è il modo 'corretto' di entrare.",
         "regola": "Entrata corretta = Corsia di accelerazione.",
         "trabocchetti": ["correttamente"],
@@ -1308,6 +1493,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di accelerazione viene utilizzata per aumentare la velocità",
         "risposta": True,
+        "riassunto": "Corsia di accelerazione → per aumentare la velocità?",
         "spiegazione": "Esatto! Il suo nome stesso lo dice: 'accelerazione'. Devi aumentare la tua velocità per raggiungere quella dei veicoli che sono già in autostrada, così puoi unirti a loro senza creare situazioni di pericolo.",
         "regola": "Accelerazione = Aumenta la velocità.",
         "trabocchetti": ["aumentare"],
@@ -1315,6 +1501,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di accelerazione serve per rientrare sulla carreggiata dell'autostrada dopo che si è usciti da un'area di servizio",
         "risposta": True,
+        "riassunto": "Corsia di accelerazione → rientro dopo l'area di servizio?",
         "spiegazione": "Quando esci da un'area di servizio e devi tornare in autostrada, usi una corsia di accelerazione. Funziona esattamente come un normale ingresso in autostrada: devi riprendere velocità per unirti al traffico.",
         "regola": "Area di servizio -> Rientro = Accelerazione.",
         "trabocchetti": ["rientrare sulla carreggiata dell", "area di servizio"],
@@ -1322,6 +1509,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di accelerazione può essere utilizzata per il sorpasso",
         "risposta": False,
+        "riassunto": "Corsia di accelerazione → usabile per sorpassare?",
         "spiegazione": "Falso! La corsia di accelerazione serve solo per prendere velocità e inserirsi nel traffico. Non è una corsia di marcia normale e non si può usare per sorpassare altri veicoli. Sarebbe molto pericoloso!",
         "regola": "Accelerazione = NO sorpasso.",
         "trabocchetti": ["sorpasso"],
@@ -1329,6 +1517,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di accelerazione serve per uscire da una piazzola di sosta",
         "risposta": False,
+        "riassunto": "Corsia di accelerazione → per uscire da una piazzola?",
         "spiegazione": "Falso. Le piazzole di sosta di solito non hanno una vera e propria 'corsia di accelerazione' dedicata come quelle che si trovano agli ingressi delle autostrade o dopo le aree di servizio. Si rientra direttamente nel traffico, prestando molta attenzione.",
         "regola": "Piazzola di sosta = Attenzione, non sempre accelerazione.",
         "trabocchetti": ["piazzola di sosta"],
@@ -1336,6 +1525,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di accelerazione serve per abbandonare la carreggiata dell'autostrada ed entrare in un'area di sosta",
         "risposta": False,
+        "riassunto": "Corsia di accelerazione → per entrare in un'area di sosta?",
         "spiegazione": "Falso. Per 'abbandonare' l'autostrada e andare in un'area di sosta o uscire, si usa la 'corsia di decelerazione'. Serve per rallentare in sicurezza, non per accelerare.",
         "regola": "Abbandonare = Decelerazione.",
         "trabocchetti": ["abbandonare", "entrare in un", "accelerazione"],
@@ -1343,6 +1533,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di decelerazione facilita l'uscita dei veicoli dall'autostrada",
         "risposta": True,
+        "riassunto": "Corsia di decelerazione → facilita l'uscita dall'autostrada?",
         "spiegazione": "La corsia di decelerazione è una corsia speciale che ti aiuta a rallentare in sicurezza quando devi lasciare l'autostrada. Ti permette di uscire senza frenare all'improvviso sulla corsia principale.",
         "regola": "Decelerazione = Uscita sicura.",
         "trabocchetti": ["facilita"],
@@ -1350,6 +1541,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di decelerazione serve per uscire correttamente da una strada extraurbana principale",
         "risposta": True,
+        "riassunto": "Corsia di decelerazione → per uscire da extraurbana principale?",
         "spiegazione": "Sì, la corsia di decelerazione non si trova solo in autostrada, ma anche nelle strade extraurbane principali. Queste strade sono simili all'autostrada per la velocità, quindi anche qui serve per uscire in modo graduale e sicuro.",
         "regola": "Decelerazione = Uscita da strade veloci.",
         "trabocchetti": ["Correttamente"],
@@ -1357,6 +1549,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di decelerazione serve per uscire dalla carreggiata dell'autostrada ed entrare nell'area di servizio",
         "risposta": True,
+        "riassunto": "Corsia di decelerazione → per entrare nell'area di servizio?",
         "spiegazione": "Quando sei in autostrada e vuoi fermarti in un'area di servizio (per esempio per fare benzina o riposare), devi usare la corsia di decelerazione. Ti serve per rallentare e uscire dalla carreggiata principale per entrare nell'area.",
         "regola": "Area di servizio = Decelerazione per entrare.",
         "trabocchetti": ["Entrare nell"],
@@ -1364,6 +1557,7 @@ QUESTIONS = [
     {
         "domanda": "La corsia di decelerazione può essere utilizzata per la sosta dei veicoli",
         "risposta": False,
+        "riassunto": "Corsia di decelerazione → per la sosta?",
         "spiegazione": "No, questo è molto pericoloso! La corsia di decelerazione serve solo per rallentare e uscire dalla strada. Non devi mai fermarti o sostare lì, perché le auto dietro di te stanno ancora andando veloci e potresti causare un incidente.",
         "regola": "Decelerazione MAI sosta.",
         "trabocchetti": ["sosta"],
@@ -1371,12 +1565,14 @@ QUESTIONS = [
     {
         "domanda": "La corsia di decelerazione serve per entrare in una piazzola di sosta",
         "risposta": False,
+        "riassunto": "Corsia di decelerazione → per entrare in una piazzola?",
         "spiegazione": "Questa affermazione è falsa. La corsia di decelerazione serve per uscire dalla strada principale e rallentare. Ti porta verso una piazzola di sosta o un'area di servizio, ma non è la piazzola stessa e la sua funzione non è 'entrare *nella* piazzola' come destinazione finale, ma 'uscire dalla strada'.",
         "regola": "Decelerazione = Uscita dalla strada, non ingresso *nella* piazzola.",
     },
     {
         "domanda": "La corsia di decelerazione serve ad entrare in autostrada",
         "risposta": False,
+        "riassunto": "Corsia di decelerazione → per entrare in autostrada?",
         "spiegazione": "No, è il contrario! La corsia di decelerazione serve per *uscire* dall'autostrada o da una strada veloce. Per *entrare* in autostrada, devi usare la corsia di *accelerazione*, che ti permette di aumentare la velocità per unirti al traffico.",
         "regola": "Decelerazione = Uscita. Accelerazione = Entrata.",
         "trabocchetti": ["entrare in autostrada", "decelerazione"],
@@ -1384,6 +1580,7 @@ QUESTIONS = [
     {
         "domanda": "La banchina non consente, di norma, il transito ai veicoli",
         "risposta": True,
+        "riassunto": "Banchina → di norma non transitabile dai veicoli?",
         "spiegazione": "La banchina è lo spazio a lato della strada, fuori dalla parte dove guidano le auto (carreggiata). Non è fatta per farci passare i veicoli, ma per pedoni o per emergenze. Quindi, normalmente, i veicoli non ci devono transitare.",
         "regola": "Banchina = NO transito veicoli (di norma).",
         "trabocchetti": ["di norma"],
@@ -1391,6 +1588,7 @@ QUESTIONS = [
     {
         "domanda": "La banchina è parte della strada, posta al di fuori della carreggiata",
         "risposta": True,
+        "riassunto": "Banchina → parte della strada fuori dalla carreggiata?",
         "spiegazione": "Sì, la banchina fa parte della strada, ma si trova proprio *fuori* dalla carreggiata, cioè la parte dove le auto circolano. È un bordo laterale che serve a separare la carreggiata da ciò che c'è dopo (come un fosso o un campo).",
         "regola": "Banchina = Parte della strada, ma FUORI dalla carreggiata.",
         "trabocchetti": ["al di fuori della carreggiata"],
@@ -1398,12 +1596,14 @@ QUESTIONS = [
     {
         "domanda": "La banchina è parte della strada, situata oltre la linea bianca continua di margine della carreggiata",
         "risposta": True,
+        "riassunto": "Banchina → oltre la linea bianca continua di margine?",
         "spiegazione": "Esatto. La linea bianca continua che vedi sul bordo della strada serve proprio a delimitare la carreggiata (dove si guida) dalla banchina. La banchina è lo spazio che si trova *dopo* quella linea, verso l'esterno della strada.",
         "regola": "Banchina = OLTRE la linea bianca di margine.",
     },
     {
         "domanda": "La banchina è riservata ai veicoli lenti, nelle strade in salita",
         "risposta": False,
+        "riassunto": "Banchina → per veicoli lenti in salita?",
         "spiegazione": "No, questo è sbagliato. La banchina non è una corsia speciale per i veicoli lenti. Per i veicoli lenti in salita, se presenti, ci sono le 'corsie di marcia lenta', ma queste sono *dentro* la carreggiata, non sulla banchina.",
         "regola": "Banchina ≠ corsia per veicoli lenti.",
         "trabocchetti": ["riservata"],
@@ -1411,6 +1611,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle banchine la sosta dei veicoli è consentita per un massimo di 5 ore",
         "risposta": False,
+        "riassunto": "Banchine → sosta consentita fino a 5 ore?",
         "spiegazione": "Assolutamente no. Sulla banchina la sosta è generalmente vietata, a meno che non ci siano segnali specifici che la consentono (e di solito è per brevi fermate di emergenza, non per ore). Non esiste una regola generale di '5 ore' per la sosta sulla banchina.",
         "regola": "Banchina = NO sosta lunga (di solito vietata).",
         "trabocchetti": ["consentita per un massimo di 5 ore"],
@@ -1418,6 +1619,7 @@ QUESTIONS = [
     {
         "domanda": "La banchina divide la carreggiata in due corsie",
         "risposta": False,
+        "riassunto": "Banchina → divide la carreggiata in due corsie?",
         "spiegazione": "No, la banchina si trova *ai lati* della carreggiata, non la divide. Quello che divide la carreggiata in corsie sono le linee di mezzeria (bianche continue o discontinue) o le strisce che delimitano le corsie. La banchina non ha questa funzione.",
         "regola": "Banchina = Lato, non divisione della carreggiata.",
         "trabocchetti": ["divide la carreggiata in due corsie"],
@@ -1425,6 +1627,7 @@ QUESTIONS = [
     {
         "domanda": "La banchina è parte della carreggiata, destinata alla sosta dei veicoli",
         "risposta": False,
+        "riassunto": "Banchina → parte della carreggiata per la sosta?",
         "spiegazione": "Questa è una doppia trappola. Primo, la banchina *non* è parte della carreggiata, ma è *fuori* dalla carreggiata. Secondo, non è destinata alla sosta regolare dei veicoli, che è generalmente vietata o permessa solo in casi di emergenza.",
         "regola": "Banchina = Fuori carreggiata, NO sosta regolare.",
         "trabocchetti": ["parte della carreggiata", "destinata alla sosta"],
@@ -1432,6 +1635,7 @@ QUESTIONS = [
     {
         "domanda": "Il marciapiede è una parte della strada, rialzata o delimitata in altro modo, riservata ai pedoni",
         "risposta": True,
+        "riassunto": "Marciapiede → rialzato o delimitato, riservato ai pedoni?",
         "spiegazione": "Il marciapiede è proprio come descritto: una parte della strada che è più alta o separata in qualche modo, ed è fatta apposta per le persone che camminano (i pedoni).",
         "regola": "Marciapiede = Pedoni.",
         "trabocchetti": ["riservata ai pedoni"],
@@ -1439,6 +1643,7 @@ QUESTIONS = [
     {
         "domanda": "Il marciapiede è una parte della strada riservata, di norma, ai pedoni",
         "risposta": True,
+        "riassunto": "Marciapiede → di norma riservato ai pedoni?",
         "spiegazione": "Questa domanda ribadisce il concetto precedente. Il marciapiede è, nella maggior parte dei casi, uno spazio dedicato ai pedoni per camminare in sicurezza.",
         "regola": "Di norma, marciapiede = Pedoni.",
         "trabocchetti": ["di norma"],
@@ -1446,12 +1651,14 @@ QUESTIONS = [
     {
         "domanda": "Il marciapiede consente la sosta dei veicoli solo in presenza di apposite strisce di parcheggio",
         "risposta": True,
+        "riassunto": "Marciapiede → sosta solo con strisce di parcheggio?",
         "spiegazione": "Normalmente non si può parcheggiare sul marciapiede. Tuttavia, se ci sono delle strisce speciali (come quelle blu o bianche) e magari un cartello che lo permette, allora sì, è possibile parcheggiare lì.",
         "regola": "Parcheggio su marciapiede? Solo con strisce e cartelli!",
     },
     {
         "domanda": "Il marciapiede è una parte della strada, al di fuori della carreggiata, destinata alla circolazione dei pedoni",
         "risposta": True,
+        "riassunto": "Marciapiede → fuori dalla carreggiata, per i pedoni?",
         "spiegazione": "Il marciapiede è una parte della strada, ma non è la carreggiata (dove vanno le auto). È uno spazio separato e sicuro per i pedoni.",
         "regola": "Marciapiede fuori dalla carreggiata, per i pedoni.",
         "trabocchetti": ["al di fuori della carreggiata"],
@@ -1459,6 +1666,7 @@ QUESTIONS = [
     {
         "domanda": "Il marciapiede è una parte della carreggiata",
         "risposta": False,
+        "riassunto": "Marciapiede → parte della carreggiata?",
         "spiegazione": "No, questa affermazione è falsa. Il marciapiede non fa parte della carreggiata. La carreggiata è la parte della strada dove circolano i veicoli (auto, moto, ecc.).",
         "regola": "Marciapiede NON è carreggiata.",
         "trabocchetti": ["carreggiata", "una parte"],
@@ -1466,6 +1674,7 @@ QUESTIONS = [
     {
         "domanda": "Il marciapiede è una parte della strada riservata anche alle biciclette",
         "risposta": False,
+        "riassunto": "Marciapiede → riservato anche alle biciclette?",
         "spiegazione": "Questa affermazione è falsa. Il marciapiede è riservato ai pedoni. Le biciclette devono usare la carreggiata o, se presenti, le piste ciclabili.",
         "regola": "Marciapiede = solo pedoni. Bici = pista ciclabile o strada.",
         "trabocchetti": ["anche"],
@@ -1473,12 +1682,14 @@ QUESTIONS = [
     {
         "domanda": "Il marciapiede è riservato ai pedoni e ai veicoli in sosta, qualora non sia rialzato",
         "risposta": False,
+        "riassunto": "Marciapiede non rialzato → pedoni e veicoli in sosta?",
         "spiegazione": "Questa affermazione è falsa. Il marciapiede è per i pedoni. Non è per i veicoli in sosta, nemmeno se non è rialzato. La sosta è permessa solo se ci sono strisce e segnaletica specifica.",
         "regola": "Marciapiede = pedoni. Sosta veicoli = solo con strisce.",
     },
     {
         "domanda": "Il marciapiede è una parte della strada dove, di norma, è consentita la sosta dei ciclomotori",
         "risposta": False,
+        "riassunto": "Marciapiede → di norma sosta dei ciclomotori consentita?",
         "spiegazione": "Questa affermazione è falsa. La sosta dei ciclomotori sul marciapiede non è consentita 'di norma'. È vietata, a meno che non ci siano spazi appositi e segnalati per il parcheggio.",
         "regola": "Sosta ciclomotori su marciapiede? No, solo in spazi dedicati.",
         "trabocchetti": ["di norma, è consentita", "di norma"],
@@ -1486,6 +1697,7 @@ QUESTIONS = [
     {
         "domanda": "Il salvagente, posto in corrispondenza di attraversamenti pedonali, serve anche al riparo o alla sosta dei pedoni che attraversano la strada",
         "risposta": True,
+        "riassunto": "Salvagente sulle strisce → riparo e sosta dei pedoni?",
         "spiegazione": "Il salvagente è una piccola isola rialzata sulla strada, spesso vicino agli attraversamenti pedonali. Serve proprio a dare un punto sicuro dove i pedoni possono fermarsi o aspettare mentre attraversano una strada larga o trafficata, offrendo riparo.",
         "regola": "Salva-gente = riparo per i pedoni.",
         "trabocchetti": ["anche"],
@@ -1493,6 +1705,7 @@ QUESTIONS = [
     {
         "domanda": "Il salvagente facilita la salita e la discesa dei passeggeri da tram, filobus o autobus",
         "risposta": True,
+        "riassunto": "Salvagente → salita e discesa da tram e autobus?",
         "spiegazione": "Molto spesso i salvagente si trovano dove fermano i mezzi pubblici (tram, autobus). Servono a creare una zona sicura e rialzata per i passeggeri, così possono salire e scendere più facilmente e senza pericolo dal mezzo.",
         "regola": "Salva-gente = comodo per i passeggeri dei mezzi pubblici.",
         "trabocchetti": ["facilita la salita e la discesa"],
@@ -1500,6 +1713,7 @@ QUESTIONS = [
     {
         "domanda": "Il salvagente può essere segnalato da colonnine luminose a luce gialla fissa",
         "risposta": True,
+        "riassunto": "Salvagente → colonnine a luce gialla fissa?",
         "spiegazione": "Per rendere il salvagente più visibile, specialmente di notte o con poca luce, può avere delle piccole colonnine con una luce gialla che rimane sempre accesa. Questo aiuta gli automobilisti a vederlo meglio e a evitarlo.",
         "regola": "Salva-gente = luce gialla per vederlo.",
         "trabocchetti": ["può"],
@@ -1507,6 +1721,7 @@ QUESTIONS = [
     {
         "domanda": "Il salvagente serve a dividere i sensi di marcia in una strada a doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Salvagente → divide i sensi di marcia?",
         "spiegazione": "Per dividere i sensi di marcia in una strada a doppio senso si usano spartitraffico o isole di traffico, che sono più lunghe e continue. Il salvagente è più piccolo e serve per i pedoni o i passeggeri, non per separare le corsie per i veicoli.",
         "regola": "Salva-gente non divide le corsie.",
         "trabocchetti": ["dividere i sensi di marcia"],
@@ -1514,6 +1729,7 @@ QUESTIONS = [
     {
         "domanda": "Il salvagente serve a incanalare i veicoli in varie direzioni",
         "risposta": False,
+        "riassunto": "Salvagente → incanala i veicoli?",
         "spiegazione": "'Incanalare i veicoli' significa guidarli in una certa direzione, come in una rotatoria o in un incrocio complesso. Questa è la funzione delle isole di traffico o delle canalizzazioni, non del salvagente, che ha scopi legati ai pedoni e ai mezzi pubblici.",
         "regola": "Salva-gente non dirige le auto.",
         "trabocchetti": ["incanalare i veicoli"],
@@ -1521,6 +1737,7 @@ QUESTIONS = [
     {
         "domanda": "Il salvagente è una persona preposta al primo soccorso",
         "risposta": False,
+        "riassunto": "Salvagente → persona addetta al primo soccorso?",
         "spiegazione": "La parola 'salvagente' in questo contesto stradale si riferisce a una struttura fisica sulla strada. Una 'persona preposta al primo soccorso' è un soccorritore, che è una persona, non una struttura. È un classico gioco di parole per confondere.",
         "regola": "Salva-gente stradale = struttura, non persona.",
         "trabocchetti": ["persona"],
@@ -1528,6 +1745,7 @@ QUESTIONS = [
     {
         "domanda": "Il salvagente è un itinerario ciclopedonale",
         "risposta": False,
+        "riassunto": "Salvagente → itinerario ciclopedonale?",
         "spiegazione": "Un itinerario ciclopedonale è un percorso lungo e dedicato sia alle biciclette che ai pedoni. Il salvagente è una piccola isola di sicurezza, un punto, non un percorso o una strada dedicata.",
         "regola": "Salva-gente non è un percorso.",
         "trabocchetti": ["itinerario"],
@@ -1535,6 +1753,7 @@ QUESTIONS = [
     {
         "domanda": "Il passo carrabile consente ai veicoli di accedere alle proprietà private laterali alla strada (garage, cortili, ecc.)",
         "risposta": True,
+        "riassunto": "Passo carrabile → accesso dei veicoli a proprietà laterali?",
         "spiegazione": "Un passo carrabile è un punto specifico della strada che permette ai veicoli di entrare e uscire da proprietà private come garage, cortili o giardini. È come un 'cancello' per le auto.",
         "regola": "Passo carrabile = entrata/uscita privata.",
         "trabocchetti": ["consente ai veicoli di accedere"],
@@ -1542,6 +1761,7 @@ QUESTIONS = [
     {
         "domanda": "Il passo carrabile permette ai veicoli che circolano su una strada pubblica di accedere ad un'area laterale adibita alla sosta",
         "risposta": True,
+        "riassunto": "Passo carrabile → accesso a un'area laterale di sosta?",
         "spiegazione": "Sì, il passo carrabile serve proprio a questo: permette ai veicoli che sono sulla strada di entrare in un'area privata (come un cortile o un parcheggio privato) dove possono fermarsi o parcheggiare.",
         "regola": "Passo carrabile = accesso a sosta privata.",
         "trabocchetti": ["Adibita alla sosta"],
@@ -1549,6 +1769,7 @@ QUESTIONS = [
     {
         "domanda": "Il passo carrabile deve essere corredato da apposito segnale, che riporti l'ente e il numero di autorizzazione",
         "risposta": True,
+        "riassunto": "Passo carrabile → segnale con ente e numero di autorizzazione?",
         "spiegazione": "Per essere un passo carrabile 'legale' e riconosciuto, deve avere un cartello speciale. Su questo cartello devono essere indicati l'ente che lo ha autorizzato (di solito il Comune) e un numero di permesso. Questo serve a tutti per capire che è un accesso e non un posto dove parcheggiare.",
         "regola": "Passo carrabile = cartello con autorizzazione.",
         "trabocchetti": ["Corredato da apposito segnale"],
@@ -1556,6 +1777,7 @@ QUESTIONS = [
     {
         "domanda": "Il passo carrabile è una zona per l'accesso dei veicoli alle proprietà laterali alla strada",
         "risposta": True,
+        "riassunto": "Passo carrabile → zona di accesso alle proprietà laterali?",
         "spiegazione": "Questa è la definizione più semplice e chiara del passo carrabile. È l'area dove i veicoli possono entrare o uscire da un luogo privato (come un garage o un cortile) che si trova a lato della strada.",
         "regola": "Passo carrabile = zona di accesso.",
         "trabocchetti": ["Zona per l"],
@@ -1563,6 +1785,7 @@ QUESTIONS = [
     {
         "domanda": "In corrispondenza del passo carrabile è consentita la fermata",
         "risposta": True,
+        "riassunto": "Passo carrabile → fermata consentita?",
         "spiegazione": "La 'fermata' è quando ti fermi per un tempo molto breve, ad esempio per far scendere o salire qualcuno, e rimani vicino al veicolo, pronto a ripartire. Questo è permesso davanti a un passo carrabile, perché non blocchi l'accesso o l'uscita per lungo tempo.",
         "regola": "Passo carrabile: fermata SÌ, sosta NO.",
         "trabocchetti": ["fermata"],
@@ -1570,6 +1793,7 @@ QUESTIONS = [
     {
         "domanda": "Il passo carrabile è un parcheggio scambiatore",
         "risposta": False,
+        "riassunto": "Passo carrabile → parcheggio scambiatore?",
         "spiegazione": "No, è falso. Un 'parcheggio scambiatore' è un grande parcheggio pubblico, spesso vicino a stazioni o fermate di mezzi pubblici, dove le persone lasciano l'auto per prendere un treno o un autobus. Il passo carrabile è solo un accesso a una proprietà privata, non un parcheggio pubblico per cambiare mezzo di trasporto.",
         "regola": "Passo carrabile NON è parcheggio pubblico.",
         "trabocchetti": ["Parcheggio scambiatore"],
@@ -1577,6 +1801,7 @@ QUESTIONS = [
     {
         "domanda": "Il passo carrabile è una strada riservata ai carri trainati da animali",
         "risposta": False,
+        "riassunto": "Passo carrabile → strada per carri trainati da animali?",
         "spiegazione": "No, è falso. Il passo carrabile non ha nulla a che fare con i carri trainati da animali. È un accesso per veicoli moderni (auto, moto, furgoni) a proprietà private.",
         "regola": "Passo carrabile = veicoli moderni, non carri.",
         "trabocchetti": ["Carri trainati da animali"],
@@ -1584,6 +1809,7 @@ QUESTIONS = [
     {
         "domanda": "Il passo carrabile è una strada riservata agli autocarri",
         "risposta": False,
+        "riassunto": "Passo carrabile → strada riservata agli autocarri?",
         "spiegazione": "No, è falso. Il passo carrabile non è una strada e non è riservato solo agli autocarri. È un punto di accesso per tutti i tipi di veicoli (auto, moto, furgoni, ecc.) che devono entrare o uscire da una proprietà privata.",
         "regola": "Passo carrabile = per tutti i veicoli, non solo autocarri.",
         "trabocchetti": ["Riservata agli autocarri"],
@@ -1591,6 +1817,7 @@ QUESTIONS = [
     {
         "domanda": "Il passo carrabile è un salvagente circolare per i pedoni",
         "risposta": False,
+        "riassunto": "Passo carrabile → salvagente circolare per pedoni?",
         "spiegazione": "No, è falso. Un 'salvagente circolare' è un oggetto che si usa in acqua per aiutare le persone a galleggiare. Il passo carrabile è un accesso per veicoli, non ha nulla a che fare con la sicurezza dei pedoni in questo modo.",
         "regola": "Passo carrabile = accesso veicoli, non salvagente.",
         "trabocchetti": ["Salvagente circolare"],
@@ -1598,12 +1825,14 @@ QUESTIONS = [
     {
         "domanda": "Il passo carrabile è un segnale che impone la circolazione rotatoria su una piazza",
         "risposta": False,
+        "riassunto": "Passo carrabile → segnale di circolazione rotatoria?",
         "spiegazione": "No, è falso. Il passo carrabile è un accesso, non un segnale stradale che regola il traffico in una piazza. I segnali di circolazione rotatoria sono diversi (sono cartelli blu con frecce bianche che indicano la rotazione).",
         "regola": "Passo carrabile = accesso, non segnale di rotatoria.",
     },
     {
         "domanda": "In corrispondenza del passo carrabile è consentita la sosta",
         "risposta": False,
+        "riassunto": "Passo carrabile → sosta consentita?",
         "spiegazione": "No, è falso. La 'sosta' è quando lasci il veicolo e ti allontani, anche per poco tempo. Questo è vietato davanti a un passo carrabile perché bloccheresti l'entrata o l'uscita dei veicoli dalla proprietà privata. Ricorda bene: la fermata è permessa, la sosta è vietata!",
         "regola": "Passo carrabile: sosta MAI! (Fermata SÌ, sosta NO).",
         "trabocchetti": ["sosta"],
@@ -1611,6 +1840,7 @@ QUESTIONS = [
     {
         "domanda": "I veicoli a due ruote, con motore termico fino a 50 cm3 di cilindrata e velocità massima di 45 km/h sono ciclomotori",
         "risposta": True,
+        "riassunto": "Due ruote, fino a 50 cm3 e 45 km/h → ciclomotore?",
         "spiegazione": "Questa è la definizione esatta di ciclomotore a due ruote. Per essere un ciclomotore, un veicolo deve avere un motore piccolo (fino a 50 cm3) e non può superare la velocità di 45 km/h.",
         "regola": "Ciclomotore = max 50cc e max 45km/h.",
         "trabocchetti": ["fino a"],
@@ -1618,6 +1848,7 @@ QUESTIONS = [
     {
         "domanda": "I ciclomotori possono avere due o tre ruote",
         "risposta": True,
+        "riassunto": "Ciclomotori → due o tre ruote?",
         "spiegazione": "Sì, è vero. Esistono ciclomotori con due ruote (come gli scooter più piccoli) e anche ciclomotori con tre ruote, usati ad esempio per piccoli trasporti o da persone con difficoltà motorie.",
         "regola": "Ciclomotore = 2 o 3 ruote.",
         "trabocchetti": ["possono"],
@@ -1625,6 +1856,7 @@ QUESTIONS = [
     {
         "domanda": "Non tutti i veicoli a motore a due ruote vengono classificati ciclomotori",
         "risposta": True,
+        "riassunto": "Due ruote a motore → non tutti ciclomotori?",
         "spiegazione": "È vero. Non tutti i veicoli a motore con due ruote sono ciclomotori. Ad esempio, le motociclette hanno motori più grandi e vanno più veloci, quindi sono una categoria diversa.",
         "regola": "Moto > Ciclomotore.",
         "trabocchetti": ["Non tutti"],
@@ -1632,18 +1864,21 @@ QUESTIONS = [
     {
         "domanda": "I ciclomotori a due ruote non possono avere un motore termico di cilindrata superiore a 50 cm3",
         "risposta": True,
+        "riassunto": "Ciclomotore a due ruote → motore termico oltre 50 cm3 non ammesso?",
         "spiegazione": "Questa è una regola fondamentale. Se un veicolo a due ruote ha un motore con cilindrata maggiore di 50 cm3, non è più un ciclomotore, ma viene classificato come motocicletta.",
         "regola": "Ciclomotore = max 50cc.",
     },
     {
         "domanda": "I ciclomotori sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni",
         "risposta": True,
+        "riassunto": "Ciclomotori → revisione dopo 4 anni, poi ogni 2?",
         "spiegazione": "Come le automobili, anche i ciclomotori devono fare la revisione periodica per controllare che siano sicuri e in buone condizioni. La prima revisione si fa dopo quattro anni dalla prima immatricolazione, e poi ogni due anni.",
         "regola": "Revisione: 4-2-2 anni.",
     },
     {
         "domanda": "I ciclomotori non hanno più di due ruote",
         "risposta": False,
+        "riassunto": "Ciclomotori → non più di due ruote?",
         "spiegazione": "Falso! Questa affermazione è sbagliata. Come abbiamo visto, i ciclomotori possono avere anche tre ruote, non solo due.",
         "regola": "Ciclomotore = 2 o 3 ruote.",
         "trabocchetti": ["non hanno più di due ruote"],
@@ -1651,6 +1886,7 @@ QUESTIONS = [
     {
         "domanda": "Le biciclette con pedalata assistita, dotate di motore elettrico ausiliario di potenza massima fino a 0,25 kW, sono definite ciclomotori",
         "risposta": False,
+        "riassunto": "Bici a pedalata assistita fino a 0,25 kW → ciclomotore?",
         "spiegazione": "Falso! Le biciclette a pedalata assistita, con queste caratteristiche (motore elettrico fino a 0,25 kW che aiuta solo quando si pedala e si spegne a 25 km/h), sono considerate biciclette normali. Non sono ciclomotori e non richiedono patente, targa o assicurazione.",
         "regola": "Bici elettrica (0.25kW, 25km/h) = Bici, non ciclomotore.",
         "trabocchetti": ["sono definite ciclomotori"],
@@ -1658,6 +1894,7 @@ QUESTIONS = [
     {
         "domanda": "Si definiscono ciclomotori tutti i veicoli a due ruote di cilindrata superiore a 50 cm3",
         "risposta": False,
+        "riassunto": "Ciclomotori → tutti i due ruote oltre 50 cm3?",
         "spiegazione": "Falso! Questa affermazione è l'esatto contrario della verità. I ciclomotori hanno una cilindrata *massima* di 50 cm3. Se la cilindrata è superiore, si tratta di una motocicletta, non di un ciclomotore.",
         "regola": "Ciclomotore = max 50cc. Superiore = Moto.",
         "trabocchetti": ["tutti", "superiore a"],
@@ -1665,6 +1902,7 @@ QUESTIONS = [
     {
         "domanda": "I ciclomotori, per essere definiti tali, devono essere muniti di cambio manuale",
         "risposta": False,
+        "riassunto": "Ciclomotori → obbligo di cambio manuale?",
         "spiegazione": "Falso! Molti ciclomotori, specialmente gli scooter, hanno il cambio automatico. Il tipo di cambio (manuale o automatico) non è un requisito per definire un veicolo come ciclomotore.",
         "regola": "Cambio = non importa.",
         "trabocchetti": ["devono essere muniti di cambio manuale"],
@@ -1672,6 +1910,7 @@ QUESTIONS = [
     {
         "domanda": "I ciclomotori possono circolare alla velocità di 60 km/h fuori dai centri urbani",
         "risposta": False,
+        "riassunto": "Ciclomotori → 60 km/h fuori dai centri urbani?",
         "spiegazione": "Falso! La velocità massima consentita per i ciclomotori è di 45 km/h, sia dentro che fuori dai centri urbani. Non possono circolare a 60 km/h.",
         "regola": "Ciclomotore = max 45 km/h, sempre.",
         "trabocchetti": ["60 km/h"],
@@ -1679,6 +1918,7 @@ QUESTIONS = [
     {
         "domanda": "I ciclomotori non sono soggetti a revisione periodica",
         "risposta": False,
+        "riassunto": "Ciclomotori → niente revisione periodica?",
         "spiegazione": "Falso! I ciclomotori sono assolutamente soggetti a revisione periodica, proprio come le automobili e le motociclette. La prima revisione è dopo 4 anni, poi ogni 2 anni.",
         "regola": "Ciclomotore = Revisione obbligatoria.",
         "trabocchetti": ["non sono soggetti"],
@@ -1686,6 +1926,7 @@ QUESTIONS = [
     {
         "domanda": "I tricicli a motore sono veicoli a motore a tre ruote simmetriche",
         "risposta": True,
+        "riassunto": "Tricicli a motore → tre ruote simmetriche?",
         "spiegazione": "Un triciclo a motore ha sempre tre ruote. 'Simmetriche' significa che le ruote sono disposte in modo equilibrato (ad esempio, due dietro e una davanti) per garantire la stabilità del veicolo.",
         "regola": "Triciclo = tre ruote stabili.",
         "trabocchetti": ["simmetriche"],
@@ -1693,6 +1934,7 @@ QUESTIONS = [
     {
         "domanda": "I tricicli a motore sono veicoli con motore di cilindrata superiore a 50 cm3",
         "risposta": True,
+        "riassunto": "Tricicli a motore → cilindrata oltre 50 cm3?",
         "spiegazione": "I tricicli a motore sono veicoli con un motore più potente. Se la cilindrata è uguale o inferiore a 50 cm3, il veicolo è un ciclomotore a tre ruote, non un triciclo a motore.",
         "regola": "Più di 50cc = triciclo a motore.",
         "trabocchetti": ["superiore a 50 cm3"],
@@ -1700,6 +1942,7 @@ QUESTIONS = [
     {
         "domanda": "I tricicli a motore sono veicoli a motore aventi una velocità massima per costruzione superiore a 45 km/h",
         "risposta": True,
+        "riassunto": "Tricicli a motore → velocità massima oltre 45 km/h?",
         "spiegazione": "Oltre alla cilindrata, anche la velocità è un criterio importante. Se un veicolo a tre ruote può andare più veloce di 45 km/h, è un triciclo a motore. Se la sua velocità massima è fino a 45 km/h, è un ciclomotore a tre ruote.",
         "regola": "Più di 45 km/h = triciclo a motore.",
         "trabocchetti": ["superiore a 45 km/h"],
@@ -1707,12 +1950,14 @@ QUESTIONS = [
     {
         "domanda": "I tricicli a motore sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni",
         "risposta": True,
+        "riassunto": "Tricicli a motore → revisione dopo 4 anni, poi ogni 2?",
         "spiegazione": "I tricicli a motore sono veicoli a motore e, come le auto e le moto, devono fare la revisione periodica. La prima revisione si fa dopo 4 anni dalla prima immatricolazione, e poi ogni 2 anni.",
         "regola": "Revisione 4-2-2.",
     },
     {
         "domanda": "I tricicli a motore sono veicoli a motore che possono essere condotti senza patente",
         "risposta": False,
+        "riassunto": "Tricicli a motore → guidabili senza patente?",
         "spiegazione": "I tricicli a motore sono veicoli potenti e richiedono una patente di guida specifica (A1, A2, A o B, a seconda della potenza e dell'età). Non si possono guidare senza patente.",
         "regola": "Triciclo a motore = serve patente!",
         "trabocchetti": ["senza patente"],
@@ -1720,6 +1965,7 @@ QUESTIONS = [
     {
         "domanda": "I tricicli a motore sono costituiti da un motociclo e un sidecar",
         "risposta": False,
+        "riassunto": "Triciclo a motore → motociclo con sidecar?",
         "spiegazione": "Un triciclo a motore è un veicolo progettato e costruito con tre ruote fin dall'inizio. Un motociclo con sidecar è un motociclo a cui è stato aggiunto un 'carrozzino' laterale, sono due tipi di veicoli diversi.",
         "regola": "Sidecar è 'aggiunto', triciclo è 'nato' con tre ruote.",
         "trabocchetti": ["costituiti da un motociclo e un sidecar"],
@@ -1727,6 +1973,7 @@ QUESTIONS = [
     {
         "domanda": "I tricicli a motore sono veicoli con motore di cilindrata inferiore a 50 cm3 e aventi velocità massima per costruzione fino a 45 km/h",
         "risposta": False,
+        "riassunto": "Tricicli a motore → sotto 50 cm3 e fino a 45 km/h?",
         "spiegazione": "Questa descrizione ('cilindrata inferiore a 50 cm3' e 'velocità massima fino a 45 km/h') si riferisce ai ciclomotori a tre ruote (o quadricicli leggeri), non ai tricicli a motore, che hanno caratteristiche superiori.",
         "regola": "'Inferiore' e 'fino a' = ciclomotore.",
         "trabocchetti": ["inferiore a 50 cm3", "fino a 45 km/h"],
@@ -1734,6 +1981,7 @@ QUESTIONS = [
     {
         "domanda": "I tricicli a motore non sono soggetti a revisione periodica",
         "risposta": False,
+        "riassunto": "Tricicli a motore → niente revisione periodica?",
         "spiegazione": "Come spiegato nella domanda 18558, i tricicli a motore sono veicoli a motore e, come tutti i veicoli a motore, sono soggetti a revisione periodica per garantire la sicurezza.",
         "regola": "Tutti i veicoli a motore fanno la revisione.",
         "trabocchetti": ["non sono soggetti a revisione"],
@@ -1741,6 +1989,7 @@ QUESTIONS = [
     {
         "domanda": "I quadricicli leggeri alimentati a benzina hanno cilindrata del motore inferiore o pari a 50 cm3",
         "risposta": True,
+        "riassunto": "Quadricicli leggeri a benzina → fino a 50 cm3?",
         "spiegazione": "I quadricicli leggeri alimentati a benzina, proprio come i ciclomotori, hanno un motore con una cilindrata massima di 50 cm³. Questo li rende meno potenti e più lenti rispetto ad altri veicoli.",
         "regola": "Quadriciclo leggero a benzina = max 50 cm³.",
         "trabocchetti": ["inferiore o pari a 50 cm3"],
@@ -1748,6 +1997,7 @@ QUESTIONS = [
     {
         "domanda": "I quadricicli sono veicoli a motore a quattro ruote",
         "risposta": True,
+        "riassunto": "Quadricicli → veicoli a motore a quattro ruote?",
         "spiegazione": "La parola 'quadriciclo' deriva dal latino 'quadri' che significa quattro, e 'ciclo' che si riferisce alle ruote. Quindi, per definizione, un quadriciclo è un veicolo a motore con quattro ruote.",
         "regola": "Quadri = quattro ruote.",
         "trabocchetti": ["Quattro ruote"],
@@ -1755,6 +2005,7 @@ QUESTIONS = [
     {
         "domanda": "I quadricicli leggeri, ai fini della circolazione, sono assimilati ai ciclomotori",
         "risposta": True,
+        "riassunto": "Quadricicli leggeri → assimilati ai ciclomotori?",
         "spiegazione": "I quadricicli leggeri sono considerati simili ai ciclomotori per molte regole della circolazione, come la velocità massima (45 km/h) e la patente necessaria (patente AM).",
         "regola": "Quadriciclo leggero = come un ciclomotore.",
         "trabocchetti": ["assimilati ai ciclomotori"],
@@ -1762,6 +2013,7 @@ QUESTIONS = [
     {
         "domanda": "La potenza dei quadricicli non leggeri è sempre inferiore o uguale a 15 kW",
         "risposta": True,
+        "riassunto": "Quadricicli non leggeri → potenza sempre fino a 15 kW?",
         "spiegazione": "I quadricicli non leggeri sono più potenti dei leggeri, ma hanno comunque un limite di potenza stabilito dalla legge, che non può superare i 15 kW. Questo li distingue da auto o moto più potenti.",
         "regola": "Non leggeri = max 15 kW.",
         "trabocchetti": ["inferiore o uguale a 15 kW"],
@@ -1769,6 +2021,7 @@ QUESTIONS = [
     {
         "domanda": "I quadricicli sono soggetti a revisione periodica",
         "risposta": True,
+        "riassunto": "Quadricicli → revisione periodica?",
         "spiegazione": "Come tutti i veicoli a motore che circolano su strada, anche i quadricicli devono essere controllati periodicamente (revisione) per assicurarsi che siano sicuri e rispettino le norme ambientali.",
         "regola": "Tutti i veicoli (anche quadricicli) = Revisione.",
         "trabocchetti": ["soggetti a revisione periodica"],
@@ -1776,6 +2029,7 @@ QUESTIONS = [
     {
         "domanda": "I quadricicli diversi da quelli leggeri possono essere guidati senza patente",
         "risposta": False,
+        "riassunto": "Quadricicli non leggeri → guidabili senza patente?",
         "spiegazione": "I quadricicli non leggeri sono veicoli più potenti e veloci dei leggeri. Per guidarli è obbligatorio avere una patente specifica, come la patente B1 (che si prende a 16 anni) o una patente superiore (come la B).",
         "regola": "Non leggeri = serve patente (B1 o superiore).",
         "trabocchetti": ["senza patente"],
@@ -1783,6 +2037,7 @@ QUESTIONS = [
     {
         "domanda": "I quadricicli non leggeri, ai fini della circolazione, sono equiparati ai ciclomotori",
         "risposta": False,
+        "riassunto": "Quadricicli non leggeri → equiparati ai ciclomotori?",
         "spiegazione": "Solo i quadricicli *leggeri* sono considerati simili ai ciclomotori. I quadricicli *non leggeri* sono veicoli diversi, con regole proprie per la patente, la velocità e la circolazione, e non sono equiparati ai ciclomotori.",
         "regola": "Non leggeri ≠ Ciclomotori.",
         "trabocchetti": ["non leggeri", "equiparati ai ciclomotori"],
@@ -1790,6 +2045,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito sostituire il dispositivo di scarico dei quadricicli leggeri per aumentare la velocità massima, purché non si aumenti la cilindrata del motore",
         "risposta": False,
+        "riassunto": "Quadriciclo leggero → cambiare scarico per andare più veloce?",
         "spiegazione": "Non è permesso modificare un quadriciclo leggero, nemmeno il dispositivo di scarico, per aumentare la sua velocità massima oltre i 45 km/h. Qualsiasi modifica che alteri le caratteristiche originali è illegale.",
         "regola": "No modifiche = No velocità extra.",
         "trabocchetti": ["per aumentare la velocità massima"],
@@ -1797,6 +2053,7 @@ QUESTIONS = [
     {
         "domanda": "La guida dei quadricicli non leggeri è consentita già al compimento del quattordicesimo anno di età",
         "risposta": False,
+        "riassunto": "Quadricicli non leggeri → guida già a 14 anni?",
         "spiegazione": "Per guidare i quadricicli non leggeri è necessaria la patente B1, che si può ottenere solo a partire dai 16 anni. A 14 anni si può prendere solo la patente AM, che permette di guidare i ciclomotori e i quadricicli leggeri.",
         "regola": "Non leggeri = 16 anni (patente B1).",
         "trabocchetti": ["quattordicesimo anno di età"],
@@ -1804,6 +2061,7 @@ QUESTIONS = [
     {
         "domanda": "I quadricicli non leggeri a manubrio e con carrozzeria aperta possono essere condotti senza casco",
         "risposta": False,
+        "riassunto": "Quadricicli non leggeri a manubrio aperti → senza casco?",
         "spiegazione": "Se un quadriciclo non leggero ha il manubrio e la carrozzeria aperta (come un 'quad' o ATV), è obbligatorio indossare il casco, proprio come quando si guida una moto, per la propria sicurezza.",
         "regola": "Manubrio + Aperta = Casco obbligatorio.",
         "trabocchetti": ["senza casco"],
@@ -1811,6 +2069,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito aumentare la cilindrata dei quadricicli leggeri purché non si aumenti la velocità",
         "risposta": False,
+        "riassunto": "Quadriciclo leggero → aumentare cilindrata senza aumentare velocità?",
         "spiegazione": "Non è consentito aumentare la cilindrata dei quadricicli leggeri. Le caratteristiche tecniche del veicolo (come cilindrata, potenza e velocità massima) devono rimanere quelle originali con cui è stato omologato.",
         "regola": "No modifiche = No cilindrata extra.",
         "trabocchetti": ["aumentare la cilindrata"],
@@ -1818,12 +2077,14 @@ QUESTIONS = [
     {
         "domanda": "E' consentito sostituire il motore del quadriciclo leggero per aumentare la velocità massima oltre i 45 km/h",
         "risposta": False,
+        "riassunto": "Quadriciclo leggero → nuovo motore per superare 45 km/h?",
         "spiegazione": "I quadricicli leggeri hanno una velocità massima limitata a 45 km/h per legge. Non è permesso sostituire il motore o fare altre modifiche per superare questo limite, perché sarebbe illegale e pericoloso.",
         "regola": "Leggeri = Max 45 km/h, no modifiche.",
     },
     {
         "domanda": "I quadricicli non sono soggetti a revisione periodica",
         "risposta": False,
+        "riassunto": "Quadricicli → niente revisione periodica?",
         "spiegazione": "Tutti i veicoli a motore, inclusi i quadricicli (sia leggeri che non leggeri), devono essere sottoposti a revisione periodica. Questo serve a controllare che siano in buone condizioni e sicuri per la circolazione.",
         "regola": "Tutti i veicoli (anche quadricicli) = Revisione.",
         "trabocchetti": ["non sono soggetti a revisione periodica"],
@@ -1831,6 +2092,7 @@ QUESTIONS = [
     {
         "domanda": "Le macchine agricole possono circolare su strada per il proprio trasferimento se immatricolate",
         "risposta": True,
+        "riassunto": "Macchine agricole immatricolate → circolano su strada per trasferirsi?",
         "spiegazione": "Le macchine agricole, come i trattori, possono circolare sulle strade pubbliche per spostarsi da un campo all'altro o per andare in officina, ma devono essere immatricolate, cioè avere la targa e i documenti in regola.",
         "regola": "Targa = strada.",
         "trabocchetti": ["se immatricolate"],
@@ -1838,24 +2100,28 @@ QUESTIONS = [
     {
         "domanda": "Le macchine agricole possono essere a ruote o a cingoli",
         "risposta": True,
+        "riassunto": "Macchine agricole → a ruote o a cingoli?",
         "spiegazione": "Sì, le macchine agricole possono avere le ruote (come la maggior parte dei trattori) oppure i cingoli (come alcuni trattori speciali usati su terreni difficili o per lavori particolari).",
         "regola": "Ruote o cingoli, entrambe agricole.",
     },
     {
         "domanda": "Le macchine agricole a ruote o a cingoli possono circolare su strada per il trasporto di prodotti agricoli per conto delle aziende agricole e forestali",
         "risposta": True,
+        "riassunto": "Macchine agricole → trasporto prodotti per aziende agricole?",
         "spiegazione": "Le macchine agricole, sia a ruote che a cingoli, possono usare la strada per trasportare i prodotti della terra (come frutta, verdura, legna) o altri materiali legati all'agricoltura e alla silvicoltura, ma solo se il trasporto è per conto delle aziende agricole o forestali stesse.",
         "regola": "Trasporto prodotti agricoli = sì strada.",
     },
     {
         "domanda": "Le macchine agricole possono essere semoventi o trainate",
         "risposta": True,
+        "riassunto": "Macchine agricole → semoventi o trainate?",
         "spiegazione": "Le macchine agricole possono muoversi da sole (sono 'semoventi', come un trattore) oppure essere attaccate a un'altra macchina che le trascina (sono 'trainate', come un rimorchio agricolo o un aratro).",
         "regola": "Si muovono da sole o le tiri.",
     },
     {
         "domanda": "Le macchine agricole operatrici possono essere dotate di speciali attrezzature per l'esecuzione di operazioni agricole",
         "risposta": True,
+        "riassunto": "Macchine agricole operatrici → attrezzature speciali?",
         "spiegazione": "Le macchine agricole 'operatrici' sono proprio quelle che hanno degli strumenti specifici (attrezzature) per fare i lavori nei campi, come arare, seminare, raccogliere o spargere fertilizzanti.",
         "regola": "Operatrici = attrezzi per lavorare.",
         "trabocchetti": ["speciali attrezzature", "operatrici"],
@@ -1863,18 +2129,21 @@ QUESTIONS = [
     {
         "domanda": "Le macchine operatrici possono essere semoventi o trainate",
         "risposta": True,
+        "riassunto": "Macchine operatrici → semoventi o trainate?",
         "spiegazione": "Anche le macchine operatrici (non solo quelle agricole) possono muoversi da sole (sono 'semoventi', come una scavatrice o una betoniera) o essere trainate da un altro veicolo (sono 'trainate', come un compressore o una gru mobile).",
         "regola": "Operatrici: si muovono da sole o le tiri.",
     },
     {
         "domanda": "Le macchine operatrici possono essere veicoli sgombraneve",
         "risposta": True,
+        "riassunto": "Macchine operatrici → anche sgombraneve?",
         "spiegazione": "Sì, i veicoli che servono per togliere la neve dalle strade (gli sgombraneve) sono un tipo specifico di macchina operatrice, perché svolgono un'operazione di lavoro sulla strada.",
         "regola": "Sgombraneve = operatrice.",
     },
     {
         "domanda": "Le macchine operatrici possono circolare ad una velocità superiore a 50 km/h",
         "risposta": False,
+        "riassunto": "Macchine operatrici → oltre 50 km/h?",
         "spiegazione": "Falso. Le macchine operatrici, quando circolano su strada, non possono superare la velocità massima di 40 km/h. La velocità di 50 km/h è troppo alta per loro.",
         "regola": "Operatrici = max 40 km/h.",
         "trabocchetti": ["superiore a 50 km/h"],
@@ -1882,6 +2151,7 @@ QUESTIONS = [
     {
         "domanda": "Le macchine operatrici a cingoli possono circolare ad una velocità superiore a 45 km/h",
         "risposta": False,
+        "riassunto": "Macchine operatrici a cingoli → oltre 45 km/h?",
         "spiegazione": "Falso. Le macchine operatrici a cingoli sono ancora più lente. La loro velocità massima consentita su strada è di soli 15 km/h. Quindi, 45 km/h è una velocità molto superiore al limite.",
         "regola": "Cingoli = lentissime (max 15 km/h).",
         "trabocchetti": ["superiore a 45 km/h"],
@@ -1889,6 +2159,7 @@ QUESTIONS = [
     {
         "domanda": "Le macchine operatrici semoventi possono trasportare fino a quattro passeggeri",
         "risposta": False,
+        "riassunto": "Macchine operatrici semoventi → fino a quattro passeggeri?",
         "spiegazione": "Falso. Le macchine operatrici sono progettate per lavorare, non per trasportare persone. Di solito possono portare solo il conducente e, in alcuni casi specifici, un addetto ai lavori, ma mai fino a quattro passeggeri.",
         "regola": "Operatrici = no passeggeri (solo conducente/addetto).",
         "trabocchetti": ["fino a quattro passeggeri"],
@@ -1896,6 +2167,7 @@ QUESTIONS = [
     {
         "domanda": "Per condurre macchine operatrici è necessario essere titolari della patente di guida della categoria A",
         "risposta": False,
+        "riassunto": "Macchine operatrici → serve patente A?",
         "spiegazione": "Falso. Per guidare le macchine operatrici (non eccezionali) è sufficiente la patente di categoria B. La patente A serve per le moto.",
         "regola": "Operatrici = Patente B (non A).",
         "trabocchetti": ["categoria A"],
@@ -1903,6 +2175,7 @@ QUESTIONS = [
     {
         "domanda": "Le macchine agricole possono trasportare fino a quattro passeggeri",
         "risposta": False,
+        "riassunto": "Macchine agricole → fino a quattro passeggeri?",
         "spiegazione": "Falso. Le macchine agricole, come i trattori, sono fatte per lavorare e trasportare attrezzi o prodotti, non persone. Possono portare solo il conducente e, se c'è un sedile omologato, un accompagnatore, ma mai fino a quattro passeggeri.",
         "regola": "Agricole = no passeggeri (solo conducente/accompagnatore).",
         "trabocchetti": ["fino a quattro passeggeri"],
@@ -1910,6 +2183,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle macchine agricole e sui loro rimorchi è consentito il trasporto di persone in piedi",
         "risposta": False,
+        "riassunto": "Macchine agricole e rimorchi → persone in piedi?",
         "spiegazione": "Falso. È assolutamente vietato e molto pericoloso trasportare persone in piedi su qualsiasi veicolo, specialmente su macchine agricole o sui loro rimorchi. Le persone devono sempre viaggiare sedute e in posti sicuri.",
         "regola": "In piedi = mai!",
         "trabocchetti": ["in piedi"],
@@ -1917,6 +2191,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria A si possono guidare tutte le macchine agricole",
         "risposta": False,
+        "riassunto": "Patente A → tutte le macchine agricole?",
         "spiegazione": "Falso. La patente di categoria A serve per guidare le moto. Per le macchine agricole, a seconda del tipo e della massa, serve la patente A1 (per le più leggere, se si hanno meno di 18 anni), la B (per la maggior parte) o la C1/C (per quelle più grandi o eccezionali).",
         "regola": "Patente A = moto, non agricole.",
         "trabocchetti": ["categoria A", "tutte le macchine agricole"],
@@ -1924,6 +2199,7 @@ QUESTIONS = [
     {
         "domanda": "Con la patente di categoria B si possono guidare le macchine operatrici eccezionali",
         "risposta": False,
+        "riassunto": "Patente B → macchine operatrici eccezionali?",
         "spiegazione": "Falso. Con la patente di categoria B si possono guidare le macchine operatrici 'non eccezionali'. Per quelle 'eccezionali' (che superano certi limiti di massa o dimensioni) è necessaria una patente di categoria superiore, come la C1 o la C.",
         "regola": "Patente B = operatrici normali, non eccezionali.",
         "trabocchetti": ["eccezionali"],
@@ -1931,12 +2207,14 @@ QUESTIONS = [
     {
         "domanda": "I caravan (roulottes) sono rimorchi attrezzati per essere adibiti ad alloggio",
         "risposta": True,
+        "riassunto": "Caravan → rimorchi attrezzati come alloggio?",
         "spiegazione": "VERO. I caravan, o roulottes, sono proprio dei rimorchi speciali che sono fatti per essere usati come una piccola casa quando si è in viaggio o in vacanza. Hanno letti, cucina e bagno.",
         "regola": "Caravan = casa su ruote.",
     },
     {
         "domanda": "I caravan (roulottes) sono utilizzabili come alloggio solo con veicolo fermo",
         "risposta": True,
+        "riassunto": "Caravan → alloggio solo a veicolo fermo?",
         "spiegazione": "VERO. Puoi usare la roulotte per dormirci o viverci solo quando il veicolo che la traina è fermo e parcheggiato. Non si può stare dentro mentre la roulotte è in movimento sulla strada.",
         "regola": "Vivi in roulotte solo da fermo.",
         "trabocchetti": ["solo"],
@@ -1944,12 +2222,14 @@ QUESTIONS = [
     {
         "domanda": "I caravan (roulottes) sono muniti di targa",
         "risposta": True,
+        "riassunto": "Caravan → muniti di targa?",
         "spiegazione": "VERO. Le roulottes sono considerate veicoli a parte (anche se senza motore) e, come tutti i veicoli, devono avere la loro targa di immatricolazione, diversa da quella dell'auto che le traina.",
         "regola": "Anche il rimorchio ha la sua targa.",
     },
     {
         "domanda": "E' possibile alloggiare nei caravan (roulottes) durante la circolazione",
         "risposta": False,
+        "riassunto": "Caravan → alloggiarvi durante la marcia?",
         "spiegazione": "FALSO. È molto pericoloso e vietato dalla legge stare dentro la roulotte mentre l'auto la sta trainando. Devi essere nell'auto che guida.",
         "regola": "Mai in roulotte in movimento.",
         "trabocchetti": ["durante la circolazione"],
@@ -1957,6 +2237,7 @@ QUESTIONS = [
     {
         "domanda": "I caravan (roulottes) sono rimorchi destinati ai lavori agricoli",
         "risposta": False,
+        "riassunto": "Caravan → rimorchi per lavori agricoli?",
         "spiegazione": "FALSO. I caravan sono fatti per il tempo libero e per alloggiare, non per trasportare attrezzi o fare lavori nei campi. Per i lavori agricoli ci sono altri tipi di rimorchi.",
         "regola": "Roulotte = vacanza, non lavoro.",
         "trabocchetti": ["lavori agricoli"],
@@ -1964,6 +2245,7 @@ QUESTIONS = [
     {
         "domanda": "I caravan (roulottes) sono rimorchi destinati esclusivamente al trasporto di attrezzature turistiche e sportive",
         "risposta": False,
+        "riassunto": "Caravan → solo per attrezzature turistiche e sportive?",
         "spiegazione": "FALSO. Anche se puoi trasportare qualche attrezzatura, lo scopo principale di un caravan è l'alloggio. La parola 'esclusivamente' rende la frase falsa, perché non è l'unica o la principale funzione.",
         "regola": "Non solo trasporto, ma soprattutto alloggio.",
         "trabocchetti": ["esclusivamente"],
@@ -1971,6 +2253,7 @@ QUESTIONS = [
     {
         "domanda": "Le autocaravan (camper) sono veicoli aventi una speciale carrozzeria per essere adibiti al trasporto ed all'alloggio di persone",
         "risposta": True,
+        "riassunto": "Autocaravan → carrozzeria speciale per trasporto e alloggio?",
         "spiegazione": "Sì, è vero. Un'autocaravan, o camper, è un veicolo costruito apposta per trasportare persone e permettere loro di dormire e vivere al suo interno, grazie a una carrozzeria speciale che include letti, cucina, ecc.",
         "regola": "Camper = Viaggio + Casa.",
         "trabocchetti": ["speciale carrozzeria", "adibiti al trasporto ed all"],
@@ -1978,12 +2261,14 @@ QUESTIONS = [
     {
         "domanda": "Le autocaravan (camper) sono veicoli aventi una speciale carrozzeria per essere adibiti al trasporto ed all'alloggio al massimo del numero di persone indicato nella carta di circolazione",
         "risposta": True,
+        "riassunto": "Autocaravan → alloggio al massimo per le persone in carta di circolazione?",
         "spiegazione": "Sì, è vero. Come per ogni veicolo, anche nel camper non puoi portare più persone di quelle indicate sulla carta di circolazione (il libretto). Questo è un limite di sicurezza e legale.",
         "regola": "Libretto = Limite persone.",
     },
     {
         "domanda": "Le autocaravan (camper) sono veicoli attrezzati permanentemente per essere adibiti al trasporto ed all'alloggio di persone",
         "risposta": True,
+        "riassunto": "Autocaravan → attrezzate stabilmente per trasporto e alloggio?",
         "spiegazione": "Sì, è vero. Un camper ha un allestimento interno (come letti, cucina, bagno) che è fisso e non si può smontare facilmente. È fatto proprio per essere usato come casa mobile.",
         "regola": "Camper = Casa su ruote fissa.",
         "trabocchetti": ["permanentemente"],
@@ -1991,6 +2276,7 @@ QUESTIONS = [
     {
         "domanda": "Le autocaravan sono soggette a revisione periodica",
         "risposta": True,
+        "riassunto": "Autocaravan → revisione periodica?",
         "spiegazione": "Sì, è vero. Tutti i veicoli a motore, inclusi i camper, devono fare la revisione periodicamente. Questo serve a controllare che siano sicuri e in buone condizioni per circolare.",
         "regola": "Tutti i veicoli = Revisione obbligatoria.",
         "trabocchetti": ["Soggette a revisione periodica"],
@@ -1998,6 +2284,7 @@ QUESTIONS = [
     {
         "domanda": "Le autocaravan (camper) sono rimorchi",
         "risposta": False,
+        "riassunto": "Autocaravan → rimorchi?",
         "spiegazione": "No, è falso. Un camper è un veicolo a motore, ha il suo motore e può muoversi da solo. Un rimorchio, invece, non ha motore e deve essere trainato da un altro veicolo.",
         "regola": "Camper = Ha motore. Rimorchio = No motore.",
         "trabocchetti": ["rimorchi"],
@@ -2005,6 +2292,7 @@ QUESTIONS = [
     {
         "domanda": "Le autocaravan (camper) sono veicoli destinati ai lavori agricoli",
         "risposta": False,
+        "riassunto": "Autocaravan → per lavori agricoli?",
         "spiegazione": "No, è falso. I camper sono fatti per viaggiare e per l'alloggio delle persone, non per lavorare nei campi. I veicoli destinati ai lavori agricoli sono i trattori o altre macchine specifiche.",
         "regola": "Camper = Vacanza, non lavoro agricolo.",
         "trabocchetti": ["destinati ai lavori agricoli"],
@@ -2012,12 +2300,14 @@ QUESTIONS = [
     {
         "domanda": "Le autocaravan (camper) sono veicoli destinati alla costruzione e alla manutenzione di opere stradali",
         "risposta": False,
+        "riassunto": "Autocaravan → per lavori stradali?",
         "spiegazione": "No, è falso. I camper non servono per costruire o riparare strade. Per questi lavori si usano macchine speciali come escavatori, rulli compressori, ecc.",
         "regola": "Camper = Vacanza, non cantiere.",
     },
     {
         "domanda": "Sulle autocaravan (camper) è possibile viaggiare in piedi, solo per brevi tratti",
         "risposta": False,
+        "riassunto": "Autocaravan → in piedi per brevi tratti?",
         "spiegazione": "No, è falso. In nessun veicolo è permesso viaggiare in piedi, nemmeno per pochi metri. Tutti i passeggeri devono stare seduti e con le cinture di sicurezza allacciate, per la loro sicurezza.",
         "regola": "In viaggio = Sempre seduti e cinture.",
         "trabocchetti": ["solo per brevi tratti"],
@@ -2025,6 +2315,7 @@ QUESTIONS = [
     {
         "domanda": "Le autocaravan sono soggette a revisione ogni cinque anni",
         "risposta": False,
+        "riassunto": "Autocaravan → revisione ogni cinque anni?",
         "spiegazione": "No, è falso. La revisione per i camper (come per le auto) si fa la prima volta dopo 4 anni dall'immatricolazione, e poi ogni 2 anni. Non ogni 5 anni.",
         "regola": "Revisione camper = 4-2-2 (non 5).",
         "trabocchetti": ["cinque anni"],
@@ -2032,6 +2323,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la circolazione, gli autocarri con massa massima a pieno carico superiore a 3,5 tonnellate devono essere segnalati posteriormente con pannelli retroriflettenti in figura",
         "risposta": True,
+        "riassunto": "Autocarri oltre 3,5 t → pannelli retroriflettenti in figura dietro?",
         "spiegazione": "È VERO. Gli autocarri molto grandi, quelli che pesano più di 3,5 tonnellate a pieno carico, devono avere questi pannelli rossi e gialli dietro per essere visti bene, specialmente di notte.",
         "regola": "Camion grande (>3.5t) = Pannello rosso/giallo dietro.",
         "trabocchetti": ["superiore a 3,5 tonnellate"],
@@ -2040,6 +2332,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la circolazione, i rimorchi e i semirimorchi per trasporto di cose con massa massima a pieno carico superiore a 3,5 tonnellate devono essere segnalati posteriormente con pannelli retroriflettenti in figura",
         "risposta": True,
+        "riassunto": "Rimorchi/semirimorchi oltre 3,5 t → pannelli retroriflettenti in figura dietro?",
         "spiegazione": "È VERO. Anche i rimorchi e i semirimorchi usati per trasportare cose, se superano le 3,5 tonnellate di peso a pieno carico, devono avere questi pannelli retroriflettenti rossi e gialli nella parte posteriore per essere ben visibili.",
         "regola": "Rimorchio grande (>3.5t) = Pannello rosso/giallo dietro.",
         "trabocchetti": ["superiore a 3,5 tonnellate"],
@@ -2048,6 +2341,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la circolazione, gli autocarri ed i rimorchi con massa massima a pieno carico superiore a 3,5 t devono essere segnalati con strisce posteriori e laterali retroriflettenti",
         "risposta": True,
+        "riassunto": "Autocarri e rimorchi oltre 3,5 t → strisce retroriflettenti posteriori e laterali?",
         "spiegazione": "È VERO. I veicoli pesanti come autocarri e rimorchi che superano le 3,5 tonnellate devono essere segnalati non solo dietro con pannelli (come quello in figura), ma anche sui lati con strisce speciali che riflettono la luce. Questo serve per renderli visibili da ogni angolazione.",
         "regola": "Veicoli pesanti = Visibili da dietro e dai lati.",
         "trabocchetti": ["strisce posteriori e laterali"],
@@ -2055,6 +2349,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello in figura segnala il trasporto di merci pericolose",
         "risposta": True,
+        "riassunto": "Pannello in figura → merci pericolose?",
         "spiegazione": "È VERO. Questo tipo di pannello, con le strisce rosse e gialle, viene usato anche per segnalare i veicoli che trasportano merci pericolose, per avvisare gli altri conducenti di fare attenzione.",
         "regola": "Pannello rosso/giallo = Attenzione, merci pericolose.",
         "immagine": "15a4706fe56ee47eaf81.jpg",
@@ -2062,6 +2357,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello in figura segnala il trasporto di carichi sporgenti",
         "risposta": True,
+        "riassunto": "Pannello in figura → carichi sporgenti?",
         "spiegazione": "È VERO. Il pannello in figura serve anche per segnalare quando un carico sporge (esce fuori) dal veicolo, specialmente dalla parte posteriore. Così gli altri sanno che il veicolo è più lungo del normale.",
         "regola": "Pannello rosso/giallo = Attenzione, carico sporgente.",
         "immagine": "2fa4fa1d78de1aa164bf.jpg",
@@ -2069,6 +2365,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce retroriflettenti applicate lateralmente ad alcuni veicoli possono essere di colore bianco o giallo",
         "risposta": True,
+        "riassunto": "Strisce retroriflettenti laterali → bianche o gialle?",
         "spiegazione": "È VERO. Le strisce che riflettono la luce, messe sui lati di alcuni veicoli (come i camion), possono essere di colore bianco o giallo per renderli più visibili lateralmente.",
         "regola": "Strisce laterali = Bianco o Giallo.",
         "trabocchetti": ["lateralmente"],
@@ -2076,6 +2373,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce retroriflettenti applicate dietro ad alcuni veicoli possono essere di colore rosso o giallo",
         "risposta": True,
+        "riassunto": "Strisce retroriflettenti posteriori → rosse o gialle?",
         "spiegazione": "È VERO. Le strisce che riflettono la luce, messe dietro ad alcuni veicoli, possono essere di colore rosso o giallo. Questo aiuta a vederli bene da dietro.",
         "regola": "Strisce dietro = Rosso o Giallo.",
         "trabocchetti": ["dietro"],
@@ -2083,6 +2381,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che vede i pannelli in figura sta seguendo un autocarro con massa a pieno carico superiore a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Pannelli in figura → autocarro oltre 3,5 t davanti?",
         "spiegazione": "È VERO. Se vedi questi pannelli rossi e gialli su un autocarro, significa che stai seguendo un camion grande, con un peso massimo superiore a 3,5 tonnellate, che deve essere segnalato in questo modo.",
         "regola": "Vedi pannello = Segui camion grande.",
         "trabocchetti": ["superiore a 3,5 tonnellate"],
@@ -2091,6 +2390,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che vede i pannelli in figura sta seguendo un rimorchio o semirimorchio per trasporto di cose con massa a pieno carico superiore a 3,5 tonnellate",
         "risposta": True,
+        "riassunto": "Pannelli in figura → rimorchio/semirimorchio merci oltre 3,5 t davanti?",
         "spiegazione": "È VERO. Se vedi questi pannelli rossi e gialli su un rimorchio o semirimorchio, significa che stai seguendo un veicolo pesante (più di 3,5 tonnellate) che trasporta cose e che deve essere segnalato così.",
         "regola": "Vedi pannello = Segui rimorchio grande.",
         "trabocchetti": ["superiore a 3,5 tonnellate"],
@@ -2099,6 +2399,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce retroriflettenti laterali devono essere apposte sugli autocarri di massa complessiva a pieno carico inferiore a 3,5 tonnellate",
         "risposta": False,
+        "riassunto": "Strisce laterali → su autocarri sotto 3,5 t?",
         "spiegazione": "È FALSO. Le strisce retroriflettenti laterali sono obbligatorie per gli autocarri più pesanti (sopra le 3,5 tonnellate), non per quelli più leggeri (inferiori a 3,5 tonnellate).",
         "regola": "Sotto 3.5t = No strisce laterali obbligatorie.",
         "trabocchetti": ["inferiore"],
@@ -2106,6 +2407,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la circolazione, gli autocarri di massa complessiva a pieno carico inferiore o uguale a 3,5 tonnellate devono essere segnalati posteriormente con pannelli retroriflettenti gialli e rossi",
         "risposta": False,
+        "riassunto": "Autocarri fino a 3,5 t → pannelli gialli e rossi dietro?",
         "spiegazione": "È FALSO. Gli autocarri più piccoli, con un peso uguale o inferiore a 3,5 tonnellate, non devono avere questi pannelli retroriflettenti gialli e rossi. Sono obbligatori solo per i veicoli più pesanti.",
         "regola": "Sotto 3.5t = No pannello rosso/giallo obbligatorio.",
         "trabocchetti": ["inferiore o uguale a 3,5 tonnellate", "devono essere segnalati"],
@@ -2113,6 +2415,7 @@ QUESTIONS = [
     {
         "domanda": "Nella parte posteriore degli autobus deve essere apposto un segnale che indica la velocità minima consentita",
         "risposta": False,
+        "riassunto": "Retro degli autobus → segnale di velocità minima?",
         "spiegazione": "È FALSO. Gli autobus devono mostrare dietro la velocità MASSIMA che possono raggiungere, non la velocità MINIMA consentita. Non esiste un segnale per la velocità minima sugli autobus.",
         "regola": "Autobus = Velocità MAX, non MIN.",
         "trabocchetti": ["minima"],
@@ -2120,6 +2423,7 @@ QUESTIONS = [
     {
         "domanda": "Nella parte posteriore delle autovetture deve essere apposto un segnale che indica la velocità massima consentita",
         "risposta": False,
+        "riassunto": "Retro delle autovetture → segnale di velocità massima?",
         "spiegazione": "È FALSO. Le normali autovetture (le macchine private) non devono avere un segnale che indica la velocità massima consentita nella parte posteriore. Questo obbligo è per altre categorie di veicoli (es. autobus, veicoli pesanti, neopatentati).",
         "regola": "Auto normali = No adesivo velocità dietro.",
         "trabocchetti": ["autovetture"],
@@ -2127,6 +2431,7 @@ QUESTIONS = [
     {
         "domanda": "I caravan (roulottes) devono essere muniti posteriormente di strisce retroriflettenti di colore rosso o giallo",
         "risposta": False,
+        "riassunto": "Caravan → strisce retroriflettenti rosse o gialle dietro?",
         "spiegazione": "È FALSO. I caravan (le roulotte) hanno le loro luci e catadiottri (riflettori) standard, ma non devono avere queste strisce retroriflettenti rosse o gialle come i veicoli pesanti da trasporto merci.",
         "regola": "Roulotte = No strisce speciali.",
         "trabocchetti": ["caravan (roulottes)"],
@@ -2134,6 +2439,7 @@ QUESTIONS = [
     {
         "domanda": "Gli autobus devono essere muniti, nella parte posteriore di strisce retroriflettenti di colore rosso o bianco",
         "risposta": False,
+        "riassunto": "Autobus → strisce posteriori rosse o bianche?",
         "spiegazione": "È FALSO. Gli autobus hanno delle segnalazioni posteriori, ma non devono avere queste specifiche strisce retroriflettenti rosse o bianche come quelle obbligatorie per i veicoli pesanti da trasporto merci (camion e rimorchi).",
         "regola": "Autobus = No strisce da camion.",
         "trabocchetti": ["autobus"],
@@ -2141,6 +2447,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello in figura è installato posteriormente ai rimorchi o semirimorchi con massa a pieno carico superiore a 3,5 tonnellate",
         "risposta": False,
+        "riassunto": "Pannello in figura → dietro rimorchi oltre 3,5 t?",
         "spiegazione": "Il pannello raffigurato, con strisce oblique gialle e rosse, è quello applicato posteriormente agli autocarri per trasporto di cose di massa superiore a 3,5 tonnellate. Per rimorchi e semirimorchi pesanti si usa invece un pannello giallo con bordo rosso. Non indica merci pericolose o carichi sporgenti.",
         "regola": "Strisce oblique gialle e rosse = autocarro pesante; giallo con bordo rosso = rimorchio pesante.",
         "immagine": "888b50664c678c9345dd.jpg",
@@ -2148,12 +2455,14 @@ QUESTIONS = [
     {
         "domanda": "I motocicli sono veicoli a due ruote",
         "risposta": True,
+        "riassunto": "Motocicli → veicoli a due ruote?",
         "spiegazione": "Un motociclo è un veicolo a motore che ha due ruote. Questa è la sua caratteristica principale che lo distingue da altri veicoli.",
         "regola": "Motociclo = 2 ruote.",
     },
     {
         "domanda": "I motocicli hanno cilindrata superiore a 50 cm3",
         "risposta": True,
+        "riassunto": "Motocicli → cilindrata oltre 50 cm3?",
         "spiegazione": "Per essere considerato un motociclo, il motore deve avere una cilindrata maggiore di 50 centimetri cubi. Se la cilindrata è uguale o inferiore a 50 cm³ e la velocità massima è 45 km/h, allora è un ciclomotore.",
         "regola": "Motociclo > 50 cm³.",
         "trabocchetti": ["superiore a 50 cm3"],
@@ -2161,6 +2470,7 @@ QUESTIONS = [
     {
         "domanda": "I ciclomotori non rientrano nella categoria dei motocicli",
         "risposta": True,
+        "riassunto": "Ciclomotori → esclusi dai motocicli?",
         "spiegazione": "I ciclomotori e i motocicli sono due categorie diverse di veicoli. Anche se entrambi hanno due ruote, i ciclomotori hanno limiti di cilindrata e velocità inferiori e sono regolati in modo diverso.",
         "regola": "Ciclomotore ≠ Motociclo.",
         "trabocchetti": ["non rientrano"],
@@ -2168,6 +2478,7 @@ QUESTIONS = [
     {
         "domanda": "I motocicli possono essere dotati di cambio automatico",
         "risposta": True,
+        "riassunto": "Motocicli → cambio automatico possibile?",
         "spiegazione": "Sì, molti motocicli, specialmente gli scooter, sono dotati di cambio automatico. Non è obbligatorio che abbiano il cambio manuale.",
         "regola": "Cambio automatico OK per moto.",
         "trabocchetti": ["possono"],
@@ -2175,12 +2486,14 @@ QUESTIONS = [
     {
         "domanda": "I motocicli sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni",
         "risposta": True,
+        "riassunto": "Motocicli → revisione dopo 4 anni, poi ogni 2?",
         "spiegazione": "La revisione è un controllo obbligatorio del veicolo. Per i motocicli, la prima revisione si fa dopo 4 anni dalla data di acquisto (immatricolazione). Le revisioni successive si fanno ogni 2 anni. Questa regola è la stessa per le automobili.",
         "regola": "Revisione: 4-2-2 anni.",
     },
     {
         "domanda": "Tutti i veicoli a motore con tre ruote sono dei motocicli",
         "risposta": False,
+        "riassunto": "Tutti i veicoli a motore a tre ruote → motocicli?",
         "spiegazione": "Questa affermazione è falsa. Non tutti i veicoli a motore con tre ruote sono motocicli. I motocicli hanno sempre due ruote. Esistono i tricicli a motore, che sono una categoria a parte.",
         "regola": "'Tutti' spesso rende FALSO. Motociclo = 2 ruote.",
         "trabocchetti": ["Tutti"],
@@ -2188,6 +2501,7 @@ QUESTIONS = [
     {
         "domanda": "I motocicli sono veicoli a motore con più di due ruote",
         "risposta": False,
+        "riassunto": "Motocicli → più di due ruote?",
         "spiegazione": "Questa affermazione è falsa. I motocicli sono veicoli a motore con *due* ruote, non 'più di due'. I veicoli con più di due ruote rientrano in altre categorie, come i tricicli o i quadricicli.",
         "regola": "Motociclo = 2 ruote, non di più.",
         "trabocchetti": ["più di due ruote"],
@@ -2195,6 +2509,7 @@ QUESTIONS = [
     {
         "domanda": "Il motociclo è un qualunque veicolo a due ruote",
         "risposta": False,
+        "riassunto": "Motociclo → qualunque veicolo a due ruote?",
         "spiegazione": "Questa affermazione è falsa. Non è 'qualunque' veicolo a due ruote. Ad esempio, una bicicletta ha due ruote ma non è un motociclo perché non ha un motore. Anche un ciclomotore ha due ruote ma non è un motociclo per le sue caratteristiche specifiche.",
         "regola": "'Qualunque' spesso rende FALSO. Serve un motore!",
         "trabocchetti": ["qualunque"],
@@ -2202,6 +2517,7 @@ QUESTIONS = [
     {
         "domanda": "Si definiscono motocicli solo i veicoli a due ruote di cilindrata fino a 125 cm3",
         "risposta": False,
+        "riassunto": "Motocicli → solo fino a 125 cm3?",
         "spiegazione": "Questa affermazione è falsa. I motocicli possono avere cilindrate molto superiori a 125 cm³. Non c'è un limite massimo di cilindrata per i motocicli, solo un limite minimo (superiore a 50 cm³).",
         "regola": "'Solo' e 'fino a' spesso limitano troppo.",
         "trabocchetti": ["solo", "fino a 125 cm3"],
@@ -2209,6 +2525,7 @@ QUESTIONS = [
     {
         "domanda": "I motocicli hanno motore di cilindrata fino a 50 cm3 e sviluppano una velocità fino a 45 km/h",
         "risposta": False,
+        "riassunto": "Motocicli → fino a 50 cm3 e 45 km/h?",
         "spiegazione": "Questa affermazione è falsa. La descrizione 'cilindrata fino a 50 cm3 e velocità fino a 45 km/h' si riferisce ai *ciclomotori*, non ai motocicli. I motocicli hanno cilindrata superiore a 50 cm³ e possono superare i 45 km/h.",
         "regola": "Ciclomotore = 50cc/45kmh. Motociclo = di più.",
         "trabocchetti": ["fino a 50 cm3", "fino a 45 km/h"],
@@ -2216,6 +2533,7 @@ QUESTIONS = [
     {
         "domanda": "Ai fini della circolazione i quadricicli leggeri sono assimilati ai motocicli",
         "risposta": False,
+        "riassunto": "Quadricicli leggeri → assimilati ai motocicli?",
         "spiegazione": "Questa affermazione è falsa. I quadricicli leggeri (le 'minicar') sono assimilati ai *ciclomotori* per quanto riguarda le regole di guida (ad esempio, si guidano con la patente AM) e le limitazioni di velocità e potenza, non ai motocicli.",
         "regola": "Quadriciclo leggero = Ciclomotore.",
         "trabocchetti": ["assimilati ai motocicli"],
@@ -2223,6 +2541,7 @@ QUESTIONS = [
     {
         "domanda": "Gli autoveicoli sono veicoli a motore con almeno quattro ruote, esclusi i quadricicli",
         "risposta": True,
+        "riassunto": "Autoveicoli → almeno quattro ruote, esclusi i quadricicli?",
         "spiegazione": "VERO. Gli autoveicoli sono veicoli grandi, come le auto o i camion, che hanno un motore e almeno quattro ruote. È importante ricordare che i quadricicli, anche se hanno quattro ruote e un motore, non rientrano in questa categoria.",
         "regola": "Autoveicolo = 4+ ruote + motore, MA NO quadricicli.",
         "trabocchetti": ["esclusi i quadricicli"],
@@ -2230,6 +2549,7 @@ QUESTIONS = [
     {
         "domanda": "L'autoveicolo è un veicolo a motore con non meno di quattro ruote, eccetto i quadricicli",
         "risposta": True,
+        "riassunto": "Autoveicolo → non meno di quattro ruote, tranne i quadricicli?",
         "spiegazione": "VERO. Questa domanda dice la stessa cosa della precedente, ma con parole diverse. 'Non meno di quattro ruote' significa 'almeno quattro ruote'. 'Eccetto i quadricicli' significa che i quadricicli non sono inclusi nella definizione di autoveicolo.",
         "regola": "'Non meno di' = 'almeno'. Ricorda sempre l'eccezione dei quadricicli.",
         "trabocchetti": ["Non meno di", "Eccetto"],
@@ -2237,18 +2557,21 @@ QUESTIONS = [
     {
         "domanda": "L'autobus viene classificato autoveicolo",
         "risposta": True,
+        "riassunto": "Autobus → autoveicolo?",
         "spiegazione": "VERO. Un autobus è un veicolo a motore con molte ruote (più di quattro) e serve per trasportare persone. Per questo motivo, rientra perfettamente nella definizione di autoveicolo.",
         "regola": "Autobus = grande, motore, tante ruote = Autoveicolo.",
     },
     {
         "domanda": "L'autocarro è un autoveicolo",
         "risposta": True,
+        "riassunto": "Autocarro → autoveicolo?",
         "spiegazione": "VERO. Un autocarro (che è un camion) è un veicolo a motore con almeno quattro ruote, usato per trasportare merci. Anche l'autocarro rientra nella definizione di autoveicolo.",
         "regola": "Autocarro = camion, motore, 4+ ruote = Autoveicolo.",
     },
     {
         "domanda": "I quadricicli non sono autoveicoli",
         "risposta": True,
+        "riassunto": "Quadricicli → non autoveicoli?",
         "spiegazione": "VERO. Questa domanda conferma quanto abbiamo imparato. I quadricicli, anche se hanno quattro ruote e un motore, sono una categoria a parte e non sono considerati autoveicoli dalla legge.",
         "regola": "Quadricicli = NO autoveicoli. È l'eccezione da ricordare.",
         "trabocchetti": ["non sono autoveicoli"],
@@ -2256,6 +2579,7 @@ QUESTIONS = [
     {
         "domanda": "Gli autoveicoli sono tutti i veicoli a motore con quattro o più ruote, compresi i quadricicli",
         "risposta": False,
+        "riassunto": "Autoveicoli → quattro o più ruote, quadricicli compresi?",
         "spiegazione": "FALSO. La prima parte della frase è corretta (veicoli a motore con quattro o più ruote), ma la frase diventa falsa a causa della parte finale. Gli autoveicoli NON comprendono i quadricicli, che sono una categoria a parte.",
         "regola": "'Compresi i quadricicli' = FALSO per gli autoveicoli.",
         "trabocchetti": ["compresi i quadricicli"],
@@ -2263,6 +2587,7 @@ QUESTIONS = [
     {
         "domanda": "Gli autoveicoli sono tutti i veicoli con almeno due ruote",
         "risposta": False,
+        "riassunto": "Autoveicoli → tutti i veicoli con almeno due ruote?",
         "spiegazione": "FALSO. Gli autoveicoli devono avere 'almeno quattro ruote'. I veicoli con due ruote (come moto e motorini) sono chiamati 'motoveicoli', non 'autoveicoli'.",
         "regola": "Autoveicolo = MINIMO 4 ruote. Due ruote = moto/ciclomotore.",
         "trabocchetti": ["almeno due ruote"],
@@ -2270,6 +2595,7 @@ QUESTIONS = [
     {
         "domanda": "Gli autoveicoli sono tutti i veicoli con almeno quattro ruote, compresi quelli senza motore",
         "risposta": False,
+        "riassunto": "Autoveicoli → almeno quattro ruote, anche senza motore?",
         "spiegazione": "FALSO. Gli autoveicoli devono avere un motore. Un veicolo con quattro ruote ma senza motore (come un carretto o una bicicletta a quattro ruote) non è un autoveicolo.",
         "regola": "Autoveicolo = SEMPRE con motore.",
         "trabocchetti": ["compresi quelli senza motore"],
@@ -2277,6 +2603,7 @@ QUESTIONS = [
     {
         "domanda": "Il triciclo a motore è un autoveicolo",
         "risposta": False,
+        "riassunto": "Triciclo a motore → autoveicolo?",
         "spiegazione": "FALSO. Un triciclo a motore ha tre ruote. Gli autoveicoli, per definizione, devono avere 'almeno quattro ruote'. I tricicli a motore sono classificati come 'motoveicoli'.",
         "regola": "Triciclo = 3 ruote = NO autoveicolo.",
         "trabocchetti": ["triciclo"],
@@ -2284,6 +2611,7 @@ QUESTIONS = [
     {
         "domanda": "L'autoveicolo è un qualunque veicolo a motore",
         "risposta": False,
+        "riassunto": "Autoveicolo → qualunque veicolo a motore?",
         "spiegazione": "FALSO. Non tutti i veicoli a motore sono autoveicoli. Ad esempio, le moto, i ciclomotori e i tricicli a motore sono veicoli a motore, ma non sono autoveicoli perché non rispettano tutti i requisiti (come il numero di ruote o l'esclusione dei quadricicli).",
         "regola": "'Qualunque' = ATTENZIONE! Ci sono sempre regole specifiche.",
         "trabocchetti": ["qualunque"],
@@ -2291,6 +2619,7 @@ QUESTIONS = [
     {
         "domanda": "L'autoveicolo è un qualunque veicolo adibito al trasporto di merce",
         "risposta": False,
+        "riassunto": "Autoveicolo → qualunque veicolo per merci?",
         "spiegazione": "FALSO. Questa definizione è sbagliata e troppo limitata. Un autoveicolo può trasportare sia persone (come un'auto o un autobus) sia merci (come un autocarro). Non è solo per il trasporto di merce. Inoltre, anche un carrello a mano trasporta merce, ma non è un autoveicolo.",
         "regola": "Autoveicolo = non solo merce, non 'qualunque' veicolo.",
         "trabocchetti": ["qualunque", "adibito al trasporto di merce", "merce"],
@@ -2298,12 +2627,14 @@ QUESTIONS = [
     {
         "domanda": "L'autovettura è un veicolo a motore con quattro ruote, destinato al trasporto di massimo nove persone, compreso il conducente",
         "risposta": True,
+        "riassunto": "Autovettura → quattro ruote, massimo nove persone compreso conducente?",
         "spiegazione": "Questa affermazione è VERA. L'autovettura è proprio un veicolo a motore con quattro ruote, pensato per portare persone, e il numero massimo di persone che può trasportare è nove, compreso il conducente.",
         "regola": "Auto = max 9 persone (autista incluso).",
     },
     {
         "domanda": "L'autovettura fa parte degli autoveicoli",
         "risposta": True,
+        "riassunto": "Autovettura → fa parte degli autoveicoli?",
         "spiegazione": "Questa affermazione è VERA. Gli 'autoveicoli' sono una categoria generale che include tutti i veicoli a motore. L'autovettura è un tipo specifico di autoveicolo, come lo sono gli autocarri o gli autobus.",
         "regola": "Auto è un tipo di autoveicolo.",
         "trabocchetti": ["fa parte degli autoveicoli"],
@@ -2311,6 +2642,7 @@ QUESTIONS = [
     {
         "domanda": "L'autovettura non può avere più di nove posti, compreso il conducente",
         "risposta": True,
+        "riassunto": "Autovettura → non più di nove posti, conducente compreso?",
         "spiegazione": "Questa affermazione è VERA. Ripete la definizione fondamentale dell'autovettura. Il limite massimo di posti, incluso il conducente, è nove.",
         "regola": "Max 9 posti, autista incluso.",
         "trabocchetti": ["non può avere più di nove posti"],
@@ -2318,6 +2650,7 @@ QUESTIONS = [
     {
         "domanda": "L'autobus non è un'autovettura",
         "risposta": True,
+        "riassunto": "Autobus → non è un'autovettura?",
         "spiegazione": "Questa affermazione è VERA. L'autobus è un veicolo destinato al trasporto di un numero di persone superiore a nove, quindi non rientra nella definizione di autovettura. È un'altra categoria di autoveicolo.",
         "regola": "Autobus > 9 posti, non è auto.",
         "trabocchetti": ["non è un"],
@@ -2325,6 +2658,7 @@ QUESTIONS = [
     {
         "domanda": "Le autovetture possono avere motore elettrico",
         "risposta": True,
+        "riassunto": "Autovetture → motore elettrico possibile?",
         "spiegazione": "Questa affermazione è VERA. Oggi esistono molte autovetture con motore elettrico, oltre a quelle con motore a benzina o diesel. La definizione di autovettura non specifica il tipo di alimentazione.",
         "regola": "Auto = anche elettrica.",
         "trabocchetti": ["possono avere"],
@@ -2332,6 +2666,7 @@ QUESTIONS = [
     {
         "domanda": "Le autovetture sono soggette a revisione periodica",
         "risposta": True,
+        "riassunto": "Autovetture → revisione periodica?",
         "spiegazione": "Questa affermazione è VERA. Tutte le autovetture devono essere sottoposte a revisione periodica per controllare che siano sicure e rispettino le norme sull'inquinamento e la sicurezza stradale.",
         "regola": "Auto = revisione obbligatoria.",
         "trabocchetti": ["soggette a revisione periodica"],
@@ -2339,6 +2674,7 @@ QUESTIONS = [
     {
         "domanda": "Si definiscono autovetture tutti i veicoli a motore che hanno la trazione posteriore",
         "risposta": False,
+        "riassunto": "Autovetture → tutti i veicoli a trazione posteriore?",
         "spiegazione": "Questa affermazione è FALSA. La trazione (anteriore, posteriore o integrale) è una caratteristica tecnica del veicolo, ma non è un criterio per definire se un veicolo è un'autovettura. Ci sono autovetture con tutti i tipi di trazione.",
         "regola": "Trazione non definisce l'auto.",
         "trabocchetti": ["tutti"],
@@ -2346,6 +2682,7 @@ QUESTIONS = [
     {
         "domanda": "Le autovetture non possono trainare carrelli-appendice o rimorchi",
         "risposta": False,
+        "riassunto": "Autovetture → non possono trainare rimorchi?",
         "spiegazione": "Questa affermazione è FALSA. Le autovetture possono trainare carrelli-appendice o rimorchi, a condizione che siano dotate di gancio di traino omologato e che rispettino i limiti di peso stabiliti dalla legge.",
         "regola": "Auto può trainare (con gancio).",
         "trabocchetti": ["non possono trainare"],
@@ -2353,6 +2690,7 @@ QUESTIONS = [
     {
         "domanda": "Vengono definite autovetture tutti i veicoli con motore anteriore",
         "risposta": False,
+        "riassunto": "Autovetture → tutti i veicoli a motore anteriore?",
         "spiegazione": "Questa affermazione è FALSA. La posizione del motore (anteriore, posteriore o centrale) è una caratteristica costruttiva, ma non definisce un'autovettura. Esistono autovetture con motore in diverse posizioni.",
         "regola": "Posizione motore non definisce l'auto.",
         "trabocchetti": ["tutti"],
@@ -2360,6 +2698,7 @@ QUESTIONS = [
     {
         "domanda": "L'autovettura è un veicolo con dieci posti in totale, compreso il conducente",
         "risposta": False,
+        "riassunto": "Autovettura → dieci posti compreso conducente?",
         "spiegazione": "Questa affermazione è FALSA. La definizione corretta di autovettura prevede un massimo di nove posti, compreso il conducente, non dieci.",
         "regola": "Max 9 posti, non 10.",
         "trabocchetti": ["dieci posti"],
@@ -2367,12 +2706,14 @@ QUESTIONS = [
     {
         "domanda": "Si definisce autovettura il veicolo blindato e appositamente attrezzato per il trasporto di valori",
         "risposta": False,
+        "riassunto": "Autovettura → veicolo blindato portavalori?",
         "spiegazione": "Questa affermazione è FALSA. Il veicolo descritto (blindato per il trasporto di valori) è un 'furgone blindato' o 'veicolo speciale', che rientra nella categoria degli autocarri o veicoli per usi speciali, non delle autovetture, che sono destinate al trasporto di persone.",
         "regola": "Blindato per valori = non auto.",
     },
     {
         "domanda": "L'autocarro è un'autovettura",
         "risposta": False,
+        "riassunto": "Autocarro → autovettura?",
         "spiegazione": "Questa affermazione è FALSA. L'autocarro è un veicolo destinato al trasporto di cose (merci), mentre l'autovettura è destinata al trasporto di persone. Sono due categorie di autoveicoli ben distinte.",
         "regola": "Autocarro = merci, non persone.",
         "trabocchetti": ["è un"],
@@ -2380,6 +2721,7 @@ QUESTIONS = [
     {
         "domanda": "L'autovettura può avere, al massimo, cinque posti",
         "risposta": False,
+        "riassunto": "Autovettura → al massimo cinque posti?",
         "spiegazione": "Questa affermazione è FALSA. L'autovettura può avere al massimo nove posti, non solo cinque. Esistono autovetture con 7 o anche 8 posti, oltre al conducente.",
         "regola": "Max 9 posti, non 5.",
         "trabocchetti": ["cinque posti"],
@@ -2387,6 +2729,7 @@ QUESTIONS = [
     {
         "domanda": "Le autovetture sono soggette a revisione ogni cinque anni",
         "risposta": False,
+        "riassunto": "Autovetture → revisione ogni cinque anni?",
         "spiegazione": "Questa affermazione è FALSA. La revisione delle autovetture non è ogni cinque anni. La prima revisione si fa dopo 4 anni dalla prima immatricolazione, e le successive ogni 2 anni.",
         "regola": "Revisione: 4 anni, poi 2 anni.",
         "trabocchetti": ["ogni cinque anni"],
@@ -2394,6 +2737,7 @@ QUESTIONS = [
     {
         "domanda": "I rimorchi o i semirimorchi sono veicoli privi di motore, destinati ad essere trainati",
         "risposta": True,
+        "riassunto": "Rimorchi e semirimorchi → senza motore, trainati?",
         "spiegazione": "È VERO. I rimorchi e i semirimorchi sono veicoli che non hanno un motore proprio. Per muoversi, devono essere attaccati e tirati da un altro veicolo, chiamato motrice.",
         "regola": "Rimorchio = senza motore, si traina.",
         "trabocchetti": ["privi di motore"],
@@ -2401,6 +2745,7 @@ QUESTIONS = [
     {
         "domanda": "I rimorchi leggeri sono quelli di massa massima a pieno carico fino a 750 kg",
         "risposta": True,
+        "riassunto": "Rimorchi leggeri → fino a 750 kg a pieno carico?",
         "spiegazione": "È VERO. La legge definisce 'rimorchi leggeri' quei rimorchi che, quando sono completamente carichi (massa massima a pieno carico), non superano i 750 kg di peso.",
         "regola": "Rimorchio leggero = max 750 kg.",
         "trabocchetti": ["fino a"],
@@ -2408,6 +2753,7 @@ QUESTIONS = [
     {
         "domanda": "L'autosnodato non è classificato rimorchio",
         "risposta": True,
+        "riassunto": "Autosnodato → non è un rimorchio?",
         "spiegazione": "È VERO. L'autosnodato è un veicolo unico, anche se è composto da due parti collegate da uno snodo. Non è un veicolo che traina un rimorchio, ma è considerato un solo veicolo speciale.",
         "regola": "Autosnodato = un veicolo solo, non è rimorchio.",
         "trabocchetti": ["non è classificato rimorchio"],
@@ -2415,6 +2761,7 @@ QUESTIONS = [
     {
         "domanda": "L'autocaravan non è un rimorchio",
         "risposta": True,
+        "riassunto": "Autocaravan → non è un rimorchio?",
         "spiegazione": "È VERO. L'autocaravan, che conosciamo come camper, è un veicolo a motore. Ha il suo motore e si muove da solo, quindi non è un rimorchio che deve essere trainato.",
         "regola": "Autocaravan = ha il motore, non è rimorchio.",
         "trabocchetti": ["autocaravan"],
@@ -2422,6 +2769,7 @@ QUESTIONS = [
     {
         "domanda": "Il caravan non è un rimorchio",
         "risposta": False,
+        "riassunto": "Caravan → non è un rimorchio?",
         "spiegazione": "È FALSO. Il caravan, che è la roulotte, è proprio un tipo di rimorchio. Non ha un motore e deve essere trainato da un'automobile per potersi muovere.",
         "regola": "Caravan = roulotte = è un rimorchio.",
         "trabocchetti": ["non è un rimorchio"],
@@ -2429,6 +2777,7 @@ QUESTIONS = [
     {
         "domanda": "I rimorchi leggeri sono quelli di massa massima a pieno carico fino a 500 kg",
         "risposta": False,
+        "riassunto": "Rimorchi leggeri → fino a 500 kg a pieno carico?",
         "spiegazione": "È FALSO. Come abbiamo visto, i rimorchi leggeri sono quelli con una massa massima a pieno carico fino a 750 kg, non 500 kg. Il numero è sbagliato.",
         "regola": "Rimorchio leggero = 750 kg, non 500 kg.",
         "trabocchetti": ["500 kg"],
@@ -2436,6 +2785,7 @@ QUESTIONS = [
     {
         "domanda": "I semirimorchi sono rimorchi privi di impianto frenante",
         "risposta": False,
+        "riassunto": "Semirimorchi → senza impianto frenante?",
         "spiegazione": "È FALSO. Per motivi di sicurezza, quasi tutti i rimorchi e i semirimorchi devono avere un proprio sistema di frenata, che funziona insieme a quello del veicolo che li traina. Solo i rimorchi molto piccoli e leggeri possono esserne privi.",
         "regola": "Semirimorchio = ha i freni, per sicurezza.",
         "trabocchetti": ["privi di impianto frenante"],
@@ -2443,6 +2793,7 @@ QUESTIONS = [
     {
         "domanda": "I rimorchi sono muniti di silenziatore",
         "risposta": False,
+        "riassunto": "Rimorchi → muniti di silenziatore?",
         "spiegazione": "È FALSO. Il silenziatore è un componente che serve a ridurre il rumore prodotto dal motore di un veicolo. Poiché i rimorchi non hanno un motore, non hanno bisogno e non sono dotati di silenziatore.",
         "regola": "Rimorchio = senza motore = senza silenziatore.",
         "trabocchetti": ["silenziatore"],
@@ -2450,6 +2801,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna lasciare liberi gli incroci in caso di traffico intenso",
         "risposta": True,
+        "riassunto": "Traffico intenso → lasciare liberi gli incroci?",
         "spiegazione": "Quando il traffico è molto intenso e si formano delle code, è fondamentale non bloccare gli incroci. Questo permette agli altri veicoli di passare quando hanno la precedenza o quando il semaforo cambia, evitando di creare ancora più ingorghi.",
         "regola": "Incrocio bloccato = traffico fermo. Lascia libero!",
         "trabocchetti": ["Incroci"],
@@ -2457,18 +2809,21 @@ QUESTIONS = [
     {
         "domanda": "Bisogna lasciare liberi i passaggi a livello e i binari del tram anche in caso di traffico intenso",
         "risposta": True,
+        "riassunto": "Traffico intenso → liberi passaggi a livello e binari del tram?",
         "spiegazione": "È molto importante non fermarsi mai sui binari del treno (passaggio a livello) o del tram, anche se c'è traffico. Se ti fermi lì, un treno o un tram potrebbe arrivare e causare un incidente molto grave. Devi sempre aspettare prima della linea di arresto, anche se la coda è lunga.",
         "regola": "Binari = pericolo! Mai fermarsi sopra.",
     },
     {
         "domanda": "Bisogna lasciare liberi gli attraversamenti pedonali e quelli ciclabili in caso di formazione di code di veicoli",
         "risposta": True,
+        "riassunto": "Code → liberi attraversamenti pedonali e ciclabili?",
         "spiegazione": "Le strisce pedonali e ciclabili sono spazi riservati a pedoni e ciclisti. Se ti fermi con il tuo veicolo sopra queste strisce, impedisci loro di attraversare in sicurezza. Devi sempre fermarti prima delle strisce, anche se c'è coda.",
         "regola": "Strisce = spazio libero per pedoni/ciclisti.",
     },
     {
         "domanda": "Bisogna lasciare libere le immissioni stradali (incroci, confluenze, ingressi dei parcheggi, ecc.) anche in caso di traffico intenso",
         "risposta": True,
+        "riassunto": "Traffico intenso → libere le immissioni stradali?",
         "spiegazione": "Le 'immissioni stradali' sono tutti quei punti dove altri veicoli possono entrare o uscire dalla strada principale (come incroci, uscite di parcheggi, confluenze). Se li blocchi, impedisci agli altri di muoversi e crei disagi. Quindi, anche con traffico intenso, devi cercare di lasciarli liberi.",
         "regola": "Non bloccare le entrate/uscite degli altri.",
         "trabocchetti": ["Immissioni stradali"],
@@ -2476,6 +2831,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna lasciare liberi solo gli incroci regolati da semaforo in caso di formazione di code di veicoli",
         "risposta": False,
+        "riassunto": "Code → liberi solo gli incroci con semaforo?",
         "spiegazione": "Questa affermazione è falsa perché non devi lasciare liberi 'solo' gli incroci con semaforo. Devi lasciare liberi tutti gli incroci (anche quelli senza semaforo), i passaggi a livello, gli attraversamenti pedonali e ciclabili, e le immissioni stradali. La parola 'solo' rende la frase sbagliata perché esclude altri casi importanti.",
         "regola": "'Solo' = attenzione, spesso è FALSO!",
         "trabocchetti": ["solo"],
@@ -2483,6 +2839,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna lasciare liberi i cavalcavia in caso di traffico intenso",
         "risposta": False,
+        "riassunto": "Traffico intenso → liberi i cavalcavia?",
         "spiegazione": "Un cavalcavia è un ponte che passa sopra un'altra strada. Non c'è una regola specifica che ti obbliga a lasciarlo libero in caso di traffico intenso. Puoi fermarti su un cavalcavia se il traffico lo richiede, a meno che non ci siano incroci o altri punti specifici che richiedono di essere lasciati liberi proprio sul cavalcavia.",
         "regola": "Cavalcavia = puoi fermarti in coda.",
         "trabocchetti": ["Cavalcavia"],
@@ -2490,6 +2847,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna lasciare libere le gallerie in caso di formazione di code di veicoli",
         "risposta": False,
+        "riassunto": "Code → libere le gallerie?",
         "spiegazione": "Questa affermazione è falsa. Non è vero che devi lasciare libere le gallerie. Se c'è traffico e si forma una coda, puoi fermarti dentro una galleria. L'importante è mantenere una distanza di sicurezza dal veicolo che ti precede e, se possibile, spegnere il motore per ridurre l'inquinamento.",
         "regola": "Gallerie = puoi fermarti in coda.",
         "trabocchetti": ["Gallerie"],
@@ -2497,6 +2855,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna lasciare liberi gli ingressi delle abitazioni private in caso di formazione di code di veicoli",
         "risposta": False,
+        "riassunto": "Code → liberi gli ingressi delle abitazioni private?",
         "spiegazione": "Questa affermazione è falsa. Non c'è una regola che ti obbliga a lasciare liberi gli ingressi delle abitazioni private in caso di coda. Puoi fermarti davanti a un cancello o un portone se il traffico lo richiede, a meno che non sia un passo carrabile segnalato e tu stia impedendo l'accesso. Ma la regola generale di 'lasciare liberi' si riferisce a punti critici per la circolazione o la sicurezza, non agli ingressi privati.",
         "regola": "Abitazioni private = non è un punto da lasciare libero per il traffico.",
         "trabocchetti": ["Ingressi delle abitazioni private"],
@@ -2504,6 +2863,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna lasciare liberi i sottovia in caso di traffico intenso",
         "risposta": False,
+        "riassunto": "Traffico intenso → liberi i sottovia?",
         "spiegazione": "Questa affermazione è falsa. Un sottovia è una strada che passa sotto un'altra strada o una ferrovia. Come per i cavalcavia e le gallerie, non c'è una regola che ti obbliga a lasciarlo libero in caso di traffico intenso. Puoi fermarti in un sottovia se il traffico lo richiede.",
         "regola": "Sottovia = puoi fermarti in coda.",
         "trabocchetti": ["Sottovia"],
@@ -2511,6 +2871,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si viaggia in fila con altri veicoli, non bisogna limitarsi a osservare solamente il veicolo che precede, ma occorre porre attenzione anche in lontananza, per controllare la situazione del traffico",
         "risposta": True,
+        "riassunto": "In fila → guardare anche lontano, non solo chi precede?",
         "spiegazione": "Quando sei in fila, non devi guardare solo l'auto davanti a te. È importante guardare anche più lontano per capire cosa succede nel traffico e poter reagire in tempo a eventuali pericoli o frenate improvvise.",
         "regola": "Guarda lontano, non solo il naso dell'auto davanti!",
         "trabocchetti": ["solamente"],
@@ -2518,12 +2879,14 @@ QUESTIONS = [
     {
         "domanda": "Per agevolare il traffico, è opportuno lasciare liberi gli sbocchi delle strade laterali quando si viaggia dietro ad una fila di veicoli",
         "risposta": True,
+        "riassunto": "Dietro una fila → lasciare liberi gli sbocchi laterali?",
         "spiegazione": "Se sei in fila e ti fermi vicino a un incrocio o a una strada laterale, devi lasciare uno spazio libero. Così, le auto che arrivano da quelle strade possono entrare o uscire, e il traffico non si blocca ancora di più.",
         "regola": "Non bloccare gli incroci, lascia spazio!",
     },
     {
         "domanda": "Quando si viaggia in fila con altri veicoli, bisogna mantenere ugualmente la distanza di sicurezza",
         "risposta": True,
+        "riassunto": "In fila → mantenere comunque la distanza di sicurezza?",
         "spiegazione": "Anche quando si viaggia in fila, è fondamentale mantenere la distanza di sicurezza dal veicolo che ti precede. Questo ti dà il tempo necessario per frenare in caso di emergenza e prevenire un tamponamento.",
         "regola": "Distanza di sicurezza sempre, anche in coda!",
         "trabocchetti": ["ugualmente"],
@@ -2531,12 +2894,14 @@ QUESTIONS = [
     {
         "domanda": "Per una maggiore sicurezza, quando si viaggia in fila con altri veicoli, è opportuno non avvicinarsi troppo al veicolo che precede",
         "risposta": True,
+        "riassunto": "In fila → non avvicinarsi troppo a chi precede?",
         "spiegazione": "Per essere più sicuri, non devi stare troppo vicino all'auto che ti precede. Mantenere una buona distanza ti permette di avere più tempo per reagire se l'auto davanti frena o succede qualcosa di inaspettato.",
         "regola": "Più spazio, più sicurezza!",
     },
     {
         "domanda": "Per una maggiore sicurezza, quando nei centri urbani si viaggia in fila con altri veicoli, è opportuno tenere sempre accese le luci di emergenza",
         "risposta": False,
+        "riassunto": "In fila in città → sempre luci di emergenza accese?",
         "spiegazione": "Le luci di emergenza (le 'quattro frecce') si usano solo in caso di pericolo grave, come un guasto, un incidente o una frenata improvvisa e inaspettata. Non vanno tenute accese solo perché si è in fila nel traffico, altrimenti si confondono gli altri guidatori.",
         "regola": "Quattro frecce solo per emergenza, non per la coda!",
         "trabocchetti": ["sempre"],
@@ -2544,6 +2909,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si viaggia in fila con altri veicoli è consentito distrarsi se si è a bassa velocità",
         "risposta": False,
+        "riassunto": "In fila a bassa velocità → distrarsi consentito?",
         "spiegazione": "Distrarsi alla guida è sempre pericoloso, non importa se la velocità è bassa. Anche a pochi chilometri all'ora, una distrazione può causare un incidente, specialmente in fila dove le auto sono vicine.",
         "regola": "Mai distrarsi al volante, a nessuna velocità!",
         "trabocchetti": ["consentito distrarsi"],
@@ -2551,18 +2917,21 @@ QUESTIONS = [
     {
         "domanda": "Quando si viaggia dietro in fila con altri veicoli, è opportuno spostarsi il più possibile a sinistra, per creare una corsia libera a destra",
         "risposta": False,
+        "riassunto": "In fila → spostarsi a sinistra per liberare la destra?",
         "spiegazione": "Non devi spostarti a sinistra per creare una corsia libera a destra. Questa manovra è pericolosa e non prevista dal Codice della Strada. Devi rimanere nella tua corsia e non creare confusione o rischi per gli altri.",
         "regola": "Stai nella tua corsia, non inventare corsie!",
     },
     {
         "domanda": "Quando si viaggia in fila con altri veicoli, è opportuno spostarsi al centro della carreggiata, per controllare la situazione del traffico",
         "risposta": False,
+        "riassunto": "In fila → spostarsi al centro della carreggiata?",
         "spiegazione": "Spostarsi al centro della carreggiata è pericoloso e non ti aiuta a controllare meglio il traffico. Devi rimanere nella tua corsia, mantenendo la distanza di sicurezza e guardando avanti.",
         "regola": "Stai nella tua corsia, non al centro!",
     },
     {
         "domanda": "Anche in condizioni di scarsa visibilità quando si viaggia dietro ad un veicolo che solleva polvere, conviene sorpassarlo subito",
         "risposta": False,
+        "riassunto": "Scarsa visibilità, veicolo che solleva polvere → sorpassarlo subito?",
         "spiegazione": "Se la visibilità è scarsa, ad esempio per la polvere sollevata da un veicolo, sorpassare è estremamente pericoloso. Non vedi bene la strada, gli altri veicoli o eventuali ostacoli. È meglio rallentare e aspettare che la visibilità migliori.",
         "regola": "Con scarsa visibilità, mai sorpassare!",
         "trabocchetti": ["scarsa visibilità", "sorpassarlo subito", "Subito"],
@@ -2570,6 +2939,7 @@ QUESTIONS = [
     {
         "domanda": "Entrando in un centro abitato bisogna tenere conto che può cambiare spesso la precedenza agli incroci",
         "risposta": True,
+        "riassunto": "Entrando in centro abitato → precedenze agli incroci cambiano spesso?",
         "spiegazione": "In città ci sono molti incroci, semafori e segnali. La situazione della precedenza cambia spesso, quindi devi essere sempre molto attento a chi ha il diritto di passare per primo.",
         "regola": "In città, la precedenza non è mai scontata: occhio ai segnali!",
         "trabocchetti": ["spesso"],
@@ -2577,6 +2947,7 @@ QUESTIONS = [
     {
         "domanda": "Entrando in un centro abitato, bisogna tenere conto che il flusso della circolazione viene spesso intralciato o interrotto da veicoli che sono fermi, che partono o che cambiano direzione",
         "risposta": True,
+        "riassunto": "Centro abitato → flusso intralciato da veicoli fermi o in manovra?",
         "spiegazione": "In un centro abitato, le auto si fermano per parcheggiare, ripartono, girano a destra o sinistra. Questo rende il traffico meno scorrevole e più imprevedibile. Devi essere pronto a frenare o cambiare corsia.",
         "regola": "Città = traffico 'a singhiozzo', sii pronto a tutto.",
         "trabocchetti": ["spesso intralciato o interrotto"],
@@ -2584,12 +2955,14 @@ QUESTIONS = [
     {
         "domanda": "Entrati in un centro abitato, bisogna tenere conto che gli altri utenti della strada (quali pedoni e ciclisti) si mescolano maggiormente con il traffico motorizzato",
         "risposta": True,
+        "riassunto": "Centro abitato → pedoni e ciclisti più mescolati al traffico?",
         "spiegazione": "In città ci sono più persone a piedi e in bicicletta. Loro usano le stesse strade o passano vicino alle auto, quindi devi fare molta attenzione a loro perché sono più vulnerabili.",
         "regola": "In città, occhio a pedoni e bici: sono ovunque!",
     },
     {
         "domanda": "In un centro abitato bisogna essere più attenti, prudenti e tolleranti, a causa del maggior numero di utenti che interagiscono nell'ambiente urbano",
         "risposta": True,
+        "riassunto": "Centro abitato → più attenzione, prudenza e tolleranza?",
         "spiegazione": "Ci sono più persone, più veicoli, più situazioni diverse. Per questo devi guidare con più attenzione, prudenza e anche pazienza, per evitare pericoli e stress.",
         "regola": "Città = tripla P: Prudenza, Pazienza, Prevenzione.",
         "trabocchetti": ["maggior numero di utenti"],
@@ -2597,12 +2970,14 @@ QUESTIONS = [
     {
         "domanda": "Entrando in un centro abitato, bisogna continuare a mantenere la concentrazione alla guida anche se potrebbero aumentare i motivi per distrarsi",
         "risposta": True,
+        "riassunto": "Centro abitato → mantenere la concentrazione nonostante le distrazioni?",
         "spiegazione": "In città ci sono molte cose che possono distrarti (negozi, persone, rumori, pubblicità). Ma è proprio lì che devi stare più concentrato per evitare incidenti, perché il rischio è maggiore.",
         "regola": "Distrazioni in città? No, concentrazione massima!",
     },
     {
         "domanda": "Entrando in un centro abitato, bisogna considerare che è possibile sostare in corrispondenza di incroci non regolati",
         "risposta": False,
+        "riassunto": "Centro abitato → sosta consentita agli incroci non regolati?",
         "spiegazione": "Sostare (fermare l'auto per un po') vicino a un incrocio, anche se non ci sono semafori o segnali, è molto pericoloso. Impedisce la visibilità agli altri e blocca il passaggio. Per questo è vietato.",
         "regola": "Incrocio = mai sostare, per la sicurezza di tutti.",
         "trabocchetti": ["possibile", "Non regolati"],
@@ -2610,6 +2985,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato è sempre consentita la marcia per file parallele",
         "risposta": False,
+        "riassunto": "Centro abitato → marcia per file parallele sempre consentita?",
         "spiegazione": "La marcia per file parallele (guidare affiancati su più corsie) è permessa solo in alcune situazioni, come quando il traffico è molto intenso e ci sono almeno due corsie per senso di marcia. Non è 'sempre' consentita in ogni condizione.",
         "regola": "'Sempre' è quasi sempre FALSO nei quiz di guida.",
         "trabocchetti": ["sempre"],
@@ -2617,6 +2993,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato, bisogna considerare che i pedoni e i diversamente abili devono sempre dare la precedenza ai veicoli a motore",
         "risposta": False,
+        "riassunto": "Centro abitato → pedoni e disabili devono sempre dare precedenza ai veicoli?",
         "spiegazione": "I pedoni e i diversamente abili sono utenti 'vulnerabili' e spesso hanno la precedenza, specialmente sulle strisce pedonali. Non devono 'sempre' dare la precedenza ai veicoli. Anzi, spesso è il contrario: i veicoli devono dare la precedenza a loro.",
         "regola": "Pedoni e disabili = precedenza (spesso). 'Sempre' è FALSO.",
         "trabocchetti": ["sempre"],
@@ -2624,6 +3001,7 @@ QUESTIONS = [
     {
         "domanda": "È vietato spostare o imbrattare la segnaletica stradale",
         "risposta": True,
+        "riassunto": "Segnaletica → vietato spostarla o imbrattarla?",
         "spiegazione": "La segnaletica stradale serve per la sicurezza di tutti. Spostarla o sporcarla la rende inutile o pericolosa, per questo è vietato farlo.",
         "regola": "Non toccare i segnali: sono sacri per la sicurezza!",
         "trabocchetti": ["vietato"],
@@ -2631,6 +3009,7 @@ QUESTIONS = [
     {
         "domanda": "È vietato rimuovere la segnaletica stradale",
         "risposta": True,
+        "riassunto": "Segnaletica → vietato rimuoverla?",
         "spiegazione": "Rimuovere un segnale è come non averlo. Questo crea confusione e pericolo per chi guida, perché non sa cosa fare o a cosa fare attenzione. Per questo è vietato.",
         "regola": "I segnali restano dove sono, sempre.",
         "trabocchetti": ["vietato"],
@@ -2638,6 +3017,7 @@ QUESTIONS = [
     {
         "domanda": "Spostare la segnaletica stradale può comportare pericolo grave per gli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Spostare la segnaletica → pericolo grave per altri?",
         "spiegazione": "Se un segnale è spostato, un guidatore potrebbe non vedere un pericolo o una regola importante. Questo può causare incidenti o situazioni pericolose per tutti gli utenti della strada.",
         "regola": "Segnali sbagliati = pericoli veri per tutti.",
         "trabocchetti": ["può comportare pericolo grave"],
@@ -2645,6 +3025,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito spostare la segnaletica stradale, se non si tratta di segnali di pericolo",
         "risposta": False,
+        "riassunto": "Spostare segnaletica → consentito se non di pericolo?",
         "spiegazione": "Non si può spostare NESSUN tipo di segnaletica, non solo i segnali di pericolo. Tutti i segnali sono importanti per la sicurezza e l'ordine della strada.",
         "regola": "Mai spostare, nessun segnale, mai!",
         "trabocchetti": ["consentito", "se non si tratta di segnali di pericolo"],
@@ -2652,6 +3033,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito spostare la segnaletica stradale, dopo aver avvisato gli organi di polizia",
         "risposta": False,
+        "riassunto": "Spostare segnaletica → consentito avvisando la polizia?",
         "spiegazione": "Anche se avvisi la polizia, non sei autorizzato a spostare la segnaletica. Solo chi è responsabile della strada (come gli enti stradali o la polizia stessa in casi specifici) può farlo.",
         "regola": "Solo chi di dovere sposta i segnali.",
         "trabocchetti": ["dopo aver avvisato gli organi di polizia"],
@@ -2659,12 +3041,14 @@ QUESTIONS = [
     {
         "domanda": "E' consentito spostare la segnaletica stradale, se si tratta delle barriere di delimitazione o dei coni stradali",
         "risposta": False,
+        "riassunto": "Spostare segnaletica → consentito per barriere e coni?",
         "spiegazione": "Anche barriere e coni stradali sono segnaletica, anche se temporanea. Servono a proteggere o indicare lavori e non devono essere spostati da chiunque. Hanno una funzione importante per la sicurezza.",
         "regola": "Coni e barriere: non toccare, sono segnali!",
     },
     {
         "domanda": "Sulle strade è vietato gareggiare in velocità",
         "risposta": True,
+        "riassunto": "Strade → gare di velocità vietate?",
         "spiegazione": "È vero. Sulle strade normali, dove circolano tutti i giorni le auto, è assolutamente vietato fare gare di velocità. È molto pericoloso per te e per gli altri.",
         "regola": "Strade pubbliche = NO gare.",
         "trabocchetti": ["vietato"],
@@ -2672,6 +3056,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che partecipa a gare di velocità non autorizzate su aree pubbliche è punito con la reclusione",
         "risposta": True,
+        "riassunto": "Gare non autorizzate su aree pubbliche → reclusione per chi partecipa?",
         "spiegazione": "È vero. Se un conducente partecipa a una gara di velocità su una strada pubblica senza avere un permesso speciale (cioè 'non autorizzata'), commette un reato grave e può essere punito con la prigione (reclusione).",
         "regola": "Gare non autorizzate = Prigione.",
         "trabocchetti": ["non autorizzate", "reclusione"],
@@ -2679,6 +3064,7 @@ QUESTIONS = [
     {
         "domanda": "E' punito con la reclusione il conducente che gareggia in velocità su strade pubbliche",
         "risposta": True,
+        "riassunto": "Gareggiare su strade pubbliche → reclusione?",
         "spiegazione": "È vero. Come nella domanda precedente, gareggiare in velocità su strade pubbliche è un'azione molto grave. Chi lo fa, senza autorizzazione, rischia di finire in prigione (reclusione).",
         "regola": "Gare su strada = Reclusione.",
         "trabocchetti": ["reclusione"],
@@ -2686,6 +3072,7 @@ QUESTIONS = [
     {
         "domanda": "E' punito con la reclusione chi scommette su veicoli che partecipano a gare di velocità non autorizzate su strade pubbliche",
         "risposta": True,
+        "riassunto": "Scommettere su gare non autorizzate → reclusione?",
         "spiegazione": "È vero. Non solo chi guida, ma anche chi scommette (cioè punta soldi) su queste gare di velocità illegali (non autorizzate) su strade pubbliche è considerato complice e rischia la prigione (reclusione).",
         "regola": "Scommettere su gare illegali = Prigione.",
         "trabocchetti": ["scommette", "non autorizzate"],
@@ -2693,6 +3080,7 @@ QUESTIONS = [
     {
         "domanda": "Le competizioni sportive con veicoli su aree pubbliche sono consentite senza autorizzazione",
         "risposta": False,
+        "riassunto": "Competizioni su aree pubbliche → senza autorizzazione?",
         "spiegazione": "È falso. Tutte le competizioni sportive con veicoli, se si svolgono su strade pubbliche, devono avere un permesso speciale dalle autorità. Senza questo permesso ('senza autorizzazione'), sono vietate.",
         "regola": "Competizioni = SEMPRE autorizzazione.",
         "trabocchetti": ["senza autorizzazione"],
@@ -2700,6 +3088,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle strade pubbliche sono consentite le gare di velocità, anche se non autorizzate, dalle ore 23.00 alle ore 6.00",
         "risposta": False,
+        "riassunto": "Gare non autorizzate → consentite dalle 23 alle 6?",
         "spiegazione": "È falso. Le gare di velocità non autorizzate sono sempre vietate, a qualsiasi ora del giorno o della notte. L'orario (dalle 23.00 alle 6.00) non cambia il fatto che siano illegali.",
         "regola": "Non autorizzate = MAI consentite.",
         "trabocchetti": ["anche se non autorizzate"],
@@ -2707,6 +3096,7 @@ QUESTIONS = [
     {
         "domanda": "Sono consentite le gare di velocità, anche se non autorizzate, purché partecipino solo due autovetture",
         "risposta": False,
+        "riassunto": "Gare non autorizzate → consentite se solo due auto?",
         "spiegazione": "È falso. Non importa quanti veicoli partecipano (due, tre o di più). Se una gara di velocità non è autorizzata, è sempre vietata su strade pubbliche.",
         "regola": "Non autorizzate = MAI consentite (indipendente dal numero).",
         "trabocchetti": ["anche se non autorizzate", "purché partecipino solo due autovetture"],
@@ -2714,6 +3104,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle strade pubbliche sono consentite le gare di velocità, anche se non autorizzate, tra motocicli e non tra autoveicoli",
         "risposta": False,
+        "riassunto": "Gare non autorizzate → consentite tra motocicli?",
         "spiegazione": "È falso. Non importa il tipo di veicolo (motocicli o autoveicoli). Le gare di velocità non autorizzate sono sempre vietate su strade pubbliche, per qualsiasi mezzo.",
         "regola": "Non autorizzate = MAI consentite (indipendente dal tipo di veicolo).",
         "trabocchetti": ["anche se non autorizzate", "tra motocicli e non tra autoveicoli"],
@@ -2721,6 +3112,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato lanciare dal finestrino mozziconi di sigaretta accesi",
         "risposta": True,
+        "riassunto": "Mozziconi accesi dal finestrino → vietato?",
         "spiegazione": "È vietato lanciare mozziconi di sigaretta accesi dal finestrino perché possono causare incendi, specialmente in aree secche, o colpire altri veicoli e persone, creando pericolo.",
         "regola": "Non buttare niente dal finestrino.",
         "trabocchetti": ["vietato"],
@@ -2728,6 +3120,7 @@ QUESTIONS = [
     {
         "domanda": "Gettare mozziconi di sigaretta accesi dai finestrini è molto pericoloso soprattutto se sopraggiungono veicoli a due ruote",
         "risposta": True,
+        "riassunto": "Mozziconi accesi dal finestrino → pericolosi per le due ruote?",
         "spiegazione": "Gettare mozziconi accesi è molto pericoloso per tutti, ma in particolare per chi va in moto o in bici. Un mozzicone può finire negli occhi o sui vestiti, causando una distrazione o una bruciatura e quindi un incidente.",
         "regola": "Mozzicone acceso = pericolo per tutti.",
         "trabocchetti": ["soprattutto"],
@@ -2735,12 +3128,14 @@ QUESTIONS = [
     {
         "domanda": "Gettare mozziconi accesi dai finestrini in prossimità di boschi o aree verdi potrebbe causare incendi",
         "risposta": True,
+        "riassunto": "Mozziconi accesi vicino a boschi → rischio incendi?",
         "spiegazione": "Un mozzicone di sigaretta acceso, se gettato vicino a boschi o aree verdi, può facilmente incendiare l'erba secca o le foglie, causando un incendio grave, soprattutto d'estate.",
         "regola": "Mozzicone + natura = fuoco.",
     },
     {
         "domanda": "E' vietato spargere fango o detriti sulle strade con le ruote sporche dei veicoli",
         "risposta": True,
+        "riassunto": "Ruote sporche → vietato spargere fango o detriti?",
         "spiegazione": "È vietato sporcare la strada con fango o detriti perché questi materiali rendono la strada scivolosa e pericolosa per tutti i veicoli, aumentando il rischio di incidenti.",
         "regola": "Strada pulita = strada sicura.",
         "trabocchetti": ["vietato"],
@@ -2748,12 +3143,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che si accorge che il suo veicolo perde olio deve compiere tutte le azioni necessarie per evitare pericoli per altri utenti",
         "risposta": True,
+        "riassunto": "Veicolo che perde olio → evitare pericoli agli altri?",
         "spiegazione": "Se il tuo veicolo perde olio, devi subito fare qualcosa per evitare che altri si facciano male. L'olio sulla strada è molto scivoloso e pericoloso. Devi fermarti e segnalare il pericolo.",
         "regola": "Perdita olio = agisci subito.",
     },
     {
         "domanda": "Il conducente che si accorga che il suo veicolo ha forti perdite di olio o carburante, deve immediatamente avvisare l'ente proprietario della strada o gli organi di polizia",
         "risposta": True,
+        "riassunto": "Forti perdite di olio/carburante → avvisare ente o polizia?",
         "spiegazione": "Se la perdita di olio o carburante è grande, non basta agire da soli. Devi avvisare subito chi di dovere (l'ente che gestisce la strada o la polizia) perché possano intervenire in modo professionale e mettere in sicurezza la strada.",
         "regola": "Forte perdita = chiama aiuto.",
         "trabocchetti": ["forti perdite"],
@@ -2761,24 +3158,28 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di veicolo a due ruote può circolare portando con sé un animale domestico, se custodito in apposita gabbia, purché non sia sporgente di oltre 50 centimetri.",
         "risposta": True,
+        "riassunto": "Due ruote → animale in gabbia sporgente fino a 50 cm?",
         "spiegazione": "Puoi portare un animale domestico in moto o scooter, ma deve stare in una gabbia sicura. La gabbia non deve sporgere più di 50 centimetri dal veicolo per non disturbare la guida e non essere un pericolo per gli altri.",
         "regola": "Animale in gabbia, non sporgere troppo (max 50 cm).",
     },
     {
         "domanda": "Alla guida di un veicolo il conducente deve procedere a bassa velocità sopra le pozzanghere",
         "risposta": True,
+        "riassunto": "Pozzanghere → passarci a bassa velocità?",
         "spiegazione": "Quando passi sopra una pozzanghera, devi andare piano. Questo evita di schizzare acqua sui pedoni o su altri veicoli e riduce il rischio che le ruote perdano aderenza (aquaplaning).",
         "regola": "Pozzanghera = rallenta.",
     },
     {
         "domanda": "Se, uscendo da un sentiero fangoso, si sporca notevolmente la strada, si può incorrere in una sanzione amministrativa",
         "risposta": True,
+        "riassunto": "Sporcare la strada uscendo da sentiero fangoso → sanzione?",
         "spiegazione": "Sporcare la strada con fango o terriccio è vietato. Se esci da un sentiero fangoso e sporchi molto la strada, puoi ricevere una multa perché crei un pericolo e un danno all'ambiente.",
         "regola": "Sporchi la strada = paghi.",
     },
     {
         "domanda": "Per evitare di sporcare la carreggiata, bisogna pulire le ruote del veicolo, prima di uscire da un sentiero fangoso",
         "risposta": True,
+        "riassunto": "Prima di uscire da sentiero fangoso → pulire le ruote?",
         "spiegazione": "Per non sporcare la strada e non creare pericoli, è importante pulire le ruote del tuo veicolo prima di uscire da un sentiero pieno di fango. È una buona abitudine e un dovere.",
         "regola": "Fango = pulisci le ruote.",
         "trabocchetti": ["bisogna"],
@@ -2786,12 +3187,14 @@ QUESTIONS = [
     {
         "domanda": "Uscendo da un sentiero fangoso o da un cantiere, bisogna assicurarsi che durante la marcia non cada terriccio che possa sporcare la strada",
         "risposta": True,
+        "riassunto": "Uscendo da sentiero o cantiere → evitare che cada terriccio?",
         "spiegazione": "Quando esci da un sentiero fangoso o da un cantiere, devi controllare bene che non cada terriccio o fango dal tuo veicolo mentre guidi. Questo sporcherebbe la strada e creerebbe pericoli.",
         "regola": "Controlla che non cada nulla.",
     },
     {
         "domanda": "E' consentito spostare i segnali stradali verticali temporanei per parcheggiare il veicolo",
         "risposta": False,
+        "riassunto": "Segnali verticali temporanei → spostarli per parcheggiare?",
         "spiegazione": "I segnali stradali, anche quelli temporanei (come quelli dei lavori in corso), non si possono spostare. Servono per la sicurezza e per dare indicazioni importanti ai guidatori. Spostarli è pericoloso e vietato.",
         "regola": "Segnali non si toccano.",
         "trabocchetti": ["consentito"],
@@ -2799,6 +3202,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito lanciare la carta dal finestrino",
         "risposta": False,
+        "riassunto": "Lanciare carta dal finestrino → consentito?",
         "spiegazione": "Non si può lanciare nulla dal finestrino, nemmeno un pezzo di carta. È maleducazione, inquina l'ambiente e può creare pericoli per gli altri utenti della strada.",
         "regola": "Niente fuori dal finestrino.",
         "trabocchetti": ["consentito"],
@@ -2806,24 +3210,28 @@ QUESTIONS = [
     {
         "domanda": "Il conducente può lanciare oggetti dal finestrino sulla banchina",
         "risposta": False,
+        "riassunto": "Lanciare oggetti sulla banchina → consentito?",
         "spiegazione": "Non si possono lanciare oggetti dal finestrino, nemmeno sulla banchina (la parte laterale della strada). È sempre vietato perché inquina e può comunque creare pericoli o distrazioni.",
         "regola": "Niente fuori dal finestrino, mai.",
     },
     {
         "domanda": "Su una strada ricoperta da brecciolino il conducente può circolare a velocità sostenuta",
         "risposta": False,
+        "riassunto": "Strada con brecciolino → velocità sostenuta?",
         "spiegazione": "Su una strada con brecciolino (sassolini), devi andare piano. Il brecciolino rende la strada molto scivolosa e puoi perdere il controllo del veicolo o lanciare sassi che possono danneggiare altri veicoli o persone.",
         "regola": "Brecciolino = rallenta.",
     },
     {
         "domanda": "Il conducente può superare i veicoli in coda accelerando bruscamente e cambiando ripetutamente corsia",
         "risposta": False,
+        "riassunto": "Superare la coda → accelerando e cambiando corsia di continuo?",
         "spiegazione": "Superare i veicoli in coda accelerando forte e cambiando corsia continuamente è un comportamento molto pericoloso, aggressivo e vietato. Causa incidenti e non è mai un modo sicuro di guidare.",
         "regola": "In coda, sii paziente e sicuro.",
     },
     {
         "domanda": "Il conducente di un veicolo, oltre a rispettare le norme specifiche della circolazione, deve tenere un rapporto corretto e tollerante verso gli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Conducente → oltre alle norme, rapporto corretto e tollerante?",
         "spiegazione": "Guidare non significa solo seguire le regole, ma anche essere educati e pazienti con gli altri utenti della strada. Questo comportamento aiuta a prevenire incidenti e rende la circolazione più sicura e piacevole per tutti.",
         "regola": "Guida con rispetto, non solo con le regole.",
         "trabocchetti": ["rapporto corretto e tollerante"],
@@ -2831,12 +3239,14 @@ QUESTIONS = [
     {
         "domanda": "Quando si avvicina ad un incrocio, il conducente deve sempre usare la massima prudenza, anche quando gli altri conducenti devono dargli la precedenza",
         "risposta": True,
+        "riassunto": "Avvicinandosi all'incrocio → massima prudenza anche con precedenza?",
         "spiegazione": "Anche se hai il diritto di passare per primo (la precedenza), devi sempre stare molto attento quando arrivi a un incrocio. Gli altri potrebbero sbagliare o non vederti. La sicurezza è sempre la cosa più importante.",
         "regola": "Precedenza non significa via libera, prudenza sempre!",
     },
     {
         "domanda": "Il conducente di un veicolo deve tutelare la propria e l'altrui sicurezza",
         "risposta": True,
+        "riassunto": "Conducente → tutelare la propria e l'altrui sicurezza?",
         "spiegazione": "Quando sei al volante, la tua responsabilità è proteggere te stesso e tutte le altre persone sulla strada: pedoni, ciclisti, motociclisti e altri automobilisti. La sicurezza di tutti è la priorità assoluta.",
         "regola": "La sicurezza è di tutti, non solo tua.",
         "trabocchetti": ["tutelare la propria e l"],
@@ -2844,12 +3254,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un veicolo deve rispettare gli agenti del traffico e collaborare con essi",
         "risposta": True,
+        "riassunto": "Conducente → rispettare e collaborare con gli agenti?",
         "spiegazione": "Gli agenti del traffico (polizia, vigili urbani) sono lì per la tua sicurezza e per gestire il traffico. Devi sempre ascoltare i loro ordini e aiutarli nel loro lavoro, per una circolazione più ordinata e sicura.",
         "regola": "Agente in strada? Ascolta e collabora.",
     },
     {
         "domanda": "Il conducente di un veicolo deve cercare di prevedere il comportamento degli altri utenti",
         "risposta": True,
+        "riassunto": "Conducente → prevedere il comportamento altrui?",
         "spiegazione": "Un buon guidatore non si limita a reagire, ma cerca di immaginare cosa potrebbero fare gli altri utenti della strada (ad esempio, se un pedone attraverserà improvvisamente o se un'auto frenerà). Questo ti permette di essere pronto e di evitare pericoli.",
         "regola": "Pensa avanti, non solo al presente.",
         "trabocchetti": ["cercare di prevedere"],
@@ -2857,12 +3269,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un veicolo deve essere paziente e tollerante anche in caso di rallentamento della circolazione",
         "risposta": True,
+        "riassunto": "Conducente → paziente anche nei rallentamenti?",
         "spiegazione": "Il traffico e i rallentamenti sono una parte normale della guida. Mantenere la calma, essere pazienti e tolleranti evita stress, comportamenti aggressivi e situazioni pericolose.",
         "regola": "Traffico lento? Pazienza è d'oro.",
     },
     {
         "domanda": "Il conducente di un veicolo non deve fare sempre affidamento sul comportamento degli altri, che può non essere corretto",
         "risposta": True,
+        "riassunto": "Conducente → non fidarsi sempre degli altri?",
         "spiegazione": "Non puoi dare per scontato che tutti gli altri guidino in modo perfetto. Molte persone possono sbagliare o avere comportamenti inattesi. Per questo, devi essere sempre attento e pronto a reagire, senza fidarti ciecamente degli altri.",
         "regola": "Guida per te, non per gli errori altrui.",
         "trabocchetti": ["non deve fare sempre affidamento"],
@@ -2870,6 +3284,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un veicolo non può pretendere di passare per primo quando sorge il dubbio che non gli venga concessa la precedenza",
         "risposta": True,
+        "riassunto": "Dubbio sulla precedenza concessa → non pretendere di passare?",
         "spiegazione": "Se non sei sicuro che ti daranno la precedenza, è sempre meglio fermarsi o rallentare. La tua sicurezza è più importante che avere ragione. Non forzare mai il passaggio se c'è un dubbio.",
         "regola": "Dubbio sulla precedenza? Fermati e aspetta.",
         "trabocchetti": ["non può pretendere", "quando sorge il dubbio"],
@@ -2877,12 +3292,14 @@ QUESTIONS = [
     {
         "domanda": "Il diritto di precedenza non autorizza il conducente ad attraversare l'incrocio senza usare prudenza",
         "risposta": True,
+        "riassunto": "Diritto di precedenza → non esonera dalla prudenza?",
         "spiegazione": "Anche se hai la precedenza, non significa che puoi attraversare un incrocio senza guardare o senza rallentare. Devi sempre essere prudente, perché un altro veicolo potrebbe non rispettare la precedenza e causare un incidente.",
         "regola": "Precedenza non è immunità, prudenza è priorità.",
     },
     {
         "domanda": "Il conducente di un veicolo di grandi dimensioni ha, di norma, la precedenza sul conducente di un veicolo più piccolo",
         "risposta": False,
+        "riassunto": "Veicolo grande → precedenza su quello piccolo?",
         "spiegazione": "FALSO. La precedenza non dipende dalla grandezza del veicolo. Dipende dai segnali stradali (STOP, Dare Precedenza), dalle regole generali (precedenza a destra) o dai semafori. Un veicolo grande non ha automaticamente la precedenza su uno più piccolo.",
         "regola": "La precedenza non è una questione di taglia.",
         "trabocchetti": ["di norma", "grandi dimensioni"],
@@ -2890,6 +3307,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un veicolo può approfittare della potenza del proprio veicolo per non dare la precedenza a chi spetta",
         "risposta": False,
+        "riassunto": "Potenza del veicolo → non dare la precedenza dovuta?",
         "spiegazione": "FALSO. Usare la forza o la velocità del tuo veicolo per non rispettare le regole è molto pericoloso e sbagliato. La precedenza va data a chi spetta, indipendentemente dalla potenza del tuo mezzo. La sicurezza viene prima di tutto.",
         "regola": "La potenza non ti dà la precedenza.",
         "trabocchetti": ["può approfittare della potenza"],
@@ -2897,12 +3315,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un veicolo pesante può tenere un comportamento che è causa di insofferenza negli altri",
         "risposta": False,
+        "riassunto": "Veicolo pesante → comportamento che irrita gli altri?",
         "spiegazione": "FALSO. Nessun conducente, nemmeno di un veicolo pesante, deve guidare in modo da infastidire o irritare gli altri. Tutti devono essere rispettosi, pazienti e tolleranti per garantire una circolazione sicura e serena.",
         "regola": "Rispetto e tolleranza per tutti, sempre.",
     },
     {
         "domanda": "Il conducente di un veicolo deve rispettare gli agenti del traffico solo se sono in divisa",
         "risposta": False,
+        "riassunto": "Agenti del traffico → rispettarli solo se in divisa?",
         "spiegazione": "FALSO. Gli agenti del traffico vanno rispettati e obbediti sempre, anche se non indossano la divisa completa, purché siano riconoscibili come agenti (ad esempio, con un distintivo o un segnale). La loro autorità non dipende solo dall'uniforme.",
         "regola": "Agente è agente, divisa o meno.",
         "trabocchetti": ["solo"],
@@ -2910,6 +3330,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un veicolo può fare a meno di usare la massima prudenza quando si avvicina ad un incrocio in cui ha il diritto di precedenza",
         "risposta": False,
+        "riassunto": "Incrocio con precedenza → si può fare a meno della prudenza?",
         "spiegazione": "FALSO. Come già detto, anche se hai la precedenza, la prudenza è sempre obbligatoria, specialmente agli incroci. Non puoi mai 'fare a meno' della massima prudenza, perché la sicurezza è la priorità assoluta.",
         "regola": "Precedenza non è scusa per la non prudenza.",
         "trabocchetti": ["fare a meno"],
@@ -2917,6 +3338,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve dare segni di impazienza, se il veicolo che sta davanti procede troppo lentamente",
         "risposta": False,
+        "riassunto": "Veicolo davanti lento → mostrare impazienza?",
         "spiegazione": "FALSO. Essere impazienti, suonare il clacson in modo eccessivo o fare gesti non aiuta e può essere pericoloso. Bisogna essere pazienti e aspettare il momento giusto per superare, se possibile e in sicurezza, senza creare situazioni di stress o pericolo.",
         "regola": "L'impazienza è nemica della sicurezza.",
         "trabocchetti": ["deve dare segni di impazienza"],
@@ -2924,6 +3346,7 @@ QUESTIONS = [
     {
         "domanda": "Un incidente, anche a bassa velocità, potrebbe creare gravi problemi fisici a pedoni, ciclisti e motociclisti, se coinvolti",
         "risposta": True,
+        "riassunto": "Incidente a bassa velocità → gravi danni a pedoni, ciclisti, motociclisti?",
         "spiegazione": "Anche un piccolo urto, a bassa velocità, può causare gravi danni a chi non è protetto da una carrozzeria, come pedoni, ciclisti e motociclisti. La loro incolumità è molto fragile.",
         "regola": "Bassa velocità = alto rischio per i più deboli.",
         "trabocchetti": ["anche a bassa velocità"],
@@ -2931,6 +3354,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna controllare frequentemente nello specchietto retrovisore se sopraggiunge un ciclista o un motociclista",
         "risposta": True,
+        "riassunto": "Specchietto → controllare spesso ciclisti e motociclisti?",
         "spiegazione": "È fondamentale guardare spesso negli specchietti retrovisori. Ciclisti e motociclisti sono più piccoli e possono apparire all'improvviso, quindi è importante vederli per tempo.",
         "regola": "Specchietto sempre attivo, soprattutto per i 'piccoli'.",
         "trabocchetti": ["frequentemente"],
@@ -2938,6 +3362,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente, dopo aver posteggiato il veicolo al lato della carreggiata, prima di aprire lo sportello deve controllare che non sopraggiungano ciclisti o motociclisti",
         "risposta": True,
+        "riassunto": "Dopo aver posteggiato → controllare ciclisti prima di aprire lo sportello?",
         "spiegazione": "Prima di aprire la portiera dell'auto, devi sempre controllare attentamente che non stia arrivando nessuno, specialmente ciclisti o motociclisti. Un'apertura improvvisa può causare un incidente grave.",
         "regola": "Apri la porta? Prima guarda!",
         "trabocchetti": ["prima di aprire lo sportello"],
@@ -2945,6 +3370,7 @@ QUESTIONS = [
     {
         "domanda": "I montanti interni degli autoveicoli condizionano la visibilità",
         "risposta": True,
+        "riassunto": "Montanti interni → limitano la visibilità?",
         "spiegazione": "I montanti sono le parti della carrozzeria che sostengono il tetto dell'auto. Possono coprire una parte della tua visuale, creando dei 'punti ciechi' dove non vedi bene.",
         "regola": "Montanti = angoli ciechi.",
         "trabocchetti": ["condizionano la visibilità"],
@@ -2952,6 +3378,7 @@ QUESTIONS = [
     {
         "domanda": "I montanti interni degli autoveicoli riducono la possibilità di vedere un ciclista o un motociclista",
         "risposta": True,
+        "riassunto": "Montanti interni → nascondono ciclisti e motociclisti?",
         "spiegazione": "Poiché i montanti creano punti ciechi, è più difficile vedere oggetti piccoli e veloci come ciclisti e motociclisti, che potrebbero trovarsi proprio in quelle zone non visibili.",
         "regola": "Montanti + piccoli = attenzione doppia.",
         "trabocchetti": ["riducono la possibilità"],
@@ -2959,6 +3386,7 @@ QUESTIONS = [
     {
         "domanda": "Un incidente a bassa velocità non crea problemi di incolumità ai conducenti coinvolti",
         "risposta": False,
+        "riassunto": "Incidente a bassa velocità → nessun rischio per i conducenti?",
         "spiegazione": "Anche un incidente a bassa velocità può causare ferite o problemi fisici ai conducenti, specialmente se non si indossano le cinture di sicurezza o se si è a bordo di veicoli meno protetti come moto o bici. La sicurezza è sempre importante.",
         "regola": "Velocità bassa non significa rischio zero.",
         "trabocchetti": ["non crea problemi di incolumità"],
@@ -2966,6 +3394,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che scende da un veicolo in sosta non deve controllare se sopraggiungono ciclisti",
         "risposta": False,
+        "riassunto": "Scendendo dal veicolo in sosta → niente controllo dei ciclisti?",
         "spiegazione": "È obbligatorio controllare sempre prima di scendere dall'auto, per non mettere in pericolo ciclisti o altri utenti della strada. Non controllare è molto pericoloso e può causare incidenti.",
         "regola": "Scendi? Controlla sempre!",
         "trabocchetti": ["non deve controllare"],
@@ -2973,6 +3402,7 @@ QUESTIONS = [
     {
         "domanda": "Nello specchietto retrovisore il conducente deve controllare solo se sopraggiungono autocarri o autobus",
         "risposta": False,
+        "riassunto": "Specchietto → controllare solo autocarri e autobus?",
         "spiegazione": "Nello specchietto retrovisore devi controllare tutti i veicoli che arrivano, non solo quelli grandi come autocarri o autobus. Anche auto, moto e bici sono importanti e devono essere visti.",
         "regola": "Specchietto = tutti, non solo i grandi.",
         "trabocchetti": ["solo"],
@@ -2980,6 +3410,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un motociclo può fare lo slalom tra i veicoli fermi al semaforo",
         "risposta": False,
+        "riassunto": "Motociclo → slalom tra veicoli fermi al semaforo?",
         "spiegazione": "Fare lo slalom tra i veicoli fermi è molto pericoloso e vietato. Bisogna mantenere la propria corsia e aspettare il verde, per la sicurezza di tutti.",
         "regola": "Slalom = no, mai!",
         "trabocchetti": ["può fare lo slalom"],
@@ -2987,6 +3418,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del motociclo può parcheggiare sul marciapiede anche se non vi sono appositi spazi di posteggio",
         "risposta": False,
+        "riassunto": "Motociclo → parcheggio sul marciapiede senza spazi appositi?",
         "spiegazione": "Non si può parcheggiare sul marciapiede se non ci sono spazi specifici e segnalati per le moto. Il marciapiede è riservato ai pedoni.",
         "regola": "Marciapiede = pedoni, non moto (senza spazi).",
         "trabocchetti": ["anche se non vi sono appositi spazi"],
@@ -2994,6 +3426,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del motociclo può circolare sul marciapiede se il traffico sulla carreggiata è bloccato",
         "risposta": False,
+        "riassunto": "Motociclo → sul marciapiede se la carreggiata è bloccata?",
         "spiegazione": "Il marciapiede è uno spazio riservato esclusivamente ai pedoni. Non si può circolare lì con un motociclo, nemmeno se il traffico sulla strada è bloccato. È pericoloso e vietato.",
         "regola": "Marciapiede = solo a piedi.",
         "trabocchetti": ["può circolare sul marciapiede"],
@@ -3001,6 +3434,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna usare maggiore prudenza nei confronti delle persone diversamente abili",
         "risposta": True,
+        "riassunto": "Più prudenza → persone disabili?",
         "spiegazione": "È VERO. Le persone diversamente abili possono avere tempi di reazione più lenti o difficoltà a muoversi, quindi è fondamentale essere più attenti e prudenti per garantire la loro sicurezza.",
         "regola": "Vulnerabilità = più attenzione.",
         "trabocchetti": ["maggiore prudenza"],
@@ -3008,6 +3442,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna usare maggiore prudenza nei confronti delle persone anziane",
         "risposta": True,
+        "riassunto": "Più prudenza → persone anziane?",
         "spiegazione": "È VERO. Le persone anziane possono avere vista e udito meno buoni, e i loro movimenti possono essere più lenti. Per questo, è importante essere più prudenti e dare loro più tempo per reagire o attraversare.",
         "regola": "Anziani = riflessi lenti, più attenzione.",
         "trabocchetti": ["maggiore prudenza"],
@@ -3015,6 +3450,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna usare maggiore prudenza nei confronti dei bambini che attraversano la strada",
         "risposta": True,
+        "riassunto": "Più prudenza → bambini che attraversano?",
         "spiegazione": "È VERO. I bambini sono imprevedibili, possono correre in strada all'improvviso o non capire bene i pericoli del traffico. Per la loro sicurezza, dobbiamo essere estremamente prudenti quando ci sono bambini vicino alla strada.",
         "regola": "Bambini = imprevedibili, occhi aperti!",
         "trabocchetti": ["bambini", "maggiore prudenza"],
@@ -3022,6 +3458,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna usare maggiore prudenza nei confronti dei conducenti che dimostrano una guida incerta",
         "risposta": True,
+        "riassunto": "Più prudenza → conducenti dalla guida incerta?",
         "spiegazione": "È VERO. Un conducente che guida in modo incerto (ad esempio, sbanda, frena all'improvviso senza motivo, o va troppo lento/veloce) potrebbe essere distratto, stanco o avere problemi. È saggio mantenere una distanza di sicurezza e stare pronti a reagire.",
         "regola": "Guida incerta = pericolo, stai lontano.",
         "trabocchetti": ["guida incerta", "maggiore prudenza"],
@@ -3029,12 +3466,14 @@ QUESTIONS = [
     {
         "domanda": "Bisogna usare maggiore prudenza nei confronti dei conducenti di veicoli adattati per persone diversamente abili",
         "risposta": True,
+        "riassunto": "Più prudenza → veicoli adattati per disabili?",
         "spiegazione": "È VERO. I veicoli adattati sono guidati da persone con disabilità. Anche se il veicolo è modificato, il conducente potrebbe avere tempi di reazione diversi o il veicolo stesso potrebbe avere caratteristiche di guida particolari. È giusto essere più attenti e comprensivi.",
         "regola": "Veicoli adattati = rispetto e cautela.",
     },
     {
         "domanda": "Bisogna usare maggiore prudenza nei confronti delle persone in bicicletta e di quelle con scarsa capacità di movimento",
         "risposta": True,
+        "riassunto": "Più prudenza → ciclisti e persone con poca mobilità?",
         "spiegazione": "È VERO. Le persone in bicicletta sono meno protette e a volte meno visibili. Le persone con scarsa capacità di movimento (ad esempio, chi usa stampelle o ha difficoltà a camminare) sono più lente e vulnerabili. Entrambi richiedono la nostra massima attenzione e prudenza.",
         "regola": "Bici e lenti = fragili, massima attenzione.",
         "trabocchetti": ["bicicletta", "scarsa capacità di movimento", "maggiore prudenza"],
@@ -3042,6 +3481,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna usare particolare prudenza nei confronti dei conducenti che hanno conseguito la patente di guida in uno Stato estero",
         "risposta": False,
+        "riassunto": "Particolare prudenza → patentati all'estero?",
         "spiegazione": "È FALSO. La provenienza della patente di guida (se è stata ottenuta in Italia o all'estero) non è un motivo per usare una prudenza 'particolare' o maggiore. Tutti i conducenti devono rispettare le regole della strada e non c'è una correlazione automatica tra il luogo di rilascio della patente e la necessità di maggiore cautela.",
         "regola": "Patente estera = non cambia nulla, tutti uguali.",
         "trabocchetti": ["Stato estero"],
@@ -3049,6 +3489,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna usare maggiore prudenza nei confronti dei conducenti di autoveicoli elettrici",
         "risposta": False,
+        "riassunto": "Più prudenza → conducenti di auto elettriche?",
         "spiegazione": "È FALSO. Gli autoveicoli elettrici sono veicoli come gli altri. Il tipo di motore (elettrico, benzina, diesel) non rende il conducente più o meno bisognoso di maggiore prudenza da parte degli altri. Non c'è una ragione specifica per trattarli diversamente.",
         "regola": "Auto elettrica = auto normale, nessuna differenza.",
         "trabocchetti": ["autoveicoli elettrici"],
@@ -3056,6 +3497,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna usare maggiore prudenza nei confronti dei conducenti di taxi",
         "risposta": False,
+        "riassunto": "Più prudenza → tassisti?",
         "spiegazione": "È FALSO. I conducenti di taxi sono professionisti della strada, spesso con molta esperienza. Non c'è una ragione per usare 'maggiore prudenza' nei loro confronti rispetto ad altri conducenti. Anzi, di solito sono molto esperti.",
         "regola": "Taxi = professionisti, non serve prudenza extra.",
         "trabocchetti": ["taxi"],
@@ -3063,6 +3505,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna usare maggiore prudenza nei confronti dei conducenti di tricicli a motore",
         "risposta": False,
+        "riassunto": "Più prudenza → conducenti di tricicli a motore?",
         "spiegazione": "È FALSO. I tricicli a motore sono veicoli e i loro conducenti devono rispettare le stesse regole degli altri. Non c'è una ragione specifica per usare 'maggiore prudenza' nei loro confronti rispetto ad altri veicoli a motore.",
         "regola": "Triciclo = veicolo normale, non serve prudenza extra.",
         "trabocchetti": ["tricicli a motore"],
@@ -3070,12 +3513,14 @@ QUESTIONS = [
     {
         "domanda": "Bisogna usare maggiore prudenza nei confronti dei pedoni muniti di bastone bianco, ma non di quelli con bastone bianco-rosso",
         "risposta": False,
+        "riassunto": "Più prudenza → bastone bianco sì, bianco-rosso no?",
         "spiegazione": "È FALSO. Sia il bastone bianco (usato dai non vedenti) sia il bastone bianco-rosso (usato dai sordo-ciechi) indicano una disabilità e la necessità di massima prudenza. La parte 'ma non di quelli con bastone bianco-rosso' rende la frase falsa, perché anche questi ultimi richiedono la stessa, se non maggiore, attenzione.",
         "regola": "Bastone bianco o bianco-rosso = sempre massima attenzione!",
     },
     {
         "domanda": "Quando le persone anziane attraversano la carreggiata bisogna tenere presente che potrebbero non fare adeguata attenzione ai veicoli",
         "risposta": True,
+        "riassunto": "Anziani che attraversano → poca attenzione ai veicoli?",
         "spiegazione": "Le persone anziane a volte sono meno attente o distratte, quindi potrebbero non vedere bene i veicoli che arrivano. Per questo, noi guidatori dobbiamo essere molto prudenti.",
         "regola": "Anziani = meno attenzione, più prudenza.",
         "trabocchetti": ["non fare adeguata attenzione"],
@@ -3083,6 +3528,7 @@ QUESTIONS = [
     {
         "domanda": "Quando le persone anziane attraversano la carreggiata bisogna tenere presente che potrebbero fermarsi improvvisamente al centro della strada",
         "risposta": True,
+        "riassunto": "Anziani che attraversano → possono fermarsi a metà strada?",
         "spiegazione": "Le persone anziane possono avere problemi di salute, stanchezza o incertezze, quindi potrebbero fermarsi senza preavviso, anche in mezzo alla strada. Dobbiamo essere pronti a questa possibilità.",
         "regola": "Anziani = stop improvviso, sii pronto.",
         "trabocchetti": ["improvvisamente"],
@@ -3090,6 +3536,7 @@ QUESTIONS = [
     {
         "domanda": "Quando le persone anziane attraversano la carreggiata bisogna tenere presente che potrebbero non guardare né a destra, né a sinistra",
         "risposta": True,
+        "riassunto": "Anziani che attraversano → possono non guardare né a destra né a sinistra?",
         "spiegazione": "A causa di problemi di vista, udito o distrazione, gli anziani potrebbero non fare i controlli visivi necessari (guardare a destra e sinistra) prima di attraversare. Dobbiamo prevedere questo comportamento.",
         "regola": "Anziani = occhi solo avanti, attenzione doppia.",
         "trabocchetti": ["né a destra, né a sinistra"],
@@ -3097,6 +3544,7 @@ QUESTIONS = [
     {
         "domanda": "Quando le persone anziane attraversano la carreggiata bisogna tenere presente che, data la loro età, non reagiscono prontamente alle situazioni di pericolo",
         "risposta": True,
+        "riassunto": "Anziani che attraversano → reazioni lente al pericolo?",
         "spiegazione": "Con l'età, i riflessi diventano più lenti. Questo significa che una persona anziana impiega più tempo a capire un pericolo e a reagire, ad esempio a fare un passo indietro o ad accelerare il passo.",
         "regola": "Anziani = riflessi lenti, sii paziente.",
         "trabocchetti": ["prontamente", "non reagiscono prontamente"],
@@ -3104,6 +3552,7 @@ QUESTIONS = [
     {
         "domanda": "Quando le persone anziane attraversano la carreggiata non bisogna avvicinarsi troppo con il veicolo, per evitare che si sentano minacciati e reagiscano con movimenti pericolosi",
         "risposta": True,
+        "riassunto": "Anziani che attraversano → non avvicinarsi troppo col veicolo?",
         "spiegazione": "Mantenere una distanza di sicurezza è fondamentale. Avvicinarsi troppo con il veicolo può spaventare l'anziano, che potrebbe fare un movimento inaspettato e pericoloso per la paura o la confusione.",
         "regola": "Anziani = distanza di sicurezza, no paura.",
         "trabocchetti": ["minacciati", "Reagiscano con movimenti pericolosi"],
@@ -3111,6 +3560,7 @@ QUESTIONS = [
     {
         "domanda": "Le persone anziane che attraversano la carreggiata sono esposte a maggiori pericoli, perché le loro capacità visive e uditive non sono più eccellenti",
         "risposta": True,
+        "riassunto": "Anziani che attraversano → più rischi per vista e udito ridotti?",
         "spiegazione": "Con l'età, la vista e l'udito possono peggiorare. Questo rende più difficile per gli anziani vedere i veicoli o sentire i loro rumori, aumentando il rischio di incidenti quando attraversano.",
         "regola": "Anziani = vista/udito meno buoni, più rischio.",
         "trabocchetti": ["non sono più eccellenti", "Esposte a maggiori pericoli"],
@@ -3118,6 +3568,7 @@ QUESTIONS = [
     {
         "domanda": "Le persone anziane che attraversano la carreggiata sono esposte a maggiori pericoli, perché potrebbero valutare male la velocità dei veicoli che sopraggiungono",
         "risposta": True,
+        "riassunto": "Anziani che attraversano → possono valutare male la velocità dei veicoli?",
         "spiegazione": "La capacità di stimare la velocità e la distanza dei veicoli può diminuire con l'età. Questo può portare gli anziani a fare errori di valutazione pericolosi, pensando di avere più tempo per attraversare di quanto non sia in realtà.",
         "regola": "Anziani = velocità difficile da stimare, rallenta.",
         "trabocchetti": ["valutare male", "Sopraggiungono"],
@@ -3125,6 +3576,7 @@ QUESTIONS = [
     {
         "domanda": "Quando le persone anziane attraversano la carreggiata bisogna tenere presente che hanno i riflessi più rapidi e quindi attraversano con più accortezza",
         "risposta": False,
+        "riassunto": "Anziani che attraversano → riflessi più rapidi?",
         "spiegazione": "Questa affermazione è falsa. Le persone anziane, a causa dell'età, hanno i riflessi più lenti, non più rapidi. Questo li rende meno pronti a reagire a situazioni improvvise o di pericolo.",
         "regola": "Anziani = riflessi LENTI, non rapidi.",
         "trabocchetti": ["più rapidi", "Accortezza"],
@@ -3132,6 +3584,7 @@ QUESTIONS = [
     {
         "domanda": "Quando le persone anziane attraversano la carreggiata bisogna tenere presente che, di solito, attraversano rapidamente e con prudenza",
         "risposta": False,
+        "riassunto": "Anziani che attraversano → di solito rapidi e prudenti?",
         "spiegazione": "Questa affermazione è falsa. Le persone anziane, a causa dell'età e di possibili problemi fisici, attraversano più lentamente, non rapidamente. Possono essere prudenti, ma la loro velocità di movimento è ridotta.",
         "regola": "Anziani = attraversano LENTAMENTE, non rapidamente.",
         "trabocchetti": ["rapidamente", "Di solito"],
@@ -3139,6 +3592,7 @@ QUESTIONS = [
     {
         "domanda": "Quando le persone anziane attraversano la carreggiata bisogna tenere presente che, avendo più esperienza e un campo visivo maggiore, intuiscono meglio le situazioni di pericolo",
         "risposta": False,
+        "riassunto": "Anziani che attraversano → intuiscono meglio il pericolo?",
         "spiegazione": "Questa affermazione è falsa. Anche se hanno esperienza di vita, le capacità fisiche come vista, udito e riflessi diminuiscono con l'età. Il campo visivo non è maggiore, anzi può ridursi. Quindi non intuiscono meglio i pericoli, anzi possono avere più difficoltà.",
         "regola": "Anziani = campo visivo RIDOTTO, non maggiore.",
         "trabocchetti": ["campo visivo maggiore", "intuiscono meglio"],
@@ -3146,6 +3600,7 @@ QUESTIONS = [
     {
         "domanda": "Quando le persone anziane attraversano la carreggiata bisogna lampeggiare e suonare il clacson per farle attraversare rapidamente",
         "risposta": False,
+        "riassunto": "Anziani che attraversano → lampeggiare e suonare per farli sbrigare?",
         "spiegazione": "Questa affermazione è falsa e pericolosa. Lampeggiare con i fari e suonare il clacson può spaventare l'anziano, confonderlo o farlo agire in modo imprevedibile, aumentando il rischio di incidente. Bisogna essere pazienti e aspettare.",
         "regola": "Anziani = PAZIENZA, non clacson o fari.",
         "trabocchetti": ["lampeggiare e suonare il clacson", "Farle attraversare rapidamente"],
@@ -3153,12 +3608,14 @@ QUESTIONS = [
     {
         "domanda": "Quando le persone anziane attraversano la carreggiata bisogna dare la precedenza solo a coloro che attraversano da sinistra a destra",
         "risposta": False,
+        "riassunto": "Anziani che attraversano → precedenza solo da sinistra a destra?",
         "spiegazione": "Questa affermazione è falsa. La precedenza ai pedoni va data sempre, indipendentemente dalla direzione da cui attraversano o dalla loro età. Non c'è una regola che discrimina la direzione di attraversamento.",
         "regola": "Precedenza pedoni = SEMPRE, non solo a destra/sinistra.",
     },
     {
         "domanda": "Il conducente deve fermarsi e dare la precedenza al pedone non vedente con il bastone bianco che si accinge ad attraversare la strada fuori dalle strisce pedonali",
         "risposta": True,
+        "riassunto": "Non vedente con bastone bianco fuori dalle strisce → fermarsi e dare precedenza?",
         "spiegazione": "È vero. I pedoni non vedenti con il bastone bianco hanno sempre la precedenza, anche se attraversano fuori dalle strisce pedonali. Dobbiamo fermarci e aspettare che passino in sicurezza.",
         "regola": "Bastone bianco = precedenza SEMPRE.",
         "trabocchetti": ["si accinge ad attraversare", "Fuori dalle strisce pedonali"],
@@ -3166,6 +3623,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve fermarsi e facilitare l'attraversamento al pedone non vedente con il bastone bianco che attraversa la strada fuori dalle strisce pedonali",
         "risposta": True,
+        "riassunto": "Non vedente con bastone bianco fuori dalle strisce → fermarsi e facilitarlo?",
         "spiegazione": "È vero. Non solo dobbiamo fermarci e dare la precedenza, ma anche 'facilitare' significa aiutarli a passare in sicurezza, senza fretta o pericoli, mostrando pazienza e attenzione.",
         "regola": "Bastone bianco = fermati e aiuta.",
         "trabocchetti": ["Facilitare l", "fuori dalle strisce pedonali"],
@@ -3173,12 +3631,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve dare la precedenza al pedone non vedente con il bastone bianco che attraversa la strada fuori dalle strisce pedonali, anche se non è accompagnato da un cane guida",
         "risposta": True,
+        "riassunto": "Non vedente con bastone bianco senza cane → precedenza anche fuori strisce?",
         "spiegazione": "È vero. La precedenza è data al pedone non vedente per la sua condizione, segnalata dal bastone bianco. Non importa se ha o meno un cane guida, la regola non cambia.",
         "regola": "Bastone bianco = precedenza, con o senza cane.",
     },
     {
         "domanda": "Il conducente deve fermarsi per concedere la precedenza al pedone sordocieco che, con il bastone bianco-rosso, attraversa la strada fuori dalle strisce pedonali",
         "risposta": True,
+        "riassunto": "Sordocieco con bastone bianco-rosso fuori strisce → fermarsi e dare precedenza?",
         "spiegazione": "È vero. Il bastone bianco-rosso indica una persona sordocieca (non vede e non sente). Queste persone hanno bisogno di ancora più attenzione e hanno sempre la precedenza, anche fuori dalle strisce pedonali.",
         "regola": "Bastone bianco-rosso = massima precedenza.",
         "trabocchetti": ["Pedone sordocieco", "bastone bianco-rosso", "Fuori dalle strisce pedonali"],
@@ -3186,6 +3646,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve dare la precedenza al pedone con il bastone bianco o bianco-rosso che attraversa la strada, anche se è fuori dalle strisce di un attraversamento pedonale",
         "risposta": True,
+        "riassunto": "Bastone bianco o bianco-rosso fuori dalle strisce → precedenza?",
         "spiegazione": "È vero. Questa domanda riassume le precedenti. Sia il bastone bianco (per non vedenti) che il bastone bianco-rosso (per sordociechi) indicano una persona vulnerabile a cui dare sempre la precedenza, ovunque stia attraversando.",
         "regola": "Bastone speciale = precedenza ovunque.",
         "trabocchetti": ["Bastone bianco o bianco-rosso", "Anche se è fuori dalle strisce"],
@@ -3193,6 +3654,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve fermarsi quando un pedone non vedente con il bastone bianco si accinge ad attraversare la strada, evitando di frenare bruscamente per non spaventarlo",
         "risposta": True,
+        "riassunto": "Non vedente che sta per attraversare → fermarsi senza frenata brusca?",
         "spiegazione": "È vero. Dobbiamo fermarci con delicatezza e in anticipo. Una frenata brusca potrebbe spaventare il pedone, che non può vederci e potrebbe perdere l'orientamento o cadere.",
         "regola": "Fermati dolcemente, non spaventare.",
         "trabocchetti": ["Evitando di frenare bruscamente", "Si accinge ad attraversare"],
@@ -3200,6 +3662,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve accelerare per sgombrare rapidamente la carreggiata quando un pedone non vedente con il bastone bianco attraversa la strada senza cane guida",
         "risposta": False,
+        "riassunto": "Non vedente senza cane guida → accelerare per liberare la strada?",
         "spiegazione": "È falso. Accelerare è pericoloso e irrispettoso. Dobbiamo fermarci e aspettare che il pedone attraversi in sicurezza, non cercare di passare prima o di affrettarlo. La sicurezza è la priorità.",
         "regola": "MAI accelerare, SEMPRE fermarsi.",
         "trabocchetti": ["Senza cane guida"],
@@ -3207,12 +3670,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve passare per primo, in quanto ha la precedenza, quando un pedone non vedente con il bastone bianco attraversa la strada fuori dalle strisce pedonali",
         "risposta": False,
+        "riassunto": "Non vedente fuori dalle strisce → passare prima perché si ha precedenza?",
         "spiegazione": "È falso. È esattamente il contrario! Il pedone non vedente con il bastone bianco ha la precedenza, non il conducente, specialmente quando attraversa fuori dalle strisce pedonali.",
         "regola": "Pedone con bastone = precedenza ASSOLUTA.",
     },
     {
         "domanda": "Il conducente, quando un pedone non vedente con il bastone bianco attraversa la strada fuori dalle strisce pedonali, deve dargli la precedenza solo se l'attraversamento pedonale dista oltre 100 metri",
         "risposta": False,
+        "riassunto": "Non vedente fuori strisce → precedenza solo se strisce oltre 100 m?",
         "spiegazione": "È falso. La distanza da un attraversamento pedonale non cambia la regola. I pedoni con bastone bianco hanno sempre la precedenza, indipendentemente da dove si trovino o dalla distanza dalle strisce.",
         "regola": "Nessuna distanza, precedenza sempre.",
         "trabocchetti": ["Solo se l"],
@@ -3220,6 +3685,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve dare la precedenza a un pedone non vedente che attraversa la strada fuori dalle strisce pedonali, solo se munito di bastone bianco-rosso",
         "risposta": False,
+        "riassunto": "Non vedente fuori strisce → precedenza solo con bastone bianco-rosso?",
         "spiegazione": "È falso. La precedenza si dà sia al pedone con bastone bianco (non vedente) sia a quello con bastone bianco-rosso (sordocieco). Non è 'solo se' ha il bastone bianco-rosso.",
         "regola": "Bastone bianco O bianco-rosso = precedenza.",
         "trabocchetti": ["Solo se munito di bastone bianco-rosso"],
@@ -3227,6 +3693,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve prevedere che un pedone non vedente con il bastone bianco che attraversa la strada fuori dalle strisce pedonali camminerà rapidamente e senza incertezza",
         "risposta": False,
+        "riassunto": "Non vedente con bastone bianco → camminerà rapido e sicuro?",
         "spiegazione": "È falso. Dobbiamo prevedere il contrario. Un pedone non vedente potrebbe camminare lentamente, con incertezza, o fermarsi. Dobbiamo essere pazienti e cauti, non aspettarci rapidità.",
         "regola": "Prevedi lentezza e cautela.",
         "trabocchetti": ["Camminerà rapidamente e senza incertezza"],
@@ -3234,18 +3701,21 @@ QUESTIONS = [
     {
         "domanda": "Se un pedone con bastone bianco attraversa la strada fuori dalle strisce pedonali, bisogna suonare il clacson per sollecitarlo ad attraversare rapidamente",
         "risposta": False,
+        "riassunto": "Pedone con bastone bianco fuori strisce → suonare per farlo sbrigare?",
         "spiegazione": "È falso. Suonare il clacson è vietato e pericoloso in questa situazione. Potrebbe spaventare il pedone, disorientarlo o fargli perdere l'equilibrio. Dobbiamo essere silenziosi e pazienti.",
         "regola": "Silenzio e pazienza, mai clacson.",
     },
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che il pedone, nell'attraversare la strada, può diventare insicuro e ritornare improvvisamente indietro",
         "risposta": True,
+        "riassunto": "Vicino alle strisce → il pedone può tornare indietro di colpo?",
         "spiegazione": "È vero. Quando sei vicino a un attraversamento pedonale, devi sempre pensare che un pedone potrebbe cambiare idea, sentirsi insicuro e tornare indietro all'improvviso. Questo comportamento è comune e devi essere pronto a reagire.",
         "regola": "Pedone insicuro = attenzione doppia.",
     },
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che le persone anziane solitamente attraversano lentamente e con difficoltà",
         "risposta": True,
+        "riassunto": "Vicino alle strisce → anziani lenti e in difficoltà?",
         "spiegazione": "È vero. Le persone anziane spesso camminano più lentamente e possono avere difficoltà ad attraversare la strada. Come conducente, devi essere paziente e dare loro il tempo necessario per passare in sicurezza.",
         "regola": "Anziani lenti = pazienza sempre.",
         "trabocchetti": ["solitamente"],
@@ -3253,6 +3723,7 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che le reazioni dei bambini che attraversano sono imprevedibili e, quindi, possono creare pericolo",
         "risposta": True,
+        "riassunto": "Vicino alle strisce → reazioni dei bambini imprevedibili?",
         "spiegazione": "È vero. I bambini sono imprevedibili. Non sempre capiscono i pericoli della strada e possono fare movimenti inaspettati. Per questo, possono creare situazioni pericolose e tu devi essere molto attento.",
         "regola": "Bambini imprevedibili = pericolo potenziale.",
         "trabocchetti": ["imprevedibili"],
@@ -3260,12 +3731,14 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che i bambini potrebbero avanzare sulle strisce, per poi tornare indietro improvvisamente, senza motivo apparente",
         "risposta": True,
+        "riassunto": "Vicino alle strisce → bambini che avanzano e tornano indietro?",
         "spiegazione": "È vero. I bambini possono iniziare ad attraversare e poi, senza un motivo chiaro, tornare indietro. Questo comportamento è tipico della loro imprevedibilità e richiede la massima attenzione da parte tua.",
         "regola": "Bambini indecisi = massima cautela.",
     },
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che il pedone potrebbe fermarsi improvvisamente sulle strisce dell'attraversamento pedonale",
         "risposta": True,
+        "riassunto": "Vicino alle strisce → pedone che si ferma all'improvviso?",
         "spiegazione": "È vero. Un pedone potrebbe fermarsi all'improvviso sulle strisce, magari perché si spaventa, è distratto o cambia idea. Tu devi essere pronto a frenare in qualsiasi momento.",
         "regola": "Pedone si ferma = sii pronto a frenare.",
         "trabocchetti": ["improvvisamente"],
@@ -3273,6 +3746,7 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che i pedoni, in special modo i bambini, possono sbucare all'improvviso tra i veicoli parcheggiati",
         "risposta": True,
+        "riassunto": "Vicino alle strisce → bambini che sbucano tra le auto parcheggiate?",
         "spiegazione": "È vero. I veicoli parcheggiati possono nascondere i pedoni, specialmente i bambini, che potrebbero sbucare fuori all'improvviso. Devi rallentare e fare molta attenzione in queste situazioni.",
         "regola": "Auto parcheggiate = pedoni nascosti.",
         "trabocchetti": ["possono sbucare all"],
@@ -3280,6 +3754,7 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che i veicoli parcheggiati in prossimità delle strisce impediscono la visuale dei pedoni",
         "risposta": True,
+        "riassunto": "Vicino alle strisce → auto parcheggiate nascondono i pedoni?",
         "spiegazione": "È vero. Se ci sono veicoli parcheggiati vicino alle strisce pedonali, sia tu che i pedoni avete meno visibilità. Questo aumenta il rischio di non vedervi in tempo.",
         "regola": "Visuale ostruita = rischio aumentato.",
         "trabocchetti": ["impediscono la visuale"],
@@ -3287,12 +3762,14 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve aspettarsi dai bambini una reazione rapida e un comportamento corretto",
         "risposta": False,
+        "riassunto": "Vicino alle strisce → dai bambini reazione rapida e corretta?",
         "spiegazione": "È falso. Non devi aspettarti che i bambini abbiano reazioni rapide o si comportino sempre correttamente. Come abbiamo visto, sono imprevedibili e spesso non capiscono i pericoli. Devi essere tu a prevedere i loro errori.",
         "regola": "Bambini = mai aspettarsi perfezione.",
     },
     {
         "domanda": "In vicinanza di un attraversamento pedonale, i pedoni devono fare un cenno con la mano prima di iniziare l'attraversamento",
         "risposta": False,
+        "riassunto": "Vicino alle strisce → pedoni devono fare cenno con la mano?",
         "spiegazione": "È falso. I pedoni non sono obbligati a fare un cenno con la mano prima di attraversare. Hanno la precedenza sulle strisce, e tu devi fermarti per farli passare, indipendentemente da un loro segnale.",
         "regola": "Pedone non deve salutare, ma tu devi dare precedenza.",
         "trabocchetti": ["devono"],
@@ -3300,6 +3777,7 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che un pedone munito di bastone bianco ha più esperienza su come attraversare la carreggiata",
         "risposta": False,
+        "riassunto": "Vicino alle strisce → pedone con bastone bianco più esperto?",
         "spiegazione": "È falso. Un pedone con il bastone bianco è una persona non vedente o ipovedente. Questo significa che ha difficoltà a vedere, non che ha più esperienza nell'attraversare. Anzi, ha bisogno di maggiore attenzione e protezione da parte tua.",
         "regola": "Bastone bianco = massima protezione, non esperienza.",
         "trabocchetti": ["ha più esperienza su come attraversare"],
@@ -3307,18 +3785,21 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve arrestarsi se il pedone che attraversa è munito di bastone bianco-rosso; deve solo rallentare se, invece, è munito di bastone bianco",
         "risposta": False,
+        "riassunto": "Bastone bianco-rosso → fermarsi; bastone bianco → solo rallentare?",
         "spiegazione": "È falso. Sia il bastone bianco (per non vedenti) che il bastone bianco-rosso (per sordo-ciechi) indicano persone con disabilità. In entrambi i casi, tu devi sempre fermarti e dare la precedenza. Non c'è differenza tra rallentare e fermarsi in base al colore del bastone.",
         "regola": "Bastone bianco o bianco-rosso = sempre fermarsi.",
     },
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve accelerare quel tanto che basta per passare davanti al pedone che attraversa",
         "risposta": False,
+        "riassunto": "Vicino alle strisce → accelerare per passare davanti al pedone?",
         "spiegazione": "È falso. Accelerare per passare davanti a un pedone che sta attraversando è estremamente pericoloso e vietato. Devi sempre rallentare e fermarti per dare la precedenza ai pedoni sulle strisce.",
         "regola": "Pedone sulle strisce = tu freni, non acceleri.",
     },
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che se il pedone si è fermato in mezzo alle strisce dell'attraversamento significa che ha rinunciato al suo diritto di passare",
         "risposta": False,
+        "riassunto": "Pedone fermo a metà strisce → ha rinunciato al diritto di passare?",
         "spiegazione": "È falso. Se un pedone si ferma in mezzo alle strisce, non significa che ha rinunciato al suo diritto di passare. Potrebbe essere confuso, spaventato o indeciso. Tu devi comunque dargli la precedenza e aspettare che finisca di attraversare in sicurezza.",
         "regola": "Pedone sulle strisce = diritto sempre.",
         "trabocchetti": ["ha rinunciato al suo diritto di passare"],
@@ -3326,6 +3807,7 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che i pedoni devono attraversare la strada affiancati, in modo da impiegare meno tempo",
         "risposta": False,
+        "riassunto": "Pedoni → devono attraversare affiancati?",
         "spiegazione": "È falso. Non esiste nessuna regola che obbliga i pedoni ad attraversare affiancati. Anzi, a volte è più sicuro attraversare in fila indiana. La priorità è la sicurezza, non la velocità nell'attraversamento.",
         "regola": "Pedoni = sicurezza prima della velocità.",
         "trabocchetti": ["devono", "in modo da impiegare meno tempo"],
@@ -3333,6 +3815,7 @@ QUESTIONS = [
     {
         "domanda": "Quando vi sono bambini fermi al semaforo bisogna usare prudenza, in quanto potrebbero attraversare improvvisamente la strada appena la luce del semaforo veicolare passa dal verde al giallo",
         "risposta": True,
+        "riassunto": "Bambini al semaforo → possono attraversare quando passa al giallo?",
         "spiegazione": "I bambini sono imprevedibili. Anche se il semaforo per le auto diventa giallo (e quindi sta per diventare rosso), un bambino potrebbe pensare di avere il tempo di attraversare velocemente. Per questo, è sempre meglio essere prudenti.",
         "regola": "Bambini = imprevedibilità, quindi massima prudenza.",
         "trabocchetti": ["improvvisamente"],
@@ -3340,6 +3823,7 @@ QUESTIONS = [
     {
         "domanda": "Quando vi sono bambini fermi al semaforo bisogna usare prudenza, in quanto potrebbero attraversare velocemente la strada anche con il rosso, ritenendo che duri troppo",
         "risposta": True,
+        "riassunto": "Bambini al semaforo → possono attraversare col rosso?",
         "spiegazione": "I bambini non sempre capiscono bene le regole della strada o non hanno la pazienza degli adulti. Potrebbero annoiarsi ad aspettare il verde e decidere di attraversare anche con il rosso, pensando che il tempo di attesa sia troppo lungo.",
         "regola": "Bambini impazienti = rischio, sii sempre attento.",
         "trabocchetti": ["anche con il rosso", "ritenendo che duri troppo"],
@@ -3347,6 +3831,7 @@ QUESTIONS = [
     {
         "domanda": "Quando vi sono bambini fermi al semaforo bisogna usare prudenza, perché può accadere che si spingano a vicenda, finendo sulla carreggiata",
         "risposta": True,
+        "riassunto": "Bambini al semaforo → spinte che li fanno finire in strada?",
         "spiegazione": "I bambini spesso giocano e scherzano tra loro. Se sono in gruppo, potrebbero spingersi per gioco e uno di loro potrebbe finire sulla strada, anche senza volerlo. Per questo, la prudenza è fondamentale.",
         "regola": "Bambini che giocano = pericolo inatteso.",
         "trabocchetti": ["si spingano a vicenda", "finendo sulla carreggiata"],
@@ -3354,6 +3839,7 @@ QUESTIONS = [
     {
         "domanda": "Quando vi sono bambini fermi al semaforo bisogna usare prudenza, perché potrebbero scendere dal marciapiede, invadendo la carreggiata, quando ancora per loro il semaforo è disposto al rosso",
         "risposta": True,
+        "riassunto": "Bambini al semaforo → possono scendere col rosso pedonale?",
         "spiegazione": "I bambini possono essere distratti o non valutare bene il pericolo. Potrebbero scendere dal marciapiede e andare sulla strada anche se il semaforo per i pedoni è ancora rosso, magari per prendere qualcosa o per curiosità.",
         "regola": "Bambini distratti = attenzione massima.",
         "trabocchetti": ["invadendo la carreggiata"],
@@ -3361,6 +3847,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di impegnare un incrocio, dopo che è scattata la luce verde del semaforo, il conducente deve attendere che i pedoni abbiano finito di attraversare la strada",
         "risposta": True,
+        "riassunto": "Verde al semaforo → attendere che i pedoni finiscano di attraversare?",
         "spiegazione": "Anche se il semaforo per le auto è verde, ci possono essere pedoni che hanno iniziato ad attraversare con il verde pedonale e non hanno ancora finito. La sicurezza dei pedoni è sempre la priorità, quindi devi aspettare che abbiano completato l'attraversamento.",
         "regola": "Verde auto = aspetta sempre i pedoni.",
         "trabocchetti": ["deve attendere"],
@@ -3368,6 +3855,7 @@ QUESTIONS = [
     {
         "domanda": "Quando vi sono bambini fermi al semaforo, bisogna tenere presente che possono attraversare la strada solo se accompagnati da un adulto",
         "risposta": False,
+        "riassunto": "Bambini al semaforo → attraversano solo con un adulto?",
         "spiegazione": "Non è vero che i bambini possono attraversare la strada *solo* se accompagnati da un adulto. Molti bambini vanno a scuola o in giro da soli. La prudenza è necessaria proprio perché potrebbero essere soli e agire in modo imprevedibile.",
         "regola": "'Solo se' = spesso falso (non è l'unica condizione).",
         "trabocchetti": ["solo"],
@@ -3375,6 +3863,7 @@ QUESTIONS = [
     {
         "domanda": "I bambini, al semaforo, possono attraversare la strada solo dopo aver ricevuto un gesto di consenso da parte degli automobilisti",
         "risposta": False,
+        "riassunto": "Bambini al semaforo → attraversano solo dopo gesto dell'automobilista?",
         "spiegazione": "I bambini devono attraversare la strada seguendo le regole del semaforo pedonale (quando è verde per loro), non aspettando un gesto dagli automobilisti. Affidarsi a un gesto potrebbe essere pericoloso e creare confusione.",
         "regola": "Gesti = no, regole = sì.",
         "trabocchetti": ["solo"],
@@ -3382,6 +3871,7 @@ QUESTIONS = [
     {
         "domanda": "Quando vi sono bambini fermi al semaforo, si può essere certi che attraversino la strada solo quando il semaforo pedonale abbia la luce verde accesa",
         "risposta": False,
+        "riassunto": "Bambini al semaforo → certezza che attraversino solo col verde?",
         "spiegazione": "Purtroppo, non si può mai essere 'certi' del comportamento dei bambini. Anche se il semaforo pedonale è rosso, un bambino potrebbe attraversare per distrazione, impazienza o gioco. Per questo è sempre richiesta la massima prudenza.",
         "regola": "'Certo' con bambini = falso.",
         "trabocchetti": ["si può essere certi", "certi"],
@@ -3389,6 +3879,7 @@ QUESTIONS = [
     {
         "domanda": "Quando vi sono bambini fermi al semaforo, si può essere certi che non attraverseranno la strada se il semaforo è a luce gialla lampeggiante",
         "risposta": False,
+        "riassunto": "Bambini al semaforo → certezza che non attraversino col giallo lampeggiante?",
         "spiegazione": "Anche con il semaforo giallo lampeggiante (che indica prudenza e dare la precedenza), non si può essere 'certi' che i bambini non attraversino. Potrebbero non capire il significato del semaforo o agire d'impulso. La prudenza è sempre d'obbligo.",
         "regola": "'Certo' con bambini = falso.",
         "trabocchetti": ["si può essere certi"],
@@ -3396,6 +3887,7 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus che trasporta scolari, occorre fare attenzione ai bambini che potrebbero aver iniziato ad attraversare la carreggiata nascosti dall'autobus",
         "risposta": True,
+        "riassunto": "Fermata scuolabus → bambini nascosti dall'autobus che attraversano?",
         "spiegazione": "Quando sei vicino a una fermata dell'autobus per scolari, devi fare molta attenzione. I bambini, essendo piccoli, possono essere nascosti dall'autobus e attraversare la strada all'improvviso, senza che tu li veda subito. Per questo, è VERO che devi stare attento.",
         "regola": "Bambini = pericolo nascosto, rallenta!",
         "trabocchetti": ["nascosti dall"],
@@ -3403,6 +3895,7 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo, in vicinanza di una piazzola per la fermata di autobus per scolari, occorre fare attenzione ai bambini, che potrebbero attraversare di corsa la strada per salire sullo scuolabus",
         "risposta": True,
+        "riassunto": "Fermata scuolabus → bambini che corrono per salire?",
         "spiegazione": "I bambini, specialmente quando sono eccitati o in ritardo, possono attraversare la strada di corsa per salire sull'autobus. Questo comportamento è imprevedibile e pericoloso. Per questo, è VERO che devi fare attenzione.",
         "regola": "Bambini di corsa = attenzione doppia.",
         "trabocchetti": ["di corsa"],
@@ -3410,6 +3903,7 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, occorre prepararsi a frenare, nel caso in cui dei bambini attraversino improvvisamente la strada",
         "risposta": True,
+        "riassunto": "Fermata scuolabus → prepararsi a frenare?",
         "spiegazione": "Dato che i bambini possono attraversare la strada all'improvviso, devi essere pronto a reagire. Questo significa che devi tenere il piede sul freno o comunque essere pronto a frenare subito. Per questo, è VERO che devi prepararti a frenare.",
         "regola": "Bambini = freno pronto.",
         "trabocchetti": ["improvvisamente"],
@@ -3417,6 +3911,7 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, occorre essere prudenti e tenere conto dei comportamenti imprevedibili dei bambini",
         "risposta": True,
+        "riassunto": "Fermata scuolabus → prudenza per comportamenti imprevedibili?",
         "spiegazione": "I bambini non sempre pensano ai pericoli della strada come gli adulti. Possono fare cose inaspettate. Per questo, è VERO che devi essere molto prudente e considerare che i loro comportamenti sono 'imprevedibili'.",
         "regola": "Bambini = imprevedibili, tu prudente.",
         "trabocchetti": ["imprevedibili"],
@@ -3424,6 +3919,7 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza di una piazzola di fermata di autobus per scolari, può accadere che i bambini scendano dall'autobus senza fare attenzione ai veicoli che sopraggiungono",
         "risposta": True,
+        "riassunto": "Fermata scuolabus → bambini che scendono senza guardare?",
         "spiegazione": "Quando i bambini scendono dall'autobus, spesso sono distratti o pensano solo ad andare a casa o a giocare. Per questo, possono non guardare se arrivano altre macchine. È VERO che possono scendere senza fare attenzione.",
         "regola": "Bambini scendono = occhi aperti.",
         "trabocchetti": ["senza fare attenzione"],
@@ -3431,12 +3927,14 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, bisogna rallentare particolarmente se vi è lo scuolabus",
         "risposta": True,
+        "riassunto": "Fermata scuolabus → rallentare molto se c'è lo scuolabus?",
         "spiegazione": "Se vedi uno scuolabus fermo, significa che ci sono bambini che salgono o scendono. Questa è una situazione di potenziale pericolo. Per questo, è VERO che devi rallentare 'particolarmente', cioè molto di più del solito.",
         "regola": "Scuolabus = rallenta sempre molto.",
     },
     {
         "domanda": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, non si deve rallentare, per evitare di ostacolare la circolazione degli altri veicoli",
         "risposta": False,
+        "riassunto": "Fermata scuolabus → non rallentare per non ostacolare?",
         "spiegazione": "La sicurezza dei bambini è la cosa più importante. Non puoi mettere a rischio la loro vita solo per non rallentare il traffico. È FALSO che non devi rallentare per non ostacolare la circolazione. Devi sempre rallentare.",
         "regola": "Sicurezza > fluidità. Rallenta!",
         "trabocchetti": ["non si deve rallentare", "evitare di ostacolare la circolazione"],
@@ -3444,6 +3942,7 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, occorre passare per primi, avendo sempre la precedenza sui bambini che attraversano la strada",
         "risposta": False,
+        "riassunto": "Fermata scuolabus → passare per primi, precedenza sui bambini?",
         "spiegazione": "I pedoni, specialmente i bambini, sono sempre le persone più vulnerabili sulla strada. Non hai 'sempre la precedenza' su di loro, anzi, devi sempre dare la precedenza ai pedoni che attraversano. È FALSO che devi passare per primo.",
         "regola": "Bambini = precedenza assoluta.",
         "trabocchetti": ["passare per primi", "sempre la precedenza"],
@@ -3451,12 +3950,14 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, occorre suonare per invitare i bambini che attraversano sulle strisce a dare la precedenza",
         "risposta": False,
+        "riassunto": "Fermata scuolabus → suonare per far dare precedenza ai bambini?",
         "spiegazione": "Suonare il clacson può spaventare i bambini e non serve a farli dare la precedenza. Anzi, i pedoni sulle strisce pedonali hanno la precedenza. È FALSO che devi suonare per invitarli a dare la precedenza.",
         "regola": "Clacson non risolve, bambini hanno precedenza.",
     },
     {
         "domanda": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, si deve rallentare solo se vi sono bambini che attraversano",
         "risposta": False,
+        "riassunto": "Fermata scuolabus → rallentare solo se ci sono bambini che attraversano?",
         "spiegazione": "Non devi rallentare 'solo se' vedi i bambini che attraversano. Devi rallentare prima, in modo preventivo, perché i bambini possono apparire all'improvviso. È FALSO che devi rallentare solo quando li vedi già in strada.",
         "regola": "Rallenta *prima*, non *solo dopo*.",
         "trabocchetti": ["solo"],
@@ -3464,6 +3965,7 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, occorre fare attenzione allo scuolabus, che dopo la fermata farà sicuramente retromarcia",
         "risposta": False,
+        "riassunto": "Fermata scuolabus → lo scuolabus farà sicuramente retromarcia?",
         "spiegazione": "Non è detto che uno scuolabus faccia 'sicuramente retromarcia' dopo la fermata. Potrebbe farlo, ma non è una regola fissa. Devi essere attento a tutte le manovre, ma non dare per scontato una specifica. È FALSO che farà sicuramente retromarcia.",
         "regola": "'Sicuramente' = attenzione, spesso è falso!",
         "trabocchetti": ["sicuramente"],
@@ -3471,6 +3973,7 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, non si può proseguire nella marcia se le portiere dello scuolabus sono ancora aperte",
         "risposta": False,
+        "riassunto": "Fermata scuolabus → non proseguire con portiere aperte?",
         "spiegazione": "Non c'è una regola che ti vieta completamente di proseguire se le portiere dello scuolabus sono aperte. Devi essere molto cauto e rallentare, ma non è un divieto assoluto di passare. È FALSO che 'non si può proseguire'.",
         "regola": "Cautela sì, divieto no.",
         "trabocchetti": ["non si può proseguire"],
@@ -3478,6 +3981,7 @@ QUESTIONS = [
     {
         "domanda": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, non è necessario rallentare se lo scuolabus è fermo",
         "risposta": False,
+        "riassunto": "Fermata scuolabus → scuolabus fermo, non serve rallentare?",
         "spiegazione": "Se lo scuolabus è fermo, significa che i bambini stanno salendo o scendendo, e questo è il momento di massimo pericolo. È proprio in quel momento che 'è necessario rallentare' e fare la massima attenzione. È FALSO che non è necessario rallentare.",
         "regola": "Scuolabus fermo = rallenta SEMPRE.",
         "trabocchetti": ["non è necessario rallentare"],
@@ -3485,6 +3989,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente, in vicinanza di un posteggio riservato ai taxi, deve rallentare ed eventualmente fermarsi se vi sono pedoni che attraversano la strada, senza guardare",
         "risposta": True,
+        "riassunto": "Posteggio taxi → rallentare o fermarsi per pedoni distratti?",
         "spiegazione": "In vicinanza di un posteggio taxi, è molto probabile che ci siano pedoni che salgono, scendono o attraversano la strada. Anche se un pedone non guarda, il conducente ha il dovere di essere prudente, rallentare e, se necessario, fermarsi per evitare incidenti. La sicurezza dei pedoni è sempre prioritaria.",
         "regola": "Pedoni = massima attenzione, sempre.",
         "trabocchetti": ["senza guardare"],
@@ -3492,12 +3997,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente, in vicinanza di un posteggio riservato ai taxi, deve fare attenzione ai pedoni che salgono o scendono dal taxi",
         "risposta": True,
+        "riassunto": "Posteggio taxi → attenzione a chi sale o scende?",
         "spiegazione": "I pedoni che salgono o scendono da un taxi sono spesso distratti, magari perché hanno fretta o sono concentrati sui bagagli. Possono muoversi improvvisamente sulla strada. Il conducente deve essere attento e prevedere questi movimenti per garantire la loro sicurezza.",
         "regola": "Vicino ai taxi, occhi aperti per chi scende/sale.",
     },
     {
         "domanda": "Il conducente di un veicolo diverso dai taxi non può sostare nei posteggi riservati ai taxi",
         "risposta": True,
+        "riassunto": "Posteggio taxi → vietata la sosta agli altri veicoli?",
         "spiegazione": "I posteggi riservati sono spazi dedicati esclusivamente a una specifica categoria di veicoli, in questo caso i taxi. Sostare in questi spazi con un veicolo diverso è vietato e comporta una multa.",
         "regola": "Riservato = solo per loro.",
         "trabocchetti": ["Non può sostare"],
@@ -3505,6 +4012,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente, in vicinanza di un posteggio riservato ai taxi, deve fare attenzione ai pedoni, che possono attraversare improvvisamente la strada senza le dovute precauzioni",
         "risposta": True,
+        "riassunto": "Posteggio taxi → pedoni che attraversano all'improvviso?",
         "spiegazione": "Come già detto, i pedoni vicino ai taxi possono essere imprevedibili. Possono attraversare la strada senza guardare o senza usare le strisce pedonali. Il conducente deve essere sempre pronto a reagire e a rallentare o fermarsi per evitare pericoli.",
         "regola": "Pedoni imprevedibili = guida prudente.",
         "trabocchetti": ["improvvisamente", "senza le dovute precauzioni"],
@@ -3512,6 +4020,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente, in vicinanza di un posteggio riservato ai taxi, deve dare la precedenza ai taxi che s'immettono sulla strada",
         "risposta": False,
+        "riassunto": "Posteggio taxi → precedenza ai taxi che si immettono?",
         "spiegazione": "Un taxi che parte da un posteggio e si immette sulla strada è come qualsiasi altro veicolo che si immette nel traffico da un'area di sosta. Deve dare la precedenza a tutti i veicoli che stanno già circolando sulla strada. Non ha una precedenza speciale solo perché è un taxi.",
         "regola": "Chi si immette, dà la precedenza.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -3519,12 +4028,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente, in vicinanza di un posteggio riservato ai taxi, deve dare la precedenza ai taxi in partenza, qualora s'immettano dal lato sinistro della carreggiata",
         "risposta": False,
+        "riassunto": "Posteggio taxi → precedenza ai taxi che partono da sinistra?",
         "spiegazione": "Questa domanda è simile alla precedente. Non importa da quale lato della carreggiata un veicolo (incluso un taxi) si immette nel traffico dopo una sosta. La regola è sempre la stessa: chi si immette deve dare la precedenza a chi è già in circolazione. Non c'è una regola speciale per l'immissione da sinistra in questo contesto.",
         "regola": "Immissione = precedenza a chi è già in strada.",
     },
     {
         "domanda": "Il conducente di un veicolo diverso dai taxi può sostare nei posteggi riservati ai taxi dalle ore 20.00 alle ore 8.00",
         "risposta": False,
+        "riassunto": "Posteggio taxi → altri veicoli in sosta dalle 20 alle 8?",
         "spiegazione": "I posteggi riservati ai taxi sono tali 24 ore su 24, a meno che non ci sia un segnale integrativo che indichi orari diversi. Senza un'indicazione specifica che limiti il divieto a certi orari, il divieto di sosta per i veicoli non-taxi è sempre valido, giorno e notte.",
         "regola": "Riservato è sempre riservato, se non specificato.",
         "trabocchetti": ["dalle ore 20.00 alle ore 8.00"],
@@ -3532,6 +4043,7 @@ QUESTIONS = [
     {
         "domanda": "Quando la carreggiata è occupata da ciclisti o pedoni, per sorpassarli è prudente mantenere un'adeguata distanza di sicurezza laterale",
         "risposta": True,
+        "riassunto": "Sorpasso di ciclisti o pedoni → adeguata distanza laterale?",
         "spiegazione": "Quando sorpassi ciclisti o pedoni, devi sempre lasciare uno spazio sufficiente tra il tuo veicolo e loro. Questo serve per la sicurezza di tutti.",
         "regola": "Distanza laterale = sicurezza.",
         "trabocchetti": ["prudente", "Adeguata distanza"],
@@ -3539,6 +4051,7 @@ QUESTIONS = [
     {
         "domanda": "Quando la carreggiata è occupata da ciclisti o pedoni, non è prudente sorpassarli se non si può rispettare una distanza laterale sufficiente.",
         "risposta": True,
+        "riassunto": "Ciclisti o pedoni → non sorpassare senza distanza laterale sufficiente?",
         "spiegazione": "Se non puoi lasciare abbastanza spazio di lato quando sorpassi ciclisti o pedoni, allora non devi sorpassare. È troppo pericoloso.",
         "regola": "No spazio = no sorpasso.",
         "trabocchetti": ["non è prudente", "Distanza laterale sufficiente"],
@@ -3546,6 +4059,7 @@ QUESTIONS = [
     {
         "domanda": "Quando la carreggiata extraurbana è occupata da ciclisti o pedoni, è consigliabile suonare il clacson prima di sorpassarli",
         "risposta": True,
+        "riassunto": "Ciclisti o pedoni su extraurbana → suonare prima di sorpassare?",
         "spiegazione": "Fuori città, dove ci sono meno rumori e le strade sono più veloci, è una buona idea suonare il clacson per avvisare ciclisti o pedoni che stai arrivando, prima di sorpassarli. Così loro sanno che ci sei.",
         "regola": "Fuori città, avvisa con il clacson.",
         "trabocchetti": ["consigliabile", "Carreggiata extraurbana"],
@@ -3553,6 +4067,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende sorpassare ciclisti o pedoni che occupano la carreggiata deve usare molta prudenza",
         "risposta": True,
+        "riassunto": "Sorpasso di ciclisti o pedoni → molta prudenza?",
         "spiegazione": "Quando sorpassi ciclisti o pedoni, devi essere molto attento e cauto. Sono utenti della strada più vulnerabili e possono fare movimenti improvvisi.",
         "regola": "Pedoni/ciclisti = massima prudenza.",
         "trabocchetti": ["molta prudenza"],
@@ -3560,6 +4075,7 @@ QUESTIONS = [
     {
         "domanda": "Poiché la marcia dei ciclisti a volte avviene con leggeri sbandamenti, il conducente di un veicolo deve tener conto di tale particolarità, in caso di sorpasso",
         "risposta": True,
+        "riassunto": "Ciclisti con sbandamenti → tenerne conto nel sorpasso?",
         "spiegazione": "I ciclisti a volte non vanno dritti, possono 'sbandare' un po'. Tu, come conducente, devi ricordarti di questo e lasciare loro più spazio quando li sorpassi, per evitare incidenti.",
         "regola": "Ciclisti sbandano, prevedi e allarga.",
         "trabocchetti": ["leggeri sbandamenti", "Tener conto di tale particolarità"],
@@ -3567,6 +4083,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende sorpassare ciclisti o pedoni che occupano la carreggiata deve mantenere una distanza laterale di almeno 2 metri",
         "risposta": False,
+        "riassunto": "Sorpasso di ciclisti o pedoni → almeno 2 metri laterali?",
         "spiegazione": "Non c'è una regola che dice che devi lasciare esattamente 'almeno 2 metri' di distanza laterale. La legge chiede una distanza 'adeguata' o 'sufficiente', che cambia a seconda della situazione (velocità, tipo di strada, ecc.).",
         "regola": "Nessun numero fisso per la distanza laterale (se non specificato per contesto).",
         "trabocchetti": ["almeno 2 metri"],
@@ -3574,6 +4091,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato sorpassare ciclisti o pedoni che occupano la carreggiata",
         "risposta": False,
+        "riassunto": "Ciclisti o pedoni sulla carreggiata → vietato sorpassarli?",
         "spiegazione": "Non è vietato sorpassare ciclisti o pedoni. Puoi farlo, ma devi farlo in modo sicuro, lasciando spazio e prestando molta attenzione.",
         "regola": "Non è vietato, è solo più difficile.",
         "trabocchetti": ["vietato"],
@@ -3581,6 +4099,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente, di notte, non deve dare la precedenza ai pedoni che attraversano sulle strisce pedonali",
         "risposta": False,
+        "riassunto": "Di notte → niente precedenza ai pedoni sulle strisce?",
         "spiegazione": "I pedoni che attraversano sulle strisce pedonali hanno sempre la precedenza, sia di giorno che di notte. Tu devi fermarti e farli passare.",
         "regola": "Strisce pedonali = sempre precedenza (giorno e notte).",
         "trabocchetti": ["di notte", "Non deve dare la precedenza"],
@@ -3588,6 +4107,7 @@ QUESTIONS = [
     {
         "domanda": "Quando la carreggiata è occupata da ciclisti o pedoni, si devono sorpassare senza superare la velocità di 30 km/h",
         "risposta": False,
+        "riassunto": "Sorpasso di ciclisti o pedoni → senza superare 30 km/h?",
         "spiegazione": "Non c'è una regola che ti obbliga a sorpassare ciclisti o pedoni a una velocità massima di 30 km/h. Devi solo ridurre la velocità e sorpassare in sicurezza, ma non c'è un limite fisso di 30 km/h.",
         "regola": "Nessun limite fisso di velocità per il sorpasso (solo prudenza).",
         "trabocchetti": ["senza superare la velocità di 30 km/h"],
@@ -3595,6 +4115,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente deve consentire ad una donna incinta di attraversare la strada senza metterle fretta",
         "risposta": True,
+        "riassunto": "Donna incinta che attraversa → senza metterle fretta?",
         "spiegazione": "È vero. Il conducente deve essere paziente e permettere a una donna incinta di attraversare la strada con i suoi tempi, senza metterle fretta. Le donne incinte possono avere difficoltà a muoversi velocemente.",
         "regola": "Donna incinta = Pazienza e rispetto dei suoi tempi.",
         "trabocchetti": ["senza metterle fretta"],
@@ -3602,6 +4123,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna usare maggiore prudenza nei confronti delle donne in stato di gravidanza che attraversano la strada",
         "risposta": True,
+        "riassunto": "Più prudenza → donne incinte che attraversano?",
         "spiegazione": "È vero. Le donne in stato di gravidanza sono considerate utenti 'deboli' della strada, come i bambini o gli anziani. Hanno bisogno di maggiore attenzione e cautela da parte dei conducenti per la loro sicurezza.",
         "regola": "Utenti deboli (incinte, bambini, anziani) = Massima prudenza.",
         "trabocchetti": ["maggiore prudenza"],
@@ -3609,6 +4131,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna usare maggiore prudenza nei confronti dei pedoni che spingono una carrozzina per bambini",
         "risposta": True,
+        "riassunto": "Più prudenza → pedoni con carrozzina?",
         "spiegazione": "È vero. Chi spinge una carrozzina per bambini ha la visuale limitata, è più ingombrante e può avere difficoltà a muoversi rapidamente. Per questo, i conducenti devono usare maggiore prudenza nei loro confronti.",
         "regola": "Carrozzina = Più attenzione e spazio.",
         "trabocchetti": ["maggiore prudenza"],
@@ -3616,6 +4139,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si parcheggia un veicolo è vietato ostruire eventuali scivoli del marciapiede per non impedire il passaggio di pedoni che spingono una carrozzina per bambini",
         "risposta": True,
+        "riassunto": "Parcheggio → vietato ostruire gli scivoli del marciapiede?",
         "spiegazione": "È vero. Gli scivoli del marciapiede sono fatti per facilitare il passaggio di persone con difficoltà motorie, disabili in carrozzina o chi spinge carrozzine per bambini. Ostruirli con un veicolo è sempre vietato, perché impedisce il loro passaggio.",
         "regola": "Scivoli = Mai bloccare, sono per tutti.",
         "trabocchetti": ["vietato ostruire"],
@@ -3623,6 +4147,7 @@ QUESTIONS = [
     {
         "domanda": "Quando una donna in stato di gravidanza attraversa la carreggiata non bisogna avvicinarsi troppo con il veicolo, per evitare di spaventarla",
         "risposta": True,
+        "riassunto": "Donna incinta che attraversa → non avvicinarsi troppo?",
         "spiegazione": "È vero. Mantenere una distanza di sicurezza adeguata è fondamentale per non creare ansia o pericolo, specialmente per utenti vulnerabili come le donne incinte. Avvicinarsi troppo potrebbe spaventarla o metterla in difficoltà.",
         "regola": "Incinta = Distanza di sicurezza e rispetto.",
         "trabocchetti": ["non bisogna avvicinarsi troppo"],
@@ -3630,6 +4155,7 @@ QUESTIONS = [
     {
         "domanda": "Quando una donna in stato di gravidanza attraversa la carreggiata bisogna tenere presente che ha il passo più rapido e quindi attraversa velocemente",
         "risposta": False,
+        "riassunto": "Donna incinta che attraversa → passo più rapido?",
         "spiegazione": "È falso. Una donna incinta, specialmente negli ultimi mesi, ha spesso un passo più lento e può avere difficoltà a muoversi velocemente. Non attraversa rapidamente, ma con più calma.",
         "regola": "Incinta = Passo lento, non rapido.",
         "trabocchetti": ["passo più rapido", "attraversa velocemente"],
@@ -3637,6 +4163,7 @@ QUESTIONS = [
     {
         "domanda": "Quando un pedone che spinge una carrozzina per bambini attraversa la carreggiata bisogna tenere presente che, di solito, attraversa rapidamente",
         "risposta": False,
+        "riassunto": "Pedone con carrozzina → di solito attraversa rapidamente?",
         "spiegazione": "È falso. Chi spinge una carrozzina non può attraversare rapidamente. Ha un ingombro maggiore, la visuale limitata e deve fare attenzione al bambino. Quindi, attraversa lentamente, non rapidamente.",
         "regola": "Carrozzina = Passo lento, non rapido.",
         "trabocchetti": ["rapidamente"],
@@ -3644,6 +4171,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito posteggiare un veicolo davanti agli scivoli del marciapiede solo dalle ore 22.00 alle ore 8.00",
         "risposta": False,
+        "riassunto": "Davanti agli scivoli del marciapiede → posteggio dalle 22 alle 8?",
         "spiegazione": "È falso. È sempre vietato posteggiare davanti agli scivoli del marciapiede, a qualsiasi ora del giorno e della notte. Non ci sono orari in cui è permesso.",
         "regola": "Scivoli = Divieto di sosta H24.",
         "trabocchetti": ["solo dalle ore 22.00 alle ore 8.00"],
@@ -3651,6 +4179,7 @@ QUESTIONS = [
     {
         "domanda": "Quando una donna in stato di gravidanza attraversa la carreggiata bisogna darle la precedenza solo se attraversa da sinistra a destra",
         "risposta": False,
+        "riassunto": "Donna incinta → precedenza solo da sinistra a destra?",
         "spiegazione": "È falso. La precedenza ai pedoni (e in particolare agli utenti vulnerabili come le donne incinte) va data sempre, indipendentemente dalla direzione da cui attraversano la strada.",
         "regola": "Precedenza pedoni = Sempre, non solo a direzione.",
         "trabocchetti": ["solo se attraversa da sinistra a destra"],
@@ -3658,6 +4187,7 @@ QUESTIONS = [
     {
         "domanda": "Quando un pedone che spinge la carrozzina per bambini attraversa la carreggiata bisogna dargli la precedenza solo se attraversa da sinistra a destra",
         "risposta": False,
+        "riassunto": "Pedone con carrozzina → precedenza solo da sinistra a destra?",
         "spiegazione": "È falso. Come per le donne incinte, la precedenza a chi spinge una carrozzina va data sempre, non dipende dalla direzione da cui attraversano la strada.",
         "regola": "Precedenza pedoni = Sempre, non solo a direzione.",
         "trabocchetti": ["solo se attraversa da sinistra a destra"],
@@ -3665,6 +4195,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito lasciare il veicolo in sosta sul marciapiede senza lasciare spazio ai pedoni che spingono una carrozzina per bambini",
         "risposta": False,
+        "riassunto": "Sosta sul marciapiede → senza spazio per le carrozzine?",
         "spiegazione": "È falso. La sosta sul marciapiede è generalmente vietata, a meno che non ci siano appositi spazi segnalati. E anche in quel caso, bisogna sempre lasciare spazio sufficiente per il passaggio dei pedoni, specialmente chi ha carrozzine o difficoltà. Non si può mai ostruire il passaggio.",
         "regola": "Marciapiede = Spazio ai pedoni, sempre.",
         "trabocchetti": ["consentito", "senza lasciare spazio"],

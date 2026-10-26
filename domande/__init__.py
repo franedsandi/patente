@@ -9,6 +9,7 @@ Ogni file ha:
 Campi di ogni domanda (solo i primi due sono obbligatori):
     "domanda":      il testo
     "risposta":     True = VERO, False = FALSO
+    "riassunto":    la domanda in breve, mostrata col tasto r2
     "spiegazione":  spiegazione lunga, mostrata quando sbagli
     "regola":       regola breve, mostrata premendo ? dopo la spiegazione
     "trabocchetti": parole della domanda da evidenziare quando sbagli
@@ -90,6 +91,7 @@ for modulo in CATEGORIE:
             "file": nome_file,
             "domanda": d["domanda"],
             "risposta": d["risposta"],
+            "riassunto": d.get("riassunto", ""),
             "spiegazione": d.get("spiegazione", ""),
             "regola": d.get("regola", ""),
             "trabocchetti": d.get("trabocchetti", []),

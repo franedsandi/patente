@@ -1,7 +1,7 @@
 """Domande — Consumi, ambiente e inquinamento.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Consumi, ambiente e inquinamento"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Gli apparecchi e i dispositivi che funzionano a corrente elettrica (radio, luci, lunotto termico, ecc.) fanno aumentare i consumi di carburante del veicolo",
         "risposta": True,
+        "riassunto": "Dispositivi elettrici → più consumi?",
         "spiegazione": "Tutti gli apparecchi elettrici (come la radio, le luci o il lunotto termico) hanno bisogno di energia per funzionare. Questa energia viene prodotta dal motore del veicolo, che per farlo deve bruciare più carburante. Quindi, più apparecchi elettrici usi, più carburante consumi.",
         "regola": "Elettricità accesa = più benzina.",
         "trabocchetti": ["fanno aumentare"],
@@ -17,6 +18,7 @@ QUESTIONS = [
     {
         "domanda": "Mantenendo il più possibile costante la velocità, si riduce il consumo di carburante",
         "risposta": True,
+        "riassunto": "Velocità costante → meno consumi?",
         "spiegazione": "Guidare a una velocità costante, senza accelerare o frenare spesso, aiuta il motore a lavorare in modo più efficiente. Quando il motore lavora in modo regolare, consuma meno carburante rispetto a quando deve cambiare continuamente regime per accelerazioni e frenate.",
         "regola": "Velocità costante = meno consumi.",
         "trabocchetti": ["costante"],
@@ -24,6 +26,7 @@ QUESTIONS = [
     {
         "domanda": "Il consumo di carburante aumenta con l'aumentare del peso del veicolo",
         "risposta": True,
+        "riassunto": "Più peso → più consumi?",
         "spiegazione": "Un veicolo più pesante ha bisogno di più forza per muoversi. Questa forza extra viene dal motore, che deve lavorare di più per spostare il peso aggiuntivo. Lavorando di più, il motore consuma una maggiore quantità di carburante.",
         "regola": "Più peso = più benzina.",
         "trabocchetti": ["aumenta con l"],
@@ -31,6 +34,7 @@ QUESTIONS = [
     {
         "domanda": "Diminuendo opportunamente la velocità diminuisce il consumo di carburante",
         "risposta": True,
+        "riassunto": "Meno velocità → meno consumi?",
         "spiegazione": "Andare più piano, soprattutto se si evita di correre troppo, fa sì che il motore faccia meno sforzo. Un motore che lavora a un regime più basso e senza stress consuma meno carburante. È un modo semplice per risparmiare.",
         "regola": "Meno velocità = meno consumi.",
         "trabocchetti": ["opportunamente"],
@@ -38,12 +42,14 @@ QUESTIONS = [
     {
         "domanda": "Per consumare meno carburante è opportuno tenere i finestrini chiusi, specie quando si viaggia ad alta velocità",
         "risposta": True,
+        "riassunto": "Ad alta velocità → finestrini chiusi per consumare meno?",
         "spiegazione": "Quando i finestrini sono aperti, l'aria entra nell'abitacolo e crea una resistenza aerodinamica. Questa resistenza è come una 'frenata' invisibile che il motore deve vincere, specialmente quando vai veloce. Per vincere questa resistenza, il motore deve fare più sforzo e quindi consuma più carburante.",
         "regola": "Finestrini chiusi (ad alta velocità) = meno resistenza = meno benzina.",
     },
     {
         "domanda": "Per consumare meno carburante conviene scegliere, per quanto possibile, strade pianeggianti e più scorrevoli",
         "risposta": True,
+        "riassunto": "Strade pianeggianti e scorrevoli → meno consumi?",
         "spiegazione": "Su strade pianeggianti e senza curve strette o traffico, il motore può mantenere una velocità più costante e lavorare in modo più regolare. Questo riduce lo sforzo del motore e di conseguenza il consumo di carburante. Le salite e le continue frenate/accelerazioni aumentano i consumi.",
         "regola": "Strade facili = meno benzina.",
         "trabocchetti": ["per quanto possibile"],
@@ -51,6 +57,7 @@ QUESTIONS = [
     {
         "domanda": "L'insufficiente pressione di gonfiaggio degli pneumatici comporta un maggior consumo di carburante",
         "risposta": True,
+        "riassunto": "Pneumatici sgonfi → più consumi?",
         "spiegazione": "Se le gomme non sono gonfiate alla giusta pressione (sono sgonfie), la parte dello pneumatico che tocca la strada è maggiore. Questo aumenta l'attrito (la 'frizione') tra la gomma e l'asfalto. Per vincere questo attrito extra, il motore deve fare più forza e quindi consuma più carburante.",
         "regola": "Gomme sgonfie = più attrito = più benzina.",
         "trabocchetti": ["insufficiente pressione di gonfiaggio"],
@@ -58,6 +65,7 @@ QUESTIONS = [
     {
         "domanda": "Collocare i bagagli sul tetto del veicolo comporta un maggior consumo di carburante",
         "risposta": True,
+        "riassunto": "Bagagli sul tetto → più consumi?",
         "spiegazione": "Mettere i bagagli sul tetto del veicolo ha due effetti negativi: primo, aumenta il peso totale del veicolo (e più peso significa più consumo, come visto nella domanda 25067); secondo, rende il veicolo meno aerodinamico, aumentando la resistenza all'aria. Entrambi questi fattori fanno aumentare il consumo di carburante.",
         "regola": "Bagagli sul tetto = più peso + più resistenza = più benzina.",
         "trabocchetti": ["comporta un maggior consumo"],
@@ -65,6 +73,7 @@ QUESTIONS = [
     {
         "domanda": "Tenere aperto il tettuccio scorrevole del veicolo comporta un minor consumo di carburante",
         "risposta": False,
+        "riassunto": "Tettuccio aperto → meno consumi?",
         "spiegazione": "Questa affermazione è FALSA. Proprio come i finestrini aperti, anche il tettuccio scorrevole aperto crea resistenza all'aria, specialmente quando si viaggia a velocità più elevate. Questa resistenza costringe il motore a lavorare di più per mantenere la velocità, aumentando il consumo di carburante, non diminuendolo.",
         "regola": "Tettuccio aperto = come finestrini aperti = più resistenza = più benzina.",
         "trabocchetti": ["minor"],
@@ -72,6 +81,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso del climatizzatore comporta minor consumo di carburante",
         "risposta": False,
+        "riassunto": "Climatizzatore → meno consumi?",
         "spiegazione": "Questa affermazione è FALSA. Il climatizzatore è un apparecchio che consuma molta energia. Questa energia viene prodotta dal motore del veicolo, che deve lavorare di più per alimentarlo. Di conseguenza, l'uso del climatizzatore aumenta il consumo di carburante, non lo diminuisce.",
         "regola": "Climatizzatore acceso = più benzina.",
         "trabocchetti": ["minor"],
@@ -79,6 +89,7 @@ QUESTIONS = [
     {
         "domanda": "I veicoli ibridi (con due motori, a scoppio ed elettrico) inquinano di più perché azionati da due motori",
         "risposta": False,
+        "riassunto": "Ibridi → inquinano di più?",
         "spiegazione": "Questa affermazione è FALSA. I veicoli ibridi sono stati progettati proprio per ridurre l'inquinamento e i consumi. Usano il motore elettrico a basse velocità o in città (dove si inquina di più con il motore a scoppio) e il motore a scoppio quando serve più potenza o per ricaricare la batteria. Questo sistema combinato ottimizza l'efficienza e riduce le emissioni inquinanti.",
         "regola": "Ibridi = meno inquinamento (non di più).",
         "trabocchetti": ["inquinano di più"],
@@ -86,12 +97,14 @@ QUESTIONS = [
     {
         "domanda": "Per consumare meno carburante è opportuno collocare i bagagli sul tetto del veicolo",
         "risposta": False,
+        "riassunto": "Bagagli sul tetto → meno consumi?",
         "spiegazione": "Questa affermazione è FALSA. Come spiegato nella domanda 25072, collocare i bagagli sul tetto del veicolo aumenta sia il peso che la resistenza all'aria. Entrambi questi fattori fanno aumentare il consumo di carburante, non lo diminuiscono. Per consumare meno, i bagagli vanno messi nel bagagliaio o, se possibile, lasciati a casa.",
         "regola": "Bagagli sul tetto = più benzina (non meno).",
     },
     {
         "domanda": "Per consumare meno carburante conviene accelerare e frenare energicamente",
         "risposta": False,
+        "riassunto": "Accelerare e frenare forte → meno consumi?",
         "spiegazione": "Questa affermazione è FALSA. Accelerare forte e frenare all'improvviso (guidare 'energeticamente') fa lavorare il motore in modo molto inefficiente. Il motore consuma molta più benzina durante le accelerazioni brusche e l'energia della frenata viene sprecata. Per risparmiare carburante, è meglio guidare in modo fluido e costante, anticipando le situazioni.",
         "regola": "Guida aggressiva = più benzina.",
         "trabocchetti": ["accelerare e frenare energicamente"],
@@ -99,6 +112,7 @@ QUESTIONS = [
     {
         "domanda": "Per evitare rumori fastidiosi durante la guida, occorre far controllare che il dispositivo silenziatore (marmitta) sia in buone condizioni di efficienza",
         "risposta": True,
+        "riassunto": "Marmitta efficiente → meno rumore?",
         "spiegazione": "È vero. La marmitta è il dispositivo che serve a ridurre il rumore del motore. Se non funziona bene, fa molto rumore. Per questo è importante controllarla.",
         "regola": "Marmitta sana, guida serena.",
         "trabocchetti": ["silenziatore", "Efficienza"],
@@ -106,6 +120,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento acustico aumenta se si usano in modo eccessivo i dispositivi di segnalazione acustica (clacson, trombe)",
         "risposta": True,
+        "riassunto": "Clacson eccessivo → più inquinamento acustico?",
         "spiegazione": "È vero. Usare il clacson o le trombe troppo spesso e senza necessità crea molto rumore, che è un tipo di inquinamento chiamato 'acustico'.",
         "regola": "Clacson con misura, meno rumore in città.",
         "trabocchetti": ["Eccessivo", "dispositivi di segnalazione acustica"],
@@ -113,6 +128,7 @@ QUESTIONS = [
     {
         "domanda": "Per evitare rumori fastidiosi durante la guida non si deve frenare bruscamente, se non è strettamente necessario",
         "risposta": True,
+        "riassunto": "Niente frenate brusche inutili → meno rumore?",
         "spiegazione": "È vero. Frenare all'improvviso ('bruscamente') può far fischiare le gomme o i freni, creando rumore. È meglio frenare dolcemente, a meno che non ci sia un pericolo reale ('strettamente necessario').",
         "regola": "Frena dolce, guida in pace.",
         "trabocchetti": ["Bruscamente", "Strettamente necessario"],
@@ -120,6 +136,7 @@ QUESTIONS = [
     {
         "domanda": "Per evitare rumori fastidiosi non bisogna accelerare inutilmente e ripetutamente se il veicolo è fermo",
         "risposta": True,
+        "riassunto": "Niente accelerate da fermi → meno rumore?",
         "spiegazione": "È vero. Accelerare il motore quando il veicolo è fermo, senza motivo e più volte, produce rumore inutile e spreca carburante.",
         "regola": "Motore fermo, gas non dare.",
         "trabocchetti": ["Inutilmente e ripetutamente"],
@@ -127,18 +144,21 @@ QUESTIONS = [
     {
         "domanda": "Per evitare rumori fastidiosi durante la guida, si deve usare il clacson solamente per motivi di sicurezza stradale (trasporto feriti o ammalati, pericolo immediato)",
         "risposta": True,
+        "riassunto": "Clacson → solo per sicurezza?",
         "spiegazione": "È vero. Il clacson è uno strumento di sicurezza. Va usato solo per avvisare di un pericolo immediato o in situazioni urgenti, come il trasporto di persone ferite o malate. Usarlo solo quando serve riduce il rumore.",
         "regola": "Clacson solo per pericolo, mai per capriccio.",
     },
     {
         "domanda": "Per evitare rumori fastidiosi durante le fermate dovute al traffico, occorre mantenere il motore acceso, accelerando ripetutamente",
         "risposta": False,
+        "riassunto": "Fermi nel traffico → accelerare ripetutamente?",
         "spiegazione": "È falso. Mantenere il motore acceso e accelerare quando si è fermi nel traffico crea molto rumore e inquinamento. Se la sosta è lunga, è meglio spegnere il motore.",
         "regola": "Traffico fermo, motore spento (o al minimo).",
     },
     {
         "domanda": "Per evitare rumori fastidiosi, occorre chiudere con forza le portiere dell'autovettura, in modo da non doverle richiudere",
         "risposta": False,
+        "riassunto": "Portiere → chiuderle con forza?",
         "spiegazione": "È falso. Chiudere le portiere con forza provoca un rumore forte e fastidioso. Bisogna chiuderle delicatamente.",
         "regola": "Portiera chiusa piano, rumore lontano.",
         "trabocchetti": ["con forza"],
@@ -146,12 +166,14 @@ QUESTIONS = [
     {
         "domanda": "Per evitare rumori fastidiosi durante la guida, occorre sostituire il clacson con le luci ad intermittenza, ma solamente di notte",
         "risposta": False,
+        "riassunto": "Clacson → sostituito dai lampeggi solo di notte?",
         "spiegazione": "È falso. Non si può sostituire il clacson con le luci lampeggianti. Il clacson ha una funzione specifica di avviso sonoro, e le luci lampeggianti hanno altri scopi. Inoltre, la restrizione 'solamente di notte' non ha senso.",
         "regola": "Clacson è clacson, luci sono luci. Non si scambiano.",
     },
     {
         "domanda": "Il rumore prodotto dai veicoli a motore aumenta man mano che si va rovinando il silenziatore (marmitta)",
         "risposta": True,
+        "riassunto": "Marmitta rovinata → più rumore?",
         "spiegazione": "Il silenziatore, o marmitta, serve proprio a ridurre il rumore del motore. Se si rovina, non riesce più a fare il suo lavoro e quindi il rumore aumenta. È come un filtro che si rompe.",
         "regola": "Marmitta rovinata = più rumore.",
         "trabocchetti": ["man mano che si va rovinando"],
@@ -159,6 +181,7 @@ QUESTIONS = [
     {
         "domanda": "Il rumore prodotto dai veicoli a motore si può diminuire con una guida corretta, che eviti brusche frenate o forti accelerazioni",
         "risposta": True,
+        "riassunto": "Guida corretta → meno rumore?",
         "spiegazione": "Guidare in modo tranquillo, senza accelerare o frenare di colpo, fa lavorare il motore in modo più dolce. Questo riduce il rumore generale del veicolo. Le accelerazioni e frenate brusche, invece, fanno 'sforzare' di più il motore e i freni, creando più rumore.",
         "regola": "Guida dolce = meno rumore.",
         "trabocchetti": ["si può diminuire"],
@@ -166,6 +189,7 @@ QUESTIONS = [
     {
         "domanda": "Il rumore prodotto dai veicoli a motore è causato solo dal motore",
         "risposta": False,
+        "riassunto": "Rumore → solo dal motore?",
         "spiegazione": "Questa affermazione è falsa perché il rumore di un veicolo non viene solo dal motore. Ci sono anche altri rumori, come quelli delle gomme sull'asfalto, dell'aria che sbatte contro la carrozzeria (specialmente ad alta velocità), dello scarico e a volte anche dei freni o della trasmissione.",
         "regola": "Mai 'solo' rumore dal motore! Ci sono anche gomme, aria, scarico.",
         "trabocchetti": ["solo"],
@@ -173,6 +197,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire il rumore emesso dai veicoli a motore è necessario che il dispositivo silenziatore (marmitta) sia efficiente e di tipo approvato",
         "risposta": True,
+        "riassunto": "Meno rumore → marmitta efficiente e approvata?",
         "spiegazione": "Per ridurre il rumore del veicolo, la marmitta (il silenziatore) deve funzionare bene e deve essere del tipo giusto, cioè approvata per quel veicolo. Se è rovinata o non approvata, farà più rumore.",
         "regola": "Marmitta OK = Meno rumore e legale!",
         "trabocchetti": ["efficiente", "di tipo approvato"],
@@ -180,6 +205,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire il rumore è necessario far sostituire la marmitta rovinata con una approvata per quel tipo di veicolo",
         "risposta": True,
+        "riassunto": "Marmitta rovinata → sostituirla con una approvata?",
         "spiegazione": "Se la marmitta è rovinata, non riesce più a ridurre il rumore. Per questo, è importante cambiarla con una nuova che sia 'approvata' (cioè, fatta apposta e omologata) per il tuo veicolo. Così il rumore diminuisce e rispetti la legge.",
         "regola": "Marmitta rotta? Sostituisci con l'originale!",
         "trabocchetti": ["rovinata", "approvata per quel tipo di veicolo"],
@@ -187,12 +213,14 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire il rumore non si deve accelerare quando il veicolo è fermo",
         "risposta": True,
+        "riassunto": "Meno rumore → non accelerare da fermi?",
         "spiegazione": "Quando il veicolo è fermo, accelerare (dare gas) non serve a nulla se non a fare rumore inutile. È un comportamento che disturba e non aiuta a diminuire l'inquinamento acustico.",
         "regola": "Da fermo, non 'sgasare'!",
     },
     {
         "domanda": "Per diminuire il rumore prodotto dai veicoli a motore è necessario far controllare i freni se emettono rumore durante le frenate, sostituendoli se necessario",
         "risposta": True,
+        "riassunto": "Freni rumorosi → controllarli e sostituirli?",
         "spiegazione": "I freni che fischiano o fanno rumore quando freni non solo sono fastidiosi, ma potrebbero indicare un problema. Farli controllare e, se necessario, sostituirli, non solo migliora la sicurezza ma riduce anche il rumore generale del veicolo.",
         "regola": "Freni rumorosi? Controlla e ripara!",
         "trabocchetti": ["se emettono rumore", "sostituendoli se necessario"],
@@ -200,12 +228,14 @@ QUESTIONS = [
     {
         "domanda": "Il controllo dei freni che producono rumore, oltre ad aumentare la sicurezza può ridurre la rumorosità del veicolo",
         "risposta": True,
+        "riassunto": "Controllo dei freni → più sicurezza e meno rumore?",
         "spiegazione": "Questa domanda rafforza il concetto precedente. Controllare e riparare i freni rumorosi ha un doppio vantaggio: rende la guida più sicura (perché i freni funzionano meglio) e rende il veicolo meno rumoroso, contribuendo a diminuire l'inquinamento acustico.",
         "regola": "Freni silenziosi = Sicurezza + Meno rumore.",
     },
     {
         "domanda": "Per diminuire il rumore emesso dai veicoli a motore si deve suonare il clacson il meno possibile",
         "risposta": True,
+        "riassunto": "Meno rumore → clacson il meno possibile?",
         "spiegazione": "Il clacson serve per avvisare in caso di pericolo, non per salutare o per esprimere impazienza. Usarlo solo quando è strettamente necessario aiuta a ridurre il rumore generale nelle strade.",
         "regola": "Clacson solo se serve!",
         "trabocchetti": ["il meno possibile"],
@@ -213,6 +243,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire il rumore emesso dai veicoli a motore è opportuno praticare dei fori nel dispositivo silenziatore (marmitta)",
         "risposta": False,
+        "riassunto": "Meno rumore → fori nella marmitta?",
         "spiegazione": "Fare dei fori nella marmitta è una modifica sbagliata e illegale. Invece di diminuire il rumore, lo aumenta moltissimo, rendendo il veicolo non conforme alle norme e molto fastidioso per gli altri.",
         "regola": "Fori nella marmitta? Più rumore, non meno!",
         "trabocchetti": ["praticare dei fori"],
@@ -220,6 +251,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire il rumore emesso dai veicoli a motore si deve sostituire il tubo di scarico, usandone uno di diametro più piccolo",
         "risposta": False,
+        "riassunto": "Meno rumore → tubo di scarico più piccolo?",
         "spiegazione": "Sostituire il tubo di scarico con uno di diametro più piccolo non è una soluzione per diminuire il rumore. Anzi, potrebbe creare problemi al motore o non essere omologato, aumentando il rumore o causando malfunzionamenti. La riduzione del rumore dipende dalla marmitta, non dal diametro del tubo.",
         "regola": "Diametro scarico? Non è la soluzione al rumore.",
         "trabocchetti": ["usandone uno di diametro più piccolo"],
@@ -227,6 +259,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire il rumore emesso dai veicoli a motore basta eliminare la parte finale della marmitta",
         "risposta": False,
+        "riassunto": "Meno rumore → togliere il finale della marmitta?",
         "spiegazione": "Eliminare una parte della marmitta è assolutamente sbagliato e illegale. La marmitta è fatta per silenziare il rumore del motore; se ne togli una parte, il rumore aumenterà in modo eccessivo e il veicolo non potrà circolare.",
         "regola": "Marmitta incompleta = Rumore eccessivo e multa!",
         "trabocchetti": ["eliminare la parte finale della marmitta"],
@@ -234,6 +267,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle curve percorse a forte velocità, lo strisciamento dei pneumatici aumenta la rumorosità del veicolo",
         "risposta": True,
+        "riassunto": "Curve veloci → pneumatici rumorosi?",
         "spiegazione": "Quando si affronta una curva ad alta velocità, le gomme non rotolano perfettamente ma tendono a 'scivolare' un po' sull'asfalto. Questo scivolamento, chiamato strisciamento, crea attrito e, di conseguenza, produce rumore. È come il suono che fanno le gomme quando si frena bruscamente o si gira velocemente.",
         "regola": "Curva veloce = gomme che strisciano = rumore.",
         "trabocchetti": ["strisciamento", "Forte velocità"],
@@ -241,6 +275,7 @@ QUESTIONS = [
     {
         "domanda": "I rimorchi vuoti, che sobbalzano eccessivamente, possono essere causa di rumore",
         "risposta": True,
+        "riassunto": "Rimorchi vuoti → rumorosi?",
         "spiegazione": "Un rimorchio vuoto è molto più leggero. Quando si viaggia su strade non perfettamente lisce, un rimorchio leggero tende a 'saltare' o 'sobbalzare' di più. Questi sobbalzi possono far sbattere le parti del rimorchio tra loro o contro il veicolo che lo traina, generando rumore.",
         "regola": "Rimorchio vuoto + sobbalzi = rumore.",
         "trabocchetti": ["vuoti", "sobbalzano eccessivamente", "Eccessivamente"],
@@ -248,6 +283,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento provocato dai veicoli non bisogna accelerare bruscamente durante le partenze",
         "risposta": True,
+        "riassunto": "Meno inquinamento → niente partenze brusche?",
         "spiegazione": "Accelerare piano e dolcemente all'inizio aiuta il motore a lavorare meglio e a consumare meno carburante, quindi produce meno inquinamento. Evitare accelerazioni brusche è un buon comportamento per l'ambiente.",
         "regola": "Partenza dolce = meno fumo.",
         "trabocchetti": ["non bisogna accelerare bruscamente", "Bruscamente"],
@@ -255,12 +291,14 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento, bisogna evitare di tenere inserita per troppo tempo una marcia bassa, se non è necessaria",
         "risposta": True,
+        "riassunto": "Meno inquinamento → non tenere a lungo marce basse?",
         "spiegazione": "Le marce basse (come la prima o la seconda) fanno girare il motore a regimi più alti e consumano più carburante, aumentando l'inquinamento. È meglio passare a marce più alte appena possibile per ridurre i consumi e le emissioni.",
         "regola": "Marcia alta = meno inquina.",
     },
     {
         "domanda": "Per diminuire l'inquinamento dell'aria provocato dai veicoli con motore a scoppio, bisogna sostituire la marmitta catalitica quando la stessa è deteriorata o esausta",
         "risposta": True,
+        "riassunto": "Meno inquinamento → sostituire il catalizzatore esausto?",
         "spiegazione": "La marmitta catalitica è un componente fondamentale che serve proprio a ridurre le sostanze inquinanti prodotte dal motore. Se è rotta, vecchia o non funziona più bene ('deteriorata o esausta'), il veicolo inquina molto di più. Sostituirla è essenziale.",
         "regola": "Catalitica rotta = più inquina.",
         "trabocchetti": ["deteriorata o esausta"],
@@ -268,6 +306,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento dell'aria provocato dai veicoli, bisogna controllare spesso la frizione e il differenziale",
         "risposta": False,
+        "riassunto": "Meno inquinamento → controllare frizione e differenziale?",
         "spiegazione": "La frizione e il differenziale sono componenti importanti per il funzionamento del veicolo e la sicurezza di guida, ma non hanno un impatto diretto sull'inquinamento dell'aria, che è legato principalmente al motore e al sistema di scarico.",
         "regola": "Frizione/differenziale = non inquinano (direttamente).",
         "trabocchetti": ["frizione e il differenziale"],
@@ -275,6 +314,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento dell'aria provocato dai veicoli, bisogna controllare spesso gli organi di sospensione (ammortizzatori)",
         "risposta": False,
+        "riassunto": "Meno inquinamento → controllare gli ammortizzatori?",
         "spiegazione": "Gli ammortizzatori (organi di sospensione) sono fondamentali per la stabilità, il comfort e la sicurezza del veicolo, ma non influenzano direttamente la quantità di gas inquinanti emessi dal motore. Il loro controllo non serve a diminuire l'inquinamento dell'aria.",
         "regola": "Ammortizzatori = non inquinano (direttamente).",
         "trabocchetti": ["organi di sospensione (ammortizzatori)"],
@@ -282,6 +322,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento dell'aria provocato dai veicoli, bisogna ridurre la pressione di gonfiaggio dei pneumatici",
         "risposta": False,
+        "riassunto": "Meno inquinamento → gomme meno gonfie?",
         "spiegazione": "Al contrario! Se la pressione dei pneumatici è troppo bassa, il veicolo fa più fatica a muoversi, aumenta l'attrito con la strada, consuma più carburante e quindi inquina di più. La pressione corretta è importante per la sicurezza e per ridurre i consumi e l'inquinamento.",
         "regola": "Pressione bassa = più consumi = più inquina.",
         "trabocchetti": ["ridurre la pressione di gonfiaggio"],
@@ -289,6 +330,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento dell'aria provocato dai veicoli, bisogna accelerare ripetutamente da fermo, per tenere caldo il motore e migliorarne il rendimento",
         "risposta": False,
+        "riassunto": "Meno inquinamento → accelerare da fermi?",
         "spiegazione": "Accelerare ripetutamente da fermo ('sgasare') è uno spreco di carburante e aumenta inutilmente l'inquinamento. Il motore si scalda guidando normalmente e non ha bisogno di essere 'tenuto caldo' in questo modo per migliorare il rendimento.",
         "regola": "Sgasare da fermo = spreco e inquina.",
         "trabocchetti": ["accelerare ripetutamente da fermo"],
@@ -296,6 +338,7 @@ QUESTIONS = [
     {
         "domanda": "Nei veicoli dotati di marmitta catalitica, l'inquinamento dell'aria è minore subito dopo l'accensione del motore, quando la temperatura è ancora bassa",
         "risposta": False,
+        "riassunto": "Catalizzatore → inquina meno a motore freddo?",
         "spiegazione": "La marmitta catalitica funziona bene solo quando raggiunge una certa temperatura. Appena si accende il motore, è fredda e non riesce a ridurre gli inquinanti in modo efficace. Per questo, i primi minuti di guida sono quelli in cui il veicolo inquina di più.",
         "regola": "Catalitica fredda = inquina di più.",
         "trabocchetti": ["minore"],
@@ -303,6 +346,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli può dipendere da un funzionamento irregolare del motore",
         "risposta": True,
+        "riassunto": "Inquinamento → per motore irregolare?",
         "spiegazione": "Se il motore del veicolo non funziona bene, brucia il carburante in modo inefficiente. Questo significa che produce più sostanze inquinanti e quindi aumenta l'inquinamento dell'aria. Un motore che 'tossisce' inquina di più.",
         "regola": "Motore 'stanco' = aria 'sporca'.",
         "trabocchetti": ["può dipendere"],
@@ -310,6 +354,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria può essere ridotto, controllando che il veicolo sia sempre nelle condizioni ottimali di consumo e rendimento",
         "risposta": True,
+        "riassunto": "Veicolo in condizioni ottimali → meno inquinamento?",
         "spiegazione": "Un veicolo che è sempre controllato e mantenuto bene, con un buon consumo di carburante e un motore efficiente, inquina meno. Fare la manutenzione regolare aiuta a ridurre le emissioni nocive.",
         "regola": "Auto in forma = meno inquinamento.",
         "trabocchetti": ["può essere ridotto"],
@@ -317,6 +362,7 @@ QUESTIONS = [
     {
         "domanda": "Adottando uno stile di guida che limiti i consumi di carburante, è possibile ridurre l'inquinamento dell'aria",
         "risposta": True,
+        "riassunto": "Guida a basso consumo → meno inquinamento?",
         "spiegazione": "Guidare in modo tranquillo, senza accelerazioni improvvise o frenate brusche, fa consumare meno carburante. Meno carburante bruciato significa meno gas inquinanti rilasciati nell'aria.",
         "regola": "Guida 'dolce' = aria 'pulita'.",
         "trabocchetti": ["È possibile ridurre", "Limiti i consumi"],
@@ -324,6 +370,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento atmosferico prodotto dai veicoli può essere ridotto, controllando che il filtro dell'aria non sia sporco o intasato",
         "risposta": True,
+        "riassunto": "Filtro dell'aria pulito → meno inquinamento?",
         "spiegazione": "Il filtro dell'aria serve a pulire l'aria che entra nel motore. Se è sporco o intasato, il motore non riceve abbastanza aria pulita, brucia male il carburante e produce più inquinamento. Un filtro pulito aiuta il motore a funzionare meglio e a inquinare meno.",
         "regola": "Filtro pulito = motore respira meglio = meno fumo.",
         "trabocchetti": ["Può essere ridotto"],
@@ -331,6 +378,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento atmosferico prodotto dai veicoli scompare del tutto accelerando a fondo, perché l'alta temperatura fa consumare in fretta il carburante",
         "risposta": False,
+        "riassunto": "Accelerare a fondo → nessun inquinamento?",
         "spiegazione": "Accelerare a fondo fa consumare molto più carburante e aumenta l'inquinamento, non lo fa scomparire. Nessun veicolo smette di inquinare completamente solo accelerando.",
         "regola": "'Del tutto' + accelerare a fondo = FALSO.",
         "trabocchetti": ["scompare del tutto"],
@@ -338,6 +386,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli diminuisce se si lascia acceso il climatizzatore",
         "risposta": False,
+        "riassunto": "Climatizzatore acceso → meno inquinamento?",
         "spiegazione": "Il climatizzatore usa energia dal motore per funzionare. Quando è acceso, il motore deve lavorare di più, consumando più carburante. Più carburante consumato significa più inquinamento, non meno.",
         "regola": "Clima acceso = più benzina = più inquinamento.",
         "trabocchetti": ["diminuisce"],
@@ -345,6 +394,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento atmosferico è nullo nei veicoli che rispettano la normativa antinquinamento \"Euro 0\"",
         "risposta": False,
+        "riassunto": "Euro 0 → inquinamento nullo?",
         "spiegazione": "Nessun veicolo ha un inquinamento 'nullo', cioè zero. Anche i veicoli più moderni producono un minimo di emissioni. La normativa 'Euro 0' si riferisce a veicoli molto vecchi, che inquinano molto di più rispetto a quelli con normative più recenti (come Euro 6).",
         "regola": "'Nullo' + Euro 0 = FALSO. Nessun veicolo ha zero inquinamento.",
         "trabocchetti": ["è nullo", "Euro 0"],
@@ -352,6 +402,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli aumenta se gli iniettori sono difettosi",
         "risposta": True,
+        "riassunto": "Iniettori difettosi → più inquinamento?",
         "spiegazione": "Se gli iniettori del motore non funzionano bene (sono difettosi), il carburante non viene bruciato correttamente. Questo significa che il motore produce più sostanze inquinanti e quindi l'inquinamento dell'aria aumenta. È come se il motore 'tossisse' e sporcasse di più.",
         "regola": "Iniettori difettosi = più inquinamento.",
         "trabocchetti": ["difettosi"],
@@ -359,6 +410,7 @@ QUESTIONS = [
     {
         "domanda": "Una maggiore emissione di fumo dallo scarico è sintomo di maggior inquinamento causato dal motore",
         "risposta": True,
+        "riassunto": "Più fumo dallo scarico → più inquinamento?",
         "spiegazione": "Quando vedi molto fumo uscire dallo scarico di un veicolo, è un segnale che il motore non sta lavorando bene. Questo fumo extra contiene più sostanze nocive e quindi indica un maggiore inquinamento dell'aria. Un motore sano produce poco fumo, quasi invisibile.",
         "regola": "Più fumo = più inquinamento.",
         "trabocchetti": ["maggiore emissione di fumo", "Sintomo"],
@@ -366,6 +418,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli è maggiore se il fumo di scarico presenta colore scuro",
         "risposta": True,
+        "riassunto": "Fumo scuro → più inquinamento?",
         "spiegazione": "Il colore del fumo di scarico ci dice molto. Se il fumo è scuro (nero o blu), significa che il motore sta bruciando male il carburante o sta bruciando olio. Entrambe le situazioni producono molte più sostanze inquinanti rispetto a un motore che funziona bene e produce fumo quasi trasparente.",
         "regola": "Fumo scuro = motore sporco.",
         "trabocchetti": ["colore scuro"],
@@ -373,6 +426,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli può causare danni alle vie respiratorie e irritazione agli occhi",
         "risposta": True,
+        "riassunto": "Inquinamento → danni a respiro e occhi?",
         "spiegazione": "I gas di scarico dei veicoli contengono molte sostanze chimiche dannose. Respirare quest'aria inquinata può irritare la gola, i polmoni e causare problemi respiratori. Anche gli occhi possono bruciare o lacrimare a causa di queste sostanze.",
         "regola": "Inquinamento = danni a occhi e polmoni.",
         "trabocchetti": ["può causare"],
@@ -380,6 +434,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli fa aumentare lo smog, le piogge acide e l'effetto serra",
         "risposta": True,
+        "riassunto": "Inquinamento → smog, piogge acide, effetto serra?",
         "spiegazione": "L'inquinamento prodotto dai veicoli è una delle cause principali di problemi ambientali globali. Contribuisce alla formazione dello smog nelle città, alle piogge acide che danneggiano foreste e edifici, e all'aumento dell'effetto serra, che causa il riscaldamento del pianeta.",
         "regola": "Veicoli = smog, piogge acide, effetto serra.",
         "trabocchetti": ["fa aumentare"],
@@ -387,6 +442,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli è dovuto per la maggior parte ai gas di scarico, generati dalla combustione all'interno del motore",
         "risposta": True,
+        "riassunto": "Inquinamento → soprattutto gas di scarico?",
         "spiegazione": "La maggior parte dell'inquinamento che un veicolo produce viene dai gas che escono dal tubo di scarico. Questi gas si formano quando il carburante (benzina o diesel) brucia dentro il motore. È il processo di combustione che genera le sostanze inquinanti.",
         "regola": "Inquinamento = gas di scarico.",
         "trabocchetti": ["per la maggior parte", "Gas di scarico"],
@@ -394,6 +450,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento atmosferico prodotto dai veicoli dipende principalmente dall'umidità presente nell'aria",
         "risposta": False,
+        "riassunto": "Inquinamento → dipende dall'umidità?",
         "spiegazione": "L'inquinamento prodotto dai veicoli dipende principalmente da come funziona il motore, dal tipo di carburante usato e da come si guida. L'umidità nell'aria non è il fattore principale che determina quanto un veicolo inquina. L'umidità può influenzare come gli inquinanti si disperdono, ma non quanto ne vengono prodotti dal motore.",
         "regola": "Inquinamento veicoli = motore, non meteo.",
         "trabocchetti": ["principalmente"],
@@ -401,6 +458,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli a motore può diminuire se si alleggerisce il peso del veicolo",
         "risposta": True,
+        "riassunto": "Veicolo più leggero → meno inquinamento?",
         "spiegazione": "Un veicolo più leggero ha bisogno di meno energia per muoversi. Meno energia significa che il motore brucia meno carburante e, di conseguenza, produce meno gas inquinanti. Quindi, alleggerire il veicolo aiuta a ridurre l'inquinamento.",
         "regola": "Meno peso = meno benzina = meno smog.",
         "trabocchetti": ["alleggerisce il peso"],
@@ -408,6 +466,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli a motore può essere ridotto, scegliendo veicoli con alimentazione elettrica, a metano o GPL",
         "risposta": True,
+        "riassunto": "Elettrico, metano o GPL → meno inquinamento?",
         "spiegazione": "I veicoli elettrici non producono gas di scarico direttamente. I veicoli a metano o GPL, invece, producono meno sostanze inquinanti rispetto ai veicoli a benzina o diesel tradizionali. Scegliere queste alternative è un buon modo per ridurre l'inquinamento dell'aria.",
         "regola": "Alternative pulite = meno inquinamento.",
         "trabocchetti": ["elettrica, a metano o GPL"],
@@ -415,6 +474,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli a motore può diminuire se si spegne il motore, in caso di arresto prolungato",
         "risposta": True,
+        "riassunto": "Spegnere il motore nelle soste lunghe → meno inquinamento?",
         "spiegazione": "Se il motore è spento, non brucia carburante e non produce gas di scarico. Quindi, in situazioni come lunghe code, passaggi a livello o semafori molto lunghi, spegnere il motore è un'azione efficace per diminuire l'inquinamento e risparmiare carburante.",
         "regola": "Motore spento = zero emissioni.",
         "trabocchetti": ["arresto prolungato"],
@@ -422,6 +482,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli a motore può essere ridotto, evitando di usare il veicolo per brevi percorsi",
         "risposta": True,
+        "riassunto": "Evitare brevi percorsi → meno inquinamento?",
         "spiegazione": "Nei brevi percorsi, il motore non ha il tempo di raggiungere la sua temperatura ideale di funzionamento e, in questa fase, inquina di più. Inoltre, per distanze molto corte, è spesso possibile camminare o usare la bicicletta, evitando del tutto l'uso del veicolo a motore.",
         "regola": "Percorsi brevi? A piedi o bici!",
         "trabocchetti": ["brevi percorsi"],
@@ -429,6 +490,7 @@ QUESTIONS = [
     {
         "domanda": "Guidando un veicolo che emette troppi gas di scarico inquinanti si può essere puniti con una sanzione amministrativa e il ritiro della carta di circolazione",
         "risposta": True,
+        "riassunto": "Troppi gas di scarico → multa e ritiro della carta?",
         "spiegazione": "La legge prevede controlli sulle emissioni dei veicoli. Se un veicolo emette troppi gas inquinanti, significa che non è in regola con le normative ambientali. In questi casi, il conducente può essere multato (sanzione amministrativa) e la carta di circolazione (il documento che permette al veicolo di circolare) può essere ritirata.",
         "regola": "Troppo smog = multa e documenti via.",
         "trabocchetti": ["sanzione amministrativa", "ritiro della carta di circolazione"],
@@ -436,6 +498,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli a motore può diminuire se si sistemano i bagagli sul tetto dell'autovettura",
         "risposta": False,
+        "riassunto": "Bagagli sul tetto → meno inquinamento?",
         "spiegazione": "Mettere i bagagli sul tetto dell'auto aumenta la resistenza dell'aria (l'auto fa più fatica a 'tagliare' l'aria). Questa maggiore resistenza costringe il motore a lavorare di più, consumando più carburante e, di conseguenza, aumentando l'inquinamento, non diminuendolo.",
         "regola": "Bagagli sul tetto = più fatica = più inquina.",
         "trabocchetti": ["sistemano i bagagli sul tetto"],
@@ -443,6 +506,7 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli a motore può diminuire se si circola sempre con marce basse",
         "risposta": False,
+        "riassunto": "Sempre marce basse → meno inquinamento?",
         "spiegazione": "Circolare sempre con marce basse (come la prima o la seconda) fa sì che il motore lavori a giri molto alti, consumando più carburante del necessario e producendo più inquinamento. Per ridurre l'inquinamento, è meglio usare marce alte quando la velocità lo permette, mantenendo il motore a bassi regimi.",
         "regola": "Marce basse = motore 'sotto sforzo' = più inquina.",
         "trabocchetti": ["sempre"],
@@ -450,12 +514,14 @@ QUESTIONS = [
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli a motore può diminuire se si accelera tenendo premuto il pedale della frizione",
         "risposta": False,
+        "riassunto": "Accelerare con la frizione premuta → meno inquinamento?",
         "spiegazione": "Accelerare tenendo premuto il pedale della frizione (o 'slittare la frizione') è una pratica di guida scorretta. In questo modo, il motore gira a vuoto, sprecando carburante senza trasmettere potenza alle ruote. Questo non solo non riduce l'inquinamento, ma lo aumenta a causa dello spreco di carburante e usura la frizione.",
         "regola": "Frizione premuta + acceleri = spreco e usura.",
     },
     {
         "domanda": "L'inquinamento dell'aria prodotto dai veicoli a motore può diminuire se si accelera con il cambio in folle",
         "risposta": False,
+        "riassunto": "Accelerare in folle → meno inquinamento?",
         "spiegazione": "Accelerare con il cambio in folle significa far girare il motore senza che sia collegato alle ruote. Questo è uno spreco di carburante inutile, poiché l'energia prodotta non viene usata per muovere il veicolo. Di conseguenza, non si riduce l'inquinamento, ma si consuma carburante senza scopo.",
         "regola": "Folle + acceleri = rumore e spreco.",
         "trabocchetti": ["accelera con il cambio in folle"],
@@ -463,6 +529,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento atmosferico provocato dai veicoli, bisogna far sostituire periodicamente il filtro dell'aria",
         "risposta": True,
+        "riassunto": "Sostituire il filtro dell'aria → meno inquinamento?",
         "spiegazione": "Il filtro dell'aria pulisce l'aria che il motore usa per bruciare il carburante. Se il filtro è sporco, il motore non funziona bene, consuma di più e produce più gas inquinanti. Sostituirlo regolarmente aiuta a ridurre l'inquinamento.",
         "regola": "Filtro aria pulito = motore efficiente = meno inquinamento.",
         "trabocchetti": ["periodicamente"],
@@ -470,6 +537,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento dell'aria provocato dai veicoli con motore diesel, bisogna far controllare periodicamente il sistema di alimentazione (pompa di iniezione ed iniettori)",
         "risposta": True,
+        "riassunto": "Diesel → controllare pompa e iniettori?",
         "spiegazione": "Nei motori diesel, la pompa di iniezione e gli iniettori sono fondamentali per spruzzare il carburante nel motore. Se non funzionano bene, il carburante non brucia completamente, creando più fumo e inquinamento. Controllarli aiuta a mantenere il motore pulito e a inquinare meno.",
         "regola": "Diesel: iniettori ok = combustione pulita.",
         "trabocchetti": ["motore diesel", "sistema di alimentazione"],
@@ -477,6 +545,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento dell'aria provocato dai veicoli, bisogna far controllare il motore, se il fumo dello scarico risulta troppo scuro",
         "risposta": True,
+        "riassunto": "Fumo troppo scuro → controllare il motore?",
         "spiegazione": "Se dal tubo di scarico esce fumo troppo scuro, significa che il motore non sta bruciando bene il carburante. Questo è un segnale che il veicolo sta inquinando più del dovuto. Far controllare il motore è necessario per risolvere il problema e ridurre l'inquinamento.",
         "regola": "Fumo scuro = problema = inquinamento.",
         "trabocchetti": ["fumo dello scarico risulta troppo scuro"],
@@ -484,6 +553,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento dell'aria non bisogna accelerare e frenare spesso durante la marcia del veicolo",
         "risposta": True,
+        "riassunto": "Meno inquinamento → non accelerare e frenare spesso?",
         "spiegazione": "Accelerare e frenare spesso, con una guida 'a scatti', fa consumare più carburante e produce più gas di scarico. Una guida fluida, senza brusche accelerazioni o frenate, è più efficiente, consuma meno e inquina meno l'aria.",
         "regola": "Guida fluida = meno consumi = meno inquinamento.",
         "trabocchetti": ["non bisogna accelerare e frenare spesso"],
@@ -491,6 +561,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento dell'aria provocato dai veicoli, bisogna dare un breve colpo di acceleratore, prima di abbassare la frizione per cambiare marcia",
         "risposta": False,
+        "riassunto": "Colpo di acceleratore prima di cambiare marcia?",
         "spiegazione": "Dare un 'colpo di acceleratore' a vuoto prima di cambiare marcia è una vecchia abitudine che non serve nei veicoli moderni. Questa azione fa solo aumentare il consumo di carburante e, di conseguenza, l'inquinamento, senza alcun beneficio per la guida.",
         "regola": "Colpo di acceleratore a vuoto = spreco e inquinamento.",
         "trabocchetti": ["breve colpo di acceleratore"],
@@ -498,6 +569,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento atmosferico provocato dai veicoli, bisogna utilizzare il motore al massimo numero di giri",
         "risposta": False,
+        "riassunto": "Motore al massimo dei giri → meno inquinamento?",
         "spiegazione": "Usare il motore al 'massimo numero di giri' significa 'tirare' le marce, cioè far salire molto i giri del motore prima di cambiare. Questo fa consumare tantissimo carburante e produce molti più gas inquinanti. Per inquinare meno, bisogna guidare con marce alte e a un numero di giri moderato.",
         "regola": "Giri alti = più consumo = più inquinamento.",
         "trabocchetti": ["massimo numero di giri"],
@@ -505,6 +577,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento dell'aria provocato dai gas di scarico del veicolo, bisogna sostituire periodicamente il filtro antipolline",
         "risposta": False,
+        "riassunto": "Filtro antipolline → meno gas di scarico?",
         "spiegazione": "Il filtro antipolline serve a pulire l'aria che entra nell'abitacolo del veicolo, per proteggere i passeggeri da polvere e pollini. Non ha nessun effetto sui gas di scarico che escono dal motore e quindi non diminuisce l'inquinamento atmosferico.",
         "regola": "Antipolline = aria interna, non scarico.",
         "trabocchetti": ["filtro antipolline"],
@@ -512,6 +585,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire l'inquinamento dell'aria provocato dai veicoli, bisogna sostituire il filtro dell'olio ad ogni cambio di stagione",
         "risposta": False,
+        "riassunto": "Filtro dell'olio a ogni stagione → meno inquinamento?",
         "spiegazione": "Il filtro dell'olio serve a mantenere pulito l'olio che lubrifica il motore. È importante cambiarlo, ma non 'ad ogni cambio di stagione'. Si cambia insieme all'olio, secondo le indicazioni del costruttore (di solito ogni 10.000-20.000 km o una volta all'anno), non quattro volte all'anno. Inoltre, il filtro dell'olio non ha un impatto diretto sull'inquinamento dei gas di scarico.",
         "regola": "Filtro olio = lubrificazione, non gas di scarico. 'Ogni stagione' è troppo.",
         "trabocchetti": ["ad ogni cambio di stagione"],
@@ -519,6 +593,7 @@ QUESTIONS = [
     {
         "domanda": "Per risparmiare carburante e salvaguardare l'ambiente dall'inquinamento atmosferico, è consigliabile azionare il climatizzatore il meno possibile e soltanto quando serve effettivamente",
         "risposta": True,
+        "riassunto": "Climatizzatore solo quando serve → meno consumi?",
         "spiegazione": "È VERO. Il climatizzatore usa energia dal motore, quindi consuma più carburante e produce più inquinamento. Usarlo solo quando è davvero necessario aiuta a risparmiare e a proteggere l'ambiente.",
         "regola": "Climatizzatore = Consumo. Usalo con giudizio!",
         "trabocchetti": ["il meno possibile", "soltanto quando serve effettivamente"],
@@ -526,6 +601,7 @@ QUESTIONS = [
     {
         "domanda": "Per salvaguardare l'ambiente dall'inquinamento atmosferico, bisogna premere più volte il pedale dell'acceleratore quando il veicolo è freddo",
         "risposta": False,
+        "riassunto": "Motore freddo → premere più volte l'acceleratore?",
         "spiegazione": "È FALSO. Quando il motore è freddo, premere l'acceleratore più volte non aiuta, anzi. Aumenta il consumo di carburante e le emissioni inquinanti, perché il motore non è ancora alla sua temperatura ideale di funzionamento. È meglio partire dolcemente.",
         "regola": "Motore freddo? Partenza dolce, non accelerare a vuoto!",
         "trabocchetti": ["premere più volte il pedale dell"],
@@ -533,6 +609,7 @@ QUESTIONS = [
     {
         "domanda": "Per salvaguardare l'ambiente dall'inquinamento atmosferico, bisogna premere diverse volte e a fondo il pedale dell'acceleratore, affinché il veicolo raggiunga in fretta la temperatura di esercizio",
         "risposta": False,
+        "riassunto": "Riscaldare il motore accelerando a fondo?",
         "spiegazione": "È FALSO. Accelerare 'diverse volte e a fondo' per scaldare il motore velocemente è un errore. Non solo non è efficace, ma fa consumare più carburante e inquina di più. Il motore si scalda meglio guidando con calma e senza brusche accelerazioni.",
         "regola": "Riscaldare il motore? Guida tranquilla, non a fondo!",
         "trabocchetti": ["diverse volte e a fondo", "in fretta"],
@@ -540,6 +617,7 @@ QUESTIONS = [
     {
         "domanda": "Per salvaguardare l'ambiente dall'inquinamento atmosferico e acustico, quando si cambia marcia bisogna premere a fondo il pedale dell'acceleratore",
         "risposta": False,
+        "riassunto": "Cambiando marcia → acceleratore a fondo?",
         "spiegazione": "È FALSO. Quando cambi marcia, premere 'a fondo' l'acceleratore non è una buona pratica. Aumenta il rumore (inquinamento acustico), il consumo di carburante e le emissioni inquinanti. Bisogna cambiare marcia in modo fluido e senza far salire troppo i giri del motore.",
         "regola": "Cambio marcia? Accelera con calma, non a fondo!",
         "trabocchetti": ["premere a fondo il pedale dell"],
@@ -547,6 +625,7 @@ QUESTIONS = [
     {
         "domanda": "Per limitare i consumi di carburante, conviene chiudere i finestrini se si viaggia a velocità medio alte, perché le turbolenze all'interno dell'abitacolo possono frenare la marcia del veicolo",
         "risposta": True,
+        "riassunto": "Velocità medio-alte → finestrini chiusi per consumare meno?",
         "spiegazione": "È VERO. Quando viaggi a velocità elevate con i finestrini aperti, l'aria che entra nell'abitacolo crea resistenza (come un freno) e il motore deve lavorare di più per mantenere la velocità. Questo fa aumentare il consumo di carburante.",
         "regola": "Finestrini aperti ad alta velocità = più resistenza = più benzina.",
         "trabocchetti": ["turbolenze"],
@@ -554,6 +633,7 @@ QUESTIONS = [
     {
         "domanda": "Per limitare i consumi di carburante non conviene fare uso del portapacchi, ma sistemare i bagagli all'interno del veicolo",
         "risposta": True,
+        "riassunto": "Meno consumi → bagagli dentro invece del portapacchi?",
         "spiegazione": "È VERO. Il portapacchi sul tetto cambia la forma aerodinamica dell'auto, creando più resistenza all'aria. Questo costringe il motore a sforzarsi di più e, di conseguenza, aumenta il consumo di carburante. È sempre meglio mettere i bagagli dentro l'auto se possibile.",
         "regola": "Portapacchi sul tetto = più resistenza = più benzina.",
         "trabocchetti": ["non conviene fare uso del portapacchi", "non"],
@@ -561,6 +641,7 @@ QUESTIONS = [
     {
         "domanda": "Viaggiare con uno spesso strato di neve sul tetto del veicolo, comporta un aumento dei consumi di carburante",
         "risposta": True,
+        "riassunto": "Neve sul tetto → più consumi?",
         "spiegazione": "È VERO. Uno strato spesso di neve sul tetto aggiunge peso al veicolo e ne modifica l'aerodinamica. Sia il peso extra che la forma meno aerodinamica aumentano lo sforzo del motore e quindi il consumo di carburante.",
         "regola": "Neve sul tetto = più peso + più resistenza = più benzina.",
         "trabocchetti": ["spesso", "spesso strato"],
@@ -568,6 +649,7 @@ QUESTIONS = [
     {
         "domanda": "Viaggiare a forte velocità con il tettuccio del veicolo aperto comporta un aumento dei consumi di carburante",
         "risposta": True,
+        "riassunto": "Tettuccio aperto ad alta velocità → più consumi?",
         "spiegazione": "È VERO. Similmente ai finestrini aperti, anche il tettuccio aperto a forte velocità crea resistenza all'aria e turbolenze. Questo fa lavorare di più il motore e aumenta il consumo di carburante.",
         "regola": "Tettuccio aperto ad alta velocità = più aria = più benzina.",
         "trabocchetti": ["forte velocità"],
@@ -575,6 +657,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di arresto prolungato in galleria, per la formazione di una fila di veicoli, è dannoso per la salute azionare il comando del ricircolo dell'aria all'interno del veicolo",
         "risposta": False,
+        "riassunto": "Fermi in galleria → ricircolo dannoso?",
         "spiegazione": "È FALSO. In una situazione di traffico fermo in galleria, ci sono molti gas di scarico. Azionare il ricircolo dell'aria significa che l'auto smette di prendere aria dall'esterno e fa circolare solo l'aria già presente nell'abitacolo. Questo serve proprio a non far entrare i gas inquinanti dall'esterno, quindi è utile per la salute, non dannoso.",
         "regola": "Ricircolo in galleria = aria pulita dentro = SALUTE.",
         "trabocchetti": ["dannoso"],
@@ -582,6 +665,7 @@ QUESTIONS = [
     {
         "domanda": "I veicoli che rispettano la normativa antinquinamento \"Euro 4\" emettono una quantità di gas inquinanti maggiore di quelli omologati secondo la normativa \"Euro 0\"",
         "risposta": False,
+        "riassunto": "Euro 4 → inquina più di Euro 0?",
         "spiegazione": "È FALSO. Le normative 'Euro' indicano quanto un veicolo inquina. Più alto è il numero 'Euro' (es. Euro 4), meno inquina il veicolo. Quindi, un veicolo Euro 4 inquina molto meno di un Euro 0 (che è il più vecchio e inquinante).",
         "regola": "Euro più ALTO = meno inquinamento.",
         "trabocchetti": ["maggiore"],
@@ -589,6 +673,7 @@ QUESTIONS = [
     {
         "domanda": "Trainare un rimorchio non comporta un aumento dei consumi di carburante",
         "risposta": False,
+        "riassunto": "Rimorchio → nessun aumento di consumi?",
         "spiegazione": "È FALSO. Trainare un rimorchio aggiunge molto peso al veicolo e aumenta la resistenza all'aria. Il motore deve fare molta più fatica per muovere tutto questo peso extra, e di conseguenza, il consumo di carburante aumenta in modo significativo.",
         "regola": "Rimorchio = più peso + più resistenza = più benzina.",
         "trabocchetti": ["non comporta un aumento", "non"],
@@ -596,12 +681,14 @@ QUESTIONS = [
     {
         "domanda": "Guidando un veicolo a cui sono stati modificati il motore e la marmitta, si può incorrere in pesanti sanzioni amministrative",
         "risposta": True,
+        "riassunto": "Motore e marmitta modificati → sanzioni pesanti?",
         "spiegazione": "È vero che se guidi un veicolo con motore e marmitta modificati senza autorizzazione, puoi ricevere multe molto salate. Le modifiche al veicolo devono essere approvate e registrate, altrimenti il veicolo non è più conforme alle norme di sicurezza e inquinamento.",
         "regola": "Modifiche non autorizzate = Multe sicure.",
     },
     {
         "domanda": "E' consentito modificare liberamente il motore e la marmitta di un veicolo per diminuire l'inquinamento atmosferico",
         "risposta": False,
+        "riassunto": "Modificare liberamente motore e marmitta?",
         "spiegazione": "È falso. Non puoi modificare liberamente il motore o la marmitta del tuo veicolo, nemmeno se pensi di ridurre l'inquinamento. Ogni modifica deve essere autorizzata e certificata da esperti per garantire che il veicolo sia sicuro e rispetti le leggi.",
         "regola": "Modifiche al veicolo? Solo con permesso e certificazione!",
         "trabocchetti": ["liberamente", "inquinamento"],
@@ -609,6 +696,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato scaricare nella fognatura il liquido antigelo del circuito di raffreddamento del veicolo, poiché potrebbe non essere biodegradabile",
         "risposta": True,
+        "riassunto": "Antigelo → vietato scaricarlo in fognatura?",
         "spiegazione": "È assolutamente vietato scaricare il liquido antigelo nelle fognature. Questo liquido è inquinante e può causare gravi danni all'ambiente e ai sistemi di depurazione dell'acqua, anche se non è specificato che non sia biodegradabile.",
         "regola": "Antigelo = Mai in fognatura!",
         "trabocchetti": ["potrebbe non essere biodegradabile"],
@@ -616,6 +704,7 @@ QUESTIONS = [
     {
         "domanda": "L'abbandono di una batteria per auto, sulla strada o sul terreno, può arrecare gravi danni all'ambiente e alle falde acquifere sottostanti",
         "risposta": True,
+        "riassunto": "Batteria abbandonata → danni ad ambiente e falde?",
         "spiegazione": "Le batterie delle auto contengono sostanze chimiche molto pericolose, come l'acido solforico e il piombo. Se abbandonate, queste sostanze possono inquinare gravemente il terreno e le falde acquifere, cioè l'acqua che si trova sotto terra.",
         "regola": "Batteria = Veleno per l'acqua.",
         "trabocchetti": ["può"],
@@ -623,6 +712,7 @@ QUESTIONS = [
     {
         "domanda": "Se si acquista una batteria per auto si può consegnare quella esausta (usata) al rivenditore, che provvederà a ritirarla, senza ulteriori costi aggiuntivi",
         "risposta": True,
+        "riassunto": "Batteria esausta → ritirata gratis dal rivenditore?",
         "spiegazione": "Quando compri una nuova batteria per la tua auto, il rivenditore è obbligato per legge a ritirare la tua vecchia batteria usata. Questo servizio è gratuito, non devi pagare nulla in più.",
         "regola": "Batteria usata = Al rivenditore, gratis.",
         "trabocchetti": ["senza ulteriori costi aggiuntivi"],
@@ -630,6 +720,7 @@ QUESTIONS = [
     {
         "domanda": "Il proprietario di un veicolo che intende demolirlo o rottamarlo, deve consegnarlo ad un centro di raccolta per la messa in sicurezza (autodemolitore autorizzato)",
         "risposta": True,
+        "riassunto": "Rottamazione → consegna ad autodemolitore autorizzato?",
         "spiegazione": "Se vuoi demolire o rottamare la tua auto, devi portarla in un centro specializzato. Questi centri, chiamati autodemolitori autorizzati, sanno come smontare il veicolo in modo sicuro e smaltire correttamente tutti i materiali, anche quelli pericolosi.",
         "regola": "Rottamare = Solo autodemolitore.",
         "trabocchetti": ["deve"],
@@ -637,6 +728,7 @@ QUESTIONS = [
     {
         "domanda": "Al momento dello smaltimento dell'olio del motore, bisogna evitare che venga a contatto con la pelle per un tempo prolungato",
         "risposta": True,
+        "riassunto": "Olio motore da smaltire → evitare contatto prolungato con la pelle?",
         "spiegazione": "L'olio motore usato contiene molte sostanze chimiche che possono essere dannose per la pelle. È importante evitare il contatto prolungato per prevenire irritazioni o altri problemi di salute.",
         "regola": "Olio motore = Non sulla pelle.",
         "trabocchetti": ["prolungato"],
@@ -644,6 +736,7 @@ QUESTIONS = [
     {
         "domanda": "Lo scarico dei residui organici e delle acque sporche delle autocaravan deve avvenire negli appositi impianti di smaltimento igienico-sanitari",
         "risposta": True,
+        "riassunto": "Scarichi delle autocaravan → negli impianti appositi?",
         "spiegazione": "Le autocaravan (camper) producono residui organici e acque sporche. Questi devono essere scaricati solo in aree apposite, chiamate impianti di smaltimento igienico-sanitari, per non inquinare l'ambiente e rispettare le norme igieniche.",
         "regola": "Camper = Scarico solo in aree dedicate.",
         "trabocchetti": ["deve avvenire"],
@@ -651,6 +744,7 @@ QUESTIONS = [
     {
         "domanda": "L'abbandono sul terreno di rifiuti pericolosi o tossici (olii, liquidi, residui di riparazioni o di sostituzioni) non viene sanzionato",
         "risposta": False,
+        "riassunto": "Rifiuti tossici abbandonati → nessuna sanzione?",
         "spiegazione": "È FALSO. Abbandonare sul terreno rifiuti pericolosi o tossici, come oli o altri liquidi di scarto, è un reato grave. Chi lo fa viene sempre sanzionato con multe salate e, in alcuni casi, anche con conseguenze penali.",
         "regola": "Rifiuti pericolosi = Sempre sanzione.",
         "trabocchetti": ["non viene sanzionato"],
@@ -658,6 +752,7 @@ QUESTIONS = [
     {
         "domanda": "Per demolire o rottamare un veicolo, lo si deve consegnare esclusivamente al concessionario della casa costruttrice",
         "risposta": False,
+        "riassunto": "Rottamazione → solo dal concessionario?",
         "spiegazione": "È FALSO. Per demolire o rottamare un veicolo, non devi consegnarlo 'esclusivamente' al concessionario della casa costruttrice. Puoi portarlo anche a un qualsiasi autodemolitore autorizzato, che è un centro specializzato nella rottamazione.",
         "regola": "Rottamare = Non solo concessionario.",
         "trabocchetti": ["esclusivamente"],
@@ -665,6 +760,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato danneggiare le opere e gli impianti stradali",
         "risposta": True,
+        "riassunto": "Danneggiare impianti stradali → vietato?",
         "spiegazione": "È VERO. È fondamentale rispettare e non danneggiare le infrastrutture stradali, come guardrail, segnaletica o semafori. Danneggiarle è un comportamento sbagliato e illegale, perché mette a rischio la sicurezza di tutti.",
         "regola": "Rispetta la strada, è di tutti.",
         "trabocchetti": ["vietato"],
@@ -672,6 +768,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato gettare oggetti e rifiuti dai veicoli in movimento",
         "risposta": True,
+        "riassunto": "Gettare rifiuti dai veicoli → vietato?",
         "spiegazione": "È VERO. Gettare oggetti o rifiuti dal veicolo è pericoloso per gli altri utenti della strada (potrebbe causare incidenti) e inquina l'ambiente. È un comportamento sanzionabile.",
         "regola": "Non sporcare, non rischiare.",
         "trabocchetti": ["vietato"],
@@ -679,6 +776,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato sporcare la carreggiata depositando rifiuti",
         "risposta": True,
+        "riassunto": "Sporcare la carreggiata → vietato?",
         "spiegazione": "È VERO. Sporcare la strada con rifiuti o altri materiali è proibito. Mantiene la carreggiata pulita è importante per la sicurezza e l'igiene pubblica. I rifiuti possono essere un pericolo per i veicoli a due ruote o causare scivolamenti.",
         "regola": "Strada pulita = guida sicura.",
         "trabocchetti": ["vietato"],
@@ -686,12 +784,14 @@ QUESTIONS = [
     {
         "domanda": "E' vietato immettersi sulle strade con le ruote del veicolo sporche di fango",
         "risposta": True,
+        "riassunto": "Ruote sporche di fango → vietato immettersi?",
         "spiegazione": "È VERO. Immettersi sulla strada con le ruote sporche di fango è vietato perché il fango può staccarsi e depositarsi sulla carreggiata, rendendola scivolosa e pericolosa per gli altri veicoli, specialmente per le moto.",
         "regola": "Fango in strada = pericolo.",
     },
     {
         "domanda": "Su tutte le strade è vietato esercitarsi alla guida",
         "risposta": False,
+        "riassunto": "Esercitarsi alla guida → vietato su tutte le strade?",
         "spiegazione": "È FALSO. Non è vietato esercitarsi alla guida su tutte le strade. Con il 'foglio rosa' e un istruttore o una persona con i requisiti richiesti, si può fare pratica su molte strade, purché non siano autostrade o strade extraurbane principali. La chiave è 'tutte le strade'.",
         "regola": "'Tutte' o 'sempre'? Attenzione!",
         "trabocchetti": ["tutte"],
@@ -699,6 +799,7 @@ QUESTIONS = [
     {
         "domanda": "Su tutte le strade sono vietati gli avvisatori acustici (clacson, trombe)",
         "risposta": False,
+        "riassunto": "Clacson → vietato su tutte le strade?",
         "spiegazione": "È FALSO. Gli avvisatori acustici (clacson) non sono vietati su tutte le strade. Nelle aree urbane sono vietati, tranne in caso di pericolo immediato. Fuori dai centri abitati, invece, possono essere usati per segnalare la propria presenza, ad esempio prima di un sorpasso o in curva. Quindi, non 'su tutte' le strade.",
         "regola": "Clacson: solo se serve davvero!",
         "trabocchetti": ["tutte le strade"],
@@ -706,6 +807,7 @@ QUESTIONS = [
     {
         "domanda": "Su tutte le strade è vietato il transito dei veicoli che superano 10 m di lunghezza",
         "risposta": False,
+        "riassunto": "Oltre 10 m → vietati su tutte le strade?",
         "spiegazione": "È FALSO. Non è vietato il transito dei veicoli che superano 10 m di lunghezza su tutte le strade. Ci sono strade dove questi veicoli (come camion o autobus lunghi) possono circolare, anche se con limiti e percorsi specifici. Il divieto si applica solo su alcune strade, non su 'tutte'.",
         "regola": "Non tutte le strade sono uguali.",
         "trabocchetti": ["tutte le strade"],
@@ -713,6 +815,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato parcheggiare nelle zone residenziali",
         "risposta": False,
+        "riassunto": "Zone residenziali → parcheggio vietato?",
         "spiegazione": "È FALSO. Non è vietato parcheggiare nelle zone residenziali in generale. Si può parcheggiare, ma bisogna rispettare la segnaletica (strisce blu, bianche, gialle), gli orari e le eventuali tariffe. Il divieto è solo in specifici punti o in assenza di spazi regolamentari, non in tutta la zona.",
         "regola": "Parcheggio: con regole, non vietato.",
         "trabocchetti": ["vietato"],

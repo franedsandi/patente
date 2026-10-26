@@ -24,6 +24,8 @@ Quiz automatici (Windows Task Scheduler, orari in pianificazione.json):
 
 Risposte:  VERO = y / v / t / s       FALSO = n / f
            p = salta   q = esci   i = apri immagine
+Aiuti prima di rispondere (non nel --forzato):
+           r1 = parole chiave evidenziate   r2 = riassunto della domanda
   (nell'esame non puoi saltare; nel --forzato non puoi uscire)
 
 Quando sbagli: vedi la spiegazione; premi ? per la regola breve,
@@ -217,7 +219,8 @@ def record_error(q, user_answer, all_errors):
 # Tasti equivalenti: tutti diventano "y" (VERO) o "n" (FALSO).
 TRUE_KEYS = ("y", "v", "t", "s")    # yes, vero, true, sì
 FALSE_KEYS = ("n", "f")             # no, falso/false
-OTHER_KEYS = {"p": "salta", "q": "esci", "i": "immagine"}
+OTHER_KEYS = {"r1": "parole chiave", "r2": "riassunto",
+              "p": "salta", "q": "esci", "i": "immagine"}
 
 def read_answer(prompt, allowed, forzato=False):
     """Legge un tasto tra quelli in `allowed` ("y", "n", "p", "q", "i").
@@ -260,18 +263,51 @@ def show_rule_on_request(rule):
     if ans == "?":
         print(f"       {B}{rule}{X}")
 
+# ---- aiuti prima di rispondere (r1, r2) -------------------------------------
+# r1: parole che spesso decidono la risposta (assoluti, negazioni, obblighi, numeri)
+KEY_WORDS = re.compile(
+    r"\b(sempre|mai|solo|soltanto|solamente|unicamente|esclusivamente|"
+    r"tutti|tutte|tutto|ogni|qualsiasi|qualunque|nessun|nessuno|nessuna|"
+    r"non|né|anche|almeno|oltre|entro|superiore|inferiore|massim[oaie]|minim[oaie]|"
+    r"obbligatori[oaie]?|obbligo|vietat[oaie]|divieto|consentit[oaie]|"
+    r"permess[oaie]|ammess[oaie]|deve|devono|può|possono)\b"
+    r"|\b\d+(?:[.,]\d+)?\s*(?:km/h|km|metri|m|cm|mm|anni|anno|mesi|giorni|ore|minuti|punti|kg|g/l|%)?",
+    re.IGNORECASE,
+)
+
+def show_key_words(text):
+    marked, count = KEY_WORDS.subn(lambda m: f"{U}{Y}{m.group(0)}{X}", text)
+    if count:
+        print(f"       {D}parole chiave:{X} {marked}")
+    else:
+        print(f"       {D}nessuna parola chiave trovata: prova r2{X}")
+
+# r2: riassunto scritto dall'AI, nel campo "riassunto" della domanda
+def show_summary(q):
+    if q.get("riassunto"):
+        print(f"       {D}riassunto:{X} {B}{q['riassunto']}{X}")
+    else:
+        print(f"       {D}riassunto non disponibile per questa domanda{X}")
+
 # ---- una domanda (usata da tutte le modalità) -------------------------------
 def ask_question(q, header, allowed, all_errors, mastery, hint="", forzato=False):
     """Mostra una domanda, legge la risposta e salva il risultato.
     Ritorna "corretta", "errata", "saltata" oppure "esci"."""
     print(f"{B}[{header}]{X} {D}({q['categoria']}){X}")
     print(f"       {q['domanda']}")
+    if not forzato:   # nel --forzato niente aiuti prima di rispondere
+        allowed = allowed + ["r1", "r2"]
     if q.get("immagine"):
         print(f"       {D}immagine: {image_link(q['immagine'])}  (i = apri){X}")
         allowed = allowed + ["i"]
     ans = read_answer(f"       {Y}▸ {hint}{X} ", allowed, forzato=forzato)
-    while ans == "i":
-        open_image(q["immagine"])
+    while ans in ("i", "r1", "r2"):   # aiuti: si possono usare più volte, poi si risponde
+        if ans == "i":
+            open_image(q["immagine"])
+        elif ans == "r1":
+            show_key_words(q["domanda"])
+        else:
+            show_summary(q)
         ans = read_answer(f"       {Y}▸ {hint}{X} ", allowed, forzato=forzato)
     if ans == "q":
         return "esci"
@@ -321,11 +357,13 @@ def exam_session(forzato=False):
         print(f"{B}{R}║  QUIZ OBBLIGATORIO — ESAME PATENTE B SIMULATO                ║{X}")
         print(f"{B}{R}║  {EXAM_QUESTIONS} domande · promosso con massimo {EXAM_MAX_ERRORS} errori          ║{X}")
         print(f"{B}{R}║  Ctrl+C disabilitato · completa l'esame per poter continuare ║{X}")
+        print(f"{B}{R}║  i = apri immagine                                           ║{X}")
         print(f"{B}{R}╚{bar}╝{X}\n")
     else:
         print(f"{B}{C}┌─ Esame Patente B simulato — {datetime.now().strftime('%d/%m/%Y %H:%M')}{X}")
         print(f"{D}│  {EXAM_QUESTIONS} domande casuali · promosso con max {EXAM_MAX_ERRORS} errori · tempo esame reale: {EXAM_TIME_LIMIT_MIN} min{X}")
-        print(f"{D}│  y/v/t/s = VERO · n/f = FALSO{' · q = esci' if not forzato else ''}{X}")
+        print(f"{D}│  y/v/t/s = VERO · n/f = FALSO · q = esci{X}")
+        print(f"{D}│  aiuti: r1 = parole chiave · r2 = riassunto · i = immagine{X}")
         print(f"{D}└──────────────────────────────────────────────────────────────{X}\n")
 
     hint = "(VERO: y/v/t/s · FALSO: n/f)" if forzato else "(VERO/FALSO, q=esci)"
@@ -376,6 +414,7 @@ def practice_session(pool, title):
 
     print(f"{B}{C}┌─ {title} — {total} domande{X}")
     print(f"{D}│  y/v/t/s = VERO · n/f = FALSO · p = salta · q = esci{X}")
+    print(f"{D}│  aiuti: r1 = parole chiave · r2 = riassunto · i = immagine{X}")
     print(f"{D}└──────────────────────────────────────────────────────────────{X}\n")
 
     for i, q in enumerate(pool, 1):
@@ -501,7 +540,7 @@ def check_bank():
             problems.append(f"{where}: domanda vuota")
         if not isinstance(q["risposta"], bool):
             problems.append(f"{where}: risposta deve essere True o False → {short}")
-        for field in ("spiegazione", "regola", "immagine"):
+        for field in ("riassunto", "spiegazione", "regola", "immagine"):
             if not isinstance(q[field], str):
                 problems.append(f"{where}: \"{field}\" deve essere un testo tra virgolette → {short}")
         if not isinstance(q["trabocchetti"], list):

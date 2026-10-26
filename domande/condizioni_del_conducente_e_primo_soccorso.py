@@ -1,7 +1,7 @@
 """Domande — Condizioni del conducente e primo soccorso.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Condizioni del conducente e primo soccorso"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "E' opportuno, per il conducente che accusa segni di stanchezza, raggiungere la più vicina piazzola di sosta e riposare",
         "risposta": True,
+        "riassunto": "Stanchezza → fermarsi in piazzola a riposare?",
         "spiegazione": "Se ti senti stanco mentre guidi, è molto importante fermarsi. Raggiungere la piazzola di sosta più vicina e riposare è la cosa giusta da fare per la tua sicurezza e quella degli altri. Guidare stanchi è pericoloso perché si può perdere la concentrazione o addormentarsi.",
         "regola": "Stanco al volante? Sosta e riposa!",
         "trabocchetti": ["opportuno"],
@@ -17,6 +18,7 @@ QUESTIONS = [
     {
         "domanda": "E' opportuno, per il conducente che accusa segni di stanchezza, avvicinarsi il più possibile al veicolo che lo precede nella marcia",
         "risposta": False,
+        "riassunto": "Stanchezza → avvicinarsi a chi precede?",
         "spiegazione": "Questa affermazione è falsa. Se sei stanco, la tua attenzione e i tuoi riflessi sono più lenti. Avvicinarsi al veicolo che ti precede è molto pericoloso perché aumenti il rischio di un incidente (tamponamento). Devi sempre mantenere una distanza di sicurezza adeguata, e ancora di più se sei stanco.",
         "regola": "Stanco? Aumenta la distanza, non diminuirla!",
         "trabocchetti": ["avvicinarsi il più possibile"],
@@ -24,6 +26,7 @@ QUESTIONS = [
     {
         "domanda": "E' necessario che trascorrano alcune ore affinché un conducente che abbia assunto una quantità eccessiva di bevande alcoliche recuperi l'idoneità alla guida",
         "risposta": True,
+        "riassunto": "Troppo alcol → servono alcune ore?",
         "spiegazione": "È vero. Il nostro corpo ha bisogno di tempo, cioè diverse ore, per eliminare l'alcol. Non si può recuperare subito la capacità di guidare dopo aver bevuto troppo.",
         "regola": "Alcol: solo il tempo lo smaltisce.",
         "trabocchetti": ["alcune ore"],
@@ -31,6 +34,7 @@ QUESTIONS = [
     {
         "domanda": "Un conducente che ha assunto una quantità eccessiva di bevande alcoliche non può recuperare velocemente l'idoneità alla guida, specie se ha assunto anche dei farmaci",
         "risposta": True,
+        "riassunto": "Troppo alcol con farmaci → recupero lento?",
         "spiegazione": "È vero. L'alcol non sparisce velocemente dal corpo. Se poi si prendono anche dei farmaci, la situazione peggiora e il recupero è ancora più lento e pericoloso.",
         "regola": "Alcol + farmaci = pericolo doppio, recupero lento.",
         "trabocchetti": ["non può recuperare velocemente", "specie se ha assunto anche dei farmaci"],
@@ -38,6 +42,7 @@ QUESTIONS = [
     {
         "domanda": "Un conducente che ha assunto una quantità eccessiva di bevande alcoliche può recuperare velocemente l'idoneità alla guida se assume cibi piuttosto salati",
         "risposta": False,
+        "riassunto": "Troppo alcol → cibi salati fanno recuperare?",
         "spiegazione": "È falso. Mangiare cibi salati non aiuta il corpo a eliminare l'alcol più velocemente. L'alcol deve essere smaltito dal fegato e questo richiede tempo, indipendentemente da cosa si mangia.",
         "regola": "Cibo salato non 'lava via' l'alcol.",
         "trabocchetti": ["recuperare velocemente", "cibi piuttosto salati"],
@@ -45,6 +50,7 @@ QUESTIONS = [
     {
         "domanda": "Un conducente che ha assunto una quantità eccessiva di bevande alcoliche può recuperare velocemente l'idoneità alla guida se assume caffè amaro",
         "risposta": False,
+        "riassunto": "Troppo alcol → caffè amaro fa recuperare?",
         "spiegazione": "È falso. Bere caffè amaro può farti sentire più sveglio, ma non elimina l'alcol dal tuo corpo e non ti rende idoneo a guidare. L'alcol rimane nel sangue e i tuoi riflessi sono comunque rallentati.",
         "regola": "Caffè non 'sveglia' la sobrietà.",
         "trabocchetti": ["recuperare velocemente", "caffè amaro"],
@@ -52,6 +58,7 @@ QUESTIONS = [
     {
         "domanda": "L'idoneità alla guida può essere compromessa se si fa uso di alcuni farmaci sedativi",
         "risposta": True,
+        "riassunto": "Sedativi → idoneità compromessa?",
         "spiegazione": "I farmaci sedativi rallentano i tuoi riflessi e possono farti sentire sonnolento. Guidare in queste condizioni è molto pericoloso perché non reagisci in tempo agli imprevisti.",
         "regola": "Sedativi = sonno = non guidare.",
         "trabocchetti": ["alcuni"],
@@ -59,6 +66,7 @@ QUESTIONS = [
     {
         "domanda": "L'idoneità alla guida può essere compromessa se si fa uso di farmaci antidepressivi",
         "risposta": True,
+        "riassunto": "Antidepressivi → idoneità compromessa?",
         "spiegazione": "Anche alcuni farmaci antidepressivi possono causare effetti collaterali come sonnolenza, vertigini o difficoltà di concentrazione. Questi effetti possono rendere la guida meno sicura. È fondamentale leggere il foglietto illustrativo o chiedere al medico.",
         "regola": "Antidepressivi = attenzione agli effetti collaterali.",
         "trabocchetti": ["farmaci antidepressivi", "Compromessa"],
@@ -66,6 +74,7 @@ QUESTIONS = [
     {
         "domanda": "L'idoneità alla guida può essere compromessa se si fa uso di allucinogeni (LSD, ecstasy, ecc.)",
         "risposta": True,
+        "riassunto": "Allucinogeni → idoneità compromessa?",
         "spiegazione": "Gli allucinogeni sono droghe che alterano gravemente la tua percezione della realtà, i tuoi riflessi e la tua capacità di giudizio. Guidare sotto l'effetto di queste sostanze è estremamente pericoloso e illegale.",
         "regola": "Droghe = mai al volante.",
         "trabocchetti": ["allucinogeni", "Compromessa"],
@@ -73,6 +82,7 @@ QUESTIONS = [
     {
         "domanda": "L'idoneità alla guida può essere compromessa se si fa uso di bevande alcoliche",
         "risposta": True,
+        "riassunto": "Alcolici → idoneità compromessa?",
         "spiegazione": "L'alcol riduce i tuoi riflessi, la tua vista e la tua capacità di prendere decisioni rapide. Anche una piccola quantità può aumentare il rischio di incidenti. Per la tua sicurezza e quella degli altri, è meglio non bere se devi guidare.",
         "regola": "Alcol = zero alla guida.",
         "trabocchetti": ["bevande alcoliche", "Compromessa"],
@@ -80,6 +90,7 @@ QUESTIONS = [
     {
         "domanda": "L'idoneità alla guida può essere compromessa se si fa uso di caffè amaro",
         "risposta": False,
+        "riassunto": "Caffè amaro → idoneità compromessa?",
         "spiegazione": "Il caffè contiene caffeina, che è uno stimolante. Non compromette la tua idoneità alla guida, anzi, può aiutarti a rimanere sveglio. Ovviamente, non sostituisce il riposo necessario.",
         "regola": "Caffè = sveglio, non compromesso.",
         "trabocchetti": ["amaro"],
@@ -87,6 +98,7 @@ QUESTIONS = [
     {
         "domanda": "L'idoneità alla guida può essere compromessa se si fa uso di bevande gassate",
         "risposta": False,
+        "riassunto": "Bevande gassate → idoneità compromessa?",
         "spiegazione": "Le bevande gassate, come la cola o l'aranciata, non contengono sostanze che alterano la tua capacità di guidare. Sono bevande comuni e non pericolose per la guida.",
         "regola": "Bibite gassate = nessun problema.",
         "trabocchetti": ["bevande gassate", "Compromessa"],
@@ -94,6 +106,7 @@ QUESTIONS = [
     {
         "domanda": "L'idoneità alla guida può essere compromessa se si fa uso di integratori di sali minerali",
         "risposta": False,
+        "riassunto": "Integratori di sali → idoneità compromessa?",
         "spiegazione": "Gli integratori di sali minerali servono a reintegrare le sostanze perse, ad esempio dopo l'attività fisica. Non hanno effetti negativi sulla tua capacità di guidare.",
         "regola": "Sali minerali = energia, non pericolo.",
         "trabocchetti": ["integratori di sali minerali", "Compromessa"],
@@ -101,6 +114,7 @@ QUESTIONS = [
     {
         "domanda": "L'idoneità alla guida può essere compromessa se si fa uso di integratori alimentari",
         "risposta": False,
+        "riassunto": "Integratori alimentari → idoneità compromessa?",
         "spiegazione": "Gli integratori alimentari, in generale, sono prodotti che completano la dieta e non contengono sostanze che compromettono la guida. È sempre bene leggere l'etichetta, ma di solito non creano problemi.",
         "regola": "Integratori = di solito ok.",
         "trabocchetti": ["integratori alimentari", "Compromessa"],
@@ -108,6 +122,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di hashish o di marijuana può compromettere la facoltà di guida",
         "risposta": True,
+        "riassunto": "Hashish o marijuana → guida compromessa?",
         "spiegazione": "L'hashish e la marijuana sono droghe che alterano la tua percezione, i tuoi riflessi e la tua capacità di giudizio. Guidare sotto il loro effetto è molto pericoloso perché non sei lucido e non reagisci in tempo. Quindi, la frase è VERA.",
         "regola": "Droghe (anche leggere) = Guida NO!",
         "trabocchetti": ["può"],
@@ -115,6 +130,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di eroina o di cocaina può compromettere la facoltà di guida",
         "risposta": True,
+        "riassunto": "Eroina o cocaina → guida compromessa?",
         "spiegazione": "L'eroina e la cocaina sono droghe molto potenti e pericolose. Alterano gravemente la mente e il corpo, rendendo impossibile guidare in sicurezza. I tuoi riflessi sono lenti o incontrollati, e non puoi prendere decisioni giuste. Quindi, la frase è VERA.",
         "regola": "Droghe pesanti = Guida MAI!",
         "trabocchetti": ["può"],
@@ -122,6 +138,7 @@ QUESTIONS = [
     {
         "domanda": "Nei farmaci sedativi sono presenti alcune sostanze che possono compromettere la facoltà di guida",
         "risposta": True,
+        "riassunto": "Sedativi → sostanze che compromettono la guida?",
         "spiegazione": "I farmaci sedativi sono quelli che ti fanno sentire rilassato o ti aiutano a dormire. Queste sostanze possono rallentare i tuoi riflessi, diminuire la tua attenzione e farti sentire assonnato. Per questo, è fondamentale leggere il foglietto illustrativo di ogni farmaco e chiedere al medico o al farmacista se puoi guidare. Quindi, la frase è VERA.",
         "regola": "Farmaci sedativi = Attenzione doppia! Leggi il bugiardino.",
         "trabocchetti": ["alcune sostanze", "possono compromettere"],
@@ -129,6 +146,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di LSD o l'anfetamina non compromette la facoltà di guida",
         "risposta": False,
+        "riassunto": "LSD o anfetamine → nessun effetto sulla guida?",
         "spiegazione": "L'LSD e l'anfetamina sono droghe molto pericolose. L'LSD provoca allucinazioni e altera completamente la realtà, mentre l'anfetamina rende iperattivi e poi causa un forte crollo. Entrambe rendono la guida estremamente pericolosa e impossibile. La frase dice che 'non compromette' la facoltà di guida, il che è FALSO.",
         "regola": "Droghe = Guida sempre compromessa. 'Non' è la trappola!",
         "trabocchetti": ["non"],
@@ -136,6 +154,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di hashish o di marijuana non compromette la facoltà di guida",
         "risposta": False,
+        "riassunto": "Hashish o marijuana → nessun effetto sulla guida?",
         "spiegazione": "Come abbiamo visto nella domanda 24841, l'hashish e la marijuana alterano la percezione, i tempi di reazione e la capacità di giudizio. Guidare sotto il loro effetto è pericoloso. Quindi, la frase che dice 'non compromette' la facoltà di guida è FALSO.",
         "regola": "Droghe (leggere o pesanti) = Guida sempre a rischio. 'Non' è sbagliato!",
         "trabocchetti": ["non"],
@@ -143,6 +162,7 @@ QUESTIONS = [
     {
         "domanda": "Un'alimentazione pesante ed eccessiva è sconsigliata per chi deve guidare",
         "risposta": True,
+        "riassunto": "Pasto pesante → sconsigliato prima di guidare?",
         "spiegazione": "Mangiare troppo e cibi pesanti prima di guidare non è una buona idea. Il corpo deve lavorare molto per digerire, e questo può farti sentire stanco o assonnato, rendendoti meno attento alla strada.",
         "regola": "Pancia piena, attenzione meno buona.",
         "trabocchetti": ["sconsigliata"],
@@ -150,6 +170,7 @@ QUESTIONS = [
     {
         "domanda": "L'alimentazione con cibi di difficile digestione può provocare una diminuzione dell'attenzione e un aumento dei tempi di reazione",
         "risposta": True,
+        "riassunto": "Cibi pesanti → meno attenzione e riflessi più lenti?",
         "spiegazione": "Quando mangi cibi difficili da digerire, il tuo corpo usa molta energia per questo processo. Questo può farti sentire meno sveglio, meno concentrato e più lento a reagire a quello che succede sulla strada. È pericoloso perché potresti non vedere un pericolo in tempo.",
         "regola": "Digestione difficile = guida difficile.",
         "trabocchetti": ["diminuzione dell", "e", "Può provocare"],
@@ -157,6 +178,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di bevande superalcoliche, durante un pasto abbondante non compromette la facoltà di guida",
         "risposta": False,
+        "riassunto": "Superalcolici durante un pasto abbondante → nessun effetto?",
         "spiegazione": "Questa affermazione è falsa. Anche se mangi un pasto abbondante, l'alcol, specialmente quello delle bevande superalcoliche, influisce sempre sulla tua capacità di guidare. Il cibo può rallentare un po' l'assorbimento dell'alcol, ma non elimina i suoi effetti negativi sulla tua attenzione, sui riflessi e sulla capacità di giudizio.",
         "regola": "Alcol + guida = mai bene, anche a stomaco pieno.",
         "trabocchetti": ["non compromette"],
@@ -164,6 +186,7 @@ QUESTIONS = [
     {
         "domanda": "L'alcool può causare uno stato di euforia, con conseguente sottovalutazione del pericolo",
         "risposta": True,
+        "riassunto": "Alcol → euforia e pericolo sottovalutato?",
         "spiegazione": "L'alcool, anche in piccole quantità, può farti sentire più sicuro e meno preoccupato, ma questo è un effetto ingannevole. Ti fa sottovalutare i pericoli della strada, rendendoti meno attento e più propenso a prendere rischi. Per questo la risposta è VERO.",
         "regola": "Alcool = Falsa sicurezza, meno attenzione.",
         "trabocchetti": ["euforia", "sottovalutazione del pericolo"],
@@ -171,6 +194,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida in stato di ebbrezza alcolica rischia l'arresto",
         "risposta": True,
+        "riassunto": "Guida in stato di ebbrezza → rischio di arresto?",
         "spiegazione": "Guidare dopo aver bevuto troppo alcool è un reato grave. La legge prevede sanzioni molto severe, che possono includere multe salate, la sospensione o revoca della patente e, nei casi più gravi, anche l'arresto. Per questo la risposta è VERO.",
         "regola": "Guida ubriaco = Rischio arresto.",
         "trabocchetti": ["rischia l"],
@@ -178,6 +202,7 @@ QUESTIONS = [
     {
         "domanda": "E' sconsigliabile guidare quando si ha uno stato emotivo alterato",
         "risposta": True,
+        "riassunto": "Stato emotivo alterato → sconsigliato guidare?",
         "spiegazione": "Quando sei arrabbiato, triste, molto stressato o euforico, la tua mente non è completamente concentrata sulla guida. Le tue reazioni possono essere più lente o potresti prendere decisioni sbagliate. È sempre meglio aspettare di essere calmi e lucidi prima di mettersi al volante. Per questo la risposta è VERO.",
         "regola": "Emozioni forti = Non guidare.",
         "trabocchetti": ["sconsigliabile", "Stato emotivo alterato"],
@@ -185,6 +210,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida un veicolo senza motore, con una concentrazione di alcool nel sangue superiore al limite stabilito, non è soggetto ad alcuna sanzione",
         "risposta": False,
+        "riassunto": "Veicolo senza motore ubriachi → nessuna sanzione?",
         "spiegazione": "Anche se guidi un veicolo senza motore, come una bicicletta, sei comunque considerato un utente della strada. Se vieni trovato con un tasso alcolemico superiore al limite, sei soggetto alle stesse sanzioni previste per chi guida veicoli a motore, anche se le sanzioni sulla patente (se non ce l'hai) saranno diverse. Non c'è immunità! Per questo la risposta è FALSO.",
         "regola": "Alcool = Sanzioni per tutti i veicoli.",
         "trabocchetti": ["non è soggetto ad alcuna sanzione", "Alcuna"],
@@ -192,6 +218,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida in stato di ebbrezza alcoolica ha tempi di reazione più rapidi",
         "risposta": False,
+        "riassunto": "Ebbrezza → riflessi più rapidi?",
         "spiegazione": "L'alcool rallenta il cervello e il corpo. Questo significa che i tuoi tempi di reazione diventano più lenti, non più rapidi. Ci metti più tempo a vedere un pericolo e a reagire, ad esempio frenando o sterzando. Per questo la risposta è FALSO.",
         "regola": "Alcool = Reazioni lente.",
         "trabocchetti": ["più rapidi"],
@@ -199,6 +226,7 @@ QUESTIONS = [
     {
         "domanda": "Soccorrere un ferito della strada è obbligatorio per legge",
         "risposta": True,
+        "riassunto": "Soccorrere un ferito → obbligo di legge?",
         "spiegazione": "Sì, è vero. La legge italiana (il Codice della Strada e il Codice Penale) ti obbliga a fermarti e prestare soccorso se vedi un incidente con feriti. Non farlo è un reato chiamato 'omissione di soccorso'.",
         "regola": "Ferito = Obbligo Legale!",
         "trabocchetti": ["obbligatorio per legge"],
@@ -206,6 +234,7 @@ QUESTIONS = [
     {
         "domanda": "Soccorrere un ferito della strada può significare salvargli la vita",
         "risposta": True,
+        "riassunto": "Soccorrere un ferito → può salvargli la vita?",
         "spiegazione": "È vero. Un aiuto rapido, anche solo chiamare subito il 112 o il 118, può essere fondamentale per salvare la vita a una persona ferita gravemente. Ogni minuto conta!",
         "regola": "Pronto Soccorso = Vita!",
         "trabocchetti": ["può"],
@@ -213,6 +242,7 @@ QUESTIONS = [
     {
         "domanda": "Soccorrere subito un ferito della strada può evitare che subisca ulteriori danni fisici",
         "risposta": True,
+        "riassunto": "Soccorso immediato → evita danni ulteriori?",
         "spiegazione": "Sì, è vero. Intervenire subito e in modo corretto (ad esempio, mettendo in sicurezza il luogo, coprendo il ferito per il freddo, o non spostandolo se non strettamente necessario) può evitare che la situazione peggiori e che il ferito subisca altri danni.",
         "regola": "Subito = Meno Danni!",
         "trabocchetti": ["può evitare", "Ulteriori danni"],
@@ -220,6 +250,7 @@ QUESTIONS = [
     {
         "domanda": "Soccorrere un ferito della strada non è un obbligo imposto dalla legge, ma solo un dovere morale",
         "risposta": False,
+        "riassunto": "Soccorrere → solo dovere morale?",
         "spiegazione": "No, è falso. Soccorrere un ferito non è solo una questione di 'buona educazione' o 'morale', ma è un preciso obbligo imposto dalla legge. Se non lo fai, puoi avere problemi legali.",
         "regola": "Non solo morale, ma LEGALE!",
         "trabocchetti": ["non è un obbligo imposto dalla legge", "solo un dovere morale"],
@@ -227,6 +258,7 @@ QUESTIONS = [
     {
         "domanda": "Bisogna soccorrere un ferito della strada solo se si considera grave l'incidente",
         "risposta": False,
+        "riassunto": "Soccorrere → solo se l'incidente è grave?",
         "spiegazione": "No, è falso. L'obbligo di soccorso vale sempre quando ci sono feriti, non importa se l'incidente ti sembra grave o leggero. Non sei tu a dover giudicare la gravità, ma devi chiamare i soccorsi.",
         "regola": "Ferito = Soccorso, sempre!",
         "trabocchetti": ["solo"],
@@ -234,6 +266,7 @@ QUESTIONS = [
     {
         "domanda": "Non è obbligatorio soccorrere un ferito della strada, se per farlo, si crea intralcio alla circolazione",
         "risposta": False,
+        "riassunto": "Soccorrere → non obbligatorio se intralcia?",
         "spiegazione": "No, è falso. L'obbligo di soccorso è prioritario. Devi fare il possibile per soccorrere e, allo stesso tempo, segnalare l'incidente per evitare che si crei intralcio o altri pericoli. Non puoi non soccorrere per paura di bloccare il traffico.",
         "regola": "Intralcio? Segnala, ma Soccorri!",
         "trabocchetti": ["Non è obbligatorio"],
@@ -241,6 +274,7 @@ QUESTIONS = [
     {
         "domanda": "Soccorrere un ferito della strada è obbligatorio solo per i medici e il personale sanitario",
         "risposta": False,
+        "riassunto": "Soccorrere → obbligo solo per sanitari?",
         "spiegazione": "No, è falso. L'obbligo di soccorso è per tutti i cittadini, non solo per chi fa il medico o l'infermiere. Certo, loro hanno più competenze, ma il dovere di chiamare aiuto e, se possibile, prestare le prime cure è di tutti.",
         "regola": "Tutti Soccorrono, non solo i Dottori!",
         "trabocchetti": ["solo"],
@@ -248,6 +282,7 @@ QUESTIONS = [
     {
         "domanda": "Non è obbligatorio soccorrere un ferito della strada, per non mettere a repentaglio la propria sicurezza",
         "risposta": False,
+        "riassunto": "Soccorrere → non obbligatorio per non rischiare?",
         "spiegazione": "No, è falso. La tua sicurezza è importante, ma non annulla l'obbligo di soccorso. Devi agire con prudenza, mettere in sicurezza la zona se puoi, ma devi comunque chiamare i soccorsi e, se possibile e senza rischi, aiutare il ferito. Non puoi ignorarlo.",
         "regola": "Sicurezza sì, ma Soccorso sempre!",
         "trabocchetti": ["Non è obbligatorio"],
@@ -255,6 +290,7 @@ QUESTIONS = [
     {
         "domanda": "Il fine del primo soccorso è quello di cercare di mantenere in vita il ferito con semplici e immediati interventi",
         "risposta": True,
+        "riassunto": "Primo soccorso → tenere in vita con interventi semplici?",
         "spiegazione": "Il primo soccorso ha come obiettivo principale quello di aiutare il ferito a rimanere in vita, usando azioni semplici e veloci, prima che arrivino i medici professionisti. È un aiuto immediato per le emergenze.",
         "regola": "Primo soccorso = Salvare la vita subito.",
         "trabocchetti": ["cercare di mantenere in vita", "semplici e immediati interventi"],
@@ -262,6 +298,7 @@ QUESTIONS = [
     {
         "domanda": "Il fine del primo soccorso è quello di assistere il ferito, come meglio possibile, in attesa che arrivi il soccorso medico",
         "risposta": True,
+        "riassunto": "Primo soccorso → assistere fino ai medici?",
         "spiegazione": "Il primo soccorso serve a dare assistenza al ferito nel miglior modo possibile, in attesa che arrivino i soccorsi medici specializzati. Non sostituisce il medico, ma è un ponte per la sua arrivo.",
         "regola": "Primo soccorso = Aspettare i medici, aiutando.",
         "trabocchetti": ["e"],
@@ -269,18 +306,21 @@ QUESTIONS = [
     {
         "domanda": "Nell'intervento di primo soccorso bisogna evitare, per quanto possibile, che il ferito subisca ulteriori danni",
         "risposta": True,
+        "riassunto": "Primo soccorso → evitare danni ulteriori?",
         "spiegazione": "Quando si presta il primo soccorso, è fondamentale fare attenzione a non causare altri danni al ferito. Ad esempio, non bisogna spostarlo se non è strettamente necessario, per non peggiorare le sue condizioni.",
         "regola": "Primo soccorso = Non peggiorare la situazione.",
     },
     {
         "domanda": "Nelle operazioni di primo soccorso bisogna evitare che al ferito vengano praticati interventi sbagliati o dannosi",
         "risposta": True,
+        "riassunto": "Primo soccorso → evitare interventi sbagliati?",
         "spiegazione": "Nelle operazioni di primo soccorso, devi fare solo ciò che sai fare e che è sicuro. Non devi provare interventi che non conosci bene, perché potresti fare più male che bene al ferito.",
         "regola": "Primo soccorso = Solo interventi sicuri.",
     },
     {
         "domanda": "Il fine del primo soccorso è quello di chiedere subito al ferito come è avvenuto l'incidente",
         "risposta": False,
+        "riassunto": "Primo soccorso → chiedere subito come è successo?",
         "spiegazione": "Il primo obiettivo del primo soccorso non è chiedere subito al ferito cosa è successo. La priorità è la sua salute e sicurezza. Le domande sull'incidente possono aspettare che la persona sia stabile.",
         "regola": "Primo soccorso = Prima la vita, poi le domande.",
         "trabocchetti": ["subito"],
@@ -288,6 +328,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intervento di primo soccorso bisogna allontanare in ogni caso il ferito dal posto in cui si trova",
         "risposta": False,
+        "riassunto": "Primo soccorso → spostare sempre il ferito?",
         "spiegazione": "Non bisogna spostare il ferito dal luogo dell'incidente 'in ogni caso'. Si sposta solo se c'è un pericolo immediato (es. incendio, crollo). Spostare una persona ferita senza necessità può causare danni gravi, specialmente alla colonna vertebrale.",
         "regola": "Primo soccorso = Non spostare, se non c'è pericolo.",
         "trabocchetti": ["in ogni caso"],
@@ -295,6 +336,7 @@ QUESTIONS = [
     {
         "domanda": "Durante un intervento di primo soccorso non bisogna mai toccare il ferito se non è ancora arrivata la polizia",
         "risposta": False,
+        "riassunto": "Primo soccorso → non toccarlo prima della polizia?",
         "spiegazione": "Non è vero che non si deve toccare il ferito prima dell'arrivo della polizia. Il primo soccorso è un dovere e va prestato immediatamente, senza aspettare l'arrivo di altre autorità.",
         "regola": "Primo soccorso = Aiuta subito, non aspettare nessuno.",
         "trabocchetti": ["non bisogna mai toccare", "se non è ancora arrivata la polizia"],
@@ -302,6 +344,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha una ferita sanguinante la si deve coprire con materiale sterile o quanto più possibile pulito, per bloccare il sanguinamento",
         "risposta": True,
+        "riassunto": "Ferita sanguinante → coprire con materiale sterile o pulito?",
         "spiegazione": "Quando una persona ha una ferita che sanguina, è importante coprirla. Usare materiale pulito, come una garza sterile o un panno pulito, aiuta a fermare il sangue e a proteggere la ferita da sporco e germi. Questo è un gesto fondamentale di primo soccorso.",
         "regola": "Copri e premi, il sangue fermi.",
         "trabocchetti": ["quanto più possibile pulito"],
@@ -309,6 +352,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha una ferita sanguinante, sporca di terra, bisogna lavarla quanto prima con acqua pulita",
         "risposta": True,
+        "riassunto": "Ferita sporca di terra → lavarla con acqua pulita?",
         "spiegazione": "Se una ferita sanguina ed è sporca, ad esempio con della terra, è molto importante pulirla. Lavarla con acqua pulita aiuta a rimuovere lo sporco e a prevenire infezioni. Fai attenzione a non strofinare troppo forte.",
         "regola": "Ferita sporca? Acqua pulita!",
         "trabocchetti": ["quanto prima", "Acqua pulita"],
@@ -316,6 +360,7 @@ QUESTIONS = [
     {
         "domanda": "Durante un intervento di primo soccorso, se l'infortunato ha una ferita sanguinante, con presenza di corpi estranei conficcati , non bisogna toglierli dalla ferita",
         "risposta": True,
+        "riassunto": "Corpi estranei conficcati → non toglierli?",
         "spiegazione": "Se vedi un oggetto (come un pezzo di vetro o un coltello) conficcato in una ferita, non devi mai toglierlo. Rimuovere l'oggetto potrebbe causare più danni, aumentare il sanguinamento o creare altre complicazioni. È meglio lasciare l'oggetto e aspettare l'arrivo dei soccorsi professionali.",
         "regola": "Oggetto conficcato? Non toccarlo!",
         "trabocchetti": ["non bisogna toglierli", "Corpi estranei conficcati"],
@@ -323,6 +368,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha una ferita sanguinante, bisogna tamponarla con garze sterili o panni puliti",
         "risposta": True,
+        "riassunto": "Ferita sanguinante → tamponare con garze o panni puliti?",
         "spiegazione": "Per fermare una ferita che sanguina, devi applicare pressione. Questo si fa 'tamponando' la ferita, cioè premendo sopra con garze sterili o, se non le hai, con panni puliti. La pressione aiuta il sangue a coagulare e a fermarsi.",
         "regola": "Sanguina? Tampona e premi.",
         "trabocchetti": ["Tamponarla", "garze sterili o panni puliti"],
@@ -330,6 +376,7 @@ QUESTIONS = [
     {
         "domanda": "Durante un intervento di primo soccorso, se l'infortunato ha una ferita sanguinante, si devono togliere subito gli eventuali corpi estranei in essa presenti e, successivamente, coprire la ferita",
         "risposta": False,
+        "riassunto": "Corpi estranei → toglierli subito?",
         "spiegazione": "Questa affermazione è falsa perché, come abbiamo visto, non si devono mai togliere i corpi estranei conficcati in una ferita. Togliere un oggetto potrebbe peggiorare la situazione, causando più dolore, più sangue o danni maggiori. Devi lasciare l'oggetto e coprire la ferita intorno ad esso, se possibile.",
         "regola": "Corpi conficcati? Mai estrarre!",
         "trabocchetti": ["subito"],
@@ -337,6 +384,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha una ferita sanguinante ed è incosciente, bisogna dargli da bere acqua o tè",
         "risposta": False,
+        "riassunto": "Ferito incosciente sanguinante → dargli da bere?",
         "spiegazione": "Se una persona è incosciente (cioè non risponde e non è sveglia), non devi mai darle da bere nulla, nemmeno acqua o tè. Potrebbe soffocare o il liquido potrebbe andare nei polmoni, causando gravi problemi. Aspetta sempre l'arrivo dei soccorsi.",
         "regola": "Incosciente? Niente bocca!",
         "trabocchetti": ["incosciente", "Dargli da bere"],
@@ -344,6 +392,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha una ferita sanguinante non bisogna coprirla, per facilitare l'arresto spontaneo del sangue",
         "risposta": False,
+        "riassunto": "Ferita sanguinante → non coprirla?",
         "spiegazione": "Questa affermazione è falsa. Non coprire una ferita sanguinante è sbagliato. Coprire la ferita e applicare pressione è il modo corretto per aiutare a fermare il sanguinamento e proteggere la ferita. Lasciarla scoperta non 'facilita l'arresto spontaneo', ma aumenta il rischio di infezioni e di perdita di sangue.",
         "regola": "Ferita aperta? Copri e proteggi!",
         "trabocchetti": ["non bisogna coprirla", "arresto spontaneo"],
@@ -351,6 +400,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha una ferita sanguinante si deve versarvi sopra acqua calda, per fermare il sanguinamento",
         "risposta": False,
+        "riassunto": "Ferita sanguinante → acqua calda?",
         "spiegazione": "Questa affermazione è falsa. Versare acqua calda su una ferita sanguinante non serve a fermare il sangue e potrebbe addirittura peggiorare la situazione, causando ustioni o aumentando il dolore. Per fermare il sanguinamento si usa pressione e materiale pulito, non acqua calda.",
         "regola": "Acqua calda? Mai sulla ferita!",
         "trabocchetti": ["acqua calda", "per fermare il sanguinamento"],
@@ -358,6 +408,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha un'abbondante emorragia esterna, bisogna tamponare la ferita e chiamare subito i soccorsi",
         "risposta": True,
+        "riassunto": "Emorragia abbondante → tamponare e chiamare soccorsi?",
         "spiegazione": "In caso di un'abbondante emorragia esterna, è fondamentale agire subito. Tamponare la ferita significa fare pressione per fermare il sangue. Chiamare i soccorsi è essenziale per un aiuto professionale. Entrambe le azioni sono corrette e necessarie.",
         "regola": "Tampona e Chiama: le prime due azioni!",
         "trabocchetti": ["bisogna", "subito"],
@@ -365,12 +416,14 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha un'abbondante emorragia esterna, si deve tamponare subito la ferita, facendo pressione con del materiale pulito o possibilmente sterile",
         "risposta": True,
+        "riassunto": "Emorragia → premere con materiale pulito o sterile?",
         "spiegazione": "Per tamponare correttamente una ferita con emorragia, devi fare pressione direttamente sulla ferita. Usare materiale pulito o, se possibile, sterile, aiuta a prevenire infezioni. Questa è la procedura corretta di primo soccorso.",
         "regola": "Pressione pulita per fermare il sangue.",
     },
     {
         "domanda": "Se un infortunato della strada ha un'abbondante emorragia esterna, bisogna cercare di arrestare la fuoriuscita del sangue",
         "risposta": True,
+        "riassunto": "Emorragia → fermare l'uscita del sangue?",
         "spiegazione": "L'obiettivo principale in caso di emorragia abbondante è fermare la perdita di sangue. 'Arrestare la fuoriuscita del sangue' è esattamente ciò che si deve fare per salvare la vita dell'infortunato.",
         "regola": "Stop al sangue, sempre!",
         "trabocchetti": ["bisogna cercare di arrestare"],
@@ -378,6 +431,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha un'abbondante emorragia esterna è opportuno, se possibile, mettere il ferito in posizione seduta o sdraiata, in attesa che arrivino i soccorsi",
         "risposta": True,
+        "riassunto": "Emorragia → ferito seduto o sdraiato?",
         "spiegazione": "Mettere il ferito in una posizione comoda (seduta o sdraiata) aiuta a mantenerlo calmo, a ridurre lo shock e a gestire meglio la situazione in attesa dei soccorsi. È una buona pratica di primo soccorso.",
         "regola": "Posizione comoda, attesa calma.",
         "trabocchetti": ["è opportuno, se possibile"],
@@ -385,6 +439,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha un'abbondante emorragia esterna, bisogna solo medicare la ferita",
         "risposta": False,
+        "riassunto": "Emorragia → solo medicare?",
         "spiegazione": "In caso di emorragia abbondante, 'solo medicare la ferita' non è sufficiente. Prima di tutto bisogna fermare il sangue (tamponare con pressione) e chiamare i soccorsi. La medicazione è un passo successivo, non l'unico e non il primo.",
         "regola": "'Solo' è quasi sempre FALSO in primo soccorso.",
         "trabocchetti": ["solo"],
@@ -392,6 +447,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha un'abbondante emorragia esterna, si deve coprire la ferita e far camminare l'infortunato",
         "risposta": False,
+        "riassunto": "Emorragia → far camminare il ferito?",
         "spiegazione": "Far camminare una persona con un'emorragia abbondante è molto pericoloso. Il movimento può aumentare la perdita di sangue, peggiorare lo stato di shock o causare svenimenti. L'infortunato deve rimanere fermo.",
         "regola": "Non muovere chi sanguina!",
         "trabocchetti": ["far camminare l"],
@@ -399,6 +455,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha un'abbondante emorragia esterna non si può assolutamente dargli da bere acqua",
         "risposta": False,
+        "riassunto": "Emorragia → niente acqua da bere?",
         "spiegazione": "Non è vero che non si può assolutamente dare acqua a un infortunato con emorragia esterna. Se la persona è cosciente e in grado di bere, piccole quantità d'acqua possono aiutarla a reidratarsi e a sentirsi meglio. La regola di non dare da bere è più legata a casi di incoscienza o interventi chirurgici imminenti.",
         "regola": "'Assolutamente' spesso è FALSO. L'acqua, se cosciente, può aiutare.",
         "trabocchetti": ["assolutamente"],
@@ -406,6 +463,7 @@ QUESTIONS = [
     {
         "domanda": "Se ad un infortunato della strada è entrato un corpo estraneo in un occhio (scheggia di vetro, legno o altro), bisogna bendarglielo, senza procedere ad altre manovre",
         "risposta": True,
+        "riassunto": "Corpo estraneo nell'occhio → bendare e basta?",
         "spiegazione": "Se un oggetto entra nell'occhio, è importante coprirlo (bendarglielo) per proteggerlo e non fare altro. Questo evita di peggiorare la situazione prima che arrivi un medico specialista.",
         "regola": "Copri e non toccare.",
         "trabocchetti": ["senza procedere ad altre manovre"],
@@ -413,6 +471,7 @@ QUESTIONS = [
     {
         "domanda": "Se ad un infortunato della strada è entrato un corpo estraneo in un occhio, bisogna consigliargli di non toccare l'occhio danneggiato, per evitare danni maggiori",
         "risposta": True,
+        "riassunto": "Corpo estraneo nell'occhio → non toccarlo?",
         "spiegazione": "È fondamentale dire all'infortunato di non toccare l'occhio. Se lo tocca, potrebbe spingere l'oggetto più a fondo o graffiare l'occhio, causando un danno maggiore.",
         "regola": "Non toccare mai.",
         "trabocchetti": ["non toccare l"],
@@ -420,6 +479,7 @@ QUESTIONS = [
     {
         "domanda": "Se ad un infortunato della strada è entrato un corpo estraneo in un occhio, bisogna bendarglielo, evitando di toccarlo fino all'intervento dello specialista",
         "risposta": True,
+        "riassunto": "Corpo estraneo nell'occhio → bendare fino allo specialista?",
         "spiegazione": "Questa domanda riassume le azioni corrette: bendare l'occhio per proteggerlo e non toccarlo. Bisogna aspettare che un medico specialista (oculista) intervenga, perché solo lui sa come rimuovere l'oggetto in sicurezza.",
         "regola": "Benda e aspetta il medico.",
         "trabocchetti": ["evitando di toccarlo", "fino all"],
@@ -427,6 +487,7 @@ QUESTIONS = [
     {
         "domanda": "Se ad un infortunato della strada è entrato un corpo estraneo in un occhio, bisogna cercare sempre e comunque di toglierglielo",
         "risposta": False,
+        "riassunto": "Corpo estraneo nell'occhio → toglierlo sempre?",
         "spiegazione": "È assolutamente sbagliato cercare di togliere un corpo estraneo dall'occhio. Potresti causare lesioni gravi, come graffi alla cornea o spingere l'oggetto più in profondità. Solo un medico deve farlo.",
         "regola": "Non togliere mai!",
         "trabocchetti": ["sempre e comunque di toglierglielo", "sempre"],
@@ -434,6 +495,7 @@ QUESTIONS = [
     {
         "domanda": "Se ad un infortunato della strada è entrato un corpo estraneo in un occhio, bisogna costringerlo a tenere gli occhi aperti, per evitare altre lesioni",
         "risposta": False,
+        "riassunto": "Corpo estraneo nell'occhio → occhi aperti a forza?",
         "spiegazione": "Non bisogna mai forzare una persona a tenere gli occhi aperti se ha un oggetto nell'occhio. Questo può causare più dolore e, se l'oggetto è appuntito, può provocare ulteriori lesioni mentre l'occhio si muove.",
         "regola": "Non forzare mai.",
         "trabocchetti": ["costringerlo"],
@@ -441,6 +503,7 @@ QUESTIONS = [
     {
         "domanda": "Se ad un infortunato della strada è entrato un corpo estraneo in un occhio, bisogna massaggiargli delicatamente la palpebra, per favorire la lacrimazione",
         "risposta": False,
+        "riassunto": "Corpo estraneo nell'occhio → massaggiare la palpebra?",
         "spiegazione": "Massaggiare la palpebra, anche delicatamente, è molto pericoloso. Potrebbe spostare l'oggetto, graffiare la superficie dell'occhio (cornea) o spingerlo più a fondo, causando danni permanenti.",
         "regola": "Non massaggiare mai.",
         "trabocchetti": ["delicatamente"],
@@ -448,6 +511,7 @@ QUESTIONS = [
     {
         "domanda": "Se ad un infortunato della strada è entrato un corpo estraneo in un occhio non bisogna mai bendargli l'occhio ferito",
         "risposta": False,
+        "riassunto": "Corpo estraneo nell'occhio → mai bendare?",
         "spiegazione": "Questa affermazione è falsa perché, come abbiamo visto, bendare l'occhio ferito è una delle prime cose da fare. Serve a proteggerlo da ulteriori danni e a impedire all'infortunato di toccarlo.",
         "regola": "Benda sempre.",
         "trabocchetti": ["mai"],
@@ -455,12 +519,14 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock si manifesta con pelle molto pallida e fredda",
         "risposta": True,
+        "riassunto": "Shock → pelle pallida e fredda?",
         "spiegazione": "Quando una persona è in stato di shock, il corpo non riesce a mandare abbastanza sangue a tutti gli organi, inclusa la pelle. Per questo motivo, la pelle diventa molto pallida e fredda al tatto.",
         "regola": "Shock = pelle pallida e fredda.",
     },
     {
         "domanda": "Lo stato di shock si manifesta con presenza di sudore freddo alla fronte",
         "risposta": True,
+        "riassunto": "Shock → sudore freddo sulla fronte?",
         "spiegazione": "Sì, la presenza di sudore freddo, specialmente sulla fronte, è un altro segno comune dello stato di shock. Il corpo reagisce allo stress e alla mancanza di sangue con questa sudorazione anomala.",
         "regola": "Shock = sudore freddo.",
         "trabocchetti": ["Sudore freddo"],
@@ -468,12 +534,14 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock si manifesta con presenza di brividi, pelle molto pallida e sudorazione fredda alla fronte",
         "risposta": True,
+        "riassunto": "Shock → brividi, pallore, sudore freddo?",
         "spiegazione": "Questa domanda riassume più sintomi veri dello shock: i brividi (perché il corpo è freddo), la pelle molto pallida e la sudorazione fredda alla fronte. Sono tutti segnali che il corpo è in grave difficoltà.",
         "regola": "Shock = brividi, pallore, sudore freddo.",
     },
     {
         "domanda": "Lo stato di shock si manifesta con pelle molto pallida, sudorazione fredda, frequenti battiti del cuore",
         "risposta": True,
+        "riassunto": "Shock → pallore, sudore freddo, battito accelerato?",
         "spiegazione": "Oltre alla pelle pallida e al sudore freddo, il cuore di una persona in shock batte più velocemente (frequenti battiti) per cercare di pompare più sangue e ossigeno agli organi vitali, compensando la situazione di emergenza.",
         "regola": "Shock = cuore veloce, pallore, sudore freddo.",
         "trabocchetti": ["Frequenti battiti del cuore"],
@@ -481,6 +549,7 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock può manifestarsi con improvvisa pronuncia di frasi e parole senza senso",
         "risposta": True,
+        "riassunto": "Shock → frasi senza senso?",
         "spiegazione": "Quando il cervello non riceve abbastanza ossigeno a causa dello shock, la persona può diventare confusa, disorientata e dire frasi o parole che non hanno senso. È un segno di alterazione delle funzioni cerebrali.",
         "regola": "Shock = anche confusione mentale.",
         "trabocchetti": ["Può manifestarsi"],
@@ -488,6 +557,7 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock si manifesta sempre con un forte aumento della temperatura corporea",
         "risposta": False,
+        "riassunto": "Shock → sempre febbre alta?",
         "spiegazione": "FALSO. Nello stato di shock, la temperatura corporea tende a diminuire o a rimanere normale, e la pelle è fredda. Un forte aumento della temperatura è tipico della febbre, non dello shock.",
         "regola": "'Sempre' è quasi sempre FALSO. Shock = pelle fredda, non calda.",
         "trabocchetti": ["sempre"],
@@ -495,6 +565,7 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock si manifesta con ampie macchie scure sulla pelle",
         "risposta": False,
+        "riassunto": "Shock → macchie scure sulla pelle?",
         "spiegazione": "FALSO. Le ampie macchie scure sulla pelle non sono un sintomo tipico dello stato di shock. Nello shock, la pelle è pallida e fredda, non macchiata di scuro.",
         "regola": "Shock = pallore, non macchie scure.",
         "trabocchetti": ["Ampie macchie scure"],
@@ -502,6 +573,7 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock si manifesta con comparsa di colorito rosso della pelle e forti vampate di calore",
         "risposta": False,
+        "riassunto": "Shock → pelle rossa e vampate?",
         "spiegazione": "FALSO. Questo è l'esatto contrario dei sintomi dello shock. La pelle diventa pallida e fredda, non rossa e calda con vampate. Il colorito rosso e il calore sono segni di altre condizioni, non di shock.",
         "regola": "Shock = pallore e freddo, non rosso e caldo.",
         "trabocchetti": ["Colorito rosso", "forti vampate di calore"],
@@ -509,6 +581,7 @@ QUESTIONS = [
     {
         "domanda": "Un ferito in stato di shock va messo a terra e, se possibile, con le gambe sollevate",
         "risposta": True,
+        "riassunto": "Ferito in shock → a terra con gambe sollevate?",
         "spiegazione": "Quando una persona è in stato di shock, è importante aiutarla a far arrivare più sangue al cervello. Metterla a terra e sollevare le gambe aiuta il sangue a fluire meglio verso la testa e il cuore.",
         "regola": "Shock = Gambe su, testa giù.",
         "trabocchetti": ["se possibile"],
@@ -516,6 +589,7 @@ QUESTIONS = [
     {
         "domanda": "Un ferito in stato di shock va coperto come meglio possibile, per evitare che si raffreddi",
         "risposta": True,
+        "riassunto": "Ferito in shock → coperto per non raffreddarsi?",
         "spiegazione": "Le persone in shock spesso sentono molto freddo e il loro corpo perde calore. Coprirle con una coperta, una giacca o qualsiasi cosa disponibile aiuta a mantenere la temperatura corporea e a farle sentire più al sicuro.",
         "regola": "Shock = Copri e riscalda.",
         "trabocchetti": ["come meglio possibile"],
@@ -523,6 +597,7 @@ QUESTIONS = [
     {
         "domanda": "Un ferito in stato di shock va disteso, tenendo possibilmente le gambe sollevate",
         "risposta": True,
+        "riassunto": "Ferito in shock → disteso con gambe sollevate?",
         "spiegazione": "Questa domanda ripete il concetto della prima. Distendere il ferito e sollevare le gambe è la posizione migliore per aiutarlo in caso di shock, perché favorisce il ritorno del sangue agli organi vitali.",
         "regola": "Shock = Disteso e gambe su.",
         "trabocchetti": ["possibilmente"],
@@ -530,6 +605,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di un ferito in stato di shock, occorre farlo camminare, per riattivargli la circolazione del sangue",
         "risposta": False,
+        "riassunto": "Ferito in shock → farlo camminare?",
         "spiegazione": "È FALSO. Far camminare una persona in shock è molto pericoloso! Potrebbe svenire, cadere e farsi ancora più male, o peggiorare la sua condizione. Deve stare fermo e disteso.",
         "regola": "Shock = Non muovere, non camminare!",
         "trabocchetti": ["farlo camminare", "per riattivargli la circolazione"],
@@ -537,6 +613,7 @@ QUESTIONS = [
     {
         "domanda": "Un ferito in stato di shock va messo in posizione seduta",
         "risposta": False,
+        "riassunto": "Ferito in shock → seduto?",
         "spiegazione": "È FALSO. Mettere il ferito in posizione seduta è sbagliato. In questa posizione, il sangue fa più fatica ad arrivare al cervello, peggiorando lo shock. Deve stare disteso.",
         "regola": "Shock = Mai seduto.",
         "trabocchetti": ["posizione seduta"],
@@ -544,6 +621,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di un ferito in stato di shock, occorre dargli piccoli schiaffi su guance e gambe, per riattivargli la circolazione del sangue",
         "risposta": False,
+        "riassunto": "Ferito in shock → piccoli schiaffi?",
         "spiegazione": "È FALSO. Dare schiaffi a una persona in shock non serve a nulla e può solo spaventarla o farla stare peggio. Non è un modo per riattivare la circolazione del sangue.",
         "regola": "Shock = Non picchiare, non scuotere.",
         "trabocchetti": ["piccoli schiaffi", "per riattivargli la circolazione"],
@@ -551,6 +629,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di un ferito in stato di shock, occorre fargli bere piccole quantità di superalcolici",
         "risposta": False,
+        "riassunto": "Ferito in shock → superalcolici?",
         "spiegazione": "È FALSO. Dare alcolici a una persona in shock è molto pericoloso. L'alcol può peggiorare lo shock e causare altri problemi. Non dare mai da bere alcolici a un ferito, né acqua o cibo.",
         "regola": "Shock = Niente alcol, niente da bere.",
         "trabocchetti": ["superalcolici"],
@@ -558,6 +637,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada è in stato di incoscienza, bisogna verificare se respira ancora, mettendo una mano sulla parte laterale bassa del torace o sull'addome",
         "risposta": True,
+        "riassunto": "Ferito incosciente → controllare il respiro con la mano sul torace?",
         "spiegazione": "È vero. Se una persona è incosciente, la prima cosa da fare è controllare se respira. Mettere una mano sul torace o sull'addome aiuta a sentire i movimenti della respirazione e capire se la persona sta respirando.",
         "regola": "Incosciente = Controlla il respiro (torace/addome).",
         "trabocchetti": ["verificare se respira ancora"],
@@ -565,6 +645,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada è in stato di incoscienza, può essere mosso solo se si è certi che non abbia traumi alla colonna vertebrale",
         "risposta": True,
+        "riassunto": "Ferito incosciente → spostarlo solo senza traumi alla colonna?",
         "spiegazione": "È vero. Muovere un ferito incosciente è molto pericoloso, specialmente se potrebbe avere un danno alla schiena (colonna vertebrale). Se non sei assolutamente certo che non ci siano traumi, non devi muoverlo per non peggiorare la situazione. L'unica eccezione è se c'è un pericolo immediato (es. incendio).",
         "regola": "Incosciente = Non muovere, a meno di certezza no traumi schiena.",
         "trabocchetti": ["solo", "Se si è certi"],
@@ -572,6 +653,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada è in stato di incoscienza e fa fatica a respirare, bisogna liberare subito il naso e la bocca da eventuali ostruzioni",
         "risposta": True,
+        "riassunto": "Incosciente che respira male → liberare naso e bocca?",
         "spiegazione": "È vero. Se una persona incosciente ha difficoltà a respirare, potrebbe avere qualcosa che blocca il naso o la bocca (come vomito, sangue o la lingua stessa). È fondamentale liberare queste vie respiratorie per permetterle di respirare meglio e prevenire il soffocamento.",
         "regola": "Incosciente + Fatica a respirare = Libera naso/bocca.",
         "trabocchetti": ["liberare subito", "Eventuali ostruzioni"],
@@ -579,6 +661,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada è in stato di incoscienza, bisogna controllare spesso le sue condizioni di salute fino all'arrivo dell'ambulanza",
         "risposta": True,
+        "riassunto": "Ferito incosciente → controllarlo fino all'ambulanza?",
         "spiegazione": "È vero. Le condizioni di un ferito incosciente possono cambiare rapidamente. È fondamentale continuare a controllare come sta (se respira, se reagisce, il colore della pelle) fino a quando non arrivano i soccorsi professionali. Non devi mai lasciare il ferito da solo.",
         "regola": "Incosciente = Monitora sempre fino ai soccorsi.",
         "trabocchetti": ["controllare spesso", "Fino all", "ambulanza"],
@@ -586,6 +669,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada è in stato di incoscienza, bisogna somministrargli bevande alcooliche",
         "risposta": False,
+        "riassunto": "Ferito incosciente → alcolici?",
         "spiegazione": "È falso. Non si deve mai dare da bere o da mangiare a una persona incosciente, specialmente bevande alcoliche. Potrebbe soffocare (il liquido potrebbe andare nei polmoni) o le bevande potrebbero peggiorare la sua condizione. L'alcool è particolarmente dannoso in queste situazioni.",
         "regola": "Incosciente = Niente da bere/mangiare (mai alcool!).",
         "trabocchetti": ["somministrargli", "Bevande alcooliche"],
@@ -593,6 +677,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada è in stato di incoscienza bisogna bloccargli le mani",
         "risposta": False,
+        "riassunto": "Ferito incosciente → bloccargli le mani?",
         "spiegazione": "È falso. Non c'è alcun motivo per bloccare le mani a un ferito incosciente. Questa azione è inutile e potrebbe spaventarlo se si riprende, o causargli ulteriori lesioni se si agita. Bisogna mantenere la calma e non fare azioni non necessarie.",
         "regola": "Incosciente = Non bloccare, non legare.",
         "trabocchetti": ["bloccargli le mani"],
@@ -600,6 +685,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada è in stato di incoscienza bisogna fasciargli la testa",
         "risposta": False,
+        "riassunto": "Ferito incosciente → fasciargli la testa?",
         "spiegazione": "È falso. Fasciare la testa a un ferito incosciente senza sapere se ci sono traumi specifici o emorragie può essere pericoloso. Potrebbe aumentare la pressione all'interno del cranio o nascondere lesioni importanti. Si interviene solo su ferite evidenti e sanguinanti, e con le tecniche corrette.",
         "regola": "Incosciente = Non fasciare la testa a caso.",
         "trabocchetti": ["fasciargli la testa"],
@@ -607,6 +693,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada è in stato di incoscienza bisogna metterlo in posizione semiseduta",
         "risposta": False,
+        "riassunto": "Ferito incosciente → semiseduto?",
         "spiegazione": "È falso. Un ferito incosciente non va messo in posizione semiseduta. Questa posizione può essere pericolosa perché la lingua potrebbe ostruire le vie respiratorie o il vomito potrebbe essere inalato. La posizione corretta, se non si sospettano traumi alla colonna, è la posizione laterale di sicurezza, per evitare il soffocamento.",
         "regola": "Incosciente = Mai semiseduto, pensa alla posizione laterale di sicurezza.",
         "trabocchetti": ["posizione semiseduta"],
@@ -614,6 +701,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada è cosciente, ma ha avuto un trauma della gabbia toracica, bisogna cercare di facilitargli la respirazione mettendolo semi-seduto",
         "risposta": True,
+        "riassunto": "Trauma toracico cosciente → semiseduto per respirare?",
         "spiegazione": "Se una persona è cosciente e ha male al torace (gabbia toracica), metterla semi-seduta (cioè con la schiena un po' sollevata) aiuta a respirare meglio. In questa posizione, il peso degli organi interni non preme sui polmoni, facilitando l'atto respiratorio.",
         "regola": "Trauma toracico + cosciente = semi-seduto per respirare meglio.",
         "trabocchetti": ["semi-seduto"],
@@ -621,6 +709,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada è cosciente, ma ha avuto un trauma della gabbia toracica, con ferita visibile e profonda, bisogna comprimere subito con un panno pulito",
         "risposta": True,
+        "riassunto": "Trauma toracico con ferita profonda → comprimere con panno pulito?",
         "spiegazione": "Se c'è una ferita visibile e profonda sul torace, è fondamentale fermare il sanguinamento. Comprimere la ferita con un panno pulito aiuta a ridurre l'emorragia e protegge la zona da sporco e infezioni, in attesa dei soccorsi.",
         "regola": "Ferita profonda = comprimi subito con panno pulito.",
         "trabocchetti": ["comprimere subito", "Panno pulito"],
@@ -628,6 +717,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha avuto un trauma della gabbia toracica, bisogna assisterlo fino all'arrivo del soccorso medico",
         "risposta": True,
+        "riassunto": "Trauma toracico → assisterlo fino ai medici?",
         "spiegazione": "Un trauma alla gabbia toracica può essere molto grave e le condizioni dell'infortunato possono cambiare rapidamente. È cruciale non lasciare mai sola la persona e continuare a darle assistenza (ad esempio, parlandole, controllando che respiri) finché non arrivano i professionisti del soccorso medico.",
         "regola": "Trauma grave = assisti sempre fino ai soccorsi.",
         "trabocchetti": ["fino all"],
@@ -635,6 +725,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha avuto un trauma della gabbia toracica, bisogna fargli fare profondi respiri",
         "risposta": False,
+        "riassunto": "Trauma toracico → respiri profondi?",
         "spiegazione": "Se una persona ha un trauma al torace, chiederle di fare respiri profondi può causare più dolore, peggiorare eventuali lesioni interne (come costole rotte) o rendere la respirazione ancora più difficile. È meglio che respiri normalmente, senza sforzo.",
         "regola": "Trauma toracico = no respiri profondi, respira normalmente.",
         "trabocchetti": ["profondi respiri"],
@@ -642,12 +733,14 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha avuto un trauma della gabbia toracica, bisogna metterlo in posizione distesa, con le gambe sollevate",
         "risposta": False,
+        "riassunto": "Trauma toracico → disteso con gambe sollevate?",
         "spiegazione": "Mettere una persona con trauma toracico completamente distesa può rendere la respirazione più difficile, perché il diaframma e gli organi interni premono sui polmoni. La posizione semi-seduta è quella più indicata. La posizione con le gambe sollevate è utile per lo shock o svenimento, ma non è la migliore per chi ha difficoltà respiratorie a causa di un trauma al torace.",
         "regola": "Trauma toracico = no disteso, sì semi-seduto.",
     },
     {
         "domanda": "Se un infortunato della strada ha avuto un trauma della gabbia toracica, bisogna farlo stare alzato, per diminuire la fuoriuscita di sangue",
         "risposta": False,
+        "riassunto": "Trauma toracico → in piedi?",
         "spiegazione": "Far stare una persona completamente in piedi o seduta dritta con un trauma toracico può essere molto pericoloso. Potrebbe svenire, cadere e peggiorare le sue condizioni. La posizione non influenza in modo significativo la fuoriuscita di sangue da una ferita interna. La priorità è la stabilità e la facilitazione della respirazione.",
         "regola": "Trauma toracico = non farlo stare alzato, pericolo di caduta.",
         "trabocchetti": ["farlo stare alzato", "per diminuire la fuoriuscita di sangue"],
@@ -655,6 +748,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha riportato fratture agli arti non bisogna muovere gli arti fratturati",
         "risposta": True,
+        "riassunto": "Fratture agli arti → non muoverli?",
         "spiegazione": "Se una persona ha una frattura, non bisogna mai muovere l'arto rotto. Muoverlo può causare più dolore e peggiorare il danno. La cosa giusta è tenerlo fermo.",
         "regola": "Frattura? Non muovere!",
         "trabocchetti": ["non bisogna muovere"],
@@ -662,6 +756,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha riportato fratture agli arti, bisogna bloccarglieli, senza procedere ad altre manovre",
         "risposta": True,
+        "riassunto": "Fratture agli arti → bloccarli e basta?",
         "spiegazione": "È fondamentale bloccare l'arto fratturato per evitare che si muova e causi ulteriori danni. Non devi fare altre manovre complicate, solo immobilizzare l'arto come puoi (ad esempio, con una stecca improvvisata o legandolo al corpo).",
         "regola": "Blocca l'arto, non fare l'eroe.",
         "trabocchetti": ["senza procedere ad altre manovre"],
@@ -669,6 +764,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha riportato fratture agli arti, bisogna coprire le eventuali ferite con materiale pulito",
         "risposta": True,
+        "riassunto": "Fratture → coprire le ferite con materiale pulito?",
         "spiegazione": "Se la frattura ha causato una ferita aperta (ad esempio, l'osso è visibile), è molto importante coprirla con qualcosa di pulito. Questo serve a proteggere la ferita dai germi e prevenire infezioni.",
         "regola": "Ferita aperta? Copri con pulito.",
         "trabocchetti": ["pulito"],
@@ -676,6 +772,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha riportato fratture agli arti, bisogna bloccarglieli e subito dopo, se necessario, attuare le normali misure anti- shock",
         "risposta": True,
+        "riassunto": "Fratture → bloccarle e poi misure anti-shock?",
         "spiegazione": "Dopo aver bloccato l'arto, devi osservare l'infortunato. Se mostra segni di shock (ad esempio, è pallido, sudato, ha freddo), devi attuare le misure anti-shock, come coprirlo con una coperta per tenerlo al caldo e sdraiarlo con le gambe leggermente sollevate.",
         "regola": "Prima blocca, poi pensa allo shock.",
         "trabocchetti": ["se necessario"],
@@ -683,6 +780,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha riportato fratture agli arti, bisogna cercare di farlo camminare, per diminuire il dolore",
         "risposta": False,
+        "riassunto": "Fratture → farlo camminare?",
         "spiegazione": "Far camminare una persona con una frattura è molto pericoloso. Aumenta il dolore, può peggiorare la frattura e causare danni maggiori. Non si deve mai fare.",
         "regola": "Frattura? Non camminare mai!",
         "trabocchetti": ["cercare di farlo camminare", "per diminuire il dolore"],
@@ -690,6 +788,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha riportato fratture agli arti, bisogna chiedergli di muoverli, per valutare il tipo di lesione",
         "risposta": False,
+        "riassunto": "Fratture → chiedergli di muoverle?",
         "spiegazione": "Chiedere a un infortunato di muovere un arto fratturato è sbagliato. Provoca dolore inutile e può peggiorare la lesione. La valutazione del tipo di lesione spetta ai medici, non a te.",
         "regola": "Non muovere, non chiedere di muovere.",
         "trabocchetti": ["chiedergli di muoverli", "per valutare il tipo di lesione"],
@@ -697,6 +796,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha riportato fratture agli arti, con fuoriuscita di un osso, bisogna cercare di riposizionarlo nei tessuti",
         "risposta": False,
+        "riassunto": "Frattura esposta → riposizionare l'osso?",
         "spiegazione": "Se un osso è uscito dalla pelle (frattura esposta), non devi mai cercare di rimetterlo a posto. Questo può causare infezioni gravi e danni ai tessuti. Devi solo coprire la ferita con materiale pulito e aspettare i soccorsi.",
         "regola": "Osso fuori? Non toccare, copri e aspetta.",
         "trabocchetti": ["cercare di riposizionarlo"],
@@ -704,6 +804,7 @@ QUESTIONS = [
     {
         "domanda": "Se un infortunato della strada ha riportato fratture agli arti bisogna dargli da bere una bevanda superalcolica",
         "risposta": False,
+        "riassunto": "Fratture → superalcolico?",
         "spiegazione": "Non si deve mai dare alcol a un infortunato. Le bevande alcoliche possono peggiorare lo stato di shock, interferire con eventuali farmaci o rendere più difficile la diagnosi da parte dei medici.",
         "regola": "Ferito? Niente alcol!",
         "trabocchetti": ["superalcolica"],
@@ -711,6 +812,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada si è ustionato e sono ancora presenti delle residue fiamme, bisogna spegnerle , soffocandole, ad esempio, con una coperta",
         "risposta": True,
+        "riassunto": "Ustionato con fiamme → soffocarle con una coperta?",
         "spiegazione": "Se un ferito ha ancora fiamme addosso, la prima cosa da fare è spegnerle subito. Soffocarle con una coperta è un modo efficace per fermare il fuoco e prevenire ulteriori danni.",
         "regola": "Fiamme = Soffoca subito!",
         "trabocchetti": ["residue fiamme", "Bisogna spegnerle"],
@@ -718,6 +820,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada si è ustionato, è consigliabile non togliere i vestiti rimasti attaccati alla pelle bruciata",
         "risposta": True,
+        "riassunto": "Ustioni → non togliere i vestiti attaccati?",
         "spiegazione": "È molto importante non togliere i vestiti che si sono attaccati alla pelle bruciata. Rimuoverli potrebbe causare più dolore e peggiorare la ferita, strappando la pelle danneggiata. Meglio aspettare i soccorsi.",
         "regola": "Vestiti attaccati = Non toccare!",
         "trabocchetti": ["non togliere"],
@@ -725,6 +828,7 @@ QUESTIONS = [
     {
         "domanda": "Per diminuire il dolore delle ustioni si deve, se possibile, fare uso di acqua fredda",
         "risposta": True,
+        "riassunto": "Dolore da ustioni → acqua fredda?",
         "spiegazione": "L'acqua fredda (non ghiacciata) è un ottimo rimedio immediato per le ustioni. Aiuta a rinfrescare la zona, diminuire il dolore e limitare l'estensione del danno ai tessuti.",
         "regola": "Ustione = Acqua fredda!",
         "trabocchetti": ["acqua fredda", "Se possibile"],
@@ -732,6 +836,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada ha riportato delle ustioni al busto, conviene coprirle con materiale pulito, possibilmente sterile",
         "risposta": True,
+        "riassunto": "Ustioni al busto → coprire con materiale pulito?",
         "spiegazione": "Coprire le ustioni con un materiale pulito, e se possibile sterile, è fondamentale. Questo protegge la ferita da sporco e infezioni, e aiuta a mantenere la temperatura corporea del ferito.",
         "regola": "Ustioni = Copri pulito!",
         "trabocchetti": ["materiale pulito, possibilmente sterile"],
@@ -739,6 +844,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada si è ustionato e sono ancora presenti delle residue fiamme, bisogna aspettare che si spengano da sole, prima di intervenire",
         "risposta": False,
+        "riassunto": "Ustionato con fiamme → aspettare che si spengano?",
         "spiegazione": "È assolutamente FALSO! Aspettare che le fiamme si spengano da sole è estremamente pericoloso e può causare ustioni molto più gravi. Bisogna intervenire immediatamente per spegnerle.",
         "regola": "Fiamme = MAI aspettare!",
         "trabocchetti": ["aspettare che si spengano da sole"],
@@ -746,6 +852,7 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada si è ustionato, bisogna sempre togliere le parti dei vestiti che sono rimaste attaccate alla pelle",
         "risposta": False,
+        "riassunto": "Ustioni → togliere sempre i vestiti attaccati?",
         "spiegazione": "È FALSO. Come abbiamo visto, togliere i vestiti attaccati alla pelle ustionata può peggiorare la ferita e causare più dolore. Non bisogna mai farlo, ma lasciare che siano i soccorritori a gestire la situazione.",
         "regola": "Vestiti attaccati = MAI togliere!",
         "trabocchetti": ["sempre"],
@@ -753,30 +860,35 @@ QUESTIONS = [
     {
         "domanda": "Se un ferito della strada si è ustionato, bisogna disinfettare le bruciature con l'alcool",
         "risposta": False,
+        "riassunto": "Ustioni → disinfettare con alcol?",
         "spiegazione": "È FALSO. L'alcool non va mai usato sulle ustioni. Brucia e irrita la pelle già danneggiata, peggiorando la situazione e causando un dolore intenso. Per le ustioni si usa acqua fredda, non disinfettanti aggressivi.",
         "regola": "Ustioni = NO alcool!",
     },
     {
         "domanda": "Dopo un incidente stradale, il soccorritore che interviene deve valutare bene la situazione, per proteggere gli infortunati da altri pericoli",
         "risposta": True,
+        "riassunto": "Soccorritore → valutare la situazione e proteggere?",
         "spiegazione": "VERO. Dopo un incidente, la prima cosa da fare è mettere in sicurezza il luogo per evitare altri pericoli (ad esempio, altre auto che arrivano o incendi). Questo serve a proteggere sia te che gli infortunati.",
         "regola": "Prima la sicurezza!",
     },
     {
         "domanda": "Dopo un incidente stradale, il soccorritore che interviene deve assistere gli infortunati al meglio delle sue possibilità, senza però prendere iniziative di specifica competenza medica",
         "risposta": True,
+        "riassunto": "Soccorritore → assistere senza iniziative mediche?",
         "spiegazione": "VERO. Devi aiutare gli infortunati con quello che sai fare e puoi fare, ma non devi mai fare cose che solo un medico o un infermiere possono fare (come dare farmaci o fare manovre complesse).",
         "regola": "Aiuta, ma non fare il dottore!",
     },
     {
         "domanda": "Dopo un incidente stradale, il soccorritore che interviene deve prestare assistenza agli infortunati, secondo le proprie possibilità e conoscenze",
         "risposta": True,
+        "riassunto": "Soccorritore → assistenza secondo le proprie capacità?",
         "spiegazione": "VERO. Questa domanda ripete un concetto simile alle precedenti. Devi dare aiuto in base a quello che conosci e alle tue capacità, senza esagerare o fare cose che non sai gestire.",
         "regola": "Aiuta con ciò che sai!",
     },
     {
         "domanda": "Chi è coinvolto in un incidente stradale deve allontanarsi sempre e subito dal luogo in cui si è verificato",
         "risposta": False,
+        "riassunto": "Coinvolti in incidente → allontanarsi subito?",
         "spiegazione": "FALSO. Chi è coinvolto in un incidente non deve mai allontanarsi subito, specialmente se ci sono feriti. È obbligatorio fermarsi, mettere in sicurezza il luogo e chiamare i soccorsi. Andarsene è un reato (omissione di soccorso).",
         "regola": "Non scappare, aiuta!",
         "trabocchetti": ["sempre e subito", "allontanarsi"],
@@ -784,6 +896,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di incidente stradale, bisogna aspettare solo l'arrivo dei soccorsi, senza fare nulla",
         "risposta": False,
+        "riassunto": "Incidente → aspettare senza fare nulla?",
         "spiegazione": "FALSO. Non devi solo aspettare i soccorsi senza fare nulla. Mentre aspetti, devi mettere in sicurezza il luogo, chiamare aiuto e, se puoi e sai come fare, dare un primo soccorso di base agli infortunati.",
         "regola": "Non stare fermo, agisci!",
         "trabocchetti": ["solo l"],
@@ -791,6 +904,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di incidente stradale, la prima cosa che deve fare il soccorritore è identificare l'infortunato, chiedendogli nome e cognome",
         "risposta": False,
+        "riassunto": "Soccorritore → prima chiedere nome e cognome?",
         "spiegazione": "FALSO. La prima cosa da fare non è chiedere nome e cognome. La priorità assoluta è mettere in sicurezza il luogo, chiamare i soccorsi e poi, se possibile, dare un primo aiuto. L'identificazione è importante, ma non è la prima cosa da fare in un'emergenza.",
         "regola": "Prima la vita, poi l'identità!",
         "trabocchetti": ["infortunato"],
@@ -798,6 +912,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di incidente stradale, il soccorritore deve somministrare farmaci alla vittima, se la stessa non ha specifica competenza medica",
         "risposta": False,
+        "riassunto": "Soccorritore non medico → dare farmaci?",
         "spiegazione": "FALSO. Se non sei un medico o un infermiere, non devi mai dare farmaci a una persona ferita. Potresti causare più danni, ad esempio se la persona è allergica o se il farmaco interagisce con altre medicine che prende.",
         "regola": "Niente medicine, solo soccorso!",
         "trabocchetti": ["somministrare farmaci"],
@@ -805,6 +920,7 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock può essere causato da un forte dolore",
         "risposta": True,
+        "riassunto": "Shock → per forte dolore?",
         "spiegazione": "Lo stato di shock è una reazione grave del corpo a situazioni di stress intenso. Un dolore molto forte può stressare il corpo al punto da causare uno shock, perché il sistema nervoso e circolatorio reagiscono in modo anomalo.",
         "regola": "Dolore forte = shock possibile.",
         "trabocchetti": ["può"],
@@ -812,6 +928,7 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock può essere causato da una forte emozione (gioia, rabbia)",
         "risposta": True,
+        "riassunto": "Shock → per forte emozione?",
         "spiegazione": "Anche le emozioni molto intense, sia positive (come una gioia improvvisa ed eccessiva) sia negative (come una rabbia o paura estrema), possono alterare il funzionamento del corpo e portare a uno stato di shock. Il corpo reagisce allo stress emotivo come a uno stress fisico.",
         "regola": "Emozioni estreme = shock possibile.",
         "trabocchetti": ["può essere causato"],
@@ -819,6 +936,7 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock può essere causato da una forte perdita di sangue",
         "risposta": True,
+        "riassunto": "Shock → per forte perdita di sangue?",
         "spiegazione": "Se una persona perde molto sangue, il cuore non ha abbastanza liquido da pompare in tutto il corpo. Questo significa che gli organi non ricevono abbastanza ossigeno e nutrienti, e il corpo va in shock per proteggersi, ma è una condizione molto pericolosa.",
         "regola": "Poco sangue = poco ossigeno = shock.",
         "trabocchetti": ["forte perdita di sangue"],
@@ -826,6 +944,7 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock può essere causato da un forte trauma",
         "risposta": True,
+        "riassunto": "Shock → per forte trauma?",
         "spiegazione": "Un trauma è un danno fisico al corpo, come quello causato da un incidente o una caduta. Un trauma forte può causare dolore intenso, perdita di sangue, danni agli organi o altre lesioni che possono scatenare lo stato di shock.",
         "regola": "Trauma = danno = shock.",
         "trabocchetti": ["forte trauma"],
@@ -833,6 +952,7 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock non può dipendere da forti emozioni",
         "risposta": False,
+        "riassunto": "Shock → mai per emozioni?",
         "spiegazione": "Questa affermazione è FALSA. Come abbiamo visto nella domanda 24943, le forti emozioni (gioia, rabbia, paura) possono assolutamente causare uno stato di shock. Dire che 'non può dipendere' è sbagliato.",
         "regola": "'Non può' è spesso FALSO per lo shock.",
         "trabocchetti": ["non", "può dipendere"],
@@ -840,6 +960,7 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock non si verifica mai nelle persone che hanno avuto un trauma",
         "risposta": False,
+        "riassunto": "Shock → mai dopo un trauma?",
         "spiegazione": "Questa affermazione è FALSA. Come abbiamo visto nella domanda 24945, un trauma è una causa molto comune di shock. Dire che 'non si verifica mai' è completamente sbagliato e pericoloso.",
         "regola": "'Mai' è quasi sempre FALSO per lo shock.",
         "trabocchetti": ["mai"],
@@ -847,6 +968,7 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock non si verifica mai nelle persone che hanno perso molto sangue",
         "risposta": False,
+        "riassunto": "Shock → mai dopo molto sangue perso?",
         "spiegazione": "Questa affermazione è FALSA. Come abbiamo visto nella domanda 24944, la perdita di sangue è una delle cause principali e più pericolose di shock. Dire che 'non si verifica mai' è un errore grave.",
         "regola": "'Mai' è quasi sempre FALSO per lo shock.",
         "trabocchetti": ["mai"],
@@ -854,6 +976,7 @@ QUESTIONS = [
     {
         "domanda": "Lo stato di shock non rappresenta un pericolo per la salute",
         "risposta": False,
+        "riassunto": "Shock → nessun pericolo?",
         "spiegazione": "Questa affermazione è FALSA. Lo stato di shock è una condizione medica molto grave e rappresenta un pericolo enorme per la salute. Se non viene curato rapidamente, può portare a danni permanenti agli organi e persino alla morte.",
         "regola": "Shock = PERICOLO grave.",
         "trabocchetti": ["non rappresenta un pericolo"],
@@ -861,6 +984,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di alcool rende meno sicura la guida, poiché può provocare eccitazione e imprudenza",
         "risposta": True,
+        "riassunto": "Alcol → eccitazione e imprudenza?",
         "spiegazione": "L'alcool può farti sentire più coraggioso o meno preoccupato, ma questo ti porta a guidare in modo pericoloso e senza pensare ai rischi. Per questo, la guida diventa meno sicura.",
         "regola": "Alcool = Falsa sicurezza e imprudenza.",
         "trabocchetti": ["eccitazione", "imprudenza"],
@@ -868,6 +992,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di alcool rende meno sicura la guida, perché può rallentare i riflessi",
         "risposta": True,
+        "riassunto": "Alcol → riflessi più lenti?",
         "spiegazione": "I riflessi sono la velocità con cui reagisci a qualcosa, come frenare o sterzare. L'alcool ti fa reagire più lentamente, quindi non riesci a intervenire in tempo se c'è un pericolo sulla strada.",
         "regola": "Alcool = Riflessi lenti, pericolo certo.",
         "trabocchetti": ["rallentare i riflessi"],
@@ -875,6 +1000,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di alcool rende meno sicura la guida, perché può provocare sonnolenza",
         "risposta": True,
+        "riassunto": "Alcol → sonnolenza?",
         "spiegazione": "Anche se all'inizio l'alcool può sembrare che ti dia energia, dopo un po' ti fa sentire molto stanco e assonnato. Guidare con sonno è pericolosissimo, come guidare bendati.",
         "regola": "Alcool = Sonno al volante, mai!",
         "trabocchetti": ["sonnolenza"],
@@ -882,12 +1008,14 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di alcool rende meno sicura la guida, perché può modificare pericolosamente la capacità di concentrazione e attenzione",
         "risposta": True,
+        "riassunto": "Alcol → meno concentrazione e attenzione?",
         "spiegazione": "Guidare richiede molta attenzione alla strada, ai segnali, agli altri veicoli e a tutto ciò che ti circonda. L'alcool ti impedisce di concentrarti bene, rendendo la guida molto pericolosa perché non vedi o non capisci i pericoli.",
         "regola": "Alcool = Meno attenzione, più rischio.",
     },
     {
         "domanda": "L'assunzione di alcool può far diminuire il livello di attenzione",
         "risposta": True,
+        "riassunto": "Alcol → meno attenzione?",
         "spiegazione": "Questa domanda ripete un concetto importante: l'alcool ti rende meno attento a quello che succede intorno a te mentre guidi. Non riesci a notare i pericoli o a reagire in tempo.",
         "regola": "Alcool = Attenzione giù.",
         "trabocchetti": ["far diminuire il livello di attenzione", "Diminuire"],
@@ -895,6 +1023,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di alcool rende più sicura la guida, perché annulla la stanchezza",
         "risposta": False,
+        "riassunto": "Alcol → annulla la stanchezza?",
         "spiegazione": "Falso! L'alcool non annulla la stanchezza, anzi, dopo un po' ti fa sentire ancora più stanco e assonnato. Non rende la guida più sicura, ma molto più pericolosa.",
         "regola": "Alcool NON annulla stanchezza.",
         "trabocchetti": ["più sicura", "annulla la stanchezza"],
@@ -902,6 +1031,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di alcool facilita la guida, perché fa aumentare la capacità di concentrazione",
         "risposta": False,
+        "riassunto": "Alcol → più concentrazione?",
         "spiegazione": "Falso! L'alcool non facilita la guida e non aumenta la concentrazione. Al contrario, la diminuisce, rendendo difficile guidare bene e in sicurezza.",
         "regola": "Alcool MAI aumenta concentrazione.",
         "trabocchetti": ["facilita la guida", "aumentare la capacità di concentrazione"],
@@ -909,6 +1039,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di alcool facilita la guida, perché rende più vigili e attenti",
         "risposta": False,
+        "riassunto": "Alcol → più vigili?",
         "spiegazione": "Falso! L'alcool non ti rende più vigile (cioè più sveglio e attento) o più attento. Ti rende meno reattivo e meno concentrato, quindi più pericoloso al volante.",
         "regola": "Alcool MAI rende più attenti.",
         "trabocchetti": ["facilita la guida", "più vigili e attenti"],
@@ -916,6 +1047,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di alcool rende la guida più sicura, più allegra e meno noiosa",
         "risposta": False,
+        "riassunto": "Alcol → guida più sicura e allegra?",
         "spiegazione": "Falso! Guidare non è un gioco. L'alcool non rende la guida più sicura, ma molto più pericolosa. Non importa se ti senti più allegro, la sicurezza è la cosa più importante e l'alcool la mette a rischio.",
         "regola": "Guida = Serietà, non allegria da alcool.",
         "trabocchetti": ["più sicura", "più allegra", "meno noiosa"],
@@ -923,6 +1055,7 @@ QUESTIONS = [
     {
         "domanda": "L'assunzione di alcool migliora la vista",
         "risposta": False,
+        "riassunto": "Alcol → migliora la vista?",
         "spiegazione": "Falso! L'alcool non migliora la vista, anzi, può renderla meno chiara, farti vedere doppio o farti avere difficoltà a capire le distanze. Questo è molto pericoloso per guidare.",
         "regola": "Alcool = Vista peggiore, non migliore.",
         "trabocchetti": ["migliora la vista"],
@@ -930,12 +1063,14 @@ QUESTIONS = [
     {
         "domanda": "Durante la guida, si devono usare gli occhiali da vista o le lenti a contatto se nella patente si trova indicato tale obbligo",
         "risposta": True,
+        "riassunto": "Occhiali o lenti → se indicati in patente?",
         "spiegazione": "È VERO. Se sulla tua patente c'è scritto che devi usare gli occhiali o le lenti a contatto, allora sei obbligato a farlo ogni volta che guidi. È una condizione per la tua sicurezza e quella degli altri.",
         "regola": "Patente dice 'sì', occhiali 'sì'.",
     },
     {
         "domanda": "Durante la guida, si devono usare gli occhiali da vista o le lenti a contatto se nella patente è stato inserito il codice armonizzato \"01\"",
         "risposta": True,
+        "riassunto": "Occhiali o lenti → con codice 01?",
         "spiegazione": "È VERO. Il codice armonizzato '01' sulla patente indica proprio l'obbligo di 'correzione della vista'. Quindi, se hai questo codice, devi usare occhiali o lenti a contatto mentre guidi.",
         "regola": "Codice '01' = Occhiali Obbligatori.",
         "trabocchetti": ["codice armonizzato"],
@@ -943,6 +1078,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la guida, si devono usare gli occhiali da vista o le lenti a contatto se nella patente figura, per esteso o sotto forma di codice, tale obbligo",
         "risposta": True,
+        "riassunto": "Occhiali o lenti → se l'obbligo è scritto o in codice?",
         "spiegazione": "È VERO. Non importa se l'obbligo è scritto per intero (ad esempio 'obbligo di lenti') o con un codice (come il '01'). Se è presente sulla patente, devi rispettarlo.",
         "regola": "Scritto o codice, se c'è l'obbligo, li metti.",
         "trabocchetti": ["per esteso o sotto forma di codice"],
@@ -950,6 +1086,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la guida, si devono usare gli occhiali da vista o le lenti a contatto quando è indicato sulla patente",
         "risposta": True,
+        "riassunto": "Occhiali o lenti → quando indicato in patente?",
         "spiegazione": "È VERO. Questa domanda riassume le precedenti. La regola è semplice: se la tua patente indica che devi usare occhiali o lenti a contatto, allora devi farlo.",
         "regola": "Patente comanda, tu obbedisci.",
         "trabocchetti": ["quando è indicato sulla patente"],
@@ -957,6 +1094,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la guida, si deve fare uso di occhiali da vista o di lenti a contatto solo quando la miopia supera 6 diottrie",
         "risposta": False,
+        "riassunto": "Occhiali → solo oltre 6 diottrie?",
         "spiegazione": "È FALSO. L'obbligo di usare occhiali o lenti a contatto non dipende da un numero specifico di diottrie (come '6 diottrie'). Dipende da quello che decide il medico durante la visita per la patente e da quello che viene poi scritto sul documento.",
         "regola": "Non è questione di diottrie, ma di patente.",
         "trabocchetti": ["solo", "6 diottrie"],
@@ -964,6 +1102,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la guida, si deve fare uso di occhiali da vista o di lenti a contatto da mezz'ora dopo il tramonto del sole a mezz'ora prima del suo sorgere",
         "risposta": False,
+        "riassunto": "Occhiali → solo di notte?",
         "spiegazione": "È FALSO. L'obbligo di usare occhiali o lenti a contatto, se indicato sulla patente, vale sempre, a qualsiasi ora del giorno o della notte. Non è legato a orari specifici come quelli del tramonto o dell'alba.",
         "regola": "Occhiali sempre, non solo di notte.",
         "trabocchetti": ["da mezz", "ora prima del suo sorgere"],
@@ -971,6 +1110,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la guida, si devono usare gli occhiali da vista o le lenti a contatto soltanto in caso di scarsa visibilità",
         "risposta": False,
+        "riassunto": "Occhiali → solo con scarsa visibilità?",
         "spiegazione": "È FALSO. Se hai l'obbligo di usare occhiali o lenti a contatto, devi farlo sempre, non 'soltanto in caso di scarsa visibilità'. Il tuo problema di vista esiste sempre, non solo quando c'è nebbia o piove forte.",
         "regola": "Visibilità buona o cattiva, se c'è l'obbligo, li metti.",
         "trabocchetti": ["soltanto"],
@@ -978,6 +1118,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la guida, si deve fare uso di occhiali da vista o di lenti a contatto soltanto sulle autostrade e sulle strade extraurbane principali",
         "risposta": False,
+        "riassunto": "Occhiali → solo su autostrade ed extraurbane?",
         "spiegazione": "È FALSO. L'obbligo di usare occhiali o lenti a contatto, se indicato sulla patente, vale su tutte le strade: in città, in autostrada, su strade extraurbane. Non è limitato solo ad alcuni tipi di strada.",
         "regola": "Obbligo ovunque, non solo in autostrada.",
         "trabocchetti": ["soltanto"],

@@ -1,7 +1,7 @@
 """Domande — Segnali di pericolo.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Segnali di pericolo"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una curva pericolosa a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → curva pericolosa a destra?",
         "spiegazione": "Il segnale raffigurato ti avvisa che più avanti c'è una curva che gira a destra e che può essere pericolosa. La freccia nel segnale indica proprio la direzione della curva.",
         "regola": "Freccia a destra = curva a destra.",
         "trabocchetti": ["Preannuncia"],
@@ -18,6 +19,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto, di norma, a 150 metri dal punto di inizio della curva",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di norma a 150 m dalla curva?",
         "spiegazione": "Questo tipo di segnale di pericolo, fuori dai centri abitati, viene messo di solito a circa 150 metri prima del punto dove inizia la curva, per darti il tempo di prepararti.",
         "regola": "Pericolo fuori città = 150 metri.",
         "trabocchetti": ["Di norma"],
@@ -26,6 +28,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere integrato con pannello con la scritta TORNANTE",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello TORNANTE?",
         "spiegazione": "Se la curva a destra è molto stretta e si gira quasi su se stessi (un tornante), sotto questo segnale può esserci un pannello aggiuntivo con scritto 'TORNANTE' per specificare meglio il tipo di curva.",
         "regola": "Curva stretta = TORNANTE.",
         "trabocchetti": ["Integrato con pannello"],
@@ -34,6 +37,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada pericoloso per ridotta visibilità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pericolo per ridotta visibilità?",
         "spiegazione": "Una curva pericolosa spesso significa che non vedi bene cosa c'è dopo la curva, quindi la visibilità è ridotta. Questo rende il tratto di strada più rischioso.",
         "regola": "Curva = non vedo bene.",
         "trabocchetti": ["Ridotta visibilità"],
@@ -42,6 +46,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di moderare la velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare la velocità?",
         "spiegazione": "Quando c'è una curva pericolosa, devi andare più piano (moderare la velocità) per non perdere il controllo del veicolo e per poter reagire a eventuali ostacoli o situazioni impreviste.",
         "regola": "Pericolo = rallenta.",
         "trabocchetti": ["Moderare la velocità"],
@@ -50,6 +55,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada pericoloso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → tratto pericoloso?",
         "spiegazione": "Questo è un segnale di pericolo (lo riconosci dalla forma triangolare e dal bordo rosso), quindi per definizione avvisa di un tratto di strada che presenta un rischio. La curva è il pericolo specifico.",
         "regola": "Triangolo rosso = pericolo.",
         "trabocchetti": ["Pericoloso"],
@@ -58,6 +64,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una serie di curve pericolose di cui la prima a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → serie di curve, prima a destra?",
         "spiegazione": "Questo segnale indica UNA SOLA curva pericolosa a destra. Se ci fossero più curve (una 'serie di curve'), il segnale sarebbe diverso, con una doppia curva o un'indicazione specifica.",
         "regola": "Una freccia = una curva.",
         "trabocchetti": ["Serie di curve"],
@@ -66,6 +73,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un obbligo di svolta a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di svolta a destra?",
         "spiegazione": "Questo è un segnale di pericolo, non un segnale di obbligo. Ti avvisa di una curva, ma non ti obbliga a girare a destra. I segnali di obbligo sono rotondi e blu.",
         "regola": "Triangolo = pericolo, non obbligo.",
         "trabocchetti": ["Obbligo di svolta"],
@@ -74,6 +82,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → segnale di prescrizione?",
         "spiegazione": "I segnali di prescrizione sono quelli che impongono regole (obblighi, divieti, precedenza) e sono rotondi o quadrati. Questo è un segnale di pericolo, che è sempre triangolare.",
         "regola": "Triangolo = pericolo, non prescrizione.",
         "trabocchetti": ["Segnale di prescrizione"],
@@ -82,6 +91,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in salita",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tratto in salita?",
         "spiegazione": "Il segnale indica una curva, non una salita. Per la salita c'è un altro segnale specifico (triangolare con un'auto che sale o un numero che indica la pendenza).",
         "regola": "Curva non salita.",
         "trabocchetti": ["Salita"],
@@ -90,6 +100,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un cambio di corsia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cambio di corsia?",
         "spiegazione": "Il segnale avvisa di una curva, non di un cambio di corsia. Per il cambio di corsia ci sono altri segnali o la segnaletica orizzontale (le linee sull'asfalto).",
         "regola": "Curva non corsia.",
         "trabocchetti": ["Cambio di corsia"],
@@ -98,6 +109,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una curva a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → curva a sinistra?",
         "spiegazione": "La freccia nel segnale punta chiaramente a destra, quindi la curva è a destra, non a sinistra. È importante guardare bene la direzione della freccia.",
         "regola": "Freccia a destra = curva a destra.",
         "trabocchetti": ["A sinistra"],
@@ -106,6 +118,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, posto su una strada a doppio senso di circolazione, impone di portarsi sulla parte sinistra della carreggiata per affrontare meglio la curva",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, doppio senso → portarsi a sinistra per la curva?",
         "spiegazione": "In Italia si guida sempre a destra. Non si deve mai invadere la corsia opposta, specialmente in curva, perché è molto pericoloso e potresti scontrarti con veicoli che arrivano dall'altra direzione.",
         "regola": "In Italia, sempre a destra!",
         "immagine": "6a0cce51078ac8322078.jpg",
@@ -113,6 +126,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto, di norma, a 5 metri dall'inizio della curva",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di norma a 5 m dalla curva?",
         "spiegazione": "Come detto prima, fuori dai centri abitati i segnali di pericolo sono posti di norma a 150 metri. 5 metri è troppo vicino, non darebbe il tempo di vedere il pericolo e di rallentare in sicurezza.",
         "regola": "5 metri è troppo poco per un pericolo.",
         "trabocchetti": ["5 metri"],
@@ -121,6 +135,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, posto su strada a doppio senso di circolazione e con due sole corsie, si deve circolare il più possibile vicino al margine destro",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, doppio senso a due corsie → tenersi a destra?",
         "spiegazione": "In una curva pericolosa, per la tua sicurezza e quella degli altri, devi sempre tenere la destra. Questo ti aiuta a non invadere la corsia opposta e a mantenere il controllo del veicolo.",
         "regola": "Curva = Stai a destra!",
         "immagine": "6a0cce51078ac8322078.jpg",
@@ -128,6 +143,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cui è necessario regolare la velocità in relazione alla visibilità e al raggio della curva",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità secondo visibilità e raggio della curva?",
         "spiegazione": "Una curva pericolosa richiede di rallentare. La velocità giusta dipende da quanto vedi (visibilità) e da quanto è stretta la curva (raggio). Devi sempre adattare la tua velocità alle condizioni della strada.",
         "regola": "Curva = Rallenta e guarda!",
         "immagine": "6a0cce51078ac8322078.jpg",
@@ -135,6 +151,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cui è necessario percorrere la curva con più attenzione se la strada è bagnata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → più attenzione con strada bagnata?",
         "spiegazione": "Quando la strada è bagnata, l'aderenza degli pneumatici diminuisce. Questo rende la curva ancora più pericolosa, quindi devi essere più prudente e rallentare ulteriormente.",
         "regola": "Bagnato + Curva = Doppia attenzione!",
         "trabocchetti": ["se la strada è bagnata"],
@@ -143,6 +160,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cui non è consentito il sorpasso se la carreggiata è a doppio senso di circolazione e con due sole corsie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, doppio senso a due corsie → sorpasso vietato?",
         "spiegazione": "In una curva pericolosa, specialmente su una strada a doppio senso con solo due corsie, la visibilità è ridotta. Sorpassare è molto pericoloso perché potresti scontrarti con un veicolo che arriva dall'altra direzione. Il Codice della Strada vieta il sorpasso in curva in queste condizioni.",
         "regola": "Curva stretta + Due corsie = No sorpasso!",
         "trabocchetti": ["non è consentito il sorpasso"],
@@ -151,6 +169,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve viaggiare ad andatura particolarmente moderata se si circola con il ruotino (ruota di soccorso)",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → andatura moderata con il ruotino?",
         "spiegazione": "Il ruotino di scorta è più piccolo e meno resistente di una ruota normale. Usarlo riduce la stabilità del veicolo, specialmente in curva. Per questo, devi guidare molto più lentamente e con maggiore prudenza.",
         "regola": "Ruotino + Curva = Super lento!",
         "immagine": "6a0cce51078ac8322078.jpg",
@@ -158,6 +177,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada a due corsie e doppio senso di circolazione in cui è consentito sorpassare i motocicli, senza superare la striscia bianca continua",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, doppio senso → sorpasso di moto senza superare la continua?",
         "spiegazione": "Anche se non superi la striscia continua, sorpassare in curva è pericoloso per la scarsa visibilità. Il Codice della Strada vieta il sorpasso in curva su strade a doppio senso con due corsie, indipendentemente dal tipo di veicolo.",
         "regola": "Curva = No sorpasso, punto!",
         "trabocchetti": ["è consentito sorpassare i motocicli"],
@@ -166,6 +186,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve circolare il più possibile vicino alla striscia bianca che separa i sensi di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tenersi vicino alla striscia di mezzeria?",
         "spiegazione": "Devi circolare il più possibile vicino al margine destro della tua corsia, non vicino alla striscia che separa i sensi di marcia. Avvicinarsi alla striscia centrale ti porterebbe troppo al centro della strada, rischiando di invadere la corsia opposta.",
         "regola": "Curva = Margine destro, non centro!",
         "immagine": "6a0cce51078ac8322078.jpg",
@@ -173,6 +194,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cui è consentita la fermata, ma non la sosta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata sì, sosta no?",
         "spiegazione": "In una curva, sia la fermata che la sosta sono pericolose e generalmente vietate. Fermarsi o sostare riduce la visibilità per gli altri veicoli e può causare incidenti.",
         "regola": "Curva = No fermata, no sosta!",
         "trabocchetti": ["è consentita la fermata, ma non la sosta"],
@@ -181,6 +203,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cui è consentito sorpassare i motocicli, anche invadendo la corsia opposta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso moto invadendo l'opposta?",
         "spiegazione": "Sorpassare in curva è pericoloso per la scarsa visibilità. Invadere la corsia opposta in curva è estremamente pericoloso e vietato, perché potresti scontrarti frontalmente con un veicolo che arriva.",
         "regola": "Curva = No sorpasso, mai invadere!",
         "trabocchetti": ["è consentito sorpassare i motocicli", "anche invadendo la corsia opposta"],
@@ -189,6 +212,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cui è consentito effettuare l'inversione di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inversione di marcia consentita?",
         "spiegazione": "L'inversione di marcia (fare un'inversione a U) è una manovra pericolosa che richiede molto spazio e buona visibilità. In curva, la visibilità è ridotta, quindi è vietato e molto pericoloso.",
         "regola": "Curva = No inversione!",
         "trabocchetti": ["è consentito effettuare l"],
@@ -197,6 +221,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cui è consentito effettuare manovre di retromarcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → retromarcia consentita?",
         "spiegazione": "Fare retromarcia in curva è estremamente pericoloso. Non puoi vedere cosa c'è dietro di te e potresti essere investito da un veicolo che arriva. È una manovra vietata e molto rischiosa in questo contesto.",
         "regola": "Curva = No retromarcia!",
         "immagine": "6a0cce51078ac8322078.jpg",
@@ -204,6 +229,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cui è consentito sorpassare i motocicli, anche superando di poco la striscia bianca continua",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso moto superando di poco la continua?",
         "spiegazione": "Come già detto, sorpassare in curva è vietato su strade a doppio senso con due corsie. Superare la striscia continua, anche di poco, è una violazione del Codice della Strada e aumenta il pericolo.",
         "regola": "Curva = No sorpasso, mai striscia continua!",
         "trabocchetti": ["è consentito sorpassare i motocicli"],
@@ -212,6 +238,7 @@ QUESTIONS = [
     {
         "domanda": "La figura rappresenta un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Figura → segnale di pericolo?",
         "spiegazione": "Questo segnale ha la forma di un triangolo con il bordo rosso. Questa è la forma tipica dei segnali di pericolo, che avvisano i conducenti di situazioni potenzialmente rischiose sulla strada.",
         "regola": "Triangolo rosso = Pericolo.",
         "immagine": "bdcd955031344d5ff561.jpg",
@@ -219,6 +246,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una curva pericolosa a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → curva pericolosa a sinistra?",
         "spiegazione": "La freccia all'interno del segnale indica chiaramente una svolta verso sinistra. Essendo un segnale di pericolo (triangolare con bordo rosso), significa che la curva a sinistra è pericolosa e richiede attenzione.",
         "regola": "Freccia a sinistra = Curva a sinistra.",
         "immagine": "bdcd955031344d5ff561.jpg",
@@ -226,6 +254,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada non rettilineo, che limita la visibilità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → tratto non rettilineo, visibilità limitata?",
         "spiegazione": "Una curva è per definizione un tratto di strada 'non rettilineo'. Le curve pericolose, come quella indicata dal segnale, spesso limitano la visibilità, cioè non si riesce a vedere bene cosa c'è dopo la curva, aumentando il rischio.",
         "regola": "Curva = Non dritto + Poca visibilità.",
         "trabocchetti": ["non rettilineo", "limita la visibilità"],
@@ -234,6 +263,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada che curva a sinistra con limitata visibilità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → curva a sinistra con visibilità limitata?",
         "spiegazione": "Questo segnale avvisa di una curva a sinistra. Le curve, specialmente quelle indicate come 'pericolose', spesso hanno una visibilità ridotta, rendendo più difficile vedere cosa c'è oltre la curva.",
         "regola": "Curva a sinistra + Pericolo = Visibilità limitata.",
         "immagine": "bdcd955031344d5ff561.jpg",
@@ -241,6 +271,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, di norma a 150 metri, una curva pericolosa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → curva pericolosa, di norma a 150 m?",
         "spiegazione": "I segnali di pericolo, come questo, sono posizionati 'di norma' (cioè, solitamente, non sempre) a circa 150 metri prima del punto pericoloso, quando ci si trova fuori dai centri abitati. Questo dà al conducente il tempo di prepararsi.",
         "regola": "Pericolo = 150 metri (fuori città).",
         "trabocchetti": ["di norma", "150 metri"],
@@ -249,6 +280,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada pericoloso per ridotta visibilità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pericolo per ridotta visibilità?",
         "spiegazione": "Una curva pericolosa spesso significa che non si vede bene la strada che segue, cioè c'è una 'ridotta visibilità'. Questa condizione rende il tratto di strada più rischioso.",
         "regola": "Curva pericolosa = Meno visibilità.",
         "trabocchetti": ["ridotta visibilità"],
@@ -257,6 +289,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di moderare la velocità per potersi arrestare in caso di un ostacolo improvviso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per potersi fermare davanti a ostacoli?",
         "spiegazione": "Quando si incontra un segnale di pericolo, è sempre necessario 'moderare la velocità', cioè rallentare e guidare con prudenza. Questo permette di avere più tempo per reagire e fermarsi in sicurezza se dovesse apparire un ostacolo improvviso.",
         "regola": "Pericolo = Rallenta e sii pronto.",
         "trabocchetti": ["moderare la velocità"],
@@ -265,6 +298,7 @@ QUESTIONS = [
     {
         "domanda": "La figura rappresenta un segnale di obbligo",
         "risposta": False,
+        "riassunto": "Figura → segnale di obbligo?",
         "spiegazione": "I segnali di obbligo sono di forma rotonda e di colore blu. Questo segnale è triangolare e rosso, quindi è un segnale di pericolo, non di obbligo.",
         "regola": "Obbligo = Rotondo e blu.",
         "trabocchetti": ["obbligo"],
@@ -273,6 +307,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un ostacolo da aggirare a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ostacolo da aggirare a sinistra?",
         "spiegazione": "Questo segnale indica una curva pericolosa a sinistra. I segnali che indicano un ostacolo da aggirare sono diversi, di solito rotondi e blu, con una freccia che indica la direzione per aggirare l'ostacolo.",
         "regola": "Curva, non ostacolo.",
         "trabocchetti": ["ostacolo da aggirare"],
@@ -281,6 +316,7 @@ QUESTIONS = [
     {
         "domanda": "La figura rappresenta un divieto di svolta a sinistra",
         "risposta": False,
+        "riassunto": "Figura → divieto di svolta a sinistra?",
         "spiegazione": "I segnali di divieto sono di forma rotonda con un bordo rosso e, spesso, una barra diagonale. Un 'divieto di svolta a sinistra' sarebbe un segnale rotondo con una freccia a sinistra barrata. Questo è un segnale di pericolo.",
         "regola": "Divieto = Cerchio rosso.",
         "trabocchetti": ["divieto di svolta a sinistra"],
@@ -289,6 +325,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone l'obbligo di mantenere la sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di tenere la sinistra?",
         "spiegazione": "Questo segnale avvisa di una curva a sinistra, ma non 'impone l'obbligo di mantenere la sinistra'. In Italia, si guida tenendo la destra della carreggiata, anche in curva, a meno di indicazioni diverse.",
         "regola": "In Italia si guida a destra.",
         "trabocchetti": ["impone l"],
@@ -297,6 +334,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di circolare il più vicino possibile al centro della strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → circolare al centro della strada?",
         "spiegazione": "In una curva, specialmente se pericolosa e con visibilità limitata, è fondamentale tenersi il più possibile a destra per evitare collisioni con veicoli che potrebbero arrivare dalla direzione opposta. Circolare al centro della strada è molto pericoloso.",
         "regola": "Curva = Stai a destra.",
         "immagine": "bdcd955031344d5ff561.jpg",
@@ -304,6 +342,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una circolazione rotatoria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → circolazione rotatoria?",
         "spiegazione": "Il segnale di 'circolazione rotatoria' è di forma rotonda e di colore blu, con frecce che indicano il senso di rotazione. Questo segnale è triangolare e indica una curva pericolosa.",
         "regola": "Rotatoria = Cerchio blu con frecce che girano.",
         "trabocchetti": ["circolazione rotatoria"],
@@ -312,6 +351,7 @@ QUESTIONS = [
     {
         "domanda": "La figura rappresenta un segnale di prescrizione",
         "risposta": False,
+        "riassunto": "Figura → segnale di prescrizione?",
         "spiegazione": "I segnali di prescrizione sono quelli che impongono un obbligo o un divieto (sono rotondi). Questo segnale è un segnale di pericolo (triangolare), che ha lo scopo di avvisare, non di prescrivere un comportamento specifico.",
         "regola": "Prescrizione = Obbligo o Divieto (rotondi).",
         "trabocchetti": ["prescrizione"],
@@ -320,6 +360,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una deviazione per cantiere di lavoro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → deviazione per cantiere?",
         "spiegazione": "I segnali che indicano una 'deviazione per cantiere di lavoro' sono solitamente a fondo giallo e forniscono informazioni su percorsi alternativi a causa di lavori in corso. Questo segnale indica una curva pericolosa.",
         "regola": "Cantiere = Segnali gialli.",
         "trabocchetti": ["deviazione per cantiere di lavoro"],
@@ -328,6 +369,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, su una strada a doppio senso di circolazione con due sole corsie, si deve circolare il più possibile vicino al margine destro",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, doppio senso a due corsie → tenersi a destra?",
         "spiegazione": "In una curva, specialmente se pericolosa e su una strada a doppio senso, è molto importante tenere la destra. Questo ti aiuta a non invadere la corsia opposta e ti dà più spazio per reagire se succede qualcosa di inaspettato.",
         "regola": "Curva = tieni la destra.",
         "immagine": "bdcd955031344d5ff561.jpg",
@@ -335,6 +377,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario regolare la velocità in relazione alla visibilità e al raggio della curva",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità secondo visibilità e raggio?",
         "spiegazione": "La velocità deve sempre essere adatta alle condizioni della strada. In una curva, devi considerare quanto riesci a vedere avanti (visibilità) e quanto è stretta la curva (raggio). Più la curva è stretta o meno vedi, più devi rallentare.",
         "regola": "Curva = velocità adatta.",
         "trabocchetti": ["Regolare la velocità", "In relazione a"],
@@ -343,6 +386,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario percorrere la curva con più attenzione se la strada è bagnata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → più attenzione con strada bagnata?",
         "spiegazione": "Quando la strada è bagnata, gli pneumatici hanno meno aderenza, cioè 'fanno meno presa' sull'asfalto. Questo rende più facile perdere il controllo del veicolo. Perciò, in curva, se piove o la strada è bagnata, devi essere molto più prudente.",
         "regola": "Bagnato + Curva = doppia attenzione.",
         "trabocchetti": ["Più attenzione", "se la strada è bagnata"],
@@ -351,6 +395,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non è consentito sorpassare altri veicoli su una carreggiata a doppio senso di circolazione con due sole corsie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, doppio senso a due corsie → sorpasso vietato?",
         "spiegazione": "Nelle curve, la visibilità è limitata, non riesci a vedere bene cosa c'è dopo. Su una strada a doppio senso con solo due corsie, sorpassare significa andare nella corsia opposta, dove potrebbe arrivare un altro veicolo. Questo è estremamente pericoloso e perciò è vietato.",
         "regola": "Curva + doppio senso = no sorpasso.",
         "trabocchetti": ["Non è consentito"],
@@ -359,6 +404,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve viaggiare ad andatura particolarmente moderata se si circola con il \"ruotino\" (ruota di soccorso)",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → andatura moderata con il ruotino?",
         "spiegazione": "Il 'ruotino' è una ruota di scorta temporanea, più piccola e meno resistente delle ruote normali. Non è fatta per viaggiare a lungo o ad alta velocità. La sua aderenza e stabilità sono inferiori. Quindi, in una curva, è ancora più importante andare molto piano per non perdere il controllo.",
         "regola": "Ruotino + Curva = super piano.",
         "trabocchetti": ["Particolarmente moderata", "se si circola con il"],
@@ -367,6 +413,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, su strada a senso unico di circolazione si deve marciare il più possibile vicino al margine destro della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, senso unico → tenersi a destra?",
         "spiegazione": "Su una strada a senso unico, non c'è il rischio di incontrare veicoli che vengono dalla direzione opposta. Per questo motivo, non è obbligatorio tenersi 'il più possibile' vicino al margine destro in curva. Puoi usare un po' più di spazio della corsia per affrontare meglio la curva, anche se è sempre bene non esagerare.",
         "regola": "Senso unico = più libertà in curva.",
         "immagine": "bdcd955031344d5ff561.jpg",
@@ -374,6 +421,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentita la fermata ma non la sosta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata sì, sosta no?",
         "spiegazione": "Nelle curve, sia la fermata (breve sosta con il conducente a bordo) che la sosta (lasciare il veicolo) sono vietate. Questo perché un veicolo fermo o in sosta in curva riduce la visibilità e può creare un pericolo per gli altri veicoli che stanno arrivando.",
         "regola": "Curva = no fermata, no sosta.",
         "trabocchetti": ["è consentita la fermata"],
@@ -382,6 +430,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito, su strada a doppio senso di circolazione a due corsie, sorpassare i motocicli senza invadere la corsia opposta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, doppio senso → sorpasso moto senza invadere l'opposta?",
         "spiegazione": "Anche se non invadi la corsia opposta (ad esempio, sorpassando un motociclo piccolo), il sorpasso in curva è comunque pericoloso. La visibilità è ridotta e non puoi vedere bene cosa c'è davanti. La regola generale vieta il sorpasso in curva su strade a doppio senso con due corsie, a prescindere dall'invasione della corsia opposta.",
         "regola": "Curva + doppio senso = no sorpasso (punto).",
         "trabocchetti": ["senza invadere la corsia opposta"],
@@ -390,6 +439,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito effettuare l'inversione di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inversione di marcia consentita?",
         "spiegazione": "L'inversione di marcia (fare un'inversione a U) è una manovra che richiede molto spazio e una buona visibilità. In una curva, la visibilità è limitata, quindi fare questa manovra è estremamente rischioso e perciò è vietato.",
         "regola": "Curva = no inversione.",
         "trabocchetti": ["è consentito"],
@@ -398,6 +448,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito effettuare manovre di retromarcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → retromarcia consentita?",
         "spiegazione": "La retromarcia è una manovra che si fa con visibilità limitata anche in condizioni normali. Farla in curva, dove la visibilità è già ridotta, è molto pericoloso e quindi vietato.",
         "regola": "Curva = no retromarcia.",
         "trabocchetti": ["è consentito"],
@@ -406,6 +457,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non è consentito il transito ai veicoli con il \"ruotino\" (ruota di soccorso)",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai veicoli con ruotino?",
         "spiegazione": "Non è che non sia permesso il transito ai veicoli con il 'ruotino', ma si deve viaggiare con 'andatura particolarmente moderata', cioè molto piano. Il transito è consentito, ma con la massima prudenza e a velocità ridotta.",
         "regola": "Ruotino = transito sì, ma piano.",
         "trabocchetti": ["non è consentito il transito"],
@@ -414,6 +466,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una doppia curva pericolosa, la prima a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → doppia curva, prima a destra?",
         "spiegazione": "Il segnale mostra due curve, e la prima curva va verso destra. È un segnale che ti avvisa di questo pericolo.",
         "regola": "La prima 'piega' del disegno indica la direzione della prima curva.",
         "trabocchetti": ["o"],
@@ -422,6 +475,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada non rettilineo che limita la visibilità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → tratto non rettilineo, visibilità limitata?",
         "spiegazione": "Quando ci sono curve, la strada non è dritta ('non rettilineo') e spesso non si vede bene cosa c'è dopo la curva ('limita la visibilità'). Questo rende la guida più difficile.",
         "regola": "Curve = strada non dritta e non si vede bene.",
         "trabocchetti": ["non rettilineo", "limita la visibilità"],
@@ -430,6 +484,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere integrato con un pannello indicante TORNANTI",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello TORNANTI?",
         "spiegazione": "Se le curve sono molto strette e vicine, come quelle di montagna, si chiamano 'tornanti'. Questo segnale può avere sotto un pannello aggiuntivo con scritto 'TORNANTI' per dare più informazioni.",
         "regola": "Molte curve strette = TORNANTI.",
         "trabocchetti": ["integrato con un pannello"],
@@ -438,6 +493,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di moderare la velocità per potersi arrestare in caso di un ostacolo improvviso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per potersi fermare davanti a ostacoli?",
         "spiegazione": "Quando ci sono curve pericolose, devi andare più piano ('moderare la velocità'). Così, se all'improvviso c'è un ostacolo (per esempio, un animale o un'auto ferma), hai il tempo di frenare e fermarti ('arrestare').",
         "regola": "Pericolo = rallenta e sii pronto a frenare.",
         "trabocchetti": ["moderare la velocità", "arrestare"],
@@ -446,6 +502,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere integrato con il pannello in figura",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → integrabile con il pannello in figura?",
         "spiegazione": "Questo segnale di pericolo può avere sotto un pannello aggiuntivo. Questo pannello può indicare, per esempio, per quanti chilometri ci saranno le curve pericolose o a che distanza si trova il pericolo.",
         "regola": "Pannello sotto = più informazioni (distanza, lunghezza).",
         "trabocchetti": ["integrato con il pannello in figura"],
@@ -454,6 +511,7 @@ QUESTIONS = [
     {
         "domanda": "La figura rappresenta un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Figura → segnale di pericolo?",
         "spiegazione": "I segnali di pericolo sono sempre a forma di triangolo con il bordo rosso e avvisano di un pericolo sulla strada. Questo segnale ha queste caratteristiche.",
         "regola": "Triangolo rosso = Pericolo!",
         "trabocchetti": ["segnale di pericolo"],
@@ -462,6 +520,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, di norma a 150 metri, una doppia curva pericolosa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → doppia curva, di norma a 150 m?",
         "spiegazione": "Fuori dai paesi e dalle città, i segnali di pericolo sono messi di solito a circa 150 metri prima del punto in cui inizia il pericolo, per darti il tempo di prepararti.",
         "regola": "Pericolo fuori città = 150 metri prima.",
         "trabocchetti": ["di norma"],
@@ -470,6 +529,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna moderare la velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare la velocità?",
         "spiegazione": "Quando vedi questo segnale, significa che ci sono curve pericolose. Per la tua sicurezza e quella degli altri, è molto importante rallentare ('moderare la velocità').",
         "regola": "Pericolo = rallenta.",
         "trabocchetti": ["moderare la velocità"],
@@ -478,6 +538,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una deviazione per lavori in corso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → deviazione per lavori?",
         "spiegazione": "Questo segnale indica curve, non lavori in corso. I segnali per i lavori in corso sono diversi, spesso di colore giallo.",
         "regola": "Curve non sono lavori.",
         "trabocchetti": ["deviazione per lavori in corso"],
@@ -486,6 +547,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un raccordo di uscita autostradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → uscita autostradale?",
         "spiegazione": "Questo segnale non indica un'uscita dall'autostrada. Le uscite autostradali hanno segnali diversi, di solito verdi o blu, con frecce che indicano la direzione.",
         "regola": "Curve non sono uscite autostradali.",
         "trabocchetti": ["raccordo di uscita autostradale"],
@@ -494,6 +556,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una discesa pericolosa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → discesa pericolosa?",
         "spiegazione": "Il segnale per una discesa pericolosa è un triangolo con l'immagine di una strada che scende e un numero che indica la pendenza. Questo segnale, invece, indica le curve.",
         "regola": "Curve non sono discese.",
         "trabocchetti": ["discesa pericolosa"],
@@ -502,6 +565,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada con superficie sdrucciolevole",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → superficie sdrucciolevole?",
         "spiegazione": "Il segnale di strada sdrucciolevole (cioè scivolosa) mostra un'auto che sbanda. Questo segnale indica solo la presenza di curve, non che la strada è scivolosa.",
         "regola": "Curve non sono scivolose (non direttamente).",
         "trabocchetti": ["superficie sdrucciolevole"],
@@ -510,6 +574,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → incrocio?",
         "spiegazione": "Il segnale di incrocio è un triangolo con una 'X' o una croce al centro. Questo segnale, invece, indica la presenza di curve.",
         "regola": "Curve non sono incroci.",
         "trabocchetti": ["incrocio"],
@@ -518,6 +583,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada con pavimentazione irregolare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pavimentazione irregolare?",
         "spiegazione": "Il segnale di pavimentazione irregolare (cioè strada rovinata, con buche o dossi) mostra una strada con delle gobbe. Questo segnale, invece, indica le curve.",
         "regola": "Curve non sono buche.",
         "trabocchetti": ["pavimentazione irregolare"],
@@ -526,6 +592,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale con il pannello in figura preannuncia un tratto di strada lungo 3,8 km con una serie di curve pericolose",
         "risposta": False,
+        "riassunto": "Segnale con pannello in figura → curve pericolose per 3,8 km?",
         "spiegazione": "Il segnale raffigurato indica una 'doppia curva', cioè due curve. Anche se ci fosse un pannello che indica una lunghezza (come 3,8 km), il segnale non preannuncia una 'serie di curve' (che sono molte curve continue), ma solo due curve. La frase 'con il pannello in figura' è fuorviante perché nessun pannello è mostrato.",
         "regola": "Doppia curva = due curve, non una 'serie'.",
         "trabocchetti": ["serie di curve", "con il pannello in figura"],
@@ -534,6 +601,7 @@ QUESTIONS = [
     {
         "domanda": "Su strada a due sole corsie e a doppio senso di circolazione, in presenza del segnale raffigurato si deve marciare il più possibile vicino al margine destro",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, doppio senso a due corsie → tenersi a destra?",
         "spiegazione": "Questo segnale avverte di curve pericolose. Su una strada con due corsie e traffico in due direzioni, è importante stare il più possibile a destra per non invadere la corsia opposta e per la propria sicurezza.",
         "regola": "Curve pericolose = Stai a destra!",
         "immagine": "0934807b78f3be7a26c3.jpg",
@@ -541,6 +609,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario regolare la velocità in relazione alla visibilità e al raggio delle curve",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità secondo visibilità e raggio delle curve?",
         "spiegazione": "Le curve pericolose richiedono di adattare la velocità. Devi andare più piano se non vedi bene (poca visibilità) o se la curva è molto stretta (raggio piccolo).",
         "regola": "Curve = Velocità giusta per vedere e girare.",
         "trabocchetti": ["regolare la velocità in relazione a"],
@@ -549,6 +618,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario percorrere le curve con più attenzione in caso di pioggia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → curve con più attenzione se piove?",
         "spiegazione": "La pioggia rende la strada scivolosa. Nelle curve, dove l'aderenza è già importante, la pioggia aumenta il rischio di perdere il controllo. Quindi, serve più attenzione.",
         "regola": "Pioggia + Curve = Doppia attenzione!",
         "trabocchetti": ["più attenzione in caso di pioggia"],
@@ -557,6 +627,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario regolare la velocità in relazione alle condizioni di carico del veicolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità secondo il carico del veicolo?",
         "spiegazione": "Un veicolo molto carico (con passeggeri o bagagli pesanti) ha un comportamento diverso in curva, è più difficile da controllare e ha bisogno di più spazio per frenare. Per questo, devi adattare la velocità.",
         "regola": "Veicolo carico = Più lento in curva.",
         "trabocchetti": ["condizioni di carico"],
@@ -565,6 +636,7 @@ QUESTIONS = [
     {
         "domanda": "Nella curve pericolose preannunciate dal segnale raffigurato è vietato il sorpasso se la carreggiata è a due corsie e a doppio senso di circolazione",
         "risposta": True,
+        "riassunto": "Curve pericolose, doppio senso a due corsie → sorpasso vietato?",
         "spiegazione": "Nelle curve pericolose, la visibilità è ridotta. Se la strada ha solo due corsie (una per senso di marcia), sorpassare è molto pericoloso perché potresti scontrarti con un veicolo che arriva dall'altra direzione. Per questo è vietato.",
         "regola": "Curve pericolose + 2 corsie = No sorpasso!",
         "trabocchetti": ["vietato"],
@@ -573,6 +645,7 @@ QUESTIONS = [
     {
         "domanda": "Su strada a due corsie e a doppio senso di circolazione, in presenza del segnale raffigurato è opportuno fare particolare attenzione ai veicoli provenienti dal senso opposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, doppio senso → attenzione a chi viene in senso opposto?",
         "spiegazione": "Nelle curve, specialmente se strette o con poca visibilità, c'è il rischio che un veicolo proveniente dall'altra direzione possa invadere leggermente la tua corsia o che tu possa invadere la sua. È fondamentale essere pronti.",
         "regola": "Curve strette = Occhio all'altro senso!",
         "immagine": "0934807b78f3be7a26c3.jpg",
@@ -580,6 +653,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cui è consentita l'inversione di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inversione di marcia consentita?",
         "spiegazione": "Questo segnale avverte di curve pericolose. L'inversione di marcia (girare completamente l'auto per tornare indietro) è una manovra pericolosa e vietata nelle curve, dove la visibilità è limitata.",
         "regola": "Curve = No inversioni!",
         "trabocchetti": ["consentita"],
@@ -588,6 +662,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, posto su strada a due corsie e a doppio senso di circolazione, è consentito sorpassare nelle ore diurne",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, doppio senso a due corsie → sorpasso di giorno consentito?",
         "spiegazione": "Come detto prima, nelle curve pericolose su strade a due corsie e doppio senso, il sorpasso è sempre vietato, sia di giorno che di notte, a causa della scarsa visibilità.",
         "regola": "Curve pericolose = Sorpasso sempre vietato (su 2 corsie).",
         "trabocchetti": ["consentito", "nelle ore diurne"],
@@ -596,6 +671,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cui è consentita la manovra di retromarcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → retromarcia consentita?",
         "spiegazione": "La retromarcia è una manovra che si fa a velocità molto bassa e con visibilità limitata. Farla in una curva pericolosa è estremamente rischioso e vietato, perché potresti non vedere veicoli in arrivo.",
         "regola": "Curve = No retromarcia!",
         "trabocchetti": ["consentita"],
@@ -604,6 +680,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario tenere una velocità moderata esclusivamente nella prima curva",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → velocità moderata solo nella prima curva?",
         "spiegazione": "Il segnale indica una 'serie di curve pericolose'. Questo significa che devi mantenere una velocità moderata e prudente per tutte le curve del tratto, non solo per la prima.",
         "regola": "Serie di curve = Prudenza per tutte!",
         "trabocchetti": ["esclusivamente"],
@@ -612,6 +689,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito effettuare la fermata in curva",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata in curva consentita?",
         "spiegazione": "Fermarsi in curva è pericoloso perché il tuo veicolo potrebbe non essere visto in tempo dagli altri automobilisti, specialmente se la visibilità è ridotta. Per questo è vietato.",
         "regola": "Curve = No fermata!",
         "trabocchetti": ["consentito"],
@@ -620,6 +698,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito sorpassare motocicli e ciclomotori su strada a due corsie e a doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, doppio senso → sorpasso di moto e ciclomotori consentito?",
         "spiegazione": "Il divieto di sorpasso nelle curve pericolose su strade a due corsie e doppio senso vale per tutti i veicoli, inclusi motocicli e ciclomotori. Non ci sono eccezioni.",
         "regola": "Divieto di sorpasso = Vale per tutti i veicoli.",
         "trabocchetti": ["consentito"],
@@ -628,6 +707,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una doppia curva pericolosa, la prima a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → doppia curva, prima a sinistra?",
         "spiegazione": "Il segnale mostra chiaramente una strada che fa due curve, la prima delle quali gira a sinistra. È un segnale di pericolo che avvisa proprio di questo.",
         "regola": "La freccia indica la prima curva: a sinistra.",
         "immagine": "0111369ab3e9037f0899.jpg",
@@ -635,6 +715,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada non rettilineo che limita la visibilità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → tratto non rettilineo, visibilità limitata?",
         "spiegazione": "Una strada con curve non è dritta ('non rettilineo') e spesso le curve impediscono di vedere bene cosa c'è dopo ('limita la visibilità'). Questo rende le curve pericolose.",
         "regola": "Curva = non dritto, meno visibilità.",
         "trabocchetti": ["non rettilineo", "limita la visibilità"],
@@ -643,6 +724,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di tornanti se integrato con apposito pannello",
         "risposta": True,
+        "riassunto": "Segnale raffigurato con pannello → tornanti?",
         "spiegazione": "Questo segnale, se sotto ha un altro cartello ('pannello') che indica 'tornanti' o il numero di tornanti, può avvisare di una serie di curve molto strette e ravvicinate, chiamate tornanti.",
         "regola": "Con pannello, le curve diventano tornanti.",
         "trabocchetti": ["se integrato con apposito pannello"],
@@ -651,6 +733,7 @@ QUESTIONS = [
     {
         "domanda": "La figura rappresenta un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Figura → segnale di pericolo?",
         "spiegazione": "Tutti i segnali a forma di triangolo con il bordo rosso, come quello in figura, sono segnali di pericolo. Servono ad avvisare i guidatori di un rischio sulla strada.",
         "regola": "Triangolo rosso = pericolo.",
         "immagine": "0111369ab3e9037f0899.jpg",
@@ -658,6 +741,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, in genere a 150 m, una doppia curva pericolosa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → doppia curva, in genere a 150 m?",
         "spiegazione": "I segnali di pericolo, fuori dai centri abitati, sono messi di solito a circa 150 metri prima del punto dove inizia il pericolo (in questo caso, la doppia curva).",
         "regola": "Pericolo = 150 metri prima (fuori città).",
         "trabocchetti": ["in genere a 150 m"],
@@ -666,6 +750,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di moderare la velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare la velocità?",
         "spiegazione": "Quando vedi un segnale di pericolo, devi sempre rallentare ('moderare la velocità') per essere pronto ad affrontare la situazione di rischio in sicurezza.",
         "regola": "Pericolo = rallenta.",
         "immagine": "0111369ab3e9037f0899.jpg",
@@ -673,6 +758,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una confluenza a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → confluenza a sinistra?",
         "spiegazione": "Questo segnale indica delle curve, non una 'confluenza a sinistra'. La confluenza è quando due strade si uniscono e ha un segnale diverso, con una freccia che si unisce a un'altra.",
         "regola": "Non è una freccia che si unisce, sono curve.",
         "trabocchetti": ["confluenza"],
@@ -681,6 +767,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strettoia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strettoia?",
         "spiegazione": "Il segnale non indica una 'strettoia', cioè un punto in cui la strada diventa più stretta. Il segnale di strettoia ha due linee verticali che si avvicinano.",
         "regola": "Non è una strada che si stringe, sono curve.",
         "trabocchetti": ["strettoia"],
@@ -689,6 +776,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di carreggiata sdrucciolevole",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → carreggiata sdrucciolevole?",
         "spiegazione": "Questo segnale non avvisa di una 'carreggiata sdrucciolevole' (strada scivolosa). Il segnale di strada sdrucciolevole mostra una macchina che sbanda.",
         "regola": "Non c'è la macchina che scivola, sono curve.",
         "trabocchetti": ["carreggiata sdrucciolevole"],
@@ -697,6 +785,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada con una serie di dossi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → serie di dossi?",
         "spiegazione": "Il segnale non preannuncia una serie di 'dossi' (gobbe sulla strada). Il segnale di dossi ha una forma ondulata che ricorda le gobbe.",
         "regola": "Non ci sono le gobbe, sono curve.",
         "trabocchetti": ["dossi"],
@@ -705,6 +794,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una deviazione per lavori in corso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → deviazione per lavori?",
         "spiegazione": "Questo segnale non indica una 'deviazione per lavori in corso'. Le deviazioni per lavori sono indicate da segnali temporanei, spesso di colore giallo o arancione.",
         "regola": "Non è un cantiere, sono curve.",
         "trabocchetti": ["deviazione per lavori in corso"],
@@ -713,6 +803,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada deformata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada deformata?",
         "spiegazione": "Il segnale non avvisa di una 'strada deformata' (con buche o irregolarità). Il segnale di strada deformata ha una linea ondulata irregolare.",
         "regola": "Non è una strada rovinata, sono curve.",
         "trabocchetti": ["strada deformata"],
@@ -721,6 +812,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve circolare il più vicino possibile al margine destro della carreggiata, su strada a due sole corsie e a doppio senso di circolazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, doppio senso a due corsie → tenersi a destra?",
         "spiegazione": "Quando ci sono curve pericolose, specialmente su strade a doppio senso, è fondamentale stare il più a destra possibile. Questo ti dà più spazio per reagire e ti allontana dai veicoli che vengono dall'altra direzione, aumentando la sicurezza.",
         "regola": "Curve = Stai a destra!",
         "immagine": "0111369ab3e9037f0899.jpg",
@@ -728,6 +820,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario regolare la velocità in relazione alla visibilità e al raggio delle curve",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità secondo visibilità e raggio delle curve?",
         "spiegazione": "La velocità deve sempre essere adatta a quanto vedi (visibilità) e a quanto è stretta la curva (raggio). Se non vedi bene o la curva è molto stretta, devi andare più piano per avere il tempo di reagire a eventuali ostacoli o veicoli.",
         "regola": "Velocità = Visibilità + Curva.",
         "trabocchetti": ["regolare la velocità"],
@@ -736,6 +829,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario percorrere le curve con più attenzione in caso di pioggia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → curve con più attenzione se piove?",
         "spiegazione": "La pioggia rende la strada scivolosa, diminuendo l'aderenza delle gomme. Nelle curve, dove l'aderenza è già cruciale per mantenere il controllo, la pioggia aumenta notevolmente il rischio di sbandare. Per questo serve molta più attenzione.",
         "regola": "Pioggia + Curve = Super attenzione!",
         "trabocchetti": ["in caso di pioggia"],
@@ -744,6 +838,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario regolare la velocità in relazione alle condizioni di carico del veicolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità secondo il carico?",
         "spiegazione": "Un veicolo molto carico (con tante persone o oggetti pesanti) ha un comportamento diverso sulla strada. È più pesante, frena peggio e ha più inerzia, specialmente in curva. Per questo, devi andare più piano per mantenere il controllo.",
         "regola": "Veicolo carico = Velocità ridotta.",
         "trabocchetti": ["condizioni di carico del veicolo"],
@@ -752,6 +847,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non è consentito effettuare manovre di sorpasso su strade a due sole corsie e a doppio senso di circolazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, doppio senso a due corsie → sorpasso vietato?",
         "spiegazione": "Nelle curve, la visibilità è ridotta. Su una strada a doppio senso con solo due corsie, sorpassare significa invadere la corsia opposta, dove potrebbe arrivare un altro veicolo. È una manovra troppo pericolosa e quindi vietata.",
         "regola": "Curve + Doppio senso = No sorpasso!",
         "immagine": "0111369ab3e9037f0899.jpg",
@@ -759,6 +855,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è opportuno fare particolare attenzione ai veicoli provenienti dal senso opposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attenzione ai veicoli in senso opposto?",
         "spiegazione": "Su una strada a doppio senso, in curva, non vedi bene chi arriva dall'altra parte. È facile che un veicolo invada leggermente la tua corsia o che tu stesso lo faccia. Quindi, devi essere molto attento e pronto a reagire per evitare collisioni.",
         "regola": "Curve = Occhio all'opposto!",
         "immagine": "0111369ab3e9037f0899.jpg",
@@ -766,6 +863,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentita l'inversione di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inversione di marcia consentita?",
         "spiegazione": "L'inversione di marcia (fare un'inversione a U) è una manovra che richiede molto spazio e una buona visibilità. Nelle curve, la visibilità è scarsa e il rischio di incidenti è alto, quindi è vietato farla.",
         "regola": "Curve = No inversione!",
         "trabocchetti": ["consentita"],
@@ -774,6 +872,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, posto su strade a due corsie e a doppio senso, è consentito sorpassare un veicolo molto lento",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, doppio senso → sorpasso di veicolo molto lento consentito?",
         "spiegazione": "Anche se un veicolo è lento, il divieto di sorpasso in curva su strade a doppio senso rimane. La lentezza del veicolo non elimina il pericolo della scarsa visibilità e del rischio di scontro frontale con un veicolo che arriva dall'altra direzione.",
         "regola": "Lento o veloce, in curva non si sorpassa!",
         "trabocchetti": ["un veicolo molto lento"],
@@ -782,6 +881,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentita la manovra di retromarcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → retromarcia consentita?",
         "spiegazione": "La retromarcia è una manovra che si fa a bassa velocità e con visibilità limitata. Farla in curva, dove la visibilità è già un problema e il traffico potrebbe essere veloce, è molto pericoloso e quindi vietato.",
         "regola": "Curve = No retromarcia!",
         "trabocchetti": ["consentita"],
@@ -790,6 +890,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario tenere una velocità moderata esclusivamente nella prima curva",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → velocità moderata solo nella prima curva?",
         "spiegazione": "Il segnale indica una 'successione di curve pericolose', non solo una. Questo significa che devi mantenere una velocità moderata e un'attenzione costante per tutte le curve che seguiranno, non solo per la prima.",
         "regola": "Successione = Attenzione sempre, non solo all'inizio!",
         "trabocchetti": ["esclusivamente"],
@@ -798,6 +899,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito effettuare la fermata in corrispondenza delle curve",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata in curva consentita?",
         "spiegazione": "Fermarsi in curva è molto pericoloso perché riduce la visibilità per gli altri veicoli che sopraggiungono e può causare incidenti. È vietato fermarsi e parcheggiare in corrispondenza delle curve.",
         "regola": "Curve = No fermata!",
         "trabocchetti": ["consentito"],
@@ -806,6 +908,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito sorpassare motocicli e ciclomotori su strade a due corsie e a doppio senso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, doppio senso → sorpasso di moto e ciclomotori?",
         "spiegazione": "Il divieto di sorpasso in curva su strade a doppio senso vale per tutti i veicoli, non importa quanto siano piccoli o veloci. La ragione è la scarsa visibilità e il rischio di scontro frontale, che non cambia in base al tipo di veicolo sorpassato.",
         "regola": "In curva, nessun sorpasso, per nessuno!",
         "trabocchetti": ["motocicli e ciclomotori"],
@@ -814,6 +917,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un passaggio a livello con barriere o con semibarriere",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passaggio a livello con barriere o semibarriere?",
         "spiegazione": "Il segnale ti avvisa che stai per arrivare a un punto dove la strada incrocia i binari del treno, e ci sono delle barriere (o semibarriere) che si abbassano per fermare il traffico quando arriva il treno.",
         "regola": "Recinzione = Barriere del treno.",
         "trabocchetti": ["preannuncia"],
@@ -822,6 +926,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo il segnale raffigurato, se ci sono le semibarriere, è installato un dispositivo a luci rosse lampeggianti",
         "risposta": True,
+        "riassunto": "Dopo il segnale, con semibarriere → luci rosse lampeggianti?",
         "spiegazione": "Sì, quando ci sono le semibarriere (che coprono solo metà strada), ci sono sempre anche delle luci rosse che lampeggiano per avvisarti che sta arrivando il treno e le barriere si stanno chiudendo.",
         "regola": "Semibarriere = Luci rosse lampeggianti.",
         "trabocchetti": ["dispositivo a luci rosse lampeggianti"],
@@ -830,6 +935,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un attraversamento ferroviario protetto da barriere o semibarriere, qualunque sia il numero dei binari",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → ferrovia con barriere, qualunque numero di binari?",
         "spiegazione": "Questo segnale ti dice che c'è un passaggio a livello con barriere, non importa se c'è un solo binario o più binari. Il segnale è lo stesso.",
         "regola": "Barriere = Binari, quanti siano.",
         "trabocchetti": ["qualunque sia il numero dei binari"],
@@ -838,6 +944,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un attraversamento ferroviario munito di barriere o semibarriere",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attraversamento ferroviario con barriere/semibarriere?",
         "spiegazione": "È la stessa cosa delle domande precedenti. Il segnale ti avvisa di un incrocio con la ferrovia dove ci sono le barriere o le semibarriere per la tua sicurezza.",
         "regola": "Segnale = Barriere.",
         "trabocchetti": ["munito di"],
@@ -846,6 +953,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo il segnale raffigurato si può trovare un dispositivo acustico che avverte della chiusura delle barriere o delle semibarriere",
         "risposta": True,
+        "riassunto": "Dopo il segnale → dispositivo acustico di chiusura barriere?",
         "spiegazione": "Oltre alle luci, spesso c'è anche un suono (una campanella o un allarme) che ti avvisa che le barriere si stanno abbassando e che devi fermarti.",
         "regola": "Barriere = Luci + Suono.",
         "trabocchetti": ["dispositivo acustico"],
@@ -854,6 +962,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto, di norma, 150 metri prima del passaggio a livello",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di norma 150 m prima del passaggio a livello?",
         "spiegazione": "I segnali di pericolo, come questo, sono messi di solito a 150 metri prima del pericolo, fuori dai centri abitati. Così hai tempo per rallentare e prepararti.",
         "regola": "Pericolo = 150 metri.",
         "trabocchetti": ["di norma"],
@@ -862,6 +971,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario moderare la velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare la velocità?",
         "spiegazione": "Ogni volta che vedi un segnale di pericolo, devi rallentare per essere pronto a fermarti o a reagire in sicurezza.",
         "regola": "Pericolo = Rallenta.",
         "trabocchetti": ["moderare la velocità"],
@@ -870,6 +980,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo il segnale raffigurato, se ci sono le barriere, è installato un dispositivo a luce rossa fissa",
         "risposta": True,
+        "riassunto": "Dopo il segnale, con barriere → luce rossa fissa?",
         "spiegazione": "Sì, anche se di solito vediamo luci rosse che lampeggiano, la legge prevede che in alcuni passaggi a livello con barriere possa esserci anche una luce rossa fissa che indica di fermarsi.",
         "regola": "Passaggio a livello = Luci rosse (fisse o lampeggianti).",
         "trabocchetti": ["luce rossa fissa"],
@@ -878,6 +989,7 @@ QUESTIONS = [
     {
         "domanda": "La figura rappresenta un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Figura → segnale di pericolo?",
         "spiegazione": "Questo segnale ha la forma di un triangolo con bordo rosso, che è la forma tipica di tutti i segnali che avvisano di un pericolo sulla strada.",
         "regola": "Triangolo rosso = Pericolo.",
         "trabocchetti": ["segnale di pericolo"],
@@ -886,6 +998,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'incrocio con una linea tranviaria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → incrocio con linea tranviaria?",
         "spiegazione": "Questo segnale è solo per i treni (ferrovia), non per i tram. Per i tram c'è un altro segnale specifico (un triangolo con un tram).",
         "regola": "Recinzione = Treno, non tram.",
         "trabocchetti": ["linea tranviaria"],
@@ -894,6 +1007,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strada senza uscita",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada senza uscita?",
         "spiegazione": "Questo segnale non ha niente a che fare con una strada senza uscita. Ti avvisa di un passaggio a livello con il treno. Il segnale di strada senza uscita è diverso (un quadrato blu con una T bianca).",
         "regola": "Recinzione = Treno, non vicolo cieco.",
         "trabocchetti": ["strada senza uscita"],
@@ -902,6 +1016,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi se le luci rosse poste in prossimità delle barriere o delle semibarriere sono spente",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi se le luci rosse sono spente?",
         "spiegazione": "No, è il contrario! Devi fermarti quando le luci rosse sono accese (lampeggianti o fisse) o quando le barriere si stanno chiudendo. Se le luci sono spente e le barriere sono aperte, puoi passare.",
         "regola": "Luci spente = Via libera.",
         "trabocchetti": ["spente"],
@@ -910,6 +1025,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una deviazione obbligatoria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → deviazione obbligatoria?",
         "spiegazione": "Questo segnale non ti dice di cambiare strada. Ti avvisa di un pericolo (il passaggio a livello) più avanti. I segnali di deviazione sono diversi, di solito blu o verdi con frecce.",
         "regola": "Recinzione = Treno, non cambio strada.",
         "trabocchetti": ["deviazione obbligatoria"],
@@ -918,6 +1034,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato permette di transitare tra una barra e l'altra se le semibarriere sono chiuse, dopo aver verificato che non ci sono treni in arrivo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passare tra le semibarriere chiuse se nessun treno?",
         "spiegazione": "Assolutamente no! È molto pericoloso e vietato passare quando le barriere o semibarriere sono chiuse o si stanno chiudendo, anche se pensi di non vedere treni. Devi sempre aspettare che si riaprano completamente.",
         "regola": "Barriere chiuse = Stop assoluto.",
         "trabocchetti": ["permette di transitare tra una barra e l"],
@@ -926,6 +1043,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area di sosta custodita",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area di sosta custodita?",
         "spiegazione": "Questo segnale non ha niente a che fare con la sosta. Ti avvisa di un passaggio a livello. I segnali di sosta sono diversi (quadrati blu con una P bianca).",
         "regola": "Recinzione = Treno, non parcheggio.",
         "trabocchetti": ["area di sosta custodita"],
@@ -934,6 +1052,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova prima del segnale verticale DOPPIA CROCE DI S. ANDREA",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → prima della DOPPIA CROCE DI S. ANDREA?",
         "spiegazione": "Questo segnale (con barriere) e la 'Doppia Croce di Sant'Andrea' (senza barriere) si riferiscono a tipi diversi di passaggi a livello. Non si trovano uno prima dell'altro nello stesso passaggio a livello. La Croce di Sant'Andrea si usa per i passaggi a livello senza barriere.",
         "regola": "Barriere = No Croce S. Andrea.",
         "immagine": "62395c667f66b897a692.jpg",
@@ -941,6 +1060,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia barriere di recinzione di un cantiere stradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → barriere di un cantiere?",
         "spiegazione": "Questo segnale non ha niente a che fare con i lavori in strada. Il simbolo della 'recinzione' qui rappresenta le barriere di un passaggio a livello ferroviario, non le barriere di un cantiere.",
         "regola": "Recinzione = Treno, non cantiere.",
         "immagine": "62395c667f66b897a692.jpg",
@@ -948,6 +1068,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di dare la precedenza ai veicoli della polizia penitenziaria in uscita dalle carceri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza alla polizia penitenziaria?",
         "spiegazione": "Questa è una frase completamente inventata per confondere! Il segnale ti avvisa di un passaggio a livello e ti chiede di fare attenzione al treno, non ha niente a che fare con la polizia penitenziaria o le carceri.",
         "regola": "Recinzione = Treno, non polizia.",
         "immagine": "62395c667f66b897a692.jpg",
@@ -955,6 +1076,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario moderare la velocità per essere pronti ad arrestarsi se le barriere sono chiuse",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per fermarsi se barriere chiuse?",
         "spiegazione": "Il segnale ti avvisa che stai per arrivare a un passaggio a livello con barriere. Per la tua sicurezza, devi sempre rallentare e prepararti a fermarti se le barriere sono chiuse o si stanno chiudendo, perché significa che sta arrivando un treno.",
         "regola": "Passaggio a livello con barriere: rallenta e preparati a fermarti!",
         "trabocchetti": ["moderare la velocità", "Essere pronti ad arrestarsi"],
@@ -963,6 +1085,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non è consentito impegnare il passaggio a livello se il traffico intenso impedisce di sgomberarlo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non impegnare il passaggio se il traffico impedisce di liberarlo?",
         "spiegazione": "Non devi mai entrare in un passaggio a livello se c'è tanto traffico e non sei sicuro di poterlo superare completamente. Rischieresti di rimanere bloccato sui binari, il che è estremamente pericoloso se arriva un treno.",
         "regola": "Non entrare se non puoi uscire subito!",
         "trabocchetti": ["Non è consentito", "Impegnare il passaggio a livello", "Sgomberarlo"],
@@ -971,6 +1094,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario arrestarsi se sono in funzione le due luci rosse lampeggianti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi con le due luci rosse lampeggianti?",
         "spiegazione": "Le due luci rosse che lampeggiano al passaggio a livello sono un segnale molto importante: indicano che sta arrivando un treno e che le barriere si stanno chiudendo o sono già chiuse. In questo caso, devi fermarti immediatamente e aspettare.",
         "regola": "Luci rosse lampeggianti = Stop! Treno in arrivo.",
         "trabocchetti": ["È necessario arrestarsi", "due luci rosse lampeggianti"],
@@ -979,6 +1103,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario arrestarsi se è in funzione il dispositivo acustico che avverte della chiusura delle barriere",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi col segnale acustico di chiusura?",
         "spiegazione": "Se senti un suono (dispositivo acustico) al passaggio a livello, significa che le barriere si stanno per chiudere o sono già in movimento. Questo suono è un avviso di pericolo, quindi devi fermarti subito e aspettare.",
         "regola": "Suono di allarme = Stop! Barriere in chiusura.",
         "trabocchetti": ["È necessario arrestarsi", "dispositivo acustico"],
@@ -987,6 +1112,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, se il veicolo si ferma per avaria sui binari, il conducente deve adottare ogni iniziativa utile al fine di evitare incidenti",
         "risposta": True,
+        "riassunto": "Avaria sui binari → ogni iniziativa per evitare incidenti?",
         "spiegazione": "Se la tua auto si rompe proprio sui binari, sei in una situazione di grande pericolo. Devi fare tutto il possibile per avvisare gli altri (per esempio, il macchinista del treno) e cercare di spostare il veicolo o segnalare il pericolo per evitare un incidente grave.",
         "regola": "Guasto sui binari = Agisci subito per la sicurezza!",
         "trabocchetti": ["Avaria", "Adottare ogni iniziativa utile"],
@@ -995,6 +1121,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito sostare in corrispondenza o in prossimità dei passaggi a livelli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sosta vicino al passaggio a livello consentita?",
         "spiegazione": "È assolutamente vietato fermarsi o parcheggiare (sostare) sui binari o molto vicino a un passaggio a livello. È estremamente pericoloso e può causare incidenti gravi o bloccare il traffico ferroviario.",
         "regola": "Passaggio a livello = Mai sostare, è vietato e pericoloso!",
         "trabocchetti": ["È consentito", "Sostare"],
@@ -1003,6 +1130,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario rallentare solo in caso di scarsa visibilità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → rallentare solo con scarsa visibilità?",
         "spiegazione": "Devi sempre rallentare quando ti avvicini a un passaggio a livello, non solo quando non vedi bene. È una regola di sicurezza fondamentale per essere sempre pronto a fermarti in caso di necessità.",
         "regola": "Passaggio a livello = Rallenta SEMPRE, non solo se non vedi.",
         "trabocchetti": ["solo"],
@@ -1011,6 +1139,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è possibile attraversare i binari se sbarrati da cavalletti a strisce bianche e rosse",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → attraversare binari sbarrati da cavalletti bianco-rossi?",
         "spiegazione": "I cavalletti a strisce bianche e rosse sono un segnale che indica che il passaggio è bloccato o chiuso. Se i binari sono sbarrati da questi, significa che non puoi assolutamente passare, proprio come se ci fossero le barriere chiuse.",
         "regola": "Cavalletti = Passaggio bloccato, non attraversare!",
         "trabocchetti": ["È possibile attraversare", "Sbarrati da cavalletti"],
@@ -1019,6 +1148,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato sono consentite la fermata ma non la sosta in prossimità o in corrispondenza dei binari",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata sì, sosta no vicino ai binari?",
         "spiegazione": "Sia la fermata (fermare il veicolo per poco tempo, anche con il conducente a bordo) sia la sosta (parcheggiare) sono vietate sui binari e nelle loro immediate vicinanze. È troppo pericoloso e può causare incidenti.",
         "regola": "Passaggio a livello = Né fermata né sosta, mai!",
         "immagine": "62395c667f66b897a692.jpg",
@@ -1026,6 +1156,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un attraversamento ferroviario a livello senza barriere",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → passaggio a livello senza barriere?",
         "spiegazione": "Questo segnale, con il disegno del treno senza barriere, ti avvisa che stai per incontrare un passaggio a livello (cioè un incrocio tra strada e ferrovia) che non ha né barriere né semibarriere. Devi fare molta attenzione!",
         "regola": "Treno senza barriere = pericolo libero.",
         "trabocchetti": ["senza barriere"],
@@ -1034,6 +1165,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto, di norma, a 150 metri dai binari, integrato dal relativo pannello distanziometrico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di norma a 150 m, con pannello distanziometrico?",
         "spiegazione": "I segnali di pericolo, come questo, sono messi di solito a 150 metri prima del punto pericoloso, fuori dai centri abitati. Insieme a questo segnale, trovi anche un pannello con tre barre rosse, che ti conferma la distanza.",
         "regola": "Pericolo a 150m, con le 3 barre rosse.",
         "trabocchetti": ["di norma"],
@@ -1042,6 +1174,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di usare la massima prudenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → massima prudenza?",
         "spiegazione": "Un passaggio a livello senza barriere è molto pericoloso. Per questo, il segnale ti chiede di guidare con la massima attenzione e prudenza per evitare incidenti.",
         "regola": "Treno = massima attenzione.",
         "trabocchetti": ["massima prudenza"],
@@ -1050,6 +1183,7 @@ QUESTIONS = [
     {
         "domanda": "La figura rappresenta un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Figura → segnale di pericolo?",
         "spiegazione": "I segnali a forma di triangolo con il bordo rosso, come quello in figura, sono sempre segnali di pericolo. Ti avvisano di un rischio imminente.",
         "regola": "Triangolo rosso = pericolo.",
         "immagine": "01a0e71e0c6eed08930f.jpg",
@@ -1057,6 +1191,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo il segnale raffigurato è installato il segnale CROCE DI S. ANDREA, che è posizionato prima dei binari",
         "risposta": True,
+        "riassunto": "Dopo il segnale → CROCE DI S. ANDREA prima dei binari?",
         "spiegazione": "Dopo aver visto questo segnale (che ti avvisa in anticipo), più avanti, proprio prima dei binari, troverai il segnale chiamato 'Croce di Sant'Andrea'. Questo segnale ti indica il punto esatto dove devi fermarti se sta arrivando un treno.",
         "regola": "Prima il treno, poi la Croce.",
         "trabocchetti": ["Dopo il segnale raffigurato", "prima dei binari"],
@@ -1065,6 +1200,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è integrato con il pannello distanziometrico a tre barre rosse",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → con pannello a tre barre rosse?",
         "spiegazione": "Sì, questo segnale di pericolo, che è il primo che incontri, è sempre accompagnato dal pannello distanziometrico con tre barre rosse. Questo pannello ti conferma che mancano circa 150 metri al passaggio a livello.",
         "regola": "Treno e 3 barre rosse vanno insieme.",
         "trabocchetti": ["integrato con"],
@@ -1073,6 +1209,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo il segnale raffigurato è installato il segnale DOPPIA CROCE DI S. ANDREA, se la linea ferroviaria ha più di un binario",
         "risposta": True,
+        "riassunto": "Dopo il segnale → DOPPIA CROCE se più binari?",
         "spiegazione": "Se il passaggio a livello ha più di un binario (ad esempio, due o tre), dopo il segnale del treno, troverai la 'Doppia Croce di Sant'Andrea' invece di quella singola. Serve per avvisarti di un pericolo maggiore.",
         "regola": "Più binari = doppia Croce.",
         "trabocchetti": ["più di un binario"],
@@ -1081,6 +1218,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'incrocio con una linea tranviaria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → incrocio con linea tranviaria?",
         "spiegazione": "Falso. Questo segnale indica un passaggio a livello con una ferrovia (treno), non con una linea tranviaria (tram). Il segnale per il tram è diverso, ha il disegno di un tram.",
         "regola": "Treno non è tram.",
         "trabocchetti": ["linea tranviaria"],
@@ -1089,6 +1227,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un attraversamento ferroviario a livello munito di semibarriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passaggio a livello con semibarriere?",
         "spiegazione": "Falso. Questo segnale indica un passaggio a livello 'senza' barriere o semibarriere. Se ci fossero le semibarriere, il segnale avrebbe un disegno diverso, che include una barriera.",
         "regola": "Treno senza barriere = senza barriere.",
         "trabocchetti": ["munito di semibarriere"],
@@ -1097,6 +1236,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto sul secondo pannello distanziometrico a barre rosse",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sul secondo pannello a barre rosse?",
         "spiegazione": "Falso. Il segnale principale (quello con il treno) è posto insieme al *primo* pannello distanziometrico, quello con tre barre rosse (a 150 metri). Il secondo pannello (con due barre) si trova a 100 metri, e il terzo (con una barra) a 50 metri.",
         "regola": "Segnale principale con il primo pannello (3 barre).",
         "trabocchetti": ["sul secondo pannello"],
@@ -1105,6 +1245,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un passaggio a livello con barriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passaggio a livello con barriere?",
         "spiegazione": "Falso. Come detto prima, questo segnale indica un passaggio a livello 'senza' barriere. Il segnale per un passaggio a livello 'con' barriere ha un disegno che include una barriera.",
         "regola": "Treno senza barriere = senza barriere.",
         "trabocchetti": ["con barriere"],
@@ -1113,6 +1254,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la presenza di una stazione ferroviaria a 150 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → stazione ferroviaria a 150 m?",
         "spiegazione": "Falso. Questo è un segnale di pericolo che avvisa di un passaggio a livello. Non indica la presenza di una stazione ferroviaria. Per la stazione c'è un altro tipo di segnale (un segnale di indicazione, di solito blu e quadrato).",
         "regola": "Pericolo, non stazione.",
         "trabocchetti": ["stazione ferroviaria"],
@@ -1121,6 +1263,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere integrato con un pannello con la scritta TRAM",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pannello TRAM?",
         "spiegazione": "Falso. Questo segnale è specifico per i treni (ferrovia). Se si trattasse di un incrocio con un tram, ci sarebbe un segnale di pericolo diverso, con il simbolo del tram. Non si possono mescolare i segnali.",
         "regola": "Treno non è tram.",
         "trabocchetti": ["TRAM"],
@@ -1129,6 +1272,7 @@ QUESTIONS = [
     {
         "domanda": "La figura rappresenta un segnale di precedenza",
         "risposta": False,
+        "riassunto": "Figura → segnale di precedenza?",
         "spiegazione": "Falso. Questo è un segnale di pericolo, come tutti i segnali triangolari con bordo rosso. I segnali di precedenza hanno forme diverse, come il triangolo rovesciato ('Dare precedenza') o il rombo ('Diritto di precedenza').",
         "regola": "Triangolo rosso = pericolo, non precedenza.",
         "trabocchetti": ["segnale di precedenza"],
@@ -1137,6 +1281,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario rallentare in relazione alla visibilità della linea ferroviaria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare secondo visibilità della ferrovia?",
         "spiegazione": "Questo segnale indica un passaggio a livello senza barriere. Devi sempre rallentare, specialmente se non vedi bene i binari o se la visibilità è scarsa (per esempio, per curve, edifici, alberi). Rallentare ti dà il tempo di vedere se arriva un treno e di fermarti in sicurezza.",
         "regola": "Senza barriere, rallenta e guarda!",
         "trabocchetti": ["in relazione alla visibilità"],
@@ -1145,6 +1290,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario usare la massima prudenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → massima prudenza?",
         "spiegazione": "Questo segnale indica un pericolo molto serio: un treno può arrivare in qualsiasi momento e non ci sono barriere a fermarti. Per questo, devi essere estremamente attento e prudente.",
         "regola": "Pericolo treno senza barriere = massima attenzione!",
         "immagine": "01a0e71e0c6eed08930f.jpg",
@@ -1152,6 +1298,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario rallentare per potere, eventualmente, arrestare il veicolo prima dell'attraversamento ferroviario",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare per potersi fermare prima dei binari?",
         "spiegazione": "Rallentare è fondamentale perché ti permette di avere il tempo di reagire. Se vedi un treno o senti il suo fischio, devi essere in grado di fermare la tua auto prima di arrivare sui binari, per evitare un incidente gravissimo.",
         "regola": "Rallenta per fermarti, non per passare!",
         "trabocchetti": ["eventualmente"],
@@ -1160,6 +1307,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario, prima di attraversare, assicurarsi che non ci siano treni in arrivo sia da destra che da sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → controllare treni da destra e da sinistra?",
         "spiegazione": "Poiché non ci sono barriere, la tua sicurezza dipende solo da te. Devi guardare attentamente in entrambe le direzioni (destra e sinistra) per assicurarti che non stia arrivando nessun treno prima di attraversare i binari.",
         "regola": "Guarda a destra e a sinistra, poi passa!",
         "trabocchetti": ["sia da destra che da sinistra"],
@@ -1168,6 +1316,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non è consentito sostare o fermarsi in prossimità o in corrispondenza dei binari",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato sostare o fermarsi vicino ai binari?",
         "spiegazione": "Fermarsi o sostare sui binari o molto vicino ad essi è estremamente pericoloso. Un treno non può frenare in poco spazio e ti travolgerebbe. Per questo è vietato.",
         "regola": "Binari = mai fermarsi!",
         "trabocchetti": ["non è consentito sostare o fermarsi"],
@@ -1176,6 +1325,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario rallentare esclusivamente in caso di nebbia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → rallentare solo con nebbia?",
         "spiegazione": "Questa è una domanda 'trappola'. Devi rallentare sempre quando c'è un passaggio a livello senza barriere, non solo quando c'è la nebbia. La nebbia rende la situazione ancora più pericolosa, ma il rallentamento è una regola generale per questo tipo di incrocio.",
         "regola": "'Esclusivamente' spesso è falso! Rallenta sempre.",
         "trabocchetti": ["esclusivamente"],
@@ -1184,6 +1334,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è obbligatorio fermarsi prima dei binari se le segnalazioni luminose o acustiche non sono in funzione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di fermarsi se segnalazioni spente?",
         "spiegazione": "Questo segnale indica un passaggio a livello senza barriere e senza segnalazioni luminose o acustiche. Se ci fossero, il segnale sarebbe diverso (con la croce di Sant'Andrea o il segnale di passaggio a livello con barriere). Qui non ci sono segnalazioni, quindi non puoi aspettarti che 'non siano in funzione'. Devi fermarti solo se vedi un treno o se la visibilità è nulla.",
         "regola": "Senza barriere = senza luci/suoni.",
         "immagine": "01a0e71e0c6eed08930f.jpg",
@@ -1191,6 +1342,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è possibile attraversare i binari nel caso siano sbarrati da cavalletti a strisce bianche e rosse",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → attraversare binari sbarrati da cavalletti?",
         "spiegazione": "I cavalletti a strisce bianche e rosse indicano un pericolo o un divieto di accesso, spesso per lavori o per un passaggio a livello chiuso. Non devi mai attraversare se ci sono questi ostacoli, perché significa che c'è un pericolo o che il passaggio è interdetto.",
         "regola": "Sbarrato = non passare!",
         "trabocchetti": ["sbarrati"],
@@ -1199,6 +1351,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è obbligatorio usare il segnalatore acustico (clacson) prima di attraversare i binari",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di clacson prima dei binari?",
         "spiegazione": "Non è obbligatorio usare il clacson. Anzi, in molti casi è vietato usarlo senza motivo. Devi rallentare, guardare e, se necessario, fermarti. Il clacson non ti protegge da un treno.",
         "regola": "Clacson non salva dal treno.",
         "immagine": "01a0e71e0c6eed08930f.jpg",
@@ -1206,6 +1359,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consentito il sorpasso invadendo la corsia opposta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso invadendo l'opposta consentito?",
         "spiegazione": "Il sorpasso è vietato in prossimità e in corrispondenza dei passaggi a livello, specialmente quelli senza barriere, perché è una zona molto pericolosa. Invadere la corsia opposta aumenta ancora di più il rischio di incidente.",
         "regola": "Passaggio a livello = mai sorpassare!",
         "immagine": "01a0e71e0c6eed08930f.jpg",
@@ -1213,6 +1367,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la sede ferroviaria ha un solo binario",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → un solo binario?",
         "spiegazione": "Questo segnale, la Croce di Sant'Andrea con una sola 'X', indica sempre che la strada incrocia un solo binario del treno. Se ci fossero più binari, il segnale avrebbe due 'X' sovrapposte.",
         "regola": "Una X = un binario.",
         "trabocchetti": ["un solo binario"],
@@ -1221,6 +1376,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto nelle immediate vicinanze di un attraversamento ferroviario senza barriere",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vicinissimo a ferrovia senza barriere?",
         "spiegazione": "Questo segnale è messo proprio vicino ai binari, in un punto dove non ci sono barriere o semibarriere per fermare il traffico. È un passaggio a livello 'libero', quindi devi fare molta attenzione.",
         "regola": "Croce = senza barriere, sei vicino.",
         "trabocchetti": ["immediate vicinanze", "senza barriere"],
@@ -1229,6 +1385,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto nelle immediate vicinanze del binario",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → nelle immediate vicinanze del binario?",
         "spiegazione": "Sì, questo segnale lo trovi proprio a ridosso dei binari, a pochi metri. Non è un segnale che ti avvisa da lontano, ma ti indica il punto esatto dell'attraversamento.",
         "regola": "Croce = sei quasi sui binari.",
         "trabocchetti": ["immediate vicinanze"],
@@ -1237,6 +1394,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto sulla strada dopo il segnale PASSAGGIO A LIVELLO SENZA BARRIERE",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dopo PASSAGGIO A LIVELLO SENZA BARRIERE?",
         "spiegazione": "È vero. Prima di arrivare a questo segnale, trovi un altro segnale triangolare di pericolo che ti avvisa del 'Passaggio a livello senza barriere'. La Croce di Sant'Andrea è il segnale che trovi subito dopo, proprio al passaggio.",
         "regola": "Triangolo prima, Croce dopo (al passaggio).",
         "trabocchetti": ["dopo"],
@@ -1245,6 +1403,7 @@ QUESTIONS = [
     {
         "domanda": "La figura rappresenta un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Figura → segnale di pericolo?",
         "spiegazione": "Assolutamente sì. Tutti i segnali che indicano un passaggio a livello, sia con che senza barriere, sono segnali di pericolo perché attraversare i binari è sempre una situazione potenzialmente rischiosa.",
         "regola": "Treni = pericolo.",
         "trabocchetti": ["pericolo"],
@@ -1253,6 +1412,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto sia in senso orizzontale che in senso verticale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → orizzontale o verticale?",
         "spiegazione": "Questo segnale è versatile! Può essere montato sia con la croce 'dritta' (verticale) che 'sdraiata' (orizzontale), a seconda di come si vede meglio e dello spazio disponibile. L'importante è che sia ben visibile.",
         "regola": "Croce = può stare dritta o storta.",
         "immagine": "1466a26e4df53956ce58.jpg",
@@ -1260,6 +1420,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una sede ferroviaria con più binari",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ferrovia con più binari?",
         "spiegazione": "Falso! Come abbiamo detto, una sola 'X' su questo segnale significa che c'è un solo binario. Se ci fossero più binari, il segnale avrebbe due 'X' sovrapposte, una sopra l'altra.",
         "regola": "Una X = un binario, non di più.",
         "trabocchetti": ["più"],
@@ -1268,6 +1429,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio di quattro strade",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → incrocio di quattro strade?",
         "spiegazione": "Falso! Questo segnale non ha nulla a che fare con gli incroci tra strade. Indica un passaggio a livello, cioè un punto dove la strada incrocia i binari del treno.",
         "regola": "Croce = treno, non strade.",
         "trabocchetti": ["incrocio di quattro strade"],
@@ -1276,6 +1438,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una sede tranviaria con un solo binario",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tram con un solo binario?",
         "spiegazione": "Falso! Questo segnale è specifico per i passaggi a livello ferroviari, cioè dove passano i treni. Per i tram ci sono altri segnali, di solito un triangolo con un tram disegnato all'interno.",
         "regola": "Croce = treno, non tram.",
         "trabocchetti": ["tranviaria"],
@@ -1284,6 +1447,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è installato in prossimità di un passaggio a livello con semibarriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vicino a passaggio a livello con semibarriere?",
         "spiegazione": "Falso! Questo segnale è usato solo per i passaggi a livello *senza* barriere o semibarriere. Se ci fossero le semibarriere, avresti un altro tipo di segnale di preavviso (un triangolo con una staccionata).",
         "regola": "Croce = senza barriere.",
         "trabocchetti": ["con semibarriere"],
@@ -1292,6 +1456,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto prima del segnale PASSAGGIO A LIVELLO SENZA BARRIERE",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → prima di PASSAGGIO A LIVELLO SENZA BARRIERE?",
         "spiegazione": "Falso! È il contrario. Il segnale triangolare di 'Passaggio a livello senza barriere' viene *prima*, per avvisarti in anticipo. La Croce di Sant'Andrea è *dopo*, proprio al passaggio a livello.",
         "regola": "Triangolo prima, Croce dopo.",
         "trabocchetti": ["prima"],
@@ -1300,6 +1465,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è integrato da una luce verde ed una rossa fissa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → con luce verde e rossa fissa?",
         "spiegazione": "Falso! Questo segnale non ha luci integrate. I passaggi a livello senza barriere possono avere luci rosse lampeggianti (due luci rosse che si accendono alternativamente), ma non una luce verde e una rossa fissa.",
         "regola": "Croce = no luci fisse.",
         "trabocchetti": ["luce verde ed una rossa fissa"],
@@ -1308,6 +1474,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova, di norma, a 150 metri dai binari",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di norma a 150 m dai binari?",
         "spiegazione": "Falso! Questo segnale si trova nelle *immediate vicinanze* dei binari, cioè proprio lì. Il segnale triangolare di preavviso (Passaggio a livello senza barriere) è quello che si trova a circa 150 metri prima del passaggio.",
         "regola": "Croce = vicino, non a 150m.",
         "trabocchetti": ["a 150 metri"],
@@ -1316,6 +1483,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di arrestarsi entro la striscia di arresto, se è in arrivo il treno.",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi entro la striscia se arriva il treno?",
         "spiegazione": "Questo segnale si trova a un passaggio a livello senza barriere. Se vedi o senti un treno che arriva, devi fermarti prima della linea bianca sull'asfalto (striscia di arresto) per non essere in pericolo.",
         "regola": "Croce = Stop se treno.",
         "trabocchetti": ["impone di arrestarsi"],
@@ -1324,6 +1492,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto nelle immediate vicinanze di un attraversamento ferroviario a livello senza barriere",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vicinissimo a ferrovia senza barriere?",
         "spiegazione": "Questo segnale è messo proprio vicino ai binari del treno. Ti avvisa che lì c'è un passaggio a livello dove non ci sono né barriere né semibarriere per fermare le auto.",
         "regola": "Croce = Vicino ai binari, senza barriere.",
         "trabocchetti": ["immediate vicinanze", "senza barriere"],
@@ -1332,6 +1501,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la linea ferroviaria ha più di un binario",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → più di un binario?",
         "spiegazione": "La doppia \"X\" di questo segnale ti dice che in quel passaggio a livello ci sono due o più binari del treno, non solo uno.",
         "regola": "Doppia Croce = Più binari.",
         "trabocchetti": ["più di un binario"],
@@ -1340,6 +1510,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a fare attenzione, prima di attraversare, perché potrebbe transitare più di un treno",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attenzione, più di un treno?",
         "spiegazione": "Dato che ci sono più binari, devi fare molta attenzione prima di attraversare. Potrebbe passare un treno e subito dopo un altro, o treni da direzioni diverse.",
         "regola": "Più binari = Più treni possibili.",
         "trabocchetti": ["più di un treno"],
@@ -1348,6 +1519,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova dopo i pannelli distanziometrici a barre rosse",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dopo i pannelli a barre rosse?",
         "spiegazione": "Prima di arrivare a questo segnale, trovi altri cartelli con delle barre rosse (pannelli distanziometrici). Questi cartelli ti avvisano che ti stai avvicinando al passaggio a livello. Questo segnale (la Croce di Sant'Andrea) lo trovi dopo, proprio al passaggio.",
         "regola": "Pannelli prima, Croce dopo (al binario).",
         "trabocchetti": ["dopo i pannelli distanziometrici"],
@@ -1356,6 +1528,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Questo segnale ti avvisa di un pericolo: un passaggio a livello senza barriere. Per questo motivo, è classificato come un segnale di pericolo.",
         "regola": "Croce = Pericolo treno.",
         "trabocchetti": ["segnale di pericolo"],
@@ -1364,6 +1537,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A) può essere abbinato al segnale (B)",
         "risposta": True,
+        "riassunto": "Segnale (A) → abbinabile al segnale (B)?",
         "spiegazione": "Questo segnale (la Croce di Sant'Andrea) può essere usato insieme ad altri segnali, come il segnale di STOP o le luci rosse lampeggianti, per aumentare la sicurezza al passaggio a livello.",
         "regola": "Croce + STOP/Luci = Più sicurezza.",
         "trabocchetti": ["abbinato"],
@@ -1372,6 +1546,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto, di norma, a 150 metri dai binari",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di norma a 150 m dai binari?",
         "spiegazione": "Questo segnale non si trova a 150 metri dai binari. I segnali di pericolo triangolari si mettono a 150 metri, ma la Croce di Sant'Andrea è posta proprio sui binari o nelle immediate vicinanze.",
         "regola": "Croce = Zero metri dai binari, non 150!",
         "trabocchetti": ["di norma, a 150 metri"],
@@ -1380,6 +1555,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A) si trova dopo il segnale (B)",
         "risposta": False,
+        "riassunto": "Segnale (A) → dopo il segnale (B)?",
         "spiegazione": "Il segnale A è la doppia croce di Sant'Andrea: indica un passaggio a livello senza barriere con più binari e si trova vicino ai binari. Il segnale B, invece, preannuncia un passaggio a livello con barriere o semibarriere. Riguardano due tipi diversi di attraversamento: A non è il segnale che segue B nello stesso passaggio a livello.",
         "regola": "Doppia croce di Sant'Andrea = più binari, senza barriere. Triangolo con barriera = passaggio a livello con barriere.",
         "immagine": "3a2ea7c418842cd387bc.jpg",
@@ -1387,6 +1563,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un doppio incrocio stradale pericoloso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → doppio incrocio pericoloso?",
         "spiegazione": "Questo segnale non ha niente a che fare con gli incroci tra strade. Serve solo per avvisare di un passaggio a livello ferroviario. La parola \"doppio\" si riferisce ai binari del treno, non a due incroci stradali.",
         "regola": "Croce = Treno, non strade.",
         "trabocchetti": ["doppio incrocio stradale"],
@@ -1395,6 +1572,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la linea ferroviaria ha solo un binario",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → un solo binario?",
         "spiegazione": "Questa è una Croce di Sant'Andrea \"doppia\", il che significa che ci sono più binari (almeno due). Se ci fosse solo un binario, il segnale sarebbe una Croce di Sant'Andrea \"singola\" (una sola \"X\").",
         "regola": "Doppia Croce = Più binari, non uno solo.",
         "trabocchetti": ["solo un binario"],
@@ -1403,6 +1581,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto prima di un attraversamento ferroviario con semibarriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → prima di ferrovia con semibarriere?",
         "spiegazione": "La Croce di Sant'Andrea (doppia o singola) si usa solo per i passaggi a livello dove non ci sono barriere o semibarriere. Se ci fossero le semibarriere, ci sarebbe un altro tipo di segnale di pericolo.",
         "regola": "Croce = No barriere, mai!",
         "trabocchetti": ["con semibarriere"],
@@ -1411,6 +1590,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si possono incontrare due passaggi a livello consecutivi, che distano meno di 150 metri l'uno dall'altro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → due passaggi a livello a meno di 150 m?",
         "spiegazione": "La doppia \"X\" di questo segnale indica che ci sono più binari nello stesso passaggio a livello. Non significa che ci sono due passaggi a livello diversi e vicini.",
         "regola": "Doppia Croce = Più binari qui, non due passaggi.",
         "trabocchetti": ["due passaggi a livello consecutivi"],
@@ -1419,6 +1599,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale può avere fondo giallo in caso di lavori ai binari",
         "risposta": False,
+        "riassunto": "Segnale → fondo giallo per lavori ai binari?",
         "spiegazione": "Questo segnale ha sempre i colori bianco e rosso. Non cambia colore in giallo, anche se ci sono lavori ai binari. I segnali temporanei per i lavori stradali possono essere gialli, ma non questo.",
         "regola": "Croce = Sempre bianca e rossa, mai gialla.",
         "trabocchetti": ["fondo giallo in caso di lavori"],
@@ -1427,6 +1608,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli raffigurati sono posti prima di qualsiasi tipo di passaggio a livello",
         "risposta": True,
+        "riassunto": "Pannelli raffigurati → prima di ogni passaggio a livello?",
         "spiegazione": "Questi pannelli ti avvisano che stai per arrivare a un passaggio a livello, sia che abbia le barriere (sbarre) sia che non le abbia. Sono un segnale importante per la tua sicurezza.",
         "regola": "Pannelli = Avviso passaggio a livello (con o senza barriere).",
         "trabocchetti": ["qualsiasi tipo"],
@@ -1435,6 +1617,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli raffigurati sono posti, di norma, a circa 150, 100 e 50 metri dall'attraversamento ferroviario",
         "risposta": True,
+        "riassunto": "Pannelli raffigurati → a 150, 100 e 50 m dalla ferrovia?",
         "spiegazione": "Sì, è corretto. Il pannello con tre barre rosse lo trovi a circa 150 metri, quello con due barre a circa 100 metri e quello con una barra a circa 50 metri dal passaggio a livello. Ti aiutano a capire quanto sei vicino.",
         "regola": "3 barre = 150m, 2 barre = 100m, 1 barra = 50m.",
         "immagine": "d36bfb04ca01b03b0129.jpg",
@@ -1442,6 +1625,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli raffigurati servono ad indicare che ci si sta avvicinando al passaggio a livello",
         "risposta": True,
+        "riassunto": "Pannelli raffigurati → avvicinamento al passaggio a livello?",
         "spiegazione": "Esatto! Questi pannelli sono proprio fatti per questo: ti avvisano che stai per arrivare a un passaggio a livello, così puoi rallentare e fare attenzione.",
         "regola": "Barre oblique = Ti avvicini al treno.",
         "immagine": "d36bfb04ca01b03b0129.jpg",
@@ -1449,6 +1633,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello con tre barre rosse (A) è posto sotto il segnale (B)",
         "risposta": True,
+        "riassunto": "Pannello a tre barre (A) → sotto il segnale (B)?",
         "spiegazione": "Il pannello con tre barre è il primo che incontri e si trova sotto il segnale di pericolo che indica il passaggio a livello (il triangolo con la locomotiva o la croce di Sant'Andrea). Gli altri pannelli (con due e una barra) sono posti da soli più avanti.",
         "regola": "3 barre = Sotto il segnale di pericolo.",
         "trabocchetti": ["sotto"],
@@ -1457,6 +1642,7 @@ QUESTIONS = [
     {
         "domanda": "Nel caso di attraversamento ferroviario senza barriere, i pannelli (A) sono posti prima del segnale (B)",
         "risposta": True,
+        "riassunto": "Senza barriere → pannelli (A) prima del segnale (B)?",
         "spiegazione": "Questi pannelli (A) ti avvisano che stai per arrivare a un passaggio a livello senza barriere. Il segnale (B) in questo caso si riferisce alla Croce di Sant'Andrea, che si trova proprio all'inizio dell'attraversamento. I pannelli distanziometrici sono posizionati prima di questo segnale finale per darti il tempo di prepararti.",
         "regola": "Pannelli = Prima del punto di attraversamento (anche della Croce di Sant'Andrea).",
         "trabocchetti": ["prima"],
@@ -1465,6 +1651,7 @@ QUESTIONS = [
     {
         "domanda": "Il pannello con tre barre oblique rosse è il primo dei pannelli che si incontra quando ci si approssima ad un passaggio a livello",
         "risposta": True,
+        "riassunto": "Pannello a tre barre → il primo che si incontra?",
         "spiegazione": "Sì, è proprio così. Il pannello con tre barre è quello che vedi per primo, perché indica la distanza maggiore (circa 150 metri) dal passaggio a livello. Poi seguiranno quello con due e quello con una barra.",
         "regola": "3 barre = Il primo avviso.",
         "trabocchetti": ["il primo dei pannelli che si incontra"],
@@ -1473,6 +1660,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli raffigurati si possono trovare solo se il passaggio a livello è con barriere",
         "risposta": False,
+        "riassunto": "Pannelli raffigurati → solo con barriere?",
         "spiegazione": "No, non è vero. Questi pannelli servono per qualsiasi tipo di passaggio a livello, sia quelli con le barriere (sbarre) sia quelli senza. Sono un avviso generale.",
         "regola": "'Solo se' = Attenzione, spesso FALSO.",
         "trabocchetti": ["solo se"],
@@ -1481,6 +1669,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli raffigurati sono segnali di prescrizione",
         "risposta": False,
+        "riassunto": "Pannelli raffigurati → di prescrizione?",
         "spiegazione": "No, questi pannelli non sono segnali di prescrizione. I segnali di prescrizione sono quelli che danno un obbligo o un divieto (come 'Stop' o 'Divieto di sosta'). Questi pannelli sono segnali di pericolo, perché avvisano di un pericolo (il passaggio a livello) e indicano la distanza.",
         "regola": "Barre rosse = Pericolo/Avviso, non obbligo.",
         "immagine": "d36bfb04ca01b03b0129.jpg",
@@ -1488,6 +1677,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli raffigurati indicano lavori in corso",
         "risposta": False,
+        "riassunto": "Pannelli raffigurati → lavori in corso?",
         "spiegazione": "Assolutamente no! Questi pannelli non c'entrano nulla con i lavori in corso. Servono solo per avvisarti che stai arrivando a un passaggio a livello. I segnali di lavori in corso sono diversi, spesso gialli.",
         "regola": "Barre rosse = Treno, non lavori.",
         "immagine": "d36bfb04ca01b03b0129.jpg",
@@ -1495,6 +1685,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli raffigurati hanno tante barre diagonali quanti sono i binari del passaggio a livello",
         "risposta": False,
+        "riassunto": "Pannelli → tante barre quanti binari?",
         "spiegazione": "No, il numero delle barre non indica quanti binari ci sono. Il numero delle barre indica la distanza dal passaggio a livello: tre barre = più lontano, una barra = più vicino. Per sapere quanti binari ci sono, devi guardare altri segnali, come la croce di Sant'Andrea con la scritta 'più binari'.",
         "regola": "Barre = Distanza, non binari.",
         "immagine": "d36bfb04ca01b03b0129.jpg",
@@ -1502,6 +1693,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli raffigurati, se con due barre, indicano un attraversamento ferroviario con due soli binari",
         "risposta": False,
+        "riassunto": "Pannelli con due barre → due soli binari?",
         "spiegazione": "Anche questa è falsa, per lo stesso motivo della domanda precedente. Il pannello con due barre indica che sei a circa 100 metri dal passaggio a livello, non che ci sono due binari.",
         "regola": "Barre = Distanza, non binari.",
         "immagine": "d36bfb04ca01b03b0129.jpg",
@@ -1509,6 +1701,7 @@ QUESTIONS = [
     {
         "domanda": "I pannelli raffigurati sono installati su cavalletti che vietano il transito dell'attraversamento ferroviario",
         "risposta": False,
+        "riassunto": "Pannelli → su cavalletti che vietano il transito?",
         "spiegazione": "No, questi pannelli sono fissati a dei pali normali a lato della strada. Non sono su cavalletti e non vietano il transito. Servono solo ad avvisarti della presenza del passaggio a livello.",
         "regola": "Pannelli = Avviso, non blocco.",
         "immagine": "d36bfb04ca01b03b0129.jpg",
@@ -1516,6 +1709,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia di moderare la velocità perché poco più avanti si potrebbe incrociare un tram",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare, possibile tram più avanti?",
         "spiegazione": "Questo segnale è un avviso di pericolo. Significa che devi rallentare e fare attenzione, perché più avanti potresti incontrare un tram che attraversa la strada.",
         "regola": "Triangolo rosso = Attenzione! Tram in arrivo, rallenta.",
         "trabocchetti": ["moderare la velocità"],
@@ -1524,6 +1718,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato posto fuori dei centri abitati, preannuncia una linea tranviaria non regolata da semafori",
         "risposta": True,
+        "riassunto": "Segnale raffigurato fuori città → tram senza semafori?",
         "spiegazione": "Il segnale ti avvisa che stai per incrociare una linea del tram. La cosa importante è che questo incrocio non è regolato da semafori, quindi devi fare molta più attenzione. Questo vale sia fuori che dentro i centri abitati.",
         "regola": "Tram senza semaforo? Questo è il segnale!",
         "trabocchetti": ["non regolata da semafori"],
@@ -1532,6 +1727,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, posto nei centri abitati, preannuncia l'incrocio con una linea tranviaria non regolata da semafori",
         "risposta": True,
+        "riassunto": "Segnale raffigurato in città → tram senza semafori?",
         "spiegazione": "Anche se sei in città, il significato del segnale non cambia. Ti avvisa di un incrocio con i binari del tram che non ha semafori per regolarlo. Quindi, massima prudenza!",
         "regola": "Città o campagna, se vedi il tram, non c'è semaforo.",
         "trabocchetti": ["non regolata da semafori", "nei centri abitati"],
@@ -1540,6 +1736,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, fuori e dentro i centri abitati, una linea tranviaria non regolata da semafori",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, dentro e fuori città → tram senza semafori?",
         "spiegazione": "Questa domanda riassume le precedenti. Il segnale ti avvisa di una linea tranviaria senza semafori, e questo vale sempre, sia che tu sia in città (dentro i centri abitati) sia che tu sia fuori città (fuori dei centri abitati).",
         "regola": "Tram senza semaforo, ovunque tu sia.",
         "trabocchetti": ["non regolata da semafori"],
@@ -1548,6 +1745,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una linea tranviaria che incrocia la carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → linea tranviaria che incrocia la carreggiata?",
         "spiegazione": "Il segnale ti avvisa che i binari del tram attraversano la strada su cui stai guidando. Questo significa che potresti trovarti di fronte a un tram in movimento.",
         "regola": "Tram sul tuo percorso.",
         "trabocchetti": ["incrocia la carreggiata"],
@@ -1556,6 +1754,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una linea tranviaria che riduce lo spazio utile per la circolazione dei veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → tram che riduce lo spazio per i veicoli?",
         "spiegazione": "Quando ci sono i binari del tram sulla strada, o quando il tram stesso è presente, lo spazio disponibile per le altre auto si riduce. Devi tenerne conto per guidare in sicurezza.",
         "regola": "Tram = meno spazio per te.",
         "immagine": "6054d54c31cc45491b86.jpg",
@@ -1563,6 +1762,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, il conducente deve porre maggiore attenzione per non intralciare la marcia del tram",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non intralciare il tram?",
         "spiegazione": "I tram sono veicoli grandi e pesanti, non possono frenare o sterzare facilmente. Per questo, devi fare molta attenzione a non ostacolare il loro passaggio, dando loro la precedenza quando necessario.",
         "regola": "Attenzione al tram, ha sempre fretta!",
         "trabocchetti": ["non intralciare la marcia del tram"],
@@ -1571,6 +1771,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, il conducente deve prestare maggiore attenzione, perché potrebbe incrociare un tram",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → possibile incrocio con un tram?",
         "spiegazione": "Questo è il messaggio principale di tutti i segnali di pericolo: devi essere più attento perché c'è una situazione potenzialmente rischiosa, in questo caso, l'incontro con un tram.",
         "regola": "Triangolo rosso = Occhi aperti!",
         "trabocchetti": ["prestare maggiore attenzione"],
@@ -1579,6 +1780,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un eventuale transito di filobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → transito di filobus?",
         "spiegazione": "Il segnale mostra chiaramente un tram, che è un veicolo che viaggia su rotaie. Un filobus è un tipo di autobus elettrico che non ha rotaie, ma ruote e si muove sulla strada normale. Sono due veicoli diversi.",
         "regola": "Tram ha le rotaie, filobus no.",
         "trabocchetti": ["filobus"],
@@ -1587,6 +1789,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere integrato con un dispositivo a due luci rosse che si accendono alternativamente",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → due luci rosse alternate?",
         "spiegazione": "Le due luci rosse che si accendono alternativamente sono tipiche dei passaggi a livello ferroviari (con i treni) o di altri incroci molto pericolosi e regolati. Questo segnale, invece, indica un incrocio tranviario 'non regolato da semafori', quindi non ci sono queste luci.",
         "regola": "Niente luci rosse per il tram 'semplice'.",
         "immagine": "6054d54c31cc45491b86.jpg",
@@ -1594,6 +1797,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a dare la precedenza ai filobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza ai filobus?",
         "spiegazione": "Il segnale si riferisce ai tram, non ai filobus. Anche se i tram hanno spesso la precedenza, questo segnale non ti obbliga a darla specificamente ai filobus.",
         "regola": "Tram, non filobus.",
         "trabocchetti": ["filobus", "obbliga a dare la precedenza"],
@@ -1602,6 +1806,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il sorpasso dei tram",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso dei tram vietato?",
         "spiegazione": "Questo segnale è un avviso di pericolo, non un divieto. Non vieta di sorpassare i tram in generale. Le regole per il sorpasso dei tram dipendono da altre condizioni (spazio, fermate, ecc.), ma non da questo segnale.",
         "regola": "Avviso, non divieto di sorpasso.",
         "trabocchetti": ["vieta"],
@@ -1610,6 +1815,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un passaggio a livello ferroviario senza barriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passaggio a livello senza barriere?",
         "spiegazione": "Il simbolo sul segnale è un tram, non un treno. Un passaggio a livello ferroviario (con i treni) ha un simbolo diverso (un treno o una barriera). Non confondere i tram con i treni!",
         "regola": "Tram non è treno.",
         "trabocchetti": ["passaggio a livello ferroviario"],
@@ -1618,6 +1824,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una zona in cui possono circolare solo i veicoli in servizio pubblico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo veicoli di servizio pubblico?",
         "spiegazione": "Questo segnale ti avvisa della presenza di un tram, ma non significa che solo i veicoli pubblici possano circolare. La strada è aperta a tutti, ma tutti devono fare attenzione al tram.",
         "regola": "Non è una corsia preferenziale.",
         "trabocchetti": ["solo i veicoli in servizio pubblico"],
@@ -1626,6 +1833,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si può sorpassare a destra il tram in marcia se vi è lo spazio necessario",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sorpasso a destra del tram in marcia se c'è spazio?",
         "spiegazione": "È VERO. Di solito si sorpassa a sinistra, ma il tram è un veicolo speciale. Se il tram è in movimento e c'è abbastanza spazio sulla destra, puoi sorpassarlo da quel lato. Questo succede spesso quando i binari sono al centro della strada.",
         "regola": "Tram in marcia, se c'è spazio, anche a destra puoi passare.",
         "trabocchetti": ["a destra", "in marcia"],
@@ -1634,6 +1842,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si può circolare sui binari senza intralciare la marcia del tram",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → circolare sui binari senza intralciare il tram?",
         "spiegazione": "È VERO. Se i binari del tram sono sulla strada e non in una corsia separata, puoi guidare sopra di essi. L'importante è non bloccare il tram e dargli sempre la precedenza.",
         "regola": "Sui binari puoi andare, ma il tram non devi mai bloccare.",
         "trabocchetti": ["senza intralciare la marcia del tram"],
@@ -1642,6 +1851,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si può sorpassare a destra il tram fermo al centro della strada per la salita e discesa dei passeggeri, solo se esiste l'apposito salvagente",
         "risposta": True,
+        "riassunto": "Tram fermo al centro per passeggeri → sorpasso a destra solo con salvagente?",
         "spiegazione": "È VERO. Se il tram si ferma al centro della strada per far salire o scendere i passeggeri, puoi sorpassarlo a destra solo se c'è un 'salvagente', cioè un'isola pedonale o uno spazio protetto per i passeggeri. Se non c'è, devi fermarti dietro il tram.",
         "regola": "Tram fermo, salvagente c'è? A destra puoi andare, altrimenti devi aspettare.",
         "trabocchetti": ["solo se esiste l"],
@@ -1650,6 +1860,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve fare attenzione agli eventuali pedoni presenti alla fermata del tram",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attenzione ai pedoni alla fermata del tram?",
         "spiegazione": "È VERO. Il segnale ti avvisa che ci sono i tram, e dove ci sono i tram ci sono anche le fermate. Alle fermate ci sono persone (pedoni) che salgono e scendono, quindi devi essere molto prudente per la loro sicurezza.",
         "regola": "Tram = pedoni. Attenzione sempre!",
         "trabocchetti": ["eventuali"],
@@ -1658,6 +1869,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna fare attenzione alla possibile diminuzione di aderenza delle ruote del veicolo se si frena sui binari",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → meno aderenza frenando sui binari?",
         "spiegazione": "È VERO. I binari del tram sono di metallo e possono essere molto scivolosi, specialmente quando piove o ci sono foglie bagnate. Se freni sui binari, le ruote della tua auto potrebbero perdere aderenza e potresti scivolare.",
         "regola": "Binari bagnati, freni attenti, scivoli facilmente!",
         "trabocchetti": ["diminuzione di aderenza", "se si frena sui binari"],
@@ -1666,6 +1878,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato occorre tenere presente che il tram necessita di una distanza di arresto maggiore di quella degli autoveicoli",
         "risposta": True,
+        "riassunto": "Tram → spazio di arresto più lungo delle auto?",
         "spiegazione": "È VERO. I tram sono veicoli molto pesanti e, anche se hanno i freni, hanno bisogno di più spazio per fermarsi rispetto a un'automobile. Devi sempre considerare questa cosa quando guidi vicino a un tram.",
         "regola": "Tram pesante, frena più lentamente.",
         "trabocchetti": ["maggiore"],
@@ -1674,6 +1887,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si ha l'obbligo di dare la precedenza ai filobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza ai filobus?",
         "spiegazione": "È FALSO. Il segnale raffigura un tram, che è un veicolo che viaggia su binari. Il filobus è un autobus elettrico che non ha binari e segue le normali regole della strada. Questo segnale non dà precedenza ai filobus.",
         "regola": "Segnale del tram, non del filobus. Precedenza solo al tram!",
         "trabocchetti": ["filobus"],
@@ -1682,6 +1896,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato il sorpasso dei tram è vietato esclusivamente ai motocicli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso del tram vietato solo alle moto?",
         "spiegazione": "È FALSO. Le regole sul sorpasso del tram valgono per tutti i veicoli, non 'esclusivamente' per i motocicli. Se il sorpasso è vietato in una certa situazione, è vietato per tutti.",
         "regola": "'Esclusivamente' è quasi sempre un errore! Le regole sono per tutti.",
         "trabocchetti": ["esclusivamente"],
@@ -1690,6 +1905,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietata la marcia sopra i binari del tram",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato marciare sui binari?",
         "spiegazione": "È FALSO. Come abbiamo visto nella domanda 19132, puoi circolare sui binari del tram se questi sono sulla strada e non intralci il tram. Quindi, non è vietato in assoluto.",
         "regola": "Sui binari puoi andare, ma il tram non devi mai bloccare.",
         "trabocchetti": ["vietata"],
@@ -1698,6 +1914,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato il sorpasso del tram è consentito solo a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso del tram solo a sinistra?",
         "spiegazione": "È FALSO. Il sorpasso del tram può essere consentito sia a sinistra che a destra, a seconda della situazione (ad esempio, se il tram è in marcia e c'è spazio a destra). Dire 'solo a sinistra' è sbagliato.",
         "regola": "Tram: sorpasso anche a destra, se c'è spazio!",
         "trabocchetti": ["solo"],
@@ -1706,6 +1923,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato il sorpasso del tram è consentito solo a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso del tram solo a destra?",
         "spiegazione": "È FALSO. Anche questa frase è sbagliata. Il sorpasso del tram può essere consentito sia a destra che a sinistra, a seconda della situazione. Non è 'solo a destra'.",
         "regola": "Tram: sorpasso sia a destra che a sinistra, a seconda della situazione.",
         "trabocchetti": ["solo"],
@@ -1714,6 +1932,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, il tram fermo per la salita e la discesa dei passeggeri può essere sorpassato a destra quando non esiste il salvagente",
         "risposta": False,
+        "riassunto": "Tram fermo per passeggeri senza salvagente → sorpasso a destra?",
         "spiegazione": "È FALSO. Se il tram è fermo per far salire o scendere i passeggeri e NON c'è il salvagente (l'isola pedonale), devi fermarti dietro il tram e aspettare. Non puoi sorpassarlo a destra, perché metteresti in pericolo i pedoni.",
         "regola": "No salvagente? Fermo dietro al tram, sempre!",
         "trabocchetti": ["quando non esiste il salvagente"],
@@ -1722,6 +1941,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un'area di sosta per autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area di sosta autobus?",
         "spiegazione": "È FALSO. Il segnale mostra chiaramente un tram, non un autobus. Questo segnale avvisa della presenza di binari del tram o di un attraversamento tramviario, non di un'area di sosta per autobus.",
         "regola": "È un tram, non un bus!",
         "trabocchetti": ["autobus", "area di sosta"],
@@ -1730,6 +1950,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una corsia riservata ai filobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia riservata ai filobus?",
         "spiegazione": "È FALSO. Il segnale raffigura un tram, non un filobus. Inoltre, il segnale avvisa della presenza di binari del tram, non di una corsia riservata ai filobus.",
         "regola": "È un tram, non un filobus!",
         "trabocchetti": ["filobus", "corsia riservata"],
@@ -1738,6 +1959,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un attraversamento pedonale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attraversamento pedonale?",
         "spiegazione": "Questo segnale, con il suo bordo rosso e il simbolo di un pedone sulle strisce, serve proprio a dirti in anticipo che stai per incontrare un punto dove i pedoni attraversano la strada. È un segnale di pericolo.",
         "regola": "Triangolo rosso = pericolo. Uomo sulle strisce = attraversamento pedonale.",
         "trabocchetti": ["preannuncia"],
@@ -1746,6 +1968,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, il conducente deve dare la precedenza ai pedoni che attraversano sulle strisce",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza ai pedoni sulle strisce?",
         "spiegazione": "Quando vedi questo segnale, devi rallentare e prepararti a fermarti. I pedoni che sono sulle strisce o stanno per salirci hanno sempre la precedenza. È fondamentale per la loro sicurezza.",
         "regola": "Pedone sulle strisce = precedenza al pedone.",
         "trabocchetti": ["dare la precedenza"],
@@ -1754,6 +1977,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle strade extraurbane il segnale raffigurato è posto, di norma, a 150 metri dall'attraversamento",
         "risposta": True,
+        "riassunto": "Extraurbane → segnale di norma a 150 m dalle strisce?",
         "spiegazione": "Sulle strade fuori città (extraurbane), i segnali di pericolo come questo vengono messi a circa 150 metri prima del punto pericoloso, per darti il tempo di reagire. È una distanza standard.",
         "regola": "Extraurbane = 150 metri di preavviso.",
         "trabocchetti": ["di norma"],
@@ -1762,6 +1986,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto anche nei centri abitati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → anche nei centri abitati?",
         "spiegazione": "Anche se i segnali di pericolo sono più comuni fuori città, questo segnale può essere usato anche dentro i centri abitati, specialmente se l'attraversamento non è ben visibile o è in un punto inaspettato.",
         "regola": "Segnale di pericolo = dove serve, anche in città.",
         "trabocchetti": ["anche"],
@@ -1770,6 +1995,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato comporta il divieto di sorpassare un veicolo che si sia arrestato per far attraversare i pedoni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato sorpassare chi si ferma per i pedoni?",
         "spiegazione": "Se un veicolo davanti a te si ferma per far attraversare i pedoni, tu non puoi sorpassarlo. Farlo sarebbe molto pericoloso perché non vedresti i pedoni e potresti investirli. Devi aspettare che il veicolo riparta e che i pedoni abbiano attraversato in sicurezza.",
         "regola": "Veicolo fermo per pedoni = MAI sorpassare.",
         "trabocchetti": ["comporta il divieto"],
@@ -1778,6 +2004,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un luogo frequentato da bambini",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → luogo frequentato da bambini?",
         "spiegazione": "Questo segnale indica un attraversamento pedonale generico. Il segnale che preannuncia un luogo frequentato da bambini è diverso: mostra due bambini che corrono.",
         "regola": "Un uomo = pedone. Due bambini = bambini.",
         "trabocchetti": ["bambini"],
@@ -1786,6 +2013,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un viale pedonale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → viale pedonale?",
         "spiegazione": "Un 'viale pedonale' è una strada intera riservata solo ai pedoni, dove le auto non possono entrare. Questo segnale, invece, indica solo un punto specifico dove i pedoni attraversano una strada normale.",
         "regola": "Strisce = attraversamento. Viale = strada intera.",
         "trabocchetti": ["viale pedonale"],
@@ -1794,6 +2022,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di usare i dispositivi di segnalazione acustica per far spostare i pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → clacson per far spostare i pedoni?",
         "spiegazione": "Assolutamente no! Quando vedi questo segnale, devi rallentare e dare la precedenza ai pedoni, non spaventarli con il clacson. Usare il clacson senza motivo è vietato e maleducato.",
         "regola": "Pedone = rispetto, non clacson.",
         "trabocchetti": ["impone"],
@@ -1802,6 +2031,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la fermata dei veicoli sull'attraversamento pedonale, purché rimanga spazio sufficiente per i pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata sulle strisce se resta spazio?",
         "spiegazione": "È severamente vietato fermarsi, sostare o parcheggiare sopra le strisce pedonali, anche per un attimo e anche se pensi che ci sia spazio. Le strisce devono essere sempre libere per i pedoni.",
         "regola": "Strisce pedonali = MAI fermarsi sopra.",
         "trabocchetti": ["purché rimanga spazio sufficiente"],
@@ -1810,6 +2040,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai pedoni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → transito vietato ai pedoni?",
         "spiegazione": "Questo segnale non vieta ai pedoni di camminare, al contrario! Indica proprio il punto dove i pedoni possono e devono attraversare la strada in sicurezza. È un segnale per i veicoli, non per i pedoni.",
         "regola": "Segnale per i veicoli, non divieto per i pedoni.",
         "trabocchetti": ["vieta"],
@@ -1818,6 +2049,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un'isola pedonale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → isola pedonale?",
         "spiegazione": "Un'isola pedonale è un'area della città dove possono circolare solo i pedoni e i veicoli sono vietati o limitati. Questo segnale, invece, indica solo un punto specifico dove i pedoni attraversano una strada aperta al traffico.",
         "regola": "Strisce = attraversamento. Isola = zona intera.",
         "trabocchetti": ["isola pedonale"],
@@ -1826,6 +2058,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non è consentito sorpassare i veicoli che rallentano per far attraversare i pedoni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato sorpassare chi rallenta per i pedoni?",
         "spiegazione": "Se un veicolo davanti a te rallenta o si ferma per far passare i pedoni, tu non puoi sorpassarlo. È molto pericoloso perché potresti investire il pedone che sta attraversando. Quindi, la risposta è VERO.",
         "regola": "Mai sorpassare chi si ferma per i pedoni.",
         "trabocchetti": ["non è consentito sorpassare"],
@@ -1834,6 +2067,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna rallentare per essere pronti ad arrestarsi se ci sono pedoni che attraversano la carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare, pronti a fermarsi per i pedoni?",
         "spiegazione": "Il segnale ti avvisa che c'è un attraversamento pedonale. Devi rallentare e prepararti a fermarti per dare la precedenza ai pedoni. Questo è un comportamento obbligatorio per la sicurezza. Quindi, la risposta è VERO.",
         "regola": "Rallenta sempre, i pedoni hanno la precedenza.",
         "immagine": "4ae608f4af29f05543d6.jpg",
@@ -1841,6 +2075,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve fare attenzione a non tamponare i veicoli che si arrestano per dare la precedenza ai pedoni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attenzione a non tamponare chi si ferma?",
         "spiegazione": "Poiché i veicoli davanti a te potrebbero fermarsi improvvisamente per i pedoni, devi mantenere una distanza di sicurezza adeguata per evitare di scontrarti con loro (tamponarli). Quindi, la risposta è VERO.",
         "regola": "Distanza di sicurezza, sempre!",
         "trabocchetti": ["fare attenzione a non tamponare"],
@@ -1849,6 +2084,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non si deve effettuare sosta o fermata sopra le strisce pedonali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → niente sosta o fermata sulle strisce?",
         "spiegazione": "È sempre vietato fermarsi o parcheggiare (sosta o fermata) sulle strisce pedonali. Questo impedisce ai pedoni di attraversare in sicurezza e ostruisce la visibilità. Quindi, la risposta è VERO.",
         "regola": "Strisce pedonali = zona libera.",
         "trabocchetti": ["non si deve effettuare sosta o fermata"],
@@ -1857,6 +2093,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, qualora non si dia la precedenza ai pedoni che attraversano sulle apposite strisce, si incorre nella sottrazione di punti della patente",
         "risposta": True,
+        "riassunto": "Mancata precedenza ai pedoni sulle strisce → perdita di punti?",
         "spiegazione": "Non dare la precedenza ai pedoni sulle strisce è una grave infrazione al Codice della Strada. Questo comporta una multa e la perdita di punti sulla patente. Quindi, la risposta è VERO.",
         "regola": "Precedenza ai pedoni = obbligo, non opzione.",
         "immagine": "4ae608f4af29f05543d6.jpg",
@@ -1864,6 +2101,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è obbligatorio suonare il clacson se vi sono pedoni che attraversano sulle strisce pedonali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di clacson coi pedoni sulle strisce?",
         "spiegazione": "Suonare il clacson senza motivo è vietato, specialmente vicino ai pedoni, perché potrebbe spaventarli o confonderli. Il clacson si usa solo in caso di pericolo immediato. Quindi, la risposta è FALSO.",
         "regola": "Clacson solo per pericolo, mai per 'avvisare'.",
         "trabocchetti": ["obbligatorio"],
@@ -1872,6 +2110,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve rallentare solo se vi sono bambini che attraversano sulle strisce pedonali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → rallentare solo per i bambini?",
         "spiegazione": "Devi rallentare e dare la precedenza a tutti i pedoni che attraversano sulle strisce, non solo ai bambini. La sicurezza è per tutti, indipendentemente dall'età. Quindi, la risposta è FALSO.",
         "regola": "Tutti i pedoni hanno precedenza.",
         "trabocchetti": ["solo"],
@@ -1880,6 +2119,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato i pedoni devono dare la precedenza ai veicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pedoni danno precedenza ai veicoli?",
         "spiegazione": "Sulle strisce pedonali, sono i veicoli che devono dare la precedenza ai pedoni. Le strisce sono fatte proprio per proteggere i pedoni e garantire loro un attraversamento sicuro. Quindi, la risposta è FALSO.",
         "regola": "Sulle strisce, il pedone è re.",
         "immagine": "4ae608f4af29f05543d6.jpg",
@@ -1887,6 +2127,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non è obbligatorio dare la precedenza ai pedoni che attraversano sulle strisce pedonali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza ai pedoni non obbligatoria?",
         "spiegazione": "È sempre obbligatorio dare la precedenza ai pedoni che attraversano sulle strisce. È una delle regole fondamentali del Codice della Strada per la sicurezza. Quindi, la risposta è FALSO.",
         "regola": "Precedenza ai pedoni = obbligo.",
         "trabocchetti": ["non è obbligatorio"],
@@ -1895,6 +2136,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve dare la precedenza solo ai pedoni che attraversano da sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza solo ai pedoni da sinistra?",
         "spiegazione": "Devi dare la precedenza a tutti i pedoni che attraversano sulle strisce, da qualsiasi direzione provengano (destra o sinistra). Non c'è una limitazione di direzione. Quindi, la risposta è FALSO.",
         "regola": "Precedenza a tutti i pedoni sulle strisce.",
         "trabocchetti": ["solo", "da sinistra"],
@@ -1903,6 +2145,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale in figura preannuncia un sovrappasso pedonale",
         "risposta": False,
+        "riassunto": "Segnale in figura → sovrappasso pedonale?",
         "spiegazione": "Il segnale raffigura un pedone che cammina sulla strada (sulle strisce), non sopra un ponte (sovrappasso). Indica un attraversamento pedonale a livello della strada. Quindi, la risposta è FALSO.",
         "regola": "Pedone a terra = attraversamento a raso.",
         "trabocchetti": ["sovrappasso pedonale"],
@@ -1911,6 +2154,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale in figura preannuncia un sottopasso pedonale",
         "risposta": False,
+        "riassunto": "Segnale in figura → sottopasso pedonale?",
         "spiegazione": "Come per il sovrappasso, il segnale mostra un pedone che attraversa la strada a livello del suolo, non sotto terra (sottopasso). Quindi, la risposta è FALSO.",
         "regola": "Pedone a terra = attraversamento a raso.",
         "trabocchetti": ["sottopasso pedonale"],
@@ -1919,6 +2163,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un attraversamento pedonale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → proprio sull'attraversamento pedonale?",
         "spiegazione": "Questo è un segnale di pericolo (triangolare con bordo rosso). I segnali di pericolo sono posti prima del pericolo, per avvisare in anticipo. Quindi, è posto prima dell'attraversamento, non in corrispondenza (cioè proprio lì dove inizia). Quindi, la risposta è FALSO.",
         "regola": "Segnale triangolare = pericolo avanti.",
         "trabocchetti": ["è posto in corrispondenza"],
@@ -1927,6 +2172,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un attraversamento ciclabile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attraversamento ciclabile?",
         "spiegazione": "Il segnale triangolare con bordo rosso e il simbolo del ciclista indica che stai per incontrare un punto della strada dove i ciclisti attraversano. Quindi, preannuncia un attraversamento ciclabile.",
         "regola": "Triangolo rosso = pericolo in arrivo.",
         "trabocchetti": ["preannuncia"],
@@ -1935,6 +2181,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Tutti i segnali stradali a forma di triangolo con bordo rosso sono segnali di pericolo. Servono ad avvisarti di un rischio sulla strada.",
         "regola": "Triangolo rosso = pericolo.",
         "trabocchetti": ["Segnale di pericolo"],
@@ -1943,6 +2190,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un attraversamento per ciclisti, contraddistinto dagli appositi segni sulla carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attraversamento ciclabile segnato a terra?",
         "spiegazione": "Questo segnale ti avvisa che stai per arrivare a un punto dove i ciclisti attraversano. Questo punto è spesso segnato sulla strada con strisce bianche o altri simboli specifici per i ciclisti.",
         "regola": "Ciclista sul cartello = ciclisti sulla strada (con strisce).",
         "immagine": "db2865f920a090b35c10.jpg",
@@ -1950,6 +2198,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'approssimarsi di un luogo dal quale possono provenire ciclisti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → luogo da cui possono uscire ciclisti?",
         "spiegazione": "Il segnale ti avvisa che in quel punto della strada potresti vedere dei ciclisti che si immettono o attraversano. Devi essere pronto a vederli.",
         "regola": "Attenzione: i ciclisti potrebbero arrivare!",
         "trabocchetti": ["possono provenire"],
@@ -1958,6 +2207,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto, di norma, 150 metri prima dell'attraversamento ciclabile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di norma 150 m prima dell'attraversamento ciclabile?",
         "spiegazione": "I segnali di pericolo, come questo, sono messi sulla strada un po' prima del punto pericoloso. 'Di norma' (cioè, di solito) sono a circa 150 metri fuori dai centri abitati, per darti il tempo di reagire.",
         "regola": "Pericolo = 150 metri di anticipo.",
         "trabocchetti": ["di norma"],
@@ -1966,6 +2216,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato comporta di moderare la velocità in modo da non costituire pericolo per la sicurezza dei ciclisti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per non mettere in pericolo i ciclisti?",
         "spiegazione": "Quando vedi un segnale di pericolo, devi rallentare e guidare con più attenzione. Questo è per proteggere i ciclisti che potrebbero attraversare e per la tua sicurezza.",
         "regola": "Pericolo = rallenta e fai attenzione.",
         "trabocchetti": ["moderare la velocità"],
@@ -1974,6 +2225,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in corrispondenza di un attraversamento ciclabile",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → proprio sull'attraversamento ciclabile?",
         "spiegazione": "Questo segnale è di pericolo, quindi ti avvisa *prima* del pericolo. Non è messo proprio *nel punto* dove i ciclisti attraversano, ma un po' prima, per darti il tempo di prepararti.",
         "regola": "Pericolo = prima, non sopra!",
         "trabocchetti": ["in corrispondenza"],
@@ -1982,6 +2234,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "Questo è un segnale di pericolo (triangolare con bordo rosso). I segnali di prescrizione (come obbligo o divieto) sono di solito rotondi.",
         "regola": "Triangolo = pericolo, non obbligo.",
         "trabocchetti": ["prescrizione"],
@@ -1990,6 +2243,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai ciclisti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → transito vietato ai ciclisti?",
         "spiegazione": "Questo segnale avvisa gli automobilisti della presenza di un attraversamento ciclabile. Non vieta ai ciclisti di passare. Anzi, li indica come presenti!",
         "regola": "Non vieta, avvisa!",
         "trabocchetti": ["vieta"],
@@ -1998,6 +2252,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'inizio di una pista ciclabile",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio pista ciclabile?",
         "spiegazione": "Il segnale indica un attraversamento, cioè un punto dove i ciclisti passano la strada. Non indica l'inizio di una 'pista ciclabile', che è una strada dedicata solo alle biciclette e ha un altro tipo di segnale (di solito rotondo e blu).",
         "regola": "Non è una pista, è un incrocio!",
         "trabocchetti": ["inizio di una pista ciclabile", "pista"],
@@ -2006,6 +2261,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si sta svolgendo una gara ciclistica",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → gara ciclistica in corso?",
         "spiegazione": "Questo segnale è per gli attraversamenti ciclabili normali, che si trovano tutti i giorni. Non indica che c'è una gara di biciclette in corso, per quello ci sono altri segnali specifici.",
         "regola": "Non è una gara, è un passaggio normale.",
         "trabocchetti": ["gara ciclistica"],
@@ -2014,6 +2270,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un'area riservata alla circolazione dei ciclomotori",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area riservata ai ciclomotori?",
         "spiegazione": "Il simbolo sul segnale mostra una bicicletta, non un ciclomotore (che è un motorino). Sono due veicoli diversi.",
         "regola": "Bici, non motorino!",
         "trabocchetti": ["ciclomotori"],
@@ -2022,6 +2279,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna comportarsi in modo da non costituire pericolo o intralcio per i ciclisti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non creare pericolo o intralcio ai ciclisti?",
         "spiegazione": "Questo segnale ti avvisa che potresti trovare ciclisti. Devi guidare con attenzione per non metterli in pericolo o bloccare il loro passaggio. È una regola generale di prudenza e rispetto per gli altri utenti della strada.",
         "regola": "Ciclista = Attenzione e Rispetto.",
         "trabocchetti": ["non costituire pericolo o intralcio"],
@@ -2030,6 +2288,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna rallentare ed essere pronti ad arrestarsi, se necessario, per dare la precedenza ai ciclisti che attraversano",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare, pronti a dare precedenza ai ciclisti?",
         "spiegazione": "Il segnale indica un possibile attraversamento di ciclisti. Per la loro sicurezza, devi rallentare e, se stanno attraversando, fermarti per farli passare. In questi punti, la precedenza è spesso dei ciclisti.",
         "regola": "Segnale ciclista = Rallenta e Precedenza.",
         "trabocchetti": ["se necessario"],
@@ -2038,6 +2297,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non è consentito sorpassare i veicoli che si sono arrestati per far attraversare la carreggiata ai ciclisti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato sorpassare chi si ferma per i ciclisti?",
         "spiegazione": "Se un veicolo davanti a te si ferma per far passare i ciclisti, tu non puoi sorpassarlo. Farlo sarebbe molto pericoloso perché potresti investire i ciclisti che il veicolo fermo sta facendo passare, dato che non li vedresti.",
         "regola": "Veicolo fermo per ciclisti = Non sorpassare MAI.",
         "trabocchetti": ["non è consentito"],
@@ -2046,6 +2306,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve suonare il clacson se vi sono ciclisti che stanno attraversando sulle strisce",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → clacson coi ciclisti sulle strisce?",
         "spiegazione": "Suonare il clacson in questa situazione non è corretto. Potrebbe spaventare i ciclisti e causare un incidente. Il clacson si usa solo in caso di pericolo immediato e non per 'avvisare' o 'sollecitare' chi ha la precedenza.",
         "regola": "Clacson = Solo pericolo grave, non per ciclisti che attraversano.",
         "trabocchetti": ["si deve suonare il clacson"],
@@ -2054,6 +2315,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario tenere presente che i ciclisti devono dare la precedenza ai veicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ciclisti danno precedenza ai veicoli?",
         "spiegazione": "Questo segnale avverte della presenza di ciclisti e spesso indica un punto dove i ciclisti hanno la precedenza o dove è richiesta massima attenzione per la loro sicurezza. Non sono i ciclisti a dover dare la precedenza ai veicoli in questi casi, ma il contrario.",
         "regola": "Segnale ciclista = Tu dai precedenza, non loro.",
         "immagine": "db2865f920a090b35c10.jpg",
@@ -2061,6 +2323,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna dare la precedenza solo ai ciclisti che attraversano da destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza solo ai ciclisti da destra?",
         "spiegazione": "La precedenza ai ciclisti, quando dovuta, si dà a tutti i ciclisti che attraversano, sia da destra che da sinistra. Non c'è una regola che limiti la precedenza solo a chi viene da destra in questo contesto.",
         "regola": "Precedenza ciclisti = Da ogni direzione, non 'solo' da destra.",
         "trabocchetti": ["solo"],
@@ -2069,6 +2332,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto prima di una discesa pericolosa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima di una discesa pericolosa?",
         "spiegazione": "Il segnale ti avvisa che stai per trovare una discesa ripida e quindi pericolosa, proprio come indica il simbolo della pendenza verso il basso.",
         "regola": "Triangolo rosso = pericolo. La pendenza verso il basso = discesa.",
         "trabocchetti": ["discesa pericolosa"],
@@ -2077,6 +2341,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una discesa particolarmente pericolosa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → discesa particolarmente pericolosa?",
         "spiegazione": "Sì, il segnale avvisa di una discesa che, per la sua pendenza del 10%, è considerata pericolosa e richiede molta attenzione alla guida.",
         "regola": "10% non è poco, quindi è 'particolarmente' pericolosa.",
         "trabocchetti": ["particolarmente pericolosa"],
@@ -2085,6 +2350,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada sul quale aumenta lo spazio di frenatura del veicolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → tratto con spazio di frenata maggiore?",
         "spiegazione": "Quando scendi, la forza di gravità ti spinge in avanti. Per fermarti, hai bisogno di più strada (spazio di frenatura) rispetto a quando sei in piano o in salita.",
         "regola": "In discesa, la macchina 'spinge' di più, quindi frena più a lungo.",
         "trabocchetti": ["aumenta lo spazio di frenatura"],
@@ -2093,6 +2359,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una discesa e ne specifica la pendenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → discesa con indicazione della pendenza?",
         "spiegazione": "Il segnale ti dice che c'è una discesa (la forma del triangolo nero che scende) e ti dice anche quanto è ripida, cioè il '10%'.",
         "regola": "Immagine + numero = discesa + quanto è ripida.",
         "trabocchetti": ["specifica la pendenza"],
@@ -2101,6 +2368,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato comporta di moderare la velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare la velocità?",
         "spiegazione": "Essendo una discesa pericolosa, devi andare più piano per avere più controllo del veicolo e poter frenare in sicurezza, evitando rischi.",
         "regola": "Pericolo = rallenta.",
         "immagine": "5c044e7a49506813af1f.jpg",
@@ -2108,6 +2376,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di inserire una marcia adeguatamente bassa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inserire una marcia bassa adeguata?",
         "spiegazione": "In discesa, usare una marcia bassa (es. seconda o terza) aiuta il motore a 'frenare' il veicolo (freno motore). Questo ti permette di non usare troppo i freni a pedale, che potrebbero surriscaldarsi.",
         "regola": "In discesa, marcia bassa = freno motore.",
         "trabocchetti": ["marcia adeguatamente bassa"],
@@ -2116,6 +2385,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una salita da percorrere con marcia adeguatamente bassa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → salita con marcia bassa?",
         "spiegazione": "Il segnale mostra una pendenza verso il basso (da sinistra a destra), quindi è una discesa, non una salita. La forma del simbolo è chiara.",
         "regola": "La pendenza va giù = discesa.",
         "trabocchetti": ["salita"],
@@ -2124,6 +2394,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada pericoloso per il fondo dissestato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fondo dissestato?",
         "spiegazione": "Questo segnale indica solo una discesa ripida. Non dice nulla sullo stato della strada (se è rovinata o meno). Per il fondo dissestato c'è un altro segnale specifico.",
         "regola": "Questo è solo per la pendenza, non per le buche.",
         "trabocchetti": ["fondo dissestato"],
@@ -2132,6 +2403,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato specifica la pendenza di una salita",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pendenza di una salita?",
         "spiegazione": "Come detto prima, il segnale indica una discesa, non una salita. La pendenza è chiaramente rappresentata come verso il basso.",
         "regola": "La pendenza va giù = discesa.",
         "trabocchetti": ["salita"],
@@ -2140,6 +2412,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada che è bene percorrere con il pedale della frizione abbassato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tratto con frizione abbassata?",
         "spiegazione": "Tenere la frizione abbassata (o mettere in folle) in discesa è molto pericoloso! Perdi il controllo del veicolo, non hai il freno motore e i freni si surriscaldano facilmente.",
         "regola": "Frizione abbassata in discesa = NO! Perdi controllo.",
         "trabocchetti": ["pedale della frizione abbassato"],
@@ -2148,6 +2421,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una salita pericolosa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → salita pericolosa?",
         "spiegazione": "Il segnale indica una discesa, non una salita. La linea nera scende da sinistra a destra, rappresentando una pendenza negativa.",
         "regola": "La pendenza va giù = discesa.",
         "trabocchetti": ["salita"],
@@ -2156,6 +2430,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che non è consentito superare la velocità di 10 km/h",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → massimo 10 km/h?",
         "spiegazione": "Il '10%' indica la pendenza della discesa, non un limite di velocità. Non significa che devi andare a 10 km/h, ma che la strada è ripida del 10%.",
         "regola": "% = pendenza, non velocità.",
         "trabocchetti": ["10 km/h"],
@@ -2164,6 +2439,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato il pericolo è minore in caso di pioggia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → meno pericolo se piove?",
         "spiegazione": "In caso di pioggia, la strada è bagnata e scivolosa. Questo aumenta il pericolo in discesa, perché lo spazio di frenatura aumenta ancora di più e si rischia di perdere aderenza.",
         "regola": "Pioggia + discesa = più pericolo, non meno.",
         "trabocchetti": ["minore in caso di pioggia"],
@@ -2172,6 +2448,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, l'inserimento di una marcia bassa consente di sfruttare adeguatamente l'azione frenante del motore",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → marcia bassa per il freno motore?",
         "spiegazione": "Il segnale indica una forte discesa. In queste situazioni, mettere una marcia bassa (come la seconda o la terza) aiuta il motore a rallentare il veicolo senza dover usare troppo i freni a pedale. Questo si chiama 'freno motore' ed è molto utile.",
         "regola": "Discesa ripida = marcia bassa = freno motore.",
         "trabocchetti": ["sfruttare adeguatamente l"],
@@ -2180,6 +2457,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve moderare la velocità per evitare di tamponare veicoli che procedono più lentamente",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per non tamponare i più lenti?",
         "spiegazione": "In discesa, la velocità del veicolo tende ad aumentare. Se ci sono altri veicoli davanti che vanno più lentamente, è facile avvicinarsi troppo e rischiare un tamponamento. Per questo è importante rallentare e mantenere una distanza di sicurezza.",
         "regola": "Discesa = rallenta e occhio ai veicoli lenti.",
         "trabocchetti": ["Moderare la velocità"],
@@ -2188,6 +2466,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna evitare l'uso prolungato dei freni per non surriscaldarli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → evitare uso prolungato dei freni?",
         "spiegazione": "Usare i freni a pedale per troppo tempo in una lunga discesa li fa surriscaldare. Quando i freni sono troppo caldi, funzionano meno bene o possono smettere di funzionare del tutto, diventando molto pericoloso. Per questo si usa il freno motore.",
         "regola": "Freni a pedale in discesa = usali poco per non bruciarli.",
         "trabocchetti": ["uso prolungato dei freni", "surriscaldarli"],
@@ -2196,6 +2475,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna evitare un uso eccessivo dei freni e regolare la velocità inserendo una marcia bassa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pochi freni, marcia bassa?",
         "spiegazione": "Questa domanda riassume le regole principali per affrontare una discesa ripida. È vero che non bisogna usare troppo i freni (per non surriscaldarli) e che bisogna usare una marcia bassa per controllare la velocità con il freno motore.",
         "regola": "Discesa = poco freno a pedale + marcia bassa.",
         "trabocchetti": ["Uso eccessivo dei freni"],
@@ -2204,6 +2484,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna usare molta prudenza se la strada è bagnata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → molta prudenza su strada bagnata?",
         "spiegazione": "Su una strada bagnata, gli pneumatici hanno meno aderenza. In discesa, questo è ancora più pericoloso perché è più facile perdere il controllo del veicolo o scivolare. Quindi, la prudenza è sempre necessaria, ma ancora di più se piove o la strada è bagnata.",
         "regola": "Discesa + bagnato = doppia prudenza.",
         "trabocchetti": ["Molta prudenza"],
@@ -2212,6 +2493,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve rallentare usando continuamente i freni per non danneggiare il cambio di velocità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → frenare di continuo per salvare il cambio?",
         "spiegazione": "Questa affermazione è falsa. Non si devono usare i freni continuamente in discesa perché si surriscaldano e smettono di funzionare. Inoltre, usare il freno motore (quindi il cambio di velocità) non lo danneggia, anzi, è la tecnica corretta e sicura.",
         "regola": "Mai frenare continuamente! Il cambio non si danneggia con marcia bassa.",
         "trabocchetti": ["continuamente"],
@@ -2220,6 +2502,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna inserire la marcia più alta e adeguare la velocità con i freni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → marcia più alta e velocità coi freni?",
         "spiegazione": "Questa affermazione è falsa. In discesa si deve inserire una marcia bassa, non alta, per sfruttare il freno motore e controllare la velocità. Usare solo i freni a pedale con una marcia alta è pericoloso perché i freni si surriscaldano facilmente.",
         "regola": "Discesa = marcia BASSA, non alta!",
         "trabocchetti": ["alta", "Adeguare la velocità con i freni"],
@@ -2228,6 +2511,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna marciare con la frizione abbassata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → marciare con frizione abbassata?",
         "spiegazione": "Questa affermazione è falsa. Marciare con la frizione abbassata (o 'a folle') significa che il motore non è collegato alle ruote. In questo modo, non c'è freno motore e il veicolo prende velocità molto rapidamente, diventando estremamente pericoloso e difficile da controllare.",
         "regola": "Mai frizione abbassata in discesa! Perdi il controllo.",
         "trabocchetti": ["frizione abbassata"],
@@ -2236,6 +2520,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato il conducente deve diminuire la distanza di sicurezza dal veicolo che lo precede",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → diminuire la distanza di sicurezza?",
         "spiegazione": "Questa affermazione è falsa. In discesa, lo spazio di frenata aumenta, quindi è più difficile fermarsi. Diminuire la distanza di sicurezza è estremamente pericoloso, perché in caso di frenata improvvisa non avresti il tempo e lo spazio per evitare un incidente. La distanza di sicurezza va sempre aumentata in condizioni difficili.",
         "regola": "Discesa = aumenta la distanza, mai diminuirla!",
         "trabocchetti": ["diminuire"],
@@ -2244,6 +2529,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto prima di una salita ripida",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima di una salita ripida?",
         "spiegazione": "Il segnale triangolare con il bordo rosso indica un pericolo. La linea nera che sale e il numero '10%' significano che la strada sale molto, quindi è una salita ripida. Il segnale ti avvisa proprio di questo.",
         "regola": "Freccia in su = salita.",
         "trabocchetti": ["ripida"],
@@ -2252,6 +2538,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una salita da percorrere con prudenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → salita da percorrere con prudenza?",
         "spiegazione": "Tutti i segnali di pericolo (quelli triangolari con bordo rosso) ci dicono di fare attenzione. Una salita ripida è un pericolo perché il motore fa più fatica e la visibilità potrebbe essere ridotta, quindi è necessario guidare con prudenza.",
         "regola": "Segnale triangolare = pericolo = prudenza.",
         "trabocchetti": ["prudenza"],
@@ -2260,6 +2547,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada da percorrere con marcia adeguatamente bassa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → tratto con marcia bassa?",
         "spiegazione": "Quando la strada sale molto, il motore ha bisogno di più forza. Usare una marcia bassa (come la prima o la seconda) permette al motore di avere più potenza per affrontare la salita senza sforzarsi troppo o spegnersi.",
         "regola": "Salita forte = marcia bassa.",
         "immagine": "bdf323319d513b4ae18e.jpg",
@@ -2267,6 +2555,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato specifica la pendenza della salita",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pendenza della salita?",
         "spiegazione": "Il numero '10%' scritto sul segnale indica esattamente quanto è inclinata la salita. Questo valore si chiama 'pendenza' e ci dà un'idea della difficoltà del tratto di strada.",
         "regola": "Il numero % = quanto è ripida.",
         "immagine": "bdf323319d513b4ae18e.jpg",
@@ -2274,6 +2563,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada da percorrere con il pedale della frizione abbassato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tratto con frizione abbassata?",
         "spiegazione": "Tenere il pedale della frizione premuto (abbassato) per un lungo tratto è molto pericoloso e dannoso. In questo modo, il motore non è collegato alle ruote, perdi il controllo del veicolo e rovini la frizione. In salita, hai bisogno di potenza e controllo, non di disconnettere il motore.",
         "regola": "Frizione premuta = no controllo, no potenza.",
         "immagine": "bdf323319d513b4ae18e.jpg",
@@ -2281,6 +2571,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada nel quale aumenta lo spazio di frenatura del veicolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → spazio di frenata maggiore?",
         "spiegazione": "Lo spazio di frenatura aumenta in discesa, perché la gravità spinge il veicolo in avanti. In salita, invece, la gravità aiuta a rallentare il veicolo, quindi lo spazio necessario per frenare è minore, non maggiore.",
         "regola": "Salita = freno più efficace.",
         "immagine": "bdf323319d513b4ae18e.jpg",
@@ -2288,6 +2579,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada pericoloso per curve strette",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → curve strette?",
         "spiegazione": "Questo segnale indica una salita ripida. Il pericolo delle curve strette è indicato da un altro segnale, quello con la freccia a zig-zag. Ogni segnale ha un suo significato specifico.",
         "regola": "Salita non è curva.",
         "trabocchetti": ["curve strette"],
@@ -2296,6 +2588,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una discesa e ne specifica la pendenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → discesa con pendenza indicata?",
         "spiegazione": "La linea nera nel segnale va verso l'alto, da sinistra a destra. Questo indica chiaramente una salita. Se fosse una discesa, la linea andrebbe verso il basso, con la parte più alta a sinistra e quella più bassa a destra.",
         "regola": "Linea in su = salita. Linea in giù = discesa.",
         "trabocchetti": ["discesa"],
@@ -2304,6 +2597,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un restringimento della carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → restringimento della carreggiata?",
         "spiegazione": "Il segnale ti avvisa che la strada diventa più stretta. Le due linee nere nel cartello mostrano proprio questo, come se la strada si chiudesse un po'.",
         "regola": "Due linee che si avvicinano = strada che si stringe.",
         "trabocchetti": ["preannuncia"],
@@ -2312,6 +2606,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strettoia con probabili difficoltà di incrocio con i veicoli provenienti dal senso opposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strettoia, difficile incrociare veicoli opposti?",
         "spiegazione": "Se la strada si restringe, è più difficile per due macchine passare nello stesso momento, specialmente se vengono da direzioni opposte. Per questo potresti avere difficoltà a incrociare altri veicoli.",
         "regola": "Strettoia = attenzione agli incroci.",
         "trabocchetti": ["probabili difficoltà"],
@@ -2320,6 +2615,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un restringimento sui due lati della carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → restringimento su entrambi i lati?",
         "spiegazione": "Le due linee nere nel segnale si avvicinano da entrambi i lati, quindi la strada si stringe sia a destra che a sinistra. È un restringimento simmetrico.",
         "regola": "Simmetrico = si stringe da entrambi i lati.",
         "trabocchetti": ["sui due lati"],
@@ -2328,6 +2624,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale in figura è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale in figura → di pericolo?",
         "spiegazione": "Tutti i segnali a forma di triangolo con bordo rosso (come questo) sono segnali di pericolo. Ti avvisano di qualcosa che potrebbe essere rischioso o che richiede attenzione.",
         "regola": "Triangolo rosso = pericolo!",
         "trabocchetti": ["di pericolo"],
@@ -2336,6 +2633,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo il segnale (A) si può trovare il segnale (B)",
         "risposta": True,
+        "riassunto": "Dopo il segnale (A) → possibile segnale (B)?",
         "spiegazione": "Dopo un restringimento della strada, spesso c'è un altro segnale che ti dice chi deve dare la precedenza, specialmente se la strada è troppo stretta per due veicoli. Ad esempio, il segnale 'Dare precedenza ai veicoli provenienti dal senso opposto' (quello rotondo con freccia rossa e freccia nera) è comune dopo un restringimento.",
         "regola": "Strettoia = chi passa prima?",
         "trabocchetti": ["si può trovare"],
@@ -2344,6 +2642,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo il segnale (A) si può trovare il segnale (B)",
         "risposta": True,
+        "riassunto": "Dopo il segnale (A) → possibile segnale (B)?",
         "spiegazione": "Sì, è possibile trovare un segnale che regola la precedenza dopo un restringimento. Ad esempio, il segnale 'Diritto di precedenza nei sensi unici alternati' (quadrato blu con freccia bianca e freccia rossa) o 'Dare precedenza ai veicoli provenienti dal senso opposto' (rotondo con freccia rossa e nera).",
         "regola": "Restringimento = occhio alla precedenza.",
         "trabocchetti": ["si può trovare"],
@@ -2352,6 +2651,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se a fondo giallo, è posto in presenza di un cantiere stradale che riduce la larghezza della carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato a fondo giallo → cantiere che restringe la carreggiata?",
         "spiegazione": "I segnali di pericolo (come questo) e di indicazione, quando sono a fondo giallo, indicano sempre un cantiere stradale o lavori in corso. Se il cantiere restringe la strada, il segnale sarà giallo per indicare che è una situazione temporanea.",
         "regola": "Giallo = cantiere.",
         "trabocchetti": ["a fondo giallo"],
@@ -2360,6 +2660,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato comporta di moderare la velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare la velocità?",
         "spiegazione": "Quando la strada si restringe, è più pericoloso andare veloci. Devi rallentare per poter reagire meglio e passare in sicurezza, soprattutto se incontri altri veicoli.",
         "regola": "Strettoia = rallenta!",
         "trabocchetti": ["comporta di moderare la velocità"],
@@ -2368,6 +2669,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un senso unico alternato con l'obbligo di dare la precedenza ai veicoli provenienti dall'altro senso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico alternato, precedenza agli opposti?",
         "spiegazione": "Questo segnale ti avvisa solo che la strada si restringe. Non ti dice chi ha la precedenza o se c'è un senso unico alternato. Per quello ci sono altri segnali specifici (quelli rotondi o quadrati con le frecce).",
         "regola": "Solo restringimento, non precedenza.",
         "trabocchetti": ["obbligo di dare la precedenza", "senso unico alternato"],
@@ -2376,6 +2678,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che i veicoli provenienti dall'altro senso devono darci la precedenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → gli opposti devono darci precedenza?",
         "spiegazione": "Questo segnale ti avvisa che la strada si restringe, ma non ti dà il diritto di precedenza. Per avere la precedenza, ci vuole un altro segnale specifico (quello quadrato blu con freccia bianca grande e freccia rossa piccola).",
         "regola": "Non è un segnale di precedenza.",
         "trabocchetti": ["devono darci la precedenza"],
@@ -2384,6 +2687,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un divieto di transito agli autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto agli autobus?",
         "spiegazione": "Questo segnale non ha nulla a che fare con i divieti per gli autobus. È un segnale di pericolo che indica un restringimento della strada per tutti i veicoli. I divieti sono segnali rotondi con bordo rosso.",
         "regola": "Non è un divieto.",
         "trabocchetti": ["divieto di transito agli autobus"],
@@ -2392,6 +2696,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un lungo rettilineo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → lungo rettilineo?",
         "spiegazione": "Un rettilineo è una strada dritta e solitamente larga. Questo segnale, invece, indica che la strada si stringe. Sono due cose opposte.",
         "regola": "Strettoia non è rettilineo.",
         "trabocchetti": ["lungo rettilineo"],
@@ -2400,6 +2705,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'ingresso di una galleria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ingresso di galleria?",
         "spiegazione": "Per l'ingresso di una galleria c'è un segnale specifico (quello con il disegno di una galleria). Questo segnale indica solo un restringimento della strada, non una galleria.",
         "regola": "Non è una galleria.",
         "trabocchetti": ["galleria"],
@@ -2408,6 +2714,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "I segnali di prescrizione sono quelli che impongono obblighi o divieti (sono rotondi). Questo è un segnale di pericolo (è triangolare).",
         "regola": "Triangolo = pericolo, non prescrizione.",
         "trabocchetti": ["di prescrizione"],
@@ -2416,6 +2723,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strada a senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada a senso unico?",
         "spiegazione": "Una strada a senso unico è una strada dove si può andare solo in una direzione. Questo segnale indica un restringimento, non un cambio di direzione del traffico. Per il senso unico ci sono altri segnali (quadrati blu).",
         "regola": "Non è senso unico.",
         "trabocchetti": ["senso unico"],
@@ -2424,6 +2732,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una corsia di accelerazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia di accelerazione?",
         "spiegazione": "Una corsia di accelerazione serve per entrare in autostrada o in una strada a scorrimento veloce. Questo segnale indica un restringimento della strada principale, non una corsia per accelerare.",
         "regola": "Non è una corsia di accelerazione.",
         "trabocchetti": ["corsia di accelerazione"],
@@ -2432,6 +2741,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un restringimento della carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → restringimento della carreggiata?",
         "spiegazione": "Il segnale ti avvisa che la strada che stai percorrendo diventerà più stretta. Le due linee verticali che si avvicinano indicano proprio questo.",
         "regola": "Triangolo rosso = pericolo. Linee che si avvicinano = strada più stretta.",
         "trabocchetti": ["restringimento della carreggiata"],
@@ -2440,6 +2750,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strettoia sul lato sinistro della carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strettoia a sinistra?",
         "spiegazione": "Osservando il disegno, la linea a sinistra si avvicina a quella di destra. Questo significa che il restringimento, cioè la 'strettoia', avviene proprio sul lato sinistro della strada.",
         "regola": "La linea storta a sinistra indica che si restringe a sinistra.",
         "trabocchetti": ["strettoia", "Sul lato sinistro"],
@@ -2448,6 +2759,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un restringimento pericoloso sulla sinistra della carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → restringimento pericoloso a sinistra?",
         "spiegazione": "Essendo un segnale di pericolo (il triangolo rosso lo indica), il restringimento è considerato 'pericoloso'. Il disegno mostra chiaramente che il restringimento è 'sulla sinistra' della strada.",
         "regola": "Triangolo rosso = pericolo. Linea storta a sinistra = restringimento a sinistra.",
         "trabocchetti": ["pericoloso", "Sulla sinistra"],
@@ -2456,6 +2768,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strettoia con probabile difficoltà di incrocio con i veicoli provenienti dal senso opposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strettoia, difficile incrociare veicoli opposti?",
         "spiegazione": "Quando la strada si restringe, diventa più difficile per due veicoli passare contemporaneamente, specialmente se vengono da direzioni opposte. Per questo, è 'probabile' che ci siano 'difficoltà di incrocio'.",
         "regola": "Strettoia = attenzione a chi viene di fronte.",
         "trabocchetti": ["probabile difficoltà di incrocio"],
@@ -2464,6 +2777,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di moderare la velocità e, se occorre, arrestarsi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare e se serve fermarsi?",
         "spiegazione": "Di fronte a un segnale di pericolo, devi sempre guidare più lentamente ('moderare la velocità') per essere pronto a reagire. Se la strettoia è molto stretta e c'è un altro veicolo, potresti anche dover fermarti ('arrestarsi') per dare la precedenza.",
         "regola": "Pericolo = rallenta e sii pronto a fermarti.",
         "trabocchetti": ["impone di moderare la velocità", "Se occorre, arrestarsi"],
@@ -2472,6 +2786,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Questo segnale ha la forma di un triangolo con il bordo rosso. Questa è la forma tipica di tutti i 'segnali di pericolo', che avvisano di situazioni potenzialmente pericolose sulla strada.",
         "regola": "Triangolo rosso = pericolo.",
         "trabocchetti": ["segnale di pericolo"],
@@ -2480,6 +2795,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se a fondo giallo, è posto in presenza di un cantiere stradale che riduce la larghezza della carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato a fondo giallo → cantiere che restringe la carreggiata?",
         "spiegazione": "I segnali stradali che hanno lo sfondo giallo, invece del solito bianco, indicano che la situazione di pericolo (o l'indicazione) è temporanea, spesso a causa di 'lavori in corso' o un 'cantiere stradale'.",
         "regola": "Segnale giallo = lavori in corso.",
         "trabocchetti": ["a fondo giallo", "cantiere stradale"],
@@ -2488,6 +2804,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "Questo segnale è di pericolo, non di prescrizione. I 'segnali di prescrizione' sono quelli rotondi: quelli blu danno un obbligo, quelli rossi un divieto.",
         "regola": "Triangolo = pericolo. Cerchio = prescrizione.",
         "trabocchetti": ["prescrizione"],
@@ -2496,6 +2813,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una confluenza da sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → confluenza da sinistra?",
         "spiegazione": "Una 'confluenza da sinistra' significa che un'altra strada si unisce alla tua da sinistra. Il segnale per questo pericolo è diverso, mostra una freccia principale e una freccia che si unisce. Questo segnale indica solo che la strada si restringe.",
         "regola": "Restringimento non è confluenza.",
         "trabocchetti": ["confluenza da sinistra"],
@@ -2504,6 +2822,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strada con una serie di curve",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → serie di curve?",
         "spiegazione": "Il segnale che preannuncia una 'strada con una serie di curve' ha un simbolo di una strada a zig-zag. Questo segnale, invece, mostra che la strada diventa più stretta.",
         "regola": "Restringimento non è curva.",
         "trabocchetti": ["serie di curve"],
@@ -2512,6 +2831,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un cavalcavia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cavalcavia?",
         "spiegazione": "Un 'cavalcavia' è un ponte che passa sopra un'altra strada o ferrovia. Questo segnale non ha nulla a che fare con i cavalcavia, indica solo che la strada si restringe.",
         "regola": "Restringimento non è cavalcavia.",
         "trabocchetti": ["cavalcavia"],
@@ -2520,6 +2840,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un sottopassaggio pedonale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sottopassaggio pedonale?",
         "spiegazione": "Un 'sottopassaggio pedonale' è un passaggio sotto la strada per i pedoni. Questo segnale non riguarda i pedoni né i sottopassaggi, ma un restringimento della carreggiata.",
         "regola": "Restringimento non è sottopassaggio.",
         "trabocchetti": ["sottopassaggio pedonale"],
@@ -2528,6 +2849,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un restringimento sulla destra della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → restringimento a destra?",
         "spiegazione": "Guarda attentamente il disegno: la linea storta, che indica il restringimento, è sul lato sinistro. Se il restringimento fosse 'sulla destra', la linea storta sarebbe a destra.",
         "regola": "La linea storta indica il lato del restringimento. Qui è a sinistra.",
         "trabocchetti": ["sulla destra"],
@@ -2536,6 +2858,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di un cordolo alto per separare le corsie",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cordolo alto tra le corsie?",
         "spiegazione": "Un 'cordolo alto' è un bordo rialzato che separa le corsie o la strada dal marciapiede. Questo segnale indica che la strada diventa più stretta, non la presenza di un cordolo.",
         "regola": "Restringimento non è cordolo.",
         "trabocchetti": ["cordolo alto"],
@@ -2544,6 +2867,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada sdrucciolevole",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tratto sdrucciolevole?",
         "spiegazione": "Il segnale che preannuncia un 'tratto di strada sdrucciolevole' (cioè scivolosa) mostra un'auto che sbanda. Questo segnale, invece, indica un restringimento della strada.",
         "regola": "Restringimento non è strada sdrucciolevole.",
         "trabocchetti": ["strada sdrucciolevole"],
@@ -2552,6 +2876,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strettoia sulla destra della carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strettoia a destra?",
         "spiegazione": "Il segnale ti avvisa che la strada diventerà più stretta sul lato destro. Le due linee nere rappresentano la carreggiata e quella a destra si avvicina al centro, indicando il restringimento.",
         "regola": "La linea a destra si stringe = strettoia a destra.",
         "trabocchetti": ["Preannuncia"],
@@ -2560,6 +2885,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strettoia causata da un ostacolo fisso sul lato destro",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strettoia per ostacolo fisso a destra?",
         "spiegazione": "Sì, la strettoia può essere causata da qualcosa che non si muove, come un muro, un edificio o un palo, che si trova sul lato destro della strada e ne riduce lo spazio.",
         "regola": "Strettoia = meno spazio, spesso per un ostacolo.",
         "trabocchetti": ["Ostacolo fisso"],
@@ -2568,6 +2894,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un restringimento pericoloso sulla destra della carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → restringimento pericoloso a destra?",
         "spiegazione": "Tutti i segnali triangolari con bordo rosso indicano un pericolo. Quindi, una strettoia è sempre considerata pericolosa perché riduce lo spazio per guidare e può creare difficoltà o incidenti.",
         "regola": "Triangolo rosso = pericolo. Strettoia = pericolo.",
         "trabocchetti": ["Pericoloso"],
@@ -2576,6 +2903,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il restringimento della carreggiata causato da muretti o altro ostacolo sul lato destro",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → restringimento per muretti a destra?",
         "spiegazione": "Esatto, la strada si restringe a causa di elementi come piccoli muri, ringhiere o altri impedimenti che si trovano sul lato destro della carreggiata.",
         "regola": "Muro o ostacolo a destra = strettoia a destra.",
         "trabocchetti": ["Muretti o altro ostacolo"],
@@ -2584,6 +2912,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può trovarsi anche su strada a doppio senso di circolazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → anche su doppio senso?",
         "spiegazione": "Sì, una strada può restringersi sia che le auto vadano in una sola direzione (senso unico) sia che vadano in due direzioni opposte (doppio senso). Il segnale avvisa solo del restringimento fisico della strada.",
         "regola": "Strettoia ovunque, anche con doppio senso.",
         "trabocchetti": ["Anche"],
@@ -2592,6 +2921,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se a fondo giallo, è posto in presenza di un cantiere che riduce la larghezza della carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato a fondo giallo → cantiere che restringe la carreggiata?",
         "spiegazione": "I segnali di pericolo con sfondo giallo sono usati per lavori in corso (cantieri). Se un cantiere rende la strada più stretta, il segnale sarà giallo per indicare che la situazione è temporanea.",
         "regola": "Giallo = cantiere. Cantiere = strettoia temporanea.",
         "trabocchetti": ["Se a fondo giallo"],
@@ -2600,6 +2930,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine del doppio senso?",
         "spiegazione": "Questo segnale ti avvisa solo che la strada si restringe. Non ti dice nulla su come le auto devono circolare (se a senso unico o doppio senso). Il segnale di 'fine doppio senso' è diverso.",
         "regola": "Strettoia = meno spazio. Non è un segnale di direzione.",
         "trabocchetti": ["Fine del doppio senso di circolazione"],
@@ -2608,6 +2939,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a dare la precedenza ai veicoli provenienti dal senso opposto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza agli opposti?",
         "spiegazione": "Questo segnale ti avvisa della strettoia, ma non ti obbliga a dare la precedenza. Per quello ci sono altri segnali specifici (rotondi con frecce rosse e nere). In una strettoia potresti dover dare la precedenza, ma non è questo segnale a imporlo.",
         "regola": "Pericolo non è obbligo. Per la precedenza ci sono altri segnali.",
         "trabocchetti": ["Obbliga"],
@@ -2616,6 +2948,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato autorizza la marcia per file parallele",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → marcia per file parallele?",
         "spiegazione": "La marcia per file parallele significa guidare affiancati. Una strettoia riduce lo spazio, quindi non è possibile guidare affiancati, anzi, bisogna fare attenzione e spesso procedere in fila unica.",
         "regola": "Strettoia = meno spazio, non più spazio per file parallele.",
         "trabocchetti": ["Autorizza"],
@@ -2624,6 +2957,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica di disporsi su due file",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → disporsi su due file?",
         "spiegazione": "Questo segnale ti dice che la strada si restringe, non che devi metterti in due file. Anzi, in una strettoia spesso si passa a una sola fila per sicurezza.",
         "regola": "Strettoia = una fila, non due.",
         "trabocchetti": ["Indica di disporsi su due file"],
@@ -2632,6 +2966,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una confluenza da destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → confluenza da destra?",
         "spiegazione": "Una confluenza da destra è quando un'altra strada si unisce alla tua. Questo segnale mostra che la tua strada diventa più stretta, non che un'altra strada si unisce. Il segnale di confluenza è diverso.",
         "regola": "Strettoia = strada si restringe. Confluenza = altra strada si unisce.",
         "trabocchetti": ["Confluenza da destra"],
@@ -2640,6 +2975,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'inizio di un senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio senso unico?",
         "spiegazione": "Questo segnale ti avvisa solo di una strettoia. Non ti dice che la strada diventa a senso unico. Per il senso unico ci sono altri segnali (quadrati blu con una freccia bianca).",
         "regola": "Strettoia = meno spazio. Senso unico = direzione del traffico.",
         "trabocchetti": ["Inizio di un senso unico"],
@@ -2648,6 +2984,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un ponte mobile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → ponte mobile?",
         "spiegazione": "Il segnale mostra un ponte che si apre per far passare le navi. Quindi, ti avvisa che più avanti c'è un ponte che può muoversi.",
         "regola": "Ponte che si apre = Ponte mobile.",
         "trabocchetti": ["preannuncia"],
@@ -2656,6 +2993,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Tutti i segnali a forma di triangolo con il bordo rosso sono segnali di pericolo. Ti avvisano di una situazione che richiede attenzione.",
         "regola": "Triangolo rosso = Pericolo.",
         "trabocchetti": ["Segnale di pericolo"],
@@ -2664,6 +3002,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere integrato con pannello indicante gli orari di manovra o di funzionamento di un ponte mobile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con orari del ponte mobile?",
         "spiegazione": "Sotto i segnali di pericolo, a volte ci sono pannelli aggiuntivi che danno più informazioni. Per un ponte mobile, è utile sapere quando si apre, quindi un pannello con gli orari è possibile.",
         "regola": "Pericolo + Dettagli = Pannello orari.",
         "trabocchetti": ["integrato con pannello"],
@@ -2672,6 +3011,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo il segnale raffigurato possiamo trovare un dispositivo a luci rosse lampeggianti",
         "risposta": True,
+        "riassunto": "Dopo il segnale → luci rosse lampeggianti?",
         "spiegazione": "Quando un ponte mobile sta per aprirsi o è aperto, per la tua sicurezza, ci sono spesso luci rosse che lampeggiano per indicarti di fermarti.",
         "regola": "Ponte mobile = Luci rosse per stop.",
         "trabocchetti": ["dispositivo a luci rosse lampeggianti"],
@@ -2680,6 +3020,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato comporta di arrestarsi se sono in funzione le luci rosse lampeggianti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi con luci rosse lampeggianti?",
         "spiegazione": "Le luci rosse lampeggianti sono un segnale di stop obbligatorio. Se le vedi, devi fermarti subito per la tua sicurezza e quella degli altri.",
         "regola": "Luci rosse lampeggianti = Stop obbligatorio.",
         "trabocchetti": ["comporta di arrestarsi"],
@@ -2688,6 +3029,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere integrato dal pannello distanziometrico a tre barre rosse",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello a tre barre rosse?",
         "spiegazione": "I pannelli distanziometrici (con 3, 2 o 1 barra rossa) indicano quanto sei lontano dal pericolo. Quello a tre barre rosse indica che il pericolo è a circa 320 metri ed è spesso usato con i segnali di pericolo.",
         "regola": "Pericolo lontano = 3 barre rosse.",
         "immagine": "4b2a5c2fd9c6946b44de.jpg",
@@ -2695,6 +3037,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un'area portuale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area portuale?",
         "spiegazione": "Il segnale ti avvisa specificamente di un ponte che si apre. Anche se i ponti mobili sono spesso vicino ai porti, il segnale non indica l'intera area portuale, ma solo il ponte.",
         "regola": "Non è il porto, è il ponte.",
         "trabocchetti": ["area portuale"],
@@ -2703,6 +3046,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi prima di attraversare il ponte",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di fermarsi prima del ponte?",
         "spiegazione": "Questo segnale è di pericolo, non ti obbliga a fermarti. Ti avvisa del ponte mobile, ma non ti impone lo stop a meno che non ci siano altri segnali, come le luci rosse lampeggianti.",
         "regola": "Pericolo avvisa, non obbliga allo stop (senza altri segnali).",
         "trabocchetti": ["obbliga"],
@@ -2711,6 +3055,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un ponte con forte pendenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ponte con forte pendenza?",
         "spiegazione": "Il simbolo mostra un ponte che si alza per far passare le navi, non un ponte in salita o discesa ripida. Il segnale per la pendenza è diverso (un triangolo con un numero percentuale).",
         "regola": "Non pendenza, ma apertura.",
         "trabocchetti": ["forte pendenza"],
@@ -2719,6 +3064,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di dare la precedenza ai veicoli provenienti dal senso opposto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza agli opposti?",
         "spiegazione": "Questo segnale non ha nulla a che fare con la precedenza. È un segnale di pericolo per un ponte mobile. I segnali di precedenza sono diversi (ad esempio, il triangolo rovesciato o il cerchio rosso e blu).",
         "regola": "Non è precedenza, è ponte.",
         "trabocchetti": ["impone di dare la precedenza"],
@@ -2727,6 +3073,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il sorpasso se posto sulla strada di accesso ad un'area portuale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso vietato verso area portuale?",
         "spiegazione": "Questo segnale non vieta il sorpasso. Il divieto di sorpasso è indicato da un altro segnale specifico (un cerchio rosso con due auto nere affiancate). Il fatto che sia vicino a un porto non cambia la sua funzione.",
         "regola": "Non vieta il sorpasso.",
         "trabocchetti": ["vieta il sorpasso", "se posto sulla strada di accesso ad un"],
@@ -2735,6 +3082,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un passaggio a livello con barriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passaggio a livello con barriere?",
         "spiegazione": "Il simbolo mostra un ponte sull'acqua, non un passaggio a livello (dove passa il treno). I segnali di passaggio a livello sono diversi (con una locomotiva o una barriera).",
         "regola": "Non treno, ma ponte.",
         "trabocchetti": ["passaggio a livello con barriere"],
@@ -2743,6 +3091,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada che può diventare pericoloso in particolari condizioni climatiche specificate nei pannelli integrativi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pericolo in condizioni climatiche dei pannelli?",
         "spiegazione": "Il segnale ti avvisa che la strada può diventare pericolosa e scivolosa. A volte, sotto il segnale principale, ci sono dei pannelli extra che spiegano meglio quando la strada è scivolosa, ad esempio 'in caso di pioggia' o 'ghiaccio'. Quindi, la strada è pericolosa in certe condizioni climatiche che possono essere specificate.",
         "regola": "Triangolo rosso = pericolo. Auto che sbanda = strada scivolosa. Pannello = più dettagli sul pericolo.",
         "immagine": "c0e8be973176f0807fe7.jpg",
@@ -2750,6 +3099,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strada con superficie che può diventare particolarmente sdrucciolevole",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → superficie che può diventare sdrucciolevole?",
         "spiegazione": "Questo segnale ti dice proprio che la strada davanti a te potrebbe essere molto scivolosa. La macchina che sbanda nel disegno lo mostra chiaramente. È il significato principale del segnale.",
         "regola": "Auto che sbanda = strada sdrucciolevole.",
         "trabocchetti": ["particolarmente sdrucciolevole"],
@@ -2758,6 +3108,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), abbinato con il pannello (B), preannuncia una strada con superficie particolarmente sdrucciolevole in caso di pioggia",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → sdrucciolevole con pioggia?",
         "spiegazione": "Se vedi questo segnale (A) insieme a un pannello (B) che dice 'in caso di pioggia', significa che la strada diventa scivolosa proprio quando piove. Il pannello (B) aggiunge un dettaglio importante al pericolo generale.",
         "regola": "Segnale + pannello = pericolo specifico (es. pioggia).",
         "trabocchetti": ["abbinato con il pannello (B)"],
@@ -2766,6 +3117,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), se abbinato con il pannello (B), preannuncia un tratto di strada sul quale, in particolari condizioni meteorologiche, è probabile la presenza di ghiaccio",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → probabile ghiaccio?",
         "spiegazione": "Anche qui, se c'è un pannello (B) che indica 'ghiaccio' o 'basse temperature', il segnale (A) ti avvisa che la strada potrebbe essere scivolosa a causa del ghiaccio. Il ghiaccio rende la strada molto pericolosa.",
         "regola": "Ghiaccio = strada scivolosa.",
         "trabocchetti": ["probabile"],
@@ -2774,6 +3126,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada sul quale può diminuire l'aderenza degli pneumatici",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → meno aderenza degli pneumatici?",
         "spiegazione": "Quando la strada è scivolosa (per pioggia, ghiaccio, fango), le gomme della tua auto fanno meno 'presa' sull'asfalto. Questo si chiama 'diminuzione dell'aderenza'. È il motivo per cui l'auto sbanda.",
         "regola": "Strada scivolosa = meno aderenza.",
         "trabocchetti": ["diminuire l"],
@@ -2782,6 +3135,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato comporta di procedere a velocità moderata e di evitare brusche manovre",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità moderata, niente manovre brusche?",
         "spiegazione": "Quando la strada è scivolosa, devi guidare piano (velocità moderata) e non fare movimenti improvvisi con il volante o con i freni (evitare brusche manovre), altrimenti rischi di sbandare e perdere il controllo del veicolo.",
         "regola": "Pericolo = piano e delicato.",
         "trabocchetti": ["procedere a velocità moderata", "evitare brusche manovre"],
@@ -2790,6 +3144,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strettoia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strettoia?",
         "spiegazione": "Questo segnale non c'entra nulla con una strettoia. Una strettoia è un punto della strada dove diventa più stretta. Il segnale di strettoia è diverso (due frecce che si avvicinano).",
         "regola": "Sbandamento = scivoloso, non stretto.",
         "trabocchetti": ["strettoia"],
@@ -2798,6 +3153,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la possibilità di sbandamento per forte vento laterale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → forte vento laterale?",
         "spiegazione": "Il segnale di 'vento laterale' è un altro segnale, con una manica a vento o un'auto che si inclina. Questo segnale indica solo che la strada è scivolosa, non che c'è vento forte.",
         "regola": "Sbandamento per vento = altro segnale. Sbandamento per strada = questo segnale.",
         "trabocchetti": ["forte vento laterale"],
@@ -2806,6 +3162,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada dove aumenta l'aderenza degli pneumatici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → aderenza aumenta?",
         "spiegazione": "È il contrario! Se la strada è scivolosa, l'aderenza delle gomme diminuisce, non aumenta. Le gomme fanno meno presa sull'asfalto.",
         "regola": "Scivoloso = meno aderenza.",
         "trabocchetti": ["aumenta"],
@@ -2814,6 +3171,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che su quella strada diminuisce lo spazio di frenatura",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → spazio di frenata diminuisce?",
         "spiegazione": "Se la strada è scivolosa, le gomme fanno meno presa e per fermarti hai bisogno di più spazio, non di meno. Quindi, lo spazio di frenatura aumenta, non diminuisce.",
         "regola": "Scivoloso = più spazio per frenare.",
         "trabocchetti": ["diminuisce"],
@@ -2822,6 +3180,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a diminuire la distanza di sicurezza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → diminuire la distanza di sicurezza?",
         "spiegazione": "Quando la strada è scivolosa e lo spazio di frenata aumenta, devi aumentare la distanza di sicurezza dal veicolo che ti precede, non diminuirla. Così hai più tempo per reagire e frenare in sicurezza.",
         "regola": "Pericolo = aumenta la distanza.",
         "trabocchetti": ["diminuire"],
@@ -2830,6 +3189,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strada con molte curve",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → molte curve?",
         "spiegazione": "Il segnale di 'curve pericolose' è diverso (una o più curve disegnate). Questo segnale indica solo che la strada è scivolosa, non che ci sono molte curve.",
         "regola": "Sbandamento = scivoloso, non curve.",
         "trabocchetti": ["molte curve"],
@@ -2838,6 +3198,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una pista per la prova di tenuta degli pneumatici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pista prova pneumatici?",
         "spiegazione": "Questo è un segnale di pericolo per la circolazione normale, non un'indicazione di una pista di prova. Non è un luogo dove testare le gomme, ma un avviso per guidare con prudenza!",
         "regola": "Segnale di pericolo, non di gioco.",
         "immagine": "c0e8be973176f0807fe7.jpg",
@@ -2845,6 +3206,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario moderare la velocità ed evitare brusche frenate in caso di pioggia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, pioggia → moderare, niente frenate brusche?",
         "spiegazione": "Quando la strada è bagnata dalla pioggia, le gomme fanno meno presa. Per questo, è importante andare più piano (moderare la velocità) e non frenare all'improvviso (evitare brusche frenate) per non perdere il controllo dell'auto.",
         "regola": "Strada bagnata = guida dolce.",
         "trabocchetti": ["moderare la velocità", "Brusche frenate"],
@@ -2853,6 +3215,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario moderare la velocità ed evitare brusche accelerate in caso di ghiaccio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, ghiaccio → moderare, niente accelerate brusche?",
         "spiegazione": "Il ghiaccio rende la strada estremamente scivolosa. Se acceleri troppo velocemente (brusche accelerate), le ruote possono slittare e farti perdere il controllo. Per questo, devi andare piano (moderare la velocità) e accelerare molto dolcemente.",
         "regola": "Ghiaccio = tutto con calma.",
         "trabocchetti": ["Brusche accelerate"],
@@ -2861,6 +3224,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario moderare la velocità ed evitare brusche sterzate in caso di pioggia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, pioggia → moderare, niente sterzate brusche?",
         "spiegazione": "Con la pioggia, la strada è scivolosa. Se giri il volante troppo velocemente o con forza (brusche sterzate), le ruote potrebbero perdere aderenza e l'auto potrebbe sbandare. È meglio fare movimenti dolci e graduali.",
         "regola": "Pioggia = sterza piano.",
         "trabocchetti": ["Brusche sterzate"],
@@ -2869,6 +3233,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario moderare la velocità e tenere presente che la distanza di sicurezza aumenta in caso di ghiaccio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, ghiaccio → distanza di sicurezza aumenta?",
         "spiegazione": "Sul ghiaccio, l'auto impiega molto più tempo e spazio per fermarsi. Per questo, devi andare più piano (moderare la velocità) e lasciare molto più spazio tra la tua auto e quella che ti precede (aumentare la distanza di sicurezza).",
         "regola": "Ghiaccio = più spazio, più tempo.",
         "trabocchetti": ["distanza di sicurezza aumenta"],
@@ -2877,6 +3242,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario tenere presente che la distanza di frenatura diminuisce in caso di pioggia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, pioggia → frenata più corta?",
         "spiegazione": "La distanza di frenatura è lo spazio che l'auto percorre dal momento in cui inizi a frenare fino a quando si ferma. Con la pioggia, la strada è scivolosa e le gomme hanno meno aderenza, quindi l'auto impiega PIÙ spazio per fermarsi, non meno. La distanza di frenatura AUMENTA.",
         "regola": "Strada scivolosa = frenata più lunga.",
         "trabocchetti": ["diminuisce"],
@@ -2885,6 +3251,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario diminuire la distanza dal veicolo che ci precede, in caso di pioggia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, pioggia → diminuire la distanza?",
         "spiegazione": "Con la pioggia, la strada è scivolosa e l'auto ha bisogno di più spazio per frenare. Diminuire la distanza di sicurezza sarebbe molto pericoloso perché non avresti tempo sufficiente per reagire e frenare in caso di emergenza. Devi SEMPRE AUMENTARE la distanza di sicurezza in queste condizioni.",
         "regola": "Pericolo = più spazio tra le auto.",
         "trabocchetti": ["diminuire la distanza"],
@@ -2893,6 +3260,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario accelerare bruscamente in caso di pioggia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, pioggia → accelerare bruscamente?",
         "spiegazione": "Accelerare bruscamente quando la strada è bagnata dalla pioggia può far perdere aderenza alle ruote e far sbandare l'auto. È fondamentale accelerare dolcemente e gradualmente per mantenere il controllo.",
         "regola": "Pioggia = accelerazione dolce.",
         "trabocchetti": ["accelerare bruscamente"],
@@ -2901,6 +3269,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è sempre vietato il sorpasso quando piove",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso sempre vietato con pioggia?",
         "spiegazione": "Il segnale di strada sdrucciolevole ti avvisa di un pericolo, ma non vieta automaticamente il sorpasso. Il sorpasso è vietato solo in specifiche situazioni (es. curve, incroci, dossi, o se c'è un segnale specifico di divieto di sorpasso). Devi essere molto prudente, ma non è 'sempre vietato'.",
         "regola": "Segnale di pericolo = prudenza, non divieto assoluto.",
         "trabocchetti": ["sempre"],
@@ -2909,6 +3278,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario frenare bruscamente in caso di ghiaccio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, ghiaccio → frenare bruscamente?",
         "spiegazione": "Frenare bruscamente sul ghiaccio è estremamente pericoloso. Le ruote si bloccherebbero subito, l'auto perderebbe completamente il controllo e sbanderebbe. Sul ghiaccio, devi frenare molto dolcemente e gradualmente, usando il freno motore se possibile.",
         "regola": "Ghiaccio = frenata delicata.",
         "trabocchetti": ["frenare bruscamente"],
@@ -2917,6 +3287,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli con ruote sporche di fango",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a ruote sporche di fango?",
         "spiegazione": "Questo segnale avverte che la strada potrebbe essere scivolosa, ma non vieta il passaggio a nessun tipo di veicolo in base alla pulizia delle sue ruote. Non è un segnale di divieto di transito per veicoli con fango.",
         "regola": "Segnale di pericolo = avviso, non divieto specifico.",
         "trabocchetti": ["vieta il transito", "ruote sporche di fango"],
@@ -2925,6 +3296,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario montare le catene",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → montare le catene?",
         "spiegazione": "Il segnale di strada sdrucciolevole avverte di un pericolo generico di scarsa aderenza (pioggia, ghiaccio, fango, ecc.). Non significa che devi obbligatoriamente montare le catene. Le catene si montano solo in caso di neve o ghiaccio abbondante, e solo se c'è un segnale specifico che lo indica (obbligo di catene a bordo o montate).",
         "regola": "Segnale sdrucciolevole = attenzione, non catene obbligatorie.",
         "trabocchetti": ["è necessario montare le catene"],
@@ -2933,6 +3305,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può preannunciare la presenza di una scuola frequentata da bambini nelle vicinanze",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → scuola con bambini vicina?",
         "spiegazione": "Il segnale con i bambini che corrono è un avviso che ci sono bambini in zona. Una scuola è un luogo dove ci sono molti bambini, quindi è logico che questo segnale possa trovarsi vicino a una scuola per avvisare i guidatori.",
         "regola": "Bambini = Scuola vicina.",
         "trabocchetti": ["può preannunciare"],
@@ -2941,6 +3314,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto nelle vicinanze di un campo da gioco frequentato da bambini",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vicino a campo giochi?",
         "spiegazione": "Questo segnale serve a indicare che ci sono bambini in un'area. Un campo da gioco è un posto dove i bambini giocano e possono correre in strada. Per questo, il segnale può essere messo lì per chiedere ai guidatori di fare attenzione.",
         "regola": "Bambini = Campo da gioco.",
         "trabocchetti": ["può essere posto"],
@@ -2949,6 +3323,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia luoghi frequentati da fanciulli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → luoghi frequentati da bambini?",
         "spiegazione": "Il segnale avvisa della presenza di 'fanciulli', che è un altro modo per dire 'bambini'. Quindi, il segnale preannuncia proprio luoghi dove ci sono bambini, come scuole, parchi o campi da gioco.",
         "regola": "Fanciulli = Bambini.",
         "trabocchetti": ["fanciulli"],
@@ -2957,6 +3332,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Tutti i segnali stradali che hanno la forma di un triangolo con il bordo rosso sono segnali di pericolo. Questo segnale avvisa di un pericolo legato alla presenza di bambini, quindi è un segnale di pericolo.",
         "regola": "Triangolo rosso = Pericolo.",
         "immagine": "bc2ab213b83e3bb226ae.jpg",
@@ -2964,6 +3340,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto nelle vicinanze di giardini pubblici frequentati da bambini",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vicino a giardini pubblici?",
         "spiegazione": "I giardini pubblici sono luoghi dove i bambini vanno spesso a giocare. Il segnale serve proprio a informare i guidatori che in quella zona potrebbero esserci bambini, invitandoli a guidare con prudenza.",
         "regola": "Bambini = Giardini pubblici.",
         "trabocchetti": ["può essere posto"],
@@ -2972,6 +3349,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a circolare a velocità moderata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità moderata?",
         "spiegazione": "Quando ci sono bambini, è fondamentale guidare piano, cioè a 'velocità moderata'. Questo ti dà più tempo per reagire se un bambino attraversa la strada all'improvviso o fa qualcosa di inaspettato.",
         "regola": "Bambini = Rallenta.",
         "immagine": "bc2ab213b83e3bb226ae.jpg",
@@ -2979,6 +3357,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a considerare eventuali comportamenti imprudenti di fanciulli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → imprudenze dei bambini?",
         "spiegazione": "I bambini, specialmente quando giocano, possono essere imprevedibili e non sempre attenti al traffico. Il segnale ti ricorda di aspettarti che possano fare azioni 'imprudenti', come correre in strada senza guardare, e di essere pronto a reagire.",
         "regola": "Bambini = Imprevedibili, sii pronto.",
         "trabocchetti": ["eventuali comportamenti imprudenti"],
@@ -2987,6 +3366,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai bambini non accompagnati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a bambini non accompagnati?",
         "spiegazione": "Questo segnale è un avviso per i guidatori, non un divieto per i bambini. I segnali di divieto sono rotondi con il bordo rosso. Questo segnale non impedisce ai bambini di passare, ma chiede ai guidatori di fare attenzione.",
         "regola": "Triangolo = Pericolo, non Divieto.",
         "trabocchetti": ["vieta"],
@@ -2995,6 +3375,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un attraversamento pedonale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → attraversamento pedonale?",
         "spiegazione": "Il segnale che preannuncia un attraversamento pedonale è diverso: mostra una persona che cammina sulle strisce. Questo segnale indica una zona generica dove ci sono bambini, non un punto specifico per attraversare la strada.",
         "regola": "Strisce = Attraversamento. Bambini che corrono = Zona bambini.",
         "trabocchetti": ["attraversamento pedonale"],
@@ -3003,6 +3384,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine di un viale riservato ai bambini",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine viale per bambini?",
         "spiegazione": "Questo segnale è un segnale di pericolo e serve a indicare l'inizio di una situazione pericolosa (presenza di bambini), non la fine di qualcosa. Non esistono 'viali riservati ai bambini' indicati da questo segnale.",
         "regola": "Pericolo = Inizio, non Fine.",
         "trabocchetti": ["fine di un viale riservato"],
@@ -3011,6 +3393,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un percorso pedonale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → percorso pedonale?",
         "spiegazione": "Un percorso pedonale è un'area dedicata solo ai pedoni, indicata da un segnale rotondo blu con un pedone bianco. Questo segnale, invece, avvisa della presenza di bambini in una zona dove ci sono anche veicoli, invitando alla prudenza.",
         "regola": "Triangolo = Pericolo, non percorso obbligatorio.",
         "trabocchetti": ["percorso pedonale"],
@@ -3019,6 +3402,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli a motore durante l'orario di uscita dei bambini dalla scuola",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato ai veicoli all'uscita da scuola?",
         "spiegazione": "Questo è un segnale di pericolo, non di divieto. Non vieta il transito a nessun veicolo, ma chiede ai guidatori di fare molta attenzione e di rallentare. Per vietare il transito, ci vorrebbe un segnale di divieto specifico.",
         "regola": "Pericolo = Attenzione, non Divieto.",
         "trabocchetti": ["vieta"],
@@ -3027,6 +3411,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fermata di uno scuolabus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermata scuolabus?",
         "spiegazione": "La fermata di uno scuolabus è indicata da un segnale specifico, spesso un cartello con l'immagine di un autobus o la scritta 'BUS'. Questo segnale avvisa della presenza di bambini in generale, non di una fermata specifica.",
         "regola": "Bambini che corrono = Zona bambini, non fermata bus.",
         "trabocchetti": ["fermata di uno scuolabus"],
@@ -3035,6 +3420,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto sulla parte posteriore dello scuolabus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sul retro dello scuolabus?",
         "spiegazione": "Questo segnale è un segnale stradale fisso, che si trova a bordo strada. Sugli scuolabus ci sono altri segnali, come il pannello con la scritta 'SCUOLABUS' o il segnale di pericolo mobile quando è fermo per far scendere i bambini.",
         "regola": "Segnale fisso = A bordo strada.",
         "immagine": "bc2ab213b83e3bb226ae.jpg",
@@ -3042,6 +3428,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato occorre prestare particolare attenzione per la possibile presenza di bambini",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attenzione ai bambini?",
         "spiegazione": "Questo segnale ti avverte che potresti trovare bambini sulla strada o nelle vicinanze. I bambini sono imprevedibili, quindi devi essere molto attento.",
         "regola": "Segnale bambini = massima attenzione.",
         "trabocchetti": ["possibile presenza"],
@@ -3050,6 +3437,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario moderare la velocità e prestare attenzione ai bambini anche se si trovano sui marciapiedi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attenzione anche ai bambini sui marciapiedi?",
         "spiegazione": "Sì, è fondamentale rallentare. I bambini, anche se sono sul marciapiede, possono scendere in strada all'improvviso senza guardare. La prudenza è d'obbligo.",
         "regola": "Bambini = rallenta e guarda ovunque.",
         "trabocchetti": ["anche se si trovano sui marciapiedi"],
@@ -3058,6 +3446,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato occorre prestare particolare attenzione ai movimenti imprevedibili dei bambini",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → movimenti imprevedibili dei bambini?",
         "spiegazione": "Esatto! I bambini non hanno la stessa percezione del pericolo degli adulti e possono fare movimenti improvvisi, come correre o cambiare direzione senza preavviso. Devi essere pronto a reagire.",
         "regola": "Bambini = mosse a sorpresa.",
         "trabocchetti": ["imprevedibili"],
@@ -3066,6 +3455,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato sorpassare i veicoli che si sono fermati per lasciare attraversare i bambini",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vietato sorpassare chi si ferma per i bambini?",
         "spiegazione": "Questa è una regola di sicurezza molto importante! Se un veicolo si ferma per far attraversare i bambini, significa che ci sono bambini in strada. Sorpassare sarebbe estremamente pericoloso perché non vedresti i bambini e potresti investirli.",
         "regola": "Veicolo fermo per bambini = non sorpassare mai.",
         "trabocchetti": ["è vietato sorpassare"],
@@ -3074,6 +3464,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario fare attenzione ai bambini sulla carreggiata e non a quelli sul marciapiede",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo bambini sulla carreggiata, non sul marciapiede?",
         "spiegazione": "Falso! Devi fare attenzione sia ai bambini che sono già sulla strada (carreggiata) sia a quelli che sono sul marciapiede, perché possono scendere in strada in qualsiasi momento. L'attenzione deve essere completa.",
         "regola": "Bambini = attenzione totale, non solo in strada.",
         "trabocchetti": ["e non a quelli sul marciapiede", "non"],
@@ -3082,6 +3473,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato transitare durante l'orario di uscita dei bambini da scuola",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato transitare all'uscita da scuola?",
         "spiegazione": "Falso. Il segnale non ti vieta di passare. Ti avverte di un pericolo e ti chiede di fare molta attenzione. Puoi transitare, ma devi farlo con prudenza e moderando la velocità.",
         "regola": "Segnale pericolo = attenzione, non divieto.",
         "trabocchetti": ["è vietato transitare"],
@@ -3090,6 +3482,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato superare la velocità di 30 km/h",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → massimo 30 km/h?",
         "spiegazione": "Falso. Il segnale ti chiede di moderare la velocità e di essere prudente, ma non impone un limite specifico di 30 km/h. Potrebbe esserci un limite diverso o nessun limite numerico, ma devi comunque andare piano e con cautela.",
         "regola": "Segnale bambini = rallenta, ma non c'è un numero fisso.",
         "immagine": "bc2ab213b83e3bb226ae.jpg",
@@ -3097,6 +3490,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada con probabile attraversamento di animali domestici",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attraversamento di animali domestici?",
         "spiegazione": "Questo segnale ti avvisa che stai per entrare in un tratto di strada dove è possibile che animali domestici, come mucche o pecore, attraversino la carreggiata. Devi guidare con prudenza.",
         "regola": "Triangolo con mucca = Attenzione animali domestici sulla strada.",
         "trabocchetti": ["probabile"],
@@ -3105,6 +3499,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di rallentare o di arrestarsi se gli animali sulla strada danno segno di spavento",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare o fermarsi se gli animali si spaventano?",
         "spiegazione": "Se vedi animali sulla strada e sembrano spaventati (magari corrono o si muovono in modo strano), è molto importante rallentare o fermarsi. Questo evita di spaventarli ancora di più e previene incidenti.",
         "regola": "Animali spaventati? Rallenta o fermati per sicurezza.",
         "trabocchetti": ["danno segno di spavento"],
@@ -3113,6 +3508,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di rallentare o di arrestarsi se gli animali sulla strada non si spostano",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare o fermarsi se gli animali non si spostano?",
         "spiegazione": "Se gli animali sono sulla strada e non si muovono, non puoi semplicemente passare. Devi rallentare o fermarti e aspettare che si spostino da soli, o trovare un modo sicuro per superarli senza disturbarli.",
         "regola": "Animali fermi sulla strada? Aspetta con pazienza.",
         "trabocchetti": ["non si spostano"],
@@ -3121,6 +3517,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la possibilità di trovare sulla strada animali domestici vaganti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → animali domestici vaganti?",
         "spiegazione": "Il segnale ti avvisa che potresti trovare animali domestici che camminano liberamente sulla strada, senza un pastore o un recinto. Sono 'vaganti' perché non seguono un percorso preciso.",
         "regola": "Mucca = Animali liberi sulla strada, attenzione!",
         "trabocchetti": ["vaganti"],
@@ -3129,6 +3526,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a fare attenzione per la probabile presenza di animali domestici sulla carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → animali domestici in carreggiata?",
         "spiegazione": "Questo segnale è un invito a guidare con molta attenzione perché è probabile che ci siano animali domestici sulla strada (carreggiata). Devi essere pronto a reagire.",
         "regola": "Triangolo = Attenzione, pericolo animali!",
         "trabocchetti": ["invita a fare attenzione", "probabile presenza"],
@@ -3137,6 +3535,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è obbligatorio usare ripetutamente l'avvisatore acustico per allontanare gli animali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → clacson ripetuto per allontanare animali?",
         "spiegazione": "È FALSO. Usare il clacson (avvisatore acustico) in modo ripetuto e forte può spaventare gli animali, rendendoli ancora più imprevedibili e pericolosi. È meglio rallentare e, se necessario, fermarsi.",
         "regola": "Clacson forte = No, spaventa gli animali!",
         "trabocchetti": ["obbligatorio", "ripetutamente"],
@@ -3145,6 +3544,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una zona riservata al pascolo con divieto di transito ai veicoli a motore",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pascolo vietato ai veicoli a motore?",
         "spiegazione": "È FALSO. Il segnale avvisa della presenza di animali sulla strada, non che la strada è una zona di pascolo dove non puoi passare con la tua auto. Puoi passare, ma con cautela.",
         "regola": "Mucca = Attenzione, non divieto di passaggio.",
         "trabocchetti": ["zona riservata al pascolo", "divieto di transito ai veicoli a motore"],
@@ -3153,6 +3553,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strada riservata alla circolazione di animali domestici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada riservata ad animali domestici?",
         "spiegazione": "È FALSO. La strada non è 'riservata' solo agli animali. È una strada normale dove, però, potresti trovare animali. Tu puoi circolare, ma devi fare attenzione.",
         "regola": "Strada per tutti, ma attenzione agli animali.",
         "trabocchetti": ["riservata"],
@@ -3161,6 +3562,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di veicoli a trazione animale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → veicoli a trazione animale?",
         "spiegazione": "È FALSO. Il segnale con la mucca indica la presenza di animali vivi che camminano liberamente. Non si riferisce a 'veicoli a trazione animale', come carri o carrozze trainate da cavalli, per i quali esiste un altro segnale specifico.",
         "regola": "Mucca = Animale vivo, non carrozza.",
         "trabocchetti": ["veicoli a trazione animale"],
@@ -3169,6 +3571,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una fattoria in aperta campagna",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fattoria in campagna?",
         "spiegazione": "È FALSO. Il segnale ti avvisa di un pericolo sulla strada (animali), non ti indica la presenza di una 'fattoria'. Anche se le fattorie hanno animali, il segnale si concentra sul rischio stradale.",
         "regola": "Mucca = Pericolo sulla strada, non edificio.",
         "trabocchetti": ["fattoria"],
@@ -3177,6 +3580,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il probabile attraversamento di animali selvatici",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attraversamento di animali selvatici?",
         "spiegazione": "Il segnale raffigurato è un segnale di pericolo. Ti avvisa che in quella zona è molto probabile incontrare animali selvatici che attraversano la strada. È proprio il suo scopo.",
         "regola": "Triangolo rosso = pericolo animali.",
         "trabocchetti": ["probabile"],
@@ -3185,6 +3589,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di rallentare e all'occorrenza di arrestarsi se gli animali danno segno di spavento",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare o fermarsi se animali spaventati?",
         "spiegazione": "Quando vedi questo segnale, devi guidare con molta prudenza. Se noti animali che sembrano spaventati o si muovono in modo strano, è giusto rallentare o fermarsi per evitare incidenti e non spaventarli ulteriormente.",
         "regola": "Animali spaventati? Frena!",
         "trabocchetti": ["All"],
@@ -3193,6 +3598,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di rallentare e all'occorrenza di arrestarsi se gli animali attraversano improvvisamente la strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare o fermarsi se animali attraversano di colpo?",
         "spiegazione": "Questo segnale ti avvisa che gli animali selvatici possono apparire sulla strada senza preavviso. Per la tua sicurezza e la loro, devi essere pronto a rallentare o fermarti se attraversano la strada all'improvviso.",
         "regola": "Attraversamento improvviso? Rallenta e fermati.",
         "trabocchetti": ["improvvisamente"],
@@ -3201,6 +3607,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la possibilità di trovare improvvisamente animali vaganti sulla carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → animali vaganti improvvisi?",
         "spiegazione": "Il segnale ti avvisa che in quella zona potresti trovare animali selvatici che camminano sulla strada (vaganti) senza un percorso fisso. Devi stare molto attento perché possono apparire all'improvviso.",
         "regola": "Animali vaganti = attenzione!",
         "trabocchetti": ["Possibilità", "improvvisamente"],
@@ -3209,6 +3616,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il probabile e improvviso attraversamento di animali selvatici",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attraversamento improvviso di animali selvatici?",
         "spiegazione": "Questo segnale ti dice che è molto probabile che animali selvatici attraversino la strada, e che lo faranno senza preavviso. Per questo, devi essere sempre pronto a reagire rapidamente.",
         "regola": "Pericolo = probabile e improvviso.",
         "trabocchetti": ["probabile e improvviso"],
@@ -3217,6 +3625,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di rallentare per evitare urti con animali selvatici vaganti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare per non urtare animali selvatici?",
         "spiegazione": "Rallentare è la prima cosa da fare quando vedi questo segnale. Ti dà più tempo per vedere gli animali e reagire, evitando così di scontrarti con loro.",
         "regola": "Rallenta = evita urti.",
         "immagine": "ce91d9d069343b2b794b.jpg",
@@ -3224,6 +3633,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è obbligatorio usare ripetutamente l'avvisatore acustico per allontanare gli animali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → clacson ripetuto per allontanare animali?",
         "spiegazione": "Usare il clacson ripetutamente può spaventare gli animali e farli muovere in modo imprevedibile, aumentando il rischio di incidente. Non è obbligatorio e spesso è sconsigliato. La cosa giusta da fare è rallentare e stare attenti.",
         "regola": "Non suonare il clacson, rallenta!",
         "trabocchetti": ["obbligatorio", "ripetutamente"],
@@ -3232,6 +3642,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una area riservata alla circolazione di animali selvatici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area riservata ad animali selvatici?",
         "spiegazione": "Il segnale non indica un'area dove gli animali possono circolare liberamente e in sicurezza (come una riserva). Indica un pericolo per gli automobilisti perché gli animali possono attraversare la strada, non un'area 'loro'.",
         "regola": "Non è una riserva, è un pericolo!",
         "trabocchetti": ["riservata alla circolazione", "area"],
@@ -3240,6 +3651,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a marciare al centro della strada per evitare di investire gli animali selvatici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → marciare al centro per evitarli?",
         "spiegazione": "Marciare al centro della strada è pericoloso perché potresti invadere la corsia opposta o ostacolare il traffico. La regola è rallentare e stare attenti, non cambiare la posizione sulla carreggiata in modo rischioso.",
         "regola": "Non al centro, ma prudenza!",
         "trabocchetti": ["obbliga a marciare al centro"],
@@ -3248,6 +3660,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente il transito dei soli veicoli a quattro ruote motrici",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo veicoli 4x4?",
         "spiegazione": "Questo segnale non ha nulla a che fare con il tipo di veicolo che puoi guidare. È un segnale di pericolo che vale per tutti i veicoli, indipendentemente dalla loro trazione (due o quattro ruote motrici).",
         "regola": "Vale per tutti, non solo 4x4!",
         "immagine": "ce91d9d069343b2b794b.jpg",
@@ -3255,6 +3668,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'ingresso di uno \"zoo safari\"",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ingresso di zoo safari?",
         "spiegazione": "Il segnale avvisa di un pericolo su strada pubblica, non dell'ingresso a un parco a tema o uno zoo. Non indica un luogo dove si possono vedere animali in cattività o in un ambiente controllato.",
         "regola": "Non è uno zoo, è la strada!",
         "trabocchetti": ["zoo safari"],
@@ -3263,6 +3677,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'ingresso di un Parco Nazionale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ingresso di Parco Nazionale?",
         "spiegazione": "Anche se i Parchi Nazionali possono avere animali selvatici, questo segnale non è il simbolo di un Parco Nazionale. È un segnale di pericolo stradale specifico per l'attraversamento di animali, non un'indicazione geografica.",
         "regola": "Non è un parco, è un pericolo!",
         "immagine": "ce91d9d069343b2b794b.jpg",
@@ -3270,6 +3685,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che una carreggiata a senso unico, diventa a doppio senso di circolazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → da senso unico a doppio senso?",
         "spiegazione": "Il segnale ti avvisa che la strada, che prima era a senso unico (cioè potevi andare solo in una direzione), ora diventerà a doppio senso. Questo significa che potrai incontrare auto che vengono dalla direzione opposta.",
         "regola": "Due frecce opposte = Attenzione, arrivano auto dall'altra parte!",
         "trabocchetti": ["preannuncia", "carreggiata a senso unico", "diventa a doppio senso"],
@@ -3278,6 +3694,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che, poco oltre, si potranno incontrare veicoli che marciano in senso opposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → veicoli in senso opposto più avanti?",
         "spiegazione": "Questo segnale ti dice che, dopo un breve tratto, la strada non sarà più solo per te, ma ci saranno anche veicoli che viaggiano nella direzione contraria alla tua. Devi fare attenzione.",
         "regola": "Frecce opposte = Occhio ai veicoli che arrivano!",
         "trabocchetti": ["poco oltre", "marciano in senso opposto"],
@@ -3286,6 +3703,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che termina il senso unico di circolazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine del senso unico?",
         "spiegazione": "Se prima stavi guidando su una strada dove tutti andavano nella stessa direzione (senso unico), questo segnale ti avvisa che quel senso unico sta per finire. Dopo il segnale, la strada diventerà a doppio senso.",
         "regola": "Frecce opposte = Fine senso unico, inizia il doppio senso.",
         "trabocchetti": ["termina il senso unico"],
@@ -3294,6 +3712,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "I segnali triangolari con bordo rosso, come questo, sono sempre segnali di pericolo. Ti avvisano di una situazione che richiede maggiore attenzione.",
         "regola": "Triangolo rosso = Pericolo!",
         "trabocchetti": ["segnale di pericolo"],
@@ -3302,6 +3721,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che, poco oltre, occorrerà usare maggiore prudenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → maggiore prudenza più avanti?",
         "spiegazione": "Poiché la strada diventerà a doppio senso, o lo è già, e potresti incontrare veicoli che vengono verso di te, è fondamentale guidare con più attenzione e prudenza.",
         "regola": "Pericolo = Più prudenza.",
         "trabocchetti": ["occorrerà usare maggiore prudenza"],
@@ -3310,6 +3730,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se a fondo giallo, è posto in presenza di lavori in corso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato a fondo giallo → lavori in corso?",
         "spiegazione": "Tutti i segnali di pericolo (e non solo) che hanno il fondo giallo invece che bianco, indicano che la situazione di pericolo è temporanea e legata a lavori stradali.",
         "regola": "Segnale giallo = Lavori in corso.",
         "trabocchetti": ["fondo giallo", "lavori in corso"],
@@ -3318,6 +3739,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato il sorpasso, se consentito, deve essere effettuato con particolare prudenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sorpasso, se consentito, con prudenza?",
         "spiegazione": "Se la strada diventa a doppio senso, significa che potresti avere veicoli che arrivano dalla direzione opposta. Se decidi di sorpassare, devi essere molto più attento per evitare incidenti con chi viene dall'altra parte.",
         "regola": "Doppio senso + Sorpasso = Massima prudenza.",
         "trabocchetti": ["se consentito", "particolare prudenza"],
@@ -3326,6 +3748,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che il traffico si svolge su due carreggiate separate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → due carreggiate separate?",
         "spiegazione": "Questo segnale indica che il traffico si svolge sulla STESSA carreggiata, ma in due direzioni opposte. Se ci fossero due carreggiate separate (come in autostrada), non ci sarebbe bisogno di avvisare del doppio senso sulla stessa strada.",
         "regola": "Frecce sulla stessa immagine = Stessa strada, due sensi.",
         "trabocchetti": ["due carreggiate separate"],
@@ -3334,6 +3757,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che la circolazione diventa a senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → circolazione a senso unico?",
         "spiegazione": "È il contrario! Il segnale avvisa che la circolazione, se prima era a senso unico, ORA diventa a doppio senso. Le due frecce indicano proprio le due direzioni opposte.",
         "regola": "Frecce opposte = Doppio senso, non senso unico.",
         "trabocchetti": ["diventa a senso unico"],
@@ -3342,6 +3766,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di dare la precedenza ai veicoli provenienti in senso contrario",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza a chi viene in senso contrario?",
         "spiegazione": "Questo segnale è di pericolo, non di prescrizione. Ti avvisa della presenza di traffico in senso opposto, ma non ti dice chi deve dare la precedenza. Ci sono altri segnali specifici per la precedenza nei sensi unici alternati.",
         "regola": "Triangolo rosso = Avviso, non obbligo di precedenza.",
         "trabocchetti": ["impone di dare la precedenza"],
@@ -3350,6 +3775,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il diritto di precedenza nei sensi unici alternati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → diritto di precedenza nel senso unico alternato?",
         "spiegazione": "Questo segnale indica un normale doppio senso di circolazione. Il \"diritto di precedenza nei sensi unici alternati\" è indicato da un altro segnale (quadrato blu con freccia bianca in alto e freccia rossa in basso).",
         "regola": "Frecce opposte = Doppio senso normale, non alternato con precedenza.",
         "immagine": "b220dbd46a9264888dd0.jpg",
@@ -3357,6 +3783,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che bisogna ritornare indietro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tornare indietro?",
         "spiegazione": "Assolutamente no! Il segnale ti avvisa di una condizione della strada (doppio senso), non ti dice di cambiare direzione o tornare indietro.",
         "regola": "Segnale di pericolo = Avviso, non ordine di inversione.",
         "trabocchetti": ["bisogna ritornare indietro"],
@@ -3365,6 +3792,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un senso unico alternato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico alternato?",
         "spiegazione": "Questo segnale indica un doppio senso CONTINUO. Il \"senso unico alternato\" è una situazione temporanea dove il traffico passa prima in una direzione e poi nell'altra, spesso regolato da semafori o movieri, e ha un segnale specifico (rotondo con freccia rossa e freccia nera, o quadrato blu con freccia bianca e freccia rossa).",
         "regola": "Frecce opposte = Doppio senso fisso, non alternato.",
         "trabocchetti": ["senso unico alternato"],
@@ -3373,6 +3801,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un preavviso di direzione obbligatoria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preavviso di direzione obbligatoria?",
         "spiegazione": "I segnali di direzione obbligatoria sono rotondi e blu con una freccia bianca. Questo è un segnale di pericolo (triangolare con bordo rosso) e non ti obbliga a prendere una direzione specifica.",
         "regola": "Triangolo rosso = Pericolo, non obbligo di direzione.",
         "trabocchetti": ["preavviso di direzione obbligatoria"],
@@ -3381,6 +3810,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia lo sbocco della strada su una banchina portuale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sbocco su banchina portuale?",
         "spiegazione": "Il segnale ti avvisa che la strada finisce vicino all'acqua, come in un porto dove ci sono le banchine per le navi. C'è il rischio di cadere in acqua.",
         "regola": "Banchina = bordo acqua.",
         "trabocchetti": ["banchina portuale"],
@@ -3389,6 +3819,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia lo sbocco della strada su un molo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sbocco su un molo?",
         "spiegazione": "Simile alla banchina, il molo è una struttura che si estende nell'acqua. Se la strada finisce su un molo, c'è il pericolo di cadere in acqua.",
         "regola": "Molo = strada nell'acqua.",
         "trabocchetti": ["molo"],
@@ -3397,6 +3828,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia lo sbocco della strada sull'argine di un fiume",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sbocco su argine di fiume?",
         "spiegazione": "L'argine è il bordo di un fiume. Se la strada finisce sull'argine, c'è il rischio di cadere nel fiume.",
         "regola": "Argine = bordo fiume.",
         "trabocchetti": ["argine di un fiume"],
@@ -3405,6 +3837,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia lo sbocco della strada sull'argine di un canale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sbocco su argine di canale?",
         "spiegazione": "Come per il fiume, anche un canale ha un argine. Il pericolo è lo stesso: cadere in acqua se la strada finisce lì.",
         "regola": "Argine = bordo canale.",
         "trabocchetti": ["argine di un canale"],
@@ -3413,6 +3846,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna usare particolare prudenza, soprattutto di notte, per evitare di cadere in acqua",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prudenza di notte per non cadere in acqua?",
         "spiegazione": "Questo segnale indica un pericolo. Di notte, la visibilità è minore, quindi è ancora più importante fare attenzione per non finire in acqua.",
         "regola": "Buio + Acqua = Max Prudenza.",
         "immagine": "a01c4f554d005800898e.jpg",
@@ -3420,6 +3854,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il pericolo di caduta in acqua",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pericolo di caduta in acqua?",
         "spiegazione": "L'immagine mostra chiaramente una macchina che sta cadendo in acqua. Questo è il pericolo principale che il segnale vuole comunicare.",
         "regola": "Macchina in acqua = Caduta.",
         "trabocchetti": ["pericolo di caduta in acqua"],
@@ -3428,6 +3863,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna usare particolare prudenza se, nel tratto di strada che segue, si dovranno effettuare manovre di retromarcia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prudenza nelle retromarce successive?",
         "spiegazione": "Se devi fare retromarcia vicino all'acqua, il rischio di cadere è molto alto perché la visibilità posteriore è limitata e potresti non vedere il bordo.",
         "regola": "Retromarcia + Acqua = Pericolo doppio.",
         "trabocchetti": ["manovre di retromarcia"],
@@ -3436,6 +3872,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Tutti i segnali a forma di triangolo con bordo rosso e sfondo bianco sono segnali di pericolo. Avvisano di una situazione rischiosa.",
         "regola": "Triangolo rosso = Pericolo.",
         "trabocchetti": ["segnale di pericolo"],
@@ -3444,6 +3881,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un viadotto in costruzione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → viadotto in costruzione?",
         "spiegazione": "Il segnale mostra una macchina che cade in acqua, non un ponte in costruzione. Un viadotto è un ponte, e questo segnale non c'entra con i lavori stradali.",
         "regola": "Non è un cantiere.",
         "trabocchetti": ["viadotto in costruzione"],
@@ -3452,6 +3890,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi in corrispondenza di un ponte mobile in manovra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi a ponte mobile in manovra?",
         "spiegazione": "Questo segnale avvisa di un pericolo generico di caduta in acqua. Non è un segnale di obbligo e non si riferisce specificamente a un ponte mobile. Per il ponte mobile c'è un altro segnale specifico.",
         "regola": "Pericolo avvisa, non obbliga.",
         "trabocchetti": ["obbliga", "Ponte mobile in manovra"],
@@ -3460,6 +3899,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada interrotto per alluvione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada interrotta per alluvione?",
         "spiegazione": "Il segnale indica un pericolo permanente (la strada che finisce nell'acqua), non una situazione temporanea come un'alluvione.",
         "regola": "Non è un'alluvione.",
         "trabocchetti": ["interrotto per alluvione"],
@@ -3468,6 +3908,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia lo sbocco su un ponte mobile",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sbocco su ponte mobile?",
         "spiegazione": "Il segnale non indica un ponte mobile. C'è un segnale specifico per il ponte mobile (quello con l'immagine del ponte che si alza).",
         "regola": "Non è un ponte che si muove.",
         "trabocchetti": ["ponte mobile"],
@@ -3476,6 +3917,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna usare particolare prudenza perché si incontra una discesa ripida",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → discesa ripida?",
         "spiegazione": "Il segnale non ha nulla a che fare con una discesa ripida. Il pericolo è la caduta in acqua, non la pendenza della strada.",
         "regola": "Non è una discesa.",
         "trabocchetti": ["discesa ripida"],
@@ -3484,6 +3926,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il pericolo di mareggiate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → mareggiate?",
         "spiegazione": "Il segnale indica il pericolo di cadere in acqua, non il pericolo delle onde alte (mareggiate). Le mareggiate sono un fenomeno naturale, non un pericolo legato alla fine della strada.",
         "regola": "Non sono le onde.",
         "trabocchetti": ["mareggiate"],
@@ -3492,6 +3935,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un'area attrezzata per il lavaggio dei veicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → area di lavaggio veicoli?",
         "spiegazione": "Assolutamente no! Il segnale indica un grave pericolo, non un servizio come un'area per lavare i veicoli.",
         "regola": "Non è un autolavaggio.",
         "immagine": "a01c4f554d005800898e.jpg",
@@ -3499,6 +3943,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si riferisce soltanto alle autovetture",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo per autovetture?",
         "spiegazione": "I segnali di pericolo, a meno che non abbiano simboli specifici (es. camion), si riferiscono a tutti i veicoli. L'immagine della macchina è solo un esempio per mostrare il pericolo.",
         "regola": "Pericolo = Per tutti.",
         "trabocchetti": ["soltanto"],
@@ -3507,6 +3952,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non ha validità nei mesi estivi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non valido d'estate?",
         "spiegazione": "I segnali stradali sono validi tutto l'anno, a meno che non ci sia un pannello integrativo che indichi una validità temporanea. Il pericolo di cadere in acqua esiste sempre.",
         "regola": "Pericolo = Sempre valido.",
         "trabocchetti": ["non ha validità nei mesi estivi"],
@@ -3515,6 +3961,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada sul quale l'aderenza del veicolo può diminuire",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → aderenza può diminuire?",
         "spiegazione": "Questo segnale ti avvisa che la strada ha ghiaia o pietrisco. Quando ci sono sassi, le gomme dell'auto non toccano bene l'asfalto e quindi l'auto 'tiene meno la strada'. Per questo, l'aderenza può diminuire e devi fare più attenzione.",
         "regola": "Ghiaia = meno aderenza.",
         "trabocchetti": ["può diminuire"],
@@ -3523,6 +3970,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di procedere con cautela in presenza di pedoni, anche se si trovano fuori dalla carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → cautela con pedoni anche fuori carreggiata?",
         "spiegazione": "Quando passi sulla ghiaia, le ruote possono lanciare i sassi lontano. Questi sassi possono colpire i pedoni, anche se camminano sul marciapiede o sul bordo della strada. Per la loro sicurezza, devi rallentare e fare molta attenzione.",
         "regola": "Sassi volanti = pericolo pedoni.",
         "immagine": "492239e6af8ef9138a7f.jpg",
@@ -3530,6 +3978,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di pietrisco che può essere scagliato a distanza al passaggio del veicolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pietrisco che può essere scagliato?",
         "spiegazione": "Il disegno del segnale mostra proprio i sassi che vengono 'sparati' via dalle ruote dell'auto. Questo è il pericolo principale che il segnale vuole farti capire: i sassi possono volare e colpire altre auto o persone.",
         "regola": "Sassi che volano.",
         "trabocchetti": ["può essere scagliato a distanza"],
@@ -3538,6 +3987,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede di moderare la velocità, incrociando un altro veicolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare incrociando altri veicoli?",
         "spiegazione": "Su una strada con ghiaia, è sempre meglio andare piano. Se incontri un'altra auto, rallentare è ancora più importante. Così eviti di lanciare sassi contro l'altro veicolo e hai più tempo per reagire se la tua auto o l'altra perde aderenza.",
         "regola": "Incontro auto = rallenta per i sassi.",
         "trabocchetti": ["Moderare la velocità"],
@@ -3546,6 +3996,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è opportuno mantenere una distanza maggiore dal veicolo che precede",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → distanza maggiore da chi precede?",
         "spiegazione": "Su una strada con ghiaia, l'auto frena meno bene e ha bisogno di più spazio per fermarsi. Inoltre, il veicolo davanti a te potrebbe lanciare sassi che potrebbero danneggiare la tua auto o il parabrezza. Mantenere una distanza maggiore ti protegge da entrambi i pericoli.",
         "regola": "Più spazio = più sicurezza (e meno sassi).",
         "trabocchetti": ["È opportuno"],
@@ -3554,6 +4005,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il pericolo di trovare pietrisco sulla pavimentazione stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pietrisco sulla strada?",
         "spiegazione": "Questo segnale ti avvisa che la strada è coperta da pietrisco o ghiaia. Questa è la sua funzione principale: farti sapere che c'è un pericolo dovuto ai sassi sulla strada.",
         "regola": "Ghiaia in strada = attenzione.",
         "immagine": "492239e6af8ef9138a7f.jpg",
@@ -3561,6 +4013,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato occorre considerare il pericolo di sbandamento o di slittamento",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rischio di sbandare o slittare?",
         "spiegazione": "La ghiaia rende la strada scivolosa. Se freni forte, giri bruscamente o acceleri troppo, l'auto potrebbe perdere il controllo, 'sbandare' o 'slittare'. Devi guidare con molta delicatezza.",
         "regola": "Ghiaia = scivoli.",
         "trabocchetti": ["Sbandamento o di slittamento"],
@@ -3569,6 +4022,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se a fondo giallo, è posto in presenza di cantieri stradali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato a fondo giallo → cantieri?",
         "spiegazione": "I segnali stradali che hanno il fondo giallo (invece del bianco) sono sempre segnali temporanei. Vengono usati quando ci sono lavori in corso (cantieri stradali) e indicano pericoli o situazioni provvisorie, come appunto la presenza di ghiaia dovuta ai lavori.",
         "regola": "Giallo = cantiere.",
         "trabocchetti": ["se a fondo giallo"],
@@ -3577,6 +4031,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consiglia di accelerare per aumentare l'aderenza del veicolo sull'asfalto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → accelerare per più aderenza?",
         "spiegazione": "FALSO. Accelerare su una strada con ghiaia è molto pericoloso! Non aumenta l'aderenza, anzi, la diminuisce e fa perdere il controllo dell'auto. Inoltre, fa volare più sassi. Devi sempre rallentare e guidare con delicatezza.",
         "regola": "Ghiaia = rallenta, non accelerare!",
         "trabocchetti": ["accelerare"],
@@ -3585,6 +4040,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "FALSO. Questo segnale è un segnale di pericolo. I segnali di pericolo sono a forma di triangolo con bordo rosso. I segnali di prescrizione (che danno obblighi o divieti) sono rotondi.",
         "regola": "Triangolo rosso = pericolo, non obbligo.",
         "trabocchetti": ["Di prescrizione"],
@@ -3593,6 +4049,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada soggetto a frana",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → frana?",
         "spiegazione": "FALSO. Questo segnale indica ghiaia sulla strada. Il segnale che avvisa di una frana o di caduta massi è diverso: mostra delle rocce che cadono da una montagna o da un pendio.",
         "regola": "Sassi da terra, non da montagna.",
         "trabocchetti": ["Soggetto a frana"],
@@ -3601,6 +4058,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se a fondo giallo, preannuncia un tratto di strada non percorribile per la presenza di cantieri stradali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato a fondo giallo → strada non percorribile per cantieri?",
         "spiegazione": "FALSO. Se il segnale ha il fondo giallo, indica che ci sono lavori in corso e quindi la strada potrebbe avere ghiaia, ma non significa che la strada 'non è percorribile'. Significa che devi fare attenzione, ma puoi comunque passare.",
         "regola": "Giallo = cantiere, non chiusura.",
         "trabocchetti": ["non percorribile"],
@@ -3609,6 +4067,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di banchine cedevoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → banchine cedevoli?",
         "spiegazione": "FALSO. Questo segnale indica ghiaia sulla strada. Il segnale che avvisa di 'banchine cedevoli' (cioè il bordo della strada che può cedere) è diverso: mostra un'auto che sta per cadere nel fosso a lato della strada.",
         "regola": "Sassi in strada, non banchina.",
         "trabocchetti": ["Banchine cedevoli"],
@@ -3617,6 +4076,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada ove esiste il pericolo di caduta di massi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → caduta massi?",
         "spiegazione": "FALSO. Questo segnale indica ghiaia sulla strada. Il segnale che avvisa del pericolo di 'caduta di massi' è diverso: mostra delle rocce che cadono da un pendio o da una parete rocciosa.",
         "regola": "Sassi da terra, non dal cielo.",
         "trabocchetti": ["Caduta di massi"],
@@ -3625,6 +4085,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'obbligo di montare le catene da neve",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di catene?",
         "spiegazione": "FALSO. Questo segnale indica ghiaia sulla strada. L'obbligo di montare le catene da neve è indicato da un segnale rotondo blu con il simbolo di una ruota con le catene. Sono due situazioni completamente diverse.",
         "regola": "Ghiaia non è neve.",
         "trabocchetti": ["Obbligo di montare le catene da neve"],
@@ -3633,6 +4094,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il pericolo di caduta di massi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → caduta massi?",
         "spiegazione": "Questo segnale ti avvisa che c'è il pericolo che delle rocce grandi, chiamate 'massi', possano cadere sulla strada. È un segnale di pericolo generico per la caduta di pietre.",
         "regola": "Rocce che cadono = pericolo.",
         "trabocchetti": ["preannuncia"],
@@ -3641,6 +4103,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada ove esiste il pericolo di presenza di pietre sulla carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pietre sulla carreggiata?",
         "spiegazione": "Se le pietre cadono, è molto probabile che finiscano sulla strada dove guidi (la 'carreggiata'). Quindi, il segnale ti avvisa sia del pericolo che cadano, sia che potresti trovarle già cadute.",
         "regola": "Cadono e restano lì.",
         "trabocchetti": ["presenza di pietre sulla carreggiata"],
@@ -3649,6 +4112,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il pericolo di caduta di pietre da sinistra con conseguente loro presenza sulla carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → caduta pietre da sinistra?",
         "spiegazione": "Guarda bene l'immagine: la montagna da cui cadono le pietre è disegnata sulla sinistra. Questo significa che il pericolo viene da quel lato della strada. Le pietre poi finiranno sulla carreggiata.",
         "regola": "La roccia cade da sinistra.",
         "trabocchetti": ["da sinistra"],
@@ -3657,6 +4121,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è opportuno moderare la velocità per evitare di urtare eventuali massi caduti sulla carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per non urtare massi?",
         "spiegazione": "Quando c'è il rischio di trovare ostacoli come massi sulla strada, è fondamentale guidare più lentamente. Così hai più tempo per vederli e per evitarli, senza fare incidenti.",
         "regola": "Rallenta per le pietre.",
         "trabocchetti": ["moderare la velocità"],
@@ -3665,6 +4130,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consigliabile evitare lunghe soste nel tratto di strada interessato dal pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → evitare lunghe soste nel tratto?",
         "spiegazione": "Se ti fermi a lungo in un punto dove c'è il pericolo di caduta massi, rischi che una pietra ti cada addosso. È molto più sicuro attraversare quel tratto di strada senza fermarsi, o fermarsi solo se strettamente necessario e per poco tempo.",
         "regola": "Non fermarti sotto le rocce.",
         "trabocchetti": ["evitare lunghe soste"],
@@ -3673,6 +4139,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada con cantieri stradali",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cantieri stradali?",
         "spiegazione": "Questo segnale non indica un cantiere stradale. I segnali di cantiere sono diversi, spesso di colore giallo o arancione, e mostrano operai o macchinari. Questo è un segnale di pericolo naturale.",
         "regola": "Non è un cantiere.",
         "trabocchetti": ["cantieri stradali"],
@@ -3681,6 +4148,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è opportuno suonare con insistenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → suonare con insistenza?",
         "spiegazione": "Suonare il clacson in modo insistente non serve a nulla contro la caduta delle pietre. Il clacson si usa per avvisare gli altri utenti della strada, non per i pericoli naturali.",
         "regola": "Il clacson non ferma le rocce.",
         "trabocchetti": ["suonare con insistenza"],
@@ -3689,6 +4157,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cattivo stato o con pavimentazione irregolare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada dissestata o irregolare?",
         "spiegazione": "Questo segnale non indica che la strada è rovinata o ha buche. Per quello ci sono altri segnali specifici. Questo segnale avvisa di oggetti che cadono dall'alto.",
         "regola": "Non è la strada rovinata.",
         "trabocchetti": ["cattivo stato", "pavimentazione irregolare"],
@@ -3697,6 +4166,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada deformata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada deformata?",
         "spiegazione": "Il segnale non indica una strada 'deformata', cioè con avvallamenti o dossi. Il pericolo qui è la caduta di pietre, non la forma della strada.",
         "regola": "Non è la strada che si deforma.",
         "trabocchetti": ["deformata"],
@@ -3705,6 +4175,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cui è vietato il sorpasso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso vietato?",
         "spiegazione": "Questo è un segnale di pericolo, non un segnale di divieto. I segnali che vietano il sorpasso sono rotondi, con bordo rosso e un'immagine che mostra due veicoli che si sorpassano, con una barra diagonale.",
         "regola": "Non è un divieto di sorpasso.",
         "trabocchetti": ["vietato il sorpasso"],
@@ -3713,6 +4184,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il pericolo di caduta di massi da destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → caduta massi da destra?",
         "spiegazione": "Il segnale mostra chiaramente una parete rocciosa sulla destra da cui si staccano dei massi. Quindi, il pericolo viene proprio da quel lato della strada.",
         "regola": "La roccia è a destra, i massi cadono da lì.",
         "immagine": "ef610a30779ba414985a.jpg",
@@ -3720,6 +4192,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada ove esiste il pericolo di presenza di pietre sulla carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pietre sulla carreggiata?",
         "spiegazione": "Se i massi cadono dalla parete rocciosa, è logico che possano finire sulla strada. Questo crea un pericolo per i veicoli che transitano, perché potrebbero trovare pietre sulla carreggiata.",
         "regola": "Cadono i massi, finiscono sulla strada.",
         "trabocchetti": ["presenza"],
@@ -3728,6 +4201,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il pericolo di caduta di pietre dalla parete rocciosa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → caduta pietre dalla parete rocciosa?",
         "spiegazione": "Questo è il significato principale del segnale. La figura rappresenta proprio delle pietre che si staccano da una parete di roccia e cadono verso la strada.",
         "regola": "Roccia che cade = pietre dalla parete.",
         "trabocchetti": ["caduta di pietre", "parete rocciosa"],
@@ -3736,6 +4210,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è opportuno moderare la velocità per evitare di urtare eventuali massi caduti sulla carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per non urtare massi?",
         "spiegazione": "Moderare la velocità è fondamentale in presenza di questo segnale. Se ci sono massi sulla strada, guidare più lentamente ti dà il tempo di vederli e di evitarli in sicurezza, riducendo il rischio di incidenti.",
         "regola": "Rallenta, i massi non perdonano.",
         "trabocchetti": ["opportuno"],
@@ -3744,6 +4219,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna far attenzione a possibili brusche frenate da parte dei veicoli che precedono",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → attenzione a brusche frenate di chi precede?",
         "spiegazione": "Se un veicolo davanti a te vede un masso sulla strada o un pericolo imprevisto, potrebbe frenare all'improvviso. Mantenere una distanza di sicurezza e prestare attenzione ti permette di reagire in tempo ed evitare un tamponamento.",
         "regola": "Massi = frenate improvvise.",
         "immagine": "ef610a30779ba414985a.jpg",
@@ -3751,6 +4227,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada sdrucciolevole",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → tratto sdrucciolevole?",
         "spiegazione": "Il segnale di strada sdrucciolevole è diverso: mostra un'auto che sbanda. Questo segnale indica solo il pericolo di caduta massi, non che la strada sia scivolosa.",
         "regola": "Non è sdrucciolevole, è roccioso!",
         "trabocchetti": ["sdrucciolevole"],
@@ -3759,6 +4236,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strettoia a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strettoia a destra?",
         "spiegazione": "Una strettoia è un restringimento della strada, e il suo segnale è diverso (due linee verticali che si avvicinano). Questo segnale non ha nulla a che fare con la larghezza della carreggiata.",
         "regola": "Non è stretta, è pericolosa per i massi.",
         "trabocchetti": ["strettoia"],
@@ -3767,6 +4245,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada non asfaltato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada non asfaltata?",
         "spiegazione": "Il segnale non fornisce informazioni sul tipo di pavimentazione della strada. Indica solo il pericolo di caduta massi, indipendentemente dal fatto che la strada sia asfaltata o meno.",
         "regola": "L'asfalto non c'entra, cadono le pietre.",
         "immagine": "ef610a30779ba414985a.jpg",
@@ -3774,6 +4253,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia banchine cedevoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → banchine cedevoli?",
         "spiegazione": "Le banchine cedevoli sono i bordi della strada che possono cedere sotto il peso di un veicolo, e hanno un segnale specifico (un'auto che scende verso il basso). Questo segnale è solo per i massi.",
         "regola": "Non è la banchina, è la montagna.",
         "trabocchetti": ["banchine cedevoli"],
@@ -3782,6 +4262,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada dove non si può circolare ad oltre 30 km/h",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → massimo 30 km/h?",
         "spiegazione": "Questo è un segnale di pericolo, non un segnale di limite di velocità. Anche se è consigliabile rallentare, il segnale da solo non impone un limite specifico di 30 km/h.",
         "regola": "È un pericolo, non un limite di velocità.",
         "trabocchetti": ["30 km/h"],
@@ -3790,6 +4271,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia possibili grandinate",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → grandinate?",
         "spiegazione": "Le grandinate sono un fenomeno meteorologico. Il segnale raffigura la caduta di rocce da una parete, non la caduta di ghiaccio dal cielo.",
         "regola": "Non è meteo, è roccia.",
         "trabocchetti": ["grandinate"],
@@ -3798,6 +4280,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un semaforo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → semaforo?",
         "spiegazione": "Il segnale raffigurato, con il disegno di un semaforo all'interno di un triangolo rosso, serve proprio ad avvisare i conducenti che più avanti sulla strada troveranno un semaforo. È un segnale di preavviso.",
         "regola": "Triangolo + Semaforo = Semaforo avanti!",
         "trabocchetti": ["preannuncia"],
@@ -3806,6 +4289,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Tutti i segnali stradali a forma di triangolo con il bordo rosso (tranne il segnale di 'Dare precedenza') sono segnali di pericolo. Indicano una situazione potenzialmente rischiosa sulla strada.",
         "regola": "Triangolo rosso = Pericolo!",
         "trabocchetti": ["pericolo"],
@@ -3814,6 +4298,7 @@ QUESTIONS = [
     {
         "domanda": "Nel segnale raffigurato, il disco giallo può essere sostituito da una luce gialla lampeggiante",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → disco giallo sostituibile da luce gialla lampeggiante?",
         "spiegazione": "Questo segnale può essere anche luminoso. In quel caso, il disco giallo che vedi nel disegno può essere sostituito da una luce gialla che lampeggia. Questo serve per attirare ancora di più l'attenzione del conducente, specialmente di notte o con poca visibilità.",
         "regola": "Giallo lampeggiante = Attenzione extra!",
         "immagine": "e759008ac8bafd545ee0.jpg",
@@ -3821,6 +4306,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna moderare la velocità per potersi all'occorrenza fermare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per potersi fermare?",
         "spiegazione": "Quando vedi un segnale di pericolo, devi sempre rallentare e guidare con prudenza. Sapendo che c'è un semaforo, potresti dover frenare se la luce diventa rossa o gialla. Rallentare ti dà il tempo necessario per reagire in sicurezza.",
         "regola": "Pericolo = Rallenta e preparati!",
         "trabocchetti": ["Moderare la velocità", "All"],
@@ -3829,6 +4315,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è a fondo giallo se posto prima di un cantiere stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fondo giallo prima di un cantiere?",
         "spiegazione": "Se un segnale di pericolo (o anche altri tipi di segnali) si riferisce a una situazione temporanea, come un cantiere stradale, il suo sfondo diventa giallo invece che bianco. Il giallo indica che la situazione è provvisoria.",
         "regola": "Giallo = Cantiere o temporaneo.",
         "trabocchetti": ["Fondo giallo", "cantiere stradale"],
@@ -3837,6 +4324,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un semaforo con disposizione delle luci in verticale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → semaforo con luci in verticale?",
         "spiegazione": "L'immagine all'interno del segnale mostra chiaramente le tre luci del semaforo (rosso, giallo, verde) disposte una sopra l'altra, cioè in verticale. Questa è la disposizione più comune dei semafori.",
         "regola": "Semaforo nel segnale = Luci verticali.",
         "trabocchetti": ["disposizione delle luci in verticale"],
@@ -3845,6 +4333,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è obbligatorio sulle strade extraurbane",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → obbligatorio sulle extraurbane?",
         "spiegazione": "Sulle strade extraurbane, dove si viaggia a velocità più elevate, è molto importante avvisare i conducenti in anticipo della presenza di un semaforo. Per questo motivo, il segnale di pericolo 'Semaforo' è obbligatorio.",
         "regola": "Extraurbane = Semaforo avvisato!",
         "trabocchetti": ["Obbligatorio", "strade extraurbane"],
@@ -3853,6 +4342,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle strade extraurbane il segnale è sempre obbligatorio",
         "risposta": True,
+        "riassunto": "Strade extraurbane → segnale sempre obbligatorio?",
         "spiegazione": "Questa domanda ribadisce il concetto precedente. Sulle strade fuori città, per garantire la sicurezza e dare il tempo ai conducenti di reagire, è sempre necessario presegnalare la presenza di un semaforo.",
         "regola": "Extraurbane = Semaforo avvisato! (Sempre!)",
         "trabocchetti": ["Sempre obbligatorio"],
@@ -3861,6 +4351,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può avere il disco rosso sostituito da una luce rossa lampeggiante",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → disco rosso sostituibile da luce rossa lampeggiante?",
         "spiegazione": "FALSO. Il segnale di pericolo 'Semaforo' può avere una luce gialla lampeggiante (se è luminoso), ma MAI una luce rossa lampeggiante. Una luce rossa lampeggiante ha un significato molto diverso e più urgente, come un passaggio a livello o un pericolo che impone l'arresto immediato, non un semplice preavviso.",
         "regola": "Rosso lampeggiante = STOP! Non preavviso.",
         "trabocchetti": ["luce rossa lampeggiante"],
@@ -3869,6 +4360,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un attraversamento ferroviario senza barriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ferrovia senza barriere?",
         "spiegazione": "FALSO. Questo segnale preannuncia un semaforo, non un attraversamento ferroviario. Per i passaggi a livello (con o senza barriere) ci sono segnali specifici, come la croce di Sant'Andrea o il segnale con la locomotiva.",
         "regola": "Semaforo = Semaforo, non treno!",
         "immagine": "e759008ac8bafd545ee0.jpg",
@@ -3876,6 +4368,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può preannunciare un passaggio a livello con semibarriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passaggio a livello con semibarriere?",
         "spiegazione": "FALSO. Anche questa domanda cerca di confondere il segnale di semaforo con un passaggio a livello. Il segnale raffigurato indica solo la presenza di un semaforo, non di un passaggio a livello con semibarriere. Per i passaggi a livello esistono segnali specifici.",
         "regola": "Semaforo = Semaforo, non treno! (Ricorda bene!)",
         "trabocchetti": ["Passaggio a livello con semibarriere"],
@@ -3884,6 +4377,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un senso unico alternato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → senso unico alternato?",
         "spiegazione": "FALSO. Il segnale raffigurato preannuncia solo la presenza di un semaforo. Non specifica che il traffico sarà a senso unico alternato. Il senso unico alternato è una situazione di gestione del traffico che può essere regolata da un semaforo, ma il segnale in sé non lo preannuncia direttamente.",
         "regola": "Semaforo = Semaforo. Non inventare altri significati!",
         "trabocchetti": ["Senso unico alternato"],
@@ -3892,6 +4386,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di un ponte mobile",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ponte mobile?",
         "spiegazione": "FALSO. Un ponte mobile è un pericolo completamente diverso e ha un suo segnale specifico (un triangolo con l'immagine di un ponte che si alza). Il segnale raffigurato indica solo un semaforo.",
         "regola": "Semaforo = Semaforo. Non è un ponte!",
         "trabocchetti": ["Ponte mobile"],
@@ -3900,6 +4395,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può avere al centro una luce gialla fissa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → luce gialla fissa al centro?",
         "spiegazione": "FALSO. Se il segnale di preavviso del semaforo è luminoso, la luce gialla al centro è sempre lampeggiante per attirare l'attenzione. Non è mai fissa. Una luce gialla fissa in un semaforo ha un significato diverso (ad esempio, preavviso di rosso imminente).",
         "regola": "Giallo nel segnale = Lampeggiante (se luminoso). Mai fisso!",
         "trabocchetti": ["fissa"],
@@ -3908,6 +4404,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la possibilità di un improvviso abbagliamento dovuto ad aeroplani a bassa quota",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → abbagliamento da aerei a bassa quota?",
         "spiegazione": "Questo segnale ti avvisa che potresti essere abbagliato (avere la vista disturbata dalla luce forte) dalle luci degli aeroplani che volano molto bassi, specialmente di notte o con il sole basso. Quindi, è VERO.",
         "regola": "Aereo basso = luce forte.",
         "trabocchetti": ["improvviso"],
@@ -3916,6 +4413,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la possibilità di un improvviso e forte rumore dovuto ad aeroplani a bassa quota",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → forte rumore da aerei a bassa quota?",
         "spiegazione": "Il segnale ti avvisa che potresti sentire un rumore molto forte e improvviso a causa degli aeroplani che volano a bassa quota, per esempio quando decollano o atterrano. Questo rumore può spaventarti o distrarti. Quindi, è VERO.",
         "regola": "Aereo basso = rumore forte.",
         "trabocchetti": ["improvviso", "forte"],
@@ -3924,6 +4422,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto nelle vicinanze di aeroporti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vicino agli aeroporti?",
         "spiegazione": "Questo segnale si trova sempre vicino agli aeroporti, perché è lì che gli aeroplani volano a bassa quota per le operazioni di decollo e atterraggio. Quindi, è VERO.",
         "regola": "Aereo = Aeroporto.",
         "trabocchetti": ["Nelle vicinanze"],
@@ -3932,6 +4431,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto nelle vicinanze di piste per l'atterraggio ed il decollo di aeroplani",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vicino a piste di atterraggio e decollo?",
         "spiegazione": "Il segnale è posizionato vicino alle piste dove gli aeroplani atterrano e decollano, proprio per avvisare i conducenti del possibile passaggio di aerei a bassa quota. Quindi, è VERO.",
         "regola": "Pista = Aereo in movimento.",
         "trabocchetti": ["Piste per l"],
@@ -3940,6 +4440,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto in zone dove può avvenire il volo a bassa quota di aeroplani",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → zone con aerei a bassa quota?",
         "spiegazione": "Il segnale serve proprio a indicare che ti trovi in una zona dove gli aeroplani possono volare molto bassi, causando i pericoli di cui abbiamo parlato (rumore, abbagliamento). Quindi, è VERO.",
         "regola": "Segnale = Aereo basso.",
         "trabocchetti": ["Volo a bassa quota"],
@@ -3948,6 +4449,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una località di volo a vela",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → volo a vela?",
         "spiegazione": "Il simbolo raffigura un aeroplano a motore, non un aliante (che è un aereo senza motore, usato per il 'volo a vela'). Questo segnale non indica una zona per il volo a vela. Quindi, è FALSO.",
         "regola": "Aereo con motore, non aliante.",
         "trabocchetti": ["volo a vela"],
@@ -3956,6 +4458,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una zona riservata ai veicoli dell'aeronautica militare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → zona per veicoli dell'aeronautica?",
         "spiegazione": "Questo segnale avvisa dei pericoli legati agli aerei in generale (rumore, abbagliamento), non indica una zona riservata solo ai veicoli dell'aeronautica militare. Non c'è nessun simbolo militare. Quindi, è FALSO.",
         "regola": "Non è militare, è un avviso generale.",
         "trabocchetti": ["Zona riservata ai veicoli dell"],
@@ -3964,6 +4467,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un bivio per l'aeroporto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → bivio per l'aeroporto?",
         "spiegazione": "Questo è un segnale di pericolo (triangolare con bordo rosso), non un segnale di indicazione (che di solito è quadrato o rettangolare e blu o verde) che ti dice dove andare per l'aeroporto. Quindi, è FALSO.",
         "regola": "Triangolo rosso = Pericolo, non direzione.",
         "trabocchetti": ["Bivio per l"],
@@ -3972,6 +4476,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta l'accesso agli aeroporti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → accesso vietato agli aeroporti?",
         "spiegazione": "Questo è un segnale di pericolo, non un segnale di divieto (che è rotondo con bordo rosso). Non ti vieta di fare nulla, ti avvisa solo di un possibile pericolo. Quindi, è FALSO.",
         "regola": "Triangolo rosso = Avviso, non divieto.",
         "trabocchetti": ["vieta"],
@@ -3980,6 +4485,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una corsia riservata per l'ingresso in aeroporto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsia riservata per l'aeroporto?",
         "spiegazione": "Come per la domanda precedente, questo è un segnale di pericolo, non un segnale che indica una corsia speciale o riservata per entrare in aeroporto. Quindi, è FALSO.",
         "regola": "Triangolo rosso = Pericolo, non corsia.",
         "trabocchetti": ["Corsia riservata per l"],
@@ -3988,6 +4494,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato presegnala un tratto di strada soggetto a forti raffiche di vento laterale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → forti raffiche di vento laterale?",
         "spiegazione": "Questo segnale ti avvisa che stai per entrare in un tratto di strada dove il vento può soffiare molto forte e di lato, rendendo la guida più difficile.",
         "regola": "Manica a vento = vento forte laterale.",
         "trabocchetti": ["forti raffiche di vento laterale"],
@@ -3996,6 +4503,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la possibilità di forti raffiche di vento laterale all'uscita da una galleria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → vento laterale all'uscita della galleria?",
         "spiegazione": "Quando esci da una galleria, potresti passare da un ambiente protetto a uno molto esposto al vento. Questo segnale ti prepara a questa possibilità, avvisandoti di possibili raffiche forti.",
         "regola": "Uscita galleria = attenzione al vento.",
         "trabocchetti": ["possibilità", "All"],
@@ -4004,6 +4512,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di un viadotto esposto ad improvvise raffiche di vento laterale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → viadotto con raffiche di vento laterale?",
         "spiegazione": "I viadotti sono ponti alti e lunghi, spesso costruiti in zone aperte. Per questo, sono molto esposti al vento laterale che può arrivare all'improvviso. Il segnale ti avvisa di questo rischio.",
         "regola": "Viadotto = vento forte e improvviso.",
         "trabocchetti": ["viadotto", "Improvvise"],
@@ -4012,6 +4521,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia zone soggette a forti ed improvvise raffiche di vento laterale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → zone con raffiche improvvise di vento laterale?",
         "spiegazione": "Il segnale ti informa che stai per entrare in un'area dove il vento può essere molto forte e arrivare all'improvviso dal lato della strada. Devi essere pronto a reagire.",
         "regola": "Segnale = zona di vento forte e improvviso.",
         "trabocchetti": ["forti ed improvvise", "Zone soggette"],
@@ -4020,6 +4530,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un pericolo che è maggiore per i veicoli telonati o furgonati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pericolo maggiore per telonati e furgonati?",
         "spiegazione": "I veicoli grandi, come i furgoni o quelli con teloni, hanno una superficie laterale ampia. Il vento forte può spingerli con più forza, rendendoli più difficili da controllare. Il pericolo è maggiore per loro.",
         "regola": "Veicoli grandi = più rischio vento.",
         "trabocchetti": ["maggiore per", "Veicoli telonati o furgonati"],
@@ -4028,6 +4539,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia di procedere con prudenza tenendo saldamente il volante",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prudenza, volante saldo?",
         "spiegazione": "Quando c'è vento forte, è fondamentale guidare con molta attenzione e tenere il volante con entrambe le mani e con decisione, per non perdere il controllo del veicolo.",
         "regola": "Vento = volante ben saldo.",
         "trabocchetti": ["prudenza", "saldamente il volante"],
@@ -4036,6 +4548,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di aeroplani a bassa quota",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → aerei a bassa quota?",
         "spiegazione": "Questo segnale non ha nulla a che fare con gli aeroplani. La manica a vento serve a indicare la forza e la direzione del vento, non la presenza di aerei.",
         "regola": "Manica a vento stradale = vento, non aerei.",
         "trabocchetti": ["aeroplani a bassa quota"],
@@ -4044,6 +4557,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada vicino ad un aeroporto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vicino a un aeroporto?",
         "spiegazione": "Il segnale ti avvisa del pericolo del vento forte, non che sei vicino a un aeroporto. Anche se le maniche a vento si trovano negli aeroporti, il segnale sulla strada ha un significato diverso per i guidatori.",
         "regola": "Segnale = vento, non aeroporto.",
         "trabocchetti": ["vicino ad un aeroporto"],
@@ -4052,6 +4566,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di un campo d'aviazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → campo d'aviazione?",
         "spiegazione": "Questo segnale non indica la presenza di un campo d'aviazione. Il suo scopo è avvisarti del vento forte che può influenzare la guida del tuo veicolo.",
         "regola": "Segnale = vento, non campo d'aviazione.",
         "trabocchetti": ["campo d"],
@@ -4060,6 +4575,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica da quale direzione proviene il vento",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → direzione da cui viene il vento?",
         "spiegazione": "Il segnale stradale è un'immagine fissa e non può indicare in tempo reale la direzione del vento. Ti avvisa solo che c'è un pericolo di vento forte laterale.",
         "regola": "Segnale = pericolo vento, non direzione.",
         "immagine": "89f36e3d7fb9baffa94c.jpg",
@@ -4067,6 +4583,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza, nelle vicinanze, di un parco giochi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → parco giochi vicino?",
         "spiegazione": "Questo segnale non ha assolutamente nulla a che fare con i parchi giochi. Il suo unico scopo è avvisarti del vento forte.",
         "regola": "Manica a vento = vento, non giochi.",
         "trabocchetti": ["parco giochi"],
@@ -4075,6 +4592,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di capannoni industriali nelle vicinanze",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → capannoni industriali?",
         "spiegazione": "Il segnale non indica la presenza di capannoni industriali. È un avviso specifico per il pericolo del vento forte che può colpire la strada.",
         "regola": "Manica a vento = vento, non fabbriche.",
         "trabocchetti": ["capannoni industriali"],
@@ -4083,6 +4601,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un pericolo che, in caso di forte vento laterale, è maggiore per i veicoli che trainano rimorchi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, vento laterale → più pericolo per chi traina rimorchi?",
         "spiegazione": "Il vento laterale è più pericoloso per i veicoli che trainano un rimorchio perché hanno una superficie laterale più grande e sono più lunghi, quindi il vento li sposta più facilmente e li rende meno stabili.",
         "regola": "Rimorchio = più superficie = più vento.",
         "immagine": "89f36e3d7fb9baffa94c.jpg",
@@ -4090,6 +4609,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, in caso di forte vento laterale, un pericolo che è maggiore per i veicoli a due ruote",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, vento laterale → più pericolo per le due ruote?",
         "spiegazione": "I veicoli a due ruote (come moto e scooter) sono leggeri e hanno meno stabilità. Il vento laterale può farli sbandare o addirittura cadere, rendendo il pericolo molto alto per loro.",
         "regola": "Due ruote = meno stabilità = più vento.",
         "trabocchetti": ["è maggiore per i veicoli a due ruote"],
@@ -4098,6 +4618,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, in caso di forte vento laterale, un pericolo che è maggiore per i veicoli che trainano caravan",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, vento laterale → più pericolo per chi traina caravan?",
         "spiegazione": "Una caravan è un tipo di rimorchio, spesso grande e alto. Come per tutti i rimorchi, la sua grande superficie laterale la rende molto sensibile al vento, aumentando il pericolo di sbandamento.",
         "regola": "Caravan = grande e alta = più vento.",
         "immagine": "89f36e3d7fb9baffa94c.jpg",
@@ -4105,6 +4626,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato richiede, in caso di forte vento laterale, di procedere con prudenza tenendo il volante con una presa più sicura",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, vento laterale → prudenza e presa sicura del volante?",
         "spiegazione": "Quando c'è forte vento laterale, è fondamentale guidare con molta attenzione. Tenere il volante con una presa sicura (entrambe le mani) aiuta a controllare meglio il veicolo e a contrastare le spinte del vento.",
         "regola": "Vento = volante saldo = prudenza.",
         "trabocchetti": ["procedere con prudenza", "presa più sicura"],
@@ -4113,6 +4635,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, in caso di forte vento laterale, la necessità per i veicoli telonati di rallentare e all'occorrenza di fermarsi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, vento laterale → telonati rallentano o si fermano?",
         "spiegazione": "I veicoli telonati (come alcuni camion) hanno una grande superficie laterale che agisce come una vela. Il vento li spinge molto forte, quindi devono rallentare e, se il vento è troppo forte, è meglio fermarsi per sicurezza.",
         "regola": "Telone = vela = rallenta/fermati.",
         "trabocchetti": ["veicoli telonati", "all"],
@@ -4121,6 +4644,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, in caso di forte vento laterale, possibili sbandamenti dei veicoli provenienti dal senso opposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, vento laterale → sbandamenti di chi viene in senso opposto?",
         "spiegazione": "Il vento laterale può colpire anche i veicoli che vengono dalla direzione opposta, facendoli sbandare. Questo crea un pericolo anche per noi, quindi dobbiamo essere pronti a reagire.",
         "regola": "Vento = tutti sbandano = attenzione.",
         "immagine": "89f36e3d7fb9baffa94c.jpg",
@@ -4128,6 +4652,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, in caso di forte vento laterale, un pericolo che aumenta all'aumentare della superficie laterale del veicolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, vento laterale → pericolo cresce con la superficie laterale?",
         "spiegazione": "Più grande è la parte laterale del veicolo esposta al vento (ad esempio, un camion, un furgone alto, un veicolo con rimorchio), più il vento lo spinge e lo rende instabile. Quindi, il pericolo aumenta con la superficie laterale.",
         "regola": "Più superficie = più pericolo.",
         "trabocchetti": ["aumenta all"],
@@ -4136,6 +4661,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, in caso di forte vento laterale, un pericolo maggiore all'entrata delle gallerie per i veicoli stretti e alti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, vento laterale → più pericolo all'entrata delle gallerie per veicoli alti?",
         "spiegazione": "Il pericolo maggiore dovuto al vento laterale si verifica quando si esce da una galleria, perché si passa improvvisamente da un luogo protetto a uno esposto al vento. All'entrata, il vento di solito diminuisce.",
         "regola": "Vento = pericolo all'uscita, non all'entrata.",
         "trabocchetti": ["all"],
@@ -4144,6 +4670,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una zona dove, in caso di forte vento laterale, i veicoli con rimorchio hanno maggiore tenuta di strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, vento laterale → veicoli con rimorchio più stabili?",
         "spiegazione": "I veicoli con rimorchio, a causa della loro maggiore superficie e lunghezza, hanno una minore tenuta di strada in caso di forte vento laterale, non maggiore. Sono più instabili e a rischio di sbandamento.",
         "regola": "Rimorchio + vento = meno tenuta.",
         "trabocchetti": ["maggiore tenuta di strada"],
@@ -4152,6 +4679,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una zona dove, in caso di forte vento laterale, i veicoli scarichi o leggeri hanno maggiore tenuta di strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, vento laterale → veicoli scarichi o leggeri più stabili?",
         "spiegazione": "I veicoli scarichi o leggeri sono più facilmente spostati dal vento rispetto a quelli pesanti. Per questo motivo, hanno una minore tenuta di strada, non maggiore, e sono più a rischio di sbandamento.",
         "regola": "Leggero + vento = meno tenuta.",
         "trabocchetti": ["maggiore tenuta di strada"],
@@ -4160,6 +4688,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, in caso di forte vento laterale, un pericolo che è minore per i veicoli con carichi voluminosi sopra il tetto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, vento laterale → meno pericolo con carichi voluminosi sul tetto?",
         "spiegazione": "I carichi voluminosi sul tetto aumentano la superficie laterale del veicolo e alzano il suo baricentro, rendendolo più instabile. Quindi, il pericolo è maggiore, non minore.",
         "regola": "Carico sul tetto = più superficie = più pericolo.",
         "trabocchetti": ["minore"],
@@ -4168,6 +4697,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, in caso di forte vento laterale, consente di sorpassare riducendo la distanza laterale dal veicolo che si sta superando",
         "risposta": False,
+        "riassunto": "Segnale raffigurato, vento laterale → sorpasso con distanza laterale ridotta?",
         "spiegazione": "In presenza di forte vento laterale, sorpassare è più rischioso. Se si sorpassa, è necessario mantenere una distanza laterale maggiore dal veicolo che si sta superando, per avere spazio in caso di sbandamento.",
         "regola": "Vento = più distanza nel sorpasso.",
         "trabocchetti": ["riducendo la distanza laterale"],
@@ -4176,6 +4706,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'ingresso in galleria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ingresso in galleria?",
         "spiegazione": "Il segnale raffigurato (la manica a vento) indica la presenza di forte vento laterale. Il segnale che preannuncia l'ingresso in galleria è diverso, raffigura un tunnel nero su sfondo bianco.",
         "regola": "Manica a vento = vento, non galleria.",
         "trabocchetti": ["ingresso in galleria"],
@@ -4184,6 +4715,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la possibile presenza di ghiaccio sulla strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ghiaccio?",
         "spiegazione": "Il segnale raffigurato indica forte vento laterale. Il segnale che preannuncia la possibile presenza di ghiaccio sulla strada è un triangolo con un fiocco di neve al centro.",
         "regola": "Manica a vento = vento, non ghiaccio.",
         "trabocchetti": ["presenza di ghiaccio sulla strada"],
@@ -4192,6 +4724,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'attraversamento di una zona soggetta al pericolo d'incendio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → zona a pericolo d'incendio?",
         "spiegazione": "Il segnale ti avvisa che stai per entrare in una zona dove c'è un alto rischio che scoppi un incendio, specialmente in periodi secchi. È un segnale di pericolo che ti invita a fare molta attenzione.",
         "regola": "Triangolo rosso = Pericolo. Albero in fiamme = Incendio.",
         "trabocchetti": ["soggetta al pericolo d"],
@@ -4200,6 +4733,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la vicinanza di zone ad alto rischio d'incendio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → zone ad alto rischio d'incendio?",
         "spiegazione": "Sì, il segnale serve proprio a dirti che sei vicino a luoghi (come boschi o campi secchi) dove il rischio di incendi è elevato. Devi guidare con prudenza e non gettare oggetti accesi.",
         "regola": "Rischio alto = Attenzione massima.",
         "trabocchetti": ["vicinanza", "Alto rischio"],
@@ -4208,6 +4742,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che ci si sta avvicinando ad un bosco facilmente infiammabile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → bosco facilmente infiammabile?",
         "spiegazione": "Spesso questi segnali si trovano vicino a boschi o aree verdi che, soprattutto d'estate o in periodi di siccità, possono prendere fuoco molto facilmente. L'immagine del pino in fiamme lo suggerisce chiaramente.",
         "regola": "Albero + Fuoco = Bosco a rischio.",
         "trabocchetti": ["facilmente infiammabile"],
@@ -4216,6 +4751,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia zone laterali alla strada che sono ad alto rischio d'incendio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → zone laterali ad alto rischio d'incendio?",
         "spiegazione": "Il pericolo d'incendio non è solo sulla strada, ma soprattutto ai lati, dove c'è vegetazione secca o boschi. Per questo è importante non gettare oggetti accesi dal finestrino.",
         "regola": "Pericolo ai lati, non solo sulla strada.",
         "trabocchetti": ["zone laterali alla strada"],
@@ -4224,6 +4760,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è integrato dal pannello che indica la lunghezza del tratto di strada interessato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pannello con lunghezza del tratto?",
         "spiegazione": "Come molti segnali di pericolo, anche questo può avere sotto un pannello aggiuntivo che ti dice per quanti chilometri o metri dura la zona a rischio incendio. Questo ti aiuta a sapere per quanto tempo devi mantenere alta l'attenzione.",
         "regola": "Segnale + Pannello = Durata del pericolo.",
         "trabocchetti": ["integrato", "Lunghezza del tratto"],
@@ -4232,6 +4769,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale se il conducente o gli eventuali passeggeri non rispettano il divieto di gettare sigarette accese dal finestrino, può verificarsi un incendio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sigarette accese dal finestrino possono causare incendi?",
         "spiegazione": "Questo è un comportamento molto pericoloso e una delle cause principali di incendi, specialmente nelle zone secche indicate dal segnale. Il segnale serve proprio a ricordarti di fare attenzione e prevenire disastri.",
         "regola": "Sigaretta accesa + Zona secca = Incendio!",
         "trabocchetti": ["divieto di gettare sigarette accese", "può verificarsi un incendio"],
@@ -4240,6 +4778,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'attraversamento di una zona soggetta al pericolo di esplosioni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pericolo di esplosioni?",
         "spiegazione": "Il segnale mostra un albero in fiamme e un fiammifero, simboli chiari di incendio, non di esplosioni. Le esplosioni sono un pericolo diverso e hanno un segnale specifico, se presente.",
         "regola": "Fuoco = Incendio, non esplosione.",
         "trabocchetti": ["esplosioni"],
@@ -4248,6 +4787,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada fiancheggiato da cave di pietra, con pericolo di esplosioni",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cave di pietra con esplosioni?",
         "spiegazione": "Ancora una volta, il segnale non ha nulla a che fare con cave di pietra o esplosioni. L'immagine è chiara: albero e fuoco. Non confondere i pericoli.",
         "regola": "Niente cave, niente esplosioni. Solo fuoco.",
         "trabocchetti": ["cave di pietra", "pericolo di esplosioni"],
@@ -4256,6 +4796,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che trasportano esplosivi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a chi trasporta esplosivi?",
         "spiegazione": "Questo è un segnale di pericolo (triangolare con bordo rosso), non un segnale di divieto (circolare con bordo rosso). Ti avvisa di un rischio, ma non vieta il passaggio a nessun tipo di veicolo.",
         "regola": "Triangolo = Pericolo, non divieto.",
         "trabocchetti": ["vieta il transito", "esplosivi"],
@@ -4264,6 +4805,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che trasportano prodotti facilmente infiammabili",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a prodotti infiammabili?",
         "spiegazione": "Come detto prima, è un segnale di pericolo, non di divieto. Non impedisce il passaggio a veicoli specifici, ma avvisa tutti del rischio incendio. I veicoli che trasportano merci pericolose hanno regole proprie.",
         "regola": "Pericolo = Attenzione, non stop.",
         "trabocchetti": ["vieta il transito"],
@@ -4272,6 +4814,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito ai veicoli che trasportano liquidi infiammabili",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato a liquidi infiammabili?",
         "spiegazione": "Stesso motivo delle domande precedenti: è un segnale di pericolo, non di divieto. Non blocca il traffico di veicoli con liquidi infiammabili, ma ricorda a tutti di essere prudenti.",
         "regola": "Triangolo = Avviso, non blocco.",
         "trabocchetti": ["vieta il transito"],
@@ -4280,6 +4823,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la possibilità di forte vento laterale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → forte vento laterale?",
         "spiegazione": "Il simbolo del vento laterale è diverso (una manica a vento o un sacco che sventola). Qui vediamo un albero e un fuoco, che non hanno nulla a che fare con il vento. Ogni pericolo ha il suo segnale specifico.",
         "regola": "Vento è un altro segnale. Qui è fuoco.",
         "trabocchetti": ["forte vento laterale"],
@@ -4288,6 +4832,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio di due o più strade extraurbane regolato con circolazione rotatoria",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rotatoria su strade extraurbane?",
         "spiegazione": "Il segnale raffigurato è un preavviso di circolazione rotatoria. Le rotatorie si trovano sia nelle città (centri abitati) che fuori dalle città (strade extraurbane). Quindi, è corretto dire che può preannunciare un incrocio extraurbano regolato con rotatoria.",
         "regola": "Rotatoria = incrocio, anche fuori città.",
         "trabocchetti": ["extraurbane"],
@@ -4296,6 +4841,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio di più strade regolato con circolazione nel senso indicato dalle frecce",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio con circolazione nel senso delle frecce?",
         "spiegazione": "Questo segnale avvisa proprio che stai per arrivare a un incrocio dove la circolazione dei veicoli avviene in modo circolare, seguendo il senso indicato dalle frecce disegnate sul segnale. È il significato principale del segnale.",
         "regola": "Frecce = senso di marcia circolare.",
         "trabocchetti": ["nel senso indicato dalle frecce"],
@@ -4304,6 +4850,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere usato anche nei centri abitati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → anche nei centri abitati?",
         "spiegazione": "Sì, è vero. Le rotatorie sono molto comuni anche all'interno dei centri abitati, nelle città e nei paesi, per gestire il traffico agli incroci. Il segnale serve ad avvisare i conducenti della loro presenza ovunque si trovino.",
         "regola": "Rotatoria = ovunque, non solo fuori città.",
         "trabocchetti": ["anche"],
@@ -4312,6 +4859,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la svolta a destra al primo incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietata la svolta a destra al primo incrocio?",
         "spiegazione": "Questo segnale è un segnale di pericolo (triangolare con bordo rosso), non un segnale di divieto. In una rotatoria, puoi svoltare a destra prendendo la prima uscita, se è la tua direzione. Non è vietato.",
         "regola": "Triangolo = pericolo/avviso, non divieto.",
         "trabocchetti": ["vieta"],
@@ -4320,6 +4868,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strada senza uscita, per cui bisogna tornare indietro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada senza uscita?",
         "spiegazione": "Falso. Una rotatoria è un incrocio che ti permette di scegliere diverse direzioni (uscite), non è una strada senza uscita. Non devi tornare indietro, ma scegliere l'uscita giusta per la tua destinazione.",
         "regola": "Rotatoria = tante uscite, non un vicolo cieco.",
         "trabocchetti": ["strada senza uscita", "bisogna tornare indietro"],
@@ -4328,6 +4877,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una svolta a sinistra obbligatoria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svolta obbligatoria a sinistra?",
         "spiegazione": "Falso. Il segnale preannuncia una rotatoria, dove puoi scegliere di andare a destra, dritto, a sinistra o fare il giro completo, a seconda dell'uscita che devi prendere. Non c'è un obbligo di svoltare solo a sinistra.",
         "regola": "Rotatoria = scelta, non obbligo di una direzione.",
         "trabocchetti": ["obbligatoria"],
@@ -4336,6 +4886,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un pericolo diverso da quelli per cui sono previsti specifici segnali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pericolo senza segnale specifico?",
         "spiegazione": "Questo segnale, con il punto esclamativo, si usa proprio quando c'è un pericolo per cui non esiste un cartello specifico. È come un 'attenzione generica'.",
         "regola": "Punto esclamativo = Pericolo generico, non specifico.",
         "immagine": "f8b5944af179d03e73a7.jpg",
@@ -4343,6 +4894,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che bisogna usare prudenza perché è vicino un pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prudenza, pericolo vicino?",
         "spiegazione": "Tutti i segnali di pericolo (quelli a forma di triangolo rosso) ci dicono che dobbiamo fare attenzione e rallentare perché c'è qualcosa di rischioso più avanti. Questo segnale non fa eccezione.",
         "regola": "Triangolo rosso = Attenzione, pericolo!",
         "trabocchetti": ["prudenza"],
@@ -4351,6 +4903,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), integrato con il pannello (B), preannuncia la possibilità di formazione del ghiaccio",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → formazione di ghiaccio?",
         "spiegazione": "Il segnale con il punto esclamativo (A) può essere accompagnato da un pannello aggiuntivo (B) che spiega meglio il tipo di pericolo. La formazione di ghiaccio è un pericolo comune che viene indicato in questo modo.",
         "regola": "Punto esclamativo + pannello = Pericolo SPECIFICO (es. ghiaccio).",
         "trabocchetti": ["integrato con il pannello (B)"],
@@ -4359,6 +4912,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere usato senza pannelli integrativi per indicare un pericolo generico in caso di emergenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pericolo generico in emergenza senza pannelli?",
         "spiegazione": "Sì, in situazioni di emergenza o quando il pericolo è davvero generico e non si può specificare, questo segnale può essere usato anche da solo, senza altri pannelli.",
         "regola": "Solo o con pannello, sempre pericolo!",
         "trabocchetti": ["senza pannelli integrativi", "pericolo generico in caso di emergenza"],
@@ -4367,6 +4921,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), integrato con il pannello (B), preannuncia la presenza di binari di manovra in corrispondenza di stabilimenti industriali",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → binari di manovra di stabilimenti?",
         "spiegazione": "Anche la presenza di binari di manovra, specialmente vicino a fabbriche, è un pericolo che può essere segnalato con il cartello generico (A) e un pannello (B) che lo specifica.",
         "regola": "Pannello (B) chiarisce il pericolo (A).",
         "trabocchetti": ["integrato con il pannello (B)"],
@@ -4375,6 +4930,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), integrato con il pannello (B), preannuncia la possibile presenza di macchine sgombraneve al lavoro sulla strada",
         "risposta": True,
+        "riassunto": "Segnale (A) con pannello (B) → sgombraneve al lavoro?",
         "spiegazione": "Sì, è corretto. Durante l'inverno, per avvisare della possibile presenza di macchine sgombraneve (spazzaneve) al lavoro, si usa spesso questo segnale (A) con un pannello (B) che lo indica.",
         "regola": "Pannello (B) = Dettaglio del pericolo (A).",
         "trabocchetti": ["integrato con il pannello (B)"],
@@ -4383,6 +4939,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cattivo stato o con pavimentazione irregolare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada dissestata o irregolare?",
         "spiegazione": "Falso. Per un tratto di strada in cattivo stato o con pavimentazione irregolare esiste un segnale specifico che mostra una strada con delle gobbe. Questo segnale generico si usa solo se non c'è un cartello apposito.",
         "regola": "Se c'è un segno specifico, non si usa questo!",
         "immagine": "f8b5944af179d03e73a7.jpg",
@@ -4390,6 +4947,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che bisogna proseguire diritto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → proseguire diritto?",
         "spiegazione": "Falso. Questo è un segnale di pericolo, non un segnale di obbligo. I segnali che indicano di 'proseguire diritto' sono di forma circolare e di colore blu.",
         "regola": "Triangolo = Pericolo, non comando.",
         "trabocchetti": ["proseguire diritto"],
@@ -4398,6 +4956,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una salita ripida",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → salita ripida?",
         "spiegazione": "Falso. Per una 'salita ripida' esiste un segnale specifico che mostra una strada in salita con una percentuale. Questo segnale generico non si usa per pericoli che hanno già un loro cartello.",
         "regola": "Per salita c'è un segno apposta!",
         "trabocchetti": ["salita ripida", "salita"],
@@ -4406,6 +4965,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), integrato con il pannello (B), preannuncia un passaggio a livello senza barriere",
         "risposta": False,
+        "riassunto": "Segnale (A) con pannello (B) → passaggio a livello senza barriere?",
         "spiegazione": "Falso. Per un 'passaggio a livello senza barriere' esistono segnali specifici (la croce di Sant'Andrea o il treno). Questo segnale generico non si usa per pericoli che hanno già un loro cartello, anche con un pannello integrativo.",
         "regola": "Passaggio a livello ha il suo segno, non questo!",
         "trabocchetti": ["passaggio a livello senza barriere"],
@@ -4414,6 +4974,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale (A), integrato con il pannello (B), preannuncia la presenza di veicoli militari in manovra",
         "risposta": False,
+        "riassunto": "Segnale (A) con pannello (B) → veicoli militari in manovra?",
         "spiegazione": "Falso. Anche per la 'presenza di veicoli militari in manovra' esiste un segnale specifico che raffigura un carro armato. Questo segnale generico non si usa per pericoli che hanno già un loro cartello.",
         "regola": "Anche i militari hanno il loro segno!",
         "trabocchetti": ["veicoli militari in manovra", "veicoli militari"],
@@ -4422,6 +4983,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada con banchina cedevole",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → banchina cedevole?",
         "spiegazione": "Il segnale mostra un'auto che si avvicina al bordo della strada e il terreno sotto le ruote sta crollando. Questo significa che la banchina (il bordo della strada) è debole e può rompersi, cioè è 'cedevole'.",
         "regola": "Banchina che 'cede' = si rompe.",
         "trabocchetti": ["cedevole"],
@@ -4430,6 +4992,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada con banchina non praticabile",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → banchina non praticabile?",
         "spiegazione": "Se la banchina è cedevole e può rompersi, non è sicuro usarla per fermarsi o per camminare. Quindi, non è 'praticabile', cioè non si può usare.",
         "regola": "Banchina rotta = non si usa.",
         "trabocchetti": ["Non praticabile"],
@@ -4438,6 +5001,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un possibile pericolo di caduta nella cunetta laterale alla strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → caduta nella cunetta laterale?",
         "spiegazione": "Se la banchina cede, c'è il rischio che il veicolo cada nel fosso o nel canale che si trova a lato della strada, chiamato 'cunetta'.",
         "regola": "Banchina rotta = rischio di cadere nel fosso.",
         "trabocchetti": ["cunetta"],
@@ -4446,6 +5010,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada con banchina pericolosa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → banchina pericolosa?",
         "spiegazione": "Tutte le caratteristiche che abbiamo visto (cedevole, non praticabile, rischio di caduta) indicano che la banchina è 'pericolosa'. Questo è un termine generale che riassume tutti i rischi.",
         "regola": "Segnale di pericolo = banchina pericolosa.",
         "trabocchetti": ["Pericolosa"],
@@ -4454,6 +5019,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Questo segnale ha la forma di un triangolo con il bordo rosso. Tutti i segnali con questa forma e colore sono segnali di pericolo, che avvertono di un rischio sulla strada.",
         "regola": "Triangolo rosso = pericolo.",
         "immagine": "0c5e695b30fd7e74f49b.jpg",
@@ -4461,6 +5027,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è consigliabile non avvicinarsi troppo al margine destro della strada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non avvicinarsi troppo al margine destro?",
         "spiegazione": "Dato che la banchina è pericolosa e può cedere, è molto importante mantenere una distanza di sicurezza dal bordo destro della strada per evitare di finirci sopra e rischiare un incidente.",
         "regola": "Banchina pericolosa = stai al centro.",
         "trabocchetti": ["Consigliabile", "Margine destro"],
@@ -4469,6 +5036,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato deve essere integrato con il segnale di limite di velocità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di abbinarlo a limite di velocità?",
         "spiegazione": "Questo segnale avverte di una banchina pericolosa. Non è obbligatorio che sia sempre accompagnato da un segnale che indica un limite di velocità. Potrebbe esserci, ma non 'deve' esserci per forza.",
         "regola": "'Deve' = attenzione, spesso è falso.",
         "trabocchetti": ["deve"],
@@ -4477,6 +5045,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "Come abbiamo detto, questo è un segnale di pericolo (triangolare con bordo rosso). I segnali di indicazione sono di solito rettangolari o quadrati e danno informazioni, non avvertono di pericoli.",
         "regola": "Triangolo rosso = pericolo, non indicazione.",
         "trabocchetti": ["indicazione"],
@@ -4485,6 +5054,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il divieto di continuare a percorrere quella strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di proseguire su quella strada?",
         "spiegazione": "Il segnale ti avverte di un pericolo, ma non ti vieta di continuare a guidare su quella strada. Ti dice solo di fare molta attenzione. I segnali di divieto sono rotondi con bordo rosso.",
         "regola": "Pericolo non è divieto.",
         "trabocchetti": ["divieto"],
@@ -4493,6 +5063,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strada dissestata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada dissestata?",
         "spiegazione": "Il segnale mostra un problema specifico alla banchina (il bordo della strada che cede), non che tutta la strada è 'dissestata' (cioè piena di buche o molto irregolare). C'è un altro segnale per la strada dissestata.",
         "regola": "Banchina rotta, non strada rotta.",
         "trabocchetti": ["Dissestata"],
@@ -4501,6 +5072,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di pietrisco sulla pavimentazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pietrisco?",
         "spiegazione": "Il pietrisco che si vede nel segnale è quello che cade dalla banchina che si rompe. Non indica che ci sono sassi sparsi sulla 'pavimentazione' (la strada stessa). C'è un segnale diverso per il pericolo di pietrisco sulla strada.",
         "regola": "Pietrisco che cade dalla banchina, non sulla strada.",
         "trabocchetti": ["Pietrisco sulla pavimentazione"],
@@ -4509,6 +5081,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il pericolo di allagamento della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → allagamento?",
         "spiegazione": "Il segnale non ha nulla a che fare con l'acqua. Non mostra allagamenti o pericoli legati all'acqua sulla strada. Mostra solo una banchina che cede.",
         "regola": "Nessuna acqua = nessun allagamento.",
         "trabocchetti": ["Allagamento"],
@@ -4517,6 +5090,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, preannuncia lo sbocco su un molo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sbocco su un molo?",
         "spiegazione": "Questo segnale non indica uno 'sbocco su un molo'. Il segnale di 'sbocco su molo o argine' è diverso e mostra un'auto che cade in acqua. Qui non c'è acqua.",
         "regola": "Niente acqua = niente molo.",
         "trabocchetti": ["molo"],
@@ -4525,6 +5099,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un impianto semaforico con disposizione delle luci in orizzontale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → semaforo con luci in orizzontale?",
         "spiegazione": "Il segnale mostra tre luci (rosso, giallo, verde) disposte una accanto all'altra, cioè in orizzontale. Questo significa che il semaforo che incontrerai avrà le luci messe in questo modo.",
         "regola": "Orizzontale = come nel disegno.",
         "trabocchetti": ["orizzontale"],
@@ -4533,6 +5108,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Questo segnale ha la forma di un triangolo con il bordo rosso. Tutti i segnali con questa forma e colore sono segnali di pericolo, servono ad avvisarti di un rischio o di una situazione particolare sulla strada.",
         "regola": "Triangolo rosso = Pericolo!",
         "immagine": "8d5822789fa65ec81ef2.jpg",
@@ -4540,6 +5116,7 @@ QUESTIONS = [
     {
         "domanda": "Nel segnale raffigurato, il disco giallo può essere sostituito da una luce gialla lampeggiante",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → disco giallo sostituibile da luce lampeggiante?",
         "spiegazione": "Il segnale preannuncia un semaforo. Un semaforo può avere la luce gialla fissa (che significa prepararsi a fermarsi o a partire) oppure lampeggiante (che significa procedere con molta attenzione e dare la precedenza se necessario). Quindi, il semaforo che incontrerai può avere una luce gialla lampeggiante.",
         "regola": "Giallo lampeggiante = Attenzione!",
         "trabocchetti": ["può essere sostituito"],
@@ -4548,6 +5125,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che bisogna moderare la velocità per potersi all'occorrenza fermare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per potersi fermare?",
         "spiegazione": "Quando vedi un segnale che preannuncia un semaforo, devi sempre rallentare. Questo ti permette di essere pronto a fermarti in sicurezza se il semaforo dovesse diventare rosso o se la situazione lo richiede.",
         "regola": "Semaforo = Rallenta e preparati a fermarti.",
         "trabocchetti": ["all"],
@@ -4556,6 +5134,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è, di norma, posto 150 metri prima di un semaforo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di norma 150 m prima del semaforo?",
         "spiegazione": "I segnali di pericolo, come questo, sono di solito posizionati a una certa distanza dal pericolo che segnalano. Fuori dai centri abitati, la distanza standard è di 150 metri per darti il tempo di reagire.",
         "regola": "Pericolo = 150 metri prima (fuori città).",
         "trabocchetti": ["di norma"],
@@ -4564,6 +5143,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'obbligo di arresto ad un posto di blocco stradale istituito dagli organi di polizia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → arresto al posto di blocco di polizia?",
         "spiegazione": "Questo segnale preannuncia un semaforo, non un posto di blocco della polizia. I posti di blocco sono segnalati in modo diverso, spesso con cartelli specifici o con la presenza degli agenti.",
         "regola": "Semaforo = Luci, non polizia.",
         "trabocchetti": ["obbligo di arresto", "posto di blocco", "organi di polizia"],
@@ -4572,6 +5152,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di un ponte mobile",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ponte mobile?",
         "spiegazione": "Il segnale di ponte mobile è diverso: mostra un ponte che si apre. Questo segnale, invece, mostra le luci di un semaforo.",
         "regola": "Semaforo = Luci, non ponte.",
         "trabocchetti": ["ponte mobile"],
@@ -4580,6 +5161,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'accesso al pontile d'imbarco di navi traghetto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → imbarco su traghetto?",
         "spiegazione": "Questo segnale indica un semaforo. L'accesso ai traghetti è segnalato da un altro tipo di cartello, che di solito mostra un'auto su una nave.",
         "regola": "Semaforo = Luci, non traghetto.",
         "trabocchetti": ["pontile d", "e"],
@@ -4588,6 +5170,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può avere il disco rosso sostituito da una luce rossa lampeggiante",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → disco rosso sostituibile da luce rossa lampeggiante?",
         "spiegazione": "Un semaforo normale ha una luce rossa fissa che significa 'stop'. Una luce rossa lampeggiante ha un significato diverso: indica un pericolo grave (come un passaggio a livello) e impone l'arresto e di dare la precedenza. Non è una modalità standard di funzionamento per il 'rosso' di un semaforo stradale comune.",
         "regola": "Rosso fisso = Stop. Rosso lampeggiante = Stop e dare precedenza (non un semaforo normale).",
         "trabocchetti": ["lampeggiante"],
@@ -4596,6 +5179,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un attraversamento ferroviario senza barriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ferrovia senza barriere?",
         "spiegazione": "Il segnale per un attraversamento ferroviario senza barriere mostra un treno. Questo segnale, invece, mostra le luci di un semaforo.",
         "regola": "Semaforo = Luci, non treno.",
         "immagine": "8d5822789fa65ec81ef2.jpg",
@@ -4603,6 +5187,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un passaggio a livello con semibarriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passaggio a livello con semibarriere?",
         "spiegazione": "Il segnale per un passaggio a livello con semibarriere mostra una barriera. Questo segnale, invece, mostra le luci di un semaforo.",
         "regola": "Semaforo = Luci, non barriere.",
         "trabocchetti": ["passaggio a livello con semibarriere"],
@@ -4611,6 +5196,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di corsie reversibili",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsie reversibili?",
         "spiegazione": "Le corsie reversibili sono quelle che possono cambiare direzione di marcia a seconda del traffico e sono indicate da segnali luminosi sopra la corsia (freccia verde, croce rossa). Questo segnale preannuncia un normale semaforo.",
         "regola": "Semaforo = Luci, non corsie che cambiano.",
         "trabocchetti": ["corsie reversibili"],
@@ -4619,6 +5205,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di macchine sgombraneve in azione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sgombraneve in azione?",
         "spiegazione": "Il segnale per le macchine sgombraneve è un triangolo con il disegno di un mezzo che spala la neve. Questo segnale, invece, mostra le luci di un semaforo.",
         "regola": "Semaforo = Luci, non neve.",
         "trabocchetti": ["macchine sgombraneve"],
@@ -4627,6 +5214,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un attraversamento ciclabile",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → attraversamento ciclabile?",
         "spiegazione": "Il segnale per un attraversamento ciclabile mostra una bicicletta. Questo segnale, invece, mostra le luci di un semaforo.",
         "regola": "Semaforo = Luci, non bici.",
         "trabocchetti": ["attraversamento ciclabile"],
@@ -4635,6 +5223,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada deformata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada deformata?",
         "spiegazione": "Questo segnale, con la sua forma ondulata, ci avvisa che la strada davanti a noi non è liscia, ma ha delle buche, avvallamenti o dossi. È proprio quello che significa 'strada deformata'.",
         "regola": "Onde sulla strada = strada deformata.",
         "trabocchetti": ["deformata"],
@@ -4643,6 +5232,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere associato con un segnale di limite massimo di velocità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → abbinabile a limite di velocità?",
         "spiegazione": "Quando la strada è deformata, è più sicuro andare piano. Per questo, spesso, insieme a questo segnale di pericolo, si trova anche un segnale che indica la velocità massima consentita, per esempio 'limite 30 km/h'.",
         "regola": "Pericolo + velocità = sicurezza.",
         "trabocchetti": ["può essere associato"],
@@ -4651,6 +5241,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un tratto di strada deformata lungo 380 metri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada deformata per 380 m?",
         "spiegazione": "Il segnale di pericolo, da solo, non indica la lunghezza del tratto di strada deformata. Però, può essere accompagnato da un pannello aggiuntivo (sotto il segnale) che specifica la lunghezza, ad esempio '380 m'. Quindi, è possibile che il segnale (con il suo pannello) indichi questa lunghezza.",
         "regola": "Numeri = pannello sotto il segnale.",
         "trabocchetti": ["380 metri"],
@@ -4659,6 +5250,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada con pavimentazione irregolare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pavimentazione irregolare?",
         "spiegazione": "Una 'pavimentazione irregolare' è esattamente un altro modo per dire che la strada è 'deformata' o 'in cattivo stato'. Significa che la superficie della strada non è uniforme e può causare scossoni o difficoltà alla guida.",
         "regola": "Irregolare = deformata.",
         "trabocchetti": ["pavimentazione irregolare"],
@@ -4667,6 +5259,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strada in cattivo stato",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada in cattivo stato?",
         "spiegazione": "Se la strada è deformata, con buche o avvallamenti, significa che non è in buone condizioni. Quindi, 'strada in cattivo stato' è una descrizione corretta del pericolo che il segnale preannuncia.",
         "regola": "Onde = strada rovinata.",
         "trabocchetti": ["in cattivo stato"],
@@ -4675,6 +5268,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Questo segnale ha la forma di un triangolo con il bordo rosso. Tutti i segnali con questa forma e colore sono segnali di pericolo, che avvisano di una situazione potenzialmente rischiosa sulla strada.",
         "regola": "Triangolo rosso = Pericolo!",
         "trabocchetti": ["segnale di pericolo"],
@@ -4683,6 +5277,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova, in genere, 150 metri prima di un tratto di strada con fondo irregolare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → in genere 150 m prima del fondo irregolare?",
         "spiegazione": "I segnali di pericolo, come questo, sono posizionati a una certa distanza dal punto in cui inizia il pericolo. Fuori dai centri abitati, la distanza standard è di circa 150 metri, per dare al conducente il tempo di reagire.",
         "regola": "Pericolo = 150 metri prima (fuori città).",
         "trabocchetti": ["in genere"],
@@ -4691,6 +5286,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada dissestata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada dissestata?",
         "spiegazione": "Una strada 'dissestata' è una strada danneggiata, con la superficie rovinata, piena di buche o avvallamenti. È un sinonimo perfetto per 'strada deformata' o 'in cattivo stato'.",
         "regola": "Dissestata = deformata.",
         "trabocchetti": ["dissestata"],
@@ -4699,6 +5295,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, se a fondo giallo, è usato in presenza di cantieri stradali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato a fondo giallo → cantieri?",
         "spiegazione": "Quando un segnale di pericolo ha il fondo giallo anziché bianco, significa che la situazione di pericolo è temporanea, spesso a causa di lavori in corso (cantieri stradali).",
         "regola": "Giallo = cantiere/temporaneo.",
         "trabocchetti": ["se a fondo giallo"],
@@ -4707,6 +5304,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "Questo segnale è un segnale di pericolo (triangolare con bordo rosso). I segnali di prescrizione sono rotondi (blu per obbligo, rosso per divieto) e indicano cosa fare o non fare, non un pericolo generico.",
         "regola": "Triangolo rosso = Pericolo, non Prescrizione.",
         "trabocchetti": ["prescrizione"],
@@ -4715,6 +5313,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una discesa pericolosa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → discesa pericolosa?",
         "spiegazione": "Il segnale di 'discesa pericolosa' ha un simbolo diverso: mostra una macchina che scende su una pendenza. Questo segnale, invece, indica una strada con la superficie irregolare, non una pendenza.",
         "regola": "Onde = superficie, non pendenza.",
         "trabocchetti": ["discesa pericolosa"],
@@ -4723,6 +5322,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia più curve consecutive",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → più curve consecutive?",
         "spiegazione": "Il segnale che preannuncia 'più curve consecutive' ha un simbolo che mostra una strada che si snoda a destra e a sinistra. Questo segnale, invece, mostra una superficie stradale irregolare, non delle curve.",
         "regola": "Onde = su/giù, non destra/sinistra.",
         "trabocchetti": ["più curve consecutive"],
@@ -4731,6 +5331,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una serie di dossi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → serie di dossi?",
         "spiegazione": "Questo segnale indica una generica 'strada deformata', cioè con irregolarità varie. Non indica specificamente una 'serie di dossi' (che sono delle gobbe precise) ma una condizione più generale del fondo stradale.",
         "regola": "Onde = generico, non solo dossi.",
         "trabocchetti": ["una serie di dossi"],
@@ -4739,6 +5340,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una forte variazione di pendenza della strada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → forte variazione di pendenza?",
         "spiegazione": "Una 'variazione di pendenza' significa che la strada sale o scende molto. Questo segnale, invece, indica che la superficie della strada è irregolare, ma non che c'è un cambiamento significativo nell'inclinazione generale della strada.",
         "regola": "Onde = superficie, non pendenza.",
         "trabocchetti": ["variazione di pendenza"],
@@ -4747,6 +5349,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una doppia curva",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → doppia curva?",
         "spiegazione": "Il segnale di 'doppia curva' mostra due curve consecutive. Il segnale raffigurato, invece, indica una strada con la superficie irregolare, non delle curve.",
         "regola": "Onde = su/giù, non destra/sinistra.",
         "trabocchetti": ["doppia curva"],
@@ -4755,6 +5358,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un dosso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → dosso?",
         "spiegazione": "Il segnale di 'dosso' (una singola gobba) ha un simbolo specifico che mostra una sola protuberanza. Questo segnale, invece, indica una generica irregolarità della strada, non un singolo dosso.",
         "regola": "Onde = generico, non un solo dosso.",
         "trabocchetti": ["un dosso"],
@@ -4763,6 +5367,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una cunetta o un dosso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cunetta o dosso?",
         "spiegazione": "Il segnale di 'dosso o cunetta' (una gobba e un avvallamento) ha un simbolo specifico che li rappresenta entrambi. Questo segnale indica una generica 'strada deformata', non specificamente un dosso o una cunetta singola.",
         "regola": "Onde = generico, non dosso/cunetta specifici.",
         "trabocchetti": ["una cunetta o un dosso"],
@@ -4771,6 +5376,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada a visibilità limitata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → visibilità limitata?",
         "spiegazione": "Il segnale di 'visibilità limitata' (ad esempio per nebbia, fumo o curve cieche) ha un simbolo diverso e si riferisce a quanto si riesce a vedere. Questo segnale, invece, riguarda la condizione della superficie stradale, non la visibilità.",
         "regola": "Onde = strada, non vista.",
         "trabocchetti": ["visibilità limitata"],
@@ -4779,6 +5385,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica un tratto di strada deformata lungo 320 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada deformata per 320 m?",
         "spiegazione": "Come per la domanda 18852, la lunghezza del tratto deformato è indicata da un pannello integrativo. Se la domanda 18852 con '380 metri' è vera, allora '320 metri' è un numero diverso e quindi falso in questo contesto specifico. È un classico 'tranello' numerico.",
         "regola": "Numeri simili ma diversi = attenzione!",
         "trabocchetti": ["320 metri"],
@@ -4787,6 +5394,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è importante prevedere eventuali sbandamenti dei veicoli provenienti dal senso opposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sbandamenti di chi viene in senso opposto?",
         "spiegazione": "Questo segnale ci avvisa che la strada è irregolare. Quando la strada è così, i veicoli, specialmente quelli che vanno veloci o che hanno un carico pesante, possono perdere un po' il controllo (sbandare). È una buona abitudine di guida pensare che anche gli altri veicoli possano avere problemi e quindi essere più prudenti.",
         "regola": "Strada irregolare = Attenzione agli sbandamenti altrui.",
         "trabocchetti": ["prevedere", "Eventuali"],
@@ -4795,6 +5403,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario adeguare la velocità in relazione alle particolari condizioni del fondo stradale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità secondo il fondo stradale?",
         "spiegazione": "Quando c'è un segnale di pericolo, come questo, devi sempre cambiare la tua velocità in base a come è la strada. Se la strada è irregolare, devi andare più piano per non avere problemi.",
         "regola": "Pericolo = Adatta la velocità.",
         "trabocchetti": ["Adeguare la velocità", "particolari condizioni"],
@@ -4803,6 +5412,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario circolare a velocità moderata se si traina un rimorchio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità moderata trainando rimorchio?",
         "spiegazione": "Se guidi un'auto che traina un rimorchio (una roulotte o un carrello), il tuo veicolo è più lungo, più pesante e meno stabile. Su una strada irregolare, il rimorchio può saltare o oscillare molto. Per questo, è ancora più importante andare piano per guidare in sicurezza.",
         "regola": "Irregolarità + Rimorchio = Ancora più piano.",
         "trabocchetti": ["se si traina un rimorchio"],
@@ -4811,6 +5421,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario moderare la velocità per evitare eccessive sollecitazioni e danni alle sospensioni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per non danneggiare le sospensioni?",
         "spiegazione": "Passare velocemente su buche o dossi mette a dura prova le parti della tua auto che ammortizzano i colpi (le sospensioni). Andando piano, eviti che la macchina subisca troppi 'stress' e che si rompa qualcosa.",
         "regola": "Irregolarità = Salva le sospensioni, rallenta.",
         "trabocchetti": ["Eccessive sollecitazioni", "Danni alle sospensioni"],
@@ -4819,6 +5430,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario tenere saldamente il volante, per controllare possibili sbandamenti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → volante saldo contro sbandamenti?",
         "spiegazione": "Su una strada irregolare, il volante può muoversi improvvisamente o l'auto può cambiare direzione da sola. Tenere il volante con forza ti aiuta a mantenere il controllo e a correggere subito se l'auto 'sbanda' (si sposta di lato).",
         "regola": "Irregolarità = Volante ben saldo.",
         "trabocchetti": ["Tenere saldamente il volante", "Possibili sbandamenti"],
@@ -4827,6 +5439,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è obbligatorio circolare al centro della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di circolare al centro?",
         "spiegazione": "Questo segnale ti avvisa di una strada irregolare, ma non ti obbliga a guidare al centro della strada. Di solito, devi tenere la destra. Andare al centro può essere pericoloso per chi viene dall'altra parte.",
         "regola": "Irregolarità ≠ Centro strada.",
         "trabocchetti": ["obbligatorio"],
@@ -4835,6 +5448,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non è necessario rallentare in caso di scarsa visibilità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non serve rallentare con scarsa visibilità?",
         "spiegazione": "Questa affermazione è falsa. Se la strada è irregolare E c'è poca visibilità (per esempio nebbia o pioggia forte), è ancora più importante rallentare! Devi sempre rallentare quando la visibilità è scarsa, e l'irregolarità della strada è un motivo in più.",
         "regola": "Poca visibilità + Irregolarità = Rallenta sempre!",
         "trabocchetti": ["non è necessario rallentare", "scarsa visibilità"],
@@ -4843,6 +5457,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario fare attenzione al restringimento della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → restringimento della carreggiata?",
         "spiegazione": "Il segnale raffigurato indica una strada irregolare, con dossi o buche. Non indica che la strada si restringe. Ci sono altri segnali specifici per il 'restringimento della carreggiata'.",
         "regola": "Irregolarità ≠ Strada stretta.",
         "trabocchetti": ["Restringimento della carreggiata"],
@@ -4851,6 +5466,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato il sorpasso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso vietato?",
         "spiegazione": "Questo segnale ti avvisa di un pericolo (strada irregolare), ma non vieta automaticamente il sorpasso. Il sorpasso potrebbe essere pericoloso a causa delle condizioni della strada, ma non è 'vietato' da questo segnale. Per vietare il sorpasso ci vogliono altri segnali o linee continue sulla strada.",
         "regola": "Irregolarità ≠ Divieto di sorpasso.",
         "trabocchetti": ["vietato"],
@@ -4859,6 +5475,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario rallentare solo se provengono veicoli dal senso opposto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → rallentare solo se arrivano veicoli opposti?",
         "spiegazione": "Devi rallentare a causa della strada irregolare, non solo se arrivano altre auto. Il pericolo è la strada stessa, che può farti perdere il controllo o danneggiare la tua auto, indipendentemente dal traffico.",
         "regola": "Irregolarità = Rallenta sempre, non solo per gli altri.",
         "trabocchetti": ["solo se"],
@@ -4867,6 +5484,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un dosso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dosso?",
         "spiegazione": "Il segnale che vedi nell'immagine indica proprio la presenza di un 'dosso', cioè un rialzo della strada. Il simbolo nero al centro del triangolo rappresenta chiaramente questa gobba.",
         "regola": "Il simbolo è una 'gobba', quindi è un dosso.",
         "immagine": "f620016117d7a6fc1a52.jpg",
@@ -4874,6 +5492,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada pericoloso per limitata visibilità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → visibilità limitata?",
         "spiegazione": "Quando si sale e poi si scende da un dosso, la parte più alta può nascondere la strada che segue, limitando la tua visuale. Per questo, il dosso è considerato un tratto pericoloso per la visibilità ridotta.",
         "regola": "Sul dosso, non vedi cosa c'è dopo.",
         "trabocchetti": ["limitata visibilità"],
@@ -4882,6 +5501,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto, di norma, 150 metri prima di un dosso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di norma 150 m prima del dosso?",
         "spiegazione": "I segnali di pericolo, come questo, sono messi 'di norma' (cioè, solitamente) a una certa distanza dal pericolo. Fuori dai centri abitati, questa distanza è di 150 metri. Nei centri abitati può essere meno, ma 'di norma' si intende la regola generale.",
         "regola": "Segnali di pericolo = 150 metri (di norma).",
         "trabocchetti": ["di norma"],
@@ -4890,6 +5510,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna considerare che la visibilità è limitata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → visibilità limitata?",
         "spiegazione": "Sì, è vero. Come spiegato prima, quando arrivi in cima a un dosso, la strada davanti a te potrebbe non essere visibile per un momento. Devi sempre tenere conto di questa limitazione della visibilità per guidare in sicurezza.",
         "regola": "Dosso = occhio alla visibilità!",
         "trabocchetti": ["visibilità è limitata"],
@@ -4898,6 +5519,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una salita, seguita da una discesa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → salita seguita da discesa?",
         "spiegazione": "Un dosso è proprio questo: la strada prima sale (salita) e poi scende (discesa). È una variazione di pendenza che crea un rialzo.",
         "regola": "Dosso = su e giù.",
         "trabocchetti": ["salita, seguita da una discesa"],
@@ -4906,6 +5528,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una variazione di pendenza della strada con limitata visibilità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → cambio di pendenza con visibilità limitata?",
         "spiegazione": "Questa domanda riassume bene le caratteristiche del dosso: c'è un cambio di pendenza della strada (prima sale, poi scende) e, come abbiamo visto, questo può causare una 'limitata visibilità'.",
         "regola": "Dosso = pendenza + poca vista.",
         "trabocchetti": ["variazione di pendenza", "limitata visibilità"],
@@ -4914,6 +5537,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una cunetta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → cunetta?",
         "spiegazione": "Falso! Una 'cunetta' è l'esatto contrario di un dosso. È un avvallamento, cioè una discesa seguita da una salita (una 'buca' lunga). Il simbolo della cunetta sarebbe una gobba rovesciata.",
         "regola": "Dosso = gobba in su. Cunetta = gobba in giù.",
         "trabocchetti": ["cunetta"],
@@ -4922,6 +5546,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada deformata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada deformata?",
         "spiegazione": "Falso! Il segnale di 'strada deformata' (o 'irregolare') è diverso e indica una strada con molte buche o avvallamenti sparsi, non un unico rialzo come il dosso.",
         "regola": "Dosso è una gobba, non una strada rovinata.",
         "trabocchetti": ["strada deformata"],
@@ -4930,6 +5555,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cattivo stato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada in cattivo stato?",
         "spiegazione": "Falso! 'Strada in cattivo stato' è un'espressione generica per indicare una strada mal tenuta, con buche o crepe. Il dosso, invece, è una caratteristica geometrica precisa della strada, non necessariamente un segno di 'cattivo stato'.",
         "regola": "Dosso non è 'rovinato', è 'fatto così'.",
         "trabocchetti": ["cattivo stato"],
@@ -4938,6 +5564,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada con pavimentazione irregolare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pavimentazione irregolare?",
         "spiegazione": "Falso! 'Pavimentazione irregolare' è simile a 'strada deformata' o 'in cattivo stato'. Indica una superficie stradale non liscia e uniforme. Il dosso è un rialzo specifico, non una generica irregolarità della pavimentazione.",
         "regola": "Dosso è una forma, non una superficie.",
         "trabocchetti": ["pavimentazione irregolare"],
@@ -4946,6 +5573,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un ponte",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ponte?",
         "spiegazione": "Falso! Il segnale di 'ponte mobile' o 'ponte' è completamente diverso. Il dosso non ha nulla a che fare con un ponte.",
         "regola": "Il dosso non è un ponte.",
         "trabocchetti": ["ponte"],
@@ -4954,6 +5582,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia lavori in corso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → lavori in corso?",
         "spiegazione": "Falso! I segnali di 'lavori in corso' sono di colore giallo e hanno simboli diversi che indicano la presenza di operai o macchinari. Questo segnale è rosso e bianco e indica un dosso.",
         "regola": "Lavori = giallo. Dosso = rosso.",
         "trabocchetti": ["lavori in corso"],
@@ -4962,6 +5591,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'ingresso in una galleria",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → ingresso in galleria?",
         "spiegazione": "Falso! Il segnale di 'galleria' è diverso e indica l'ingresso in un tunnel. Il dosso è un rialzo della strada all'aperto o comunque non legato a una galleria.",
         "regola": "Il dosso non è una galleria.",
         "trabocchetti": ["galleria"],
@@ -4970,6 +5600,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario moderare la velocità in relazione alla visibilità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità secondo la visibilità?",
         "spiegazione": "Il segnale indica un dosso, cioè un rialzo della strada. Quando si affronta un dosso, la visibilità diminuisce, soprattutto sulla cima. Per questo motivo, è fondamentale ridurre la velocità per poter reagire in tempo a eventuali ostacoli o situazioni impreviste.",
         "regola": "Dosso = meno visibilità = meno velocità.",
         "immagine": "f620016117d7a6fc1a52.jpg",
@@ -4977,6 +5608,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietata l'inversione di marcia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inversione di marcia vietata?",
         "spiegazione": "Sui dossi, come nelle curve, è vietato fare l'inversione di marcia (cioè girare l'auto di 180 gradi per tornare indietro). Questo perché la visibilità è ridotta e l'inversione sarebbe molto pericolosa, creando un rischio per sé e per gli altri veicoli.",
         "regola": "Sul dosso non si gira!",
         "trabocchetti": ["Vietata l"],
@@ -4985,6 +5617,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato sono vietate la sosta e la fermata sia sul tratto in salita che su quello in discesa",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sosta e fermata vietate in salita e discesa?",
         "spiegazione": "Sui dossi non si può né sostare (fermare l'auto per un lungo periodo) né fermarsi (fermare l'auto anche per poco tempo, ad esempio per far scendere un passeggero). Questo divieto vale sia sulla parte in salita che su quella in discesa, perché la presenza di un veicolo fermo ridurrebbe ulterioraente la visibilità e creerebbe pericolo.",
         "regola": "Sul dosso non si sosta né si ferma.",
         "trabocchetti": ["vietate la sosta e la fermata"],
@@ -4993,6 +5626,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato il sorpasso sul tratto in salita, se la strada è a doppio senso di circolazione con due sole corsie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, doppio senso a due corsie → sorpasso vietato in salita?",
         "spiegazione": "Se la strada ha due sole corsie e si può circolare in entrambi i sensi, è vietato sorpassare quando si sale sul dosso. Questo perché, arrivando in cima, non si vede cosa c'è dall'altra parte e si rischia un incidente frontale. Il divieto vale solo in salita, dove la visibilità è più compromessa.",
         "regola": "Salita del dosso, sorpasso no!",
         "trabocchetti": ["sul tratto in salita"],
@@ -5001,6 +5635,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Questo segnale, come tutti quelli a forma di triangolo con bordo rosso, è un segnale di pericolo. Serve ad avvisare i conducenti di un rischio o di una situazione particolare sulla strada che richiede attenzione.",
         "regola": "Triangolo rosso = Pericolo.",
         "immagine": "f620016117d7a6fc1a52.jpg",
@@ -5008,6 +5643,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può presegnalare dossi artificiali",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dossi artificiali?",
         "spiegazione": "Il segnale di dosso può indicare sia un dosso naturale (un cambiamento naturale del terreno) sia un dosso artificiale (come i 'rallentatori' o 'speed bump' che vengono installati apposta per far ridurre la velocità). In entrambi i casi, il comportamento da tenere è lo stesso: moderare la velocità.",
         "regola": "Dosso = naturale o artificiale.",
         "trabocchetti": ["può presegnalare", "Dossi artificiali"],
@@ -5016,6 +5652,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta il transito degli autobus",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → vietato agli autobus?",
         "spiegazione": "Questo segnale avvisa di un pericolo (il dosso), ma non vieta a nessun tipo di veicolo di passare. Gli autobus, come le auto e le moto, devono solo rallentare e fare attenzione, ma possono tranquillamente transitare.",
         "regola": "Pericolo, non divieto di transito.",
         "trabocchetti": ["vieta"],
@@ -5024,6 +5661,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato il sorpasso nel tratto in discesa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso vietato in discesa?",
         "spiegazione": "Il sorpasso è vietato sul tratto in salita del dosso, dove la visibilità è ridotta. Nel tratto in discesa, invece, la visibilità è solitamente buona e, se le condizioni della strada e del traffico lo permettono, il sorpasso non è vietato da questo segnale.",
         "regola": "Sorpasso: no in salita, sì in discesa (se sicuro).",
         "trabocchetti": ["nel tratto in discesa"],
@@ -5032,6 +5670,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di obbligo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di obbligo?",
         "spiegazione": "Questo segnale non è un segnale di obbligo. I segnali di obbligo sono di forma rotonda e di colore blu (ad esempio, 'direzione obbligatoria'). Questo, essendo triangolare con bordo rosso, è un segnale di pericolo.",
         "regola": "Obbligo = tondo blu. Pericolo = triangolo rosso.",
         "trabocchetti": ["segnale di obbligo"],
@@ -5040,6 +5679,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è possibile effettuare l'inversione di marcia nel tratto in discesa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inversione di marcia in discesa?",
         "spiegazione": "No, non è possibile fare l'inversione di marcia nemmeno nel tratto in discesa del dosso. Il divieto di inversione di marcia vale per tutta l'area del dosso, sia in salita che in discesa, a causa della potenziale riduzione della visibilità e della pericolosità della manovra in quel punto.",
         "regola": "Inversione: mai sul dosso, neanche in discesa.",
         "trabocchetti": ["possibile", "nel tratto in discesa"],
@@ -5048,6 +5688,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di precedenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di precedenza?",
         "spiegazione": "Questo segnale non è un segnale di precedenza. I segnali di precedenza hanno forme specifiche, come il triangolo rovesciato ('Dare precedenza') o il rombo ('Diritto di precedenza'). Questo segnale, essendo triangolare con bordo rosso, è un segnale di pericolo.",
         "regola": "Precedenza = triangolo rovesciato o rombo. Pericolo = triangolo dritto.",
         "trabocchetti": ["segnale di precedenza"],
@@ -5056,6 +5697,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una cunetta",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → cunetta?",
         "spiegazione": "Il segnale raffigurato mostra chiaramente una depressione o avvallamento nella strada, che è proprio quello che si intende per 'cunetta'. Quindi, il segnale preannuncia una cunetta.",
         "regola": "Il simbolo è una 'U' rovesciata: è una cunetta.",
         "trabocchetti": ["preannuncia"],
@@ -5064,6 +5706,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada pericoloso a causa di una cunetta",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → pericolo per cunetta?",
         "spiegazione": "Questo è un segnale di pericolo (triangolo rosso), quindi tutto ciò che preannuncia è considerato 'pericoloso'. Una cunetta può essere pericolosa, specialmente se c'è acqua o se la si affronta a velocità elevata.",
         "regola": "Triangolo rosso = pericolo. La cunetta è un pericolo.",
         "trabocchetti": ["pericoloso"],
@@ -5072,6 +5715,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Tutti i segnali stradali a forma di triangolo con il bordo rosso sono segnali di pericolo. Questo segnale rientra in questa categoria.",
         "regola": "Triangolo rosso = pericolo, sempre!",
         "immagine": "a30023a461a9fb08d82e.jpg",
@@ -5079,6 +5723,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova prima di un tratto in discesa seguito da uno in salita",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → discesa seguita da salita?",
         "spiegazione": "Una cunetta è una depressione della strada. Questo significa che prima si scende (tratto in discesa) e subito dopo si risale (tratto in salita).",
         "regola": "Cunetta = scendi e poi sali.",
         "trabocchetti": ["discesa", "salita"],
@@ -5087,6 +5732,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada che potrebbe allagarsi in caso di forti piogge",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → allagamento con forti piogge?",
         "spiegazione": "Essendo una depressione, una cunetta è un punto basso della strada dove l'acqua piovana può facilmente accumularsi, causando allagamenti e rendendo la strada scivolosa o impraticabile.",
         "regola": "Cunetta = buca, l'acqua si ferma nella buca.",
         "trabocchetti": ["potrebbe allagarsi"],
@@ -5095,6 +5741,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una banchina cedevole",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → banchina cedevole?",
         "spiegazione": "Questo segnale indica una cunetta, cioè una depressione nella strada. La 'banchina cedevole' è un pericolo diverso, segnalato da un altro cartello (un'auto con una ruota che affonda nella banchina).",
         "regola": "Non c'è la macchina che cade!",
         "trabocchetti": ["banchina cedevole"],
@@ -5103,6 +5750,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strada deformata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada deformata?",
         "spiegazione": "Il segnale di 'strada deformata' (o 'strada dissestata') mostra più gobbe e avvallamenti. La cunetta è una singola, grande depressione, non una strada genericamente 'deformata' in più punti.",
         "regola": "Una sola 'buca' grande, non tante piccole.",
         "trabocchetti": ["deformata", "strada deformata"],
@@ -5111,6 +5759,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada in cattivo stato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada in cattivo stato?",
         "spiegazione": "Il segnale di 'strada in cattivo stato' è un termine generico che si riferisce a una strada con buche, crepe o irregolarità diffuse. La cunetta è una specifica depressione, non un generico 'cattivo stato'.",
         "regola": "Non è generico 'brutto', è specifico 'buca'.",
         "trabocchetti": ["in cattivo stato"],
@@ -5119,6 +5768,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un tratto di strada con pavimentazione irregolare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pavimentazione irregolare?",
         "spiegazione": "La 'pavimentazione irregolare' è un termine generico che si riferisce a una superficie stradale non uniforme. La cunetta è una specifica e profonda irregolarità (una depressione), ma non è il segnale generico di 'pavimentazione irregolare'.",
         "regola": "Non è 'irregolare' in generale, è una 'buca' precisa.",
         "trabocchetti": ["pavimentazione irregolare"],
@@ -5127,6 +5777,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può trovarsi prima di un tratto in salita seguito da una discesa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → salita seguita da discesa?",
         "spiegazione": "Un tratto in 'salita seguito da una discesa' descrive un 'dosso', che è l'opposto di una cunetta. Il segnale del dosso è simile, ma il simbolo è una gobba verso l'alto.",
         "regola": "È una 'U' (cunetta), non una 'montagna' (dosso).",
         "trabocchetti": ["salita seguito da una discesa"],
@@ -5135,6 +5786,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un restringimento della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → restringimento?",
         "spiegazione": "Il 'restringimento della carreggiata' è un pericolo diverso, segnalato da un cartello con due linee verticali che si avvicinano. Questo segnale non ha nulla a che fare con la larghezza della strada.",
         "regola": "Non ci sono le linee che si avvicinano.",
         "trabocchetti": ["restringimento della carreggiata"],
@@ -5143,6 +5795,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un dosso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → dosso?",
         "spiegazione": "Il 'dosso' è una gobba, un rialzo della strada, l'esatto contrario di una cunetta (che è una depressione). Il segnale del dosso ha il simbolo invertito rispetto a quello della cunetta.",
         "regola": "È una 'buca', non una 'gobba'.",
         "trabocchetti": ["dosso"],
@@ -5151,6 +5804,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario moderare la velocità per evitare danni alle sospensioni",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per le sospensioni?",
         "spiegazione": "Il segnale indica una strada con avvallamenti o dossi (una 'cunetta'). Se passi troppo velocemente su queste irregolarità, le parti dell'auto che assorbono gli urti (le sospensioni) possono danneggiarsi. Rallentare aiuta a proteggere il veicolo.",
         "regola": "Cunetta = rallenta per non rompere l'auto.",
         "trabocchetti": ["moderare la velocità", "sospensioni"],
@@ -5159,6 +5813,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario moderare la velocità per mantenere il controllo del veicolo",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare per controllare il veicolo?",
         "spiegazione": "Quando la strada è irregolare, passare ad alta velocità può farti perdere il controllo del veicolo, facendoti sbandare o cambiare direzione improvvisamente. Rallentare ti permette di mantenere la stabilità e guidare in sicurezza.",
         "regola": "Cunetta = rallenta per guidare dritto.",
         "trabocchetti": ["Mantenere il controllo del veicolo"],
@@ -5167,6 +5822,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario tenere il volante con una presa più sicura",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → presa più sicura del volante?",
         "spiegazione": "Su una strada con buche o avvallamenti, il volante può muoversi bruscamente a causa degli urti. Tenere il volante con entrambe le mani e con una presa salda ti aiuta a controllare meglio l'auto e a non perdere la direzione.",
         "regola": "Cunetta = mani forti sul volante.",
         "trabocchetti": ["presa più sicura"],
@@ -5175,6 +5831,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e in caso di pioggia è necessario prevedere la possibilità di accumulo di acqua nella cunetta",
         "risposta": True,
+        "riassunto": "Segnale raffigurato, pioggia → acqua nella cunetta?",
         "spiegazione": "Una cunetta è un punto basso della strada. Se piove, l'acqua si raccoglie facilmente in questi avvallamenti, formando pozzanghere. Queste pozzanghere possono essere pericolose perché l'auto potrebbe 'galleggiare' sull'acqua (aquaplaning) e perdere aderenza.",
         "regola": "Cunetta + pioggia = pozzanghera.",
         "trabocchetti": ["Prevedere la possibilità", "Accumulo di acqua"],
@@ -5183,6 +5840,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario prevedere la possibilità di accumulo di fango e detriti nella cunetta",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fango e detriti nella cunetta?",
         "spiegazione": "Negli avvallamenti della strada (le cunette) non si raccoglie solo acqua, ma anche fango, sassi, foglie o altri 'detriti'. Questi materiali possono rendere la strada scivolosa o creare ostacoli inaspettati, aumentando il rischio di incidenti.",
         "regola": "Cunetta = attenzione a fango e sassi.",
         "trabocchetti": ["Detriti"],
@@ -5191,6 +5849,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è necessario rallentare solo se provengono veicoli dal senso opposto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → rallentare solo se arrivano veicoli opposti?",
         "spiegazione": "FALSO. Il pericolo della strada deformata (danni al veicolo, perdita di controllo) esiste sempre, sia che ci siano altri veicoli o meno. Rallentare è una misura di sicurezza per te e la tua auto, non dipende dal traffico opposto.",
         "regola": "Cunetta = rallenta SEMPRE, non 'solo se'.",
         "trabocchetti": ["solo"],
@@ -5199,6 +5858,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non è necessario rallentare se la cunetta presenta visibilità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non rallentare se la cunetta è visibile?",
         "spiegazione": "FALSO. Anche se vedi bene la cunetta, il pericolo di danneggiare l'auto o di perdere il controllo rimane se la attraversi ad alta velocità. La visibilità ti aiuta a prepararti, ma non elimina la necessità di rallentare per superare l'irregolarità in sicurezza.",
         "regola": "Cunetta = rallenta ANCHE se la vedi bene.",
         "trabocchetti": ["non è necessario rallentare"],
@@ -5207,6 +5867,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è vietato il sorpasso se si circola in una strada a senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sorpasso vietato su senso unico?",
         "spiegazione": "FALSO. Il segnale di strada deformata ti avvisa di un pericolo sulla strada, ma non vieta il sorpasso. Il sorpasso è vietato solo in situazioni specifiche (come curve, incroci, scarsa visibilità) o da altri segnali specifici. In una strada a senso unico, il sorpasso è generalmente permesso se le condizioni lo consentono e non ci sono altri divieti.",
         "regola": "Cunetta = rallenta, ma non vieta il sorpasso (a meno di altri segnali).",
         "trabocchetti": ["è vietato il sorpasso"],
@@ -5215,6 +5876,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una banchina cedevole",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → banchina cedevole?",
         "spiegazione": "FALSO. Il segnale raffigurato indica una 'strada deformata' o 'cunetta', cioè un avvallamento o una serie di avvallamenti/dossi sulla carreggiata (la parte della strada dove si guida). Il segnale di 'banchina cedevole' è diverso e indica un pericolo sul bordo della strada, non sulla carreggiata stessa.",
         "regola": "Cunetta = strada deformata, non banchina.",
         "trabocchetti": ["Banchina cedevole"],

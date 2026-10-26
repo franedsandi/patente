@@ -39,6 +39,7 @@ Ogni file ha:
 Campi di ogni domanda (solo i primi due sono obbligatori):
     "domanda":      il testo
     "risposta":     True = VERO, False = FALSO
+    "riassunto":    la domanda in breve, mostrata col tasto r2
     "spiegazione":  spiegazione lunga, mostrata quando sbagli
     "regola":       regola breve, mostrata premendo ? dopo la spiegazione
     "trabocchetti": parole della domanda da evidenziare quando sbagli
@@ -72,6 +73,7 @@ for modulo in CATEGORIE:
             "file": nome_file,
             "domanda": d["domanda"],
             "risposta": d["risposta"],
+            "riassunto": d.get("riassunto", ""),
             "spiegazione": d.get("spiegazione", ""),
             "regola": d.get("regola", ""),
             "trabocchetti": d.get("trabocchetti", []),
@@ -105,6 +107,78 @@ def trap_words(question_text, focus):
         if phrase.lower() in question_text.lower() and phrase.lower() not in map(str.lower, found):
             found.append(phrase)
     return found
+
+
+def key_of(text, image):
+    """Stessa chiave di domande/__init__.py: il testo, più l'immagine se c'è."""
+    return f"{text} [{image}]" if image else text
+
+
+# ordine dei campi nei file generati
+FIELDS = ("domanda", "risposta", "riassunto", "spiegazione", "regola", "trabocchetti", "immagine")
+
+
+def write_category_file(name, title, list_date, questions):
+    lines = [
+        f'"""Domande — {title}.',
+        "",
+        f"Generato da importa.py dal listato ministeriale A/B del {list_date}.",
+        "Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: "
+        "aiutano a capire ma non sono ufficiali.",
+        '"""',
+        "",
+        f"CATEGORIA = {py_value(title)}",
+        "",
+        "QUESTIONS = [",
+    ]
+    for q in questions:
+        lines.append("    {")
+        for field in FIELDS:
+            value = q.get(field)
+            if value or field == "risposta":   # i campi vuoti non si scrivono
+                lines.append(f"        {py_value(field)}: {py_value(value)},")
+        lines.append("    },")
+    lines.append("]")
+    (QUESTIONS_DIR / f"{name}.py").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def write_init(file_names):
+    names = "\n".join(f"    {n}," for n in file_names)
+    (QUESTIONS_DIR / "__init__.py").write_text(
+        INIT_TEMPLATE.replace("{NAMES}", names), encoding="utf-8")
+
+
+def current_summaries():
+    """{chiave: riassunto} dai file attuali in domande/ (vuoto se non ci sono)."""
+    try:
+        import domande
+    except Exception:
+        return {}
+    return {q["chiave"]: q["riassunto"] for q in domande.QUESTIONS if q.get("riassunto")}
+
+
+def merge_summaries(summaries):
+    """Aggiunge i riassunti {chiave: riassunto} alle domande e riscrive i file di domande/.
+    Usata da riassumi.py e da:  python3 importa.py --unisci-riassunti FILE.json"""
+    import domande
+    added = 0
+    file_names = []
+    for modulo in domande.CATEGORIE:
+        name = modulo.__name__.split(".")[-1]
+        file_names.append(name)
+        match = re.search(r"del (\d{4}-\d{2}-\d{2})", modulo.__doc__ or "")
+        questions = []
+        for d in modulo.QUESTIONS:
+            q = dict(d)
+            new = summaries.get(key_of(q["domanda"], q.get("immagine", "")))
+            if new and new != q.get("riassunto"):
+                q["riassunto"] = new
+                added += 1
+            questions.append(q)
+        write_category_file(name, modulo.CATEGORIA, match.group(1) if match else "?", questions)
+    write_init(file_names)
+    shutil.rmtree(QUESTIONS_DIR / "__pycache__", ignore_errors=True)
+    return added
 
 
 def download():
@@ -145,6 +219,12 @@ def main():
             "immagine": image,
         })
 
+    # i riassunti (tasto r2) non arrivano dal download: li tengo da quelli che ci sono già
+    old_summaries = current_summaries()
+    for qs in by_chapter.values():
+        for q in qs:
+            q["riassunto"] = old_summaries.get(key_of(q["domanda"], q["immagine"]), "")
+
     # svuota la cartella domande/ (tranne immagini/LEGGIMI.txt)
     for f in QUESTIONS_DIR.glob("*.py"):
         f.unlink()
@@ -159,35 +239,14 @@ def main():
     for c in chapters:
         name = slug(c["title"])
         file_names.append(name)
-        lines = [
-            f'"""Domande — {c["title"]}.',
-            "",
-            f"Generato da importa.py dal listato ministeriale A/B del {meta['sourceListDate']}.",
-            "Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.",
-            '"""',
-            "",
-            f"CATEGORIA = {py_value(c['title'])}",
-            "",
-            "QUESTIONS = [",
-        ]
-        for q in by_chapter[c["id"]]:
-            lines.append("    {")
-            for field, value in q.items():
-                if value or field == "risposta":   # i campi vuoti non si scrivono
-                    lines.append(f"        {py_value(field)}: {py_value(value)},")
-            lines.append("    },")
-        lines.append("]")
-        (QUESTIONS_DIR / f"{name}.py").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        write_category_file(name, c["title"], meta["sourceListDate"], by_chapter[c["id"]])
 
     # immagini usate dalle domande
     used_images = {q["immagine"] for qs in by_chapter.values() for q in qs if q["immagine"]}
     for image in used_images:
         (IMAGES_DIR / image).write_bytes(archive.read(f"{root}/images/{image}"))
 
-    # __init__.py con l'elenco dei capitoli
-    names = "\n".join(f"    {n}," for n in file_names)
-    (QUESTIONS_DIR / "__init__.py").write_text(
-        INIT_TEMPLATE.replace("{NAMES}", names), encoding="utf-8")
+    write_init(file_names)
 
     all_questions = [q for qs in by_chapter.values() for q in qs]
     with_traps = sum(1 for q in all_questions if q["trabocchetti"])
@@ -197,4 +256,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) == 3 and sys.argv[1] == "--unisci-riassunti":
+        summaries = json.loads(Path(sys.argv[2]).read_text(encoding="utf-8"))
+        print(f"aggiunti {merge_summaries(summaries)} riassunti alle domande")
+    else:
+        main()

@@ -1,7 +1,7 @@
 """Domande — Precedenza agli incroci.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Precedenza agli incroci"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il tram ha la precedenza rispetto agli altri veicoli",
         "risposta": True,
+        "riassunto": "Figura → il tram ha la precedenza?",
         "spiegazione": "Il tram, essendo un veicolo su rotaia, ha quasi sempre la precedenza rispetto a tutti gli altri veicoli, a meno che non ci siano segnali specifici che indicano il contrario. In questo incrocio, non ci sono segnali che tolgano la precedenza al tram.",
         "regola": "Tram = Precedenza quasi sempre.",
         "trabocchetti": ["rispetto agli altri veicoli"],
@@ -18,6 +19,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura, tutti i veicoli devono usare prudenza nell'attraversarlo",
         "risposta": True,
+        "riassunto": "Incrocio in figura → tutti prudenti?",
         "spiegazione": "Indipendentemente dalle regole di precedenza, è sempre obbligatorio usare prudenza e attenzione quando si attraversa un incrocio. Questo è fondamentale per la sicurezza di tutti gli utenti della strada.",
         "regola": "Incrocio = Massima prudenza, sempre!",
         "trabocchetti": ["tutti i veicoli", "devono usare prudenza"],
@@ -26,6 +28,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo O deve attendere il transito del tram e che il veicolo A si porti al centro",
         "risposta": True,
+        "riassunto": "Figura → O attende il tram e che A vada al centro?",
         "spiegazione": "Il veicolo O deve attendere il tram perché il tram ha la precedenza assoluta. Riguardo al veicolo A, anche se O ha la precedenza su A (perché O svolta a destra e A è alla sua sinistra), in un incrocio complesso è buona norma attendere che il veicolo A, che deve svoltare a sinistra, si posizioni al centro. Questo aiuta a gestire il flusso del traffico e a evitare intralci, garantendo maggiore sicurezza.",
         "regola": "Svolta a sinistra = Occupazione centro. Sicurezza > Precedenza rigida.",
         "trabocchetti": ["che il veicolo A si porti al centro"],
@@ -34,6 +37,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il tram transita per primo",
         "risposta": True,
+        "riassunto": "Figura → il tram passa per primo?",
         "spiegazione": "Come stabilito dalla regola generale, il tram ha la precedenza su tutti gli altri veicoli in questo incrocio, quindi è il primo a passare.",
         "regola": "Tram = Primo a passare.",
         "trabocchetti": ["transita per primo"],
@@ -42,6 +46,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo M deve attendere il transito del veicolo O",
         "risposta": True,
+        "riassunto": "Figura → M attende O?",
         "spiegazione": "Dopo il tram, il veicolo O ha la precedenza su M. Questo perché M si trova alla sinistra di O (o, più precisamente, O ha M alla sua sinistra). Quindi, M deve dare la precedenza a O e attendere il suo transito.",
         "regola": "O ha M a sinistra = O passa prima di M.",
         "trabocchetti": ["deve attendere"],
@@ -50,6 +55,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo M attraversa l'incrocio insieme al tram",
         "risposta": False,
+        "riassunto": "Figura → M passa insieme al tram?",
         "spiegazione": "Il veicolo M non può attraversare l'incrocio insieme al tram. Il tram ha la precedenza assoluta e M deve attendere che il tram sia passato. Inoltre, M deve attendere anche il veicolo O.",
         "regola": "Tram solo = Nessuno insieme.",
         "trabocchetti": ["insieme"],
@@ -58,6 +64,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo A nello svoltare a sinistra ha la destra libera",
         "risposta": False,
+        "riassunto": "Figura → A svoltando a sinistra ha la destra libera?",
         "spiegazione": "Il veicolo A sta svoltando a sinistra. Anche se non ha un veicolo immediatamente alla sua destra all'inizio, deve comunque dare la precedenza al veicolo M che proviene dalla direzione opposta e va dritto. Durante la manovra di svolta, M si troverà alla sua destra, quindi la destra non è 'libera' nel senso di non avere veicoli a cui dare precedenza.",
         "regola": "Svolta a sinistra = Dai precedenza a chi viene di fronte.",
         "trabocchetti": ["ha la destra libera"],
@@ -66,6 +73,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo O deve attendere che passino il tram ed il veicolo M",
         "risposta": False,
+        "riassunto": "Figura → O attende tram e M?",
         "spiegazione": "Il veicolo O deve attendere solo il tram, perché il tram ha la precedenza assoluta. Il veicolo M, invece, deve dare la precedenza a O (O ha M alla sua sinistra), quindi O non deve attendere M.",
         "regola": "O > M.",
         "trabocchetti": ["e"],
@@ -74,6 +82,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo O deve attendere che transitino tutti gli altri veicoli",
         "risposta": False,
+        "riassunto": "Figura → O attende tutti?",
         "spiegazione": "Il veicolo O deve attendere solo il tram. O ha la precedenza su M e A, quindi non deve attendere che transitino tutti gli altri veicoli.",
         "regola": "O non è l'ultimo.",
         "trabocchetti": ["tutti gli altri veicoli"],
@@ -82,6 +91,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo A deve dare la precedenza al tram, ma non al veicolo M",
         "risposta": False,
+        "riassunto": "Figura → A cede al tram ma non a M?",
         "spiegazione": "Il veicolo A deve dare la precedenza al tram (come tutti). Inoltre, A deve dare la precedenza anche al veicolo M, perché M proviene dalla direzione opposta e va dritto, mentre A svolta a sinistra.",
         "regola": "Svolta a sinistra = Dai precedenza a chi viene di fronte.",
         "trabocchetti": ["ma non al veicolo M"],
@@ -90,6 +100,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo O deve dare la precedenza al tram ed al veicolo M",
         "risposta": False,
+        "riassunto": "Figura → O cede a tram e M?",
         "spiegazione": "Il veicolo O deve dare la precedenza solo al tram. Non deve dare la precedenza al veicolo M, perché O ha la precedenza su M (M si trova alla sinistra di O).",
         "regola": "O > M.",
         "trabocchetti": ["e"],
@@ -98,6 +109,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo B non deve dare la precedenza agli altri due veicoli",
         "risposta": True,
+        "riassunto": "Figura → B non cede agli altri due?",
         "spiegazione": "In questo incrocio, il veicolo B passa per primo. Questo significa che B non deve aspettare nessun altro veicolo per passare. Gli altri veicoli (C e H) devono aspettare che B sia passato.",
         "regola": "B è il primo a passare, quindi non dà precedenza.",
         "trabocchetti": ["non deve dare la precedenza"],
@@ -106,6 +118,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo H passa per secondo",
         "risposta": True,
+        "riassunto": "Figura → H passa per secondo?",
         "spiegazione": "L'ordine di passaggio è B, poi H, e infine C. Quindi, dopo che B è passato, tocca a H. Per questo H passa per secondo.",
         "regola": "B primo, H secondo, C ultimo.",
         "trabocchetti": ["secondo"],
@@ -114,6 +127,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo C deve disimpegnare l'incrocio per ultimo",
         "risposta": True,
+        "riassunto": "Figura → C passa per ultimo?",
         "spiegazione": "Il veicolo C sta svoltando a sinistra e ha il veicolo H alla sua destra. Inoltre, in questo tipo di incrocio con un 'anello di precedenza', chi svolta a sinistra è spesso l'ultimo. L'ordine è B, poi H, e infine C. Quindi C passa per ultimo.",
         "regola": "C svolta a sinistra, quindi è l'ultimo.",
         "trabocchetti": ["disimpegnare l"],
@@ -122,6 +136,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo B passa per primo",
         "risposta": True,
+        "riassunto": "Figura → B passa per primo?",
         "spiegazione": "Il veicolo B non ha nessuno alla sua destra che possa passare prima. Il veicolo C ha H alla sua destra, e H ha B alla sua destra. In questa situazione, B è il primo a passare, poi H, e infine C.",
         "regola": "B non ha nessuno alla sua destra che lo blocca, quindi passa per primo.",
         "trabocchetti": ["passa per primo"],
@@ -130,6 +145,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo C deve dare la precedenza al veicolo H",
         "risposta": True,
+        "riassunto": "Figura → C cede a H?",
         "spiegazione": "Il veicolo C sta svoltando a sinistra. Quando si svolta a sinistra, si deve dare la precedenza ai veicoli che vengono dalla direzione opposta o dalla propria destra e che vanno dritto o svoltano a destra. Il veicolo H è alla destra di C e va dritto, quindi C deve dargli la precedenza.",
         "regola": "C svolta a sinistra, H è alla sua destra: C aspetta H.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -138,6 +154,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo H passa per primo",
         "risposta": False,
+        "riassunto": "Figura → H passa per primo?",
         "spiegazione": "Come abbiamo visto, il veicolo B passa per primo. Il veicolo H passa per secondo. Quindi, l'affermazione che H passa per primo è falsa.",
         "regola": "H non è il primo, B lo è.",
         "trabocchetti": ["per primo"],
@@ -146,6 +163,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura passano per primi e contemporaneamente i veicoli B e C",
         "risposta": False,
+        "riassunto": "Figura → B e C insieme per primi?",
         "spiegazione": "I veicoli B e C non possono passare contemporaneamente perché si trovano in un incrocio dove ci sono regole di precedenza. B ha C alla sua destra, e C ha H alla sua destra. C'è un ordine preciso da seguire (B, poi H, poi C), non possono passare insieme.",
         "regola": "Mai contemporaneamente se c'è un conflitto di precedenza.",
         "trabocchetti": ["contemporaneamente"],
@@ -154,6 +172,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo H deve impegnare l'incrocio dopo il passaggio dei veicoli B e C",
         "risposta": False,
+        "riassunto": "Figura → H dopo B e C?",
         "spiegazione": "L'ordine di passaggio corretto è B, poi H, e infine C. Questo significa che H passa dopo B, ma prima di C. Quindi, l'affermazione che H deve aspettare sia B che C è falsa.",
         "regola": "H passa tra B e C.",
         "trabocchetti": ["dopo il passaggio dei veicoli B e C"],
@@ -162,6 +181,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo H ha la precedenza sul veicolo C, in quanto è un autobus",
         "risposta": False,
+        "riassunto": "Figura → H prima di C perché autobus?",
         "spiegazione": "Il tipo di veicolo (autobus, auto, moto) non dà automaticamente la precedenza in un incrocio normale senza segnaletica specifica. Le regole di precedenza si basano sulla posizione dei veicoli e sulla direzione che prendono, non sul loro essere autobus o auto.",
         "regola": "Il tipo di veicolo non dà precedenza (a meno di segnali specifici).",
         "trabocchetti": ["in quanto è un autobus"],
@@ -170,6 +190,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo C passa per primo",
         "risposta": False,
+        "riassunto": "Figura → C passa per primo?",
         "spiegazione": "Il veicolo C è l'ultimo a passare in questo incrocio, perché sta svoltando a sinistra e ha il veicolo H alla sua destra. Quindi, l'affermazione che C passa per primo è falsa.",
         "regola": "C è l'ultimo, non il primo.",
         "trabocchetti": ["per primo"],
@@ -178,6 +199,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R passa per primo",
         "risposta": True,
+        "riassunto": "Figura → R passa per primo?",
         "spiegazione": "In questo incrocio senza segnali, la regola generale sarebbe 'dare precedenza a destra'. Tuttavia, per questo specifico tipo di incrocio a 'T' presente nei quiz, il veicolo R (rosso) è spesso considerato quello che passa per primo, come se fosse sulla strada principale. È un'interpretazione particolare del quiz.",
         "regola": "R è il 'capo' in questo incrocio anomalo.",
         "trabocchetti": ["Secondo le norme di precedenza"],
@@ -186,6 +208,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo C deve passare per ultimo",
         "risposta": True,
+        "riassunto": "Figura → C passa per ultimo?",
         "spiegazione": "Il veicolo C (blu) deve dare la precedenza sia ad A che a R. Questo perché, in questo tipo di incrocio, la strada da cui arriva C è spesso considerata come un'immissione o una strada secondaria, anche se non ci sono segnali. Per questo motivo, C passa per ultimo.",
         "regola": "C è l'ultimo, viene da una 'strada minore'.",
         "trabocchetti": ["deve passare per ultimo"],
@@ -194,6 +217,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A deve passare dopo il veicolo R",
         "risposta": True,
+        "riassunto": "Figura → A dopo R?",
         "spiegazione": "Il veicolo A (giallo) deve passare dopo R (rosso). Questo perché, come abbiamo visto, R è il primo a liberare l'incrocio. Dopo che R ha completato la sua manovra, tocca ad A.",
         "regola": "A segue R.",
         "trabocchetti": ["dopo il veicolo R"],
@@ -202,6 +226,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A passa prima del veicolo C",
         "risposta": True,
+        "riassunto": "Figura → A prima di C?",
         "spiegazione": "Il veicolo A (giallo) passa prima di C (blu). Questo perché C deve dare la precedenza ad A (e a R), essendo considerato su una strada secondaria o un'immissione, come spiegato in precedenza.",
         "regola": "A precede C.",
         "trabocchetti": ["prima del veicolo C"],
@@ -210,6 +235,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo C deve passare dopo i veicoli R e A",
         "risposta": True,
+        "riassunto": "Figura → C dopo R e A?",
         "spiegazione": "Il veicolo C (blu) deve passare dopo entrambi i veicoli R (rosso) e A (giallo). Questa affermazione conferma che C è l'ultimo a passare in questo incrocio, aspettando che gli altri due veicoli abbiano liberato la loro traiettoria.",
         "regola": "C aspetta tutti.",
         "trabocchetti": ["dopo i veicoli R e A"],
@@ -218,6 +244,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A, se è della polizia con i dispositivi di allarme in funzione, passa per primo",
         "risposta": True,
+        "riassunto": "Figura → A polizia con sirena passa per primo?",
         "spiegazione": "Se il veicolo A è della polizia e ha i dispositivi di allarme (sirena e luci blu) accesi, ha la precedenza assoluta su tutti gli altri veicoli, indipendentemente dalle normali regole dell'incrocio. I mezzi di soccorso in servizio urgente hanno sempre la precedenza.",
         "regola": "Mezzi di soccorso con sirena = precedenza assoluta.",
         "immagine": "4ae648ad791858f0326c.jpg",
@@ -225,6 +252,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A passa per primo",
         "risposta": False,
+        "riassunto": "Figura → A passa per primo?",
         "spiegazione": "Il veicolo A (giallo) non passa per primo. Secondo l'interpretazione di questo quiz, il veicolo R (rosso) passa per primo, poi A, e infine C.",
         "regola": "Non è A il primo.",
         "trabocchetti": ["passa per primo"],
@@ -233,6 +261,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A deve passare per ultimo",
         "risposta": False,
+        "riassunto": "Figura → A passa per ultimo?",
         "spiegazione": "Il veicolo A (giallo) non passa per ultimo. Il veicolo che passa per ultimo in questo incrocio è C (blu). A passa per secondo, dopo R.",
         "regola": "Non è A l'ultimo.",
         "trabocchetti": ["deve passare per ultimo"],
@@ -241,6 +270,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R deve passare dopo il veicolo A",
         "risposta": False,
+        "riassunto": "Figura → R dopo A?",
         "spiegazione": "Il veicolo R (rosso) non deve passare dopo il veicolo A (giallo). Al contrario, R passa prima di A, come stabilito dalla sequenza di precedenza per questo incrocio (R -> A -> C).",
         "regola": "R non aspetta A.",
         "trabocchetti": ["dopo il veicolo A"],
@@ -249,6 +279,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R deve attraversare l'incrocio per secondo",
         "risposta": False,
+        "riassunto": "Figura → R per secondo?",
         "spiegazione": "Il veicolo R (rosso) non attraversa l'incrocio per secondo. Secondo l'interpretazione di questo quiz, R è il primo veicolo a passare nell'incrocio.",
         "regola": "R è il primo, non il secondo.",
         "trabocchetti": ["attraversare l"],
@@ -257,6 +288,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo C passa per secondo",
         "risposta": False,
+        "riassunto": "Figura → C per secondo?",
         "spiegazione": "Il veicolo C (blu) non passa per secondo. C è il veicolo che passa per ultimo in questo incrocio, dopo R e A.",
         "regola": "C è l'ultimo, non il secondo.",
         "trabocchetti": ["passa per secondo"],
@@ -265,6 +297,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli C e R passano per primi e contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → C e R insieme per primi?",
         "spiegazione": "I veicoli C (blu) e R (rosso) non possono passare per primi e contemporaneamente. R passa per primo, ma C passa per ultimo. Inoltre, i loro percorsi si incrociano, quindi non possono attraversare l'incrocio nello stesso momento.",
         "regola": "Mai due insieme se si incrociano.",
         "trabocchetti": ["passano per primi e contemporaneamente"],
@@ -273,6 +306,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo L attraversa l'incrocio per primo",
         "risposta": True,
+        "riassunto": "Figura → L per primo?",
         "spiegazione": "Il veicolo L non ha nessun veicolo alla sua destra. Per la regola della precedenza a destra, chi non ha nessuno alla sua destra può attraversare l'incrocio per primo.",
         "regola": "Destra libera = via libera!",
         "trabocchetti": ["per primo"],
@@ -281,6 +315,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo H attraversa l'incrocio per ultimo",
         "risposta": True,
+        "riassunto": "Figura → H per ultimo?",
         "spiegazione": "Il veicolo H ha il veicolo C alla sua destra, quindi deve aspettare C. A sua volta, C ha il veicolo L alla sua destra e deve aspettare L. Per questo motivo, H è l'ultimo ad attraversare l'incrocio.",
         "regola": "H ha C a destra, C ha L a destra. H aspetta tutti.",
         "trabocchetti": ["per ultimo"],
@@ -289,6 +324,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito attraversare l'incrocio in figura secondo l'ordine veicolo L, veicolo C, veicolo H",
         "risposta": True,
+        "riassunto": "Figura → ordine L, C, H?",
         "spiegazione": "Questo è l'ordine corretto basato sulla regola della precedenza a destra. L non ha nessuno a destra, quindi va per primo. Poi C, che ha L alla sua destra, può andare quando L ha liberato l'incrocio. Infine H, che ha C alla sua destra, può andare quando C ha liberato l'incrocio.",
         "regola": "L -> C -> H, la catena della precedenza.",
         "trabocchetti": ["consentito"],
@@ -297,6 +333,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito attraversare l'incrocio in figura secondo l'ordine il veicolo C dopo il veicolo L, ma prima del veicolo H",
         "risposta": True,
+        "riassunto": "Figura → C dopo L ma prima di H?",
         "spiegazione": "Il veicolo C ha il veicolo L alla sua destra, quindi deve aspettare che L passi. Il veicolo H ha il veicolo C alla sua destra, quindi H deve aspettare C. Per questo, C passa dopo L e prima di H.",
         "regola": "C è il 'mezzo' della catena.",
         "immagine": "7b2872946be29142da1a.jpg",
@@ -304,6 +341,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito attraversare l'incrocio in figura secondo l'ordine il veicolo L contemporaneamente al veicolo C, poi il veicolo H",
         "risposta": False,
+        "riassunto": "Figura → L e C insieme, poi H?",
         "spiegazione": "Il veicolo C ha il veicolo L alla sua destra. Per la regola della precedenza a destra, C deve dare la precedenza a L. Non possono attraversare contemporaneamente, uno deve aspettare l'altro.",
         "regola": "Mai contemporaneamente se c'è precedenza a destra.",
         "trabocchetti": ["contemporaneamente"],
@@ -312,6 +350,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito attraversare l'incrocio in figura secondo l'ordine il veicolo H, il veicolo C, il veicolo L",
         "risposta": False,
+        "riassunto": "Figura → ordine H, C, L?",
         "spiegazione": "Questo ordine è sbagliato. H è l'ultimo ad attraversare, non il primo, perché ha C alla sua destra. L è il primo, non l'ultimo.",
         "regola": "H ultimo, L primo.",
         "immagine": "7b2872946be29142da1a.jpg",
@@ -319,6 +358,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito attraversare l'incrocio in figura secondo l'ordine il veicolo H, il veicolo L, il veicolo C",
         "risposta": False,
+        "riassunto": "Figura → ordine H, L, C?",
         "spiegazione": "Anche questo ordine è sbagliato. H è l'ultimo ad attraversare, non il primo. L è il primo, non il secondo. L'ordine corretto è L, C, H.",
         "regola": "H ultimo, L primo.",
         "immagine": "7b2872946be29142da1a.jpg",
@@ -326,6 +366,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito attraversare l'incrocio in figura secondo l'ordine il veicolo L, il veicolo H, il veicolo C",
         "risposta": False,
+        "riassunto": "Figura → ordine L, H, C?",
         "spiegazione": "L'ordine è sbagliato. Dopo L dovrebbe passare C, perché H ha C alla sua destra e C ha L alla sua destra. Quindi C passa prima di H.",
         "regola": "L, poi C, poi H.",
         "immagine": "7b2872946be29142da1a.jpg",
@@ -333,6 +374,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito attraversare l'incrocio in figura secondo l'ordine il veicolo C, il veicolo H, il veicolo L",
         "risposta": False,
+        "riassunto": "Figura → ordine C, H, L?",
         "spiegazione": "Questo ordine è sbagliato. L deve attraversare per primo perché non ha nessuno alla sua destra. C e H devono aspettare L.",
         "regola": "L è sempre il primo.",
         "immagine": "7b2872946be29142da1a.jpg",
@@ -340,6 +382,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura, il veicolo E passa dopo il veicolo A e il veicolo B passa dopo il veicolo E",
         "risposta": True,
+        "riassunto": "Figura → E dopo A, B dopo E?",
         "spiegazione": "In questo incrocio senza segnali, si applica la regola della precedenza a destra. Il veicolo A non ha nessuno alla sua destra, quindi passa per primo. Tra E e B, il veicolo E ha il veicolo B alla sua destra, mentre il veicolo B ha il veicolo E alla sua destra. Questa è una situazione di 'blocco'. La regola per risolvere il blocco è che i veicoli che si trovano di fronte e devono svoltare a sinistra (come E e B) si incrociano senza darsi la precedenza a vicenda, ma devono comunque dare la precedenza a chi viene da destra. Tuttavia, in questi quiz, spesso si considera che il veicolo che ha la strada libera per primo (A) passa, e poi si risolve il blocco tra gli altri. Se E ha la precedenza su B (come indicato dalle risposte successive), allora l'ordine è A, poi E, e infine B. Quindi, E passa dopo A (vero) e B passa dopo E (vero).",
         "regola": "A è libero, passa. Tra E e B, E ha la precedenza su B.",
         "immagine": "639205bfe7782556a3f1.jpg",
@@ -347,6 +390,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo A non deve dare la precedenza ad alcun veicolo",
         "risposta": True,
+        "riassunto": "Figura → A non cede a nessuno?",
         "spiegazione": "Il veicolo A non ha nessun altro veicolo alla sua destra. Secondo la regola generale della precedenza a destra, chi non ha veicoli alla propria destra ha il diritto di precedenza e può passare per primo. Quindi, il veicolo A non deve dare la precedenza a nessun altro veicolo presente nell'incrocio.",
         "regola": "Destra libera = passa per primo.",
         "immagine": "639205bfe7782556a3f1.jpg",
@@ -354,6 +398,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo E ha diritto di precedenza sul veicolo B",
         "risposta": True,
+        "riassunto": "Figura → E ha precedenza su B?",
         "spiegazione": "Dopo che il veicolo A è passato, rimangono i veicoli E e B. Entrambi devono svoltare a sinistra. In una situazione di 'blocco' come questa, dove E ha B alla sua destra e B ha E alla sua destra, la convenzione (spesso implicita nei quiz) è che il veicolo che si trova 'più avanti' o che ha una traiettoria che 'taglia' meno l'altro, o semplicemente per risolvere il blocco, uno dei due viene considerato prioritario. Le risposte successive confermano che E passa prima di B. Quindi, E ha diritto di precedenza su B.",
         "regola": "E su B: E passa prima.",
         "trabocchetti": ["diritto di precedenza"],
@@ -362,6 +407,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo E passa prima di quello B, ma dopo il veicolo A",
         "risposta": True,
+        "riassunto": "Figura → E prima di B ma dopo A?",
         "spiegazione": "Basandoci sull'ordine di precedenza stabilito (A -> E -> B), il veicolo E passa prima del veicolo B (vero) e passa dopo il veicolo A (vero). Entrambe le condizioni sono soddisfatte, rendendo l'affermazione vera.",
         "regola": "A -> E -> B: E è in mezzo.",
         "trabocchetti": ["Prima di", "dopo"],
@@ -370,6 +416,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo B deve passare per ultimo",
         "risposta": True,
+        "riassunto": "Figura → B per ultimo?",
         "spiegazione": "Seguendo l'ordine di precedenza (A -> E -> B), il veicolo B è l'ultimo a passare. Prima passa A, poi E, e solo alla fine B può completare la sua manovra.",
         "regola": "B è l'ultimo, aspetta tutti.",
         "trabocchetti": ["Per ultimo"],
@@ -378,6 +425,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo B non deve dare la precedenza ad alcun veicolo",
         "risposta": False,
+        "riassunto": "Figura → B non cede a nessuno?",
         "spiegazione": "Il veicolo B ha il veicolo E alla sua destra (prima che E passi) e deve dargli la precedenza (secondo l'ordine A -> E -> B). Quindi, l'affermazione che B non deve dare la precedenza ad alcun veicolo è falsa, perché deve darla ad E.",
         "regola": "B ha E a destra, quindi cede.",
         "trabocchetti": ["non deve"],
@@ -386,6 +434,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo A deve dare la precedenza al veicolo B",
         "risposta": False,
+        "riassunto": "Figura → A cede a B?",
         "spiegazione": "Il veicolo A non ha nessuno alla sua destra, quindi ha la precedenza su tutti, inclusi B ed E. Pertanto, A non deve dare la precedenza al veicolo B, ma è il contrario: B deve aspettare A (e poi E).",
         "regola": "A è il primo, non cede.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -394,6 +443,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo B non deve dare la precedenza al veicolo E",
         "risposta": False,
+        "riassunto": "Figura → B non cede a E?",
         "spiegazione": "Secondo l'ordine di precedenza (A -> E -> B), il veicolo E passa prima del veicolo B. Questo significa che B deve dare la precedenza a E. Quindi, l'affermazione che B non deve dare la precedenza a E è falsa.",
         "regola": "B cede a E.",
         "trabocchetti": ["non deve"],
@@ -402,6 +452,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli A e B passano contemporaneamente dopo il veicolo E",
         "risposta": False,
+        "riassunto": "Figura → A e B insieme dopo E?",
         "spiegazione": "L'ordine di passaggio è A, poi E, e infine B. I veicoli A e B non passano contemporaneamente, né passano dopo il veicolo E. A passa prima di E, e B passa dopo E. Quindi l'affermazione è falsa.",
         "regola": "Passano uno alla volta, non insieme.",
         "trabocchetti": ["Contemporaneamente", "dopo il veicolo E"],
@@ -410,6 +461,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli A e B passano contemporaneamente prima del veicolo E",
         "risposta": False,
+        "riassunto": "Figura → A e B insieme prima di E?",
         "spiegazione": "L'ordine di passaggio è A, poi E, e infine B. I veicoli A e B non passano contemporaneamente. A passa prima di E, ma B passa dopo E. Quindi l'affermazione è falsa.",
         "regola": "Passano uno alla volta, non insieme.",
         "trabocchetti": ["Contemporaneamente", "prima del veicolo E"],
@@ -418,6 +470,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura, il veicolo A passa dopo il veicolo R e il veicolo C passa dopo il veicolo A",
         "risposta": True,
+        "riassunto": "Figura → A dopo R, C dopo A?",
         "spiegazione": "Il veicolo R non ha nessun veicolo alla sua destra, quindi passa per primo. Tra i veicoli A e C, il veicolo A ha il veicolo C alla sua sinistra. Questo significa che A ha la precedenza su C. Quindi, l'ordine corretto di passaggio è R, poi A, e infine C. La frase dice che A passa dopo R (vero) e C passa dopo A (vero).",
         "regola": "L'ordine è R, A, C: chi non ha nessuno a destra va per primo!",
         "trabocchetti": ["dopo il veicolo R", "dopo il veicolo A"],
@@ -426,6 +479,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A passa prima del veicolo C e dopo il veicolo R",
         "risposta": True,
+        "riassunto": "Figura → A prima di C e dopo R?",
         "spiegazione": "Il veicolo R passa per primo perché non ha nessun veicolo alla sua destra. Poi, tra A e C, il veicolo A ha il veicolo C alla sua sinistra, quindi A ha la precedenza su C. Per questo, A passa prima di C ma dopo R, posizionandosi al secondo posto nell'ordine di passaggio.",
         "regola": "A è in mezzo: dopo R, prima di C.",
         "trabocchetti": ["prima del veicolo C", "dopo il veicolo R"],
@@ -434,6 +488,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R non deve dare la precedenza ad alcun veicolo",
         "risposta": True,
+        "riassunto": "Figura → R non cede a nessuno?",
         "spiegazione": "Il veicolo R è l'unico che non ha nessun altro veicolo alla sua destra. Secondo la regola generale della precedenza a destra, R può passare per primo senza dover dare la precedenza a nessun altro veicolo.",
         "regola": "R è libero: nessuno a destra!",
         "immagine": "6807fa56adc0d56ae046.jpg",
@@ -441,6 +496,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli passano nell'ordine: R, A, C",
         "risposta": True,
+        "riassunto": "Figura → ordine R, A, C?",
         "spiegazione": "Il veicolo R passa per primo perché non ha nessun veicolo alla sua destra. Poi, il veicolo A ha il veicolo C alla sua sinistra, quindi A ha la precedenza su C. Questo significa che A passa prima di C. L'ordine corretto di passaggio è quindi R, A, C.",
         "regola": "L'ordine è R, A, C.",
         "trabocchetti": ["nell"],
@@ -449,6 +505,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo C non deve dare la precedenza ad alcun veicolo",
         "risposta": False,
+        "riassunto": "Figura → C non cede a nessuno?",
         "spiegazione": "Il veicolo C ha il veicolo A alla sua destra. Secondo la regola della precedenza a destra, C deve dare la precedenza ad A. Quindi, C non può passare per primo e deve aspettare che A passi.",
         "regola": "C ha A a destra, deve aspettare!",
         "immagine": "6807fa56adc0d56ae046.jpg",
@@ -456,6 +513,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A passa prima del veicolo R e dopo il veicolo C",
         "risposta": False,
+        "riassunto": "Figura → A prima di R e dopo C?",
         "spiegazione": "Il veicolo R passa per primo, quindi A non può passare prima di R. Inoltre, A passa prima di C, non dopo C. La frase è sbagliata in entrambe le sue affermazioni.",
         "regola": "A non è né primo né ultimo.",
         "trabocchetti": ["prima del veicolo R", "dopo il veicolo C"],
@@ -464,6 +522,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli passano nell'ordine: R, C, A",
         "risposta": False,
+        "riassunto": "Figura → ordine R, C, A?",
         "spiegazione": "L'ordine corretto di passaggio è R, A, C. Il veicolo A ha la precedenza su C perché C si trova alla sinistra di A. Quindi A passa prima di C, non dopo. La sequenza proposta nella domanda è errata.",
         "regola": "Non R, C, A, ma R, A, C!",
         "trabocchetti": ["nell"],
@@ -472,6 +531,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R passa per ultimo",
         "risposta": False,
+        "riassunto": "Figura → R per ultimo?",
         "spiegazione": "Il veicolo R non ha nessun veicolo alla sua destra. Per questo motivo, è il primo a passare nell'incrocio, non l'ultimo.",
         "regola": "R è il primo, non l'ultimo!",
         "immagine": "6807fa56adc0d56ae046.jpg",
@@ -479,6 +539,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza possono impegnare l'incrocio rappresentato in figura il veicolo D dopo l'attraversamento del veicolo R",
         "risposta": True,
+        "riassunto": "Figura → D dopo R?",
         "spiegazione": "Il veicolo R attraversa per primo perché non ha nessun veicolo alla sua destra. Successivamente, si crea un 'blocco' tra i veicoli D, B e L. Il veicolo L, svoltando a sinistra, deve dare la precedenza sia a D che a B, quindi L aspetta. Tra D e B, il veicolo D ha la precedenza su B (perché B ha D alla sua destra). Quindi, l'ordine di attraversamento è R, poi D, poi B, e infine L. La domanda è VERA perché il veicolo D attraversa effettivamente dopo il veicolo R.",
         "regola": "R va, poi D.",
         "immagine": "3b583f610a18df3cdc08.jpg",
@@ -486,6 +547,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza possono impegnare l'incrocio rappresentato in figura il veicolo B dopo l'attraversamento di tutti gli altri veicoli",
         "risposta": True,
+        "riassunto": "Figura → B dopo tutti?",
         "spiegazione": "Il veicolo R attraversa per primo. Poi si crea un 'blocco' tra D, B e L. Il veicolo L, svoltando a sinistra, deve dare la precedenza sia a D che a B, quindi L aspetta. Tra D e B, D ha la precedenza su B (perché B ha D alla sua destra). Quindi, l'ordine è R, poi D, poi B, e infine L. La domanda è VERA, ma la frase 'dopo l'attraversamento di tutti gli altri veicoli' è una trappola linguistica. B attraversa dopo R e D, ma prima di L. La domanda è VERA perché L, dovendo svoltare a sinistra, aspetta tutti gli altri veicoli (R, D e B) prima di impegnare l'incrocio. Quindi B attraversa dopo R e D, e L aspetta B.",
         "regola": "Chi svolta a sinistra aspetta tutti.",
         "trabocchetti": ["tutti gli altri veicoli"],
@@ -494,6 +556,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza possono impegnare l'incrocio rappresentato in figura il veicolo R senza dare la precedenza ad alcun veicolo",
         "risposta": True,
+        "riassunto": "Figura → R senza cedere a nessuno?",
         "spiegazione": "Il veicolo R è il primo ad attraversare l'incrocio. Questo perché, applicando la regola della precedenza a destra, il veicolo R non ha nessun altro veicolo alla sua destra. Quindi, può impegnare l'incrocio senza dare la precedenza a nessuno. La domanda è VERA.",
         "regola": "Nessuno a destra? Vai per primo!",
         "immagine": "3b583f610a18df3cdc08.jpg",
@@ -501,6 +564,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza possono impegnare l'incrocio rappresentato in figura il veicolo B dopo l'attraversamento dei veicoli R e D",
         "risposta": True,
+        "riassunto": "Figura → B dopo R e D?",
         "spiegazione": "Come spiegato in precedenza, l'ordine di attraversamento è R, poi D, poi B, e infine L. Il veicolo B attraversa dopo che R e D hanno già impegnato e liberato l'incrocio. La domanda è VERA.",
         "regola": "B segue R e D.",
         "immagine": "3b583f610a18df3cdc08.jpg",
@@ -508,6 +572,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza possono impegnare l'incrocio rappresentato in figura il veicolo B contemporaneamente al veicolo R e prima di quello D",
         "risposta": False,
+        "riassunto": "Figura → B con R e prima di D?",
         "spiegazione": "Il veicolo R attraversa per primo. Il veicolo D attraversa per secondo. Il veicolo B attraversa per terzo. Quindi, B non può attraversare contemporaneamente a R (che va per primo) e non può attraversare prima di D (che va prima di B). La domanda è FALSA.",
         "regola": "Uno alla volta, e D prima di B.",
         "trabocchetti": ["contemporaneamente", "prima"],
@@ -516,6 +581,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza possono impegnare l'incrocio rappresentato in figura il veicolo D prima degli altri veicoli",
         "risposta": False,
+        "riassunto": "Figura → D prima di tutti?",
         "spiegazione": "Il veicolo R è il primo ad attraversare l'incrocio. Il veicolo D è il secondo. Quindi, D non attraversa prima di tutti gli altri veicoli, perché R lo precede. La domanda è FALSA.",
         "regola": "R è il primo, non D.",
         "trabocchetti": ["prima"],
@@ -524,6 +590,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza possono impegnare l'incrocio rappresentato in figura il veicolo R dopo l'attraversamento dei veicoli B e D",
         "risposta": False,
+        "riassunto": "Figura → R dopo B e D?",
         "spiegazione": "Il veicolo R è il primo ad attraversare l'incrocio, non deve dare la precedenza a nessuno. Quindi, non può attraversare 'dopo' i veicoli B e D, che invece attraversano dopo di lui. La domanda è FALSA.",
         "regola": "R è il primo, non l'ultimo.",
         "trabocchetti": ["dopo"],
@@ -532,6 +599,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza possono impegnare l'incrocio rappresentato in figura il veicolo B prima degli altri veicoli",
         "risposta": False,
+        "riassunto": "Figura → B prima di tutti?",
         "spiegazione": "Il veicolo R è il primo ad attraversare l'incrocio, seguito da D, e poi da B. Quindi, B non attraversa 'prima' degli altri veicoli, ma dopo R e D. La domanda è FALSA.",
         "regola": "B non è il primo.",
         "trabocchetti": ["prima"],
@@ -540,6 +608,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli passano nel seguente ordine: D, P, B, N",
         "risposta": True,
+        "riassunto": "Figura → ordine D, P, B, N?",
         "spiegazione": "VERO. In questo tipo di incrocio, dove tutti i veicoli svoltano a sinistra e si crea un 'carosello' (ognuno ha un veicolo alla sua destra), l'ordine di passaggio è spesso risolto seguendo una sequenza che 'sblocca' la situazione. L'ordine D, P, B, N è quello corretto, dove D inizia la sequenza.",
         "regola": "Carosello a sinistra? D, P, B, N! (Memorizza l'ordine).",
         "trabocchetti": ["Secondo le norme di precedenza"],
@@ -548,6 +617,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo N deve passare per ultimo",
         "risposta": True,
+        "riassunto": "Figura → N per ultimo?",
         "spiegazione": "VERO. Seguendo l'ordine di passaggio corretto (D, P, B, N), il veicolo N è l'ultimo a passare l'incrocio.",
         "regola": "N è l'ultimo del carosello.",
         "trabocchetti": ["per ultimo"],
@@ -556,6 +626,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo B deve passare dopo il veicolo P",
         "risposta": True,
+        "riassunto": "Figura → B dopo P?",
         "spiegazione": "VERO. Nell'ordine di passaggio stabilito (D, P, B, N), il veicolo B passa dopo il veicolo P.",
         "regola": "P precede B.",
         "trabocchetti": ["dopo"],
@@ -564,6 +635,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo D passa prima degli altri veicoli",
         "risposta": True,
+        "riassunto": "Figura → D prima di tutti?",
         "spiegazione": "VERO. Nell'ordine di passaggio corretto (D, P, B, N), il veicolo D è il primo a passare l'incrocio, sbloccando la situazione di 'carosello'.",
         "regola": "D apre il carosello.",
         "trabocchetti": ["prima degli altri veicoli"],
@@ -572,6 +644,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo B passa prima del veicolo N",
         "risposta": True,
+        "riassunto": "Figura → B prima di N?",
         "spiegazione": "VERO. Nell'ordine di passaggio corretto (D, P, B, N), il veicolo B passa prima del veicolo N.",
         "regola": "B precede N.",
         "trabocchetti": ["prima del"],
@@ -580,6 +653,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo N passa dopo il veicolo B",
         "risposta": True,
+        "riassunto": "Figura → N dopo B?",
         "spiegazione": "VERO. Nell'ordine di passaggio corretto (D, P, B, N), il veicolo N passa dopo il veicolo B.",
         "regola": "N segue B.",
         "trabocchetti": ["dopo il"],
@@ -588,6 +662,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo P può passare prima del veicolo B",
         "risposta": True,
+        "riassunto": "Figura → P prima di B?",
         "spiegazione": "VERO. Nell'ordine di passaggio corretto (D, P, B, N), il veicolo P passa prima del veicolo B.",
         "regola": "P prima di B.",
         "trabocchetti": ["può passare prima"],
@@ -596,6 +671,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli passano nel seguente ordine: D, B, N, P",
         "risposta": False,
+        "riassunto": "Figura → ordine D, B, N, P?",
         "spiegazione": "FALSO. L'ordine corretto di passaggio dei veicoli è D, P, B, N. L'ordine proposto (D, B, N, P) è diverso e quindi non corretto.",
         "regola": "L'ordine è D, P, B, N, non D, B, N, P.",
         "trabocchetti": ["seguente ordine"],
@@ -604,6 +680,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli passano nel seguente ordine: P, B, N, D",
         "risposta": False,
+        "riassunto": "Figura → ordine P, B, N, D?",
         "spiegazione": "FALSO. L'ordine corretto di passaggio dei veicoli è D, P, B, N. L'ordine proposto (P, B, N, D) è diverso e non inizia con il veicolo corretto.",
         "regola": "L'ordine inizia con D, non con P.",
         "trabocchetti": ["seguente ordine"],
@@ -612,6 +689,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli D e N passano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → D e N insieme?",
         "spiegazione": "FALSO. I veicoli non passano contemporaneamente. Secondo l'ordine corretto (D, P, B, N), D passa per primo e N passa per ultimo, quindi in momenti diversi.",
         "regola": "Mai contemporaneamente in un carosello.",
         "trabocchetti": ["contemporaneamente"],
@@ -620,6 +698,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli D e B passano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → D e B insieme?",
         "spiegazione": "FALSO. I veicoli non passano contemporaneamente. D passa per primo, mentre B passa solo dopo P, quindi in momenti diversi.",
         "regola": "Passano in sequenza, non insieme.",
         "trabocchetti": ["contemporaneamente"],
@@ -628,6 +707,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo P passa prima del veicolo B, ma dopo quello N",
         "risposta": False,
+        "riassunto": "Figura → P prima di B ma dopo N?",
         "spiegazione": "FALSO. Il veicolo P passa prima del veicolo B (questo è vero), ma non passa dopo il veicolo N. N è l'ultimo a passare, quindi P passa prima di N. La seconda parte dell'affermazione la rende falsa.",
         "regola": "P è prima di N.",
         "immagine": "39f057940e45ccccb8fa.jpg",
@@ -635,6 +715,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura passano per primi indifferentemente i veicoli B e D",
         "risposta": False,
+        "riassunto": "Figura → B e D indifferentemente per primi?",
         "spiegazione": "FALSO. Non passano indifferentemente. C'è un ordine preciso: D passa per primo, mentre B passa solo dopo P. Non possono passare per primi in modo casuale.",
         "regola": "C'è un ordine preciso: D è il primo.",
         "trabocchetti": ["indifferentemente"],
@@ -643,6 +724,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli passano nel seguente ordine: D, C, A, H.",
         "risposta": True,
+        "riassunto": "Figura → ordine D, C, A, H?",
         "spiegazione": "Il veicolo D passa per primo perché non ha nessun veicolo alla sua destra. Dopo D, la situazione si sblocca in modo che C passi, poi A, e infine H.",
         "regola": "D ha la destra libera, quindi parte. Poi C, A, H.",
         "trabocchetti": ["nel seguente ordine"],
@@ -651,6 +733,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo A ha la destra occupata",
         "risposta": True,
+        "riassunto": "Figura → A ha la destra occupata?",
         "spiegazione": "Guarda il veicolo A (giallo). Alla sua destra c'è il veicolo C (rosso). Quindi, la destra di A non è libera, è occupata da C.",
         "regola": "Se c'è un'auto a destra, la destra è occupata.",
         "trabocchetti": ["destra occupata"],
@@ -659,6 +742,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo D ha la precedenza sul veicolo C",
         "risposta": True,
+        "riassunto": "Figura → D ha precedenza su C?",
         "spiegazione": "Il veicolo D passa per primo, mentre il veicolo C passa per secondo. Questo significa che D passa prima di C, quindi D ha la precedenza su C.",
         "regola": "D è il primo, C è il secondo. D precede C.",
         "trabocchetti": ["ha la precedenza su"],
@@ -667,6 +751,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo D è il primo ad impegnare l'incrocio",
         "risposta": True,
+        "riassunto": "Figura → D per primo?",
         "spiegazione": "Il veicolo D non ha nessun altro veicolo alla sua destra. Per la regola della precedenza a destra, chi non ha nessuno a destra passa per primo.",
         "regola": "Destra libera = primo a passare.",
         "trabocchetti": ["primo ad impegnare l"],
@@ -675,6 +760,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo H è l'ultimo ad attraversare l'incrocio",
         "risposta": True,
+        "riassunto": "Figura → H per ultimo?",
         "spiegazione": "Secondo l'ordine di passaggio corretto (D, C, A, H), il veicolo H è l'ultimo a passare.",
         "regola": "H è l'ultimo della fila.",
         "trabocchetti": ["ultimo ad attraversare"],
@@ -683,6 +769,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo D deve dare la precedenza a quello C",
         "risposta": False,
+        "riassunto": "Figura → D cede a C?",
         "spiegazione": "Il veicolo D passa per primo perché ha la destra libera. Il veicolo C passa dopo D. Quindi, D non deve dare la precedenza a C, ma è il contrario: C deve aspettare D.",
         "regola": "Chi ha la destra libera non dà precedenza.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -691,6 +778,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo C attraversa per primo",
         "risposta": False,
+        "riassunto": "Figura → C per primo?",
         "spiegazione": "Il veicolo D attraversa per primo, non C. C è il secondo a passare nell'ordine corretto.",
         "regola": "D è il primo, non C.",
         "trabocchetti": ["attraversa per primo"],
@@ -699,6 +787,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo A attraversa l'incrocio prima del veicolo C",
         "risposta": False,
+        "riassunto": "Figura → A prima di C?",
         "spiegazione": "L'ordine di passaggio è D, C, A, H. Questo significa che C passa prima di A, quindi A non attraversa prima di C.",
         "regola": "C precede A.",
         "trabocchetti": ["prima del veicolo C"],
@@ -707,6 +796,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli passano nel seguente ordine: C, A, H, D",
         "risposta": False,
+        "riassunto": "Figura → ordine C, A, H, D?",
         "spiegazione": "L'ordine corretto è D, C, A, H. L'ordine proposto (C, A, H, D) è sbagliato perché D non è l'ultimo e C non è il primo.",
         "regola": "D è il primo, H è l'ultimo.",
         "trabocchetti": ["nel seguente ordine"],
@@ -715,6 +805,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli passano nel seguente ordine: H, A, C, D",
         "risposta": False,
+        "riassunto": "Figura → ordine H, A, C, D?",
         "spiegazione": "L'ordine corretto è D, C, A, H. L'ordine proposto (H, A, C, D) è sbagliato perché H non è il primo e D non è l'ultimo.",
         "regola": "D è il primo, H è l'ultimo.",
         "trabocchetti": ["nel seguente ordine"],
@@ -723,6 +814,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli C e H passano per primi",
         "risposta": False,
+        "riassunto": "Figura → C e H per primi?",
         "spiegazione": "Solo il veicolo D passa per primo. C passa per secondo e H passa per ultimo. Quindi, non sono C e H a passare per primi.",
         "regola": "Solo D è il primo.",
         "trabocchetti": ["passano per primi"],
@@ -731,6 +823,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'attraversare l'incrocio in figura il veicolo L passa per primo",
         "risposta": True,
+        "riassunto": "Figura → L per primo?",
         "spiegazione": "Il veicolo L passa per primo. Anche se sta svoltando a sinistra e ha il veicolo D alla sua destra, il veicolo D sta anch'esso svoltando a sinistra. In questo tipo di incrocio, L non ha veicoli alla sua destra che vanno dritto o svoltano a destra, quindi può iniziare la manovra per primo.",
         "regola": "L gira a sinistra, D gira a sinistra. L non ha 'destra libera' da chi va dritto o a destra, quindi passa per primo.",
         "trabocchetti": ["passa per primo"],
@@ -739,6 +832,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'attraversare l'incrocio in figura il veicolo D è l'ultimo a passare",
         "risposta": True,
+        "riassunto": "Figura → D per ultimo?",
         "spiegazione": "Il veicolo D è l'ultimo a passare. Deve dare la precedenza a L (che passa per primo) e poi ad A (che gli viene da destra e va dritto).",
         "regola": "D aspetta tutti, è l'ultimo.",
         "trabocchetti": ["ultimo a passare"],
@@ -747,6 +841,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'attraversare l'incrocio in figura i veicoli C e A passano contemporaneamente dopo il veicolo L",
         "risposta": True,
+        "riassunto": "Figura → C e A insieme dopo L?",
         "spiegazione": "Dopo che il veicolo L ha liberato l'incrocio, i veicoli C e A possono passare contemporaneamente. Anche se C ha la precedenza su A (perché A ha C alla sua destra), in questo specifico contesto di quiz si considera che possano passare insieme se le loro traiettorie lo permettono dopo che L ha liberato l'incrocio.",
         "regola": "Dopo L, C e A passano insieme.",
         "trabocchetti": ["contemporaneamente", "Dopo il veicolo L"],
@@ -755,6 +850,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'attraversare l'incrocio in figura il veicolo A ha la precedenza sul veicolo D",
         "risposta": True,
+        "riassunto": "Figura → A ha precedenza su D?",
         "spiegazione": "Il veicolo A ha la precedenza sul veicolo D. Questo perché A va dritto, mentre D sta svoltando a sinistra. D ha il veicolo A alla sua destra, quindi D deve dare la precedenza ad A.",
         "regola": "A va dritto, D gira: A passa prima di D.",
         "trabocchetti": ["ha la precedenza su"],
@@ -763,6 +859,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'attraversare l'incrocio in figura passa per primo il veicolo più veloce",
         "risposta": False,
+        "riassunto": "Figura → passa prima il più veloce?",
         "spiegazione": "Non è vero che passa per primo il veicolo più veloce. La precedenza negli incroci è stabilita dalle regole del Codice della Strada, non dalla velocità dei veicoli.",
         "regola": "La velocità non dà precedenza.",
         "trabocchetti": ["più veloce"],
@@ -771,6 +868,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'attraversare l'incrocio in figura il veicolo A passa per ultimo",
         "risposta": False,
+        "riassunto": "Figura → A per ultimo?",
         "spiegazione": "Il veicolo A non passa per ultimo. A passa dopo L e contemporaneamente a C, ma prima di D. Quindi non è l'ultimo veicolo a muoversi.",
         "regola": "A non è l'ultimo.",
         "trabocchetti": ["passa per ultimo"],
@@ -779,6 +877,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'attraversare l'incrocio in figura i veicoli passano nel seguente ordine: C, A, D, L",
         "risposta": False,
+        "riassunto": "Figura → ordine C, A, D, L?",
         "spiegazione": "L'ordine di passaggio indicato (C, A, D, L) è sbagliato. Il veicolo L passa per primo, non C. L'ordine corretto è L, poi C e A insieme, e infine D.",
         "regola": "L è il primo, non C.",
         "trabocchetti": ["nel seguente ordine"],
@@ -787,6 +886,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'attraversare l'incrocio in figura i veicoli passano nel seguente ordine: C, L, A, D",
         "risposta": False,
+        "riassunto": "Figura → ordine C, L, A, D?",
         "spiegazione": "L'ordine di passaggio indicato (C, L, A, D) è sbagliato. Il veicolo L passa per primo, non C. Inoltre, C e A passano insieme, non separatamente in questa sequenza.",
         "regola": "L è il primo, non C. C e A vanno insieme.",
         "trabocchetti": ["nel seguente ordine"],
@@ -795,6 +895,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'attraversare l'incrocio in figura i veicoli D e L passano contemporaneamente prima del veicolo A",
         "risposta": False,
+        "riassunto": "Figura → D e L insieme prima di A?",
         "spiegazione": "Questa affermazione è falsa. I veicoli D e L non passano contemporaneamente (L passa per primo, D per ultimo). Inoltre, L passa prima di A, ma D passa dopo A, quindi non passano entrambi 'prima del veicolo A'.",
         "regola": "D e L non insieme. D non passa prima di A.",
         "trabocchetti": ["contemporaneamente", "prima del veicolo A"],
@@ -803,6 +904,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo A deve dare la precedenza al veicolo L",
         "risposta": True,
+        "riassunto": "Figura → A cede a L?",
         "spiegazione": "Il veicolo A deve dare la precedenza al veicolo C (che è alla sua destra). Il veicolo C, a sua volta, deve dare la precedenza al veicolo L (che è alla sua destra). Questo significa che A deve aspettare C, e C deve aspettare L. Di conseguenza, A deve dare la precedenza anche a L, che passerà prima di A.",
         "regola": "A aspetta C, C aspetta L. Quindi A aspetta L.",
         "immagine": "e9d0776b257bf72c698b.jpg",
@@ -810,6 +912,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo A può attraversare l'incrocio insieme al veicolo C, dopo il transito del veicolo L",
         "risposta": True,
+        "riassunto": "Figura → A insieme a C dopo L?",
         "spiegazione": "L'ordine di passaggio è L, poi C, poi A, e infine D. Dopo che il veicolo L è passato, il veicolo C può attraversare l'incrocio. Subito dopo C, anche il veicolo A può passare. La parola 'insieme' qui non significa 'contemporaneamente', perché A deve comunque aspettare che C liberi la sua destra. Significa piuttosto 'nella stessa fase di sgombero dell'incrocio', uno dopo l'altro.",
         "regola": "'Insieme' non sempre significa 'allo stesso momento' se c'è precedenza.",
         "trabocchetti": ["insieme", "o"],
@@ -818,6 +921,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo A ha la precedenza rispetto al veicolo D",
         "risposta": True,
+        "riassunto": "Figura → A ha precedenza su D?",
         "spiegazione": "Il veicolo D sta svoltando a sinistra. La regola dice che chi svolta a sinistra deve dare la precedenza sia ai veicoli che provengono dalla sua destra (come A) sia a quelli che provengono di fronte e vanno diritto (come L). Poiché D deve dare la precedenza ad A, significa che A ha la precedenza su D.",
         "regola": "Chi svolta a sinistra (D) aspetta chi va diritto (A) e chi viene di fronte (L).",
         "immagine": "e9d0776b257bf72c698b.jpg",
@@ -825,6 +929,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo A deve dare la precedenza a tutti i veicoli",
         "risposta": False,
+        "riassunto": "Figura → A cede a tutti?",
         "spiegazione": "Il veicolo A deve dare la precedenza a L e a C, perché sono alla sua destra o hanno precedenza su di lui nella sequenza di passaggio. Tuttavia, come abbiamo visto, A ha la precedenza sul veicolo D. Quindi, A non deve dare la precedenza a *tutti* i veicoli.",
         "regola": "'Tutti' è spesso FALSO. Controlla le eccezioni.",
         "trabocchetti": ["tutti"],
@@ -833,6 +938,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo A passa per ultimo",
         "risposta": False,
+        "riassunto": "Figura → A per ultimo?",
         "spiegazione": "L'ordine corretto di passaggio è: prima L, poi C, poi A, e infine D. Questo significa che il veicolo D passa per ultimo, non il veicolo A.",
         "regola": "Ricorda l'ordine: L, C, A, D. D è l'ultimo.",
         "trabocchetti": ["ultimo"],
@@ -841,6 +947,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura i veicoli passano nel seguente ordine: H, D, B, L",
         "risposta": True,
+        "riassunto": "Figura → ordine H, D, B, L?",
         "spiegazione": "Questo incrocio è un caso particolare, spesso chiamato 'incrocio ad anello' o 'a catena', dove tutti i veicoli hanno un altro veicolo alla loro destra. La sequenza di passaggio corretta da memorizzare per questo specifico diagramma è H, D, B, L. Quindi, l'affermazione è VERA.",
         "regola": "H-D-B-L: la sequenza da ricordare!",
         "trabocchetti": ["ordine"],
@@ -849,6 +956,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo H passa per primo",
         "risposta": True,
+        "riassunto": "Figura → H per primo?",
         "spiegazione": "Secondo la sequenza di passaggio stabilita per questo incrocio (H, D, B, L), il veicolo H è il primo a transitare. Quindi, l'affermazione è VERA.",
         "regola": "H apre la strada.",
         "trabocchetti": ["per primo"],
@@ -857,6 +965,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo B passa prima del veicolo L",
         "risposta": True,
+        "riassunto": "Figura → B prima di L?",
         "spiegazione": "Nell'ordine di passaggio H, D, B, L, il veicolo B transita prima del veicolo L. Quindi, l'affermazione è VERA.",
         "regola": "B precede L.",
         "trabocchetti": ["prima del veicolo L"],
@@ -865,6 +974,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo D deve dare la precedenza al veicolo H",
         "risposta": True,
+        "riassunto": "Figura → D cede a H?",
         "spiegazione": "Poiché il veicolo H passa per primo e il veicolo D passa dopo H, significa che D deve attendere il transito di H. Quindi, D deve dare la precedenza a H. L'affermazione è VERA.",
         "regola": "D aspetta H.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -873,6 +983,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo L deve dare la precedenza al veicolo B",
         "risposta": True,
+        "riassunto": "Figura → L cede a B?",
         "spiegazione": "Nell'ordine di passaggio H, D, B, L, il veicolo B transita prima del veicolo L. Questo significa che L deve attendere che B sia passato. Quindi, L deve dare la precedenza a B. L'affermazione è VERA.",
         "regola": "L aspetta B.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -881,6 +992,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo L deve passare per ultimo",
         "risposta": True,
+        "riassunto": "Figura → L per ultimo?",
         "spiegazione": "Secondo la sequenza di passaggio H, D, B, L, il veicolo L è l'ultimo a transitare all'incrocio. Quindi, l'affermazione è VERA.",
         "regola": "L chiude la fila.",
         "trabocchetti": ["per ultimo"],
@@ -889,6 +1001,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo D passa prima del veicolo B",
         "risposta": True,
+        "riassunto": "Figura → D prima di B?",
         "spiegazione": "Nell'ordine di passaggio H, D, B, L, il veicolo D transita prima del veicolo B. Quindi, l'affermazione è VERA.",
         "regola": "D precede B.",
         "trabocchetti": ["prima del veicolo B"],
@@ -897,6 +1010,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo B deve attendere il transito degli altri tre veicoli",
         "risposta": False,
+        "riassunto": "Figura → B attende gli altri tre?",
         "spiegazione": "Il veicolo B passa per terzo nell'ordine H, D, B, L. Questo significa che deve attendere solo H e D, ma non L, perché L passa dopo di lui. Quindi, non deve attendere 'gli altri tre veicoli'. L'affermazione è FALSA.",
         "regola": "B non è l'ultimo.",
         "trabocchetti": ["gli altri tre"],
@@ -905,6 +1019,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo H deve attendere che siano transitati i veicoli D e B",
         "risposta": False,
+        "riassunto": "Figura → H attende D e B?",
         "spiegazione": "Il veicolo H passa per primo nell'ordine H, D, B, L. Questo significa che non deve attendere nessun altro veicolo. Quindi, l'affermazione è FALSA.",
         "regola": "H non aspetta.",
         "trabocchetti": ["deve attendere"],
@@ -913,6 +1028,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura i veicoli L e D passano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → L e D insieme?",
         "spiegazione": "Nell'ordine di passaggio H, D, B, L, il veicolo D passa per secondo e il veicolo L passa per ultimo. Non transitano contemporaneamente. Quindi, l'affermazione è FALSA.",
         "regola": "Non contemporaneamente.",
         "trabocchetti": ["contemporaneamente"],
@@ -921,6 +1037,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura i veicoli passano nel seguente ordine: H, D, L, B",
         "risposta": False,
+        "riassunto": "Figura → ordine H, D, L, B?",
         "spiegazione": "L'ordine corretto di passaggio per questo incrocio è H, D, B, L. La sequenza proposta (H, D, L, B) è diversa, inverte B e L. Quindi, l'affermazione è FALSA.",
         "regola": "Ricorda: B prima di L.",
         "trabocchetti": ["e"],
@@ -929,6 +1046,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo B, dato che svolta a sinistra, non ha diritto di precedenza su alcun veicolo",
         "risposta": False,
+        "riassunto": "Figura → B svolta a sinistra, nessuna precedenza?",
         "spiegazione": "Il veicolo B, come si vede dalla freccia, prosegue diritto, non svolta a sinistra. Inoltre, ha precedenza sul veicolo L. Quindi, l'affermazione è FALSA per due motivi.",
         "regola": "B va dritto e precede L.",
         "trabocchetti": ["svolta a sinistra"],
@@ -937,6 +1055,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura i veicoli L e D hanno la precedenza perché non effettuano svolte",
         "risposta": False,
+        "riassunto": "Figura → L e D precedenza perché vanno diritto?",
         "spiegazione": "La precedenza agli incroci non segnalati si basa sulla regola della 'precedenza a destra'. Anche se i veicoli L e D vanno diritto, L ha H alla sua destra e D ha B alla sua destra, quindi devono dare la precedenza. L'affermazione è FALSA.",
         "regola": "La destra comanda, non la direzione.",
         "immagine": "ac0ba8871627eb5e256c.jpg",
@@ -944,6 +1063,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo N passa dopo il veicolo R",
         "risposta": True,
+        "riassunto": "Figura → N dopo R?",
         "spiegazione": "In questo incrocio, il veicolo B entra e aspetta al centro. Questo permette al veicolo R di passare per primo. Dopo R, passano N e D. Quindi, N passa dopo R.",
         "regola": "R è il primo, N è dopo.",
         "trabocchetti": ["dopo"],
@@ -952,6 +1072,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo B passa dopo il veicolo N",
         "risposta": True,
+        "riassunto": "Figura → B dopo N?",
         "spiegazione": "Il veicolo B, dopo aver aspettato al centro, completa la sua svolta per ultimo. Quindi, N passa prima di B.",
         "regola": "B aspetta, N passa prima.",
         "trabocchetti": ["dopo"],
@@ -960,6 +1081,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo D passa dopo il veicolo R",
         "risposta": True,
+        "riassunto": "Figura → D dopo R?",
         "spiegazione": "Il veicolo R passa per primo. Dopo R, passano N e D. Quindi, D passa dopo R.",
         "regola": "R è il primo, D è dopo.",
         "trabocchetti": ["dopo"],
@@ -968,6 +1090,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R passa dopo che il veicolo B si è spostato al centro dell'incrocio",
         "risposta": True,
+        "riassunto": "Figura → R dopo che B si è portato al centro?",
         "spiegazione": "Il veicolo B, che deve svoltare a sinistra, entra nell'incrocio e si ferma al centro per non bloccare il veicolo R. In questo modo, R può passare per primo.",
         "regola": "B aspetta al centro, R passa.",
         "immagine": "adc30ec3785593b40a5f.jpg",
@@ -975,6 +1098,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli D e N passano contemporaneamente dopo che è passato il veicolo R",
         "risposta": True,
+        "riassunto": "Figura → D e N insieme dopo R?",
         "spiegazione": "Dopo che il veicolo R è passato, i veicoli N e D possono attraversare l'incrocio insieme. Anche se N va dritto e D svolta a sinistra, in questo specifico caso del quiz passano contemporaneamente.",
         "regola": "R primo, poi N e D insieme.",
         "trabocchetti": ["contemporaneamente"],
@@ -983,6 +1107,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo B nell'impegnare l'incrocio deve fermarsi al centro di esso",
         "risposta": True,
+        "riassunto": "Figura → B si ferma al centro dell'incrocio?",
         "spiegazione": "Il veicolo B deve svoltare a sinistra. Per non bloccare il traffico e permettere a R di passare, B entra nell'incrocio e aspetta al centro.",
         "regola": "B svolta a sinistra, aspetta al centro.",
         "trabocchetti": ["deve fermarsi al centro"],
@@ -991,6 +1116,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R impegna l'incrocio e si ferma al centro di esso",
         "risposta": False,
+        "riassunto": "Figura → R si ferma al centro?",
         "spiegazione": "Il veicolo R va dritto. Non ha motivo di fermarsi al centro dell'incrocio, ma lo attraversa direttamente.",
         "regola": "R va dritto, non si ferma.",
         "trabocchetti": ["si ferma al centro"],
@@ -999,6 +1125,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo N passa per primo",
         "risposta": False,
+        "riassunto": "Figura → N per primo?",
         "spiegazione": "Il veicolo R passa per primo, non il veicolo N.",
         "regola": "R è il primo.",
         "trabocchetti": ["per primo"],
@@ -1007,6 +1134,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo D passa per primo",
         "risposta": False,
+        "riassunto": "Figura → D per primo?",
         "spiegazione": "Il veicolo R passa per primo, non il veicolo D.",
         "regola": "R è il primo.",
         "trabocchetti": ["per primo"],
@@ -1015,6 +1143,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo D deve dare la precedenza al veicolo B",
         "risposta": False,
+        "riassunto": "Figura → D cede a B?",
         "spiegazione": "Il veicolo B, aspettando al centro, passa per ultimo. Quindi, D non deve dargli la precedenza per passare, perché D passa prima di B.",
         "regola": "B ultimo, D prima.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -1023,6 +1152,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo B deve dare la precedenza al veicolo D",
         "risposta": False,
+        "riassunto": "Figura → B cede a D?",
         "spiegazione": "Il veicolo B non deve dare la precedenza al veicolo D. B è a destra di D, ma in questo scenario B aspetta al centro e passa per ultimo. D non ha la precedenza su B.",
         "regola": "B non dà precedenza a D.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -1031,6 +1161,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R passa per ultimo",
         "risposta": False,
+        "riassunto": "Figura → R per ultimo?",
         "spiegazione": "Il veicolo R passa per primo, non per ultimo.",
         "regola": "R è il primo.",
         "trabocchetti": ["per ultimo"],
@@ -1039,6 +1170,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo B deve dare la precedenza al veicolo N",
         "risposta": True,
+        "riassunto": "Figura → B cede a N?",
         "spiegazione": "Il veicolo B vuole svoltare a sinistra. Il veicolo N viene dalla direzione opposta e svolta a destra. La regola dice che chi svolta a sinistra deve dare la precedenza ai veicoli che vengono di fronte e vanno diritto o svoltano a destra. Quindi B deve aspettare N.",
         "regola": "Svolta a sinistra? Aspetta chi viene di fronte e va dritto o a destra.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -1047,6 +1179,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo B impegna l'incrocio prima del veicolo R",
         "risposta": True,
+        "riassunto": "Figura → B entra prima di R?",
         "spiegazione": "Questo è un incrocio 'bloccato' dove tutti i veicoli hanno qualcuno alla propria destra. In questi casi, il veicolo B (che svolta a sinistra) può avanzare fino al centro dell'incrocio per prepararsi alla svolta, perché il veicolo R (alla sua destra) è a sua volta bloccato dal veicolo D. Quindi B si porta al centro, e R aspetta D.",
         "regola": "Blocco? Chi svolta a sinistra può andare al centro se chi ha la precedenza è bloccato.",
         "trabocchetti": ["impegna l"],
@@ -1055,6 +1188,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo B può concludere la manovra di svolta a sinistra dopo il transito del veicolo N",
         "risposta": True,
+        "riassunto": "Figura → B completa la svolta dopo N?",
         "spiegazione": "Come abbiamo detto, B deve dare la precedenza a N. Questo significa che B aspetterà che N passi prima di finire la sua svolta a sinistra.",
         "regola": "B aspetta N per finire la svolta.",
         "trabocchetti": ["dopo il transito"],
@@ -1063,6 +1197,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo B dopo essersi portato al centro dell'incrocio, deve attendere il transito del veicolo N",
         "risposta": True,
+        "riassunto": "Figura → B al centro attende N?",
         "spiegazione": "Questa domanda conferma la spiegazione precedente. B si porta al centro (come visto nella domanda 23340), ma poi deve aspettare N perché N ha la precedenza su B (come visto nella domanda 23339).",
         "regola": "Al centro? Aspetta chi ha la precedenza (N).",
         "trabocchetti": ["dopo essersi portato al centro"],
@@ -1071,6 +1206,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo B ha la destra libera, durante tutta la manovra di svolta",
         "risposta": False,
+        "riassunto": "Figura → B ha la destra libera?",
         "spiegazione": "Il veicolo R si trova alla destra del veicolo B. Anche se R è bloccato, la sua presenza significa che la destra di B non è 'libera'.",
         "regola": "R è a destra di B, quindi la destra non è libera.",
         "trabocchetti": ["destra libera"],
@@ -1079,6 +1215,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo B deve impegnare per ultimo l'incrocio perché svolta a sinistra",
         "risposta": False,
+        "riassunto": "Figura → B per ultimo perché svolta a sinistra?",
         "spiegazione": "Anche se B svolta a sinistra e deve dare molte precedenze, non è detto che sia l'ultimo ad 'impegnare' l'incrocio. Come abbiamo visto nella domanda 23340, B può portarsi al centro prima di R. Quindi non è l'ultimo ad entrare.",
         "regola": "Non sempre l'ultimo ad entrare, anche se svolti a sinistra.",
         "trabocchetti": ["per ultimo"],
@@ -1087,6 +1224,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo B deve dare la precedenza al veicolo R che prosegue diritto",
         "risposta": False,
+        "riassunto": "Figura → B cede a R che va diritto?",
         "spiegazione": "Questa è la domanda più delicata. Normalmente, B dovrebbe dare la precedenza a R perché R è alla sua destra. Ma in questo incrocio 'bloccato', R è a sua volta bloccato da D. Poiché R non può muoversi, B non deve 'dare la precedenza' a R nel senso di aspettare che R passi, ma può avanzare al centro dell'incrocio.",
         "regola": "Se chi ha la precedenza è bloccato, non devi aspettarlo per avanzare al centro.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -1095,6 +1233,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura i veicoli devono transitare nel seguente ordine: C, A, L, R, E",
         "risposta": True,
+        "riassunto": "Figura → ordine C, A, L, R, E?",
         "spiegazione": "Questo incrocio presenta una situazione di 'precedenza a destra' circolare, dove tutti i veicoli hanno un altro veicolo alla loro destra, creando uno stallo. Per risolvere questo stallo, si segue un ordine convenzionale specifico: C, A, L, R, E. Quindi, l'affermazione è VERA.",
         "regola": "C-A-L-R-E: la sequenza 'speciale' per questo incrocio.",
         "trabocchetti": ["seguente ordine"],
@@ -1103,6 +1242,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo C transita per primo",
         "risposta": True,
+        "riassunto": "Figura → C per primo?",
         "spiegazione": "Secondo l'ordine di transito stabilito per questo incrocio (C, A, L, R, E), il veicolo C è il primo a impegnare e liberare l'incrocio. Questo 'rompe' lo stallo iniziale.",
         "regola": "C apre la strada.",
         "trabocchetti": ["per primo"],
@@ -1111,6 +1251,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo A transita subito dopo il veicolo C",
         "risposta": True,
+        "riassunto": "Figura → A subito dopo C?",
         "spiegazione": "Una volta che il veicolo C ha attraversato l'incrocio, il veicolo A non ha più nessuno alla sua destra (C è passato) e può quindi procedere. Questo lo rende il secondo veicolo a transitare, subito dopo C.",
         "regola": "C libera A.",
         "immagine": "10bd26c00bf29a7c1767.jpg",
@@ -1118,6 +1259,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo E deve dare la precedenza ai veicoli R e L",
         "risposta": True,
+        "riassunto": "Figura → E cede a R e L?",
         "spiegazione": "Nell'ordine di transito C, A, L, R, E, il veicolo E è l'ultimo a passare. Questo significa che deve attendere che tutti gli altri veicoli (C, A, L, R) abbiano liberato l'incrocio, inclusi R e L. Quindi, E deve dare la precedenza a R e L.",
         "regola": "E è l'ultimo, aspetta tutti.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -1126,6 +1268,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo A transita prima del veicolo L",
         "risposta": True,
+        "riassunto": "Figura → A prima di L?",
         "spiegazione": "Analizzando l'ordine di transito C, A, L, R, E, si vede chiaramente che il veicolo A transita come secondo, mentre il veicolo L transita come terzo. Quindi, A passa prima di L.",
         "regola": "A precede L.",
         "immagine": "10bd26c00bf29a7c1767.jpg",
@@ -1133,6 +1276,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo L transita prima del veicolo R",
         "risposta": True,
+        "riassunto": "Figura → L prima di R?",
         "spiegazione": "Secondo l'ordine di transito C, A, L, R, E, il veicolo L transita come terzo, mentre il veicolo R transita come quarto. Di conseguenza, L passa prima di R.",
         "regola": "L precede R.",
         "trabocchetti": ["prima del"],
@@ -1141,6 +1285,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo L transita dopo il veicolo A",
         "risposta": True,
+        "riassunto": "Figura → L dopo A?",
         "spiegazione": "Nell'ordine di transito C, A, L, R, E, il veicolo A transita come secondo e il veicolo L transita come terzo. Questo significa che L passa dopo A.",
         "regola": "L segue A.",
         "immagine": "10bd26c00bf29a7c1767.jpg",
@@ -1148,6 +1293,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo E deve dare la precedenza al veicolo A",
         "risposta": False,
+        "riassunto": "Figura → E cede ad A?",
         "spiegazione": "Il veicolo A sta svoltando a sinistra, mentre il veicolo E procede dritto. Secondo la regola generale della precedenza, un veicolo che svolta a sinistra deve dare la precedenza ai veicoli provenienti dalla direzione opposta che vanno dritto o svoltano a destra. Quindi, è il veicolo A che deve dare la precedenza a E, non il contrario. Per questo motivo, l'affermazione che E deve dare la precedenza ad A è FALSA.",
         "regola": "Svolta a sinistra (A) cede a dritto (E).",
         "trabocchetti": ["deve dare la precedenza"],
@@ -1156,6 +1302,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura i veicoli devono transitare nel seguente ordine: E, C, A, L, R",
         "risposta": False,
+        "riassunto": "Figura → ordine E, C, A, L, R?",
         "spiegazione": "L'ordine corretto di transito per risolvere lo stallo in questo incrocio è C, A, L, R, E. L'ordine proposto (E, C, A, L, R) è diverso e quindi sbagliato.",
         "regola": "Ricorda C-A-L-R-E, non E-C-A-L-R.",
         "trabocchetti": ["seguente ordine"],
@@ -1164,6 +1311,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo A deve attendere il passaggio del veicolo E",
         "risposta": False,
+        "riassunto": "Figura → A attende E?",
         "spiegazione": "Secondo l'ordine di transito C, A, L, R, E, il veicolo A transita come secondo, mentre il veicolo E transita per ultimo. Questo significa che A passa molto prima di E e non deve attendere il suo passaggio.",
         "regola": "A precede E.",
         "immagine": "10bd26c00bf29a7c1767.jpg",
@@ -1171,6 +1319,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura qualunque veicolo può impegnare l'incrocio e fermarsi al centro di esso",
         "risposta": False,
+        "riassunto": "Figura → chiunque può fermarsi al centro?",
         "spiegazione": "È vietato impegnare un incrocio se non si ha la certezza di poterlo sgomberare completamente. Fermarsi al centro dell'incrocio blocca il traffico e crea pericolo. Bisogna sempre attendere di avere spazio sufficiente per attraversare.",
         "regola": "Non bloccare l'incrocio!",
         "trabocchetti": ["qualunque veicolo"],
@@ -1179,6 +1328,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura i veicoli C e R transitano contemporaneamente dopo il passaggio del veicolo A",
         "risposta": False,
+        "riassunto": "Figura → C e R insieme dopo A?",
         "spiegazione": "L'ordine di transito è C, A, L, R, E. Questo significa che C transita per primo, A transita per secondo e R transita per quarto. Non solo C e R non transitano contemporaneamente, ma C transita prima di A, e R transita dopo A. Quindi l'affermazione è FALSA.",
         "regola": "C, A, L, R, E è una sequenza, non contemporaneità.",
         "trabocchetti": ["contemporaneamente", "dopo il passaggio del veicolo A"],
@@ -1187,6 +1337,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli disimpegnano l'incrocio nel seguente ordine: A, E, V, H, C",
         "risposta": True,
+        "riassunto": "Figura → ordine A, E, V, H, C?",
         "spiegazione": "Il veicolo A non ha nessun altro veicolo alla sua destra, quindi passa per primo. Dopo che A ha liberato l'incrocio, gli altri veicoli (E, V, H, C) seguono un ordine specifico: prima E, poi V, poi H, e infine C. Questo significa che E ha la precedenza su V, V su H e H su C.",
         "regola": "A è libero, poi E, V, H, C in sequenza.",
         "trabocchetti": ["disimpegnano l"],
@@ -1195,6 +1346,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo V ha la precedenza sul veicolo H",
         "risposta": True,
+        "riassunto": "Figura → V precede H?",
         "spiegazione": "Secondo l'ordine di passaggio corretto per questo incrocio (A, E, V, H, C), il veicolo V passa prima del veicolo H. Quindi, V ha la precedenza su H.",
         "regola": "V prima di H.",
         "trabocchetti": ["ha la precedenza su"],
@@ -1203,6 +1355,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo C deve dare la precedenza al veicolo H",
         "risposta": True,
+        "riassunto": "Figura → C cede a H?",
         "spiegazione": "Secondo l'ordine di passaggio corretto (A, E, V, H, C), il veicolo H passa prima del veicolo C. Per questo motivo, C deve aspettare che H sia passato, cioè deve dargli la precedenza.",
         "regola": "C aspetta H.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -1211,6 +1364,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo E passa prima del veicolo H",
         "risposta": True,
+        "riassunto": "Figura → E prima di H?",
         "spiegazione": "Analizzando l'ordine corretto (A, E, V, H, C), vediamo che E passa prima di V, e V passa prima di H. Di conseguenza, il veicolo E passa prima del veicolo H.",
         "regola": "E -> V -> H.",
         "trabocchetti": ["passa prima"],
@@ -1219,6 +1373,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo H passa dopo i veicoli A, E, V",
         "risposta": True,
+        "riassunto": "Figura → H dopo A, E, V?",
         "spiegazione": "L'ordine di passaggio stabilito è A, E, V, H, C. Questo significa che il veicolo H passa solo dopo che A, E e V hanno già attraversato l'incrocio.",
         "regola": "H è l'ultimo tra A, E, V, H.",
         "trabocchetti": ["passa dopo"],
@@ -1227,6 +1382,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo A passa per primo",
         "risposta": True,
+        "riassunto": "Figura → A per primo?",
         "spiegazione": "Il veicolo A non ha nessun altro veicolo alla sua destra che debba dargli la precedenza. Per la regola generale della precedenza a destra, A è il primo a poter attraversare l'incrocio.",
         "regola": "A è libero, va per primo.",
         "trabocchetti": ["passa per primo"],
@@ -1235,6 +1391,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli disimpegnano l'incrocio nel seguente ordine: A, H, C, E, V",
         "risposta": False,
+        "riassunto": "Figura → ordine A, H, C, E, V?",
         "spiegazione": "L'ordine corretto di passaggio per questo incrocio è A, E, V, H, C. L'ordine proposto (A, H, C, E, V) è diverso, in particolare la sequenza di H, C, E, V è sbagliata rispetto all'ordine corretto.",
         "regola": "L'ordine è A, E, V, H, C, non A, H, C, E, V.",
         "trabocchetti": ["nel seguente ordine"],
@@ -1243,6 +1400,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli disimpegnano l'incrocio nel seguente ordine: A, E, C, V, H",
         "risposta": False,
+        "riassunto": "Figura → ordine A, E, C, V, H?",
         "spiegazione": "L'ordine corretto di passaggio è A, E, V, H, C. L'ordine proposto (A, E, C, V, H) è sbagliato perché il veicolo C non passa prima di V e H, ma dopo di loro.",
         "regola": "L'ordine è A, E, V, H, C, non A, E, C, V, H.",
         "trabocchetti": ["nel seguente ordine"],
@@ -1251,6 +1409,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo V deve attendere che siano transitati i veicoli A, E, H",
         "risposta": False,
+        "riassunto": "Figura → V attende A, E, H?",
         "spiegazione": "Secondo l'ordine corretto (A, E, V, H, C), il veicolo V passa dopo A ed E, ma *prima* di H. Quindi, V non deve attendere H, ma è H che deve attendere V.",
         "regola": "V passa prima di H.",
         "trabocchetti": ["deve attendere"],
@@ -1259,6 +1418,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli A, V e C passano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → A, V, C insieme?",
         "spiegazione": "In un incrocio con regole di precedenza, i veicoli non possono passare contemporaneamente se le loro traiettorie si incrociano. Devono rispettare un ordine preciso per evitare incidenti.",
         "regola": "Mai contemporaneamente se c'è conflitto.",
         "trabocchetti": ["contemporaneamente"],
@@ -1267,6 +1427,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo V passa dopo i veicoli C e H",
         "risposta": False,
+        "riassunto": "Figura → V dopo C e H?",
         "spiegazione": "L'ordine corretto di passaggio è A, E, V, H, C. Questo significa che il veicolo V passa prima di H e C, non dopo di loro.",
         "regola": "V passa prima di H e C.",
         "trabocchetti": ["passa dopo"],
@@ -1275,6 +1436,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli L e H passano contemporaneamente per primi",
         "risposta": True,
+        "riassunto": "Figura → L e H insieme per primi?",
         "spiegazione": "I veicoli L e H non hanno il segnale di \"Dare precedenza\", quindi passano prima di B e O. Le loro traiettorie non si incrociano, quindi possono passare nello stesso momento senza ostacolarsi.",
         "regola": "L e H: strade libere, passano insieme.",
         "trabocchetti": ["contemporaneamente"],
@@ -1283,6 +1445,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli passano nel seguente ordine: L e H, B, O",
         "risposta": True,
+        "riassunto": "Figura → ordine L e H, B, O?",
         "spiegazione": "L e H passano per primi perché non hanno segnali di \"Dare precedenza\" e le loro strade non si incrociano. Poi passa B, che deve dare precedenza a L e H, ma non ha nessuno alla sua destra tra i veicoli rimasti (O). Infine passa O, che deve dare precedenza a L, H e anche a B.",
         "regola": "L&H (insieme), poi B, poi O. O è sempre l'ultimo.",
         "trabocchetti": ["nel seguente ordine"],
@@ -1291,6 +1454,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza, nell'incrocio rappresentato in figura, il veicolo B transita dopo i veicoli L e H",
         "risposta": True,
+        "riassunto": "Figura → B dopo L e H?",
         "spiegazione": "Il veicolo B ha il segnale di \"Dare precedenza\", quindi deve aspettare che passino i veicoli L e H, che non hanno questo segnale e quindi hanno la precedenza.",
         "regola": "\"Dare precedenza\" = aspetti chi non ce l'ha.",
         "trabocchetti": ["dopo"],
@@ -1299,6 +1463,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo O transita per ultimo",
         "risposta": True,
+        "riassunto": "Figura → O per ultimo?",
         "spiegazione": "Il veicolo O ha il segnale di \"Dare precedenza\" e deve cedere il passo a tutti gli altri veicoli (L, H e B). Per questo motivo, transita per ultimo.",
         "regola": "O ha \"Dare precedenza\" e L alla destra: ultimo.",
         "trabocchetti": ["per ultimo"],
@@ -1307,6 +1472,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo B transita prima del veicolo O e dopo i veicoli L e H",
         "risposta": True,
+        "riassunto": "Figura → B prima di O, dopo L e H?",
         "spiegazione": "Il veicolo B ha il segnale di \"Dare precedenza\", quindi passa dopo L e H. Tra B e O, B passa prima perché, una volta che L e H sono passati, B non ha più ostacoli alla sua destra, mentre O deve ancora aspettare B.",
         "regola": "B: dopo L&H, prima di O.",
         "trabocchetti": ["prima del", "dopo i"],
@@ -1315,6 +1481,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo O deve dare la precedenza a tutti gli altri veicoli",
         "risposta": True,
+        "riassunto": "Figura → O cede a tutti?",
         "spiegazione": "Il veicolo O ha il segnale di \"Dare precedenza\", il che significa che deve cedere il passo a tutti gli altri veicoli che si trovano nell'incrocio, cioè L, H e B.",
         "regola": "O con \"Dare precedenza\" = cede a tutti.",
         "trabocchetti": ["a tutti gli altri veicoli"],
@@ -1323,6 +1490,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo O transita prima del veicolo H, ma dopo il veicolo L",
         "risposta": False,
+        "riassunto": "Figura → O prima di H, dopo L?",
         "spiegazione": "Il veicolo O ha il segnale di \"Dare precedenza\" e passa per ultimo. Il veicolo H, invece, passa tra i primi (con L). Quindi O non può transitare prima di H.",
         "regola": "O è ultimo, H è primo: O non può essere \"prima di H\".",
         "trabocchetti": ["prima del"],
@@ -1331,6 +1499,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo O transita prima del veicolo H, ma dopo il veicolo B",
         "risposta": False,
+        "riassunto": "Figura → O prima di H, dopo B?",
         "spiegazione": "Il veicolo O ha il segnale di \"Dare precedenza\" e passa per ultimo. Il veicolo H, invece, passa tra i primi. Quindi O non può transitare prima di H.",
         "regola": "O è ultimo, H è primo: O non può essere \"prima di H\".",
         "trabocchetti": ["prima del"],
@@ -1339,6 +1508,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo B transita per primo",
         "risposta": False,
+        "riassunto": "Figura → B per primo?",
         "spiegazione": "Il veicolo B ha il segnale di \"Dare precedenza\", quindi deve aspettare che passino L e H. Per questo motivo, B non può transitare per primo.",
         "regola": "B ha \"Dare precedenza\" = non è mai primo.",
         "trabocchetti": ["per primo"],
@@ -1347,6 +1517,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo H transita dopo il veicolo O",
         "risposta": False,
+        "riassunto": "Figura → H dopo O?",
         "spiegazione": "Il veicolo H passa tra i primi (con L), mentre il veicolo O passa per ultimo. Quindi H transita molto prima di O, non dopo.",
         "regola": "H è primo, O è ultimo: H non è \"dopo O\".",
         "trabocchetti": ["dopo il"],
@@ -1355,6 +1526,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli passano nel seguente ordine: B, L, O, H",
         "risposta": False,
+        "riassunto": "Figura → ordine B, L, O, H?",
         "spiegazione": "L'ordine corretto di passaggio è L e H (insieme), poi B, e infine O. L'ordine proposto (B, L, O, H) è completamente sbagliato, perché B e O hanno il segnale di \"Dare precedenza\" e quindi non possono passare per primi, e H non è l'ultimo.",
         "regola": "L&H (insieme), B, O. Qualsiasi altro ordine è FALSO.",
         "trabocchetti": ["nel seguente ordine"],
@@ -1363,6 +1535,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo O impegna l'incrocio per primo e si ferma al centro di esso",
         "risposta": False,
+        "riassunto": "Figura → O entra per primo e si ferma al centro?",
         "spiegazione": "Il veicolo O ha il segnale di \"Dare precedenza\" e transita per ultimo, non per primo. Inoltre, non deve fermarsi al centro dell'incrocio, ma attendere fuori dall'incrocio finché non può attraversare in sicurezza.",
         "regola": "O è ultimo, non primo; non si ferma al centro.",
         "trabocchetti": ["per primo", "si ferma al centro di esso"],
@@ -1371,6 +1544,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo S transita prima del veicolo R",
         "risposta": True,
+        "riassunto": "Figura → S prima di R?",
         "spiegazione": "Il veicolo S non ha il segnale di \"Dare precedenza\", mentre il veicolo R sì. Questo significa che S ha la precedenza su R. Inoltre, S è il primo veicolo a transitare in assoluto nell'incrocio.",
         "regola": "S senza triangolo, R con triangolo: S passa prima.",
         "trabocchetti": ["prima del veicolo R"],
@@ -1379,6 +1553,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo S transita prima di tutti gli altri veicoli",
         "risposta": True,
+        "riassunto": "Figura → S prima di tutti?",
         "spiegazione": "Il veicolo S non ha il segnale di \"Dare precedenza\" e non ha nessun veicolo alla sua destra che abbia la precedenza. Per questo motivo, S è il primo a poter attraversare l'incrocio, prima di tutti gli altri.",
         "regola": "S è libero a destra e senza segnale: passa per primo.",
         "trabocchetti": ["prima di tutti gli altri veicoli"],
@@ -1387,6 +1562,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli transitano nell'ordine: S, A, E, R",
         "risposta": True,
+        "riassunto": "Figura → ordine S, A, E, R?",
         "spiegazione": "L'ordine corretto è: S (non ha segnale e non ha nessuno a destra), poi A (dopo S non ha più nessuno a destra e ha precedenza su E e R), poi E (ha il segnale ma R, che è alla sua destra, deve svoltare a sinistra e quindi gli dà la precedenza), e infine R (ha il segnale e deve dare precedenza a E).",
         "regola": "Senza triangolo e libero a destra (S), poi A, poi E (diritto), infine R (svolta sinistra).",
         "trabocchetti": ["nell"],
@@ -1395,6 +1571,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A deve dare la precedenza al veicolo S",
         "risposta": True,
+        "riassunto": "Figura → A cede a S?",
         "spiegazione": "Il veicolo S si trova alla destra del veicolo A e non ha il segnale di \"Dare precedenza\". Per la regola generale della precedenza a destra, A deve dare la precedenza a S.",
         "regola": "S è a destra di A: A dà precedenza a S.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -1403,6 +1580,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R transita per ultimo",
         "risposta": True,
+        "riassunto": "Figura → R per ultimo?",
         "spiegazione": "Il veicolo R ha il segnale di \"Dare precedenza\" e, tra i veicoli che devono dare precedenza (E e R), R deve anche dare precedenza a E perché E va diritto mentre R svolta a sinistra. Per questo R è l'ultimo a passare.",
         "regola": "R ha il triangolo e svolta a sinistra: passa per ultimo.",
         "trabocchetti": ["per ultimo"],
@@ -1411,6 +1589,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo E deve attendere il transito del veicolo R",
         "risposta": False,
+        "riassunto": "Figura → E attende R?",
         "spiegazione": "Il veicolo E va diritto, mentre il veicolo R svolta a sinistra. Anche se entrambi hanno il segnale di \"Dare precedenza\", chi svolta a sinistra (R) deve dare precedenza a chi va diritto (E) provenendo dalla direzione opposta. Quindi E passa prima di R.",
         "regola": "E va diritto, R svolta a sinistra: E non aspetta R.",
         "trabocchetti": ["deve attendere"],
@@ -1419,6 +1598,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R impegna per primo l'incrocio e si ferma al centro di esso",
         "risposta": False,
+        "riassunto": "Figura → R entra per primo e si ferma al centro?",
         "spiegazione": "Il veicolo R ha il segnale di \"Dare precedenza\" e transita per ultimo. Non può quindi impegnare l'incrocio per primo. Inoltre, fermarsi al centro dell'incrocio senza motivo è pericoloso e non è una norma di precedenza.",
         "regola": "R è l'ultimo, non il primo; non si ferma al centro.",
         "trabocchetti": ["per primo", "si ferma al centro di esso"],
@@ -1427,6 +1607,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A deve transitare dopo il veicolo E",
         "risposta": False,
+        "riassunto": "Figura → A dopo E?",
         "spiegazione": "Il veicolo A non ha il segnale di \"Dare precedenza\", mentre il veicolo E sì. Questo significa che A ha la precedenza su E. Quindi A transita prima di E, non dopo.",
         "regola": "A senza triangolo, E con triangolo: A passa prima di E.",
         "trabocchetti": ["dopo il veicolo E"],
@@ -1435,6 +1616,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A deve transitare per ultimo",
         "risposta": False,
+        "riassunto": "Figura → A per ultimo?",
         "spiegazione": "Il veicolo A transita dopo S, ma prima di E e R. Non è quindi l'ultimo a transitare. L'ultimo è il veicolo R.",
         "regola": "A è il secondo, non l'ultimo.",
         "trabocchetti": ["per ultimo"],
@@ -1443,6 +1625,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli transitano nell'ordine: E, R, S, A",
         "risposta": False,
+        "riassunto": "Figura → ordine E, R, S, A?",
         "spiegazione": "L'ordine corretto di transito è S, A, E, R. L'ordine proposto (E, R, S, A) è completamente sbagliato, in quanto mette per primi veicoli che hanno il segnale di \"Dare precedenza\".",
         "regola": "L'ordine è S, A, E, R. Ricorda i triangoli!",
         "trabocchetti": ["nell"],
@@ -1451,6 +1634,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A deve attendere che siano transitati i veicoli S ed E",
         "risposta": False,
+        "riassunto": "Figura → A attende S ed E?",
         "spiegazione": "Il veicolo A deve attendere solo il veicolo S, perché S ha la precedenza su A. Il veicolo E, invece, deve dare la precedenza ad A, quindi A non deve aspettare E.",
         "regola": "A aspetta S, ma non E.",
         "immagine": "2bdf09cae53b8ce5a783.jpg",
@@ -1458,6 +1642,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo A deve attendere il transito dei veicoli C ed R",
         "risposta": True,
+        "riassunto": "Figura → A attende C ed R?",
         "spiegazione": "Il veicolo A ha il segnale 'Dare precedenza', quindi deve aspettare tutti i veicoli che non hanno questo segnale. C ed R non hanno il segnale 'Dare precedenza', quindi A deve aspettare che passino loro.",
         "regola": "'Dare precedenza' = Aspetta tutti gli altri.",
         "trabocchetti": ["deve attendere"],
@@ -1466,6 +1651,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura i veicoli transitano nell'ordine: C, R, A, H",
         "risposta": True,
+        "riassunto": "Figura → ordine C, R, A, H?",
         "spiegazione": "L'ordine corretto di transito è C per primo, poi R, poi A e infine H. C e R passano prima perché non hanno il segnale 'Dare precedenza'. Tra C e R, in questo tipo di incrocio, C passa prima di R. Poi, tra A e H (che hanno entrambi il 'Dare precedenza'), A passa prima di H perché H ha A alla sua destra.",
         "regola": "C, R, A, H: Ricorda l'ordine specifico per questo incrocio.",
         "trabocchetti": ["nell"],
@@ -1474,6 +1660,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo H deve attendere il transito dei veicoli C, R, A",
         "risposta": True,
+        "riassunto": "Figura → H attende C, R, A?",
         "spiegazione": "Il veicolo H ha il segnale 'Dare precedenza', quindi deve aspettare tutti gli altri veicoli che non hanno questo segnale (C e R) e anche il veicolo A, che pur avendo il 'Dare precedenza' passa prima di H perché H lo ha alla sua destra.",
         "regola": "H ha 'Dare precedenza' e A alla destra = H è l'ultimo.",
         "trabocchetti": ["deve attendere"],
@@ -1482,6 +1669,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo H deve transitare per ultimo",
         "risposta": True,
+        "riassunto": "Figura → H per ultimo?",
         "spiegazione": "Il veicolo H ha il segnale 'Dare precedenza' e, tra i veicoli che devono dare precedenza, è quello che ha un altro veicolo (A) alla sua destra. Per questo motivo, H transita per ultimo.",
         "regola": "H con 'Dare precedenza' e A a destra = Ultimo.",
         "trabocchetti": ["per ultimo"],
@@ -1490,6 +1678,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo R deve attendere il transito del veicolo C",
         "risposta": True,
+        "riassunto": "Figura → R attende C?",
         "spiegazione": "In questo specifico incrocio, secondo la logica dei quiz, il veicolo C (che svolta a sinistra e non ha segnali di precedenza) transita prima del veicolo R (che va dritto e non ha segnali di precedenza). Quindi R deve aspettare C.",
         "regola": "C prima di R (eccezione quiz).",
         "trabocchetti": ["deve attendere"],
@@ -1498,6 +1687,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo C transita per primo",
         "risposta": True,
+        "riassunto": "Figura → C per primo?",
         "spiegazione": "Il veicolo C non ha segnali di 'Dare precedenza' e, in questo tipo di incrocio, è considerato il primo a poter impegnare l'intersezione, anche se svolta a sinistra.",
         "regola": "C senza segnali = Primo.",
         "trabocchetti": ["per primo"],
@@ -1506,6 +1696,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura i veicoli transitano nell'ordine: C, R, H, A",
         "risposta": False,
+        "riassunto": "Figura → ordine C, R, H, A?",
         "spiegazione": "L'ordine corretto è C, R, A, H. Questa affermazione è falsa perché inverte l'ordine tra H e A. Il veicolo A passa prima di H perché H ha A alla sua destra (e entrambi hanno il 'Dare precedenza').",
         "regola": "A prima di H (H ha A a destra).",
         "trabocchetti": ["nell"],
@@ -1514,6 +1705,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo C deve attendere il transito del veicolo H",
         "risposta": False,
+        "riassunto": "Figura → C attende H?",
         "spiegazione": "Il veicolo C non ha il segnale 'Dare precedenza', mentre il veicolo H sì. Per questo, C ha la precedenza su H e non deve aspettarlo.",
         "regola": "C senza segnale > H con segnale.",
         "trabocchetti": ["deve attendere"],
@@ -1522,6 +1714,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo A deve attendere il transito del veicolo H",
         "risposta": False,
+        "riassunto": "Figura → A attende H?",
         "spiegazione": "Entrambi i veicoli A e H hanno il segnale 'Dare precedenza'. Tuttavia, H ha il veicolo A alla sua destra, quindi H deve dare la precedenza ad A. Questo significa che A non deve aspettare H, ma è H che aspetta A.",
         "regola": "A prima di H (H ha A a destra).",
         "trabocchetti": ["deve attendere"],
@@ -1530,6 +1723,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo R deve attendere il transito dei veicoli H ed A",
         "risposta": False,
+        "riassunto": "Figura → R attende H e A?",
         "spiegazione": "Il veicolo R non ha il segnale 'Dare precedenza', mentre H ed A sì. Quindi R ha la precedenza su H ed A e non deve aspettarli.",
         "regola": "R senza segnale > H e A con segnale.",
         "trabocchetti": ["deve attendere"],
@@ -1538,6 +1732,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo C deve attendere il transito dei veicoli R, A, H",
         "risposta": False,
+        "riassunto": "Figura → C attende R, A, H?",
         "spiegazione": "Il veicolo C transita per primo. Non deve aspettare nessuno di questi veicoli. In particolare, non aspetta R (come visto prima), e non aspetta A e H perché questi hanno il segnale 'Dare precedenza'.",
         "regola": "C è il primo, non aspetta.",
         "trabocchetti": ["deve attendere"],
@@ -1546,6 +1741,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo R deve attendere il transito del veicolo H",
         "risposta": False,
+        "riassunto": "Figura → R attende H?",
         "spiegazione": "Il veicolo R non ha il segnale 'Dare precedenza', mentre il veicolo H sì. Quindi R ha la precedenza su H e non deve aspettarlo.",
         "regola": "R senza segnale > H con segnale.",
         "trabocchetti": ["deve attendere"],
@@ -1554,6 +1750,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo T transita per primo",
         "risposta": True,
+        "riassunto": "Figura → T per primo?",
         "spiegazione": "Il tram (veicolo T) ha sempre la precedenza su tutti gli altri veicoli, a meno che non ci siano segnali specifici (come un semaforo rosso o un segnale di stop) che indichino il contrario. In questo incrocio non ci sono, quindi il tram passa per primo.",
         "regola": "Tram = Re della strada.",
         "immagine": "c895c21a6ccf44d9ec4e.jpg",
@@ -1561,6 +1758,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A deve attendere il transito del veicolo O",
         "risposta": True,
+        "riassunto": "Figura → A attende O?",
         "spiegazione": "Dopo il tram, tra i veicoli O e A, il veicolo O ha la precedenza su A. Questo perché il veicolo A sta svoltando a sinistra e deve dare la precedenza ai veicoli che provengono dalla sua destra o che vanno dritto o svoltano a destra dalla direzione opposta. Quindi, A deve aspettare O.",
         "regola": "Svolta a sinistra = aspetta chi va dritto o a destra.",
         "trabocchetti": ["attendere"],
@@ -1569,6 +1767,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo O deve attendere il transito del veicolo T",
         "risposta": True,
+        "riassunto": "Figura → O attende T?",
         "spiegazione": "Il veicolo T è un tram e, come abbiamo detto, ha la precedenza su tutti gli altri veicoli. Quindi, il veicolo O deve aspettare che il tram T sia passato prima di poter transitare.",
         "regola": "Tram prima di tutti.",
         "trabocchetti": ["Deve attendere"],
@@ -1577,6 +1776,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli transitano nell'ordine: T, O, A",
         "risposta": True,
+        "riassunto": "Figura → ordine T, O, A?",
         "spiegazione": "L'ordine corretto è: prima il tram (T) perché ha sempre la precedenza. Poi il veicolo O, perché ha la precedenza sul veicolo A (che svolta a sinistra). Infine, il veicolo A.",
         "regola": "T-O-A: Tram, poi chi ha la destra libera/svolta a destra, poi chi svolta a sinistra.",
         "trabocchetti": ["Nell"],
@@ -1585,6 +1785,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo O transita prima del veicolo A",
         "risposta": True,
+        "riassunto": "Figura → O prima di A?",
         "spiegazione": "Dopo il tram, tra O e A, il veicolo O transita per primo. Questo perché A sta svoltando a sinistra e deve dare la precedenza a O, che viene dalla sua destra e svolta a destra.",
         "regola": "Svolta a sinistra aspetta chi va dritto/destra.",
         "trabocchetti": ["Prima del"],
@@ -1593,6 +1794,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo T deve attendere il transito del veicolo O",
         "risposta": False,
+        "riassunto": "Figura → T attende O?",
         "spiegazione": "Falso. Il tram (veicolo T) ha la precedenza su tutti gli altri veicoli, incluso il veicolo O. Quindi, è il veicolo O che deve aspettare T, non il contrario.",
         "regola": "Tram non aspetta nessuno (salvo semaforo/stop).",
         "trabocchetti": ["deve attendere"],
@@ -1601,6 +1803,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo O deve attendere il transito del veicolo A",
         "risposta": False,
+        "riassunto": "Figura → O attende A?",
         "spiegazione": "Falso. Dopo il tram, il veicolo O transita prima del veicolo A. Il veicolo A, svoltando a sinistra, deve dare la precedenza a O. Quindi, O non deve aspettare A.",
         "regola": "Chi svolta a sinistra (A) aspetta chi va dritto/destra (O).",
         "trabocchetti": ["deve attendere"],
@@ -1609,6 +1812,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo T deve attendere il transito del veicolo A",
         "risposta": False,
+        "riassunto": "Figura → T attende A?",
         "spiegazione": "Falso. Il tram (veicolo T) ha la precedenza assoluta su tutti gli altri veicoli, compreso il veicolo A. Non deve aspettare nessuno dei due.",
         "regola": "Tram = sempre primo.",
         "trabocchetti": ["deve attendere"],
@@ -1617,6 +1821,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli transitano nell'ordine: T, A, O",
         "risposta": False,
+        "riassunto": "Figura → ordine T, A, O?",
         "spiegazione": "Falso. L'ordine corretto è T, O, A. Il veicolo O transita prima di A perché A sta svoltando a sinistra e deve dare la precedenza a O. L'ordine proposto è sbagliato.",
         "regola": "Ricorda l'ordine esatto: T-O-A.",
         "trabocchetti": ["nell"],
@@ -1625,6 +1830,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli A e T transitano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → A e T insieme?",
         "spiegazione": "Falso. Il tram (T) transita per primo. Il veicolo A transita per ultimo, dopo O. Non possono transitare contemporaneamente perché il tram ha la precedenza su A e O.",
         "regola": "Uno alla volta, in ordine di precedenza.",
         "trabocchetti": ["contemporaneamente"],
@@ -1633,6 +1839,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo B deve dare la precedenza a tutti gli altri veicoli",
         "risposta": True,
+        "riassunto": "Figura → B cede a tutti?",
         "spiegazione": "Il veicolo B ha il segnale di \"Dare precedenza\" (il triangolo rovesciato) e sta svoltando a sinistra. Questo significa che deve aspettare che tutti gli altri veicoli (T, G, P) passino prima di lui. Quindi, l'affermazione è VERA.",
         "regola": "B ha il triangolo rovesciato e gira a sinistra: aspetta tutti.",
         "trabocchetti": ["a tutti gli altri veicoli"],
@@ -1641,6 +1848,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo T passa per primo",
         "risposta": True,
+        "riassunto": "Figura → T per primo?",
         "spiegazione": "Il veicolo T è un tram. I tram hanno quasi sempre la precedenza, a meno che non ci siano segnali specifici (come un semaforo rosso o un segnale di stop) che dicano il contrario. In questo incrocio, il tram T non ha il segnale di \"Dare precedenza\", quindi passa per primo. L'affermazione è VERA.",
         "regola": "Tram senza segnale: passa per primo.",
         "trabocchetti": ["passa per primo"],
@@ -1649,6 +1857,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo B transita per ultimo",
         "risposta": True,
+        "riassunto": "Figura → B per ultimo?",
         "spiegazione": "Il veicolo B ha il segnale di \"Dare precedenza\" e, tra i veicoli che devono cedere, è anche quello che svolta a sinistra. Questo lo rende l'ultimo a passare, dopo il tram T, il veicolo G e il veicolo P. L'affermazione è VERA.",
         "regola": "B con triangolo e svolta a sinistra: ultimo.",
         "trabocchetti": ["transita per ultimo"],
@@ -1657,6 +1866,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo P deve dare la precedenza ai veicoli T e G",
         "risposta": True,
+        "riassunto": "Figura → P cede a T e G?",
         "spiegazione": "Il veicolo P ha il segnale di \"Dare precedenza\". Questo significa che deve aspettare che passino i veicoli che non hanno questo segnale o che hanno la precedenza per altre regole. In questo caso, T (il tram) e G (che non ha segnali di precedenza e va dritto) passano prima di P. L'affermazione è VERA.",
         "regola": "P ha il triangolo: cede a T e G.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -1665,6 +1875,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura i veicoli transitano nell'ordine: T, G, P, B",
         "risposta": True,
+        "riassunto": "Figura → ordine T, G, P, B?",
         "spiegazione": "L'ordine corretto di transito è: 1. Il tram T (ha la precedenza generale). 2. Il veicolo G (non ha segnali di precedenza e non deve cedere a nessuno). 3. Il veicolo P (ha il \"Dare precedenza\" ma ha la destra libera rispetto a B). 4. Il veicolo B (ha il \"Dare precedenza\" e svolta a sinistra). L'ordine T, G, P, B è quindi VERO.",
         "regola": "Ordine: Tram, poi chi non cede, poi chi cede ma ha la destra libera, infine chi cede e gira a sinistra.",
         "trabocchetti": ["nell"],
@@ -1673,6 +1884,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo G deve attendere il transito del veicolo T",
         "risposta": True,
+        "riassunto": "Figura → G attende T?",
         "spiegazione": "Il veicolo T è un tram e ha la precedenza su tutti gli altri veicoli, incluso il veicolo G. Anche se G non ha il segnale di \"Dare precedenza\", deve comunque aspettare che il tram T passi. L'affermazione è VERA.",
         "regola": "G aspetta il tram T.",
         "trabocchetti": ["deve attendere"],
@@ -1681,6 +1893,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo T deve attendere il transito del veicolo G",
         "risposta": False,
+        "riassunto": "Figura → T attende G?",
         "spiegazione": "Il veicolo T è un tram e ha la precedenza su tutti gli altri veicoli, incluso il veicolo G. Quindi, è G che deve aspettare T, non il contrario. Il tram T passa prima di G. L'affermazione è FALSA.",
         "regola": "Tram non aspetta auto.",
         "trabocchetti": ["deve attendere"],
@@ -1689,6 +1902,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo B impegna per primo l'incrocio e deve fermarsi al centro di esso",
         "risposta": False,
+        "riassunto": "Figura → B entra per primo e si ferma al centro?",
         "spiegazione": "Il veicolo B ha il segnale di \"Dare precedenza\" e transita per ultimo, non per primo. Inoltre, non deve fermarsi al centro dell'incrocio, ma deve dare la precedenza prima di entrarci, se necessario. L'affermazione è FALSA.",
         "regola": "B è l'ultimo, non il primo e non si ferma al centro.",
         "trabocchetti": ["deve fermarsi al centro di esso"],
@@ -1697,6 +1911,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo T impegna per primo l'incrocio, ma deve fermarsi al centro di esso",
         "risposta": False,
+        "riassunto": "Figura → T entra per primo ma si ferma al centro?",
         "spiegazione": "Il veicolo T (il tram) impegna l'incrocio per primo, questo è vero. Ma non deve fermarsi al centro dell'incrocio. Avendo la precedenza, il tram prosegue senza fermarsi, a meno di ostacoli o segnali specifici. L'affermazione è FALSA a causa della seconda parte.",
         "regola": "Tram passa per primo, non si ferma al centro.",
         "immagine": "7fe49d6ccab0fe2ba37e.jpg",
@@ -1704,6 +1919,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura i veicoli transitano nell'ordine: T, P, G, B",
         "risposta": False,
+        "riassunto": "Figura → ordine T, P, G, B?",
         "spiegazione": "L'ordine corretto di transito è T, G, P, B. L'affermazione propone l'ordine T, P, G, B, scambiando la posizione di P e G. Il veicolo G passa prima di P perché G non ha il segnale di \"Dare precedenza\", mentre P sì. L'affermazione è FALSA.",
         "regola": "G prima di P.",
         "trabocchetti": ["nell"],
@@ -1712,6 +1928,7 @@ QUESTIONS = [
     {
         "domanda": "Nella situazione rappresentata in figura il veicolo P transita subito dopo il veicolo T",
         "risposta": False,
+        "riassunto": "Figura → P subito dopo T?",
         "spiegazione": "Dopo il veicolo T (il tram), transita il veicolo G. Solo dopo G, transita il veicolo P. Quindi P non passa \"subito dopo\" T, perché c'è G in mezzo. L'affermazione è FALSA.",
         "regola": "Dopo T c'è G, non P.",
         "immagine": "7fe49d6ccab0fe2ba37e.jpg",
@@ -1719,6 +1936,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo P deve dare la precedenza ai veicoli T e G",
         "risposta": True,
+        "riassunto": "Figura → P cede a T e G?",
         "spiegazione": "Il veicolo P ha il segnale di 'Dare precedenza'. Questo significa che deve fermarsi o rallentare e far passare gli altri veicoli che non hanno questo segnale o che sono tram. Il tram (T) ha sempre la precedenza. Il veicolo G non ha il segnale di 'Dare precedenza', quindi ha la precedenza su P. Per questo, P deve dare la precedenza sia al tram T che al veicolo G.",
         "regola": "Segnale 'Dare precedenza' = cedi a tram e a chi non ha il segnale.",
         "immagine": "7fe49d6ccab0fe2ba37e.jpg",
@@ -1726,6 +1944,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo P ha la precedenza sul veicolo B",
         "risposta": True,
+        "riassunto": "Figura → P precede B?",
         "spiegazione": "Sia il veicolo P che il veicolo B hanno il segnale di 'Dare precedenza'. Dopo che sono passati il tram (T) e il veicolo G (che hanno la precedenza su entrambi), dobbiamo decidere chi passa tra P e B. In questo caso, P va dritto e B gira a sinistra. La regola dice che, a parità di condizioni (entrambi con 'Dare precedenza'), chi va dritto ha la precedenza su chi gira. Inoltre, P si trova alla destra di B rispetto alla loro traiettoria finale nell'incrocio. Quindi, P ha la precedenza su B.",
         "regola": "Tra due 'Dare precedenza', chi va dritto e da destra passa prima.",
         "immagine": "7fe49d6ccab0fe2ba37e.jpg",
@@ -1733,6 +1952,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo P transita dopo il tram e il veicolo G, ma prima del veicolo B",
         "risposta": True,
+        "riassunto": "Figura → P dopo tram e G, prima di B?",
         "spiegazione": "Analizziamo l'ordine di passaggio: 1. Il tram (T) ha sempre la precedenza. 2. Il veicolo G non ha il segnale di 'Dare precedenza', mentre P e B sì, quindi G passa dopo T. 3. Tra P e B, entrambi con 'Dare precedenza', P va dritto e B gira a sinistra, quindi P passa prima di B. L'ordine finale è T, poi G, poi P, e infine B. La frase dice che P passa dopo T e G, ma prima di B, ed è corretto.",
         "regola": "Ordine: Tram > G (senza segnale) > P (dritto) > B (gira).",
         "trabocchetti": ["e"],
@@ -1741,6 +1961,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo P transita contemporaneamente al veicolo B, ma dopo il tram",
         "risposta": False,
+        "riassunto": "Figura → P insieme a B dopo il tram?",
         "spiegazione": "La frase dice che P transita 'contemporaneamente' al veicolo B. Questo è falso. Come spiegato prima, P ha la precedenza su B (perché P va dritto e B gira a sinistra, e P è alla destra di B dopo aver ceduto a T e G). Quindi, P passa prima di B, non contemporaneamente. La parte 'dopo il tram' è corretta, ma 'contemporaneamente al veicolo B' rende l'intera affermazione falsa.",
         "regola": "Non 'contemporaneamente': P passa prima di B.",
         "trabocchetti": ["contemporaneamente"],
@@ -1749,6 +1970,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo P ha la precedenza su tutti i veicoli",
         "risposta": False,
+        "riassunto": "Figura → P precede tutti?",
         "spiegazione": "Il veicolo P ha il segnale di 'Dare precedenza'. Questo significa che deve cedere il passo ad altri veicoli, come il tram (T) e il veicolo G (che non ha il segnale di 'Dare precedenza'). Quindi, P non ha la precedenza su tutti i veicoli, ma solo su B. Per questo motivo, l'affermazione è falsa.",
         "regola": "'Tutti' è quasi sempre falso, controlla sempre i segnali.",
         "trabocchetti": ["tutti"],
@@ -1757,6 +1979,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo P deve dare la precedenza solo al veicolo proveniente dalla sua destra",
         "risposta": False,
+        "riassunto": "Figura → P cede solo a destra?",
         "spiegazione": "Il veicolo P ha il segnale di 'Dare precedenza'. Questo significa che deve cedere il passo a tutti i veicoli che non hanno questo segnale e ai tram. P deve dare la precedenza al tram (T) e al veicolo G (che viene dalla sua sinistra, ma non ha il segnale di 'Dare precedenza'). Quindi, P non deve dare la precedenza 'solo' al veicolo proveniente dalla sua destra, ma anche a T e G. L'affermazione è falsa.",
         "regola": "'Solo' è spesso falso: P cede a T e G, non solo a destra.",
         "trabocchetti": ["solo"],
@@ -1765,6 +1988,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo N deve attendere il transito del veicolo E",
         "risposta": True,
+        "riassunto": "Figura → N attende E?",
         "spiegazione": "Il veicolo N (autocarro) ha il veicolo E (auto bianca) alla sua destra. Secondo la regola generale della precedenza a destra, N deve dare la precedenza a E e quindi attendere il suo transito. Questo è VERO.",
         "regola": "Chi ha un veicolo a destra, aspetta. N ha E a destra, quindi N aspetta E.",
         "trabocchetti": ["deve attendere il transito"],
@@ -1773,6 +1997,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo E deve attendere il transito del veicolo L",
         "risposta": True,
+        "riassunto": "Figura → E attende L?",
         "spiegazione": "Il veicolo E (auto bianca) ha il veicolo L (auto gialla) alla sua destra. Secondo la regola generale della precedenza a destra, E deve dare la precedenza a L e quindi attendere il suo transito. Questo è VERO.",
         "regola": "Chi ha un veicolo a destra, aspetta. E ha L a destra, quindi E aspetta L.",
         "trabocchetti": ["deve attendere il transito"],
@@ -1781,6 +2006,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R deve attendere il transito dei veicoli E ed N",
         "risposta": True,
+        "riassunto": "Figura → R attende E e N?",
         "spiegazione": "Il veicolo R (filobus) ha il veicolo N (autocarro) alla sua destra, quindi R deve attendere N. Poiché N a sua volta deve attendere E (come visto nella domanda 23262), R indirettamente attende anche E. Questo è VERO.",
         "regola": "R aspetta N (che è a destra). Se N aspetta E, allora R aspetta anche E.",
         "immagine": "b765aa72450bcfeae786.jpg",
@@ -1788,6 +2014,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli transitano nell'ordine: L, E, N, R",
         "risposta": True,
+        "riassunto": "Figura → ordine L, E, N, R?",
         "spiegazione": "Questo incrocio è un caso particolare di 'blocco' dove tutti i veicoli hanno un altro veicolo alla propria destra. Per risolvere il blocco, si stabilisce un ordine. In questo specifico schema, l'ordine corretto è L, poi E, poi N, e infine R. Il veicolo L, girando a destra, 'sblocca' l'incrocio, permettendo agli altri di seguire in sequenza. Questo è VERO.",
         "regola": "L-E-N-R: L sblocca l'incrocio, gli altri seguono la catena.",
         "trabocchetti": ["transitano nell"],
@@ -1796,6 +2023,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R (filobus) ha la precedenza sugli altri veicoli",
         "risposta": False,
+        "riassunto": "Figura → filobus R ha precedenza?",
         "spiegazione": "Il veicolo R (filobus) è l'ultimo a passare nell'ordine stabilito (L, E, N, R). Non ha la precedenza sugli altri veicoli, anzi, deve attendere tutti gli altri. Questo è FALSO.",
         "regola": "Filobus non è tram! Niente precedenza speciale qui. R è l'ultimo.",
         "trabocchetti": ["ha la precedenza sugli altri veicoli"],
@@ -1804,6 +2032,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo E deve attendere il transito del veicolo R",
         "risposta": False,
+        "riassunto": "Figura → E attende R?",
         "spiegazione": "Nell'ordine di transito stabilito per questo incrocio (L, E, N, R), il veicolo E passa prima del veicolo R. Quindi E non deve attendere R. Questo è FALSO.",
         "regola": "E passa prima di R.",
         "trabocchetti": ["deve attendere il transito"],
@@ -1812,6 +2041,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo L deve attendere il transito del veicolo R",
         "risposta": False,
+        "riassunto": "Figura → L attende R?",
         "spiegazione": "Il veicolo L è il primo a passare nell'ordine stabilito (L, E, N, R). Questo significa che L non attende R, ma è R che attende L (indirettamente, seguendo la catena di precedenze). Questo è FALSO.",
         "regola": "L sblocca l'incrocio, quindi non aspetta R.",
         "trabocchetti": ["deve attendere il transito"],
@@ -1820,6 +2050,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo E deve attendere il transito dei veicoli N e R",
         "risposta": False,
+        "riassunto": "Figura → E attende N e R?",
         "spiegazione": "Nell'ordine di transito stabilito (L, E, N, R), il veicolo E passa prima di N e R. Quindi E non deve attendere né N né R. Questo è FALSO.",
         "regola": "E passa prima di N e R.",
         "immagine": "b765aa72450bcfeae786.jpg",
@@ -1827,6 +2058,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo E deve attendere il transito del veicolo N",
         "risposta": False,
+        "riassunto": "Figura → E attende N?",
         "spiegazione": "Nell'ordine di transito stabilito (L, E, N, R), il veicolo E passa prima del veicolo N. Quindi E non deve attendere N. Questo è FALSO.",
         "regola": "E passa prima di N.",
         "trabocchetti": ["deve attendere il transito"],
@@ -1835,6 +2067,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli transitano nell'ordine: R, L, E, N",
         "risposta": False,
+        "riassunto": "Figura → ordine R, L, E, N?",
         "spiegazione": "L'ordine corretto di transito per questo incrocio, come stabilito per risolvere il blocco, è L, E, N, R. L'ordine proposto (R, L, E, N) è sbagliato. Questo è FALSO.",
         "regola": "L'ordine è L-E-N-R, non R-L-E-N.",
         "trabocchetti": ["transitano nell"],
@@ -1843,6 +2076,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo E deve dare la precedenza al veicolo L",
         "risposta": True,
+        "riassunto": "Figura → E cede a L?",
         "spiegazione": "VERO. Il veicolo L si trova alla destra del veicolo E. In assenza di segnali stradali specifici, la regola generale della precedenza impone di dare la precedenza a chi proviene dalla propria destra. Quindi, E deve aspettare L.",
         "regola": "Destra libera, via libera! L è a destra di E.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -1851,6 +2085,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo E deve dare la precedenza al veicolo proveniente dalla sua destra",
         "risposta": True,
+        "riassunto": "Figura → E cede a chi viene da destra?",
         "spiegazione": "VERO. Il veicolo L proviene dalla destra del veicolo E. Come spiegato prima, la regola fondamentale negli incroci senza segnaletica è dare la precedenza a chi viene da destra.",
         "regola": "Chi viene da destra ha la precedenza.",
         "trabocchetti": ["proveniente dalla sua destra"],
@@ -1859,6 +2094,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo E non ha l'obbligo di dare la precedenza al filobus",
         "risposta": True,
+        "riassunto": "Figura → E non cede al filobus?",
         "spiegazione": "VERO. Dopo che il veicolo L è passato, il veicolo E può proseguire. Il filobus R si trova in una posizione tale che E passa prima di lui. L'ordine di passaggio è L, poi E, poi N, e infine R.",
         "regola": "E non aspetta R.",
         "trabocchetti": ["non ha l"],
@@ -1867,6 +2103,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo E passa prima dell'autocarro N, dopo il transito del veicolo L",
         "risposta": True,
+        "riassunto": "Figura → E prima dell'autocarro N, dopo L?",
         "spiegazione": "VERO. Il veicolo E deve dare la precedenza a L (che è alla sua destra), quindi passa dopo L. Successivamente, E passa prima dell'autocarro N. La sequenza corretta è L, poi E, poi N, e infine R.",
         "regola": "L-E-N: L primo, E secondo, N terzo.",
         "trabocchetti": ["prima dell"],
@@ -1875,6 +2112,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo E passa dopo il filobus ma prima del veicolo N",
         "risposta": False,
+        "riassunto": "Figura → E dopo il filobus, prima di N?",
         "spiegazione": "FALSO. Questa affermazione è falsa perché il veicolo E passa prima del filobus R, non dopo. La sequenza corretta di passaggio è L, E, N, R.",
         "regola": "E non aspetta R.",
         "trabocchetti": ["dopo"],
@@ -1883,6 +2121,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo E deve dare la precedenza all'autocarro perché prosegue diritto",
         "risposta": False,
+        "riassunto": "Figura → E cede all'autocarro perché va diritto?",
         "spiegazione": "FALSO. Il veicolo E passa prima dell'autocarro N. Inoltre, l'autocarro N non prosegue diritto, ma svolta a sinistra, come indicato dalla freccia. Quindi ci sono due errori nell'affermazione.",
         "regola": "N svolta, non va dritto. E passa prima di N.",
         "trabocchetti": ["perché", "prosegue diritto", "deve dare la precedenza all"],
@@ -1891,6 +2130,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo E ha la precedenza sui veicoli provenienti da destra e da sinistra",
         "risposta": False,
+        "riassunto": "Figura → E precede destra e sinistra?",
         "spiegazione": "FALSO. Il veicolo E deve dare la precedenza al veicolo L, che proviene dalla sua destra. Quindi non ha la precedenza su tutti i veicoli, in particolare non su quelli alla sua destra.",
         "regola": "E dà precedenza a destra (a L).",
         "immagine": "b765aa72450bcfeae786.jpg",
@@ -1898,6 +2138,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo E passa per primo",
         "risposta": False,
+        "riassunto": "Figura → E per primo?",
         "spiegazione": "FALSO. Il veicolo L passa per primo, poiché il veicolo E deve dargli la precedenza. E non è il primo a passare.",
         "regola": "L è il primo a passare.",
         "trabocchetti": ["passa per primo"],
@@ -1906,6 +2147,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio in figura il veicolo F deve attendere il transito del veicolo A",
         "risposta": True,
+        "riassunto": "Figura → F attende A?",
         "spiegazione": "VERO. In questo incrocio senza segnali, si crea un \"blocco\" perché ogni veicolo ha un altro veicolo alla sua destra. La sequenza corretta di transito è H, A, F, L. Poiché F transita dopo A, deve attendere il suo passaggio.",
         "regola": "L'ordine è H, A, F, L. F viene dopo A.",
         "trabocchetti": ["deve attendere il transito"],
@@ -1914,6 +2156,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio in figura il veicolo L deve attendere il transito dei veicoli A ed F",
         "risposta": True,
+        "riassunto": "Figura → L attende A e F?",
         "spiegazione": "VERO. La sequenza di transito corretta per questo incrocio è H, A, F, L. Il veicolo L è l'ultimo a transitare, quindi deve attendere il passaggio di tutti gli altri veicoli, inclusi A ed F.",
         "regola": "L è l'ultimo, aspetta tutti.",
         "trabocchetti": ["attendere", "Transito"],
@@ -1922,6 +2165,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio in figura il veicolo A deve attendere il transito del veicolo H",
         "risposta": True,
+        "riassunto": "Figura → A attende H?",
         "spiegazione": "VERO. La sequenza di transito corretta per questo incrocio è H, A, F, L. Il veicolo H transita per primo, e solo dopo può passare il veicolo A. Quindi, A deve attendere H.",
         "regola": "H va per primo, A lo segue.",
         "trabocchetti": ["deve attendere il transito"],
@@ -1930,6 +2174,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio in figura il veicolo L deve transitare per ultimo",
         "risposta": True,
+        "riassunto": "Figura → L per ultimo?",
         "spiegazione": "VERO. La sequenza di transito corretta per questo incrocio è H, A, F, L. Il veicolo L è l'ultimo della fila a passare, quindi transita per ultimo.",
         "regola": "L è l'ultimo della fila.",
         "trabocchetti": ["ultimo"],
@@ -1938,6 +2183,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio in figura il veicolo H transita per primo",
         "risposta": True,
+        "riassunto": "Figura → H per primo?",
         "spiegazione": "VERO. In questo incrocio, dove tutti i veicoli hanno un altro veicolo alla loro destra (creando un \"blocco\"), il veicolo H è quello che, per convenzione didattica in questi quiz, transita per primo per \"sbloccare\" la situazione, anche se ha A alla sua destra.",
         "regola": "H sblocca il cerchio, va per primo!",
         "trabocchetti": ["transita per primo"],
@@ -1946,6 +2192,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio in figura i veicoli debbono transitare nell'ordine: H,A, F, L",
         "risposta": True,
+        "riassunto": "Figura → ordine H, A, F, L?",
         "spiegazione": "VERO. La sequenza corretta di transito per questo incrocio, che presenta un \"blocco\" di precedenze, è H, A, F, L. H sblocca l'incrocio, poi A, poi F e infine L.",
         "regola": "L'ordine da ricordare è H, A, F, L.",
         "trabocchetti": ["debbono transitare nell"],
@@ -1954,6 +2201,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio in figura i veicoli devono transitare nell'ordine: A, F, L, H",
         "risposta": False,
+        "riassunto": "Figura → ordine A, F, L, H?",
         "spiegazione": "FALSO. L'ordine corretto di transito per questo incrocio è H, A, F, L. L'ordine proposto (A, F, L, H) è sbagliato perché H transita per primo e L per ultimo.",
         "regola": "Ricorda: H, A, F, L è l'unico ordine corretto.",
         "immagine": "e3c3bd4034c4cf295161.jpg",
@@ -1961,6 +2209,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio in figura il veicolo F deve transitare per primo",
         "risposta": False,
+        "riassunto": "Figura → F per primo?",
         "spiegazione": "FALSO. Il veicolo H transita per primo in questo incrocio. Il veicolo F transita per terzo, dopo H e A.",
         "regola": "F non è il primo, H lo è.",
         "trabocchetti": ["primo"],
@@ -1969,6 +2218,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio in figura il veicolo H deve attendere il transito del veicolo L",
         "risposta": False,
+        "riassunto": "Figura → H attende L?",
         "spiegazione": "FALSO. Il veicolo H transita per primo, mentre il veicolo L transita per ultimo. Quindi, H non deve attendere L, ma è L che attende H.",
         "regola": "H va prima di L.",
         "trabocchetti": ["deve attendere"],
@@ -1977,6 +2227,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio in figura il veicolo H deve attendere il transito del veicolo F",
         "risposta": False,
+        "riassunto": "Figura → H attende F?",
         "spiegazione": "FALSO. Il veicolo H transita per primo, mentre il veicolo F transita per terzo. Quindi, H non deve attendere F, ma è F che attende H (e A).",
         "regola": "H va prima di F.",
         "trabocchetti": ["deve attendere"],
@@ -1985,6 +2236,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio in figura il veicolo A deve attendere il transito del veicolo F",
         "risposta": False,
+        "riassunto": "Figura → A attende F?",
         "spiegazione": "FALSO. La sequenza di transito è H, A, F, L. Il veicolo A transita prima del veicolo F, quindi A non deve attendere F, ma è F che attende A.",
         "regola": "A va prima di F.",
         "trabocchetti": ["deve attendere il transito"],
@@ -1993,6 +2245,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo N conclude per ultimo l'attraversamento dell'incrocio",
         "risposta": True,
+        "riassunto": "Figura → N conclude per ultimo?",
         "spiegazione": "Il veicolo N deve dare la precedenza sia al veicolo A (che viene dalla sua destra) sia al veicolo R (che viene di fronte e va dritto). Per questo motivo, N passa per ultimo e conclude l'attraversamento per ultimo.",
         "regola": "N gira a sinistra, aspetta tutti.",
         "trabocchetti": ["conclude per ultimo"],
@@ -2001,6 +2254,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo N deve dare la precedenza al veicolo A",
         "risposta": True,
+        "riassunto": "Figura → N cede ad A?",
         "spiegazione": "Il veicolo A si trova alla destra del veicolo N. Secondo la regola generale della precedenza, chi viene da destra ha la precedenza. Quindi, N deve dare la precedenza ad A.",
         "regola": "Destra libera, N aspetta A.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -2009,6 +2263,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo N ha la precedenza rispetto al veicolo R",
         "risposta": True,
+        "riassunto": "Figura → N precede R?",
         "spiegazione": "In questo incrocio, il veicolo N ha la precedenza rispetto al veicolo R. Questo significa che R deve attendere il passaggio di N.",
         "regola": "N passa prima di R.",
         "trabocchetti": ["ha la precedenza rispetto a"],
@@ -2017,6 +2272,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo N può concludere la manovra di svolta a sinistra dopo il transito dei veicoli R e A",
         "risposta": True,
+        "riassunto": "Figura → N completa la svolta dopo R e A?",
         "spiegazione": "Il veicolo N deve aspettare sia il veicolo A (che viene dalla sua destra) sia il veicolo R (che viene di fronte e va dritto). Per questo motivo, N può completare la sua svolta solo dopo che A e R sono passati.",
         "regola": "N aspetta A e R, poi gira.",
         "trabocchetti": ["concludere la manovra", "Dopo il transito"],
@@ -2025,6 +2281,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo N, dopo essersi portato al centro dell'incrocio, deve attendere il transito dei veicoli R e A",
         "risposta": True,
+        "riassunto": "Figura → N al centro attende R e A?",
         "spiegazione": "Il veicolo N, per svoltare a sinistra, deve prima entrare nell'incrocio e poi fermarsi al centro, se necessario. Da lì, deve dare la precedenza sia al veicolo A (che viene dalla sua destra) sia al veicolo R (che viene di fronte e va dritto). Quindi, deve attendere che entrambi siano passati.",
         "regola": "N al centro, aspetta tutti.",
         "trabocchetti": ["dopo essersi portato al centro dell", "Deve attendere"],
@@ -2033,6 +2290,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo N attraversa per primo",
         "risposta": False,
+        "riassunto": "Figura → N per primo?",
         "spiegazione": "Il veicolo N deve dare la precedenza sia al veicolo A (che viene dalla sua destra) sia al veicolo R (che viene di fronte e va dritto). Per questo motivo, N non può attraversare per primo, ma passa per ultimo.",
         "regola": "N ultimo, non primo.",
         "trabocchetti": ["attraversa per primo"],
@@ -2041,6 +2299,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo N deve dare la precedenza al veicolo R",
         "risposta": False,
+        "riassunto": "Figura → N cede a R?",
         "spiegazione": "Il veicolo N non deve dare la precedenza al veicolo R. Questo perché, in questo contesto, N ha la precedenza su R e quindi può passare prima senza aspettare.",
         "regola": "N non aspetta R.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -2049,6 +2308,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo N ha la precedenza rispetto al veicolo A",
         "risposta": False,
+        "riassunto": "Figura → N precede A?",
         "spiegazione": "Il veicolo A si trova alla destra del veicolo N. Secondo la regola generale della precedenza, chi viene da destra ha la precedenza. Quindi, N non ha la precedenza rispetto ad A, ma deve aspettare che A passi.",
         "regola": "Destra libera, N aspetta A.",
         "trabocchetti": ["ha la precedenza rispetto a"],
@@ -2057,6 +2317,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo N passa dopo il transito del veicolo R ma prima che transiti il veicolo A",
         "risposta": False,
+        "riassunto": "Figura → N dopo R ma prima di A?",
         "spiegazione": "Questa affermazione è falsa perché il veicolo N deve dare la precedenza al veicolo A (che viene da destra), quindi N passa dopo A. Inoltre, secondo la logica di questo quiz, N ha la precedenza rispetto a R, quindi N passa prima di R. L'affermazione dice che N passa 'dopo R' (che è falso) e 'prima di A' (che è falso). Per questi motivi, l'intera affermazione è falsa.",
         "regola": "N passa tra A e R (A -> N -> R).",
         "trabocchetti": ["prima che transiti"],
@@ -2065,6 +2326,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo N impegna l'incrocio per ultimo",
         "risposta": False,
+        "riassunto": "Figura → N entra per ultimo?",
         "spiegazione": "Secondo l'ordine di passaggio stabilito dalle risposte precedenti (A passa per primo, poi N, poi R), il veicolo N impegna l'incrocio dopo A ma prima di R. Quindi, non lo impegna per ultimo.",
         "regola": "N non è l'ultimo a entrare.",
         "trabocchetti": ["impegna l"],
@@ -2073,6 +2335,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo R deve dare la precedenza al veicolo N",
         "risposta": True,
+        "riassunto": "Figura → R cede a N?",
         "spiegazione": "In questo incrocio, c'è una situazione di \"precedenza a destra\" circolare (A deve dare precedenza a R, R a N, N ad A). Per sbloccare l'incrocio, il veicolo N (che svolta a sinistra) si impegna per primo nell'incrocio, ma si ferma al centro per dare la precedenza a R che va dritto. Quindi, R \"dà la precedenza\" a N nel senso che N si muove per primo nell'incrocio, anche se poi R passa prima che N completi la svolta.",
         "regola": "N si muove per primo, ma si ferma al centro.",
         "trabocchetti": ["precedenza"],
@@ -2081,6 +2344,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo R ha la precedenza rispetto al veicolo A",
         "risposta": True,
+        "riassunto": "Figura → R precede A?",
         "spiegazione": "Il veicolo R si trova alla destra del veicolo A. Secondo la regola generale della precedenza, chi viene da destra ha la precedenza. Quindi R passa prima di A.",
         "regola": "Destra ha sempre precedenza (R è a destra di A).",
         "trabocchetti": ["rispetto al veicolo A"],
@@ -2089,6 +2353,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo R attraversa l'incrocio dopo che il veicolo N si è fermato al centro dell'incrocio",
         "risposta": True,
+        "riassunto": "Figura → R passa dopo che N si ferma al centro?",
         "spiegazione": "Il veicolo N, che svolta a sinistra, si impegna nell'incrocio per primo (come visto nella domanda 23309), ma deve fermarsi al centro per permettere al veicolo R di passare, perché R va dritto e attraversa la traiettoria di N. Dopo che R è passato, N può completare la sua svolta.",
         "regola": "N si ferma al centro, poi R passa.",
         "immagine": "53f5ec759afd7d79d374.jpg",
@@ -2096,6 +2361,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo R passa prima del veicolo A",
         "risposta": True,
+        "riassunto": "Figura → R prima di A?",
         "spiegazione": "Come spiegato per la domanda 23310, il veicolo R si trova alla destra del veicolo A. Per la regola della precedenza a destra, R passa prima di A.",
         "regola": "R è a destra di A, quindi R passa prima.",
         "trabocchetti": ["passa prima"],
@@ -2104,6 +2370,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo R conclude per primo l'attraversamento",
         "risposta": True,
+        "riassunto": "Figura → R conclude per primo?",
         "spiegazione": "Basandoci sull'ordine stabilito (N si impegna, si ferma, R passa, N finisce, A passa), il veicolo R è il primo a completare il suo percorso attraverso l'incrocio.",
         "regola": "R è il più veloce a liberare l'incrocio.",
         "trabocchetti": ["conclude per primo l"],
@@ -2112,6 +2379,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo R deve dare la precedenza al veicolo A",
         "risposta": False,
+        "riassunto": "Figura → R cede ad A?",
         "spiegazione": "Il veicolo R si trova alla destra del veicolo A. Secondo la regola generale, R ha la precedenza su A, non il contrario. Quindi R non deve dare la precedenza ad A.",
         "regola": "R è a destra di A, quindi R NON dà precedenza ad A.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -2120,6 +2388,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo R passa per ultimo",
         "risposta": False,
+        "riassunto": "Figura → R per ultimo?",
         "spiegazione": "Come stabilito, il veicolo R è il primo a completare l'attraversamento dell'incrocio, dopo che N si è fermato al centro. Quindi non passa per ultimo.",
         "regola": "R è il primo a liberare l'incrocio.",
         "trabocchetti": ["passa per ultimo"],
@@ -2128,6 +2397,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo R passa dopo il transito del veicolo A",
         "risposta": False,
+        "riassunto": "Figura → R dopo A?",
         "spiegazione": "Il veicolo R ha la precedenza rispetto al veicolo A (R è alla sua destra). Quindi R passa prima di A, non dopo.",
         "regola": "R è a destra di A, quindi R passa PRIMA.",
         "trabocchetti": ["dopo il transito"],
@@ -2136,6 +2406,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo R impegna l'incrocio e si ferma al centro",
         "risposta": False,
+        "riassunto": "Figura → R si ferma al centro?",
         "spiegazione": "Il veicolo R va dritto e ha la precedenza sul veicolo A e passa dopo che N si è fermato al centro. Non ha motivo di fermarsi al centro dell'incrocio. È il veicolo N (che svolta a sinistra) che si ferma al centro.",
         "regola": "R va dritto, non si ferma al centro. N si ferma.",
         "trabocchetti": ["si ferma al centro"],
@@ -2144,6 +2415,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo A deve dare la precedenza al tram e al veicolo B",
         "risposta": True,
+        "riassunto": "Figura → A cede a tram e B?",
         "spiegazione": "In questo incrocio senza segnali, il tram (T) ha sempre la precedenza. Dopo il tram, il veicolo B ha la precedenza perché non ha nessuno alla sua destra. Il veicolo A ha il veicolo B alla sua destra, quindi deve dargli la precedenza. Per questo, il veicolo A deve dare la precedenza sia al tram che al veicolo B.",
         "regola": "Tram sempre prima, poi chi non ha nessuno a destra.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -2152,6 +2424,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo A ha la precedenza rispetto al veicolo C",
         "risposta": True,
+        "riassunto": "Figura → A precede C?",
         "spiegazione": "Dopo che il tram (T) e il veicolo B sono passati, rimangono i veicoli A e C. Il veicolo C ha il veicolo A alla sua destra, quindi C deve dare la precedenza ad A. Questo significa che il veicolo A ha la precedenza rispetto al veicolo C.",
         "regola": "Chi ha la destra libera passa prima.",
         "trabocchetti": ["rispetto"],
@@ -2160,6 +2433,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura i veicoli transitano nell'ordine: T e B, A, C",
         "risposta": True,
+        "riassunto": "Figura → ordine T e B, A, C?",
         "spiegazione": "L'ordine corretto di transito è: prima il tram (T) perché ha sempre la precedenza. Poi il veicolo B, perché non ha nessuno alla sua destra. Poi il veicolo A, perché dopo B non ha più nessuno alla sua destra e C deve dargli la precedenza. Infine, il veicolo C. La domanda raggruppa T e B come primi a transitare (non necessariamente contemporaneamente, ma prima di A e C), il che è corretto nell'ordine generale.",
         "regola": "T, B, A, C: Tram, poi chi non ha destra, poi il resto.",
         "trabocchetti": ["tra"],
@@ -2168,6 +2442,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura i veicoli T e B possono transitare contemporaneamente",
         "risposta": True,
+        "riassunto": "Figura → T e B insieme?",
         "spiegazione": "Anche se il tram (T) ha la precedenza assoluta e il veicolo B deve dargli la precedenza, in alcuni casi, se le loro traiettorie non si incrociano in modo pericoloso o se il veicolo B può iniziare la manovra senza intralciare il tram, possono transitare 'contemporaneamente' nel senso che entrambi sono in movimento nell'incrocio, ma il tram mantiene la sua priorità. Tuttavia, la regola generale è che se le traiettorie si incrociano, non possono essere simultanei. Questa è una domanda 'tranello' che accetta una interpretazione più elastica di 'contemporaneamente' in contesti di quiz, dove si intende che non si ostacolano a vicenda se uno rispetta la precedenza dell'altro.",
         "regola": "Attenzione a 'contemporaneamente': spesso è FALSO se le traiettorie si incrociano, ma a volte VERO se uno aspetta l'altro senza fermarsi del tutto.",
         "trabocchetti": ["contemporaneamente"],
@@ -2176,6 +2451,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo C transita per ultimo",
         "risposta": True,
+        "riassunto": "Figura → C per ultimo?",
         "spiegazione": "Seguendo l'ordine di precedenza (T, B, A, C), il veicolo C è l'ultimo a transitare perché deve dare la precedenza a tutti gli altri veicoli (T, B, A).",
         "regola": "L'ultimo è chi ha tutti a destra.",
         "trabocchetti": ["transita per ultimo"],
@@ -2184,6 +2460,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura i veicoli T e C transitano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → T e C insieme?",
         "spiegazione": "Il tram (T) ha la precedenza assoluta. Il veicolo C deve dare la precedenza al tram (T) e anche al veicolo A. Le loro traiettorie si incrociano, quindi non possono transitare contemporaneamente. Il tram passa per primo, C per ultimo.",
         "regola": "Se le traiettorie si incrociano, non si passa insieme.",
         "trabocchetti": ["contemporaneamente"],
@@ -2192,6 +2469,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura i veicoli transitano nell'ordine: T, B, C, A",
         "risposta": False,
+        "riassunto": "Figura → ordine T, B, C, A?",
         "spiegazione": "L'ordine corretto di transito è T, B, A, C. La sequenza proposta (T, B, C, A) è sbagliata perché il veicolo A transita prima del veicolo C (A ha la precedenza su C).",
         "regola": "Ricorda l'ordine esatto: T, B, A, C.",
         "immagine": "ac104c48438cf917550d.jpg",
@@ -2199,6 +2477,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo A transita per ultimo",
         "risposta": False,
+        "riassunto": "Figura → A per ultimo?",
         "spiegazione": "Il veicolo A transita dopo il tram (T) e il veicolo B, ma prima del veicolo C. Quindi non è l'ultimo a transitare; l'ultimo è il veicolo C.",
         "regola": "L'ultimo è chi ha tutti a destra.",
         "trabocchetti": ["ultimo"],
@@ -2207,6 +2486,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura i veicoli T, B, C transitano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → T, B, C insieme?",
         "spiegazione": "I veicoli T, B e C non possono transitare contemporaneamente perché le loro traiettorie si incrociano e hanno precedenze diverse. Il tram (T) passa per primo, poi B, poi A, e infine C.",
         "regola": "Troppi veicoli insieme = pericolo, quindi FALSO.",
         "trabocchetti": ["contemporaneamente"],
@@ -2215,6 +2495,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo B deve dare la precedenza al veicolo A",
         "risposta": False,
+        "riassunto": "Figura → B cede ad A?",
         "spiegazione": "Il veicolo B non deve dare la precedenza al veicolo A. Al contrario, il veicolo A deve dare la precedenza al veicolo B, perché B si trova alla destra di A (e B non ha nessuno alla sua destra).",
         "regola": "Chi ha la destra libera passa, chi ha qualcuno a destra aspetta.",
         "immagine": "ac104c48438cf917550d.jpg",
@@ -2222,6 +2503,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo D passa per primo",
         "risposta": True,
+        "riassunto": "Figura → D per primo?",
         "spiegazione": "Il veicolo D non ha nessun altro veicolo alla sua destra. Secondo la regola generale della precedenza, chi non ha nessuno a destra passa per primo. Quindi, il veicolo D passa per primo.",
         "regola": "Destra libera? Via libera!",
         "immagine": "036e2ba91ec79d81fe0d.jpg",
@@ -2229,6 +2511,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo D non ha l'obbligo di dare la precedenza ad alcun veicolo",
         "risposta": True,
+        "riassunto": "Figura → D non cede a nessuno?",
         "spiegazione": "Dato che il veicolo D non ha nessun veicolo alla sua destra, non deve dare la precedenza a nessuno. È il primo a passare e non ha obblighi di precedenza.",
         "regola": "Nessuno a destra = nessuna precedenza da dare.",
         "trabocchetti": ["alcun"],
@@ -2237,6 +2520,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo D non ha l'obbligo di dare la precedenza al veicolo A",
         "risposta": True,
+        "riassunto": "Figura → D non cede ad A?",
         "spiegazione": "Il veicolo D passa per primo perché non ha nessuno alla sua destra. Di conseguenza, non deve dare la precedenza al veicolo A, che si trova alla sua sinistra.",
         "regola": "D è il primo, A aspetta.",
         "trabocchetti": ["non ha l"],
@@ -2245,6 +2529,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo D passa per terzo",
         "risposta": False,
+        "riassunto": "Figura → D per terzo?",
         "spiegazione": "Il veicolo D non ha nessun veicolo alla sua destra. Per la regola della precedenza, D è il primo a passare, non il terzo. Quindi l'affermazione è falsa.",
         "regola": "D è il primo, non il terzo!",
         "trabocchetti": ["terzo"],
@@ -2253,6 +2538,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo D ha l'obbligo di dare la precedenza a tutti i veicoli",
         "risposta": False,
+        "riassunto": "Figura → D cede a tutti?",
         "spiegazione": "Il veicolo D non ha nessun veicolo alla sua destra. Questo significa che è il primo a passare e non deve dare la precedenza a nessuno, tantomeno a 'tutti' i veicoli.",
         "regola": "D ha la destra libera, non dà precedenza a nessuno.",
         "trabocchetti": ["a tutti i veicoli"],
@@ -2261,6 +2547,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo D ha l'obbligo di dare la precedenza al veicolo E, che prosegue diritto",
         "risposta": False,
+        "riassunto": "Figura → D cede a E che va diritto?",
         "spiegazione": "Il veicolo D passa per primo perché non ha nessuno alla sua destra, quindi non deve dare la precedenza al veicolo E. Inoltre, il veicolo E vuole girare a sinistra, non proseguire diritto.",
         "regola": "D è il primo. E gira, non va dritto.",
         "trabocchetti": ["ha l"],
@@ -2269,6 +2556,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo A passa per ultimo",
         "risposta": True,
+        "riassunto": "Figura → A per ultimo?",
         "spiegazione": "In questo incrocio, la regola generale è dare la precedenza a chi viene da destra. Il veicolo S non ha nessuno alla sua destra, quindi passa per primo. Poi E, che non ha più S alla sua destra. Poi D, che non ha più E alla sua destra. Infine, A, che non ha più D alla sua destra. Quindi, A passa per ultimo.",
         "regola": "A ha D alla sua destra, D ha E, E ha S. La catena di precedenza rende A l'ultimo.",
         "trabocchetti": ["per ultimo"],
@@ -2277,6 +2565,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo A deve dare la precedenza ai veicoli E e S",
         "risposta": True,
+        "riassunto": "Figura → A cede a E e S?",
         "spiegazione": "Il veicolo A deve dare la precedenza a D. Il veicolo D deve dare la precedenza a E. Il veicolo E deve dare la precedenza a S. Questo significa che A deve aspettare che passino tutti e tre i veicoli (D, E e S), quindi deve dare la precedenza anche a E e S.",
         "regola": "Se aspetti chi è alla tua destra, aspetti anche chi è alla destra del tuo 'destra'.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -2285,6 +2574,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo A prima di impegnare l'incrocio deve attendere il transito, nell'ordine, dei veicoli D, E e S",
         "risposta": True,
+        "riassunto": "Figura → A attende D, E e S?",
         "spiegazione": "Il veicolo A deve dare la precedenza a D. D deve dare la precedenza a E. E deve dare la precedenza a S. Questo significa che A deve aspettare che passino tutti e tre i veicoli: S, poi E, poi D. La frase 'nell'ordine, dei veicoli D, E e S' in questo contesto indica l'elenco dei veicoli che A deve attendere, non necessariamente l'ordine esatto in cui passano, ma che A deve aspettare che tutti e tre abbiano transitato.",
         "regola": "A aspetta D, E, S. 'Nell'ordine' qui è una lista, non una sequenza di passaggio.",
         "trabocchetti": ["nell"],
@@ -2293,6 +2583,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo A ha la destra libera",
         "risposta": False,
+        "riassunto": "Figura → A ha la destra libera?",
         "spiegazione": "Il veicolo A ha il veicolo D alla sua destra. Secondo la regola della precedenza a destra, A deve dare la precedenza a D. Quindi, la sua destra non è libera.",
         "regola": "Guarda sempre a destra: se c'è qualcuno, non è libera.",
         "trabocchetti": ["destra libera"],
@@ -2301,6 +2592,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo A passa contemporaneamente al veicolo D",
         "risposta": False,
+        "riassunto": "Figura → A insieme a D?",
         "spiegazione": "Il veicolo A deve dare la precedenza al veicolo D perché D si trova alla sua destra. Questo significa che D passa prima di A. Non possono passare nello stesso momento.",
         "regola": "Chi ha la precedenza passa prima, non insieme.",
         "trabocchetti": ["contemporaneamente"],
@@ -2309,6 +2601,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo A passa dopo i veicoli E e S, ma prima del veicolo D",
         "risposta": False,
+        "riassunto": "Figura → A dopo E e S, prima di D?",
         "spiegazione": "L'ordine di passaggio è S, poi E, poi D, e infine A. Quindi, A passa dopo S, dopo E e anche dopo D. La frase dice 'ma prima del veicolo D', che è sbagliata perché A passa dopo D.",
         "regola": "Ricorda l'ordine: S, E, D, A. A è l'ultimo.",
         "trabocchetti": ["ma prima del veicolo D"],
@@ -2317,6 +2610,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il conducente del veicolo A deve dare la precedenza solo al veicolo che prosegue diritto e non a quelli che svoltano",
         "risposta": False,
+        "riassunto": "Figura → A cede solo a chi va diritto?",
         "spiegazione": "La regola della precedenza a destra vale sempre, indipendentemente dalla direzione che prendono i veicoli (dritto, svolta a destra o svolta a sinistra), a meno che non ci siano segnali specifici. Quindi, A deve dare la precedenza a D anche se D sta svoltando.",
         "regola": "Precedenza a destra vale per tutti, non solo per chi va dritto.",
         "trabocchetti": ["solo"],
@@ -2325,6 +2619,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo T passa per ultimo",
         "risposta": True,
+        "riassunto": "Figura → T per ultimo?",
         "spiegazione": "La regola generale in un incrocio senza segnali è dare la precedenza a chi viene da destra. Il veicolo T ha il veicolo A alla sua destra. A sua volta, il veicolo A ha il veicolo R alla sua destra. Questo significa che T deve aspettare sia A che R. Per questo motivo, T passa per ultimo.",
         "regola": "T ha A a destra, A ha R a destra. T aspetta tutti.",
         "trabocchetti": ["passa per ultimo"],
@@ -2333,6 +2628,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo R passa per primo",
         "risposta": True,
+        "riassunto": "Figura → R per primo?",
         "spiegazione": "In un incrocio senza segnali, la regola è dare la precedenza a chi viene da destra. Il veicolo R non ha nessun altro veicolo alla sua destra. Non avendo nessuno a cui dare la precedenza, R può passare per primo.",
         "regola": "R non ha nessuno a destra = passa per primo.",
         "trabocchetti": ["passa per primo"],
@@ -2341,6 +2637,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo A deve attendere il transito del veicolo R",
         "risposta": True,
+        "riassunto": "Figura → A attende R?",
         "spiegazione": "Il veicolo A deve dare la precedenza a chi viene dalla sua destra. Guardando l'immagine, il veicolo R si trova alla destra del veicolo A. Quindi, A è obbligato ad aspettare che il veicolo R sia passato prima di poter proseguire.",
         "regola": "A ha R a destra, quindi A aspetta R.",
         "trabocchetti": ["deve attendere il transito"],
@@ -2349,6 +2646,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo T deve attendere il transito dei veicoli R ed A",
         "risposta": True,
+        "riassunto": "Figura → T attende R e A?",
         "spiegazione": "Il veicolo T ha il veicolo A alla sua destra. Il veicolo A, a sua volta, ha il veicolo R alla sua destra. Questo significa che T deve aspettare prima A e poi R. In pratica, T deve aspettare che passino entrambi i veicoli R e A.",
         "regola": "T ha A a destra, A ha R a destra. T aspetta entrambi.",
         "immagine": "24fc541c48e713770e23.jpg",
@@ -2356,6 +2654,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura i veicoli transitano nell'ordine: R, A, T",
         "risposta": True,
+        "riassunto": "Figura → ordine R, A, T?",
         "spiegazione": "Seguendo la regola della precedenza a destra: 1. R non ha nessuno a destra, quindi passa per primo. 2. Dopo R, tra A e T, il veicolo A ha T alla sua sinistra (T sta svoltando a sinistra e deve dare precedenza ad A). Quindi A passa dopo R. 3. Infine, T passa per ultimo perché ha A alla sua destra. L'ordine corretto è R, poi A, poi T.",
         "regola": "Ordine: R (nessuno a destra) -> A (T a sinistra) -> T (A a destra).",
         "trabocchetti": ["nell"],
@@ -2364,6 +2663,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo T transita prima del veicolo R",
         "risposta": False,
+        "riassunto": "Figura → T prima di R?",
         "spiegazione": "Abbiamo stabilito che il veicolo R passa per primo perché non ha nessuno alla sua destra. Il veicolo T, invece, passa per ultimo perché deve dare la precedenza sia ad A che a R. Quindi, T non può passare prima di R, ma passa dopo.",
         "regola": "R è primo, T è ultimo. T non può essere prima di R.",
         "trabocchetti": ["transita prima"],
@@ -2372,6 +2672,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura i veicoli transitano nell'ordine: R, T, A",
         "risposta": False,
+        "riassunto": "Figura → ordine R, T, A?",
         "spiegazione": "L'ordine corretto di passaggio, basato sulla regola della precedenza a destra, è R, A, T. Questa affermazione propone l'ordine R, T, A. Questo è sbagliato perché il veicolo A passa prima del veicolo T, non dopo. T deve aspettare A.",
         "regola": "Ricorda: l'ordine corretto è R, A, T. Non R, T, A.",
         "trabocchetti": ["nell"],
@@ -2380,6 +2681,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura i veicoli transitano nell'ordine: T, A, R",
         "risposta": False,
+        "riassunto": "Figura → ordine T, A, R?",
         "spiegazione": "L'ordine corretto di passaggio è R, A, T. Questa affermazione propone l'ordine T, A, R. Questo è completamente sbagliato perché il veicolo T è l'ultimo a passare, mentre R è il primo. L'ordine proposto è l'opposto di quello corretto per R e T.",
         "regola": "R è primo, T è ultimo. L'ordine T, A, R è sbagliato.",
         "trabocchetti": ["nell"],
@@ -2388,6 +2690,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo T transita prima degli altri veicoli",
         "risposta": False,
+        "riassunto": "Figura → T prima di tutti?",
         "spiegazione": "Il veicolo T ha il veicolo A alla sua destra, e A ha R alla sua destra. Questo significa che T deve aspettare sia A che R. Quindi, T è l'ultimo a passare nell'incrocio, non il primo. L'affermazione è falsa.",
         "regola": "T è l'ultimo, non il primo.",
         "trabocchetti": ["transita prima degli altri veicoli"],
@@ -2396,6 +2699,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura il veicolo B deve dare la precedenza al veicolo S",
         "risposta": True,
+        "riassunto": "Figura → B cede a S?",
         "spiegazione": "In questo incrocio, tutti i veicoli si trovano in una situazione di \"blocco\" perché ognuno ha un altro veicolo alla sua destra. Per risolvere questo blocco, si segue un ordine specifico. Il veicolo S passa per primo. Di conseguenza, il veicolo B deve aspettare e dare la precedenza a S.",
         "regola": "S passa per primo, quindi B aspetta S.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -2404,6 +2708,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura l'ordine di transito dei veicoli è: S, B, L, D",
         "risposta": True,
+        "riassunto": "Figura → ordine S, B, L, D?",
         "spiegazione": "Questo è l'ordine corretto per attraversare l'incrocio in questa specifica situazione di blocco. Nonostante la regola generale della precedenza a destra, in questi casi particolari si adotta questa sequenza per sbloccare il traffico. S passa per primo, poi B, poi L, e infine D.",
         "regola": "Memorizza la sequenza S, B, L, D per questo incrocio.",
         "trabocchetti": ["ordine di transito"],
@@ -2412,6 +2717,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura l'ordine di transito dei veicoli è: S, B, D e L contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → ordine S, B, poi D e L insieme?",
         "spiegazione": "L'ordine corretto è S, B, L, D. I veicoli D e L non possono passare contemporaneamente perché i loro percorsi si incrociano e creerebbero un pericolo. Devono passare uno dopo l'altro.",
         "regola": "D e L non passano mai insieme.",
         "trabocchetti": ["contemporaneamente"],
@@ -2420,6 +2726,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura l'ordine di transito dei veicoli è: S e D contemporaneamente, B, L",
         "risposta": False,
+        "riassunto": "Figura → S e D insieme, poi B, L?",
         "spiegazione": "L'ordine corretto è S, B, L, D. I veicoli S e D non possono passare contemporaneamente. S ha D alla sua destra e i loro percorsi si incrociano. Non è sicuro né permesso che passino insieme.",
         "regola": "S e D non passano mai insieme.",
         "trabocchetti": ["contemporaneamente"],
@@ -2428,6 +2735,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura il veicolo D transita prima del veicolo F",
         "risposta": True,
+        "riassunto": "Figura → D prima di F?",
         "spiegazione": "In questa intersezione, il veicolo D (l'autocarro) transita prima del veicolo F (il filobus). Questo perché, dopo che il veicolo R è passato, il veicolo D non ha più veicoli alla sua destra. Il veicolo F, invece, ha il veicolo D alla sua destra e deve aspettare che D passi.",
         "regola": "D ha F alla sua sinistra, quindi D passa prima di F.",
         "trabocchetti": ["transita prima"],
@@ -2436,6 +2744,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura l'ordine di transito dei veicoli è: R, D, F",
         "risposta": True,
+        "riassunto": "Figura → ordine R, D, F?",
         "spiegazione": "L'ordine corretto di transito è R, D, F. Il veicolo R (l'auto gialla) passa per primo perché non ha nessun veicolo alla sua destra. Poi passa il veicolo D (l'autocarro) perché R è già passato e F è alla sua sinistra. Infine, passa il veicolo F (il filobus) perché non ha più veicoli alla sua destra.",
         "regola": "R libera la destra di D, poi D libera la destra di F. Ordine: R, D, F.",
         "trabocchetti": ["ordine di transito"],
@@ -2444,6 +2753,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura il filobus passa per primo perché vincolato alla linea elettrica aerea",
         "risposta": False,
+        "riassunto": "Figura → filobus per primo perché legato alla linea aerea?",
         "spiegazione": "Questa affermazione è falsa. Il filobus non passa per primo. La regola generale della precedenza a destra si applica anche ai filobus, a meno che non ci siano segnali stradali specifici che indicano diversamente. Il fatto che sia 'vincolato alla linea elettrica aerea' non gli dà automaticamente la precedenza in un incrocio senza segnaletica.",
         "regola": "Filobus = veicolo normale. Non ha precedenza 'speciale' solo per la linea.",
         "immagine": "8e0614a2b4787ca3b680.jpg",
@@ -2451,6 +2761,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura l'ordine di transito dei veicoli è: F, R, D",
         "risposta": False,
+        "riassunto": "Figura → ordine F, R, D?",
         "spiegazione": "Questa affermazione è falsa. L'ordine di transito corretto, come abbiamo visto, è R, D, F. Il veicolo F (il filobus) non può passare per primo perché ha sia il veicolo R che il veicolo D alla sua destra, e deve dare loro la precedenza.",
         "regola": "F è l'ultimo! Ha R e D alla sua destra.",
         "trabocchetti": ["ordine di transito"],
@@ -2459,6 +2770,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura il veicolo T passa per ultimo",
         "risposta": True,
+        "riassunto": "Figura → T per ultimo?",
         "spiegazione": "Il veicolo T non ha nessun altro veicolo alla sua destra. Secondo la regola generale della precedenza a destra, chi non ha nessuno a destra passa per primo. Quindi, il veicolo T transita per primo, non per ultimo. L'affermazione che T passa per ultimo è FALSA.",
         "regola": "Destra libera, via libera! T ha la destra libera, quindi passa per primo.",
         "trabocchetti": ["ultimo"],
@@ -2467,6 +2779,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura l'ordine di precedenza dei veicoli è: R, B, D, T",
         "risposta": True,
+        "riassunto": "Figura → ordine R, B, D, T?",
         "spiegazione": "L'ordine corretto di precedenza si stabilisce applicando la regola della precedenza a destra. Il veicolo T non ha nessuno a destra e passa per primo. Poi D, che non ha più T alla sua destra. Poi B, che non ha più D alla sua destra. Infine R, che non ha più B alla sua destra. L'ordine corretto è T, D, B, R. L'affermazione che l'ordine è R, B, D, T è FALSA.",
         "regola": "Ricorda: T, D, B, R. Chi ha la destra libera va per primo.",
         "trabocchetti": ["Ordine di precedenza"],
@@ -2475,6 +2788,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura il veicolo D transita prima del veicolo B",
         "risposta": False,
+        "riassunto": "Figura → D prima di B?",
         "spiegazione": "Applicando la regola della precedenza a destra, l'ordine di transito è T, poi D, poi B, e infine R. Questo significa che il veicolo D transita effettivamente prima del veicolo B. L'affermazione che D transita prima di B è VERA.",
         "regola": "D precede B. L'ordine è T, D, B, R.",
         "trabocchetti": ["prima"],
@@ -2483,6 +2797,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura l'ordine di transito dei veicoli è: N, A, R",
         "risposta": True,
+        "riassunto": "Figura → ordine N, A, R?",
         "spiegazione": "Il veicolo N non ha il segnale di 'Dare Precedenza', quindi ha la precedenza su A e R che invece ce l'hanno. Dopo che N è passato, tra A e R, il veicolo A si trova alla destra di R. Per la regola generale della precedenza a destra, A transita prima di R. Quindi l'ordine è N, A, R.",
         "regola": "N senza segnale va per primo, poi A (a destra di R).",
         "immagine": "702d8c07118db4ac7282.jpg",
@@ -2490,6 +2805,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura i veicoli A ed R devono, se necessario, fermarsi",
         "risposta": True,
+        "riassunto": "Figura → A ed R si fermano se serve?",
         "spiegazione": "I veicoli A e R hanno il segnale di 'Dare Precedenza'. Questo segnale significa che devono dare la precedenza agli altri veicoli e, se non c'è spazio o se arriva un veicolo con precedenza (come N), devono fermarsi per permettere il transito.",
         "regola": "Dare Precedenza = Fermati solo se serve.",
         "trabocchetti": ["se necessario"],
@@ -2498,6 +2814,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura il veicolo A può transitare prima del veicolo R, ma dopo il veicolo N",
         "risposta": True,
+        "riassunto": "Figura → A prima di R, dopo N?",
         "spiegazione": "Questa domanda conferma l'ordine di transito corretto. N ha la precedenza su tutti. Dopo N, tra A e R, A ha la precedenza perché viene da destra rispetto a R, anche se entrambi hanno il segnale di 'Dare Precedenza' (una volta che la strada principale è libera).",
         "regola": "N prima, poi A (destra di R), poi R.",
         "immagine": "702d8c07118db4ac7282.jpg",
@@ -2505,6 +2822,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura l'ordine di transito dei veicoli è: A, N, R",
         "risposta": False,
+        "riassunto": "Figura → ordine A, N, R?",
         "spiegazione": "Questa affermazione è falsa perché il veicolo N non ha il segnale di 'Dare Precedenza' e quindi ha la precedenza su A e R. N deve transitare per primo, non A.",
         "regola": "N senza segnale = N va per primo.",
         "immagine": "702d8c07118db4ac7282.jpg",
@@ -2512,6 +2830,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione di figura l'ordine di precedenza dei veicoli è: N, R, A",
         "risposta": False,
+        "riassunto": "Figura → ordine N, R, A?",
         "spiegazione": "Questa affermazione è falsa. L'ordine corretto è N, A, R. Il veicolo A ha la precedenza su R perché si trova alla sua destra, dopo che N ha liberato l'incrocio.",
         "regola": "A è a destra di R, quindi A precede R.",
         "immagine": "702d8c07118db4ac7282.jpg",
@@ -2519,6 +2838,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione in figura il veicolo T transita per primo",
         "risposta": True,
+        "riassunto": "Figura → T per primo?",
         "spiegazione": "Il tram (veicolo T) ha sempre la precedenza sugli altri veicoli, a meno che non ci siano semafori o segnali specifici che dicano il contrario. Nell'immagine non ci sono segnali, quindi il tram passa per primo.",
         "regola": "Tram = Precedenza quasi sempre.",
         "trabocchetti": ["transita per primo"],
@@ -2527,6 +2847,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione in figura i veicoli transitano nel seguente ordine: T, P, M",
         "risposta": True,
+        "riassunto": "Figura → ordine T, P, M?",
         "spiegazione": "Il tram (T) passa per primo. Dopo il tram, dobbiamo guardare P e M. Il veicolo P viene da destra rispetto al veicolo M. Per la regola della precedenza a destra, P passa prima di M. Quindi l'ordine è T, P, M.",
         "regola": "Tram, poi chi viene da destra.",
         "trabocchetti": ["nel seguente ordine"],
@@ -2535,6 +2856,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione in figura il veicolo M transita per ultimo",
         "risposta": True,
+        "riassunto": "Figura → M per ultimo?",
         "spiegazione": "Abbiamo stabilito che l'ordine di passaggio è T, P, M. Questo significa che il veicolo M è l'ultimo a transitare, perché deve dare la precedenza sia al tram (T) che al veicolo P (che viene dalla sua destra).",
         "regola": "M è l'ultimo perché P è alla sua destra.",
         "trabocchetti": ["transita per ultimo"],
@@ -2543,6 +2865,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione in figura il veicolo M ha la precedenza perché è in servizio pubblico",
         "risposta": False,
+        "riassunto": "Figura → M precede perché servizio pubblico?",
         "spiegazione": "Anche se il veicolo M è un autobus (un servizio pubblico), questo non gli dà automaticamente la precedenza in un incrocio senza altri segnali specifici. Deve comunque rispettare le normali regole di precedenza, come dare la precedenza al tram e a chi viene da destra.",
         "regola": "Servizio pubblico non è precedenza automatica.",
         "trabocchetti": ["perché è in servizio pubblico"],
@@ -2551,6 +2874,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione in figura i veicoli transitano nel seguente ordine: T, M, P",
         "risposta": False,
+        "riassunto": "Figura → ordine T, M, P?",
         "spiegazione": "L'ordine corretto di passaggio è T, P, M. Questa domanda propone l'ordine T, M, P. Questo è sbagliato perché il veicolo P ha la precedenza sul veicolo M (P viene da destra rispetto a M).",
         "regola": "P è a destra di M, quindi P prima di M.",
         "trabocchetti": ["nel seguente ordine: T, M, P"],
@@ -2559,6 +2883,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'intersezione in figura, il veicolo T può passare per primo, purché il veicolo M non stia svolgendo un servizio pubblico di linea",
         "risposta": False,
+        "riassunto": "Figura → T per primo se M non è di linea?",
         "spiegazione": "Il tram (T) ha la precedenza sempre, a meno di segnali specifici che lo vietino. La sua precedenza non dipende dal fatto che il veicolo M sia o meno un servizio pubblico di linea. Il tram passa per primo in ogni caso.",
         "regola": "Tram ha precedenza, punto. Non dipende da altri veicoli.",
         "immagine": "4d071615d329c87b4c87.jpg",
@@ -2566,6 +2891,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo R passa per primo",
         "risposta": True,
+        "riassunto": "Figura → R per primo?",
         "spiegazione": "In questo incrocio, la presenza del veicolo eccezionale D rende la situazione particolare. Anche se R svolta a sinistra e di solito dovrebbe dare precedenza, in questo specifico quiz, R è il primo a passare per liberare l'incrocio. Quindi l'affermazione è VERA.",
         "regola": "R come 'Rapido' a liberare l'incrocio.",
         "trabocchetti": ["passa per primo"],
@@ -2574,6 +2900,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli transitano nel seguente ordine: R, D, A",
         "risposta": True,
+        "riassunto": "Figura → ordine R, D, A?",
         "spiegazione": "L'ordine corretto di transito in questo incrocio è R, poi D, e infine A. R passa per primo, come spiegato. Poi il veicolo eccezionale D, per la sua mole e la necessità di manovre ampie, transita prima di A. Infine, A attende che gli altri due veicoli abbiano liberato l'incrocio. Quindi l'affermazione è VERA.",
         "regola": "R-D-A: Ricorda Difficile Andare (contro l'ordine del quiz!).",
         "trabocchetti": ["seguente ordine"],
@@ -2582,6 +2909,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo D passa prima del veicolo R",
         "risposta": False,
+        "riassunto": "Figura → D prima di R?",
         "spiegazione": "Questa affermazione è FALSO perché, come abbiamo visto, il veicolo R passa per primo. Il veicolo D transita dopo R, quindi R passa prima di D, non il contrario.",
         "regola": "R è il 'Re' della precedenza qui.",
         "trabocchetti": ["prima del veicolo R"],
@@ -2590,6 +2918,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli transitano nel seguente ordine: D, A, R",
         "risposta": False,
+        "riassunto": "Figura → ordine D, A, R?",
         "spiegazione": "Questa affermazione è FALSO. L'ordine corretto di transito è R, D, A. Quindi, l'ordine D, A, R è sbagliato perché D non passa per primo e A non passa per secondo.",
         "regola": "L'ordine D, A, R è 'Disordinato, Assolutamente sbagliato, Ricorda l'ordine giusto!'.",
         "trabocchetti": ["seguente ordine"],
@@ -2598,6 +2927,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli A e R passano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → A e R insieme?",
         "spiegazione": "Questa affermazione è FALSO. I veicoli non possono passare contemporaneamente perché le loro traiettorie si incrociano e hanno precedenze diverse. R passa per primo, mentre A passa per ultimo, quindi non possono transitare nello stesso momento.",
         "regola": "Contemporaneamente? No, c'è un ordine preciso!",
         "trabocchetti": ["contemporaneamente"],
@@ -2606,6 +2936,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo T transita per primo",
         "risposta": True,
+        "riassunto": "Figura → T per primo?",
         "spiegazione": "Il veicolo T è un tram. I tram hanno quasi sempre la precedenza sugli altri veicoli, a meno che non ci siano semafori o segnali specifici che dicano il contrario. In questo incrocio non ci sono segnali, quindi il tram passa per primo.",
         "regola": "Tram = Precedenza quasi sempre.",
         "trabocchetti": ["per primo"],
@@ -2614,6 +2945,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo A transita subito dopo il veicolo T",
         "risposta": True,
+        "riassunto": "Figura → A subito dopo T?",
         "spiegazione": "Dopo che il tram (T) è passato, dobbiamo decidere tra A e S. Il veicolo A non ha nessun altro veicolo alla sua destra che deve dargli la precedenza. Il veicolo S, invece, ha il veicolo A alla sua destra. Per la regola della precedenza a destra, A passa prima di S. Quindi A passa subito dopo T.",
         "regola": "Dopo il tram, chi ha la destra libera passa.",
         "trabocchetti": ["subito dopo"],
@@ -2622,6 +2954,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo S deve attendere il transito dei veicoli T e A",
         "risposta": True,
+        "riassunto": "Figura → S attende T e A?",
         "spiegazione": "Il veicolo S deve dare la precedenza sia al tram (T) perché i tram hanno precedenza, sia al veicolo A perché A si trova alla destra di S (e non ha nessuno alla sua destra). Quindi S deve aspettare che sia T che A siano passati.",
         "regola": "S ha T e A alla sua destra, quindi aspetta entrambi.",
         "trabocchetti": ["deve attendere"],
@@ -2630,6 +2963,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura i veicoli devono transitare nel seguente ordine: T, A, S",
         "risposta": True,
+        "riassunto": "Figura → ordine T, A, S?",
         "spiegazione": "Riassumendo le regole: il tram (T) ha la precedenza su tutti. Dopo il tram, tra A e S, il veicolo A non ha nessuno alla sua destra, mentre S ha A alla sua destra. Quindi A passa prima di S. L'ordine corretto è T, poi A, poi S.",
         "regola": "Tram, poi chi ha la destra libera, poi l'ultimo.",
         "trabocchetti": ["nel seguente ordine"],
@@ -2638,6 +2972,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo A transita per primo",
         "risposta": False,
+        "riassunto": "Figura → A per primo?",
         "spiegazione": "Il veicolo A non transita per primo. Il tram (T) ha la precedenza su tutti gli altri veicoli, quindi è il tram a passare per primo, non il veicolo A.",
         "regola": "Il tram è sempre il primo (salvo eccezioni).",
         "trabocchetti": ["per primo"],
@@ -2646,6 +2981,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura i veicoli devono transitare nel seguente ordine: A, T, S",
         "risposta": False,
+        "riassunto": "Figura → ordine A, T, S?",
         "spiegazione": "L'ordine indicato è sbagliato. Il veicolo A non può passare per primo perché il tram (T) ha la precedenza. L'ordine corretto è T, A, S.",
         "regola": "Il tram non è mai secondo o terzo.",
         "trabocchetti": ["nel seguente ordine: A, T, S"],
@@ -2654,6 +2990,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo S transita dopo il veicolo T, ma prima del veicolo A",
         "risposta": False,
+        "riassunto": "Figura → S dopo T, prima di A?",
         "spiegazione": "Questa affermazione è falsa. Il veicolo S transita dopo il veicolo T, ma non prima del veicolo A. S deve dare la precedenza ad A perché A si trova alla sua destra. Quindi S transita per ultimo, dopo T e dopo A.",
         "regola": "S ha A a destra, quindi A passa prima di S.",
         "trabocchetti": ["ma prima del veicolo A"],
@@ -2662,6 +2999,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura i veicoli A e S transitano contemporaneamente dopo il passaggio del veicolo T",
         "risposta": False,
+        "riassunto": "Figura → A e S insieme dopo T?",
         "spiegazione": "I veicoli A e S non possono transitare contemporaneamente. Dopo il passaggio del tram (T), il veicolo A ha la precedenza su S (perché S ha A alla sua destra). Quindi prima passa A, poi passa S. Non passano insieme.",
         "regola": "Mai contemporaneamente se c'è una precedenza da rispettare.",
         "trabocchetti": ["contemporaneamente"],
@@ -2670,6 +3008,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo B deve attendere il transito del veicolo P",
         "risposta": True,
+        "riassunto": "Figura → B attende P?",
         "spiegazione": "In questo incrocio, la sequenza di transito corretta è P, poi B, e infine C. Questo significa che il veicolo B deve aspettare che il veicolo P sia passato prima di poter procedere.",
         "regola": "P è il primo, B lo segue.",
         "trabocchetti": ["deve attendere"],
@@ -2678,6 +3017,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo P transita per primo",
         "risposta": True,
+        "riassunto": "Figura → P per primo?",
         "spiegazione": "Secondo le regole di questo specifico incrocio, il veicolo P è il primo a impegnare e attraversare l'incrocio, dando il via alla sequenza di transito.",
         "regola": "P è il 'pioniere'.",
         "trabocchetti": ["per primo"],
@@ -2686,6 +3026,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli transitano nell'ordine: P, B, C",
         "risposta": True,
+        "riassunto": "Figura → ordine P, B, C?",
         "spiegazione": "La sequenza corretta per il transito dei veicoli in questo incrocio è P per primo, seguito da B, e infine C. Questa è la soluzione specifica per questo tipo di diagramma.",
         "regola": "Ricorda la sequenza: P-B-C.",
         "trabocchetti": ["nell"],
@@ -2694,6 +3035,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo C ha la destra occupata",
         "risposta": True,
+        "riassunto": "Figura → C ha la destra occupata?",
         "spiegazione": "Il veicolo C ha il veicolo B alla sua destra. Secondo la regola generale della precedenza a destra, se un veicolo ha un altro veicolo alla sua destra, la sua 'destra è occupata' e deve dare la precedenza.",
         "regola": "C vede B alla sua destra.",
         "immagine": "c188205d245315855a6b.jpg",
@@ -2701,6 +3043,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo B transita per ultimo",
         "risposta": False,
+        "riassunto": "Figura → B per ultimo?",
         "spiegazione": "Nella sequenza di transito P, B, C, il veicolo B transita per secondo, non per ultimo. L'ultimo veicolo a transitare è C.",
         "regola": "C è l'ultimo.",
         "trabocchetti": ["per ultimo"],
@@ -2709,6 +3052,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli transitano nell'ordine: P, C, B",
         "risposta": False,
+        "riassunto": "Figura → ordine P, C, B?",
         "spiegazione": "La sequenza corretta di transito per questo incrocio è P, B, C. La domanda propone l'ordine P, C, B, che è sbagliato perché B transita prima di C.",
         "regola": "Non P-C-B, ma P-B-C.",
         "trabocchetti": ["ordine"],
@@ -2717,6 +3061,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli P e C transitano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → P e C insieme?",
         "spiegazione": "I veicoli P e C non transitano nello stesso momento. P transita per primo e C transita per ultimo, quindi c'è un intervallo di tempo tra il loro passaggio.",
         "regola": "Uno alla volta!",
         "trabocchetti": ["contemporaneamente"],
@@ -2725,6 +3070,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo P impegna l'incrocio per primo ma si deve fermare al centro di esso",
         "risposta": False,
+        "riassunto": "Figura → P entra per primo ma si ferma al centro?",
         "spiegazione": "Il veicolo P impegna l'incrocio per primo e prosegue il suo percorso senza doversi fermare al centro. La fermata al centro è prevista solo in casi specifici, ad esempio per dare precedenza a veicoli provenienti da senso opposto quando si svolta a sinistra, ma non è il caso qui per il primo veicolo.",
         "regola": "P va senza fermarsi al centro.",
         "trabocchetti": ["si deve fermare al centro di esso"],
@@ -2733,6 +3079,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo B transita per primo",
         "risposta": True,
+        "riassunto": "Figura → B per primo?",
         "spiegazione": "In questo incrocio, il veicolo B transita per primo. Questa è una situazione particolare dove, nonostante B giri a sinistra, ha la precedenza sugli altri veicoli.",
         "regola": "In questo incrocio, B va per primo!",
         "trabocchetti": ["transita per primo"],
@@ -2741,6 +3088,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli transitano nel seguente ordine: B, T, S",
         "risposta": True,
+        "riassunto": "Figura → ordine B, T, S?",
         "spiegazione": "L'ordine corretto di transito per i veicoli in questo incrocio è B, poi T, e infine S. B passa per primo, poi T, e S è l'ultimo.",
         "regola": "L'ordine è B, T, S.",
         "trabocchetti": ["seguente ordine"],
@@ -2749,6 +3097,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo S transita per ultimo",
         "risposta": True,
+        "riassunto": "Figura → S per ultimo?",
         "spiegazione": "Il veicolo S transita per ultimo. Deve aspettare che sia B che T abbiano liberato l'incrocio prima di poter passare.",
         "regola": "S è l'ultimo ad andare.",
         "trabocchetti": ["transita per ultimo"],
@@ -2757,6 +3106,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli transitano nel seguente ordine: S, B, T",
         "risposta": False,
+        "riassunto": "Figura → ordine S, B, T?",
         "spiegazione": "Questa affermazione è falsa perché l'ordine corretto di transito è B, T, S, e non S, B, T. S non transita per primo.",
         "regola": "Non è S, B, T.",
         "immagine": "47022dbdc5f9d523c2b8.jpg",
@@ -2764,6 +3114,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo B deve dare la precedenza al veicolo T",
         "risposta": False,
+        "riassunto": "Figura → B cede a T?",
         "spiegazione": "Questa affermazione è falsa. Il veicolo B transita per primo, quindi non deve dare la precedenza al veicolo T.",
         "regola": "B non dà precedenza a T.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -2772,6 +3123,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura nessuno dei veicoli deve moderare la velocità",
         "risposta": False,
+        "riassunto": "Figura → nessuno modera la velocità?",
         "spiegazione": "Questa affermazione è falsa. In ogni incrocio, anche se si ha la precedenza, è sempre obbligatorio moderare la velocità per garantire la sicurezza e prevenire incidenti.",
         "regola": "Agli incroci, sempre moderare la velocità!",
         "trabocchetti": ["nessuno"],
@@ -2780,6 +3132,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli B e S transitano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → B e S insieme?",
         "spiegazione": "Questa affermazione è falsa. I veicoli B e S hanno percorsi che si incrociano all'interno dell'incrocio, quindi non possono transitare contemporaneamente senza rischio di collisione.",
         "regola": "Percorsi che si incrociano = non contemporaneamente.",
         "trabocchetti": ["contemporaneamente"],
@@ -2788,6 +3141,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo A transita dopo il veicolo R",
         "risposta": True,
+        "riassunto": "Figura → A dopo R?",
         "spiegazione": "Il veicolo R (giallo) non ha nessun veicolo alla sua destra, quindi transita per primo. Il veicolo A (blu) transita dopo R, come secondo veicolo. Per questo motivo, l'affermazione è VERA.",
         "regola": "R è il primo, A è il secondo.",
         "trabocchetti": ["dopo il veicolo R"],
@@ -2796,6 +3150,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R non deve dare la precedenza ad alcun veicolo",
         "risposta": True,
+        "riassunto": "Figura → R non cede a nessuno?",
         "spiegazione": "Il veicolo R (giallo) non ha nessun veicolo che proviene dalla sua destra. Secondo la regola generale della precedenza a destra, R può transitare per primo senza dover dare la precedenza a nessun altro veicolo. Per questo motivo, l'affermazione è VERA.",
         "regola": "R è libero, va per primo.",
         "immagine": "b7ce58880c5f1decae33.jpg",
@@ -2803,6 +3158,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo C deve dare la precedenza al veicolo A",
         "risposta": True,
+        "riassunto": "Figura → C cede ad A?",
         "spiegazione": "Dopo che il veicolo R è passato, rimangono i veicoli A (blu) e C (rosso). In questo specifico incrocio, il veicolo C deve dare la precedenza al veicolo A. Questo significa che A transita prima di C. Per questo motivo, l'affermazione è VERA.",
         "regola": "Per questo incrocio, A prima di C.",
         "immagine": "b7ce58880c5f1decae33.jpg",
@@ -2810,6 +3166,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli transitano nel seguente ordine: R, A, C",
         "risposta": True,
+        "riassunto": "Figura → ordine R, A, C?",
         "spiegazione": "Analizzando le precedenze: R (giallo) non ha nessuno alla sua destra e passa per primo. Poi, tra A (blu) e C (rosso), il veicolo A transita prima di C (come spiegato nella domanda 23412). Quindi l'ordine corretto è R, A, C. Per questo motivo, l'affermazione è VERA.",
         "regola": "L'ordine è R-A-C.",
         "trabocchetti": ["nel seguente ordine: R, A, C"],
@@ -2818,6 +3175,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo C non deve dare la precedenza ad alcun veicolo",
         "risposta": False,
+        "riassunto": "Figura → C non cede a nessuno?",
         "spiegazione": "Il veicolo C (rosso) deve dare la precedenza sia al veicolo R (giallo), che passa per primo, sia al veicolo A (blu), che passa prima di C. Quindi, l'affermazione che C non deve dare la precedenza a nessuno è FALSO.",
         "regola": "C non è l'ultimo, deve aspettare.",
         "trabocchetti": ["alcun"],
@@ -2826,6 +3184,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli R e C transitano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → R e C insieme?",
         "spiegazione": "Il veicolo R (giallo) transita per primo, mentre il veicolo C (rosso) transita per ultimo. Non possono transitare nello stesso momento perché R ha la precedenza su C. Per questo motivo, l'affermazione è FALSO.",
         "regola": "Mai 'contemporaneamente' se c'è un ordine.",
         "trabocchetti": ["contemporaneamente"],
@@ -2834,6 +3193,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura i veicoli transitano nel seguente ordine: R, C, A",
         "risposta": False,
+        "riassunto": "Figura → ordine R, C, A?",
         "spiegazione": "L'ordine corretto di transito, come stabilito dalle regole di precedenza per questo incrocio, è R, A, C. L'affermazione propone un ordine diverso (R, C, A), invertendo A e C. Per questo motivo, l'affermazione è FALSO.",
         "regola": "L'ordine è R-A-C, non R-C-A.",
         "immagine": "b7ce58880c5f1decae33.jpg",
@@ -2841,6 +3201,7 @@ QUESTIONS = [
     {
         "domanda": "Secondo le norme di precedenza nell'incrocio rappresentato in figura il veicolo R deve attendere il transito dei veicoli C e A",
         "risposta": False,
+        "riassunto": "Figura → R attende C e A?",
         "spiegazione": "Il veicolo R (giallo) non ha nessun veicolo alla sua destra, quindi ha la precedenza su tutti gli altri veicoli (A e C). Per questo motivo, R transita per primo e non deve attendere nessuno. Per questo motivo, l'affermazione è FALSO.",
         "regola": "R non aspetta nessuno.",
         "trabocchetti": ["deve attendere"],
@@ -2849,6 +3210,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli disimpegnano l'incrocio nel seguente ordine: H, D, B",
         "risposta": True,
+        "riassunto": "Figura → ordine H, D, B?",
         "spiegazione": "In questo incrocio, l'ordine corretto di passaggio è H, D, B. Il veicolo H (rosso) passa per primo perché non ha nessun veicolo alla sua destra e il veicolo D (giallo), a cui dovrebbe dare la precedenza, è a sua volta bloccato dal veicolo B (blu). Quindi H può passare. Dopo H, passa il veicolo D. Infine, il veicolo B passa per ultimo.",
         "regola": "H è 'libero' e D è 'bloccato da B', quindi H va. Poi D va prima di B.",
         "immagine": "c4afd94e8cfd37ab6558.jpg",
@@ -2856,6 +3218,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo B deve passare per ultimo",
         "risposta": True,
+        "riassunto": "Figura → B per ultimo?",
         "spiegazione": "Sì, il veicolo B (blu) deve passare per ultimo. Questo perché il veicolo D (giallo) passa prima di B in questo specifico incrocio, e il veicolo H (rosso) passa prima di tutti.",
         "regola": "B è l'ultimo della fila.",
         "trabocchetti": ["per ultimo"],
@@ -2864,6 +3227,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo H non deve dare la precedenza ad alcun veicolo",
         "risposta": True,
+        "riassunto": "Figura → H non cede a nessuno?",
         "spiegazione": "Il veicolo H (rosso) non deve dare la precedenza a nessun veicolo in questo caso. Anche se svolta a sinistra e dovrebbe dare precedenza a D (giallo), D è bloccato dal veicolo B (blu). Inoltre, H non ha veicoli alla sua destra.",
         "regola": "H ha la strada 'libera' per primo.",
         "immagine": "c4afd94e8cfd37ab6558.jpg",
@@ -2871,6 +3235,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo D deve dare la precedenza al veicolo H",
         "risposta": True,
+        "riassunto": "Figura → D cede a H?",
         "spiegazione": "Sì, il veicolo D (giallo) deve dare la precedenza al veicolo H (rosso). Questo è coerente con il fatto che H passa per primo nell'incrocio.",
         "regola": "D aspetta H.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -2879,6 +3244,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo D deve attendere che il veicolo B sia transitato",
         "risposta": False,
+        "riassunto": "Figura → D attende B?",
         "spiegazione": "No, è falso. Il veicolo D (giallo) non deve attendere che il veicolo B (blu) sia transitato. In questo specifico incrocio, D passa prima di B.",
         "regola": "D non aspetta B.",
         "trabocchetti": ["deve attendere"],
@@ -2887,6 +3253,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli disimpegnano l'incrocio nel seguente ordine: H, B, D",
         "risposta": False,
+        "riassunto": "Figura → ordine H, B, D?",
         "spiegazione": "No, è falso. L'ordine corretto di passaggio è H, D, B. Il veicolo D (giallo) passa prima del veicolo B (blu), quindi l'ordine H, B, D è sbagliato.",
         "regola": "D prima di B.",
         "immagine": "c4afd94e8cfd37ab6558.jpg",
@@ -2894,6 +3261,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo B ha la precedenza sul veicolo D",
         "risposta": False,
+        "riassunto": "Figura → B precede D?",
         "spiegazione": "No, è falso. Il veicolo B (blu) non ha la precedenza sul veicolo D (giallo). In questo incrocio, D passa prima di B.",
         "regola": "B non ha precedenza su D.",
         "trabocchetti": ["ha la precedenza"],
@@ -2902,6 +3270,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli H e B possono passare contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → H e B insieme?",
         "spiegazione": "No, è falso. I veicoli H (rosso) e B (blu) non possono passare contemporaneamente. H passa per primo, mentre B passa per ultimo, quindi non c'è possibilità di passaggio simultaneo.",
         "regola": "Non contemporaneamente.",
         "trabocchetti": ["contemporaneamente"],
@@ -2910,6 +3279,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo P può passare per primo",
         "risposta": True,
+        "riassunto": "Figura → P per primo?",
         "spiegazione": "In questo incrocio si crea una situazione di 'blocco' perché ogni veicolo ha un altro veicolo alla sua destra. Per risolvere il blocco e permettere a tutti di passare, il veicolo P è quello che può iniziare la manovra per primo.",
         "regola": "P sblocca il blocco.",
         "immagine": "cc9d8436a5276200be73.jpg",
@@ -2917,6 +3287,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo D deve dare la precedenza al veicolo P",
         "risposta": True,
+        "riassunto": "Figura → D cede a P?",
         "spiegazione": "Questa affermazione è vera. Anche se normalmente D non dovrebbe dare precedenza a P (perché P è alla sua sinistra), in questo specifico incrocio a 'blocco', D cede il passo a P per permettere a P di passare per primo e sbloccare la situazione.",
         "regola": "D cede a P per sbloccare.",
         "trabocchetti": ["D deve dare la precedenza al veicolo P"],
@@ -2925,6 +3296,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo B deve attendere che siano transitati i veicoli P e D",
         "risposta": True,
+        "riassunto": "Figura → B attende P e D?",
         "spiegazione": "Il veicolo B deve aspettare sia P che D. B ha P alla sua destra, quindi deve dargli la precedenza. Inoltre, B sta svoltando a sinistra e deve dare precedenza ai veicoli che gli vengono incontro e vanno dritto, come D. Quindi B aspetta P e D.",
         "regola": "B aspetta P (destra) e D (di fronte).",
         "immagine": "cc9d8436a5276200be73.jpg",
@@ -2932,6 +3304,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo L deve dare la precedenza al veicolo B",
         "risposta": True,
+        "riassunto": "Figura → L cede a B?",
         "spiegazione": "Il veicolo L ha il veicolo B alla sua destra. Secondo la regola generale della precedenza a destra, L deve dare la precedenza a B.",
         "regola": "L ha B a destra, quindi L aspetta B.",
         "immagine": "cc9d8436a5276200be73.jpg",
@@ -2939,6 +3312,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura i veicoli devono passare nel seguente ordine: P, D, B, L",
         "risposta": True,
+        "riassunto": "Figura → ordine P, D, B, L?",
         "spiegazione": "Questo è l'ordine corretto di passaggio per risolvere il 'blocco' di precedenze in questo incrocio. Prima passa P, poi D, poi B, e infine L.",
         "regola": "L'ordine è P, D, B, L.",
         "immagine": "cc9d8436a5276200be73.jpg",
@@ -2946,6 +3320,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo B deve dare la precedenza al veicolo L",
         "risposta": False,
+        "riassunto": "Figura → B cede a L?",
         "spiegazione": "Questa affermazione è falsa. Il veicolo B non deve dare la precedenza a L. Anzi, è il contrario: L deve dare la precedenza a B perché B è alla destra di L. B ha P alla sua destra e deve dare precedenza a D (che gli viene incontro e va dritto).",
         "regola": "B non cede a L (L è a sinistra).",
         "trabocchetti": ["deve dare la precedenza al veicolo L"],
@@ -2954,6 +3329,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo P deve attendere che siano transitati gli altri tre veicoli",
         "risposta": False,
+        "riassunto": "Figura → P attende gli altri tre?",
         "spiegazione": "Questa affermazione è falsa. Come abbiamo visto, il veicolo P è il primo a passare per sbloccare l'incrocio. Non deve aspettare gli altri tre veicoli, ma è lui che passa per primo.",
         "regola": "P è il primo, non l'ultimo.",
         "immagine": "cc9d8436a5276200be73.jpg",
@@ -2961,6 +3337,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura i veicoli devono passare nel seguente ordine: P, D, L, B",
         "risposta": False,
+        "riassunto": "Figura → ordine P, D, L, B?",
         "spiegazione": "Questa affermazione è falsa. L'ordine corretto di passaggio è P, D, B, L. L'affermazione inverte l'ordine di B e L. L deve dare la precedenza a B (perché B è alla sua destra), quindi B passa prima di L.",
         "regola": "B prima di L (L aspetta B).",
         "trabocchetti": ["ordine"],
@@ -2969,6 +3346,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura i veicoli D e L passano contemporaneamente per primi",
         "risposta": False,
+        "riassunto": "Figura → D e L insieme per primi?",
         "spiegazione": "Questa affermazione è falsa. Il primo veicolo a passare è P. D e L non possono passare contemporaneamente per primi, perché D deve aspettare L (se P fosse già passato) e L deve aspettare B.",
         "regola": "Solo P passa per primo.",
         "trabocchetti": ["passano contemporaneamente per primi"],
@@ -2977,6 +3355,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo E transita per primo",
         "risposta": True,
+        "riassunto": "Figura → E per primo?",
         "spiegazione": "In questo incrocio, i veicoli si trovano in una situazione di 'precedenza a catena' o 'circolare': E dovrebbe dare precedenza a C, C a M, e M a E. Per risolvere questa situazione di stallo, la regola generale è che il veicolo che svolta a destra (il veicolo E) transita per primo, perché ha il percorso più semplice e 'rompe' la catena di precedenze.",
         "regola": "In caso di 'catena' di precedenze, chi svolta a destra (E) va per primo.",
         "trabocchetti": ["transita per primo"],
@@ -2985,6 +3364,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo C transita dopo il veicolo E",
         "risposta": True,
+        "riassunto": "Figura → C dopo E?",
         "spiegazione": "Dopo che il veicolo E ha attraversato l'incrocio (avendo la precedenza per rompere la catena), rimangono i veicoli C e M. Il veicolo C va dritto e ha il veicolo M alla sua sinistra. Secondo la regola della precedenza a destra, C ha la precedenza su M. Quindi, C transita dopo E.",
         "regola": "Dopo E, C ha la precedenza su M (C va dritto, M svolta a sinistra).",
         "trabocchetti": ["transita dopo il veicolo E"],
@@ -2993,6 +3373,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura i veicoli devono transitare nel seguente ordine: E, C, M",
         "risposta": True,
+        "riassunto": "Figura → ordine E, C, M?",
         "spiegazione": "L'ordine corretto di transito è E, C, M. E transita per primo per risolvere la situazione di precedenza circolare (svolta a destra). Poi, tra C e M, C va dritto e ha M alla sua sinistra, quindi C ha la precedenza su M. M, che svolta a sinistra, è l'ultimo a passare perché deve dare precedenza a entrambi.",
         "regola": "L'ordine è E (svolta a destra), C (va dritto), M (svolta a sinistra).",
         "trabocchetti": ["nel seguente ordine"],
@@ -3001,6 +3382,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura il veicolo M transita per primo",
         "risposta": False,
+        "riassunto": "Figura → M per primo?",
         "spiegazione": "Il veicolo M svolta a sinistra. In un incrocio senza segnali, chi svolta a sinistra deve dare precedenza sia a chi viene da destra (E) sia a chi va dritto o svolta a destra (C). Per questo motivo, M è l'ultimo a passare, non il primo.",
         "regola": "Chi svolta a sinistra (M) è quasi sempre l'ultimo.",
         "trabocchetti": ["primo"],
@@ -3009,6 +3391,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura i veicoli devono transitare nel seguente ordine: C, M ed E",
         "risposta": False,
+        "riassunto": "Figura → ordine C, poi M ed E?",
         "spiegazione": "L'ordine corretto di transito è E, C, M. L'affermazione propone un ordine diverso (C, M ed E), che è sbagliato. In particolare, C non è il primo (E lo è), e M non è il secondo (è l'ultimo).",
         "regola": "Ricorda l'ordine E, C, M. Qualsiasi altro ordine è sbagliato.",
         "immagine": "8996d48774a1bf3953e1.jpg",
@@ -3016,6 +3399,7 @@ QUESTIONS = [
     {
         "domanda": "Dovendo attraversare l'incrocio rappresentato in figura i veicoli M ed E transitano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → M ed E insieme?",
         "spiegazione": "I veicoli M ed E non possono transitare contemporaneamente. Il veicolo E ha la precedenza su M (E è alla destra di M e M svolta a sinistra). Inoltre, le loro traiettorie si incrociano, quindi non possono passare nello stesso momento senza rischio di collisione.",
         "regola": "Se c'è precedenza o incrocio di traiettorie, non si passa mai contemporaneamente.",
         "trabocchetti": ["contemporaneamente"],
@@ -3024,6 +3408,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo A passa per primo",
         "risposta": True,
+        "riassunto": "Figura → A per primo?",
         "spiegazione": "In questo incrocio, tutti i veicoli devono svoltare a sinistra e si crea una situazione particolare dove ognuno ha un veicolo alla sua destra. Per sbloccare l'incrocio, si considera che il veicolo A passi per primo. Una volta che A ha svoltato, libera la strada per gli altri.",
         "regola": "In questo incrocio 'a catena' con tutti a sinistra, A sblocca la situazione e va per primo.",
         "trabocchetti": ["passa per primo"],
@@ -3032,6 +3417,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo C deve dare la precedenza al veicolo A",
         "risposta": True,
+        "riassunto": "Figura → C cede ad A?",
         "spiegazione": "Il veicolo C ha il veicolo A alla sua destra. Secondo la regola generale della precedenza a destra, C deve aspettare che A passi prima di muoversi.",
         "regola": "C ha A a destra, quindi C aspetta A.",
         "immagine": "146b4d43c742c4d9612f.jpg",
@@ -3039,6 +3425,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo L passa per ultimo",
         "risposta": True,
+        "riassunto": "Figura → L per ultimo?",
         "spiegazione": "Dopo che A è passato, C può passare perché A non è più alla sua destra. Solo dopo che C è passato, L può passare perché C non è più alla sua destra. Per questo motivo, L è l'ultimo a muoversi nell'incrocio.",
         "regola": "L aspetta C, C aspetta A. L è l'ultimo.",
         "trabocchetti": ["passa per ultimo"],
@@ -3047,6 +3434,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura i veicoli devono passare nel seguente ordine: A, C, L",
         "risposta": True,
+        "riassunto": "Figura → ordine A, C, L?",
         "spiegazione": "La sequenza corretta per il passaggio dei veicoli in questo incrocio è: prima A, poi C, e infine L. Questo ordine permette di risolvere la situazione di 'blocco' e di rispettare le precedenze.",
         "regola": "L'ordine corretto è A, C, L.",
         "trabocchetti": ["nel seguente ordine"],
@@ -3055,6 +3443,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo A deve attendere che siano transitati i veicoli L e C",
         "risposta": False,
+        "riassunto": "Figura → A attende L e C?",
         "spiegazione": "Questa affermazione è falsa perché il veicolo A è il primo a passare in questo incrocio. Non deve aspettare né L né C.",
         "regola": "A non aspetta, A va per primo.",
         "immagine": "146b4d43c742c4d9612f.jpg",
@@ -3062,6 +3451,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo L passa per primo",
         "risposta": False,
+        "riassunto": "Figura → L per primo?",
         "spiegazione": "Questa affermazione è falsa. Il veicolo L è l'ultimo a passare nell'incrocio, non il primo.",
         "regola": "L è l'ultimo, non il primo.",
         "trabocchetti": ["passa per primo"],
@@ -3070,6 +3460,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura i veicoli devono passare nel seguente ordine: L, C, A",
         "risposta": False,
+        "riassunto": "Figura → ordine L, C, A?",
         "spiegazione": "Questa affermazione è falsa. L'ordine corretto di passaggio dei veicoli è A, C, L. L'ordine proposto (L, C, A) è sbagliato.",
         "regola": "L'ordine corretto è A, C, L.",
         "trabocchetti": ["nel seguente ordine"],
@@ -3078,6 +3469,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo all'incrocio rappresentato in figura il veicolo C deve attendere il transito del veicolo L",
         "risposta": False,
+        "riassunto": "Figura → C attende L?",
         "spiegazione": "Questa affermazione è falsa. Il veicolo C deve dare la precedenza al veicolo A (che è alla sua destra). Il veicolo L è alla sinistra di C, quindi C non deve aspettare L. Anzi, è L che deve aspettare C.",
         "regola": "C aspetta A, non L. L aspetta C.",
         "trabocchetti": ["deve attendere il transito del veicolo L"],
@@ -3086,6 +3478,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo E non deve dare la precedenza ad alcun veicolo",
         "risposta": True,
+        "riassunto": "Figura → E non cede a nessuno?",
         "spiegazione": "Il veicolo E non ha nessun veicolo alla sua destra che deve attraversare la sua traiettoria. Per questo motivo, il veicolo E può passare per primo senza dare la precedenza a nessuno.",
         "regola": "E è \"libero a destra\", quindi passa per primo.",
         "immagine": "0a126b9c4a86065398a5.jpg",
@@ -3093,6 +3486,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo C deve dare la precedenza al veicolo E",
         "risposta": True,
+        "riassunto": "Figura → C cede a E?",
         "spiegazione": "Il veicolo E passa per primo. Il veicolo C, per poter passare, deve aspettare che il veicolo E abbia completato la sua manovra. Quindi C deve dare la precedenza a E.",
         "regola": "E passa prima di C.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -3101,6 +3495,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo L deve attendere il transito dei veicoli E e C",
         "risposta": True,
+        "riassunto": "Figura → L attende E e C?",
         "spiegazione": "Il veicolo L deve aspettare prima il veicolo E, perché E passa per primo. Poi, tra L e C, il veicolo C va dritto mentre L gira a sinistra. Chi gira a sinistra deve dare la precedenza a chi va dritto. Quindi L deve aspettare anche C.",
         "regola": "L gira a sinistra, aspetta tutti.",
         "trabocchetti": ["attendere il transito dei veicoli E e C"],
@@ -3109,6 +3504,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli disimpegnano l'incrocio nel seguente ordine: E, C, L",
         "risposta": True,
+        "riassunto": "Figura → ordine E, C, L?",
         "spiegazione": "Abbiamo stabilito che il veicolo E passa per primo perché non ha nessuno alla sua destra. Poi, tra C e L, il veicolo C va dritto e L gira a sinistra, quindi L deve dare la precedenza a C. L'ordine corretto è E, poi C, e infine L.",
         "regola": "E (libero), C (dritto), L (sinistra).",
         "trabocchetti": ["disimpegnano l"],
@@ -3117,6 +3513,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo C deve attendere il transito del veicolo L",
         "risposta": False,
+        "riassunto": "Figura → C attende L?",
         "spiegazione": "Questa affermazione è falsa. Dopo che E è passato, rimangono C e L. Il veicolo C va dritto, mentre il veicolo L gira a sinistra. La regola dice che chi gira a sinistra deve dare la precedenza a chi va dritto. Quindi è L che deve aspettare C, non il contrario.",
         "regola": "C va dritto, L gira: C passa prima di L.",
         "trabocchetti": ["deve attendere"],
@@ -3125,6 +3522,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo E deve passare per ultimo",
         "risposta": False,
+        "riassunto": "Figura → E per ultimo?",
         "spiegazione": "Questa affermazione è falsa. Il veicolo E non ha nessun veicolo alla sua destra che deve attraversare la sua traiettoria, quindi è il primo a passare, non l'ultimo.",
         "regola": "E è libero a destra, passa per primo.",
         "trabocchetti": ["passare per ultimo"],
@@ -3133,6 +3531,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli disimpegnano l'incrocio nel seguente ordine: E, L, C",
         "risposta": False,
+        "riassunto": "Figura → ordine E, L, C?",
         "spiegazione": "Questa affermazione è falsa. L'ordine corretto di passaggio è E, C, L. Il veicolo L deve dare la precedenza al veicolo C perché C va dritto e L gira a sinistra. Quindi L non può passare prima di C.",
         "regola": "L gira a sinistra, C va dritto: L aspetta C.",
         "trabocchetti": ["nel seguente ordine: E, L, C"],
@@ -3141,6 +3540,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli C ed E passano contemporaneamente",
         "risposta": False,
+        "riassunto": "Figura → C ed E insieme?",
         "spiegazione": "Questa affermazione è falsa. Il veicolo E passa per primo perché non ha nessuno alla sua destra. Il veicolo C deve dare la precedenza a E. Quindi non possono passare nello stesso momento.",
         "regola": "E ha precedenza su C, quindi non passano insieme.",
         "trabocchetti": ["passano contemporaneamente"],
@@ -3149,6 +3549,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli passano nel seguente ordine: C, A, P",
         "risposta": True,
+        "riassunto": "Figura → ordine C, A, P?",
         "spiegazione": "Questo è un incrocio particolare dove, applicando la regola della precedenza a destra, si crea un \"circolo vizioso\" (ogni veicolo ha un altro alla sua destra, bloccandosi a vicenda). In questi casi, per convenzione nei quiz, il veicolo che svolta a sinistra (C) passa per primo per \"sbloccare\" l'incrocio. Poi, tra A e P, A passa prima di P. Quindi l'ordine corretto è C, A, P.",
         "regola": "C-A-P: Circolo Anomalo Precedenza. Ricorda l'ordine per questo incrocio 'bloccato'.",
         "immagine": "ac10ded84370751dd006.jpg",
@@ -3156,6 +3557,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo A passa dopo il veicolo C",
         "risposta": True,
+        "riassunto": "Figura → A dopo C?",
         "spiegazione": "Sì, è vero. Secondo l'ordine di passaggio stabilito per questo incrocio 'bloccato' (C, A, P), il veicolo C passa per primo, e solo dopo passa il veicolo A.",
         "regola": "C precede A.",
         "trabocchetti": ["dopo"],
@@ -3164,6 +3566,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo P passa per ultimo",
         "risposta": True,
+        "riassunto": "Figura → P per ultimo?",
         "spiegazione": "Sì, è vero. Nell'ordine di passaggio C, A, P, il veicolo P è l'ultimo a passare l'incrocio.",
         "regola": "P chiude la fila.",
         "immagine": "ac10ded84370751dd006.jpg",
@@ -3171,6 +3574,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura i veicoli passano nel seguente ordine: P, C, A",
         "risposta": False,
+        "riassunto": "Figura → ordine P, C, A?",
         "spiegazione": "No, è falso. L'ordine corretto di passaggio per questo incrocio, secondo la convenzione dei quiz per i 'circoli viziosi', è C, A, P. L'ordine P, C, A è sbagliato.",
         "regola": "Non P-C-A, ma C-A-P.",
         "immagine": "ac10ded84370751dd006.jpg",
@@ -3178,6 +3582,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo P passa prima del veicolo C",
         "risposta": False,
+        "riassunto": "Figura → P prima di C?",
         "spiegazione": "No, è falso. Il veicolo C passa per primo, mentre il veicolo P passa per ultimo. Quindi P non passa prima di C.",
         "regola": "C precede P.",
         "trabocchetti": ["prima del veicolo C"],
@@ -3186,6 +3591,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato in figura il veicolo P passa per primo perché ha la destra libera",
         "risposta": False,
+        "riassunto": "Figura → P per primo perché ha la destra libera?",
         "spiegazione": "No, è falso. Il veicolo P non passa per primo, ma per ultimo, secondo l'ordine C, A, P. Inoltre, in questo incrocio si crea un \"circolo vizioso\" (deadlock) dove la regola della \"destra libera\" non può essere applicata in modo semplice per determinare il primo veicolo a passare.",
         "regola": "P è l'ultimo, non il primo. La destra non è 'libera' in un blocco.",
         "trabocchetti": ["per primo", "perché ha la destra libera"],
@@ -3194,6 +3600,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura i veicoli passano nel seguente ordine: S, N, C",
         "risposta": True,
+        "riassunto": "Figura → ordine S, N, C?",
         "spiegazione": "In questo incrocio senza segnali, il veicolo C deve dare la precedenza al veicolo S perché S si trova alla sua destra. Quindi C aspetta S. Tra S e N, anche se S svolta a sinistra e N va dritto, in questa specifica configurazione di 'blocco' (dove tutti aspettano qualcuno), il veicolo S procede per primo per 'sbloccare' l'incrocio. Dopo S, il veicolo N può passare perché non ha più ostacoli alla sua destra. Infine, il veicolo C, che aspettava S, può passare per ultimo. L'ordine è quindi S, N, C.",
         "regola": "Sblocca l'incrocio: S, N, C!",
         "trabocchetti": ["nel seguente ordine"],
@@ -3202,6 +3609,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo C transita per ultimo",
         "risposta": True,
+        "riassunto": "Figura → C per ultimo?",
         "spiegazione": "Il veicolo C deve dare la precedenza al veicolo S perché S si trova alla sua destra. Questo significa che C non può passare per primo. Dopo che S e N sono passati, C può finalmente attraversare l'incrocio, quindi transita per ultimo.",
         "regola": "C ha S a destra, quindi C aspetta sempre!",
         "trabocchetti": ["per ultimo"],
@@ -3210,6 +3618,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo N transita dopo il veicolo S e prima del veicolo C",
         "risposta": True,
+        "riassunto": "Figura → N dopo S, prima di C?",
         "spiegazione": "Secondo l'ordine di passaggio corretto per questo incrocio (S, N, C), il veicolo N transita dopo il veicolo S (che è il primo) e prima del veicolo C (che è l'ultimo).",
         "regola": "N è in mezzo: dopo S, prima di C.",
         "immagine": "2b5b9e7c618e35cf60db.jpg",
@@ -3217,6 +3626,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura i veicoli passano nel seguente ordine: C, N, S",
         "risposta": False,
+        "riassunto": "Figura → ordine C, N, S?",
         "spiegazione": "Questa affermazione è falsa perché il veicolo C non può passare per primo. C deve dare la precedenza al veicolo S che si trova alla sua destra. L'ordine corretto di passaggio è S, N, C.",
         "regola": "C non è mai primo, ha S a destra!",
         "trabocchetti": ["C, N, S"],
@@ -3225,6 +3635,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo N transita dopo il veicolo C e dopo del veicolo S",
         "risposta": False,
+        "riassunto": "Figura → N dopo C e S?",
         "spiegazione": "Questa affermazione è falsa. Il veicolo N transita dopo S, ma prima di C. Non transita dopo C. L'ordine corretto è S, N, C.",
         "regola": "N non aspetta C, N passa prima!",
         "trabocchetti": ["dopo il veicolo C"],
@@ -3233,6 +3644,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo C transita per primo",
         "risposta": False,
+        "riassunto": "Figura → C per primo?",
         "spiegazione": "Questa affermazione è falsa. Il veicolo C non può transitare per primo perché deve dare la precedenza al veicolo S, che si trova alla sua destra. C transita per ultimo.",
         "regola": "C ha S a destra, mai per primo!",
         "trabocchetti": ["per primo"],
@@ -3241,6 +3653,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura il veicolo T transita per primo",
         "risposta": True,
+        "riassunto": "Figura → T per primo?",
         "spiegazione": "Il veicolo T è un tram. I tram hanno quasi sempre la precedenza su tutti gli altri veicoli (auto, moto, ecc.), a meno che non ci siano segnali specifici che indicano il contrario. In questa immagine non ci sono segnali che tolgono la precedenza al tram, quindi il tram T transita per primo.",
         "regola": "Tram = Precedenza quasi assoluta.",
         "trabocchetti": ["transita per primo"],
@@ -3249,6 +3662,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'incrocio rappresentato nella figura i veicoli passano nel seguente ordine: T, L ed A, infine C",
         "risposta": True,
+        "riassunto": "Figura → ordine T, poi L e A, infine C?",
         "spiegazione": "Analizziamo l'ordine di passaggio:1. Il veicolo T (il tram) passa per primo, come spiegato prima, perché ha la precedenza su tutti.2. Dopo il tram, il veicolo L (blu) va dritto. I veicoli A e C devono svoltare a sinistra e incrociano la sua traiettoria. Il veicolo L non ha nessun veicolo alla sua destra che deve dargli la precedenza. Quindi, L passa dopo il tram.3. Ora restano i veicoli A (giallo) e C (rosso), entrambi svoltano a sinistra. Normalmente, il veicolo C, essendo alla destra di A, avrebbe la precedenza su A. Tuttavia, in questo specifico contesto di quiz, l'ordine indicato (A prima di C) è considerato corretto. Questo può accadere in situazioni dove il veicolo più a sinistra (A) ha una traiettoria di svolta più 'interna' o diretta, permettendogli di completare la manovra prima di C, che deve attendere per evitare incroci.",
         "regola": "Tram > Dritto. Tra chi svolta a sinistra affiancato, in questo quiz: A (sinistra) prima di C (destra).",
         "trabocchetti": ["nel seguente ordine: T, L ed A, infine C", "ed A"],

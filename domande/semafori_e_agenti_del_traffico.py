@@ -1,7 +1,7 @@
 """Domande — Semafori e agenti del traffico.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Semafori e agenti del traffico"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza della luce semaforica rossa i veicoli devono arrestarsi",
         "risposta": True,
+        "riassunto": "Luce rossa → veicoli devono fermarsi?",
         "spiegazione": "Quando il semaforo mostra la luce rossa, tutti i veicoli devono fermarsi. È un segnale di stop obbligatorio per la sicurezza di tutti.",
         "regola": "Rosso = Stop obbligatorio.",
         "trabocchetti": ["devono arrestarsi"],
@@ -18,6 +19,7 @@ QUESTIONS = [
     {
         "domanda": "Nei semafori sistemati in verticale la luce rossa si trova in alto, in quelli posti in orizzontale si trova a sinistra",
         "risposta": True,
+        "riassunto": "Rosso → in alto se verticale, a sinistra se orizzontale?",
         "spiegazione": "Questa è una regola standard per la posizione delle luci nei semafori. La luce rossa, essendo la più importante per la sicurezza, è sempre posizionata in modo da essere ben visibile: in alto se il semaforo è verticale, a sinistra se è orizzontale.",
         "regola": "Rosso: sempre in alto o a sinistra.",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -25,6 +27,7 @@ QUESTIONS = [
     {
         "domanda": "Nel semaforo la luce rossa può essere di dimensioni più grandi delle altre",
         "risposta": True,
+        "riassunto": "Luce rossa → può essere più grande?",
         "spiegazione": "Sì, a volte la luce rossa può essere più grande delle altre (gialla e verde). Questo serve per renderla ancora più visibile e per sottolineare l'importanza di fermarsi, aumentando la sicurezza.",
         "regola": "Rosso grande = più visibile, più importante.",
         "trabocchetti": ["può essere"],
@@ -33,6 +36,7 @@ QUESTIONS = [
     {
         "domanda": "Quando è accesa la luce rossa del semaforo bisogna arrestarsi prima della striscia trasversale d'arresto",
         "risposta": True,
+        "riassunto": "Rosso → fermarsi prima della striscia di arresto?",
         "spiegazione": "Quando il semaforo è rosso, devi fermarti prima della striscia bianca disegnata sull'asfalto. Questa striscia indica il punto esatto dove i veicoli devono arrestarsi per non intralciare pedoni o altri veicoli.",
         "regola": "Rosso = Stop *prima* della striscia.",
         "trabocchetti": ["prima"],
@@ -41,6 +45,7 @@ QUESTIONS = [
     {
         "domanda": "Durante il periodo di accensione della luce rossa i veicoli non devono superare la striscia di arresto",
         "risposta": True,
+        "riassunto": "Rosso → non superare la striscia di arresto?",
         "spiegazione": "Questa domanda ribadisce il concetto precedente. Durante tutto il tempo in cui il semaforo è rosso, i veicoli devono rimanere fermi e non devono in nessun caso superare la striscia di arresto.",
         "regola": "Rosso = Striscia è il limite, non oltrepassare.",
         "trabocchetti": ["non devono superare"],
@@ -49,6 +54,7 @@ QUESTIONS = [
     {
         "domanda": "La luce rossa accesa del semaforo consente di svoltare a destra con prudenza, dando precedenza ai pedoni che attraversano la strada",
         "risposta": False,
+        "riassunto": "Rosso → svolta a destra con prudenza?",
         "spiegazione": "Falso. La luce rossa del semaforo significa 'STOP assoluto'. Non puoi svoltare a destra, nemmeno con prudenza, a meno che non ci sia una freccia verde specifica che ti autorizzi a farlo. Il rosso è un divieto di movimento.",
         "regola": "Rosso = Stop totale, nessuna svolta.",
         "trabocchetti": ["consente di svoltare"],
@@ -57,6 +63,7 @@ QUESTIONS = [
     {
         "domanda": "La luce rossa accesa del semaforo consente di ripartire lentamente quando appare il giallo per gli altri veicoli",
         "risposta": False,
+        "riassunto": "Rosso → ripartire quando gli altri hanno il giallo?",
         "spiegazione": "Falso. Quando il semaforo è rosso per te, devi aspettare che diventi verde per te. Non devi guardare il semaforo degli altri veicoli. Ripartire quando gli altri hanno il giallo è molto pericoloso perché potresti incrociare veicoli che stanno ancora passando o che stanno per partire.",
         "regola": "Aspetta il *tuo* verde, non il giallo degli altri.",
         "trabocchetti": ["consente di ripartire"],
@@ -65,6 +72,7 @@ QUESTIONS = [
     {
         "domanda": "La luce rossa accesa del semaforo consente di impegnare l'incrocio con molta prudenza a condizione che non ci siano altri veicoli o pedoni",
         "risposta": False,
+        "riassunto": "Rosso → passare se nessuno arriva?",
         "spiegazione": "Falso. Il semaforo rosso è un divieto assoluto di entrare nell'incrocio. Anche se sembra che non ci siano altri veicoli o pedoni, non puoi ignorare il segnale. La prudenza non ti autorizza a infrangere il codice della strada.",
         "regola": "Rosso = Stop, incrocio vietato.",
         "trabocchetti": ["consente di impegnare l", "e"],
@@ -73,6 +81,7 @@ QUESTIONS = [
     {
         "domanda": "La luce rossa accesa del semaforo consente l'attraversamento dell'incrocio, purché sia libero",
         "risposta": False,
+        "riassunto": "Rosso → attraversare se l'incrocio è libero?",
         "spiegazione": "Falso. Come nelle domande precedenti, il semaforo rosso significa che non puoi attraversare l'incrocio. Non importa se l'incrocio è libero o meno, il segnale rosso è un divieto di passaggio.",
         "regola": "Rosso = Stop, non attraversare.",
         "trabocchetti": ["consente l"],
@@ -81,6 +90,7 @@ QUESTIONS = [
     {
         "domanda": "La luce rossa accesa del semaforo obbliga ad affrettarsi per liberare velocemente l'incrocio",
         "risposta": False,
+        "riassunto": "Rosso → affrettarsi a liberare l'incrocio?",
         "spiegazione": "Falso. Se il semaforo è rosso, tu devi essere fermo *prima* dell'incrocio. Non devi affrettarti per liberare l'incrocio, perché non dovresti esserci dentro. Il rosso ti obbliga a fermarti e aspettare.",
         "regola": "Rosso = Stop. Non entrare, non affrettarti.",
         "trabocchetti": ["incrocio"],
@@ -89,6 +99,7 @@ QUESTIONS = [
     {
         "domanda": "Quando è accesa la luce verde del semaforo in figura è possibile svoltare a sinistra, dando la precedenza ai veicoli che arrivano di fronte",
         "risposta": True,
+        "riassunto": "Verde in figura → sinistra dando precedenza a chi viene di fronte?",
         "spiegazione": "Quando il semaforo è verde, puoi svoltare a sinistra. Però, devi sempre dare la precedenza ai veicoli che arrivano dalla direzione opposta e che vanno dritto o svoltano a destra. Questo è molto importante per la sicurezza.",
         "regola": "Verde per svoltare a sinistra? Precedenza a chi viene di fronte!",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -96,6 +107,7 @@ QUESTIONS = [
     {
         "domanda": "Quando è accesa la luce verde del semaforo in figura si può svoltare a destra",
         "risposta": True,
+        "riassunto": "Verde in figura → svolta a destra?",
         "spiegazione": "Sì, con la luce verde del semaforo puoi svoltare a destra. Il verde ti dà il permesso di passare e di scegliere la direzione (dritto, destra o sinistra, con le dovute precedenze).",
         "regola": "Verde = Via libera (anche a destra).",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -103,6 +115,7 @@ QUESTIONS = [
     {
         "domanda": "Quando è accesa la luce verde del semaforo in figura si può proseguire diritto",
         "risposta": True,
+        "riassunto": "Verde in figura → diritto?",
         "spiegazione": "Assolutamente sì. La luce verde del semaforo ti permette di proseguire dritto attraverso l'incrocio, a meno che non ci siano altri segnali che ti vietano di farlo.",
         "regola": "Verde = Via libera (anche dritto).",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -110,6 +123,7 @@ QUESTIONS = [
     {
         "domanda": "Quando è accesa la luce verde del semaforo in figura si può impegnare l'incrocio, soltanto avendo la certezza di poterlo sgomberare prima dell'accensione della luce rossa",
         "risposta": True,
+        "riassunto": "Verde in figura → impegnare solo se si libera prima del rosso?",
         "spiegazione": "Puoi entrare nell'incrocio con il semaforo verde, ma devi essere sicuro di poterlo lasciare libero (sgomberare) prima che la luce diventi rossa. Non devi bloccare l'incrocio, altrimenti ostacoli il traffico che arriva dall'altra direzione.",
         "regola": "Verde per entrare, ma non bloccare l'incrocio!",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -117,6 +131,7 @@ QUESTIONS = [
     {
         "domanda": "Quando è accesa la luce verde del semaforo in figura si può attraversare l'incrocio, usando prudenza",
         "risposta": True,
+        "riassunto": "Verde in figura → attraversare con prudenza?",
         "spiegazione": "Sì, con il semaforo verde puoi attraversare l'incrocio. Però, devi sempre guidare con attenzione e prudenza, perché potrebbero esserci situazioni inaspettate, come pedoni distratti o altri veicoli.",
         "regola": "Verde = Via, ma sempre con prudenza!",
         "trabocchetti": ["usando prudenza"],
@@ -125,6 +140,7 @@ QUESTIONS = [
     {
         "domanda": "Avvicinandosi ad un semaforo, che già da molto tempo ha la luce verde accesa, occorre proseguire con prudenza, pronti eventualmente a fermarsi se, quando si accende la luce gialla, non si è ancora impegnato l'incrocio",
         "risposta": True,
+        "riassunto": "Verde da molto → prudenza, pronti a fermarsi al giallo?",
         "spiegazione": "Se il semaforo è verde da molto tempo, è probabile che stia per cambiare. Quindi, è saggio rallentare e prepararsi a fermarsi se la luce diventa gialla e non sei ancora entrato nell'incrocio. Così eviti frenate brusche o di passare con il rosso.",
         "regola": "Verde 'vecchio'? Rallenta, preparati al giallo!",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -132,6 +148,7 @@ QUESTIONS = [
     {
         "domanda": "Avvicinandosi ad un semaforo, che già da molto tempo ha la luce verde accesa, occorre accelerare, senza che vi sia necessità di guardare la luce del semaforo",
         "risposta": False,
+        "riassunto": "Verde da molto → accelerare senza guardare il semaforo?",
         "spiegazione": "Questa affermazione è falsa e molto pericolosa! Non devi mai accelerare senza guardare il semaforo, specialmente se il verde è acceso da tanto. Potrebbe cambiare all'improvviso e causare un incidente. Devi sempre essere attento e pronto a reagire.",
         "regola": "Semaforo = sempre attenzione, mai accelerare alla cieca!",
         "trabocchetti": ["accelerare"],
@@ -140,6 +157,7 @@ QUESTIONS = [
     {
         "domanda": "Quando è accesa la luce verde del semaforo in figura si può svoltare a sinistra, ma solo quando si accende anche la luce gialla",
         "risposta": False,
+        "riassunto": "Verde in figura → sinistra solo col giallo acceso?",
         "spiegazione": "È falso. Puoi svoltare a sinistra quando il semaforo è verde. Non devi aspettare che si accenda il giallo. Anzi, quando si accende il giallo, significa che devi fermarti, a meno che tu non sia già troppo vicino all'incrocio per farlo in sicurezza.",
         "regola": "Giallo = fermati, non svoltare!",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -147,6 +165,7 @@ QUESTIONS = [
     {
         "domanda": "Quando è accesa la luce verde del semaforo in figura, il conducente che svolta a sinistra ha la precedenza sui veicoli che provengono di fronte",
         "risposta": False,
+        "riassunto": "Verde → chi svolta a sinistra ha precedenza su chi viene di fronte?",
         "spiegazione": "Questa affermazione è falsa. Quando svolti a sinistra con il semaforo verde, devi sempre dare la precedenza ai veicoli che arrivano dalla direzione opposta e che vanno dritto o svoltano a destra. Non hai tu la precedenza.",
         "regola": "Svolti a sinistra? Precedenza a chi viene di fronte!",
         "trabocchetti": ["ha la precedenza"],
@@ -155,6 +174,7 @@ QUESTIONS = [
     {
         "domanda": "Quando è accesa la luce verde del semaforo in figura si può svoltare solo se la carreggiata è divisa in corsie",
         "risposta": False,
+        "riassunto": "Verde → svolta solo se ci sono corsie?",
         "spiegazione": "È falso. Puoi svoltare con il semaforo verde anche se la strada non ha corsie separate. La possibilità di svoltare non dipende dalla presenza di corsie sulla carreggiata.",
         "regola": "Verde = puoi svoltare, con o senza corsie!",
         "trabocchetti": ["solo"],
@@ -163,6 +183,7 @@ QUESTIONS = [
     {
         "domanda": "Quando è accesa la luce verde del semaforo in figura si deve proseguire diritto",
         "risposta": False,
+        "riassunto": "Verde in figura → obbligo di diritto?",
         "spiegazione": "È falso. Con il semaforo verde puoi proseguire dritto, ma non 'devi' per forza. Il verde ti dà la possibilità di scegliere la direzione: puoi andare dritto, svoltare a destra o svoltare a sinistra (sempre rispettando le precedenze). Non sei obbligato a una sola direzione.",
         "regola": "Verde = puoi scegliere, non sei obbligato solo dritto!",
         "trabocchetti": ["deve"],
@@ -171,6 +192,7 @@ QUESTIONS = [
     {
         "domanda": "Quando è accesa la luce verde del semaforo in figura si può proseguire diritto, dando però la precedenza ai pedoni",
         "risposta": False,
+        "riassunto": "Verde → diritto dando precedenza ai pedoni?",
         "spiegazione": "Questa affermazione è falsa. Quando il semaforo è verde per i veicoli che proseguono dritto, di solito è rosso per i pedoni che attraversano la stessa strada. Quindi, non devi dare la precedenza ai pedoni in questo caso specifico, perché non dovrebbero attraversare. La precedenza ai pedoni si dà quando si svolta o se hanno già iniziato l'attraversamento prima che il semaforo cambiasse.",
         "regola": "Verde veicoli = rosso pedoni (sulla tua traiettoria).",
         "trabocchetti": ["dando però la precedenza ai pedoni"],
@@ -179,6 +201,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla fissa si accende appena si spegne il verde",
         "risposta": True,
+        "riassunto": "Giallo fisso → si accende appena si spegne il verde?",
         "spiegazione": "Quando il semaforo è verde, significa che puoi passare. Quando il verde si spegne, subito dopo si accende la luce gialla fissa. Questo serve per avvisarti che sta per arrivare il rosso e devi prepararti a fermarti.",
         "regola": "Verde -> Giallo -> Rosso: è la sequenza!",
         "trabocchetti": ["appena"],
@@ -187,6 +210,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla fissa si spegne prima che si accenda il rosso",
         "risposta": True,
+        "riassunto": "Giallo fisso → si spegne prima del rosso?",
         "spiegazione": "La luce gialla fissa è un segnale di transizione. Si accende dopo il verde e rimane accesa per un breve periodo, poi si spegne e subito dopo si accende la luce rossa. Non si accende mai insieme al rosso.",
         "regola": "Giallo è un ponte, non sta con il rosso.",
         "trabocchetti": ["prima che"],
@@ -195,6 +219,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla fissa obbliga chi ha già impegnato l'incrocio a liberarlo al più presto",
         "risposta": True,
+        "riassunto": "Giallo fisso → chi è nell'incrocio lo libera subito?",
         "spiegazione": "Se sei già dentro l'incrocio (cioè hai superato la linea di arresto) quando si accende la luce gialla fissa, non puoi fermarti in mezzo. Devi continuare e uscire dall'incrocio il più velocemente possibile per non bloccare il traffico.",
         "regola": "Se sei dentro, esci subito!",
         "trabocchetti": ["obbliga", "al più presto"],
@@ -203,6 +228,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla fissa obbliga a fermarsi prima del punto di arresto, purché lo si possa fare senza creare pericolo",
         "risposta": True,
+        "riassunto": "Giallo fisso → fermarsi se possibile senza pericolo?",
         "spiegazione": "Quando vedi la luce gialla fissa, la regola generale è che devi fermarti prima della linea di arresto. Ma c'è un'eccezione importante: se sei troppo vicino all'incrocio e frenare di colpo sarebbe pericoloso (per te o per gli altri), allora puoi passare.",
         "regola": "Fermati, ma con prudenza!",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -210,6 +236,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla fissa si accende quando il verde e il rosso sono spenti",
         "risposta": True,
+        "riassunto": "Giallo fisso → acceso con verde e rosso spenti?",
         "spiegazione": "Il semaforo funziona con un colore alla volta. Quando c'è la luce gialla fissa, significa che né il verde né il rosso sono accesi. È un momento di transizione in cui solo il giallo è visibile.",
         "regola": "Giallo è solo, non con altri colori.",
         "trabocchetti": ["sono spenti"],
@@ -218,6 +245,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla fissa consente in ogni caso di proseguire impegnando l'incrocio",
         "risposta": False,
+        "riassunto": "Giallo fisso → sempre si può passare?",
         "spiegazione": "Questa affermazione è falsa perché la luce gialla fissa non ti permette 'in ogni caso' di proseguire. La regola principale è fermarsi. Puoi proseguire solo se non puoi fermarti in sicurezza.",
         "regola": "'In ogni caso' = Attenzione, spesso FALSO!",
         "trabocchetti": ["in ogni caso"],
@@ -226,6 +254,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla fissa obbliga il conducente a tornare indietro se ha già superato la striscia trasversale di arresto",
         "risposta": False,
+        "riassunto": "Giallo fisso → tornare indietro se superata la striscia?",
         "spiegazione": "Se hai già superato la linea di arresto quando si accende il giallo, non devi assolutamente tornare indietro! Sarebbe molto pericoloso e potresti causare un incidente. Devi invece liberare l'incrocio, cioè andare avanti.",
         "regola": "Mai tornare indietro all'incrocio!",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -233,6 +262,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla fissa ci obbliga ad arrestarci in ogni caso, senza impegnare l'incrocio",
         "risposta": False,
+        "riassunto": "Giallo fisso → arrestarsi in ogni caso?",
         "spiegazione": "Questa affermazione è falsa per lo stesso motivo della domanda 21003. Non è vero che devi fermarti 'in ogni caso'. Se sei troppo vicino all'incrocio e frenare di colpo è pericoloso, devi passare.",
         "regola": "'In ogni caso' = Attenzione, spesso FALSO!",
         "trabocchetti": ["in ogni caso"],
@@ -241,6 +271,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla fissa si accende quando è ancora accesa quella rossa",
         "risposta": False,
+        "riassunto": "Giallo fisso → acceso insieme al rosso?",
         "spiegazione": "Questa affermazione è falsa. La luce gialla fissa non si accende mai quando il rosso è ancora acceso. Il giallo si accende dopo il verde e prima del rosso, da solo.",
         "regola": "Giallo e Rosso non stanno insieme.",
         "trabocchetti": ["ancora accesa"],
@@ -249,6 +280,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla fissa si spegne insieme con il verde",
         "risposta": False,
+        "riassunto": "Giallo fisso → si spegne col verde?",
         "spiegazione": "Questa affermazione è falsa. La luce gialla fissa si accende *dopo* che il verde si è spento. Non si spengono insieme, ma in sequenza.",
         "regola": "Giallo viene dopo il verde.",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -256,6 +288,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla fissa si accende insieme con il rosso",
         "risposta": False,
+        "riassunto": "Giallo fisso → si accende col rosso?",
         "spiegazione": "Questa affermazione è falsa. La luce gialla fissa non si accende mai insieme al rosso. Il giallo è un segnale di transizione che appare da solo tra il verde e il rosso.",
         "regola": "Giallo è solo, non con rosso.",
         "trabocchetti": ["insieme con"],
@@ -264,6 +297,7 @@ QUESTIONS = [
     {
         "domanda": "Incontrando il semaforo in figura è consentito il passaggio quando è accesa la luce verde",
         "risposta": True,
+        "riassunto": "Semaforo in figura → passaggio col verde?",
         "spiegazione": "La luce verde del semaforo significa che puoi passare. È il segnale di 'via libera'.",
         "regola": "Verde = Via libera!",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -271,6 +305,7 @@ QUESTIONS = [
     {
         "domanda": "Incontrando il semaforo in figura è consentito il passaggio quando si accende la luce gialla fissa, solo se non ci si può arrestare in condizioni di sicurezza prima dell'incrocio",
         "risposta": True,
+        "riassunto": "Semaforo in figura → giallo fisso se non ci si può fermare in sicurezza?",
         "spiegazione": "Quando la luce gialla è fissa, devi fermarti. Ma se sei troppo vicino all'incrocio e frenare di colpo sarebbe pericoloso, puoi passare per liberare l'incrocio in sicurezza.",
         "regola": "Giallo fisso: fermati, ma se sei troppo vicino, passa con prudenza.",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -278,6 +313,7 @@ QUESTIONS = [
     {
         "domanda": "Incontrando il semaforo in figura è consentito il passaggio quando è accesa la luce gialla lampeggiante, usando però la massima prudenza e moderando la velocità",
         "risposta": True,
+        "riassunto": "Semaforo in figura → giallo lampeggiante con massima prudenza?",
         "spiegazione": "La luce gialla lampeggiante ti avvisa di un pericolo o di un incrocio dove devi fare molta attenzione. Non ti obbliga a fermarti, ma devi passare con prudenza e rallentare, come se fosse un incrocio senza semaforo.",
         "regola": "Giallo lampeggiante = Attenzione, passa con prudenza.",
         "trabocchetti": ["massima prudenza e moderando la velocità"],
@@ -286,6 +322,7 @@ QUESTIONS = [
     {
         "domanda": "Incontrando il semaforo in figura è consentito il passaggio quando esso è spento, usando però la massima prudenza",
         "risposta": True,
+        "riassunto": "Semaforo in figura → spento, con massima prudenza?",
         "spiegazione": "Se il semaforo è spento, è come se non ci fosse. Devi comportarti come in un incrocio normale, rispettando le regole della precedenza (ad esempio, dare la precedenza a destra) e usando molta attenzione.",
         "regola": "Semaforo spento = Incrocio normale, massima prudenza.",
         "trabocchetti": ["usando però la massima prudenza"],
@@ -294,6 +331,7 @@ QUESTIONS = [
     {
         "domanda": "Incontrando il segnale luminoso in figura è consentito il passaggio in caso di semaforo guasto, usando però la massima prudenza",
         "risposta": True,
+        "riassunto": "Segnale luminoso in figura → guasto, con prudenza?",
         "spiegazione": "Un semaforo guasto è come un semaforo spento. Non funziona, quindi devi passare con molta attenzione, rispettando le regole generali della precedenza, come se l'incrocio non fosse regolato.",
         "regola": "Semaforo guasto = Semaforo spento, massima prudenza.",
         "trabocchetti": ["usando però la massima prudenza"],
@@ -302,6 +340,7 @@ QUESTIONS = [
     {
         "domanda": "Incontrando il semaforo in figura è consentito il passaggio poco prima che si accenda la luce verde, purché sia già accesa quella rossa per gli altri veicoli",
         "risposta": False,
+        "riassunto": "Semaforo in figura → poco prima del verde se gli altri hanno rosso?",
         "spiegazione": "Non puoi mai passare prima che si accenda la tua luce verde. Anche se gli altri hanno il rosso, devi aspettare il tuo segnale di via libera per la tua sicurezza e quella degli altri.",
         "regola": "Aspetta il tuo verde, non anticipare mai!",
         "trabocchetti": ["poco prima che si accenda la luce verde"],
@@ -310,6 +349,7 @@ QUESTIONS = [
     {
         "domanda": "Incontrando il semaforo in figura è consentito il passaggio quando si accende la luce rossa, usando la massima prudenza",
         "risposta": False,
+        "riassunto": "Semaforo in figura → col rosso con prudenza?",
         "spiegazione": "La luce rossa significa 'stop', devi fermarti assolutamente. Non puoi passare, nemmeno se pensi di farlo con prudenza. È un divieto assoluto.",
         "regola": "Rosso = Stop, sempre!",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -317,6 +357,7 @@ QUESTIONS = [
     {
         "domanda": "Incontrando il semaforo in figura è consentito il passaggio quando, pur essendo accesa la luce rossa, non vengono veicoli dalle altre direzioni",
         "risposta": False,
+        "riassunto": "Semaforo in figura → col rosso se nessuno arriva?",
         "spiegazione": "Anche se non vedi altri veicoli, la luce rossa ti obbliga a fermarti. Non puoi decidere tu quando passare; devi rispettare il segnale per la sicurezza di tutti.",
         "regola": "Rosso = Stop, anche se la strada sembra libera.",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -324,6 +365,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale luminoso in figura è un semaforo per i veicoli",
         "risposta": True,
+        "riassunto": "Segnale luminoso in figura → semaforo veicolare?",
         "spiegazione": "L'immagine mostra un semaforo classico con le tre luci (rosso, giallo, verde). Questo tipo di semaforo serve proprio a regolare il traffico dei veicoli su strada.",
         "regola": "Semaforo = luci per veicoli.",
         "trabocchetti": ["Segnale luminoso", "semaforo"],
@@ -332,6 +374,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura è posto, di norma, in un incrocio",
         "risposta": True,
+        "riassunto": "Semaforo in figura → di norma a un incrocio?",
         "spiegazione": "I semafori sono usati principalmente per organizzare il traffico dove più strade si incontrano, cioè negli incroci, per evitare incidenti e rendere il passaggio più sicuro.",
         "regola": "Semaforo + incrocio = ordine.",
         "trabocchetti": ["di norma"],
@@ -340,6 +383,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura serve, di norma, a regolare il passaggio dei veicoli in un incrocio",
         "risposta": True,
+        "riassunto": "Semaforo in figura → regola i veicoli all'incrocio?",
         "spiegazione": "Il semaforo ha lo scopo di indicare ai veicoli quando possono passare e quando devono fermarsi, specialmente negli incroci, per garantire la sicurezza e la fluidità del traffico.",
         "regola": "Semaforo = regola il traffico all'incrocio.",
         "trabocchetti": ["di norma"],
@@ -348,6 +392,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura, con luce gialla fissa accesa, consente l'attraversamento dell'incrocio, se lo si è già impegnato",
         "risposta": True,
+        "riassunto": "Semaforo in figura col giallo → passare se già impegnato?",
         "spiegazione": "Quando il semaforo diventa giallo fisso, significa che sta per diventare rosso. Se sei già entrato nell'incrocio (lo hai 'impegnato'), devi liberarlo velocemente e con prudenza. Se invece non sei ancora entrato, devi fermarti prima dell'incrocio.",
         "regola": "Giallo fisso: se sei dentro, esci; se sei fuori, fermati.",
         "trabocchetti": ["se lo si è già impegnato"],
@@ -356,6 +401,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura non vale per i veicoli in servizio di linea per trasporto di persone",
         "risposta": False,
+        "riassunto": "Semaforo in figura → non vale per bus di linea?",
         "spiegazione": "I semafori normali valgono per TUTTI i veicoli, inclusi autobus, tram e altri mezzi pubblici. Non ci sono eccezioni per i veicoli di linea, a meno che non ci siano semafori speciali dedicati a loro (come quelli a barre bianche per i tram).",
         "regola": "Semaforo normale = vale per tutti i veicoli.",
         "trabocchetti": ["non vale per"],
@@ -364,6 +410,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale luminoso in figura è un semaforo che non vale per le biciclette",
         "risposta": False,
+        "riassunto": "Segnale luminoso in figura → non vale per le bici?",
         "spiegazione": "Le biciclette sono considerate veicoli e, come tali, devono rispettare le regole del codice della strada, inclusi i semafori. Devono seguire il semaforo per i veicoli, a meno che non ci sia un semaforo specifico per le biciclette su una pista ciclabile.",
         "regola": "Bici = veicolo, rispetta il semaforo.",
         "trabocchetti": ["non vale per le biciclette"],
@@ -372,6 +419,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura si trova in tutti i caselli autostradali",
         "risposta": False,
+        "riassunto": "Semaforo in figura → in tutti i caselli?",
         "spiegazione": "Nei caselli autostradali ci sono spesso semafori, ma non 'in tutti' i caselli e non sempre sono esattamente come quello in figura (a volte sono a due luci, verde/rosso). La parola 'tutti' rende l'affermazione falsa.",
         "regola": "'Tutti' o 'sempre' = attenzione, spesso è FALSO.",
         "trabocchetti": ["tutti"],
@@ -380,6 +428,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura si trova in vicinanza dei binari ferroviari",
         "risposta": False,
+        "riassunto": "Semaforo in figura → vicino ai binari?",
         "spiegazione": "Vicino ai binari ferroviari (passaggi a livello) ci sono segnali specifici, come le luci rosse lampeggianti o le barriere, non il semaforo classico a tre luci come quello in figura.",
         "regola": "Binari = semaforo speciale (rosso lampeggiante), non questo.",
         "trabocchetti": ["in vicinanza dei binari ferroviari"],
@@ -388,6 +437,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura, con luce gialla lampeggiante accesa, non consente il transito dei veicoli",
         "risposta": False,
+        "riassunto": "Semaforo in figura col giallo lampeggiante → transito vietato?",
         "spiegazione": "La luce gialla lampeggiante significa che puoi passare, ma devi fare molta attenzione, dare la precedenza a chi ne ha diritto e procedere con prudenza. Non significa che non puoi passare.",
         "regola": "Giallo lampeggiante = passa con prudenza, dai precedenza.",
         "trabocchetti": ["non consente il transito"],
@@ -396,6 +446,7 @@ QUESTIONS = [
     {
         "domanda": "Nei semafori in figura le frecce verdi accese indicano le direzioni verso le quali si può proseguire",
         "risposta": True,
+        "riassunto": "Frecce verdi → direzioni consentite?",
         "spiegazione": "Quando vedi una freccia verde accesa su un semaforo, significa che puoi andare nella direzione indicata dalla freccia. È come un 'via libera' solo per quella direzione.",
         "regola": "Verde freccia = Via libera (solo in quella direzione).",
         "immagine": "6e47e4b438b0c6edc718.jpg",
@@ -403,6 +454,7 @@ QUESTIONS = [
     {
         "domanda": "Nei semafori in figura le frecce rosse accese indicano che non si può proseguire nelle direzioni indicate",
         "risposta": True,
+        "riassunto": "Frecce rosse → direzioni vietate?",
         "spiegazione": "Se la freccia rossa è accesa, significa che devi fermarti e non puoi andare nella direzione indicata dalla freccia. È come un 'stop' specifico per quella direzione.",
         "regola": "Rossa freccia = Stop assoluto (in quella direzione).",
         "trabocchetti": ["non si può proseguire"],
@@ -411,6 +463,7 @@ QUESTIONS = [
     {
         "domanda": "Nei semafori in figura le frecce gialle fisse accese indicano di liberare l'incrocio, qualora sia stato già impegnato, o di arrestarsi in condizioni di sicurezza",
         "risposta": True,
+        "riassunto": "Frecce gialle fisse → liberare o fermarsi in sicurezza?",
         "spiegazione": "Una freccia gialla fissa (non lampeggiante) ti dice due cose: se sei già nell'incrocio, devi uscire subito. Se invece non sei ancora nell'incrocio, devi fermarti in modo sicuro, se puoi farlo senza pericoli.",
         "regola": "Giallo fisso = Attenzione, libera o fermati.",
         "trabocchetti": ["fisse", "Liberare l", "e"],
@@ -419,6 +472,7 @@ QUESTIONS = [
     {
         "domanda": "Nel semaforo in figura le frecce gialle lampeggianti accese indicano di attraversare l'incrocio con particolare prudenza",
         "risposta": True,
+        "riassunto": "Frecce gialle lampeggianti → attraversare con prudenza?",
         "spiegazione": "Quando vedi una freccia gialla che lampeggia, significa che puoi attraversare l'incrocio, ma devi fare molta attenzione. Devi dare la precedenza agli altri veicoli o pedoni se necessario e procedere con cautela.",
         "regola": "Giallo lampeggiante = Passa con prudenza (e precedenza).",
         "trabocchetti": ["lampeggianti", "Particolare prudenza"],
@@ -427,6 +481,7 @@ QUESTIONS = [
     {
         "domanda": "Nel semaforo in figura le frecce verdi accese, rivolte verso l'alto, indicano che si può proseguire in tutte le direzioni",
         "risposta": False,
+        "riassunto": "Frecce verdi verso l'alto → tutte le direzioni?",
         "spiegazione": "Una freccia verde rivolta verso l'alto significa che puoi andare solo dritto. Non significa che puoi andare in tutte le direzioni (dritto, destra, sinistra). Per quello ci sarebbe un semaforo verde normale o più frecce.",
         "regola": "Freccia verde SU = Solo dritto. Non 'tutto'.",
         "trabocchetti": ["in tutte le direzioni"],
@@ -435,6 +490,7 @@ QUESTIONS = [
     {
         "domanda": "Nel semaforo in figura le frecce rosse accese indicano di proseguire con prudenza",
         "risposta": False,
+        "riassunto": "Frecce rosse → proseguire con prudenza?",
         "spiegazione": "Una freccia rossa accesa significa sempre 'stop', non puoi proseguire. Non importa quanto tu sia prudente, con il rosso devi fermarti. 'Proseguire con prudenza' è un'azione che faresti con un giallo lampeggiante, non con il rosso.",
         "regola": "Rosso = Stop. Mai proseguire.",
         "trabocchetti": ["proseguire con prudenza"],
@@ -443,6 +499,7 @@ QUESTIONS = [
     {
         "domanda": "I segnali luminosi in figura sono semafori di corsia",
         "risposta": True,
+        "riassunto": "Segnali luminosi in figura → semafori di corsia?",
         "spiegazione": "Questi segnali luminosi hanno delle frecce che indicano direzioni specifiche (dritto, destra, dritto/sinistra). Questo significa che servono a regolare il traffico per una corsia o una direzione precisa in un incrocio. Per questo si chiamano 'semafori di corsia'.",
         "regola": "Frecce = Semaforo di corsia.",
         "trabocchetti": ["semafori di corsia"],
@@ -451,6 +508,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura riguarda i veicoli che devono proseguire nella direzione della freccia",
         "risposta": True,
+        "riassunto": "Semaforo in figura → per chi va nella direzione della freccia?",
         "spiegazione": "Sì, è vero. Ogni semaforo con una freccia indica ai veicoli che vogliono andare in quella direzione cosa devono fare. Se la freccia è verde, possono andare; se è rossa, devono fermarsi.",
         "regola": "Freccia = Regola quella direzione.",
         "trabocchetti": ["riguarda", "Devono proseguire"],
@@ -459,6 +517,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura consente di proseguire nella sola direzione della freccia verde",
         "risposta": True,
+        "riassunto": "Semaforo in figura → solo direzione della freccia verde?",
         "spiegazione": "Esatto. Se vedi una freccia verde accesa, significa che puoi andare solo nella direzione indicata da quella freccia. Le altre direzioni potrebbero avere il rosso o essere vietate.",
         "regola": "Freccia verde = Via libera SOLO lì.",
         "trabocchetti": ["sola"],
@@ -467,6 +526,7 @@ QUESTIONS = [
     {
         "domanda": "I semafori in figura, se spenti consentono di passare con particolare prudenza",
         "risposta": True,
+        "riassunto": "Semafori in figura spenti → passare con prudenza?",
         "spiegazione": "Quando un semaforo è completamente spento (non lampeggia, è buio), significa che non funziona. In questo caso, devi comportarti come se non ci fosse il semaforo, dando la precedenza a destra e passando con molta attenzione.",
         "regola": "Semaforo spento = Attenzione massima, come uno STOP invisibile.",
         "trabocchetti": ["se spenti", "Particolare prudenza"],
@@ -475,6 +535,7 @@ QUESTIONS = [
     {
         "domanda": "I semafori di corsia in figura, con freccia rossa accesa impongono l'arresto dei veicoli diretti nel senso della freccia",
         "risposta": True,
+        "riassunto": "Semafori di corsia con freccia rossa → arresto in quella direzione?",
         "spiegazione": "Una freccia rossa accesa ha lo stesso significato di un semaforo rosso normale: devi fermarti. In questo caso, l'obbligo di fermarsi vale solo per i veicoli che vogliono andare nella direzione indicata dalla freccia.",
         "regola": "Freccia rossa = Stop per quella direzione.",
         "trabocchetti": ["impongono l"],
@@ -483,6 +544,7 @@ QUESTIONS = [
     {
         "domanda": "I semafori in figura, con freccia gialla fissa accesa, impongono di liberare immediatamente l'incrocio, se lo si è già impegnato",
         "risposta": True,
+        "riassunto": "Semafori con freccia gialla fissa → liberare l'incrocio se impegnato?",
         "spiegazione": "Quando la freccia gialla è fissa, significa che il verde sta per finire e sta per arrivare il rosso. Se sei già dentro l'incrocio, devi finire la tua manovra e uscire subito. Se invece sei ancora prima dell'incrocio e puoi fermarti in sicurezza, devi farlo.",
         "regola": "Giallo fisso = Sgombra l'incrocio, o fermati prima.",
         "trabocchetti": ["gialla fissa accesa", "Liberare immediatamente l"],
@@ -491,6 +553,7 @@ QUESTIONS = [
     {
         "domanda": "I segnali luminosi in figura valgono anche per le biciclette",
         "risposta": True,
+        "riassunto": "Segnali luminosi in figura → valgono anche per bici?",
         "spiegazione": "Sì, è vero. Le biciclette sono considerate veicoli e devono rispettare le stesse regole del traffico degli altri veicoli, inclusi i semafori, a meno che non ci siano semafori specifici per le biciclette.",
         "regola": "Bici = Veicolo, quindi rispetta il semaforo.",
         "trabocchetti": ["anche per le biciclette"],
@@ -499,6 +562,7 @@ QUESTIONS = [
     {
         "domanda": "I segnali luminosi in figura sono semafori per i veicoli in servizio di linea per trasporto di persone",
         "risposta": False,
+        "riassunto": "Segnali luminosi in figura → per bus di linea?",
         "spiegazione": "Falso. I semafori per i veicoli di trasporto pubblico (come autobus o tram) sono diversi. Hanno una forma quadrata e mostrano simboli bianchi (come una linea verticale o orizzontale) su sfondo nero, non frecce colorate come questi.",
         "regola": "Semaforo normale = Per tutti. Semaforo speciale = Per mezzi pubblici (quadrato).",
         "immagine": "6e47e4b438b0c6edc718.jpg",
@@ -506,6 +570,7 @@ QUESTIONS = [
     {
         "domanda": "I segnali luminosi in figura sono semafori per i veicoli su rotaie (tram, treni)",
         "risposta": False,
+        "riassunto": "Segnali luminosi in figura → per tram e treni?",
         "spiegazione": "Falso. I semafori per i veicoli su rotaie (come i tram) sono simili a quelli per i mezzi pubblici, con simboli bianchi. I treni hanno un sistema di segnalazione ferroviario completamente diverso. Quelli in figura sono semafori stradali normali.",
         "regola": "Rotaie = Semaforo speciale (bianco).",
         "trabocchetti": ["veicoli su rotaie (tram, treni)"],
@@ -514,6 +579,7 @@ QUESTIONS = [
     {
         "domanda": "I segnali luminosi in figura sono posti all'inizio di una galleria",
         "risposta": False,
+        "riassunto": "Segnali luminosi in figura → inizio galleria?",
         "spiegazione": "Falso. I semafori all'inizio di una galleria di solito servono a bloccare o permettere l'ingresso, usando luci rosse fisse o lampeggianti, o verdi. Non hanno frecce direzionali come questi, che sono usati per gli incroci.",
         "regola": "Gallerie = Stop/Go, non direzioni.",
         "trabocchetti": ["all"],
@@ -522,6 +588,7 @@ QUESTIONS = [
     {
         "domanda": "I semafori in figura vengono utilizzati negli accessi ai ponti mobili",
         "risposta": False,
+        "riassunto": "Semafori in figura → ponti mobili?",
         "spiegazione": "Falso. I semafori per i ponti mobili sono solitamente luci rosse fisse o lampeggianti che indicano se il ponte è chiuso o aperto, non semafori con frecce direzionali per le corsie.",
         "regola": "Ponte mobile = Stop/Go, non direzioni.",
         "trabocchetti": ["ponti mobili"],
@@ -530,6 +597,7 @@ QUESTIONS = [
     {
         "domanda": "I semafori in figura regolano l'ingresso sul pontile d'imbarco di navi traghetto",
         "risposta": False,
+        "riassunto": "Semafori in figura → pontile traghetti?",
         "spiegazione": "Falso. Anche in questo caso, i semafori per l'ingresso ai traghetti sono luci rosse/verdi semplici per regolare il flusso dei veicoli, non semafori di corsia con frecce direzionali complesse.",
         "regola": "Traghetto = Stop/Go, non direzioni.",
         "trabocchetti": ["pontile d"],
@@ -538,6 +606,7 @@ QUESTIONS = [
     {
         "domanda": "I semafori in figura regolano l'attraversamento di un passaggio a livello",
         "risposta": False,
+        "riassunto": "Semafori in figura → passaggio a livello?",
         "spiegazione": "Falso. I passaggi a livello hanno semafori specifici con due luci rosse che lampeggiano alternativamente per avvisare dell'arrivo del treno. Non usano semafori con frecce direzionali come quelli in figura.",
         "regola": "Passaggio a livello = Due luci rosse lampeggianti.",
         "trabocchetti": ["passaggio a livello"],
@@ -546,6 +615,7 @@ QUESTIONS = [
     {
         "domanda": "I segnali luminosi in figura sono semafori per corsie reversibili",
         "risposta": False,
+        "riassunto": "Segnali luminosi in figura → corsie reversibili?",
         "spiegazione": "Falso. I semafori per le corsie reversibili sono posti sopra la corsia e mostrano una freccia verde (corsia aperta), una 'X' rossa (corsia chiusa) o una freccia gialla diagonale (cambio di direzione). Non sono i classici semafori verticali con frecce colorate come questi.",
         "regola": "Corsia reversibile = X rossa o freccia verde/gialla sopra la corsia.",
         "trabocchetti": ["corsie reversibili"],
@@ -554,6 +624,7 @@ QUESTIONS = [
     {
         "domanda": "I segnali luminosi in figura sono semafori per corsie reversibili",
         "risposta": True,
+        "riassunto": "Segnali luminosi in figura → corsie reversibili?",
         "spiegazione": "Questi segnali luminosi, con la 'X' rossa, la freccia verde e la freccia gialla diagonale, sono usati proprio per le corsie reversibili. Le corsie reversibili sono quelle che possono cambiare direzione di marcia a seconda del traffico, per esempio la mattina in un senso e la sera nell'altro.",
         "regola": "X, freccia giù, freccia diagonale = corsia reversibile.",
         "immagine": "95275381e4dbf3c7ba47.jpg",
@@ -561,6 +632,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura non consente di occupare la corsia indicata con luce rossa a forma di X",
         "risposta": True,
+        "riassunto": "Semaforo in figura → X rossa, corsia vietata?",
         "spiegazione": "La luce rossa a forma di 'X' significa che non puoi assolutamente usare quella corsia. È chiusa al traffico nella tua direzione.",
         "regola": "X rossa = corsia chiusa, non entrare.",
         "trabocchetti": ["non consente di occupare"],
@@ -569,6 +641,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura consente di impegnare la corsia indicata dalla freccia verde",
         "risposta": True,
+        "riassunto": "Semaforo in figura → freccia verde, corsia consentita?",
         "spiegazione": "La freccia verde che punta in basso indica che la corsia è aperta e puoi usarla per proseguire nella tua direzione.",
         "regola": "Freccia verde giù = via libera, puoi andare.",
         "trabocchetti": ["consente di impegnare"],
@@ -577,6 +650,7 @@ QUESTIONS = [
     {
         "domanda": "Nei semafori in figura la luce gialla lampeggiante obbliga il conducente a spostarsi nella corsia indicata dalla freccia",
         "risposta": True,
+        "riassunto": "Semafori in figura → giallo lampeggiante, spostarsi nella corsia indicata?",
         "spiegazione": "La freccia gialla lampeggiante ti avvisa che la corsia sta per chiudersi o cambiare direzione. Devi spostarti subito nella corsia indicata dalla freccia per la tua sicurezza.",
         "regola": "Freccia gialla = cambia corsia subito, è un avviso importante.",
         "trabocchetti": ["obbliga"],
@@ -585,6 +659,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura non consente di occupare le corsie indicate dalle frecce verdi",
         "risposta": False,
+        "riassunto": "Semaforo in figura → corsie con freccia verde vietate?",
         "spiegazione": "Questa affermazione è falsa perché la freccia verde, al contrario, ti permette di usare la corsia. 'Non consente' è l'opposto del suo significato.",
         "regola": "Freccia verde = sì, puoi andare. Non confondere!",
         "trabocchetti": ["non consente"],
@@ -593,6 +668,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura vale anche per i pedoni",
         "risposta": False,
+        "riassunto": "Semaforo in figura → vale per i pedoni?",
         "spiegazione": "Questi semafori sono per i veicoli che usano le corsie. I pedoni hanno i loro semafori specifici, con l'omino verde o rosso.",
         "regola": "Semafori corsie = solo veicoli. Pedoni hanno i loro.",
         "trabocchetti": ["anche per i pedoni"],
@@ -601,6 +677,7 @@ QUESTIONS = [
     {
         "domanda": "Nei semafori in figura, la luce rossa a forma di X impone di arrestarsi ed attendere la luce gialla",
         "risposta": False,
+        "riassunto": "Semafori in figura → X rossa, fermarsi e attendere il giallo?",
         "spiegazione": "Questa affermazione è falsa. La 'X' rossa non significa che devi fermarti e aspettare. Significa che la corsia è chiusa e non puoi proprio usarla. Devi cambiare corsia o non entrare affatto.",
         "regola": "X rossa = corsia chiusa, non aspettare, non entrare!",
         "trabocchetti": ["arrestarsi ed attendere la luce gialla"],
@@ -609,6 +686,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura non vale per le biciclette",
         "risposta": False,
+        "riassunto": "Semaforo in figura → non vale per le bici?",
         "spiegazione": "Questa affermazione è falsa. Le biciclette sono veicoli e, se usano una corsia regolata da questi semafori (per esempio, su un ponte o in una galleria), devono rispettare le indicazioni come tutti gli altri veicoli.",
         "regola": "Biciclette sono veicoli, i semafori valgono anche per loro.",
         "trabocchetti": ["non vale per le biciclette"],
@@ -617,6 +695,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di corsie reversibili in figura è posto su una carreggiata con almeno tre corsie",
         "risposta": True,
+        "riassunto": "Corsie reversibili → almeno tre corsie?",
         "spiegazione": "I semafori per corsie reversibili servono a cambiare la direzione di una o più corsie a seconda del traffico. Per fare questo, la strada deve avere almeno tre corsie: una per un senso, una per l'altro e almeno una che può cambiare direzione. L'immagine B mostra chiaramente più corsie.",
         "regola": "Reversibile = più di due corsie.",
         "trabocchetti": ["almeno tre corsie"],
@@ -625,6 +704,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di corsie reversibili in figura consente il transito nella corsia indicata dalla freccia verde",
         "risposta": True,
+        "riassunto": "Corsie reversibili → transito con freccia verde?",
         "spiegazione": "La freccia verde che punta in basso significa che la corsia è aperta e puoi usarla per andare nella tua direzione. È come un semaforo verde normale, ma per una singola corsia.",
         "regola": "Freccia verde giù = Via libera!",
         "trabocchetti": ["Consente il transito"],
@@ -633,6 +713,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di corsie reversibili in figura, con freccia gialla lampeggiante impone al conducente di abbandonare quella corsia e di spostarsi in quella indicata",
         "risposta": True,
+        "riassunto": "Corsie reversibili → freccia gialla lampeggiante, lasciare la corsia?",
         "spiegazione": "La freccia gialla diagonale, specialmente se lampeggiante, è un avviso. Ti dice che la corsia sta per chiudersi o cambiare direzione e devi spostarti subito nella corsia indicata dalla freccia. Non è un suggerimento, ma un obbligo.",
         "regola": "Freccia gialla = Cambia corsia subito!",
         "trabocchetti": ["impone", "Abbandonare quella corsia"],
@@ -641,6 +722,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di corsie reversibili in figura indica la corsia per i veicoli lenti",
         "risposta": False,
+        "riassunto": "Corsie reversibili → corsia veicoli lenti?",
         "spiegazione": "Questi semafori controllano la direzione del traffico nelle corsie, non la velocità dei veicoli. Le corsie per i veicoli lenti sono indicate da altri segnali o sono semplicemente le corsie più a destra.",
         "regola": "Semaforo reversibile = Direzione, non velocità.",
         "trabocchetti": ["veicoli lenti"],
@@ -649,6 +731,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di corsie reversibili in figura indica la corsia per la sosta di emergenza",
         "risposta": False,
+        "riassunto": "Corsie reversibili → corsia di emergenza?",
         "spiegazione": "Le corsie per la sosta di emergenza sono aree speciali, di solito sulle autostrade, e sono indicate da segnaletica orizzontale e verticale specifica. Questi semafori controllano le corsie di marcia normali.",
         "regola": "Semaforo reversibile = Guida, non sosta.",
         "trabocchetti": ["sosta di emergenza"],
@@ -657,6 +740,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di corsie reversibili in figura indica la corsia riservata al sorpasso",
         "risposta": False,
+        "riassunto": "Corsie reversibili → corsia di sorpasso?",
         "spiegazione": "Anche se si può sorpassare in queste corsie quando sono aperte, il loro scopo principale non è essere 'riservate' al sorpasso. Servono a gestire il flusso del traffico cambiando la direzione delle corsie. Le corsie di sorpasso sono di solito quelle più a sinistra.",
         "regola": "Semaforo reversibile = Flessibilità, non esclusività.",
         "trabocchetti": ["riservata"],
@@ -665,6 +749,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di corsie reversibili in figura è posto solo su carreggiate a senso unico di circolazione",
         "risposta": False,
+        "riassunto": "Corsie reversibili → solo su senso unico?",
         "spiegazione": "I semafori per corsie reversibili sono usati proprio sulle strade a doppio senso di circolazione, dove il traffico cambia molto durante il giorno (ad esempio, più macchine in entrata in città al mattino e più in uscita la sera). Se fosse una strada a senso unico, non ci sarebbe bisogno di 'invertire' il senso di marcia delle corsie.",
         "regola": "Reversibile = Doppio senso (spesso), non solo senso unico.",
         "trabocchetti": ["solo"],
@@ -673,6 +758,7 @@ QUESTIONS = [
     {
         "domanda": "I segnali luminosi in figura sono semafori di onda verde",
         "risposta": True,
+        "riassunto": "Segnali luminosi in figura → onda verde?",
         "spiegazione": "Sì, questi segnali luminosi con numeri (50, 40, 30) sono proprio i semafori di onda verde. Servono a darti un consiglio sulla velocità da tenere per trovare i semafori successivi verdi.",
         "regola": "Numeri in cerchio = Onda Verde.",
         "trabocchetti": ["Sono"],
@@ -681,6 +767,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura consiglia la velocità da mantenere, per trovare la luce verde al semaforo successivo",
         "risposta": True,
+        "riassunto": "Semaforo in figura → velocità consigliata per trovare il verde?",
         "spiegazione": "Esatto! Questo semaforo non ti obbliga, ma ti suggerisce una velocità. Se la segui, è più probabile che tu trovi il semaforo dopo già verde, senza doverti fermare.",
         "regola": "Onda Verde = Consiglia per il verde.",
         "trabocchetti": ["consiglia"],
@@ -689,6 +776,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di onda verde in figura si trova su strade con più incroci dove vi sono semafori sincronizzati (temporizzati)",
         "risposta": True,
+        "riassunto": "Onda verde → semafori sincronizzati?",
         "spiegazione": "Questi semafori sono utili proprio dove ci sono tanti incroci uno dopo l'altro e i semafori sono 'collegati' tra loro (sincronizzati) per far scorrere meglio il traffico.",
         "regola": "Onda Verde = Più incroci sincronizzati.",
         "trabocchetti": ["Sincronizzati (temporizzati)"],
@@ -697,6 +785,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura segnala la velocità consigliata per poter usufruire dell'onda verde",
         "risposta": True,
+        "riassunto": "Semaforo in figura → velocità consigliata per l'onda verde?",
         "spiegazione": "Sì, è la stessa idea delle domande precedenti. Ti dice quale velocità è meglio tenere per 'cavalcare' l'onda verde, cioè passare tutti i semafori senza fermarti.",
         "regola": "Consigliata per l'onda verde.",
         "trabocchetti": ["consigliata", "Usufruire dell"],
@@ -705,6 +794,7 @@ QUESTIONS = [
     {
         "domanda": "Delle tre luci del semaforo in figura se ne accende soltanto una, mentre le altre sono spente",
         "risposta": True,
+        "riassunto": "Semaforo in figura → si accende una sola luce?",
         "spiegazione": "È vero. Non si accendono tutte e tre insieme. Solo una velocità alla volta viene mostrata, quella che è consigliata in quel momento.",
         "regola": "Una luce alla volta.",
         "trabocchetti": ["Soltanto una"],
@@ -713,6 +803,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura obbliga a mantenere la velocità indicata",
         "risposta": False,
+        "riassunto": "Semaforo in figura → obbligo della velocità indicata?",
         "spiegazione": "Attenzione! Questo semaforo consiglia, non obbliga. Non è un limite di velocità imposto per legge, ma un suggerimento per non fermarsi.",
         "regola": "Onda Verde = Consiglia, non obbliga.",
         "trabocchetti": ["obbliga"],
@@ -721,6 +812,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura non consente di superare la velocità indicata",
         "risposta": False,
+        "riassunto": "Semaforo in figura → vietato superare la velocità?",
         "spiegazione": "Falso. Non è un limite massimo di velocità. Puoi superarla, ma potresti perdere l'onda verde e trovare il semaforo successivo rosso.",
         "regola": "Non è un divieto di velocità.",
         "trabocchetti": ["Non consente di superare"],
@@ -729,6 +821,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura impone al conducente di mantenere dal veicolo che lo precede la distanza indicata",
         "risposta": False,
+        "riassunto": "Semaforo in figura → distanza dal veicolo davanti?",
         "spiegazione": "Falso. I numeri (50, 40, 30) sono velocità, non distanze. Questo semaforo non c'entra nulla con la distanza di sicurezza.",
         "regola": "Numeri = Velocità, non distanza.",
         "trabocchetti": ["Distanza indicata"],
@@ -737,6 +830,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica di procedere con prudenza.",
         "risposta": False,
+        "riassunto": "Semaforo in figura → procedere con prudenza?",
         "spiegazione": "Falso. Certo, guidare con prudenza è sempre importante, ma questo semaforo ha uno scopo specifico: suggerire una velocità per l'onda verde. Non è un generico invito alla prudenza.",
         "regola": "Non è un generico 'sii prudente'.",
         "trabocchetti": ["Procedere con prudenza"],
@@ -745,6 +839,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura, anche se spento, indica la velocità obbligatoria",
         "risposta": False,
+        "riassunto": "Semaforo in figura spento → velocità obbligatoria?",
         "spiegazione": "Falso per due motivi: primo, non indica mai una velocità obbligatoria; secondo, se è spento, non indica proprio nulla.",
         "regola": "Spento = Nessun valore. Non è mai obbligatorio.",
         "trabocchetti": ["Anche se spento", "velocità obbligatoria"],
@@ -753,6 +848,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di onda verde in figura viene posto anche sulle autostrade",
         "risposta": False,
+        "riassunto": "Onda verde → anche in autostrada?",
         "spiegazione": "Falso. Questi semafori si trovano in città, su strade urbane con molti incroci semaforizzati. Le autostrade non hanno semafori di questo tipo.",
         "regola": "Onda Verde = Solo in città.",
         "trabocchetti": ["Anche sulle autostrade"],
@@ -761,6 +857,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di onda verde in figura riporta i limiti massimi di velocità delle autovetture, motocicli e autocarri",
         "risposta": False,
+        "riassunto": "Onda verde → limiti massimi per auto, moto, autocarri?",
         "spiegazione": "Falso. Non sono limiti massimi di velocità (quelli sono segnali rotondi con bordo rosso). Sono velocità consigliate per l'onda verde, e valgono per tutti i veicoli.",
         "regola": "Non è un limite, non distingue veicoli.",
         "trabocchetti": ["Limiti massimi di velocità", "autovetture, motocicli e autocarri"],
@@ -769,6 +866,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di onda verde in figura indica le velocità che devono obbligatoriamente rispettare alcuni veicoli",
         "risposta": False,
+        "riassunto": "Onda verde → velocità obbligatorie?",
         "spiegazione": "Falso. Ancora una volta, la parola chiave è 'obbligatoriamente'. Non c'è nessun obbligo. E non è solo per 'alcuni veicoli', ma è un consiglio generale.",
         "regola": "Mai obbligatorio, per tutti.",
         "trabocchetti": ["Obbligatoriamente", "alcuni veicoli"],
@@ -777,6 +875,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di onda verde in figura è un semaforo per lavori in corso",
         "risposta": False,
+        "riassunto": "Onda verde → semaforo per lavori?",
         "spiegazione": "Falso. I semafori per lavori in corso sono diversi, spesso temporanei e con colori giallo/arancione. Questo è un semaforo per la gestione del traffico.",
         "regola": "Non per lavori.",
         "trabocchetti": ["Semaforo per lavori in corso"],
@@ -785,6 +884,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo di onda verde in figura indica la distanza dai caselli autostradali",
         "risposta": False,
+        "riassunto": "Onda verde → distanza dai caselli?",
         "spiegazione": "Falso. I numeri indicano velocità, non distanze. E come abbiamo detto, questi semafori non si trovano sulle autostrade, quindi non possono indicare la distanza dai caselli.",
         "regola": "Non è distanza, non è autostrada.",
         "trabocchetti": ["Distanza dai caselli autostradali"],
@@ -793,6 +893,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura si trova all'uscita di una pista ciclabile, per regolare l'attraversamento della strada",
         "risposta": True,
+        "riassunto": "Semaforo in figura → uscita pista ciclabile?",
         "spiegazione": "Questo semaforo serve proprio a dire ai ciclisti quando possono attraversare una strada, di solito quando escono da una pista ciclabile. È un modo per gestire il traffico e la sicurezza.",
         "regola": "Semaforo bici = regola l'attraversamento.",
         "trabocchetti": ["Regolare l"],
@@ -801,6 +902,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale luminoso in figura è un semaforo riservato ai conducenti di biciclette",
         "risposta": True,
+        "riassunto": "Segnale luminoso in figura → solo per biciclette?",
         "spiegazione": "Sì, è vero. Il simbolo della bicicletta dentro le luci indica chiaramente che questo semaforo è specifico e solo per chi va in bicicletta, non per altri veicoli.",
         "regola": "Simbolo bici = solo per bici.",
         "trabocchetti": ["Riservato"],
@@ -809,6 +911,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura, con luce rossa accesa, impone l'arresto alle biciclette",
         "risposta": True,
+        "riassunto": "Semaforo bici rosso → arresto delle bici?",
         "spiegazione": "Come tutti i semafori, la luce rossa significa 'stop'. Quindi, se la luce rossa con il simbolo della bicicletta è accesa, i ciclisti devono fermarsi e aspettare.",
         "regola": "Rosso bici = stop bici.",
         "trabocchetti": ["Impone l"],
@@ -817,6 +920,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura, con luce gialla fissa accesa, impone ai conducenti di biciclette di liberare velocemente l'incrocio se lo hanno già impegnato",
         "risposta": True,
+        "riassunto": "Semaforo bici giallo → liberare l'incrocio se impegnato?",
         "spiegazione": "La luce gialla fissa, anche per le bici, significa che il rosso sta per arrivare. Se sei già nell'incrocio, devi uscire subito per non bloccare il traffico. Se non lo hai ancora impegnato, devi fermarti.",
         "regola": "Giallo bici = sgombera l'incrocio.",
         "trabocchetti": ["Impegnato", "Liberare velocemente"],
@@ -825,6 +929,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura, con luce verde accesa, consente soltanto ai conducenti di biciclette di attraversare l'incrocio",
         "risposta": True,
+        "riassunto": "Semaforo bici verde → solo bici attraversano?",
         "spiegazione": "La luce verde permette di passare. Dato che è un semaforo specifico per le biciclette, solo i ciclisti possono attraversare l'incrocio quando la luce verde è accesa.",
         "regola": "Verde bici = via libera solo bici.",
         "trabocchetti": ["Consente soltanto"],
@@ -833,6 +938,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica una corsia riservata alle biciclette e ai ciclomotori",
         "risposta": False,
+        "riassunto": "Semaforo in figura → corsia bici e ciclomotori?",
         "spiegazione": "Falso. Questo semaforo è solo per le biciclette. I ciclomotori (i motorini) sono veicoli a motore e non possono usare le piste ciclabili o seguire le indicazioni di questo semaforo.",
         "regola": "Semaforo bici = solo bici, non ciclomotori.",
         "trabocchetti": ["ciclomotori", "biciclette"],
@@ -841,6 +947,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica lo svolgimento di una gara ciclistica",
         "risposta": False,
+        "riassunto": "Semaforo in figura → gara ciclistica?",
         "spiegazione": "Falso. Questo è un normale semaforo stradale che serve a regolare il traffico delle biciclette in un incrocio o un attraversamento, non ha nulla a che fare con le gare sportive.",
         "regola": "Semaforo bici = traffico, non gara.",
         "trabocchetti": ["gara ciclistica"],
@@ -849,6 +956,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica che ci sono lavori in corso per la costruzione di una pista ciclabile",
         "risposta": False,
+        "riassunto": "Semaforo in figura → lavori per pista ciclabile?",
         "spiegazione": "Falso. Questo semaforo è un dispositivo di regolazione del traffico già in funzione. Non è un segnale che indica lavori in corso per costruire qualcosa.",
         "regola": "Semaforo bici = regola, non costruisce.",
         "trabocchetti": ["lavori in corso"],
@@ -857,6 +965,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica una corsia riservata ai motocicli",
         "risposta": False,
+        "riassunto": "Semaforo in figura → corsia moto?",
         "spiegazione": "Falso. Il simbolo all'interno del semaforo è chiaramente una bicicletta, non una moto. Quindi, questo semaforo non è per i motocicli.",
         "regola": "Bici non moto.",
         "trabocchetti": ["motocicli"],
@@ -865,6 +974,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica il divieto di transito per le biciclette",
         "risposta": False,
+        "riassunto": "Semaforo in figura → divieto per bici?",
         "spiegazione": "Falso. Questo semaforo serve a regolare il transito delle biciclette, non a vietarlo. Quando la luce è verde, le biciclette possono passare.",
         "regola": "Semaforo bici = regola, non vieta.",
         "trabocchetti": ["divieto di transito"],
@@ -873,6 +983,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura vale per tutti i veicoli a due ruote",
         "risposta": False,
+        "riassunto": "Semaforo in figura → tutti i due ruote?",
         "spiegazione": "Falso. Questo semaforo vale solo per le biciclette. Non vale per tutti i veicoli a due ruote, come i ciclomotori o i motocicli, che sono veicoli a motore e seguono altri semafori.",
         "regola": "Semaforo bici = solo bici, non tutti i 2 ruote.",
         "trabocchetti": ["tutti i veicoli a due ruote"],
@@ -881,6 +992,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla lampeggiante, del tipo B o C in figura, è affiancata al semaforo veicolare",
         "risposta": True,
+        "riassunto": "Giallo lampeggiante B o C → affiancato al semaforo?",
         "spiegazione": "VERO. Le luci gialle lampeggianti con il simbolo del pedone (B) o della bicicletta (C) sono spesso posizionate accanto ai semafori normali per i veicoli. Servono a indicare che, in caso di svolta, bisogna fare attenzione e dare la precedenza a pedoni o ciclisti.",
         "regola": "B o C = segnale speciale accanto al semaforo principale.",
         "trabocchetti": ["affiancata"],
@@ -889,6 +1001,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla lampeggiante, del tipo C in figura, indica che svoltando a destra i veicoli devono dare la precedenza alle biciclette",
         "risposta": True,
+        "riassunto": "Giallo lampeggiante C → svoltando a destra precedenza alle bici?",
         "spiegazione": "VERO. Il segnale C, con la bicicletta gialla lampeggiante, ti avvisa che se stai svoltando a destra (o anche a sinistra, se la situazione lo richiede), devi dare la precedenza ai ciclisti che stanno attraversando la strada.",
         "regola": "C = bici, se giri, precedenza ai ciclisti.",
         "trabocchetti": ["devono dare la precedenza"],
@@ -897,6 +1010,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla lampeggiante, del tipo B in figura, indica che nello svoltare a destra i veicoli debbono dare la precedenza ai pedoni",
         "risposta": True,
+        "riassunto": "Giallo lampeggiante B → svoltando a destra precedenza ai pedoni?",
         "spiegazione": "VERO. Il segnale B, con il pedone giallo lampeggiante, ha lo stesso significato del segnale C, ma per i pedoni. Se stai svoltando a destra, devi fermarti e dare la precedenza ai pedoni che stanno attraversando la strada.",
         "regola": "B = pedone, se giri, precedenza ai pedoni.",
         "trabocchetti": ["debbono dare la precedenza"],
@@ -905,6 +1019,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla lampeggiante, del tipo C in figura, indica una corsia riservata a tutti i veicoli a due ruote",
         "risposta": False,
+        "riassunto": "Giallo lampeggiante C → corsia due ruote?",
         "spiegazione": "FALSO. Il segnale C (bicicletta) indica un punto dove dare la precedenza alle biciclette, non una 'corsia riservata' e soprattutto non a 'tutti i veicoli a due ruote'. I ciclomotori e le moto non sono inclusi in questo segnale.",
         "regola": "C = solo bici, non tutti i due ruote. Non è una corsia.",
         "trabocchetti": ["tutti i veicoli a due ruote", "corsia riservata"],
@@ -913,6 +1028,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla lampeggiante, del tipo B in figura, indica la presenza di un viale pedonale",
         "risposta": False,
+        "riassunto": "Giallo lampeggiante B → viale pedonale?",
         "spiegazione": "FALSO. Il segnale B (pedone) indica che devi dare la precedenza ai pedoni in quel punto, non che c'è un 'viale pedonale' (una strada dove possono circolare solo i pedoni).",
         "regola": "B = precedenza ai pedoni, non un viale.",
         "trabocchetti": ["viale pedonale"],
@@ -921,6 +1037,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla lampeggiante, del tipo A in figura, è un semaforo per i veicoli in servizio di linea per trasporto di persone",
         "risposta": False,
+        "riassunto": "Giallo lampeggiante A → semaforo bus di linea?",
         "spiegazione": "FALSO. La luce gialla lampeggiante del tipo A è un segnale generico di pericolo o di attenzione. I semafori per i veicoli di linea (come autobus o tram) hanno forme diverse (ad esempio, una barra verticale o orizzontale, o un triangolo) e non sono una semplice luce gialla circolare.",
         "regola": "A = attenzione generica, non per autobus/tram.",
         "immagine": "b0df4275bce0f801c362.jpg",
@@ -928,6 +1045,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla lampeggiante, del tipo C in figura, indica una corsia riservata ai ciclomotori",
         "risposta": False,
+        "riassunto": "Giallo lampeggiante C → corsia ciclomotori?",
         "spiegazione": "FALSO. Il segnale C è per le biciclette, non per i 'ciclomotori'. Inoltre, come detto prima, non indica una 'corsia riservata', ma un punto dove dare la precedenza.",
         "regola": "C = solo bici, non ciclomotori. Non è una corsia.",
         "trabocchetti": ["ciclomotori", "corsia riservata"],
@@ -936,6 +1054,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura può avere la luce bianca orizzontale accesa",
         "risposta": True,
+        "riassunto": "Semaforo in figura → barra bianca orizzontale?",
         "spiegazione": "Questo semaforo è specifico per i tram e, a volte, per gli autobus. La luce bianca orizzontale (quella in alto) significa che il veicolo deve fermarsi, proprio come un semaforo rosso. Quindi, sì, può essere accesa.",
         "regola": "Barra orizzontale = Stop per tram.",
         "immagine": "a87a64b4cf2a592942ff.jpg",
@@ -943,6 +1062,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura può avere la luce bianca verticale accesa",
         "risposta": True,
+        "riassunto": "Semaforo in figura → barra bianca verticale?",
         "spiegazione": "La luce bianca verticale (quella in basso) di questo semaforo indica che il tram o l'autobus può procedere dritto. È come un semaforo verde per questi veicoli. Quindi, anche questa luce può accendersi.",
         "regola": "Barra verticale = Via libera per tram.",
         "immagine": "a87a64b4cf2a592942ff.jpg",
@@ -950,6 +1070,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale luminoso in figura indica un semaforo per i veicoli di trasporto pubblico",
         "risposta": True,
+        "riassunto": "Segnale luminoso in figura → trasporto pubblico?",
         "spiegazione": "Sì, è vero. Questo tipo di semaforo, con le luci bianche e il triangolo giallo, è un semaforo speciale usato per regolare il traffico dei veicoli di trasporto pubblico, come i tram e, in alcuni casi, gli autobus che viaggiano su corsie dedicate.",
         "regola": "Simboli bianchi/gialli = Semaforo per tram/bus.",
         "immagine": "a87a64b4cf2a592942ff.jpg",
@@ -957,6 +1078,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura è un semaforo pedonale",
         "risposta": False,
+        "riassunto": "Semaforo in figura → pedonale?",
         "spiegazione": "No, è falso. Questo non è un semaforo per i pedoni. I semafori pedonali hanno le figure di un omino rosso fermo e di un omino verde che cammina. Questo semaforo è per i veicoli di trasporto pubblico.",
         "regola": "Omino = Pedone. Barra/Triangolo = Tram.",
         "trabocchetti": ["pedonale"],
@@ -965,6 +1087,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura preannuncia lavori in corso",
         "risposta": False,
+        "riassunto": "Semaforo in figura → lavori in corso?",
         "spiegazione": "No, è falso. Questo semaforo serve a regolare il traffico dei tram e degli autobus. Non ha nulla a che fare con i lavori in corso. I segnali di lavori in corso sono cartelli specifici, spesso gialli, che avvisano della presenza di operai o cantieri.",
         "regola": "Semaforo = Regola traffico. Cartello giallo = Lavori.",
         "trabocchetti": ["preannuncia lavori in corso"],
@@ -973,6 +1096,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica i possibili scambi dei binari tranviari",
         "risposta": False,
+        "riassunto": "Semaforo in figura → scambi tranviari?",
         "spiegazione": "No, è falso. Questo semaforo dice al conducente del tram quando può andare, fermarsi o fare attenzione. Non indica la posizione o il funzionamento degli scambi dei binari. Serve a regolare il movimento del tram, non a mostrare la struttura della linea.",
         "regola": "Semaforo = Regola. Cartello = Indica.",
         "trabocchetti": ["indica i possibili scambi"],
@@ -981,6 +1105,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura impone ai motocicli di rallentare quando è acceso il triangolo giallo",
         "risposta": False,
+        "riassunto": "Semaforo in figura → moto rallentano col triangolo giallo?",
         "spiegazione": "No, è falso. Questo semaforo è valido solo per i veicoli di trasporto pubblico (tram e bus). Non riguarda i motocicli, che devono seguire i normali semafori stradali. Il triangolo giallo significa 'attenzione' per il conducente del tram o del bus.",
         "regola": "Semaforo tram = Solo per tram/bus.",
         "trabocchetti": ["impone ai motocicli"],
@@ -989,6 +1114,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura vale per i veicoli con targa militare",
         "risposta": False,
+        "riassunto": "Semaforo in figura → targhe militari?",
         "spiegazione": "No, è falso. Questo semaforo è dedicato esclusivamente ai veicoli di trasporto pubblico, come i tram. I veicoli con targa militare, come tutti gli altri veicoli privati, devono rispettare i semafori normali e le regole generali della strada.",
         "regola": "Semaforo tram = Solo tram/bus. Non altri veicoli.",
         "trabocchetti": ["vale per i veicoli con targa militare"],
@@ -997,6 +1123,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura vale per i veicoli in servizio di linea per trasporto di persone",
         "risposta": True,
+        "riassunto": "Semaforo in figura → bus di linea?",
         "spiegazione": "Questo semaforo è speciale e serve solo per i veicoli che fanno servizio di linea per il trasporto di persone, come gli autobus, i filobus e i tram. Non è per le auto normali.",
         "regola": "Semaforo speciale = solo per mezzi pubblici.",
         "immagine": "a87a64b4cf2a592942ff.jpg",
@@ -1004,6 +1131,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura impone l'arresto ai veicoli in servizio di linea per trasporto di persone quando è accesa la barra bianca in alto",
         "risposta": True,
+        "riassunto": "Semaforo in figura → barra bianca in alto, arresto bus?",
         "spiegazione": "Quando la barra bianca orizzontale (quella in alto) è accesa, significa che i mezzi pubblici devono fermarsi. È come il semaforo rosso per le auto normali.",
         "regola": "Barra orizzontale (in alto) = Stop!",
         "trabocchetti": ["Impone l"],
@@ -1012,6 +1140,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura consente ai veicoli di trasporto pubblico di persone di proseguire quando in basso è accesa la barra bianca",
         "risposta": True,
+        "riassunto": "Semaforo in figura → barra bianca in basso, bus procedono?",
         "spiegazione": "Quando la barra bianca verticale (quella in basso) è accesa, i mezzi pubblici possono andare avanti. È come il semaforo verde per le auto normali.",
         "regola": "Barra verticale (in basso) = Via libera!",
         "trabocchetti": ["Barra bianca"],
@@ -1020,6 +1149,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura è valido solo per i veicoli che marciano su rotaie (tram, treni)",
         "risposta": False,
+        "riassunto": "Semaforo in figura → solo veicoli su rotaia?",
         "spiegazione": "Questo semaforo non è 'solo' per i veicoli su rotaie (come i tram). Vale anche per altri mezzi pubblici che non vanno su rotaie, come gli autobus e i filobus.",
         "regola": "Non 'solo' rotaie, ma tutti i mezzi pubblici.",
         "trabocchetti": ["solo"],
@@ -1028,6 +1158,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura regola il transito dei pedoni",
         "risposta": False,
+        "riassunto": "Semaforo in figura → pedoni?",
         "spiegazione": "Questo semaforo è per i veicoli, non per le persone che camminano (i pedoni). I pedoni hanno semafori diversi, con l'omino rosso e verde.",
         "regola": "Non per pedoni, ma per veicoli speciali.",
         "trabocchetti": ["Regola il transito dei pedoni"],
@@ -1036,6 +1167,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica un passaggio a livello senza barriere",
         "risposta": False,
+        "riassunto": "Semaforo in figura → passaggio a livello?",
         "spiegazione": "Questo semaforo non ha niente a che fare con i passaggi a livello (dove la strada incrocia i binari del treno). È un semaforo per i mezzi pubblici in città.",
         "regola": "Non è un passaggio a livello.",
         "trabocchetti": ["Passaggio a livello senza barriere"],
@@ -1044,6 +1176,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura regola il transito nei pontili per l'imbarco sulle navi traghetto",
         "risposta": False,
+        "riassunto": "Semaforo in figura → pontili traghetti?",
         "spiegazione": "Questo semaforo non serve per le navi o i traghetti. È un semaforo stradale per i mezzi pubblici che circolano su strada.",
         "regola": "Non per navi, ma per mezzi su strada.",
         "trabocchetti": ["Pontili per l"],
@@ -1052,6 +1185,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica la vicinanza di una stazione ferroviaria",
         "risposta": False,
+        "riassunto": "Semaforo in figura → stazione ferroviaria?",
         "spiegazione": "Questo semaforo non indica la vicinanza di una stazione ferroviaria. Serve a regolare il traffico dei mezzi pubblici in un incrocio o in un punto specifico della strada.",
         "regola": "Non indica stazioni, ma regola il traffico.",
         "trabocchetti": ["Vicinanza di una stazione ferroviaria"],
@@ -1060,6 +1194,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura, con il triangolo giallo acceso, preavvisa lavori in corso",
         "risposta": False,
+        "riassunto": "Semaforo in figura col triangolo giallo → lavori?",
         "spiegazione": "Il triangolo giallo acceso non significa che ci sono lavori in corso. Significa 'attenzione' o 'preavviso', come il giallo di un semaforo normale, che sta per cambiare il segnale (ad esempio, da via libera a stop).",
         "regola": "Triangolo giallo = Attenzione, non lavori.",
         "trabocchetti": ["Preavvisa lavori in corso"],
@@ -1068,6 +1203,7 @@ QUESTIONS = [
     {
         "domanda": "La luce verde accesa del semaforo in figura permette ai pedoni l'attraversamento",
         "risposta": True,
+        "riassunto": "Verde nel semaforo in figura → pedoni attraversano?",
         "spiegazione": "La luce verde accesa del semaforo pedonale, che mostra l'omino che cammina, indica che i pedoni possono attraversare la strada in sicurezza.",
         "regola": "Omino verde = Via libera per i pedoni!",
         "trabocchetti": ["permette"],
@@ -1076,6 +1212,7 @@ QUESTIONS = [
     {
         "domanda": "La luce verde accesa del semaforo in figura consente ai pedoni di attraversare la strada",
         "risposta": True,
+        "riassunto": "Verde pedonale in figura → pedoni attraversano?",
         "spiegazione": "Esatto! La luce verde con l'omino che cammina è il segnale per i pedoni che possono attraversare la strada. È il loro turno per passare.",
         "regola": "Verde pedone = Puoi attraversare!",
         "trabocchetti": ["consente"],
@@ -1084,6 +1221,7 @@ QUESTIONS = [
     {
         "domanda": "La luce verde accesa del semaforo in figura consente ai pedoni di impegnare la carreggiata per attraversarla",
         "risposta": True,
+        "riassunto": "Verde pedonale in figura → pedoni impegnano la carreggiata?",
         "spiegazione": "Sì, quando il semaforo pedonale è verde, i pedoni possono entrare nella carreggiata (la parte della strada dove passano i veicoli) per attraversarla. È il momento sicuro per farlo.",
         "regola": "Verde pedone = Entra e attraversa!",
         "trabocchetti": ["Impegnare la carreggiata"],
@@ -1092,6 +1230,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica una scala mobile in funzione",
         "risposta": False,
+        "riassunto": "Semaforo in figura → scala mobile?",
         "spiegazione": "Assolutamente falso! Il semaforo in figura è un semaforo pedonale, serve per regolare l'attraversamento dei pedoni sulla strada. Non ha nulla a che fare con le scale mobili.",
         "regola": "Semaforo pedonale = Per la strada, non per le scale!",
         "trabocchetti": ["scala mobile in funzione"],
@@ -1100,6 +1239,7 @@ QUESTIONS = [
     {
         "domanda": "La luce verde accesa del semaforo in figura consente il passaggio solo dei veicoli",
         "risposta": False,
+        "riassunto": "Verde in figura → solo veicoli?",
         "spiegazione": "No, questo è falso. Il semaforo in figura è specifico per i pedoni. La luce verde accesa indica che i pedoni possono passare, non i veicoli. I veicoli hanno i loro semafori separati.",
         "regola": "Omino verde = Pedoni, non veicoli!",
         "trabocchetti": ["solo"],
@@ -1108,6 +1248,7 @@ QUESTIONS = [
     {
         "domanda": "La luce verde accesa del semaforo in figura obbliga i pedoni a dare la precedenza ai veicoli che svoltano",
         "risposta": False,
+        "riassunto": "Verde pedonale → pedoni danno precedenza a chi svolta?",
         "spiegazione": "Falso! Quando il semaforo pedonale è verde, i pedoni hanno la precedenza. I veicoli che svoltano, anche se hanno il verde per svoltare, devono aspettare che i pedoni abbiano attraversato in sicurezza.",
         "regola": "Verde pedone = Precedenza tua!",
         "trabocchetti": ["obbliga i pedoni a dare la precedenza"],
@@ -1116,6 +1257,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura segnala un ascensore pubblico",
         "risposta": False,
+        "riassunto": "Semaforo in figura → ascensore pubblico?",
         "spiegazione": "No, è falso. Come per la scala mobile, questo semaforo non ha nulla a che fare con gli ascensori. È un segnale stradale che regola il traffico dei pedoni.",
         "regola": "Semaforo pedonale = Per la strada, non per gli ascensori!",
         "trabocchetti": ["ascensore pubblico"],
@@ -1124,6 +1266,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura segnala la presenza di una scuola elementare, per cui bisogna rallentare",
         "risposta": False,
+        "riassunto": "Semaforo in figura → scuola elementare?",
         "spiegazione": "Falso. Il semaforo pedonale serve a regolare l'attraversamento dei pedoni. Non segnala la presenza di una scuola. Per le scuole ci sono altri tipi di segnali stradali.",
         "regola": "Semaforo pedonale = Regola l'attraversamento, non la scuola!",
         "immagine": "499bf970b2b155731225.jpg",
@@ -1131,6 +1274,7 @@ QUESTIONS = [
     {
         "domanda": "La luce verde del semaforo in figura è sempre accesa durante l'uscita degli studenti dalla scuola",
         "risposta": False,
+        "riassunto": "Verde in figura → sempre acceso all'uscita da scuola?",
         "spiegazione": "Falso. I semafori funzionano a cicli: verde, giallo, rosso. Non possono essere 'sempre accesi' su un colore, altrimenti non regolerebbero il traffico e creerebbero confusione e pericolo.",
         "regola": "Semaforo = Cicli, mai 'sempre'!",
         "trabocchetti": ["sempre"],
@@ -1139,6 +1283,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura regola il passaggio dei pedoni negli incroci",
         "risposta": True,
+        "riassunto": "Semaforo in figura → pedoni agli incroci?",
         "spiegazione": "Questo semaforo serve proprio a dire ai pedoni quando possono attraversare la strada e quando devono aspettare, specialmente negli incroci dove ci sono anche le macchine.",
         "regola": "Semaforo con omino = regola i pedoni agli incroci.",
         "immagine": "499bf970b2b155731225.jpg",
@@ -1146,6 +1291,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale luminoso in figura è un semaforo per i pedoni",
         "risposta": True,
+        "riassunto": "Segnale luminoso in figura → semaforo pedonale?",
         "spiegazione": "Sì, è vero! Il segnale con le figure di un omino (rosso, giallo, verde) è sempre un semaforo pensato per i pedoni, per aiutarli ad attraversare in sicurezza.",
         "regola": "Omino sul semaforo = semaforo per pedoni.",
         "immagine": "499bf970b2b155731225.jpg",
@@ -1153,6 +1299,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura, con luce gialla fissa accesa, impone ai pedoni che hanno già occupato l'attraversamento pedonale di liberarlo rapidamente",
         "risposta": True,
+        "riassunto": "Semaforo pedonale giallo → liberare l'attraversamento?",
         "spiegazione": "Quando il semaforo pedonale diventa giallo fisso, significa che il tempo per attraversare sta per finire. Se sei già in mezzo alla strada, devi sbrigarti a raggiungere il marciapiede. Se non hai ancora iniziato, non devi più attraversare.",
         "regola": "Giallo pedone = finisci di attraversare in fretta!",
         "trabocchetti": ["rapidamente"],
@@ -1161,6 +1308,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura, con luce rossa accesa impone ai pedoni di non attraversare",
         "risposta": True,
+        "riassunto": "Semaforo pedonale rosso → pedoni non attraversano?",
         "spiegazione": "Esatto! Come per le macchine, la luce rossa accesa per i pedoni significa 'STOP'. Non si può attraversare la strada per la propria sicurezza e quella degli altri.",
         "regola": "Rosso pedone = non attraversare.",
         "immagine": "499bf970b2b155731225.jpg",
@@ -1168,6 +1316,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale luminoso in figura indica la presenza di una scuola",
         "risposta": False,
+        "riassunto": "Segnale luminoso in figura → scuola?",
         "spiegazione": "Falso! Questo semaforo serve a regolare il traffico dei pedoni, non a indicare che c'è una scuola. Potrebbe esserci una scuola vicino, ma il semaforo non è il segnale che la indica.",
         "regola": "Semaforo pedoni = regola il passaggio, non indica edifici.",
         "trabocchetti": ["indica la presenza di una scuola"],
@@ -1176,6 +1325,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica lo svolgimento di una gara podistica",
         "risposta": False,
+        "riassunto": "Semaforo in figura → gara podistica?",
         "spiegazione": "Falso! Questo semaforo è un normale strumento per gestire il traffico dei pedoni. Non ha nulla a che fare con eventi sportivi come le gare podistiche.",
         "regola": "Semaforo pedoni = per il traffico, non per eventi.",
         "immagine": "499bf970b2b155731225.jpg",
@@ -1183,6 +1333,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle aree di servizio autostradali il semaforo in figura indica i sottopassaggi pedonali",
         "risposta": False,
+        "riassunto": "Semaforo in figura → sottopassaggi nelle aree di servizio?",
         "spiegazione": "Falso! Questo semaforo serve per attraversamenti a livello della strada. I sottopassaggi pedonali sono indicati da altri tipi di segnali e non sono regolati da questo semaforo.",
         "regola": "Semaforo pedoni = attraversi la strada, non vai sotto.",
         "trabocchetti": ["aree di servizio autostradali", "sottopassaggi pedonali"],
@@ -1191,6 +1342,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura si trova all'ingresso della metropolitana",
         "risposta": False,
+        "riassunto": "Semaforo in figura → ingresso metropolitana?",
         "spiegazione": "Falso! Questo semaforo si trova sulle strade per regolare l'attraversamento dei pedoni. L'ingresso della metropolitana ha altri tipi di indicazioni e segnali.",
         "regola": "Semaforo pedoni = strada, non metro.",
         "trabocchetti": ["all"],
@@ -1199,6 +1351,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica i cancelli di imbarco nelle aree portuali",
         "risposta": False,
+        "riassunto": "Semaforo in figura → cancelli di imbarco?",
         "spiegazione": "Falso! Questo semaforo è per i pedoni che attraversano la strada. I cancelli di imbarco nelle aree portuali hanno segnali diversi e specifici per la navigazione o l'accesso ai moli.",
         "regola": "Semaforo pedoni = strada, non porto.",
         "trabocchetti": ["cancelli di imbarco", "aree portuali"],
@@ -1207,6 +1360,7 @@ QUESTIONS = [
     {
         "domanda": "Il semaforo in figura indica l'entrata di una struttura sportiva",
         "risposta": False,
+        "riassunto": "Semaforo in figura → struttura sportiva?",
         "spiegazione": "Falso! Questo semaforo regola il passaggio dei pedoni sulla strada. Non indica l'entrata di nessun tipo di edificio, che sia una struttura sportiva o altro.",
         "regola": "Semaforo pedoni = regola il passaggio, non indica ingressi.",
         "trabocchetti": ["indica l"],
@@ -1215,6 +1369,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone con le braccia aperte verso la nostra direzione come in figura è vietato il passaggio",
         "risposta": True,
+        "riassunto": "Vigile con braccia aperte verso di noi → passaggio vietato?",
         "spiegazione": "Quando il vigile si trova con le braccia aperte e tu lo vedi di fronte o di spalle, significa che devi fermarti. È come se ci fosse un muro davanti a te, quindi non puoi passare.",
         "regola": "Vigile 'a muro' (fronte/spalle) = Stop!",
         "immagine": "95e808c7bace8d21c20a.jpg",
@@ -1222,6 +1377,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone con le braccia aperte verso la nostra direzione come in figura bisogna arrestarsi prima della striscia trasversale di arresto",
         "risposta": True,
+        "riassunto": "Vigile con braccia aperte verso di noi → fermarsi prima della striscia?",
         "spiegazione": "Sì, è corretto. Se il vigile ti ordina di fermarti (perché lo vedi di fronte o di spalle con le braccia aperte), devi arrestarti esattamente come faresti con un semaforo rosso: prima della linea bianca orizzontale sull'asfalto.",
         "regola": "Stop del vigile = Stop alla linea.",
         "immagine": "95e808c7bace8d21c20a.jpg",
@@ -1229,6 +1385,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone con le braccia aperte verso la nostra direzione come in figura non si può svoltare a sinistra",
         "risposta": True,
+        "riassunto": "Vigile con braccia aperte verso di noi → niente sinistra?",
         "spiegazione": "Esatto. Se il vigile ti ordina di fermarti (perché lo vedi di fronte o di spalle con le braccia aperte), non puoi fare nessuna manovra, nemmeno svoltare a sinistra. Devi restare fermo.",
         "regola": "Vigile 'a muro' = Stop totale, nessuna svolta.",
         "immagine": "95e808c7bace8d21c20a.jpg",
@@ -1236,6 +1393,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone con le braccia aperte verso la nostra direzione come in figura non si può attraversare l'incrocio",
         "risposta": True,
+        "riassunto": "Vigile con braccia aperte verso di noi → non attraversare?",
         "spiegazione": "Vero. La posizione del vigile con le braccia aperte, se tu lo vedi di fronte o di spalle, significa 'stop'. Quindi non puoi entrare nell'incrocio e attraversarlo in nessuna direzione.",
         "regola": "Vigile 'a muro' = Incrocio bloccato.",
         "immagine": "95e808c7bace8d21c20a.jpg",
@@ -1243,6 +1401,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone con le braccia aperte verso la nostra direzione come in figura non si può svoltare a destra",
         "risposta": True,
+        "riassunto": "Vigile con braccia aperte verso di noi → niente destra?",
         "spiegazione": "Sì, è vero. Se il vigile ti ordina di fermarti (perché lo vedi di fronte o di spalle con le braccia aperte), non puoi fare nessuna manovra, nemmeno svoltare a destra. Devi stare fermo.",
         "regola": "Stop del vigile = Stop a tutte le direzioni.",
         "immagine": "95e808c7bace8d21c20a.jpg",
@@ -1250,6 +1409,7 @@ QUESTIONS = [
     {
         "domanda": "La posizione del vigile con le braccia aperte verso la nostra direzione come in figura equivale alla luce rossa del semaforo",
         "risposta": True,
+        "riassunto": "Vigile con braccia aperte verso di noi → come il rosso?",
         "spiegazione": "Esatto! Quando il vigile ti mostra le braccia aperte e tu lo vedi di fronte o di spalle, è come se ci fosse un semaforo rosso per te. Devi fermarti e aspettare il prossimo segnale.",
         "regola": "Vigile 'a muro' = Semaforo rosso.",
         "immagine": "95e808c7bace8d21c20a.jpg",
@@ -1257,6 +1417,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone con le braccia aperte verso la nostra direzione come in figura si può passare se si svolta a destra, dando però la precedenza ai pedoni che attraversano",
         "risposta": False,
+        "riassunto": "Vigile con braccia aperte verso di noi → destra dando precedenza ai pedoni?",
         "spiegazione": "Falso. Se il vigile ti ordina di fermarti (perché lo vedi di fronte o di spalle con le braccia aperte), non puoi muoverti in nessuna direzione, nemmeno svoltare a destra. Devi stare fermo, a prescindere dai pedoni.",
         "regola": "Vigile 'a muro' = Stop assoluto, nessuna svolta.",
         "immagine": "95e808c7bace8d21c20a.jpg",
@@ -1264,6 +1425,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone con le braccia aperte verso la direzione da cui proviene il conducente come in figura questi può procedere, ma con la massima prudenza e a velocità moderata",
         "risposta": False,
+        "riassunto": "Vigile con braccia aperte verso di noi → procedere con prudenza?",
         "spiegazione": "Falso. Se il vigile ti mostra le braccia aperte e tu lo vedi di fronte o di spalle, significa che devi fermarti. Non puoi procedere, nemmeno con prudenza. L'ordine del vigile è prioritario.",
         "regola": "Vigile 'a muro' = Stop, non procedere.",
         "immagine": "95e808c7bace8d21c20a.jpg",
@@ -1271,6 +1433,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone con le braccia aperte verso la nostra direzione come in figura bisogna suonare il clacson, ma con moderazione, per richiamare l'attenzione del vigile",
         "risposta": False,
+        "riassunto": "Vigile con braccia aperte verso di noi → clacson per richiamarlo?",
         "spiegazione": "Falso. Non devi mai suonare il clacson per richiamare l'attenzione di un vigile. Devi solo rispettare i suoi segnali e fermarti. Suonare il clacson in questo caso è sbagliato e può essere anche sanzionato.",
         "regola": "Vigile = Obbedire, non suonare.",
         "immagine": "95e808c7bace8d21c20a.jpg",
@@ -1278,6 +1441,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone con le braccia aperte verso la nostra direzione come in figura si può svoltare, ma non proseguire diritto",
         "risposta": False,
+        "riassunto": "Vigile con braccia aperte verso di noi → svoltare ma non diritto?",
         "spiegazione": "Falso. Se il vigile ti ordina di fermarti (perché lo vedi di fronte o di spalle con le braccia aperte), non puoi fare nessuna manovra, né svoltare né andare diritto. Devi stare fermo.",
         "regola": "Vigile 'a muro' = Stop totale, nessuna direzione.",
         "immagine": "95e808c7bace8d21c20a.jpg",
@@ -1285,6 +1449,7 @@ QUESTIONS = [
     {
         "domanda": "La posizione del vigile con le braccia aperte verso la nostra direzione come in figura equivale alla luce verde del semaforo",
         "risposta": False,
+        "riassunto": "Vigile con braccia aperte verso di noi → come il verde?",
         "spiegazione": "Falso. È il contrario! Quando il vigile ti mostra le braccia aperte e tu lo vedi di fronte o di spalle, è come se ci fosse un semaforo rosso per te. La luce verde è quando il vigile ti mostra il fianco.",
         "regola": "Vigile 'a muro' = Rosso, non verde.",
         "immagine": "95e808c7bace8d21c20a.jpg",
@@ -1292,6 +1457,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci rosse accese lampeggianti in figura obbligano ad arrestarsi a un passaggio a livello ferroviario senza barriere",
         "risposta": True,
+        "riassunto": "Luci rosse lampeggianti → fermarsi al passaggio a livello senza barriere?",
         "spiegazione": "Queste luci rosse lampeggianti ti dicono di fermarti subito. Le trovi ai passaggi a livello (dove la strada incrocia i binari del treno) anche quando non ci sono le barriere. È molto pericoloso passare col treno in arrivo.",
         "regola": "Luci rosse lampeggianti = STOP ASSOLUTO al treno.",
         "trabocchetti": ["obbligano ad arrestarsi", "Senza barriere"],
@@ -1300,6 +1466,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci rosse accese lampeggianti in figura obbligano ad arrestarsi a un passaggio a livello ferroviario con semibarriere",
         "risposta": True,
+        "riassunto": "Luci rosse lampeggianti → fermarsi al passaggio a livello con semibarriere?",
         "spiegazione": "Anche se ci sono le semibarriere (quelle che coprono solo metà strada), le luci rosse lampeggianti ti dicono di fermarti. Le semibarriere e le luci lavorano insieme per la tua sicurezza.",
         "regola": "Luci rosse lampeggianti = STOP ASSOLUTO, anche con semibarriere.",
         "trabocchetti": ["con semibarriere"],
@@ -1308,6 +1475,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci rosse accese lampeggianti in figura obbligano ad arrestarsi all'accesso di un pontile d'imbarco di navi traghetto",
         "risposta": True,
+        "riassunto": "Luci rosse lampeggianti → fermarsi al pontile traghetti?",
         "spiegazione": "Sì, queste luci possono essere usate anche quando stai per salire su un traghetto. Ti avvisano che non puoi passare perché magari la nave non è pronta o c'è un pericolo.",
         "regola": "Luci rosse lampeggianti = STOP per sicurezza, anche ai traghetti.",
         "trabocchetti": ["pontile d"],
@@ -1316,6 +1484,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci rosse accese lampeggianti in figura obbligano ad arrestarsi all'accesso di un ponte mobile",
         "risposta": True,
+        "riassunto": "Luci rosse lampeggianti → fermarsi al ponte mobile?",
         "spiegazione": "Un ponte mobile si apre per far passare le barche. Quando le luci rosse lampeggiano, significa che il ponte si sta aprendo o chiudendo, ed è pericoloso passare. Devi fermarti.",
         "regola": "Luci rosse lampeggianti = STOP al ponte che si muove.",
         "trabocchetti": ["ponte mobile"],
@@ -1324,6 +1493,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci rosse accese lampeggianti in figura obbligano a non superare la striscia trasversale d'arresto",
         "risposta": True,
+        "riassunto": "Luci rosse lampeggianti → non superare la striscia di arresto?",
         "spiegazione": "Quando vedi queste luci, devi fermarti prima della linea bianca disegnata per terra (la striscia trasversale d'arresto). Non devi superarla per non creare pericolo.",
         "regola": "Luci rosse lampeggianti = STOP PRIMA della linea.",
         "trabocchetti": ["non superare la striscia trasversale d"],
@@ -1332,6 +1502,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci rosse accese lampeggianti in figura si trovano in vicinanza di un posto di blocco della polizia",
         "risposta": False,
+        "riassunto": "Luci rosse lampeggianti → posto di blocco?",
         "spiegazione": "Le luci rosse lampeggianti non sono usate per i posti di blocco della polizia. La polizia usa altri segnali, come la paletta o le luci blu. Queste luci sono per pericoli specifici come treni o ponti.",
         "regola": "Luci rosse lampeggianti = pericolo fisso, non polizia.",
         "trabocchetti": ["posto di blocco della polizia"],
@@ -1340,6 +1511,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci rosse accese lampeggianti in figura obbligano ad arrestarsi all'accesso di un ponte stretto",
         "risposta": False,
+        "riassunto": "Luci rosse lampeggianti → ponte stretto?",
         "spiegazione": "Un ponte stretto di solito ha altri segnali (come il segnale di \"dare precedenza\" o \"senso unico alternato\"), ma non queste luci rosse lampeggianti. Queste luci sono per pericoli più gravi e temporanei, come un ponte che si apre.",
         "regola": "Luci rosse lampeggianti = pericolo dinamico, non solo stretto.",
         "trabocchetti": ["ponte stretto"],
@@ -1348,6 +1520,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci rosse accese lampeggianti in figura indicano l'uscita obbligatoria dall'autostrada",
         "risposta": False,
+        "riassunto": "Luci rosse lampeggianti → uscita obbligatoria dall'autostrada?",
         "spiegazione": "Le luci rosse lampeggianti non indicano un'uscita obbligatoria dall'autostrada. Per quello ci sono i cartelli stradali specifici. Queste luci sono per fermate di sicurezza immediate.",
         "regola": "Luci rosse lampeggianti = STOP per pericolo, non per uscita.",
         "trabocchetti": ["uscita obbligatoria dall"],
@@ -1356,6 +1529,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci rosse accese lampeggianti in figura si trovano 150 metri prima di un confine di Stato",
         "risposta": False,
+        "riassunto": "Luci rosse lampeggianti → 150 m prima del confine?",
         "spiegazione": "No, queste luci non si trovano a 150 metri prima di un confine di Stato. I confini di Stato sono segnalati con cartelli diversi. Le luci rosse lampeggianti sono per pericoli immediati che richiedono una fermata.",
         "regola": "Luci rosse lampeggianti = pericolo immediato, non confine.",
         "trabocchetti": ["150 metri prima di un confine di Stato"],
@@ -1364,6 +1538,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci rosse accese lampeggianti in figura indicano che sta per accendersi la luce verde",
         "risposta": False,
+        "riassunto": "Luci rosse lampeggianti → sta per arrivare il verde?",
         "spiegazione": "Le luci rosse lampeggianti significano \"STOP, pericolo!\". Non sono come il giallo di un semaforo che precede il verde. Quando lampeggiano, devi fermarti e aspettare che si spengano.",
         "regola": "Luci rosse lampeggianti = STOP, non \"pre-verde\".",
         "trabocchetti": ["sta per accendersi la luce verde"],
@@ -1372,6 +1547,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci in figura si possono trovare in vicinanza di passaggi a livello con semibarriere",
         "risposta": True,
+        "riassunto": "Luci in figura → passaggi a livello con semibarriere?",
         "spiegazione": "Queste luci rosse lampeggianti si trovano ai passaggi a livello, sia con barriere complete che con semibarriere. Servono per avvisare che sta arrivando un treno.",
         "regola": "Luci rosse = treno in arrivo, con o senza barriere.",
         "trabocchetti": ["si possono trovare"],
@@ -1380,6 +1556,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci in figura si accendono alternativamente per segnalare l'arrivo dei treni nei passaggi a livello senza barriere",
         "risposta": True,
+        "riassunto": "Luci in figura → alternate per i treni senza barriere?",
         "spiegazione": "Sì, queste luci rosse lampeggiano una dopo l'altra (alternativamente) proprio per avvisare che un treno sta arrivando, specialmente nei passaggi a livello dove non ci sono barriere complete.",
         "regola": "Lampeggio alternato = treno in arrivo, anche senza barriere.",
         "trabocchetti": ["alternativamente", "Senza barriere"],
@@ -1388,6 +1565,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci in figura quando sono accese vietano il passaggio di veicoli e pedoni",
         "risposta": True,
+        "riassunto": "Luci accese → vietato a veicoli e pedoni?",
         "spiegazione": "Quando queste luci rosse lampeggiano, significa che il passaggio è pericoloso perché sta arrivando un treno. Quindi, è assolutamente vietato passare, sia per le auto che per le persone a piedi.",
         "regola": "Luci rosse lampeggianti = STOP assoluto.",
         "trabocchetti": ["vietano il passaggio"],
@@ -1396,6 +1574,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci in figura, di norma, sono situate sul lato destro della strada",
         "risposta": True,
+        "riassunto": "Luci in figura → di norma a destra?",
         "spiegazione": "Di solito, i segnali stradali e i dispositivi luminosi come questi vengono messi sul lato destro della strada, così sono ben visibili per chi guida.",
         "regola": "Segnali a destra = visibilità per tutti.",
         "trabocchetti": ["di norma"],
@@ -1404,6 +1583,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci in figura entrano in funzione poco prima dell'arrivo del treno e rimangono accese fino alla fine del suo passaggio",
         "risposta": True,
+        "riassunto": "Luci in figura → accese dal poco prima al passaggio del treno?",
         "spiegazione": "Le luci si accendono un po' prima che il treno arrivi, per darti il tempo di fermarti in sicurezza. Rimangono accese finché il treno non è passato del tutto e il pericolo è finito.",
         "regola": "Luci attive = pericolo presente.",
         "trabocchetti": ["poco prima dell", "e"],
@@ -1412,6 +1592,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci in figura si accendono subito prima dell'inizio dell'abbassamento delle semibarriere",
         "risposta": True,
+        "riassunto": "Luci in figura → prima dell'abbassamento delle semibarriere?",
         "spiegazione": "Sì, le luci rosse iniziano a lampeggiare un attimo prima che le semibarriere inizino a scendere. Questo ti dà un preavviso visivo prima che la barriera fisica si muova.",
         "regola": "Luci prima delle barriere = doppio avviso.",
         "trabocchetti": ["subito prima dell", "abbassamento"],
@@ -1420,6 +1601,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci in figura sono integrate da un dispositivo di segnalazione acustica",
         "risposta": True,
+        "riassunto": "Luci in figura → con segnale acustico?",
         "spiegazione": "Oltre alle luci, spesso c'è anche un suono (una campanella o un cicalino) che suona quando il treno sta per arrivare. Questo è un aiuto in più, specialmente se non vedi bene le luci o se sei distratto.",
         "regola": "Luci + suono = massima sicurezza.",
         "trabocchetti": ["integrate"],
@@ -1428,6 +1610,7 @@ QUESTIONS = [
     {
         "domanda": "Avvicinandosi ad un passaggio a livello con luci rosse lampeggianti alternativamente e semibarriera ancora alzata, occorre predisporsi all'arresto",
         "risposta": True,
+        "riassunto": "Luci rosse alternate, semibarriera alzata → prepararsi a fermarsi?",
         "spiegazione": "Anche se la semibarriera non è ancora scesa, se le luci rosse lampeggiano, significa che il treno è in arrivo. Devi subito prepararti a fermarti, rallentando e frenando.",
         "regola": "Luci rosse = fermati, anche se la barriera è su.",
         "trabocchetti": ["ancora alzata", "Predisporsi all"],
@@ -1436,6 +1619,7 @@ QUESTIONS = [
     {
         "domanda": "Avvicinandosi ad un passaggio a livello con luci rosse lampeggianti alternativamente e semibarriera ancora alzata, si può passare velocemente, se non si vede sopraggiungere alcun treno",
         "risposta": False,
+        "riassunto": "Luci rosse alternate, semibarriera alzata → passare veloci se nessun treno?",
         "spiegazione": "Questa è una situazione molto pericolosa! Le luci rosse lampeggianti significano sempre che un treno sta arrivando o è molto vicino. Non devi mai passare, anche se non vedi il treno. Potrebbe essere nascosto o arrivare molto velocemente.",
         "regola": "Luci rosse = MAI passare.",
         "trabocchetti": ["si può passare velocemente"],
@@ -1444,6 +1628,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci in figura si trovano lungo le linee ferroviarie, come semaforo per i conducenti dei treni",
         "risposta": False,
+        "riassunto": "Luci in figura → semaforo per i macchinisti?",
         "spiegazione": "Queste luci non sono per i treni. Sono per gli automobilisti e i pedoni che devono attraversare i binari. I treni hanno i loro segnali specifici.",
         "regola": "Luci rosse lampeggianti = per chi attraversa i binari, non per il treno.",
         "trabocchetti": ["per i conducenti dei treni"],
@@ -1452,6 +1637,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci in figura quando lampeggiano alternativamente invitano a occupare rapidamente il passaggio a livello",
         "risposta": False,
+        "riassunto": "Luci alternate → occupare in fretta il passaggio?",
         "spiegazione": "Assolutamente no! Quando le luci rosse lampeggiano, è un segnale di pericolo e di divieto. Devi fermarti e aspettare, non affrettarti ad attraversare. Sarebbe molto pericoloso.",
         "regola": "Lampeggio rosso = pericolo, non fretta.",
         "trabocchetti": ["invitano a occupare rapidamente"],
@@ -1460,6 +1646,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci in figura si possono trovare 150 metri prima di un passaggio a livello con barriere",
         "risposta": False,
+        "riassunto": "Luci in figura → 150 m prima del passaggio con barriere?",
         "spiegazione": "Queste luci si trovano proprio *al* passaggio a livello, non 150 metri prima. A 150 metri prima ci sono i segnali di preavviso (triangolari con il trenino), non le luci rosse lampeggianti.",
         "regola": "Luci rosse = sul posto, non prima.",
         "trabocchetti": ["150 metri prima"],
@@ -1468,6 +1655,7 @@ QUESTIONS = [
     {
         "domanda": "Le luci in figura vengono poste sul primo dei pannelli distanziometrici di un passaggio a livello",
         "risposta": False,
+        "riassunto": "Luci in figura → sul primo pannello distanziometrico?",
         "spiegazione": "I pannelli distanziometrici (quelli con le strisce oblique) servono a indicare la distanza dal passaggio a livello (300, 200, 100 metri). Le luci rosse lampeggianti, invece, sono proprio *al* passaggio a livello, non sui pannelli di preavviso.",
         "regola": "Luci rosse = al passaggio, non sui pannelli.",
         "trabocchetti": ["sul primo dei pannelli distanziometrici"],
@@ -1476,6 +1664,7 @@ QUESTIONS = [
     {
         "domanda": "Il dispositivo luminoso in figura è costituito da luci lampeggianti alternativamente che si accendono durante la fase di apertura (sollevamento) delle semibarriere",
         "risposta": False,
+        "riassunto": "Luci alternate → durante il sollevamento delle semibarriere?",
         "spiegazione": "Le luci rosse lampeggianti si accendono quando il passaggio a livello si sta *chiudendo* o è chiuso, cioè quando c'è pericolo. Non si accendono quando le barriere si stanno aprendo, perché in quel momento il pericolo è passato.",
         "regola": "Luci rosse = chiusura/pericolo, non apertura.",
         "immagine": "dda0378c4fd1a36310fb.jpg",
@@ -1483,6 +1672,7 @@ QUESTIONS = [
     {
         "domanda": "Il vigile disposto con le braccia ad angolo retto come in figura consente la svolta a sinistra ai veicoli che arrivano dalla sua sinistra",
         "risposta": True,
+        "riassunto": "Vigile con braccia ad angolo retto → sinistra a chi viene dalla sua sinistra?",
         "spiegazione": "VERO. Quando il vigile ha le braccia aperte orizzontalmente, i veicoli che arrivano dal suo fianco sinistro hanno il via libera e possono svoltare a sinistra, proseguire diritto o svoltare a destra.",
         "regola": "Dal fianco sinistro si passa, in ogni direzione.",
         "trabocchetti": ["consente"],
@@ -1491,6 +1681,7 @@ QUESTIONS = [
     {
         "domanda": "Il vigile disposto con le braccia ad angolo retto come in figura ferma i veicoli che arrivano dalla sua destra",
         "risposta": True,
+        "riassunto": "Vigile con braccia ad angolo retto → ferma chi viene dalla sua destra?",
         "spiegazione": "VERO. In questa posizione, i veicoli che arrivano dal fianco destro del vigile devono fermarsi. Non possono passare.",
         "regola": "Dal fianco destro si sta fermi.",
         "trabocchetti": ["ferma"],
@@ -1499,6 +1690,7 @@ QUESTIONS = [
     {
         "domanda": "Il vigile disposto con le braccia ad angolo retto come in figura vieta di proseguire diritto ai veicoli che gli vengono dalle sue spalle",
         "risposta": True,
+        "riassunto": "Vigile con braccia ad angolo retto → vieta il diritto a chi viene dalle spalle?",
         "spiegazione": "VERO. I veicoli che arrivano dalle spalle del vigile devono fermarsi. Quindi, è vietato proseguire diritto o fare qualsiasi altra manovra.",
         "regola": "Dalle spalle si sta fermi.",
         "trabocchetti": ["vieta"],
@@ -1507,6 +1699,7 @@ QUESTIONS = [
     {
         "domanda": "Il vigile disposto con le braccia ad angolo retto come in figura consente di proseguire diritto ai veicoli che arrivano dalla sua sinistra",
         "risposta": True,
+        "riassunto": "Vigile con braccia ad angolo retto → diritto a chi viene dalla sua sinistra?",
         "spiegazione": "VERO. I veicoli che arrivano dal fianco sinistro del vigile hanno il via libera e possono proseguire diritto, svoltare a sinistra o svoltare a destra.",
         "regola": "Dal fianco sinistro si passa, anche diritto.",
         "trabocchetti": ["consente"],
@@ -1515,6 +1708,7 @@ QUESTIONS = [
     {
         "domanda": "Il vigile disposto con le braccia ad angolo retto come in figura consente di svoltare a destra ai veicoli che arrivano dalla sua sinistra",
         "risposta": True,
+        "riassunto": "Vigile con braccia ad angolo retto → destra a chi viene dalla sua sinistra?",
         "spiegazione": "VERO. I veicoli che arrivano dal fianco sinistro del vigile hanno il via libera e possono svoltare a destra, proseguire diritto o svoltare a sinistra.",
         "regola": "Dal fianco sinistro si passa, anche a destra.",
         "trabocchetti": ["consente"],
@@ -1523,6 +1717,7 @@ QUESTIONS = [
     {
         "domanda": "Il vigile disposto con le braccia ad angolo retto come in figura consente di svoltare a destra ai veicoli che arrivano dalla sua destra",
         "risposta": False,
+        "riassunto": "Vigile con braccia ad angolo retto → destra a chi viene dalla sua destra?",
         "spiegazione": "FALSO. I veicoli che arrivano dal fianco destro del vigile devono fermarsi. Non possono svoltare a destra né fare altre manovre.",
         "regola": "Dal fianco destro si sta fermi, niente svolte.",
         "trabocchetti": ["consente"],
@@ -1531,6 +1726,7 @@ QUESTIONS = [
     {
         "domanda": "Il vigile disposto con le braccia ad angolo retto come in figura consente la svolta a destra ai veicoli che arrivano dalle sue spalle",
         "risposta": False,
+        "riassunto": "Vigile con braccia ad angolo retto → destra a chi viene dalle spalle?",
         "spiegazione": "FALSO. I veicoli che arrivano dalle spalle del vigile devono fermarsi. Non possono svoltare a destra né fare altre manovre.",
         "regola": "Dalle spalle si sta fermi, niente svolte.",
         "trabocchetti": ["consente"],
@@ -1539,6 +1735,7 @@ QUESTIONS = [
     {
         "domanda": "Il vigile disposto con le braccia ad angolo retto come in figura consente la svolta a sinistra ai veicoli che arrivano dalla sua destra",
         "risposta": False,
+        "riassunto": "Vigile con braccia ad angolo retto → sinistra a chi viene dalla sua destra?",
         "spiegazione": "FALSO. I veicoli che arrivano dal fianco destro del vigile devono fermarsi. Non possono svoltare a sinistra né fare altre manovre.",
         "regola": "Dal fianco destro si sta fermi, niente svolte.",
         "trabocchetti": ["consente"],
@@ -1547,6 +1744,7 @@ QUESTIONS = [
     {
         "domanda": "Il vigile disposto con le braccia ad angolo retto come in figura consente di proseguire diritto ai veicoli che arrivano dalla sua destra",
         "risposta": False,
+        "riassunto": "Vigile con braccia ad angolo retto → diritto a chi viene dalla sua destra?",
         "spiegazione": "FALSO. I veicoli che arrivano dal fianco destro del vigile devono fermarsi. Non possono proseguire diritto né fare altre manovre.",
         "regola": "Dal fianco destro si sta fermi, niente diritto.",
         "trabocchetti": ["consente"],
@@ -1555,6 +1753,7 @@ QUESTIONS = [
     {
         "domanda": "Il vigile disposto con le braccia ad angolo retto come in figura vieta il passaggio ai veicoli che arrivano dalla sua sinistra",
         "risposta": False,
+        "riassunto": "Vigile con braccia ad angolo retto → vieta il passaggio a chi viene da sinistra?",
         "spiegazione": "FALSO. I veicoli che arrivano dal fianco sinistro del vigile hanno il via libera, quindi il passaggio NON è vietato. Possono passare.",
         "regola": "Dal fianco sinistro si passa, non è vietato.",
         "trabocchetti": ["vieta"],
@@ -1563,6 +1762,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone di profilo con le braccia aperte come in figura è consentito il passaggio delle correnti di traffico che scorrono parallele alle sue braccia",
         "risposta": True,
+        "riassunto": "Vigile di profilo braccia aperte → passano i flussi paralleli alle braccia?",
         "spiegazione": "Quando il vigile è di profilo con le braccia aperte, significa che il traffico che si muove nella stessa direzione delle sue braccia (cioè ai suoi lati) può passare. È come avere il semaforo verde.",
         "regola": "Braccia aperte di profilo = via libera ai lati.",
         "trabocchetti": ["parallele alle sue braccia"],
@@ -1571,6 +1771,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone di profilo con le braccia aperte come in figura si può svoltare a destra se si proviene dalla sua destra o dalla sua sinistra",
         "risposta": True,
+        "riassunto": "Vigile di profilo → destra a chi viene dai suoi lati?",
         "spiegazione": "Se vieni dalla destra o dalla sinistra del vigile, sei nella corrente di traffico che può passare. Quindi, puoi anche svoltare a destra, a meno che non ci siano altri segnali che lo vietano.",
         "regola": "Via libera ai lati, quindi puoi anche svoltare.",
         "trabocchetti": ["dalla sua destra o dalla sua sinistra", "Si può svoltare"],
@@ -1579,6 +1780,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone di profilo con le braccia aperte come in figura, le correnti di traffico che scorrono parallele alle sue braccia possono attraversare l'incrocio, ma usando prudenza",
         "risposta": True,
+        "riassunto": "Vigile di profilo → flussi paralleli attraversano con prudenza?",
         "spiegazione": "Sì, il traffico che è parallelo alle braccia del vigile può attraversare l'incrocio. La prudenza è sempre necessaria quando si attraversa un incrocio, a prescindere dal segnale del vigile o del semaforo.",
         "regola": "Via libera ai lati, ma sempre con prudenza.",
         "trabocchetti": ["ma usando prudenza"],
@@ -1587,6 +1789,7 @@ QUESTIONS = [
     {
         "domanda": "La posizione di profilo del vigile con le braccia aperte come in figura equivale alla luce verde del semaforo per le correnti di traffico che scorrono parallele alle sue braccia",
         "risposta": True,
+        "riassunto": "Vigile di profilo → verde per i flussi paralleli?",
         "spiegazione": "Esatto! La posizione del vigile di profilo con le braccia aperte è l'equivalente del semaforo verde per chi si trova ai suoi lati, cioè per le correnti di traffico che scorrono parallele alle sue braccia.",
         "regola": "Profilo + braccia aperte = verde per chi è ai lati.",
         "trabocchetti": ["Equivale alla luce verde"],
@@ -1595,6 +1798,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone di profilo con le braccia aperte come in figura si deve obbligatoriamente proseguire diritto",
         "risposta": False,
+        "riassunto": "Vigile di profilo → obbligo di diritto?",
         "spiegazione": "Falso. Se il vigile ti dà il via libera (perché sei ai suoi lati), puoi proseguire dritto, ma anche svoltare a destra o a sinistra, se la segnaletica orizzontale o verticale lo permette. Non sei 'obbligato' a fare solo una cosa.",
         "regola": "'Obbligatoriamente' è quasi sempre FALSO se ci sono altre scelte.",
         "trabocchetti": ["obbligatoriamente"],
@@ -1603,6 +1807,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone di profilo con le braccia aperte come in figura, ci si deve arrestare prima della striscia trasversale di arresto se si proviene dalla sua sinistra",
         "risposta": False,
+        "riassunto": "Vigile di profilo → fermarsi se si viene dalla sua sinistra?",
         "spiegazione": "Falso. Se provieni dalla sua sinistra, sei nella corrente di traffico che può passare (parallela alle sue braccia). Quindi, non devi arrestarti, ma puoi proseguire.",
         "regola": "Dalla sua sinistra = via libera, non stop.",
         "trabocchetti": ["ci si deve arrestare", "Dalla sua sinistra"],
@@ -1611,6 +1816,7 @@ QUESTIONS = [
     {
         "domanda": "Quando il vigile si dispone di profilo con le braccia aperte come in figura ci si deve arrestare dopo aver superato le strisce dell'attraversamento pedonale",
         "risposta": False,
+        "riassunto": "Vigile di profilo → fermarsi dopo le strisce pedonali?",
         "spiegazione": "Falso. Se devi fermarti (perché vieni da fronte o retro del vigile), devi farlo *prima* della striscia di arresto e *prima* dell'attraversamento pedonale. Fermarsi *dopo* le strisce pedonali è sempre sbagliato e pericoloso, perché bloccheresti i pedoni.",
         "regola": "Mai fermarsi *dopo* le strisce pedonali.",
         "trabocchetti": ["dopo aver superato le strisce dell"],
@@ -1619,6 +1825,7 @@ QUESTIONS = [
     {
         "domanda": "La posizione di profilo del vigile con le braccia aperte come in figura, per le correnti di traffico che scorrono parallele alle sue braccia equivale alla luce rossa del semaforo",
         "risposta": False,
+        "riassunto": "Vigile di profilo → rosso per i flussi paralleli?",
         "spiegazione": "Falso. Come abbiamo visto, per le correnti di traffico che scorrono parallele alle braccia del vigile, questa posizione equivale alla luce *verde* del semaforo, non a quella rossa. La luce rossa è per chi si trova di fronte o alle spalle del vigile.",
         "regola": "Profilo + braccia aperte = verde, non rosso, per chi è ai lati.",
         "trabocchetti": ["Equivale alla luce rossa"],
@@ -1627,6 +1834,7 @@ QUESTIONS = [
     {
         "domanda": "La posizione del vigile con un braccio alzato come in figura equivale alla luce gialla fissa del semaforo",
         "risposta": True,
+        "riassunto": "Vigile con braccio alzato → come il giallo fisso?",
         "spiegazione": "Quando il vigile alza un braccio in questo modo, è come se il semaforo fosse giallo fisso. Significa che devi fare attenzione e prepararti a fermarti, perché sta per cambiare il segnale.",
         "regola": "Braccio alzato = Giallo fisso.",
         "trabocchetti": ["equivale"],
@@ -1635,6 +1843,7 @@ QUESTIONS = [
     {
         "domanda": "Se il vigile ha un braccio alzato come in figura bisogna liberare velocemente l'incrocio, se già è stato impegnato",
         "risposta": True,
+        "riassunto": "Vigile con braccio alzato → liberare l'incrocio se impegnato?",
         "spiegazione": "Se sei già entrato nell'incrocio quando il vigile alza il braccio, devi uscire subito per non bloccare il traffico. Non puoi fermarti in mezzo all'incrocio.",
         "regola": "Se sei dentro, esci subito!",
         "trabocchetti": ["se già è stato impegnato"],
@@ -1643,6 +1852,7 @@ QUESTIONS = [
     {
         "domanda": "Se il vigile ha un braccio alzato come in figura bisogna arrestarsi prima dell'incrocio, se è possibile farlo senza creare pericolo",
         "risposta": True,
+        "riassunto": "Vigile con braccio alzato → fermarsi se possibile senza pericolo?",
         "spiegazione": "Se non sei ancora entrato nell'incrocio, devi fermarti prima della linea di arresto. Ma devi farlo in modo sicuro, senza frenare bruscamente e creare pericolo per gli altri veicoli.",
         "regola": "Non sei dentro? Fermati, ma in sicurezza!",
         "immagine": "0a9120a696991833623d.jpg",
@@ -1650,6 +1860,7 @@ QUESTIONS = [
     {
         "domanda": "La posizione del vigile con un braccio alzato come in figura è una indicazione riservata solo ai veicoli che devono svoltare",
         "risposta": False,
+        "riassunto": "Vigile con braccio alzato → solo per chi svolta?",
         "spiegazione": "Questo segnale del vigile non è solo per chi vuole svoltare. Vale per tutti i veicoli che si avvicinano all'incrocio, indipendentemente dalla direzione che vogliono prendere.",
         "regola": "Braccio alzato = per TUTTI!",
         "trabocchetti": ["solo"],
@@ -1658,6 +1869,7 @@ QUESTIONS = [
     {
         "domanda": "Se il vigile ha un braccio alzato come in figura bisogna in ogni caso arrestarsi",
         "risposta": False,
+        "riassunto": "Vigile con braccio alzato → fermarsi in ogni caso?",
         "spiegazione": "Non è vero che devi arrestarti 'in ogni caso'. Se sei già dentro l'incrocio, come spiegato prima, devi liberarlo. Ti arresti solo se non lo hai ancora impegnato.",
         "regola": "'In ogni caso'? Attenzione, quasi sempre FALSO!",
         "immagine": "0a9120a696991833623d.jpg",
@@ -1665,6 +1877,7 @@ QUESTIONS = [
     {
         "domanda": "Se il vigile ha un braccio alzato come in figura è consentito soltanto svoltare a destra",
         "risposta": False,
+        "riassunto": "Vigile con braccio alzato → solo destra?",
         "spiegazione": "Il segnale del vigile con il braccio alzato non ti dice in che direzione puoi andare. Ti avvisa solo di un cambio imminente nel traffico (come il giallo del semaforo), non ti dà indicazioni di svolta.",
         "regola": "Braccio alzato non indica direzione.",
         "trabocchetti": ["soltanto"],
@@ -1673,6 +1886,7 @@ QUESTIONS = [
     {
         "domanda": "Se il vigile ha un braccio alzato come in figura bisogna rallentare solo se nell'incrocio vi sono binari del tram",
         "risposta": False,
+        "riassunto": "Vigile con braccio alzato → rallentare solo con binari del tram?",
         "spiegazione": "Devi rallentare e prepararti a fermarti (o liberare l'incrocio) sempre quando il vigile alza il braccio, non solo se ci sono i binari del tram. I binari non cambiano il significato del segnale.",
         "regola": "Binari del tram non cambiano il segnale.",
         "trabocchetti": ["solo se nell"],
@@ -1681,6 +1895,7 @@ QUESTIONS = [
     {
         "domanda": "La posizione del vigile con il braccio alzato come in figura equivale alla luce rossa del semaforo",
         "risposta": False,
+        "riassunto": "Vigile con braccio alzato → come il rosso?",
         "spiegazione": "No, il braccio alzato del vigile è come il semaforo giallo fisso, non come il rosso. Il rosso significa 'stop assoluto' per tutti. Il braccio alzato è un segnale di 'attenzione, stop imminente'.",
         "regola": "Braccio alzato = Giallo, non Rosso!",
         "trabocchetti": ["equivale alla luce rossa"],
@@ -1689,6 +1904,7 @@ QUESTIONS = [
     {
         "domanda": "È possibile trovare la luce gialla lampeggiante quando le altre sono spente",
         "risposta": True,
+        "riassunto": "Giallo lampeggiante → con le altre luci spente?",
         "spiegazione": "Sì, è possibile. Quando un semaforo non funziona normalmente, può mostrare solo la luce gialla che lampeggia. Questo ti avvisa di fare molta attenzione.",
         "regola": "Giallo lampeggiante da solo = semaforo in modalità 'attenzione'.",
         "trabocchetti": ["È possibile"],
@@ -1697,6 +1913,7 @@ QUESTIONS = [
     {
         "domanda": "La luce circolare gialla lampeggiante (tipo A di figura) è un segnale di pericolo generico",
         "risposta": True,
+        "riassunto": "Giallo lampeggiante circolare (A) → pericolo generico?",
         "spiegazione": "Esatto, la luce gialla lampeggiante ti avvisa che c'è un pericolo o una situazione che richiede attenzione, senza specificare esattamente quale sia il pericolo. È un segnale di allerta generale.",
         "regola": "Giallo lampeggiante = Attenzione generica.",
         "trabocchetti": ["generico"],
@@ -1705,6 +1922,7 @@ QUESTIONS = [
     {
         "domanda": "La luce circolare gialla lampeggiante (tipo A di figura) invita a moderare la velocità",
         "risposta": True,
+        "riassunto": "Giallo lampeggiante (A) → moderare la velocità?",
         "spiegazione": "Quando vedi la luce gialla lampeggiante, devi rallentare. È un invito a guidare più lentamente perché c'è una situazione che richiede prudenza e attenzione.",
         "regola": "Giallo lampeggiante = Rallenta e osserva.",
         "trabocchetti": ["invita"],
@@ -1713,6 +1931,7 @@ QUESTIONS = [
     {
         "domanda": "La luce circolare gialla lampeggiante (tipo A di figura) invita a procedere con particolare prudenza",
         "risposta": True,
+        "riassunto": "Giallo lampeggiante (A) → particolare prudenza?",
         "spiegazione": "Sì, la luce gialla lampeggiante ti dice di guidare con molta attenzione. Devi guardare bene cosa succede intorno a te e, se necessario, dare la precedenza prima di continuare.",
         "regola": "Giallo lampeggiante = Massima attenzione.",
         "immagine": "b0df4275bce0f801c362.jpg",
@@ -1720,6 +1939,7 @@ QUESTIONS = [
     {
         "domanda": "Nel semaforo la luce gialla lampeggiante impone l'arresto sempre prima dell'incrocio",
         "risposta": False,
+        "riassunto": "Giallo lampeggiante → sempre arresto prima dell'incrocio?",
         "spiegazione": "No, questo è falso. La luce gialla lampeggiante non ti obbliga a fermarti. Ti dice di fare attenzione, rallentare e, se necessario, dare la precedenza, ma non di arrestarti per forza come con il semaforo rosso.",
         "regola": "Giallo lampeggiante = Attenzione, non stop obbligatorio.",
         "trabocchetti": ["impone l", "e"],
@@ -1728,6 +1948,7 @@ QUESTIONS = [
     {
         "domanda": "La luce circolare gialla lampeggiante (tipo A di figura) può essere posta prima di un ponte mobile",
         "risposta": False,
+        "riassunto": "Giallo lampeggiante (A) → prima di un ponte mobile?",
         "spiegazione": "No, questo è falso. Prima di un ponte mobile (o un passaggio a livello), si usano luci rosse lampeggianti, non gialle. Le luci rosse lampeggianti indicano un pericolo imminente e l'obbligo di fermarsi immediatamente.",
         "regola": "Ponte mobile = Rosso lampeggiante, non giallo.",
         "immagine": "b0df4275bce0f801c362.jpg",
@@ -1735,6 +1956,7 @@ QUESTIONS = [
     {
         "domanda": "La luce circolare gialla lampeggiante (tipo A di figura) può essere posta prima di un pontile d'imbarco di navi traghetto",
         "risposta": False,
+        "riassunto": "Giallo lampeggiante (A) → prima del pontile traghetti?",
         "spiegazione": "No, anche questo è falso. Come per il ponte mobile, prima di un pontile d'imbarco dove c'è un pericolo specifico e l'obbligo di fermarsi, si usano luci rosse lampeggianti, non gialle.",
         "regola": "Pontile traghetto = Rosso lampeggiante, non giallo.",
         "trabocchetti": ["imbarco"],
@@ -1743,6 +1965,7 @@ QUESTIONS = [
     {
         "domanda": "La luce gialla lampeggiante insieme a quella rossa in figura indica pericolo",
         "risposta": False,
+        "riassunto": "Giallo lampeggiante col rosso → pericolo?",
         "spiegazione": "No, questo è falso. La luce gialla lampeggiante non si accende mai insieme alla luce rossa fissa per indicare pericolo in un semaforo normale. Se vedi rosso e giallo insieme (fissi), significa che sta per scattare il verde, non che c'è un pericolo.",
         "regola": "Rosso + Giallo (fissi) = Presto verde. Rosso + Giallo (lampeggiante) = Non esiste.",
         "immagine": "450704492bd60d6bb20c.jpg",
@@ -1750,6 +1973,7 @@ QUESTIONS = [
     {
         "domanda": "Il suono prolungato del fischietto da parte dell'agente preposto al traffico significa che tutti i veicoli si devono arrestare, in condizioni di sicurezza",
         "risposta": True,
+        "riassunto": "Fischio prolungato dell'agente → tutti si fermano in sicurezza?",
         "spiegazione": "Il suono prolungato del fischietto dell'agente di traffico è un segnale generale di 'STOP'. Significa che tutti i veicoli devono fermarsi, ma sempre in modo sicuro per evitare incidenti.",
         "regola": "Fischietto lungo = STOP generale e sicuro.",
         "trabocchetti": ["tutti", "In condizioni di sicurezza"],
@@ -1757,18 +1981,21 @@ QUESTIONS = [
     {
         "domanda": "Il suono prolungato del fischietto da parte dell'agente preposto al traffico serve per consentire il passaggio di veicoli di soccorso in servizio di emergenza",
         "risposta": True,
+        "riassunto": "Fischio prolungato → per far passare l'emergenza?",
         "spiegazione": "Una delle ragioni per cui l'agente può dare il segnale di 'STOP' prolungato è per liberare la strada e permettere il passaggio veloce di ambulanze, polizia o vigili del fuoco in emergenza.",
         "regola": "Fischietto lungo = STOP per veicoli di soccorso.",
     },
     {
         "domanda": "Il suono prolungato del fischietto da parte dell'agente preposto al traffico impone a chi ha impegnato l'incrocio di liberarlo ed eventualmente di arrestarsi subito dopo",
         "risposta": True,
+        "riassunto": "Fischio prolungato → chi è nell'incrocio lo libera e si ferma?",
         "spiegazione": "Se hai già iniziato ad attraversare un incrocio quando senti il fischietto prolungato, non devi fermarti in mezzo. Devi prima finire di attraversare l'incrocio e poi fermarti subito dopo, in un punto sicuro.",
         "regola": "Fischietto lungo in incrocio = prima esci, poi STOP.",
     },
     {
         "domanda": "Il suono prolungato del fischietto da parte dell'agente preposto al traffico indica che occorre arrestarsi, se non si è ancora occupato l'incrocio",
         "risposta": True,
+        "riassunto": "Fischio prolungato → fermarsi se non si è nell'incrocio?",
         "spiegazione": "Se non sei ancora entrato nell'incrocio e senti il fischietto prolungato, devi fermarti immediatamente prima di entrare, rispettando la segnaletica e la sicurezza.",
         "regola": "Fischietto lungo prima incrocio = STOP subito.",
         "trabocchetti": ["se non si è ancora occupato l"],
@@ -1776,6 +2003,7 @@ QUESTIONS = [
     {
         "domanda": "Il suono prolungato del fischietto da parte dell'agente preposto al traffico indica che occorre tornare indietro",
         "risposta": False,
+        "riassunto": "Fischio prolungato → tornare indietro?",
         "spiegazione": "Il suono prolungato del fischietto significa 'STOP', non 'torna indietro'. Non è un segnale per fare inversione di marcia.",
         "regola": "Fischietto lungo = STOP, non U-turn.",
         "trabocchetti": ["tornare indietro"],
@@ -1783,6 +2011,7 @@ QUESTIONS = [
     {
         "domanda": "Il suono prolungato del fischietto da parte dell'agente preposto al traffico serve per arrestare o deviare solo i veicoli che arrivano dalla sua destra",
         "risposta": False,
+        "riassunto": "Fischio prolungato → solo per chi viene da destra?",
         "spiegazione": "Il fischietto prolungato è un segnale generale. Non è rivolto 'solo' ai veicoli che arrivano da una direzione specifica (come la destra dell'agente), ma a tutti i veicoli.",
         "regola": "Fischietto lungo = STOP per TUTTI, non 'solo' per alcuni.",
         "trabocchetti": ["solo"],
@@ -1790,6 +2019,7 @@ QUESTIONS = [
     {
         "domanda": "Il suono prolungato del fischietto da parte dell'agente preposto al traffico significa che i veicoli fermi devono mettersi in marcia",
         "risposta": False,
+        "riassunto": "Fischio prolungato → i fermi ripartono?",
         "spiegazione": "Il fischietto prolungato significa 'STOP'. Per far ripartire i veicoli fermi, l'agente usa un fischietto corto e ripetuto.",
         "regola": "Fischietto lungo = STOP. Fischietto corto = VIA.",
         "trabocchetti": ["mettersi in marcia"],
@@ -1797,6 +2027,7 @@ QUESTIONS = [
     {
         "domanda": "Il suono prolungato del fischietto da parte dell'agente preposto al traffico impone ai soli veicoli pesanti di arrestarsi",
         "risposta": False,
+        "riassunto": "Fischio prolungato → solo veicoli pesanti si fermano?",
         "spiegazione": "Il fischietto prolungato è un segnale per tutti i veicoli, non 'solo' per quelli pesanti. Anche le auto, le moto e i ciclomotori devono fermarsi.",
         "regola": "Fischietto lungo = STOP per TUTTI, non 'solo' per i camion.",
         "trabocchetti": ["soli", "veicoli pesanti"],
@@ -1804,6 +2035,7 @@ QUESTIONS = [
     {
         "domanda": "Avvicinandosi ad un passaggio a livello con luci rosse accese e semibarriera ancora alzata, è necessario fermarsi sulla linea d'arresto",
         "risposta": True,
+        "riassunto": "Luci rosse, semibarriera alzata → fermarsi sulla linea d'arresto?",
         "spiegazione": "Quando le luci rosse di un passaggio a livello sono accese, significa che un treno sta arrivando. Anche se la barriera è ancora alzata, devi fermarti immediatamente sulla linea d'arresto per la tua sicurezza e quella degli altri. Non aspettare che la barriera si abbassi.",
         "regola": "Luci rosse = STOP, sempre alla linea d'arresto!",
         "trabocchetti": ["necessario"],
@@ -1811,6 +2043,7 @@ QUESTIONS = [
     {
         "domanda": "Avvicinandosi ad un passaggio a livello con luci rosse accese e semibarriera ancora alzata, non si deve accelerare per attraversare prima che si abbassi la semibarriera",
         "risposta": True,
+        "riassunto": "Luci rosse, semibarriera alzata → non accelerare per passare?",
         "spiegazione": "Le luci rosse accese sono un segnale di pericolo imminente. Accelerare per cercare di passare prima che la barriera si abbassi è estremamente pericoloso e vietato. Il treno potrebbe arrivare in qualsiasi momento.",
         "regola": "Luci rosse = non correre, aspetta!",
         "trabocchetti": ["non si deve accelerare"],
@@ -1818,12 +2051,14 @@ QUESTIONS = [
     {
         "domanda": "Avvicinandosi ad un passaggio a livello con luci rosse accese e semibarriera ancora alzata, si può passare velocemente, se non si vede sopraggiungere il treno",
         "risposta": False,
+        "riassunto": "Luci rosse, semibarriera alzata → passare veloci se nessun treno?",
         "spiegazione": "Anche se non vedi o non senti il treno, le luci rosse accese sono un segnale inequivocabile di pericolo. Non puoi mai passare quando le luci rosse sono attive, è troppo rischioso e vietato dalla legge.",
         "regola": "Luci rosse = pericolo invisibile, non passare!",
     },
     {
         "domanda": "Avvicinandosi ad un passaggio a livello con luci rosse accese e semibarriera ancora alzata, bisogna accelerare per liberare rapidamente l'attraversamento",
         "risposta": False,
+        "riassunto": "Luci rosse, semibarriera alzata → accelerare per liberare?",
         "spiegazione": "Accelerare in questa situazione è molto pericoloso. Le luci rosse ti dicono di fermarti, non di affrettarti. Potresti rimanere bloccato sui binari o essere colpito dal treno.",
         "regola": "Luci rosse = fermati, non accelerare!",
         "trabocchetti": ["bisogna accelerare"],
@@ -1831,6 +2066,7 @@ QUESTIONS = [
     {
         "domanda": "Avvicinandosi ad un passaggio a livello con luci rosse accese e semibarriera ancora alzata, bisogna fermarsi in corrispondenza del terzo pannello distanziometrico",
         "risposta": False,
+        "riassunto": "Luci rosse, semibarriera alzata → fermarsi al terzo pannello?",
         "spiegazione": "Il terzo pannello distanziometrico (quello con tre barre oblique) indica che il passaggio a livello è a circa 450 metri. Quando le luci rosse sono accese, devi fermarti molto più vicino, precisamente sulla linea d'arresto, che si trova subito prima dei binari.",
         "regola": "Luci rosse = fermati alla linea d'arresto, non al pannello!",
         "trabocchetti": ["terzo pannello distanziometrico"],
@@ -1838,12 +2074,14 @@ QUESTIONS = [
     {
         "domanda": "Avvicinandosi ad un passaggio a livello con luci rosse accese e semibarriera ancora alzata, è possibile attraversare se la linea ferroviaria è ad un solo binario",
         "risposta": False,
+        "riassunto": "Luci rosse, semibarriera alzata → passare se un solo binario?",
         "spiegazione": "Non importa se la linea ferroviaria ha uno o più binari. Le luci rosse accese indicano sempre che un treno sta arrivando e che è vietato attraversare. La sicurezza è la stessa per qualsiasi tipo di binario.",
         "regola": "Luci rosse = STOP, binari non contano!",
     },
     {
         "domanda": "Avvicinandosi ad un passaggio a livello con luci rosse accese e semibarriera ancora alzata, è possibile attraversare i binari se non si sente ancora il fischio del treno",
         "risposta": False,
+        "riassunto": "Luci rosse, semibarriera alzata → passare se il treno non fischia?",
         "spiegazione": "Il fischio del treno non è l'unico o il principale segnale di pericolo. Le luci rosse sono il segnale visivo più importante e ti dicono di fermarti immediatamente. Non devi aspettare altri segnali acustici.",
         "regola": "Luci rosse = segnale visivo, non aspettare il fischio!",
         "trabocchetti": ["se non si sente ancora il fischio"],
@@ -1851,6 +2089,7 @@ QUESTIONS = [
     {
         "domanda": "Avvicinandosi ad un passaggio a livello con luci rosse accese e semibarriera ancora alzata, è possibile attraversare i binari se non vi sono altri veicoli in attesa",
         "risposta": False,
+        "riassunto": "Luci rosse, semibarriera alzata → passare se nessuno attende?",
         "spiegazione": "La tua sicurezza non dipende dalla presenza o assenza di altri veicoli. Le luci rosse accese significano che è pericoloso attraversare, indipendentemente da quanti altri veicoli ci siano o meno.",
         "regola": "Luci rosse = STOP, sei solo responsabile!",
         "trabocchetti": ["se non vi sono altri veicoli in attesa"],
@@ -1858,6 +2097,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida autoveicoli o motocicli deve esibire, a richiesta degli agenti, la carta di circolazione",
         "risposta": True,
+        "riassunto": "Agenti chiedono → carta di circolazione?",
         "spiegazione": "La carta di circolazione (oggi parte del Documento Unico di Circolazione e di Proprietà) è il documento che attesta l'idoneità del veicolo a circolare su strada. È obbligatorio averla sempre a bordo e mostrarla se richiesta dagli agenti.",
         "regola": "Carta di circolazione = 'carta d'identità' del veicolo, sempre con te.",
         "trabocchetti": ["carta di circolazione"],
@@ -1865,6 +2105,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida autoveicoli o motocicli deve esibire, a richiesta degli agenti, la patente di guida",
         "risposta": True,
+        "riassunto": "Agenti chiedono → patente?",
         "spiegazione": "La patente di guida è il documento che ti autorizza a condurre un determinato tipo di veicolo. È fondamentale averla sempre con te quando guidi e mostrarla se richiesta dagli agenti.",
         "regola": "Patente = il tuo permesso di guidare, sempre a portata di mano.",
         "trabocchetti": ["patente di guida"],
@@ -1872,6 +2113,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida autoveicoli o motocicli deve esibire, a richiesta degli agenti, il certificato di assicurazione del veicolo",
         "risposta": True,
+        "riassunto": "Agenti chiedono → certificato di assicurazione?",
         "spiegazione": "Il certificato di assicurazione (o il tagliando digitale/QR code) dimostra che il tuo veicolo è coperto dalla Responsabilità Civile Auto (RCA), obbligatoria per legge. Devi averlo a bordo e mostrarlo se richiesto.",
         "regola": "Assicurazione = protezione obbligatoria, certificato a bordo.",
         "trabocchetti": ["certificato di assicurazione"],
@@ -1879,6 +2121,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida autoveicoli deve esibire, a richiesta degli agenti, il segnale mobile di pericolo (triangolo)",
         "risposta": True,
+        "riassunto": "Agenti chiedono → triangolo da esibire?",
         "spiegazione": "Il segnale mobile di pericolo, comunemente chiamato 'triangolo', è un dispositivo di sicurezza obbligatorio per gli autoveicoli (non per i motocicli). Serve a segnalare un veicolo fermo per guasto o incidente. Deve essere a bordo e mostrato se richiesto.",
         "regola": "Triangolo = sicurezza in caso di guasto (solo auto).",
         "trabocchetti": ["segnale mobile di pericolo (triangolo)", "autoveicoli"],
@@ -1886,6 +2129,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida autoveicoli o motocicli deve mostrare, a richiesta degli agenti, la valigetta di pronto soccorso",
         "risposta": False,
+        "riassunto": "Agenti chiedono → valigetta di pronto soccorso?",
         "spiegazione": "La valigetta di pronto soccorso, pur essendo utile e consigliata, non è un equipaggiamento obbligatorio per legge in Italia per i veicoli privati. Quindi, non devi mostrarla agli agenti.",
         "regola": "Pronto soccorso = utile, ma non obbligatorio da esibire.",
         "trabocchetti": ["valigetta di pronto soccorso"],
@@ -1893,6 +2137,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida autoveicoli o motocicli deve esibire, a richiesta degli agenti, il certificato di proprietà",
         "risposta": False,
+        "riassunto": "Agenti chiedono → certificato di proprietà?",
         "spiegazione": "Il certificato di proprietà (oggi parte del Documento Unico di Circolazione e di Proprietà) attesta chi è il proprietario del veicolo. Non è un documento che devi tenere a bordo e mostrare durante un controllo stradale, di solito si conserva a casa.",
         "regola": "Proprietà = a casa, non in auto.",
         "trabocchetti": ["certificato di proprietà"],
@@ -1900,6 +2145,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida autoveicoli o motocicli deve esibire, a richiesta degli agenti, il codice fiscale",
         "risposta": False,
+        "riassunto": "Agenti chiedono → codice fiscale?",
         "spiegazione": "Il codice fiscale è un documento personale per fini fiscali e identificativi, ma non è un documento di guida. Non è richiesto dagli agenti durante un normale controllo stradale.",
         "regola": "Codice fiscale = non per la guida.",
         "trabocchetti": ["codice fiscale"],
@@ -1907,12 +2153,14 @@ QUESTIONS = [
     {
         "domanda": "Chi guida autoveicoli o motocicli deve mostrare, a richiesta degli agenti, l'attestazione di pagamento della tassa di possesso (bollo)",
         "risposta": False,
+        "riassunto": "Agenti chiedono → ricevuta del bollo?",
         "spiegazione": "L'attestazione di pagamento della tassa di possesso (il 'bollo auto') non è un documento che devi avere a bordo del veicolo. Gli agenti possono verificare il pagamento tramite i loro sistemi informatici.",
         "regola": "Bollo = pagato, ma non esibito.",
     },
     {
         "domanda": "Gli addetti a servizi di polizia stradale vengono riconosciuti dall'uniforme (divisa)",
         "risposta": True,
+        "riassunto": "Polizia stradale riconoscibile → dalla divisa?",
         "spiegazione": "È VERO. Gli agenti di polizia stradale indossano sempre un'uniforme (o divisa) che li rende facilmente riconoscibili a tutti i cittadini. È il loro abito di lavoro ufficiale.",
         "regola": "Uniforme = Polizia.",
         "trabocchetti": ["uniforme", "divisa"],
@@ -1920,6 +2168,7 @@ QUESTIONS = [
     {
         "domanda": "Gli addetti a servizi di polizia stradale vengono riconosciuti dalla 'paletta' bianca e rossa",
         "risposta": True,
+        "riassunto": "Polizia stradale riconoscibile → dalla paletta bianca e rossa?",
         "spiegazione": "È VERO. La 'paletta' che gli agenti usano per fermare i veicoli ha proprio i colori bianco e rosso. È un simbolo molto chiaro e conosciuto per indicare un controllo o un ordine di stop.",
         "regola": "Paletta = Bianca e rossa.",
         "trabocchetti": ["paletta", "bianca e rossa"],
@@ -1927,6 +2176,7 @@ QUESTIONS = [
     {
         "domanda": "Gli addetti a servizi di polizia stradale vengono riconosciuti dal segnale distintivo",
         "risposta": True,
+        "riassunto": "Polizia stradale riconoscibile → dal segnale distintivo?",
         "spiegazione": "È VERO. Oltre all'uniforme e alla paletta, gli agenti hanno anche un 'segnale distintivo', come un distintivo o un simbolo sulla divisa, che li identifica come membri delle forze dell'ordine. Questo serve a confermare la loro autorità.",
         "regola": "Distintivo = Riconoscimento.",
         "trabocchetti": ["Segnale distintivo"],
@@ -1934,6 +2184,7 @@ QUESTIONS = [
     {
         "domanda": "Gli addetti a servizi di polizia stradale vengono riconosciuti dalla 'paletta' bianca e nera",
         "risposta": False,
+        "riassunto": "Polizia stradale riconoscibile → paletta bianca e nera?",
         "spiegazione": "È FALSO. Come abbiamo visto, la 'paletta' usata dagli addetti alla polizia stradale è di colore 'bianca e rossa', non 'bianca e nera'. Questa è una tipica domanda 'trappola' sui colori.",
         "regola": "Paletta MAI bianca e nera.",
         "trabocchetti": ["paletta", "Bianca e nera"],
@@ -1941,6 +2192,7 @@ QUESTIONS = [
     {
         "domanda": "Gli addetti a servizi di polizia stradale vengono riconosciuti dai guantoni e dalle strisce rifrangenti",
         "risposta": False,
+        "riassunto": "Polizia stradale riconoscibile → guantoni e strisce rifrangenti?",
         "spiegazione": "È FALSO. Anche se gli agenti possono indossare guanti o avere strisce rifrangenti sulla divisa (specialmente di notte per essere visti), questi non sono gli elementi principali per 'riconoscerli' come polizia stradale. Molti altri lavoratori (ad esempio, operai stradali) usano guanti e strisce rifrangenti. La divisa, la paletta e il distintivo sono i veri elementi di riconoscimento.",
         "regola": "Guanti/strisce non bastano per riconoscere la polizia.",
         "trabocchetti": ["Guantoni", "strisce rifrangenti"],

@@ -1,7 +1,7 @@
 """Domande — Prevenzione e comportamento in caso di incidente.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Prevenzione e comportamento in caso di incidente"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere ristrettezza della strada",
         "risposta": True,
+        "riassunto": "Incidenti per la strada → ristrettezza?",
         "spiegazione": "Una strada stretta rende difficile il passaggio dei veicoli, specialmente quando si incrociano, aumentando il rischio di collisioni. Per questo, la ristrettezza della strada è una causa probabile di incidenti.",
         "regola": "Strada stretta = più pericoli.",
         "trabocchetti": ["ristrettezza"],
@@ -17,6 +18,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere mancata segnalazione degli incroci",
         "risposta": True,
+        "riassunto": "Incidenti per la strada → incroci non segnalati?",
         "spiegazione": "Se un incrocio non è segnalato, i conducenti non sanno che devono fare attenzione e possono scontrarsi. La mancanza di segnalazione è un difetto della strada che causa incidenti.",
         "regola": "Incrocio senza segnali = pericolo nascosto.",
         "trabocchetti": ["mancata segnalazione"],
@@ -24,6 +26,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere mancanza di segnaletica orizzontale",
         "risposta": True,
+        "riassunto": "Incidenti per la strada → manca segnaletica orizzontale?",
         "spiegazione": "La segnaletica orizzontale (le linee e i simboli disegnati sull'asfalto) serve a guidare i veicoli e a separare le corsie. Se manca, c'è confusione e aumenta il rischio di incidenti.",
         "regola": "Linee sull'asfalto mancano = caos.",
         "trabocchetti": ["mancanza"],
@@ -31,6 +34,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere fondo stradale deformato",
         "risposta": True,
+        "riassunto": "Incidenti per la strada → fondo deformato?",
         "spiegazione": "Un fondo stradale deformato, con buche o avvallamenti, può far perdere il controllo del veicolo, specialmente se si va veloci o in curva. Questo è un difetto della strada che può causare incidenti.",
         "regola": "Strada rovinata = guida instabile.",
         "trabocchetti": ["deformato"],
@@ -38,6 +42,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere fondo stradale scivoloso",
         "risposta": True,
+        "riassunto": "Incidenti per la strada → fondo scivoloso?",
         "spiegazione": "Un fondo stradale scivoloso (per pioggia, ghiaccio, olio) riduce l'aderenza delle gomme. Questo rende difficile frenare o curvare e può causare incidenti.",
         "regola": "Strada scivolosa = meno controllo.",
         "trabocchetti": ["scivoloso"],
@@ -45,6 +50,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere presenza di strettoie non segnalate",
         "risposta": True,
+        "riassunto": "Incidenti per la strada → strettoie non segnalate?",
         "spiegazione": "Una strettoia è un punto dove la strada si restringe. Se non è segnalata, i conducenti non si preparano e possono scontrarsi. È un pericolo dovuto alla struttura della strada.",
         "regola": "Strettoia a sorpresa = pericolo.",
         "trabocchetti": ["strettoie", "Non segnalate"],
@@ -52,6 +58,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere strada suddivisa in carreggiate",
         "risposta": False,
+        "riassunto": "Incidenti per la strada → carreggiate separate?",
         "spiegazione": "Una strada divisa in carreggiate separate (ad esempio, con uno spartitraffico) è più sicura. I veicoli che vanno in direzioni opposte non si incontrano direttamente, riducendo il rischio di incidenti frontali. Quindi, non è una causa di incidenti, ma un elemento di sicurezza.",
         "regola": "Carreggiate separate = più sicurezza.",
         "trabocchetti": ["suddivisa in carreggiate"],
@@ -59,6 +66,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere strada suddivisa in corsie",
         "risposta": False,
+        "riassunto": "Incidenti per la strada → corsie?",
         "spiegazione": "Avere più corsie nella stessa direzione aiuta il traffico a scorrere meglio e permette sorpassi più sicuri. Non è una causa di incidenti, ma una soluzione per migliorare la circolazione e la sicurezza.",
         "regola": "Più corsie = traffico più fluido.",
         "trabocchetti": ["suddivisa in corsie"],
@@ -66,6 +74,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere carreggiata a senso unico di circolazione",
         "risposta": False,
+        "riassunto": "Incidenti per la strada → senso unico?",
         "spiegazione": "Una carreggiata a senso unico significa che tutti i veicoli vanno nella stessa direzione. Questo elimina il rischio di scontri frontali e rende la circolazione più semplice e sicura. Non è una causa di incidenti.",
         "regola": "Senso unico = niente frontali.",
         "trabocchetti": ["senso unico di circolazione"],
@@ -73,6 +82,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere strada a percorso pianeggiante",
         "risposta": False,
+        "riassunto": "Incidenti per la strada → percorso pianeggiante?",
         "spiegazione": "Una strada pianeggiante è più facile da percorrere rispetto a una in salita o in discesa, dove bisogna fare più attenzione. Quindi, una strada piatta non è una causa di incidenti, ma una condizione più sicura.",
         "regola": "Strada piatta = guida più facile.",
         "trabocchetti": ["pianeggiante"],
@@ -80,6 +90,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere presenza di barriere laterali ad assorbimento d'urto (guardrails)",
         "risposta": False,
+        "riassunto": "Incidenti per la strada → guardrail?",
         "spiegazione": "I guardrail sono installati proprio per aumentare la sicurezza. Servono a contenere i veicoli in caso di uscita di strada, evitando cadute o impatti più gravi. Sono una protezione, non una causa di incidenti.",
         "regola": "Guardrail = protezione.",
         "trabocchetti": ["barriere laterali ad assorbimento d"],
@@ -87,6 +98,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere regolamentazione semaforica",
         "risposta": False,
+        "riassunto": "Incidenti per la strada → semafori?",
         "spiegazione": "La regolamentazione semaforica (i semafori) serve a gestire il traffico agli incroci, indicando chi deve passare e chi deve fermarsi. Questo riduce il rischio di collisioni, non lo aumenta. Quindi, non è una causa di incidenti.",
         "regola": "Semaforo = ordine, non caos.",
         "trabocchetti": ["regolamentazione semaforica"],
@@ -94,6 +106,7 @@ QUESTIONS = [
     {
         "domanda": "Causa probabile di incidenti dovuti alla struttura della strada può essere mancanza di curve pericolose",
         "risposta": False,
+        "riassunto": "Incidenti per la strada → mancanza di curve pericolose?",
         "spiegazione": "La 'mancanza di curve pericolose' significa che la strada non ha curve difficili o rischiose. Questo è un bene, perché le curve pericolose sono una causa di incidenti. Quindi, la loro assenza rende la strada più sicura, non più pericolosa.",
         "regola": "Niente curve pericolose = strada più sicura.",
         "trabocchetti": ["mancanza di curve pericolose"],
@@ -101,6 +114,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di pioggia occorre ridurre la velocità",
         "risposta": True,
+        "riassunto": "Pioggia → ridurre la velocità?",
         "spiegazione": "Quando piove, la strada diventa scivolosa e l'aderenza degli pneumatici diminuisce. Ridurre la velocità ti permette di avere più controllo sul veicolo e di reagire meglio a eventuali imprevisti, riducendo il rischio di aquaplaning e migliorando la capacità di frenata.",
         "regola": "Pioggia = meno aderenza = meno velocità.",
         "trabocchetti": ["occorre"],
@@ -108,6 +122,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di pioggia occorre tenere in funzione i tergicristalli",
         "risposta": True,
+        "riassunto": "Pioggia → tergicristalli in funzione?",
         "spiegazione": "I tergicristalli sono essenziali per mantenere il parabrezza pulito dalla pioggia e garantire una buona visibilità. Senza di essi, la tua capacità di vedere la strada e gli altri veicoli sarebbe gravemente compromessa, rendendo la guida estremamente pericolosa.",
         "regola": "Pioggia = tergicristalli accesi per vedere.",
         "trabocchetti": ["o"],
@@ -115,12 +130,14 @@ QUESTIONS = [
     {
         "domanda": "In caso di pioggia occorre aumentare la distanza di sicurezza",
         "risposta": True,
+        "riassunto": "Pioggia → aumentare la distanza?",
         "spiegazione": "Su strada bagnata, lo spazio necessario per frenare aumenta notevolmente perché l'attrito tra pneumatici e asfalto è minore. Aumentare la distanza di sicurezza ti dà più tempo e spazio per reagire e frenare senza tamponare il veicolo che ti precede.",
         "regola": "Pioggia = più spazio per frenare = più distanza.",
     },
     {
         "domanda": "In caso di pioggia occorre evitare l'appannamento dei vetri",
         "risposta": True,
+        "riassunto": "Pioggia → evitare l'appannamento?",
         "spiegazione": "L'umidità e la differenza di temperatura tra l'interno e l'esterno dell'auto possono causare l'appannamento dei vetri, riducendo drasticamente la visibilità. È importante usare il sistema di ventilazione, l'aria condizionata o il disappannatore per mantenere i vetri puliti e chiari.",
         "regola": "Pioggia = vetri chiari per vedere.",
         "trabocchetti": ["appannamento"],
@@ -128,12 +145,14 @@ QUESTIONS = [
     {
         "domanda": "In caso di pioggia occorre manovrare con prudenza lo sterzo",
         "risposta": True,
+        "riassunto": "Pioggia → sterzo con prudenza?",
         "spiegazione": "Su una superficie bagnata, manovre brusche dello sterzo possono facilmente far perdere aderenza alle ruote e causare una sbandata o la perdita di controllo del veicolo. È fondamentale guidare con movimenti dolci e graduali per mantenere la stabilità.",
         "regola": "Pioggia = sterzo dolce.",
     },
     {
         "domanda": "In caso di pioggia occorre passare velocemente sulle pozzanghere per evitare di rimanere impantanati",
         "risposta": False,
+        "riassunto": "Pioggia → pozzanghere a tutta velocità?",
         "spiegazione": "Passare velocemente sulle pozzanghere è molto pericoloso. Potresti perdere il controllo del veicolo a causa dell'aquaplaning (le ruote 'galleggiano' sull'acqua), schizzare acqua sui pedoni o su altri veicoli, o non vedere buche nascoste. È sempre meglio rallentare e attraversarle con cautela.",
         "regola": "Pozzanghere = rallenta, non accelerare.",
         "trabocchetti": ["velocemente"],
@@ -141,6 +160,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di pioggia occorre coprire il radiatore con l'apposita mascherina",
         "risposta": False,
+        "riassunto": "Pioggia → coprire il radiatore?",
         "spiegazione": "Coprire il radiatore con una mascherina è una pratica che si adotta in condizioni di freddo estremo, per aiutare il motore a raggiungere più velocemente la temperatura di esercizio e mantenerla. Non ha alcuna utilità in caso di pioggia e potrebbe addirittura ostacolare il normale raffreddamento del motore.",
         "regola": "Radiatore coperto = solo con freddo estremo, non con pioggia.",
         "trabocchetti": ["mascherina"],
@@ -148,6 +168,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di pioggia occorre frenare energicamente",
         "risposta": False,
+        "riassunto": "Pioggia → frenare energicamente?",
         "spiegazione": "Frenare energicamente (cioè con molta forza e all'improvviso) su strada bagnata è estremamente pericoloso. Le ruote potrebbero bloccarsi facilmente, facendoti perdere il controllo del veicolo e causando una sbandata. Bisogna frenare dolcemente e gradualmente, anticipando la frenata.",
         "regola": "Pioggia = frenata dolce, mai energica.",
         "trabocchetti": ["energicamente"],
@@ -155,12 +176,14 @@ QUESTIONS = [
     {
         "domanda": "In caso di pioggia occorre utilizzare, durante la marcia, la segnalazione luminosa di pericolo (quattro frecce lampeggianti simultaneamente)",
         "risposta": False,
+        "riassunto": "Pioggia → quattro frecce in marcia?",
         "spiegazione": "La segnalazione luminosa di pericolo (le 'quattro frecce') deve essere usata solo in caso di pericolo immediato, come un guasto al veicolo, un rallentamento improvviso e inaspettato, o un veicolo fermo che crea intralcio. Non deve essere usata durante la normale marcia sotto la pioggia, perché potrebbe confondere gli altri conducenti sulla tua intenzione di svoltare o sulla presenza di un pericolo reale.",
         "regola": "Quattro frecce = solo per pericolo o fermo, non per pioggia normale.",
     },
     {
         "domanda": "In caso di pioggia occorre procedere, di norma, con il pedale della frizione abbassato",
         "risposta": False,
+        "riassunto": "Pioggia → frizione abbassata?",
         "spiegazione": "Procedere con il pedale della frizione abbassato (cioè premuto) significa che il motore è scollegato dalle ruote ('in folle' o 'a ruota libera'). In questa condizione, non hai il controllo del motore e non puoi usare il freno motore, il che è molto pericoloso, specialmente su strada bagnata dove hai bisogno del massimo controllo sul veicolo.",
         "regola": "Frizione abbassata = mai in marcia, specialmente con pioggia.",
         "trabocchetti": ["Pedale della frizione abbassato"],
@@ -168,12 +191,14 @@ QUESTIONS = [
     {
         "domanda": "Il fenomeno dell'aquaplaning fa scivolare le ruote sullo strato di acqua",
         "risposta": True,
+        "riassunto": "Aquaplaning → ruote che scivolano sull'acqua?",
         "spiegazione": "L'aquaplaning è proprio questo: le ruote non toccano più l'asfalto ma scivolano su uno strato d'acqua che si forma tra il pneumatico e la strada. Questo fa perdere il controllo del veicolo.",
         "regola": "Aquaplaning = scivolare sull'acqua.",
     },
     {
         "domanda": "Il fenomeno dell'aquaplaning inizia a velocità più bassa se il pneumatico è molto consumato",
         "risposta": True,
+        "riassunto": "Aquaplaning → a velocità più bassa con gomme consumate?",
         "spiegazione": "Se il pneumatico è consumato, il suo battistrada (il disegno sulla gomma) è meno profondo. Questo significa che non riesce a espellere bene l'acqua. Perciò, il cuscino d'acqua si forma più facilmente e a velocità più basse, causando l'aquaplaning prima.",
         "regola": "Gomme lisce = aquaplaning facile e precoce.",
         "trabocchetti": ["consumato", "Più bassa"],
@@ -181,6 +206,7 @@ QUESTIONS = [
     {
         "domanda": "Il fenomeno dell'aquaplaning si verifica più facilmente nei veicoli più leggeri",
         "risposta": True,
+        "riassunto": "Aquaplaning → più facile sui veicoli leggeri?",
         "spiegazione": "I veicoli più leggeri hanno meno peso che 'spinge' le ruote sull'asfalto. Questo rende più facile per lo strato d'acqua sollevare il veicolo e far perdere il contatto tra pneumatici e strada, causando l'aquaplaning.",
         "regola": "Veicolo leggero = galleggia prima sull'acqua.",
         "trabocchetti": ["più facilmente nei veicoli più leggeri"],
@@ -188,6 +214,7 @@ QUESTIONS = [
     {
         "domanda": "Il fenomeno dell'aquaplaning si verifica più facilmente a bassa velocità",
         "risposta": False,
+        "riassunto": "Aquaplaning → più facile a bassa velocità?",
         "spiegazione": "L'aquaplaning si verifica più facilmente ad ALTA velocità, non a bassa. Quando si va veloci, l'acqua non ha il tempo di essere espulsa dal battistrada e si crea il cuscino d'acqua. A bassa velocità, di solito, le gomme riescono a 'tagliare' l'acqua.",
         "regola": "Aquaplaning = alta velocità + acqua.",
         "trabocchetti": ["bassa velocità"],
@@ -195,6 +222,7 @@ QUESTIONS = [
     {
         "domanda": "Il fenomeno dell'aquaplaning riduce lo sbandamento del veicolo",
         "risposta": False,
+        "riassunto": "Aquaplaning → riduce lo sbandamento?",
         "spiegazione": "L'aquaplaning fa perdere il contatto delle ruote con la strada, quindi il veicolo non risponde più ai comandi (sterzo, freno). Questo causa proprio lo sbandamento e la perdita di controllo, non lo riduce.",
         "regola": "Aquaplaning = perdita di controllo = sbandamento.",
         "trabocchetti": ["riduce"],
@@ -202,6 +230,7 @@ QUESTIONS = [
     {
         "domanda": "Il fenomeno dell'aquaplaning aumenta nelle carreggiate a forte pendenza laterale",
         "risposta": False,
+        "riassunto": "Aquaplaning → aumenta con forte pendenza laterale?",
         "spiegazione": "Le carreggiate con forte pendenza laterale (chiamata anche 'bombatura') sono fatte apposta per far scorrere via l'acqua ai lati. Questo impedisce all'acqua di accumularsi e quindi RIDUCE, non aumenta, il rischio di aquaplaning.",
         "regola": "Pendenza laterale = acqua via = meno aquaplaning.",
         "trabocchetti": ["aumenta"],
@@ -209,6 +238,7 @@ QUESTIONS = [
     {
         "domanda": "Il fenomeno dell'aquaplaning aumenta l'aderenza sul fondo stradale",
         "risposta": False,
+        "riassunto": "Aquaplaning → aumenta l'aderenza?",
         "spiegazione": "L'aquaplaning crea uno strato d'acqua tra il pneumatico e la strada, eliminando il contatto diretto. Questo significa che l'aderenza (la 'presa' della gomma sulla strada) viene drasticamente RIDOTTA, non aumentata.",
         "regola": "Aquaplaning = zero aderenza.",
         "trabocchetti": ["aumenta"],
@@ -216,6 +246,7 @@ QUESTIONS = [
     {
         "domanda": "Il fenomeno dell'aquaplaning rafforza il contatto fra pneumatici e asfalto",
         "risposta": False,
+        "riassunto": "Aquaplaning → rafforza il contatto gomma-asfalto?",
         "spiegazione": "L'aquaplaning forma un cuscino d'acqua che separa il pneumatico dall'asfalto. Questo non rafforza il contatto, ma lo interrompe o lo riduce moltissimo, facendo perdere il controllo del veicolo.",
         "regola": "Aquaplaning = contatto interrotto.",
         "trabocchetti": ["rafforza"],
@@ -223,6 +254,7 @@ QUESTIONS = [
     {
         "domanda": "Il fenomeno dell'aquaplaning non dipende dallo spessore e dal disegno del battistrada",
         "risposta": False,
+        "riassunto": "Aquaplaning → indipendente dal battistrada?",
         "spiegazione": "Lo spessore e il disegno del battistrada sono FONDAMENTALI per prevenire l'aquaplaning! Servono proprio a espellere l'acqua. Se il battistrada è consumato o non adatto, l'aquaplaning si verifica molto più facilmente. Quindi, dipende eccome!",
         "regola": "Battistrada = chiave anti-aquaplaning.",
         "trabocchetti": ["non dipende"],
@@ -230,6 +262,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade coperte di neve occorre montare pneumatici per neve su tutte le ruote oppure catene sulle ruote motrici",
         "risposta": True,
+        "riassunto": "Neve → gomme invernali su tutte o catene sulle motrici?",
         "spiegazione": "Per guidare in sicurezza sulla neve, è fondamentale avere una buona aderenza. Questo si ottiene montando pneumatici specifici per la neve su tutte le ruote, oppure, in alternativa, usando le catene da neve, che vanno messe sulle ruote che danno la spinta al veicolo (le ruote motrici).",
         "regola": "Neve = gomme invernali O catene.",
         "trabocchetti": ["oppure"],
@@ -237,6 +270,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade coperte di neve occorre moderare la velocità",
         "risposta": True,
+        "riassunto": "Neve → moderare la velocità?",
         "spiegazione": "Sulla neve, l'aderenza delle gomme è molto ridotta. Moderare la velocità significa andare più piano del solito. Questo ti dà più tempo per reagire a imprevisti e riduce il rischio di perdere il controllo del veicolo.",
         "regola": "Neve = velocità ridotta.",
         "trabocchetti": ["Moderare la velocità"],
@@ -244,6 +278,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade coperte di neve occorre aumentare la distanza di sicurezza",
         "risposta": True,
+        "riassunto": "Neve → aumentare la distanza?",
         "spiegazione": "Quando la strada è coperta di neve, lo spazio necessario per frenare aumenta molto. Aumentare la distanza di sicurezza dal veicolo che ti precede ti dà più spazio e tempo per fermarti senza tamponare, in caso di frenata improvvisa.",
         "regola": "Neve = più spazio tra le auto.",
         "trabocchetti": ["Aumentare"],
@@ -251,6 +286,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade coperte di neve occorre evitare brusche manovre",
         "risposta": True,
+        "riassunto": "Neve → niente manovre brusche?",
         "spiegazione": "Sulla neve, ogni movimento improvviso del volante o cambio di direzione (manovre brusche) può far perdere aderenza alle ruote e causare uno sbandamento. È importante guidare con movimenti dolci e graduali.",
         "regola": "Neve = movimenti dolci.",
         "trabocchetti": ["Evitare brusche manovre", "brusche"],
@@ -258,6 +294,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade coperte di neve occorre evitare brusche accelerazioni",
         "risposta": True,
+        "riassunto": "Neve → niente accelerazioni brusche?",
         "spiegazione": "Accelerare troppo velocemente sulla neve fa sì che le ruote motrici girino a vuoto (slittino) e l'auto può perdere il controllo o non riuscire a partire. È meglio accelerare molto dolcemente e gradualmente.",
         "regola": "Neve = accelerare piano.",
         "trabocchetti": ["Evitare brusche accelerazioni", "Brusche"],
@@ -265,6 +302,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade coperte di neve occorre frenare con maggiore energia",
         "risposta": False,
+        "riassunto": "Neve → frenare più forte?",
         "spiegazione": "Frenare con 'maggiore energia' significa frenare forte. Sulla neve, una frenata forte blocca le ruote e fa sbandare il veicolo, rendendolo incontrollabile. Bisogna frenare dolcemente, a piccoli colpetti (se non si ha l'ABS) o con una pressione leggera e costante (se si ha l'ABS).",
         "regola": "Neve = frenare piano, mai forte.",
         "trabocchetti": ["maggiore energia"],
@@ -272,6 +310,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade coperte di neve occorre alla partenza, accelerare al massimo",
         "risposta": False,
+        "riassunto": "Neve → partire a tutto gas?",
         "spiegazione": "Alla partenza, accelerare al massimo sulla neve fa slittare le ruote e l'auto non si muove o sbanda. Per partire sulla neve, è consigliabile usare una marcia alta (come la seconda) e accelerare con estrema delicatezza.",
         "regola": "Neve = partenza dolce, non a tavoletta.",
         "trabocchetti": ["accelerare al massimo"],
@@ -279,6 +318,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade coperte di neve occorre sterzare bruscamente per evitare di urtare veicoli fermi",
         "risposta": False,
+        "riassunto": "Neve → sterzare bruscamente?",
         "spiegazione": "Sterzare bruscamente (cioè girare il volante di colpo) sulla neve è molto pericoloso. L'auto perde aderenza e sbanda, rendendo impossibile evitare l'ostacolo. È sempre meglio cercare di frenare dolcemente e, se proprio necessario, fare movimenti minimi e graduali con il volante.",
         "regola": "Neve = mai sterzare di colpo.",
         "trabocchetti": ["sterzare bruscamente"],
@@ -286,6 +326,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade coperte di neve occorre frenare a fondo in caso di sbandamento del veicolo",
         "risposta": False,
+        "riassunto": "Neve → frenare a fondo se si sbanda?",
         "spiegazione": "Se il veicolo sbanda sulla neve, frenare a fondo peggiora la situazione. Le ruote si bloccano e si perde completamente il controllo. La cosa giusta da fare è togliere il piede dall'acceleratore, tenere il volante dritto o girarlo leggermente nella direzione dello sbandamento e frenare solo molto dolcemente, se indispensabile.",
         "regola": "Sbandamento sulla neve = mai frenare a fondo.",
         "trabocchetti": ["frenare a fondo"],
@@ -293,6 +334,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di tratti di strada ghiacciati è opportuno procedere a velocità moderata",
         "risposta": True,
+        "riassunto": "Ghiaccio → velocità moderata?",
         "spiegazione": "Quando la strada è ghiacciata, l'auto scivola molto facilmente. Andare piano (velocità moderata) ti aiuta a mantenere il controllo del veicolo e a fermarti in sicurezza, riducendo il rischio di sbandare.",
         "regola": "Ghiaccio = velocità moderata.",
         "trabocchetti": ["opportuno"],
@@ -300,6 +342,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di tratti di strada ghiacciati è opportuno aumentare la distanza di sicurezza",
         "risposta": True,
+        "riassunto": "Ghiaccio → aumentare la distanza?",
         "spiegazione": "Sul ghiaccio, l'auto ha bisogno di molto più spazio per frenare. Aumentare la distanza dagli altri veicoli ti dà più tempo per reagire a imprevisti e più spazio per fermarti senza causare incidenti.",
         "regola": "Ghiaccio = più distanza.",
         "trabocchetti": ["Aumentare la distanza di sicurezza"],
@@ -307,6 +350,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di tratti di strada ghiacciati è opportuno distanziarsi dalla traiettoria dei veicoli che si incrociano",
         "risposta": True,
+        "riassunto": "Ghiaccio → distanziarsi da chi si incrocia?",
         "spiegazione": "Quando incroci un altro veicolo su strada ghiacciata, è saggio lasciare più spazio laterale tra voi. Sia tu che l'altro veicolo potreste perdere aderenza e sbandare, quindi è più sicuro stare lontani l'uno dall'altro.",
         "regola": "Ghiaccio + incrocio = spazio laterale.",
         "trabocchetti": ["Distanziarsi dalla traiettoria"],
@@ -314,6 +358,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di tratti di strada ghiacciati è opportuno, in discesa, procedere con marce basse",
         "risposta": True,
+        "riassunto": "Ghiaccio in discesa → marce basse?",
         "spiegazione": "In discesa, le marce basse (come la prima o la seconda) permettono al motore di 'frenare' l'auto (freno motore). Questo ti aiuta a controllare la velocità senza dover usare troppo i freni, che sul ghiaccio potrebbero farti sbandare.",
         "regola": "Ghiaccio + discesa = marcia bassa.",
         "trabocchetti": ["Marce basse"],
@@ -321,6 +366,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di tratti di strada ghiacciati è opportuno evitare brusche accelerazioni",
         "risposta": True,
+        "riassunto": "Ghiaccio → niente accelerazioni brusche?",
         "spiegazione": "Accelerare troppo velocemente sul ghiaccio fa perdere aderenza alle ruote, facendole slittare. Questo ti fa perdere il controllo dell'auto. È sempre meglio accelerare dolcemente e gradualmente.",
         "regola": "Ghiaccio = accelerare dolcemente.",
         "trabocchetti": ["Brusche accelerazioni"],
@@ -328,6 +374,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di tratti di strada ghiacciati è opportuno usare maggiore attenzione nel transito su zone in ombra",
         "risposta": True,
+        "riassunto": "Ghiaccio → più attenzione nelle zone d'ombra?",
         "spiegazione": "Le zone in ombra (ad esempio sotto i ponti o vicino a muri alti) ricevono meno sole. Per questo, il ghiaccio si scioglie più lentamente o non si scioglie affatto, rimanendo più a lungo e rendendo la strada più pericolosa in quei punti.",
         "regola": "Ombra = ghiaccio nascosto.",
         "trabocchetti": ["Zone in ombra", "Transito"],
@@ -335,6 +382,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di tratti di strada ghiacciati è opportuno innestare la doppia trazione, se il veicolo ne è provvisto",
         "risposta": True,
+        "riassunto": "Ghiaccio → doppia trazione se c'è?",
         "spiegazione": "La doppia trazione (o 4x4) fa sì che tutte e quattro le ruote ricevano potenza dal motore. Questo aumenta l'aderenza e il controllo dell'auto su superfici scivolose come il ghiaccio, rendendo la guida più sicura.",
         "regola": "Ghiaccio + 4x4 = più aderenza.",
         "trabocchetti": ["Doppia trazione", "Innestare"],
@@ -342,6 +390,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di tratti di strada ghiacciati è opportuno marciare molto vicino alla barriera laterale",
         "risposta": False,
+        "riassunto": "Ghiaccio → vicino alla barriera laterale?",
         "spiegazione": "Marciare molto vicino alla barriera laterale è pericoloso. Se l'auto sbanda sul ghiaccio, potresti sbattere contro la barriera. È sempre meglio mantenere una posizione centrale e sicura sulla carreggiata, lontano dagli ostacoli.",
         "regola": "Ghiaccio = stare al centro, lontano dagli ostacoli.",
         "trabocchetti": ["molto vicino"],
@@ -349,6 +398,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di tratti di strada ghiacciati è opportuno non usare le catene, ma gomme chiodate sulle ruote anteriori",
         "risposta": False,
+        "riassunto": "Ghiaccio → gomme chiodate davanti invece delle catene?",
         "spiegazione": "Questa affermazione è falsa. Le catene da neve sono un dispositivo molto efficace e spesso obbligatorio sul ghiaccio e sulla neve. Le gomme chiodate, invece, sono vietate in Italia, tranne in casi molto specifici e con regole precise, e non sono un'alternativa generale alle catene.",
         "regola": "Ghiaccio = catene sì, chiodate no (in Italia).",
         "trabocchetti": ["non usare le catene", "gomme chiodate"],
@@ -356,6 +406,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di tratti di strada ghiacciati è opportuno frenare energicamente ogni volta che si incrocia un altro veicolo",
         "risposta": False,
+        "riassunto": "Ghiaccio → frenare forte incrociando?",
         "spiegazione": "Frenare energicamente (cioè forte e di colpo) sul ghiaccio è estremamente pericoloso perché fa perdere il controllo dell'auto e la fa sbandare. Bisogna sempre frenare dolcemente e gradualmente, anticipando le manovre.",
         "regola": "Ghiaccio = frenare piano, mai di colpo.",
         "trabocchetti": ["frenare energicamente", "ogni volta"],
@@ -363,6 +414,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza di tratti di strada ghiacciati è opportuno procedere con il cambio in folle",
         "risposta": False,
+        "riassunto": "Ghiaccio → cambio in folle?",
         "spiegazione": "Procedere con il cambio in folle (senza marcia inserita) significa che non hai il controllo del freno motore. Questo rende l'auto più difficile da controllare, specialmente in discesa o se devi frenare, perché non hai l'aiuto del motore per rallentare in modo controllato.",
         "regola": "Ghiaccio = marcia inserita per controllo.",
         "trabocchetti": ["Cambio in folle"],
@@ -370,6 +422,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno lasciarsi guidare dalla segnaletica orizzontale",
         "risposta": True,
+        "riassunto": "Nebbia fitta → seguire la segnaletica orizzontale?",
         "spiegazione": "Quando c'è molta nebbia e si vede poco, le strisce bianche o gialle sull'asfalto (la segnaletica orizzontale) sono un aiuto importante per capire dove finisce la strada e dove si può guidare. Ti aiutano a mantenere la direzione giusta.",
         "regola": "Nebbia = Strisce amiche.",
         "trabocchetti": ["lasciarsi guidare"],
@@ -377,6 +430,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno procedere ad una velocità adeguata alla visibilità",
         "risposta": True,
+        "riassunto": "Nebbia fitta → velocità secondo la visibilità?",
         "spiegazione": "Se la nebbia è fitta e vedi poco, devi andare molto piano. La velocità deve essere sempre adatta a quanto riesci a vedere, così hai il tempo di frenare se c'è un ostacolo.",
         "regola": "Meno vedi, più piano vai.",
         "trabocchetti": ["adeguata"],
@@ -384,6 +438,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno fermarsi, se necessario, fuori dalla carreggiata",
         "risposta": True,
+        "riassunto": "Nebbia fitta → fermarsi fuori carreggiata se serve?",
         "spiegazione": "Se la nebbia è così fitta che non puoi proprio continuare a guidare, la cosa più sicura è fermarsi. Ma devi farlo fuori dalla strada (carreggiata), per non essere un pericolo per gli altri veicoli che potrebbero non vederti.",
         "regola": "Fermo? Fuori strada!",
         "trabocchetti": ["se necessario", "fuori dalla carreggiata"],
@@ -391,6 +446,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno se costretti a fermarsi sulla carreggiata, usare la segnalazione luminosa di pericolo (quattro frecce lampeggianti simultaneamente)",
         "risposta": True,
+        "riassunto": "Nebbia fitta, fermi in carreggiata → quattro frecce?",
         "spiegazione": "Se sei costretto a fermarti sulla strada (per esempio per un guasto improvviso) e non puoi spostarti, devi assolutamente accendere le quattro frecce lampeggianti. Questo avvisa gli altri guidatori che c'è un pericolo e che il tuo veicolo è fermo.",
         "regola": "Fermo in strada? Quattro frecce!",
         "trabocchetti": ["quattro frecce"],
@@ -398,6 +454,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno evitare di fermarsi sulla carreggiata, se non per cause di forza maggiore",
         "risposta": True,
+        "riassunto": "Nebbia fitta → non fermarsi in carreggiata?",
         "spiegazione": "Fermarsi sulla strada quando c'è nebbia è molto pericoloso perché gli altri veicoli potrebbero non vederti in tempo. Devi farlo solo se non hai proprio altra scelta, come un guasto grave e improvviso.",
         "regola": "Mai fermo in strada, se puoi.",
         "trabocchetti": ["evitare", "se non per cause di forza maggiore"],
@@ -405,6 +462,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno accendere i proiettori fendinebbia o, in mancanza, quelli anabbaglianti",
         "risposta": True,
+        "riassunto": "Nebbia fitta → fendinebbia o anabbaglianti?",
         "spiegazione": "Con la nebbia, devi accendere le luci giuste per vedere e farti vedere. I proiettori fendinebbia sono i migliori. Se la tua auto non li ha, devi accendere almeno gli anabbaglianti.",
         "regola": "Nebbia = Fendinebbia (o anabbaglianti).",
         "trabocchetti": ["o, in mancanza"],
@@ -412,6 +470,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno accendere la luce posteriore per nebbia",
         "risposta": True,
+        "riassunto": "Nebbia fitta → retronebbia?",
         "spiegazione": "La luce posteriore per nebbia è una luce rossa molto forte che si trova dietro l'auto. Serve a farti vedere bene da chi ti segue, così eviti che ti tamponino (che ti vengano addosso da dietro).",
         "regola": "Nebbia = Fatti vedere anche dietro.",
         "trabocchetti": ["luce posteriore per nebbia"],
@@ -419,6 +478,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno guidare con la massima prudenza e concentrazione",
         "risposta": True,
+        "riassunto": "Nebbia fitta → massima prudenza?",
         "spiegazione": "Guidare con la nebbia è una delle situazioni più difficili e pericolose. Devi essere estremamente attento, concentrato sulla strada e guidare con molta cautela per evitare incidenti.",
         "regola": "Nebbia = Occhi aperti e testa lucida.",
         "trabocchetti": ["massima prudenza e concentrazione"],
@@ -426,6 +486,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno circolare con le sole luci di posizioni accese",
         "risposta": False,
+        "riassunto": "Nebbia fitta → solo luci di posizione?",
         "spiegazione": "Le luci di posizione sono molto deboli e non bastano per farti vedere bene dagli altri veicoli o per illuminare la strada quando c'è nebbia fitta. Devi usare luci più potenti come i fendinebbia o gli anabbaglianti.",
         "regola": "Posizioni = Non bastano con la nebbia.",
         "trabocchetti": ["sole"],
@@ -433,6 +494,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno mantenere in funzione l'indicatore di direzione sinistro",
         "risposta": False,
+        "riassunto": "Nebbia fitta → freccia sinistra accesa?",
         "spiegazione": "L'indicatore di direzione (la freccia) serve per segnalare che stai per svoltare o cambiare corsia. Tenerlo acceso continuamente senza motivo confonde gli altri guidatori e non serve a farti notare meglio nella nebbia.",
         "regola": "Freccia = Solo per svoltare.",
         "trabocchetti": ["mantenere in funzione"],
@@ -440,6 +502,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno procedere a zig zag per far meglio notare la propria presenza",
         "risposta": False,
+        "riassunto": "Nebbia fitta → zig zag per farsi notare?",
         "spiegazione": "Andare a zig zag (muoversi a destra e sinistra) è estremamente pericoloso, soprattutto con la nebbia. Non ti aiuta a farti notare, ma aumenta il rischio di perdere il controllo dell'auto o di causare un incidente.",
         "regola": "Zig zag = Pericolo, non visibilità.",
         "trabocchetti": ["procedere a zig zag", "per far meglio notare"],
@@ -447,6 +510,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno accodarsi al veicolo che precede quanto più vicino possibile",
         "risposta": False,
+        "riassunto": "Nebbia fitta → stare attaccati a chi precede?",
         "spiegazione": "Con la nebbia, la visibilità è ridotta e hai meno tempo per reagire. Per questo, devi aumentare la distanza di sicurezza dal veicolo che ti precede, non diminuirla! Essere troppo vicino è molto pericoloso.",
         "regola": "Nebbia = Lontano dal veicolo davanti.",
         "trabocchetti": ["quanto più vicino possibile"],
@@ -454,6 +518,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno suonare continuativamente il clacson",
         "risposta": False,
+        "riassunto": "Nebbia fitta → clacson continuo?",
         "spiegazione": "Il clacson (il 'segnale acustico') si usa solo in caso di pericolo immediato per avvisare. Suonarlo continuamente nella nebbia non aiuta a guidare, crea solo rumore e disturba gli altri, senza migliorare la sicurezza.",
         "regola": "Clacson = Solo per emergenza.",
         "trabocchetti": ["continuativamente"],
@@ -461,6 +526,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di nebbia fitta è opportuno tenere la cintura di sicurezza sganciata per essere più pronti ad abbandonare il veicolo in caso di incidente",
         "risposta": False,
+        "riassunto": "Nebbia fitta → cintura slacciata?",
         "spiegazione": "La cintura di sicurezza è fondamentale per la tua sicurezza in caso di incidente. Non devi mai sganciarla, nemmeno per un secondo, perché ti protegge dagli urti. L'idea di abbandonare il veicolo non è una priorità rispetto alla protezione durante l'impatto.",
         "regola": "Cintura = Sempre allacciata.",
         "trabocchetti": ["sganciata", "più pronti ad abbandonare"],
@@ -468,6 +534,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente coinvolto in un incidente stradale ha l'obbligo di fermarsi e di prestare assistenza agli eventuali feriti",
         "risposta": True,
+        "riassunto": "Incidente → fermarsi e soccorrere i feriti?",
         "spiegazione": "In caso di incidente con feriti, è un dovere legale e morale fermarsi e aiutare le persone coinvolte. Non farlo è un reato.",
         "regola": "Incidente con feriti? Fermati e aiuta!",
         "trabocchetti": ["obbligo"],
@@ -475,6 +542,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente coinvolto in un incidente stradale deve fornire le proprie generalità e gli estremi della patente, della targa e dell'assicurazione del veicolo alle persone danneggiate",
         "risposta": True,
+        "riassunto": "Incidente → dare generalità, patente, targa e assicurazione?",
         "spiegazione": "Dopo un incidente, devi scambiare i tuoi dati (nome, patente, targa, assicurazione) con le altre persone coinvolte. Questo serve per la gestione dell'incidente e per le assicurazioni.",
         "regola": "Dati e assicurazione: sempre da dare!",
         "trabocchetti": ["deve fornire"],
@@ -482,6 +550,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente coinvolto in un incidente stradale deve evitare che vengano modificate le tracce, se occorre ricostruire la dinamica dell'incidente",
         "risposta": True,
+        "riassunto": "Incidente → non alterare le tracce?",
         "spiegazione": "Se è necessario capire come è avvenuto l'incidente, non devi toccare o spostare nulla (come pezzi di veicolo, segni di frenata) per non alterare la scena. Questo aiuta le autorità a ricostruire i fatti.",
         "regola": "Tracce? Non toccare, per capire!",
         "trabocchetti": ["deve evitare che vengano modificate"],
@@ -489,6 +558,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente coinvolto in un incidente stradale per la denunzia all'assicurazione può avvalersi degli appositi moduli prestampati forniti dalla propria assicurazione",
         "risposta": True,
+        "riassunto": "Incidente → modulo prestampato dell'assicurazione?",
         "spiegazione": "Per denunciare un incidente alla tua assicurazione, puoi usare il 'modulo blu' (chiamato anche CAI - Constatazione Amichevole di Incidente) che ti fornisce la compagnia assicurativa. È un modo semplice per raccogliere i dati.",
         "regola": "Modulo blu: per l'assicurazione, sì!",
         "trabocchetti": ["può avvalersi"],
@@ -496,6 +566,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo un incidente stradale è obbligatorio apporre il segnale mobile di pericolo sul lunotto posteriore del veicolo, prima di andar via",
         "risposta": False,
+        "riassunto": "Dopo l'incidente → triangolo sul lunotto andando via?",
         "spiegazione": "Il segnale mobile di pericolo (il triangolo) va posizionato a terra, a una certa distanza dal veicolo, per avvisare gli altri conducenti. Non va mai messo sul lunotto posteriore del veicolo.",
         "regola": "Triangolo? A terra, non sul vetro!",
         "trabocchetti": ["sul lunotto posteriore"],
@@ -503,6 +574,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo un incidente stradale è obbligatorio coprire il veicolo con un telo di plastica",
         "risposta": False,
+        "riassunto": "Dopo l'incidente → coprire il veicolo con un telo?",
         "spiegazione": "Non c'è nessuna legge che ti obbliga a coprire il veicolo con un telo di plastica dopo un incidente. Non è una procedura prevista dal Codice della Strada.",
         "regola": "Telo? No, non è un obbligo!",
         "trabocchetti": ["obbligatorio"],
@@ -510,6 +582,7 @@ QUESTIONS = [
     {
         "domanda": "Dopo un incidente stradale è obbligatorio, solo di notte, apporre il segnale mobile di pericolo in prossimità del veicolo",
         "risposta": False,
+        "riassunto": "Dopo l'incidente → triangolo solo di notte?",
         "spiegazione": "Il segnale mobile di pericolo (triangolo) deve essere usato quando il veicolo fermo non è ben visibile, sia di giorno che di notte. Non è 'solo di notte'.",
         "regola": "Triangolo? Non solo di notte!",
         "trabocchetti": ["solo di notte"],
@@ -517,12 +590,14 @@ QUESTIONS = [
     {
         "domanda": "Dopo un incidente stradale è obbligatorio collocare subito il veicolo sul marciapiede",
         "risposta": False,
+        "riassunto": "Dopo l'incidente → veicolo sul marciapiede?",
         "spiegazione": "Non è obbligatorio spostare subito il veicolo sul marciapiede dopo un incidente. Anzi, a volte è meglio non spostarlo per non alterare la scena o per non creare altri pericoli. Si sposta solo se è possibile e necessario per la circolazione, e in sicurezza.",
         "regola": "Marciapiede? No, non è la regola!",
     },
     {
         "domanda": "Dopo un incidente stradale, è obbligatorio segnalare il veicolo fermo con il segnale mobile di pericolo anche nei centri abitati",
         "risposta": False,
+        "riassunto": "Dopo l'incidente → triangolo anche in città?",
         "spiegazione": "Nei centri abitati, se la strada è illuminata e il veicolo è ben visibile, non è obbligatorio usare il segnale mobile di pericolo. L'obbligo scatta solo se il veicolo non è visibile a distanza di sicurezza.",
         "regola": "Triangolo in città? Solo se non si vede!",
         "trabocchetti": ["anche nei centri abitati"],
@@ -530,6 +605,7 @@ QUESTIONS = [
     {
         "domanda": "È opportuno che il conducente esegua personalmente la manutenzione della pompa di iniezione del proprio veicolo",
         "risposta": False,
+        "riassunto": "Pompa di iniezione → manutenzione fai da te?",
         "spiegazione": "La pompa di iniezione è un componente molto complesso del motore. La sua manutenzione richiede conoscenze tecniche specifiche e attrezzi particolari. Deve essere fatta da un meccanico specializzato, non dal conducente.",
         "regola": "Pompa iniezione? Lascia fare al meccanico!",
         "trabocchetti": ["esegua personalmente"],
@@ -537,6 +613,7 @@ QUESTIONS = [
     {
         "domanda": "La distanza percorsa durante il tempo di reazione non varia con la velocità",
         "risposta": False,
+        "riassunto": "Spazio di reazione → non varia con la velocità?",
         "spiegazione": "La distanza percorsa durante il tempo di reazione (il tempo che impieghi a decidere di frenare) aumenta con la velocità. Se vai più veloce, in quel secondo di reazione farai più strada.",
         "regola": "Velocità alta? Reazione lunga!",
         "trabocchetti": ["non varia con la velocità"],
@@ -544,6 +621,7 @@ QUESTIONS = [
     {
         "domanda": "Il corretto funzionamento del motore è garantito dal fatto che la spia rossa dell'olio di lubrificazione rimane costantemente accesa",
         "risposta": False,
+        "riassunto": "Spia olio sempre accesa → motore a posto?",
         "spiegazione": "Se la spia rossa dell'olio di lubrificazione rimane accesa, significa che c'è un problema grave al motore, come una pressione dell'olio insufficiente. In questo caso, devi fermarti subito e far controllare il veicolo. Non indica un 'corretto funzionamento'.",
         "regola": "Spia olio rossa? Fermati, c'è un guaio!",
         "trabocchetti": ["corretto funzionamento"],
@@ -551,6 +629,7 @@ QUESTIONS = [
     {
         "domanda": "È consentito migliorare le prestazioni del proprio veicolo aumentando la cilindrata del motore",
         "risposta": False,
+        "riassunto": "Aumentare la cilindrata → consentito?",
         "spiegazione": "Modificare la cilindrata del motore per aumentare le prestazioni non è consentito. Queste modifiche alterano le caratteristiche originali del veicolo e richiedono una nuova omologazione, che è molto difficile da ottenere.",
         "regola": "Cilindrata? Non si tocca!",
         "trabocchetti": ["consentito"],
@@ -558,6 +637,7 @@ QUESTIONS = [
     {
         "domanda": "Non è necessario mettere a punto i freni squilibrati, se il conducente è in grado di correggere l'anomalo comportamento del veicolo agendo sullo sterzo",
         "risposta": False,
+        "riassunto": "Freni squilibrati → corretti con lo sterzo?",
         "spiegazione": "I freni devono essere sempre in perfetto stato ed equilibrati. Non puoi compensare un problema ai freni agendo sullo sterzo, è estremamente pericoloso e compromette la sicurezza del veicolo.",
         "regola": "Freni squilibrati? Riparali subito!",
         "trabocchetti": ["Non è necessario"],
@@ -565,6 +645,7 @@ QUESTIONS = [
     {
         "domanda": "Su strada sdrucciolevole, per garantire le migliori condizioni di aderenza in frenata, è opportuno premere a fondo il pedale del freno",
         "risposta": False,
+        "riassunto": "Strada sdrucciolevole → freno a fondo?",
         "spiegazione": "Su strada sdrucciolevole (bagnata, ghiacciata, con ghiaia), premere a fondo il pedale del freno può bloccare le ruote e farti perdere il controllo del veicolo. Devi frenare dolcemente e gradualmente.",
         "regola": "Sdrucciolevole? Frena piano piano!",
         "trabocchetti": ["premere a fondo il pedale del freno"],
@@ -572,6 +653,7 @@ QUESTIONS = [
     {
         "domanda": "È consentito aumentare le prestazioni del proprio veicolo modificandone le impostazioni elettroniche della centralina che controlla l'iniezione di carburante",
         "risposta": False,
+        "riassunto": "Modificare la centralina → consentito?",
         "spiegazione": "Modificare le impostazioni elettroniche della centralina del motore (il cosiddetto 'chiptuning') per aumentare le prestazioni non è consentito. Queste modifiche alterano le caratteristiche tecniche del veicolo e non sono omologate, rendendo il veicolo non conforme alle norme.",
         "regola": "Centralina? Non si modifica!",
         "trabocchetti": ["consentito"],
@@ -579,12 +661,14 @@ QUESTIONS = [
     {
         "domanda": "Quando bisogna far salire o scendere un passeggero, è opportuno che ciò avvenga dal lato del marciapiede o, in mancanza, dal lato opposto al traffico",
         "risposta": True,
+        "riassunto": "Passeggeri → salgono o scendono dal lato marciapiede?",
         "spiegazione": "Quando un passeggero sale o scende, la cosa più sicura è farlo dal lato del marciapiede, perché lì non c'è traffico. Se non c'è un marciapiede, bisogna scegliere il lato dove non passano le macchine, cioè il lato opposto al traffico, per evitare pericoli.",
         "regola": "Marciapiede è sicurezza. Se non c'è, lontano dal traffico.",
     },
     {
         "domanda": "Quando si deve far salire o scendere un passeggero dal veicolo, bisogna aprire la portiera solamente quando non si causa pericolo agli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Passeggeri → portiera aperta senza pericolo?",
         "spiegazione": "Aprire la portiera di un veicolo può essere pericoloso per chi passa, come ciclisti o pedoni. Per questo, devi sempre controllare bene che non ci sia nessuno prima di aprirla, per non causare incidenti.",
         "regola": "Prima di aprire, guarda sempre!",
         "trabocchetti": ["solamente quando non si causa pericolo"],
@@ -592,6 +676,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si deve far salire o scendere un passeggero dal veicolo, bisogna farlo attendere fino a che il veicolo sia completamente fermo",
         "risposta": True,
+        "riassunto": "Passeggeri → attendere che il veicolo sia fermo?",
         "spiegazione": "È molto pericoloso far salire o scendere un passeggero se il veicolo è ancora in movimento, anche se va piano. Il passeggero potrebbe cadere o farsi male. Bisogna aspettare che l'auto sia completamente ferma.",
         "regola": "Veicolo fermo = passeggero sicuro.",
         "trabocchetti": ["completamente"],
@@ -599,6 +684,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si deve far salire o scendere un bambino dal veicolo, è opportuno che vi sia il controllo di un adulto",
         "risposta": True,
+        "riassunto": "Bambini che salgono o scendono → controllo di un adulto?",
         "spiegazione": "I bambini non sempre capiscono i pericoli del traffico e possono fare movimenti improvvisi. Per la loro sicurezza, è sempre meglio che un adulto li aiuti e li controlli quando salgono o scendono dall'auto.",
         "regola": "Bambini e traffico? Sempre con un adulto.",
         "trabocchetti": ["opportuno"],
@@ -606,6 +692,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si deve far scendere un passeggero, bisogna tenere presente che l'apertura della portiera di destra è priva di qualsiasi rischio e pericolo",
         "risposta": False,
+        "riassunto": "Portiera destra → nessun rischio?",
         "spiegazione": "Questa affermazione è falsa. Anche la portiera di destra può essere pericolosa. Per esempio, un ciclista o un pedone potrebbe passare proprio in quel momento. Non esiste un'apertura 'priva di qualsiasi rischio'. Bisogna sempre fare attenzione.",
         "regola": "Ogni portiera ha un rischio. Controlla sempre!",
         "trabocchetti": ["priva di qualsiasi rischio e pericolo"],
@@ -613,6 +700,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di infossamento su neve o sabbia, non riuscendo a spostare il veicolo, è consigliabile inserire sotto la ruota che slitta qualcosa che faccia attrito (pezzi di legno, tappeti del veicolo, ecc.)",
         "risposta": True,
+        "riassunto": "Insabbiati o innevati → qualcosa sotto la ruota?",
         "spiegazione": "Quando la tua auto è bloccata nella neve o nella sabbia e le ruote girano a vuoto (slittano), mettere qualcosa sotto la ruota che slitta, come un tappeto o un pezzo di legno, aiuta la ruota a fare più 'presa' (attrito) sul terreno. Così l'auto può muoversi e uscire dall'infossamento.",
         "regola": "Se slitti, metti sotto qualcosa per fare grip!",
         "trabocchetti": ["è consigliabile", "Attrito"],
@@ -620,6 +708,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di infossamento su neve o sabbia, non riuscendo a partire con la prima marcia è opportuno innestare una marcia superiore",
         "risposta": True,
+        "riassunto": "Insabbiati → marcia superiore?",
         "spiegazione": "Se la tua auto è bloccata nella neve o nella sabbia e non riesci a partire con la prima marcia (perché le ruote slittano troppo), è meglio usare una marcia più alta, come la seconda o la terza. Le marce alte danno meno 'spinta' alle ruote, che così girano più lentamente e riescono a fare più presa sul terreno senza slittare.",
         "regola": "Sabbia/neve: marcia alta per partire piano e non slittare!",
         "trabocchetti": ["opportuno", "prima marcia"],
@@ -627,6 +716,7 @@ QUESTIONS = [
     {
         "domanda": "Su una strada innevata l'aderenza del veicolo è minore che su una strada ghiacciata",
         "risposta": False,
+        "riassunto": "Neve → meno aderenza del ghiaccio?",
         "spiegazione": "Questa affermazione è falsa. L'aderenza (la 'presa' delle gomme sulla strada) è molto più bassa su una strada ghiacciata che su una strada innevata. Il ghiaccio è estremamente scivoloso e offre pochissima aderenza, rendendo la guida molto più pericolosa rispetto alla neve, che offre un po' più di grip.",
         "regola": "Ghiaccio è peggio della neve: meno aderenza!",
         "trabocchetti": ["minore che"],
@@ -634,6 +724,7 @@ QUESTIONS = [
     {
         "domanda": "I tamponamenti stradali avvengono principalmente per la forte velocità",
         "risposta": True,
+        "riassunto": "Tamponamenti → per la velocità?",
         "spiegazione": "È VERO. Se vai troppo veloce, hai meno tempo per reagire e la tua auto ha bisogno di più spazio per fermarsi. Questo aumenta il rischio di tamponare l'auto davanti a te se frena all'improvviso.",
         "regola": "Velocità alta = spazio di frenata lungo.",
         "trabocchetti": ["principalmente"],
@@ -641,6 +732,7 @@ QUESTIONS = [
     {
         "domanda": "I tamponamenti stradali avvengono maggiormente se non si rispetta la distanza di sicurezza",
         "risposta": True,
+        "riassunto": "Tamponamenti → per la distanza non rispettata?",
         "spiegazione": "È VERO. La distanza di sicurezza è lo spazio che devi lasciare tra la tua auto e quella davanti. Se sei troppo vicino, non hai il tempo e lo spazio necessari per frenare in sicurezza e quindi tamponi.",
         "regola": "Poca distanza = rischio tamponamento.",
         "trabocchetti": ["maggiormente"],
@@ -648,6 +740,7 @@ QUESTIONS = [
     {
         "domanda": "I tamponamenti stradali avvengono principalmente per la disattenzione dei conducenti",
         "risposta": True,
+        "riassunto": "Tamponamenti → per disattenzione?",
         "spiegazione": "È VERO. Se sei distratto (guardi il telefono, parli, pensi ad altro), non vedi cosa succede sulla strada. Questo ti impedisce di reagire in tempo e frenare, causando un tamponamento.",
         "regola": "Disattenzione = pericolo immediato.",
         "trabocchetti": ["principalmente"],
@@ -655,6 +748,7 @@ QUESTIONS = [
     {
         "domanda": "I tamponamenti stradali avvengono principalmente per l'improvviso guasto del freno di stazionamento",
         "risposta": False,
+        "riassunto": "Tamponamenti → per guasto del freno a mano?",
         "spiegazione": "È FALSO. Il 'freno di stazionamento' (o freno a mano) si usa quando l'auto è ferma, per non farla muovere. Non si usa mentre si guida. Un guasto al freno di stazionamento non può causare un tamponamento mentre sei in marcia.",
         "regola": "Freno di stazionamento = auto ferma.",
         "trabocchetti": ["freno di stazionamento"],
@@ -662,6 +756,7 @@ QUESTIONS = [
     {
         "domanda": "I tamponamenti stradali avvengono principalmente tra autoveicoli dotati di servosterzo",
         "risposta": False,
+        "riassunto": "Tamponamenti → tra veicoli con servosterzo?",
         "spiegazione": "È FALSO. Il 'servosterzo' è un sistema che ti aiuta a girare il volante più facilmente, rendendo la guida meno faticosa. Non ha nulla a che fare con la frenata o con la distanza di sicurezza, che sono le cause dei tamponamenti. Quasi tutte le auto moderne hanno il servosterzo.",
         "regola": "Servosterzo = sterzo leggero, non frena.",
         "trabocchetti": ["servosterzo"],
@@ -669,6 +764,7 @@ QUESTIONS = [
     {
         "domanda": "Percorrendo un lungo tunnel o traforo, in caso di formazione di lunghe file di veicoli, è opportuno aumentare la distanza di sicurezza, per scongiurare, in caso d'incendio, il rapido propagarsi delle fiamme",
         "risposta": True,
+        "riassunto": "Lungo tunnel in coda → più distanza contro gli incendi?",
         "spiegazione": "In un tunnel, se ci sono molte macchine ferme in fila, è molto importante lasciare più spazio tra un veicolo e l'altro. Questo spazio extra serve a prevenire che, in caso di incendio, le fiamme si diffondano rapidamente da una macchina all'altra, aumentando la sicurezza per tutti.",
         "regola": "Tunnel + fila = più spazio = meno rischio incendio.",
         "trabocchetti": ["è opportuno aumentare", "Scongiurare"],
@@ -676,6 +772,7 @@ QUESTIONS = [
     {
         "domanda": "Percorrendo un lungo tunnel o traforo, in caso d'incendio, bisogna abbandonare velocemente il veicolo, seguendo la segnaletica che porta alle vie di fuga o ai luoghi sicuri protetti da porte tagliafuoco",
         "risposta": True,
+        "riassunto": "Incendio in tunnel → abbandonare il veicolo verso le vie di fuga?",
         "spiegazione": "Se c'è un incendio in un tunnel, la prima cosa da fare è lasciare subito la tua auto. Poi devi cercare e seguire i cartelli che ti indicano le uscite di emergenza o i luoghi sicuri, che spesso sono protetti da porte speciali (tagliafuoco) che bloccano il fuoco e il fumo.",
         "regola": "Incendio tunnel = lascia auto, segui cartelli fuga.",
         "trabocchetti": ["Abbandonare velocemente", "Vie di fuga"],
@@ -683,6 +780,7 @@ QUESTIONS = [
     {
         "domanda": "Percorrendo un lungo tunnel o traforo, in caso d'incendio, bisogna attenersi alle istruzioni vocali del personale di servizio o dei vigili del fuoco, per evitare di incamminarsi nella direzione sbagliata",
         "risposta": True,
+        "riassunto": "Incendio in tunnel → seguire le istruzioni del personale?",
         "spiegazione": "In caso di incendio in un tunnel, è fondamentale ascoltare e seguire attentamente quello che ti dicono le persone che lavorano lì (il personale di servizio) o i vigili del fuoco. Loro sono lì per aiutarti e sanno qual è la strada più sicura, così eviti di sbagliare direzione.",
         "regola": "Incendio tunnel = ascolta vigili/personale.",
         "trabocchetti": ["Attenersi alle istruzioni vocali"],
@@ -690,6 +788,7 @@ QUESTIONS = [
     {
         "domanda": "Percorrendo un lungo tunnel o traforo, in caso d'incendio, bisogna seguire la segnaletica di emergenza, anche se in netto contrasto con gli ordini vocali impartiti dai vigili del fuoco",
         "risposta": False,
+        "riassunto": "Incendio in tunnel → segnaletica anche contro i vigili del fuoco?",
         "spiegazione": "Questa affermazione è falsa. Se c'è un incendio in un tunnel, devi sempre dare la precedenza agli ordini che ti vengono dati a voce dai vigili del fuoco o dal personale di servizio. Loro sono sul posto, hanno le informazioni più aggiornate e sanno come gestire al meglio la situazione, anche se i cartelli indicano una cosa diversa. Le istruzioni dirette sono sempre più importanti della segnaletica fissa.",
         "regola": "Ordini vigili > cartelli.",
         "trabocchetti": ["anche se in netto contrasto"],
@@ -697,6 +796,7 @@ QUESTIONS = [
     {
         "domanda": "I motocicli, avendo una ridotta sagoma frontale, sono meno visibili in distanza",
         "risposta": True,
+        "riassunto": "Motocicli → meno visibili da lontano?",
         "spiegazione": "I motocicli sono più stretti e piccoli delle auto. Per questo, da lontano, sono più difficili da vedere e quindi 'meno visibili'.",
         "regola": "Piccolo = Meno visibile da lontano.",
         "trabocchetti": ["ridotta sagoma frontale"],
@@ -704,6 +804,7 @@ QUESTIONS = [
     {
         "domanda": "I conducenti degli autoveicoli devono, in generale, prestare particolare attenzione ai veicoli a motore a due ruote, in quanto meno facilmente visibili",
         "risposta": True,
+        "riassunto": "Due ruote a motore → attenzione perché meno visibili?",
         "spiegazione": "I conducenti delle auto devono fare molta attenzione alle moto e agli scooter. Questi veicoli sono più piccoli e possono essere difficili da vedere, specialmente negli specchietti o negli angoli ciechi.",
         "regola": "Moto = Attenzione extra, sono 'nascoste'.",
         "trabocchetti": ["in generale", "Meno facilmente visibili"],
@@ -711,6 +812,7 @@ QUESTIONS = [
     {
         "domanda": "I conducenti degli autoveicoli, nell'aprire le portiere, devono prestare particolare attenzione ai veicoli a motore a due ruote, in quanto meno visibili",
         "risposta": True,
+        "riassunto": "Aprendo le portiere → attenzione alle due ruote?",
         "spiegazione": "Quando apri la portiera della tua auto, devi sempre guardare bene, soprattutto dietro. Una moto o uno scooter potrebbero arrivare e, essendo meno visibili, potresti non notarli in tempo e causare un incidente.",
         "regola": "Apri portiera = Guarda bene, soprattutto per le moto.",
         "trabocchetti": ["aprire le portiere", "meno visibili"],
@@ -718,6 +820,7 @@ QUESTIONS = [
     {
         "domanda": "Nell'attraversamento degli incroci si deve sempre considerare la possibilità che sopraggiunga, senza che sia visibile a distanza, un veicolo a motore a due ruote che ha sorpassato i veicoli fermi",
         "risposta": True,
+        "riassunto": "Incroci → due ruote che arrivano superando la coda?",
         "spiegazione": "Agli incroci, anche se vedi auto ferme, devi pensare che una moto potrebbe arrivare velocemente, sorpassando le auto in coda. Essendo piccola, potresti non vederla subito. Sii sempre molto prudente.",
         "regola": "Incrocio + Auto ferme = Occhio alla moto che sorpassa.",
         "trabocchetti": ["sempre considerare la possibilità", "Senza che sia visibile a distanza", "ha sorpassato i veicoli fermi"],
@@ -725,6 +828,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di intenso traffico con incolonnamento di veicoli, prima di aprire le portiere per scendere dal proprio veicolo in sosta, si deve sempre considerare la possibilità che sopraggiunga un veicolo a motore a due ruote che sta sorpassando a destra i veicoli fermi in coda",
         "risposta": True,
+        "riassunto": "In coda, aprendo la portiera → due ruote che sorpassano a destra?",
         "spiegazione": "Nel traffico intenso, se le auto sono in coda, una moto potrebbe passare a destra per superare. Se apri la portiera per scendere senza guardare, potresti colpirla. Devi sempre controllare.",
         "regola": "Coda + Portiera = Guarda a destra per le moto.",
         "trabocchetti": ["Intenso traffico con incolonnamento", "Sorpassando a destra", "Sempre considerare la possibilità"],
@@ -732,6 +836,7 @@ QUESTIONS = [
     {
         "domanda": "Durante il sorpasso di un veicolo a motore a due ruote, soprattutto se ad elevata velocità, si deve mantenere una buona distanza laterale di sicurezza",
         "risposta": True,
+        "riassunto": "Sorpassare una moto → buona distanza laterale?",
         "spiegazione": "Quando superi una moto, devi lasciare molto spazio laterale. Le moto possono sbandare o essere spinte dal vento, e se vai veloce, l'aria che sposti può farle perdere l'equilibrio. Mantenere una buona distanza è fondamentale per la sicurezza.",
         "regola": "Sorpasso moto = Ampio spazio laterale.",
         "trabocchetti": ["Soprattutto se ad elevata velocità"],
@@ -739,6 +844,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la circolazione su strada, per rendersi maggiormente visibili, i motocicli devono tenere accesi i proiettori anabbaglianti anche di giorno",
         "risposta": True,
+        "riassunto": "Moto → anabbaglianti anche di giorno?",
         "spiegazione": "Le moto devono tenere le luci anabbaglianti accese anche di giorno. Questo le rende più visibili agli altri veicoli e aumenta la sicurezza sulla strada.",
         "regola": "Moto = Luci accese sempre (anche di giorno).",
         "trabocchetti": ["Per rendersi maggiormente visibili", "Anche di giorno"],
@@ -746,6 +852,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la circolazione nei centri abitati, i motociclisti possono in ogni caso utilizzare l'avvisatore acustico giungendo in prossimità degli incroci",
         "risposta": False,
+        "riassunto": "Motociclisti in città → clacson agli incroci?",
         "spiegazione": "Nei centri abitati, il clacson (avvisatore acustico) si usa solo in caso di pericolo immediato, per evitare un incidente. Non si può usare 'in ogni caso' solo perché si arriva a un incrocio, altrimenti si fa rumore inutile e si disturba.",
         "regola": "Clacson = Solo per pericolo, non 'in ogni caso'.",
         "trabocchetti": ["in ogni caso"],
@@ -753,6 +860,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle strade in cui vige l'obbligo di catene, in caso di nevicata, ai conducenti dei veicoli a due ruote è comunque concesso di circolare",
         "risposta": False,
+        "riassunto": "Obbligo di catene con neve → due ruote possono circolare?",
         "spiegazione": "Se c'è l'obbligo di catene o pneumatici invernali per la neve, le moto non possono circolare. È troppo pericoloso per loro guidare sulla neve o sul ghiaccio, anche se le auto possono farlo con l'equipaggiamento giusto.",
         "regola": "Neve + Obbligo catene = Moto ferme.",
         "trabocchetti": ["è comunque concesso"],
@@ -760,6 +868,7 @@ QUESTIONS = [
     {
         "domanda": "I conducenti di motocicli sono più facilmente percepibili dagli altri conducenti di autoveicoli, perché più rumorosi",
         "risposta": False,
+        "riassunto": "Moto → più percepibili perché rumorose?",
         "spiegazione": "Anche se alcune moto fanno rumore, non è il rumore che le rende più facili da vedere o 'percepibili'. La loro piccola dimensione le rende difficili da vedere, e il rumore non sempre aiuta a capire dove sono o quanto sono vicine. La visibilità è il fattore chiave, non il rumore.",
         "regola": "Rumore moto = Non significa più visibili.",
         "trabocchetti": ["più facilmente percepibili", "perché più rumorosi"],
@@ -767,6 +876,7 @@ QUESTIONS = [
     {
         "domanda": "I conducenti di veicoli a due ruote, avendo una ridotta sagoma frontale, sono più visibili in distanza",
         "risposta": False,
+        "riassunto": "Due ruote → più visibili da lontano?",
         "spiegazione": "È il contrario! Essendo piccoli e stretti (hanno una 'ridotta sagoma frontale'), i veicoli a due ruote sono MENO visibili da lontano, non 'più visibili'.",
         "regola": "Piccolo = Meno visibile.",
         "trabocchetti": ["più visibili", "ridotta sagoma frontale"],
@@ -774,6 +884,7 @@ QUESTIONS = [
     {
         "domanda": "I conducenti di veicoli a due ruote, essendo meno facilmente visibili in distanza, durante le ore notturne devono in ogni caso circolare coi proiettori abbaglianti accesi",
         "risposta": False,
+        "riassunto": "Due ruote di notte → sempre abbaglianti?",
         "spiegazione": "Di notte, le moto devono usare le luci anabbaglianti. Le luci abbaglianti si usano solo fuori dai centri abitati e quando non ci sono altri veicoli davanti o che vengono in senso opposto, per non accecare nessuno. Non si possono usare 'in ogni caso'.",
         "regola": "Abbaglianti = Non 'in ogni caso', solo se non accechi.",
         "trabocchetti": ["in ogni caso"],
@@ -781,6 +892,7 @@ QUESTIONS = [
     {
         "domanda": "L'abbigliamento del motociclista non incide sulla sua visibilità nel traffico",
         "risposta": False,
+        "riassunto": "Abbigliamento del motociclista → non influisce sulla visibilità?",
         "spiegazione": "L'abbigliamento è molto importante per i motociclisti! Vestiti chiari, riflettenti o con colori vivaci rendono il motociclista molto più visibile agli altri, specialmente di notte o con poca luce. Quindi, l'abbigliamento 'incide' eccome sulla visibilità.",
         "regola": "Abbigliamento = Scegli colori chiari per essere visto.",
         "trabocchetti": ["non incide"],
@@ -788,6 +900,7 @@ QUESTIONS = [
     {
         "domanda": "Le rotaie del tram sono un elemento stradale che può essere pericoloso per la circolazione dei veicoli a due ruote",
         "risposta": True,
+        "riassunto": "Rotaie del tram → pericolose per le due ruote?",
         "spiegazione": "Le rotaie del tram sono fatte di metallo e possono essere scivolose, specialmente per le ruote strette di una moto o di una bicicletta. È facile perdere l'equilibrio e cadere.",
         "regola": "Rotaie = scivolo per due ruote.",
         "trabocchetti": ["pericoloso"],
@@ -795,6 +908,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce pedonali dipinte sulla carreggiata sono un elemento stradale che può essere pericoloso per la circolazione dei veicoli a due ruote",
         "risposta": True,
+        "riassunto": "Strisce pedonali dipinte → pericolose per le due ruote?",
         "spiegazione": "Le strisce pedonali sono dipinte con vernice che, soprattutto quando è bagnata o usurata, può essere molto scivolosa per i veicoli a due ruote. Passarci sopra può far perdere aderenza.",
         "regola": "Strisce bianche = attenzione, possono scivolare.",
         "trabocchetti": ["pericoloso"],
@@ -802,6 +916,7 @@ QUESTIONS = [
     {
         "domanda": "I tombini presenti sulla carreggiata sono un elemento stradale che può essere pericoloso per la circolazione dei veicoli a due ruote",
         "risposta": True,
+        "riassunto": "Tombini → pericolosi per le due ruote?",
         "spiegazione": "I tombini sono coperture metalliche che si trovano sulla strada. Sono lisci e, come le rotaie, possono essere molto scivolosi per le ruote di moto e biciclette, causando la perdita di controllo.",
         "regola": "Tombino = ghiaccio per moto.",
         "trabocchetti": ["pericoloso"],
@@ -809,6 +924,7 @@ QUESTIONS = [
     {
         "domanda": "Le rotaie del tram sono particolarmente pericolose per la circolazione dei veicoli a due ruote quando il fondo stradale è bagnato",
         "risposta": True,
+        "riassunto": "Rotaie bagnate → particolarmente pericolose?",
         "spiegazione": "Quando piove, l'acqua rende le rotaie del tram ancora più scivolose. Il rischio di cadere o perdere il controllo del veicolo a due ruote aumenta moltissimo.",
         "regola": "Rotaie + bagnato = pericolo raddoppiato.",
         "trabocchetti": ["particolarmente pericolose", "quando il fondo stradale è bagnato"],
@@ -816,6 +932,7 @@ QUESTIONS = [
     {
         "domanda": "Le strisce pedonali dipinte sulla carreggiata sono particolarmente pericolose per la circolazione dei veicoli a due ruote quando il fondo stradale è bagnato",
         "risposta": True,
+        "riassunto": "Strisce pedonali bagnate → particolarmente pericolose?",
         "spiegazione": "La vernice delle strisce pedonali, quando è bagnata dalla pioggia, diventa estremamente scivolosa per le gomme dei veicoli a due ruote. È come passare sul sapone.",
         "regola": "Strisce + bagnato = saponetta.",
         "trabocchetti": ["particolarmente pericolose", "quando il fondo stradale è bagnato"],
@@ -823,6 +940,7 @@ QUESTIONS = [
     {
         "domanda": "I tombini presenti sulla carreggiata sono particolarmente pericolosi per la circolazione dei veicoli a due ruote quando il fondo stradale è bagnato",
         "risposta": True,
+        "riassunto": "Tombini bagnati → particolarmente pericolosi?",
         "spiegazione": "Il metallo dei tombini, quando è bagnato dalla pioggia, offre pochissima aderenza alle gomme. Passarci sopra può facilmente causare uno sbandamento o una caduta.",
         "regola": "Tombino + bagnato = pattinaggio.",
         "trabocchetti": ["particolarmente pericolosi", "quando il fondo stradale è bagnato"],
@@ -830,6 +948,7 @@ QUESTIONS = [
     {
         "domanda": "Circolando su un veicolo a due ruote con fondo stradale bagnato, la frenata è particolarmente pericolosa se le ruote del veicolo sono su rotaie del tram, strisce pedonali o tombini",
         "risposta": True,
+        "riassunto": "Due ruote, bagnato → frenare su rotaie, strisce, tombini pericoloso?",
         "spiegazione": "Frenare su superfici già scivolose come rotaie, strisce o tombini, e ancora di più se sono bagnate, è molto rischioso. Le ruote possono bloccarsi o perdere aderenza, causando una caduta.",
         "regola": "Frenare su scivoloso e bagnato = caduta quasi certa.",
         "trabocchetti": ["particolarmente pericolosa"],
@@ -837,6 +956,7 @@ QUESTIONS = [
     {
         "domanda": "Il passaggio in velocità su tombini o rotaie del tram a bordo di un veicolo a due ruote può far perdere tenuta di strada e dirigibilità al veicolo, causando sbandamenti o cadute",
         "risposta": True,
+        "riassunto": "Passare veloci su tombini o rotaie → perdita di tenuta?",
         "spiegazione": "Andare veloci su tombini o rotaie aumenta il rischio di perdere il controllo del veicolo. Le ruote possono scivolare o incastrarsi, causando sbandamenti o cadute.",
         "regola": "Velocità + ostacolo = pericolo maggiore.",
         "trabocchetti": ["in velocità"],
@@ -844,6 +964,7 @@ QUESTIONS = [
     {
         "domanda": "Le rotaie del tram o i tombini presenti sulla carreggiata stradale non costituiscono un pericolo per un conducente di veicolo a due ruote",
         "risposta": False,
+        "riassunto": "Rotaie e tombini → nessun pericolo per le due ruote?",
         "spiegazione": "Le rotaie del tram e i tombini sono sempre un pericolo per i veicoli a due ruote, perché sono scivolosi e possono far perdere l'equilibrio. Non è mai vero che 'non costituiscono un pericolo'.",
         "regola": "Rotaie e tombini = sempre attenzione.",
         "trabocchetti": ["non costituiscono un pericolo"],
@@ -851,6 +972,7 @@ QUESTIONS = [
     {
         "domanda": "Quando, in un giorno di pioggia, si deve transitare su rotaie del tram o su tombini presenti sulla carreggiata stradale a bordo di un veicolo a due ruote, occorre accelerare decisamente prima di transitarvi sopra",
         "risposta": False,
+        "riassunto": "Pioggia, rotaie o tombini → accelerare prima?",
         "spiegazione": "Accelerare su superfici scivolose e bagnate è molto pericoloso, perché si rischia di perdere aderenza e cadere. Bisogna invece rallentare e passare con cautela.",
         "regola": "Bagnato + scivoloso = rallenta, non accelerare.",
         "trabocchetti": ["accelerare decisamente"],
@@ -858,6 +980,7 @@ QUESTIONS = [
     {
         "domanda": "Quando, in un giorno di pioggia, si deve transitare su rotaie del tram o su tombini presenti sulla carreggiata stradale a bordo di un veicolo a due ruote, è bene alzarsi in piedi sulle pedivelle prima di transitarvi sopra",
         "risposta": False,
+        "riassunto": "Pioggia, rotaie o tombini → alzarsi in piedi?",
         "spiegazione": "Alzarsi in piedi sulle pedivelle rende il veicolo a due ruote meno stabile e più difficile da controllare, aumentando il rischio di caduta, specialmente su superfici scivolose.",
         "regola": "Stabilità = seduto, non in piedi.",
         "trabocchetti": ["alzarsi in piedi sulle pedivelle"],
@@ -865,6 +988,7 @@ QUESTIONS = [
     {
         "domanda": "Quando, in un giorno di pioggia, si deve transitare su rotaie del tram o su tombini presenti sulla carreggiata stradale a bordo di un veicolo a due ruote, è bene farlo in impennata in modo da non farvi transitare sopra la ruota anteriore che è quella direttrice",
         "risposta": False,
+        "riassunto": "Pioggia, rotaie o tombini → impennare?",
         "spiegazione": "Fare un'impennata è una manovra estremamente pericolosa e illegale. Fa perdere il controllo del veicolo e non serve a evitare i pericoli della strada, anzi, li aumenta enormemente.",
         "regola": "Impennare = cadere e multa.",
         "trabocchetti": ["in impennata"],
@@ -872,12 +996,14 @@ QUESTIONS = [
     {
         "domanda": "Le rotaie del tram o i tombini presenti sulla carreggiata stradale costituiscono un pericolo per un conducente di veicolo a due ruote, nella sola eventualità che il suo veicolo sia dotato di cambio automatico",
         "risposta": False,
+        "riassunto": "Rotaie e tombini → pericolo solo col cambio automatico?",
         "spiegazione": "Il pericolo delle rotaie e dei tombini non dipende dal tipo di cambio del veicolo (automatico o manuale). È un rischio per tutti i veicoli a due ruote a causa della loro natura scivolosa.",
         "regola": "Pericolo = per tutti, non solo per il cambio automatico.",
     },
     {
         "domanda": "Se si deve circolare con veicolo a due ruote su una carreggiata a circolazione promiscua veicoli/tram, è bene se possibile circolare con entrambe le ruote nel solco della rotaia del tram",
         "risposta": False,
+        "riassunto": "Strada con tram → ruote nel solco della rotaia?",
         "spiegazione": "Circolare con le ruote nel solco della rotaia è molto pericoloso. Le ruote possono incastrarsi o scivolare, causando una perdita di controllo e una caduta. È meglio cercare di attraversarle con un angolo il più possibile perpendicolare.",
         "regola": "Solco rotaia = trappola, non entrarci.",
     },

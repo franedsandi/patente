@@ -70,6 +70,8 @@ Durante il quiz:
 | `p` | salta la domanda (non nell'esame) |
 | `q` | esci (non nel `--forzato`) |
 | `i` | apre l'immagine della domanda |
+| `r1` | prima di rispondere: evidenzia le parole chiave (sempre, solo, non, numeri…); non nel `--forzato` |
+| `r2` | prima di rispondere: riassunto della domanda (vedi sezione 8); non nel `--forzato` |
 | `?` | dopo un errore: mostra la regola breve |
 
 Nel terminale di VS Code puoi anche aprire l'immagine con **Ctrl+click** sul percorso.
@@ -140,3 +142,25 @@ python3 patente.py --controlla
 
 Le domande, le risposte e le immagini sono quelle ufficiali.
 Spiegazioni, regole brevi e trabocchetti sono generati con AI: aiutano a capire, ma non sono ufficiali.
+
+## 8. Riassunti delle domande (tasto r2)
+
+I riassunti sono nel campo `"riassunto"` di ogni domanda e il quiz li usa senza internet.
+`importa.py` li conserva quando riscarica le domande. Sono già generati; `riassumi.py`
+serve solo se un giorno arrivano domande nuove senza riassunto: genera solo quelle mancanti.
+Serve una API key di Anthropic (si paga a consumo).
+
+```bash
+cd ~/patente
+python3 -m venv .venv                 # solo la prima volta
+.venv/bin/pip install anthropic       # solo la prima volta
+export ANTHROPIC_API_KEY=...          # la tua chiave
+
+.venv/bin/python riassumi.py prova    # 20 riassunti di prova: guardi la qualità e il costo stimato
+.venv/bin/python riassumi.py invia    # manda tutte le altre domande (Batch API, costa la metà)
+.venv/bin/python riassumi.py scarica  # dopo circa un'ora: salva i riassunti
+```
+
+Usa Claude Haiku 5.5, economico. Con `--opus` (es. `riassumi.py prova --opus`)
+usa Claude Opus 5.5, più caro: utile solo se la qualità di Haiku non ti basta.
+Anche i riassunti sono generati con AI: non rivelano la risposta, ma non sono ufficiali.

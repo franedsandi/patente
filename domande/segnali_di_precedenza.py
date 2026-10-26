@@ -1,7 +1,7 @@
 """Domande — Segnali di precedenza.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Segnali di precedenza"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un'immissione stradale con corsia di accelerazione posta sulla sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → immissione con corsia di accelerazione a sinistra?",
         "spiegazione": "Questo segnale ti avvisa che più avanti una strada si unisce alla tua dalla parte sinistra. Spesso, questa strada che si unisce ha una corsia speciale per accelerare e entrare nel traffico in modo sicuro.",
         "regola": "Freccia piccola a sinistra = entra da sinistra.",
         "immagine": "11b71dce6274bf942eab.jpg",
@@ -17,6 +18,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una confluenza sul lato sinistro della carreggiata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → confluenza a sinistra?",
         "spiegazione": "Sì, questo segnale ti dice che c'è un punto dove un'altra strada si unisce alla tua, e questa unione (o \"confluenza\") avviene dal lato sinistro della strada su cui stai guidando.",
         "regola": "Confluenza = unione. Freccia a sinistra = da sinistra.",
         "trabocchetti": ["confluenza"],
@@ -25,6 +27,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova su carreggiate a senso unico di circolazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su carreggiate a senso unico?",
         "spiegazione": "Questo segnale si trova di solito su strade dove tutte le auto vanno nella stessa direzione (carreggiate a senso unico). Questo perché un'immissione da sinistra su una strada a doppio senso sarebbe molto pericolosa e confusa.",
         "regola": "Immissione da sinistra = strada a senso unico.",
         "immagine": "11b71dce6274bf942eab.jpg",
@@ -32,6 +35,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita ad usare prudenza perché altri veicoli potrebbero immettersi nel flusso della circolazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prudenza, veicoli che si immettono?",
         "spiegazione": "Essendo un segnale di pericolo, ti chiede di fare attenzione. Il pericolo è che altre auto, venendo da sinistra, si uniranno alla tua strada, quindi devi essere pronto a vederle e a lasciare spazio.",
         "regola": "Segnale di pericolo = prudenza.",
         "trabocchetti": ["invita ad usare prudenza", "immettersi nel flusso della circolazione"],
@@ -40,6 +44,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è usato su strade con diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su strade con diritto di precedenza?",
         "spiegazione": "Questo segnale è messo sulla strada principale, quella dove tu hai la precedenza. Le auto che si immettono da sinistra, invece, dovranno darti la precedenza.",
         "regola": "Tu vedi il segnale = tu hai la precedenza.",
         "trabocchetti": ["diritto di precedenza"],
@@ -48,6 +53,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato comporta la presenza del segnale DARE PRECEDENZA sulla strada di immissione laterale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → DARE PRECEDENZA sulla strada che si immette?",
         "spiegazione": "Esatto! Se tu vedi questo segnale, significa che le auto che arrivano dalla strada laterale (quella che si unisce) troveranno un segnale di \"DARE PRECEDENZA\" e quindi dovranno fermarsi o rallentare per farti passare.",
         "regola": "Tu vedi il segnale = loro danno precedenza.",
         "trabocchetti": ["comporta la presenza", "strada di immissione laterale"],
@@ -56,6 +62,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto a non più di 25 metri dall'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → a non più di 25 m dall'incrocio?",
         "spiegazione": "No, questo è falso. I segnali di pericolo, come questo, sono messi prima del punto pericoloso, per darti il tempo di prepararti. Di solito si trovano a una distanza maggiore, per esempio 150 metri fuori città o 50 metri in città, non a soli 25 metri.",
         "regola": "Segnale di pericolo = lontano dal pericolo.",
         "trabocchetti": ["a non più di 25 metri"],
@@ -64,6 +71,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive di dare la precedenza ai veicoli provenienti da sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza a chi viene da sinistra?",
         "spiegazione": "Attenzione! Questo segnale ti avvisa di un pericolo, ma non ti dice di dare la precedenza. Anzi, sei tu che hai la precedenza sui veicoli che si immettono da sinistra. Loro avranno il segnale \"DARE PRECEDENZA\".",
         "regola": "Tu vedi il segnale = tu hai la precedenza (non la dai).",
         "trabocchetti": ["prescrive di dare la precedenza", "prescrive"],
@@ -72,6 +80,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che non si ha diritto di precedenza nella confluenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → nessun diritto di precedenza nella confluenza?",
         "spiegazione": "No, è il contrario! Questo segnale ti avvisa che c'è una confluenza, ma tu hai il diritto di precedenza. Sono i veicoli che si immettono da sinistra che non hanno la precedenza e devono aspettare.",
         "regola": "Segnale di pericolo = tu hai la precedenza.",
         "trabocchetti": ["non si ha diritto di precedenza"],
@@ -80,6 +89,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato precede il segnale di DARE PRECEDENZA",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precede il DARE PRECEDENZA?",
         "spiegazione": "Falso. Questo segnale è sulla tua strada, quella principale. Il segnale \"DARE PRECEDENZA\" si trova sulla strada laterale, quella da cui arrivano le auto che si immettono. Non è che questo segnale viene prima del \"DARE PRECEDENZA\" sulla tua stessa strada.",
         "regola": "Tu vedi il pericolo, loro vedono \"Dare Precedenza\".",
         "trabocchetti": ["precede il segnale di DARE PRECEDENZA", "DARE PRECEDENZA"],
@@ -88,6 +98,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, posto sulle autostrade, precede il segnale d'obbligo di svolta a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato in autostrada → precede obbligo di svolta a sinistra?",
         "spiegazione": "No, questo segnale non ha niente a che fare con una svolta a sinistra obbligatoria. Ti avvisa solo che un'altra strada si unisce alla tua da sinistra. Non ti obbliga a girare.",
         "regola": "Pericolo di unione, non obbligo di svolta.",
         "trabocchetti": ["segnale d"],
@@ -96,6 +107,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la svolta a sinistra al prossimo incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svolta a sinistra consentita al prossimo incrocio?",
         "spiegazione": "Falso. Questo segnale non ti dà il permesso di svoltare a sinistra. Ti avvisa solo che c'è un punto dove le auto si uniscono alla tua strada da sinistra. La possibilità di svoltare a sinistra dipende da altri segnali o dalla configurazione dell'incrocio.",
         "regola": "Avviso di unione, non permesso di svolta.",
         "trabocchetti": ["consente la svolta a sinistra"],
@@ -104,6 +116,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che si incrocia a destra una strada di minore importanza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada minore a destra?",
         "spiegazione": "Questo segnale ti dice che più avanti incontrerai una strada che arriva da destra. Questa strada è 'di minore importanza', cioè i veicoli che arrivano da lì devono dare la precedenza a te.",
         "regola": "Linea sottile a destra = strada meno importante.",
         "trabocchetti": ["di minore importanza"],
@@ -112,6 +125,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio con una strada secondaria che si immette da destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada secondaria da destra?",
         "spiegazione": "Il segnale ti avvisa di un incrocio dove una 'strada secondaria' (meno importante) si unisce alla tua strada, venendo da destra. Tu hai la precedenza.",
         "regola": "Linea sottile a destra = strada secondaria da destra.",
         "trabocchetti": ["Strada secondaria", "Si immette da destra"],
@@ -120,6 +134,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna usare prudenza perché ci si sta avvicinando ad un incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prudenza, incrocio vicino?",
         "spiegazione": "Essendo un segnale di pericolo (triangolare con bordo rosso), ti avvisa sempre di un incrocio. Anche se hai la precedenza, devi sempre guidare con attenzione e prudenza quando ti avvicini a un incrocio.",
         "regola": "Triangolo rosso = attenzione, incrocio!",
         "trabocchetti": ["Prudenza"],
@@ -128,6 +143,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di precedenza?",
         "spiegazione": "Sì, questo segnale è un tipo di 'segnale di precedenza'. Ti informa che sulla tua strada hai il diritto di precedenza rispetto ai veicoli che arrivano dalla strada secondaria a destra.",
         "regola": "Linea spessa = tu hai la precedenza.",
         "trabocchetti": ["Segnale di precedenza"],
@@ -136,6 +152,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'incrocio con una strada senza diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio con strada senza precedenza?",
         "spiegazione": "Il segnale ti dice che incrocerai una strada che 'non ha il diritto di precedenza'. Questo significa che i veicoli su quella strada devono fermarsi o rallentare per farti passare.",
         "regola": "La strada che si immette (linea sottile) NON ha precedenza.",
         "trabocchetti": ["Senza diritto di precedenza"],
@@ -144,6 +161,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio in cui il conducente ha la precedenza sui veicoli provenienti da destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza su chi viene da destra?",
         "spiegazione": "Questo è il significato principale del segnale: tu, come conducente sulla strada principale (linea spessa), hai la precedenza sui veicoli che arrivano dalla strada secondaria a destra (linea sottile).",
         "regola": "Linea spessa = tu hai la precedenza.",
         "trabocchetti": ["Ha la precedenza"],
@@ -152,6 +170,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, sulla destra, una strada senza uscita",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada senza uscita a destra?",
         "spiegazione": "Falso. Questo segnale indica un incrocio, non una 'strada senza uscita' (un vicolo cieco). I segnali di strada senza uscita sono diversi, di solito quadrati e blu.",
         "regola": "Non è un vicolo cieco, è un incrocio!",
         "trabocchetti": ["Senza uscita"],
@@ -160,6 +179,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la svolta a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svolta a destra vietata?",
         "spiegazione": "Falso. Questo è un segnale di pericolo, non un segnale di divieto. I segnali di divieto sono rotondi con bordo rosso e vietano qualcosa. Questo segnale ti avvisa di un incrocio, ma non ti impedisce di svoltare.",
         "regola": "Triangolo rosso avvisa, non vieta.",
         "trabocchetti": ["Vieta la svolta"],
@@ -168,6 +188,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto sulle corsie di accelerazione delle autostrade",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sulle corsie di accelerazione autostradali?",
         "spiegazione": "Falso. Questo segnale si trova sulle strade normali per avvisare di un incrocio. Le 'corsie di accelerazione delle autostrade' hanno segnali diversi, specifici per l'ingresso in autostrada.",
         "regola": "Non è per l'autostrada, è per un incrocio normale.",
         "trabocchetti": ["Autostrade", "corsie di accelerazione"],
@@ -176,6 +197,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un'immissione stradale con corsia di accelerazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → immissione con corsia di accelerazione?",
         "spiegazione": "Falso. Il segnale indica un incrocio semplice con una strada secondaria, non una 'corsia di accelerazione'. Le corsie di accelerazione sono usate per entrare in strade a scorrimento veloce e hanno una forma diversa.",
         "regola": "Non è una corsia speciale, è un incrocio semplice.",
         "trabocchetti": ["Corsia di accelerazione"],
@@ -184,6 +206,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio in cui il conducente ha l'obbligo di fermarsi e dare precedenza ai veicoli provenienti da destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi e dare precedenza a destra?",
         "spiegazione": "Falso. Questa è l'esatto contrario del significato del segnale! Questo segnale ti dice che TU hai la precedenza. Non devi fermarti e dare precedenza ai veicoli da destra; sono loro che devono dare precedenza a te.",
         "regola": "Tu hai la precedenza, non devi fermarti!",
         "trabocchetti": ["obbligo di fermarsi"],
@@ -192,6 +215,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica una piazzola di sosta a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → piazzola di sosta a destra?",
         "spiegazione": "Falso. Questo segnale indica un incrocio. Una 'piazzola di sosta' è un'area dove puoi fermarti e riposare, e ha un segnale completamente diverso (di solito un quadrato blu con un'immagine di un'auto o un albero).",
         "regola": "Non è per riposare, è per incrociare!",
         "trabocchetti": ["Piazzola di sosta"],
@@ -200,6 +224,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che si incrocia sulla sinistra una strada di minore importanza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada minore a sinistra?",
         "spiegazione": "Il segnale ti dice che stai per incontrare una strada che arriva da sinistra. Questa strada è 'di minore importanza' perché i veicoli che vengono da lì devono darti la precedenza. Tu sei sulla strada principale.",
         "regola": "Linea spessa = strada principale, hai la precedenza.",
         "trabocchetti": ["minore importanza"],
@@ -208,6 +233,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio in cui si ha la precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio con precedenza?",
         "spiegazione": "Questo segnale ti avvisa che stai arrivando a un incrocio e che tu hai il diritto di passare per primo, cioè hai la precedenza.",
         "regola": "Triangolo con linea spessa = precedenza tua!",
         "trabocchetti": ["si ha la precedenza"],
@@ -216,6 +242,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive di usare prudenza perché ci si sta avvicinando ad un incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prudenza, incrocio vicino?",
         "spiegazione": "Tutti i segnali di pericolo (quelli a forma di triangolo rosso) ti chiedono di essere prudente. Questo, in particolare, ti avvisa che c'è un incrocio, quindi devi fare attenzione.",
         "regola": "Triangolo rosso = attenzione, prudenza!",
         "trabocchetti": ["prescrive di usare prudenza"],
@@ -224,6 +251,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di precedenza?",
         "spiegazione": "Questo segnale fa parte dei segnali di pericolo, ma la sua funzione principale è proprio quella di dirti che hai la precedenza in quell'incrocio. Per questo è chiamato anche 'segnale di precedenza'.",
         "regola": "Segnale di pericolo che ti dà la precedenza.",
         "trabocchetti": ["precedenza"],
@@ -232,6 +260,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'incrocio con una strada senza diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio con strada senza precedenza?",
         "spiegazione": "Il segnale ti dice che tu hai la precedenza. Questo significa che la strada che si unisce alla tua (quella da sinistra) è una strada dove i veicoli non hanno il diritto di precedenza e devono fermarsi o rallentare per farti passare.",
         "regola": "Tu hai precedenza = l'altra strada non ce l'ha.",
         "trabocchetti": ["senza diritto di precedenza"],
@@ -240,6 +269,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio in cui si ha la precedenza sui veicoli provenienti da sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza su chi viene da sinistra?",
         "spiegazione": "La linea sottile nel segnale indica che la strada secondaria arriva proprio da sinistra. Quindi, tu hai la precedenza sui veicoli che arrivano da quella direzione.",
         "regola": "Linea sottile a sinistra = precedenza su chi viene da sinistra.",
         "trabocchetti": ["provenienti da sinistra"],
@@ -248,6 +278,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia sulla sinistra una strada senza uscita",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada senza uscita a sinistra?",
         "spiegazione": "Questo segnale non indica una strada senza uscita. Indica un incrocio dove tu hai la precedenza. Le strade senza uscita hanno un altro tipo di segnale, di solito quadrato e blu.",
         "regola": "Non è una strada chiusa, è un incrocio!",
         "trabocchetti": ["senza uscita"],
@@ -256,6 +287,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la svolta a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svolta a sinistra vietata?",
         "spiegazione": "Questo segnale è di pericolo, non di divieto. Non ti vieta di girare a sinistra; ti avvisa solo che c'è un incrocio e tu hai la precedenza. I divieti sono segnali rotondi con bordo rosso.",
         "regola": "Triangolo rosso = pericolo, non divieto.",
         "trabocchetti": ["vieta"],
@@ -264,6 +296,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una confluenza in autostrada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → confluenza in autostrada?",
         "spiegazione": "Questo segnale indica un incrocio generico, non una confluenza in autostrada. Le autostrade hanno segnali specifici per le confluenze, che sono diversi da questo.",
         "regola": "Non è autostrada, è un incrocio normale.",
         "trabocchetti": ["autostrada"],
@@ -272,6 +305,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una confluenza a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → confluenza a destra?",
         "spiegazione": "Guarda bene il disegno: la strada secondaria si unisce alla tua da sinistra, non da destra. Quindi, non è una confluenza a destra.",
         "regola": "Guarda il disegno: la linea sottile è a sinistra!",
         "trabocchetti": ["a destra"],
@@ -280,6 +314,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto sulle rampe di accesso alle autostrade",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sulle rampe di accesso autostradali?",
         "spiegazione": "Questo segnale non si trova sulle rampe delle autostrade. Si trova sulle strade normali per avvisarti di un incrocio dove hai la precedenza.",
         "regola": "Non è autostrada, è strada normale.",
         "trabocchetti": ["autostrade"],
@@ -288,6 +323,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'incrocio con un binario morto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → binario morto?",
         "spiegazione": "Questo segnale non ha nulla a che fare con i binari del treno. Indica un incrocio tra strade. I binari morti o i passaggi a livello hanno segnali completamente diversi.",
         "regola": "Non è un treno, è una strada!",
         "trabocchetti": ["binario morto"],
@@ -296,6 +332,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio in cui vale la regola generale di dare la precedenza a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio con precedenza a destra?",
         "spiegazione": "Questo segnale ti avvisa che stai per arrivare a un incrocio. In questo incrocio, non ci sono altri segnali specifici di precedenza (come STOP o DARE PRECEDENZA), quindi devi seguire la regola generale: dare la precedenza a chi viene dalla tua destra.",
         "regola": "X = Precedenza a destra.",
         "immagine": "a2d51f7a6494f998e570.jpg",
@@ -303,6 +340,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive di procedere a velocità particolarmente moderata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → velocità particolarmente moderata?",
         "spiegazione": "Tutti i segnali di pericolo (quelli a forma di triangolo con bordo rosso) ti avvisano che c'è una situazione potenzialmente pericolosa. Quando c'è un pericolo, devi sempre rallentare e guidare con molta attenzione per essere pronto a reagire a qualsiasi imprevisto.",
         "regola": "Triangolo rosso = Pericolo = Rallenta sempre.",
         "immagine": "a2d51f7a6494f998e570.jpg",
@@ -310,6 +348,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio in cui si deve dare precedenza a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → dare precedenza a destra?",
         "spiegazione": "Questo segnale ti informa che all'incrocio che stai per raggiungere, la regola da seguire è quella di dare la precedenza ai veicoli che arrivano dalla tua destra. È la regola base quando non ci sono altri segnali che indicano diversamente.",
         "regola": "X = Destra ha la precedenza.",
         "trabocchetti": ["si deve dare precedenza a destra"],
@@ -318,6 +357,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di precedenza?",
         "spiegazione": "Anche se è un segnale di pericolo (per la sua forma triangolare e il bordo rosso), il suo scopo principale è informarti su come gestire la precedenza all'incrocio. Quindi, è un segnale che regola il comportamento riguardo alla precedenza.",
         "regola": "X = Regola la precedenza.",
         "trabocchetti": ["precedenza"],
@@ -326,6 +366,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato non si trova sul tratto di strada con diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non su strada con diritto di precedenza?",
         "spiegazione": "Questo segnale ti avvisa che tu devi dare la precedenza a chi viene da destra. Questo significa che la tua strada non è quella che ha il diritto di precedenza. Se avessi il diritto di precedenza, ci sarebbe un altro segnale (come 'Diritto di precedenza').",
         "regola": "X = Tu non hai la precedenza.",
         "immagine": "a2d51f7a6494f998e570.jpg",
@@ -333,6 +374,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato presegnala un passaggio a livello custodito con barriere",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → passaggio a livello con barriere?",
         "spiegazione": "Questo segnale con la 'X' indica un incrocio stradale generico. Il segnale che presegnala un passaggio a livello custodito con barriere è diverso: ha l'immagine di una staccionata e una locomotiva.",
         "regola": "X = Incrocio, non treno.",
         "immagine": "a2d51f7a6494f998e570.jpg",
@@ -340,6 +382,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato precede il segnale DARE PRECEDENZA",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precede il DARE PRECEDENZA?",
         "spiegazione": "Questo segnale (X) indica che all'incrocio vale la regola della precedenza a destra. Il segnale 'DARE PRECEDENZA' (un triangolo rovesciato) ti obbliga a dare la precedenza a tutti. Sono due segnali diversi che indicano regole di precedenza differenti e non si 'precedono' a vicenda.",
         "regola": "X e DARE PRECEDENZA sono diversi.",
         "trabocchetti": ["precede"],
@@ -348,6 +391,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato precede il segnale di STOP",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precede lo STOP?",
         "spiegazione": "Questo segnale (X) indica un incrocio con precedenza a destra. Il segnale di STOP (un ottagono rosso) ti obbliga a fermarti completamente e dare precedenza. Sono due segnali che indicano regole di precedenza diverse e non si trovano in sequenza l'uno dopo l'altro.",
         "regola": "X e STOP sono diversi.",
         "trabocchetti": ["precede"],
@@ -356,6 +400,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova, di norma, a non più di 50 metri dall'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non oltre 50 m dall'incrocio?",
         "spiegazione": "I segnali di pericolo, come questo, sono posti a una distanza dall'incrocio per darti il tempo di rallentare e prepararti. Fuori dai centri abitati, la distanza è di solito 150 metri. 'Non più di 50 metri' è una distanza troppo breve per un segnale di pericolo generico.",
         "regola": "Pericolo = 150m (fuori città).",
         "trabocchetti": ["non più di 50 metri"],
@@ -364,6 +409,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, in autostrada, viene posto a una distanza maggiore di 250 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato in autostrada → oltre 250 m?",
         "spiegazione": "Questo segnale indica un incrocio a raso (cioè sullo stesso livello) dove si applica la precedenza a destra. Le autostrade non hanno incroci a raso, ma solo svincoli a livelli diversi. Quindi, questo segnale non si trova in autostrada.",
         "regola": "X = No autostrada.",
         "trabocchetti": ["autostrada"],
@@ -372,6 +418,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza del segnale CROCE DI S. ANDREA",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → CROCE DI S. ANDREA?",
         "spiegazione": "La CROCE DI S. ANDREA è un segnale che si trova vicino a un passaggio a livello senza barriere. Questo segnale (X) indica un incrocio tra strade, non un passaggio a livello ferroviario.",
         "regola": "X = Incrocio, non treno.",
         "trabocchetti": ["CROCE DI S. ANDREA"],
@@ -380,6 +427,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio con strade di minore importanza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio con strade minori?",
         "spiegazione": "Il segnale ti dice che stai per arrivare a un incrocio. La strada su cui viaggi è la strada principale, e le altre strade che si incrociano sono meno importanti perché chi viene da lì deve darti la precedenza.",
         "regola": "Strada principale = precedenza.",
         "trabocchetti": ["minore importanza"],
@@ -388,6 +436,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio in cui si ha la precedenza sui veicoli provenienti dalle strade secondarie",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza su chi esce dalle secondarie?",
         "spiegazione": "Questo segnale ti avvisa che all'incrocio che stai per incontrare, tu hai il diritto di passare per primo. I veicoli che arrivano dalle strade laterali (quelle più piccole nel disegno) devono aspettare te.",
         "regola": "Tu sulla strada principale, gli altri aspettano.",
         "trabocchetti": ["strade secondarie"],
@@ -396,6 +445,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'incrocio con una strada senza diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio con strada senza precedenza?",
         "spiegazione": "Il segnale ti informa che stai per incrociare una strada dove i veicoli che arrivano non hanno il diritto di passare per primi. Questo significa che tu hai la precedenza.",
         "regola": "Loro senza diritto, tu con diritto.",
         "trabocchetti": ["senza diritto di precedenza"],
@@ -404,6 +454,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, all'incrocio, ci dà la precedenza sui veicoli provenienti sia da destra che da sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza su destra e sinistra?",
         "spiegazione": "Sì, è proprio così. Questo segnale ti dice che, quando arrivi all'incrocio, puoi passare prima dei veicoli che arrivano sia dalla tua destra che dalla tua sinistra.",
         "regola": "Precedenza totale (destra e sinistra).",
         "trabocchetti": ["sia da destra che da sinistra"],
@@ -412,6 +463,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato perde la sua efficacia in presenza di agente che regola il traffico",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inefficace se c'è un agente?",
         "spiegazione": "Ricorda sempre che i segnali degli agenti del traffico (poliziotto, vigile) sono i più importanti. Se c'è un agente che ti dice cosa fare, devi seguire le sue indicazioni, anche se sono diverse da quelle del segnale.",
         "regola": "Agente > Segnale.",
         "trabocchetti": ["perde la sua efficacia"],
@@ -420,6 +472,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere preceduto dal segnale DIRITTO DI PRECEDENZA",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → preceduto da DIRITTO DI PRECEDENZA?",
         "spiegazione": "Il segnale \"Diritto di precedenza\" (quello quadrato giallo e bianco) ti dice che hai la precedenza su tutta la strada. Questo segnale triangolare, invece, ti avvisa che stai per trovare un incrocio specifico dove mantieni la precedenza. Quindi, è possibile che tu abbia già visto il segnale quadrato prima di questo, che ti conferma la tua precedenza generale.",
         "regola": "Quadrato giallo = precedenza generale; Triangolo = incrocio specifico con precedenza.",
         "trabocchetti": ["può essere preceduto"],
@@ -428,6 +481,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che bisogna rallentare per accertare che ci venga data la precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare per verificare la precedenza?",
         "spiegazione": "Anche se hai la precedenza, è sempre importante essere prudenti. Rallentare ti permette di controllare che gli altri veicoli ti abbiano visto e ti diano effettivamente la precedenza, evitando pericoli. La sicurezza prima di tutto!",
         "regola": "Precedenza non è via libera, rallenta e controlla.",
         "immagine": "44f5a9167e70f2d587d5.jpg",
@@ -435,6 +489,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio in cui si ha la precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio con precedenza?",
         "spiegazione": "Questo è il messaggio principale del segnale: ti sta avvisando che stai per arrivare a un incrocio e che, in quell'incrocio, tu hai il diritto di passare per primo rispetto ai veicoli che arrivano dalle strade laterali.",
         "regola": "Triangolo con croce = la precedenza è tua.",
         "immagine": "44f5a9167e70f2d587d5.jpg",
@@ -442,6 +497,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una confluenza sia da destra che da sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → confluenza da destra e sinistra?",
         "spiegazione": "Attenzione! Questo segnale indica un incrocio, cioè un punto dove le strade si tagliano. Una \"confluenza\" è quando una strada si unisce alla tua, come una rampa di ingresso in autostrada. Sono due cose diverse.",
         "regola": "Incrocio = strade che si tagliano; Confluenza = strade che si uniscono.",
         "trabocchetti": ["confluenza"],
@@ -450,6 +506,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato vieta la svolta a sinistra all'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svolta a sinistra vietata?",
         "spiegazione": "Questo segnale ti avvisa della precedenza, non ti dice cosa puoi o non puoi fare in termini di svolte. Non vieta assolutamente la svolta a sinistra. Per i divieti ci sono altri segnali (rotondi con bordo rosso).",
         "regola": "Triangolo = pericolo/precedenza, non divieto.",
         "trabocchetti": ["vieta"],
@@ -458,6 +515,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio con precedenza rispetto ai veicoli provenienti da sinistra mentre si deve dare la precedenza a quelli provenienti da destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza su sinistra, ma la si dà a destra?",
         "spiegazione": "No, non è corretto. Questo segnale ti dà la precedenza sia sui veicoli che arrivano da destra che su quelli che arrivano da sinistra. Non devi dare la precedenza a nessuno dei due, sono loro che devono darla a te.",
         "regola": "Precedenza totale, non parziale.",
         "immagine": "44f5a9167e70f2d587d5.jpg",
@@ -465,6 +523,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto sulle autostrade",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → posto in autostrada?",
         "spiegazione": "Le autostrade sono strade senza incroci a raso, cioè senza intersezioni dirette come quelle indicate da questo segnale. Sulle autostrade ci sono solo rampe di ingresso e uscita. Quindi, questo segnale non lo trovi in autostrada.",
         "regola": "Autostrada = no incroci a raso.",
         "trabocchetti": ["sulle autostrade"],
@@ -473,6 +532,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto a non più di 25 metri dall'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non oltre 25 m dall'incrocio?",
         "spiegazione": "I segnali di pericolo, come questo, vengono messi a una certa distanza dall'incrocio per darti il tempo di prepararti. Di solito sono a circa 150 metri fuori dai centri abitati e a circa 50-100 metri dentro i centri abitati. 25 metri è troppo vicino per un segnale di pericolo.",
         "regola": "Segnali di pericolo = distanza di preavviso (non 25m).",
         "trabocchetti": ["non più di 25 metri"],
@@ -481,6 +541,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio nel quale bisogna dare la precedenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → incrocio dove dare precedenza?",
         "spiegazione": "No, è il contrario! Questo segnale ti dice che sei tu ad avere la precedenza, non che devi darla. Se dovessi dare la precedenza, vedresti altri segnali, come il \"Dare precedenza\" (triangolo rovesciato) o lo \"Stop\".",
         "regola": "Triangolo con croce = tu hai la precedenza.",
         "trabocchetti": ["bisogna dare la precedenza"],
@@ -489,6 +550,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia corsie di accelerazione a destra e a sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsie di accelerazione a destra e sinistra?",
         "spiegazione": "Le \"corsie di accelerazione\" servono per entrare in una strada più veloce, come l'autostrada, e non sono incroci. Questo segnale, invece, indica un incrocio normale dove le strade si tagliano.",
         "regola": "Incrocio = strade che si tagliano; Corsia di accelerazione = per entrare in strada veloce.",
         "trabocchetti": ["corsie di accelerazione"],
@@ -497,6 +559,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una immissione da destra con corsia di accelerazione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → immissione da destra con corsia di accelerazione?",
         "spiegazione": "Questo segnale ti avvisa che sta per arrivare una strada da destra. Spesso, quando una strada si unisce a un'altra, c'è una corsia speciale (corsia di accelerazione) per aiutare i veicoli a entrare nel traffico in modo sicuro, aumentando la velocità. Quindi, il segnale preannuncia proprio questo tipo di immissione.",
         "regola": "Freccia piccola che entra = corsia per accelerare.",
         "immagine": "fc2aa43257a4a9234eaf.jpg",
@@ -504,6 +567,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una confluenza sul lato destro",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → confluenza a destra?",
         "spiegazione": "Il segnale ti dice che più avanti, sul lato destro della strada, un'altra strada si unirà alla tua. 'Confluenza' significa proprio questo: due strade si incontrano e si uniscono. La freccia piccola a destra indica la direzione da cui arriva l'altra strada.",
         "regola": "Freccia piccola a destra = confluenza a destra.",
         "trabocchetti": ["Confluenza", "Sul lato destro"],
@@ -512,6 +576,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può trovarsi sulle autostrade",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → anche in autostrada?",
         "spiegazione": "Sì, questo segnale è molto comune sulle autostrade e sulle strade extraurbane principali. Le autostrade hanno spesso delle rampe dove i veicoli entrano o escono, e questo segnale avvisa quando un veicolo sta per entrare da una rampa di accelerazione.",
         "regola": "Autostrada = entrate e uscite = questo segnale.",
         "trabocchetti": ["può"],
@@ -520,6 +585,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita ad usare la massima prudenza al fine di evitare incidenti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → massima prudenza?",
         "spiegazione": "Tutti i segnali di pericolo (quelli a triangolo rosso) ti chiedono di fare molta attenzione. Qui, devi essere prudente perché altri veicoli potrebbero entrare nella tua corsia, e devi essere pronto a reagire per evitare pericoli.",
         "regola": "Triangolo rosso = sempre prudenza.",
         "trabocchetti": ["Massima prudenza", "Al fine di evitare incidenti"],
@@ -528,6 +594,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che abbiamo la precedenza sui veicoli che si immettono da destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza su chi si immette da destra?",
         "spiegazione": "Questo è un punto chiave! Tu sei sulla strada principale (la freccia grande) e i veicoli che arrivano dalla strada laterale (la freccia piccola) devono darti la precedenza. Loro avranno un segnale di 'DARE PRECEDENZA' o 'STOP'.",
         "regola": "Freccia grande = precedenza tua.",
         "trabocchetti": ["abbiamo la precedenza", "Sui veicoli che si immettono da destra"],
@@ -536,6 +603,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato, sulla rampa di raccordo è posto il segnale di DARE PRECEDENZA",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → DARE PRECEDENZA sulla rampa?",
         "spiegazione": "Esatto! Per far sì che tu abbia la precedenza (come detto nella domanda precedente), i veicoli che arrivano dalla rampa (la strada che si unisce) devono avere un segnale che li obbliga a dare la precedenza a te. Questo segnale è il 'DARE PRECEDENZA'.",
         "regola": "Tu hai precedenza = loro hanno DARE PRECEDENZA.",
         "trabocchetti": ["Rampa di raccordo", "DARE PRECEDENZA"],
@@ -544,6 +612,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto a non più di 25 metri dall'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → non oltre 25 m dall'incrocio?",
         "spiegazione": "Falso. I segnali di pericolo, come questo, sono posti molto prima del punto pericoloso per darti il tempo di prepararti. Di solito sono a circa 150 metri fuori dai centri abitati. 25 metri è una distanza troppo breve per un segnale di pericolo.",
         "regola": "Pericolo = lontano, non vicino.",
         "trabocchetti": ["a non più di 25 metri"],
@@ -552,6 +621,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia di dare precedenza ai veicoli provenienti da destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → dare precedenza a destra?",
         "spiegazione": "Falso. Attenzione! Questo è il contrario di quello che abbiamo detto prima. Tu hai la precedenza! Sono i veicoli che arrivano da destra che devono dare la precedenza a te, non il contrario.",
         "regola": "Freccia grande = tu passi. Freccia piccola = loro aspettano.",
         "immagine": "fc2aa43257a4a9234eaf.jpg",
@@ -559,6 +629,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato viene posto su strada secondaria che non gode del diritto di precedenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → su strada secondaria senza precedenza?",
         "spiegazione": "Falso. Questo segnale è posto sulla strada principale, quella dove tu hai la precedenza (la freccia grande). Non è sulla strada secondaria (quella che si unisce). La strada secondaria avrà il segnale 'DARE PRECEDENZA' o 'STOP'.",
         "regola": "Segnale sulla strada principale, non sulla secondaria.",
         "immagine": "fc2aa43257a4a9234eaf.jpg",
@@ -566,6 +637,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può precedere il segnale DARE PRECEDENZA",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → può precedere DARE PRECEDENZA?",
         "spiegazione": "Falso. Questo segnale (preavviso di confluenza) è per chi ha la precedenza. Il segnale 'DARE PRECEDENZA' è per chi DEVE dare la precedenza. Non si 'precedono' a vicenda sulla stessa strada in questo modo. Il segnale 'DARE PRECEDENZA' è sulla rampa, non sulla tua strada principale.",
         "regola": "Tu hai precedenza, non devi dare precedenza.",
         "trabocchetti": ["può precedere il segnale DARE PRECEDENZA"],
@@ -574,6 +646,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, su autostrada, non comporta una riduzione della velocità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato in autostrada → nessuna riduzione di velocità?",
         "spiegazione": "Falso. Anche se hai la precedenza, è sempre buona norma rallentare un po' e fare attenzione quando c'è una confluenza, specialmente in autostrada. Potrebbe esserci traffico, o qualcuno potrebbe immettersi male. La prudenza richiede spesso una riduzione della velocità.",
         "regola": "Pericolo = rallenta, anche se hai precedenza.",
         "immagine": "fc2aa43257a4a9234eaf.jpg",
@@ -581,6 +654,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato consente la svolta a destra al prossimo incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → svolta a destra consentita?",
         "spiegazione": "Falso. Questo segnale ti avvisa di una confluenza, cioè un'altra strada che si unisce alla tua. Non ti dice nulla sulla possibilità di svoltare. Non è un segnale di indicazione di direzione o di obbligo di svolta.",
         "regola": "Confluenza non è svolta.",
         "trabocchetti": ["consente la svolta a destra"],
@@ -589,6 +663,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a fermarsi in corrispondenza della striscia trasversale di arresto e a dare la precedenza agli altri veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi sulla striscia e dare precedenza?",
         "spiegazione": "Il segnale STOP ti obbliga a fermarti completamente dove c'è la linea bianca sull'asfalto (striscia di arresto) e poi a far passare tutti gli altri veicoli che arrivano da qualsiasi direzione, prima di ripartire.",
         "regola": "STOP = Fermati + Precedenza a tutti.",
         "trabocchetti": ["obbliga a fermarsi", "dare la precedenza"],
@@ -597,6 +672,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di arrestarsi e dare la precedenza prima di impegnare l'incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi e dare precedenza prima dell'incrocio?",
         "spiegazione": "Questo segnale ti chiede di fermarti del tutto e di far passare gli altri veicoli prima di entrare nell'incrocio. Non devi entrare nell'incrocio se non sei sicuro che sia completamente libero.",
         "regola": "STOP = Prima fermati, poi entra.",
         "trabocchetti": ["prima di impegnare l"],
@@ -605,6 +681,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi all'incrocio e a dare la precedenza a destra e a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi e dare precedenza a destra e sinistra?",
         "spiegazione": "Sì, devi fermarti all'incrocio e guardare bene sia a destra che a sinistra (e anche dritto, se necessario) per dare la precedenza a tutti i veicoli che arrivano.",
         "regola": "STOP = Guarda ovunque, dai precedenza.",
         "trabocchetti": ["a destra e a sinistra"],
@@ -613,6 +690,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di fermarsi all'incrocio anche in presenza di semaforo a luce lampeggiante gialla",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi anche col giallo lampeggiante?",
         "spiegazione": "Quando c'è un semaforo giallo lampeggiante, significa che il semaforo non funziona normalmente o è in modalità 'attenzione'. In questo caso, valgono i segnali stradali verticali, come lo STOP. Quindi, devi fermarti.",
         "regola": "Semaforo giallo lampeggiante? Segui lo STOP!",
         "immagine": "3961a16f4077ab353d61.jpg",
@@ -620,6 +698,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova all'incrocio con una strada con diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio con strada con precedenza?",
         "spiegazione": "Il segnale STOP è messo proprio quando la tua strada si incrocia con un'altra strada dove i veicoli hanno il diritto di passare prima di te. Tu devi fermarti e aspettare.",
         "regola": "STOP = Loro hanno la precedenza.",
         "trabocchetti": ["strada con diritto di precedenza"],
@@ -628,6 +707,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova, in genere, negli incroci con scarsa visibilità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incroci con scarsa visibilità?",
         "spiegazione": "È vero. Se non vedi bene chi arriva (magari per curve, alberi o edifici), è molto importante fermarsi completamente per controllare bene. Per questo, spesso c'è lo STOP.",
         "regola": "Non vedi? STOP!",
         "trabocchetti": ["scarsa visibilità", "in genere"],
@@ -636,6 +716,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, fuori dei centri abitati, è preceduto dal relativo segnale di preavviso",
         "risposta": True,
+        "riassunto": "Segnale raffigurato fuori città → preceduto dal preavviso?",
         "spiegazione": "Fuori dalle città, dove si va più veloci, è importante sapere in anticipo che sta per arrivare uno STOP. Per questo, prima del segnale STOP vero e proprio, trovi un altro segnale che ti avvisa.",
         "regola": "Fuori città, lo STOP si annuncia.",
         "trabocchetti": ["fuori dei centri abitati"],
@@ -644,6 +725,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è utilizzato, di norma, negli incroci di particolare pericolosità",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incroci particolarmente pericolosi?",
         "spiegazione": "Questo segnale viene messo dove l'incrocio è più pericoloso, per esempio dove ci sono molti incidenti o dove è difficile vedere. Serve proprio a garantire la massima sicurezza.",
         "regola": "STOP = Incrocio pericoloso.",
         "trabocchetti": ["particolare pericolosità", "di norma"],
@@ -652,6 +734,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può trovarsi in corrispondenza di un passaggio a livello",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → anche al passaggio a livello?",
         "spiegazione": "Sì, a volte il segnale STOP può essere presente anche vicino a un passaggio a livello (dove passano i treni), specialmente se non ci sono barriere o semafori, per obbligarti a fermarti e controllare che non arrivi il treno.",
         "regola": "STOP anche al treno.",
         "trabocchetti": ["può"],
@@ -660,6 +743,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'obbligo di fermarsi e di dare la precedenza nei sensi unici alternati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi nei sensi unici alternati?",
         "spiegazione": "Falso. Il segnale STOP ti obbliga a fermarti e dare precedenza in un incrocio. Non c'entra con i sensi unici alternati, dove di solito ci sono semafori o la paletta del moviere.",
         "regola": "STOP = Incrocio, non senso unico alternato.",
         "trabocchetti": ["sensi unici alternati"],
@@ -668,6 +752,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi al varco doganale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi al varco doganale?",
         "spiegazione": "Falso. Il segnale STOP serve per gli incroci e la precedenza. Al varco doganale (alla frontiera) ci sono altri segnali specifici o le indicazioni della polizia di frontiera, non il segnale STOP.",
         "regola": "STOP = Incrocio, non dogana.",
         "trabocchetti": ["varco doganale"],
@@ -676,6 +761,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi soltanto in caso di incrocio con altri veicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi solo se arrivano altri veicoli?",
         "spiegazione": "Falso. Devi fermarti SEMPRE, anche se non vedi nessun altro veicolo. È un obbligo fisso del segnale. Dopo esserti fermato, controlli e poi riparti se la strada è libera.",
         "regola": "STOP = Fermati sempre, non solo se vedi auto.",
         "trabocchetti": ["soltanto"],
@@ -684,6 +770,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi per dare la precedenza solo ai veicoli provenienti da destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza solo a destra?",
         "spiegazione": "Falso! Con lo STOP devi dare la precedenza a TUTTI i veicoli, sia quelli che arrivano da destra, sia quelli che arrivano da sinistra, sia quelli che vengono di fronte.",
         "regola": "STOP = Precedenza a tutti, non solo a destra.",
         "trabocchetti": ["solo"],
@@ -692,6 +779,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto, di norma, 150 metri prima dell'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di norma 150 m prima dell'incrocio?",
         "spiegazione": "Falso. Il segnale STOP è posto proprio IN CORRISPONDENZA dell'incrocio, o comunque molto vicino, dove c'è la striscia di arresto. 150 metri prima si trova il segnale di preavviso, non lo STOP vero e proprio.",
         "regola": "STOP = All'incrocio, non 150 metri prima.",
         "trabocchetti": ["150 metri prima dell"],
@@ -700,6 +788,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di arrestarsi perché il transito è vietato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi perché transito vietato?",
         "spiegazione": "Falso. Non è vero che il transito è vietato. Devi fermarti per dare la precedenza, ma poi puoi passare se la strada è libera. Il transito vietato è un altro tipo di segnale (ad esempio, un disco rosso con una barra bianca).",
         "regola": "STOP = Precedenza, non divieto di transito.",
         "trabocchetti": ["il transito è vietato"],
@@ -708,6 +797,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia di arrestarsi all'incrocio anche se il semaforo emette luce verde",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi anche col verde?",
         "spiegazione": "Falso. Se il semaforo è verde, significa che puoi passare. Il semaforo ha la precedenza sui segnali verticali come lo STOP. Quindi, se è verde, non devi fermarti per lo STOP.",
         "regola": "Semaforo verde batte STOP.",
         "trabocchetti": ["anche se il semaforo emette luce verde"],
@@ -716,6 +806,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'obbligo di arresto ad un posto di blocco istituito dagli organi di polizia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → posto di blocco di polizia?",
         "spiegazione": "Falso. Il segnale STOP serve per gli incroci e la precedenza. A un posto di blocco della polizia, ci sono i poliziotti che ti danno l'ordine di fermarti, non il segnale STOP.",
         "regola": "STOP = Incrocio, non posto di blocco.",
         "immagine": "3961a16f4077ab353d61.jpg",
@@ -723,6 +814,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi solo se sopraggiungono altri veicoli",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi solo se arrivano veicoli?",
         "spiegazione": "Falso. No, devi fermarti sempre, anche se non vedi nessuno. L'obbligo di fermarsi è assoluto. Dopo esserti fermato, controlli e riparti.",
         "regola": "STOP = Fermati sempre, non aspettare le auto.",
         "trabocchetti": ["solo"],
@@ -731,6 +823,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone, nelle strettoie, di dare precedenza ai veicoli provenienti dal senso opposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strettoia, precedenza agli opposti?",
         "spiegazione": "Questo segnale ti dice che, quando la strada diventa stretta e non possono passare due auto contemporaneamente, devi fermarti e far passare prima le auto che vengono dalla direzione opposta alla tua.",
         "regola": "Freccia rossa sale = loro passano. Freccia nera scende = tu aspetti.",
         "trabocchetti": ["impone", "Strettoie"],
@@ -739,6 +832,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia, in presenza di lavori, di dare precedenza ai veicoli provenienti dal senso opposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → lavori, precedenza agli opposti?",
         "spiegazione": "Questo segnale ti avvisa che più avanti, spesso dove ci sono dei lavori che restringono la strada, dovrai dare la precedenza alle auto che arrivano dall'altra parte.",
         "regola": "Lavori o strettoia? La freccia rossa ha la precedenza.",
         "trabocchetti": ["preannuncia"],
@@ -747,6 +841,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che bisogna dare la precedenza ai veicoli provenienti di fronte",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza a chi viene di fronte?",
         "spiegazione": "Questo segnale ti avvisa che dovrai dare la precedenza alle auto che arrivano dalla direzione opposta alla tua, cioè 'di fronte'.",
         "regola": "Di fronte? Aspetta!",
         "trabocchetti": ["Provenienti di fronte", "Preannuncia"],
@@ -755,6 +850,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a dare la precedenza ai veicoli provenienti dal senso contrario",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza al senso contrario?",
         "spiegazione": "Questo segnale ti obbliga, cioè ti impone, di fermarti e far passare per primi i veicoli che arrivano dalla direzione opposta alla tua.",
         "regola": "Obbligo: freccia rossa passa.",
         "trabocchetti": ["obbliga", "Senso contrario"],
@@ -763,6 +859,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di dare la precedenza nei sensi unici alternati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza nei sensi unici alternati?",
         "spiegazione": "Questo segnale ti dice che, in un tratto di strada dove il traffico passa prima in una direzione e poi nell'altra (sensi unici alternati), sei tu che devi dare la precedenza alle auto che arrivano.",
         "regola": "Sensi alternati? La freccia rossa ha la precedenza.",
         "trabocchetti": ["Sensi unici alternati", "Impone"],
@@ -771,6 +868,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, in una strada a doppio senso, precede una strettoia che permette il transito di una sola fila di veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strettoia a una sola fila?",
         "spiegazione": "Questo segnale lo trovi prima di un punto della strada (una strettoia) dove possono passare solo le auto una alla volta. Se la strada è a doppio senso, questo segnale ti dice che devi dare la precedenza a chi viene dall'altra parte.",
         "regola": "Strettoia a senso unico alternato: tu aspetti.",
         "trabocchetti": ["Precede una strettoia", "Una sola fila di veicoli"],
@@ -779,6 +877,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che la circolazione non può svolgersi contemporaneamente nei due sensi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → circolazione non contemporanea nei due sensi?",
         "spiegazione": "Questo segnale ti avvisa che nel tratto di strada successivo non c'è spazio sufficiente per far passare le auto in entrambe le direzioni nello stesso momento. Per questo motivo, uno dei due sensi di marcia deve dare la precedenza.",
         "regola": "Non c'è spazio per tutti? La freccia rossa passa.",
         "immagine": "aa368c468ed6eb1e8385.jpg",
@@ -786,6 +885,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che la circolazione è ammessa nei giorni pari in un senso e nei giorni dispari nell'altro",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → giorni pari un senso, dispari l'altro?",
         "spiegazione": "Questo segnale non ha nulla a che fare con i giorni della settimana (pari o dispari). Indica solo che devi dare la precedenza ai veicoli che arrivano dalla direzione opposta in un tratto stretto.",
         "regola": "Niente calendario con questo segnale!",
         "immagine": "aa368c468ed6eb1e8385.jpg",
@@ -793,6 +893,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il diritto di precedenza nei sensi unici alternati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → diritto di precedenza nel senso unico alternato?",
         "spiegazione": "Attenzione! Questo segnale ti dice che tu devi dare la precedenza (freccia nera che scende), non che tu hai il diritto di precedenza. Il diritto di precedenza è indicato da un segnale simile ma con sfondo blu.",
         "regola": "Rosso e nero = tu aspetti. Blu e bianco = tu passi.",
         "trabocchetti": ["Diritto di precedenza"],
@@ -801,6 +902,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, su una carreggiata a senso unico, preannuncia l'inizio del doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → da senso unico a doppio senso?",
         "spiegazione": "Questo segnale non indica la fine di un senso unico e l'inizio di un doppio senso. Indica solo che in un tratto stretto devi dare la precedenza a chi viene dall'altra parte.",
         "regola": "Non cambia il senso di marcia, regola la precedenza.",
         "trabocchetti": ["Inizio del doppio senso di circolazione"],
@@ -809,6 +911,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la fine del senso unico di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine senso unico?",
         "spiegazione": "Questo segnale non ti dice che finisce il senso unico. Ti dice che devi dare la precedenza ai veicoli che arrivano dalla direzione opposta in un punto stretto.",
         "regola": "Non è un segnale di fine senso unico.",
         "trabocchetti": ["Fine del senso unico di circolazione"],
@@ -817,6 +920,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la fine del diritto di precedenza nei sensi unici alternati",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine diritto di precedenza nel senso alternato?",
         "spiegazione": "Questo segnale non ti dà il diritto di precedenza, quindi non può nemmeno annunciarne la fine. Ti obbliga a dare la precedenza.",
         "regola": "Se non l'hai mai avuto, non può finire!",
         "trabocchetti": ["Fine del diritto di precedenza"],
@@ -825,6 +929,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova su strade a senso unico di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → su strade a senso unico?",
         "spiegazione": "Questo segnale si trova di solito su strade a doppio senso di circolazione che diventano strette, o dove il traffico è regolato a senso unico alternato. Non ha senso su una strada a senso unico, perché non ci sarebbero veicoli provenienti dal senso opposto.",
         "regola": "Serve dove c'è traffico opposto.",
         "trabocchetti": ["Strade a senso unico di circolazione"],
@@ -833,6 +938,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "Il segnale raffigurato è un segnale di prescrizione. I segnali di prescrizione sono quelli che impongono un obbligo, un divieto o una precedenza, e sono spesso di forma circolare con bordo rosso, come questo.",
         "regola": "Cerchio rosso = prescrizione.",
         "trabocchetti": ["Prescrizione"],
@@ -841,6 +947,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto in una strada in cui una parte della carreggiata è sbarrata",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → carreggiata in parte sbarrata?",
         "spiegazione": "Se una parte della carreggiata è sbarrata, la strada diventa più stretta. Questo segnale serve proprio a regolare il traffico nelle strettoie, dove i veicoli devono passare uno alla volta, dando la precedenza a chi viene dall'altra parte.",
         "regola": "Strada sbarrata = strettoia = precedenza.",
         "trabocchetti": ["Sbarrata"],
@@ -849,6 +956,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto in una strada con strettoia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada con strettoia?",
         "spiegazione": "Questo segnale è usato proprio per indicare una strettoia, cioè un tratto di strada dove non c'è spazio sufficiente per il passaggio contemporaneo di veicoli in entrambi i sensi, e quindi è necessario dare la precedenza.",
         "regola": "Frecce opposte = strettoia.",
         "trabocchetti": ["Strettoia"],
@@ -857,6 +965,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone di dare la precedenza ai veicoli provenienti dal senso opposto",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza agli opposti?",
         "spiegazione": "La freccia rossa indica la tua direzione e significa che devi fermarti e dare la precedenza. La freccia nera indica la direzione opposta e significa che i veicoli che vengono da lì hanno la precedenza.",
         "regola": "Freccia rossa (la tua) = fermati, dai precedenza.",
         "trabocchetti": ["Impone"],
@@ -865,6 +974,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato prescrive di dare la precedenza nei sensi unici alternati",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza nei sensi unici alternati?",
         "spiegazione": "I 'sensi unici alternati' si verificano quando in una strettoia il traffico può passare solo in una direzione alla volta. Questo segnale ti dice che, in quella situazione, devi dare la precedenza ai veicoli che arrivano dall'altra parte.",
         "regola": "Sensi unici alternati = chi ha la freccia rossa aspetta.",
         "trabocchetti": ["Sensi unici alternati"],
@@ -873,6 +983,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si incontra prima di una strettoia che, di norma, consente il passaggio di una sola fila di veicoli",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prima di strettoia a una fila?",
         "spiegazione": "Questo segnale si trova prima di un tratto di strada così stretto che, di solito, solo un veicolo alla volta può passare. Per questo motivo, è necessario regolare chi passa per primo, e questo segnale ti dice di dare la precedenza.",
         "regola": "Strettoia stretta = una fila alla volta.",
         "trabocchetti": ["Di norma"],
@@ -881,6 +992,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si incontra prima di un qualsiasi restringimento della carreggiata",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → prima di qualsiasi restringimento?",
         "spiegazione": "Falso. Questo segnale non si incontra prima di 'qualsiasi' restringimento. Si usa solo quando il restringimento è così stretto da impedire il passaggio contemporaneo di due veicoli e richiede di dare la precedenza. Per un restringimento generico ci sono altri segnali di pericolo.",
         "regola": "'Qualsiasi' = attenzione, spesso è falso.",
         "trabocchetti": ["qualsiasi"],
@@ -889,6 +1001,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di divieto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di divieto?",
         "spiegazione": "Falso. Anche se ha il bordo rosso come molti segnali di divieto, questo è un segnale di precedenza. Non vieta completamente qualcosa, ma regola chi deve passare per primo in una strettoia.",
         "regola": "Non vieta, regola la precedenza.",
         "trabocchetti": ["Divieto"],
@@ -897,6 +1010,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto all'inizio di una strada a senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio senso unico?",
         "spiegazione": "Falso. Questo segnale mostra due frecce in direzioni opposte, il che significa che c'è traffico in entrambi i sensi, ma regolato. Una strada a senso unico ha il traffico che va in una sola direzione.",
         "regola": "Due frecce = non è senso unico.",
         "trabocchetti": ["Senso unico"],
@@ -905,6 +1019,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a dare la precedenza, negli incroci, ai veicoli provenienti sia da destra che da sinistra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza a destra e sinistra agli incroci?",
         "spiegazione": "Falso. Questo segnale si riferisce a una strettoia sulla strada, non agli incroci. La precedenza agli incroci è regolata da altri segnali (come 'Dare precedenza' o 'Stop') o dalla regola generale della precedenza a destra.",
         "regola": "Strettoia, non incrocio.",
         "trabocchetti": ["negli incroci"],
@@ -913,6 +1028,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Falso. I segnali di pericolo sono di forma triangolare con bordo rosso. Questo è un segnale circolare, che indica una prescrizione (in questo caso, di precedenza).",
         "regola": "Triangolo = pericolo. Cerchio = prescrizione.",
         "trabocchetti": ["Pericolo"],
@@ -921,6 +1037,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è a luce verde",
         "risposta": True,
+        "riassunto": "Segnale raffigurato + semaforo verde → abbiamo precedenza?",
         "spiegazione": "Questo segnale (freccia rossa in alto, freccia nera in basso) significa che devi dare la precedenza ai veicoli che vengono dall'altra parte. Però, se c'è un semaforo e la luce è verde, il semaforo ha la precedenza sul segnale. Quindi, con il verde, puoi passare e hai la precedenza.",
         "regola": "Semaforo verde? Via libera, il segnale non conta!",
         "immagine": "aa368c468ed6eb1e8385.jpg",
@@ -928,6 +1045,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci dobbiamo dare la precedenza se il semaforo è spento",
         "risposta": True,
+        "riassunto": "Segnale raffigurato + semaforo spento → dare precedenza?",
         "spiegazione": "Se il semaforo è spento, è come se non ci fosse. In questo caso, devi guardare il segnale stradale. Il segnale raffigurato ti dice di dare la precedenza ai veicoli che vengono in senso opposto. Quindi, se il semaforo è spento, devi dare la precedenza.",
         "regola": "Semaforo spento? Guarda il segnale!",
         "trabocchetti": ["spento"],
@@ -936,6 +1054,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è a luce rossa, ma l'agente del traffico ci ordina di passare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato + rosso, agente dice passa → abbiamo precedenza?",
         "spiegazione": "L'agente del traffico (il vigile) ha sempre la precedenza su semafori e segnali. Anche se il semaforo è rosso (e dovresti fermarti) o il segnale ti dice di dare la precedenza, se l'agente ti dice di passare, devi passare. Quindi, hai la precedenza perché te la dà l'agente.",
         "regola": "Agente = Capo! Obbedisci sempre all'agente.",
         "trabocchetti": ["ma l"],
@@ -944,6 +1063,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci dobbiamo dare la precedenza se il semaforo è a luce lampeggiante gialla",
         "risposta": True,
+        "riassunto": "Segnale raffigurato + giallo lampeggiante → dare precedenza?",
         "spiegazione": "Quando il semaforo è a luce gialla lampeggiante, significa che devi fare attenzione e dare la precedenza se necessario. Non è un 'via libera' come il verde. Quindi, in questa situazione, devi seguire il segnale stradale, che ti dice di dare la precedenza ai veicoli che vengono dall'altra parte.",
         "regola": "Giallo lampeggiante? Attenzione e segui il segnale!",
         "trabocchetti": ["luce lampeggiante gialla"],
@@ -952,6 +1072,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci dobbiamo dare la precedenza anche se il semaforo è a luce verde",
         "risposta": False,
+        "riassunto": "Segnale raffigurato + verde → dare comunque precedenza?",
         "spiegazione": "Questa affermazione è falsa. Se il semaforo è a luce verde, significa che hai la precedenza e puoi passare. Il semaforo verde ha la precedenza sul segnale stradale raffigurato, che ti dice di dare la precedenza. Quindi, non devi dare la precedenza se il semaforo è verde.",
         "regola": "Verde = Via libera! Il segnale non conta.",
         "trabocchetti": ["anche se il semaforo è a luce verde"],
@@ -960,6 +1081,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è a luce gialla lampeggiante",
         "risposta": False,
+        "riassunto": "Segnale raffigurato + giallo lampeggiante → abbiamo precedenza?",
         "spiegazione": "Questa affermazione è falsa. Come spiegato prima, la luce gialla lampeggiante significa che devi fare attenzione e dare la precedenza se necessario. Il segnale raffigurato ti dice proprio di dare la precedenza ai veicoli che vengono in senso opposto. Quindi, non hai la precedenza, ma devi darla.",
         "regola": "Giallo lampeggiante + questo segnale = Cedi!",
         "trabocchetti": ["abbiamo la precedenza"],
@@ -968,6 +1090,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è a luce verde, ma l'agente del traffico ci ordina di fermarci",
         "risposta": False,
+        "riassunto": "Segnale raffigurato + verde, agente dice fermati → abbiamo precedenza?",
         "spiegazione": "Questa affermazione è falsa. L'agente del traffico ha sempre la massima autorità. Anche se il semaforo è verde (e ti darebbe la precedenza), se l'agente ti ordina di fermarti, devi fermarti e non hai la precedenza. L'ordine dell'agente prevale su tutto.",
         "regola": "Agente = Capo! Se dice stop, si ferma!",
         "trabocchetti": ["ma l"],
@@ -976,6 +1099,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci dobbiamo dare la precedenza se il semaforo è spento e l'agente del traffico ci ordina di passare",
         "risposta": False,
+        "riassunto": "Segnale raffigurato + spento, agente dice passa → dare precedenza?",
         "spiegazione": "Questa affermazione è falsa. L'agente del traffico ha sempre la precedenza su semafori spenti e segnali. Se l'agente ti ordina di passare, devi passare, anche se il semaforo è spento e il segnale ti direbbe di dare la precedenza. Quindi, non devi dare la precedenza, ma devi passare.",
         "regola": "Agente = Capo! Se dice passa, si passa!",
         "trabocchetti": ["e l"],
@@ -984,6 +1108,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di preavviso di fermarsi e dare precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → preavviso di fermarsi e dare precedenza?",
         "spiegazione": "Questo segnale ti avvisa che più avanti dovrai fermarti e dare la precedenza. Il pannello con scritto 'STOP 320 m' indica proprio questo preavviso.",
         "regola": "Triangolo rovesciato + pannello 'STOP X m' = preavviso di STOP.",
         "trabocchetti": ["preavviso"],
@@ -992,6 +1117,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un segnale di STOP a 320 metri",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → STOP a 320 m?",
         "spiegazione": "Esatto! Il pannello bianco sotto il triangolo dice chiaramente 'STOP 320 m', quindi ti sta dicendo che troverai un segnale di STOP a 320 metri da dove ti trovi ora.",
         "regola": "Leggi il pannello: 'STOP 320 m' indica la distanza al segnale di STOP.",
         "immagine": "90945370f2c1407c15e8.jpg",
@@ -999,6 +1125,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia di arrestarsi al prossimo incrocio e dare la precedenza a destra ed a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi al prossimo incrocio, precedenza a tutti?",
         "spiegazione": "Il segnale di STOP, che troverai a 320 metri, ti obbliga a fermarti completamente all'incrocio e a dare la precedenza a tutti i veicoli, sia quelli che arrivano da destra che quelli che arrivano da sinistra.",
         "regola": "STOP = fermarsi e dare precedenza a destra e sinistra.",
         "trabocchetti": ["al prossimo incrocio"],
@@ -1007,6 +1134,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia di fermarsi 320 metri dopo il segnale e dare la precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fermarsi dopo 320 m e dare precedenza?",
         "spiegazione": "Sì, è corretto. Il pannello 'STOP 320 m' significa che il punto in cui dovrai fermarti (cioè dove c'è il segnale di STOP) si trova a 320 metri di distanza da questo segnale di preavviso.",
         "regola": "320 m = distanza dal segnale di STOP, non dal preavviso.",
         "trabocchetti": ["dopo il segnale"],
@@ -1015,6 +1143,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a rallentare perché è prossimo un incrocio in cui bisogna fermarsi e dare la precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare, prossimo STOP?",
         "spiegazione": "Essendo un preavviso di un obbligo di fermarsi, è logico che tu debba rallentare per prepararti a fermarti in sicurezza all'incrocio che troverai tra 320 metri.",
         "regola": "Preavviso STOP = rallenta e preparati a fermarti.",
         "trabocchetti": ["invita"],
@@ -1023,6 +1152,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "Sì, è vero. Il segnale 'DARE PRECEDENZA' (il triangolo rovesciato) e il segnale di 'STOP' (che preannuncia) sono entrambi segnali di precedenza, che fanno parte della categoria più ampia dei 'segnali di prescrizione'.",
         "regola": "Precedenza e STOP sono segnali di prescrizione.",
         "trabocchetti": ["Prescrizione"],
@@ -1031,6 +1161,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga solo a rallentare e, se necessario, a dare la precedenza all'incrocio a 320 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo rallentare all'incrocio a 320 m?",
         "spiegazione": "Falso! Il segnale di STOP (che è a 320 metri) non obbliga 'solo a rallentare' o a dare la precedenza 'se necessario'. Il segnale di STOP obbliga sempre a fermarsi completamente, anche se non vedi nessuno, e poi a dare la precedenza.",
         "regola": "'Solo' e 'se necessario' spesso rendono FALSO. STOP = obbligo di fermarsi sempre.",
         "trabocchetti": ["solo", "se necessario"],
@@ -1039,6 +1170,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto a 320 metri dal segnale DARE PRECEDENZA",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → a 320 m dal DARE PRECEDENZA?",
         "spiegazione": "Falso! Il pannello indica 'STOP 320 m', non 'DARE PRECEDENZA 320 m'. Questo significa che a 320 metri troverai il segnale di STOP, non un altro segnale 'DARE PRECEDENZA'.",
         "regola": "Il pannello indica 'STOP', non 'DARE PRECEDENZA'.",
         "trabocchetti": ["DARE PRECEDENZA"],
@@ -1047,6 +1179,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova solo nelle strade urbane",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo su strade urbane?",
         "spiegazione": "Falso! I segnali di preavviso di STOP si possono trovare sia nelle strade urbane (in città) che nelle strade extraurbane (fuori città). Non sono limitati solo a un tipo di strada.",
         "regola": "'Solo' è quasi sempre FALSO. I segnali sono per tutte le strade.",
         "trabocchetti": ["solo"],
@@ -1055,6 +1188,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di una barriera doganale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → barriera doganale?",
         "spiegazione": "Falso! Questo segnale preannuncia un incrocio con obbligo di STOP. Una barriera doganale (dove si controllano le merci tra paesi) ha segnali specifici, diversi da questo.",
         "regola": "STOP 320 m = incrocio, non dogana.",
         "trabocchetti": ["barriera doganale"],
@@ -1063,6 +1197,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può presegnalare un casello autostradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → casello autostradale?",
         "spiegazione": "Falso! Questo segnale preannuncia un segnale di STOP a un incrocio. Un casello autostradale (dove si paga il pedaggio in autostrada) ha segnali diversi e specifici per indicare la sua presenza.",
         "regola": "STOP 320 m = incrocio, non casello autostradale.",
         "trabocchetti": ["casello autostradale"],
@@ -1071,6 +1206,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto prima del segnale ALT-POLIZIA",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → prima di ALT-POLIZIA?",
         "spiegazione": "Falso! Il segnale 'ALT-POLIZIA' è un segnale temporaneo dato da un agente di polizia. Questo segnale preannuncia un segnale di STOP fisso e permanente a un incrocio. Sono due cose diverse.",
         "regola": "STOP 320 m = incrocio, non ordine della polizia.",
         "trabocchetti": ["ALT-POLIZIA"],
@@ -1079,6 +1215,7 @@ QUESTIONS = [
     {
         "domanda": "Incontrando il segnale raffigurato occorre fermarsi e poi arrestarsi nuovamente dopo 320 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi ora e di nuovo dopo 320 m?",
         "spiegazione": "Falso! Non devi fermarti quando incontri questo segnale di preavviso. Devi solo rallentare e prepararti a fermarti al segnale di STOP vero e proprio, che si trova a 320 metri da qui.",
         "regola": "Non fermarti al preavviso, ma solo al segnale di STOP.",
         "trabocchetti": ["occorre fermarsi"],
@@ -1087,6 +1224,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di pericolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di pericolo?",
         "spiegazione": "Falso! Il segnale 'DARE PRECEDENZA' (il triangolo rovesciato) è un segnale di precedenza, che fa parte dei segnali di prescrizione. I segnali di pericolo sono triangolari con la punta in alto (come un normale triangolo) e avvisano di un pericolo (es. curva pericolosa).",
         "regola": "Triangolo rovesciato = precedenza. Triangolo normale = pericolo.",
         "trabocchetti": ["pericolo"],
@@ -1095,6 +1233,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato invita a maggiore prudenza perché non si ha più diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → prudenza, non più diritto di precedenza?",
         "spiegazione": "Questo segnale ti avvisa che la strada su cui stavi guidando non ha più il diritto di precedenza. Per questo motivo, devi fare più attenzione e guidare con maggiore prudenza, perché potresti dover dare la precedenza ad altri veicoli.",
         "regola": "Fine precedenza = più attenzione.",
         "trabocchetti": ["maggiore prudenza"],
@@ -1103,6 +1242,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato il conducente, salvo diverso ulteriore segnale, deve dare precedenza ai veicoli provenienti da destra.",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → poi precedenza a destra?",
         "spiegazione": "Quando finisce il diritto di precedenza, se non ci sono altri segnali che ti dicono diversamente (come un segnale di STOP o DARE PRECEDENZA), si torna alla regola generale: devi dare la precedenza ai veicoli che arrivano dalla tua destra.",
         "regola": "Fine precedenza = destra ha precedenza (se non ci sono altri segnali).",
         "trabocchetti": ["salvo diverso ulteriore segnale"],
@@ -1111,6 +1251,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di precedenza?",
         "spiegazione": "Sì, questo segnale fa parte della categoria dei 'segnali di precedenza'. Anche se indica la fine di un diritto, il suo scopo è proprio quello di regolare chi deve passare prima agli incroci, quindi rientra in questa categoria.",
         "regola": "Regola la precedenza = è un segnale di precedenza.",
         "immagine": "7e483c9153b4c040136f.jpg",
@@ -1118,6 +1259,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che la strada non gode più del diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strada non più con precedenza?",
         "spiegazione": "Questo è il significato principale del segnale. Ti informa che la strada che stavi percorrendo, e che prima aveva il diritto di precedenza, ora non lo ha più. Devi quindi comportarti di conseguenza.",
         "regola": "Barra nera = fine diritto.",
         "trabocchetti": ["non gode più del diritto di precedenza"],
@@ -1126,6 +1268,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere seguito dal segnale FERMARSI E DARE PRECEDENZA",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → seguito da FERMARSI E DARE PRECEDENZA?",
         "spiegazione": "Dopo aver perso il diritto di precedenza, è possibile che tu incontri un incrocio dove è richiesto di fermarsi e dare precedenza (segnale STOP) o semplicemente di dare precedenza. Questo segnale ti prepara a questa possibilità.",
         "regola": "Fine precedenza = attenzione a STOP/DARE PRECEDENZA.",
         "trabocchetti": ["può"],
@@ -1134,6 +1277,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato modifica le precedenti norme sulla precedenza agli incroci",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → cambia le regole di precedenza?",
         "spiegazione": "Esatto. Prima di questo segnale, avevi il diritto di precedenza. Dopo il segnale, non più. Questo significa che le regole su chi deve passare prima agli incroci cambiano per te.",
         "regola": "Cambia il gioco della precedenza.",
         "trabocchetti": ["modifica le precedenti norme"],
@@ -1142,6 +1286,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di indicazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di indicazione?",
         "spiegazione": "Falso. I segnali di indicazione servono a dare informazioni (come direzioni, nomi di luoghi, servizi). Questo segnale, invece, regola il comportamento dei veicoli in relazione alla precedenza. È un segnale di precedenza, non di indicazione.",
         "regola": "Non indica, regola!",
         "trabocchetti": ["indicazione"],
@@ -1150,6 +1295,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia che si sta percorrendo una strada con diritto di precedenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada con diritto di precedenza?",
         "spiegazione": "Falso. Questo segnale ha il significato opposto! Ti avvisa che il diritto di precedenza sta per finire, non che lo stai percorrendo. Il segnale che indica una strada con diritto di precedenza è simile ma non ha la barra nera.",
         "regola": "Barra = fine, non inizio.",
         "immagine": "7e483c9153b4c040136f.jpg",
@@ -1157,6 +1303,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi all'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi all'incrocio?",
         "spiegazione": "Falso. Questo segnale ti dice solo che non hai più la precedenza. Non ti obbliga a fermarti. L'obbligo di fermarsi è dato solo dal segnale di STOP.",
         "regola": "Non è uno STOP.",
         "trabocchetti": ["obbliga ad arrestarsi"],
@@ -1165,6 +1312,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'andamento della strada principale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → andamento della strada principale?",
         "spiegazione": "Falso. Questo segnale non indica come si sviluppa la strada principale (se curva a destra, a sinistra, ecc.). Quelli sono altri tipi di segnali. Questo indica solo la fine del diritto di precedenza sulla strada che stai percorrendo.",
         "regola": "Non è una mappa.",
         "trabocchetti": ["andamento della strada principale"],
@@ -1173,6 +1321,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia sempre un incrocio con precedenza a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → sempre precedenza a destra?",
         "spiegazione": "Falso. Non 'sempre'. Questo segnale preannuncia la fine del diritto di precedenza. Dopo, potresti trovare un incrocio con precedenza a destra, ma anche un incrocio con segnale di STOP, DARE PRECEDENZA o una rotatoria. Non è una regola fissa.",
         "regola": "'Sempre' è quasi sempre FALSO.",
         "trabocchetti": ["sempre"],
@@ -1181,6 +1330,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la fine dell'obbligo precedentemente imposto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine dell'obbligo precedente?",
         "spiegazione": "Falso. Questo segnale non riguarda la fine di un obbligo (come un limite di velocità o una direzione obbligatoria). Riguarda la fine di un 'diritto', quello di precedenza.",
         "regola": "Fine di un diritto, non di un obbligo.",
         "trabocchetti": ["fine dell", "obbligo"],
@@ -1189,6 +1339,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia una strada senza uscita",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → strada senza uscita?",
         "spiegazione": "Falso. Questo segnale non ha nulla a che fare con le strade senza uscita. I segnali che indicano una strada senza uscita sono diversi (di solito quadrati blu con una 'T' bianca o rossa).",
         "regola": "Non è un vicolo cieco.",
         "trabocchetti": ["strada senza uscita"],
@@ -1197,6 +1348,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica il ripristino della norma generale sulla precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → torna la regola generale di precedenza?",
         "spiegazione": "Questo segnale ti dice che la regola speciale di avere la precedenza finisce. Quindi, dopo questo segnale, devi tornare a seguire la regola normale per dare la precedenza.",
         "regola": "Sbarra nera = fine della precedenza speciale.",
         "trabocchetti": ["ripristino della norma generale"],
@@ -1205,6 +1357,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che termina una strada con diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine strada con precedenza?",
         "spiegazione": "Esatto! Questo segnale significa proprio che la strada dove tu avevi il diritto di passare per primo (il diritto di precedenza) è finita. Ora devi fare attenzione e dare la precedenza agli altri, se necessario.",
         "regola": "Fine del diritto = occhio agli incroci.",
         "immagine": "7e483c9153b4c040136f.jpg",
@@ -1212,6 +1365,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che dopo di esso si dovrà, di norma, dare la precedenza a destra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → poi di norma precedenza a destra?",
         "spiegazione": "Quando finisce il tuo diritto di precedenza, si applica la regola generale: devi dare la precedenza ai veicoli che arrivano dalla tua destra. La parola 'di norma' è importante perché significa 'solitamente', 'normalmente', ma potrebbero esserci altri segnali (come uno STOP o un Dare Precedenza) che cambiano questa regola in un incrocio specifico.",
         "regola": "Fine precedenza = destra libera!",
         "trabocchetti": ["di norma"],
@@ -1220,6 +1374,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine del diritto di precedenza anche sulle strade urbane",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → fine precedenza anche in città?",
         "spiegazione": "Questo segnale è valido su tutte le strade, non solo fuori città. Se lo vedi in una strada urbana (in città), significa che anche lì il tuo diritto di precedenza finisce.",
         "regola": "Vale ovunque, città o campagna.",
         "trabocchetti": ["anche sulle strade urbane"],
@@ -1228,6 +1383,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine di un'autostrada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine autostrada?",
         "spiegazione": "Falso! Questo segnale non indica la fine di un'autostrada. Il segnale di fine autostrada è diverso, è un cartello verde con una sbarra diagonale.",
         "regola": "Non è verde = non è autostrada.",
         "trabocchetti": ["fine di un"],
@@ -1236,6 +1392,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine di una strada a senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine senso unico?",
         "spiegazione": "Falso! Questo segnale riguarda la precedenza, non il senso di marcia della strada. Il segnale di fine strada a senso unico è un altro, di solito un quadrato blu con una freccia barrata.",
         "regola": "Non è freccia = non è senso unico.",
         "trabocchetti": ["fine di una strada a senso unico"],
@@ -1244,6 +1401,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine di una strada a doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine doppio senso?",
         "spiegazione": "Falso! Questo segnale non ha nulla a che fare con il numero di sensi di marcia di una strada. Indica solo la fine del diritto di precedenza.",
         "regola": "Non riguarda i sensi di marcia.",
         "immagine": "7e483c9153b4c040136f.jpg",
@@ -1251,6 +1409,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica fine del limite di velocità",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine limite di velocità?",
         "spiegazione": "Falso! Questo segnale non indica la fine di un limite di velocità. Il segnale di fine limite di velocità è un cerchio bianco con una sbarra nera e il numero della velocità barrato.",
         "regola": "Non c'è numero = non è velocità.",
         "trabocchetti": ["fine del limite di velocità", "fine"],
@@ -1259,6 +1418,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la fine di tutti i divieti",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine di tutti i divieti?",
         "spiegazione": "Falso! Questo segnale indica solo la fine del diritto di precedenza, non la fine di tutti i divieti. Il segnale di 'fine di tutti i divieti' è un cerchio bianco con una sbarra nera diagonale, ma senza il quadrato arancione interno.",
         "regola": "Solo la precedenza, non tutti i divieti.",
         "trabocchetti": ["fine di tutti i divieti"],
@@ -1267,6 +1427,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica l'inizio di una strada in cui i veicoli hanno diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio strada con precedenza?",
         "spiegazione": "Questo segnale ti dice che sulla strada dove stai guidando, tu hai la precedenza rispetto a chi viene dalle strade laterali. Significa che puoi passare per primo.",
         "regola": "Quadrato arancione = Precedenza è il tuo!",
         "trabocchetti": ["diritto di precedenza"],
@@ -1275,6 +1436,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto su una strada statale",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su strada statale?",
         "spiegazione": "Sì, questo segnale può trovarsi su qualsiasi tipo di strada (statale, provinciale, comunale) dove è necessario indicare che si ha la precedenza. Non è limitato a un solo tipo di strada.",
         "regola": "Precedenza ovunque serve.",
         "trabocchetti": ["può"],
@@ -1283,6 +1445,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna comunque dare la precedenza ai veicoli che hanno in funzione il lampeggiante blu e sirena",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza comunque a sirena e lampeggiante blu?",
         "spiegazione": "I veicoli di emergenza (come ambulanza, polizia, pompieri) con sirena e lampeggiante blu hanno sempre la precedenza su tutti, anche se tu hai il segnale di diritto di precedenza. La loro è una precedenza 'assoluta'.",
         "regola": "Emergenza = Precedenza sempre!",
         "trabocchetti": ["comunque", "Lampeggiante blu e sirena"],
@@ -1291,6 +1454,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di precedenza?",
         "spiegazione": "Sì, questo segnale fa parte della categoria dei segnali di precedenza. Ti informa che hai il diritto di passare per primo agli incroci.",
         "regola": "È un segnale di precedenza.",
         "immagine": "d7bfdd6d7b8ff1351221.jpg",
@@ -1298,6 +1462,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato bisogna comunque assicurarsi che i veicoli provenienti dalle strade laterali diano la precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → verificare che le laterali diano precedenza?",
         "spiegazione": "Anche se hai la precedenza, devi sempre guidare con attenzione. È importante controllare che gli altri veicoli ti abbiano visto e ti stiano dando la precedenza, per evitare incidenti. La precedenza non ti esonera dalla prudenza.",
         "regola": "Precedenza sì, ma occhio sempre!",
         "trabocchetti": ["comunque assicurarsi"],
@@ -1306,6 +1471,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "I segnali di precedenza, come questo, fanno parte della categoria più ampia dei segnali di prescrizione. I segnali di prescrizione impongono regole di comportamento (obblighi, divieti, precedenze).",
         "regola": "Precedenza = Prescrizione.",
         "trabocchetti": ["prescrizione"],
@@ -1314,6 +1480,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga ad arrestarsi all'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi all'incrocio?",
         "spiegazione": "Questo segnale ti dà la precedenza, non ti obbliga a fermarti. Anzi, ti permette di passare senza fermarti, a meno che non ci siano altre condizioni (es. traffico, veicoli di emergenza). Il segnale che obbliga a fermarsi è lo STOP.",
         "regola": "Quadrato arancione = Passa, non stop!",
         "trabocchetti": ["obbliga ad arrestarsi"],
@@ -1322,6 +1489,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere posto a protezione di attraversamenti pedonali pericolosi",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → protegge attraversamenti pedonali?",
         "spiegazione": "Questo segnale riguarda la precedenza tra veicoli agli incroci. Non ha nulla a che fare con gli attraversamenti pedonali. Ci sono altri segnali specifici per i pedoni.",
         "regola": "Precedenza veicoli, non pedoni.",
         "trabocchetti": ["attraversamenti pedonali pericolosi"],
@@ -1330,6 +1498,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto esclusivamente su strade extraurbane ad intenso traffico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo su extraurbane trafficate?",
         "spiegazione": "Questo segnale può essere posto su qualsiasi tipo di strada (urbana, extraurbana, statale, provinciale) e non solo su quelle con traffico intenso. La sua funzione è indicare la precedenza, non il tipo di strada o il volume di traffico.",
         "regola": "Non è esclusivo, è generale.",
         "trabocchetti": ["esclusivamente", "ad intenso traffico"],
@@ -1338,6 +1507,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia incrocio con precedenza rispetto ai soli veicoli provenienti da destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza solo su chi viene da destra?",
         "spiegazione": "Questo segnale ti dà la precedenza su tutti i veicoli che provengono dalle strade laterali, sia da destra che da sinistra, a meno che non ci siano altri segnali specifici che indicano diversamente. Non è limitato solo alla destra.",
         "regola": "Precedenza a tutti i lati.",
         "trabocchetti": ["ai soli veicoli provenienti da destra"],
@@ -1346,6 +1516,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia le corsie riservate agli autobus in servizio pubblico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → corsie per autobus?",
         "spiegazione": "Questo segnale non ha nulla a che fare con le corsie riservate agli autobus. Ci sono altri segnali specifici (rotondi e blu) per indicare le corsie riservate.",
         "regola": "Precedenza veicoli, non corsie bus.",
         "trabocchetti": ["corsie riservate agli autobus"],
@@ -1354,6 +1525,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia l'inizio di un cantiere stradale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio cantiere?",
         "spiegazione": "Questo segnale indica la precedenza. I cantieri stradali sono segnalati con altri tipi di segnali, spesso di colore giallo o arancione, ma con forme e simboli diversi.",
         "regola": "Precedenza, non cantiere.",
         "trabocchetti": ["cantiere stradale"],
@@ -1362,6 +1534,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si può trovare all'inizio di una strada urbana o extraurbana che gode del diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → inizio strada urbana o extraurbana con precedenza?",
         "spiegazione": "Questo segnale ti informa che la strada su cui stai guidando ha il diritto di precedenza. Può essere posizionato sia su strade dentro la città (urbane) che fuori città (extraurbane).",
         "regola": "Segnale arancione = Precedenza sulla tua strada.",
         "trabocchetti": ["si può trovare"],
@@ -1370,6 +1543,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere ripetuto in formato piccolo prima e dopo ogni incrocio",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → ripetuto piccolo prima e dopo incroci?",
         "spiegazione": "Per ricordarti che hai ancora la precedenza, questo segnale può essere ripetuto in una versione più piccola prima e dopo gli incroci, per confermare il tuo diritto di precedenza.",
         "regola": "Precedenza continua? Segnale piccolo ti rassicura.",
         "trabocchetti": ["può essere ripetuto", "In formato piccolo"],
@@ -1378,6 +1552,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale di figura (A) può essere ripetuto in formato piccolo e integrato con il pannello in figura (B)",
         "risposta": True,
+        "riassunto": "Segnale (A) → ripetibile piccolo con pannello (B)?",
         "spiegazione": "Sì, questo segnale (A) può essere ripetuto in piccolo e, a volte, sotto di esso trovi un altro pannello (B) che mostra la forma dell'incrocio e quale strada ha la precedenza, per darti informazioni più precise.",
         "regola": "Segnale + pannello = Precedenza più chiara.",
         "trabocchetti": ["Integrato con il pannello"],
@@ -1386,6 +1561,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato comporta la presenza sulle strade che si incrociano del segnale DARE PRECEDENZA o STOP",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → DARE PRECEDENZA o STOP sulle strade laterali?",
         "spiegazione": "Se tu hai la precedenza (grazie a questo segnale), significa che le altre strade che si incrociano con la tua devono dare la precedenza a te. Per questo, su quelle strade ci saranno i segnali 'DARE PRECEDENZA' o 'STOP'.",
         "regola": "Tua precedenza = Loro STOP o DARE PRECEDENZA.",
         "trabocchetti": ["Comporta la presenza"],
@@ -1394,6 +1570,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è comunque necessario moderare la velocità in prossimità degli incroci",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare comunque agli incroci?",
         "spiegazione": "Anche se hai la precedenza, devi sempre guidare con prudenza e attenzione, specialmente vicino agli incroci. Non si sa mai se qualcuno non rispetta il segnale o fa un errore.",
         "regola": "Precedenza sì, ma prudenza sempre!",
         "trabocchetti": ["comunque"],
@@ -1402,6 +1579,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova all'inizio di una strada senza diritto di precedenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio strada senza precedenza?",
         "spiegazione": "FALSO. Questo segnale indica proprio il contrario! Ti dice che la strada su cui sei ha il diritto di precedenza, non che non ce l'ha.",
         "regola": "Arancione = Precedenza! Non 'senza'.",
         "trabocchetti": ["senza diritto di precedenza"],
@@ -1410,6 +1588,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova all'inizio di un'autostrada",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio autostrada?",
         "spiegazione": "FALSO. Questo segnale indica il diritto di precedenza su strade normali (urbane o extraurbane), non sulle autostrade. Le autostrade hanno segnali specifici per il loro inizio.",
         "regola": "Non autostrada, ma strada con precedenza.",
         "trabocchetti": ["autostrada"],
@@ -1418,6 +1597,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova esclusivamente all'inizio di una strada statale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo inizio strada statale?",
         "spiegazione": "FALSO. Questo segnale può trovarsi su qualsiasi tipo di strada che ha la precedenza (urbana, extraurbana, provinciale, statale), non solo e 'esclusivamente' sulle strade statali.",
         "regola": "'Esclusivamente' è quasi sempre FALSO.",
         "trabocchetti": ["esclusivamente"],
@@ -1426,6 +1606,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non occorrono particolari cautele perché si ha la precedenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → nessuna cautela, si ha precedenza?",
         "spiegazione": "FALSO. Anche se hai la precedenza, devi sempre guidare con attenzione e prudenza. Non puoi mai essere sicuro che gli altri ti diano la precedenza o che non facciano errori.",
         "regola": "Precedenza non è 'via libera' per la disattenzione.",
         "trabocchetti": ["non occorrono particolari cautele"],
@@ -1434,6 +1615,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova alla fine di una strada con diritto di precedenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine strada con precedenza?",
         "spiegazione": "FALSO. Questo segnale indica l'inizio o la continuazione del diritto di precedenza. Il segnale che indica la fine del diritto di precedenza è simile, ma ha una barra nera diagonale.",
         "regola": "Senza barra = Inizio/Continua. Con barra = Fine.",
         "trabocchetti": ["alla fine"],
@@ -1442,6 +1624,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova alla fine di una strada statale",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fine strada statale?",
         "spiegazione": "FALSO. Questo segnale indica l'inizio o la continuazione del diritto di precedenza, non la fine. Inoltre, non è specifico per le strade statali.",
         "regola": "Non fine, non solo statale.",
         "trabocchetti": ["alla fine", "strada statale"],
@@ -1450,6 +1633,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica che si ha la precedenza fino all'uscita del centro abitato",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza fino all'uscita dal centro abitato?",
         "spiegazione": "FALSO. Il diritto di precedenza indicato da questo segnale non è legato all'uscita dal centro abitato. Può finire prima o continuare anche fuori dal centro abitato, a seconda di altri segnali specifici.",
         "regola": "Precedenza finisce con un altro segnale, non con il paese.",
         "trabocchetti": ["fino all"],
@@ -1458,6 +1642,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato dobbiamo accertarci che i veicoli provenienti dal senso contrario ci diano la precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → verificare che gli opposti ci diano precedenza?",
         "spiegazione": "Il segnale raffigurato, con la freccia bianca che indica la tua direzione (in alto) e la freccia rossa che indica la direzione opposta (in basso), ti dà il diritto di precedenza. Questo significa che i veicoli che vengono dall'altra parte devono fermarsi e farti passare. Tuttavia, è sempre importante controllare che ti diano effettivamente la precedenza per evitare pericoli.",
         "regola": "Freccia bianca in alto = precedenza a te, ma controlla sempre!",
         "trabocchetti": ["accertarci"],
@@ -1466,6 +1651,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato possiamo percorrere la strettoia, dopo esserci assicurati di aver ottenuto la precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strettoia dopo aver ottenuto precedenza?",
         "spiegazione": "Sì, puoi entrare nella strettoia perché il segnale ti dà la precedenza sui veicoli che arrivano dall'altra parte. Ma è fondamentale essere sicuri che gli altri veicoli ti abbiano visto e ti stiano lasciando passare prima di impegnare la strettoia.",
         "regola": "Precedenza sì, ma solo se te la danno!",
         "immagine": "c1e4330fff0e7176739a.jpg",
@@ -1473,6 +1659,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato dobbiamo procedere con cautela, anche se abbiamo la precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → cautela anche con precedenza?",
         "spiegazione": "Anche se il segnale ti dà la precedenza, è sempre obbligatorio guidare con attenzione e prudenza, specialmente in una strettoia dove lo spazio è limitato e possono esserci situazioni impreviste. La sicurezza è sempre la priorità.",
         "regola": "Precedenza + Cautela = Guida sicura.",
         "trabocchetti": ["anche se abbiamo la precedenza"],
@@ -1481,6 +1668,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si può percorrere la strettoia accertandosi di aver avuto la precedenza dai veicoli provenienti di fronte",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → strettoia verificando la precedenza ottenuta?",
         "spiegazione": "Questo è vero. Il segnale ti dà il diritto di passare per primo nella strettoia. Devi solo controllare che i veicoli che vengono dall'altra parte si fermino e ti lascino passare, per poi procedere.",
         "regola": "Precedenza tua, ma verifica che gli altri la rispettino.",
         "trabocchetti": ["accertandosi"],
@@ -1489,6 +1677,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve dare la precedenza ai veicoli che provengono dal senso opposto",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza agli opposti?",
         "spiegazione": "Questo è falso. Il segnale con la freccia bianca in alto (la tua direzione) e la freccia rossa in basso (la direzione opposta) significa che *tu* hai la precedenza sui veicoli che provengono dal senso opposto. Non devi dare la precedenza, ma riceverla.",
         "regola": "Freccia bianca in alto = precedenza a te, non agli altri!",
         "trabocchetti": ["si deve dare la precedenza"],
@@ -1497,6 +1686,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato possiamo procedere senza cautela, dato che abbiamo il diritto di precedenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → procedere senza cautela?",
         "spiegazione": "Questo è falso. Non si deve mai guidare 'senza cautela', anche se si ha il diritto di precedenza. La prudenza è sempre obbligatoria per prevenire incidenti e garantire la sicurezza di tutti.",
         "regola": "Mai senza cautela, la sicurezza prima del diritto.",
         "trabocchetti": ["senza cautela"],
@@ -1505,6 +1695,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non vi sono particolari obblighi perché siamo su una strada a senso unico",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → nessun obbligo, senso unico?",
         "spiegazione": "Questo è falso. Il segnale indica una strettoia dove il traffico si svolge in doppio senso e deve alternarsi, con te che hai la precedenza. Non è una strada a senso unico e ci sono obblighi precisi da rispettare.",
         "regola": "Non è senso unico, è strettoia con precedenza alternata.",
         "trabocchetti": ["non vi sono particolari obblighi", "siamo su una strada a senso unico"],
@@ -1513,6 +1704,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato inizia il doppio senso di circolazione",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → inizio doppio senso?",
         "spiegazione": "Questo è falso. Il segnale non indica l'inizio di un doppio senso di circolazione. Indica una strettoia (un punto della strada più stretto) dove il traffico si alterna e tu hai la precedenza. Il doppio senso di circolazione può essere già presente prima della strettoia.",
         "regola": "Non inizia il doppio senso, regola la precedenza in una strettoia.",
         "trabocchetti": ["inizia il doppio senso di circolazione"],
@@ -1521,6 +1713,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato si deve usare prudenza nella strettoia perché la circolazione si svolge a doppio senso",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → prudenza nella strettoia a doppio senso?",
         "spiegazione": "Il segnale indica il diritto di precedenza nei sensi unici alternati. Nella strettoia i veicoli dei due sensi non possono passare contemporaneamente: passa una direzione alla volta. Bisogna comunque procedere con prudenza, ma è falsa la motivazione «perché la circolazione si svolge a doppio senso» nella strettoia.",
         "regola": "Frecce bianca e rossa = precedenza nel senso unico alternato, non inizio del doppio senso.",
         "trabocchetti": ["perché"],
@@ -1529,6 +1722,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il divieto d'inversione di marcia",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto d'inversione?",
         "spiegazione": "Questo è falso. Il segnale raffigurato non ha nulla a che fare con il divieto di inversione di marcia. Indica la precedenza in una strettoia dove il traffico si alterna.",
         "regola": "Frecce = precedenza in strettoia, non divieti di manovra.",
         "trabocchetti": ["divieto d"],
@@ -1537,6 +1731,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia il divieto di svolta",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → divieto di svolta?",
         "spiegazione": "Questo è falso. Il segnale raffigurato non indica alcun divieto di svolta. Indica la precedenza in una strettoia dove il traffico si alterna.",
         "regola": "Frecce = precedenza in strettoia, non divieti di manovra.",
         "trabocchetti": ["divieto di svolta"],
@@ -1545,6 +1740,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è a luce verde",
         "risposta": True,
+        "riassunto": "Segnale raffigurato + verde → abbiamo precedenza?",
         "spiegazione": "Il semaforo a luce verde ti dà la precedenza. Il semaforo ha una priorità più alta rispetto al segnale stradale, quindi se è verde, puoi passare.",
         "regola": "Semaforo verde? Via libera!",
         "immagine": "c1e4330fff0e7176739a.jpg",
@@ -1552,6 +1748,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è spento",
         "risposta": True,
+        "riassunto": "Segnale raffigurato + semaforo spento → abbiamo precedenza?",
         "spiegazione": "Se il semaforo è spento, non funziona e non dà indicazioni. In questo caso, devi guardare il segnale stradale. Il segnale raffigurato (freccia bianca in alto, freccia rossa in basso) indica che hai la precedenza sui veicoli che vengono in senso contrario. Quindi, se il semaforo è spento, la precedenza è tua.",
         "regola": "Semaforo spento? Guarda il segnale!",
         "trabocchetti": ["semaforo è spento"],
@@ -1560,6 +1757,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è a luce rossa, ma l'agente del traffico ci ordina di passare",
         "risposta": True,
+        "riassunto": "Segnale raffigurato + rosso, agente dice passa → abbiamo precedenza?",
         "spiegazione": "L'agente del traffico ha sempre la massima priorità. Se l'agente ti dice di passare, devi passare, anche se il semaforo è rosso. L'ordine dell'agente annulla tutte le altre indicazioni.",
         "regola": "Agente comanda, tutti obbediscono!",
         "trabocchetti": ["agente del traffico ci ordina di passare"],
@@ -1568,6 +1766,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci dobbiamo dare la precedenza se il semaforo è spento e l'agente del traffico ci ordina di fermarci",
         "risposta": True,
+        "riassunto": "Segnale raffigurato + spento, agente dice fermati → dare precedenza?",
         "spiegazione": "Anche in questo caso, l'agente del traffico ha la massima priorità. Se l'agente ti ordina di fermarti, devi fermarti e dare la precedenza, indipendentemente dal semaforo spento o dal segnale stradale.",
         "regola": "Agente comanda, tutti obbediscono!",
         "immagine": "c1e4330fff0e7176739a.jpg",
@@ -1575,6 +1774,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è a luce gialla lampeggiante",
         "risposta": True,
+        "riassunto": "Segnale raffigurato + giallo lampeggiante → abbiamo precedenza?",
         "spiegazione": "Una luce gialla lampeggiante al semaforo significa 'procedere con cautela' e non regola la precedenza. In questa situazione, devi fare riferimento al segnale stradale. Il segnale raffigurato ti dà la precedenza sui veicoli che vengono in senso contrario. Quindi, con il giallo lampeggiante, la precedenza è tua.",
         "regola": "Giallo lampeggiante? Guarda il segnale!",
         "trabocchetti": ["luce gialla lampeggiante"],
@@ -1583,6 +1783,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza anche se il semaforo è a luce rossa",
         "risposta": False,
+        "riassunto": "Segnale raffigurato + rosso → abbiamo precedenza?",
         "spiegazione": "Falso. Se il semaforo è a luce rossa, devi fermarti e dare la precedenza. Il semaforo ha una priorità più alta rispetto al segnale stradale, quindi non puoi passare anche se il segnale ti darebbe la precedenza.",
         "regola": "Semaforo rosso? Stop, sempre!",
         "trabocchetti": ["anche se il semaforo è a luce rossa"],
@@ -1591,6 +1792,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci dobbiamo dare la precedenza se il semaforo è a luce lampeggiante gialla",
         "risposta": False,
+        "riassunto": "Segnale raffigurato + giallo lampeggiante → dare precedenza?",
         "spiegazione": "Falso. Come spiegato prima, la luce gialla lampeggiante non regola la precedenza. In questo caso, si applica il segnale stradale che ti dà la precedenza sui veicoli che vengono in senso contrario. Quindi, non devi dare la precedenza, ma ce l'hai tu.",
         "regola": "Giallo lampeggiante + questo segnale = precedenza tua!",
         "trabocchetti": ["dobbiamo dare la precedenza"],
@@ -1599,6 +1801,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è a luce verde e l'agente del traffico ci ordina di fermarci",
         "risposta": False,
+        "riassunto": "Segnale raffigurato + verde, agente dice fermati → abbiamo precedenza?",
         "spiegazione": "Falso. L'agente del traffico ha sempre la massima priorità. Se l'agente ti ordina di fermarti, devi fermarti, anche se il semaforo è verde e il segnale ti darebbe la precedenza.",
         "regola": "Agente comanda, tutti obbediscono!",
         "immagine": "c1e4330fff0e7176739a.jpg",
@@ -1606,6 +1809,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato e del semaforo a tre luci abbiamo la precedenza se il semaforo è spento e l'agente del traffico ci ordina di fermarci",
         "risposta": False,
+        "riassunto": "Segnale raffigurato + spento, agente dice fermati → abbiamo precedenza?",
         "spiegazione": "Falso. Anche se il semaforo è spento, l'ordine dell'agente del traffico di fermarsi è prioritario su qualsiasi altra indicazione. Devi fermarti e dare la precedenza.",
         "regola": "Agente comanda, tutti obbediscono!",
         "immagine": "c1e4330fff0e7176739a.jpg",
@@ -1613,6 +1817,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di precedenza?",
         "spiegazione": "Il segnale raffigurato è un segnale di precedenza perché indica che devi dare la precedenza agli altri veicoli. La sua forma a triangolo rovesciato è tipica di questa categoria di segnali.",
         "regola": "Triangolo rovesciato = Dare precedenza.",
         "trabocchetti": ["precedenza"],
@@ -1621,6 +1826,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a dare precedenza ai veicoli provenienti sia da destra che da sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza a destra e sinistra?",
         "spiegazione": "Quando incontri questo segnale, devi dare la precedenza a tutti i veicoli che circolano sulla strada che stai per incrociare o immettere, sia quelli che arrivano da destra che quelli che arrivano da sinistra.",
         "regola": "Dare precedenza = Tutti passano prima di te.",
         "trabocchetti": ["obbliga", "Sia da destra che da sinistra"],
@@ -1629,6 +1835,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato comporta di dare la precedenza ai veicoli che circolano sulla strada che si incrocia",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza a chi circola sulla strada incrociata?",
         "spiegazione": "Questo segnale ti dice che devi lasciare passare i veicoli che si trovano sulla strada principale che stai per attraversare o sulla quale ti stai per immettere. Loro hanno la precedenza.",
         "regola": "Triangolo = L'altra strada ha la precedenza.",
         "trabocchetti": ["Comporta di dare la precedenza"],
@@ -1637,6 +1844,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato viene posto su strada secondaria che non ha il diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su strada secondaria senza precedenza?",
         "spiegazione": "Questo segnale viene messo sulle strade considerate 'secondarie', cioè quelle che non hanno il diritto di passare per prime all'incrocio. Sei tu che devi dare la precedenza.",
         "regola": "Triangolo = Sei sulla strada 'meno importante'.",
         "trabocchetti": ["Strada secondaria", "non ha il diritto di precedenza"],
@@ -1645,6 +1853,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova sulle corsie di accelerazione per l'immissione in autostrada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sulle corsie di accelerazione autostradali?",
         "spiegazione": "Sì, questo segnale lo trovi anche quando stai per entrare in autostrada, sulle corsie di accelerazione. Devi dare la precedenza ai veicoli che sono già in autostrada.",
         "regola": "Entrata autostrada = Dare precedenza.",
         "trabocchetti": ["Corsie di accelerazione", "immissione in autostrada"],
@@ -1653,6 +1862,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato su strade extraurbane è preceduto dal segnale PREAVVISO DI DARE PRECEDENZA",
         "risposta": True,
+        "riassunto": "Segnale raffigurato extraurbano → preceduto dal PREAVVISO?",
         "spiegazione": "Sulle strade fuori città (extraurbane), dove si va più veloci, è importante avvisare i conducenti in anticipo. Per questo, prima del segnale 'Dare Precedenza', trovi un altro segnale che ti avvisa che dovrai dare la precedenza più avanti.",
         "regola": "Fuori città = Doppio segnale (preavviso + dare precedenza).",
         "trabocchetti": ["Preceduto", "PREAVVISO DI DARE PRECEDENZA"],
@@ -1661,6 +1871,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia di moderare particolarmente la velocità e all'occorrenza fermarsi",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → moderare molto e se serve fermarsi?",
         "spiegazione": "Per poter dare la precedenza in sicurezza, devi rallentare molto. Se ci sono veicoli a cui devi dare la precedenza, potresti anche dover fermarti completamente.",
         "regola": "Dare precedenza = Rallenta molto, fermati se serve.",
         "trabocchetti": ["Moderare particolarmente la velocità", "All"],
@@ -1669,6 +1880,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato non occorre fermarsi all'incrocio se, rallentando, si ha modo di vedere che non vi sono veicoli in arrivo, sia da destra che da sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → non fermarsi se, rallentando, nessuno arriva?",
         "spiegazione": "Questa è una differenza importante rispetto al segnale di STOP. Con il 'Dare Precedenza', non devi fermarti per forza se vedi che non arriva nessuno e puoi passare in sicurezza dopo aver rallentato. Ti fermi solo se ci sono veicoli a cui dare la precedenza.",
         "regola": "Triangolo = Non sempre stop.",
         "trabocchetti": ["Non occorre fermarsi"],
@@ -1677,6 +1889,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere preceduto dal segnale DIRITTO DI PRECEDENZA",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preceduto da DIRITTO DI PRECEDENZA?",
         "spiegazione": "FALSO. Il segnale 'Diritto di Precedenza' (quello a forma di rombo giallo) significa che sei tu ad avere la precedenza. Il segnale 'Dare Precedenza' significa il contrario, cioè che devi darla tu. Non possono essere usati uno dopo l'altro per lo stesso percorso.",
         "regola": "Triangolo (dare) vs. Rombo (avere) = Mai insieme per lo stesso percorso.",
         "immagine": "9b75a00b85955b3a4fdd.jpg",
@@ -1684,6 +1897,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è impiegato su strade che godono del diritto di precedenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → su strade con diritto di precedenza?",
         "spiegazione": "FALSO. Questo segnale viene messo sulle strade che *non* hanno il diritto di precedenza. Se una strada 'gode del diritto di precedenza', non avrà questo segnale, ma magari quello a rombo giallo o nessun segnale specifico.",
         "regola": "Triangolo = Tu NON hai la precedenza.",
         "trabocchetti": ["Godono del diritto di precedenza"],
@@ -1692,6 +1906,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto, di norma, 150 metri prima dell'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → di norma 150 m prima dell'incrocio?",
         "spiegazione": "FALSO. Il segnale 'Dare Precedenza' si trova proprio all'incrocio o molto vicino. La distanza di 150 metri è per il segnale di 'Preavviso di Dare Precedenza' sulle strade extraurbane, non per il segnale principale.",
         "regola": "Triangolo = All'incrocio, non 150m prima.",
         "trabocchetti": ["Di norma, 150 metri prima"],
@@ -1700,6 +1915,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato, lungo le autostrade, viene posto a distanza maggiore di 150 m",
         "risposta": False,
+        "riassunto": "Segnale raffigurato in autostrada → oltre 150 m?",
         "spiegazione": "FALSO. Anche sulle autostrade, il segnale 'Dare Precedenza' si trova nel punto in cui devi effettivamente dare la precedenza (ad esempio, alla fine della corsia di accelerazione). La distanza di 150 metri è un riferimento per i preavvisi su strade extraurbane, non per il segnale stesso sulle autostrade, e non è 'maggiore di 150m' per il segnale principale.",
         "regola": "Triangolo = Dove devi agire, non lontano.",
         "trabocchetti": ["Distanza maggiore di 150 m"],
@@ -1708,6 +1924,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a fermarsi prima di impegnare l'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi prima dell'incrocio?",
         "spiegazione": "FALSO. Questo è un errore comune! Il segnale 'Dare Precedenza' non ti obbliga a fermarti sempre. Ti obbliga a fermarti *solo se necessario* per far passare gli altri veicoli. Se la strada è libera, puoi rallentare e passare senza fermarti.",
         "regola": "Triangolo = Stop solo se serve.",
         "trabocchetti": ["Obbliga a fermarsi"],
@@ -1716,6 +1933,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova solo su strade urbane",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo su strade urbane?",
         "spiegazione": "FALSO. Questo segnale si trova su tutti i tipi di strade: in città (urbane), fuori città (extraurbane) e anche per l'ingresso in autostrada. Non è limitato solo alle strade urbane.",
         "regola": "Triangolo = Ovunque ci sia da dare precedenza.",
         "trabocchetti": ["solo"],
@@ -1724,6 +1942,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale generico di pericolo",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → pericolo generico?",
         "spiegazione": "FALSO. Questo non è un segnale di pericolo generico (come quelli con il bordo rosso e il simbolo nero su sfondo bianco, che indicano curve pericolose, ecc.). È un segnale specifico che riguarda la precedenza agli incroci.",
         "regola": "Triangolo rovesciato = Precedenza, non pericolo generico.",
         "trabocchetti": ["Generico di pericolo"],
@@ -1732,6 +1951,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è obbligatorio dare la precedenza a sinistra solo ai tram e ai veicoli in servizio di emergenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza a sinistra solo a tram ed emergenza?",
         "spiegazione": "FALSO. Devi dare la precedenza a *tutti* i veicoli che arrivano dalla strada principale, sia da destra che da sinistra. Non solo ai tram o ai veicoli di emergenza, anche se a questi ultimi si dà sempre la precedenza in ogni caso.",
         "regola": "Triangolo = Precedenza a TUTTI sulla strada principale.",
         "trabocchetti": ["solo"],
@@ -1740,6 +1960,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "Il segnale raffigurato è un segnale di prescrizione. I segnali di prescrizione includono quelli di precedenza, divieto e obbligo. Questo segnale, che indica di dare precedenza, rientra in questa categoria.",
         "regola": "Triangolo rosso = Precedenza = Prescrizione.",
         "trabocchetti": ["prescrizione"],
@@ -1748,6 +1969,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato obbliga a dare precedenza ai veicoli che circolano sulla strada su cui ci si immette",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → precedenza a chi è sulla strada dove ci si immette?",
         "spiegazione": "Questo segnale ti obbliga a rallentare o fermarti per far passare i veicoli che si trovano già sulla strada in cui vuoi entrare. Devi assicurarti che la strada sia libera prima di immetterti.",
         "regola": "Triangolo giù = Tu aspetti, gli altri passano.",
         "trabocchetti": ["obbliga"],
@@ -1756,6 +1978,7 @@ QUESTIONS = [
     {
         "domanda": "La prescrizione del segnale raffigurato, se abbinato ad un semaforo, vale quando il semaforo funziona a luce gialla lampeggiante",
         "risposta": True,
+        "riassunto": "Segnale raffigurato con semaforo → vale col giallo lampeggiante?",
         "spiegazione": "Quando un semaforo lampeggia con luce gialla, significa che non funziona normalmente. In questo caso, devi ignorare il semaforo e seguire la segnaletica verticale, quindi il segnale 'Dare precedenza' diventa valido.",
         "regola": "Semaforo giallo lampeggiante = Guarda i segnali verticali!",
         "trabocchetti": ["luce gialla lampeggiante"],
@@ -1764,6 +1987,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova sulle rampe di raccordo per l'immissione in autostrada",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → sulle rampe d'immissione in autostrada?",
         "spiegazione": "Quando entri in autostrada da una rampa di raccordo, devi dare precedenza ai veicoli che sono già in autostrada. Per questo motivo, questo segnale è spesso presente in questi punti.",
         "regola": "Entri in autostrada? Dai precedenza!",
         "trabocchetti": ["Rampe di raccordo", "immissione in autostrada"],
@@ -1772,6 +1996,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato impone l'uso della massima prudenza al fine di evitare incidenti",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → massima prudenza?",
         "spiegazione": "Dare precedenza significa agire con molta attenzione e prudenza. Devi guardare bene e assicurarti che non ci siano pericoli prima di proseguire, per evitare incidenti.",
         "regola": "Precedenza = Occhi aperti e prudenza!",
         "immagine": "9b75a00b85955b3a4fdd.jpg",
@@ -1779,6 +2004,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può essere preceduto dal PREAVVISO DI FERMARSI E DARE PRECEDENZA",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preceduto da PREAVVISO DI FERMARSI?",
         "spiegazione": "FALSO. Il segnale 'Dare precedenza' (il triangolo rovesciato) è preceduto dal 'PREAVVISO DI DARE PRECEDENZA' (un triangolo normale con un altro triangolo rovesciato all'interno). Il 'PREAVVISO DI FERMARSI E DARE PRECEDENZA' precede il segnale di STOP, non il 'Dare precedenza'.",
         "regola": "'Fermarsi' = STOP. 'Dare precedenza' (solo) = Triangolo.",
         "trabocchetti": ["PREAVVISO DI FERMARSI E DARE PRECEDENZA", "FERMARSI"],
@@ -1787,6 +2013,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato lungo le autostrade viene posto a distanza di 150 metri dall'area di servizio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato in autostrada → a 150 m dall'area di servizio?",
         "spiegazione": "FALSO. Il segnale 'Dare precedenza' non è posto a una distanza fissa di 150 metri dalle aree di servizio. La distanza di 150 metri è tipica per i segnali di pericolo fuori dai centri abitati, ma non per questo segnale in relazione alle aree di servizio.",
         "regola": "150 metri = Pericolo. Precedenza = Dove serve.",
         "trabocchetti": ["150 metri", "area di servizio"],
@@ -1795,6 +2022,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia di arrestarsi prima di impegnare l'incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → fermarsi prima dell'incrocio?",
         "spiegazione": "FALSO. Il segnale 'Dare precedenza' non ti obbliga sempre ad arrestarti. Devi rallentare e, se necessario, fermarti per far passare gli altri veicoli. Il segnale che obbliga ad arrestarsi è il segnale di STOP.",
         "regola": "Triangolo giù = Rallenta/Fermati *se serve*. STOP = Fermati *sempre*.",
         "trabocchetti": ["arrestarsi"],
@@ -1803,6 +2031,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato si trova solo su strade extraurbane",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → solo su strade extraurbane?",
         "spiegazione": "FALSO. Il segnale 'Dare precedenza' si trova sia nelle città (strade urbane) che fuori dalle città (strade extraurbane), ovunque sia necessario indicare l'obbligo di dare precedenza.",
         "regola": "'Solo' = Attenzione, quasi sempre FALSO!",
         "trabocchetti": ["solo"],
@@ -1811,6 +2040,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un segnale di prescrizione",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → di prescrizione?",
         "spiegazione": "Il segnale di 'Dare Precedenza' ti dice che devi fare qualcosa (dare la precedenza). Per questo motivo, è un segnale di prescrizione, perché ti 'prescrive' un comportamento da seguire.",
         "regola": "Triangolo rosso = Precedenza = Prescrizione.",
         "trabocchetti": ["prescrizione"],
@@ -1819,6 +2049,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un preavviso di dare precedenza sia a destra che a sinistra",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → preavviso di precedenza a destra e sinistra?",
         "spiegazione": "Il segnale 'Dare Precedenza' ti avvisa che devi far passare i veicoli che arrivano sull'altra strada, sia da destra che da sinistra, se hanno la precedenza. Il pannello '320 m' indica che questo obbligo inizia tra 320 metri.",
         "regola": "Dare Precedenza = Tutti (destra e sinistra).",
         "trabocchetti": ["sia a destra che a sinistra"],
@@ -1827,6 +2058,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la successiva presenza di un segnale di DARE PRECEDENZA",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → poi DARE PRECEDENZA?",
         "spiegazione": "Il segnale raffigurato è un preavviso. Ti avvisa che tra 320 metri troverai un punto (un incrocio) dove dovrai dare la precedenza, o il segnale stesso di 'Dare Precedenza' se non è ancora visibile.",
         "regola": "Distanza sotto = Avviso prima.",
         "trabocchetti": ["preannuncia"],
@@ -1835,6 +2067,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la distanza dall'incrocio in cui dobbiamo dare precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → distanza dall'incrocio con precedenza da dare?",
         "spiegazione": "Il pannello rettangolare con '320 m' indica esattamente quanti metri mancano all'incrocio dove dovrai dare la precedenza. È una distanza precisa.",
         "regola": "Numero + m = Distanza all'azione.",
         "trabocchetti": ["Distanza"],
@@ -1843,6 +2076,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia di rallentare per potersi fermare se ci sono veicoli cui bisogna dare precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → rallentare per potersi fermare?",
         "spiegazione": "Quando vedi questo segnale, devi prepararti. Questo significa rallentare per essere pronto a fermarti, se necessario, per far passare i veicoli che hanno la precedenza. Non è detto che ti fermerai, ma devi essere in grado di farlo.",
         "regola": "Dare Precedenza = Rallenta e preparati.",
         "trabocchetti": ["se ci sono veicoli"],
@@ -1851,6 +2085,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato può preannunciare un incrocio a T, in cui bisogna dare la precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → incrocio a T con precedenza da dare?",
         "spiegazione": "Il segnale di 'Dare Precedenza' può essere messo prima di qualsiasi tipo di incrocio dove la tua strada non ha la precedenza, inclusi gli incroci a forma di 'T'.",
         "regola": "Dare Precedenza = Qualsiasi incrocio senza priorità.",
         "trabocchetti": ["può"],
@@ -1859,6 +2094,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è posto su una strada che non ha diritto di precedenza",
         "risposta": True,
+        "riassunto": "Segnale raffigurato → su strada senza precedenza?",
         "spiegazione": "Se ti viene chiesto di 'Dare Precedenza', significa che la tua strada non ha la priorità rispetto all'altra strada con cui ti incroci. Sei tu che devi aspettare.",
         "regola": "Dare Precedenza = Tu non hai priorità.",
         "trabocchetti": ["non ha diritto di precedenza"],
@@ -1867,6 +2103,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato è un preavviso di fermarsi e dare precedenza",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → preavviso di fermarsi e dare precedenza?",
         "spiegazione": "Questo segnale è 'Dare Precedenza', non 'STOP'. Con 'Dare Precedenza' ti fermi solo se è necessario per far passare altri veicoli. Con lo 'STOP' devi fermarti sempre, anche se non arriva nessuno.",
         "regola": "Triangolo = Dare Precedenza (non STOP).",
         "trabocchetti": ["fermarsi"],
@@ -1875,6 +2112,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la distanza dal prossimo segnale di STOP",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanza dal prossimo STOP?",
         "spiegazione": "Il segnale raffigurato preannuncia un 'Dare Precedenza', non un segnale di 'STOP'. Il segnale di STOP è diverso (è un ottagono rosso). Quindi, la distanza si riferisce al 'Dare Precedenza'.",
         "regola": "Triangolo = Dare Precedenza, non STOP.",
         "trabocchetti": ["segnale di STOP"],
@@ -1883,6 +2121,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato indica la distanza dall'incrocio in cui dovremo obbligatoriamente fermarci",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → distanza dall'incrocio con obbligo di fermarsi?",
         "spiegazione": "Con il segnale 'Dare Precedenza' non è obbligatorio fermarsi sempre. Ti fermi solo se ci sono veicoli a cui devi dare la precedenza. L'obbligo di fermarsi sempre è per il segnale di 'STOP'.",
         "regola": "Dare Precedenza = Fermarsi SOLO se serve.",
         "trabocchetti": ["obbligatoriamente"],
@@ -1891,6 +2130,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale raffigurato è obbligatorio fermarsi al prossimo incrocio",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → obbligo di fermarsi al prossimo incrocio?",
         "spiegazione": "In presenza di questo segnale, non è obbligatorio fermarsi al prossimo incrocio se la strada è libera e non ci sono veicoli a cui dare la precedenza. Ti fermi solo se necessario.",
         "regola": "Dare Precedenza = Non sempre STOP.",
         "trabocchetti": ["obbligatorio fermarsi"],
@@ -1899,6 +2139,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia un incrocio in cui vale la regola di dare la precedenza solo a destra",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → precedenza solo a destra?",
         "spiegazione": "Il segnale 'Dare Precedenza' ti obbliga a dare la precedenza a tutti i veicoli che arrivano sull'altra strada, sia da destra che da sinistra, se hanno la precedenza. La regola di dare la precedenza 'solo a destra' vale solo negli incroci senza segnaletica.",
         "regola": "Dare Precedenza = Destra E sinistra.",
         "trabocchetti": ["solo"],
@@ -1907,6 +2148,7 @@ QUESTIONS = [
     {
         "domanda": "Il segnale raffigurato preannuncia la presenza di un semaforo a tre luci a 320 metri",
         "risposta": False,
+        "riassunto": "Segnale raffigurato → semaforo a tre luci a 320 m?",
         "spiegazione": "Il segnale raffigurato è un preavviso di 'Dare Precedenza', non ha nulla a che fare con un semaforo. I semafori sono segnalati da altri tipi di segnali (triangolari con il simbolo del semaforo all'interno).",
         "regola": "Triangolo rosso = Precedenza, non semaforo.",
         "trabocchetti": ["semaforo a tre luci"],

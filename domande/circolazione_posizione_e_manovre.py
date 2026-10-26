@@ -1,7 +1,7 @@
 """Domande — Circolazione, posizione e manovre.
 
 Generato da importa.py dal listato ministeriale A/B del 2025-04-23.
-Spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
+Riassunti, spiegazioni, regole e trabocchetti sono generati con AI: aiutano a capire ma non sono ufficiali.
 """
 
 CATEGORIA = "Circolazione, posizione e manovre"
@@ -10,6 +10,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve dare la precedenza ai veicoli provenienti sia da destra che da sinistra",
         "risposta": True,
+        "riassunto": "Veicolo S in retromarcia → precedenza da destra e sinistra?",
         "spiegazione": "Quando un veicolo esce da un parcheggio in retromarcia per entrare nella strada, deve dare la precedenza a tutti i veicoli che stanno già circolando, sia quelli che arrivano da destra che quelli da sinistra. Questo perché chi si immette nel traffico è sempre tenuto a non creare pericolo o intralcio.",
         "regola": "Chi esce dal parcheggio, dà la precedenza a tutti.",
         "trabocchetti": ["deve dare la precedenza", "Sia da destra che da sinistra"],
@@ -18,6 +19,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve azionare gli indicatori di direzione",
         "risposta": True,
+        "riassunto": "Veicolo S in retromarcia → indicatori di direzione?",
         "spiegazione": "Sì, è obbligatorio segnalare le proprie intenzioni agli altri utenti della strada. Azionare l'indicatore di direzione (la freccia) serve a comunicare dove intendi andare una volta che sarai uscito dal parcheggio e ti sarai immesso nella circolazione.",
         "regola": "Ogni manovra, freccia!",
         "trabocchetti": ["Azionare gli indicatori di direzione"],
@@ -26,6 +28,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve fare attenzione agli eventuali pedoni in transito dietro di esso e dar loro la precedenza",
         "risposta": True,
+        "riassunto": "Veicolo S in retromarcia → precedenza ai pedoni dietro?",
         "spiegazione": "I pedoni sono utenti della strada più vulnerabili e hanno sempre la precedenza, specialmente quando un veicolo fa retromarcia. Devi guardare attentamente e assicurarti che non ci siano pedoni dietro di te prima di iniziare la manovra e, se ci sono, aspettare che passino.",
         "regola": "Pedone = precedenza assoluta.",
         "trabocchetti": ["Pedoni in transito", "dar loro la precedenza"],
@@ -34,6 +37,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve dare la precedenza a tutti i veicoli in transito",
         "risposta": True,
+        "riassunto": "Veicolo S in retromarcia → precedenza a tutti i veicoli?",
         "spiegazione": "Esatto. Quando ti immetti nel traffico da una posizione di sosta (come un parcheggio), devi dare la precedenza a tutti i veicoli che sono già sulla strada, indipendentemente dalla loro direzione. Non puoi intralciare la circolazione già presente.",
         "regola": "Chi si immette, dà precedenza a tutti.",
         "trabocchetti": ["a tutti i veicoli in transito"],
@@ -42,6 +46,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve assicurarsi che la strada sia libera e fare la manovra con particolare prudenza",
         "risposta": True,
+        "riassunto": "Veicolo S in retromarcia → strada libera e prudenza?",
         "spiegazione": "Fare retromarcia è una manovra che richiede molta attenzione. Devi essere sicuro che non ci siano ostacoli, altri veicoli o pedoni. La prudenza è fondamentale per evitare incidenti, dato che la visibilità in retromarcia è spesso limitata.",
         "regola": "Retromarcia = massima prudenza.",
         "trabocchetti": ["Assicurarsi che la strada sia libera", "particolare prudenza"],
@@ -50,6 +55,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve azionare la segnalazione luminosa di pericolo",
         "risposta": False,
+        "riassunto": "Veicolo S in retromarcia → quattro frecce?",
         "spiegazione": "Falso. La segnalazione luminosa di pericolo (le 'quattro frecce') si usa solo in caso di pericolo immediato, di fermata improvvisa o di veicolo fermo che crea intralcio. Per segnalare una normale manovra di immissione nel traffico si usano gli indicatori di direzione (le frecce singole).",
         "regola": "Quattro frecce = pericolo, non manovra.",
         "trabocchetti": ["segnalazione luminosa di pericolo"],
@@ -58,6 +64,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve accendere la luce posteriore per nebbia",
         "risposta": False,
+        "riassunto": "Veicolo S in retromarcia → retronebbia?",
         "spiegazione": "Falso. La luce posteriore per nebbia si usa solo in condizioni di scarsa visibilità dovute a nebbia fitta, forte pioggia o neve intensa. Non deve essere accesa per una normale manovra di retromarcia, perché la sua luce intensa può abbagliare chi segue senza motivo.",
         "regola": "Luce nebbia = solo con nebbia fitta.",
         "trabocchetti": ["luce posteriore per nebbia"],
@@ -66,6 +73,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve dare la precedenza solo ai veicoli che transitano nel suo senso di marcia",
         "risposta": False,
+        "riassunto": "Veicolo S in retromarcia → precedenza solo nel suo senso?",
         "spiegazione": "Falso. Questa è una trappola! Come abbiamo visto, chi si immette nel traffico da un parcheggio deve dare la precedenza a tutti i veicoli che circolano sulla strada, non 'solo' a quelli che vanno nella stessa direzione. La sicurezza richiede di guardare in tutte le direzioni.",
         "regola": "Precedenza a tutti, non 'solo' ad alcuni.",
         "trabocchetti": ["solo"],
@@ -74,6 +82,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve manovrare velocemente per liberare il posteggio",
         "risposta": False,
+        "riassunto": "Veicolo S in retromarcia → manovra veloce?",
         "spiegazione": "Falso. Le manovre di retromarcia devono essere fatte con estrema lentezza e prudenza, non velocemente. La velocità aumenta il rischio di errori, di non vedere ostacoli o pedoni e di causare incidenti. La sicurezza viene prima della velocità.",
         "regola": "Retromarcia = lenta, non veloce.",
         "trabocchetti": ["Manovrare velocemente"],
@@ -82,6 +91,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo S, muovendosi in retromarcia per immettersi nella circolazione, deve suonare ripetutamente il clacson durante la manovra",
         "risposta": False,
+        "riassunto": "Veicolo S in retromarcia → clacson ripetuto?",
         "spiegazione": "Falso. Il clacson si usa solo in caso di pericolo immediato per avvertire gli altri utenti della strada. Suonare ripetutamente il clacson senza un motivo di pericolo è vietato, disturba la quiete pubblica e non è il modo corretto per segnalare una manovra.",
         "regola": "Clacson = solo per pericolo.",
         "trabocchetti": ["Suonare ripetutamente il clacson"],
@@ -90,6 +100,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo S in figura, muovendosi in retromarcia per immettersi nella circolazione, deve assicurarsi che la strada sia libera ed eseguire la manovra con prudenza",
         "risposta": True,
+        "riassunto": "Veicolo S in figura in retromarcia → strada libera e prudenza?",
         "spiegazione": "Quando esci da un parcheggio in retromarcia, devi sempre controllare bene che non ci siano altri veicoli o persone sulla strada. È fondamentale fare la manovra con molta attenzione per non causare pericoli o incidenti.",
         "regola": "Retromarcia = Occhi aperti e piano!",
         "trabocchetti": ["assicurarsi che la strada sia libera", "eseguire la manovra con prudenza"],
@@ -98,6 +109,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo E in figura, muovendosi in retromarcia per immettersi nella circolazione, deve azionare gli indicatori di direzione",
         "risposta": True,
+        "riassunto": "Veicolo E in retromarcia → indicatori di direzione?",
         "spiegazione": "Quando un veicolo (come il veicolo E) si muove per uscire da un parcheggio e vuole entrare nel traffico, deve sempre usare gli indicatori di direzione (le frecce). Questo serve a far capire agli altri conducenti dove intendi andare.",
         "regola": "Ogni manovra = Freccia!",
         "immagine": "291dc3d19eefd8588ae5.jpg",
@@ -105,6 +117,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo S in figura, muovendosi in retromarcia per immettersi nella circolazione, deve dare la precedenza a tutti i veicoli provenienti sia da destra sia da sinistra",
         "risposta": True,
+        "riassunto": "Veicolo S in figura → precedenza da destra e sinistra?",
         "spiegazione": "Quando esci da un parcheggio in retromarcia per entrare nella circolazione, sei tu che devi dare la precedenza a tutti i veicoli che stanno già circolando sulla strada. Questo vale sia per i veicoli che vengono da destra che per quelli che vengono da sinistra.",
         "regola": "Esci dal parcheggio = Tutti hanno la precedenza.",
         "trabocchetti": ["dare la precedenza a tutti i veicoli"],
@@ -113,6 +126,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo S in figura, muovendosi in retromarcia per immettersi nella circolazione, deve fare attenzione agli eventuali pedoni in transito dietro di esso",
         "risposta": True,
+        "riassunto": "Veicolo S in figura → attenzione ai pedoni dietro?",
         "spiegazione": "Quando fai retromarcia, specialmente per uscire da un parcheggio, devi fare molta attenzione ai pedoni. I pedoni potrebbero passare dietro il tuo veicolo e potresti non vederli subito, quindi la prudenza è massima.",
         "regola": "Retromarcia = Occhio ai pedoni!",
         "immagine": "291dc3d19eefd8588ae5.jpg",
@@ -120,6 +134,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo S in figura, muovendosi in retromarcia per immettersi nella circolazione, deve azionare la segnalazione luminosa di pericolo (quattro frecce lampeggianti simultaneamente)",
         "risposta": False,
+        "riassunto": "Veicolo S in figura → quattro frecce?",
         "spiegazione": "Le quattro frecce (la segnalazione luminosa di pericolo) si usano solo in situazioni di emergenza, quando il veicolo è fermo e crea un pericolo, o in caso di guasto. Per una normale manovra di immissione nel traffico, si usano solo gli indicatori di direzione (una freccia alla volta), non le quattro frecce.",
         "regola": "Quattro frecce = Solo emergenza, non manovra.",
         "immagine": "291dc3d19eefd8588ae5.jpg",
@@ -127,6 +142,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo S in figura, muovendosi in retromarcia per immettersi nella circolazione, deve suonare il clacson durante l'intera manovra",
         "risposta": False,
+        "riassunto": "Veicolo S in figura → clacson per tutta la manovra?",
         "spiegazione": "Il clacson si usa solo per avvertire di un pericolo immediato e solo per il tempo strettamente necessario. Non si deve suonare il clacson per tutta la durata di una manovra, perché è vietato e disturba gli altri.",
         "regola": "Clacson = Solo per pericolo, non per manovra lunga.",
         "trabocchetti": ["durante l"],
@@ -135,6 +151,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente del veicolo S in figura, muovendosi in retromarcia per immettersi nella circolazione, deve dare la precedenza ai veicoli che transitano nel suo senso di marcia, ad eccezione delle biciclette",
         "risposta": False,
+        "riassunto": "Veicolo S in figura → precedenza tranne alle bici?",
         "spiegazione": "Quando ti immetti nel traffico da un parcheggio, devi dare la precedenza a TUTTI i veicoli che circolano sulla strada, senza fare eccezioni. Le biciclette sono veicoli e hanno diritto alla precedenza come tutti gli altri.",
         "regola": "Immissione = Precedenza a TUTTI, bici incluse.",
         "trabocchetti": ["ad eccezione delle biciclette"],
@@ -143,6 +160,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato, in quanto costituisce pericolo o intralcio per la circolazione, tenersi sul margine sinistro della carreggiata per svoltare in una strada a destra",
         "risposta": True,
+        "riassunto": "Vietato → stare a sinistra per svoltare a destra?",
         "spiegazione": "È VERO. Quando devi svoltare a destra, devi tenerti il più possibile vicino al margine destro della strada. Se ti tieni a sinistra, crei un pericolo per gli altri veicoli e intralci la circolazione.",
         "regola": "Svolta a destra? Stai a destra!",
         "trabocchetti": ["sinistro", "a destra"],
@@ -150,6 +168,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato, in quanto costituisce pericolo o intralcio per la circolazione, sostare sui binari tramviari",
         "risposta": True,
+        "riassunto": "Vietato → sostare sui binari del tram?",
         "spiegazione": "È VERO. Sostare (cioè fermarsi per un tempo più lungo della fermata) sui binari del tram è molto pericoloso perché blocca il tram e può causare incidenti. È sempre vietato.",
         "regola": "Binari = Via libera al tram, non a te.",
         "trabocchetti": ["sostare sui binari tramviari"],
@@ -157,6 +176,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato, in quanto costituisce pericolo o intralcio per la circolazione, effettuare un cambiamento di direzione senza segnalare la manovra con sufficiente anticipo",
         "risposta": True,
+        "riassunto": "Vietato → cambiare direzione senza segnalare in anticipo?",
         "spiegazione": "È VERO. Devi sempre segnalare con la freccia (indicatore di direzione) la tua intenzione di cambiare direzione (svoltare, cambiare corsia) con un buon anticipo. Non farlo è pericoloso perché gli altri non sanno cosa farai.",
         "regola": "Segnala sempre prima di muoverti!",
         "trabocchetti": ["senza segnalare"],
@@ -164,6 +184,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato, in quanto costituisce pericolo o intralcio per la circolazione, gareggiare in velocità",
         "risposta": True,
+        "riassunto": "Vietato → gareggiare in velocità?",
         "spiegazione": "È VERO. Gareggiare in velocità (fare corse) sulle strade pubbliche è estremamente pericoloso, illegale e può causare incidenti gravissimi. La strada non è una pista.",
         "regola": "Strada non è pista, gareggiare è vietato.",
         "trabocchetti": ["gareggiare in velocità"],
@@ -171,6 +192,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato, in quanto costituisce pericolo o intralcio per la circolazione, circolare a velocità troppo bassa senza giustificato motivo",
         "risposta": True,
+        "riassunto": "Vietato → andare troppo piano senza motivo?",
         "spiegazione": "È VERO. Guidare troppo lentamente senza un buon motivo (ad esempio, se la strada è libera e le condizioni sono buone) può essere pericoloso. Può creare intralcio al traffico e costringere gli altri veicoli a frenare o a fare manovre improvvise.",
         "regola": "Né troppo veloce, né troppo lento (senza motivo).",
         "trabocchetti": ["troppo bassa", "senza giustificato motivo"],
@@ -178,6 +200,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato, in quanto costituisce pericolo o intralcio per la circolazione, immettersi nel flusso della circolazione provenendo da strade laterali",
         "risposta": False,
+        "riassunto": "Vietato → immettersi da strade laterali?",
         "spiegazione": "È FALSO. Non è vietato immettersi nel traffico da una strada laterale. È una manovra normale che si fa tutti i giorni. L'importante è farla con prudenza, dando la precedenza a chi è già sulla strada principale.",
         "regola": "Entrare in strada è normale, ma con prudenza.",
         "trabocchetti": ["vietato"],
@@ -185,6 +208,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato, in quanto costituisce pericolo o intralcio per la circolazione, regolare la velocità in relazione alle caratteristiche e condizioni delle strade",
         "risposta": False,
+        "riassunto": "Vietato → regolare la velocità secondo la strada?",
         "spiegazione": "È FALSO. Non è vietato, ma è OBBLIGATORIO regolare la velocità in base alle condizioni della strada (pioggia, curve, traffico, ecc.). È una regola fondamentale per la sicurezza. Chi non lo fa, mette in pericolo sé stesso e gli altri.",
         "regola": "Adatta la velocità, sempre!",
         "trabocchetti": ["vietato", "Regolare la velocità"],
@@ -192,6 +216,7 @@ QUESTIONS = [
     {
         "domanda": "E' vietato, in quanto costituisce pericolo o intralcio per la circolazione, fermare momentaneamente un veicolo lungo il margine destro di una carreggiata a senso unico",
         "risposta": False,
+        "riassunto": "Vietato → fermarsi sul margine destro di un senso unico?",
         "spiegazione": "È FALSO. Fermare momentaneamente (fare una 'fermata') un veicolo lungo il margine destro di una strada a senso unico è generalmente permesso, a patto che non si crei pericolo o intralcio per la circolazione. La 'fermata' è diversa dalla 'sosta' (che è più lunga).",
         "regola": "Fermata a destra (senso unico) = OK se non intralci.",
         "trabocchetti": ["vietato", "fermare momentaneamente"],
@@ -199,6 +224,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida un veicolo, anche se ad elevate prestazioni, non deve, comunque, superare i limiti di velocità previsti dalla legge",
         "risposta": True,
+        "riassunto": "Veicolo ad alte prestazioni → rispettare i limiti?",
         "spiegazione": "I limiti di velocità sono regole che valgono per tutti i veicoli, non importa quanto siano potenti o veloci. Anche se la tua auto è 'ad elevate prestazioni', devi sempre rispettare i limiti di velocità stabiliti dalla legge per la sicurezza di tutti.",
         "regola": "Limiti di velocità = per tutti, sempre.",
         "trabocchetti": ["anche se ad elevate prestazioni"],
@@ -206,6 +232,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida un veicolo, anche se ad elevate prestazioni, deve dare, di norma, la precedenza nei crocevia a tutti i veicoli, che provengono da destra",
         "risposta": True,
+        "riassunto": "Veicolo ad alte prestazioni → precedenza a destra?",
         "spiegazione": "Nei crocevia (incroci) senza segnali specifici (come Stop o Dare Precedenza), la regola generale è dare la precedenza ai veicoli che arrivano dalla tua destra. Questa è la 'norma' del Codice della Strada.",
         "regola": "Incrocio senza segnali = precedenza a destra.",
         "trabocchetti": ["di norma"],
@@ -213,6 +240,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida un veicolo, anche se ad elevate prestazioni, deve evitare di costituire pericolo per gli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Veicolo ad alte prestazioni → non creare pericolo?",
         "spiegazione": "La sicurezza è la cosa più importante quando si guida. Ogni conducente, con qualsiasi tipo di veicolo, deve guidare in modo responsabile per non creare situazioni pericolose per sé e per gli altri utenti della strada (pedoni, ciclisti, altri automobilisti).",
         "regola": "Guida sicura = mai un pericolo.",
         "trabocchetti": ["evitare di costituire pericolo"],
@@ -220,18 +248,21 @@ QUESTIONS = [
     {
         "domanda": "Chi guida un veicolo, anche se ad elevate prestazioni, deve guardare nello specchietto retrovisore prima di segnalare l'intenzione di cambiare corsia",
         "risposta": True,
+        "riassunto": "Veicolo ad alte prestazioni → specchietto prima di segnalare?",
         "spiegazione": "Prima di cambiare corsia o direzione, è fondamentale controllare gli specchietti retrovisori per assicurarsi che non ci siano altri veicoli. Solo dopo aver controllato e aver visto che la manovra è sicura, si può mettere la freccia per segnalare l'intenzione.",
         "regola": "Specchietto, poi freccia.",
     },
     {
         "domanda": "Chi guida un veicolo, anche se ad elevate prestazioni, deve tenersi il più vicino possibile al margine destro della carreggiata, quando effettua una svolta a destra",
         "risposta": True,
+        "riassunto": "Veicolo ad alte prestazioni → a destra per svoltare a destra?",
         "spiegazione": "Quando devi svoltare a destra, devi posizionarti il più vicino possibile al bordo destro della strada. Questo serve per fare la svolta in modo sicuro, senza invadere la corsia di chi va dritto o di chi svolta a sinistra, e per essere ben visibile.",
         "regola": "Svolta a destra = stai a destra.",
     },
     {
         "domanda": "Chi guida un veicolo deve guidare sempre al centro della strada, però senza superare la striscia di corsia",
         "risposta": False,
+        "riassunto": "Guidare → sempre al centro della strada?",
         "spiegazione": "Questa affermazione è falsa. Non si deve guidare 'sempre al centro della strada'. In Italia, si deve tenere la destra della carreggiata, soprattutto quando la strada ha più corsie o quando si incrociano altri veicoli. Guidare al centro è pericoloso e sbagliato.",
         "regola": "Guida = tieni la destra, non il centro.",
         "trabocchetti": ["sempre"],
@@ -239,6 +270,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida un veicolo deve tenere in funzione gli abbaglianti di giorno anche in città",
         "risposta": False,
+        "riassunto": "Guidare → abbaglianti di giorno in città?",
         "spiegazione": "Questa affermazione è falsa. Gli abbaglianti (luci di profondità) sono luci molto forti che servono per illuminare bene la strada di notte, fuori dai centri abitati e quando non ci sono altri veicoli. Di giorno e in città, si usano gli anabbaglianti o le luci diurne, perché gli abbaglianti darebbero fastidio agli altri e non sono necessari.",
         "regola": "Abbaglianti = solo di notte, fuori città, senza abbagliare.",
         "trabocchetti": ["abbaglianti di giorno anche in città"],
@@ -246,6 +278,7 @@ QUESTIONS = [
     {
         "domanda": "Chi guida un veicolo può sorpassare in ogni condizione di traffico, purché non ci sia il segnale di divieto",
         "risposta": False,
+        "riassunto": "Guidare → sorpasso in ogni traffico senza divieto?",
         "spiegazione": "Questa affermazione è falsa. Non si può sorpassare 'in ogni condizione di traffico'. Ci sono molte situazioni in cui il sorpasso è vietato, anche se non c'è un segnale specifico. Ad esempio, è vietato sorpassare in curva, in prossimità degli incroci, sui dossi o quando la visibilità è scarsa.",
         "regola": "Sorpasso = tante regole, non solo il divieto.",
         "trabocchetti": ["in ogni condizione di traffico"],
@@ -253,12 +286,14 @@ QUESTIONS = [
     {
         "domanda": "Chi guida un veicolo deve usare il clacson nei centri abitati, ogni qualvolta ci si avvicina ad un attraversamento ciclabile",
         "risposta": False,
+        "riassunto": "Guidare → clacson a ogni attraversamento ciclabile?",
         "spiegazione": "Questa affermazione è falsa. Nei centri abitati, il clacson (avvisatore acustico) si usa solo in caso di pericolo immediato per evitare un incidente. Non si deve usare per segnalare la propria presenza agli attraversamenti ciclabili o pedonali, altrimenti si disturba la quiete pubblica.",
         "regola": "Clacson in città = solo per pericolo grave.",
     },
     {
         "domanda": "Chi guida un veicolo può montare trombe bitonali per essere sentito più agevolmente, usandole però solo fuori dei centri abitati",
         "risposta": False,
+        "riassunto": "Guidare → trombe bitonali fuori città?",
         "spiegazione": "Questa affermazione è falsa. Le trombe bitonali, che producono un suono più forte e complesso, sono vietate sui veicoli normali. Sono riservate solo ai veicoli di emergenza (come ambulanze, polizia, vigili del fuoco) per segnalare la loro urgenza.",
         "regola": "Trombe bitonali = solo per emergenza.",
         "trabocchetti": ["trombe bitonali"],
@@ -266,6 +301,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli è consentito il trasporto di animali se custoditi in apposita gabbia",
         "risposta": True,
+        "riassunto": "Motocicli → animali in gabbia?",
         "spiegazione": "Sui motocicli è permesso portare animali, ma solo se sono dentro una gabbia speciale, ben fissata e che non ti impedisca di guidare in sicurezza.",
         "regola": "Animale in moto? Solo in gabbia sicura!",
         "trabocchetti": ["se custoditi in apposita gabbia"],
@@ -273,6 +309,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico deve essere sistemato sui motocicli in modo da non sporgere lateralmente di oltre 50 cm",
         "risposta": True,
+        "riassunto": "Motocicli → carico fino a 50 cm laterali?",
         "spiegazione": "Il carico sui motocicli non può sporgere troppo ai lati. Il limite massimo è di 50 centimetri per lato rispetto all'asse del veicolo.",
         "regola": "Moto: carico non più di 50 cm per lato.",
         "trabocchetti": ["50 cm"],
@@ -280,6 +317,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico deve essere sistemato sugli autoveicoli in modo da non diminuire la visibilità del conducente",
         "risposta": True,
+        "riassunto": "Carico → non ridurre la visibilità?",
         "spiegazione": "Il carico deve essere messo in modo che tu, come conducente, possa vedere bene la strada, gli specchietti e tutto ciò che ti circonda. La visibilità è fondamentale per la sicurezza.",
         "regola": "Vedi bene? Carico ok!",
         "trabocchetti": ["non diminuire la visibilità"],
@@ -287,6 +325,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico deve essere sistemato sugli autoveicoli in modo da non impedire la libertà di movimenti nella guida",
         "risposta": True,
+        "riassunto": "Carico → non impedire i movimenti?",
         "spiegazione": "Il carico non deve bloccare i tuoi movimenti. Devi poter usare il volante, i pedali e il cambio senza problemi per guidare in modo sicuro e reattivo.",
         "regola": "Guida libero? Carico ok!",
         "trabocchetti": ["non impedire la libertà di movimenti"],
@@ -294,6 +333,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico deve essere sistemato sugli autoveicoli in modo da evitarne la caduta",
         "risposta": True,
+        "riassunto": "Carico → evitare la caduta?",
         "spiegazione": "Il carico deve essere sempre ben fissato e stabile. Se cade, può essere pericoloso per te e per gli altri utenti della strada.",
         "regola": "Carico fermo, mai a terra!",
         "trabocchetti": ["evitarne la caduta"],
@@ -301,12 +341,14 @@ QUESTIONS = [
     {
         "domanda": "Il carico deve essere sistemato sugli autoveicoli in modo da non sporgere dalla parte posteriore per più dei tre decimi della lunghezza del veicolo",
         "risposta": True,
+        "riassunto": "Carico → non oltre 3/10 dietro?",
         "spiegazione": "Il carico può sporgere dalla parte posteriore dell'autoveicolo, ma c'è un limite preciso: non più di tre decimi (cioè il 30%) della lunghezza totale del veicolo.",
         "regola": "Dietro: max 3/10 della lunghezza.",
     },
     {
         "domanda": "Il carico sugli autoveicoli non deve superare la portata indicata nella carta di circolazione",
         "risposta": True,
+        "riassunto": "Carico → entro la portata della carta di circolazione?",
         "spiegazione": "Ogni veicolo ha un peso massimo che può trasportare, chiamato 'portata'. Questo limite è scritto sulla 'carta di circolazione' (il libretto del veicolo) e non deve mai essere superato per la tua sicurezza e per non danneggiare il veicolo.",
         "regola": "Peso? Controlla la carta!",
         "trabocchetti": ["non deve superare la portata", "carta di circolazione"],
@@ -314,12 +356,14 @@ QUESTIONS = [
     {
         "domanda": "Il carico deve essere sistemato sugli autoveicoli in modo da evitare la sporgenza laterale dello stesso per più di tre decimi della lunghezza del veicolo",
         "risposta": False,
+        "riassunto": "Carico → sporgenza laterale fino a 3/10?",
         "spiegazione": "La regola dei tre decimi della lunghezza riguarda la sporgenza posteriore di un carico indivisibile, non quella laterale. Entro i limiti massimi di sagoma, il carico può sporgere lateralmente fino a 30 cm dalle luci di posizione anteriori e posteriori per ciascun lato; per oggetti difficili da percepire, come pali e sbarre posti orizzontalmente, vale un limite più restrittivo.",
         "regola": "Tre decimi = sporgenza posteriore di cose indivisibili; lateralmente, nei casi ammessi, fino a 30 cm dalle luci di posizione.",
     },
     {
         "domanda": "Il carico deve essere sistemato sugli autoveicoli in modo da non superare di oltre il 10% l'altezza massima prevista dalla carta di circolazione, ma entro 4 metri",
         "risposta": False,
+        "riassunto": "Carico → altezza +10% entro 4 m?",
         "spiegazione": "Questa affermazione è falsa. L'altezza massima di un veicolo con il suo carico non può mai superare i 4 metri. Non esiste una tolleranza del 10% sull'altezza massima indicata sulla carta di circolazione.",
         "regola": "Altezza massima: 4 metri, senza eccezioni.",
         "trabocchetti": ["non superare di oltre il 10% l"],
@@ -327,12 +371,14 @@ QUESTIONS = [
     {
         "domanda": "Il carico deve essere sistemato sugli autoveicoli in modo da non superare di oltre il 10% la portata utile indicata sul documento di circolazione",
         "risposta": False,
+        "riassunto": "Carico → portata +10%?",
         "spiegazione": "Questa affermazione è falsa. Non è consentito superare la portata utile del veicolo, nemmeno del 10%. La portata è un limite massimo e deve essere rispettata esattamente per la sicurezza e la legalità.",
         "regola": "Portata? Zero tolleranza!",
     },
     {
         "domanda": "Il carico deve essere sistemato sugli autoveicoli in modo da sporgere dalla parte anteriore del veicolo di più dei tre decimi della sua lunghezza",
         "risposta": False,
+        "riassunto": "Carico → oltre 3/10 davanti?",
         "spiegazione": "Questa affermazione è falsa. Il carico non può mai sporgere dalla parte anteriore del veicolo. La sporgenza è ammessa solo dietro (fino a 3/10 della lunghezza) e, in casi eccezionali, lateralmente per i motocicli.",
         "regola": "Davanti? Mai sporgere!",
         "trabocchetti": ["sporgere dalla parte anteriore"],
@@ -340,6 +386,7 @@ QUESTIONS = [
     {
         "domanda": "Il carico deve essere segnalato, di giorno, con un panno rosso se sporge dalla parte posteriore",
         "risposta": False,
+        "riassunto": "Carico sporgente dietro → panno rosso di giorno?",
         "spiegazione": "Questa affermazione è falsa. Se il carico sporge dalla parte posteriore, di giorno deve essere segnalato con un pannello quadrato speciale, omologato, a strisce BIANCHE e rosse, non con un semplice panno rosso.",
         "regola": "Sporgenza? Pannello bianco-rosso, non panno!",
         "trabocchetti": ["panno rosso"],
@@ -347,6 +394,7 @@ QUESTIONS = [
     {
         "domanda": "La sporgenza posteriore del carico deve essere segnalata con un pannello retroriflettente a strisce gialle e rosse",
         "risposta": False,
+        "riassunto": "Sporgenza posteriore → pannello giallo-rosso?",
         "spiegazione": "Questa affermazione è falsa. Il pannello per segnalare la sporgenza posteriore del carico deve avere strisce BIANCHE e rosse, non gialle e rosse. Il colore è importante per la riconoscibilità e la conformità alle norme.",
         "regola": "Pannello sporgenza: bianco e rosso.",
         "trabocchetti": ["strisce gialle e rosse"],
@@ -354,6 +402,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli in nessun caso è consentito trasportare un carico",
         "risposta": False,
+        "riassunto": "Motocicli → nessun carico?",
         "spiegazione": "Questa affermazione è falsa. Sui motocicli è consentito trasportare un carico, purché sia sistemato correttamente, non sporga troppo (ricordi i 50 cm per lato?) e non superi i limiti di peso.",
         "regola": "'Nessun caso'? Quasi sempre falso!",
         "trabocchetti": ["in nessun caso"],
@@ -361,6 +410,7 @@ QUESTIONS = [
     {
         "domanda": "Sui motocicli è consentito trasportare sacchetti con la spesa anche se non saldamente assicurati",
         "risposta": False,
+        "riassunto": "Motocicli → sacchetti non fissati?",
         "spiegazione": "Questa affermazione è falsa. Qualsiasi carico, anche i sacchetti della spesa, deve essere sempre ben fissato e 'saldamente assicurato' per non cadere, non spostarsi e non creare pericoli durante la guida.",
         "regola": "Carico? Sempre fisso e sicuro!",
         "trabocchetti": ["anche se non saldamente assicurati"],
@@ -368,6 +418,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso corretto della strada comporta che i veicoli procedano ad una velocità adeguata alle condizioni della strada e del traffico",
         "risposta": True,
+        "riassunto": "Uso corretto della strada → velocità adeguata?",
         "spiegazione": "Guidare a una velocità giusta per la situazione (strada, traffico, meteo) è fondamentale per la sicurezza. Non esiste una velocità unica, ma deve cambiare in base alle condizioni.",
         "regola": "Velocità = Sicurezza + Condizioni.",
         "trabocchetti": ["adeguata"],
@@ -375,6 +426,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso corretto della strada comporta che siano osservate le norme di comportamento e quelle dettate dalla comune prudenza",
         "risposta": True,
+        "riassunto": "Uso corretto → norme e comune prudenza?",
         "spiegazione": "Oltre alle regole scritte nel Codice della Strada, è importante usare il buon senso e la prudenza per evitare pericoli e guidare in modo sicuro per tutti.",
         "regola": "Regole + Prudenza = Guida Corretta.",
         "trabocchetti": ["comune prudenza"],
@@ -382,18 +434,21 @@ QUESTIONS = [
     {
         "domanda": "L'uso corretto della strada comporta che ci si affretti a sgombrare l'incrocio, quando compaia sul semaforo la luce gialla fissa e non si è in grado di arrestare il veicolo in sicurezza prima della striscia di arresto",
         "risposta": True,
+        "riassunto": "Uso corretto → col giallo liberare l'incrocio se non ci si può fermare?",
         "spiegazione": "Se il semaforo diventa giallo fisso e sei troppo vicino all'incrocio per fermarti in sicurezza (senza frenare bruscamente o creare pericolo), devi attraversare velocemente per non bloccare il traffico.",
         "regola": "Giallo + Troppo Vicino = Sgombra Veloce.",
     },
     {
         "domanda": "L'uso corretto della strada comporta che si dia la precedenza ai pedoni che attraversano sugli attraversamenti pedonali",
         "risposta": True,
+        "riassunto": "Uso corretto → precedenza ai pedoni sulle strisce?",
         "spiegazione": "I pedoni che attraversano sulle strisce pedonali hanno sempre la precedenza. È una regola molto importante per la loro sicurezza.",
         "regola": "Strisce Pedonali = Pedoni Prima.",
     },
     {
         "domanda": "L'uso corretto della strada comporta che si usino proiettori anabbaglianti nei centri abitati nelle ore notturne",
         "risposta": True,
+        "riassunto": "Uso corretto → anabbaglianti in città di notte?",
         "spiegazione": "Di notte, quando guidi nei centri abitati, devi usare i fari anabbaglianti. Servono per vedere la strada ed essere visti dagli altri, senza abbagliare nessuno.",
         "regola": "Notte + Città = Anabbaglianti.",
         "trabocchetti": ["anabbaglianti"],
@@ -401,6 +456,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso corretto della strada comporta che si guardino gli specchi retrovisori prima di azionare l'indicatore di direzione per cambiare corsia",
         "risposta": True,
+        "riassunto": "Uso corretto → specchietti prima della freccia?",
         "spiegazione": "Prima di cambiare corsia, svoltare o fare qualsiasi manovra, devi sempre guardare negli specchietti retrovisori per controllare se ci sono altri veicoli e poi segnalare la tua intenzione con la freccia.",
         "regola": "Specchi + Freccia = Manovra Sicura.",
         "trabocchetti": ["indicatore"],
@@ -408,6 +464,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso corretto della strada comporta che i veicoli impegnino sempre la carreggiata il più rapidamente possibile",
         "risposta": False,
+        "riassunto": "Uso corretto → impegnare la carreggiata in fretta?",
         "spiegazione": "Non bisogna sempre andare il più velocemente possibile. La velocità deve essere 'adeguata' alle condizioni della strada e del traffico, non per forza massima. Andare troppo veloce può essere pericoloso.",
         "regola": "Non 'sempre veloce', ma 'sempre adeguato'.",
         "trabocchetti": ["sempre", "il più rapidamente possibile"],
@@ -415,6 +472,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso corretto della strada comporta che ci si arresti sempre ai passaggi pedonali ripartendo solo se non sopraggiungono pedoni",
         "risposta": False,
+        "riassunto": "Uso corretto → fermarsi sempre alle strisce?",
         "spiegazione": "Ti fermi ai passaggi pedonali solo se ci sono pedoni che vogliono attraversare o stanno già attraversando. Se non c'è nessuno, non devi fermarti, ma rallentare e fare attenzione.",
         "regola": "Pedoni = Stop. No Pedoni = Via Libera.",
         "trabocchetti": ["sempre"],
@@ -422,6 +480,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso corretto della strada comporta che si usino in ogni caso i proiettori a luce abbagliante",
         "risposta": False,
+        "riassunto": "Uso corretto → sempre abbaglianti?",
         "spiegazione": "I fari abbaglianti si usano solo fuori dai centri abitati e quando non ci sono altri veicoli (o pedoni) che potresti abbagliare. Non si usano 'in ogni caso'.",
         "regola": "Abbaglianti = Solo se nessuno è abbagliato.",
         "trabocchetti": ["in ogni caso"],
@@ -429,6 +488,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso corretto della strada comporta che ci si arresti in ogni caso in presenza del segnale in figura",
         "risposta": False,
+        "riassunto": "Uso corretto → fermarsi sempre col segnale in figura?",
         "spiegazione": "Se il segnale è un 'Dare precedenza' (il triangolo rovesciato), ti fermi solo se devi dare la precedenza ad altri veicoli. Se la strada è libera e non arriva nessuno, non ti fermi, ma rallenti e controlli.",
         "regola": "Dare Precedenza = Fermati solo se serve.",
         "trabocchetti": ["in ogni caso"],
@@ -437,6 +497,7 @@ QUESTIONS = [
     {
         "domanda": "L'uso corretto della strada comporta che si proceda a velocità elevata per non creare intralcio",
         "risposta": False,
+        "riassunto": "Uso corretto → velocità elevata per non intralciare?",
         "spiegazione": "Andare a velocità elevata è pericoloso e non è il modo corretto di guidare. La velocità deve essere 'adeguata' alle condizioni, non alta. Creare intralcio significa andare troppo piano, ma anche andare troppo veloce è sbagliato.",
         "regola": "Velocità 'elevata' = Pericolo. Velocità 'adeguata' = Sicurezza.",
         "trabocchetti": ["velocità elevata"],
@@ -444,6 +505,7 @@ QUESTIONS = [
     {
         "domanda": "Quando, giunti in prossimità di un incrocio, ci accorgiamo di aver sbagliato la corsia di preselezione dobbiamo seguire la direzione consentita dall'eventuale segnaletica orizzontale",
         "risposta": True,
+        "riassunto": "Corsia sbagliata → seguire la segnaletica orizzontale?",
         "spiegazione": "Se ti accorgi di aver scelto la corsia sbagliata prima di un incrocio, devi comunque seguire la direzione indicata dalle frecce sull'asfalto (segnaletica orizzontale) per quella corsia. Non puoi cambiare idea all'ultimo momento.",
         "regola": "Corsia sbagliata? Segui la freccia!",
         "trabocchetti": ["dobbiamo seguire la direzione consentita"],
@@ -451,12 +513,14 @@ QUESTIONS = [
     {
         "domanda": "Quando, giunti in prossimità di un incrocio, ci accorgiamo di aver sbagliato la corsia di preselezione non dobbiamo effettuare cambiamenti di corsia, anche per non intralciare i veicoli che seguono",
         "risposta": True,
+        "riassunto": "Corsia sbagliata → non cambiare corsia?",
         "spiegazione": "Quando sei già vicino all'incrocio e hai sbagliato corsia, non devi cambiare corsia all'ultimo momento. Questo è pericoloso e crea confusione per gli altri veicoli che ti seguono o che sono nelle corsie vicine.",
         "regola": "Corsia sbagliata? Non cambiare!",
     },
     {
         "domanda": "Quando, giunti in prossimità di un incrocio, ci accorgiamo di aver sbagliato la corsia di preselezione non ci dobbiamo arrestare bruscamente, per evitare tamponamenti e confusione nella circolazione",
         "risposta": True,
+        "riassunto": "Corsia sbagliata → non fermarsi bruscamente?",
         "spiegazione": "Se hai sbagliato corsia, non devi frenare forte e all'improvviso. Frenare bruscamente è molto pericoloso e può causare un tamponamento con il veicolo che ti segue.",
         "regola": "Mai frenare di colpo all'incrocio!",
         "trabocchetti": ["non ci dobbiamo arrestare bruscamente"],
@@ -464,12 +528,14 @@ QUESTIONS = [
     {
         "domanda": "Quando, giunti in prossimità di un incrocio, ci accorgiamo di aver sbagliato la corsia di preselezione non ci dobbiamo fermare a chiedere informazioni, per non ostacolare il flusso della circolazione",
         "risposta": True,
+        "riassunto": "Corsia sbagliata → non fermarsi a chiedere?",
         "spiegazione": "Non devi fermarti in mezzo all'incrocio per chiedere informazioni. Questo bloccherebbe il traffico e creerebbe un pericolo per tutti gli altri veicoli.",
         "regola": "Incrocio non è un ufficio informazioni!",
     },
     {
         "domanda": "Quando, giunti in prossimità di un incrocio, ci accorgiamo di aver sbagliato la corsia di preselezione dobbiamo procedere nel senso voluto dalla segnaletica, dando le dovute precedenze",
         "risposta": True,
+        "riassunto": "Corsia sbagliata → seguire la segnaletica dando precedenza?",
         "spiegazione": "Anche se hai sbagliato corsia, devi continuare a guidare nella direzione indicata dalla segnaletica per quella corsia. Ricorda sempre di dare la precedenza a chi ce l'ha, come faresti normalmente.",
         "regola": "Segui la freccia e dai la precedenza!",
         "trabocchetti": ["e"],
@@ -477,12 +543,14 @@ QUESTIONS = [
     {
         "domanda": "Giungendo ad un incrocio, se non si è in grado di capire subito chi ha la precedenza, bisogna procedere con prudenza e accortezza",
         "risposta": True,
+        "riassunto": "Precedenza poco chiara → prudenza?",
         "spiegazione": "Se arrivi a un incrocio e non sei sicuro di chi debba passare per primo (chi ha la precedenza), la cosa più sicura da fare è rallentare e procedere con molta attenzione. Meglio essere troppo prudenti che causare un incidente.",
         "regola": "Dubbio sulla precedenza? Rallenta e osserva!",
     },
     {
         "domanda": "Giungendo ad un incrocio, se non si è in grado di capire subito chi ha la precedenza, si può proseguire senza rallentare, se si sceglie di andare diritto",
         "risposta": False,
+        "riassunto": "Precedenza poco chiara → diritto senza rallentare?",
         "spiegazione": "Questa affermazione è falsa. Se non sei sicuro di chi ha la precedenza, devi sempre rallentare e fare attenzione, non importa se vuoi andare dritto, girare a destra o a sinistra. Proseguire senza rallentare è molto pericoloso.",
         "regola": "Precedenza incerta? Rallenta SEMPRE!",
         "trabocchetti": ["si può proseguire senza rallentare"],
@@ -490,18 +558,21 @@ QUESTIONS = [
     {
         "domanda": "Quando, giunti in prossimità di un incrocio, ci accorgiamo di aver sbagliato la corsia di preselezione dobbiamo effettuare la manovra di svolta che intendevamo fare, dando però precedenza a tutti i veicoli",
         "risposta": False,
+        "riassunto": "Corsia sbagliata → svoltare comunque dando precedenza a tutti?",
         "spiegazione": "Questa affermazione è falsa. Se hai sbagliato corsia, non puoi forzare la svolta che volevi fare. Devi seguire la direzione indicata per la corsia in cui ti trovi, anche se non è quella che avevi in mente.",
         "regola": "Non puoi forzare la svolta!",
     },
     {
         "domanda": "Quando, giunti in prossimità di un incrocio, ci accorgiamo di aver sbagliato la corsia di preselezione dobbiamo chiedere consiglio agli agenti del traffico",
         "risposta": False,
+        "riassunto": "Corsia sbagliata → chiedere agli agenti?",
         "spiegazione": "Questa affermazione è falsa. Non devi fermarti all'incrocio per chiedere consiglio agli agenti del traffico. Questo bloccherebbe la circolazione e creerebbe un pericolo. Devi procedere seguendo la segnaletica della tua corsia.",
         "regola": "Agente non è un navigatore!",
     },
     {
         "domanda": "Quando, giunti in prossimità di un incrocio, ci accorgiamo di aver sbagliato la corsia di preselezione dobbiamo azionare l'accensione simultanea di tutti gli indicatori di direzione, quale segnale di pericolo",
         "risposta": False,
+        "riassunto": "Corsia sbagliata → quattro frecce?",
         "spiegazione": "Questa affermazione è falsa. Accendere tutte le frecce (luci di emergenza) non è la soluzione quando hai sbagliato corsia. Le luci di emergenza si usano per segnalare un vero pericolo (es. veicolo in panne), non un errore di percorso. Usarle in questo caso può confondere gli altri guidatori.",
         "regola": "Frecce d'emergenza non sono per errori di corsia!",
         "trabocchetti": ["azionare l"],
@@ -509,6 +580,7 @@ QUESTIONS = [
     {
         "domanda": "Quando, giunti in prossimità di un incrocio, ci accorgiamo di aver sbagliato la corsia di preselezione dobbiamo accostarci sulla destra e fermarci finché non sia passata la colonna dei veicoli che seguono",
         "risposta": False,
+        "riassunto": "Corsia sbagliata → fermarsi a destra finché passa la colonna?",
         "spiegazione": "Questa affermazione è falsa. Non devi accostarti e fermarti all'incrocio, nemmeno sulla destra. Fermarsi in un incrocio è pericoloso e blocca il traffico. Devi continuare a procedere seguendo la direzione della tua corsia.",
         "regola": "Non fermarti all'incrocio!",
         "trabocchetti": ["accostarci sulla destra e fermarci"],
@@ -516,6 +588,7 @@ QUESTIONS = [
     {
         "domanda": "Quando, giunti in prossimità di un incrocio, ci accorgiamo di aver sbagliato la corsia di preselezione cerchiamo di retrocedere, con prudenza, fino al punto in cui cessano le strisce continue di corsia",
         "risposta": False,
+        "riassunto": "Corsia sbagliata → retrocedere fino alle strisce tratteggiate?",
         "spiegazione": "Questa affermazione è falsa. Non devi mai fare retromarcia in un incrocio, nemmeno con prudenza. È una manovra estremamente pericolosa e vietata che può causare incidenti gravi.",
         "regola": "Mai fare retromarcia all'incrocio!",
         "trabocchetti": ["cerchiamo di retrocedere"],
@@ -523,12 +596,14 @@ QUESTIONS = [
     {
         "domanda": "Quando, giunti in prossimità di un incrocio, ci accorgiamo di aver sbagliato la corsia di preselezione dobbiamo arrivare al semaforo e attendere che la luce ci consenta di effettuare il cambio di corsia",
         "risposta": False,
+        "riassunto": "Corsia sbagliata → cambiare corsia al semaforo?",
         "spiegazione": "Questa affermazione è falsa. Non puoi aspettare al semaforo per cambiare corsia. Una volta che sei in una corsia di preselezione, devi seguire la direzione che quella corsia ti permette. Il semaforo regola il flusso del traffico, non ti permette di cambiare corsia all'interno dell'incrocio.",
         "regola": "Semaforo non cambia la tua corsia!",
     },
     {
         "domanda": "In un centro abitato, quando un pedone, fuori delle strisce di attraversamento, non accenni a darci la precedenza, è necessario ridurre la velocità e, occorrendo, fermarsi per non investirlo",
         "risposta": True,
+        "riassunto": "Pedone fuori strisce che non cede → rallentare e se serve fermarsi?",
         "spiegazione": "Anche se il pedone è fuori dalle strisce, tu come conducente hai sempre la responsabilità di evitare incidenti. È fondamentale ridurre la velocità e, se necessario, fermarsi per garantire la sua sicurezza e non investirlo.",
         "regola": "Pedone = sempre massima attenzione.",
         "trabocchetti": ["necessario", "Non investirlo"],
@@ -536,6 +611,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato, quando un pedone, fuori delle strisce di attraversamento, non accenni a darci la precedenza, è opportuno rallentare e avvisarlo con un breve colpo di clacson, in caso di pericolo immediato",
         "risposta": True,
+        "riassunto": "Pedone fuori strisce → breve clacson in caso di pericolo?",
         "spiegazione": "Rallentare è sempre una buona idea per la sicurezza. Usare il clacson è permesso solo per avvisare di un pericolo immediato, non per rimproverare il pedone. Un 'breve colpo' è la chiave per un uso corretto.",
         "regola": "Clacson: solo per pericolo, non per 'svegliare'.",
         "trabocchetti": ["breve colpo di clacson", "in caso di pericolo immediato"],
@@ -543,6 +619,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato, quando un pedone, fuori delle strisce di attraversamento, non accenni a darci la precedenza, è necessario ridurre la velocità fino a fermarsi tempestivamente, se occorre",
         "risposta": True,
+        "riassunto": "Pedone fuori strisce → ridurre fino a fermarsi se serve?",
         "spiegazione": "Questa domanda ribadisce il concetto delle precedenti. La sicurezza è prioritaria. Devi essere pronto a fermarti subito ('tempestivamente') se c'è il rischio di un incidente, anche se il pedone è in torto.",
         "regola": "Fermarsi è meglio che investire.",
         "trabocchetti": ["necessario", "Tempestivamente"],
@@ -550,6 +627,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato, quando un pedone, fuori delle strisce di attraversamento, non accenni a darci la precedenza, è opportuno nelle ore notturne, procedere con gli abbaglianti accesi così che possa accorgersi di noi",
         "risposta": False,
+        "riassunto": "Pedone fuori strisce di notte → abbaglianti accesi?",
         "spiegazione": "È FALSO. In un centro abitato, specialmente di notte, non si usano gli abbaglianti. Abbagliano gli altri conducenti e anche i pedoni, creando più pericolo invece di risolverlo. Devi usare gli anabbaglianti.",
         "regola": "Abbaglianti in città = MAI.",
         "trabocchetti": ["abbaglianti accesi", "centro abitato"],
@@ -557,6 +635,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato, quando un pedone, fuori delle strisce di attraversamento, non accenni a darci la precedenza, è opportuno cercare di richiamare la sua attenzione con qualsiasi mezzo, perché ci dia la precedenza",
         "risposta": False,
+        "riassunto": "Pedone fuori strisce → richiamarlo con ogni mezzo?",
         "spiegazione": "È FALSO. Non puoi usare 'qualsiasi mezzo' per richiamare l'attenzione del pedone. Alcuni mezzi (come gridare, fare gesti bruschi o usare il clacson in modo eccessivo) potrebbero spaventarlo o distrarlo, causando un pericolo maggiore. Il tuo obiettivo è la sicurezza, non forzare il pedone a darti la precedenza.",
         "regola": "Non forzare, previeni il pericolo.",
         "trabocchetti": ["con qualsiasi mezzo", "perché ci dia la precedenza"],
@@ -564,6 +643,7 @@ QUESTIONS = [
     {
         "domanda": "In un centro abitato, quando un pedone, fuori delle strisce di attraversamento, non accenni a darci la precedenza, è necessario proseguire, senza curarci di lui, perché abbiamo la precedenza",
         "risposta": False,
+        "riassunto": "Pedone fuori strisce → proseguire, abbiamo precedenza?",
         "spiegazione": "È FALSO. Questa è una risposta molto pericolosa! Anche se hai la precedenza, non puoi mai 'proseguire, senza curarci di lui'. La tua responsabilità come conducente è sempre quella di evitare incidenti. La precedenza non ti dà il diritto di mettere in pericolo nessuno.",
         "regola": "La precedenza non è un via libera per investire.",
         "trabocchetti": ["senza curarci di lui", "perché abbiamo la precedenza"],
@@ -571,6 +651,7 @@ QUESTIONS = [
     {
         "domanda": "Quando, in un centro abitato, il conducente di un veicolo si imbatte in un corteo, deve fermarsi sulla destra e attendere che la carreggiata si liberi",
         "risposta": True,
+        "riassunto": "Corteo in città → fermarsi a destra e attendere?",
         "spiegazione": "Quando incontri un corteo (come una sfilata o una processione) in città, devi fermarti sul lato destro della strada e aspettare che tutto il corteo sia passato e la strada sia di nuovo libera. È una questione di sicurezza e rispetto.",
         "regola": "Corteo = Fermati e aspetta a destra.",
         "trabocchetti": ["deve"],
@@ -578,6 +659,7 @@ QUESTIONS = [
     {
         "domanda": "Quando, in un centro abitato, il conducente di un veicolo si imbatte in un corteo, deve evitare di suonare il clacson",
         "risposta": True,
+        "riassunto": "Corteo → niente clacson?",
         "spiegazione": "È importante non suonare il clacson quando incontri un corteo. Farlo potrebbe disturbare le persone o creare confusione. Devi mantenere la calma e il silenzio.",
         "regola": "Corteo = No clacson.",
         "trabocchetti": ["deve evitare"],
@@ -585,6 +667,7 @@ QUESTIONS = [
     {
         "domanda": "È opportuno che il conducente di un veicolo, quando in un centro abitato si imbatte in un corteo, imbocchi, se possibile, una strada laterale, purché la manovra possa essere fatta in maniera corretta",
         "risposta": True,
+        "riassunto": "Corteo → prendere una laterale se corretto?",
         "spiegazione": "Se vedi un corteo e c'è una strada laterale che puoi prendere in modo sicuro e senza problemi, è una buona idea farlo per non intralciare e non aspettare troppo a lungo. Ma solo se la manovra è facile e sicura!",
         "regola": "Corteo = Via laterale se sicuro.",
         "trabocchetti": ["È opportuno", "se possibile"],
@@ -592,6 +675,7 @@ QUESTIONS = [
     {
         "domanda": "Quando, in un centro abitato, il conducente di un veicolo si imbatte in un corteo, deve accertarsi, prima di passare, che esso sia transitato completamente",
         "risposta": True,
+        "riassunto": "Corteo → aspettare che passi del tutto?",
         "spiegazione": "Prima di ripartire, devi essere sicuro che l'intero corteo sia passato. Non provare a passare in mezzo o subito dopo l'ultima persona, aspetta che la strada sia completamente libera.",
         "regola": "Corteo = Aspetta la fine completa.",
         "trabocchetti": ["Deve accertarsi", "completamente"],
@@ -599,18 +683,21 @@ QUESTIONS = [
     {
         "domanda": "È opportuno che il conducente di un veicolo, quando in un centro abitato si imbatte in un corteo, eviti di retrocedere se ciò ostacola il flusso della circolazione",
         "risposta": True,
+        "riassunto": "Corteo → non retrocedere se si intralcia?",
         "spiegazione": "Non è una buona idea fare retromarcia se questo blocca le altre auto o crea problemi al traffico. Cerca di gestire la situazione senza creare ulteriori ingorghi.",
         "regola": "Corteo = No retro se blocchi.",
     },
     {
         "domanda": "È opportuno che il conducente di un veicolo, quando in un centro abitato si imbatte in un corteo, non faccia inversione di marcia, qualora ciò costituisca intralcio alla circolazione",
         "risposta": True,
+        "riassunto": "Corteo → non invertire se si intralcia?",
         "spiegazione": "Fare inversione di marcia (girare l'auto di 180 gradi) può essere pericoloso e bloccare il traffico. Se incontri un corteo, è meglio non farlo se questo crea intralcio.",
         "regola": "Corteo = No inversione se intralci.",
     },
     {
         "domanda": "Quando, in un centro abitato, il conducente di un veicolo si imbatte in un corteo, deve suonare discretamente onde avvertire il corteo di far cessare al più presto l'ingombro",
         "risposta": False,
+        "riassunto": "Corteo → suonare discretamente?",
         "spiegazione": "È FALSO. Non devi suonare il clacson per dire al corteo di sbrigarsi o di liberare la strada. Questo è maleducato e può causare confusione. Devi aspettare con pazienza.",
         "regola": "Corteo = Mai suonare per affrettare.",
         "trabocchetti": ["ingombro", "avvertire"],
@@ -618,6 +705,7 @@ QUESTIONS = [
     {
         "domanda": "Quando, in un centro abitato, il conducente di un veicolo si imbatte in un corteo, deve cercare di farsi strada interrompendo il corteo, ma con estrema prudenza",
         "risposta": False,
+        "riassunto": "Corteo → farsi strada interrompendolo?",
         "spiegazione": "È FALSO. Non devi mai cercare di farti strada o interrompere un corteo, anche se lo fai con prudenza. È pericoloso e non permesso. Devi aspettare che passi.",
         "regola": "Corteo = Mai interrompere.",
         "trabocchetti": ["interrompendo il corteo"],
@@ -625,6 +713,7 @@ QUESTIONS = [
     {
         "domanda": "È opportuno che il conducente di un veicolo, quando in un centro abitato si imbatte in un corteo, accenda le luci di profondità per vedere meglio ed evitare incidenti",
         "risposta": False,
+        "riassunto": "Corteo → accendere gli abbaglianti?",
         "spiegazione": "È FALSO. Le luci di profondità (abbaglianti) sono molto forti e servono per vedere bene di notte su strade senza illuminazione, fuori città. Accenderle in un centro abitato, specialmente vicino a persone, è pericoloso perché acceca gli altri.",
         "regola": "Corteo = No abbaglianti in città.",
         "trabocchetti": ["luci di profondità"],
@@ -632,6 +721,7 @@ QUESTIONS = [
     {
         "domanda": "È opportuno che il conducente di un veicolo, quando in un centro abitato si imbatte in un corteo, se proprio ha molta fretta, passi rapidamente usando il clacson in maniera continua",
         "risposta": False,
+        "riassunto": "Corteo → passare veloci col clacson se si ha fretta?",
         "spiegazione": "È FALSO. Avere fretta non ti dà il permesso di guidare in modo pericoloso o irrispettoso. Non puoi passare velocemente suonando il clacson in continuazione. Devi aspettare con calma.",
         "regola": "Corteo = La fretta non è scusa.",
         "trabocchetti": ["se proprio ha molta fretta", "passi rapidamente", "usando il clacson in maniera continua"],
@@ -639,6 +729,7 @@ QUESTIONS = [
     {
         "domanda": "Quando, in un centro abitato, il conducente di un veicolo si imbatte in un corteo, deve regolarsi in base alla sua densità, oltrepassandolo o interrompendolo qualora sia possibile",
         "risposta": False,
+        "riassunto": "Corteo → oltrepassarlo o interromperlo secondo la densità?",
         "spiegazione": "È FALSO. Non puoi decidere di superare o interrompere un corteo in base a quanto è 'denso'. La regola è chiara: devi aspettare che passi completamente, senza cercare di farti strada.",
         "regola": "Corteo = Non si supera né interrompe.",
         "trabocchetti": ["oltrepassandolo o interrompendolo"],
@@ -646,6 +737,7 @@ QUESTIONS = [
     {
         "domanda": "Quando, in un centro abitato, il conducente di un veicolo si imbatte in un corteo, deve retrocedere rapidamente fino al primo incrocio",
         "risposta": False,
+        "riassunto": "Corteo → retrocedere fino al primo incrocio?",
         "spiegazione": "È FALSO. Non devi fare retromarcia rapidamente, e tantomeno fino al primo incrocio. Questo può essere molto pericoloso e creare un grande intralcio al traffico. La retromarcia va fatta solo se strettamente necessario e con la massima prudenza, senza creare pericoli.",
         "regola": "Corteo = No retromarcia rapida e lunga.",
         "trabocchetti": ["rapidamente", "fino al primo incrocio"],
@@ -653,6 +745,7 @@ QUESTIONS = [
     {
         "domanda": "Quando ad un incrocio urbano, al segnale di via libera, il veicolo che precede tarda a riprendere la marcia, è opportuno attendere pazientemente la ripresa della marcia",
         "risposta": True,
+        "riassunto": "Chi precede tarda col verde → attendere pazientemente?",
         "spiegazione": "Quando un veicolo davanti a te tarda a partire al semaforo verde, la cosa migliore da fare è aspettare con calma. Non sappiamo il motivo del ritardo, potrebbe essere una distrazione o un piccolo problema al veicolo. La pazienza aiuta a mantenere la calma nel traffico.",
         "regola": "Nel traffico, la pazienza è d'oro.",
         "trabocchetti": ["pazientemente"],
@@ -660,12 +753,14 @@ QUESTIONS = [
     {
         "domanda": "Quando ad un incrocio urbano, al segnale di via libera, il veicolo che precede tarda a riprendere la marcia, è opportuno evitare di suonare il clacson con insistenza e di provocare una situazione di intolleranza negli altri automobilisti",
         "risposta": True,
+        "riassunto": "Chi precede tarda col verde → niente clacson insistente?",
         "spiegazione": "Suonare il clacson in modo insistente non serve a nulla, anzi, può solo innervosire gli altri automobilisti e creare una situazione spiacevole. Il clacson va usato solo in caso di pericolo immediato.",
         "regola": "Clacson: solo per pericolo, non per fretta.",
     },
     {
         "domanda": "Quando ad un incrocio urbano, al segnale di via libera, il veicolo che precede tarda a riprendere la marcia, è opportuno, se c'è bisogno ed è possibile farlo senza pericolo, prestare aiuto all'automobilista rimasto fermo",
         "risposta": True,
+        "riassunto": "Chi precede tarda col verde → aiutarlo se possibile senza pericolo?",
         "spiegazione": "Se vedi che l'automobilista davanti ha un problema (ad esempio, la macchina non parte) e puoi aiutarlo senza metterti in pericolo o bloccare ancora di più il traffico, è un gesto di civiltà e solidarietà. Ma sempre con prudenza!",
         "regola": "Aiuta se puoi, ma sempre in sicurezza.",
         "trabocchetti": ["se c"],
@@ -673,6 +768,7 @@ QUESTIONS = [
     {
         "domanda": "Nei centri abitati è vietato l'uso del segnalatore acustico per sollecitare il conducente del veicolo che precede a riprendere la marcia quando il semaforo diventa verde",
         "risposta": True,
+        "riassunto": "In città → vietato il clacson per sollecitare a ripartire?",
         "spiegazione": "Nei centri abitati, l'uso del clacson è vietato per sollecitare un veicolo a partire. Si può usare solo in caso di pericolo grave e immediato per evitare un incidente. Suonare per 'svegliare' qualcuno non è permesso.",
         "regola": "Clacson in città: solo per emergenza.",
         "trabocchetti": ["vietato l"],
@@ -680,12 +776,14 @@ QUESTIONS = [
     {
         "domanda": "Quando ad un incrocio urbano, al segnale di via libera, il veicolo che precede tarda a riprendere la marcia, non si deve superarlo con manovre pericolose",
         "risposta": True,
+        "riassunto": "Chi precede tarda col verde → non superarlo pericolosamente?",
         "spiegazione": "La sicurezza è sempre la cosa più importante. Superare un veicolo fermo in un incrocio, specialmente in città, con manovre azzardate è molto pericoloso e può causare incidenti gravi. Meglio aspettare.",
         "regola": "Mai manovre pericolose, la sicurezza prima di tutto.",
     },
     {
         "domanda": "Quando ad un incrocio urbano, al segnale di via libera, il veicolo che precede tarda a riprendere la marcia, è opportuno suonare insistentemente per sollecitare il conducente a rimettersi in moto",
         "risposta": False,
+        "riassunto": "Chi precede tarda → suonare insistentemente?",
         "spiegazione": "Questa affermazione è falsa. Come abbiamo già detto, suonare il clacson in modo insistente per sollecitare un veicolo a partire è sbagliato e vietato nei centri abitati. Crea solo rumore e nervosismo.",
         "regola": "Clacson non è un campanello d'allarme per la partenza.",
         "trabocchetti": ["suonare insistentemente per sollecitare"],
@@ -693,6 +791,7 @@ QUESTIONS = [
     {
         "domanda": "Quando ad un incrocio urbano, al segnale di via libera, il veicolo che precede tarda a riprendere la marcia, è opportuno richiamare con il clacson l'attenzione degli automobilisti che seguono",
         "risposta": False,
+        "riassunto": "Chi precede tarda → clacson verso chi segue?",
         "spiegazione": "Questa affermazione è falsa. Il problema è il veicolo davanti a te che non parte, non quelli che ti seguono. Suonare il clacson per richiamare l'attenzione di chi sta dietro non ha senso e crea solo confusione e rumore inutile.",
         "regola": "Clacson: per chi è davanti, non per chi è dietro.",
         "trabocchetti": ["richiamare con il clacson l"],
@@ -700,12 +799,14 @@ QUESTIONS = [
     {
         "domanda": "Quando ad un incrocio urbano, al segnale di via libera, il veicolo che precede tarda a riprendere la marcia, è opportuno tirare il freno a mano e scendere per cercare un agente del traffico che prenda i dovuti provvedimenti",
         "risposta": False,
+        "riassunto": "Chi precede tarda → scendere a cercare un agente?",
         "spiegazione": "Questa affermazione è falsa. Scendere dal veicolo in mezzo al traffico, specialmente a un incrocio, è estremamente pericoloso per te e per gli altri. Inoltre, bloccheresti ancora di più la circolazione. Non è un comportamento corretto o sicuro.",
         "regola": "Resta in auto, non scendere nel traffico.",
     },
     {
         "domanda": "Quando ad un incrocio urbano, al segnale di via libera, il veicolo che precede tarda a riprendere la marcia, è opportuno cercare di sgombrare al più presto la carreggiata, anche invertendo il senso di marcia",
         "risposta": False,
+        "riassunto": "Chi precede tarda → liberare la strada anche invertendo?",
         "spiegazione": "Questa affermazione è falsa. Invertire il senso di marcia (fare un'inversione a U) in un incrocio è una manovra estremamente pericolosa e vietata dal Codice della Strada. Può causare incidenti gravissimi. Non è mai una soluzione per sgombrare la carreggiata.",
         "regola": "Mai invertire il senso di marcia in incrocio.",
         "trabocchetti": ["anche invertendo il senso di marcia"],
@@ -713,6 +814,7 @@ QUESTIONS = [
     {
         "domanda": "Allorché di notte, su strada extraurbana, incrociamo un veicolo con fari a luce abbagliante accesi, occorre procedere con prudenza, usando le luci anabbaglianti",
         "risposta": True,
+        "riassunto": "Abbagliati di notte → prudenza con anabbaglianti?",
         "spiegazione": "Quando un altro veicolo ti abbaglia con i fari di notte, devi guidare con attenzione (prudenza) e usare le tue luci anabbaglianti. Questo serve per non abbagliare a tua volta l'altro conducente e per mantenere una buona visibilità.",
         "regola": "Abbagliato? Anabbaglianti e prudenza!",
         "trabocchetti": ["procedere con prudenza", "Usando le luci anabbaglianti"],
@@ -720,6 +822,7 @@ QUESTIONS = [
     {
         "domanda": "Allorché di notte, su strada extraurbana, incrociamo un veicolo con fari a luce abbagliante accesi, occorre distogliere lo sguardo dal fascio luminoso per non essere abbagliati",
         "risposta": True,
+        "riassunto": "Abbagliati di notte → distogliere lo sguardo?",
         "spiegazione": "Se un veicolo ti abbaglia, non guardare direttamente i suoi fari. È meglio guardare un po' a destra, verso il bordo della strada. Così eviti di essere accecato e puoi ancora vedere la strada con la visione laterale.",
         "regola": "Non guardare la luce, guarda il bordo strada!",
         "trabocchetti": ["Distogliere lo sguardo"],
@@ -727,6 +830,7 @@ QUESTIONS = [
     {
         "domanda": "Allorché di notte, su strada extraurbana, incrociamo un veicolo con fari a luce abbagliante accesi, occorre rallentare adeguatamente ed eventualmente fermarsi",
         "risposta": True,
+        "riassunto": "Abbagliati di notte → rallentare ed eventualmente fermarsi?",
         "spiegazione": "Quando sei abbagliato, vedi meno bene. Per questo, è importante rallentare per avere più tempo per reagire. Se la visibilità è davvero scarsa e non vedi nulla, fermarsi in sicurezza è la scelta migliore.",
         "regola": "Abbagliato? Rallenta, se serve fermati!",
         "trabocchetti": ["adeguatamente", "eventualmente"],
@@ -734,6 +838,7 @@ QUESTIONS = [
     {
         "domanda": "Allorché di notte, su strada extraurbana, incrociamo un veicolo con fari a luce abbagliante accesi, occorre tener conto della ridotta visibilità nel nostro comportamento di guida",
         "risposta": True,
+        "riassunto": "Abbagliati di notte → tener conto della visibilità ridotta?",
         "spiegazione": "Essere abbagliati significa che la tua capacità di vedere è ridotta. Devi guidare tenendo conto di questo, quindi essere più attento e cauto in ogni tua azione al volante.",
         "regola": "Meno vedi, più attento devi essere!",
         "trabocchetti": ["Tener conto della ridotta visibilità"],
@@ -741,6 +846,7 @@ QUESTIONS = [
     {
         "domanda": "Allorché di notte, su strada extraurbana, incrociamo un veicolo con fari a luce abbagliante accesi, occorre evitare brusche manovre e cambi di corsia",
         "risposta": True,
+        "riassunto": "Abbagliati di notte → evitare manovre brusche?",
         "spiegazione": "Con la visibilità ridotta a causa dell'abbagliamento, fare manovre improvvise o cambiare corsia senza vedere bene può essere molto pericoloso. Potresti non vedere altri veicoli o ostacoli.",
         "regola": "Abbagliato? Niente mosse improvvise!",
         "trabocchetti": ["Evitare brusche manovre"],
@@ -748,6 +854,7 @@ QUESTIONS = [
     {
         "domanda": "Allorché di notte, su strada extraurbana, incrociamo un veicolo con fari a luce abbagliante accesi, occorre disporre il retrovisore interno in posizione antiabbagliante",
         "risposta": False,
+        "riassunto": "Abbagliati da chi viene di fronte → retrovisore antiabbagliante?",
         "spiegazione": "Il retrovisore interno serve per vedere i veicoli che ti seguono. Se un veicolo ti abbaglia da davanti, il retrovisore interno non ti aiuta. La posizione antiabbagliante del retrovisore interno serve per i fari dei veicoli che sono dietro di te.",
         "regola": "Abbagliato da davanti? Il retrovisore non ti aiuta!",
         "trabocchetti": ["retrovisore interno"],
@@ -755,6 +862,7 @@ QUESTIONS = [
     {
         "domanda": "Allorché di notte, su strada extraurbana, incrociamo un veicolo con fari a luce abbagliante accesi, occorre procedere a nostra volta con i fari abbaglianti, per veder meglio la strada",
         "risposta": False,
+        "riassunto": "Abbagliati di notte → rispondere con gli abbaglianti?",
         "spiegazione": "Se un altro veicolo ti abbaglia, non devi fare lo stesso. Accendere i tuoi fari abbaglianti creerebbe una situazione ancora più pericolosa per entrambi i conducenti. Devi usare gli anabbaglianti.",
         "regola": "Non abbagliare chi ti abbaglia!",
         "trabocchetti": ["A nostra volta con i fari abbaglianti"],
@@ -762,6 +870,7 @@ QUESTIONS = [
     {
         "domanda": "Allorché di notte, su strada extraurbana, incrociamo un veicolo con fari a luce abbagliante accesi, occorre fermarsi immediatamente",
         "risposta": False,
+        "riassunto": "Abbagliati di notte → fermarsi subito?",
         "spiegazione": "Fermarsi 'immediatamente' (di colpo) può essere molto pericoloso, specialmente su una strada extraurbana dove gli altri veicoli potrebbero non aspettarsi una frenata improvvisa. È meglio rallentare gradualmente e, se necessario, fermarsi in un luogo sicuro.",
         "regola": "Non fermarti di colpo, rallenta prima!",
         "trabocchetti": ["immediatamente"],
@@ -769,6 +878,7 @@ QUESTIONS = [
     {
         "domanda": "Allorché di notte, su strada extraurbana, incrociamo un veicolo con fari a luce abbagliante accesi, occorre azionare le trombe bitonali per richiamare l'attenzione del veicolo incrociante",
         "risposta": False,
+        "riassunto": "Abbagliati di notte → trombe bitonali?",
         "spiegazione": "Le trombe bitonali (il clacson) si usano solo per avvertire di un pericolo imminente. Non sono il modo corretto per segnalare a un altro conducente che ti sta abbagliando. Per questo si usano brevi lampeggi con i fari anabbaglianti.",
         "regola": "Non suonare il clacson, lampeggia!",
         "trabocchetti": ["Azionare le trombe bitonali"],
@@ -776,6 +886,7 @@ QUESTIONS = [
     {
         "domanda": "Allorché di notte, su strada extraurbana, incrociamo un veicolo con fari a luce abbagliante accesi, occorre cercare di ripararsi gli occhi con le mani",
         "risposta": False,
+        "riassunto": "Abbagliati di notte → ripararsi gli occhi con le mani?",
         "spiegazione": "Togliere le mani dal volante per coprirti gli occhi è molto pericoloso perché perdi il controllo del veicolo. È meglio distogliere lo sguardo o rallentare, ma le mani devono restare sul volante.",
         "regola": "Mani sul volante, sempre!",
         "trabocchetti": ["Ripararsi gli occhi con le mani"],
@@ -783,6 +894,7 @@ QUESTIONS = [
     {
         "domanda": "Per non costituire pericolo o intralcio per la circolazione, è necessario guidare in modo adeguato alle caratteristiche del veicolo, della strada e del traffico",
         "risposta": True,
+        "riassunto": "Non creare pericolo → guida adeguata a veicolo, strada e traffico?",
         "spiegazione": "Per guidare in sicurezza e non creare pericoli, devi sempre adattare il tuo modo di guidare. Questo significa considerare il tipo di veicolo che hai, le condizioni della strada (se è bagnata, stretta, ecc.) e quanto traffico c'è. È un principio fondamentale della guida sicura.",
         "regola": "Adatta la guida a tutto!",
         "trabocchetti": ["guidare in modo adeguato"],
@@ -790,12 +902,14 @@ QUESTIONS = [
     {
         "domanda": "Per non costituire pericolo o intralcio per la circolazione, è necessario osservare non solo le norme sulla circolazione, ma anche le cautele dettate dal buonsenso",
         "risposta": True,
+        "riassunto": "Non creare pericolo → norme e buonsenso?",
         "spiegazione": "Per essere un buon guidatore e non causare problemi, non basta solo conoscere e seguire le regole della strada. È altrettanto importante usare il 'buonsenso', cioè agire con intelligenza e prudenza in ogni situazione, anche quando non c'è una regola specifica.",
         "regola": "Regole + Buonsenso = Sicurezza.",
     },
     {
         "domanda": "Per non costituire pericolo o intralcio per la circolazione, è necessario unire all'applicazione delle fondamentali norme sulla circolazione un forte senso civico",
         "risposta": True,
+        "riassunto": "Non creare pericolo → norme e senso civico?",
         "spiegazione": "Guidare bene significa seguire le regole, ma anche avere un 'senso civico'. Questo vuol dire essere rispettosi degli altri utenti della strada (pedoni, ciclisti, altri automobilisti), essere pazienti e non fare cose che possono dare fastidio o mettere in pericolo gli altri.",
         "regola": "Regole + Rispetto = Guida sicura.",
         "trabocchetti": ["unire"],
@@ -803,6 +917,7 @@ QUESTIONS = [
     {
         "domanda": "Per non costituire pericolo o intralcio per la circolazione, è necessario limitarsi ad osservare i limiti massimi di velocità",
         "risposta": False,
+        "riassunto": "Non creare pericolo → solo rispettare i limiti massimi?",
         "spiegazione": "Questa affermazione è falsa. Non basta solo rispettare i limiti massimi di velocità. A volte, anche se il limite massimo è alto, le condizioni della strada (pioggia, nebbia, traffico intenso) o del veicolo ti impongono di andare più piano per essere sicuro. 'Limitarsi' significa fare solo quello, ed è sbagliato.",
         "regola": "Non solo il massimo! Adatta sempre.",
         "trabocchetti": ["limitarsi"],
@@ -810,6 +925,7 @@ QUESTIONS = [
     {
         "domanda": "Per non costituire pericolo o intralcio per la circolazione, è necessario procedere sempre a velocità costante",
         "risposta": False,
+        "riassunto": "Non creare pericolo → sempre velocità costante?",
         "spiegazione": "Questa affermazione è falsa. Non puoi 'sempre' andare a velocità costante. Devi cambiare la velocità in base a curve, incroci, pedoni, traffico, condizioni meteo. Mantenere una velocità costante in ogni situazione sarebbe pericoloso.",
         "regola": "La velocità non è mai 'sempre' costante.",
         "trabocchetti": ["sempre"],
@@ -817,6 +933,7 @@ QUESTIONS = [
     {
         "domanda": "Per non costituire pericolo o intralcio per la circolazione, è necessario dare, comunque, la precedenza a tutti i veicoli negli incroci",
         "risposta": False,
+        "riassunto": "Non creare pericolo → precedenza a tutti agli incroci?",
         "spiegazione": "Questa affermazione è falsa. Non devi 'comunque' dare la precedenza a 'tutti' i veicoli negli incroci. Esistono regole precise sulla precedenza (segnali, destra, ecc.). Se hai la precedenza, non devi darla a tutti, altrimenti creeresti confusione e pericolo.",
         "regola": "Segui le regole di precedenza, non dare a tutti.",
         "trabocchetti": ["comunque", "a tutti i veicoli"],
@@ -824,6 +941,7 @@ QUESTIONS = [
     {
         "domanda": "Per non costituire pericolo o intralcio per la circolazione, è necessario limitarsi ad osservare i limiti minimi di velocità",
         "risposta": False,
+        "riassunto": "Non creare pericolo → solo limiti minimi?",
         "spiegazione": "Questa affermazione è falsa. Come per i limiti massimi, non basta 'limitarsi' a osservare solo i limiti minimi di velocità. Devi considerare anche i limiti massimi e, soprattutto, le condizioni della strada, del traffico e del tuo veicolo per scegliere la velocità più sicura.",
         "regola": "Non solo il minimo! Adatta sempre.",
         "trabocchetti": ["limitarsi"],
@@ -831,6 +949,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di traffico intenso il conducente deve regolare la propria velocità uniformandola il più possibile a quella della corrente di traffico che scorre lungo la corsia occupata",
         "risposta": True,
+        "riassunto": "Traffico intenso → velocità uguale al flusso della corsia?",
         "spiegazione": "VERO. Quando c'è molto traffico, è importante guidare alla stessa velocità degli altri veicoli nella tua corsia. Questo aiuta il traffico a scorrere meglio e in modo più sicuro per tutti.",
         "regola": "Segui il flusso.",
         "trabocchetti": ["il più possibile"],
@@ -838,6 +957,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di traffico intenso il conducente deve mantenere sempre la distanza di sicurezza dal veicolo che lo precede",
         "risposta": True,
+        "riassunto": "Traffico intenso → mantenere la distanza?",
         "spiegazione": "VERO. Anche se il traffico è lento o fermo, devi sempre mantenere una distanza di sicurezza dal veicolo davanti a te. Questo ti dà il tempo di frenare se l'altro veicolo si ferma improvvisamente o si muove all'indietro.",
         "regola": "Distanza = sicurezza.",
         "trabocchetti": ["sempre"],
@@ -845,12 +965,14 @@ QUESTIONS = [
     {
         "domanda": "In caso di traffico intenso il conducente deve evitare di suonare il clacson per invitare i veicoli che lo precedono ad accelerare l'andatura",
         "risposta": True,
+        "riassunto": "Traffico intenso → niente clacson per far accelerare?",
         "spiegazione": "VERO. Il clacson serve per avvisare di un pericolo, non per 'spingere' gli altri a muoversi più velocemente. Suonare il clacson nel traffico intenso crea solo rumore e stress, senza risolvere il problema.",
         "regola": "Clacson = pericolo, non fretta.",
     },
     {
         "domanda": "In caso di traffico intenso il conducente deve cambiare ripetutamente corsia di marcia in modo da impegnare sempre quella più libera",
         "risposta": False,
+        "riassunto": "Traffico intenso → cambiare spesso corsia?",
         "spiegazione": "FALSO. Cambiare corsia continuamente nel traffico intenso è pericoloso e spesso inutile. Può causare incidenti, rallentare ancora di più il traffico e non ti fa arrivare prima. È meglio rimanere nella propria corsia.",
         "regola": "Cambi corsia = più rischio.",
         "trabocchetti": ["ripetutamente", "sempre quella più libera"],
@@ -858,6 +980,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di traffico intenso il conducente deve occupare le corsie riservate alla marcia dei veicoli in servizio pubblico, se libere",
         "risposta": False,
+        "riassunto": "Traffico intenso → corsie riservate se libere?",
         "spiegazione": "FALSO. Le corsie riservate ai veicoli di servizio pubblico (come autobus o taxi) sono vietate agli altri veicoli, anche se sono libere e c'è molto traffico. Non puoi usarle.",
         "regola": "Riservata = vietata.",
         "trabocchetti": ["se libere"],
@@ -865,6 +988,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di traffico intenso il conducente deve fare uso del lampeggio simultaneo di tutti gli indicatori di direzione",
         "risposta": False,
+        "riassunto": "Traffico intenso → quattro frecce?",
         "spiegazione": "FALSO. Il lampeggio simultaneo di tutti gli indicatori di direzione (le 'quattro frecce') si usa solo in caso di pericolo o di fermata temporanea per un'emergenza. Usarlo nel traffico normale può confondere gli altri conducenti, che potrebbero pensare a un problema o a una fermata improvvisa.",
         "regola": "Quattro frecce = emergenza, non coda.",
         "trabocchetti": ["fare uso del lampeggio simultaneo"],
@@ -872,6 +996,7 @@ QUESTIONS = [
     {
         "domanda": "Per effettuare la svolta a destra occorre tenersi il più vicino possibile al margine destro della carreggiata",
         "risposta": True,
+        "riassunto": "Svolta a destra → vicino al margine destro?",
         "spiegazione": "Quando giri a destra, devi stare il più vicino possibile al bordo destro della strada. Questo ti aiuta a fare la curva in modo sicuro e a non intralciare gli altri veicoli che vanno dritto o che girano a sinistra.",
         "regola": "Svolta a destra? Stai a destra!",
         "trabocchetti": ["il più vicino possibile"],
@@ -879,6 +1004,7 @@ QUESTIONS = [
     {
         "domanda": "Per effettuare la svolta a destra bisogna segnalare in anticipo la manovra da compiere, azionando l'indicatore di direzione",
         "risposta": True,
+        "riassunto": "Svolta a destra → segnalare in anticipo?",
         "spiegazione": "È fondamentale far sapere agli altri cosa intendi fare. Per questo, prima di girare a destra, devi accendere la freccia (l'indicatore di direzione) con un po' di anticipo. Così, chi ti segue o chi viene di fronte sa che stai per svoltare.",
         "regola": "Prima la freccia, poi la svolta.",
         "trabocchetti": ["in anticipo"],
@@ -886,6 +1012,7 @@ QUESTIONS = [
     {
         "domanda": "La svolta a destra si effettua immettendosi nella corsia che consente di eseguire tale manovra",
         "risposta": True,
+        "riassunto": "Svolta a destra → nella corsia apposita?",
         "spiegazione": "Se ci sono più corsie, devi scegliere quella giusta per girare a destra. Di solito è la corsia più a destra, o una corsia con un'indicazione specifica per la svolta a destra. Non puoi girare a destra da una corsia centrale o di sinistra.",
         "regola": "Corsia giusta, svolta sicura.",
         "trabocchetti": ["corsia che consente"],
@@ -893,6 +1020,7 @@ QUESTIONS = [
     {
         "domanda": "La svolta a destra si effettua moderando la velocità man mano che ci si avvicina al punto di svolta",
         "risposta": True,
+        "riassunto": "Svolta a destra → moderare avvicinandosi?",
         "spiegazione": "Avvicinandoti al punto in cui devi girare, è importante rallentare. Questo ti permette di avere il controllo del veicolo, di vedere bene se ci sono pedoni o altri veicoli e di reagire in tempo a eventuali imprevisti.",
         "regola": "Svolta lenta, svolta attenta.",
         "trabocchetti": ["moderando"],
@@ -900,6 +1028,7 @@ QUESTIONS = [
     {
         "domanda": "La svolta a destra si effettua senza creare pericolo o intralcio agli altri",
         "risposta": True,
+        "riassunto": "Svolta a destra → senza pericolo o intralcio?",
         "spiegazione": "Ogni manovra che fai alla guida deve essere fatta in modo sicuro, senza mettere in pericolo nessuno (pedoni, ciclisti, altri automobilisti) e senza bloccare il traffico inutilmente. Questa è una regola generale per tutte le manovre.",
         "regola": "Guida sicuro, rispetta tutti.",
         "trabocchetti": ["senza creare pericolo o intralcio"],
@@ -907,6 +1036,7 @@ QUESTIONS = [
     {
         "domanda": "Per svoltare a destra bisogna tenersi il più vicino possibile al margine sinistro della carreggiata",
         "risposta": False,
+        "riassunto": "Svolta a destra → vicino al margine sinistro?",
         "spiegazione": "Questa affermazione è falsa. Per girare a destra, devi stare il più vicino possibile al margine destro della strada, non a quello sinistro. Se ti tieni a sinistra per girare a destra, tagli la strada agli altri e crei una situazione molto pericolosa.",
         "regola": "Destra = destra, non sinistra!",
         "trabocchetti": ["sinistro"],
@@ -914,6 +1044,7 @@ QUESTIONS = [
     {
         "domanda": "Per svoltare a destra bisogna tenersi sulla corsia di sinistra",
         "risposta": False,
+        "riassunto": "Svolta a destra → corsia di sinistra?",
         "spiegazione": "Questa affermazione è falsa. Per girare a destra, devi stare nella corsia più a destra o in quella indicata per la svolta a destra. Stare nella corsia di sinistra per girare a destra è sbagliato e pericoloso, perché incroceresti la traiettoria degli altri veicoli.",
         "regola": "Destra non è sinistra.",
         "trabocchetti": ["corsia di sinistra"],
@@ -921,6 +1052,7 @@ QUESTIONS = [
     {
         "domanda": "La svolta a destra si effettua senza mai dare la precedenza ai pedoni, se il semaforo ha la luce verde accesa",
         "risposta": False,
+        "riassunto": "Svolta a destra col verde → nessuna precedenza ai pedoni?",
         "spiegazione": "Questa affermazione è falsa. Anche se hai il semaforo verde per svoltare a destra, devi SEMPRE dare la precedenza ai pedoni che stanno attraversando la strada in cui stai per entrare. I pedoni hanno quasi sempre la precedenza, specialmente quando attraversano sulle strisce.",
         "regola": "Pedoni sempre prima, anche col verde.",
         "trabocchetti": ["senza mai dare la precedenza", "se il semaforo ha la luce verde accesa", "mai"],
@@ -928,6 +1060,7 @@ QUESTIONS = [
     {
         "domanda": "La svolta a destra si effettua girando attorno alla colonnina luminosa eventualmente posta al centro dell'incrocio",
         "risposta": False,
+        "riassunto": "Svolta a destra → attorno alla colonnina centrale?",
         "spiegazione": "Questa affermazione è falsa. Girare attorno a una colonnina o un'isola al centro dell'incrocio è una manovra che si fa per svoltare a SINISTRA (o per fare un'inversione di marcia, in alcuni casi), non a destra. Per la svolta a destra, devi stare vicino al bordo destro.",
         "regola": "Destra è stretta, non larga.",
         "trabocchetti": ["girando attorno alla colonnina luminosa"],
@@ -935,6 +1068,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si vuole svoltare a destra è necessario portarsi in vicinanza del centro dell'incrocio",
         "risposta": False,
+        "riassunto": "Svolta a destra → verso il centro dell'incrocio?",
         "spiegazione": "Questa affermazione è falsa. Avvicinarsi al centro dell'incrocio è la manovra corretta per svoltare a SINISTRA. Per svoltare a destra, invece, devi tenerti il più vicino possibile al margine destro della carreggiata.",
         "regola": "Destra = bordo, Sinistra = centro.",
         "trabocchetti": ["vicinanza del centro dell"],
@@ -942,6 +1076,7 @@ QUESTIONS = [
     {
         "domanda": "Su una strada a tre corsie a doppio senso di marcia, in figura, si deve impegnare quella centrale solo per il sorpasso",
         "risposta": True,
+        "riassunto": "Tre corsie a doppio senso in figura → centrale solo per sorpasso?",
         "spiegazione": "Su una strada con tre corsie e traffico in entrambi i sensi (doppio senso di marcia), la corsia centrale è speciale. Non si usa per guidare normalmente, ma solo per superare un altro veicolo. Dopo il sorpasso, devi tornare subito nella corsia di destra.",
         "regola": "Corsia centrale a doppio senso = solo per sorpasso.",
         "trabocchetti": ["solo"],
@@ -950,6 +1085,7 @@ QUESTIONS = [
     {
         "domanda": "Su una strada a due corsie a doppio senso di marcia, in figura, si deve impegnare quella di sinistra solo per il sorpasso",
         "risposta": True,
+        "riassunto": "Due corsie a doppio senso in figura → sinistra solo per sorpasso?",
         "spiegazione": "Su una strada con due corsie e traffico in entrambi i sensi (doppio senso di marcia), la corsia di sinistra, rispetto alla tua direzione, serve solo per superare. Dopo aver superato, devi rientrare nella corsia di destra.",
         "regola": "Due corsie, doppio senso: sinistra = sorpasso.",
         "trabocchetti": ["solo"],
@@ -958,6 +1094,7 @@ QUESTIONS = [
     {
         "domanda": "Sulle strade extraurbane principali la sosta è consentita solo nelle apposite aree",
         "risposta": True,
+        "riassunto": "Extraurbane principali → sosta solo nelle aree apposite?",
         "spiegazione": "Le strade extraurbane principali sono strade veloci e importanti. Per la tua sicurezza e quella degli altri, non puoi fermarti o parcheggiare dove vuoi. La sosta è permessa solo in aree speciali, come le piazzole di sosta o le aree di servizio, che sono fatte apposta per questo.",
         "regola": "Extraurbana principale: sosta solo in aree dedicate.",
         "trabocchetti": ["solo nelle apposite aree"],
@@ -965,6 +1102,7 @@ QUESTIONS = [
     {
         "domanda": "Su una strada a due carreggiate separate, in figura, si deve percorrere la carreggiata di destra per la marcia normale e quella di sinistra per il sorpasso",
         "risposta": False,
+        "riassunto": "Due carreggiate separate in figura → destra normale, sinistra sorpasso?",
         "spiegazione": "Una strada a due carreggiate separate significa che ci sono due strade distinte, una per andare in una direzione e l'altra per tornare. Su ogni singola carreggiata, tu devi usare la corsia più a destra per guidare normalmente e le corsie di sinistra per superare. Non si usa un'intera carreggiata solo per il sorpasso.",
         "regola": "Carreggiate separate: ogni carreggiata ha le sue corsie per marcia/sorpasso.",
         "trabocchetti": ["quella di sinistra per il sorpasso"],
@@ -973,6 +1111,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle strade composte da una carreggiata a due corsie a doppio senso di marcia, in figura, si può marciare per file parallele",
         "risposta": False,
+        "riassunto": "Due corsie a doppio senso in figura → file parallele?",
         "spiegazione": "Guidare 'per file parallele' significa andare affiancati, come in una gara. Questo è permesso solo in alcune situazioni, ad esempio in città con molte corsie nella stessa direzione o quando c'è molto traffico. Su una strada con solo due corsie e doppio senso di marcia, devi sempre tenere la destra e usare la corsia di sinistra solo per superare, non per guidare affiancato a un altro veicolo.",
         "regola": "Due corsie, doppio senso = no file parallele.",
         "trabocchetti": ["si può marciare per file parallele"],
@@ -981,12 +1120,14 @@ QUESTIONS = [
     {
         "domanda": "Nelle strade a quattro carreggiate separate, quelle centrali sono riservate al sorpasso",
         "risposta": False,
+        "riassunto": "Quattro carreggiate → centrali per sorpasso?",
         "spiegazione": "Una strada con quattro carreggiate separate è molto rara. Anche se esistesse, ogni carreggiata avrebbe le sue corsie: quelle di destra per la marcia normale e quelle di sinistra per il sorpasso. Non è corretto dire che intere carreggiate (quelle centrali) sono riservate solo al sorpasso. Il sorpasso si fa usando le corsie di sinistra all'interno della propria carreggiata.",
         "regola": "Carreggiate separate: ogni carreggiata ha le sue regole, non si riserva un'intera carreggiata al sorpasso.",
     },
     {
         "domanda": "Chi intende cambiare corsia deve controllare che la corsia che vuole occupare sia libera davanti per un tratto sufficiente",
         "risposta": True,
+        "riassunto": "Cambiare corsia → libera davanti per un tratto sufficiente?",
         "spiegazione": "Quando vuoi cambiare corsia, devi sempre guardare avanti e assicurarti che ci sia abbastanza spazio libero nella corsia dove vuoi andare. Questo serve per non dover frenare all'improvviso o creare pericolo per chi ti precede.",
         "regola": "Davanti libero, cambio sicuro!",
         "trabocchetti": ["davanti per un tratto sufficiente"],
@@ -994,6 +1135,7 @@ QUESTIONS = [
     {
         "domanda": "Chi intende cambiare corsia deve controllare che la corsia che vuole occupare sia libera dietro per un tratto sufficiente",
         "risposta": True,
+        "riassunto": "Cambiare corsia → libera dietro per un tratto sufficiente?",
         "spiegazione": "Oltre a guardare avanti, è fondamentale controllare anche dietro di te. Devi essere sicuro che non stia arrivando nessun veicolo troppo velocemente o troppo vicino nella corsia che vuoi occupare, per evitare collisioni.",
         "regola": "Dietro libero, cambio sicuro!",
         "trabocchetti": ["dietro per un tratto sufficiente"],
@@ -1001,6 +1143,7 @@ QUESTIONS = [
     {
         "domanda": "Chi intende cambiare corsia, per effettuare un sorpasso, deve controllare che il veicolo che sta davanti non abbia segnalato l'inizio della stessa manovra",
         "risposta": True,
+        "riassunto": "Cambiare corsia per sorpassare → chi precede non lo sta già facendo?",
         "spiegazione": "Se cambi corsia per sorpassare, devi controllare che il veicolo davanti a te non abbia già messo la freccia per fare la stessa manovra. Se lo facesse, potreste scontrarvi.",
         "regola": "Sorpasso? Occhio a chi ti precede!",
         "trabocchetti": ["non abbia segnalato l"],
@@ -1008,6 +1151,7 @@ QUESTIONS = [
     {
         "domanda": "Chi intende cambiare corsia deve segnalare la manovra in anticipo, tramite l'indicatore di direzione",
         "risposta": True,
+        "riassunto": "Cambiare corsia → segnalare in anticipo?",
         "spiegazione": "È obbligatorio usare l'indicatore di direzione (la freccia) sempre prima di cambiare corsia. Questo avvisa gli altri conducenti delle tue intenzioni e li aiuta a capire cosa farai.",
         "regola": "Freccia sempre prima!",
         "trabocchetti": ["in anticipo", "tramite l"],
@@ -1015,6 +1159,7 @@ QUESTIONS = [
     {
         "domanda": "Chi intende cambiare corsia non deve creare intralcio o pericolo per chi percorre la corsia che vuole impegnare",
         "risposta": True,
+        "riassunto": "Cambiare corsia → senza intralcio per chi è nell'altra?",
         "spiegazione": "Quando cambi corsia, la tua manovra non deve mai costringere gli altri veicoli a frenare bruscamente o a fare manovre pericolose. La sicurezza è la cosa più importante.",
         "regola": "Mai ostacolare, mai mettere in pericolo.",
         "trabocchetti": ["non deve creare intralcio o pericolo"],
@@ -1022,6 +1167,7 @@ QUESTIONS = [
     {
         "domanda": "Chi intende cambiare corsia non deve azionare l'indicatore di direzione se la strada è libera",
         "risposta": False,
+        "riassunto": "Cambiare corsia → niente freccia se strada libera?",
         "spiegazione": "Questa affermazione è FALSA. Devi sempre usare l'indicatore di direzione quando cambi corsia, anche se la strada ti sembra completamente libera. È una regola per comunicare le tue intenzioni, sempre.",
         "regola": "Strada libera o no, la freccia va!",
         "trabocchetti": ["non", "se la strada è libera"],
@@ -1029,6 +1175,7 @@ QUESTIONS = [
     {
         "domanda": "Chi intende cambiare corsia ha l'obbligo di segnalare la manovra con l'uso dell'avvisatore acustico (clacson o trombe)",
         "risposta": False,
+        "riassunto": "Cambiare corsia → obbligo di clacson?",
         "spiegazione": "Questa affermazione è FALSA. Per segnalare il cambio di corsia si usa l'indicatore di direzione (la freccia), non il clacson. Il clacson si usa solo per avvisare di un pericolo immediato.",
         "regola": "Cambio corsia? Freccia, non clacson!",
         "trabocchetti": ["avvisatore acustico (clacson o trombe)"],
@@ -1036,6 +1183,7 @@ QUESTIONS = [
     {
         "domanda": "Prima di cambiare corsia è necessario accertare che le corsie siano separate da una striscia continua",
         "risposta": False,
+        "riassunto": "Cambiare corsia → verificare che ci sia la continua?",
         "spiegazione": "Questa affermazione è FALSA. Se le corsie sono separate da una striscia continua, non puoi cambiare corsia! Puoi farlo solo se la striscia è discontinua (tratteggiata).",
         "regola": "Continua? Non si passa!",
         "trabocchetti": ["continua"],
@@ -1043,6 +1191,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione per svoltare a sinistra bisogna avvicinarsi al centro della carreggiata",
         "risposta": True,
+        "riassunto": "Doppio senso, svolta a sinistra → avvicinarsi al centro?",
         "spiegazione": "Quando devi girare a sinistra in una strada dove le macchine vanno in due direzioni (doppio senso), è corretto spostarsi verso il centro della strada. Questo ti aiuta a fare la curva in modo sicuro senza intralciare chi viene di fronte o chi gira a destra.",
         "regola": "Svolta a sinistra = centro strada.",
         "trabocchetti": ["avvicinarsi al centro"],
@@ -1050,6 +1199,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione per svoltare a sinistra occorre, di norma, occupare l'area sinistra dell'incrocio, come i veicoli in figura, salvo diversa segnalazione",
         "risposta": True,
+        "riassunto": "Doppio senso, svolta a sinistra → occupare l'area sinistra dell'incrocio?",
         "spiegazione": "Per svoltare a sinistra in un incrocio a doppio senso, di solito devi posizionarti nella parte sinistra dell'incrocio (rispetto al tuo senso di marcia). Questo ti permette di fare una curva ampia e sicura. Se ci sono segnali diversi (come frecce a terra), devi seguire quelli.",
         "regola": "Svolta a sinistra = area sinistra incrocio (se non ci sono segnali diversi).",
         "trabocchetti": ["di norma", "Salvo diversa segnalazione"],
@@ -1058,6 +1208,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione per svoltare a sinistra bisogna girare intorno al centro dell'incrocio come il veicolo H in figura, se c'è il segnale di rotatoria",
         "risposta": True,
+        "riassunto": "Doppio senso, svolta a sinistra con rotatoria → girare intorno come H?",
         "spiegazione": "Se l'incrocio è una rotatoria (cioè c'è il segnale di rotatoria), per girare a sinistra devi fare il giro intorno al centro della rotatoria. Non devi tagliare la rotatoria, ma seguirne il percorso.",
         "regola": "Rotatoria = giro intorno al centro.",
         "trabocchetti": ["se c"],
@@ -1066,6 +1217,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione per svoltare a sinistra bisogna dare la precedenza ai veicoli provenienti da destra, salvo diversa segnalazione",
         "risposta": True,
+        "riassunto": "Doppio senso, svolta a sinistra → precedenza a destra?",
         "spiegazione": "Quando giri a sinistra, devi sempre dare la precedenza ai veicoli che arrivano dalla tua destra. Questa è una regola generale degli incroci. Ricorda che i segnali stradali (come Stop o Dare Precedenza) o i semafori possono cambiare questa regola.",
         "regola": "Svolta a sinistra = precedenza a destra (se non ci sono segnali).",
         "trabocchetti": ["salvo diversa segnalazione"],
@@ -1073,6 +1225,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione per svoltare a sinistra occorre spostarsi il più possibile sul margine sinistro della carreggiata",
         "risposta": False,
+        "riassunto": "Doppio senso, svolta a sinistra → margine sinistro della carreggiata?",
         "spiegazione": "È FALSO. Non devi spostarti sul margine sinistro della carreggiata. Se lo facessi, invaderesti la corsia di chi viene in senso opposto, creando una situazione molto pericolosa. Devi avvicinarti al centro della carreggiata, non al margine sinistro.",
         "regola": "Svolta a sinistra = centro, non margine sinistro.",
         "trabocchetti": ["margine sinistro"],
@@ -1080,6 +1233,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione per svoltare a sinistra bisogna effettuare la manovra velocemente, per evitare i veicoli provenienti da destra e da sinistra",
         "risposta": False,
+        "riassunto": "Doppio senso, svolta a sinistra → manovra veloce?",
         "spiegazione": "È FALSO. Non devi fare la manovra velocemente. Le manovre agli incroci devono essere fatte con molta prudenza e a velocità moderata. Questo ti dà il tempo di vedere gli altri veicoli e di reagire in caso di pericolo. La velocità aumenta solo il rischio.",
         "regola": "Incrocio = prudenza, non velocità.",
         "trabocchetti": ["velocemente"],
@@ -1087,6 +1241,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione per svoltare a sinistra bisogna effettuare la svolta occupando sempre il lato destro dell'incrocio, come i veicoli in figura",
         "risposta": False,
+        "riassunto": "Doppio senso, svolta a sinistra → lato destro dell'incrocio?",
         "spiegazione": "È FALSO. Per svoltare a sinistra non devi occupare il lato destro dell'incrocio. Questo è sbagliato e molto pericoloso. Il lato destro è per chi gira a destra o va dritto. Tu devi posizionarti verso il centro della carreggiata e poi nell'area sinistra dell'incrocio per fare la curva.",
         "regola": "Svolta a sinistra = non a destra.",
         "trabocchetti": ["lato destro dell"],
@@ -1095,6 +1250,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione per svoltare a sinistra bisogna dare la precedenza ai veicoli che arrivano da sinistra, salvo diversa segnalazione",
         "risposta": False,
+        "riassunto": "Doppio senso, svolta a sinistra → precedenza a sinistra?",
         "spiegazione": "È FALSO. La regola generale è dare la precedenza a chi viene da destra, non da sinistra. Quando giri a sinistra, devi dare la precedenza anche a chi viene di fronte e va dritto o gira a destra, ma la precedenza 'di base' è a destra.",
         "regola": "Precedenza = a destra (non a sinistra).",
         "trabocchetti": ["da sinistra"],
@@ -1102,6 +1258,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di circolazione per svoltare a sinistra occorre suonare il clacson, per attraversare con maggior sicurezza l'incrocio",
         "risposta": False,
+        "riassunto": "Doppio senso, svolta a sinistra → suonare il clacson?",
         "spiegazione": "È FALSO. Suonare il clacson non aumenta la sicurezza in un incrocio. Il clacson si usa solo in caso di pericolo immediato o fuori dai centri abitati per avvisare di un sorpasso. Usarlo senza motivo è vietato e può confondere gli altri conducenti.",
         "regola": "Clacson = solo per pericolo, non per sicurezza normale.",
         "trabocchetti": ["suonare il clacson", "maggior sicurezza"],
@@ -1109,6 +1266,7 @@ QUESTIONS = [
     {
         "domanda": "I veicoli devono, di norma, circolare sulla parte destra della carreggiata ed in vicinanza del margine destro",
         "risposta": True,
+        "riassunto": "Veicoli → a destra vicino al margine destro?",
         "spiegazione": "La regola generale del Codice della Strada dice che i veicoli devono sempre circolare sulla parte destra della strada, il più vicino possibile al bordo destro. Questo serve per garantire la sicurezza e la fluidità del traffico.",
         "regola": "La destra è la regola base!",
         "trabocchetti": ["di norma"],
@@ -1116,6 +1274,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada divisa in due carreggiate separate come in figura, i veicoli devono, di norma, circolare sulla carreggiata di destra rispetto alla propria direzione di marcia",
         "risposta": True,
+        "riassunto": "Due carreggiate separate → carreggiata di destra?",
         "spiegazione": "Se la strada ha due carreggiate separate (cioè due strade distinte affiancate), ognuna è per un senso di marcia. Tu devi usare quella che si trova alla tua destra, cioè quella per la tua direzione.",
         "regola": "La tua destra è la tua carreggiata.",
         "trabocchetti": ["di norma"],
@@ -1124,6 +1283,7 @@ QUESTIONS = [
     {
         "domanda": "Su una strada divisa in tre carreggiate separate come in figura, i veicoli devono, di norma, circolare sulla carreggiata centrale o su quella di destra rispetto alla propria direzione di marcia",
         "risposta": True,
+        "riassunto": "Tre carreggiate → centrale o destra?",
         "spiegazione": "In una strada con tre carreggiate separate, di solito due sono per un senso di marcia e una per l'altro, oppure la centrale è promiscua. Se la carreggiata centrale è destinata anche al tuo senso di marcia, puoi usarla, ma la regola generale è comunque tenere la destra. Quindi, puoi usare la più a destra o quella centrale se è per la tua direzione.",
         "regola": "Anche la centrale può essere tua (se per la tua direzione).",
         "trabocchetti": ["di norma", "Centrale o su quella di destra"],
@@ -1132,6 +1292,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di marcia con due corsie, come in figura, i veicoli devono circolare nella corsia di destra, impegnando solo quella di sinistra per il sorpasso",
         "risposta": True,
+        "riassunto": "Doppio senso a due corsie → destra, sinistra solo per sorpasso?",
         "spiegazione": "In una strada a doppio senso con due corsie (una per senso di marcia), devi stare nella corsia di destra, che è la tua. La corsia di sinistra è per chi viene dall'altra parte, ma puoi usarla per sorpassare, solo se è sicuro e la segnaletica lo permette.",
         "regola": "Stai a destra, sorpassa a sinistra (se puoi e è sicuro).",
         "immagine": "01756f37d9df9bf5484d.jpg",
@@ -1139,6 +1300,7 @@ QUESTIONS = [
     {
         "domanda": "Su carreggiate a tre corsie per senso di marcia, come in figura, i veicoli a motore devono, di norma, percorrere la corsia più libera a destra",
         "risposta": True,
+        "riassunto": "Tre corsie per senso → la più libera a destra?",
         "spiegazione": "Anche se ci sono molte corsie per il tuo senso di marcia, la regola è sempre quella di usare la corsia più a destra. Le altre corsie (centrale e sinistra) sono per il sorpasso o per i veicoli che vanno più veloci, ma non per la marcia normale.",
         "regola": "La destra è la tua corsia base.",
         "trabocchetti": ["Di norma", "più libera a destra"],
@@ -1147,12 +1309,14 @@ QUESTIONS = [
     {
         "domanda": "I veicoli a motore possono circolare per file parallele in vicinanza di incroci regolati da vigili o da semafori",
         "risposta": True,
+        "riassunto": "File parallele → vicino a incroci con vigili o semafori?",
         "spiegazione": "Normalmente non si circola per file parallele. Ma in situazioni di traffico intenso, specialmente vicino a incroci dove ci sono semafori o vigili che regolano il traffico, è permesso formare più file di veicoli per far scorrere meglio la circolazione.",
         "regola": "Incrocio regolato = file parallele ok.",
     },
     {
         "domanda": "Su strada a doppio senso di marcia con tre corsie, come in figura, i veicoli possono usare la corsia centrale per la marcia normale",
         "risposta": False,
+        "riassunto": "Doppio senso a tre corsie → centrale per la marcia normale?",
         "spiegazione": "In una strada a doppio senso con tre corsie, la corsia centrale non è per la 'marcia normale'. È una corsia 'promiscua', cioè può essere usata da entrambi i sensi di marcia, ma solo per sorpassare o per svoltare a sinistra, non per andare dritto normalmente.",
         "regola": "Centrale = solo sorpasso/svolta, non marcia normale.",
         "trabocchetti": ["marcia normale"],
@@ -1161,6 +1325,7 @@ QUESTIONS = [
     {
         "domanda": "Quando una strada è a doppio senso di marcia con tre corsie, come in figura, i veicoli possono circolare per file parallele",
         "risposta": False,
+        "riassunto": "Doppio senso a tre corsie → file parallele?",
         "spiegazione": "Circolare per file parallele è permesso solo in casi speciali (come incroci regolati o traffico intenso su strade con più corsie per lo stesso senso di marcia). Una strada a doppio senso con tre corsie (una per senso + una centrale promiscua) non rientra in queste condizioni per la circolazione normale.",
         "regola": "File parallele solo in casi speciali.",
         "trabocchetti": ["Circolare per file parallele"],
@@ -1169,6 +1334,7 @@ QUESTIONS = [
     {
         "domanda": "Per svoltare a sinistra i veicoli debbono tenersi sul margine destro della carreggiata",
         "risposta": False,
+        "riassunto": "Svolta a sinistra → margine destro?",
         "spiegazione": "Per svoltare a sinistra, devi avvicinarti al centro della strada (o al margine sinistro della tua metà carreggiata se a doppio senso). Tenerti sul margine destro è la manovra corretta per svoltare a destra, non a sinistra.",
         "regola": "Svolta a sinistra = verso il centro/sinistra.",
         "trabocchetti": ["margine destro"],
@@ -1176,6 +1342,7 @@ QUESTIONS = [
     {
         "domanda": "E' possibile circolare al centro della carreggiata quando la strada è libera",
         "risposta": False,
+        "riassunto": "Strada libera → circolare al centro?",
         "spiegazione": "Anche se la strada è completamente vuota, devi sempre rispettare la regola di tenere la destra. Circolare al centro della carreggiata è sbagliato e può essere pericoloso, perché non rispetti la posizione corretta sulla strada.",
         "regola": "Destra sempre, anche se vuota.",
         "trabocchetti": ["Al centro della carreggiata", "quando la strada è libera"],
@@ -1183,6 +1350,7 @@ QUESTIONS = [
     {
         "domanda": "In una strada a doppio senso di marcia con due corsie, come in figura, i veicoli possono circolare per file parallele",
         "risposta": False,
+        "riassunto": "Doppio senso a due corsie → file parallele?",
         "spiegazione": "Una strada a doppio senso con due corsie significa che c'è solo una corsia per ogni direzione di marcia. Non ci sono le condizioni per circolare per file parallele, che richiede almeno due corsie per lo stesso senso di marcia e condizioni specifiche (come incroci regolati o traffico intenso).",
         "regola": "Una corsia per senso = no file parallele.",
         "trabocchetti": ["Circolare per file parallele"],
@@ -1191,6 +1359,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di intenso traffico è consentito circolare per file parallele, utilizzando le corsie riservate agli autobus e ai veicoli in servizio pubblico",
         "risposta": False,
+        "riassunto": "Traffico intenso → file parallele usando le corsie bus?",
         "spiegazione": "Le corsie riservate (ad esempio, agli autobus o ai taxi) sono dedicate solo a quei veicoli specifici. Non puoi usarle, anche se c'è molto traffico, a meno che non ci sia un segnale che ti autorizza in particolari condizioni (ma sono casi rari e specifici).",
         "regola": "Corsie riservate = solo per chi è autorizzato.",
         "trabocchetti": ["utilizzando le corsie riservate"],
@@ -1198,6 +1367,7 @@ QUESTIONS = [
     {
         "domanda": "Chi conduce gli animali li deve tenere il più possibile vicino al margine destro della carreggiata",
         "risposta": True,
+        "riassunto": "Animali condotti → vicino al margine destro?",
         "spiegazione": "È VERO. Anche chi conduce animali (ad esempio, un gregge) deve tenerli il più possibile vicino al margine destro della carreggiata. Questo aiuta a mantenere la strada sicura per tutti e a non bloccare il traffico.",
         "regola": "Animali a destra, come i veicoli.",
         "trabocchetti": ["il più possibile vicino"],
@@ -1205,6 +1375,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade a doppio senso di marcia con due corsie, come in figura, incrociando altri veicoli occorre spostarsi il più vicino possibile al margine destro della carreggiata",
         "risposta": True,
+        "riassunto": "Doppio senso a due corsie, incrociando → spostarsi a destra?",
         "spiegazione": "È VERO. Quando incontri un altro veicolo che viene dalla direzione opposta su una strada a doppio senso, devi spostarti il più a destra possibile. Questo evita collisioni e lascia spazio sufficiente per il passaggio sicuro.",
         "regola": "Incontro = destra stretta per sicurezza.",
         "trabocchetti": ["Incrociando altri veicoli"],
@@ -1213,6 +1384,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata a doppio senso di marcia con due corsie, come in figura, i veicoli devono circolare nella corsia di destra, impegnando quella di sinistra solo per il sorpasso",
         "risposta": True,
+        "riassunto": "Doppio senso a due corsie → destra, sinistra solo per sorpasso?",
         "spiegazione": "È VERO. Su strade a doppio senso con più corsie, la regola generale è di usare la corsia di destra per la marcia normale. La corsia di sinistra si usa solo per effettuare un sorpasso e poi si rientra a destra.",
         "regola": "Destra per marcia, sinistra per sorpasso.",
         "trabocchetti": ["solo"],
@@ -1221,6 +1393,7 @@ QUESTIONS = [
     {
         "domanda": "Su strada a doppio senso di marcia con due corsie, come in figura, i veicoli che percorrono il tratto in salita di un dosso devono tenersi il più possibile vicino al margine destro della carreggiata",
         "risposta": True,
+        "riassunto": "Doppio senso, salita di un dosso → vicino al margine destro?",
         "spiegazione": "È VERO. Quando si sale su un dosso, la visibilità è ridotta. Per questo, è fondamentale tenersi il più possibile vicino al margine destro della carreggiata per evitare di invadere la corsia opposta e prevenire incidenti.",
         "regola": "Dosso = destra stretta, massima prudenza.",
         "trabocchetti": ["Tratto in salita di un dosso"],
@@ -1229,6 +1402,7 @@ QUESTIONS = [
     {
         "domanda": "Su strada a senso unico i veicoli che percorrono una curva a sinistra devono tenersi in prossimità del margine sinistro della carreggiata",
         "risposta": False,
+        "riassunto": "Senso unico, curva a sinistra → margine sinistro?",
         "spiegazione": "È FALSO. Anche su una strada a senso unico, la regola generale è di tenere la destra. Non ci si sposta al margine sinistro per percorrere una curva a sinistra, a meno che non si debba svoltare a sinistra in un incrocio.",
         "regola": "Curva = destra, sempre! (Tranne per svolta a sinistra).",
         "trabocchetti": ["sinistro"],
@@ -1236,6 +1410,7 @@ QUESTIONS = [
     {
         "domanda": "Su strada a due carreggiate separate, come in figura, i veicoli che percorrono un dosso devono tenersi vicino al margine sinistro della carreggiata",
         "risposta": False,
+        "riassunto": "Due carreggiate separate, dosso → margine sinistro?",
         "spiegazione": "È FALSO. Indipendentemente dal fatto che la strada abbia due carreggiate separate o meno, la regola di base è sempre quella di tenere la destra. Circolare vicino al margine sinistro è sbagliato e pericoloso.",
         "regola": "Dosso o no, sempre a destra.",
         "trabocchetti": ["margine sinistro"],
@@ -1244,6 +1419,7 @@ QUESTIONS = [
     {
         "domanda": "I veicoli che percorrono una curva, su strada a due corsie per ogni senso di marcia, come in figura, possono marciare oltrepassando la striscia discontinua se la strada è libera",
         "risposta": False,
+        "riassunto": "Curva su due corsie per senso → oltre la tratteggiata se libera?",
         "spiegazione": "Anche quando la strada è libera, i veicoli devono normalmente circolare nella corsia libera più a destra. La striscia discontinua permette di cambiare corsia per una manovra consentita, ma non autorizza a marciare a cavallo della linea tra le due corsie mentre si percorre una curva.",
         "regola": "Marcia normale nella corsia più a destra; striscia discontinua non significa guidare a cavallo delle corsie.",
         "trabocchetti": ["marciare"],
@@ -1252,6 +1428,7 @@ QUESTIONS = [
     {
         "domanda": "I veicoli che vogliono effettuare una svolta a sinistra devono tenersi il più possibile vicino al margine destro della carreggiata",
         "risposta": False,
+        "riassunto": "Svolta a sinistra → vicino al margine destro?",
         "spiegazione": "È FALSO. Se devi svoltare a sinistra, devi spostarti verso il centro della carreggiata (o il margine sinistro se la strada è a senso unico) per prepararti alla svolta. Tenersi al margine destro ti impedirebbe di svoltare correttamente e sarebbe pericoloso.",
         "regola": "Svolta a sinistra = spostati a sinistra.",
         "trabocchetti": ["Margine destro"],
@@ -1259,6 +1436,7 @@ QUESTIONS = [
     {
         "domanda": "I filobus devono, di norma, circolare il più possibile vicino al margine sinistro della carreggiata",
         "risposta": False,
+        "riassunto": "Filobus → vicino al margine sinistro?",
         "spiegazione": "È FALSO. Tutti i veicoli, inclusi i filobus, devono circolare il più possibile vicino al margine destro della carreggiata. Non c'è nessuna eccezione che li autorizzi a circolare a sinistra di norma.",
         "regola": "Filobus come tutti: a destra.",
         "trabocchetti": ["Margine sinistro", "Di norma"],
@@ -1266,6 +1444,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade a 2 corsie per senso di marcia, in caso di intenso traffico i ciclomotori a due ruote possono circolare sulla corsia di sinistra",
         "risposta": False,
+        "riassunto": "Due corsie per senso, traffico intenso → ciclomotori a due ruote a sinistra?",
         "spiegazione": "È FALSO. Anche in caso di traffico intenso, i ciclomotori (e tutti i veicoli) devono rispettare le regole di circolazione. La corsia di sinistra è per il sorpasso, non per la marcia normale, anche se c'è molto traffico.",
         "regola": "Ciclomotori a destra, sempre.",
         "immagine": "9260acf59c6804c6d147.jpg",
@@ -1273,6 +1452,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade a 2 corsie per senso di marcia, in caso di intenso traffico i ciclomotori possono circolare sulla corsia di sinistra",
         "risposta": False,
+        "riassunto": "Due corsie per senso, traffico intenso → ciclomotori a sinistra?",
         "spiegazione": "È FALSO. Questa domanda ripete il concetto precedente. I ciclomotori, come tutti i veicoli, devono tenere la destra. Il traffico intenso non è una giustificazione per usare la corsia di sinistra per la marcia normale.",
         "regola": "Ciclomotori a destra, sempre.",
         "immagine": "9260acf59c6804c6d147.jpg",
@@ -1280,6 +1460,7 @@ QUESTIONS = [
     {
         "domanda": "In una carreggiata come in figura in caso di intenso traffico, ciclomotori e motocicli possono circolare sulla pista ciclabile se non superano la velocità di 20 km/h",
         "risposta": False,
+        "riassunto": "Traffico intenso → moto sulla pista ciclabile fino a 20 km/h?",
         "spiegazione": "È FALSO. Le piste ciclabili sono riservate esclusivamente alle biciclette e, in alcuni casi, ai pedoni. Ciclomotori e motocicli non possono mai circolare sulle piste ciclabili, indipendentemente dal traffico o dalla velocità. È vietato e molto pericoloso.",
         "regola": "Pista ciclabile = solo bici.",
         "trabocchetti": ["Possono circolare sulla pista ciclabile", "Se non superano la velocità di 20 km/h"],
@@ -1288,12 +1469,14 @@ QUESTIONS = [
     {
         "domanda": "In caso di traffico intenso, i motocicli possono circolare sulle corsie di emergenza",
         "risposta": False,
+        "riassunto": "Traffico intenso → moto sulla corsia di emergenza?",
         "spiegazione": "È FALSO. Le corsie di emergenza sono destinate solo a situazioni di vera emergenza (come un guasto al veicolo, un malore o per i mezzi di soccorso). Non possono essere usate dai motocicli o da altri veicoli per evitare il traffico.",
         "regola": "Corsia emergenza = solo emergenza.",
     },
     {
         "domanda": "Quando si vuole cambiare corsia non si deve creare intralcio o pericolo a chi si trova sulla corsia da impegnare",
         "risposta": True,
+        "riassunto": "Cambiare corsia → nessun intralcio a chi è nella corsia?",
         "spiegazione": "Quando cambi corsia, devi fare attenzione a non creare problemi o pericoli agli altri veicoli che sono già in quella corsia. La sicurezza è la cosa più importante.",
         "regola": "Cambia corsia senza disturbare.",
         "trabocchetti": ["non si deve creare intralcio o pericolo"],
@@ -1301,6 +1484,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si vuole cambiare corsia si deve segnalare in anticipo la manovra da compiere",
         "risposta": True,
+        "riassunto": "Cambiare corsia → segnalare in anticipo?",
         "spiegazione": "Prima di cambiare corsia, devi sempre usare l'indicatore di direzione (la freccia) per far sapere agli altri cosa intendi fare. Questo aiuta tutti a guidare in sicurezza.",
         "regola": "Segnala sempre prima.",
         "trabocchetti": ["in anticipo"],
@@ -1308,6 +1492,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si vuole cambiare corsia bisogna controllare che la corsia da impegnare sia libera davanti per un tratto sufficiente",
         "risposta": True,
+        "riassunto": "Cambiare corsia → libera davanti?",
         "spiegazione": "Prima di spostarti, devi guardare bene e assicurarti che la corsia in cui vuoi andare sia libera per un tratto abbastanza lungo. Non basta che sia libera solo per un attimo.",
         "regola": "Spazio libero è sicurezza.",
         "trabocchetti": ["libera davanti per un tratto sufficiente"],
@@ -1315,6 +1500,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si vuole cambiare corsia si deve controllare che la striscia che divide le corsie sia tratteggiata",
         "risposta": True,
+        "riassunto": "Cambiare corsia → striscia tratteggiata?",
         "spiegazione": "Puoi cambiare corsia solo se la linea che le divide è tratteggiata (discontinua). Se la linea è continua, non puoi superarla e quindi non puoi cambiare corsia.",
         "regola": "Solo striscia tratteggiata.",
         "trabocchetti": ["tratteggiata"],
@@ -1322,12 +1508,14 @@ QUESTIONS = [
     {
         "domanda": "Quando si vuole cambiare corsia si deve segnalare la manovra, facendo uso dell'indicatore di direzione",
         "risposta": True,
+        "riassunto": "Cambiare corsia → indicatore di direzione?",
         "spiegazione": "Per segnalare che vuoi cambiare corsia, devi usare l'indicatore di direzione, cioè la freccia. È l'unico modo corretto per comunicare la tua intenzione agli altri.",
         "regola": "Freccia obbligatoria.",
     },
     {
         "domanda": "Quando si vuole cambiare corsia bisogna controllare che sulla corsia che si vuole occupare non stiano arrivando altri veicoli",
         "risposta": True,
+        "riassunto": "Cambiare corsia → nessun veicolo in arrivo?",
         "spiegazione": "È fondamentale controllare bene, anche usando gli specchietti e girando un po' la testa (controllo dell'angolo cieco), che non ci siano altri veicoli che stanno arrivando nella corsia dove vuoi andare.",
         "regola": "Guarda bene, nessuno dietro.",
         "trabocchetti": ["non stiano arrivando altri veicoli"],
@@ -1335,6 +1523,7 @@ QUESTIONS = [
     {
         "domanda": "Nelle strade urbane è consentito, quando si vuole svoltare, circolare a cavallo delle strisce di corsia",
         "risposta": False,
+        "riassunto": "Strade urbane → a cavallo delle strisce per svoltare?",
         "spiegazione": "Non è mai permesso guidare 'a cavallo' delle strisce di corsia, né in città né fuori. È pericoloso e non ti permette di mantenere una posizione chiara sulla strada.",
         "regola": "Mai sulle strisce.",
         "trabocchetti": ["a cavallo delle strisce di corsia"],
@@ -1342,6 +1531,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si vuole cambiare corsia l'uso dell'indicatore di direzione è facoltativo se ci sono le strisce discontinue (tratteggiate)",
         "risposta": False,
+        "riassunto": "Cambiare corsia con tratteggiate → freccia facoltativa?",
         "spiegazione": "L'uso dell'indicatore di direzione (la freccia) è sempre obbligatorio quando cambi corsia o direzione, anche se le strisce sono tratteggiate. Non è mai 'facoltativo'.",
         "regola": "Freccia sempre, non facoltativa.",
         "trabocchetti": ["facoltativo"],
@@ -1349,12 +1539,14 @@ QUESTIONS = [
     {
         "domanda": "Quando si vuole cambiare corsia, per immettersi nella corsia di destra, non occorre alcuna particolare attenzione",
         "risposta": False,
+        "riassunto": "Cambiare corsia a destra → nessuna attenzione?",
         "spiegazione": "Ogni volta che cambi corsia, sia a destra che a sinistra, devi sempre fare molta attenzione. Potrebbero esserci veicoli, moto o biciclette che non vedi subito.",
         "regola": "Attenzione sempre, anche a destra.",
     },
     {
         "domanda": "In vicinanza degli incroci, come in figura si può sempre cambiare corsia fino alla striscia trasversale di arresto",
         "risposta": False,
+        "riassunto": "Vicino agli incroci in figura → cambiare corsia fino alla striscia di arresto?",
         "spiegazione": "Vicino agli incroci, spesso è vietato cambiare corsia, specialmente se ci sono strisce continue. La parola 'sempre' rende questa affermazione falsa, perché ci sono molte situazioni in cui non si può fare.",
         "regola": "Incrocio = no cambio corsia.",
         "trabocchetti": ["sempre"],
@@ -1363,6 +1555,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si vuole cambiare corsia per un sorpasso è obbligatorio ridurre la velocità",
         "risposta": False,
+        "riassunto": "Cambiare corsia per sorpassare → ridurre la velocità?",
         "spiegazione": "Quando sorpassi, di solito devi aumentare la velocità per completare la manovra il più rapidamente e in sicurezza possibile. Ridurre la velocità sarebbe pericoloso e allungherebbe il tempo del sorpasso.",
         "regola": "Sorpasso = velocità su.",
         "trabocchetti": ["ridurre la velocità"],
@@ -1370,6 +1563,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si vuole cambiare direzione si deve azionare in anticipo l'indicatore di direzione",
         "risposta": True,
+        "riassunto": "Cambiare direzione → freccia in anticipo?",
         "spiegazione": "Quando vuoi cambiare direzione (svoltare a destra o a sinistra), devi sempre accendere la freccia (l'indicatore di direzione) un po' prima di iniziare la manovra. Questo serve per far capire agli altri guidatori cosa hai intenzione di fare, così possono prepararsi e guidare in sicurezza.",
         "regola": "Freccia = prima di svoltare.",
         "trabocchetti": ["in anticipo"],
@@ -1377,6 +1571,7 @@ QUESTIONS = [
     {
         "domanda": "Per svoltare a sinistra bisogna, di norma, lasciare il centro dell'incrocio alla nostra destra, come i veicoli in figura",
         "risposta": True,
+        "riassunto": "Svolta a sinistra → centro dell'incrocio alla nostra destra?",
         "spiegazione": "Quando giri a sinistra in un incrocio, di solito devi passare 'dietro' il centro dell'incrocio. Questo significa che il centro dell'incrocio deve rimanere alla tua destra mentre giri. In questo modo, tu e chi viene dalla direzione opposta e gira a sinistra non vi incrociate al centro, evitando collisioni.",
         "regola": "Svolta a sinistra = centro a destra.",
         "trabocchetti": ["di norma", "Come i veicoli in figura"],
@@ -1385,6 +1580,7 @@ QUESTIONS = [
     {
         "domanda": "Su strada a senso unico per svoltare a sinistra bisogna tenersi sul margine sinistro",
         "risposta": True,
+        "riassunto": "Senso unico, svolta a sinistra → margine sinistro?",
         "spiegazione": "Se sei su una strada a senso unico (dove tutte le auto vanno nella stessa direzione) e vuoi svoltare a sinistra, devi spostarti il più possibile sul lato sinistro della strada. Questo permette a chi va dritto o gira a destra di passare senza problemi.",
         "regola": "Senso unico + sinistra = margine sinistro.",
         "trabocchetti": ["su strada a senso unico"],
@@ -1392,6 +1588,7 @@ QUESTIONS = [
     {
         "domanda": "Durante l'effettuazione dell'inversione di marcia l'indicatore di direzione deve rimanere in funzione per l'intera durata della manovra",
         "risposta": True,
+        "riassunto": "Inversione → freccia per tutta la manovra?",
         "spiegazione": "Quando fai un'inversione di marcia (cioè un 'testa-coda' per tornare indietro nella direzione da cui sei venuto), devi tenere l'indicatore di direzione (la freccia) acceso per tutto il tempo della manovra. Questo è importante per segnalare chiaramente agli altri guidatori la tua intenzione, dall'inizio alla fine.",
         "regola": "Manovra lunga = freccia sempre accesa.",
         "trabocchetti": ["per l"],
@@ -1399,6 +1596,7 @@ QUESTIONS = [
     {
         "domanda": "Il veicolo in figura, può svoltare a destra",
         "risposta": False,
+        "riassunto": "Veicolo in figura → può svoltare a destra?",
         "spiegazione": "Questa domanda si riferisce a un'immagine che non vediamo, ma se la risposta è FALSO, significa che il veicolo non può svoltare a destra. Questo succede se c'è un segnale di 'Divieto di svolta a destra' o se il veicolo si trova in una corsia che permette solo di andare dritto o svoltare a sinistra.",
         "regola": "Segnali = comandi, non desideri.",
         "trabocchetti": ["può"],
@@ -1407,6 +1605,7 @@ QUESTIONS = [
     {
         "domanda": "Per svoltare a sinistra bisogna girare intorno al centro dell'incrocio, come i veicoli in figura",
         "risposta": False,
+        "riassunto": "Svolta a sinistra → girare intorno al centro?",
         "spiegazione": "Questa affermazione è sbagliata. Per svoltare a sinistra, non devi 'girare intorno' al centro dell'incrocio. Come abbiamo visto nella domanda 22850, il centro dell'incrocio deve rimanere alla tua destra. 'Girare intorno' significherebbe fare un giro troppo largo e pericoloso.",
         "regola": "Sinistra = non girare intorno.",
         "trabocchetti": ["girare intorno al centro dell"],
@@ -1415,6 +1614,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si vuole cambiare direzione è obbligatorio fare uso delle segnalazioni acustiche (clacson o trombe)",
         "risposta": False,
+        "riassunto": "Cambiare direzione → obbligo di clacson?",
         "spiegazione": "Quando vuoi cambiare direzione, è obbligatorio usare gli indicatori di direzione (le frecce), non il clacson. Il clacson (segnalazioni acustiche) si usa solo in caso di pericolo immediato per avvisare gli altri, non per indicare una svolta. Usare il clacson senza motivo è vietato.",
         "regola": "Cambiare direzione = freccia, non clacson.",
         "trabocchetti": ["obbligatorio", "segnalazioni acustiche"],
@@ -1422,6 +1622,7 @@ QUESTIONS = [
     {
         "domanda": "Viaggiando su semicarreggiata a tre corsie, come in figura, per svoltare a sinistra si deve utilizzare la corsia centrale",
         "risposta": False,
+        "riassunto": "Semicarreggiata a tre corsie → sinistra dalla corsia centrale?",
         "spiegazione": "Se sei su una strada con tre corsie nella tua direzione, per svoltare a sinistra devi usare la corsia più a sinistra. La corsia centrale è di solito per andare dritto o per sorpassare, non per svoltare a sinistra. La corsia più a destra è per andare dritto o svoltare a destra.",
         "regola": "Tre corsie + sinistra = corsia più a sinistra.",
         "trabocchetti": ["corsia centrale"],
@@ -1430,6 +1631,7 @@ QUESTIONS = [
     {
         "domanda": "Su una strada a doppio senso di marcia per svoltare a sinistra non si deve prendere contromano la strada in cui si svolta",
         "risposta": True,
+        "riassunto": "Doppio senso, svolta a sinistra → non prendere contromano la strada?",
         "spiegazione": "Quando giri a sinistra in una strada a doppio senso, devi entrare nella nuova strada rispettando il senso di marcia. Non puoi andare contro il traffico (contromano) perché sarebbe molto pericoloso e vietato.",
         "regola": "Svolta a sinistra: entra sempre nel tuo senso di marcia.",
         "trabocchetti": ["contromano"],
@@ -1437,6 +1639,7 @@ QUESTIONS = [
     {
         "domanda": "Su una strada a doppio senso di marcia nello svoltare a sinistra si deve, di norma, lasciare il centro dell'incrocio alla nostra destra, come i veicoli in figura",
         "risposta": True,
+        "riassunto": "Doppio senso, svolta a sinistra → centro dell'incrocio a destra?",
         "spiegazione": "Quando giri a sinistra in un incrocio a doppio senso, devi fare una curva ampia. Questo significa che il centro dell'incrocio (il punto centrale) deve rimanere alla tua destra mentre giri. In questo modo, non tagli la strada a chi viene di fronte e la manovra è più sicura.",
         "regola": "Svolta a sinistra: centro incrocio sempre a destra (curva ampia).",
         "trabocchetti": ["Di norma", "Lasciare il centro dell"],
@@ -1445,6 +1648,7 @@ QUESTIONS = [
     {
         "domanda": "Su una strada a doppio senso di marcia per svoltare a sinistra occorre inserirsi nelle corsie che consentono di proseguire in tale direzione",
         "risposta": True,
+        "riassunto": "Doppio senso, svolta a sinistra → corsie per quella direzione?",
         "spiegazione": "Se la strada ha più corsie, devi scegliere quella giusta per girare a sinistra. Non puoi girare a sinistra da una corsia che serve per andare dritto o a destra, perché creeresti confusione e pericolo per gli altri veicoli.",
         "regola": "Svolta a sinistra: usa la corsia giusta.",
         "trabocchetti": ["Inserirsi nelle corsie che consentono"],
@@ -1452,12 +1656,14 @@ QUESTIONS = [
     {
         "domanda": "Su una strada a doppio senso di marcia per svoltare a sinistra è necessario spostarsi a sinistra della linea continua di mezzeria",
         "risposta": False,
+        "riassunto": "Doppio senso, svolta a sinistra → oltre la mezzeria continua?",
         "spiegazione": "La linea continua di mezzeria non si può mai superare. Per svoltare a sinistra, devi avvicinarti alla linea di mezzeria, ma rimanere sempre alla sua destra (nella tua corsia). Superarla significa invadere la corsia opposta, il che è vietato e molto pericoloso.",
         "regola": "Linea continua: mai superare, mai a sinistra.",
     },
     {
         "domanda": "Su una strada a doppio senso di marcia per svoltare a sinistra ci si deve tenere lungo il margine destro della carreggiata",
         "risposta": False,
+        "riassunto": "Doppio senso, svolta a sinistra → margine destro?",
         "spiegazione": "Per svoltare a sinistra, devi avvicinarti il più possibile al centro della strada (alla linea di mezzeria, se c'è). Tenersi lungo il margine destro della carreggiata è la posizione corretta per svoltare a destra, non a sinistra.",
         "regola": "Svolta a sinistra: verso il centro. Svolta a destra: verso il margine destro.",
         "trabocchetti": ["margine destro della carreggiata"],
@@ -1465,12 +1671,14 @@ QUESTIONS = [
     {
         "domanda": "Su una strada a doppio senso di marcia per svoltare a sinistra è necessario arrestarsi prima di completare la manovra, anche se non sopraggiungono veicoli",
         "risposta": False,
+        "riassunto": "Doppio senso, svolta a sinistra → fermarsi anche se nessuno arriva?",
         "spiegazione": "Non è obbligatorio fermarsi se non ci sono veicoli che arrivano e puoi fare la manovra in sicurezza. Ti fermi solo se devi dare la precedenza, se c'è un semaforo rosso, un segnale di stop o se la situazione lo richiede per sicurezza.",
         "regola": "Fermarsi solo se serve (precedenza, ostacoli). Se libero, vai!",
     },
     {
         "domanda": "Percorrendo una carreggiata a senso unico la svolta a sinistra si effettua segnalando in anticipo la manovra da compiere",
         "risposta": True,
+        "riassunto": "Senso unico, svolta a sinistra → segnalare in anticipo?",
         "spiegazione": "Prima di girare a sinistra, devi sempre usare la freccia per far sapere agli altri cosa farai. Questo vale sempre, anche su strade a senso unico. È una regola di sicurezza fondamentale.",
         "regola": "Freccia sempre prima di girare.",
         "trabocchetti": ["in anticipo"],
@@ -1478,6 +1686,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la marcia per file parallele è consentito cambiare corsia per effettuare manovre di svolta.",
         "risposta": True,
+        "riassunto": "File parallele → cambiare corsia per svoltare?",
         "spiegazione": "Se stai andando in fila parallela e devi girare, puoi spostarti nella corsia giusta per la svolta. Devi farlo con attenzione e segnalando con la freccia, per non creare pericolo.",
         "regola": "Cambi corsia per svoltare, ma con attenzione.",
         "trabocchetti": ["è consentito"],
@@ -1485,6 +1694,7 @@ QUESTIONS = [
     {
         "domanda": "La marcia per file parallele è ammessa quando viene autorizzata dagli agenti del traffico",
         "risposta": True,
+        "riassunto": "File parallele → se autorizzate dagli agenti?",
         "spiegazione": "Se ci sono i vigili urbani o la polizia stradale che dirigono il traffico, loro possono decidere di farvi andare in file parallele, anche se normalmente non sarebbe permesso. Le loro indicazioni hanno sempre la precedenza.",
         "regola": "Agente comanda, file parallele si fanno.",
         "trabocchetti": ["autorizzata dagli agenti del traffico"],
@@ -1492,6 +1702,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentita la marcia per file parallele su strade a due corsie per senso di marcia ad un incrocio regolato da semaforo",
         "risposta": True,
+        "riassunto": "File parallele → due corsie per senso con semaforo?",
         "spiegazione": "Agli incroci con il semaforo, se ci sono almeno due corsie per la tua direzione, puoi andare in file parallele. Questo aiuta a far scorrere meglio il traffico e a ridurre gli ingorghi.",
         "regola": "Semaforo + 2+ corsie = file parallele.",
         "trabocchetti": ["regolato da semaforo"],
@@ -1499,6 +1710,7 @@ QUESTIONS = [
     {
         "domanda": "Su strade con almeno due corsie per senso di marcia, come in figura, qualora il traffico sia intenso, si può viaggiare per file parallele",
         "risposta": True,
+        "riassunto": "Almeno due corsie per senso, traffico intenso → file parallele?",
         "spiegazione": "Se la strada ha almeno due corsie per la tua direzione e c'è tanto traffico (intenso), puoi viaggiare in file parallele. Questo è un modo per gestire meglio il flusso di veicoli.",
         "regola": "Traffico intenso + 2+ corsie = file parallele.",
         "trabocchetti": ["qualora il traffico sia intenso"],
@@ -1507,6 +1719,7 @@ QUESTIONS = [
     {
         "domanda": "Di norma, è consentito viaggiare per file parallele lungo il tratto di strada che porta ad un incrocio regolato da agenti del traffico",
         "risposta": True,
+        "riassunto": "File parallele → verso incrocio con agenti?",
         "spiegazione": "Se c'è un incrocio dove i vigili urbani o la polizia dirigono il traffico, puoi andare in file parallele. Questo è uno dei casi in cui la legge lo permette per migliorare la circolazione.",
         "regola": "Agente all'incrocio = file parallele.",
         "trabocchetti": ["Di norma", "Regolato da agenti del traffico"],
@@ -1514,6 +1727,7 @@ QUESTIONS = [
     {
         "domanda": "In condizioni di traffico intenso su carreggiata a senso unico a tre corsie, come in figura, è consentito viaggiare per file parallele",
         "risposta": True,
+        "riassunto": "Senso unico a tre corsie, traffico intenso → file parallele?",
         "spiegazione": "Se la strada è a senso unico, ha tre corsie e c'è molto traffico, puoi andare in file parallele. Questo serve a far scorrere meglio le auto e a evitare ingorghi.",
         "regola": "Senso unico + 3 corsie + traffico = file parallele.",
         "trabocchetti": ["traffico intenso", "carreggiata a senso unico a tre corsie"],
@@ -1522,6 +1736,7 @@ QUESTIONS = [
     {
         "domanda": "Percorrendo una carreggiata a senso unico la svolta a sinistra si effettua immettendosi in una corsia qualsiasi, se si viaggia per file parallele",
         "risposta": False,
+        "riassunto": "Senso unico a file parallele → sinistra da qualsiasi corsia?",
         "spiegazione": "Anche se vai in file parallele, per girare a sinistra devi sempre usare la corsia più a sinistra. Non puoi scegliere una corsia qualsiasi, altrimenti creeresti confusione e pericolo.",
         "regola": "Svolta a sinistra = corsia più a sinistra, non 'qualsiasi'.",
         "trabocchetti": ["qualsiasi"],
@@ -1529,6 +1744,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito viaggiare per file parallele lungo il tratto di strada che porta ad un incrocio non regolato da semaforo o da agenti del traffico",
         "risposta": False,
+        "riassunto": "File parallele → verso incrocio non regolato?",
         "spiegazione": "Le file parallele sono permesse solo se l'incrocio è regolato da un semaforo o da un agente del traffico, oppure se c'è traffico intenso su strade con più corsie. Se l'incrocio non è regolato, non puoi andare in file parallele per motivi di sicurezza.",
         "regola": "Incrocio non regolato = no file parallele.",
         "trabocchetti": ["non regolato"],
@@ -1536,6 +1752,7 @@ QUESTIONS = [
     {
         "domanda": "E' consentito viaggiare per file parallele su strada con due corsie e doppio senso di marcia, come quella in figura",
         "risposta": False,
+        "riassunto": "Due corsie a doppio senso → file parallele?",
         "spiegazione": "Per viaggiare in file parallele, la strada deve avere almeno due corsie per OGNI senso di marcia, o essere a senso unico con più corsie. Una strada con due corsie totali (una per senso di marcia) non permette le file parallele perché non c'è spazio sufficiente.",
         "regola": "File parallele richiedono almeno due corsie *per il tuo senso di marcia*.",
         "trabocchetti": ["due corsie e doppio senso di marcia"],
@@ -1544,6 +1761,7 @@ QUESTIONS = [
     {
         "domanda": "E' sempre consentito viaggiare per file parallele se la carreggiata a doppio senso ha almeno due corsie per ogni senso di marcia, come quella in figura",
         "risposta": False,
+        "riassunto": "Doppio senso con almeno due corsie per senso → sempre file parallele?",
         "spiegazione": "Non è 'sempre' consentito. Anche se ci sono due corsie per senso di marcia, le file parallele sono permesse solo in caso di traffico intenso o in prossimità di incroci regolati. Non è una regola valida in ogni momento.",
         "regola": "'Sempre' è quasi sempre FALSO. Le file parallele hanno condizioni.",
         "trabocchetti": ["sempre"],
@@ -1552,6 +1770,7 @@ QUESTIONS = [
     {
         "domanda": "Nei centri urbani è consentito marciare per file parallele in qualunque condizione di traffico",
         "risposta": False,
+        "riassunto": "Centri urbani → file parallele sempre?",
         "spiegazione": "Anche nei centri urbani, le file parallele non sono permesse 'in qualunque condizione di traffico'. Sono permesse solo se il traffico è intenso o in prossimità di incroci regolati, e se la strada ha le corsie adatte.",
         "regola": "'Qualunque' è quasi sempre FALSO. Le file parallele hanno condizioni.",
         "trabocchetti": ["in qualunque condizione di traffico"],
@@ -1559,6 +1778,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio viaggiare per file parallele sulle carreggiate a tre corsie per senso di marcia, come quella in figura",
         "risposta": False,
+        "riassunto": "Tre corsie per senso → file parallele obbligatorie?",
         "spiegazione": "Non è 'obbligatorio' viaggiare per file parallele. È consentito, cioè si può fare, ma solo in certe condizioni (traffico intenso, incroci regolati). Non è mai un obbligo imposto dalla legge.",
         "regola": "File parallele non sono mai obbligatorie.",
         "trabocchetti": ["obbligatorio"],
@@ -1567,6 +1787,7 @@ QUESTIONS = [
     {
         "domanda": "Durante la marcia per file parallele, percorrendo la corsia di sinistra, bisogna mantenere in funzione l'indicatore di direzione sinistra",
         "risposta": False,
+        "riassunto": "File parallele a sinistra → freccia sinistra accesa?",
         "spiegazione": "L'indicatore di direzione (la freccia) si usa solo quando cambi corsia o giri. Se stai solo percorrendo una corsia, anche quella di sinistra, non devi tenere la freccia accesa, altrimenti confonderesti gli altri guidatori.",
         "regola": "Freccia solo per cambiare o svoltare, non per 'mantenere'.",
         "trabocchetti": ["mantenere in funzione"],
@@ -1574,18 +1795,21 @@ QUESTIONS = [
     {
         "domanda": "La marcia per file parallele non è ammessa se la strada è a una sola carreggiata",
         "risposta": False,
+        "riassunto": "File parallele → non su una sola carreggiata?",
         "spiegazione": "Questa frase è un po' ingannevole. Le file parallele sono ammesse anche su strade a una sola carreggiata, purché abbiano almeno due corsie per senso di marcia (o siano a senso unico con più corsie) e ci siano le condizioni (traffico intenso, incroci regolati). Non è la presenza di una sola carreggiata a vietarle in assoluto.",
         "regola": "Non è la carreggiata singola il limite, ma le corsie per senso di marcia.",
     },
     {
         "domanda": "Durante la marcia per file parallele i motocicli possono procedere passando tra i veicoli affiancati",
         "risposta": False,
+        "riassunto": "File parallele → moto tra i veicoli affiancati?",
         "spiegazione": "Assolutamente no! È molto pericoloso e vietato per i motocicli passare in mezzo ai veicoli che vanno in file parallele. Devono stare nella loro corsia come gli altri veicoli per la sicurezza di tutti.",
         "regola": "Moto non passano tra le file. Pericolo!",
     },
     {
         "domanda": "Agli incroci è obbligatorio dare la precedenza ai veicoli circolanti su rotaie (tram e treni), salvo diversa segnalazione",
         "risposta": True,
+        "riassunto": "Incroci → precedenza a tram e treni?",
         "spiegazione": "È vero. I veicoli che si muovono su rotaie, come i tram e i treni, hanno quasi sempre la precedenza agli incroci. Questo significa che devi fermarti e lasciarli passare, a meno che non ci sia un segnale (come un semaforo rosso o un segnale di Stop) che indichi il contrario.",
         "regola": "Rotaie = Precedenza (salvo eccezioni chiare).",
         "trabocchetti": ["salvo diversa segnalazione"],
@@ -1593,18 +1817,21 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio dare la precedenza a destra e a sinistra quando, da fermi, ci si immette nella circolazione",
         "risposta": True,
+        "riassunto": "Ripartendo da fermi → precedenza a destra e sinistra?",
         "spiegazione": "È vero. Quando sei fermo (ad esempio, parcheggiato a lato della strada o in un'area di sosta) e vuoi rientrare nel flusso del traffico, devi assicurarti che la strada sia libera. Questo significa guardare bene sia a destra che a sinistra e dare la precedenza a tutti i veicoli che stanno già circolando.",
         "regola": "Entri nel traffico? Guarda ovunque!",
     },
     {
         "domanda": "E' obbligatorio dare la precedenza a tutti i veicoli circolanti sulle strade quando si effettua l'inversione del senso di marcia",
         "risposta": True,
+        "riassunto": "Inversione → precedenza a tutti?",
         "spiegazione": "È vero. L'inversione del senso di marcia (fare un'inversione a U) è una manovra che richiede molto spazio e attenzione. Per farla in sicurezza, devi dare la precedenza a tutti gli altri veicoli che stanno già circolando sulla strada, per non creare pericolo o intralcio.",
         "regola": "Inverti? Tutti prima di te!",
     },
     {
         "domanda": "E' obbligatorio dare la precedenza a tutti i veicoli quando si effettua la retromarcia",
         "risposta": True,
+        "riassunto": "Retromarcia → precedenza a tutti?",
         "spiegazione": "È vero. Quando fai retromarcia, la tua visibilità è limitata e il controllo del veicolo è più difficile. Per questo motivo, devi sempre dare la precedenza a tutti gli altri veicoli e pedoni che si trovano sulla strada o nelle vicinanze, per evitare incidenti.",
         "regola": "Retromarcia? Precedenza sempre!",
         "trabocchetti": ["retromarcia"],
@@ -1612,12 +1839,14 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio dare la precedenza a destra e a sinistra quando si esce da un passo carrabile",
         "risposta": True,
+        "riassunto": "Uscendo da un passo carrabile → precedenza a destra e sinistra?",
         "spiegazione": "È vero. Un passo carrabile è un'uscita da una proprietà privata (come un garage o un cortile) sulla strada pubblica. Quando esci da un passo carrabile, stai entrando nel traffico e devi dare la precedenza a tutti i veicoli che circolano sulla strada, sia da destra che da sinistra.",
         "regola": "Esci dal passo? Guarda bene!",
     },
     {
         "domanda": "E' obbligatorio dare la precedenza a destra e a sinistra in presenza del segnale in figura",
         "risposta": True,
+        "riassunto": "Segnale in figura → precedenza a destra e sinistra?",
         "spiegazione": "È vero. Se il segnale in figura è il segnale di 'Dare precedenza' (un triangolo rovesciato con bordo rosso e sfondo bianco), significa che devi dare la precedenza a tutti i veicoli che arrivano sull'altra strada, sia da destra che da sinistra, prima di impegnare l'incrocio.",
         "regola": "Segnale 'Dare precedenza'? Guarda ovunque!",
         "trabocchetti": ["segnale in figura"],
@@ -1626,6 +1855,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio dare la precedenza a destra e a sinistra in presenza del segnale in figura",
         "risposta": False,
+        "riassunto": "Segnale in figura → precedenza a destra e sinistra?",
         "spiegazione": "È falso. Se il segnale in figura è quello di 'Diritto di precedenza' (un quadrato giallo con bordo bianco), significa che sei tu ad avere la precedenza. Quindi, non devi dare la precedenza né a destra né a sinistra, ma sono gli altri veicoli che devono darla a te.",
         "regola": "Segnale 'Diritto di precedenza'? La precedenza è tua!",
         "trabocchetti": ["segnale in figura"],
@@ -1634,6 +1864,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio dare la precedenza a destra e a sinistra in presenza del segnale ROTATORIA",
         "risposta": False,
+        "riassunto": "ROTATORIA → precedenza a destra e sinistra?",
         "spiegazione": "È falso. In una rotatoria, la regola generale è dare la precedenza a chi è già all'interno della rotatoria (se non ci sono segnali diversi all'ingresso). Non si tratta di dare la precedenza 'a destra e a sinistra' in modo generico come in un incrocio normale, ma di seguire il flusso della rotatoria.",
         "regola": "Rotatoria? Precedenza a chi è dentro!",
         "trabocchetti": ["ROTATORIA"],
@@ -1641,6 +1872,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio dare la precedenza a tutti i veicoli circolanti negli incroci regolati da semaforo a luce gialla lampeggiante",
         "risposta": False,
+        "riassunto": "Giallo lampeggiante → precedenza a tutti?",
         "spiegazione": "È falso. Quando il semaforo è a luce gialla lampeggiante, significa che l'incrocio non è regolato dal semaforo in quel momento. Devi fare molta attenzione e applicare le normali regole della precedenza (ad esempio, dare la precedenza a destra, salvo diversa segnalazione). Non è obbligatorio dare la precedenza 'a tutti i veicoli', ma seguire le regole generali del Codice della Strada.",
         "regola": "Giallo lampeggiante? Attenzione e regole normali!",
         "trabocchetti": ["a tutti i veicoli"],
@@ -1648,6 +1880,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio dare la precedenza a tutti i veicoli circolanti quando si svolta a sinistra",
         "risposta": False,
+        "riassunto": "Svolta a sinistra → precedenza a tutti?",
         "spiegazione": "È falso. Quando si svolta a sinistra, è vero che si deve dare la precedenza ai veicoli che provengono dal senso opposto e che proseguono dritto o svoltano a destra. Ma non è 'a tutti i veicoli circolanti'. Ad esempio, non devi dare la precedenza a chi ti segue. La regola è più specifica e riguarda solo alcuni veicoli.",
         "regola": "Svolti a sinistra? Precedenza solo a chi viene di fronte!",
         "trabocchetti": ["a tutti i veicoli circolanti"],
@@ -1655,6 +1888,7 @@ QUESTIONS = [
     {
         "domanda": "E' obbligatorio dare la precedenza a tutti i veicoli circolanti in presenza del segnale in figura",
         "risposta": False,
+        "riassunto": "Segnale in figura → precedenza a tutti?",
         "spiegazione": "È falso. Se il segnale in figura è quello di 'Diritto di precedenza' (un quadrato giallo con bordo bianco), significa che sei tu ad avere la precedenza. Quindi, non devi dare la precedenza a tutti i veicoli, ma sono gli altri a doverla dare a te.",
         "regola": "Segnale 'Diritto di precedenza'? La precedenza è tua!",
         "trabocchetti": ["a tutti i veicoli"],
@@ -1663,6 +1897,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo in vicinanza di un incrocio bisogna predisporsi ad osservare le norme di precedenza",
         "risposta": True,
+        "riassunto": "Vicino all'incrocio → prepararsi alle precedenze?",
         "spiegazione": "Quando ti avvicini a un incrocio, devi sempre essere pronto a dare o ricevere la precedenza, a seconda dei segnali stradali o delle regole generali. È fondamentale per la sicurezza di tutti.",
         "regola": "Incrocio = Occhi aperti sulla precedenza!",
         "trabocchetti": ["predisporsi ad osservare"],
@@ -1670,6 +1905,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo in vicinanza di un incrocio ci si deve spostare per tempo sulla corsia destinata alla direzione che si intende prendere",
         "risposta": True,
+        "riassunto": "Vicino all'incrocio → spostarsi per tempo nella corsia giusta?",
         "spiegazione": "Se vuoi girare a destra o a sinistra, devi metterti nella corsia giusta (ad esempio, la corsia più a destra per girare a destra) con un po' di anticipo. Questo evita di creare confusione o pericolo agli altri veicoli.",
         "regola": "Corsia giusta = Manovra sicura.",
         "trabocchetti": ["per tempo"],
@@ -1677,6 +1913,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo in vicinanza di un incrocio si deve segnalare per tempo l'intenzione di svoltare",
         "risposta": True,
+        "riassunto": "Vicino all'incrocio → segnalare per tempo la svolta?",
         "spiegazione": "Quando vuoi girare, devi usare la freccia (indicatore di direzione) con un po' di anticipo. Questo avvisa gli altri conducenti delle tue intenzioni e aiuta a prevenire incidenti.",
         "regola": "Freccia = Avviso per tutti.",
         "trabocchetti": ["per tempo"],
@@ -1684,6 +1921,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo alla guida di un veicolo a due ruote in vicinanza di un incrocio, bisogna incolonnarsi dietro gli altri veicoli in attesa",
         "risposta": True,
+        "riassunto": "Due ruote vicino all'incrocio → incolonnarsi dietro gli altri?",
         "spiegazione": "Anche se sei in moto o in scooter, all'incrocio devi stare in fila come le auto, dietro gli altri veicoli. Non puoi superare la fila per metterti davanti.",
         "regola": "Due ruote o quattro, la fila si rispetta.",
         "trabocchetti": ["incolonnarsi"],
@@ -1691,18 +1929,21 @@ QUESTIONS = [
     {
         "domanda": "Giungendo ad un incrocio è consentito impegnarlo solo se si ha la possibilità di proseguire e liberarlo",
         "risposta": True,
+        "riassunto": "Incrocio → impegnarlo solo se si può liberare?",
         "spiegazione": "Non devi entrare nell'incrocio se vedi che non puoi attraversarlo completamente e rischi di bloccarlo. Questo è importante per non creare ingorghi, specialmente con il traffico intenso.",
         "regola": "Incrocio libero = Traffico fluido.",
     },
     {
         "domanda": "Giungendo in vicinanza di un incrocio si deve usare la massima prudenza per evitare incidenti",
         "risposta": True,
+        "riassunto": "Vicino all'incrocio → massima prudenza?",
         "spiegazione": "L'incrocio è un punto pericoloso dove le strade si incontrano. Devi essere molto attento, rallentare e guardare bene per evitare di fare o subire incidenti.",
         "regola": "Incrocio = Attenzione massima.",
     },
     {
         "domanda": "Giungendo in vicinanza di un incrocio bisogna passare sempre prima dei veicoli che arrivano da destra",
         "risposta": False,
+        "riassunto": "Vicino all'incrocio → passare sempre prima di chi viene da destra?",
         "spiegazione": "Questa affermazione è falsa! La regola generale è che devi dare la precedenza a chi viene da destra, a meno che non ci siano segnali diversi (stop, dare precedenza, semaforo).",
         "regola": "'Sempre' è quasi sempre FALSO (per la precedenza a destra).",
         "trabocchetti": ["sempre"],
@@ -1710,12 +1951,14 @@ QUESTIONS = [
     {
         "domanda": "Giungendo in vicinanza di un incrocio bisogna sorpassare velocemente a sinistra se si vuole svoltare a destra",
         "risposta": False,
+        "riassunto": "Vicino all'incrocio → sorpassare a sinistra per svoltare a destra?",
         "spiegazione": "Questa affermazione è falsa. Se vuoi girare a destra, devi stare sulla corsia più a destra e non devi sorpassare. Sorpassare a sinistra per poi girare a destra è una manovra molto pericolosa e vietata.",
         "regola": "Svoltare a destra = Stai a destra, non sorpassare.",
     },
     {
         "domanda": "Giungendo in vicinanza di un incrocio nei centri abitati occorre suonare il clacson",
         "risposta": False,
+        "riassunto": "Vicino all'incrocio in città → suonare?",
         "spiegazione": "Questa affermazione è falsa. Nei centri abitati, il clacson si usa solo in caso di pericolo immediato per evitare un incidente. Non si usa per avvisare che si sta arrivando all'incrocio o per salutare.",
         "regola": "Clacson in città = Solo per pericolo grave.",
         "trabocchetti": ["occorre"],
@@ -1723,12 +1966,14 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza o in corrispondenza degli incroci non è consentito procedere a zig zag, anche se le corsie direzionali sono segnate da strisce discontinue (tratteggiate)",
         "risposta": True,
+        "riassunto": "Vicino agli incroci → niente zig zag anche con tratteggiate?",
         "spiegazione": "Procedere a zig zag, cioè cambiare corsia spesso e rapidamente, è molto pericoloso vicino o dentro un incrocio. Anche se le linee sono tratteggiate (discontinue) e permetterebbero il cambio di corsia, la sicurezza all'incrocio è la priorità. Per questo non è consentito.",
         "regola": "Incrocio = stabilità, no zig zag.",
     },
     {
         "domanda": "In vicinanza o in corrispondenza degli incroci non è consentito cambiare improvvisamente la direzione di marcia",
         "risposta": True,
+        "riassunto": "Vicino agli incroci → niente cambi improvvisi di direzione?",
         "spiegazione": "Cambiare direzione all'improvviso, senza preavviso o senza segnalare, è molto pericoloso per te e per gli altri veicoli. Agli incroci è fondamentale essere prevedibili per evitare incidenti.",
         "regola": "Incrocio = prevedibilità, no mosse a sorpresa.",
         "trabocchetti": ["improvvisamente"],
@@ -1736,12 +1981,14 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza o in corrispondenza degli incroci non è consentito effettuare l'inversione di marcia",
         "risposta": True,
+        "riassunto": "Vicino agli incroci → inversione vietata?",
         "spiegazione": "Fare l'inversione di marcia (girarsi e tornare indietro) in un incrocio è una manovra molto complessa e pericolosa. Si incrociano troppe traiettorie di veicoli, aumentando il rischio di collisioni.",
         "regola": "Incrocio = no inversione di marcia.",
     },
     {
         "domanda": "In corrispondenza di incroci extraurbani non è consentito effettuare la sosta",
         "risposta": True,
+        "riassunto": "Incroci extraurbani → sosta vietata?",
         "spiegazione": "La sosta (fermare il veicolo per un tempo prolungato, anche con il conducente a bordo) è vietata in corrispondenza degli incroci, sia in città che fuori. Questo perché ostacola la visibilità e il flusso del traffico, rendendo l'incrocio più pericoloso.",
         "regola": "Incrocio = no sosta, mai.",
         "trabocchetti": ["extraurbani"],
@@ -1749,6 +1996,7 @@ QUESTIONS = [
     {
         "domanda": "In corrispondenza di incroci extraurbani non è consentito effettuare la fermata",
         "risposta": True,
+        "riassunto": "Incroci extraurbani → fermata vietata?",
         "spiegazione": "Anche la fermata (fermare il veicolo per un breve tempo, per far salire o scendere passeggeri, o per un'esigenza momentanea) è vietata in corrispondenza degli incroci. Anche una breve fermata può creare intralcio e pericolo, specialmente fuori città dove le velocità sono maggiori.",
         "regola": "Incrocio = no fermata, neanche breve.",
         "trabocchetti": ["extraurbani"],
@@ -1756,12 +2004,14 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza o in corrispondenza degli incroci non è consentito sorpassare una bicicletta, se si deve occupare la corsia opposta di marcia",
         "risposta": True,
+        "riassunto": "Vicino agli incroci → niente sorpasso di bici occupando l'opposta?",
         "spiegazione": "Sorpassare una bicicletta è consentito solo se si ha spazio sufficiente e si può mantenere una distanza di sicurezza. Se per sorpassare devi invadere la corsia opposta, vicino o dentro un incrocio, è troppo rischioso a causa del traffico che potrebbe arrivare o svoltare.",
         "regola": "Incrocio + corsia opposta = no sorpasso.",
     },
     {
         "domanda": "In vicinanza o in corrispondenza degli incroci non è consentito usare i fari anabbaglianti",
         "risposta": False,
+        "riassunto": "Vicino agli incroci → anabbaglianti vietati?",
         "spiegazione": "I fari anabbaglianti sono le luci che usi normalmente di notte o in condizioni di scarsa visibilità. È obbligatorio usarli per vedere la strada ed essere visti dagli altri, anche e soprattutto in prossimità degli incroci. Quindi, è consentito usarli, anzi, è necessario.",
         "regola": "Anabbaglianti = sempre utili, anche all'incrocio.",
         "trabocchetti": ["non è consentito"],
@@ -1769,6 +2019,7 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza o in corrispondenza degli incroci extraurbani non è consentito superare la velocità di 60 km/h",
         "risposta": False,
+        "riassunto": "Incroci extraurbani → massimo 60 km/h?",
         "spiegazione": "Non esiste una regola generale che imponga un limite di 60 km/h agli incroci extraurbani. La velocità deve essere sempre adeguata alle condizioni della strada, del traffico e della visibilità, e rispettare i limiti specifici della strada. Potrebbe essere 90 km/h o meno, a seconda dei segnali.",
         "regola": "Velocità = segnali e prudenza, non numero fisso.",
         "trabocchetti": ["60 km/h"],
@@ -1776,6 +2027,7 @@ QUESTIONS = [
     {
         "domanda": "In corrispondenza degli incroci urbani è consentito non azionare l'indicatore di direzione per svoltare a destra",
         "risposta": False,
+        "riassunto": "Incroci urbani → svolta a destra senza freccia?",
         "spiegazione": "È sempre obbligatorio usare l'indicatore di direzione (la freccia) quando si cambia direzione, anche per una semplice svolta a destra in un incrocio urbano. Questo serve a comunicare le tue intenzioni agli altri utenti della strada e prevenire incidenti.",
         "regola": "Svolta = freccia sempre, senza eccezioni.",
         "trabocchetti": ["è consentito non azionare"],
@@ -1783,6 +2035,7 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza o in corrispondenza degli incroci regolati da semaforo non è consentito il sorpasso",
         "risposta": False,
+        "riassunto": "Incroci con semaforo → sorpasso vietato?",
         "spiegazione": "Se un incrocio è regolato da un semaforo e hai il verde, e non ci sono altri divieti (come una linea continua o un segnale specifico), il sorpasso è consentito, a patto che sia sicuro e che tu rimanga nella tua corsia. Il semaforo verde ti dà il via libera, ma sempre con prudenza.",
         "regola": "Semaforo verde = ok sorpasso (se sicuro).",
         "trabocchetti": ["non è consentito il sorpasso"],
@@ -1790,6 +2043,7 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza o in corrispondenza degli incroci non si deve rallentare se il semaforo è a luce gialla lampeggiante",
         "risposta": False,
+        "riassunto": "Incroci col giallo lampeggiante → non rallentare?",
         "spiegazione": "Un semaforo a luce gialla lampeggiante significa 'procedere con cautela e dare la precedenza'. Questo implica che devi assolutamente rallentare, essere pronto a fermarti e assicurarti che non ci siano pericoli prima di attraversare l'incrocio.",
         "regola": "Giallo lampeggiante = rallenta e prudenza.",
         "trabocchetti": ["non si deve rallentare"],
@@ -1797,6 +2051,7 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza o in corrispondenza degli incroci extraurbani non è consentito azionare i dispositivi di segnalazione acustica (clacson o trombe)",
         "risposta": False,
+        "riassunto": "Incroci extraurbani → clacson vietato?",
         "spiegazione": "Fuori dai centri abitati (extraurbani), è consentito usare il clacson (segnalazione acustica) se necessario per motivi di sicurezza, ad esempio per avvisare della tua presenza in un incrocio con scarsa visibilità. In città, invece, è vietato se non per pericolo immediato.",
         "regola": "Clacson extraurbano = ok per sicurezza.",
         "trabocchetti": ["non è consentito", "extraurbani"],
@@ -1804,6 +2059,7 @@ QUESTIONS = [
     {
         "domanda": "Se ad un incrocio giungono contemporaneamente da strade diverse due veicoli, l'obbligo di dare la precedenza spetta, di norma, al conducente del veicolo che arriva da sinistra",
         "risposta": True,
+        "riassunto": "Arrivo contemporaneo → precedenza deve darla chi viene da sinistra?",
         "spiegazione": "La regola generale della precedenza agli incroci, quando non ci sono segnali specifici, è che si deve dare la precedenza a chi viene da destra. Di conseguenza, chi arriva da sinistra deve dare la precedenza.",
         "regola": "Chi viene da sinistra, aspetta!",
         "trabocchetti": ["di norma"],
@@ -1811,6 +2067,7 @@ QUESTIONS = [
     {
         "domanda": "Se ad un incrocio giungono contemporaneamente da strade diverse due veicoli, entrambi hanno l'obbligo di moderare la velocità, per evitare incidenti",
         "risposta": True,
+        "riassunto": "Arrivo contemporaneo → entrambi moderano la velocità?",
         "spiegazione": "Sì, è vero. Anche se si ha la precedenza, è sempre obbligatorio guidare con prudenza e rallentare agli incroci. Questo serve a prevenire incidenti, anche se l'altro conducente dovesse sbagliare.",
         "regola": "Incrocio = prudenza per tutti.",
         "trabocchetti": ["entrambi"],
@@ -1818,6 +2075,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo ad un incrocio, bisogna essere prudenti e tolleranti nei confronti di chi, pur non avendo la precedenza, passa ugualmente per primo",
         "risposta": True,
+        "riassunto": "Incrocio → tolleranza verso chi passa senza precedenza?",
         "spiegazione": "È vero. Anche se un altro veicolo sbaglia e non rispetta la precedenza, tu devi comunque essere prudente per evitare un incidente. La 'tolleranza' significa non insistere sul tuo diritto a tutti i costi, per la sicurezza di tutti.",
         "regola": "Meglio un secondo in più che un incidente.",
         "trabocchetti": ["Prudenti e tolleranti"],
@@ -1825,6 +2083,7 @@ QUESTIONS = [
     {
         "domanda": "Uscendo con un veicolo da una proprietà privata, bisogna procedere con prudenza",
         "risposta": True,
+        "riassunto": "Uscendo da proprietà privata → prudenza?",
         "spiegazione": "È vero. Quando esci da un passo carrabile, un garage o qualsiasi proprietà privata, ti stai immettendo in una strada pubblica. Devi fare molta attenzione perché potresti incontrare veicoli o pedoni che non si aspettano la tua uscita.",
         "regola": "Da privato a pubblico, massima attenzione.",
         "trabocchetti": ["proprietà privata", "Procedere con prudenza"],
@@ -1832,6 +2091,7 @@ QUESTIONS = [
     {
         "domanda": "Uscendo con un veicolo da una proprietà privata, bisogna dare la precedenza agli eventuali pedoni",
         "risposta": True,
+        "riassunto": "Uscendo da proprietà privata → precedenza ai pedoni?",
         "spiegazione": "È vero. I pedoni hanno sempre la precedenza quando un veicolo esce da una proprietà privata e si immette su un marciapiede o sulla strada. Devi fermarti e aspettare che passino.",
         "regola": "Pedone sempre re, da proprietà privata.",
         "trabocchetti": ["eventuali"],
@@ -1839,6 +2099,7 @@ QUESTIONS = [
     {
         "domanda": "Uscendo con un veicolo da una proprietà privata, bisogna procedere lentamente, specie se in retromarcia",
         "risposta": True,
+        "riassunto": "Uscendo da proprietà privata → lentamente, specie in retromarcia?",
         "spiegazione": "È vero. Uscire lentamente ti permette di vedere meglio e di avere il tempo di reagire se c'è un pericolo. Se sei in retromarcia, la visibilità è ridotta, quindi la lentezza è ancora più importante per la sicurezza.",
         "regola": "Lento e attento, soprattutto in retro.",
         "trabocchetti": ["specie se in retromarcia"],
@@ -1846,6 +2107,7 @@ QUESTIONS = [
     {
         "domanda": "Se ad un incrocio giungono contemporaneamente da strade diverse due veicoli, l'obbligo di dare la precedenza spetta al conducente del veicolo che percorre la strada più stretta",
         "risposta": False,
+        "riassunto": "Arrivo contemporaneo → precedenza la dà chi è sulla strada più stretta?",
         "spiegazione": "È falso. La larghezza della strada non ha alcuna importanza per stabilire chi ha la precedenza. La precedenza è regolata dai segnali stradali (stop, dare precedenza) o, in assenza di questi, dalla regola della precedenza a destra.",
         "regola": "Larghezza strada? Non conta per la precedenza!",
         "trabocchetti": ["strada più stretta"],
@@ -1853,6 +2115,7 @@ QUESTIONS = [
     {
         "domanda": "Uscendo con un veicolo da una proprietà privata, è obbligatorio suonare il clacson",
         "risposta": False,
+        "riassunto": "Uscendo da proprietà privata → obbligo di clacson?",
         "spiegazione": "È falso. Il clacson si usa solo in caso di pericolo immediato per avvisare gli altri. Non è un obbligo generale quando si esce da una proprietà privata. L'obbligo è la prudenza e dare la precedenza.",
         "regola": "Clacson solo per pericolo, non per abitudine.",
         "trabocchetti": ["obbligatorio"],
@@ -1860,6 +2123,7 @@ QUESTIONS = [
     {
         "domanda": "Uscendo con un veicolo da una proprietà privata, si ha la precedenza sui pedoni",
         "risposta": False,
+        "riassunto": "Uscendo da proprietà privata → precedenza sui pedoni?",
         "spiegazione": "È falso. È il contrario! Quando esci da una proprietà privata, devi sempre dare la precedenza ai pedoni che si trovano sul marciapiede o sulla strada. I pedoni sono la parte più debole della strada.",
         "regola": "Pedone sempre re, da proprietà privata.",
         "trabocchetti": ["si ha la precedenza sui pedoni"],
@@ -1867,6 +2131,7 @@ QUESTIONS = [
     {
         "domanda": "Se un autotreno intende svoltare a destra in una strada stretta, i conducenti degli altri veicoli debbono tener presente che potrebbe diminuire notevolmente la velocità",
         "risposta": True,
+        "riassunto": "Autotreno che svolta a destra in strada stretta → può rallentare molto?",
         "spiegazione": "È VERO. Un autotreno è un veicolo molto lungo. Per svoltare a destra in una strada stretta, ha bisogno di rallentare molto per fare la curva in sicurezza. Gli altri veicoli devono aspettarsi questo rallentamento.",
         "regola": "Autotreno lungo = curva lenta.",
         "trabocchetti": ["potrebbe", "Notevolmente"],
@@ -1874,12 +2139,14 @@ QUESTIONS = [
     {
         "domanda": "Se un autotreno intende svoltare a destra in una strada stretta, i conducenti degli altri veicoli debbono tener presente che nella manovra si sposti a sinistra(si allarghi)",
         "risposta": True,
+        "riassunto": "Autotreno che svolta a destra → si allarga a sinistra?",
         "spiegazione": "È VERO. A causa della sua lunghezza, un autotreno che deve svoltare a destra in una strada stretta spesso deve prima spostarsi un po' a sinistra (cioè 'allargarsi') per avere lo spazio sufficiente per completare la curva senza che le ruote posteriori finiscano sul marciapiede o urtino ostacoli.",
         "regola": "Autotreno a destra? Prima a sinistra!",
     },
     {
         "domanda": "Se un autotreno intende svoltare a destra in una strada stretta, non bisogna stargli troppo vicino, per non essere d'intralcio, in caso sia necessaria la manovra di retromarcia",
         "risposta": True,
+        "riassunto": "Autotreno che svolta a destra → non stargli troppo vicino?",
         "spiegazione": "È VERO. Se un autotreno non riesce a completare la svolta o incontra un ostacolo, potrebbe aver bisogno di fare una piccola retromarcia. Se sei troppo vicino, gli impedisci di fare questa manovra e diventi un intralcio.",
         "regola": "Distanza = spazio per manovre (anche retromarcia).",
         "trabocchetti": ["non bisogna stargli troppo vicino", "intralcio"],
@@ -1887,6 +2154,7 @@ QUESTIONS = [
     {
         "domanda": "Se un autotreno intende svoltare a destra in un incrocio, occorre rinunciare a sorpassarlo, perché potrebbe impedire la vista di segnali o di veicoli provenienti lateralmente",
         "risposta": True,
+        "riassunto": "Autotreno che svolta a destra all'incrocio → non sorpassarlo?",
         "spiegazione": "È VERO. Un autotreno è un veicolo molto grande. Se provi a sorpassarlo mentre sta svoltando a un incrocio, ti bloccherà completamente la vista di eventuali segnali stradali o di altri veicoli che arrivano dalle strade laterali, rendendo la manovra estremamente pericolosa.",
         "regola": "Autotreno + incrocio = mai sorpassare.",
         "trabocchetti": ["rinunciare a sorpassarlo", "impedire la vista"],
@@ -1894,6 +2162,7 @@ QUESTIONS = [
     {
         "domanda": "Se un autotreno intende svoltare a destra in una strada stretta, bisogna sorpassarlo subito a sinistra",
         "risposta": False,
+        "riassunto": "Autotreno che svolta a destra → sorpassarlo subito a sinistra?",
         "spiegazione": "È FALSO. Questa è una manovra molto pericolosa. Come abbiamo visto, l'autotreno potrebbe allargarsi a sinistra prima di svoltare a destra. Se lo sorpassi a sinistra, rischi di rimanere schiacciato o di causare un incidente grave. Inoltre, sorpassare in prossimità di un incrocio è generalmente vietato o molto rischioso.",
         "regola": "Autotreno che gira = non sorpassare.",
         "trabocchetti": ["bisogna", "sorpassarlo subito a sinistra"],
@@ -1901,6 +2170,7 @@ QUESTIONS = [
     {
         "domanda": "Se un autotreno intende svoltare a destra in una strada stretta, i conducenti dei veicoli che seguono devono sorpassarlo appena aziona l'indicatore di direzione",
         "risposta": False,
+        "riassunto": "Autotreno che svolta a destra → sorpassarlo appena mette la freccia?",
         "spiegazione": "È FALSO. Quando un autotreno aziona l'indicatore di direzione, significa che sta per iniziare la manovra di svolta. Questo è il momento in cui devi essere più prudente, rallentare e mantenere la distanza, non certo sorpassarlo. Sorpassare in questa situazione è estremamente pericoloso.",
         "regola": "Freccia = attenzione, non sorpasso.",
         "trabocchetti": ["devono sorpassarlo", "appena aziona l"],
@@ -1908,6 +2178,7 @@ QUESTIONS = [
     {
         "domanda": "Se un autotreno intende svoltare a destra in una strada stretta, i conducenti dei veicoli che seguono debbono azionare la segnalazione luminosa di pericolo.",
         "risposta": False,
+        "riassunto": "Autotreno che svolta a destra → chi segue accende le quattro frecce?",
         "spiegazione": "È FALSO. La segnalazione luminosa di pericolo (le 'quattro frecce') si usa per segnalare un pericolo che riguarda il tuo veicolo (ad esempio, un guasto, una sosta forzata, un rallentamento improvviso e inaspettato). Non si usa per segnalare la manovra di un altro veicolo, per quanto complessa possa essere. In questo caso, devi solo rallentare e mantenere la distanza di sicurezza.",
         "regola": "Pericolo altrui = prudenza, non 4 frecce.",
         "trabocchetti": ["debbono", "azione"],
@@ -1915,6 +2186,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende effettuare l'inversione di marcia su una strada a doppio senso deve dare la precedenza ai veicoli che sopraggiungono",
         "risposta": True,
+        "riassunto": "Inversione su doppio senso → precedenza a chi arriva?",
         "spiegazione": "Quando fai l'inversione di marcia, cambi completamente direzione e attraversi la strada. Per questo motivo, devi sempre controllare bene e lasciare passare tutti i veicoli che stanno arrivando, sia da davanti che da dietro, per non causare incidenti. La sicurezza è la priorità.",
         "regola": "Inversione = precedenza a tutti!",
         "trabocchetti": ["deve dare la precedenza"],
@@ -1922,6 +2194,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende effettuare l'inversione di marcia su una strada a doppio senso deve rinunciare a compiere la manovra, qualora vi sia traffico intenso e continuo",
         "risposta": True,
+        "riassunto": "Inversione con traffico intenso → rinunciare?",
         "spiegazione": "Se la strada è molto trafficata e le macchine passano continuamente, fare l'inversione di marcia è estremamente pericoloso. Potresti bloccare il traffico o causare un incidente. In queste situazioni, è obbligatorio non fare la manovra e cercare un posto più sicuro o un'altra strada.",
         "regola": "Troppo traffico? Non fare inversione!",
         "trabocchetti": ["deve rinunciare", "traffico intenso e continuo"],
@@ -1929,6 +2202,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende effettuare l'inversione di marcia su una strada a doppio senso deve rinunciare ad eseguire la manovra, se vi è scarsa visibilità",
         "risposta": True,
+        "riassunto": "Inversione con scarsa visibilità → rinunciare?",
         "spiegazione": "La visibilità è fondamentale per guidare in sicurezza. Se non vedi bene (per nebbia, pioggia forte, buio, ecc.), non puoi fare l'inversione di marcia. Non vedresti le altre macchine e loro non vedrebbero te, creando un grande pericolo. È obbligatorio rinunciare alla manovra in queste condizioni.",
         "regola": "Non vedi? Non girare!",
         "trabocchetti": ["deve rinunciare", "Scarsa visibilità"],
@@ -1936,6 +2210,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende effettuare l'inversione di marcia su una strada a doppio senso deve azionare l'indicatore di direzione",
         "risposta": True,
+        "riassunto": "Inversione → indicatore di direzione?",
         "spiegazione": "L'indicatore di direzione, cioè la 'freccia', serve per comunicare agli altri conducenti cosa intendi fare. È obbligatorio usarlo ogni volta che cambi direzione o fai una manovra, inclusa l'inversione di marcia, per avvisare chi ti segue o chi ti incrocia.",
         "regola": "Ogni manovra = freccia!",
         "trabocchetti": ["deve azionare l"],
@@ -1943,6 +2218,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende effettuare l'inversione di marcia su una strada a doppio senso non deve creare pericolo o intralcio agli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Inversione → senza pericolo o intralcio?",
         "spiegazione": "Questa è una regola generale per tutte le manovre alla guida. Devi sempre guidare in modo da non mettere in pericolo gli altri utenti della strada (pedoni, ciclisti, altri veicoli) e da non bloccare il traffico. L'inversione di marcia, essendo una manovra complessa, richiede particolare attenzione a questo principio.",
         "regola": "Sicurezza prima di tutto!",
         "trabocchetti": ["non deve creare pericolo o intralcio"],
@@ -1950,6 +2226,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende effettuare l'inversione di marcia su una strada a doppio senso deve azionare la segnalazione luminosa di pericolo",
         "risposta": False,
+        "riassunto": "Inversione → quattro frecce?",
         "spiegazione": "La segnalazione luminosa di pericolo (le 'quattro frecce') si usa solo in situazioni di emergenza, quando il veicolo è fermo in una posizione pericolosa o in caso di guasto. Per l'inversione di marcia, che è una normale manovra, si usa solo l'indicatore di direzione (la freccia singola) per segnalare la propria intenzione.",
         "regola": "Inversione = freccia singola, non quattro frecce.",
         "trabocchetti": ["segnalazione luminosa di pericolo"],
@@ -1957,6 +2234,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende effettuare l'inversione di marcia su una strada a doppio senso può compiere la manovra anche in curva, se dà precedenza a tutti i veicoli",
         "risposta": False,
+        "riassunto": "Inversione → anche in curva dando precedenza?",
         "spiegazione": "Fare l'inversione di marcia in curva è sempre vietato e molto pericoloso. In curva la visibilità è ridotta, quindi non vedresti bene i veicoli che arrivano e loro non ti vedrebbero in tempo. Dare la precedenza non elimina il pericolo intrinseco della curva.",
         "regola": "Curva = mai inversione!",
         "trabocchetti": ["anche in curva"],
@@ -1964,12 +2242,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che può effettuare l'inversione di marcia su una strada a doppio senso deve accertarsi se la linea di mezzeria è continua",
         "risposta": False,
+        "riassunto": "Inversione → verificare se la mezzeria è continua?",
         "spiegazione": "Se la linea di mezzeria è continua, non puoi superarla né attraversarla. Questo significa che non puoi fare l'inversione di marcia. Per poter fare l'inversione, la linea di mezzeria deve essere tratteggiata. Quindi, devi accertarti che NON sia continua, o che sia tratteggiata.",
         "regola": "Linea continua = no inversione.",
     },
     {
         "domanda": "Il conducente che intende effettuare l'inversione di marcia su una strada a doppio senso può compiere la manovra anche con scarsa visibilità, se la linea di mezzeria è tratteggiata",
         "risposta": False,
+        "riassunto": "Inversione con scarsa visibilità → se mezzeria tratteggiata?",
         "spiegazione": "Anche se la linea di mezzeria è tratteggiata e ti permetterebbe di attraversarla, non puoi fare l'inversione di marcia se c'è scarsa visibilità. La sicurezza è sempre la cosa più importante. Se non vedi bene, la manovra è troppo rischiosa, indipendentemente dalla linea sull'asfalto.",
         "regola": "Scarsa visibilità = mai inversione, anche con linea tratteggiata.",
         "trabocchetti": ["anche con scarsa visibilità"],
@@ -1977,6 +2257,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende effettuare l'inversione di marcia su una strada a doppio senso può effettuarla solo sulle strade larghe, che permettono di eseguirla con una sola manovra",
         "risposta": False,
+        "riassunto": "Inversione → solo su strade larghe in una manovra?",
         "spiegazione": "Non è vero che puoi fare l'inversione di marcia 'solo' sulle strade molto larghe e con una sola manovra. Puoi farla anche su strade meno larghe, facendo più manovre (avanti e indietro), purché ci siano tutte le condizioni di sicurezza: buona visibilità, assenza di traffico, linea di mezzeria tratteggiata e spazio sufficiente per completare la manovra senza pericolo.",
         "regola": "Non solo strade larghe; anche con più manovre, se sicuro.",
         "trabocchetti": ["solo"],
@@ -1984,54 +2265,63 @@ QUESTIONS = [
     {
         "domanda": "Nelle strade a doppio senso di circolazione non è consentito effettuare l'inversione del senso di marcia in vicinanza o in corrispondenza di curve",
         "risposta": True,
+        "riassunto": "Doppio senso → inversione vietata vicino alle curve?",
         "spiegazione": "È VERO. Nelle curve la visibilità è limitata, non si vede bene chi arriva. Fare inversione di marcia in questi punti è molto pericoloso e può causare incidenti.",
         "regola": "Curva = No inversione (non vedi chi arriva).",
     },
     {
         "domanda": "L'inversione del senso di marcia non è consentita in vicinanza o in corrispondenza degli incroci",
         "risposta": True,
+        "riassunto": "Inversione → vietata vicino agli incroci?",
         "spiegazione": "È VERO. Gli incroci sono punti dove si incontrano molti veicoli. Fare inversione di marcia lì è pericoloso perché si intralcia il traffico e si rischia di causare collisioni.",
         "regola": "Incrocio = No inversione (troppo traffico e pericolo).",
     },
     {
         "domanda": "Nelle strade a doppio senso non è consentito effettuare l'inversione del senso di marcia in tutti i casi di scarsa visibilità",
         "risposta": True,
+        "riassunto": "Doppio senso → inversione vietata con scarsa visibilità?",
         "spiegazione": "È VERO. Se la visibilità è scarsa (per esempio per nebbia, pioggia forte o buio), non si vedono bene gli altri veicoli. Fare inversione in queste condizioni è estremamente pericoloso.",
         "regola": "Scarsa visibilità = No inversione (non vedi la strada).",
     },
     {
         "domanda": "Nelle strade a doppio senso di circolazione non è consentito effettuare l'inversione del senso di marcia in vicinanza o in corrispondenza di dossi",
         "risposta": True,
+        "riassunto": "Doppio senso → inversione vietata vicino ai dossi?",
         "spiegazione": "È VERO. Sui dossi o subito dopo, la visibilità è ridotta. Non si vede chi arriva dall'altra parte della strada. Fare inversione in questi punti è molto pericoloso.",
         "regola": "Dosso = No inversione (non vedi oltre).",
     },
     {
         "domanda": "Quando manca la segnaletica orizzontale non è consentito effettuare manovre di inversione del senso di marcia",
         "risposta": False,
+        "riassunto": "Senza segnaletica orizzontale → inversione vietata?",
         "spiegazione": "È FALSO. La mancanza di segnaletica orizzontale (le linee sull'asfalto) non significa che non si possa fare inversione di marcia. Se le condizioni della strada e del traffico lo permettono in sicurezza, si può fare.",
         "regola": "No linee = Puoi fare inversione (se è sicuro).",
     },
     {
         "domanda": "Qualora la linea di margine della carreggiata sia continua, non è consentito effettuare l'inversione di marcia",
         "risposta": False,
+        "riassunto": "Linea di margine continua → inversione vietata?",
         "spiegazione": "È FALSO. La linea di margine continua indica il bordo della carreggiata e non si può superare per uscire o entrare dalla strada. Ma l'inversione di marcia si fa sulla carreggiata, non superando la linea di margine. Quindi, questa linea non vieta l'inversione.",
         "regola": "Linea di margine continua = Non vieta inversione (si fa sulla strada).",
     },
     {
         "domanda": "Fuori dai centri abitati non è consentito effettuare l'inversione di marcia",
         "risposta": False,
+        "riassunto": "Fuori città → inversione vietata?",
         "spiegazione": "È FALSO. Fuori dai centri abitati, se la strada è dritta, la visibilità è buona e non ci sono pericoli (come curve, dossi o incroci), è possibile fare inversione, prestando sempre la massima attenzione.",
         "regola": "Fuori città = Puoi fare inversione (se sicuro e visibile).",
     },
     {
         "domanda": "Sulle autostrade a tre corsie per ogni senso di marcia è consentito l'inversione del senso di marcia",
         "risposta": False,
+        "riassunto": "Autostrade a tre corsie → inversione consentita?",
         "spiegazione": "È FALSO. Sulle autostrade e sulle strade extraurbane principali è sempre vietato fare inversione di marcia, tornare indietro o fare retromarcia. Sono strade ad alta velocità e queste manovre sono estremamente pericolose.",
         "regola": "Autostrada = MAI inversione (troppo pericoloso).",
     },
     {
         "domanda": "Giungendo ad un incrocio in cui la circolazione è regolata con rotatoria, bisogna dare la precedenza ai veicoli provenienti da sinistra, solo se vi è il segnale DARE PRECEDENZA",
         "risposta": True,
+        "riassunto": "Rotatoria → precedenza a sinistra solo con DARE PRECEDENZA?",
         "spiegazione": "Nelle rotatorie moderne, dove c'è il segnale 'DARE PRECEDENZA' all'ingresso, devi dare la precedenza ai veicoli che arrivano da sinistra, cioè quelli che sono già dentro la rotatoria. Se non ci fosse il segnale, varrebbe la regola generale della precedenza a destra.",
         "regola": "Rotatoria con segnale = precedenza a sinistra (a chi è già dentro).",
         "trabocchetti": ["solo se vi è il segnale DARE PRECEDENZA"],
@@ -2039,6 +2329,7 @@ QUESTIONS = [
     {
         "domanda": "Negli incroci regolati con circolazione rotatoria, in assenza di specifico segnale, vale la regola generale di dare la precedenza a destra",
         "risposta": True,
+        "riassunto": "Rotatoria senza segnale → precedenza a destra?",
         "spiegazione": "Se in una rotatoria non ci sono segnali specifici (come 'DARE PRECEDENZA' o semafori), si applica la regola generale del Codice della Strada: devi dare la precedenza a chi viene dalla tua destra.",
         "regola": "Nessun segnale = precedenza a destra (regola generale).",
         "trabocchetti": ["in assenza di specifico segnale"],
@@ -2046,6 +2337,7 @@ QUESTIONS = [
     {
         "domanda": "Negli incroci regolati con rotatoria, la circolazione può essere disciplinata in modo che i veicoli in entrata diano la precedenza a quelli già circolanti nell'anello",
         "risposta": True,
+        "riassunto": "Rotatoria → chi entra può dare precedenza a chi è nell'anello?",
         "spiegazione": "Sì, è vero. Le rotatorie sono spesso organizzate in modo che i veicoli che vogliono entrare (in entrata) debbano dare la precedenza a quelli che stanno già girando dentro (già circolanti nell'anello). Questo rende il traffico più fluido e sicuro.",
         "regola": "Rotatoria moderna = chi entra dà precedenza a chi è già dentro.",
         "trabocchetti": ["può essere disciplinata"],
@@ -2053,6 +2345,7 @@ QUESTIONS = [
     {
         "domanda": "In un incrocio regolato con circolazione rotatoria, l'obbligo di dare la precedenza può essere imposto ai veicoli che stanno per immettersi",
         "risposta": True,
+        "riassunto": "Rotatoria → obbligo di precedenza per chi entra?",
         "spiegazione": "Sì, è vero. L'obbligo di dare la precedenza è spesso imposto ai veicoli che stanno per entrare nella rotatoria, di solito tramite il segnale 'DARE PRECEDENZA'. Questo serve a garantire la sicurezza e la fluidità del traffico all'interno dell'anello.",
         "regola": "Chi entra in rotatoria *può* dover dare precedenza.",
         "trabocchetti": ["può essere imposto"],
@@ -2060,6 +2353,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo ad un incrocio, regolato con circolazione rotatoria, prima di immettersi è opportuno moderare la velocità ed usare la massima prudenza, controllando nel contempo il comportamento degli altri utenti",
         "risposta": True,
+        "riassunto": "Prima di entrare in rotatoria → moderare e prudenza?",
         "spiegazione": "Sì, è vero. Quando ti avvicini a una rotatoria, è sempre una buona pratica ridurre la velocità e fare molta attenzione. Devi guardare bene cosa fanno gli altri veicoli e i pedoni per evitare incidenti.",
         "regola": "In incrocio/rotatoria = sempre prudenza e velocità moderata.",
         "trabocchetti": ["è opportuno"],
@@ -2067,6 +2361,7 @@ QUESTIONS = [
     {
         "domanda": "Se in una strada a forte pendenza, il passaggio tra veicoli non è facilmente possibile, in genere spetta al conducente che procede in discesa arrestarsi ed eventualmente fare retromarcia",
         "risposta": True,
+        "riassunto": "Forte pendenza, passaggio difficile → chi scende si ferma o fa retromarcia?",
         "spiegazione": "Sì, è vero. Su una strada in forte salita o discesa, se due veicoli non riescono a passare contemporaneamente, di solito chi scende deve fermarsi e, se necessario, fare retromarcia. Questo perché chi scende ha più controllo del veicolo e chi sale potrebbe avere difficoltà a ripartire.",
         "regola": "In pendenza stretta: chi scende dà precedenza a chi sale.",
         "trabocchetti": ["in genere"],
@@ -2074,6 +2369,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale DARE PRECEDENZA, se occorre arrestarsi, bisogna che ciò avvenga in corrispondenza della striscia trasversale, formata da una serie di triangoli bianchi",
         "risposta": True,
+        "riassunto": "DARE PRECEDENZA → fermarsi sulla striscia a triangoli?",
         "spiegazione": "Sì, è vero. Il segnale 'DARE PRECEDENZA' è sempre accompagnato da una linea bianca orizzontale fatta di triangoli. Se devi fermarti per dare precedenza, devi farlo prima di questa linea, in modo da non invadere l'incrocio.",
         "regola": "Dare precedenza = fermati alla linea di triangoli (se serve).",
         "trabocchetti": ["se occorre arrestarsi"],
@@ -2081,6 +2377,7 @@ QUESTIONS = [
     {
         "domanda": "Giungendo ad un incrocio in cui la circolazione è regolata con rotatoria, è obbligatorio dare la precedenza ai veicoli provenienti da sinistra",
         "risposta": False,
+        "riassunto": "Rotatoria → sempre precedenza a sinistra?",
         "spiegazione": "FALSO. Non è *sempre* obbligatorio dare la precedenza ai veicoli provenienti da sinistra in una rotatoria. Questo obbligo esiste solo se ci sono i segnali che lo indicano (come il segnale 'DARE PRECEDENZA' all'ingresso). Se non ci sono segnali, vale la regola generale della precedenza a destra.",
         "regola": "Precedenza a sinistra in rotatoria = solo con segnale.",
         "trabocchetti": ["obbligatorio"],
@@ -2088,6 +2385,7 @@ QUESTIONS = [
     {
         "domanda": "Per immettersi in un incrocio, regolato con circolazione rotatoria, bisogna dare sempre la precedenza ai veicoli già circolanti all'interno della rotatoria",
         "risposta": False,
+        "riassunto": "Entrando in rotatoria → sempre precedenza a chi è dentro?",
         "spiegazione": "FALSO. Non bisogna 'sempre' dare la precedenza ai veicoli già dentro la rotatoria. Questa regola vale nelle rotatorie moderne con il segnale 'DARE PRECEDENZA' all'ingresso. Ma nelle rotatorie più vecchie o senza segnali specifici, vale la precedenza a destra, quindi chi è già dentro potrebbe dover dare precedenza a chi entra da destra.",
         "regola": "'Sempre' in rotatoria? Attenzione! Dipende dai segnali.",
         "trabocchetti": ["sempre"],
@@ -2095,12 +2393,14 @@ QUESTIONS = [
     {
         "domanda": "In un incrocio regolato con circolazione rotatoria, i veicoli circolanti nell'anello possono effettuare manovre di retromarcia",
         "risposta": False,
+        "riassunto": "Rotatoria → retromarcia nell'anello?",
         "spiegazione": "FALSO. È assolutamente vietato fare manovre di retromarcia all'interno di una rotatoria. La retromarcia è una manovra molto pericolosa in incroci e rotatorie, perché può causare incidenti gravi.",
         "regola": "Rotatoria = mai retromarcia.",
     },
     {
         "domanda": "Quando un incrocio è regolato con rotatoria, i veicoli circolanti all'interno dell'anello possono sorpassare sia a destra che a sinistra",
         "risposta": False,
+        "riassunto": "Rotatoria → sorpasso a destra e sinistra nell'anello?",
         "spiegazione": "FALSO. Nelle rotatorie, come nella maggior parte delle strade, il sorpasso è consentito solo a sinistra. Sorpassare a destra è generalmente vietato e molto pericoloso, a meno di casi specifici (ad esempio, se il veicolo davanti ha segnalato di voler svoltare a sinistra e si è spostato molto a sinistra).",
         "regola": "Sorpasso = di norma solo a sinistra.",
         "trabocchetti": ["sia a destra che a sinistra"],
@@ -2108,6 +2408,7 @@ QUESTIONS = [
     {
         "domanda": "Qualora in una strada a forte pendenza il passaggio tra veicoli risulti difficoltoso, se uno dei due conducenti si trova in vicinanza di una piazzola di scambio, spetta a lui accostare e lasciar passare l'altro conducente",
         "risposta": True,
+        "riassunto": "Forte pendenza → chi è vicino alla piazzola accosta?",
         "spiegazione": "Se c'è una piazzola di scambio (uno slargo dove un veicolo può accostare) e il passaggio è difficile, chi è vicino alla piazzola deve usarla per far passare l'altro veicolo. Questo aiuta a rendere il traffico più fluido e sicuro.",
         "regola": "C'è una piazzola? Usala per facilitare il passaggio!",
         "trabocchetti": ["Qualora", "spetta a lui"],
@@ -2115,6 +2416,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale DARE PRECEDENZA occorre usare prudenza e moderare la velocità, ma occorre arrestarsi solo in caso di necessità",
         "risposta": True,
+        "riassunto": "DARE PRECEDENZA → prudenza, fermarsi solo se serve?",
         "spiegazione": "Il segnale DARE PRECEDENZA ti dice di dare la precedenza agli altri veicoli. Devi rallentare e fare attenzione, ma non devi fermarti per forza. Ti fermi solo se vedi che stanno arrivando altri veicoli o se non riesci a vedere bene la strada.",
         "regola": "Dare Precedenza: rallenta, fermati solo se serve.",
         "trabocchetti": ["solo in caso di necessità"],
@@ -2122,6 +2424,7 @@ QUESTIONS = [
     {
         "domanda": "In presenza del segnale di STOP non occorre arrestarsi, se non vi è la linea trasversale di arresto e non si vedono sopraggiungere veicoli",
         "risposta": False,
+        "riassunto": "STOP senza linea e senza veicoli → non fermarsi?",
         "spiegazione": "Il segnale di STOP significa che devi SEMPRE fermarti. Non importa se non c'è la linea bianca sull'asfalto o se non vedi arrivare nessuno. Devi fare un arresto completo e poi ripartire solo quando è sicuro.",
         "regola": "STOP: sempre stop, anche senza linea o veicoli.",
         "trabocchetti": ["non occorre arrestarsi"],
@@ -2129,6 +2432,7 @@ QUESTIONS = [
     {
         "domanda": "Se in una strada a forte pendenza, il passaggio tra veicoli non è facilmente possibile, in genere spetta al conducente che procede in salita arrestarsi",
         "risposta": False,
+        "riassunto": "Forte pendenza → chi sale si ferma?",
         "spiegazione": "Questa affermazione è falsa. In una strada in forte pendenza, è più difficile ripartire per chi sta salendo. Per questo motivo, è chi scende che deve fermarsi per facilitare il passaggio, non chi sale.",
         "regola": "Chi sale ha la precedenza, chi scende si ferma.",
         "trabocchetti": ["in salita arrestarsi"],
@@ -2136,12 +2440,14 @@ QUESTIONS = [
     {
         "domanda": "In vicinanza di un incrocio semaforizzato è consentito arrestarsi sulle strisce pedonali, se il semaforo per i pedoni è disposto al rosso",
         "risposta": False,
+        "riassunto": "Incrocio con semaforo → fermarsi sulle strisce se rosso pedonale?",
         "spiegazione": "Non è mai consentito fermarsi sulle strisce pedonali. Le strisce devono essere sempre libere per permettere ai pedoni di attraversare in sicurezza, anche se il semaforo per i pedoni è rosso.",
         "regola": "Strisce pedonali? Mai fermarsi sopra!",
     },
     {
         "domanda": "I conducenti devono attenersi alle segnalazioni di pericolo o alle prescrizioni che appaiono, con scritte luminose, sui veicoli della polizia",
         "risposta": True,
+        "riassunto": "Scritte luminose della polizia → rispettarle?",
         "spiegazione": "È VERO. Quando vedi scritte luminose sui veicoli della polizia, come 'INCIDENTE' o 'RALLENTARE', devi sempre seguire le loro indicazioni. Sono lì per la tua sicurezza e per regolare il traffico.",
         "regola": "Polizia = Obbligo. Segui sempre le indicazioni luminose.",
         "trabocchetti": ["devono attenersi"],
@@ -2149,6 +2455,7 @@ QUESTIONS = [
     {
         "domanda": "Se un'auto della polizia, con sirena in funzione, vi sorpassa ponendosi davanti e sul tetto ha un display con la scritta luminosa \"ACCOSTARE\", avete l'obbligo di arrestarvi",
         "risposta": True,
+        "riassunto": "Polizia con ACCOSTARE → obbligo di fermarsi?",
         "spiegazione": "È VERO. Se la polizia ti sorpassa con la sirena e ti mostra 'ACCOSTARE', significa che devi fermarti subito sul lato della strada. È un ordine diretto a te.",
         "regola": "'ACCOSTARE' = Fermati subito a lato.",
         "trabocchetti": ["Accostare"],
@@ -2156,6 +2463,7 @@ QUESTIONS = [
     {
         "domanda": "Se un'auto della polizia, con sirena in funzione, vi sorpassa ponendosi davanti e sul tetto ha un display con la scritta luminosa \"ALT POLIZIA\", solo voi avete l'obbligo di arrestarvi",
         "risposta": True,
+        "riassunto": "Polizia con ALT POLIZIA → solo voi dovete fermarvi?",
         "spiegazione": "È VERO. Se la polizia ti segnala 'ALT POLIZIA' con la sirena e il display, l'ordine è rivolto a te. Devi fermarti immediatamente. Non è un segnale per tutti i veicoli in generale, ma per quello a cui si stanno rivolgendo.",
         "regola": "'ALT POLIZIA' = Fermati TU.",
         "trabocchetti": ["solo"],
@@ -2163,6 +2471,7 @@ QUESTIONS = [
     {
         "domanda": "Quando si vede sul tetto dell'auto della polizia un display con la scritta luminosa \"INCIDENTE\", bisogna diminuire la velocità",
         "risposta": True,
+        "riassunto": "Polizia con INCIDENTE → diminuire la velocità?",
         "spiegazione": "È VERO. Se vedi 'INCIDENTE' sul display della polizia, significa che c'è un pericolo avanti. Devi rallentare per essere pronto a fermarti o a reagire in sicurezza.",
         "regola": "'INCIDENTE' = Rallenta per sicurezza.",
         "trabocchetti": ["bisogna diminuire la velocità"],
@@ -2170,6 +2479,7 @@ QUESTIONS = [
     {
         "domanda": "Quando vedete sul tetto di un'auto della polizia un display con la scritta luminosa \"INCIDENTE\", significa che quella zona è ad alto rischio di incidenti",
         "risposta": False,
+        "riassunto": "INCIDENTE sulla polizia → zona ad alto rischio?",
         "spiegazione": "È FALSO. La scritta 'INCIDENTE' sul veicolo della polizia significa che c'è un incidente in quel momento, non che la zona è 'ad alto rischio' in generale. È una segnalazione di un evento attuale, non una previsione futura.",
         "regola": "'INCIDENTE' = C'è un problema ORA, non un rischio futuro.",
         "trabocchetti": ["ad alto rischio di incidenti", "INCIDENTE"],
@@ -2177,6 +2487,7 @@ QUESTIONS = [
     {
         "domanda": "Se un'auto della polizia, con sirena in funzione, vi sorpassa ponendosi davanti e sul tetto ha un display con la scritta luminosa \"ACCOSTARE\", significa che avete l'obbligo di svoltare",
         "risposta": False,
+        "riassunto": "Polizia con ACCOSTARE → obbligo di svoltare?",
         "spiegazione": "È FALSO. 'ACCOSTARE' significa fermarsi sul lato della strada, non 'svoltare' (girare). Se la polizia ti dice di accostare, devi fermarti, non cambiare direzione.",
         "regola": "'ACCOSTARE' = Fermarsi, non girare.",
         "trabocchetti": ["svoltare", "Accostare"],
@@ -2184,6 +2495,7 @@ QUESTIONS = [
     {
         "domanda": "Se sul tetto di un'auto della polizia è presente un display con la scritta luminosa \"RALLENTARE\", l'obbligo è rivolto ai soli veicoli pesanti.",
         "risposta": False,
+        "riassunto": "Polizia con RALLENTARE → solo veicoli pesanti?",
         "spiegazione": "È FALSO. Quando la polizia segnala 'RALLENTARE', l'obbligo è per TUTTI i veicoli, non solo per quelli pesanti. Le indicazioni di sicurezza valgono per tutti i conducenti.",
         "regola": "'RALLENTARE' = Per TUTTI, non solo camion.",
         "trabocchetti": ["ai soli veicoli pesanti"],
@@ -2191,6 +2503,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende immettersi nel flusso della circolazione deve assicurarsi di poter effettuare la manovra senza creare pericolo o intralcio agli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Immettersi nel traffico → senza pericolo o intralcio?",
         "spiegazione": "Quando ti immetti nel traffico (cioè entri nella strada da un parcheggio, un passo carrabile, ecc.), devi sempre fare attenzione a non creare problemi o pericoli per gli altri veicoli e persone che sono già sulla strada. La sicurezza è la cosa più importante.",
         "regola": "Entri? Non disturbare e non mettere in pericolo!",
         "trabocchetti": ["senza creare pericolo o intralcio"],
@@ -2198,6 +2511,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende immettersi nel flusso della circolazione deve tenere conto della posizione, distanza, direzione degli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Immettersi → posizione, distanza, direzione degli altri?",
         "spiegazione": "Prima di entrare nel flusso della circolazione, devi guardare bene dove si trovano gli altri veicoli, quanto sono lontani da te e in che direzione stanno andando. Questo ti aiuta a capire se hai abbastanza spazio e tempo per entrare in sicurezza.",
         "regola": "Guarda tutto: dove sono, quanto distano, dove vanno.",
         "trabocchetti": ["posizione, distanza, direzione"],
@@ -2205,6 +2519,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende immettersi nel flusso della circolazione deve azionare l'indicatore di direzione per segnalare con sufficiente anticipo l' intenzione di effettuare tale manovra",
         "risposta": True,
+        "riassunto": "Immettersi → freccia in anticipo?",
         "spiegazione": "È obbligatorio usare l'indicatore di direzione (la 'freccia') per segnalare che vuoi entrare nel traffico. Devi farlo con un po' di anticipo, così gli altri conducenti capiscono la tua intenzione e possono prepararsi.",
         "regola": "Freccia sempre e per tempo, è un obbligo!",
         "trabocchetti": ["deve azionare", "con sufficiente anticipo", "Deve", "sufficiente anticipo"],
@@ -2212,6 +2527,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende immettersi nel flusso della circolazione deve dare la precedenza ai veicoli in transito",
         "risposta": True,
+        "riassunto": "Immettersi → precedenza a chi transita?",
         "spiegazione": "Quando ti immetti nel traffico, devi sempre dare la precedenza ai veicoli che sono già sulla strada. Loro hanno il diritto di passare per primi perché sono già nel flusso della circolazione.",
         "regola": "Chi entra, aspetta chi è già dentro.",
         "trabocchetti": ["deve dare la precedenza"],
@@ -2219,6 +2535,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende immettersi nel flusso della circolazione può evitare di azionare l'indicatore di direzione se non sopraggiungono altri veicoli",
         "risposta": False,
+        "riassunto": "Immettersi → niente freccia se nessuno arriva?",
         "spiegazione": "Questa affermazione è FALSA. Anche se non vedi altri veicoli, devi comunque azionare l'indicatore di direzione. È una regola di comportamento e ti aiuta a creare una buona abitudine, utile quando ci saranno altri veicoli.",
         "regola": "Freccia SEMPRE, anche se non c'è nessuno!",
         "trabocchetti": ["può evitare"],
@@ -2226,6 +2543,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende immettersi nel flusso della circolazione deve dare la precedenza ai veicoli in transito solo in presenza di apposito segnale",
         "risposta": False,
+        "riassunto": "Immettersi → precedenza solo con segnale?",
         "spiegazione": "Questa affermazione è FALSA. Devi dare la precedenza ai veicoli in transito SEMPRE quando ti immetti nel flusso della circolazione, non solo se c'è un cartello. È una regola generale di comportamento.",
         "regola": "Precedenza SEMPRE, segnale o no.",
         "trabocchetti": ["solo"],
@@ -2233,6 +2551,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che si immette nel flusso della circolazione deve dare la precedenza ai veicoli in transito ad eccezione delle biciclette",
         "risposta": False,
+        "riassunto": "Immettersi → precedenza tranne alle bici?",
         "spiegazione": "Questa affermazione è FALSA. Quando ti immetti nel traffico, devi dare la precedenza a TUTTI i veicoli in transito, incluse le biciclette. Le biciclette sono utenti della strada e hanno gli stessi diritti e la stessa precedenza in questo caso.",
         "regola": "Precedenza a TUTTI, bici incluse!",
         "trabocchetti": ["ad eccezione delle biciclette"],
@@ -2240,6 +2559,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un motociclo che parte dal margine della carreggiata e si immette nel flusso della circolazione deve indossare ed allacciare il casco",
         "risposta": True,
+        "riassunto": "Moto che parte dal margine → casco allacciato?",
         "spiegazione": "Quando guidi un motociclo, il casco è obbligatorio. Devi indossarlo e allacciarlo sempre, anche quando parti da fermo per immetterti nel traffico. È una regola fondamentale per la tua sicurezza.",
         "regola": "Casco sempre, prima di partire.",
         "trabocchetti": ["deve"],
@@ -2247,6 +2567,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un autoveicolo che parte dal margine della carreggiata e si immette nel flusso della circolazione deve allacciare la cintura di sicurezza salvo che non sia esentato",
         "risposta": True,
+        "riassunto": "Auto che parte dal margine → cintura salvo esenzione?",
         "spiegazione": "La cintura di sicurezza è obbligatoria per il conducente e i passeggeri di un autoveicolo. Devi allacciarla prima di iniziare a muoverti. Ci sono delle eccezioni, ma sono rare e devono essere certificate (ad esempio, per motivi medici).",
         "regola": "Cintura sempre, prima di partire (salvo esenzioni).",
         "trabocchetti": ["salvo che non sia esentato"],
@@ -2254,6 +2575,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente di un motociclo che parte dal margine della carreggiata e si immette nel flusso della circolazione deve accendere il proiettore anabbagliante",
         "risposta": True,
+        "riassunto": "Moto che parte → anabbagliante acceso?",
         "spiegazione": "I motocicli devono tenere sempre accesi i fari anabbaglianti, sia di giorno che di notte. Questo serve per essere più visibili agli altri veicoli e aumentare la sicurezza, anche quando parti dal margine della strada.",
         "regola": "Moto: luci anabbaglianti sempre accese.",
         "trabocchetti": ["deve"],
@@ -2261,6 +2583,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che parte dal margine della carreggiata e si immette nel flusso della circolazione deve accertarsi che la strada sia libera, guardando anche negli specchietti retrovisori",
         "risposta": True,
+        "riassunto": "Partendo dal margine → strada libera anche negli specchietti?",
         "spiegazione": "Prima di partire e immetterti nel traffico, è molto importante controllare bene che la strada sia libera. Devi guardare avanti, di lato e usare gli specchietti retrovisori per vedere se arrivano altri veicoli o pedoni. La sicurezza prima di tutto.",
         "regola": "Partenza sicura: guarda ovunque.",
         "trabocchetti": ["deve accertarsi", "anche negli specchietti"],
@@ -2268,6 +2591,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che parte dal margine della carreggiata e si immette nel flusso della circolazione può allacciare la cintura di sicurezza dopo avere concluso tale manovra",
         "risposta": False,
+        "riassunto": "Partendo dal margine → cintura dopo la manovra?",
         "spiegazione": "Questa affermazione è falsa. La cintura di sicurezza va allacciata PRIMA di iniziare qualsiasi manovra, anche una semplice partenza. Non puoi aspettare di essere già in movimento, perché in caso di incidente improvviso non saresti protetto.",
         "regola": "Cintura: prima di partire, non dopo.",
         "trabocchetti": ["dopo", "può"],
@@ -2275,6 +2599,7 @@ QUESTIONS = [
     {
         "domanda": "Il motociclista che parte dal margine della carreggiata e si immette nel flusso della circolazione può indossare il casco dopo avere concluso tale manovra",
         "risposta": False,
+        "riassunto": "Moto che parte → casco dopo la manovra?",
         "spiegazione": "Questa affermazione è falsa. Come per la cintura, il casco deve essere indossato e allacciato PRIMA di partire con il motociclo. È fondamentale per la tua protezione fin dal primo istante in cui ti muovi.",
         "regola": "Casco: prima di partire, non dopo.",
         "trabocchetti": ["dopo", "può"],
@@ -2282,6 +2607,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende fermarsi sul margine destro della carreggiata deve effettuare la manovra senza creare pericolo o intralcio agli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Fermarsi a destra → senza pericolo o intralcio?",
         "spiegazione": "Quando ti fermi con la macchina, devi sempre fare attenzione a non creare problemi o pericoli per gli altri veicoli o persone sulla strada. La sicurezza è la cosa più importante.",
         "regola": "Fermati sicuro, non disturbare.",
         "trabocchetti": ["senza creare pericolo o intralcio"],
@@ -2289,18 +2615,21 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende fermarsi sul margine destro della carreggiata deve tenere conto della posizione, distanza, direzione degli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Fermarsi a destra → posizione e direzione degli altri?",
         "spiegazione": "Prima di fermarti, devi guardare bene dove sono gli altri veicoli, quanto sono lontani e in che direzione vanno. Questo ti aiuta a fare la manovra in modo sicuro per tutti.",
         "regola": "Guarda, valuta, poi frena.",
     },
     {
         "domanda": "Il conducente che intende fermarsi sul margine destro della carreggiata deve evitare di creare pericolo ai conducenti di veicoli a due ruote sopraggiungenti",
         "risposta": True,
+        "riassunto": "Fermarsi a destra → non creare pericolo alle due ruote?",
         "spiegazione": "I veicoli a due ruote (moto e biciclette) sono più piccoli e a volte più difficili da vedere. Per questo, devi essere ancora più attento a non metterli in pericolo quando ti fermi.",
         "regola": "Occhio ai più piccoli.",
     },
     {
         "domanda": "Il conducente che intende fermarsi sul margine destro della carreggiata deve segnalare con sufficiente anticipo la sua intenzione di effettuare tale manovra",
         "risposta": True,
+        "riassunto": "Fermarsi a destra → segnalare in anticipo?",
         "spiegazione": "Devi sempre usare la freccia (indicatore di direzione) con un buon anticipo, così gli altri guidatori capiscono cosa vuoi fare e hanno il tempo di reagire. Non aspettare l'ultimo momento!",
         "regola": "Segnala sempre in tempo.",
         "trabocchetti": ["sufficiente anticipo"],
@@ -2308,6 +2637,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende fermarsi sul margine destro della carreggiata deve evitare brusche frenate, per garantire la sicurezza degli altri utenti della strada",
         "risposta": True,
+        "riassunto": "Fermarsi a destra → niente brusche frenate?",
         "spiegazione": "Frenare all'improvviso (brusca frenata) è pericoloso perché il veicolo dietro di te potrebbe non avere il tempo di frenare e tamponarti. Rallenta sempre in modo graduale.",
         "regola": "Frena dolcemente.",
         "trabocchetti": ["brusche frenate"],
@@ -2315,6 +2645,7 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende fermarsi sul margine destro della carreggiata deve eseguire la manovra lampeggiando ripetutamente",
         "risposta": False,
+        "riassunto": "Fermarsi a destra → lampeggiando ripetutamente?",
         "spiegazione": "Per segnalare che vuoi fermarti, devi usare la freccia destra e tenerla accesa. 'Lampeggiare ripetutamente' non è il modo corretto e può confondere gli altri guidatori. Si usa la freccia fissa, non a intermittenza veloce.",
         "regola": "Una freccia, non un concerto.",
         "trabocchetti": ["lampeggiando ripetutamente", "lampeggia"],
@@ -2322,12 +2653,14 @@ QUESTIONS = [
     {
         "domanda": "Il conducente che intende fermarsi sul margine destro della carreggiata deve segnalare con sufficiente anticipo azionando la segnalazione luminosa di pericolo(quattro frecce lampeggianti simultaneamente)",
         "risposta": False,
+        "riassunto": "Fermarsi a destra → con le quattro frecce?",
         "spiegazione": "Le 'quattro frecce' (segnalazione luminosa di pericolo) si usano quando il veicolo è già fermo e crea un pericolo, o in caso di emergenza. Per segnalare che stai per fermarti, devi usare solo la freccia destra.",
         "regola": "Quattro frecce = pericolo già presente.",
     },
     {
         "domanda": "Il conducente che intende fermarsi sul margine destro della carreggiata può evitare di segnalare la sua intenzione di effettuare tale manovra se il traffico è scarso",
         "risposta": False,
+        "riassunto": "Fermarsi a destra → niente segnalazione col traffico scarso?",
         "spiegazione": "Anche se ci sono poche macchine (traffico scarso), devi sempre segnalare le tue intenzioni. È una regola di sicurezza e di comunicazione sulla strada, valida in ogni situazione.",
         "regola": "Segnala sempre, anche da solo.",
         "trabocchetti": ["può evitare di segnalare", "se il traffico è scarso"],
@@ -2335,6 +2668,7 @@ QUESTIONS = [
     {
         "domanda": "Il mancato rispetto delle norme prescritte per immettersi nel flusso della circolazione comporta, tra l'altro, la perdita di punti dalla patente",
         "risposta": True,
+        "riassunto": "Immissione scorretta → perdita di punti?",
         "spiegazione": "Quando ti immetti nel traffico (ad esempio, partendo da un parcheggio o da un passo carrabile), devi sempre rispettare le regole, come dare la precedenza e usare l'indicatore di direzione. Se non lo fai, commetti un'infrazione che può comportare la perdita di punti dalla patente, oltre ad altre sanzioni.",
         "regola": "Immissione nel traffico: massima attenzione, altrimenti perdi punti!",
         "trabocchetti": ["tra l"],
@@ -2342,6 +2676,7 @@ QUESTIONS = [
     {
         "domanda": "Il mancato rispetto delle norme prescritte per immettersi nel flusso della circolazione non comporta la sottrazione di punti dalla patente, ma sanzione pecuniaria",
         "risposta": False,
+        "riassunto": "Immissione scorretta → solo multa, niente punti?",
         "spiegazione": "Questa affermazione è falsa perché, come abbiamo visto nella domanda precedente, il mancato rispetto delle norme per immettersi nel flusso della circolazione comporta proprio la perdita di punti dalla patente. Non è vero che c'è solo la multa.",
         "regola": "Immissione sbagliata = punti persi (e multa!).",
         "trabocchetti": ["non comporta la sottrazione di punti"],
@@ -2349,6 +2684,7 @@ QUESTIONS = [
     {
         "domanda": "In caso di fermata sul margine destro della carreggiata senza segnalare con sufficiente anticipo l'intenzione di effettuare tale manovra, è disposta la sottrazione di 4 punti dalla patente del conducente",
         "risposta": False,
+        "riassunto": "Fermata a destra senza segnalare → meno 4 punti?",
         "spiegazione": "Fare una fermata senza segnalare con l'indicatore di direzione (la freccia) è un errore e comporta una sanzione pecuniaria (una multa). Tuttavia, questa specifica infrazione non è considerata così grave da comportare la sottrazione di 4 punti dalla patente. La perdita di punti è prevista per infrazioni più pericolose o che mettono a rischio la sicurezza in modo significativo.",
         "regola": "Fermata senza freccia: multa sì, punti no (o comunque non 4).",
         "trabocchetti": ["4 punti"],
@@ -2356,6 +2692,7 @@ QUESTIONS = [
     {
         "domanda": "Gli specchi retrovisori contribuiscono alla visione panoramica del conducente",
         "risposta": True,
+        "riassunto": "Specchietti → visione panoramica?",
         "spiegazione": "Gli specchi retrovisori (quelli laterali e quello centrale) ti aiutano a vedere cosa succede dietro e ai lati della tua auto, ampliando la tua visuale e permettendoti di avere una visione più completa della strada. Per questo, contribuiscono alla visione panoramica.",
         "regola": "Specchi = occhi extra.",
         "trabocchetti": ["contribuiscono alla visione panoramica"],
@@ -2363,18 +2700,21 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore centrale di un autoveicolo deve essere regolato in modo da garantire una buona visione posteriore",
         "risposta": True,
+        "riassunto": "Retrovisore centrale → buona visione posteriore?",
         "spiegazione": "È fondamentale regolare bene lo specchio centrale per vedere chiaramente cosa c'è dietro la tua auto, così puoi guidare in sicurezza e avere sempre sotto controllo la situazione posteriore.",
         "regola": "Specchio centrale = finestra sul dietro.",
     },
     {
         "domanda": "Gli specchi retrovisori centrali e laterali di un autoveicolo, devono essere regolati dopo che è stata regolata la posizione del sedile di guida",
         "risposta": True,
+        "riassunto": "Specchietti → regolati dopo il sedile?",
         "spiegazione": "Prima di regolare gli specchi, devi sistemare il sedile di guida nella posizione corretta per te. Se cambi la posizione del sedile, cambia anche la tua visuale e quindi dovrai regolare di nuovo gli specchi. La sequenza è importante per una regolazione efficace.",
         "regola": "Prima sedile, poi specchi.",
     },
     {
         "domanda": "Lo specchio retrovisore centrale di un autoveicolo deve essere regolato in modo da garantire la visione dell'intero lunotto posteriore",
         "risposta": True,
+        "riassunto": "Retrovisore centrale → tutto il lunotto?",
         "spiegazione": "Regola lo specchio centrale in modo da vedere tutto il lunotto (il vetro posteriore dell'auto). Così hai la massima visuale possibile di ciò che accade dietro di te, riducendo i punti ciechi.",
         "regola": "Centrale = tutto il lunotto.",
         "trabocchetti": ["intero lunotto posteriore"],
@@ -2382,12 +2722,14 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore centrale di un autoveicolo deve essere posizionato in modo da rientrare nel campo visivo del conducente",
         "risposta": True,
+        "riassunto": "Retrovisore centrale → nel campo visivo?",
         "spiegazione": "Lo specchio centrale deve essere facile da guardare senza dover girare troppo la testa. Deve essere nel tuo campo visivo naturale mentre guidi, in modo da poterlo usare rapidamente e senza distrazioni.",
         "regola": "Specchio centrale = a portata di sguardo.",
     },
     {
         "domanda": "Lo specchio retrovisore centrale di un autoveicolo è in genere realizzato in modo da ridurre al minimo la distorsione della distanza dei veicoli che seguono",
         "risposta": True,
+        "riassunto": "Retrovisore centrale → minima distorsione delle distanze?",
         "spiegazione": "Lo specchio centrale è fatto per mostrarti la distanza reale delle auto dietro di te, senza farle sembrare più lontane o più vicine di quanto siano. Questo è importante per valutare correttamente le distanze e guidare in sicurezza.",
         "regola": "Centrale = distanza vera.",
         "trabocchetti": ["ridurre al minimo la distorsione"],
@@ -2395,6 +2737,7 @@ QUESTIONS = [
     {
         "domanda": "Gli specchi retrovisori devono essere utilizzati dal conducente per controllare, prima di svoltare, che non sopraggiungano veicoli da dietro",
         "risposta": True,
+        "riassunto": "Specchietti → controllare prima di svoltare?",
         "spiegazione": "Prima di girare (svoltare), devi sempre controllare gli specchi per assicurarti che non ci siano altre auto o moto che arrivano da dietro e che potresti tagliare la strada. Questo è fondamentale per evitare incidenti.",
         "regola": "Svolta = controlla dietro.",
         "trabocchetti": ["prima di svoltare"],
@@ -2402,6 +2745,7 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore centrale di un autoveicolo ha una posizione antiriflesso da utilizzare nelle ore notturne",
         "risposta": True,
+        "riassunto": "Retrovisore centrale → posizione antiriflesso notturna?",
         "spiegazione": "Molti specchi centrali hanno una levetta o un pulsante per cambiare la posizione e ridurre l'abbagliamento dei fari delle auto che ti seguono di notte. Questa funzione è molto utile per la sicurezza e il comfort visivo.",
         "regola": "Notte = antiriflesso.",
         "trabocchetti": ["posizione antiriflesso", "ore notturne"],
@@ -2409,30 +2753,35 @@ QUESTIONS = [
     {
         "domanda": "La posizione antiriflesso dello specchio retrovisore centrale di un autoveicolo serve a ridurre il fastidio agli occhi causato dai proiettori accesi dei veicoli che seguono",
         "risposta": True,
+        "riassunto": "Antiriflesso → riduce il fastidio dei fari di chi segue?",
         "spiegazione": "La funzione antiriflesso serve proprio a non farti abbagliare dai fari delle auto dietro di te quando è buio, rendendo la guida più sicura e confortevole. Riduce il fastidio agli occhi e ti permette di vedere meglio la strada.",
         "regola": "Antiriflesso = meno abbaglio.",
     },
     {
         "domanda": "Gli specchi retrovisori devono essere utilizzati per un controllo della strada dietro al veicolo, prima di iniziare una manovra di parcheggio in retromarcia",
         "risposta": True,
+        "riassunto": "Specchietti → prima di parcheggiare in retromarcia?",
         "spiegazione": "Quando parcheggi all'indietro, è fondamentale guardare negli specchi per vedere ostacoli, pedoni o altre auto che non vedi direttamente. Gli specchi ti danno una visuale completa della zona di manovra.",
         "regola": "Parcheggio indietro = specchi sempre.",
     },
     {
         "domanda": "Gli specchi retrovisori devono essere utilizzati per un controllo della strada dietro al veicolo, prima di iniziare una manovra di sorpasso",
         "risposta": True,
+        "riassunto": "Specchietti → prima di sorpassare?",
         "spiegazione": "Prima di sorpassare, devi controllare gli specchi per assicurarti che non ci sia nessuno che ti sta già sorpassando o che stia arrivando velocemente da dietro. Questo è un controllo di sicurezza essenziale.",
         "regola": "Sorpasso = controlla dietro.",
     },
     {
         "domanda": "Il controllo degli specchi retrovisori permette di completare in sicurezza la manovra di sorpasso",
         "risposta": True,
+        "riassunto": "Specchietti → completare il sorpasso in sicurezza?",
         "spiegazione": "Non solo prima di sorpassare, ma anche durante e dopo il sorpasso, devi usare gli specchi per controllare quando puoi rientrare in sicurezza nella tua corsia. Il controllo continuo è fondamentale per tutta la manovra.",
         "regola": "Sorpasso sicuro = specchi sempre.",
     },
     {
         "domanda": "La posizione antiriflesso dello specchio retrovisore centrale di un autoveicolo non deve essere utilizzata di notte",
         "risposta": False,
+        "riassunto": "Antiriflesso → non usarlo di notte?",
         "spiegazione": "Questa affermazione è falsa. La posizione antiriflesso serve proprio per la notte, per non essere abbagliati dai fari delle auto che seguono. Usarla di notte rende la guida più sicura e confortevole.",
         "regola": "Antiriflesso = per la notte (non il contrario).",
         "trabocchetti": ["non"],
@@ -2440,6 +2789,7 @@ QUESTIONS = [
     {
         "domanda": "La posizione antiriflesso dello specchio retrovisore centrale di un autoveicolo non può essere utilizzata quando si circola su autostrada",
         "risposta": False,
+        "riassunto": "Antiriflesso → vietato in autostrada?",
         "spiegazione": "È falso. Puoi e devi usare la posizione antiriflesso anche in autostrada di notte, se i fari delle auto dietro ti danno fastidio. Non c'è nessuna regola che lo vieti, anzi, è consigliato per la sicurezza.",
         "regola": "Antiriflesso = ovunque serva.",
         "trabocchetti": ["non può essere utilizzata"],
@@ -2447,12 +2797,14 @@ QUESTIONS = [
     {
         "domanda": "Gli specchi retrovisori devono essere utilizzati per un controllo della strada dietro al veicolo, ogni volta che a un incrocio si intende proseguire diritto",
         "risposta": False,
+        "riassunto": "Specchietti → ogni volta che si va diritto all'incrocio?",
         "spiegazione": "È falso. Se vai dritto a un incrocio, di solito non è necessario controllare gli specchi retrovisori, a meno che tu non debba fare una manovra particolare (come cambiare corsia). Il controllo è più importante quando cambi direzione o fai manovre.",
         "regola": "Dritto = non sempre specchi.",
     },
     {
         "domanda": "L'illuminazione interna dello specchio retrovisore si accende con l'accensione delle luci di posizione del veicolo",
         "risposta": False,
+        "riassunto": "Illuminazione dello specchio → con le luci di posizione?",
         "spiegazione": "È falso. L'illuminazione interna (se presente) dello specchio retrovisore non è collegata alle luci di posizione. Di solito si accende con l'apertura delle portiere, con l'accensione delle luci interne dell'abitacolo o con un interruttore specifico.",
         "regola": "Specchio illuminato = non con luci di posizione.",
         "trabocchetti": ["si accende con l"],
@@ -2460,6 +2812,7 @@ QUESTIONS = [
     {
         "domanda": "Le dimensioni degli specchi retrovisori sono proporzionali alla cilindrata del veicolo",
         "risposta": False,
+        "riassunto": "Specchietti → proporzionati alla cilindrata?",
         "spiegazione": "È falso. Le dimensioni degli specchi retrovisori dipendono dal tipo di veicolo e dalla necessità di garantire una buona visuale, non dalla cilindrata (la potenza del motore). Ogni veicolo ha specchi adatti alla sua struttura e funzione.",
         "regola": "Specchi = visuale, non motore.",
         "trabocchetti": ["proporzionali alla cilindrata"],
@@ -2467,12 +2820,14 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore centrale di un autoveicolo può essere rimosso se il veicolo è dotato di specchio laterale sinistro",
         "risposta": False,
+        "riassunto": "Retrovisore centrale → rimovibile se c'è il sinistro?",
         "spiegazione": "È falso. Lo specchio centrale è obbligatorio, a meno che la visuale posteriore sia impedita (ad esempio da un carico molto grande) e il veicolo sia dotato di *due* specchi laterali (destro e sinistro). Non basta avere solo quello sinistro per rimuovere il centrale.",
         "regola": "Specchio centrale = obbligatorio (quasi sempre).",
     },
     {
         "domanda": "Durante una manovra di parcheggio in retromarcia, non è necessario utilizzare gli specchi retrovisori se il veicolo è dotato di sensori di parcheggio",
         "risposta": False,
+        "riassunto": "Parcheggio in retromarcia → specchietti inutili coi sensori?",
         "spiegazione": "È falso. I sensori di parcheggio sono un aiuto, ma non sostituiscono la tua vista e il controllo diretto con gli specchi. Devi sempre guardare per sicurezza, perché i sensori potrebbero non rilevare tutti gli ostacoli (es. un paletto sottile o un bambino piccolo).",
         "regola": "Sensori = aiuto, non sostituto degli specchi.",
         "trabocchetti": ["non è necessario utilizzare gli specchi"],
@@ -2480,6 +2835,7 @@ QUESTIONS = [
     {
         "domanda": "Gli specchi retrovisori, nel loro complesso, consentono al conducente di vedere l'intera area di strada dietro e intorno al veicolo",
         "risposta": False,
+        "riassunto": "Specchietti → vedere tutta l'area intorno al veicolo?",
         "spiegazione": "È falso. Anche con tutti gli specchi ben regolati, ci sono sempre delle \"zone d'ombra\" o \"angoli ciechi\" che non puoi vedere. Per questo è importante girare la testa e fare un controllo diretto (il cosiddetto 'colpo d'occhio') prima di cambiare corsia o svoltare.",
         "regola": "Specchi = quasi tutto, non tutto.",
         "trabocchetti": ["intera area"],
@@ -2487,6 +2843,7 @@ QUESTIONS = [
     {
         "domanda": "Gli autocaravan possono non essere dotati di specchi retrovisori se li rendono troppo ingombranti in larghezza",
         "risposta": False,
+        "riassunto": "Autocaravan → senza specchietti se troppo larghi?",
         "spiegazione": "È falso. Tutti i veicoli, inclusi gli autocaravan, devono avere gli specchi retrovisori obbligatori per legge, anche se sono grandi. La sicurezza viene prima dell'ingombro e gli specchi sono essenziali per vedere cosa succede intorno al veicolo.",
         "regola": "Autocaravan = specchi obbligatori.",
         "trabocchetti": ["possono non essere dotati"],
@@ -2494,6 +2851,7 @@ QUESTIONS = [
     {
         "domanda": "La regolazione degli specchi retrovisori deve di norma essere effettuata con il veicolo in marcia",
         "risposta": False,
+        "riassunto": "Regolazione specchietti → col veicolo in marcia?",
         "spiegazione": "È falso. La regolazione degli specchi deve essere fatta a veicolo fermo, prima di partire, per la tua sicurezza e per non distrarti mentre guidi. Regolarli in movimento è pericoloso.",
         "regola": "Regola specchi = veicolo fermo.",
         "trabocchetti": ["con il veicolo in marcia"],
@@ -2501,6 +2859,7 @@ QUESTIONS = [
     {
         "domanda": "Gli specchi retrovisori esterni degli autoveicoli possono essere sostituiti con altri di tipo differente, purché di superficie maggiore",
         "risposta": False,
+        "riassunto": "Specchietti esterni → sostituibili con altri più grandi?",
         "spiegazione": "È falso. Gli specchi devono essere omologati e conformi alle norme. Non puoi sostituirli con qualsiasi tipo, anche se più grandi, se non sono specifici per il tuo veicolo o non rispettano le regole di omologazione. Modifiche non autorizzate sono vietate.",
         "regola": "Specchi = omologati, non a caso.",
         "trabocchetti": ["purché di superficie maggiore"],
@@ -2508,6 +2867,7 @@ QUESTIONS = [
     {
         "domanda": "Si può circolare con un autoveicolo in cui mancano temporaneamente gli specchi retrovisori, purché a velocità non superiore a 50 km/h e tenendo in azione la segnalazione luminosa di pericolo",
         "risposta": False,
+        "riassunto": "Senza specchietti → fino a 50 km/h con quattro frecce?",
         "spiegazione": "È falso. Non puoi circolare se mancano gli specchi retrovisori obbligatori, è pericoloso e contro la legge. Non ci sono eccezioni di velocità o segnalazioni che lo permettano. Un veicolo senza specchi obbligatori non è idoneo alla circolazione.",
         "regola": "Senza specchi = non si circola.",
         "trabocchetti": ["Si può circolare"],
@@ -2515,6 +2875,7 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore laterale sinistro deve essere regolato in modo da scorgere, nel suo terzo di destra, la coda del veicolo",
         "risposta": True,
+        "riassunto": "Specchietto sinistro → coda del veicolo nel terzo destro?",
         "spiegazione": "Per vedere bene cosa succede dietro e a lato, lo specchio laterale sinistro deve essere regolato in modo da vedere un piccolo pezzo della tua auto (la coda) nella parte più interna dello specchio. Questo ti aiuta a capire la posizione degli altri veicoli rispetto al tuo.",
         "regola": "Coda nel terzo interno = regolazione corretta.",
         "trabocchetti": ["nel suo terzo di destra"],
@@ -2522,6 +2883,7 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore laterale sinistro deve essere regolato in modo da poter osservare, prevalentemente, la porzione di strada a fianco del veicolo",
         "risposta": True,
+        "riassunto": "Specchietto sinistro → soprattutto la strada a fianco?",
         "spiegazione": "Lo scopo principale dello specchio laterale è farti vedere la strada che sta a fianco e dietro la tua auto, specialmente i veicoli che ti stanno superando o che sono nel tuo angolo cieco. Deve mostrare soprattutto la strada.",
         "regola": "Specchio laterale = strada a fianco.",
         "trabocchetti": ["Prevalentemente"],
@@ -2529,6 +2891,7 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore laterale sinistro falsa la percezione della distanza e della velocità dei veicoli sopraggiungenti",
         "risposta": True,
+        "riassunto": "Specchietto sinistro → falsa distanza e velocità?",
         "spiegazione": "Molti specchi laterali sono convessi (curvi) per darti un campo visivo più ampio. Questa curvatura, però, fa sembrare i veicoli più lontani e più lenti di quanto non siano in realtà. È importante saperlo per non fare errori di valutazione.",
         "regola": "Specchio laterale curvo = distanza inganna.",
         "trabocchetti": ["Falsa la percezione"],
@@ -2536,6 +2899,7 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore laterale sinistro deve essere utilizzato prima di iniziare una manovra di cambio corsia verso sinistra",
         "risposta": True,
+        "riassunto": "Specchietto sinistro → prima di spostarsi a sinistra?",
         "spiegazione": "Prima di spostarti a sinistra, devi sempre controllare lo specchio sinistro per assicurarti che non ci siano altri veicoli che stanno arrivando o che sono già nella corsia dove vuoi andare. È un controllo fondamentale per la sicurezza.",
         "regola": "Cambio corsia sinistra = specchio sinistro.",
         "trabocchetti": ["Prima di iniziare"],
@@ -2543,6 +2907,7 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore laterale sinistro deve essere utilizzato prima di iniziare una manovra di sorpasso",
         "risposta": True,
+        "riassunto": "Specchietto sinistro → prima di sorpassare?",
         "spiegazione": "Prima di sorpassare, devi controllare lo specchio sinistro per vedere se qualcuno ti sta già superando o se c'è spazio sufficiente per la tua manovra. È il primo passo per un sorpasso sicuro.",
         "regola": "Sorpasso = specchio sinistro.",
         "trabocchetti": ["prima di iniziare"],
@@ -2550,6 +2915,7 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore laterale sinistro deve essere utilizzato prima di iniziare una manovra di svolta a sinistra",
         "risposta": True,
+        "riassunto": "Specchietto sinistro → prima di svoltare a sinistra?",
         "spiegazione": "Prima di girare a sinistra, devi controllare lo specchio sinistro per assicurarti che non ci siano veicoli, moto o biciclette che ti stanno affiancando o superando a sinistra. Questo evita collisioni in curva.",
         "regola": "Svolta sinistra = specchio sinistro.",
         "trabocchetti": ["Svolta a sinistra"],
@@ -2557,6 +2923,7 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore laterale sinistro ha un angolo cieco molto ampio",
         "risposta": True,
+        "riassunto": "Specchietto sinistro → angolo cieco molto ampio?",
         "spiegazione": "L'angolo cieco è quella zona intorno al veicolo che non puoi vedere né con gli specchi né guardando dritto. Gli specchi laterali, anche se utili, non coprono tutto e lasciano una zona 'cieca' dove un veicolo potrebbe nascondersi. Per questo è importante girare la testa.",
         "regola": "Specchio laterale = angolo cieco.",
         "trabocchetti": ["Angolo cieco", "Molto ampio"],
@@ -2564,18 +2931,21 @@ QUESTIONS = [
     {
         "domanda": "Il controllo dello specchio retrovisore laterale sinistro deve essere integrato con un rapido controllo visivo laterale diretto, prima di iniziare un sorpasso",
         "risposta": True,
+        "riassunto": "Specchietto sinistro → più sguardo laterale prima del sorpasso?",
         "spiegazione": "Proprio per l'esistenza dell'angolo cieco, non basta guardare solo lo specchio. Prima di iniziare un sorpasso, devi anche girare un attimo la testa per controllare direttamente la zona laterale sinistra e assicurarti che non ci sia nessuno.",
         "regola": "Specchio + testa = sicurezza sorpasso.",
     },
     {
         "domanda": "Prima di immettere il veicolo nel flusso della circolazione, è necessario controllare lo specchio retrovisore laterale sinistro nonché verificare con un controllo visivo diretto che la strada sia sufficientemente libera dietro e a fianco del veicolo",
         "risposta": True,
+        "riassunto": "Prima di immettersi → specchietto sinistro e sguardo diretto?",
         "spiegazione": "Quando parti da fermo (ad esempio da un parcheggio) e vuoi entrare nel traffico, devi fare molta attenzione. Controlla lo specchio sinistro e poi gira la testa per guardare direttamente, per essere sicuro che non ci siano ostacoli o veicoli in arrivo.",
         "regola": "Entrata traffico = specchio + sguardo diretto.",
     },
     {
         "domanda": "Lo specchio retrovisore laterale sinistro deve essere regolato in modo da poter controllare il comportamento di eventuali bambini seduti nella parte posteriore del veicolo",
         "risposta": False,
+        "riassunto": "Specchietto sinistro → per controllare i bambini dietro?",
         "spiegazione": "Lo specchio laterale sinistro serve per guardare la strada dietro e a lato del veicolo. Per controllare i bambini seduti dietro si usa lo specchio retrovisore centrale (quello interno), non quello laterale.",
         "regola": "Specchio laterale = strada. Specchio centrale = passeggeri.",
         "trabocchetti": ["laterale sinistro"],
@@ -2583,6 +2953,7 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore laterale sinistro deve essere chiuso quando si circola su strade strette di montagna",
         "risposta": False,
+        "riassunto": "Specchietto sinistro → chiuso su strade di montagna strette?",
         "spiegazione": "Gli specchi retrovisori sono obbligatori e fondamentali per la sicurezza. Non devono mai essere chiusi mentre si guida, nemmeno su strade strette, perché ti servono per vedere cosa succede dietro e a lato.",
         "regola": "Specchi sempre aperti in marcia.",
         "trabocchetti": ["Deve essere chiuso"],
@@ -2590,6 +2961,7 @@ QUESTIONS = [
     {
         "domanda": "Nei centri abitati non è necessario utilizzare gli specchi retrovisori",
         "risposta": False,
+        "riassunto": "Centri abitati → specchietti inutili?",
         "spiegazione": "Gli specchi retrovisori sono sempre necessari, in qualsiasi tipo di strada (città, autostrada, montagna). Ti aiutano a vedere gli altri veicoli, i pedoni, i ciclisti e a fare manovre in sicurezza. Non usarli è pericoloso.",
         "regola": "Specchi = sempre necessari.",
         "trabocchetti": ["Non è necessario"],
@@ -2597,12 +2969,14 @@ QUESTIONS = [
     {
         "domanda": "Se durante una manovra di inserimento nella circolazione si utilizza lo specchio retrovisore è bene non controllare anche con uno sguardo diretto per non distrarre l'attenzione dalla guida",
         "risposta": False,
+        "riassunto": "Immettendosi → solo specchietto senza sguardo diretto?",
         "spiegazione": "Questo è falso e pericoloso! Come abbiamo visto, è fondamentale integrare il controllo dello specchio con uno sguardo diretto (girando la testa) per eliminare l'angolo cieco. Non è una distrazione, ma una misura di sicurezza indispensabile.",
         "regola": "Specchio + sguardo diretto = sicurezza massima.",
     },
     {
         "domanda": "Gli specchi retrovisori dei veicoli a due ruote sono fissi e senza possibilità di regolazione a causa delle vibrazioni del veicolo che tendono a spostarli dalla posizione originale",
         "risposta": False,
+        "riassunto": "Specchietti delle due ruote → fissi e non regolabili?",
         "spiegazione": "Anche gli specchi delle moto e degli scooter sono regolabili. Devono essere regolati dal conducente per avere la migliore visuale possibile. Le vibrazioni non impediscono la regolazione, altrimenti sarebbero inutili.",
         "regola": "Specchi moto = regolabili.",
         "trabocchetti": ["Fissi e senza possibilità di regolazione"],
@@ -2610,6 +2984,7 @@ QUESTIONS = [
     {
         "domanda": "La regolazione degli specchi retrovisori va effettuata, di media, ogni mille chilometri circa",
         "risposta": False,
+        "riassunto": "Regolazione specchietti → ogni mille km?",
         "spiegazione": "La regolazione degli specchi va fatta ogni volta che una persona diversa guida l'auto, o se la posizione del sedile viene cambiata. Non c'è una distanza in chilometri, ma dipende dalla posizione di guida del conducente.",
         "regola": "Regola specchi = ogni cambio conducente/sedile.",
         "trabocchetti": ["Ogni mille chilometri circa"],
@@ -2617,6 +2992,7 @@ QUESTIONS = [
     {
         "domanda": "Gli autoveicoli dotati di poggiatesta posteriori non sono muniti di specchio retrovisore centrale perché inutilizzabile",
         "risposta": False,
+        "riassunto": "Poggiatesta posteriori → niente retrovisore centrale?",
         "spiegazione": "Anche se i poggiatesta posteriori possono limitare un po' la visuale, lo specchio retrovisore centrale è comunque presente e utile per vedere cosa succede dietro l'auto. Non è 'inutilizzabile', ma la sua efficacia può essere ridotta.",
         "regola": "Specchio centrale = sempre presente e utile.",
         "trabocchetti": ["Non sono muniti", "inutilizzabile"],
@@ -2624,6 +3000,7 @@ QUESTIONS = [
     {
         "domanda": "Lo specchio retrovisore centrale può essere utilizzato come schermo per il navigatore satellitare",
         "risposta": False,
+        "riassunto": "Retrovisore centrale → schermo del navigatore?",
         "spiegazione": "Lo specchio retrovisore centrale ha una sola funzione: farti vedere la strada dietro il veicolo. Non deve essere usato per altre cose, come un navigatore, perché distrarrebbe dalla guida e impedirebbe la sua funzione principale di sicurezza.",
         "regola": "Specchio centrale = solo per vedere dietro.",
     },
