@@ -1,0 +1,15 @@
+Qui ci sono le immagini delle domande (es. stop.png).
+
+Nel file della categoria, l'immagine si indica nel campo "immagine":
+    {
+        "domanda": "Il segnale in figura impone di fermarsi.",
+        "risposta": True,
+        "immagine": "stop.png",
+    },
+
+Al posto del nome del file puoi anche usare un URL:
+        "immagine": "https://esempio.it/stop.png",
+
+Durante il quiz sotto la domanda compare il percorso/link: Ctrl+click per aprirlo.
+
+Nota: python3 importa.py cancella e riscarica tutte le immagini di questa cartella.
