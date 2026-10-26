@@ -17,11 +17,17 @@ Uso (patente = python3 patente.py):
   patente --count             quante domande ci sono
   patente --controlla         controlla i file delle domande
 
-Risposte:  y = VERO   n = FALSO   s = salta   q = esci
+Quiz automatici (Windows Task Scheduler, orari in pianificazione.json):
+  patente --pianifica         applica pianificazione.json
+  patente --pianifica stato   mostra orari e prossima esecuzione
+  patente --pianifica rimuovi toglie tutti i quiz automatici
+
+Risposte:  VERO = y / v / t / s       FALSO = n / f
+           p = salta   q = esci   i = apri immagine
   (nell'esame non puoi saltare; nel --forzato non puoi uscire)
 
-Quando sbagli: vedi la parola trabocchetto evidenziata e la spiegazione;
-premi ? per la regola breve, invio per continuare (non nel --forzato).
+Quando sbagli: vedi la spiegazione; premi ? per la regola breve,
+invio per continuare. Fuori dal --forzato vedi anche il trabocchetto.
 
 In --libero, --categoria e --review escono più spesso le domande deboli:
 quelle con poche risposte giuste e quelle delle categorie dove sbagli di più.
@@ -35,6 +41,7 @@ import json
 import random
 import re
 import signal
+import subprocess
 import sys
 import time
 from collections import Counter
@@ -176,6 +183,20 @@ def image_link(immagine):
         return immagine
     return str(IMAGES_DIR / immagine)
 
+def open_image(immagine):
+    """Apre l'immagine con il visualizzatore di Windows (o il browser, se è un URL).
+    Funziona anche nella finestra aperta dal Task Scheduler, dove il Ctrl+click no."""
+    target = image_link(immagine)
+    try:
+        if not target.startswith(("http://", "https://")):
+            # /home/... → \\wsl.localhost\Ubuntu\home\... (percorso che Windows capisce)
+            target = subprocess.run(["wslpath", "-w", target], capture_output=True,
+                                    text=True, check=True).stdout.strip()
+        subprocess.Popen(["explorer.exe", target],
+                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except (OSError, subprocess.CalledProcessError):
+        print(f"       {D}non riesco ad aprirla: copia il percorso qui sopra{X}")
+
 def record_error(q, user_answer, all_errors):
     label_c = "VERO" if q["risposta"] else "FALSO"
     rec = {
@@ -193,7 +214,14 @@ def record_error(q, user_answer, all_errors):
     return label_c
 
 # ---- lettura risposta -------------------------------------------------------
+# Tasti equivalenti: tutti diventano "y" (VERO) o "n" (FALSO).
+TRUE_KEYS = ("y", "v", "t", "s")    # yes, vero, true, sì
+FALSE_KEYS = ("n", "f")             # no, falso/false
+OTHER_KEYS = {"p": "salta", "q": "esci", "i": "immagine"}
+
 def read_answer(prompt, allowed, forzato=False):
+    """Legge un tasto tra quelli in `allowed` ("y", "n", "p", "q", "i").
+    Accetta anche v/t/s per VERO e f per FALSO."""
     while True:
         try:
             ans = input(prompt).strip().lower()
@@ -204,9 +232,15 @@ def read_answer(prompt, allowed, forzato=False):
                 print(f"\n       {D}devi completare il quiz prima di uscire{X}")
                 continue
             return "q"
+        if ans in TRUE_KEYS:
+            ans = "y"
+        elif ans in FALSE_KEYS:
+            ans = "n"
         if ans in allowed:
             return ans
-        print(f"       {D}risposte valide: {'/'.join(allowed)}{X}")
+        others = " · ".join(f"{k} = {OTHER_KEYS[k]}" for k in allowed if k in OTHER_KEYS)
+        print(f"       {D}risposte valide: y/v/t/s = VERO · n/f = FALSO"
+              f"{' · ' + others if others else ''}{X}")
 
 # ---- aiuti dopo una risposta sbagliata --------------------------------------
 def highlight(text, words):
@@ -233,11 +267,15 @@ def ask_question(q, header, allowed, all_errors, mastery, hint="", forzato=False
     print(f"{B}[{header}]{X} {D}({q['categoria']}){X}")
     print(f"       {q['domanda']}")
     if q.get("immagine"):
-        print(f"       {D}immagine: {image_link(q['immagine'])}{X}")
+        print(f"       {D}immagine: {image_link(q['immagine'])}  (i = apri){X}")
+        allowed = allowed + ["i"]
     ans = read_answer(f"       {Y}▸ {hint}{X} ", allowed, forzato=forzato)
+    while ans == "i":
+        open_image(q["immagine"])
+        ans = read_answer(f"       {Y}▸ {hint}{X} ", allowed, forzato=forzato)
     if ans == "q":
         return "esci"
-    if ans == "s":
+    if ans == "p":
         print(f"       {D}saltata{X}\n")
         return "saltata"
     user_answer = (ans == "y")
@@ -247,12 +285,12 @@ def ask_question(q, header, allowed, all_errors, mastery, hint="", forzato=False
         return "corretta"
     label_c = record_error(q, user_answer, all_errors)
     print(f"       {R}✗ errato{X} {D}— risposta corretta: {label_c}{X}")
-    # nel --forzato solo la spiegazione; altrimenti anche trabocchetti e regola breve
+    # il trabocchetto evidenziato non compare nel --forzato; la regola breve (?) sì
     if not forzato and q.get("trabocchetti"):
         print(f"       {D}trabocchetto:{X} {highlight(q['domanda'], q['trabocchetti'])}")
     if q["spiegazione"]:
         print(f"       {D}{q['spiegazione']}{X}")
-    if not forzato and q.get("regola"):
+    if q.get("regola"):
         show_rule_on_request(q["regola"])
     print()
     return "errata"
@@ -287,10 +325,10 @@ def exam_session(forzato=False):
     else:
         print(f"{B}{C}┌─ Esame Patente B simulato — {datetime.now().strftime('%d/%m/%Y %H:%M')}{X}")
         print(f"{D}│  {EXAM_QUESTIONS} domande casuali · promosso con max {EXAM_MAX_ERRORS} errori · tempo esame reale: {EXAM_TIME_LIMIT_MIN} min{X}")
-        print(f"{D}│  y = VERO · n = FALSO{' · q = esci' if not forzato else ''}{X}")
+        print(f"{D}│  y/v/t/s = VERO · n/f = FALSO{' · q = esci' if not forzato else ''}{X}")
         print(f"{D}└──────────────────────────────────────────────────────────────{X}\n")
 
-    hint = "(y=VERO / n=FALSO)" if forzato else "(y/n, q=esci)"
+    hint = "(VERO: y/v/t/s · FALSO: n/f)" if forzato else "(VERO/FALSO, q=esci)"
     for i, q in enumerate(pool, 1):
         header = f"{i:>2}/{EXAM_QUESTIONS} · errori {wrong}/{EXAM_MAX_ERRORS}"
         result = ask_question(q, header, allowed, all_errors, mastery, hint, forzato)
@@ -337,11 +375,11 @@ def practice_session(pool, title):
     mastery = load_mastery()
 
     print(f"{B}{C}┌─ {title} — {total} domande{X}")
-    print(f"{D}│  y=VERO · n=FALSO · s=salta · q=esci{X}")
+    print(f"{D}│  y/v/t/s = VERO · n/f = FALSO · p = salta · q = esci{X}")
     print(f"{D}└──────────────────────────────────────────────────────────────{X}\n")
 
     for i, q in enumerate(pool, 1):
-        result = ask_question(q, f"{i:>3}/{total}", ["y", "n", "s", "q"], all_errors, mastery)
+        result = ask_question(q, f"{i:>3}/{total}", ["y", "n", "p", "q"], all_errors, mastery)
         if result == "esci":
             print(f"\n{D}sessione interrotta.{X}")
             break
@@ -484,6 +522,25 @@ def check_bank():
         print(f"  {R}•{X} {p}")
     return False
 
+# ---- quiz automatici (Windows Task Scheduler) -------------------------------
+def schedule(action):
+    """Lancia setup_quiz_scheduler.ps1 su Windows. Gli orari sono in pianificazione.json."""
+    script = Path(__file__).resolve().parent / "setup_quiz_scheduler.ps1"
+    flags = {"": [], "stato": ["-Status"], "rimuovi": ["-Uninstall"]}
+    if action not in flags:
+        print("uso: patente --pianifica [stato|rimuovi]")
+        return
+    if action == "":
+        print(f"{D}applico pianificazione.json ...{X}", flush=True)
+    try:
+        windows_path = subprocess.run(["wslpath", "-w", str(script)], capture_output=True,
+                                      text=True, check=True).stdout.strip()
+        subprocess.run(["powershell.exe", "-NoProfile", "-ExecutionPolicy", "Bypass",
+                        "-File", windows_path,
+                        "-QuizDir", str(script.parent)] + flags[action])
+    except (OSError, subprocess.CalledProcessError):
+        print(f"{R}non riesco ad avviare powershell.exe: funziona solo da WSL su Windows{X}")
+
 # ---- entrypoint -------------------------------------------------------------
 def main():
     args = sys.argv[1:]
@@ -508,6 +565,8 @@ def main():
                 try: n = int(args[2])
                 except ValueError: pass
             category_quiz(args[1], n)
+    elif cmd == "--pianifica":
+        schedule(args[1] if len(args) > 1 else "")
     elif cmd == "--controlla":
         if not check_bank():
             sys.exit(1)

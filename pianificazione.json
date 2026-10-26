@@ -1,0 +1,5 @@
+{
+  "attivo": true,
+  "orari": ["11:00", "14:30", "16:00"],
+  "weekend": false
+}

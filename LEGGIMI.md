@@ -1,0 +1,142 @@
+# Quiz patente B da terminale
+
+Quiz per la teoria della patente A/B con le 7.098 domande ufficiali del Ministero,
+tutto nel terminale. Può anche aprirti in automatico un esame simulato a orari fissi.
+
+## 1. Cosa serve
+
+- **Windows con WSL** (Ubuntu). Se non ce l'hai, apri PowerShell e lancia
+  `wsl --install`, poi riavvia il PC.
+- **Python 3**: su Ubuntu c'è già. Controlla nel terminale WSL:
+  ```bash
+  python3 --version
+  ```
+  Se dice "command not found": `sudo apt install python3`
+
+Non serve installare nient'altro: il programma usa solo quello che arriva con Python.
+
+## 2. Mettere il progetto in WSL
+
+Il progetto deve stare **dentro WSL** (es. `~/patente`), non in una cartella Windows.
+
+- **Da una cartella copiata** (es. scaricata in Download):
+  ```bash
+  cp -r /mnt/c/Users/TUO_UTENTE_WINDOWS/Downloads/patente ~/patente
+  ```
+- **Da git**, se l'hai messo su GitHub o simili:
+  ```bash
+  git clone URL_DEL_REPOSITORY ~/patente
+  ```
+
+Controlla che sia tutto a posto:
+```bash
+cd ~/patente
+python3 patente.py --controlla
+```
+Deve rispondere `✓ banca domande ok — 7098 domande, 25 categorie`.
+Se mancano le domande (cartella `domande/` vuota), scaricale con `python3 importa.py`.
+
+## 3. Comandi brevi (consigliato)
+
+Aggiungi due alias al tuo `~/.bashrc`, così scrivi `pq` invece di `python3 ~/patente/patente.py --libero`:
+```bash
+cat >> ~/.bashrc <<'EOF'
+
+# quiz patente: pq = modalità libera, patente = tutti i comandi
+alias pq='python3 ~/patente/patente.py --libero'
+alias patente='python3 ~/patente/patente.py'
+EOF
+source ~/.bashrc
+```
+
+## 4. Usarlo
+
+```bash
+pq                            # modalità libera: tutte le domande, esci quando vuoi
+patente                       # esame simulato: 30 domande, promosso con max 3 errori
+patente --categoria           # elenco delle categorie
+patente --categoria sorpasso  # solo una categoria
+patente --review              # ripassa le domande sbagliate
+patente --padronanza          # i tuoi progressi
+patente --help                # tutti i comandi
+```
+
+Durante il quiz:
+
+| Tasto | Cosa fa |
+|---|---|
+| `y` `v` `t` `s` | VERO (yes, vero, true, sì) |
+| `n` `f` | FALSO (no, falso, false) |
+| `p` | salta la domanda (non nell'esame) |
+| `q` | esci (non nel `--forzato`) |
+| `i` | apre l'immagine della domanda |
+| `?` | dopo un errore: mostra la regola breve |
+
+Nel terminale di VS Code puoi anche aprire l'immagine con **Ctrl+click** sul percorso.
+
+I tuoi progressi sono in `errori.json` e `padronanza.json`, nella cartella del progetto.
+**Non sono in git**: se cambi PC e vuoi tenerli, copiali a mano.
+
+## 5. Quiz automatici a orari fissi
+
+Il PC ti apre da solo una finestra con un esame simulato in modalità `--forzato`
+(30 domande, non puoi uscire finché non finisci; poi la finestra si chiude dopo 8 secondi).
+Usa l'Utilità di pianificazione di Windows. Non servono permessi di amministratore.
+
+**1. Scegli orari e giorni** in `pianificazione.json`:
+```json
+{
+  "attivo": true,
+  "orari": ["11:00", "14:30", "16:00"],
+  "weekend": false
+}
+```
+- `orari`: quanti ne vuoi, formato `HH:mm`
+- `weekend`: `true` per farli anche sabato e domenica
+- `attivo`: `false` per spegnerli tutti senza perdere gli orari
+
+**2. Applica** (dal terminale WSL):
+```bash
+patente --pianifica
+```
+
+**3. Controlla**:
+```bash
+patente --pianifica stato
+```
+Mostra ogni orario e la prossima esecuzione.
+
+Ogni volta che modifichi `pianificazione.json`, rilancia `patente --pianifica`.
+Per togliere tutto: `patente --pianifica rimuovi`.
+
+I quiz partono solo se il PC è acceso e hai fatto l'accesso a Windows.
+Li vedi anche in Windows: *Utilità di pianificazione* → cartella *QuizPatente*.
+
+**Senza WSL a portata di mano**, lo stesso script si lancia da PowerShell:
+```powershell
+powershell -ExecutionPolicy Bypass -File \\wsl.localhost\Ubuntu\home\TUO_UTENTE_LINUX\patente\setup_quiz_scheduler.ps1
+```
+(con `-Status` o `-Uninstall` alla fine per stato e rimozione)
+
+## 6. Problemi frequenti
+
+| Problema | Soluzione |
+|---|---|
+| `pq: command not found` | Hai aperto il terminale prima di aggiungere gli alias: `source ~/.bashrc` |
+| `non riesco ad avviare powershell.exe` | `--pianifica` e il tasto `i` funzionano solo in WSL su Windows |
+| La finestra del quiz automatico si apre e si chiude subito | Lancia a mano `python3 ~/patente/patente.py --forzato` per vedere l'errore |
+| `--controlla` trova problemi | Leggi il messaggio: dice file e domanda da correggere |
+
+## 7. Aggiornare le domande
+
+Quando il Ministero pubblica un nuovo listato (e il progetto
+[patente-zero](https://github.com/AaronGreedy/patente-zero) lo aggiorna):
+```bash
+cd ~/patente
+python3 importa.py
+python3 patente.py --controlla
+```
+**Attenzione:** `importa.py` cancella e riscrive tutta la cartella `domande/`.
+
+Le domande, le risposte e le immagini sono quelle ufficiali.
+Spiegazioni, regole brevi e trabocchetti sono generati con AI: aiutano a capire, ma non sono ufficiali.
