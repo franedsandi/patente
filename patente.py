@@ -9,8 +9,8 @@ Uso (patente = python3 patente.py):
   patente --libero [N]        modalità libera: N domande (default: tutte)
   patente --categoria         elenca le categorie
   patente --categoria NOME [N]  solo una categoria (es. sorpasso, segnali)
-  patente --review            ripassa le domande sbagliate (escono dopo 2
-                              risposte giuste di fila)
+  patente --review            ripassa le domande sbagliate, max 30 per volta
+                              (escono dopo 2 risposte giuste di fila)
   patente --padronanza        i tuoi progressi, in totale e per categoria
   patente --stats             errori per categoria
   patente --reset             cancella gli errori (errori.json, ripasso.json)
@@ -70,6 +70,9 @@ MASTERY_THRESHOLD = 5
 # Quando arrivano a REVIEW_DONE la domanda esce da --review (errori.json resta lo storico).
 REVIEW_FILE = Path(__file__).resolve().parent / "ripasso.json"
 REVIEW_DONE = 2
+
+# Storico: un record per ogni quiz fatto (esame o pratica), per contare i quiz.
+HISTORY_FILE = Path(__file__).resolve().parent / "storico.json"
 
 QUESTIONS_DIR = Path(__file__).resolve().parent / "domande"
 IMAGES_DIR = QUESTIONS_DIR / "immagini"
@@ -160,6 +163,37 @@ def mastery_progress_line(mastery):
     return (f"{D}Progressi su {total}: {seen} giuste almeno una volta ({percent(seen, total)}) "
             f"· {dominated} dominate ({percent(dominated, total)}){X}")
 
+# ---- storico dei quiz -------------------------------------------------------
+def load_history():
+    if HISTORY_FILE.exists():
+        try:
+            return json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            return []
+    return []
+
+def record_quiz(tipo, correct, wrong, passed=None):
+    """Aggiunge un quiz allo storico; quelli senza nessuna risposta non contano."""
+    if correct + wrong == 0:
+        return
+    history = load_history()
+    entry = {"data": datetime.now().isoformat(timespec="seconds"), "tipo": tipo,
+             "corrette": correct, "errate": wrong}
+    if passed is not None:
+        entry["promosso"] = passed
+    history.append(entry)
+    HISTORY_FILE.write_text(json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8")
+
+def history_line():
+    history = load_history()
+    exams = [h for h in history if h["tipo"] == "esame"]
+    finished = [h for h in exams if "promosso" in h]   # gli esami interrotti non hanno esito
+    passed = sum(1 for h in finished if h["promosso"])
+    answers = sum(h["corrette"] + h["errate"] for h in history)
+    return (f"{D}Quiz fatti: {len(history)} · esami {len(exams)} "
+            f"(completati {len(finished)}, promossi {passed}) · "
+            f"pratica {len(history) - len(exams)} · risposte {answers}{X}")
+
 def mastery_alert_if_complete(mastery):
     """Se tutte le domande hanno >=MASTERY_THRESHOLD corrette, stampa un messaggio."""
     dominated, total, _ = mastery_summary(mastery)
@@ -178,7 +212,8 @@ def reset_mastery():
 
 def show_mastery():
     mastery = load_mastery()
-    print(mastery_progress_line(mastery).replace(D, B + C, 1) + "\n")
+    print(mastery_progress_line(mastery).replace(D, B + C, 1))
+    print(history_line() + "\n")
 
     # quante domande hai risposto giuste almeno una volta, per categoria
     print(f"{B}Per categoria{X} {D}(giuste almeno una volta / totale){X}")
@@ -611,7 +646,9 @@ def exam_session(forzato=False):
     if wrong > 0:
         print(f"\n{D}errori salvati in {ERRORS_FILE.name} · totale archiviati: {len(all_errors)}{X}")
         print(f"{D}ripassali con:  python patente.py --review{X}")
+    record_quiz("esame", correct, wrong, passed if answered == EXAM_QUESTIONS else None)
     print(mastery_progress_line(mastery))
+    print(history_line())
     mastery_alert_if_complete(mastery)
     if forzato:
         print(f"\n{D}la finestra si chiuderà tra 8 secondi. Buon lavoro.{X}")
@@ -651,7 +688,9 @@ def practice_session(pool, title):
     if answered:
         print(f"│  Precisione: {correct/answered*100:.1f}%")
     print(f"{D}└──────────────────────────────────────{X}")
+    record_quiz("pratica", correct, wrong)
     print(mastery_progress_line(mastery))
+    print(history_line())
     mastery_alert_if_complete(mastery)
 
 # ---- modalità libera (sessione lunga, puoi uscire quando vuoi) --------------
@@ -715,7 +754,11 @@ def review():
             "spiegazione": e.get("spiegazione", ""),
         })
     save_review(progress)
-    practice_session(weighted_order(pool), "Ripasso errori")
+    # al massimo EXAM_QUESTIONS per volta, come un esame: prima le più sbagliate
+    title = "Ripasso errori"
+    if len(pool) > EXAM_QUESTIONS:
+        title += f" (in tutto da ripassare: {len(pool)})"
+    practice_session(weighted_order(pool)[:EXAM_QUESTIONS], title)
 
 def show_stats():
     errors = load_errors()

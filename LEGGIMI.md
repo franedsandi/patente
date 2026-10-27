@@ -108,10 +108,12 @@ Per renderla permanente aggiungi la riga in fondo al file indicato, poi apri un 
 - nei tuoi terminali: `export PATENTE_SIXEL=0` in `~/.bashrc`
 - anche nei quiz automatici: `export PATENTE_SIXEL=0` in `~/.profile` (i quiz automatici non leggono `~/.bashrc`)
 
-I tuoi progressi sono in `errori.json`, `padronanza.json` e `ripasso.json`, nella cartella del progetto.
+I tuoi progressi sono in `errori.json`, `padronanza.json`, `ripasso.json` e `storico.json`
+(i quiz fatti: data, tipo, corrette, errate, esito), nella cartella del progetto.
 **Non sono in git**: se cambi PC e vuoi tenerli, copiali a mano.
 
-`patente --review` ti ripropone le domande sbagliate. Una domanda esce dal ripasso quando
+`patente --review` ti ripropone le domande sbagliate, al massimo 30 per volta come un esame
+(prima quelle sbagliate più spesso). Una domanda esce dal ripasso quando
 la indovini 2 volte di fila (in qualsiasi modalità); se la sbagli di nuovo, ci rientra.
 
 ## 5. Quiz automatici a orari fissi
