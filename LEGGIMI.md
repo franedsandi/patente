@@ -69,13 +69,44 @@ Durante il quiz:
 | `n` `f` | FALSO (no, falso, false) |
 | `p` | salta la domanda (non nell'esame) |
 | `q` | esci (non nel `--forzato`) |
-| `i` | apre l'immagine della domanda |
+| `i` | mostra di nuovo l'immagine nel terminale (se supporta Sixel l'immagine compare già da sola sotto la domanda); altrimenti la apre fuori |
+| `o` | apre l'immagine fuori, con il visualizzatore di Windows |
 | `r1` | prima di rispondere: evidenzia le parole chiave (sempre, solo, non, numeri…) e mostra una stima statistica % VERO / % FALSO (indicativa, spesso vicina al 50%); non nel `--forzato` |
 | `r2` | prima di rispondere: la domanda con la parola trabocchetto evidenziata; non nel `--forzato` |
 | `r3` | prima di rispondere: riassunto della domanda (vedi sezione 8); non nel `--forzato` |
 | `?` | dopo un errore: mostra la regola breve |
+| `-` | alla domanda dopo: risposta, spiegazione e regola della domanda precedente (utile se l'hai indovinata senza esserne sicuro); funziona anche nel `--forzato` |
 
 Nel terminale di VS Code puoi anche aprire l'immagine con **Ctrl+click** sul percorso.
+
+### Immagini dentro al terminale (Sixel)
+
+1. Genera le immagini per il terminale (una volta, e di nuovo dopo ogni `importa.py`):
+   ```bash
+   cd ~/patente
+   python3 -m venv .venv               # solo la prima volta
+   .venv/bin/pip install pillow        # solo la prima volta
+   .venv/bin/python sixel.py
+   ```
+2. Attiva le immagini nel terminale:
+   - **VS Code**: nelle impostazioni (`settings.json`) aggiungi
+     `"terminal.integrated.enableImages": true` e riapri il terminale.
+   - **Windows Terminal**: le supporta dalla versione 1.22, senza impostazioni.
+   - La vecchia console di Windows (`cmd.exe` senza Windows Terminal) non le supporta:
+     lì `i` apre l'immagine fuori.
+3. Prova: `patente --sixel` dice se il terminale le supporta e ne mostra una.
+
+La variabile d'ambiente `PATENTE_SIXEL` decide come mostrare le immagini:
+
+| Valore | Cosa succede |
+|---|---|
+| non impostata | rilevamento automatico: se il terminale supporta Sixel le immagini compaiono da sole |
+| `1` | Sixel sempre attivo (se il rilevamento automatico sbaglia) |
+| `0` | niente immagini nel terminale: `i` le apre fuori, con il visualizzatore di Windows, come prima |
+
+Per renderla permanente aggiungi la riga in fondo al file indicato, poi apri un nuovo terminale:
+- nei tuoi terminali: `export PATENTE_SIXEL=0` in `~/.bashrc`
+- anche nei quiz automatici: `export PATENTE_SIXEL=0` in `~/.profile` (i quiz automatici non leggono `~/.bashrc`)
 
 I tuoi progressi sono in `errori.json`, `padronanza.json` e `ripasso.json`, nella cartella del progetto.
 **Non sono in git**: se cambi PC e vuoi tenerli, copiali a mano.

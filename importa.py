@@ -230,7 +230,9 @@ def main():
         f.unlink()
     shutil.rmtree(QUESTIONS_DIR / "__pycache__", ignore_errors=True)
     for f in IMAGES_DIR.glob("*"):
-        if f.name != "LEGGIMI.txt":
+        if f.is_dir():              # immagini/sixel/: da rigenerare con sixel.py
+            shutil.rmtree(f)
+        elif f.name != "LEGGIMI.txt":
             f.unlink()
     IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -253,6 +255,7 @@ def main():
     print(f"fatto: {len(all_questions)} domande in {len(chapters)} file, {len(used_images)} immagini "
           f"({skipped} doppioni saltati, {with_traps} con trabocchetti evidenziabili)")
     print("controlla con:  python3 patente.py --controlla")
+    print("immagini nel terminale (Sixel):  .venv/bin/python sixel.py")
 
 
 if __name__ == "__main__":
