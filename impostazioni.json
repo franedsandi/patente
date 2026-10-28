@@ -1,0 +1,6 @@
+{
+  "domande_quiz": 30,
+  "errori_ammessi": 3,
+  "ripasso_giuste_di_fila": 2,
+  "ripasso_domande_per_errore": 10
+}

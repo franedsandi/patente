@@ -75,7 +75,7 @@ Durante il quiz:
 | `r2` | prima di rispondere: la domanda con la parola trabocchetto evidenziata; non nel `--forzato` |
 | `r3` | prima di rispondere: riassunto della domanda (vedi sezione 8); non nel `--forzato` |
 | `?` | dopo un errore: mostra la regola breve |
-| `-` | alla domanda dopo: risposta, spiegazione e regola della domanda precedente (utile se l'hai indovinata senza esserne sicuro); funziona anche nel `--forzato` |
+| `-` | alla domanda dopo: risposta, spiegazione e regola della domanda precedente (utile se l'hai indovinata senza esserne sicuro); funziona anche nel `--forzato`. Per l'ultima domanda: `-` alla fine, sotto l'esito (nel `--forzato` entro gli 8 secondi prima che la finestra si chiuda) |
 
 Nel terminale di VS Code puoi anche aprire l'immagine con **Ctrl+click** sul percorso.
 
@@ -111,10 +111,34 @@ Per renderla permanente aggiungi la riga in fondo al file indicato, poi apri un 
 I tuoi progressi sono in `errori.json`, `padronanza.json`, `ripasso.json` e `storico.json`
 (i quiz fatti: data, tipo, corrette, errate, esito), nella cartella del progetto.
 **Non sono in git**: se cambi PC e vuoi tenerli, copiali a mano.
+Per ricominciare da zero: `patente --reset --all` (chiede conferma; le impostazioni restano).
 
 `patente --review` ti ripropone le domande sbagliate, al massimo 30 per volta come un esame
-(prima quelle sbagliate più spesso). Una domanda esce dal ripasso quando
+(prima quelle sbagliate più spesso). Alla fine dice PROMOSSO o BOCCIATO: è ammesso 1 errore
+ogni 10 domande, arrotondando per difetto (30 → 3, 29 → 2, 19 → 1, meno di 10 → 0).
+Nel contatore dei quiz fatti il ripasso conta solo se ha 30 domande.
+Una domanda esce dal ripasso quando
 la indovini 2 volte di fila (in qualsiasi modalità); se la sbagli di nuovo, ci rientra.
+
+### Impostazioni
+
+I numeri qui sopra sono i valori di default; si cambiano in `impostazioni.json`:
+```json
+{
+  "domande_quiz": 30,
+  "errori_ammessi": 3,
+  "ripasso_giuste_di_fila": 2,
+  "ripasso_domande_per_errore": 10
+}
+```
+| Impostazione | Cosa decide |
+|---|---|
+| `domande_quiz` | domande dell'esame (anche `--forzato`) e massimo di domande per `--review`; il tempo limite indicato segue: 40 secondi a domanda come nell'esame vero (30 → 20 min, 10 → 6 min 40 s) |
+| `errori_ammessi` | errori massimi per essere PROMOSSO all'esame |
+| `ripasso_giuste_di_fila` | risposte giuste di fila per far uscire una domanda dal ripasso |
+| `ripasso_domande_per_errore` | `--review`: 1 errore ammesso ogni N domande |
+
+Valgono dal quiz successivo. Se cancelli una riga (o tutto il file) torna il valore di default.
 
 ## 5. Quiz automatici a orari fissi
 

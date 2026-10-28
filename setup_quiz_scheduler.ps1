@@ -146,11 +146,11 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host " ok."
 
 Write-Host "Verifico $QuizDir/patente.py in WSL..." -NoNewline
-$res = (& wsl.exe bash -lc "test -f $QuizDir/patente.py && test -d $QuizDir/domande && echo OK" 2>&1).Trim()
+$res = (& wsl.exe bash -lc "test -f $QuizDir/patente.py && test -d $QuizDir/domande && test -d $QuizDir/quiz && echo OK" 2>&1).Trim()
 if ($res -ne "OK") {
     Write-Host " non trovato."
-    Write-Warning "patente.py o la cartella domande/ non trovati in $QuizDir (dentro WSL)."
-    Write-Host  "Serve tutto il progetto (patente.py + domande/), non solo patente.py."
+    Write-Warning "patente.py o le cartelle domande/ e quiz/ non trovati in $QuizDir (dentro WSL)."
+    Write-Host  "Serve tutto il progetto (patente.py + domande/ + quiz/), non solo patente.py."
     Write-Host  "Se hai la cartella su Windows, p.es. in Download, copiala così:"
     Write-Host  "  wsl bash -c 'cp -r /mnt/c/Users/$env:USERNAME/Downloads/patente ~/patente'"
     exit 1
